@@ -91,7 +91,7 @@ if (SLIC3R_GUI)
         list(FILTER wxWidgets_LIBRARIES EXCLUDE REGEX expat)
         list(APPEND wxWidgets_LIBRARIES libexpat)
     endif ()
-    
+
     # This is an issue in the new wxWidgets cmake build, doesn't deal with librt
     find_library(LIBRT rt)
     if(LIBRT)
@@ -126,9 +126,9 @@ if (NOT WIN32 AND NOT APPLE)
 endif ()
 
 if (WIN32)
-    add_library(Slic3r SHARED PrusaSlicer.cpp PrusaSlicer.hpp)
+    add_library(Slic3r SHARED CaribouSlicer.cpp CaribouSlicer.hpp)
 else ()
-    add_executable(Slic3r PrusaSlicer.cpp PrusaSlicer.hpp)
+    add_executable(Slic3r CaribouSlicer.cpp CaribouSlicer.hpp)
     target_compile_options(Slic3r PRIVATE ${_CC_DEBUG_FLAGS})
 endif ()
 
@@ -188,7 +188,7 @@ if (WIN32)
     if (MINGW)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -municode")
     endif()
-	
+
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libslic3r/libslic3r_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h @ONLY)
 
     add_executable(Slic3r_app_gui WIN32 PrusaSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc)

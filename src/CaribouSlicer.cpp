@@ -7,8 +7,8 @@
     #include <Windows.h>
     #include <wchar.h>
     #ifdef SLIC3R_GUI
-    extern "C" 
-    { 
+    extern "C"
+    {
         // Let the NVIDIA and AMD know we want to use their graphics card
         // on a dual graphics card system.
         __declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
@@ -48,7 +48,7 @@
 #include "libslic3r/Thread.hpp"
 #include "libslic3r/BlacklistedLibraryCheck.hpp"
 
-#include "PrusaSlicer.hpp"
+#include "CaribouSlicer.hpp"
 
 #ifdef SLIC3R_GUI
     #include "slic3r/GUI/GUI_Init.hpp"
@@ -102,7 +102,7 @@ int CLI::run(int argc, char **argv)
 
     m_extra_config.apply(m_config, true);
     m_extra_config.normalize_fdm();
-    
+
     PrinterTechnology printer_technology = get_printer_technology(m_config);
 
     bool							start_gui			= m_actions.empty() &&
@@ -157,7 +157,7 @@ int CLI::run(int argc, char **argv)
         }
         m_print_config.apply(config);
     }
-        
+
     // are we starting as gcodeviewer ?
     for (auto it = m_actions.begin(); it != m_actions.end(); ++it) {
         if (*it == "gcodeviewer") {
@@ -232,7 +232,7 @@ int CLI::run(int argc, char **argv)
     // Initialize full print configs for both the FFF and SLA technologies.
     FullPrintConfig    fff_print_config;
     SLAFullPrintConfig sla_print_config;
-    
+
     // Synchronize the default parameters and the ones received on the command line.
     if (printer_technology == ptFFF) {
         fff_print_config.apply(m_print_config, true);
@@ -240,17 +240,17 @@ int CLI::run(int argc, char **argv)
     } else {
         assert(printer_technology == ptSLA);
         sla_print_config.output_filename_format.value = "[input_filename_base].sl1";
-        
+
         // The default bed shape should reflect the default display parameters
         // and not the fff defaults.
         double w = sla_print_config.display_width.get_float();
         double h = sla_print_config.display_height.get_float();
         sla_print_config.bed_shape.values = { Vec2d(0, 0), Vec2d(w, 0), Vec2d(w, h), Vec2d(0, h) };
-        
+
         sla_print_config.apply(m_print_config, true);
         m_print_config.apply(sla_print_config, true);
     }
-    
+
     {
         std::string validity = m_print_config.validate();
         if (! validity.empty()) {
@@ -258,12 +258,12 @@ int CLI::run(int argc, char **argv)
             return 1;
         }
     }
-    
+
     // Loop through transform options.
     bool user_center_specified = false;
     Points bed = get_bed_shape(m_print_config);
     int dups = 1;
-    
+
     for (auto const &opt_key : m_transforms) {
         if (opt_key == "merge") {
             Model m;
@@ -288,10 +288,10 @@ int CLI::run(int argc, char **argv)
                     model.objects.begin(), model.objects.end(),
                     [](ModelObject* o){ return o->instances.empty(); }
                 );
-                
+
                 dups = m_config.opt_int("duplicate");
                 if (!all_objects_have_instances) model.add_default_instances();
-                
+
             }
         } else if (opt_key == "duplicate_grid") {
             std::vector<int> &ints = m_config.option<ConfigOptionInts>("duplicate_grid")->values;
@@ -505,7 +505,7 @@ int CLI::run(int argc, char **argv)
                 });
 
                 PrintBase  *print = (printer_technology == ptFFF) ? static_cast<PrintBase*>(&fff_print) : static_cast<PrintBase*>(&sla_print);
-                
+
                 if (! m_config.opt_bool("dont_arrange")) {
                     ArrangeParams arrange_cfg;
                     arrange_cfg.min_obj_distance = scaled(min_object_distance(&m_print_config)) * 2;
@@ -708,7 +708,7 @@ bool CLI::setup(int argc, char **argv)
         if (opt_loglevel != 0)
             set_logging_level(opt_loglevel->value);
     }
-    
+
     //FIXME Validating at this stage most likely does not make sense, as the config is not fully initialized yet.
     std::string validity = m_config.validate();
 
@@ -718,7 +718,7 @@ bool CLI::setup(int argc, char **argv)
             m_config.option(optdef.first, true);
 
     set_data_dir(m_config.opt_string("datadir"));
-    
+
     //FIXME Validating at this stage most likely does not make sense, as the config is not fully initialized yet.
     if (!validity.empty()) {
         boost::nowide::cerr << "error: " << validity << std::endl;
