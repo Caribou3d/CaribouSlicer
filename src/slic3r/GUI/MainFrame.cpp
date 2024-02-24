@@ -981,7 +981,9 @@ void MainFrame::update_title()
     	}
     }
 
-    title += wxString(SLIC3R_APP_NAME) + "_" + wxString(SLIC3R_VERSION) ;
+    std::string gitbuild_id = SLIC3R_GITBUILD_NR;
+    title += wxString(SLIC3R_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
+    title += " Build: " + wxString(gitbuild_id);
     if (wxGetApp().is_editor() && !has_name)
         title += (" " + _L(SLIC3R_BASED_ON));
 
