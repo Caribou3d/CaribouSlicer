@@ -1949,11 +1949,20 @@ void MainFrame::init_menubar_as_editor()
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Introduction")), _(L("How to use this menu and calibrations.")),
             [this](wxCommandEvent&) { wxGetApp().html_dialog(); });
         m_calibration_menu->AppendSeparator();
-        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Bed/Extruder leveling")), _(L("Create a test print to help you to level your printer bed.")),
-            [this](wxCommandEvent&) { wxGetApp().bed_leveling_dialog(); });
+
+        append_menu_item(m_calibration_menu, wxID_ANY, _(L("First layer patttern calibration")), _(L("First layer calibration.")),
+            [this](wxCommandEvent&) { wxGetApp().calibration_first_layer_dialog(); });
+        append_menu_item(m_calibration_menu, wxID_ANY, _(L("First layer patch calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
+           [this](wxCommandEvent&) { wxGetApp().calibration_first_layer_patch_dialog(); });
         m_calibration_menu->AppendSeparator();
+
+        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Filament Flow Wall calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
+           [this](wxCommandEvent&) { wxGetApp().calibration_flow_walls_dialog(); });
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Filament Flow calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
             [this](wxCommandEvent&) { wxGetApp().flow_ratio_dialog(); });
+        m_calibration_menu->AppendSeparator();
+
+
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Filament temperature calibration")), _(L("Create a test print to help you to set your filament temperature.")),
             [this](wxCommandEvent&) { wxGetApp().filament_temperature_dialog(); });
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Extruder retraction calibration")), _(L("Create a test print to help you to set your retraction length.")),
@@ -1966,6 +1975,7 @@ void MainFrame::init_menubar_as_editor()
         m_calibration_menu->AppendSeparator();
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Calibration cube")), _(L("Print a calibration cube, for various calibration goals.")),
             [this](wxCommandEvent&) { wxGetApp().calibration_cube_dialog(); });
+
     }
 
     // objects menu

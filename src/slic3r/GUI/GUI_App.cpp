@@ -59,9 +59,11 @@
 #include "../Utils/Process.hpp"
 #include "../Utils/MacDarkMode.hpp"
 #include "slic3r/Config/Snapshot.hpp"
-#include "CalibrationBedDialog.hpp"
 #include "CalibrationBridgeDialog.hpp"
 #include "CalibrationCubeDialog.hpp"
+#include "CalibrationFirstLayerDialog.hpp"
+#include "CalibrationFirstLayerPatchDialog.hpp"
+#include "CalibrationWallsDialog.hpp"
 #include "CalibrationFlowDialog.hpp"
 #include "CalibrationOverBridgeDialog.hpp"
 #include "CalibrationTempDialog.hpp"
@@ -1953,10 +1955,6 @@ void GUI_App::html_dialog()
 {
     change_calibration_dialog(nullptr, new HtmlDialog(this, mainframe,"Introduction to calibrations", "/calibration", "introduction.html"));
 }
-void GUI_App::bed_leveling_dialog()
-{
-    change_calibration_dialog(nullptr, new CalibrationBedDialog(this, mainframe));
-}
 void GUI_App::flow_ratio_dialog()
 {
     change_calibration_dialog(nullptr, new CalibrationFlowDialog(this, mainframe));
@@ -1976,6 +1974,18 @@ void GUI_App::filament_temperature_dialog()
 void GUI_App::calibration_cube_dialog()
 {
     change_calibration_dialog(nullptr, new CalibrationCubeDialog(this, mainframe));
+}
+void GUI_App::calibration_first_layer_dialog()
+{
+    change_calibration_dialog(nullptr, new CalibrationFirstLayerDialog(this, mainframe));
+}
+void GUI_App::calibration_first_layer_patch_dialog()
+{
+    change_calibration_dialog(nullptr, new CalibrationFirstLayerPatchDialog(this, mainframe));
+}
+void GUI_App::calibration_flow_walls_dialog()
+{
+    change_calibration_dialog(nullptr, new CalibrationWallsDialog(this, mainframe));
 }
 void GUI_App::calibration_retraction_dialog()
 {

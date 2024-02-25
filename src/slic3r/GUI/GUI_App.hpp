@@ -252,6 +252,9 @@ public:
     void            bridge_tuning_dialog();
     void            over_bridge_dialog();
     void            calibration_cube_dialog();
+    void            calibration_first_layer_dialog();
+    void            calibration_first_layer_patch_dialog();
+    void            calibration_flow_walls_dialog();
 	void            calibration_retraction_dialog();
     void            freecad_script_dialog();
     void            tiled_canvas_dialog();
@@ -382,11 +385,11 @@ private:
     bool            select_language();
 
     bool            config_wizard_startup();
-    // Returns true if the configuration is fine. 
+    // Returns true if the configuration is fine.
     // Returns true if the configuration is not compatible and the user decided to rather close the slicer instead of reconfiguring.
 	bool            check_updates(const bool verbose);
 
-    bool            m_datadir_redefined { false }; 
+    bool            m_datadir_redefined { false };
 };
 
 DECLARE_APP(GUI_App)
