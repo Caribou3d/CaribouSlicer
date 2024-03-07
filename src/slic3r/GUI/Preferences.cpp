@@ -49,7 +49,7 @@ namespace Slic3r {
 namespace GUI {
 
 PreferencesDialog::PreferencesDialog(wxWindow* parent, int selected_tab, const std::string& highlight_opt_key) :
-    DPIDialog(parent, wxID_ANY, _L("Preferences"), wxDefaultPosition, 
+    DPIDialog(parent, wxID_ANY, _L("Preferences"), wxDefaultPosition,
               wxDefaultSize, wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER )
 {
 #ifdef __WXOSX__
@@ -341,7 +341,7 @@ void PreferencesDialog::build(size_t selected_tab)
 		option = Option(def, "show_overwrite_dialog");
 		m_optgroups_general.back()->append_single_option_line(option);
 
-		
+
 #if __APPLE__
 		def.label = (boost::format(_u8L("Allow just a single %1% instance")) % SLIC3R_APP_NAME).str();
 		def.type = coBool;
@@ -424,29 +424,29 @@ void PreferencesDialog::build(size_t selected_tab)
 	m_optgroups_general.back()->append_single_option_line(option);
 #endif
 
-    if (is_editor) {
-        activate_options_tab(m_optgroups_general.back(), 3);
-    }
+//     if (is_editor) {
+//         activate_options_tab(m_optgroups_general.back(), 3);
+//     }
 
 
-	if (is_editor) {
-		m_optgroups_general.emplace_back(create_options_group(_L("Paths"), tabs, 0));
-		m_optgroups_general.back()->title_width = 20;
-		m_optgroups_general.back()->label_width = 20;
+	// if (is_editor) {
+	// 	m_optgroups_general.emplace_back(create_options_group(_L("Paths"), tabs, 0));
+	// 	m_optgroups_general.back()->title_width = 20;
+	// 	m_optgroups_general.back()->label_width = 20;
 
-		def.label = L("FreeCAD path");
-		def.type = coString;
-		def.tooltip = L("If it point to a valid freecad instance, you can use the built-in python script to quickly generate geometry."
-            "\nPut here the freecad directory from which you can access its 'lib' directory."
-            "\nFreecad will use its own python (from the bin directoyr) on windows and will use the system python3 on linux & macos");
-		def.set_default_value(new ConfigOptionString{ app_config->get("freecad_path") });
-		option = Option(def, "freecad_path");
-		//option.opt.full_width = true;
-		option.opt.width = 50;
-		m_optgroups_general.back()->append_single_option_line(option);
-	}
+	// 	def.label = L("FreeCAD path");
+	// 	def.type = coString;
+	// 	def.tooltip = L("If it point to a valid freecad instance, you can use the built-in python script to quickly generate geometry."
+    //         "\nPut here the freecad directory from which you can access its 'lib' directory."
+    //         "\nFreecad will use its own python (from the bin directoyr) on windows and will use the system python3 on linux & macos");
+	// 	def.set_default_value(new ConfigOptionString{ app_config->get("freecad_path") });
+	// 	option = Option(def, "freecad_path");
+	// 	//option.opt.full_width = true;
+	// 	option.opt.width = 50;
+	// 	m_optgroups_general.back()->append_single_option_line(option);
+	// }
 
-    activate_options_tab(m_optgroups_general.back(), m_optgroups_general.back()->parent()->GetSizer()->GetItemCount() > 1 ? 3 : 20);
+    activate_options_tab(m_optgroups_general.back(), m_optgroups_general.back()->parent()->GetSizer()->GetItemCount() > 1 ? 3 : 18);
 
 	// Add "Camera" tab
 	m_optgroup_camera = create_options_tab(_L("Camera"), tabs);
@@ -993,8 +993,8 @@ void PreferencesDialog::accept(wxEvent&)
 		}
 	}
 
-	for (const std::string& key : {	"default_action_on_close_application", 
-									"default_action_on_select_preset", 
+	for (const std::string& key : {	"default_action_on_close_application",
+									"default_action_on_select_preset",
 									"default_action_on_new_project" }) {
 	    auto it = m_values.find(key);
 		if (it != m_values.end() && it->second != "none" && app_config->get(key) != "none")
@@ -1097,7 +1097,7 @@ void PreferencesDialog::layout()
         best_size = biggest_virtual_size;
         //best_size += tab_inset;
     }
-    // add space for buttons and insets of the main panel 
+    // add space for buttons and insets of the main panel
     best_size += wxSize(3 * em, 12 * em);
     // also reduce size to fit in screen if needed
     wxDisplay display(wxDisplay::GetFromWindow(this));
@@ -1136,7 +1136,7 @@ void PreferencesDialog::create_icon_size_slider(ConfigOptionsGroup* container)
     if (!isOSX)
         style |= wxSL_LABELS | wxSL_AUTOTICKS;
 
-    auto slider = new wxSlider(parent, wxID_ANY, def_val, 30, 100, 
+    auto slider = new wxSlider(parent, wxID_ANY, def_val, 30, 100,
                                wxDefaultPosition, wxDefaultSize, style);
 
     slider->SetTickFreq(10);
@@ -1160,7 +1160,7 @@ void PreferencesDialog::create_icon_size_slider(ConfigOptionsGroup* container)
     }), slider->GetId());
 
     for (wxWindow* win : std::vector<wxWindow*>{ slider, label, val_label }) {
-        if (!win) continue;         
+        if (!win) continue;
         win->SetFont(wxGetApp().normal_font());
 
         if (isOSX) continue; // under OSX we use wxBG_STYLE_ERASE
