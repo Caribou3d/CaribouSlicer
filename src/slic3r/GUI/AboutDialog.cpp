@@ -279,9 +279,9 @@ AboutDialog::AboutDialog()
         m_html->SetBorders(2);
         const std::string copyright_str = _utf8(L("Copyright"));
         // TRN "Slic3r _is licensed under the_ License"
-        const std::string is_lecensed_str = _utf8(L("is licensed under the"));
+        const std::string is_licensed_str = _utf8(L("is licensed under the"));
         const std::string license_str = _utf8(L("GNU Affero General Public License, version 3"));
-        const std::string based_on_str = _utf8(L("SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."));
+        const std::string based_on_str = _utf8(L("CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."));
         const std::string contributors_str = _utf8(L("Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik, Durand Rémi and numerous others."));
         const std::string manual_str = _utf8(L("Manual by Gary Hodgson. Inspired by the RepRap community."));
         const std::string icon_str = _utf8(L("Slic3r logo designed by Corey Daniels."));
@@ -290,11 +290,11 @@ AboutDialog::AboutDialog()
             "<html>"
             "<body bgcolor= %1% link= %2%>"
             "<font color=%3%>"
-            " &copy; 2024 Caribou Research & Development. <br />"
-            " &copy; 2018-2022 Durand Rémi. <br />"
-            "%5% &copy; 2016-2022 Prusa Research. <br />"
-            "%5% &copy; 2011-2018 Alessandro Ranellucci. <br />"
-            "<a href=\"http://slic3r.org/\">Slic3r</a> %6% "
+            " &copy; 2023-2024 Caribou Research & Development. <br />"
+            " &copy; 2018-2024 Durand Rémi. <br />"
+            " &copy; 2016-2022 Prusa Research. <br />"
+            " &copy; 2011-2018 Alessandro Ranellucci. <br /><br />"
+            "<a href=\"https://github.com/Caribou3d/CaribouSlicer\">CaribouSlicer</a> %6% "
             "<a href=\"http://www.gnu.org/licenses/agpl-3.0.html\">%7%</a>."
             "<br /><br />"
             "%8%"
@@ -306,7 +306,7 @@ AboutDialog::AboutDialog()
             "</body>"
             "</html>") % bgr_clr_str % text_clr_str % text_clr_str
             % copyright_str % copyright_str
-            % is_lecensed_str
+            % is_licensed_str
             % license_str
             % based_on_str
             % contributors_str
