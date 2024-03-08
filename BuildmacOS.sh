@@ -173,8 +173,8 @@ then
     echo -e "[3/9] Renaming wxscintilla library ...\n"
 
     # rename wxscintilla
-    pushd destdir/usr/local/lib
-    cp libwxscintilla-3.2.a libwx_osx_cocoau_scintilla-3.2.a
+    pushd destdir/usr/local/lib > /dev/null
+    cp libwxscintilla-3.1.a libwx_osx_cocoau_scintilla-3.1.a
 
     popd > /dev/null
     popd > /dev/null
