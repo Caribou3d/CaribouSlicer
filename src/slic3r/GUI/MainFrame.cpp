@@ -358,12 +358,13 @@ static void append_tab_menu_items_to_menubar(wxMenuBar* bar, PrinterTechnology p
     bool has_marker = false;
     if (layout == MainFrame::ESettingsLayout::Tabs) {
         bar->Append(new wxMenu(), pref() + _L("3D view") + suff());
-        bar->Append(new wxMenu(), _L("Sliced preview"));
+    //    bar->Append(new wxMenu(), _L("Sliced preview"));
         bar->Append(new wxMenu(),  _L("Gcode preview"));
         has_marker = true;
         // Add separator
         bar->Append(new wxMenu(), "          ");
-        bar->EnableTop(MAINFRAME_MENU_ITEM_COUNT + 4, false);
+      //  bar->EnableTop(MAINFRAME_MENU_ITEM_COUNT + 4, false);
+        bar->EnableTop(MAINFRAME_MENU_ITEM_COUNT + 3, false);
     } else if (layout == MainFrame::ESettingsLayout::Old) {
         bar->Append(new wxMenu(), pref() + _L("Platter") + suff());
         has_marker = true;
@@ -461,8 +462,8 @@ static void add_tabs_as_menu(wxMenuBar* bar, MainFrame* main_frame, wxWindow* ba
             main_frame->select_tab(MainFrame::ETabType::LastPlater);
         else if (title == _L("3D view"))
             main_frame->select_tab(MainFrame::ETabType::Plater3D);
-        else if (title == _L("Sliced preview"))
-            main_frame->select_tab(MainFrame::ETabType::PlaterPreview);
+        // else if (title == _L("Sliced preview"))
+        //    main_frame->select_tab(MainFrame::ETabType::PlaterPreview);
         else if (title == _L("Gcode preview"))
             main_frame->select_tab(MainFrame::ETabType::PlaterGcode);
         else if (title == _L("Print Settings"))
@@ -669,9 +670,12 @@ void MainFrame::update_layout()
         if (!wxGetApp().tabs_as_menu()) {
             Notebook* notebook = static_cast<Notebook*>(m_tabpanel);
             notebook->InsertBtPage(0, m_plater, _L("3D view"), std::string("editor_menu"), icon_size, true);
-            notebook->InsertFakeBtPage(1, 0, _L("Sliced preview"), std::string("layers"), icon_size, false);
-            notebook->InsertFakeBtPage(2, 0, _L("Gcode preview"), std::string("preview_menu"), icon_size, false);
-            notebook->GetBtnsListCtrl()->InsertSpacer(3, 40);
+            // notebook->InsertFakeBtPage(1, 0, _L("Sliced preview"), std::string("layers"), icon_size, false);
+            // notebook->InsertFakeBtPage(2, 0, _L("Gcode preview"), std::string("preview_menu"), icon_size, false);
+            // notebook->InsertFakeBtPage(1, 0, _L("Sliced preview"), std::string("layers"), icon_size, false);
+            notebook->InsertFakeBtPage(1, 0, _L("Gcode preview"), std::string("preview_menu"), icon_size, false);
+                
+            notebook->GetBtnsListCtrl()->InsertSpacer(2, 40);
             notebook->GetBtnsListCtrl()->GetPageButton(0)->Bind(wxCUSTOMEVT_NOTEBOOK_BT_PRESSED, [this](wxCommandEvent& event) {
                 this->m_plater->select_view_3D("3D");
                 //not that useful
@@ -712,12 +716,15 @@ void MainFrame::update_layout()
 #else
         wxPanel* first_panel = new wxPanel(m_tabpanel);
         m_tabpanel->InsertPage(0, first_panel, _L("3D view"));
-        m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Sliced preview"));
-        m_tabpanel->InsertPage(2, new wxPanel(m_tabpanel), _L("Gcode preview"));
-        if (m_tabpanel->GetPageCount() == 6) {
+        // m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Sliced preview"));
+        // m_tabpanel->InsertPage(2, new wxPanel(m_tabpanel), _L("Gcode preview"));
+        // m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Sliced preview"));
+        m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Gcode preview"));    
+        // if (m_tabpanel->GetPageCount() == 6) {            
+        if (m_tabpanel->GetPageCount() == 5) {
             m_tabpanel->GetPage(0)->SetSizer(new wxBoxSizer(wxVERTICAL));
             m_tabpanel->GetPage(1)->SetSizer(new wxBoxSizer(wxVERTICAL));
-            m_tabpanel->GetPage(2)->SetSizer(new wxBoxSizer(wxVERTICAL));
+        //    m_tabpanel->GetPage(2)->SetSizer(new wxBoxSizer(wxVERTICAL));
             update_icon();
         }
         m_plater->Reparent(first_panel);
