@@ -290,6 +290,7 @@ AboutDialog::AboutDialog()
             "<html>"
             "<body bgcolor= %1% link= %2%>"
             "<font color=%3%>"
+            " &copy; 2024 Caribou Research & Development. <br />"
             " &copy; 2018-2022 Durand Rémi. <br />"
             "%5% &copy; 2016-2022 Prusa Research. <br />"
             "%5% &copy; 2011-2018 Alessandro Ranellucci. <br />"
