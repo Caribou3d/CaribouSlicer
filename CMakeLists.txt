@@ -367,7 +367,7 @@ endif()
 function(slic3r_remap_configs targets from_Cfg to_Cfg)
     if(MSVC)
         string(TOUPPER ${from_Cfg} from_CFG)
-    
+
         foreach(tgt ${targets})
             if(TARGET ${tgt})
                 set_target_properties(${tgt} PROPERTIES MAP_IMPORTED_CONFIG_${from_CFG} ${to_Cfg})
@@ -531,7 +531,7 @@ file(GLOB L10N_PO_FILES "${L10N_DIR}/*/Slic3r.po")
 foreach(po_file ${L10N_PO_FILES})
     GET_FILENAME_COMPONENT(po_dir "${po_file}" DIRECTORY)
     SET(mo_file "${po_dir}/${SLIC3R_APP_KEY}.mo")
-    message(STATUS "po_dir mo_file imgui : '${po_file}' and mo file is '${mo_file}'") 
+    message(STATUS "po_dir mo_file imgui : '${po_file}' and mo file is '${mo_file}'")
     add_custom_command(
         TARGET gettext_po_to_mo PRE_BUILD
         COMMAND msgfmt ARGS --check-format -o ${mo_file} ${po_file}
@@ -579,7 +579,7 @@ function(prusaslicer_copy_dlls target)
     elseif ("${CMAKE_SIZEOF_VOID_P}" STREQUAL "4")
         set(_bits 32)
     endif ()
-    
+
     get_property(_is_multi GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
     get_target_property(_alt_out_dir ${target} RUNTIME_OUTPUT_DIRECTORY)
 
@@ -590,14 +590,14 @@ function(prusaslicer_copy_dlls target)
     else ()
         set (_out_dir "$<TARGET_PROPERTY:${target},BINARY_DIR>")
     endif ()
-    
-    # This has to be a separate target due to the windows command line lenght limits    
-    add_custom_command(TARGET ${target} POST_BUILD 
+
+    # This has to be a separate target due to the windows command line lenght limits
+    add_custom_command(TARGET ${target} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy ${TOP_LEVEL_PROJECT_DIR}/deps/GMP/gmp/lib/win${_bits}/libgmp-10.dll ${_out_dir}
         COMMENT "Copy gmp runtime to build tree"
         VERBATIM)
-    
-    add_custom_command(TARGET ${target} POST_BUILD 
+
+    add_custom_command(TARGET ${target} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy ${TOP_LEVEL_PROJECT_DIR}/deps/MPFR/mpfr/lib/win${_bits}/libmpfr-4.dll ${_out_dir}
         COMMENT "Copy mpfr runtime to build tree"
         VERBATIM)
@@ -627,7 +627,7 @@ if(SLIC3R_BUILD_TESTS)
 endif()
 
 if (NOT WIN32 AND NOT APPLE)
-    configure_file(${LIBDIR}/platform/unix/build_appimage.sh.in ${CMAKE_CURRENT_BINARY_DIR}/build_appimage.sh @ONLY)
+    configure_file(${LIBDIR}/platform/unix/build_appimage.sh.in ${LIBDIR_BIN}/build_appimage.sh @ONLY)
 endif()
 
 # Resources install target, configure fhs.hpp on UNIX
@@ -663,7 +663,7 @@ endif ()
 configure_file(${LIBDIR}/platform/unix/fhs.hpp.in ${LIBDIR_BIN}/platform/unix/fhs.hpp)
 
 if (WIN32)
-else () 
+else ()
     set(CPACK_GENERATOR "STGZ;TGZ;TZ")
     set(CPACK_NSIS_DISPLAY_NAME "${SLIC3R_APP_NAME} ${SLIC3R_VERSION}")
     set(CPACK_OUTPUT_CONFIG_FILE "${CMAKE_SOURCE_DIR}/cmake/CPackConfig.cmake")
