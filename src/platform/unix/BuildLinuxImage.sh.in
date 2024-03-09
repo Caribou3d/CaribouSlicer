@@ -71,9 +71,9 @@ then
     pushd package > /dev/null
     if [[ -z "$FORCE_GTK2" ]]
     then
-	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-GTK3-linux64.tgz .  &>/dev/null
+	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK3-linux64.tgz .  &>/dev/null
     else
-	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-GTK2-linux64.tgz .  &>/dev/null
+	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK2-linux64.tgz .  &>/dev/null
     fi
 
     popd > /dev/null
@@ -89,9 +89,9 @@ then
     popd  > /dev/null
     if [[ -z "$FORCE_GTK2" ]]
     then
-	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-GTK3-linux-x64.AppImage"
+	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK3-linux-x64.AppImage"
     else
-	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-GTK2-linux-x64.AppImage"
+	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK2-linux-x64.AppImage"
     fi
 
     echo -e "\n... done\n"
