@@ -206,6 +206,7 @@ if(WIN32)
 endif()
 
 if (APPLE)
+    add_compile_options(-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION)
     message("OS X SDK Path: ${CMAKE_OSX_SYSROOT}")
     if (CMAKE_OSX_DEPLOYMENT_TARGET)
         message("OS X Deployment Target: ${CMAKE_OSX_DEPLOYMENT_TARGET}")
@@ -626,7 +627,7 @@ if(SLIC3R_BUILD_TESTS)
 endif()
 
 if (NOT WIN32 AND NOT APPLE)
-    configure_file(${LIBDIR}/platform/unix/build_appimage.sh.in ${CMAKE_CURRENT_BINARY_DIR}/build_appimage.sh @ONLY)
+    configure_file(${LIBDIR}/platform/unix/build_appimage.sh.in ${LIBDIR_BIN}/build_appimage.sh @ONLY)
 endif()
 
 # Resources install target, configure fhs.hpp on UNIX

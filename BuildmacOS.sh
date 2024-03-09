@@ -184,7 +184,7 @@ fi
 if [[ -n "$BUILD_CLEANDEPEND" ]]
 then
     echo -e "[4/9] Cleaning dependencies...\n"
-    pushd deps/build
+    pushd deps/build > /dev/null
     pwd
     rm -fr dep_*
     popd > /dev/null
