@@ -282,7 +282,7 @@ private:
             version = _L("Version") + " " + std::string(SLIC3R_VERSION_FULL);
 
             // credits infornation
-            credits = _L("SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.") + "\n\n" +
+            credits = _L("CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.") + "\n\n" +
                         title + " " + _L("is licensed under the") + " " + _L("GNU Affero General Public License, version 3") + ".\n\n" +
                         _L("Contributions by Vojtech Bubnik, Enrico Turri, Durand Remi, Oleksandra Iushchenko, Tamas Meszaros, Lukas Matena, Vojtech Kral, David Kocik and numerous others.");
 
@@ -2520,8 +2520,10 @@ void GUI_App::add_config_menu(wxMenuBar *menu)
     // Cmd+, is standard on OS X - what about other operating systems?
     if (is_editor()) {
         local_menu->Append(config_id_base + ConfigMenuWizard, config_wizard_name + dots, config_wizard_tooltip);
+        local_menu->AppendSeparator();
         local_menu->Append(config_id_base + ConfigMenuSnapshots, _L("&Configuration Snapshots") + dots, _L("Inspect / activate configuration snapshots"));
         local_menu->Append(config_id_base + ConfigMenuTakeSnapshot, _L("Take Configuration &Snapshot"), _L("Capture a configuration snapshot"));
+        local_menu->AppendSeparator();
         local_menu->Append(config_id_base + ConfigMenuUpdate, _L("Check for Configuration Updates"), _L("Check for configuration updates"));
 #if defined(__linux__) && defined(SLIC3R_DESKTOP_INTEGRATION)
         //if (DesktopIntegrationDialog::integration_possible())

@@ -1563,6 +1563,18 @@ static const wxString sep_space = "";
 static wxMenu* generate_help_menu()
 {
     wxMenu* helpMenu = new wxMenu();
+
+    if (wxGetApp().is_editor())
+        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("&About %s"), SLIC3R_APP_NAME), _L("Show about dialog"),
+            [](wxCommandEvent&) { Slic3r::GUI::about(); });
+    else
+        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("&About %s"), GCODEVIEWER_APP_NAME), _L("Show about dialog"),
+            [](wxCommandEvent&) { Slic3r::GUI::about(); });
+
+
+    append_menu_item(helpMenu, wxID_ANY, _L("System &Info"), _L("Show system information"),
+        [](wxCommandEvent&) { wxGetApp().system_info(); });
+
     append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s Releases"), SLIC3R_APP_NAME), wxString::Format(_L("Open the %s releases page in your browser"), SLIC3R_APP_NAME),
         [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog(SLIC3R_DOWNLOAD, nullptr, false); });
     // append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s wiki"), SLIC3R_APP_NAME), wxString::Format(_L("Open the %s wiki in your browser"), SLIC3R_APP_NAME),
@@ -1579,20 +1591,16 @@ static wxMenu* generate_help_menu()
         //        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("%s &Manual"), SLIC3R_APP_NAME),
         //                                             wxString::Format(_L("Open the %s manual in your browser"), SLIC3R_APP_NAME),
         // [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://manual.slic3r.org/"); });
-    helpMenu->AppendSeparator();
-    append_menu_item(helpMenu, wxID_ANY, _L("System &Info"), _L("Show system information"),
-        [](wxCommandEvent&) { wxGetApp().system_info(); });
-    append_menu_item(helpMenu, wxID_ANY, _L("Show &Configuration Folder"), _L("Show user configuration folder (datadir)"),
-        [](wxCommandEvent&) { Slic3r::GUI::desktop_open_datadir_folder(); });
+
+
     append_menu_item(helpMenu, wxID_ANY, _L("Report an I&ssue"), wxString::Format(_L("Report an issue on %s"), SLIC3R_APP_NAME),
         [](wxCommandEvent&) { wxGetApp().open_browser_with_warning_dialog("http://github.com/" SLIC3R_GITHUB "/issues/new", nullptr, false); });
 
-    if (wxGetApp().is_editor())
-        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("&About %s"), SLIC3R_APP_NAME), _L("Show about dialog"),
-            [](wxCommandEvent&) { Slic3r::GUI::about(); });
-    else
-        append_menu_item(helpMenu, wxID_ANY, wxString::Format(_L("&About %s"), GCODEVIEWER_APP_NAME), _L("Show about dialog"),
-            [](wxCommandEvent&) { Slic3r::GUI::about(); });
+    helpMenu->AppendSeparator();
+
+    append_menu_item(helpMenu, wxID_ANY, _L("Show &Configuration Folder"), _L("Show user configuration folder (datadir)"),
+        [](wxCommandEvent&) { Slic3r::GUI::desktop_open_datadir_folder(); });
+
     append_menu_item(helpMenu, wxID_ANY, _L("Show Tip of the Day")
 #if 0//debug
         + "\tCtrl+Shift+T"
