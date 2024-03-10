@@ -674,7 +674,7 @@ void MainFrame::update_layout()
             // notebook->InsertFakeBtPage(2, 0, _L("Gcode preview"), std::string("preview_menu"), icon_size, false);
             // notebook->InsertFakeBtPage(1, 0, _L("Sliced preview"), std::string("layers"), icon_size, false);
             notebook->InsertFakeBtPage(1, 0, _L("Gcode preview"), std::string("preview_menu"), icon_size, false);
-                
+
             notebook->GetBtnsListCtrl()->InsertSpacer(2, 40);
             notebook->GetBtnsListCtrl()->GetPageButton(0)->Bind(wxCUSTOMEVT_NOTEBOOK_BT_PRESSED, [this](wxCommandEvent& event) {
                 this->m_plater->select_view_3D("3D");
@@ -719,8 +719,8 @@ void MainFrame::update_layout()
         // m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Sliced preview"));
         // m_tabpanel->InsertPage(2, new wxPanel(m_tabpanel), _L("Gcode preview"));
         // m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Sliced preview"));
-        m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Gcode preview"));    
-        // if (m_tabpanel->GetPageCount() == 6) {            
+        m_tabpanel->InsertPage(1, new wxPanel(m_tabpanel), _L("Gcode preview"));
+        // if (m_tabpanel->GetPageCount() == 6) {
         if (m_tabpanel->GetPageCount() == 5) {
             m_tabpanel->GetPage(0)->SetSizer(new wxBoxSizer(wxVERTICAL));
             m_tabpanel->GetPage(1)->SetSizer(new wxBoxSizer(wxVERTICAL));
@@ -989,10 +989,14 @@ void MainFrame::update_title()
     }
 
     std::string gitbuild_id = SLIC3R_GITBUILD_NR;
-    title += wxString(SLIC3R_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
+    if (wxGetApp().is_editor() && !has_name) {
+        title += wxString(SLIC3R_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
+    }
+    else if (!wxGetApp().is_editor() && !has_name) {
+        title += wxString(GCODEVIEWER_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
+    }
     title += " Build: " + wxString(gitbuild_id);
-    if (wxGetApp().is_editor() && !has_name)
-        title += (" " + _L(SLIC3R_BASED_ON));
+    title += (" " + _L(SLIC3R_BASED_ON));
 
     SetTitle(title);
 }
