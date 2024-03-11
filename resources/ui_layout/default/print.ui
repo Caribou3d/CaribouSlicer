@@ -24,7 +24,7 @@ group:Infill
 	setting:tags$Simple:label_width$20:label$Top infill pattern:top_fill_pattern
 	setting:tags$Simple:sidetext_width$0:label$Supporting dense layer:infill_dense
 group:Quality
-	line:Only one perimeter 
+	line:Only one perimeter
 		setting:label_width$8:label$On first layer:only_one_perimeter_first_layer
 		setting:label_width$10:label$On top surfaces:only_one_perimeter_top
 		setting:label$Minimum width:sidetext_width$7:min_width_top_surface
@@ -129,6 +129,8 @@ page:Slicing:layers
 group:Layer height
 	setting:layer_height
 	setting:first_layer_height
+group:Extrusion direction
+	setting:tags$Advanced:label$Reverse on all perimeters:sidetext_width$2:perimeter_reverse
 group:Filtering
 	setting:resolution
 	setting:resolution_internal
@@ -514,7 +516,7 @@ group:Post-processing milling
 	setting:milling_extra_size
 	setting:milling_after_z
 	setting:milling_speed
-	
+
 page:Notes:note
 group:no_title:Notes
 	setting:full_width:height$25:notes
@@ -526,7 +528,7 @@ group:Profile dependencies
 	setting:compatible_printers
 	setting:full_width:color:compatible_printers_condition
 	parent_preset_description
-	
+
 page:Support & Other:wrench
 group:Support Material
 	setting:tags$Simple:support_material
