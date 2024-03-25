@@ -4237,7 +4237,7 @@ void PrintConfigDef::init_fff_params()
     def->category = OptionCategory::perimeter;
     def->tooltip = L("On even layers, all perimeter loops are reversed (it disables the overhang reversal, so it doesn't double-reverse)."
                     "That setting will likely create defects on the perimeters, so it's only useful is for materials that have some direction-dependent properties (stress lines).");
-    def->mode = comAdvancedE | comSuSi;
+    def->mode = comAdvancedE | comExpert;
     def->set_default_value(new ConfigOptionBool(false));
 
     def = this->add("perimeter_round_corners", coBool);

@@ -130,7 +130,7 @@ group:Layer height
 	setting:layer_height
 	setting:first_layer_height
 group:Extrusion direction
-	setting:tags$Advanced:label$Reverse on all perimeters:sidetext_width$2:perimeter_reverse
+	setting:label$Reverse on all perimeters:sidetext_width$2:perimeter_reverse
 group:Filtering
 	setting:resolution
 	setting:resolution_internal
