@@ -911,6 +911,7 @@ void GUI_App::init_app_config()
         SetAppName(SLIC3R_APP_KEY "V2-alpha");
     #else
         SetAppName(SLIC3R_APP_KEY "V2");
+    #endif
 //  SetAppDisplayName(SLIC3R_APP_NAME);
 
 	// Set the Slic3r data directory at the Slic3r XS module.
