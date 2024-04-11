@@ -906,12 +906,11 @@ static boost::optional<Semver> parse_semver_from_ini(std::string path)
 
 void GUI_App::init_app_config()
 {
-    #ifdef SLIC3R_ALPHA
+   #ifdef SLIC3R_ALPHA
         // Profiles for the alpha are stored into the PrusaSlicer-alpha directory to not mix with the current release.
-        SetAppName(SLIC3R_APP_KEY "-alpha");
+        SetAppName(SLIC3R_APP_KEY "V2-alpha");
     #else
-        SetAppName(SLIC3R_APP_KEY);
-    #endif
+        SetAppName(SLIC3R_APP_KEY "V2");
 //  SetAppDisplayName(SLIC3R_APP_NAME);
 
 	// Set the Slic3r data directory at the Slic3r XS module.
