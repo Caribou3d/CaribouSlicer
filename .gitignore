@@ -15,11 +15,10 @@ xs/assertlib*
 local-lib
 /src/TAGS
 /.vscode/
-build*
+build/*
 deps/build*
 deps/deps-*
 cmake/CPackConfig.cmake
 
 # MacOS Ignores
 .DS_Store
-
