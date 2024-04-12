@@ -168,7 +168,7 @@ then
     echo -e "[2/9] Building dependencies ...\n"
 
     # make deps
-    make -j$NCORES
+    make -j1
 
     echo -e "\n ... done\n"
 

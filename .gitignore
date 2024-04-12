@@ -16,6 +16,7 @@ local-lib
 /src/TAGS
 /.vscode/
 build/*
+Build.log
 deps/build*
 deps/deps-*
 cmake/CPackConfig.cmake
