@@ -125,8 +125,8 @@ msgstr ""
 #  translation: Kicsi kerületek
 # 4    changes: perimeters
 #  translation: kerületek
-# 5    changes: Perimeters
-#  translation: Kerületek
+# 5    changes: Extra perimeters
+#  translation: Extra kerületek
 msgid "All perimeters"
 msgstr ""
 
@@ -733,8 +733,8 @@ msgstr ""
 #  translation: Első réteg kalibrálása
 # 7    changes: First layer acceleration
 #  translation: Első réteg gyorsulás
-# 11   changes: First layer flow ratio
-#  translation: Első réteg áramlási aránya
+# 7    changes: First layer calibration.
+#  translation: Első réteg kalibrálása.
 msgid "First layer patch calibration"
 msgstr ""
 
@@ -743,10 +743,10 @@ msgstr ""
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Első réteg kalibrálása
+# 10   changes: First layer calibration.
+#  translation: Első réteg kalibrálása.
 # 11   changes: First layer acceleration
 #  translation: Első réteg gyorsulás
-# 11   changes: Ironing pattern calibration
-#  translation: Vasalási minta kalibrálása
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -759,10 +759,10 @@ msgstr ""
 #Similar to me: for external perimeters
 # 4    changes: external perimeters
 #  translation: külső kerületeket
-# 5    changes: External perimeters
-#  translation: Külső kerületek
 # 5    changes: external perimeter
 #  translation: külső kerület
+# 5    changes: External perimeters
+#  translation: Külső kerületek
 msgid "for external perimeters"
 msgstr ""
 
@@ -776,10 +776,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Rétegek és kerületek
-# 8    changes: external perimeters
-#  translation: külső kerületeket
 # 8    changes: External perimeters
 #  translation: Külső kerületek
+# 8    changes: external perimeters
+#  translation: külső kerületeket
 msgid "for round perimeters"
 msgstr ""
 
@@ -1134,10 +1134,10 @@ msgstr ""
 #Similar to me: Internal perimeters
 # 1    changes: Internal perimeter
 #  translation: Belső kerület
-# 2    changes: external perimeters
-#  translation: külső kerületeket
 # 2    changes: External perimeters
 #  translation: Külső kerületek
+# 2    changes: external perimeters
+#  translation: külső kerületeket
 msgid "Internal perimeters"
 msgstr ""
 
@@ -1643,10 +1643,10 @@ msgstr ""
 #Similar to me: Perimeter generator
 # 6    changes: Perimeter acceleration
 #  translation: Kerületi gyorsulás
-# 6    changes: Perimeter extruder
-#  translation: Kerületi extruder
 # 6    changes: Perimeter anchor
 #  translation: Kerületi rögzítés
+# 6    changes: Perimeter extruder
+#  translation: Kerületi extruder
 msgid "Perimeter generator"
 msgstr ""
 
@@ -1771,12 +1771,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
-# 8    changes: Overlapping all perimeters
-#  translation: Minden határ átfedése
 # 8    changes: Also for all perimeters
 #  translation: Minden kerület esetében is
-# 9    changes: external perimeters
-#  translation: külső kerületeket
+# 8    changes: Overlapping all perimeters
+#  translation: Minden határ átfedése
+# 9    changes: External perimeters
+#  translation: Külső kerületek
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -1804,10 +1804,10 @@ msgstr ""
 #Similar to me: Seam gap for external perimeters
 # 8    changes: Extra Wipe for external perimeters
 #  translation: Extra törlés a külső határokhoz
-# 11   changes: at %1%%% over external perimeters
-#  translation: %1%%%-ban a külső határok felett
 # 11   changes: Overlapping external perimeter
 #  translation: Átfedő külső kerület
+# 11   changes: at %1%%% over external perimeters
+#  translation: %1%%%-ban a külső határok felett
 msgid "Seam gap for external perimeters"
 msgstr ""
 
@@ -1949,22 +1949,22 @@ msgstr ""
 #Similar to me: Support interface angle increment
 # 11   changes: Support interface fan speed
 #  translation: Támogatja az interfész ventilátor sebességét
-# 12   changes: Support interface pattern
-#  translation: Támogatási interfész minta
 # 12   changes: Support interface acceleration
 #  translation: Támogatja az interfész gyorsítását
+# 12   changes: Support interface pattern
+#  translation: Támogatási interfész minta
 msgid "Support interface angle increment"
 msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:5533
 #Similar to me: Support interface layer height
+# 10   changes: Support interface fan speed
+#  translation: Támogatja az interfész ventilátor sebességét
 # 10   changes: Support interface pattern
 #  translation: Támogatási interfész minta
 # 10   changes: Support interface speed
 #  translation: Támogatási interfész sebesség
-# 10   changes: Support interface fan speed
-#  translation: Támogatja az interfész ventilátor sebességét
 msgid "Support interface layer height"
 msgstr ""
 
@@ -1973,10 +1973,10 @@ msgstr ""
 #Similar to me: Support interface pattern angle
 # 6    changes: Support interface pattern
 #  translation: Támogatási interfész minta
-# 10   changes: Support pattern angle
-#  translation: Támasztási mintázat szöge
 # 10   changes: Support interface acceleration
 #  translation: Támogatja az interfész gyorsítását
+# 10   changes: Support interface fan speed
+#  translation: Támogatja az interfész ventilátor sebességét
 msgid "Support interface pattern angle"
 msgstr ""
 
@@ -2439,10 +2439,10 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:134 src/slic3r/GUI/PresetHints.cpp:195
 #Similar to me: Top surfaces
-# 3    changes: On surfaces
-#  translation: Felületeken
 # 3    changes: All surfaces
 #  translation: Minden felület
+# 3    changes: On surfaces
+#  translation: Felületeken
 # 4    changes: Min surface
 #  translation: Min. felület
 msgid "Top surfaces"

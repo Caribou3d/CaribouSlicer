@@ -574,6 +574,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l342
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Max šířka
 msgid "Cap with"
 msgstr ""
 
@@ -1267,8 +1270,8 @@ msgstr ""
 #  translation: Kalibrace první vrstvy
 # 7    changes: First layer acceleration
 #  translation: Zrychlení první vrstvy
-# 11   changes: First layer flow ratio
-#  translation: Poměr průtoku první vrstvy
+# 7    changes: First layer calibration.
+#  translation: Kalibrace první vrstvy.
 msgid "First layer patch calibration"
 msgstr ""
 
@@ -1277,10 +1280,10 @@ msgstr ""
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Kalibrace první vrstvy
+# 10   changes: First layer calibration.
+#  translation: Kalibrace první vrstvy.
 # 11   changes: First layer acceleration
 #  translation: Zrychlení první vrstvy
-# 11   changes: Ironing pattern calibration
-#  translation: Kalibrace vzoru ironing
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -1330,10 +1333,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Vrstvy a perimetry
-# 8    changes: external perimeters
-#  translation: vnější perimetry
 # 8    changes: External perimeters
 #  translation: Vnější perimetry
+# 8    changes: external perimeters
+#  translation: vnější perimetry
 msgid "for round perimeters"
 msgstr ""
 
@@ -1821,10 +1824,10 @@ msgstr ""
 #Similar to me: Internal perimeters
 # 1    changes: Internal perimeter
 #  translation: Vnitřní perimetr
-# 2    changes: external perimeters
-#  translation: vnější perimetry
 # 2    changes: External perimeters
 #  translation: Vnější perimetry
+# 2    changes: external perimeters
+#  translation: vnější perimetry
 msgid "Internal perimeters"
 msgstr ""
 
@@ -2732,8 +2735,8 @@ msgstr ""
 #  translation: Také pro všechny perimetry
 # 8    changes: Overlapping all perimeters
 #  translation: Překrývající se všechny perimetery
-# 9    changes: external perimeters
-#  translation: vnější perimetry
+# 9    changes: External perimeters
+#  translation: Vnější perimetry
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -2766,10 +2769,10 @@ msgstr ""
 #Similar to me: Seam gap for external perimeters
 # 8    changes: Extra Wipe for external perimeters
 #  translation: Extra očistit pro vnější perimetri
-# 11   changes: at %1%%% over external perimeters
-#  translation: na %1%%% přes vnější perimetry
 # 11   changes: Overlapping external perimeter
 #  translation: Překrývající se vnější perimeter
+# 11   changes: at %1%%% over external perimeters
+#  translation: na %1%%% přes vnější perimetry
 msgid "Seam gap for external perimeters"
 msgstr ""
 

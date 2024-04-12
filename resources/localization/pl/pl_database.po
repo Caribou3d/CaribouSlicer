@@ -1,4 +1,337 @@
 
+msgid "Acceleration control (advanced)"
+msgstr "Ustawienia przyspieszeń (zaawansowane)"
+
+msgid "Activate"
+msgstr "Aktywacja"
+
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+msgid "After layer change G-code"
+msgstr "G-code wykonywany po zmianie warstwy"
+
+msgid "Aligned"
+msgstr "Wyrównany"
+
+msgid "Automatic generation"
+msgstr "Generowanie automatyczne"
+
+msgid "Autospeed (advanced)"
+msgstr "Automatyczne dostosowanie prędkości (zaawansowane)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Unikaj ruchów nad obrysami"
+
+msgid "Bed"
+msgstr "Stół"
+
+msgid "Before layer change G-code"
+msgstr "G-code wykonywany przed zmianą warstwy"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr ""
+"G-code wykonywany przy przejściach pomiędzy modelami (druk sekwencyjny)"
+
+msgid "Bottom"
+msgstr "Dolne"
+
+msgid "Bridge"
+msgstr "Most"
+
+msgid "Bridges"
+msgstr "Mosty"
+
+msgid "Bridges fan speed"
+msgstr "Prędkość wentylatora przy mostach"
+
+msgid "Brim"
+msgstr "Brim"
+
+msgid "Capabilities"
+msgstr "Możliwości"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "Łączenia słupków i skrzyżowań podpór"
+
+msgid "Cooling"
+msgstr "Chłodzenie"
+
+msgid "Corrections"
+msgstr "Korekcje"
+
+msgid "Custom G-code"
+msgstr "Własny G-code"
+
+msgid "Default"
+msgstr "Domyślnie"
+
+msgid "default"
+msgstr "domyślnie"
+
+msgid "Density"
+msgstr "Gęstość"
+
+msgid "Dependencies"
+msgstr "Zależności"
+
+msgid "Disable fan for the first"
+msgstr "Wyłącz wentylator przy pierwszych"
+
+msgid "Display"
+msgstr "Wyświetlacz"
+
+msgid "End G-code"
+msgstr "G-code końcowy"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Zagwarantuj odpowiednią grubość ścianki"
+
+msgid "Exposure"
+msgstr "Naświetlanie"
+
+msgid "Extruder"
+msgstr "Ekstruder"
+
+msgid "Extruders"
+msgstr "Ekstrudery"
+
+msgid "Extrusion width"
+msgstr "Szerokość ekstruzji"
+
+msgid "Filament"
+msgstr "Filament"
+
+msgid "Filament properties"
+msgstr "Właściwości filamentu"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "First layer"
+msgstr "Pierwsza warstwa"
+
+msgid "First layer speed"
+msgstr "Prędkość pierwszej warstwy"
+
+msgid "Flow"
+msgstr "Przepływ"
+
+msgid "Fuzzy skin (experimental)"
+msgstr "Fuzzy Skin (eksperymentalna)"
+
+msgid "Gap fill"
+msgstr "Wypełnienie szpar"
+
+msgid "General"
+msgstr "Ogólne"
+
+msgid "Hollowing"
+msgstr "Drążenie"
+
+msgid "Horizontal shells"
+msgstr "Powłoka pozioma"
+
+msgid "Infill"
+msgstr "Wypełnienie"
+
+msgid "infill"
+msgstr "wypełnienia"
+
+msgid "Layer height"
+msgstr "Wysokość warstwy"
+
+msgid "Layer height limits"
+msgstr "Limit wysokości warstw"
+
+msgid "Layers"
+msgstr "Warstwy"
+
+msgid "Layers and perimeters"
+msgstr "Warstwy i obrysy"
+
+msgid "Length"
+msgstr "Długość"
+
+msgid "Material"
+msgstr "Materiał"
+
+msgid "Material printing profile"
+msgstr "Profil materiału używanego do drukowania"
+
+msgid "Minimum shell thickness"
+msgstr "Minimalna grubość powłoki"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "Modifiers"
+msgstr "Modyfikatory"
+
+msgid "Notes"
+msgstr "Notatki"
+
+msgid "Number of pixels in"
+msgstr "Liczba pikseli"
+
+msgid "Only lift Z"
+msgstr "Z-hop tylko"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Retrakcja tylko przy przechodzeniu nad obrysami"
+
+msgid "Ooze prevention"
+msgstr "Zapobieganie wyciekom (ooze)"
+
+msgid "Options"
+msgstr "Opcje"
+
+msgid "Options for support material and raft"
+msgstr "Opcje materiału podporowego i tratwy (raft)"
+
+msgid "Other"
+msgstr "Inne"
+
+msgid "Output file"
+msgstr "Plik wyjściowy"
+
+msgid "Output options"
+msgstr "Opcje wyjściowe"
+
+msgid "Overlap"
+msgstr "Nakładanie"
+
+msgid "Pad"
+msgstr "Podkładka"
+
+msgid "Pattern"
+msgstr "Wzór"
+
+msgid "Pause Print G-code"
+msgstr "G-code dla pauzy drukowania"
+
+msgid "Plater"
+msgstr "Zawartość Stołu"
+
+msgid "Pressure equalizer (experimental)"
+msgstr "Korektor ciśnienia (eksperymentalny)"
+
+msgid "Preview"
+msgstr "Podgląd cięcia"
+
+msgid "Print Host upload"
+msgstr "Przesyłanie do serwera druku"
+
+msgid "Print speed override"
+msgstr "Nadpisanie prędkości druku"
+
+msgid "Printer scaling correction"
+msgstr "Korekcja skalowania drukarki"
+
+msgid "Profile dependencies"
+msgstr "Zależności profilowe"
+
+msgid "Quality"
+msgstr "Jakość"
+
+msgid "Raft"
+msgstr "Tratwa (raft)"
+
+msgid "Reducing printing time"
+msgstr "Obniżanie czasu wydruku"
+
+msgid "Retraction"
+msgstr "Retrakcja"
+
+msgid "Retraction Speed"
+msgstr "Prędkość retrakcji"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Retrakcja gdy dany ekstruder nie jest w użyciu (funkcja zaawansowana dla "
+"drukarek z kilkoma ekstruderami)"
+
+msgid "Seam position"
+msgstr "Pozycja szwu"
+
+msgid "Sequential printing"
+msgstr "Drukowanie sekwencyjne (model po modelu)"
+
+msgid "Size"
+msgstr "OfFile||Rozmiar"
+
+msgid "Size and coordinates"
+msgstr "Rozmiar i koordynaty"
+
+msgid "Skirt"
+msgstr "Skirt"
+
+msgid "Slicing"
+msgstr "Cięcie"
+
+msgid "Solid"
+msgstr "Pełne"
+
+msgid "solid infill"
+msgstr "zwarte wypełnienie"
+
+msgid "Solid layers"
+msgstr "Zwarte warstwy"
+
+msgid "Spacing"
+msgstr "Odstęp"
+
+msgid "Speed"
+msgstr "Prędkość"
+
+msgid "Speed for non-print moves"
+msgstr "Prędkość ruchów jałowych"
+
+msgid "Speed for print moves"
+msgstr "Prędkość ruchów drukujących"
+
+msgid "Start G-code"
+msgstr "G-code startowy"
+
+msgid "Support head"
+msgstr "Łącznik podpory"
+
+msgid "Support material"
+msgstr "Materiał podporowy"
+
+msgid "Support pillar"
+msgstr "Słupek podpory"
+
+msgid "Supports"
+msgstr "Podpory"
+
+msgid "Template Custom G-code"
+msgstr "Szablon niestandardowego G-code"
+
+msgid "Tilt"
+msgstr "Przechylanie"
+
+msgid "Tilt time"
+msgstr "Czas przechylania"
+
+msgid "Tool change G-code"
+msgstr "G-code wykonywany przy zmianie narzędzia"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "Parametry zmiany narzędzia dla drukarek MM z jednym ekstruderem"
+
+msgid "Top"
+msgstr "Góra"
+
+msgid "Vertical shells"
+msgstr "Powłoka pionowa"
+
+msgid "Wipe tower"
+msgstr "Wieża czyszcząca"
+
+msgid "Wipe tower parameters"
+msgstr "Parametry wieży czyszczącej"
+
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
 msgstr[0] "‪%1$d‬ odwrócona krawędź"
@@ -468,9 +801,6 @@ msgstr "ponad"
 msgid "Above Z"
 msgstr "Powyżej Z"
 
-msgid "Acceleration control (advanced)"
-msgstr "Ustawienia przyspieszeń (zaawansowane)"
-
 msgid "Access violation"
 msgstr "Naruszenie dostępu"
 
@@ -482,9 +812,6 @@ msgstr "Dokładna"
 
 msgid "Action"
 msgstr "Akcja"
-
-msgid "Activate"
-msgstr "Aktywacja"
 
 msgid "Active"
 msgstr "Aktywny"
@@ -658,9 +985,6 @@ msgstr ""
 msgid "Address"
 msgstr "Adres"
 
-msgid "Advanced"
-msgstr "Zaawansowane"
-
 msgid "Advanced mode"
 msgstr "Tryb Zaawansowany"
 
@@ -681,17 +1005,11 @@ msgstr ""
 "filamentu na wieży czyszczącej, aby wydrukować dobre wypełnienie lub zbędny "
 "model."
 
-msgid "After layer change G-code"
-msgstr "G-code wykonywany po zmianie warstwy"
-
 msgid "Align the model to the given point."
 msgstr "Wyrównaj model z danym punktem."
 
 msgid "Align XY"
 msgstr "Wyrównaj XY"
-
-msgid "Aligned"
-msgstr "Wyrównany"
 
 msgid "All"
 msgstr "Wszystkie"
@@ -955,20 +1273,11 @@ msgstr "Automatycznie generuj punkty podpór"
 msgid "Autogeneration will erase all manually edited points."
 msgstr "Generowanie automatyczne usunie wszystkie ręcznie ustawione punkty."
 
-msgid "Automatic generation"
-msgstr "Generowanie automatyczne"
-
 msgid "Automatic updates"
 msgstr "Automatyczne aktualizacje"
 
 msgid "Automatically repair an STL file"
 msgstr "Automatyczna naprawa pliku STL"
-
-msgid "Autospeed (advanced)"
-msgstr "Automatyczne dostosowanie prędkości (zaawansowane)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Unikaj ruchów nad obrysami"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Unikaj ruchów nad obrysami - maksymalna długość objazdu"
@@ -1007,9 +1316,6 @@ msgstr "Wycofaj przy nieznanej konfiguracji"
 msgid "Balanced"
 msgstr "Zbalansowana"
 
-msgid "Bed"
-msgstr "Stół"
-
 msgid "Bed custom model"
 msgstr "Własny model stołu"
 
@@ -1031,9 +1337,6 @@ msgstr "Temperatura stołu"
 msgid "Bed Temperature:"
 msgstr "Temperatura stołu:"
 
-msgid "Before layer change G-code"
-msgstr "G-code wykonywany przed zmianą warstwy"
-
 msgid "Before roll back"
 msgstr "Przez zmianą"
 
@@ -1045,10 +1348,6 @@ msgstr "Najlepsza jakość powierzchni"
 
 msgid "Between objects G-code"
 msgstr "G-code wykonywany przy przejściach pomiędzy modelami"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr ""
-"G-code wykonywany przy przejściach pomiędzy modelami (druk sekwencyjny)"
 
 msgid "Block seam"
 msgstr "Blokuj szew"
@@ -1064,9 +1363,6 @@ msgstr "Pojemność butelki"
 
 msgid "Bottle weight"
 msgstr "Waga butelki"
-
-msgid "Bottom"
-msgstr "Dolne"
 
 msgid "Bottom fill pattern"
 msgstr "Wzór wypełnienia dolnej warstwy"
@@ -1086,20 +1382,11 @@ msgstr "Zwarte warstwy dolne"
 msgid "Bottom View"
 msgstr "Widok od dołu"
 
-msgid "Bridge"
-msgstr "Most"
-
 msgid "Bridge flow ratio"
 msgstr "Współczynnik przepływu przy mostach"
 
 msgid "Bridge infill"
 msgstr "Wypełnienie mostu"
-
-msgid "Bridges"
-msgstr "Mosty"
-
-msgid "Bridges fan speed"
-msgstr "Prędkość wentylatora przy mostach"
 
 msgid "Bridging angle"
 msgstr "Kąt linii mostów"
@@ -1115,9 +1402,6 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Mosty objętościowo"
-
-msgid "Brim"
-msgstr "Brim"
 
 msgid "Brim separation gap"
 msgstr "Szczelina oddzielająca brim"
@@ -1225,9 +1509,6 @@ msgid ""
 msgstr ""
 "Nie można kontynuować bez punktów podpór! Dodaj punkty podpór lub wyłącz ich "
 "generowanie."
-
-msgid "Capabilities"
-msgstr "Możliwości"
 
 msgid "Capture a configuration snapshot"
 msgstr "Zapisz zrzut konfiguracji"
@@ -1523,9 +1804,6 @@ msgstr "Asystent Konfiguracji"
 msgid "Confirmation"
 msgstr "Potwierdzenie"
 
-msgid "Connection of the support sticks and junctions"
-msgstr "Łączenia słupków i skrzyżowań podpór"
-
 msgid "Connection to PrusaLink works correctly."
 msgstr "Połączenie z PrusaLink działa prawidłowo."
 
@@ -1559,9 +1837,6 @@ msgstr "Konwertuj z jednostek imperialnych"
 
 msgid "Convert from meters"
 msgstr "Konwertuj z metrów"
-
-msgid "Cooling"
-msgstr "Chłodzenie"
 
 msgid "Cooling tube length"
 msgstr "Długość rurki chłodzącej"
@@ -1642,9 +1917,6 @@ msgstr "Korekcja rozszerzania w osi Y"
 
 msgid "Correction for expansion in Z axis"
 msgstr "Korekcja rozszerzania w osi Z"
-
-msgid "Corrections"
-msgstr "Korekcje"
 
 msgid "Cost"
 msgstr "Koszt"
@@ -1735,9 +2007,6 @@ msgstr ""
 "w formacie crt/pem. Jeśli pole zostanie puste, to zostanie użyty plik z "
 "systemowego repozytorium CA."
 
-msgid "Custom G-code"
-msgstr "Własny G-code"
-
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "Własny G-code na obecnej warstwie (%1% mm)."
 
@@ -1792,12 +2061,6 @@ msgstr "niepowodzenie rozpakowywania lub uszkodzone archiwum"
 
 msgid "Decrease Instances"
 msgstr "Zmniejsz ilość instancji"
-
-msgid "default"
-msgstr "domyślnie"
-
-msgid "Default"
-msgstr "Domyślnie"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1954,17 +2217,11 @@ msgstr "Usuwa wszystkie modele"
 msgid "Deletes the current selection"
 msgstr "Usuwa zaznaczenie"
 
-msgid "Density"
-msgstr "Gęstość"
-
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr "Gęstość wypełnienia wewnętrznego, wyrażana w zakresie 0% - 100%."
 
 msgid "Density of the first raft or support layer."
 msgstr "Gęstość pierwszej warstwy raftu lub podpór."
-
-msgid "Dependencies"
-msgstr "Zależności"
 
 msgid "Deretraction Speed"
 msgstr "Prędkość powrotu retrakcji"
@@ -2042,9 +2299,6 @@ msgstr "Kierunek"
 msgid "Disable \"%1%\""
 msgstr "Wyłącz \"%1%\""
 
-msgid "Disable fan for the first"
-msgstr "Wyłącz wentylator przy pierwszych"
-
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -2056,9 +2310,6 @@ msgstr "Odrzuć wszystkie własne zmiany"
 
 msgid "Discard changes"
 msgstr "Odrzuć zmiany"
-
-msgid "Display"
-msgstr "Wyświetlacz"
 
 msgid "Display height"
 msgstr "Wysokość wyświetlacza"
@@ -2346,9 +2597,6 @@ msgstr "Włącz odbicie pionowe dla obrazów wyjściowych"
 msgid "Enabled"
 msgstr "Włączone"
 
-msgid "End G-code"
-msgstr "G-code końcowy"
-
 msgid "Enforce"
 msgstr "Wymuś"
 
@@ -2369,9 +2617,6 @@ msgstr "Zakolejkowano"
 
 msgid "Ensure on bed"
 msgstr "Zawsze upuszczaj na stół"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Zagwarantuj odpowiednią grubość ścianki"
 
 msgid "Enter a search term"
 msgstr "Wpisz wyszukiwaną frazę"
@@ -2673,9 +2918,6 @@ msgstr "Eksportowanie"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "Czas naświetlania jest poza zakresem profilu drukarki."
 
-msgid "Exposure"
-msgstr "Naświetlanie"
-
 msgid "Exposure time"
 msgstr "Czas naświetlania"
 
@@ -2697,9 +2939,6 @@ msgstr "Dodatkowa ilość dla powrotu"
 msgid "Extra loading distance"
 msgstr "Dodatkowa długość ładowania"
 
-msgid "Extruder"
-msgstr "Ekstruder"
-
 msgid "Extruder %d"
 msgstr "Ekstruder %d"
 
@@ -2715,9 +2954,6 @@ msgstr "Kolor ekstrudera"
 msgid "Extruder offset"
 msgstr "Margines ekstrudera"
 
-msgid "Extruders"
-msgstr "Ekstrudery"
-
 msgid "Extruders count"
 msgstr "Liczba ekstruderów"
 
@@ -2732,9 +2968,6 @@ msgstr "Współczynnik ekstruzji"
 
 msgid "Extrusion Temperature:"
 msgstr "Temperatura ekstrudera:"
-
-msgid "Extrusion width"
-msgstr "Szerokość ekstruzji"
 
 msgid "Facets"
 msgstr "Powierzchnie"
@@ -2803,9 +3036,6 @@ msgstr "Rodzaje funkcji"
 msgid "filament"
 msgstr "filament"
 
-msgid "Filament"
-msgstr "Filament"
-
 msgid "Filament and Nozzle Diameters"
 msgstr "Średnice filamentu i dyszy"
 
@@ -2839,9 +3069,6 @@ msgstr "Pozycja zatrzymania filamentu"
 
 msgid "Filament Profiles Selection"
 msgstr "Wybór profili filamentu"
-
-msgid "Filament properties"
-msgstr "Właściwości filamentu"
 
 msgid "Filament Settings"
 msgstr "Ustawienia Filamentu"
@@ -2924,9 +3151,6 @@ msgstr "Znajdź podany wzorzec w linijkach pliku G-code i zamień je."
 msgid "Finished"
 msgstr "Zakończono"
 
-msgid "Firmware"
-msgstr "Firmware"
-
 msgid "Firmware flasher"
 msgstr "Flasher firmware"
 
@@ -2941,9 +3165,6 @@ msgstr "Typ firmware"
 
 msgid "first"
 msgstr "pierwszy"
-
-msgid "First layer"
-msgstr "Pierwsza warstwa"
 
 msgid "First layer bed temperature"
 msgstr "Temperatura stołu dla pierwszej warstwy"
@@ -2968,9 +3189,6 @@ msgstr ""
 
 msgid "First layer nozzle temperature"
 msgstr "Temperatura dyszy dla pierwszej warstwy"
-
-msgid "First layer speed"
-msgstr "Prędkość pierwszej warstwy"
 
 msgid "First layer volumetric"
 msgstr "Na pierwszej warstwie"
@@ -3007,9 +3225,6 @@ msgstr "Flashowanie pomyślne!"
 
 msgid "Floating reserved operand"
 msgstr "Operand zarezerwowany zmiennoprzecinkowy"
-
-msgid "Flow"
-msgstr "Przepływ"
 
 msgid "Flow rate"
 msgstr "Przepływ"
@@ -3148,9 +3363,6 @@ msgstr "Pełny ekran"
 msgid "Fuzzy Skin"
 msgstr "Fuzzy Skin"
 
-msgid "Fuzzy skin (experimental)"
-msgstr "Fuzzy Skin (eksperymentalna)"
-
 msgid "Fuzzy skin point distance"
 msgstr "Dystans między punktami Fuzzy Skin"
 
@@ -3194,12 +3406,6 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
-
-msgid "Gap fill"
-msgstr "Wypełnienie szpar"
-
-msgid "General"
-msgstr "Ogólne"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -3438,9 +3644,6 @@ msgstr "Wydrąż model, aby uzyskać puste wnętrze"
 msgid "Hollow this object"
 msgstr "Wydrąż ten model"
 
-msgid "Hollowing"
-msgstr "Drążenie"
-
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -3462,9 +3665,6 @@ msgstr "Zmiana parametrów drążenia"
 
 msgid "Honeycomb"
 msgstr "Plaster miodu"
-
-msgid "Horizontal shells"
-msgstr "Powłoka pozioma"
 
 msgid "Horizontal Slider"
 msgstr "Suwak poziomy"
@@ -3942,12 +4142,6 @@ msgstr ""
 "Kliknij ikonę STRZAŁKI W TYŁ, aby zresetować wszystkie ustawienia w obecnej "
 "grupie opcji do tych z ostatnio zapisanego zestawu ustawień."
 
-msgid "Infill"
-msgstr "Wypełnienie"
-
-msgid "infill"
-msgstr "wypełnienia"
-
 msgid "Infill before perimeters"
 msgstr "Wypełnienie przed obrysami"
 
@@ -4169,9 +4363,6 @@ msgstr "Ostatnia instancja modelu nie może zostać usunięta."
 msgid "Layer"
 msgstr "Warstwa"
 
-msgid "Layer height"
-msgstr "Wysokość warstwy"
-
 msgid ""
 "Layer height is not valid.\n"
 "\n"
@@ -4181,20 +4372,11 @@ msgstr ""
 "\n"
 "Wysokość warstwy zostanie zresetowana do 0,01."
 
-msgid "Layer height limits"
-msgstr "Limit wysokości warstw"
-
 msgid "Layer range Settings to modify"
 msgstr "Zakres warstw dla modyfikacji ustawień"
 
 msgid "layers"
 msgstr "warstwy"
-
-msgid "Layers"
-msgstr "Warstwy"
-
-msgid "Layers and perimeters"
-msgstr "Warstwy i obrysy"
 
 msgid "Leave \"%1%\" enabled"
 msgstr "Zostaw opcję \"%1%\" włączoną"
@@ -4219,9 +4401,6 @@ msgstr "Widok lewy"
 
 msgid "Legend/Estimated printing time"
 msgstr "Legenda/szacowany czas drukowania"
-
-msgid "Length"
-msgstr "Długość"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr "Długość rurki chłodzącej ograniczająca ruchy chłodzące do jej zakresu."
@@ -4412,12 +4591,6 @@ msgstr "Dopasowanie pojedynczego wiersza"
 
 msgid "Mate&rial Settings Tab"
 msgstr "Ustawienia mate&riału"
-
-msgid "Material"
-msgstr "Materiał"
-
-msgid "Material printing profile"
-msgstr "Profil materiału używanego do drukowania"
 
 msgid "Material Settings"
 msgstr "Ustawienia materiału"
@@ -4670,9 +4843,6 @@ msgstr "Minimalna prędkość posuwu"
 msgid "Minimum initial exposure time"
 msgstr "Minimalny początkowy czas naświetlania"
 
-msgid "Minimum shell thickness"
-msgstr "Minimalna grubość powłoki"
-
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Minimalna grubość górnej/dolnej powłoki"
 
@@ -4711,9 +4881,6 @@ msgstr "Mieszane"
 
 msgid "ml"
 msgstr "ml"
-
-msgid "mm"
-msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (zero, aby wyłączyć)"
@@ -4768,9 +4935,6 @@ msgstr "zmodyfikowano"
 
 msgid "Modifier"
 msgstr "Modyfikator"
-
-msgid "Modifiers"
-msgstr "Modyfikatory"
 
 msgid "money/bottle"
 msgstr "pieniędzy/butelkę"
@@ -5053,9 +5217,6 @@ msgstr "Uwaga: niektóre skróty działają tylko poza trybem edycji."
 msgid "Note: This preset will be replaced after saving"
 msgstr "Uwaga: ten zestaw ustawień zostanie zastąpiony po zapisaniu"
 
-msgid "Notes"
-msgstr "Notatki"
-
 msgid "Notice"
 msgstr "Uwaga"
 
@@ -5094,9 +5255,6 @@ msgid ""
 msgstr ""
 "Liczba warstw łączących do wstawienia pomiędzy modelem(ami) a materiałem "
 "podporowym. Ustaw -1, aby użyć support_material_interface_layers"
-
-msgid "Number of pixels in"
-msgstr "Liczba pikseli"
 
 msgid "Number of pixels in X"
 msgstr "Liczba pikseli w osi X"
@@ -5259,17 +5417,11 @@ msgstr "Tworzenie podpór tylko na stole. Nie będą tworzone na wydruku."
 msgid "Only infill where needed"
 msgstr "Tylko potrzebne wypełnienie"
 
-msgid "Only lift Z"
-msgstr "Z-hop tylko"
-
 msgid "Only lift Z above"
 msgstr "Z-hop tylko powyżej"
 
 msgid "Only lift Z below"
 msgstr "Z-hop tylko poniżej"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Retrakcja tylko przy przechodzeniu nad obrysami"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -5284,9 +5436,6 @@ msgid ""
 msgstr ""
 "Tylko następujące zainstalowane drukarki są kompatybilne z wybranymi "
 "materiałami SLA"
-
-msgid "Ooze prevention"
-msgstr "Zapobieganie wyciekom (ooze)"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -5379,12 +5528,6 @@ msgstr ""
 "na wyciekanie filamentu z dyszy. Włączenie tej funkcji wydłuża zarówno czas "
 "druku, jak i czas generowania G-code."
 
-msgid "Options"
-msgstr "Opcje"
-
-msgid "Options for support material and raft"
-msgstr "Opcje materiału podporowego i tratwy (raft)"
-
 msgid "Options:"
 msgstr "Opcje:"
 
@@ -5403,9 +5546,6 @@ msgstr "Anulowano ustawianie orientacji."
 msgid "Origin"
 msgstr "Punkt zerowy"
 
-msgid "Other"
-msgstr "Inne"
-
 msgid "Other layers"
 msgstr "Inne warstwy"
 
@@ -5421,17 +5561,11 @@ msgstr "Tylko zewnętrzny brim"
 msgid "Output File"
 msgstr "Plik Wyjściowy"
 
-msgid "Output file"
-msgstr "Plik wyjściowy"
-
 msgid "Output filename format"
 msgstr "Format pliku wyjściowego"
 
 msgid "Output Model Info"
 msgstr "Informacje o Modelu wyjściowym"
-
-msgid "Output options"
-msgstr "Opcje wyjściowe"
 
 msgid "Outside walls"
 msgstr "Ściany zewnętrzne"
@@ -5445,14 +5579,8 @@ msgstr "Obrys zwisu"
 msgid "Overhang threshold"
 msgstr "Próg zwisu"
 
-msgid "Overlap"
-msgstr "Nakładanie"
-
 msgid "P&rint Settings Tab"
 msgstr "Ustawienia d&ruku"
-
-msgid "Pad"
-msgstr "Podkładka"
 
 msgid "Pad around object"
 msgstr "Podkładka wokół modelu"
@@ -5553,9 +5681,6 @@ msgstr "Wklej ze schowka"
 msgid "Paste From Clipboard"
 msgstr "Wklej Ze Schowka"
 
-msgid "Pattern"
-msgstr "Wzór"
-
 msgid "Pattern angle"
 msgstr "Kąt wzoru"
 
@@ -5570,9 +5695,6 @@ msgstr "Pauza"
 
 msgid "Pause print (\"%1%\")"
 msgstr "Wstrzymaj wydruk (\"%1%\")"
-
-msgid "Pause Print G-code"
-msgstr "G-code dla pauzy drukowania"
 
 msgid "Percentage"
 msgstr "Procentowo"
@@ -5645,9 +5767,6 @@ msgstr "Umieść łożyska w gniazdach i wznów drukowanie"
 
 msgid "Place on face"
 msgstr "Połóż na płaszczyźnie"
-
-msgid "Plater"
-msgstr "Zawartość Stołu"
 
 msgid "Please check your object list before preset changing."
 msgstr "Sprawdź listę modeli przed zmianą zestawu ustawień."
@@ -5764,9 +5883,6 @@ msgstr ""
 "Naciśnij, aby przyspieszyć suwak 5-krotnie\n"
 "podczas ruchu strzałkami lub kółkiem myszy"
 
-msgid "Preview"
-msgstr "Podgląd cięcia"
-
 msgid "Preview hollowed and drilled model"
 msgstr "Podgląd drążenia/wiercenia"
 
@@ -5795,9 +5911,6 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "Średnice"
 
-msgid "Print Host upload"
-msgstr "Przesyłanie do serwera druku"
-
 msgid "Print host upload queue"
 msgstr "Kolejka serwera druku"
 
@@ -5818,9 +5931,6 @@ msgstr "Ustawienia druku"
 
 msgid "Print speed"
 msgstr "Prędkość druku"
-
-msgid "Print speed override"
-msgstr "Nadpisanie prędkości druku"
 
 msgid "Print&er Settings Tab"
 msgstr "Ustawi&enia drukarki"
@@ -5845,9 +5955,6 @@ msgstr "Notatki o drukarce"
 
 msgid "Printer preset names"
 msgstr "Nazwy zestawów ustawień drukarek"
-
-msgid "Printer scaling correction"
-msgstr "Korekcja skalowania drukarki"
 
 msgid "Printer scaling correction in X axis"
 msgstr "Korekcja skalowania przez drukarkę w osi X"
@@ -5905,9 +6012,6 @@ msgstr ""
 msgid "Processing %s"
 msgstr "Przetwarzanie %s"
 
-msgid "Profile dependencies"
-msgstr "Zależności profilowe"
-
 msgid "Profile:"
 msgstr "Profil:"
 
@@ -5947,9 +6051,6 @@ msgstr "Objętości czyszczenia - formuła"
 msgid "Purpose of Machine Limits"
 msgstr "Cel limitów maszynowych"
 
-msgid "Quality"
-msgstr "Jakość"
-
 msgid "Quality / Speed"
 msgstr "Jakość / Prędkość"
 
@@ -5970,9 +6071,6 @@ msgstr "Zamknij, przeniosę teraz swoje dane"
 
 msgid "Radius"
 msgstr "Promień"
-
-msgid "Raft"
-msgstr "Tratwa (raft)"
 
 msgid "Raft contact Z distance"
 msgstr "Odstęp raftu w osi Z"
@@ -6084,9 +6182,6 @@ msgstr "Historia Powtórzeń"
 
 msgid "Reduced overhang slopes"
 msgstr "Redukuj zwisy"
-
-msgid "Reducing printing time"
-msgstr "Obniżanie czasu wydruku"
 
 msgid "Refresh Printers"
 msgstr "Odśwież drukarki"
@@ -6318,9 +6413,6 @@ msgstr "Długość retrakcji przed ruchem czyszczącym"
 msgid "Retract on layer change"
 msgstr "Retrakcja przy zmianie warstwy"
 
-msgid "Retraction"
-msgstr "Retrakcja"
-
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr ""
@@ -6331,14 +6423,6 @@ msgstr "Długość retrakcji"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Długość Retrakcji (zmiana narzędzia)"
-
-msgid "Retraction Speed"
-msgstr "Prędkość retrakcji"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Retrakcja gdy dany ekstruder nie jest w użyciu (funkcja zaawansowana dla "
-"drukarek z kilkoma ekstruderami)"
 
 msgid "Retractions"
 msgstr "Retrakcje"
@@ -6539,9 +6623,6 @@ msgstr ""
 msgid "Seam painting"
 msgstr "Malowanie szwu"
 
-msgid "Seam position"
-msgstr "Pozycja szwu"
-
 msgid "Seam preferred direction"
 msgstr "Preferowany kierunek szwu"
 
@@ -6700,9 +6781,6 @@ msgstr "Wyślij do drukarki"
 
 msgid "Seq."
 msgstr "Sekw."
-
-msgid "Sequential printing"
-msgstr "Drukowanie sekwencyjne (model po modelu)"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "Suwak sekwencyjny stosowany tylko do górnej warstwy"
@@ -7018,17 +7096,8 @@ msgstr "Tryb jednej instancji"
 msgid "Sinking"
 msgstr "Zaniżenie"
 
-msgid "Size"
-msgstr "OfFile||Rozmiar"
-
-msgid "Size and coordinates"
-msgstr "Rozmiar i koordynaty"
-
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Rozmiar X i Y stołu prostokątnego."
-
-msgid "Skirt"
-msgstr "Skirt"
 
 msgid "Skirt and brim"
 msgstr "Skirt i brim"
@@ -7139,9 +7208,6 @@ msgstr "Informacje o cięciu"
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "Pocięty model \"%1%\" wygląda jak logo lub znak"
 
-msgid "Slicing"
-msgstr "Cięcie"
-
 msgid "Slicing complete"
 msgstr "Cięcie zakończone"
 
@@ -7199,17 +7265,11 @@ msgstr "Nazwa zrzutu"
 msgid "Snug"
 msgstr "Przylegające"
 
-msgid "Solid"
-msgstr "Pełne"
-
 msgid "Solid "
 msgstr "Pełne "
 
 msgid "Solid infill"
 msgstr "Zwarte wypełnienie"
-
-msgid "solid infill"
-msgstr "zwarte wypełnienie"
 
 msgid "Solid infill every"
 msgstr "Zwarte wypełnienie co"
@@ -7219,9 +7279,6 @@ msgstr "Ekstruder do zwartego wypełnienia"
 
 msgid "Solid infill threshold area"
 msgstr "Min. powierzchnia zwartego wypełnienia"
-
-msgid "Solid layers"
-msgstr "Zwarte warstwy"
 
 msgid "Soluble material"
 msgstr "Materiał rozpuszczalny"
@@ -7287,18 +7344,12 @@ msgstr "Niektóre drukarki zostały odinstalowane."
 msgid "Some SLA materials were uninstalled."
 msgstr "Niektóre materiały SLA zostały odinstalowane."
 
-msgid "Spacing"
-msgstr "Odstęp"
-
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Rozstaw linii warstwy łączącej. Ustaw zero dla zwartej warstwy łączącej."
 
 msgid "Spacing between support material lines."
 msgstr "Rozstaw linii materiału podporowego."
-
-msgid "Speed"
-msgstr "Prędkość"
 
 msgid "Speed (mm/s)"
 msgstr "Prędkość (mm/s)"
@@ -7311,12 +7362,6 @@ msgstr ""
 "Prędkość dla ruchów wzdłuż osi Z.\n"
 "Przy ustawieniu na zero wartość ta jest ignorowana i zamiast niej stosowana "
 "jest zwykła prędkość jałowa."
-
-msgid "Speed for non-print moves"
-msgstr "Prędkość ruchów jałowych"
-
-msgid "Speed for print moves"
-msgstr "Prędkość ruchów drukujących"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "Prędkość ruchów jałowych (przeskoków pomiędzy punktami ekstruzji)."
@@ -7392,9 +7437,6 @@ msgstr "Rozpocznij nowy projekt"
 
 msgid "Start at height"
 msgstr "Zakres od"
-
-msgid "Start G-code"
-msgstr "G-code startowy"
 
 msgid "Start new slicing process"
 msgstr "Uruchom nowy proces cięcia"
@@ -7502,14 +7544,8 @@ msgstr "Wymuszenie podpór"
 msgid "Support Generator"
 msgstr "Generator podpór"
 
-msgid "Support head"
-msgstr "Łącznik podpory"
-
 msgid "support interface"
 msgstr "warstwa łącząca podpory z modelem"
-
-msgid "Support material"
-msgstr "Materiał podporowy"
 
 msgid "Support material interface"
 msgstr "Warstwa łącząca podpory z modelem"
@@ -7523,17 +7559,11 @@ msgstr "Podpory tylko na stole"
 msgid "Support parameter change"
 msgstr "Zmiana parametrów podpór"
 
-msgid "Support pillar"
-msgstr "Słupek podpory"
-
 msgid "Support points density"
 msgstr "Gęstość punktów podpór"
 
 msgid "Support points edit"
 msgstr "Edycja punktów podpór"
-
-msgid "Supports"
-msgstr "Podpory"
 
 msgid "supports and pad"
 msgstr "podpory i podkładka"
@@ -7650,9 +7680,6 @@ msgstr "Zmiana temperatury"
 
 msgid "Temperatures"
 msgstr "Temperatury"
-
-msgid "Template Custom G-code"
-msgstr "Szablon niestandardowego G-code"
 
 msgid "Test"
 msgstr "Test"
@@ -8526,12 +8553,6 @@ msgstr ""
 "wielu zasobów. Optymalna liczba wątków powinna być odrobinę większa od "
 "dostępnej liczby rdzeni lub procesorów."
 
-msgid "Tilt"
-msgstr "Przechylanie"
-
-msgid "Tilt time"
-msgstr "Czas przechylania"
-
 msgid "Time"
 msgstr "Czas"
 
@@ -8600,9 +8621,6 @@ msgstr "Narzędzie"
 msgid "Tool #"
 msgstr "Narzędzie #"
 
-msgid "Tool change G-code"
-msgstr "G-code wykonywany przy zmianie narzędzia"
-
 msgid "Tool changes"
 msgstr "Zmiany narzędzi"
 
@@ -8614,12 +8632,6 @@ msgstr "Pozycja narzędzia"
 
 msgid "Tool type"
 msgstr "Rodzaj narzędzia"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "Parametry zmiany narzędzia dla drukarek MM z jednym ekstruderem"
-
-msgid "Top"
-msgstr "Góra"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -9033,9 +9045,6 @@ msgstr "Wersja"
 msgid "version"
 msgstr "wersja"
 
-msgid "Vertical shells"
-msgstr "Powłoka pionowa"
-
 msgid "Vertical Slider"
 msgstr "Suwak pionowy"
 
@@ -9238,9 +9247,6 @@ msgstr "Czyszczenie na wypełnieniu modelu"
 msgid "Wipe Tower"
 msgstr "Wieża czyszcząca"
 
-msgid "Wipe tower"
-msgstr "Wieża czyszcząca"
-
 msgid "wipe tower"
 msgstr "wieża czyszcząca"
 
@@ -9249,9 +9255,6 @@ msgstr "Wieża czyszcząca - dostosowanie objętości czyszczenia"
 
 msgid "Wipe tower brim width"
 msgstr "Szerokość brimu wieży czyszczącej"
-
-msgid "Wipe tower parameters"
-msgstr "Parametry wieży czyszczącej"
 
 msgid "Wipe tower rotation angle"
 msgstr "Kąt obrotu wieży czyszczącej"
@@ -17551,9 +17554,6 @@ msgstr "Margines filtra zmiany obrysu"
 
 msgid "Perimeter transitioning threshold angle"
 msgstr "Kąt graniczny zmiany obrysu"
-
-msgid "Pressure equalizer (experimental)"
-msgstr "Korektor ciśnienia (eksperymentalny)"
 
 msgid ""
 "Prevent transitioning back and forth between one extra perimeter and one "

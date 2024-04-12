@@ -804,12 +804,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: Lagen en perimeters
 # 9    changes: external perimeters
 #  translation: buitenperimeters
 # 9    changes: External perimeters
 #  translation: Buitenste perimeters
-# 9    changes: Layers and perimeters
-#  translation: Lagen en perimeters
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -922,10 +922,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Supportblokkering
-# 6    changes: Support Enforcer
-#  translation: Supportforcering
 # 6    changes: Support head
 #  translation: Supportkop
+# 6    changes: Support pillar
+#  translation: Supportpijler
 msgid "Support & Other"
 msgstr ""
 
@@ -969,10 +969,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Supportkop
-# 5    changes: Support Cubic
-#  translation: Ondersteunend kubisch
 # 5    changes: Supports
 #  translation: Support
+# 5    changes: Support Cubic
+#  translation: Ondersteunend kubisch
 msgid "Support speed"
 msgstr ""
 
@@ -1016,8 +1016,8 @@ msgstr ""
 #  translation: Gatenvulling
 # 4    changes: infill
 #  translation: vulling
-# 4    changes: Solid infill
-#  translation: Dichte vulling
+# 4    changes: solid infill
+#  translation: dichte vulling
 msgid "top infill"
 msgstr ""
 

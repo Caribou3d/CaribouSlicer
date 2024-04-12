@@ -800,12 +800,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: レイヤーと外周
 # 9    changes: external perimeters
 #  translation: 最外周
 # 9    changes: External perimeters
 #  translation: 最外周
-# 9    changes: Layers and perimeters
-#  translation: レイヤーと外周
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -918,10 +918,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: サポート禁止
-# 6    changes: Support Enforcer
-#  translation: サポート強制
 # 6    changes: Support head
 #  translation: サポート先端
+# 6    changes: Support pillar
+#  translation: サポートピラー
 msgid "Support & Other"
 msgstr ""
 
@@ -965,10 +965,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: サポート先端
-# 5    changes: Support Cubic
-#  translation: サポートキュービック
 # 5    changes: Supports
 #  translation: サポート
+# 5    changes: Support Cubic
+#  translation: サポートキュービック
 msgid "Support speed"
 msgstr ""
 
@@ -1012,7 +1012,7 @@ msgstr ""
 #  translation: ギャップフィル
 # 4    changes: infill
 #  translation: インフィル
-# 4    changes: Solid infill
+# 4    changes: solid infill
 #  translation: ソリッドインフィル
 msgid "top infill"
 msgstr ""

@@ -293,6 +293,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l342
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Largeur max
 msgid "Cap with"
 msgstr ""
 
@@ -790,8 +793,8 @@ msgstr ""
 #  translation: Calibration de la première couche
 # 7    changes: First layer acceleration
 #  translation: Accélération pour la première couche
-# 11   changes: First layer flow ratio
-#  translation: Ratio du débit de la première couche
+# 7    changes: First layer calibration.
+#  translation: Calibration de la première couche.
 msgid "First layer patch calibration"
 msgstr ""
 
@@ -800,10 +803,10 @@ msgstr ""
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Calibration de la première couche
+# 10   changes: First layer calibration.
+#  translation: Calibration de la première couche.
 # 11   changes: First layer acceleration
 #  translation: Accélération pour la première couche
-# 11   changes: Ironing pattern calibration
-#  translation: Calibration du débit de lissage
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -833,10 +836,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Couches et périmètres
-# 8    changes: external perimeters
-#  translation: périmètres externes
 # 8    changes: External perimeters
 #  translation: Périmètres externes
+# 8    changes: external perimeters
+#  translation: périmètres externes
 msgid "for round perimeters"
 msgstr ""
 
@@ -1222,10 +1225,10 @@ msgstr ""
 #Similar to me: Internal perimeters
 # 1    changes: Internal perimeter
 #  translation: Périmètre interne
-# 2    changes: external perimeters
-#  translation: périmètres externes
 # 2    changes: External perimeters
 #  translation: Périmètres externes
+# 2    changes: external perimeters
+#  translation: périmètres externes
 msgid "Internal perimeters"
 msgstr ""
 
@@ -1832,8 +1835,8 @@ msgstr ""
 #  translation: Également pour tous les périmètres
 # 8    changes: Overlapping all perimeters
 #  translation: Chevauchement de tous les périmètres
-# 9    changes: external perimeters
-#  translation: périmètres externes
+# 9    changes: External perimeters
+#  translation: Périmètres externes
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -1861,10 +1864,10 @@ msgstr ""
 #Similar to me: Seam gap for external perimeters
 # 8    changes: Extra Wipe for external perimeters
 #  translation: Essuyage Extra pour les périmètres extérieurs
-# 11   changes: at %1%%% over external perimeters
-#  translation: à %1%%% sur les périmètres extérieurs
 # 11   changes: Overlapping external perimeter
 #  translation: Chevauchement du périmètre extérieur
+# 11   changes: at %1%%% over external perimeters
+#  translation: à %1%%% sur les périmètres extérieurs
 msgid "Seam gap for external perimeters"
 msgstr ""
 

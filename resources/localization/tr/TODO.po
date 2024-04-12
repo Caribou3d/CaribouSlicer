@@ -762,12 +762,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: Katmanlar ve duvarlar
 # 9    changes: external perimeters
 #  translation: dış duvar
 # 9    changes: External perimeters
 #  translation: Dış duvar
-# 9    changes: Layers and perimeters
-#  translation: Katmanlar ve duvarlar
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -861,10 +861,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Destek Engelleyici
-# 6    changes: Support Enforcer
-#  translation: Destek Uygulayıcı
 # 6    changes: Support head
 #  translation: Destek kafa
+# 6    changes: Support pillar
+#  translation: Destek ayağı
 msgid "Support & Other"
 msgstr ""
 
@@ -943,8 +943,8 @@ msgstr ""
 #  translation: Boşluk doldurma
 # 4    changes: infill
 #  translation: dolgu
-# 4    changes: Solid infill
-#  translation: Katı dolgu
+# 4    changes: solid infill
+#  translation: katı dolgu
 msgid "top infill"
 msgstr ""
 

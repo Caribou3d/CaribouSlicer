@@ -78,10 +78,10 @@ msgstr ""
 #Similar to me: Default speed
 # 4    changes: Default fan speed
 #  translation: 默认风扇速度
-# 5    changes: Default color
-#  translation: 默认颜色
 # 5    changes: Infill speed
 #  translation: 固体填充速度
+# 5    changes: Default color
+#  translation: 默认颜色
 msgid "Default speed"
 msgstr ""
 
@@ -133,10 +133,10 @@ msgstr ""
 #Similar to me: Gap fill fan speed
 # 4    changes: Gap fill speed
 #  translation: 间隙填充速度
-# 7    changes: Default fan speed
-#  translation: 默认风扇速度
 # 7    changes: Max fan speed
 #  translation: 最大风扇转速
+# 7    changes: Default fan speed
+#  translation: 默认风扇速度
 msgid "Gap fill fan speed"
 msgstr ""
 
@@ -274,8 +274,8 @@ msgstr ""
 #  translation: 周长速度
 # 6    changes: Bridges fan speed
 #  translation: 桥接风扇速度
-# 7    changes: Default fan speed
-#  translation: 默认风扇速度
+# 7    changes: Perimeter anchor
+#  translation: 周长
 msgid "Perimeter fan speed"
 msgstr ""
 
@@ -289,8 +289,8 @@ msgstr ""
 #  translation: 在填充前先打印轮廓
 # 8    changes: Overlapping all perimeters
 #  translation: 重叠所有周长
-# 9    changes: external perimeters
-#  translation: 外围轮廓
+# 9    changes: Layers and perimeters
+#  translation: 层和轮廓
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -330,8 +330,8 @@ msgstr ""
 #  translation: 支撑去除器
 # 5    changes: Support pattern
 #  translation: 支撑模式
-# 6    changes: Support Enforcer
-#  translation: 支撑添加器
+# 6    changes: Support head
+#  translation: 支撑头
 msgid "Support & Other"
 msgstr ""
 

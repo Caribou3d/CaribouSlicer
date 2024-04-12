@@ -18,8 +18,8 @@ msgstr ""
 #  translation: Anche per tutti i perimetri
 # 8    changes: Overlapping all perimeters
 #  translation: Sovrapposizione di tutti i perimetri
-# 9    changes: External perimeters
-#  translation: Perimetri esterni
+# 9    changes: Layers and perimeters
+#  translation: Strati e perimetri
 msgid "Reverse on all perimeters"
 msgstr ""
 

@@ -1,4 +1,325 @@
 
+msgid "Acceleration control (advanced)"
+msgstr "가속 제어(고급)"
+
+msgid "Activate"
+msgstr "활성화"
+
+msgid "Advanced"
+msgstr "고급"
+
+msgid "After layer change G-code"
+msgstr "레이어 변경 후 G 코드"
+
+msgid "Aligned"
+msgstr "정렬"
+
+msgid "Automatic generation"
+msgstr "자동 생성"
+
+msgid "Autospeed (advanced)"
+msgstr "오토스피드(고급)"
+
+msgid "Avoid crossing perimeters"
+msgstr "교체된 둘레를 피하세요."
+
+msgid "Bed"
+msgstr "침대"
+
+msgid "Before layer change G-code"
+msgstr "레이어가 G 코드를 변경하기 전에"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "객체 간 G 코드 (순차 인쇄용)"
+
+msgid "Bottom"
+msgstr "하단 "
+
+msgid "Bridge"
+msgstr "브리지"
+
+msgid "Bridges"
+msgstr "브릿지(Bridges)"
+
+msgid "Bridges fan speed"
+msgstr "브릿지 팬 속도"
+
+msgid "Brim"
+msgstr "테두리"
+
+msgid "Capabilities"
+msgstr "권한"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "서포트 기둥 및 접합부 연결"
+
+msgid "Cooling"
+msgstr "자동 냉각 사용"
+
+msgid "Corrections"
+msgstr "수정"
+
+msgid "Custom G-code"
+msgstr "사용자 지정 G 코드"
+
+msgid "Default"
+msgstr "기본값"
+
+msgid "default"
+msgstr "기본값"
+
+msgid "Density"
+msgstr "밀도"
+
+msgid "Dependencies"
+msgstr "종속성"
+
+msgid "Disable fan for the first"
+msgstr "첫 번째 팬 사용 중지"
+
+msgid "Display"
+msgstr "표시"
+
+msgid "End G-code"
+msgstr "끝 G 코드"
+
+msgid "Ensure vertical shell thickness"
+msgstr "수직 쉘(shell) 두께 확인"
+
+msgid "Exposure"
+msgstr "최소 노출 시간"
+
+msgid "Extruder"
+msgstr "익스트루더"
+
+msgid "Extruders"
+msgstr "압출 기"
+
+msgid "Extrusion width"
+msgstr "돌출 폭"
+
+msgid "Filament"
+msgstr "필라멘트 설정을 선택"
+
+msgid "Filament properties"
+msgstr "필라멘트 속성"
+
+msgid "Firmware"
+msgstr "펌웨어 철회"
+
+msgid "First layer"
+msgstr "첫 레이어"
+
+msgid "First layer speed"
+msgstr "첫 레이어 속도"
+
+msgid "Flow"
+msgstr "흐름도"
+
+msgid "Gap fill"
+msgstr "공백 채움"
+
+msgid "General"
+msgstr "일반"
+
+msgid "Hollowing"
+msgstr "물체 속이 빈(Hollowing)"
+
+msgid "Horizontal shells"
+msgstr "수평 쉘"
+
+msgid "Infill"
+msgstr "채움(infill)"
+
+msgid "infill"
+msgstr "채움(infill)"
+
+msgid "Layer height"
+msgstr "레이어 높이"
+
+msgid "Layer height limits"
+msgstr "레이어 높이 제한"
+
+msgid "Layers"
+msgstr "레이어"
+
+msgid "Layers and perimeters"
+msgstr "레이어 및 둘레"
+
+msgid "Length"
+msgstr "길이"
+
+msgid "Material"
+msgstr "재료"
+
+msgid "Minimum shell thickness"
+msgstr "최소 쉘 두께"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "Modifiers"
+msgstr "수정"
+
+msgid "Notes"
+msgstr "메모"
+
+msgid "Number of pixels in"
+msgstr "픽셀 수"
+
+msgid "Only lift Z"
+msgstr "Z축 올림"
+
+msgid "Only retract when crossing perimeters"
+msgstr "둘레를 횡단 할 때만 수축"
+
+msgid "Ooze prevention"
+msgstr "스미즈 방지"
+
+msgid "Options"
+msgstr "옵션"
+
+msgid "Options for support material and raft"
+msgstr "서포트와 라프트 재료를 선택"
+
+msgid "Other"
+msgstr "기타"
+
+msgid "Output file"
+msgstr "출력 파일"
+
+msgid "Output options"
+msgstr "출력 옵션"
+
+msgid "Overlap"
+msgstr "오버랩"
+
+msgid "Pad"
+msgstr "패드"
+
+msgid "Pattern"
+msgstr "패턴"
+
+msgid "Pause Print G-code"
+msgstr "G 코드 인쇄 일시 중지"
+
+msgid "Plater"
+msgstr "플레이트"
+
+msgid "Preview"
+msgstr "미리보기"
+
+msgid "Print Host upload"
+msgstr "프린터 호스트 업로드 대기"
+
+msgid "Print speed override"
+msgstr "인쇄 속도 재정의"
+
+msgid "Printer scaling correction"
+msgstr "프린터 크기 조정 보정"
+
+msgid "Profile dependencies"
+msgstr "프로파일 속한곳"
+
+msgid "Quality"
+msgstr "품질"
+
+msgid "Raft"
+msgstr "서포트와 라프트 재료를 선택"
+
+msgid "Reducing printing time"
+msgstr "인쇄 시간 단축"
+
+msgid "Retraction"
+msgstr "리트랙션 후 최소 이동 거리"
+
+msgid "Retraction Speed"
+msgstr "리트랙션 속도"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr "도구가 비활성화된 때의 철회(다중 압출기 설정에 대한 고급 설정)"
+
+msgid "Seam position"
+msgstr "재봉선 위치"
+
+msgid "Sequential printing"
+msgstr "순차적 인쇄"
+
+msgid "Size"
+msgstr "크기"
+
+msgid "Size and coordinates"
+msgstr "크기 및 좌표"
+
+msgid "Skirt"
+msgstr "스커트"
+
+msgid "Slicing"
+msgstr "새로운 슬라이싱 작업 시작"
+
+msgid "Solid"
+msgstr "굵게"
+
+msgid "solid infill"
+msgstr "외부(solid)부분 채움"
+
+msgid "Solid layers"
+msgstr "탑 솔리드 레이어"
+
+msgid "Spacing"
+msgstr "간격"
+
+msgid "Speed"
+msgstr "속도"
+
+msgid "Speed for non-print moves"
+msgstr "인쇄되지 않은 이동속도"
+
+msgid "Speed for print moves"
+msgstr "인쇄 이동 속도"
+
+msgid "Start G-code"
+msgstr "G 코드 시작"
+
+msgid "Support head"
+msgstr "서포트 헤드"
+
+msgid "Support material"
+msgstr "서포트 재료 / 라프트 / 스커트 익스트루더"
+
+msgid "Support pillar"
+msgstr "서포트 기둥"
+
+msgid "Supports"
+msgstr "서포트"
+
+msgid "Template Custom G-code"
+msgstr "템플릿 사용자 지정 G 코드"
+
+msgid "Tilt"
+msgstr "기울이기"
+
+msgid "Tilt time"
+msgstr "기울이기 시간"
+
+msgid "Tool change G-code"
+msgstr "공구 변경 G 코드"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "MMU 프린터의 툴체인지 매개 변수"
+
+msgid "Top"
+msgstr "상단 "
+
+msgid "Vertical shells"
+msgstr "수직 쉘"
+
+msgid "Wipe tower"
+msgstr "와이프 타워 - 버려진 필라멘트 조절"
+
+msgid "Wipe tower parameters"
+msgstr "타워 파라미터 지우기"
+
 msgid "%1% Preset"
 msgstr "%1% 기본설정"
 
@@ -272,9 +593,6 @@ msgstr "%s 정보"
 msgid "Above Z"
 msgstr "Z 위치"
 
-msgid "Acceleration control (advanced)"
-msgstr "가속 제어(고급)"
-
 msgid "Accuracy"
 msgstr "명중률"
 
@@ -283,9 +601,6 @@ msgstr "정확한"
 
 msgid "Action"
 msgstr "실행"
-
-msgid "Activate"
-msgstr "활성화"
 
 msgid "Active"
 msgstr "활성"
@@ -451,9 +766,6 @@ msgstr ""
 msgid "Address"
 msgstr "주소"
 
-msgid "Advanced"
-msgstr "고급"
-
 msgid "Advanced mode"
 msgstr "고급 모드"
 
@@ -473,17 +785,11 @@ msgstr ""
 "프 탑에 넣어 연속적인 채우기 또는 희생(sacrificial) 객체 돌출을 안정적으로 생"
 "성 합니다."
 
-msgid "After layer change G-code"
-msgstr "레이어 변경 후 G 코드"
-
 msgid "Align the model to the given point."
 msgstr "모델을 지정된 점에 맞춥니다."
 
 msgid "Align XY"
 msgstr "XY 정렬"
-
-msgid "Aligned"
-msgstr "정렬"
 
 msgid "All"
 msgstr "모두"
@@ -646,20 +952,11 @@ msgstr "서포트 자동 생성"
 msgid "Autogeneration will erase all manually edited points."
 msgstr "자동 생성은 수동으로 편집된 모든 지점을 지웁웁입니다."
 
-msgid "Automatic generation"
-msgstr "자동 생성"
-
 msgid "Automatic updates"
 msgstr "자동 업데이트"
 
 msgid "Automatically repair an STL file"
 msgstr "STL 파일을 자동으로 복구합니다"
-
-msgid "Autospeed (advanced)"
-msgstr "오토스피드(고급)"
-
-msgid "Avoid crossing perimeters"
-msgstr "교체된 둘레를 피하세요."
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "경계를 넘어가지 마십시오 - 최대 우회 길이"
@@ -693,9 +990,6 @@ msgstr "백그라운드 프로세싱"
 msgid "Balanced"
 msgstr "잔고 일치"
 
-msgid "Bed"
-msgstr "침대"
-
 msgid "Bed custom model"
 msgstr "침대 사용자 정의 모델"
 
@@ -717,9 +1011,6 @@ msgstr "배드 온도"
 msgid "Bed Temperature:"
 msgstr "배드 온도"
 
-msgid "Before layer change G-code"
-msgstr "레이어가 G 코드를 변경하기 전에"
-
 msgid "Before roll back"
 msgstr "롤백 하기 전에"
 
@@ -728,9 +1019,6 @@ msgstr "Z 아래"
 
 msgid "Between objects G-code"
 msgstr "객체 간 G 코드"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "객체 간 G 코드 (순차 인쇄용)"
 
 msgid "Block seam"
 msgstr "블록 솔기"
@@ -747,9 +1035,6 @@ msgstr "병 볼륨"
 msgid "Bottle weight"
 msgstr "병 무게"
 
-msgid "Bottom"
-msgstr "하단 "
-
 msgid "Bottom fill pattern"
 msgstr "하단 채우기 패턴"
 
@@ -765,20 +1050,11 @@ msgstr "바닥 단일 레이어"
 msgid "Bottom View"
 msgstr "바닥 보기 "
 
-msgid "Bridge"
-msgstr "브리지"
-
 msgid "Bridge flow ratio"
 msgstr "브릿지 유량(flow)값"
 
 msgid "Bridge infill"
 msgstr "브릿지 채움"
-
-msgid "Bridges"
-msgstr "브릿지(Bridges)"
-
-msgid "Bridges fan speed"
-msgstr "브릿지 팬 속도"
 
 msgid "Bridging angle"
 msgstr "브릿지 각도"
@@ -794,9 +1070,6 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "브리징(Bridging) 용적"
-
-msgid "Brim"
-msgstr "테두리"
 
 msgid "Brim width"
 msgstr "브림 폭"
@@ -888,9 +1161,6 @@ msgid ""
 msgstr ""
 "서포트 포인트 없이 진행할 수 없습니다! 서포트 지점을 추가 하거나 서포트 생성"
 "을 사용 하지 않도록 설정 합니다."
-
-msgid "Capabilities"
-msgstr "권한"
 
 msgid "Capture a configuration snapshot"
 msgstr "구성 스냅샷 캡처"
@@ -1114,9 +1384,6 @@ msgstr "구성 마법사"
 msgid "Confirmation"
 msgstr "확인"
 
-msgid "Connection of the support sticks and junctions"
-msgstr "서포트 기둥 및 접합부 연결"
-
 msgid ""
 "Controls the bridge type between two neighboring pillars. Can be zig-zag, "
 "cross (double zig-zag) or dynamic which will automatically switch between "
@@ -1128,9 +1395,6 @@ msgstr ""
 
 msgid "Convert from imperial units"
 msgstr "제국 단위에서 변환"
-
-msgid "Cooling"
-msgstr "자동 냉각 사용"
 
 msgid "Cooling tube length"
 msgstr "냉각 튜브 길이"
@@ -1196,9 +1460,6 @@ msgstr "저작권"
 
 msgid "Correction for expansion"
 msgstr "확장에 대한 수정"
-
-msgid "Corrections"
-msgstr "수정"
 
 msgid "Cost"
 msgstr "비용"
@@ -1272,9 +1533,6 @@ msgstr ""
 "사용자 지정 CA 인증서 파일은 crt/pem 형식의 HTTPS 옥토 프린트 연결에 대해 지"
 "정할 수 있습니다. 비워 두면 기본 OS CA 인증서 리포지토리가 사용 됩니다."
 
-msgid "Custom G-code"
-msgstr "사용자 지정 G 코드"
-
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "현재 레이어(%1% mm)의 사용자 지정 G 코드입니다."
 
@@ -1313,12 +1571,6 @@ msgstr "압축 풀기 실패 또는 아카이브가 손상 되었습니다"
 
 msgid "Decrease Instances"
 msgstr "인스턴스 감소"
-
-msgid "default"
-msgstr "기본값"
-
-msgid "Default"
-msgstr "기본값"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1467,14 +1719,8 @@ msgstr "모든 객체를 삭제 합니다"
 msgid "Deletes the current selection"
 msgstr "현재 선택 영역을 삭제 합니다"
 
-msgid "Density"
-msgstr "밀도"
-
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr "0 % - 100 % 범위로 표현 된 내부 채움(infill)의 밀도."
-
-msgid "Dependencies"
-msgstr "종속성"
 
 msgid "Deretraction Speed"
 msgstr "감속 속도"
@@ -1535,9 +1781,6 @@ msgstr "인쇄 베드의 직경. 원산지(0,0)가 중앙에 있는 것으로 �
 msgid "Direction"
 msgstr "방향"
 
-msgid "Disable fan for the first"
-msgstr "첫 번째 팬 사용 중지"
-
 msgid "Discard"
 msgstr "무시\t"
 
@@ -1546,9 +1789,6 @@ msgstr "모든 사용자 지정 변경 내용 삭제"
 
 msgid "Discard changes"
 msgstr "변경사항을 취소"
-
-msgid "Display"
-msgstr "표시"
 
 msgid "Display height"
 msgstr "표시 높이"
@@ -1775,9 +2015,6 @@ msgstr "가변 레이어 높이 기능 사용"
 msgid "Enable vertical mirroring of output images"
 msgstr "출력 이미지의 수직 미러링 사용"
 
-msgid "End G-code"
-msgstr "끝 G 코드"
-
 msgid "Enforce"
 msgstr "첫 번째 n 개의 레이어에 대한 서포트 강화"
 
@@ -1795,9 +2032,6 @@ msgstr "지원 적용"
 
 msgid "Enqueued"
 msgstr "입력됨"
-
-msgid "Ensure vertical shell thickness"
-msgstr "수직 쉘(shell) 두께 확인"
 
 msgid "Enter a search term"
 msgstr "검색어 입력"
@@ -2043,9 +2277,6 @@ msgstr "소스 모델 내보내기"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "박람회 시간은 프린터 프로필 경계가 없습니다."
 
-msgid "Exposure"
-msgstr "최소 노출 시간"
-
 msgid "Exposure time"
 msgstr "노출 시간"
 
@@ -2067,9 +2298,6 @@ msgstr "재시작시 여분의 길이"
 msgid "Extra loading distance"
 msgstr "추가 로딩 거리"
 
-msgid "Extruder"
-msgstr "익스트루더"
-
 msgid "Extruder %d"
 msgstr "압출기 %d"
 
@@ -2085,9 +2313,6 @@ msgstr "익스트루더 컬러"
 msgid "Extruder offset"
 msgstr "익스트루더 오프셋"
 
-msgid "Extruders"
-msgstr "압출 기"
-
 msgid "Extruders count"
 msgstr "압출기 수"
 
@@ -2102,9 +2327,6 @@ msgstr "압출 승수"
 
 msgid "Extrusion Temperature:"
 msgstr "압출 온도:"
-
-msgid "Extrusion width"
-msgstr "돌출 폭"
 
 msgid "Facets"
 msgstr "측면"
@@ -2164,9 +2386,6 @@ msgstr "특색 유형"
 msgid "filament"
 msgstr "필라멘트 설정을 선택"
 
-msgid "Filament"
-msgstr "필라멘트 설정을 선택"
-
 msgid "Filament and Nozzle Diameters"
 msgstr "필라멘트와 노즐 직경"
 
@@ -2202,9 +2421,6 @@ msgstr "필라멘트 멈춤 위치"
 
 msgid "Filament Profiles Selection"
 msgstr "필라멘트 프로파일 선택"
-
-msgid "Filament properties"
-msgstr "필라멘트 속성"
 
 msgid "Filament Settings"
 msgstr "필라멘트 설정"
@@ -2278,9 +2494,6 @@ msgstr "찾기"
 msgid "Finished"
 msgstr "완료"
 
-msgid "Firmware"
-msgstr "펌웨어 철회"
-
 msgid "Firmware flasher"
 msgstr "펌웨어 업로드"
 
@@ -2296,9 +2509,6 @@ msgstr "펌웨어 종류"
 msgid "first"
 msgstr "첫 번째"
 
-msgid "First layer"
-msgstr "첫 레이어"
-
 msgid "First layer bed temperature"
 msgstr "첫 번째 층 침대 온도"
 
@@ -2307,9 +2517,6 @@ msgstr "첫 레이어 높이"
 
 msgid "First layer nozzle temperature"
 msgstr "첫 번째 층 노즐 온도"
-
-msgid "First layer speed"
-msgstr "첫 레이어 속도"
 
 msgid "First layer volumetric"
 msgstr "첫번째 레이어 용적"
@@ -2334,9 +2541,6 @@ msgstr "진행 중인 깜박임. 프린터를 분리하지 마십시오!"
 
 msgid "Flashing succeeded!"
 msgstr "적용 성공!"
-
-msgid "Flow"
-msgstr "흐름도"
 
 msgid "Flow rate"
 msgstr "유량"
@@ -2426,12 +2630,6 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
-
-msgid "Gap fill"
-msgstr "공백 채움"
-
-msgid "General"
-msgstr "일반"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -2649,9 +2847,6 @@ msgstr "빈 인테리어를 가지고 모델을 중공"
 msgid "Hollow this object"
 msgstr "이 개체 중공"
 
-msgid "Hollowing"
-msgstr "물체 속이 빈(Hollowing)"
-
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -2671,9 +2866,6 @@ msgstr "공동화 변수 변경"
 
 msgid "Honeycomb"
 msgstr "벌집"
-
-msgid "Horizontal shells"
-msgstr "수평 쉘"
 
 msgid "Horizontal Slider"
 msgstr "수평 슬라이더"
@@ -3038,12 +3230,6 @@ msgstr ""
 "뒤로 화살표 아이콘을 클릭하여 현재 옵션 그룹에 대한 모든 설정을 마지막으로 저"
 "장된 사전 설정으로 재설정합니다."
 
-msgid "Infill"
-msgstr "채움(infill)"
-
-msgid "infill"
-msgstr "채움(infill)"
-
 msgid "Infill before perimeters"
 msgstr "둘레보다 앞쪽에 채움"
 
@@ -3246,23 +3432,11 @@ msgstr "개체의 마지막 인스턴스를 삭제할 수 없습니다."
 msgid "Layer"
 msgstr "레이어"
 
-msgid "Layer height"
-msgstr "레이어 높이"
-
-msgid "Layer height limits"
-msgstr "레이어 높이 제한"
-
 msgid "Layer range Settings to modify"
 msgstr "수정할 레이어 범위 설정"
 
 msgid "layers"
 msgstr "레이어"
-
-msgid "Layers"
-msgstr "레이어"
-
-msgid "Layers and perimeters"
-msgstr "레이어 및 둘레"
 
 msgid "Left"
 msgstr "왼쪽"
@@ -3281,9 +3455,6 @@ msgstr "왼쪽 보기 "
 
 msgid "Legend/Estimated printing time"
 msgstr "범례/예상 인쇄 시간"
-
-msgid "Length"
-msgstr "길이"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr "냉각 튜브의 길이는 냉각을위한 공간을 제한하는 내부 이동합니다."
@@ -3427,9 +3598,6 @@ msgstr "마스크 된 SLA 파일을 %1%로 내보냅니"
 
 msgid "Mate&rial Settings Tab"
 msgstr "재료(메터리리알) 설정 탭"
-
-msgid "Material"
-msgstr "재료"
 
 msgid "Material Settings"
 msgstr "재질 설정"
@@ -3630,9 +3798,6 @@ msgstr "최소 공급률"
 msgid "Minimum initial exposure time"
 msgstr "최소 초기 노출 시간"
 
-msgid "Minimum shell thickness"
-msgstr "최소 쉘 두께"
-
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "상단/하단 쉘의 최소 두께"
 
@@ -3671,9 +3836,6 @@ msgstr "혼합"
 
 msgid "ml"
 msgstr "ml"
-
-msgid "mm"
-msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (0은 비활성화)"
@@ -3728,9 +3890,6 @@ msgstr "변경"
 
 msgid "Modifier"
 msgstr "편집"
-
-msgid "Modifiers"
-msgstr "수정"
 
 msgid "money/bottle"
 msgstr "가격 /병"
@@ -3940,9 +4099,6 @@ msgstr "참고: 일부 단축키는 (비)편집 모드 에서만 작동 합니�
 msgid "Note: This preset will be replaced after saving"
 msgstr "참고: 이 사전 설정은 저장 후 대체됩니다."
 
-msgid "Notes"
-msgstr "메모"
-
 msgid "Notice"
 msgstr "공지"
 
@@ -3971,9 +4127,6 @@ msgid ""
 "Number of interface layers to insert between the object(s) and support "
 "material."
 msgstr "객체와 서포트 재료 사이에 삽입할 인터페이스 레이어 수입니다."
-
-msgid "Number of pixels in"
-msgstr "픽셀 수"
 
 msgid "Number of pixels in X"
 msgstr "X의 픽셀 수"
@@ -4094,20 +4247,11 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "필요한 경우 채움"
 
-msgid "Only lift Z"
-msgstr "Z축 올림"
-
 msgid "Only lift Z above"
 msgstr "오직 Z축 위로만"
 
 msgid "Only lift Z below"
 msgstr "Z값 아래만"
-
-msgid "Only retract when crossing perimeters"
-msgstr "둘레를 횡단 할 때만 수축"
-
-msgid "Ooze prevention"
-msgstr "스미즈 방지"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr "현재 활성화된 와이프 타워로는 Ooze 방지가 지원되지 않습니다."
@@ -4160,12 +4304,6 @@ msgstr ""
 "(Bowling) 압출기가 흘러 나오기 쉬운 경우에 주로 유용합니다. 이 기능을 사용하"
 "면 인쇄 및 G 코드 생성 속도가 느려집니다."
 
-msgid "Options"
-msgstr "옵션"
-
-msgid "Options for support material and raft"
-msgstr "서포트와 라프트 재료를 선택"
-
 msgid "Options:"
 msgstr "옵션:"
 
@@ -4181,9 +4319,6 @@ msgstr "방향 검색이 취소되었습니다."
 msgid "Origin"
 msgstr "원본"
 
-msgid "Other"
-msgstr "기타"
-
 msgid "Other layers"
 msgstr "다른 레이어"
 
@@ -4193,17 +4328,11 @@ msgstr "기타 공급업체"
 msgid "Output File"
 msgstr "출력 파일"
 
-msgid "Output file"
-msgstr "출력 파일"
-
 msgid "Output filename format"
 msgstr "출력 파일이름 형식"
 
 msgid "Output Model Info"
 msgstr "출력 모델 정보"
-
-msgid "Output options"
-msgstr "출력 옵션"
 
 msgid "Overhang perimeter"
 msgstr "오버행(Overhang) 둘레"
@@ -4211,14 +4340,8 @@ msgstr "오버행(Overhang) 둘레"
 msgid "Overhang threshold"
 msgstr "오버행 한계점"
 
-msgid "Overlap"
-msgstr "오버랩"
-
 msgid "P&rint Settings Tab"
 msgstr "프린트 설정 탭"
-
-msgid "Pad"
-msgstr "패드"
 
 msgid "Pad around object"
 msgstr "물체 주위의 패드"
@@ -4295,9 +4418,6 @@ msgstr "클립보드에서 붙여넣기"
 msgid "Paste From Clipboard"
 msgstr "클립보드에서 붙여넣기"
 
-msgid "Pattern"
-msgstr "패턴"
-
 msgid "Pattern angle"
 msgstr "패턴 각도"
 
@@ -4312,9 +4432,6 @@ msgstr "일시 정지"
 
 msgid "Pause print (\"%1%\")"
 msgstr "인쇄 일시 중지(\"%1%\")"
-
-msgid "Pause Print G-code"
-msgstr "G 코드 인쇄 일시 중지"
 
 msgid "Percentage"
 msgstr "백분율"
@@ -4372,9 +4489,6 @@ msgstr "베어링을 슬롯에 놓고 인쇄를 재개합니다."
 
 msgid "Place on face"
 msgstr "물체(Gizmo)를 배드위로"
-
-msgid "Plater"
-msgstr "플레이트"
 
 msgid "Please check your object list before preset changing."
 msgstr "미리 설정하기 전에 개체 목록을 확인하십시오."
@@ -4462,9 +4576,6 @@ msgstr ""
 "엄지 손가락을 이동하는 동안 5 배 속도를 눌러\n"
 "화살표 키 또는 마우스 휠"
 
-msgid "Preview"
-msgstr "미리보기"
-
 msgid "Preview hollowed and drilled model"
 msgstr "공동화된 모델 미리보기"
 
@@ -4491,9 +4602,6 @@ msgstr "기본 역순 대신 가장 바깥쪽부터 가장 안쪽까지 윤곽�
 msgid "Print Diameters"
 msgstr "인쇄 직경"
 
-msgid "Print Host upload"
-msgstr "프린터 호스트 업로드 대기"
-
 msgid "Print host upload queue"
 msgstr "프린터 호스트 업로드 대기"
 
@@ -4511,9 +4619,6 @@ msgstr "출력 설정"
 
 msgid "Print Settings Tab"
 msgstr "인쇄 설정을 선택 합니다"
-
-msgid "Print speed override"
-msgstr "인쇄 속도 재정의"
 
 msgid "Print&er Settings Tab"
 msgstr "인쇄 및 어 설정 탭"
@@ -4535,9 +4640,6 @@ msgstr "프린터 모델"
 
 msgid "Printer notes"
 msgstr "프린터 노트"
-
-msgid "Printer scaling correction"
-msgstr "프린터 크기 조정 보정"
 
 msgid "Printer Settings"
 msgstr "프린터 설정"
@@ -4576,9 +4678,6 @@ msgstr ""
 msgid "Processing %s"
 msgstr "처리 %s"
 
-msgid "Profile dependencies"
-msgstr "프로파일 속한곳"
-
 msgid "Profile:"
 msgstr "프로필:"
 
@@ -4600,9 +4699,6 @@ msgstr "볼륨 삭제 - 행렬"
 msgid "Purpose of Machine Limits"
 msgstr "기계 제한의 목적"
 
-msgid "Quality"
-msgstr "품질"
-
 msgid "Quality / Speed"
 msgstr "품질 /속도"
 
@@ -4623,9 +4719,6 @@ msgstr "종료, 지금 내 데이터를 이동합니다"
 
 msgid "Radius"
 msgstr "반경"
-
-msgid "Raft"
-msgstr "서포트와 라프트 재료를 선택"
 
 msgid "Raft layers"
 msgstr "라프트(Raft) 레이어"
@@ -4716,9 +4809,6 @@ msgstr[0] "%1$d 다시 실행"
 
 msgid "Redo History"
 msgstr "다시 실행 히스토리"
-
-msgid "Reducing printing time"
-msgstr "인쇄 시간 단축"
 
 msgid "Refresh Printers"
 msgstr "프린터 새로 고침"
@@ -4911,9 +5001,6 @@ msgstr "닦아 내기 전의 수축량"
 msgid "Retract on layer change"
 msgstr "레이어 변경 후퇴"
 
-msgid "Retraction"
-msgstr "리트랙션 후 최소 이동 거리"
-
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr "이동 거리가 이 길이보다 짧으면 리트렉션이 트리거되지 않습니다."
@@ -4923,12 +5010,6 @@ msgstr "리트랙션 길이"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "리트랙션 길이 (툴 체인지)"
-
-msgid "Retraction Speed"
-msgstr "리트랙션 속도"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr "도구가 비활성화된 때의 철회(다중 압출기 설정에 대한 고급 설정)"
 
 msgid "Retractions"
 msgstr "리트랙션"
@@ -5097,9 +5178,6 @@ msgstr ""
 msgid "Seam painting"
 msgstr "솔기 페인팅"
 
-msgid "Seam position"
-msgstr "재봉선 위치"
-
 msgid "Seam preferred direction"
 msgstr "재봉선(Seam) 선호 방향"
 
@@ -5240,9 +5318,6 @@ msgstr "현재 플레이트를 G 코드로 인쇄하기 위해 보내기"
 
 msgid "Send to printer"
 msgstr "프린터로 보내기"
-
-msgid "Sequential printing"
-msgstr "순차적 인쇄"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "위쪽 레이어에만 적용된 순차 슬라이더"
@@ -5505,17 +5580,8 @@ msgstr "싱글 익스트루더 멀티메터리알 파라미터"
 msgid "Single instance mode"
 msgstr "단일 인스턴스 모드"
 
-msgid "Size"
-msgstr "크기"
-
-msgid "Size and coordinates"
-msgstr "크기 및 좌표"
-
 msgid "Size in X and Y of the rectangular plate."
 msgstr "사격형 플레이트 X 및 Y 크기."
-
-msgid "Skirt"
-msgstr "스커트"
 
 msgid "Skirt and brim"
 msgstr "스커트와 브림"
@@ -5613,9 +5679,6 @@ msgstr ""
 msgid "Sliced Info"
 msgstr "슬라이스된 정보"
 
-msgid "Slicing"
-msgstr "새로운 슬라이싱 작업 시작"
-
 msgid "Slicing complete"
 msgstr "슬라이스 완료"
 
@@ -5660,17 +5723,11 @@ msgstr "부드럽게"
 msgid "Snapshot name"
 msgstr "스냅샷 이름"
 
-msgid "Solid"
-msgstr "굵게"
-
 msgid "Solid "
 msgstr "굵게 "
 
 msgid "Solid infill"
 msgstr "솔리드 인필"
-
-msgid "solid infill"
-msgstr "외부(solid)부분 채움"
 
 msgid "Solid infill every"
 msgstr "솔리드 인필 간격"
@@ -5680,9 +5737,6 @@ msgstr "솔리드 인필 익스트루더"
 
 msgid "Solid infill threshold area"
 msgstr "솔리드 채우기 임계값"
-
-msgid "Solid layers"
-msgstr "탑 솔리드 레이어"
 
 msgid "Soluble material"
 msgstr "수용성 재료"
@@ -5719,9 +5773,6 @@ msgstr ""
 "일부 프린터 또는 프린터 설정은 가변 레이어 높이로 인쇄하는 데 어려움이있을 "
 "수 있습니다. 기본적으로 사용됩니다."
 
-msgid "Spacing"
-msgstr "간격"
-
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "인터페이스 라인 간 간격. 솔리드 인터페이스를 가져오려면 0을 설정하십시오."
@@ -5729,17 +5780,8 @@ msgstr ""
 msgid "Spacing between support material lines."
 msgstr "서포트 재료와 라인 사이의 간격."
 
-msgid "Speed"
-msgstr "속도"
-
 msgid "Speed (mm/s)"
 msgstr "속도 (mm/s)"
-
-msgid "Speed for non-print moves"
-msgstr "인쇄되지 않은 이동속도"
-
-msgid "Speed for print moves"
-msgstr "인쇄 이동 속도"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "이동 속도 (먼 돌출 점 사이의 점프)."
@@ -5806,9 +5848,6 @@ msgstr "새 프로젝트 시작"
 
 msgid "Start at height"
 msgstr "높이에서 시작"
-
-msgid "Start G-code"
-msgstr "G 코드 시작"
 
 msgid "Start new slicing process"
 msgstr "새로운 슬라이싱 작업 시작"
@@ -5905,14 +5944,8 @@ msgstr "서포트 지원영역"
 msgid "Support Generator"
 msgstr "지원 발전기"
 
-msgid "Support head"
-msgstr "서포트 헤드"
-
 msgid "support interface"
 msgstr "서포트 인터페이스"
-
-msgid "Support material"
-msgstr "서포트 재료 / 라프트 / 스커트 익스트루더"
 
 msgid "Support material interface"
 msgstr "서포트 인터페이스"
@@ -5926,17 +5959,11 @@ msgstr "출력물만 서포트를 지지"
 msgid "Support parameter change"
 msgstr "서포트 매개 변수 변경"
 
-msgid "Support pillar"
-msgstr "서포트 기둥"
-
 msgid "Support points density"
 msgstr "서포트 지점 밀도"
 
 msgid "Support points edit"
 msgstr "서포트 지점 편집"
-
-msgid "Supports"
-msgstr "서포트"
 
 msgid "supports and pad"
 msgstr "지지대 및 패드"
@@ -6035,9 +6062,6 @@ msgstr "온도 변화"
 
 msgid "Temperatures"
 msgstr "온도"
-
-msgid "Template Custom G-code"
-msgstr "템플릿 사용자 지정 G 코드"
 
 msgid "Test"
 msgstr "테스트"
@@ -6633,12 +6657,6 @@ msgstr ""
 "스레드는 장기 실행 태스크를 병렬 처리하는 데 사용됩니다. 최적의 스레드 수는 "
 "사용 가능한 코어 / 프로세서 수보다 약간 높습니다."
 
-msgid "Tilt"
-msgstr "기울이기"
-
-msgid "Tilt time"
-msgstr "기울이기 시간"
-
 msgid "Time"
 msgstr "시간"
 
@@ -6707,9 +6725,6 @@ msgstr "도구"
 msgid "Tool #"
 msgstr "도구(Tool) #"
 
-msgid "Tool change G-code"
-msgstr "공구 변경 G 코드"
-
 msgid "Tool changes"
 msgstr "도구 변경"
 
@@ -6718,12 +6733,6 @@ msgstr "공구 마커"
 
 msgid "Tool position"
 msgstr "공구 위치"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "MMU 프린터의 툴체인지 매개 변수"
-
-msgid "Top"
-msgstr "상단 "
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -7057,9 +7066,6 @@ msgstr "버전"
 msgid "version"
 msgstr "버전"
 
-msgid "Vertical shells"
-msgstr "수직 쉘"
-
 msgid "Vertical Slider"
 msgstr "세로 슬라이더"
 
@@ -7250,17 +7256,11 @@ msgstr "이 오브젝트의 채우기를 닦아"
 msgid "Wipe Tower"
 msgstr "와이프 타워 - 버려진 필라멘트 조절"
 
-msgid "Wipe tower"
-msgstr "와이프 타워 - 버려진 필라멘트 조절"
-
 msgid "wipe tower"
 msgstr "와이프 타워 - 버려진 필라멘트 조절"
 
 msgid "Wipe tower - Purging volume adjustment"
 msgstr "와이프 타워 - 버려진 필라멘트 조절"
-
-msgid "Wipe tower parameters"
-msgstr "타워 파라미터 지우기"
 
 msgid "Wipe tower rotation angle"
 msgstr "와이퍼 타워 회전각도"

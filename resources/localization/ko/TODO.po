@@ -771,12 +771,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: 레이어 및 둘레
 # 9    changes: external perimeters
 #  translation: 외부 둘레
 # 9    changes: External perimeters
 #  translation: 외측 둘레
-# 9    changes: Layers and perimeters
-#  translation: 레이어 및 둘레
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -877,10 +877,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: 서포트 금지 영역
-# 6    changes: Support Enforcer
-#  translation: 서포트 지원 영역
 # 6    changes: Support head
 #  translation: 서포트 헤드
+# 6    changes: Support pillar
+#  translation: 서포트 기둥
 msgid "Support & Other"
 msgstr ""
 
@@ -973,8 +973,8 @@ msgstr ""
 #  translation: 공백 채움
 # 4    changes: infill
 #  translation: 채움(infill)
-# 4    changes: Solid infill
-#  translation: 솔리드 인필
+# 4    changes: solid infill
+#  translation: 외부(solid)부분 채움
 msgid "top infill"
 msgstr ""
 

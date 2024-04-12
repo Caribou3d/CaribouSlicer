@@ -768,12 +768,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: Слои и периметры
 # 9    changes: external perimeters
 #  translation: внешних периметров
 # 9    changes: External perimeters
 #  translation: Внешние периметры
-# 9    changes: Layers and perimeters
-#  translation: Слои и периметры
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -877,10 +877,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Блокировщик поддержки
-# 6    changes: Support Enforcer
-#  translation: Принудительная поддержка
 # 6    changes: Support head
 #  translation: Носик поддержки
+# 6    changes: Support pillar
+#  translation: Опорная стойка
 msgid "Support & Other"
 msgstr ""
 
@@ -915,10 +915,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Носик поддержки
-# 5    changes: Support Cubic
-#  translation: Динам. куб. поддержка
 # 5    changes: Supports
 #  translation: Поддержки
+# 5    changes: Support Cubic
+#  translation: Динам. куб. поддержка
 msgid "Support speed"
 msgstr ""
 
@@ -962,8 +962,8 @@ msgstr ""
 #  translation: Заполнение пробелов
 # 4    changes: infill
 #  translation: заполнение
-# 4    changes: Solid infill
-#  translation: Сплошное заполнение
+# 4    changes: solid infill
+#  translation: сплошные слои заполнения
 msgid "top infill"
 msgstr ""
 

@@ -506,10 +506,10 @@ msgstr ""
 #Similar to me: after last perimeter
 # 6    changes: External perimeter
 #  translation: Perímetro externo
-# 7    changes: external perimeters
-#  translation: perímetros externos
 # 7    changes: External perimeters
 #  translation: Perímetros externos
+# 7    changes: external perimeters
+#  translation: perímetros externos
 msgid "after last perimeter"
 msgstr ""
 
@@ -656,10 +656,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l41
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: perímetros externos
 # 9    changes: External perimeters
 #  translation: Perímetros externos
+# 9    changes: external perimeters
+#  translation: perímetros externos
 # 9    changes: Small perimeters
 #  translation: Perímetros pequeños
 msgid "Also for all perimeters"
@@ -1215,6 +1215,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l342
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Anchura máxima
 msgid "Cap with"
 msgstr ""
 
@@ -2082,6 +2085,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Dirección
+# 4    changes: Version:
+#  translation: Versión:
 msgid "Dimension:"
 msgstr ""
 
@@ -3252,10 +3257,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Capas y perímetros
-# 8    changes: external perimeters
-#  translation: perímetros externos
 # 8    changes: External perimeters
 #  translation: Perímetros externos
+# 8    changes: external perimeters
+#  translation: perímetros externos
 msgid "for round perimeters"
 msgstr ""
 
@@ -4302,10 +4307,10 @@ msgstr ""
 #Similar to me: Internal perimeter
 # 2    changes: External perimeter
 #  translation: Perímetro externo
-# 3    changes: external perimeters
-#  translation: perímetros externos
 # 3    changes: External perimeters
 #  translation: Perímetros externos
+# 3    changes: external perimeters
+#  translation: perímetros externos
 msgid "Internal perimeter"
 msgstr ""
 
@@ -4325,10 +4330,10 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: perímetros externos
 # 2    changes: External perimeters
 #  translation: Perímetros externos
+# 2    changes: external perimeters
+#  translation: perímetros externos
 # 3    changes: External perimeter
 #  translation: Perímetro externo
 msgid "Internal perimeters"
@@ -4339,10 +4344,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Perímetros externos primero
-# 8    changes: external perimeters
-#  translation: perímetros externos
 # 8    changes: External perimeters
 #  translation: Perímetros externos
+# 8    changes: external perimeters
+#  translation: perímetros externos
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -4942,6 +4947,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4943
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: Altura máxima
+# 4    changes: Max width
+#  translation: Anchura máxima
 # 4    changes: Max height:
 #  translation: Altura máxima:
 msgid "Max length"
@@ -5307,6 +5316,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2808 src/libslic3r/PrintConfig.cpp:4929
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: Altura mínima
 # 4    changes: Min width
 #  translation: Anchura mínima
 # 4    changes: Min height:
@@ -6878,10 +6889,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
-# 9    changes: external perimeters
-#  translation: perímetros externos
 # 9    changes: External perimeters
 #  translation: Perímetros externos
+# 9    changes: external perimeters
+#  translation: perímetros externos
 # 9    changes: Layers and perimeters
 #  translation: Capas y perímetros
 msgid "Reverse on all perimeters"

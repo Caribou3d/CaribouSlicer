@@ -808,12 +808,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: Warstwy i obrysy
 # 9    changes: external perimeters
 #  translation: obrysów zewnętrznych
 # 9    changes: External perimeters
 #  translation: Obrysy zewnętrzne
-# 9    changes: Layers and perimeters
-#  translation: Warstwy i obrysy
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -926,10 +926,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Blokada podpór
-# 6    changes: Support Enforcer
-#  translation: Wymuszenie podpór
 # 6    changes: Support head
 #  translation: Łącznik podpory
+# 6    changes: Support pillar
+#  translation: Słupek podpory
 msgid "Support & Other"
 msgstr ""
 
@@ -973,10 +973,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Łącznik podpory
-# 5    changes: Support Cubic
-#  translation: Sześcienny podpierający
 # 5    changes: Supports
 #  translation: Podpory
+# 5    changes: Support Cubic
+#  translation: Sześcienny podpierający
 msgid "Support speed"
 msgstr ""
 
@@ -1020,8 +1020,8 @@ msgstr ""
 #  translation: Wypełnienie szpar
 # 4    changes: infill
 #  translation: wypełnienia
-# 4    changes: Solid infill
-#  translation: Zwarte wypełnienie
+# 4    changes: solid infill
+#  translation: zwarte wypełnienie
 msgid "top infill"
 msgstr ""
 

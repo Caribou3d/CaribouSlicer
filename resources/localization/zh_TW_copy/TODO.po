@@ -749,12 +749,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l132
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: 層和輪廓
 # 9    changes: external perimeters
 #  translation: 外圍輪廓
 # 9    changes: External perimeters
 #  translation: 外圍輪廓
-# 9    changes: Layers and perimeters
-#  translation: 層和輪廓
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgstr ""
 #  translation: 間隙填充
 # 4    changes: infill
 #  translation: 填充
-# 4    changes: Solid infill
+# 4    changes: solid infill
 #  translation: 實心填充
 msgid "top infill"
 msgstr ""
