@@ -109,13 +109,15 @@ if (SLIC3R_GUI)
     add_subdirectory(slic3r)
 endif()
 
-
 # Create a Slic3r executable
 # Process mainfests for various platforms.
 if (WIN32)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/Slic3r.rc.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc @ONLY)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/gcodeviewer.rc.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc @ONLY)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/PrusaSlicer.manifest.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.manifest @ONLY)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/CaribouSlicer.rc.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc @ONLY)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/CaribouGcodeviewer.rc.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc @ONLY)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/CaribouSlicer.manifest.in ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.manifest @ONLY)
+endif ()
+if (NOT UNIX AND NOT APPLE)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/buildwinzip.sh.in ${CMAKE_CURRENT_BINARY_DIR}/buildwinzip.sh @ONLY)
 endif ()
 if (APPLE)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/osx/Info.plist.in ${CMAKE_CURRENT_BINARY_DIR}/Info.plist @ONLY)
@@ -191,7 +193,7 @@ if (WIN32)
 
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libslic3r/libslic3r_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h @ONLY)
 
-    add_executable(Slic3r_app_gui WIN32 PrusaSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc)
+    add_executable(Slic3r_app_gui WIN32 CaribouSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc)
     target_include_directories(Slic3r_app_gui PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
     # Generate debug symbols even in release mode.
     if(MSVC)
@@ -202,7 +204,7 @@ if (WIN32)
     set_target_properties(Slic3r_app_gui PROPERTIES OUTPUT_NAME ${SLIC3R_APP_CMD})
     target_link_libraries(Slic3r_app_gui PRIVATE boost_headeronly)
 
-    add_executable(Slic3r_app_console PrusaSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc)
+    add_executable(Slic3r_app_console CaribouSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}.rc)
     target_include_directories(Slic3r_app_console PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
     # Generate debug symbols even in release mode.
     if (MSVC)
@@ -213,7 +215,7 @@ if (WIN32)
     set_target_properties(Slic3r_app_console PROPERTIES OUTPUT_NAME "${SLIC3R_APP_CMD}_console")
     target_link_libraries(Slic3r_app_console PRIVATE boost_headeronly)
 
-    add_executable(PrusaSlicer_app_gcodeviewer WIN32 PrusaSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h)
+    add_executable(PrusaSlicer_app_gcodeviewer WIN32 CaribouSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h)
 	target_include_directories(PrusaSlicer_app_gcodeviewer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
     # Generate debug symbols even in release mode.
     if (MSVC)

@@ -63,7 +63,7 @@ then
 fi
 
 unset name
-while getopts ":hugbdrstiw" opt; do
+while getopts ":hugbdrsltiw" opt; do
   case ${opt} in
     u )
         UPDATE_LIB="1"
@@ -76,6 +76,9 @@ while getopts ":hugbdrstiw" opt; do
         ;;
     s )
         BUILD_CARIBOUSLICER="1"
+        ;;
+    l )
+        UPDATE_POTFILE="1"
         ;;
     t )
         BUILD_TESTS="1"
@@ -92,15 +95,16 @@ while getopts ":hugbdrstiw" opt; do
     w )
 	BUILD_WIPE="1"
 	;;
-    h ) echo "Usage: ./BuildLinux.sh [-h][-w][-u][-g][-b][-d][-r][-s][-t][-i]"
+    h ) echo "Usage: ./BuildLinux.sh [-h][-u][-w][-g][-b][-r][-d][-s][-l][-t][-i]"
         echo "   -h: this message"
-	    echo "   -w: wipe build directories before building"
         echo "   -u: only update dependency packets (optional and need sudo)"
+        echo "   -w: wipe build directories before building"
         echo "   -g: force gtk2 build"
         echo "   -b: build in debug mode"
-        echo "   -d: build deps"
         echo "   -r: clean dependencies"
+        echo "   -d: build deps"
         echo "   -s: build CaribouSlicer"
+        echo "   -l: update language .pot file"
         echo "   -t: build tests (in combination with -s)"
         echo "   -i: Generate appimage (optional)"
         echo -e "\n   For a first use, you want to 'sudo ./BuildLinux.sh -u'"
@@ -112,15 +116,16 @@ done
 
 if [ $OPTIND -eq 1 ]
 then
-    echo "Usage: ./BuildLinux.sh [-h][-w][-u][-g][-b][-d][-r][-s][-t][-i]"
+    echo "Usage: ./BuildLinux.sh [-h][-u][-w][-g][-b][-r][-d][-s][-l][-t][-i]"
     echo "   -h: this message"
-    echo "   -w: wipe build directories before building"
     echo "   -u: only update dependency packets (optional and need sudo)"
+    echo "   -w: wipe build directories before building"
     echo "   -g: force gtk2 build"
     echo "   -b: build in debug mode"
-    echo "   -d: build deps"
     echo "   -r: clean dependencies"
+    echo "   -d: build deps"
     echo "   -s: build CaribouSlicer"
+    echo "   -l: update language .pot file"
     echo "   -t: build tests (in combination with -s)"
     echo "   -i: generate appimage (optional)"
     echo -e "\n   For a first use, you want to 'sudo ./BuildLinux.sh -u'"
@@ -271,16 +276,15 @@ then
         BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TYPE=Debug"
     fi
 
-#    if [[ -n "$BUILD_TESTS" ]]
-#    then
-#        BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TESTS=1"
-#    else
-#        BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TESTS=0"
-#    fi
+   if [[ -n "$BUILD_TESTS" ]]
+   then
+       BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TESTS=1"
+   else
+       BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TESTS=0"
+   fi
 
     # cmake
     pushd build > /dev/null
-
     cmake .. -DCMAKE_PREFIX_PATH="$PWD/../deps/build/destdir/usr/local" -DSLIC3R_STATIC=1 ${BUILD_ARGS}
     echo " ... done"
     # make CaribouSlicer
@@ -290,6 +294,10 @@ then
 
     echo -e "\n[7/9] Generating language files ...\n"
     #make .mo
+    if [[ -n "$UPDATE_POTFILE" ]]
+    then
+        make gettext_make_pot
+    fi
     make gettext_po_to_mo
 
     popd  > /dev/null
