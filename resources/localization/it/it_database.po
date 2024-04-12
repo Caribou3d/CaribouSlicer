@@ -1,4 +1,31 @@
 
+msgid ""
+"! 1 for the Bridge fan speed is Deprecated, please set it to 0 to stop the "
+"fan!"
+msgstr ""
+"! 1 per la velocità della ventola del Ponte è sconsigliato, imposta 0 per "
+"fermare la ventola!"
+
+msgid ""
+"! 1 for the External perimeters fan speed is Deprecated, please set it to 0 "
+"to stop the fan!"
+msgstr ""
+"! 1 per la velocità della ventola dei perimetri esterni è sconsigliato, "
+"imposta 0 per fermare la ventola!"
+
+msgid ""
+"! 1 for the Infill bridge fan speed is Deprecated, please set it to 0 to "
+"stop the fan!"
+msgstr ""
+"! 1 per la velocità della ventola dei Ponti interni è sconsigliato, imposta 0 "
+"per fermare la ventola!"
+
+msgid ""
+"! 1 for the Top fan speed is Deprecated, please set it to 0 to stop the fan!"
+msgstr ""
+"! 1 per la velocità massima della ventola è sconsigliato, imposta 0 per "
+"fermare la ventola!"
+
 msgid "!! Can be unstable in some os distribution !!"
 msgstr ""
 "!! Può essere instabile in alcune distribuzioni di sistemi operativi !!"
@@ -1688,6 +1715,13 @@ msgstr "Supporti a blocchi"
 msgid "Block supports by angle"
 msgstr "Supporti di blocco per angolo"
 
+msgid ""
+"Both compatible and incompatible presets are shown. Click to hide presets "
+"not compatible with the current printer."
+msgstr ""
+"Vengono mostrati sia i presets compatibili che quelli incompatibili. Fare clic "
+"per nascondere i presets non compatibili con la stampante corrente."
+
 msgid "Bottle volume"
 msgstr "Volume della bottiglia"
 
@@ -1983,6 +2017,9 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "Impossibile sovrascrivere un profilo di sistema."
 
+msgid "Cannot overwrite an external profile. Please choose another name."
+msgstr "Impossibile sovrascrivere un profilo esterno. Scegliere un altro nome."
+
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
@@ -1992,6 +2029,9 @@ msgstr ""
 
 msgid "Cap with"
 msgstr "Capacità con"
+
+msgid "Cap with perimeter flow"
+msgstr "Limite flusso perimetrale"
 
 msgid "Capabilities"
 msgstr "Capacità"
@@ -3245,6 +3285,19 @@ msgstr "Strato riempimento denso"
 msgid "Density"
 msgstr "Densità"
 
+msgid ""
+"Density of internal infill, expressed in the range 0% - 100%.\n"
+"Set 0 to remove any sparse infill.\n"
+"Note that using a value of 100% won't change the type of infill from sparse "
+"to solid. If you want only solid infill, you can set the 'Solid infill every "
+"X layers' (solid_infill_every_layers) to 1 instead."
+msgstr ""
+"Densità del riempimento interno, espressa nel range 0% - 100%.\n"
+"Imposta 0 per rimuovere qualsiasi riempimento sparso.\n"
+"Nota che usare un valore del 100% non cambierà tipo di riempimento da scarso a "
+"solido. Se desideri solo il riempimento solido, puoi invece impostare "
+"'Riempimento solido ogni X livelli' (solid_infill_every_layers) su 1."
+
 msgid "Density of the first raft or support layer."
 msgstr "Densità del primo layer del raft o del supporto."
 
@@ -3611,6 +3664,9 @@ msgstr "Ogni millimetro aggiunge questo valore al valore di retrazione."
 
 msgid "Ear pattern"
 msgstr "Modello di orecchio"
+
+msgid "EBridge"
+msgstr "EBridge"
 
 msgid "Edit"
 msgstr "Modifica"
@@ -3990,6 +4046,9 @@ msgstr ""
 "Corpo del messaggio: \"%1%\"\n"
 "Errore: \"% 2%\""
 
+msgid "EPeri"
+msgstr "EPeri"
+
 msgid "Erase all objects"
 msgstr "Cancella tutti gli oggetti"
 
@@ -4035,6 +4094,31 @@ msgstr "Errore nel caricamento sull'host di stampa:"
 
 msgid "Error while loading .gcode file"
 msgstr "Errore durante il caricamento del file .G-code"
+
+msgid ""
+"Error while writing gcode: two points are at the same position. Please send "
+"the .3mf project to the dev team for debugging. Extrude loop: seam notch."
+msgstr ""
+"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
+"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
+"tacca cucitura."
+
+msgid ""
+"Error while writing gcode: two points are at the same position. Please send "
+"the .3mf project to the dev team for debugging. Extrude loop: wipe."
+msgstr ""
+"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
+"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
+"pulizia."
+
+msgid ""
+"Error while writing gcode: two points are at the same position. Please send "
+"the .3mf project to the dev team for debugging. Extrude loop: "
+"wipe_inside_start."
+msgstr ""
+"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
+"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
+"wipe_inside_start."
 
 msgid "Error with zip archive"
 msgstr "Errore con l'archivio zip"
@@ -4237,6 +4321,9 @@ msgid ""
 msgstr ""
 "Esporta la configurazione corrente su file, con solo le impostazioni "
 "compatibili con Slic3r"
+
+msgid "Export current plate (options available in the dialog)"
+msgstr "Esporta piastra corrente (opzioni disponibili nella finestra di dialogo)"
 
 msgid "Export current plate as G-code"
 msgstr "Esportazione della piastra corrente come G-code"
@@ -5114,6 +5201,9 @@ msgstr ""
 "Formato delle miniature del G-code: PNG per la migliore qualità, JPG per la "
 "dimensione più piccola, QOI per il firmware con poca memoria"
 
+msgid "Formatting"
+msgstr "Formattazione"
+
 msgid ""
 "Forward-compatibility rule when loading configurations from config files and "
 "project files (3MF, AMF)."
@@ -5391,6 +5481,9 @@ msgstr "Generazione di percorsi utensile"
 
 msgid "Generating vertex buffer"
 msgstr "Generazione del buffer dei vertici"
+
+msgid "GFill"
+msgstr "GFill"
 
 msgid ""
 "Give to the bridge infill algorithm if the infill needs to be connected, and "
@@ -5815,6 +5908,9 @@ msgstr ""
 msgid "Hyperbola"
 msgstr "Iperbole"
 
+msgid "IBridge"
+msgstr "IBridge"
+
 msgid "Icon"
 msgstr "Icona"
 
@@ -6108,6 +6204,9 @@ msgstr ""
 "Se abilitato, puoi cambiare la dimensione delle icone della barra degli "
 "strumenti manualmente."
 
+msgid "If estimated layer time is below ~%1%s"
+msgstr "Se il tempo di strato stimato è inferiore a ~%1%s"
+
 msgid ""
 "If expressed as absolute value in mm/s, this speed will be applied as a "
 "maximum for all infill print moves of the first layer.\n"
@@ -6325,6 +6424,28 @@ msgstr ""
 "questi verranno aumentati. Se inferiori, verranno diminuiti."
 
 msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here.\n"
+"Separate multiple scripts with a semicolon or a line return.\n"
+"!! please use '\\;' here if you want a not-line-separation ';'!!\n"
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables.\n"
+"The script, if passed as a relative path, will also be searched from the "
+"slic3r directory, the slic3r configuration directory and the user directory."
+msgstr ""
+"Se vuoi elaborare il G-code di uscita con script personalizzati, elenca qui i "
+"loro percorsi assoluti.\n"
+"Separa più script con un punto e virgola o un ritorno a capo.\n"
+"!! per favore usa '\\' se vuoi una separazione non di linea ';'!!\n"
+"Agli script viene passato il percorso assoluto del file G-code come primo "
+"argomento, e possono accedere alle impostazioni di configurazione di Slic3r "
+"leggendo le variabili d'ambiente.\n"
+"Lo script, se passato come percorso relativo, verrà cercato anche dalla "
+"directory slic3r, dalla directory di configurazione di slic3r e dalla "
+"directory dell'utente."
+
+msgid ""
 "If your custom texture (in png format) is displayed black, then disable this "
 "option to remove the problematic optimisation."
 msgstr ""
@@ -6368,6 +6489,9 @@ msgstr ""
 "esterne) ridurrà il numero di volte in cui questo si attiverà e quindi "
 "aumenterà la qualità.\n"
 "Imposta zero per disabilitare."
+
+msgid "IFill"
+msgstr "IFill"
 
 msgid "Ignore HTTPS certificate revocation checks"
 msgstr "Ignora i controlli di revoca dei certificati HTTPS"
@@ -6722,6 +6846,17 @@ msgstr "Istanze"
 msgid "Instances to Separated Objects"
 msgstr "Istanze a oggetti separati"
 
+msgid ""
+"instead of writing 'thumbnails' as tag in the gcode, it will write "
+"'thumbnails_PNG', thumbnails_JPG', 'thumbnail_QOI', etc..\n"
+" Some firmware need it to know how to decode the thumbnail, some others "
+"don't support it."
+msgstr ""
+"invece di scrivere 'thumbnails' come tag nel gcode, scriverà 'thumbnails_PNG', "
+"'thumbnails_JPG', 'thumbnail_QOI', ecc..\n"
+" Alcuni firmware lo richiedono per sapere come decodificare la miniatura, "
+"altri non lo supportano."
+
 msgid "Interface"
 msgstr "Interfaccia"
 
@@ -6779,6 +6914,9 @@ msgstr "Perimetro interno"
 msgid "Internal Perimeter acceleration"
 msgstr "Accelerazione perimetro interno"
 
+msgid "Internal Perimeter fan speed"
+msgstr "Velocità ventola perimetro interno"
+
 msgid "Internal perimeters"
 msgstr "Perimetri interno"
 
@@ -6833,6 +6971,30 @@ msgstr "parametro non valido"
 
 msgid "Invalid pinhead diameter"
 msgstr "Diametro della testa di spillo non valido"
+
+msgid "Invert Pitch axis"
+msgstr "Inverti asse Angolo"
+
+msgid "Invert Roll axis"
+msgstr "Inverti asse Rotazione"
+
+msgid "Invert X axis"
+msgstr "Inverti asse X"
+
+msgid "Invert Y axis"
+msgstr "Inverti asse Y"
+
+msgid "Invert Yaw axis"
+msgstr "Inverti asse Imbardata"
+
+msgid "Invert Z axis"
+msgstr "Inverti asse Z"
+
+msgid "IPeri"
+msgstr "IPeri"
+
+msgid "Iron"
+msgstr "Stiro"
 
 msgid "Ironing"
 msgstr "Stiratura"
@@ -9030,6 +9192,9 @@ msgstr ""
 "Rimuovi tutto tranne l'ultimo oggetto, o abilita la modalità sequenziale con "
 "\"complete_objects\"."
 
+msgid "Only ascii characters in gcode"
+msgstr "Solo caratteri ascii nel gcode"
+
 msgid ""
 "Only compatible presets are shown. Click to show both the presets compatible "
 "and not compatible with the current printer."
@@ -9220,6 +9385,9 @@ msgstr ""
 "Apre la notifica del consiglio del giorno nell'angolo in basso a destra o "
 "mostra un altro consiglio se già aperto."
 
+msgid "OPeri"
+msgstr "OPeri"
+
 msgid "Optimize object rotation for best surface quality."
 msgstr "Ottimizza rotazione oggetto per la migliore qualità superficiale"
 
@@ -9262,6 +9430,9 @@ msgstr "Ottimizzazione strato supporto %s/%s"
 
 msgid "Option tags:"
 msgstr "Opzioni tag:"
+
+msgid "Option use another tags than the current mode."
+msgstr "L'opzione utilizza tag diversi dalla modalità corrente."
 
 msgid "Options"
 msgstr "Opzioni"
@@ -11581,6 +11752,9 @@ msgstr ""
 "propria finestra. Devi fare clic sugli ingranaggi delle impostazioni per "
 "visualizzare la finestra delle impostazioni."
 
+msgid "SFill"
+msgstr "SFill"
+
 msgid "Shall I adjust those settings for supports?"
 msgstr "Devo regolare queste impostazioni per i supporti?"
 
@@ -12651,6 +12825,12 @@ msgstr ""
 "Smontato con successo. Il dispositivo %s(%s) può ora essere rimosso in modo "
 "sicuro dal computer."
 
+msgid "Supp"
+msgstr "Supp"
+
+msgid "SuppI"
+msgstr "SuppI"
+
 msgid "support"
 msgstr "supporto"
 
@@ -12918,6 +13098,12 @@ msgstr ""
 " Layout schede: tutte le finestre sono nell'applicazione, tutte "
 "selezionabili tramite una scheda."
 
+msgid "Tags"
+msgstr "Tags"
+
+msgid "tags"
+msgstr "tags"
+
 msgid "Take Configuration &Snapshot"
 msgstr "Prendi la configurazione e l'istantanea"
 
@@ -12977,6 +13163,9 @@ msgstr "Colori del testo"
 
 msgid "Texture"
 msgstr "Texture"
+
+msgid "TFill"
+msgstr "TFill"
 
 msgid "The %1% infill pattern is not supposed to work at 100%% density."
 msgstr ""
@@ -13424,6 +13613,13 @@ msgid ""
 msgstr ""
 "L'oggetto sarà sollevato da questo numero di strati, e il materiale di "
 "supporto sarà generato sotto di esso."
+
+msgid ""
+"The option you selected in the search dialog isn't available in the current "
+"mode/tags. Do you want to switch to the option tag?"
+msgstr ""
+"L'opzione selezionata nella finestra di dialogo di ricerca non è disponibile "
+"nella modalità/tag corrente. Vuoi passare al tag opzione?"
 
 msgid ""
 "The percentage of smaller pillars compared to the normal pillar diameter "
@@ -13912,6 +14108,9 @@ msgstr "Pareti sottili larghezza minima"
 
 msgid "Thin walls speed"
 msgstr "Velocità delle pareti sottili"
+
+msgid "ThinW"
+msgstr "ThinW"
 
 msgid "This %s version: %s"
 msgstr "Questa versione %s: %s"
@@ -15514,6 +15713,13 @@ msgstr ""
 "l'applicazione."
 
 msgid ""
+"To use a client cert on MacOS, you might need to add your certificate to "
+"your keychain and make sure it's trusted."
+msgstr ""
+"Per utilizzare un certificato client su MacOS, potresti dover aggiungere il "
+"certificato al portachiavi e assicurarti che sia affidabile."
+
+msgid ""
 "To use a custom CA file, please import your CA file into Certificate Store / "
 "Keychain."
 msgstr ""
@@ -15625,6 +15831,9 @@ msgstr "Superiore solido"
 
 msgid "Top solid acceleration"
 msgstr "Accelerazione solido superiore"
+
+msgid "Top Solid fan speed"
+msgstr "Velocità ventola solido superiore"
 
 msgid "Top solid infill"
 msgstr "Riempimento solido superiore"
@@ -16071,6 +16280,24 @@ msgstr "Utente"
 msgid "User presets"
 msgstr "Preset dell'utente"
 
+msgid ""
+"Using a color change gcode, but there isn't one for this printer.\n"
+"The printer won't stop for the filament change, unless you set it manually "
+"in the custom gcode section."
+msgstr ""
+"Usa un gcode per il cambio colore, ma non ce n'è uno per questa stampante.\n"
+"La stampante non si fermerà per il cambio del filamento, a meno che non lo "
+"imposti manualmente nella sezione gcode personalizzata."
+
+msgid ""
+"Using a pause gcode, but there isn't one for this printer.\n"
+"The printer won't pause, unless you set it manually in the custom gcode "
+"section."
+msgstr ""
+"Usa un gcode di pausa, ma non ce n'è uno per questa stampante.\n"
+"La stampante non andrà in pausa, a meno che non la imposti manualmente nella "
+"sezione gcode personalizzata."
+
 msgid "usually not necessary to change this"
 msgstr "di solito non è necessario cambiare questo"
 
@@ -16361,6 +16588,14 @@ msgstr ""
 "inferiore). Questa funzione è utile per evitare il rischio di stampe "
 "rovinate. Slic3r dovrebbe avvisare e prevenire le collisioni tra estrusori, "
 "ma attenzione."
+
+msgid ""
+"When printing the gcode file, replace any non-ascii character by a '_'. Can "
+"be useful if the firmware or a software in a workflow doesn't support uft-8."
+msgstr ""
+"Quando si stampa il file gcode, sostituire qualsiasi carattere non-ascii con "
+"un '_'. Può essere utile se il firmware o un software in un flusso di lavoro "
+"non supporta uft-8."
 
 msgid ""
 "When printing with very low layer heights, you might still want to print a "
@@ -16748,6 +16983,9 @@ msgstr "Scrivi tipo di miniatura nel gcode."
 msgid "Wrong password"
 msgstr "Password sbagliata"
 
+msgid "WTower"
+msgstr "WTower"
+
 msgid "X coordinate of the left front corner of a wipe tower"
 msgstr "Coordinata X dell'angolo anteriore sinistro di una torre di pulizia"
 
@@ -16887,6 +17125,13 @@ msgstr ""
 "Puoi scegliere la dimensione del cubo. È una scala semplice, puoi "
 "modificarla tu stesso nel pannello di destra se preferisci. È solo più "
 "veloce selezionarlo qui."
+
+msgid ""
+"You can either use a path to your certificate or the name of your "
+"certificate as you can find it in your Keychain"
+msgstr ""
+"Puoi usare un percorso per il tuo certificato o il nome del tuo certificato "
+"come puoi trovarlo nel tuo portachiavi"
 
 msgid ""
 "You can increase this to over-extrude on the first layer if there is not "
@@ -17062,8 +17307,17 @@ msgstr ""
 "Le tue modifiche attuali cancelleranno tutte le modifiche dell'estrusore "
 "(utensile) salvate."
 
+msgid "Your current tags:"
+msgstr "I tuoi tag correnti:"
+
 msgid "Your file was repaired."
 msgstr "Il tuo file è stato riparato."
+
+msgid "Your firmware doesn't allow to print the remaining times with M117."
+msgstr "Il tuo firmware non consente di stampare i tempi rimanenti con M117."
+
+msgid "Your firmware doesn't allow to print the remaining times with M73."
+msgstr "Il tuo firmware non consente di stampare i tempi rimanenti con M73."
 
 msgid ""
 "Your object appears to be too large, so it was automatically scaled down to "
@@ -30853,185 +31107,6 @@ msgstr ""
 "! 1 per la velocità della ventola dei Ponti interni è sconsigliato, imposta "
 "0 per fermare la ventola!"
 
-msgid "Cannot overwrite an external profile. Please choose another name."
-msgstr "Impossibile sovrascrivere un profilo esterno. Scegliere un altro nome."
-
-msgid "Cap with perimeter flow"
-msgstr "Limite flusso perimetrale"
-
-msgid "If estimated layer time is below ~%1%s"
-msgstr "Se il tempo di strato stimato è inferiore a ~%1%s"
-
-msgid ""
-"! 1 for the Top fan speed is Deprecated, please set it to 0 to stop the fan!"
-msgstr ""
-"! 1 per la velocità massima della ventola è sconsigliato, imposta 0 per "
-"fermare la ventola!"
-
-msgid ""
-"! 1 for the External perimeters fan speed is Deprecated, please set it to 0 to "
-"stop the fan!"
-msgstr ""
-"! 1 per la velocità della ventola dei perimetri esterni è sconsigliato, "
-"imposta 0 per fermare la ventola!"
-
-msgid ""
-"! 1 for the Bridge fan speed is Deprecated, please set it to 0 to stop the fan!"
-msgstr ""
-"! 1 per la velocità della ventola del Ponte è sconsigliato, imposta 0 per "
-"fermare la ventola!"
-
-msgid ""
-"! 1 for the Infill bridge fan speed is Deprecated, please set it to 0 to stop "
-"the fan!"
-msgstr ""
-"! 1 per la velocità della ventola dei Ponti interni è sconsigliato, imposta 0 "
-"per fermare la ventola!"
-
-msgid ""
-"Both compatible and incompatible presets are shown. Click to hide presets not "
-"compatible with the current printer."
-msgstr ""
-"Vengono mostrati sia i presets compatibili che quelli incompatibili. Fare clic "
-"per nascondere i presets non compatibili con la stampante corrente."
-
-msgid "EPeri"
-msgstr "EPeri"
-
-msgid "IPeri"
-msgstr "IPeri"
-
-msgid "OPeri"
-msgstr "OPeri"
-
-msgid "GFill"
-msgstr "GFill"
-
-msgid "IFill"
-msgstr "IFill"
-
-msgid "SFill"
-msgstr "SFill"
-
-msgid "TFill"
-msgstr "TFill"
-
-msgid "EBridge"
-msgstr "EBridge"
-
-msgid "IBridge"
-msgstr "IBridge"
-
-msgid ""
-"Density of internal infill, expressed in the range 0% - 100%.\n"
-"Set 0 to remove any sparse infill.\n"
-"Note that using a value of 100% won't change the type of infill from sparse to "
-"solid. If you want only solid infill, you can set the 'Solid infill every X "
-"layers' (solid_infill_every_layers) to 1 instead."
-msgstr ""
-"Densità del riempimento interno, espressa nel range 0% - 100%.\n"
-"Imposta 0 per rimuovere qualsiasi riempimento sparso.\n"
-"Nota che usare un valore del 100% non cambierà tipo di riempimento da scarso a "
-"solido. Se desideri solo il riempimento solido, puoi invece impostare "
-"'Riempimento solido ogni X livelli' (solid_infill_every_layers) su 1."
-
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: seam notch."
-msgstr ""
-"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
-"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
-"tacca cucitura."
-
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: wipe."
-msgstr ""
-"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
-"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
-"pulizia."
-
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: "
-"wipe_inside_start."
-msgstr ""
-"Errore durante la scrittura del gcode: due punti sono nella stessa posizione. "
-"Invia il progetto .3mf al team di sviluppo per il debug. Ciclo estrusione: "
-"wipe_inside_start."
-
-msgid "Export current plate (options available in the dialog)"
-msgstr "Esporta piastra corrente (opzioni disponibili nella finestra di dialogo)"
-
-msgid "Formatting"
-msgstr "Formattazione"
-
-msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here.\n"
-"Separate multiple scripts with a semicolon or a line return.\n"
-"!! please use '\\;' here if you want a not-line-separation ';'!!\n"
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables.\n"
-"The script, if passed as a relative path, will also be searched from the "
-"slic3r directory, the slic3r configuration directory and the user directory."
-msgstr ""
-"Se vuoi elaborare il G-code di uscita con script personalizzati, elenca qui i "
-"loro percorsi assoluti.\n"
-"Separa più script con un punto e virgola o un ritorno a capo.\n"
-"!! per favore usa '\\' se vuoi una separazione non di linea ';'!!\n"
-"Agli script viene passato il percorso assoluto del file G-code come primo "
-"argomento, e possono accedere alle impostazioni di configurazione di Slic3r "
-"leggendo le variabili d'ambiente.\n"
-"Lo script, se passato come percorso relativo, verrà cercato anche dalla "
-"directory slic3r, dalla directory di configurazione di slic3r e dalla "
-"directory dell'utente."
-
-msgid ""
-"instead of writing 'thumbnails' as tag in the gcode, it will write "
-"'thumbnails_PNG', thumbnails_JPG', 'thumbnail_QOI', etc..\n"
-" Some firmware need it to know how to decode the thumbnail, some others don't "
-"support it."
-msgstr ""
-"invece di scrivere 'thumbnails' come tag nel gcode, scriverà 'thumbnails_PNG', "
-"'thumbnails_JPG', 'thumbnail_QOI', ecc..\n"
-" Alcuni firmware lo richiedono per sapere come decodificare la miniatura, "
-"altri non lo supportano."
-
-msgid "Internal Perimeter fan speed"
-msgstr "Velocità ventola perimetro interno"
-
-msgid "Top Solid fan speed"
-msgstr "Velocità ventola solido superiore"
-
-msgid "Invert Pitch axis"
-msgstr "Inverti asse Angolo"
-
-msgid "Invert Roll axis"
-msgstr "Inverti asse Rotazione"
-
-msgid "Invert X axis"
-msgstr "Inverti asse X"
-
-msgid "Invert Y axis"
-msgstr "Inverti asse Y"
-
-msgid "Invert Yaw axis"
-msgstr "Inverti asse Imbardata"
-
-msgid "Invert Z axis"
-msgstr "Inverti asse Z"
-
-msgid "Iron"
-msgstr "Stiro"
-
-msgid "Only ascii characters in gcode"
-msgstr "Solo caratteri ascii nel gcode"
-
-msgid "Option use another tags than the current mode."
-msgstr "L'opzione utilizza tag diversi dalla modalità corrente."
-
 msgid ""
 "Position of perimeters' starting points. May use the angle & travel cost (with "
 "the fixed visilibity & ovehangs cost) to find the best place.\n"
@@ -31070,77 +31145,3 @@ msgstr ""
 "Personalizzato: altra combinazione di angolo e costo del viaggio rispetto a "
 "'Angoli' e 'Più vicino' (predefinito 60-100).\n"
 "Personalizzato può essere definito in modalità Avanzato o Esperto."
-
-msgid "Supp"
-msgstr "Supp"
-
-msgid "SuppI"
-msgstr "SuppI"
-
-msgid "Tags"
-msgstr "Tags"
-
-msgid "tags"
-msgstr "tags"
-
-msgid "Your current tags:"
-msgstr "I tuoi tag correnti:"
-
-msgid ""
-"The option you selected in the search dialog isn't available in the current "
-"mode/tags. Do you want to switch to the option tag?"
-msgstr ""
-"L'opzione selezionata nella finestra di dialogo di ricerca non è disponibile "
-"nella modalità/tag corrente. Vuoi passare al tag opzione?"
-
-msgid "ThinW"
-msgstr "ThinW"
-
-msgid ""
-"To use a client cert on MacOS, you might need to add your certificate to your "
-"keychain and make sure it's trusted."
-msgstr ""
-"Per utilizzare un certificato client su MacOS, potresti dover aggiungere il "
-"certificato al portachiavi e assicurarti che sia affidabile."
-
-msgid ""
-"You can either use a path to your certificate or the name of your certificate "
-"as you can find it in your Keychain"
-msgstr ""
-"Puoi usare un percorso per il tuo certificato o il nome del tuo certificato "
-"come puoi trovarlo nel tuo portachiavi"
-
-msgid ""
-"Using a color change gcode, but there isn't one for this printer.\n"
-"The printer won't stop for the filament change, unless you set it manually in "
-"the custom gcode section."
-msgstr ""
-"Usa un gcode per il cambio colore, ma non ce n'è uno per questa stampante.\n"
-"La stampante non si fermerà per il cambio del filamento, a meno che non lo "
-"imposti manualmente nella sezione gcode personalizzata."
-
-msgid ""
-"Using a pause gcode, but there isn't one for this printer.\n"
-"The printer won't pause, unless you set it manually in the custom gcode "
-"section."
-msgstr ""
-"Usa un gcode di pausa, ma non ce n'è uno per questa stampante.\n"
-"La stampante non andrà in pausa, a meno che non la imposti manualmente nella "
-"sezione gcode personalizzata."
-
-msgid ""
-"When printing the gcode file, replace any non-ascii character by a '_'. Can be "
-"useful if the firmware or a software in a workflow doesn't support uft-8."
-msgstr ""
-"Quando si stampa il file gcode, sostituire qualsiasi carattere non-ascii con "
-"un '_'. Può essere utile se il firmware o un software in un flusso di lavoro "
-"non supporta uft-8."
-
-msgid "WTower"
-msgstr "WTower"
-
-msgid "Your firmware doesn't allow to print the remaining times with M117."
-msgstr "Il tuo firmware non consente di stampare i tempi rimanenti con M117."
-
-msgid "Your firmware doesn't allow to print the remaining times with M73."
-msgstr "Il tuo firmware non consente di stampare i tempi rimanenti con M73."

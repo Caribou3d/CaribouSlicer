@@ -11688,3 +11688,10 @@ msgstr ""
 "Nesne, XY düzleminde yapılandırılmış değerle büyütülecek / küçültülecektir "
 "(negatif = içe, pozitif = dışarı doğru). Bu, ince ayar delik boyutları için "
 "yararlı olabilir."
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr ""
+"Bir veya daha fazla dosya seçin (STL / OBJ / AMF / 3MF / PRUSA / STEP):"
+
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "STL/3MF/STEP/OBJ/AM&F"

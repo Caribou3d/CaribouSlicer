@@ -14690,3 +14690,15 @@ msgstr ""
 "екземпляра графічного інтерфейсу PrusaSlicer, або ж активується існуюче "
 "вікно PrusaSlicer. Замінює значення конфігурації \"single_instance\" у "
 "налаштуваннях програми."
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Виберіть один чи кілька файлів (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Open project AMF/3MF with config, clear plater"
+msgstr "Відкрити проект AMF / 3MF з конфігурацією, очистити стіл"
+
+msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
+msgstr "Імпорт STL/3MF/STEP/OBJ/AMF без конфігурації зі збереженням платеру"
+
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Імпорт STL/3MF/STEP/OBJ/AMF"
