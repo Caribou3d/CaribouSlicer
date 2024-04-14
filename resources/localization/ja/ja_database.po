@@ -1,336 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "加速度コントロール (上級者向け)"
-
-msgid "Activate"
-msgstr "アクティベート"
-
-msgid "Advanced"
-msgstr "上級者向け"
-
-msgid "After layer change G-code"
-msgstr "レイヤーチェンジ後のGコード"
-
-msgid "Aligned"
-msgstr "整列された"
-
-msgid "Automatic generation"
-msgstr "自動生成"
-
-msgid "Autospeed (advanced)"
-msgstr "オートスピード（上級者向け）"
-
-msgid "Avoid crossing perimeters"
-msgstr "外周をまたがないようにする"
-
-msgid "Bed"
-msgstr "ベッド"
-
-msgid "Before layer change G-code"
-msgstr "レイヤー変更前のGコード"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "オブジェクト間のGコード（シーケンシャルプリントの場合）"
-
-msgid "Bottom"
-msgstr "ボトム"
-
-msgid "Bridge"
-msgstr "ブリッジ"
-
-msgid "Bridges"
-msgstr "ブリッジ"
-
-msgid "Bridges fan speed"
-msgstr "ブリッジファン速度"
-
-msgid "Brim"
-msgstr "ブリム"
-
-msgid "Capabilities"
-msgstr "オプション"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "サポートスティックとジャンクションの接続"
-
-msgid "Cooling"
-msgstr "クーリング"
-
-msgid "Corrections"
-msgstr "補正"
-
-msgid "Custom G-code"
-msgstr "カスタムGコード"
-
-msgid "Default"
-msgstr "デフォルト"
-
-msgid "default"
-msgstr "デフォルト"
-
-msgid "Density"
-msgstr "密度"
-
-msgid "Dependencies"
-msgstr "依存関係"
-
-msgid "Disable fan for the first"
-msgstr "ファンをオフにする最初のレイヤー"
-
-msgid "Display"
-msgstr "ディスプレイ"
-
-msgid "End G-code"
-msgstr "終了Gコード"
-
-msgid "Ensure vertical shell thickness"
-msgstr "垂直壁の厚さを確認する"
-
-msgid "Exposure"
-msgstr "露光"
-
-msgid "Extruder"
-msgstr "エクストルーダー"
-
-msgid "Extruders"
-msgstr "エクストルーダー"
-
-msgid "Extrusion width"
-msgstr "射出幅"
-
-msgid "Filament"
-msgstr "フィラメント"
-
-msgid "Filament properties"
-msgstr "フィラメント特性"
-
-msgid "Firmware"
-msgstr "ファームウェア"
-
-msgid "First layer"
-msgstr "1番目のレイヤー"
-
-msgid "First layer speed"
-msgstr "最初のレイヤーの速度"
-
-msgid "Flow"
-msgstr "移動"
-
-msgid "Fuzzy skin (experimental)"
-msgstr "ファジースキン（実験的）"
-
-msgid "Gap fill"
-msgstr "ギャップフィル"
-
-msgid "General"
-msgstr "全般"
-
-msgid "Hollowing"
-msgstr "くり抜き"
-
-msgid "Horizontal shells"
-msgstr "水平構造設定"
-
-msgid "Infill"
-msgstr "インフィル"
-
-msgid "infill"
-msgstr "インフィル"
-
-msgid "Layer height"
-msgstr "積層ピッチ"
-
-msgid "Layer height limits"
-msgstr "レイヤー高さ限度"
-
-msgid "Layers"
-msgstr "レイヤー"
-
-msgid "Layers and perimeters"
-msgstr "レイヤーと外周"
-
-msgid "Length"
-msgstr "長さ"
-
-msgid "Material"
-msgstr "材料"
-
-msgid "Material printing profile"
-msgstr "材料プリントプロファイル"
-
-msgid "Minimum shell thickness"
-msgstr "最小セル厚さ"
-
-msgid "mm"
-msgstr "mm"
-
-msgid "Modifiers"
-msgstr "個別条件領域"
-
-msgid "Notes"
-msgstr "メモ"
-
-msgid "Number of pixels in"
-msgstr "ピクセル数"
-
-msgid "Only lift Z"
-msgstr "Zをリフト"
-
-msgid "Only retract when crossing perimeters"
-msgstr "外周をまたぐときだけ吸込み"
-
-msgid "Ooze prevention"
-msgstr "垂れ出し抑止"
-
-msgid "Options"
-msgstr "オプション"
-
-msgid "Options for support material and raft"
-msgstr "サポート材とラフトのオプション"
-
-msgid "Other"
-msgstr "その他"
-
-msgid "Output file"
-msgstr "出力ファイル"
-
-msgid "Output options"
-msgstr "出力オプション"
-
-msgid "Overlap"
-msgstr "オーバーラップ"
-
-msgid "Pad"
-msgstr "パッド"
-
-msgid "Pattern"
-msgstr "パターン"
-
-msgid "Pause Print G-code"
-msgstr "プリント停止Gコード"
-
-msgid "Plater"
-msgstr "プレート"
-
-msgid "Pressure equalizer (experimental)"
-msgstr "圧力均一化（試行的）"
-
-msgid "Preview"
-msgstr "プレビュー"
-
-msgid "Print Host upload"
-msgstr "プリントサーバーアップロード"
-
-msgid "Print speed override"
-msgstr "プリント速度上書き"
-
-msgid "Printer scaling correction"
-msgstr "プリンター寸法補正"
-
-msgid "Profile dependencies"
-msgstr "プロファイルの依存関係"
-
-msgid "Quality"
-msgstr "品質"
-
-msgid "Raft"
-msgstr "ラフト"
-
-msgid "Reducing printing time"
-msgstr "造形時間短縮"
-
-msgid "Retraction"
-msgstr "リトラクション"
-
-msgid "Retraction Speed"
-msgstr "引き込み速度"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"非アクティブなツールのフィラメントを待避する(マルチエクストルーダーの高度な設"
-"定)"
-
-msgid "Seam position"
-msgstr "シーム位置"
-
-msgid "Sequential printing"
-msgstr "順次プリンティング"
-
-msgid "Size"
-msgstr "ファイル||サイズ"
-
-msgid "Size and coordinates"
-msgstr "サイズと座標"
-
-msgid "Skirt"
-msgstr "スカート"
-
-msgid "Slicing"
-msgstr "スライス中"
-
-msgid "Solid"
-msgstr "太字"
-
-msgid "solid infill"
-msgstr "ソリッドインフィル"
-
-msgid "Solid layers"
-msgstr "ソリッドレイヤー"
-
-msgid "Spacing"
-msgstr "スペース"
-
-msgid "Speed"
-msgstr "速度"
-
-msgid "Speed for non-print moves"
-msgstr "移動速度"
-
-msgid "Speed for print moves"
-msgstr "造形速度設定"
-
-msgid "Start G-code"
-msgstr "Gコードの最初"
-
-msgid "Support head"
-msgstr "サポート先端"
-
-msgid "Support material"
-msgstr "サポート材"
-
-msgid "Support pillar"
-msgstr "サポートピラー"
-
-msgid "Supports"
-msgstr "サポート"
-
-msgid "Template Custom G-code"
-msgstr "カスタムGコードのテンプレート"
-
-msgid "Tilt"
-msgstr "チルト"
-
-msgid "Tilt time"
-msgstr "チルト時間"
-
-msgid "Tool change G-code"
-msgstr "ツールチェンジ用のGコード"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "単一エクストルーダーMMプリンターのツールチェンジパラメーター"
-
-msgid "Top"
-msgstr "レイヤー||トップ"
-
-msgid "Vertical shells"
-msgstr "外壁設定"
-
-msgid "Wipe tower"
-msgstr "ワイプタワー"
-
-msgid "Wipe tower parameters"
-msgstr "ワイプタワーのパラメータ"
-
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
 msgstr[0] "%1$d の後方エッジ"
@@ -730,6 +398,9 @@ msgstr "上"
 msgid "Above Z"
 msgstr "Zの上"
 
+msgid "Acceleration control (advanced)"
+msgstr "加速度コントロール (上級者向け)"
+
 msgid "Access violation"
 msgstr "アクセス違反"
 
@@ -741,6 +412,9 @@ msgstr "精密"
 
 msgid "Action"
 msgstr "アクション"
+
+msgid "Activate"
+msgstr "アクティベート"
 
 msgid "Active"
 msgstr "アクティブ"
@@ -913,6 +587,9 @@ msgstr ""
 msgid "Address"
 msgstr "アドレス"
 
+msgid "Advanced"
+msgstr "上級者向け"
+
 msgid "Advanced mode"
 msgstr "拡張モード"
 
@@ -932,11 +609,17 @@ msgstr ""
 "にこの量の材料をワイプタワーに試し出しすることで、インフィルまたは犠牲オブ"
 "ジェクトを確実に形成します。"
 
+msgid "After layer change G-code"
+msgstr "レイヤーチェンジ後のGコード"
+
 msgid "Align the model to the given point."
 msgstr "モデルを指定されたポイントに合わせます。"
 
 msgid "Align XY"
 msgstr "XYで整列"
+
+msgid "Aligned"
+msgstr "整列された"
 
 msgid "All"
 msgstr "全て"
@@ -1163,11 +846,20 @@ msgstr "サポートポイントの自動生成"
 msgid "Autogeneration will erase all manually edited points."
 msgstr "自動生成は、マニュアルで編集されたすべてのポイントを消去します。"
 
+msgid "Automatic generation"
+msgstr "自動生成"
+
 msgid "Automatic updates"
 msgstr "自動アップデート"
 
 msgid "Automatically repair an STL file"
 msgstr "STLファイルの自動修復"
+
+msgid "Autospeed (advanced)"
+msgstr "オートスピード（上級者向け）"
+
+msgid "Avoid crossing perimeters"
+msgstr "外周をまたがないようにする"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "外周をまたがないようにする-最大迂回長 "
@@ -1204,6 +896,9 @@ msgstr "不明な構成値を回避する"
 msgid "Balanced"
 msgstr "バランスのとれた"
 
+msgid "Bed"
+msgstr "ベッド"
+
 msgid "Bed custom model"
 msgstr "カスタムベッドモデル"
 
@@ -1225,6 +920,9 @@ msgstr "ベッドの温度"
 msgid "Bed Temperature:"
 msgstr "ベッド温度:"
 
+msgid "Before layer change G-code"
+msgstr "レイヤー変更前のGコード"
+
 msgid "Before roll back"
 msgstr "元に戻す前に"
 
@@ -1233,6 +931,9 @@ msgstr "Zの下"
 
 msgid "Between objects G-code"
 msgstr "オブジェクト間のGコード"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "オブジェクト間のGコード（シーケンシャルプリントの場合）"
 
 msgid "Block seam"
 msgstr "ブロックシーム"
@@ -1248,6 +949,9 @@ msgstr "ボトル容量"
 
 msgid "Bottle weight"
 msgstr "ボトル重量"
+
+msgid "Bottom"
+msgstr "ボトム"
 
 msgid "Bottom fill pattern"
 msgstr "ボトム塗りつぶしパターン"
@@ -1267,11 +971,20 @@ msgstr "底部ソリッドレイヤー"
 msgid "Bottom View"
 msgstr "下面表示"
 
+msgid "Bridge"
+msgstr "ブリッジ"
+
 msgid "Bridge flow ratio"
 msgstr "ブリッジ部吐出率"
 
 msgid "Bridge infill"
 msgstr "ブリッジインフィル"
+
+msgid "Bridges"
+msgstr "ブリッジ"
+
+msgid "Bridges fan speed"
+msgstr "ブリッジファン速度"
 
 msgid "Bridging angle"
 msgstr "ブリッジ形成角"
@@ -1287,6 +1000,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "ブリッジの体積値"
+
+msgid "Brim"
+msgstr "ブリム"
 
 msgid "Brim separation gap"
 msgstr "ブリム分離ギャップ"
@@ -1394,6 +1110,9 @@ msgid ""
 msgstr ""
 "サポートポイントなしでは続行できません！ サポートポイントを追加するか、サポー"
 "ト生成を無効にします。"
+
+msgid "Capabilities"
+msgstr "オプション"
 
 msgid "Capture a configuration snapshot"
 msgstr "構成スナップショットをキャプチャーする"
@@ -1685,6 +1404,9 @@ msgstr "構成ウィザード"
 msgid "Confirmation"
 msgstr "確認"
 
+msgid "Connection of the support sticks and junctions"
+msgstr "サポートスティックとジャンクションの接続"
+
 msgid "Connection to PrusaLink works correctly."
 msgstr "PrusaLinkに接続しました。"
 
@@ -1714,6 +1436,9 @@ msgstr "インチ単位から変換する "
 
 msgid "Convert from meters"
 msgstr "メートルから換算"
+
+msgid "Cooling"
+msgstr "クーリング"
 
 msgid "Cooling tube length"
 msgstr "冷却チューブの長さ"
@@ -1791,6 +1516,9 @@ msgstr "Y軸膨張の補正"
 
 msgid "Correction for expansion in Z axis"
 msgstr "Z軸膨張の補正"
+
+msgid "Corrections"
+msgstr "補正"
 
 msgid "Cost"
 msgstr "費用"
@@ -1880,6 +1608,9 @@ msgstr ""
 "HTTPS OctoPrint接続用にカスタムCA証明書ファイルをcrt/pem形式で指定できます。 "
 "空白のままにすると、デフォルトのOS CA証明書リポジトリが使用されます。"
 
+msgid "Custom G-code"
+msgstr "カスタムGコード"
+
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "現在のレイヤーのカスタムGコード（%1%mm）。"
 
@@ -1934,6 +1665,12 @@ msgstr "解凍に失敗したか、アーカイブが破損しています"
 
 msgid "Decrease Instances"
 msgstr "インスタンスを減らす"
+
+msgid "default"
+msgstr "デフォルト"
+
+msgid "Default"
+msgstr "デフォルト"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -2091,11 +1828,17 @@ msgstr "全てのオブジェクトを削除"
 msgid "Deletes the current selection"
 msgstr "現在の選択を削除します"
 
+msgid "Density"
+msgstr "密度"
+
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr "0％-100％の範囲で表される内部インフィルの密度。"
 
 msgid "Density of the first raft or support layer."
 msgstr "1層目のラフトもしくはサポート層の密度"
+
+msgid "Dependencies"
+msgstr "依存関係"
 
 msgid "Deretraction Speed"
 msgstr "待避からの復帰速度"
@@ -2169,6 +1912,9 @@ msgstr "元のファイルとは異なります"
 msgid "Direction"
 msgstr "方向"
 
+msgid "Disable fan for the first"
+msgstr "ファンをオフにする最初のレイヤー"
+
 msgid "Disabled"
 msgstr "無効"
 
@@ -2180,6 +1926,9 @@ msgstr "すべてのカスタム変更を破棄"
 
 msgid "Discard changes"
 msgstr "変更取りやめ"
+
+msgid "Display"
+msgstr "ディスプレイ"
 
 msgid "Display height"
 msgstr "ディスプレイの高さ"
@@ -2463,6 +2212,9 @@ msgstr "出力イメージの垂直ミラーリングをオンにします"
 msgid "Enabled"
 msgstr "有効"
 
+msgid "End G-code"
+msgstr "終了Gコード"
+
 msgid "Enforce"
 msgstr "強制"
 
@@ -2483,6 +2235,9 @@ msgstr "キュー追加済み"
 
 msgid "Ensure on bed"
 msgstr "ベッド上で確認"
+
+msgid "Ensure vertical shell thickness"
+msgstr "垂直壁の厚さを確認する"
 
 msgid "Enter a search term"
 msgstr "検索語を入力"
@@ -2787,6 +2542,9 @@ msgstr "エクスポート中。"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "露光時間がプリンタープロファイルの範囲外です。"
 
+msgid "Exposure"
+msgstr "露光"
+
 msgid "Exposure time"
 msgstr "露光時間"
 
@@ -2808,6 +2566,9 @@ msgstr "追加の戻り距離"
 msgid "Extra loading distance"
 msgstr "追加ローディング長さ"
 
+msgid "Extruder"
+msgstr "エクストルーダー"
+
 msgid "Extruder %d"
 msgstr "エクストルーダー %d"
 
@@ -2823,6 +2584,9 @@ msgstr "エクストルーダーカラー"
 msgid "Extruder offset"
 msgstr "エクストルーダーのオフセット"
 
+msgid "Extruders"
+msgstr "エクストルーダー"
+
 msgid "Extruders count"
 msgstr "エクストルーダーの数"
 
@@ -2837,6 +2601,9 @@ msgstr "射出率"
 
 msgid "Extrusion Temperature:"
 msgstr "射出温度:"
+
+msgid "Extrusion width"
+msgstr "射出幅"
 
 msgid "Facets"
 msgstr "面"
@@ -2902,6 +2669,9 @@ msgstr "射出の種類"
 msgid "filament"
 msgstr "フィラメント"
 
+msgid "Filament"
+msgstr "フィラメント"
+
 msgid "Filament and Nozzle Diameters"
 msgstr "フィラメントとノズル径"
 
@@ -2935,6 +2705,9 @@ msgstr "フィラメント待避ポジション"
 
 msgid "Filament Profiles Selection"
 msgstr "フィラメントプロファイルの選択"
+
+msgid "Filament properties"
+msgstr "フィラメント特性"
 
 msgid "Filament Settings"
 msgstr "フィラメント設定"
@@ -3014,6 +2787,9 @@ msgstr "検索"
 msgid "Finished"
 msgstr "完了"
 
+msgid "Firmware"
+msgstr "ファームウェア"
+
 msgid "Firmware flasher"
 msgstr "ファームウェア更新"
 
@@ -3028,6 +2804,9 @@ msgstr "ファームウェアタイプ"
 
 msgid "first"
 msgstr "1日"
+
+msgid "First layer"
+msgstr "1番目のレイヤー"
 
 msgid "First layer bed temperature"
 msgstr "1レイヤー目のベッド温度"
@@ -3052,6 +2831,9 @@ msgstr ""
 
 msgid "First layer nozzle temperature"
 msgstr "1層目のノズル温度"
+
+msgid "First layer speed"
+msgstr "最初のレイヤーの速度"
 
 msgid "First layer volumetric"
 msgstr "最初のレイヤーの体積押出し"
@@ -3088,6 +2870,9 @@ msgstr "更新完了！"
 
 msgid "Floating reserved operand"
 msgstr "フローティング予約オペランド"
+
+msgid "Flow"
+msgstr "移動"
 
 msgid "Flow rate"
 msgstr "フローレート"
@@ -3216,6 +3001,9 @@ msgstr "フルスクリーン"
 msgid "Fuzzy Skin"
 msgstr "ファジースキン"
 
+msgid "Fuzzy skin (experimental)"
+msgstr "ファジースキン（実験的）"
+
 msgid "Fuzzy skin point distance"
 msgstr "ファジースキンポイント距離"
 
@@ -3256,6 +3044,12 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
+
+msgid "Gap fill"
+msgstr "ギャップフィル"
+
+msgid "General"
+msgstr "全般"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -3490,6 +3284,9 @@ msgstr "内部を空にするためにモデルをくり抜く"
 msgid "Hollow this object"
 msgstr "このオブジェクトのくり抜き"
 
+msgid "Hollowing"
+msgstr "くり抜き"
+
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -3510,6 +3307,9 @@ msgstr "くり抜きパラメータの変更"
 
 msgid "Honeycomb"
 msgstr "ハニカム"
+
+msgid "Horizontal shells"
+msgstr "水平構造設定"
 
 msgid "Horizontal Slider"
 msgstr "水平スライダー"
@@ -3969,6 +3769,12 @@ msgstr ""
 "戻る矢印アイコンをクリックして、現在のオプショングループのすべての設定を最後"
 "に保存されたプリセットに戻します。"
 
+msgid "Infill"
+msgstr "インフィル"
+
+msgid "infill"
+msgstr "インフィル"
+
 msgid "Infill before perimeters"
 msgstr "外周よりも先にインフィルを実施"
 
@@ -4186,6 +3992,9 @@ msgstr "オブジェクトの最後のインスタンスは削除できません
 msgid "Layer"
 msgstr "レイヤー"
 
+msgid "Layer height"
+msgstr "積層ピッチ"
+
 msgid ""
 "Layer height is not valid.\n"
 "\n"
@@ -4195,11 +4004,20 @@ msgstr ""
 "\n"
 "レイヤーの高さは0.01にリセットされます。"
 
+msgid "Layer height limits"
+msgstr "レイヤー高さ限度"
+
 msgid "Layer range Settings to modify"
 msgstr "修正するレイヤー範囲の設定"
 
 msgid "layers"
 msgstr "レイヤー"
+
+msgid "Layers"
+msgstr "レイヤー"
+
+msgid "Layers and perimeters"
+msgstr "レイヤーと外周"
 
 msgid "Left"
 msgstr "左"
@@ -4221,6 +4039,9 @@ msgstr "左面"
 
 msgid "Legend/Estimated printing time"
 msgstr "凡例/プリント予想時間"
+
+msgid "Length"
+msgstr "長さ"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -4407,6 +4228,12 @@ msgstr "マスクされたSLAファイルが%1%にエクスポートされまし
 
 msgid "Mate&rial Settings Tab"
 msgstr "材料設定タブ(&r)"
+
+msgid "Material"
+msgstr "材料"
+
+msgid "Material printing profile"
+msgstr "材料プリントプロファイル"
 
 msgid "Material Settings"
 msgstr "材料設定"
@@ -4653,6 +4480,9 @@ msgstr "最小送り速度"
 msgid "Minimum initial exposure time"
 msgstr "最小初期露光時間"
 
+msgid "Minimum shell thickness"
+msgstr "最小セル厚さ"
+
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "上部/下部シェルの最小厚"
 
@@ -4691,6 +4521,9 @@ msgstr "ミックス"
 
 msgid "ml"
 msgstr "ml"
+
+msgid "mm"
+msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (0で無効化)"
@@ -4738,6 +4571,9 @@ msgid "modified"
 msgstr "変更あり"
 
 msgid "Modifier"
+msgstr "個別条件領域"
+
+msgid "Modifiers"
 msgstr "個別条件領域"
 
 msgid "money/bottle"
@@ -5002,6 +4838,9 @@ msgstr "注：一部のショートカットは編集モードでは使えませ
 msgid "Note: This preset will be replaced after saving"
 msgstr "注：このプリセットは保存後に置き換えられます"
 
+msgid "Notes"
+msgstr "メモ"
+
 msgid "Notice"
 msgstr "通知"
 
@@ -5040,6 +4879,9 @@ msgid ""
 msgstr ""
 "オブジェクトとサポート材の間に挿入するインターフェイスレイヤーの数。 "
 "support_material_interface_layersを使用するには、-1に設定します"
+
+msgid "Number of pixels in"
+msgstr "ピクセル数"
 
 msgid "Number of pixels in X"
 msgstr "Xのピクセル数"
@@ -5184,11 +5026,17 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "必要な場合のみインフィルを付ける"
 
+msgid "Only lift Z"
+msgstr "Zをリフト"
+
 msgid "Only lift Z above"
 msgstr "これ以上でリフトZ"
 
 msgid "Only lift Z below"
 msgstr "Zリフト以下"
+
+msgid "Only retract when crossing perimeters"
+msgstr "外周をまたぐときだけ吸込み"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -5203,6 +5051,9 @@ msgid ""
 msgstr ""
 "以下のインストール済みプリンターのみが、選択したSLAマテリアルと互換性がありま"
 "す"
+
+msgid "Ooze prevention"
+msgstr "垂れ出し抑止"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -5278,6 +5129,12 @@ msgstr ""
 "します。これは特に垂れやすいボーデン型エクストルーダーで効果があります。ただ"
 "し、この機能はプリントとGコード生成が遅くなります。"
 
+msgid "Options"
+msgstr "オプション"
+
+msgid "Options for support material and raft"
+msgstr "サポート材とラフトのオプション"
+
 msgid "Options:"
 msgstr "オプション："
 
@@ -5296,6 +5153,9 @@ msgstr "オリエンテーション検索がキャンセルされました。"
 msgid "Origin"
 msgstr "原点"
 
+msgid "Other"
+msgstr "その他"
+
 msgid "Other layers"
 msgstr "他のレイヤー"
 
@@ -5311,11 +5171,17 @@ msgstr "外側のブリムのみ"
 msgid "Output File"
 msgstr "ファイル出力"
 
+msgid "Output file"
+msgstr "出力ファイル"
+
 msgid "Output filename format"
 msgstr "出力ファイル名の形式"
 
 msgid "Output Model Info"
 msgstr "モデル情報のアウトプット"
+
+msgid "Output options"
+msgstr "出力オプション"
 
 msgid "Outside walls"
 msgstr "外壁"
@@ -5329,8 +5195,14 @@ msgstr "オーバーハング外周"
 msgid "Overhang threshold"
 msgstr "オーバハングのしきい値"
 
+msgid "Overlap"
+msgstr "オーバーラップ"
+
 msgid "P&rint Settings Tab"
 msgstr "プリント設定タブ(&r)"
+
+msgid "Pad"
+msgstr "パッド"
 
 msgid "Pad around object"
 msgstr "オブジェクト周りにパッド"
@@ -5429,6 +5301,9 @@ msgstr "クリップボードからペースト"
 msgid "Paste From Clipboard"
 msgstr "クリップボードからの貼り付け"
 
+msgid "Pattern"
+msgstr "パターン"
+
 msgid "Pattern angle"
 msgstr "パターン角"
 
@@ -5443,6 +5318,9 @@ msgstr "停止"
 
 msgid "Pause print (\"%1%\")"
 msgstr "プリント停止(\"%1%\")"
+
+msgid "Pause Print G-code"
+msgstr "プリント停止Gコード"
 
 msgid "Percentage"
 msgstr "パーセント"
@@ -5515,6 +5393,9 @@ msgstr "ベアリングを穴に挿入し、プリントを再開します"
 
 msgid "Place on face"
 msgstr "面に配置"
+
+msgid "Plater"
+msgstr "プレート"
 
 msgid "Please check your object list before preset changing."
 msgstr "プリセットを変更する前にオブジェクトリストを確認してください。"
@@ -5630,6 +5511,9 @@ msgstr ""
 "範囲を動かしながら矢印キーまたは \n"
 "マウスホイールを押すと、5倍の速度になります "
 
+msgid "Preview"
+msgstr "プレビュー"
+
 msgid "Preview hollowed and drilled model"
 msgstr "くり抜き穴開けモデルのプレビュー"
 
@@ -5656,6 +5540,9 @@ msgstr "デフォルトの順ではなく、外周から始めて内周へとプ
 msgid "Print Diameters"
 msgstr "各種直径"
 
+msgid "Print Host upload"
+msgstr "プリントサーバーアップロード"
+
 msgid "Print host upload queue"
 msgstr "プリントサーバーのアップロードキュー"
 
@@ -5676,6 +5563,9 @@ msgstr "プリント設定タブ"
 
 msgid "Print speed"
 msgstr "プリントスピード"
+
+msgid "Print speed override"
+msgstr "プリント速度上書き"
 
 msgid "Print&er Settings Tab"
 msgstr "プリンター設定タブ(&e)"
@@ -5700,6 +5590,9 @@ msgstr "プリンターメモ"
 
 msgid "Printer preset names"
 msgstr "プリンタのプリセット名"
+
+msgid "Printer scaling correction"
+msgstr "プリンター寸法補正"
 
 msgid "Printer scaling correction in X axis"
 msgstr "X軸のプリンター寸法補正"
@@ -5757,6 +5650,9 @@ msgstr ""
 msgid "Processing %s"
 msgstr "%s実行中"
 
+msgid "Profile dependencies"
+msgstr "プロファイルの依存関係"
+
 msgid "Profile:"
 msgstr "プロファイル："
 
@@ -5793,6 +5689,9 @@ msgstr "パージする量−行列"
 msgid "Purpose of Machine Limits"
 msgstr "マシン制限の目的"
 
+msgid "Quality"
+msgstr "品質"
+
 msgid "Quality / Speed"
 msgstr "品質/スピード"
 
@@ -5813,6 +5712,9 @@ msgstr "終了します。今すぐデータを移動します"
 
 msgid "Radius"
 msgstr "半径"
+
+msgid "Raft"
+msgstr "ラフト"
 
 msgid "Raft contact Z distance"
 msgstr "ラフトコンタクトのZ距離"
@@ -5913,6 +5815,9 @@ msgstr "再実行"
 
 msgid "Redo History"
 msgstr "再実行履歴"
+
+msgid "Reducing printing time"
+msgstr "造形時間短縮"
 
 msgid "Refresh Printers"
 msgstr "プリンターの更新"
@@ -6139,6 +6044,9 @@ msgstr "ワイプ前に引き込む"
 msgid "Retract on layer change"
 msgstr "レイヤーチェンジ時の待避"
 
+msgid "Retraction"
+msgstr "リトラクション"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr "移動がこの長さより短い場合、吸込み動作を行いません。"
@@ -6148,6 +6056,14 @@ msgstr "材料待避長さ"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "引込み長(ツールチェンジ)"
+
+msgid "Retraction Speed"
+msgstr "引き込み速度"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"非アクティブなツールのフィラメントを待避する(マルチエクストルーダーの高度な設"
+"定)"
 
 msgid "Retractions"
 msgstr "待避"
@@ -6341,6 +6257,9 @@ msgstr ""
 msgid "Seam painting"
 msgstr "シーム・ペインティング"
 
+msgid "Seam position"
+msgstr "シーム位置"
+
 msgid "Seam preferred direction"
 msgstr "シーム優先方向"
 
@@ -6493,6 +6412,9 @@ msgstr "プリンターに送信"
 
 msgid "Seq."
 msgstr "シーケンス"
+
+msgid "Sequential printing"
+msgstr "順次プリンティング"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "トップレイヤーにのみ適用されるシーケンシャルスライダー"
@@ -6805,8 +6727,17 @@ msgstr "シングルインスタンスモード"
 msgid "Sinking"
 msgstr "沈ませる"
 
+msgid "Size"
+msgstr "ファイル||サイズ"
+
+msgid "Size and coordinates"
+msgstr "サイズと座標"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "四角形プレートのX、Yサイズ。"
+
+msgid "Skirt"
+msgstr "スカート"
 
 msgid "Skirt and brim"
 msgstr "スカートとブリム"
@@ -6918,6 +6849,9 @@ msgstr "スライス情報"
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "スライスされたオブジェクト\"%1%\"はロゴまたはサインのように見えます"
 
+msgid "Slicing"
+msgstr "スライス中"
+
 msgid "Slicing complete"
 msgstr "スライス完了"
 
@@ -6974,10 +6908,16 @@ msgstr "スナップショット名"
 msgid "Snug"
 msgstr "スナッグ"
 
+msgid "Solid"
+msgstr "太字"
+
 msgid "Solid "
 msgstr "太字 "
 
 msgid "Solid infill"
+msgstr "ソリッドインフィル"
+
+msgid "solid infill"
 msgstr "ソリッドインフィル"
 
 msgid "Solid infill every"
@@ -6988,6 +6928,9 @@ msgstr "ソリッドインフィルエクストルーダー"
 
 msgid "Solid infill threshold area"
 msgstr "ソリッドインフィル領域のしきい値"
+
+msgid "Solid layers"
+msgstr "ソリッドレイヤー"
 
 msgid "Soluble material"
 msgstr "溶解性材料"
@@ -7052,6 +6995,9 @@ msgstr "一部のプリンターがアンインストールされました。"
 msgid "Some SLA materials were uninstalled."
 msgstr "一部のSLAマテリアルがアンインストールされました。"
 
+msgid "Spacing"
+msgstr "スペース"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "インターフェイスの塗りの隙間。 ゼロを設定すると、密なインターフェースになりま"
@@ -7059,6 +7005,9 @@ msgstr ""
 
 msgid "Spacing between support material lines."
 msgstr "サポートパターンの線間距離。"
+
+msgid "Speed"
+msgstr "速度"
 
 msgid "Speed (mm/s)"
 msgstr "速度（mm/s）"
@@ -7070,6 +7019,12 @@ msgid ""
 msgstr ""
 "Z軸方向の移動速度。\n"
 "ゼロに設定すると、値は無視され、代わりに通常の移動速度が使用されます。"
+
+msgid "Speed for non-print moves"
+msgstr "移動速度"
+
+msgid "Speed for print moves"
+msgstr "造形速度設定"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "移動速度（射出ポイント間のジャンピング）。"
@@ -7147,6 +7102,9 @@ msgstr "新しいプロジェクトを開始"
 
 msgid "Start at height"
 msgstr "開始高さ"
+
+msgid "Start G-code"
+msgstr "Gコードの最初"
 
 msgid "Start new slicing process"
 msgstr "新しいスライスプロセスを開始する"
@@ -7254,8 +7212,14 @@ msgstr "サポート強制"
 msgid "Support Generator"
 msgstr "サポートジェネレーター"
 
+msgid "Support head"
+msgstr "サポート先端"
+
 msgid "support interface"
 msgstr "サポートの接触部"
+
+msgid "Support material"
+msgstr "サポート材"
 
 msgid "Support material interface"
 msgstr "サポートのオブジェクトとの接触レイヤー"
@@ -7269,11 +7233,17 @@ msgstr "サポートをビルドプレート(ベッド)のみに限定する"
 msgid "Support parameter change"
 msgstr "サポートパラメータの変更"
 
+msgid "Support pillar"
+msgstr "サポートピラー"
+
 msgid "Support points density"
 msgstr "サポートポイント密度"
 
 msgid "Support points edit"
 msgstr "サポートポイントの編集"
+
+msgid "Supports"
+msgstr "サポート"
 
 msgid "supports and pad"
 msgstr "サポートとパッド"
@@ -7387,6 +7357,9 @@ msgstr "温度変化"
 
 msgid "Temperatures"
 msgstr "温度"
+
+msgid "Template Custom G-code"
+msgstr "カスタムGコードのテンプレート"
 
 msgid "Test"
 msgstr "テスト"
@@ -8195,6 +8168,12 @@ msgstr ""
 "スレッドは、長時間実行されるタスクを並列化するために使用されます。スレッド数"
 "は、使用可能なコア/プロセッサーの数をわずかに超えたところが最適となります。"
 
+msgid "Tilt"
+msgstr "チルト"
+
+msgid "Tilt time"
+msgstr "チルト時間"
+
 msgid "Time"
 msgstr "時間"
 
@@ -8263,6 +8242,9 @@ msgstr "ツール"
 msgid "Tool #"
 msgstr "ツール#"
 
+msgid "Tool change G-code"
+msgstr "ツールチェンジ用のGコード"
+
 msgid "Tool changes"
 msgstr "ツールチェンジ"
 
@@ -8274,6 +8256,12 @@ msgstr "ツール位置"
 
 msgid "Tool type"
 msgstr "ツールタイプ"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "単一エクストルーダーMMプリンターのツールチェンジパラメーター"
+
+msgid "Top"
+msgstr "レイヤー||トップ"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -8675,6 +8663,9 @@ msgstr "バージョン"
 msgid "version"
 msgstr "バージョン"
 
+msgid "Vertical shells"
+msgstr "外壁設定"
+
 msgid "Vertical Slider"
 msgstr "垂直スライダー"
 
@@ -8873,6 +8864,9 @@ msgstr "このオブジェクトのインフィルにワイプを含める"
 msgid "Wipe Tower"
 msgstr "ワイプタワー"
 
+msgid "Wipe tower"
+msgstr "ワイプタワー"
+
 msgid "wipe tower"
 msgstr "ワイプタワー"
 
@@ -8881,6 +8875,9 @@ msgstr "ワイプタワー-パージ量調整"
 
 msgid "Wipe tower brim width"
 msgstr "ワイプタワーのブリム幅"
+
+msgid "Wipe tower parameters"
+msgstr "ワイプタワーのパラメータ"
 
 msgid "Wipe tower rotation angle"
 msgstr "ワイプタワーの回転角"
@@ -16706,486 +16703,3 @@ msgstr "昨日"
 
 msgid "zlib error %d"
 msgstr "zlib エラー %d"
-
-msgid ""
-"\"G92 E0\" was found in before_layer_gcode, which is incompatible with "
-"absolute extruder addressing."
-msgstr ""
-"before_layer_gcode に \"G92 E0\" が見つかりましたが、これはエクストルーダーの"
-"絶対アドレッシングと互換性がありません。"
-
-msgid ""
-"\"G92 E0\" was found in layer_gcode, which is incompatible with absolute "
-"extruder addressing."
-msgstr ""
-"layer_gcode に \"G92 E0\" が見つかりましたが、これはエクストルーダーの絶対ア"
-"ドレッシングと互換性がありません。"
-
-msgid "Abort"
-msgstr "中止"
-
-msgid "Add middle perimeter threshold"
-msgstr "中央の境界線しきい値の追加"
-
-msgid "Always ask for unsaved changes in presets when creating new project"
-msgstr "新規プロジェクト作成時にプリセットの未保存の変更を常に尋ねます"
-
-msgid ""
-"Always ask for unsaved changes in presets when selecting new preset or "
-"resetting a preset"
-msgstr ""
-"新しいプリセットを選択するとき、またはプリセットをリセットするときは、常にプ"
-"リセットの未保存の変更を問い合わせる"
-
-msgid ""
-"Always ask for unsaved changes in presets, when: \n"
-"- Closing PrusaSlicer while some presets are modified,\n"
-"- Loading a new project while some presets are modified"
-msgstr ""
-"以下の場合、プリセットの未保存の変更を常に問い合わせます：\n"
-"- プリセットを変更したままPrusaSlicerを終了する。\n"
-"- プリセットを変更した状態で新しいプロジェクトをロードする。"
-
-msgid ""
-"Always ask for unsaved changes in project, when: \n"
-"- Closing PrusaSlicer,\n"
-"- Loading or creating a new project"
-msgstr ""
-"以下の場面で、プロジェクト内の未保存の変更点がある場合、常に聞かれます：\n"
-"- PrusaSlicer終了時。\n"
-"- プロジェクトをロードまたは新規作成する時"
-
-msgid "Arachne"
-msgstr "アラクネ"
-
-msgid "Arachne perimeter generator"
-msgstr "アラクネ境界線生成"
-
-msgid "Are you sure you want to delete all substitutions?"
-msgstr "本当にすべての置換を削除しますか？"
-
-msgid "Artwork model by Leslie Ing"
-msgstr "アートワークモデル：Leslie Ing"
-
-msgid "Ask for unsaved changes in presets when creating new project"
-msgstr "新規プロジェクト作成時にプリセットの未保存の変更を尋ねる"
-
-msgid "Ask for unsaved changes in presets when selecting new preset"
-msgstr "新規プリセット選択時にプリセットの未保存変更を問い合わせる"
-
-msgid "Ask for unsaved changes in project"
-msgstr "プロジェクト内の未保存の変更点の問い合わせ"
-
-msgid ""
-"Ask to save unsaved changes in presets when closing the application or when "
-"loading a new project"
-msgstr ""
-"アプリケーションを閉じるとき、または新しいプロジェクトを読み込むときに、プリ"
-"セットに保存されていない変更を保存するかどうかを尋ねます"
-
-msgid "Best surface quality"
-msgstr "ベストな表面仕上がり"
-
-msgid "Case insensitive"
-msgstr "大文字・小文字の区別なし"
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "1つ以上のファイルの選択(STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
-msgid "Classic"
-msgstr "クラシック"
-
-msgid ""
-"Classic perimeter generator produces perimeters with constant extrusion "
-"width and for very thin areas is used gap-fill. Arachne engine produces "
-"perimeters with variable extrusion width. This setting also affects the "
-"Concentric infill."
-msgstr ""
-"クラシックの境界線生成は、一定の押し出し幅の境界線を生成し、非常に薄い領域に"
-"はギャップフィルが使用されます。アラクネ・エンジンは、押し出し幅が変化する境"
-"界線を生成します。この設定は、Concentric infillにも影響します。"
-
-msgid ""
-"Configuration snapshots\n"
-"Did you know that you can roll back to a complete backup of all system and "
-"user profiles? You can view and move back and forth between snapshots using "
-"the Configuration - <a>Configuration snapshots menu</a>."
-msgstr ""
-"構成スナップショット\n"
-"すべてのシステムおよびユーザープロファイルの完全なバックアップにロールバック"
-"できることをご存知ですか？\n"
-"[構成]-[<a>構成スナップショット</a>]メニューを使用して、スナップショットを表"
-"示したり、スナップショット間を移動したりできます。"
-
-msgid "Continue"
-msgstr "継続"
-
-msgid "Disable \"%1%\""
-msgstr "\"%1%\" 無効"
-
-msgid "Find / replace patterns in G-code lines and substitute them."
-msgstr "Gコード行のパターンを検索して置換します。"
-
-msgid "Format of G-code thumbnails"
-msgstr "Gコードサムネイルのフォーマット"
-
-msgid ""
-"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
-"QOI for low memory firmware"
-msgstr ""
-"Gコードサムネイルのフォーマット。PNGは最高の品質、JPGは最小のサイズ、QOIは低"
-"メモリのファームウェアのため"
-
-msgid "G-code substitutions"
-msgstr "Gコード置換"
-
-msgid "High viscosity"
-msgstr "高粘度"
-
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr "有効にすると、PrusaSlicerは前回閉じた位置で開きます"
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr ""
-"この機能を有効にすると、PrusaSlicerはブラウザでハイパーリンクを開きません。"
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "STL/3MF/STEP/OBJ/AMFのインポート(&F)"
-
-msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
-msgstr "既存のプレートを保持しながらSTL/3MF/STEP/OBJ/AMFを設定なしでインポート"
-
-msgid "Leave \"%1%\" enabled"
-msgstr "\"%1%\" を有効のままにする"
-
-msgid ""
-"Lightning infill\n"
-"Did you know that you can use the Lightning infill to support only the top "
-"surfaces, save a lot of the filament, and decrease the print time? Read more "
-"in the documentation."
-msgstr ""
-"ライトニングインフィル\n"
-"ライトニングインフィルを使用すると、上面のみをサポートし、使用するフィラメン"
-"トを大幅に節約することができ、プリント時間を短縮できることをご存知ですか？詳"
-"しくは、ドキュメントをご覧ください。"
-
-msgid "Lowest Z height"
-msgstr "最小Z高さ"
-
-msgid "Match single line"
-msgstr "1行にマッチする"
-
-msgid "Minimum feature size"
-msgstr "最小フィーチャーサイズ"
-
-msgid "Minimum perimeter width"
-msgstr "最小境界線幅"
-
-msgid ""
-"Minimum thickness of thin features. Model features that are thinner than "
-"this value will not be printed, while features thicker than the Minimum "
-"feature size will be widened to the Minimum perimeter width. If expressed as "
-"a percentage (for example 25%), it will be computed based on the nozzle "
-"diameter."
-msgstr ""
-"薄いフィーチャーの最小厚み。この値より薄いモデルフィーチャーはプリントされ"
-"ず、最小フィーチャーサイズより厚いフィーチャーは最小外周幅に広げられます。"
-"パーセントで表現される場合（例えば25％）、ノズル径を基に計算されます。"
-
-msgid "No extrusions were generated for objects."
-msgstr "オブジェクトのツールパスが生成されませんでした。"
-
-msgid "Open project AMF/3MF with config, clear plater"
-msgstr "プロジェクトAMF/3MFを設定を含めて開き、プレートをクリアします"
-
-msgid "Optimize object rotation for best surface quality."
-msgstr "ベストな表現仕上がりにするためのオブジェクト回転の最適化"
-
-msgid ""
-"Optimize object rotation to have minimum amount of overhangs needing support "
-"structures.\n"
-"Note that this method will try to find the best surface of the object for "
-"touching the print bed if no elevation is set."
-msgstr ""
-"オブジェクトの回転を最適化し、サポート構造を必要とするオーバーハングを最小化"
-"します。\n"
-"このメソッドは、高さが設定されていない場合、プリントベッドに接触するオブジェ"
-"クトの最適な面を見つけようとすることに注意してください。"
-
-msgid "Perimeter distribution count"
-msgstr "境界線分布カウント"
-
-msgid "Perimeter generator"
-msgstr "境界線の生成"
-
-msgid "Perimeter transition length"
-msgstr "境界線移行長さ"
-
-msgid "Perimeter transitioning filter margin"
-msgstr "境界線移行フィルタマージン"
-
-msgid "Perimeter transitioning threshold angle"
-msgstr "境界線移行しきい値角"
-
-msgid ""
-"Prevent transitioning back and forth between one extra perimeter and one "
-"less. This margin extends the range of extrusion widths which follow to "
-"[Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. "
-"Increasing this margin reduces the number of transitions, which reduces the "
-"number of extrusion starts/stops and travel time. However, large extrusion "
-"width variation can lead to under- or overextrusion problems. If expressed "
-"as a percentage (for example 25%), it will be computed based on the nozzle "
-"diameter."
-msgstr ""
-"1つ余計な境界線数と1つ少ない境界線数との間を行ったり来たりすることを防ぎま"
-"す。このマージンは、後続する押し出し幅の範囲を[最小境界線幅-マージン、2 * 最"
-"小境界線幅 + マージン]に広げます。このマージンを大きくすることで、遷移の回数"
-"が減り、押し出しの開始/停止回数や移動時間が短縮されます。ただし、押し出し幅の"
-"ばらつきが大きいと、押し出し不足、押し出し過多の問題が発生することがありま"
-"す。パーセントで表すと(例えば25%)、ノズル径を基準に計算されます。"
-
-msgid ""
-"PrusaSlicer crashed last time when attempting to set window position.\n"
-"We are sorry for the inconvenience, it unfortunately happens with certain "
-"multiple-monitor setups.\n"
-"More precise reason for the crash: \"%1%\".\n"
-"For more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n"
-"\n"
-"To avoid this problem, consider disabling \"%4%\" in \"Preferences\". "
-"Otherwise, the application will most likely crash again next time."
-msgstr ""
-"前回、ウィンドウ位置の設定をしようとしたときにPrusaSlicerがクラッシュしまし"
-"た。\n"
-"この現象は、マルチモニター環境において発生します。\n"
-"より正確には、クラッシュの原因は  \"%1%\"。\n"
-"詳細は、GitHub issue tracker: \"%2%\" および \"%3%\" を参照してください。\n"
-"\n"
-"この問題を回避するには、\"Preferences\" で \"%4%\" を無効にしてみてください。"
-"次回からクラッシュする可能性が下がります。"
-
-msgid "PrusaSlicer error"
-msgstr "PrusaSlicer エラー"
-
-msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
-msgstr "PrusaSlicerで致命的なエラーが発生しました: \"%1%\""
-
-msgid ""
-"PrusaSlicer has encountered an error while taking a configuration snapshot."
-msgstr "PrusaSlicerは、構成スナップショットの作成中にエラーが発生しました。"
-
-msgid "PrusaSlicer started after a crash"
-msgstr "クラッシュ後のPrusaSlicerの起動"
-
-msgid "Redo %1$d Action"
-msgid_plural "Redo %1$d Actions"
-msgstr[0] "%1$d 操作の繰り返し"
-msgstr[1] "%1$d 操作の繰り返し"
-
-msgid "Reduced overhang slopes"
-msgstr "オーバーハング角の低減"
-
-msgid "Regular expression"
-msgstr "正規表現"
-
-msgid ""
-"Relative extruder addressing requires resetting the extruder position at "
-"each layer to prevent loss of floating point accuracy. Add \"G92 E0\" to "
-"layer_gcode."
-msgstr ""
-"相対的なエクストルーダーアドレッシングは、浮動小数点精度による損失を防ぐため"
-"に、各レイヤーでエクストルーダー位置をリセットする必要があります。layer_gcode"
-"に \"G92 E0 \"を追加する。"
-
-msgid "Restore window position on start"
-msgstr "起動時にウィンドウの位置を復元する"
-
-msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
-"モデルを回転させ、Z高さを最小にすることで、プリント時間が短縮できます。"
-
-msgid "Select a file"
-msgstr "ファイルの選択"
-
-msgid "Select presets to compare"
-msgstr "比較するプリセットを選択"
-
-msgid ""
-"Solid infill threshold area\n"
-"Did you know that you can make parts of your model with a small cross-"
-"section be filled with solid infill automatically? Set the<a>Solid infill "
-"threshold area</a>. (Expert mode only.)"
-msgstr ""
-"ソリッドインフィルしきい値領域\n"
-"モデルの断面が小さい部分を自動的にソリッドインフィルで埋めることができること"
-"をご存知でしょうか？<a>ソリッドインフィルのしきい値範囲</a>を設定します。(エ"
-"キスパートモードのみ)"
-
-msgid "Split middle perimeter threshold"
-msgstr "分割された中央の境界線しきい値"
-
-msgid "Taking a configuration snapshot failed."
-msgstr "構成スナップショットの作成に失敗しました"
-
-msgid "The file does not exist."
-msgstr "ファイルがありません。"
-
-msgid ""
-"The number of perimeters, counted from the center, over which the variation "
-"needs to be spread. Lower values mean that the outer perimeters don't change "
-"in width."
-msgstr ""
-"中心から数えて、変動を広げる必要のある境界線の数。値が小さいほど、境界線部の"
-"幅が変化しないことを意味する。"
-
-msgid ""
-"The smallest extrusion width, as a factor of the normal extrusion width, "
-"above which a middle perimeter (if there wasn't one already) will be added. "
-"Reduce this setting to use more, thinner perimeters. Increase to use fewer, "
-"wider perimeters. Note that this applies -as if- the entire shape should be "
-"filled with perimeter, so the middle here refers to the middle of the object "
-"between two outer edges of the shape, even if there actually is infill or "
-"other extrusion types in the print instead of the perimeter."
-msgstr ""
-"通常の押し出し幅の倍率で、最小の押し出し幅を指定します。この幅を超えると、中"
-"間の境界線が追加されます（まだない場合）。この設定を小さくすると、より薄い境"
-"界線を使用することができます。より少ない、より広い境界線を使用するには、この"
-"設定を大きくします。この設定は、あたかもシェイプ全体が境界線で埋め尽くされて"
-"いるかのように適用されるため、実際には境界線ではなくインフィルや他の押し出し"
-"タイプがプリントにある場合でも、ここでの中間はシェイプの2つの境界線の間のオブ"
-"ジェクトの中間を指すことに注意してください。"
-
-msgid ""
-"The smallest extrusion width, as a factor of the normal extrusion width, "
-"above which the middle perimeter (if there is one) will be split into two. "
-"Reduce this setting to use more, thinner perimeters. Increase to use fewer, "
-"wider perimeters. Note that this applies -as if- the entire shape should be "
-"filled with perimeter, so the middle here refers to the middle of the object "
-"between two outer edges of the shape, even if there actually is infill or "
-"other extrusion types in the print instead of the perimeter."
-msgstr ""
-"通常の押し出し幅の倍率で、最小の押し出し幅を指定します。この幅を超えると、中"
-"央の境界線（ある場合）は2つに分割されます。この設定を小さくすると、より薄い境"
-"界線を使用することができます。より少ない、より広い境界線を使用するには、この"
-"設定を大きくします。この設定は、あたかも形状全体が外周で埋め尽くされているか"
-"のように適用されるため、実際には境界線ではなくインフィルや他の種類の押し出し"
-"がプリントにある場合でも、ここでの中央は形状の2つの境界線の間のオブジェクトの"
-"中央を指すことに注意してください。"
-
-msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
-"(feedrate 20 mm/s) will take at least 2 seconds."
-msgstr ""
-"この試行設定は、高速から低速に移行する際の押出速度の変化を制限するために使用"
-"される。1.8 mm³/s²の値は、5.4 mm³/s (0.45 mm押出幅、0.2 mm押出高さ、送り速度"
-"60 mm/s)の押出速度から1.8 mm³/s (送り速度20 mm/s)への変化が少なくとも2秒かか"
-"ることを意味します。"
-
-msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from lower speed to higher speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s "
-"(feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-"この試行設定は、低速から高速への移行時に、押出速度の変化を制限するために使用"
-"される。1.8 mm³/s² の値は、1.8 mm³/s (押出幅 0.45 mm、押出高さ 0.2 mm、送り速"
-"度 20 mm/s) の押出速度から 5.4 mm³/s (送り速度 60 mm/s) に変更するのに、少な"
-"くとも 2 秒かかることを意味します。"
-
-msgid "Tilt for high viscosity resin"
-msgstr "高粘度樹脂用ティルト"
-
-msgid "Time of the super slow tilt"
-msgstr "超低速ティルト時間"
-
-msgid "Undo %1$d Action"
-msgid_plural "Undo %1$d Actions"
-msgstr[0] "%1$d 操作のやり直し"
-msgstr[1] "%1$d 操作のやり直し"
-
-msgid ""
-"When to create transitions between even and odd numbers of perimeters. A "
-"wedge shape with an angle greater than this setting will not have "
-"transitions and no perimeters will be printed in the center to fill the "
-"remaining space. Reducing this setting reduces the number and length of "
-"these center perimeters, but may leave gaps or overextrude."
-msgstr ""
-"偶数と奇数の境界線の間に移行部分を作成するタイミングです。この設定より大きい"
-"角度のくさび形は移行が発生せず、残りのスペースを埋めるために中央に境界線がプ"
-"リントされません。この設定を小さくすると、中央の境界線の数と長さが減ります"
-"が、隙間ができたりはみ出したりすることがあります。"
-
-msgid ""
-"When transitioning between different numbers of perimeters as the part "
-"becomes thinner, a certain amount of space is allotted to split or join the "
-"perimeter segments. If expressed as a percentage (for example 100%), it will "
-"be computed based on the nozzle diameter."
-msgstr ""
-"パーツが薄くなるにつれて、異なる数の境界線の間を移行する場合、境界線のセグメ"
-"ントを分割または結合するために一定のスペースが割り当てられます。パーセントで"
-"表すと（例えば100％）、ノズルの直径に基づいて計算されます。"
-
-msgid ""
-"Width of the perimeter that will replace thin features (according to the "
-"Minimum feature size) of the model. If the Minimum perimeter width is "
-"thinner than the thickness of the feature, the perimeter will become as "
-"thick as the feature itself. If expressed as a percentage (for example 85%), "
-"it will be computed based on the nozzle diameter."
-msgstr ""
-"モデルの薄いフィーチャー（最小フィーチャーサイズに従って）を置き換える境界線"
-"の幅。最小境界線幅がフィーチャーの厚みより薄い場合、境界線はフィーチャー自体"
-"の厚みと同じになります。パーセントで表すと（例えば85％）、ノズルの直径に基づ"
-"いて計算されます。"
-
-msgid "You have to enter a printer name."
-msgstr "プリンター名の入力が必要です。"
-
-msgid "You will not be asked about it again on hyperlinks hovering."
-msgstr "ハイパーリンクホバーで再び聞かれることはありません。"
-
-msgid ""
-"You will not be asked about it again, when: \n"
-"- Closing PrusaSlicer,\n"
-"- Loading or creating a new project"
-msgstr ""
-"以下の時に聞かれないようになります：\n"
-"- PrusaSlicer終了時。\n"
-"- 新しいプロジェクトのロードまたは作成時"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time you "
-"create new project"
-msgstr ""
-"次回の新規プロジェクト作成時に、プリセットの未保存の変更について尋ねられるこ"
-"とはありません"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time you "
-"switch a preset"
-msgstr ""
-"次回プリセット切り替え時に、プリセット内の未保存の変更について尋ねられること"
-"はありません"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time "
-"you: \n"
-"- Closing PrusaSlicer while some presets are modified,\n"
-"- Loading a new project while some presets are modified"
-msgstr ""
-"保存されていないプリセットの変更については、次回から質問されなくなります：\n"
-"- プリセットを変更したままPrusaSlicerを終了する。\n"
-"- プリセットを変更した状態で新しいプロジェクトをロードする。"
-
-msgid "mm/s"
-msgstr "mm/s"
-
-msgid "mm²"
-msgstr "mm²"
-
-msgid "object"
-msgid_plural "objects"
-msgstr[0] "オブジェクト"
-msgstr[1] "オブジェクト"

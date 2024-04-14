@@ -1,365 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "Controle de aceleração (avançado)"
-
-msgid "Activate"
-msgstr "Ativar"
-
-msgid "Advanced"
-msgstr "Avançado"
-
-msgid "After layer change G-code"
-msgstr "Após a mudança da camada do G-code"
-
-msgid "Aligned"
-msgstr "Alinhado(a)"
-
-msgid "Automatic generation"
-msgstr "Geração Automática"
-
-msgid "Autospeed (advanced)"
-msgstr "Velocidade automática (avançado)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Evitar cruzamento de perímetros"
-
-msgid "Bed"
-msgstr "Mesa"
-
-msgid "Before layer change G-code"
-msgstr "Antes da mudança de camada G-code"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "G-code entre objetos (para impressão sequencial)"
-
-msgid "Bottom"
-msgstr "Base"
-
-msgid "Bridge"
-msgstr "Ponte"
-
-msgid "Bridges"
-msgstr "Pontes"
-
-msgid "Bridges fan speed"
-msgstr "Velocidade da ventoinha nas pontes"
-
-msgid "Brim"
-msgstr "Aba"
-
-msgid "Capabilities"
-msgstr "Capacidades"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "Conexão das varas de suporte e junções"
-
-msgid "Cooling"
-msgstr "Resfriamento"
-
-msgid "Corrections"
-msgstr "Correções"
-
-msgid "Custom G-code"
-msgstr "G-code customizado"
-
-msgid "Default"
-msgstr "Padrão"
-
-msgid "default"
-msgstr "padrão"
-
-msgid "Density"
-msgstr "Densidade"
-
-msgid "Dependencies"
-msgstr "Dependências"
-
-msgid "Disable fan for the first"
-msgstr "Desabilite o ventoinha para a(s) primeira(s)"
-
-msgid "Display"
-msgstr "Exibição"
-
-msgid "End G-code"
-msgstr "G-code de finalização"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Assegure a espessura vertical da parede"
-
-msgid "Exposure"
-msgstr "Exposição"
-
-msgid "external perimeter"
-msgstr "Perímetro externo"
-
-msgid "Extruder"
-msgstr "Extrusora"
-
-msgid "Extruders"
-msgstr "Exrtrusoras"
-
-msgid "Extrusion width"
-msgstr "Espessura da extrusão"
-
-msgid "Filament"
-msgstr "Filamento"
-
-msgid "Filament properties"
-msgstr "Propriedades de filamento"
-
-msgid "Firmware"
-msgstr "Firmware"
-
-msgid "First layer"
-msgstr "Primeira camada"
-
-msgid "first layer"
-msgstr "Primeira camada"
-
-msgid "First layer speed"
-msgstr "Velocidade da primeira camada"
-
-msgid "Flow"
-msgstr "Fluxo"
-
-msgid "Fuzzy skin (experimental)"
-msgstr "Pele Difusa (Fuzzy skin - experimental)"
-
-msgid "G-Code"
-msgstr "G-code"
-
-msgid "Gap fill"
-msgstr "Preenchimento de vão"
-
-msgid "Gap Fill"
-msgstr "Preenchimento de vão"
-
-msgid "General"
-msgstr "Geral"
-
-msgid "Hollowing"
-msgstr "Deixar oco"
-
-msgid "Horizontal shells"
-msgstr "Paredes horizontais"
-
-msgid "Infill"
-msgstr "Preenchimento"
-
-msgid "infill"
-msgstr "preenchimento"
-
-msgid "Layer height"
-msgstr "Altura da camada"
-
-msgid "Layer height limits"
-msgstr "Limites de altura da camada"
-
-msgid "Layers"
-msgstr "Camadas"
-
-msgid "Layers and perimeters"
-msgstr "Camadas e perímetros"
-
-msgid "Length"
-msgstr "Comprimento"
-
-msgid "Material"
-msgstr "Material"
-
-msgid "Material printing profile"
-msgstr "Perfil de impressão de materiais"
-
-msgid "Minimum shell thickness"
-msgstr "Espessura mínima da concha"
-
-msgid "mm"
-msgstr "mm"
-
-msgid "Modifiers"
-msgstr "Modificadores"
-
-msgid "Notes"
-msgstr "Notas"
-
-msgid "Number of pixels in"
-msgstr "Número de pixels em"
-
-msgid "Only lift Z"
-msgstr "Apenas elevar Z"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Apenas retrair quando cruzar perímetros"
-
-msgid "Ooze prevention"
-msgstr "Prevenção de vazão"
-
-msgid "Options"
-msgstr "Opções de saída"
-
-msgid "Options for support material and raft"
-msgstr "Opções para material de suporte e estrado"
-
-msgid "Other"
-msgstr "Outro"
-
-msgid "Output file"
-msgstr "Arquivo de saída"
-
-msgid "Output options"
-msgstr "Opções de saída"
-
-msgid "Overlap"
-msgstr "Cobrir"
-
-msgid "Pad"
-msgstr "Bloco"
-
-msgid "Pattern"
-msgstr "Padrão"
-
-msgid "Pause Print G-code"
-msgstr "Pausa impressão ou código G personalizado"
-
-msgid "perimeter"
-msgstr "Perímetro"
-
-msgid "Plater"
-msgstr "Bandeja"
-
-msgid "Pressure equalizer (experimental)"
-msgstr "Equalizador de pressão (experimental)"
-
-msgid "Preview"
-msgstr "Visualização"
-
-msgid "Print Host upload"
-msgstr "Upload do host de impressão"
-
-msgid "Print speed override"
-msgstr "Substituição da velocidade de impressão"
-
-msgid "Printer scaling correction"
-msgstr "Correção de dimensionamento da impressora"
-
-msgid "Profile dependencies"
-msgstr "Dependências de perfil"
-
-msgid "Quality"
-msgstr "Qualidade"
-
-msgid "Raft"
-msgstr "Estrado"
-
-msgid "Reducing printing time"
-msgstr "Reduzindo o tempo de impressão"
-
-msgid "Retraction"
-msgstr "Retração"
-
-msgid "Retraction Speed"
-msgstr "Velocidade da retração"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Retração quando a ferramenta está desativada (config. avançadas para "
-"instalações multiextrusoras)"
-
-msgid "Seam position"
-msgstr "Posição da costura"
-
-msgid "Sequential printing"
-msgstr "Impressão sequencial"
-
-msgid "Size"
-msgstr "Tamanho"
-
-msgid "Size and coordinates"
-msgstr "Tamanho e coordenadas"
-
-msgid "Skirt"
-msgstr "Saia"
-
-msgid "skirt"
-msgstr "Saia"
-
-msgid "Slicing"
-msgstr "Fatiamento"
-
-msgid "Solid"
-msgstr "Sólido"
-
-msgid "solid infill"
-msgstr "preenchimento sólido"
-
-msgid "Solid layers"
-msgstr "Camadas sólidas"
-
-msgid "Spacing"
-msgstr "Espaçamento"
-
-msgid "spacing"
-msgstr "Espaçamento"
-
-msgid "Speed"
-msgstr "Velocidade"
-
-msgid "Speed for non-print moves"
-msgstr "Velocidade para movimentos não impressos"
-
-msgid "Speed for print moves"
-msgstr "Velocidade para movimentos de impressão"
-
-msgid "Start G-code"
-msgstr "G-code de início"
-
-msgid "Support head"
-msgstr "Cabeça de suporte"
-
-msgid "Support material"
-msgstr "Material de suporte"
-
-msgid "support material"
-msgstr "Material de suporte"
-
-msgid "Support pillar"
-msgstr "Pilar de suporte"
-
-msgid "Supports"
-msgstr "Suportes"
-
-msgid "Template Custom G-code"
-msgstr "Modelo de G-code customizado"
-
-msgid "Tilt"
-msgstr "Inclinar"
-
-msgid "Tilt time"
-msgstr "Tempo de inclinação"
-
-msgid "Tool change G-code"
-msgstr "G-code de troca de ferramenta"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr ""
-"Parâmetros de mudança de ferramenta com impressoras de multi material com "
-"apenas uma extrusora"
-
-msgid "Top"
-msgstr "Topo"
-
-msgid "Vertical shells"
-msgstr "Paredes verticais"
-
-msgid "width"
-msgstr "Espessura"
-
-msgid "Wipe tower"
-msgstr "Torre de limpeza"
-
-msgid "Wipe tower parameters"
-msgstr "Parâmetros da torre de limpeza"
-
 msgid "%1% Preset"
 msgstr "%1% Predefinição"
 
@@ -642,6 +281,9 @@ msgstr "acima de Z"
 msgid "Above Z"
 msgstr "Acima de Z"
 
+msgid "Acceleration control (advanced)"
+msgstr "Controle de aceleração (avançado)"
+
 msgid "Accuracy"
 msgstr "Precisão"
 
@@ -650,6 +292,9 @@ msgstr "Preciso"
 
 msgid "Action"
 msgstr "Ação"
+
+msgid "Activate"
+msgstr "Ativar"
 
 msgid "Active"
 msgstr "Ativar"
@@ -818,6 +463,9 @@ msgstr ""
 msgid "Address"
 msgstr "Endereço"
 
+msgid "Advanced"
+msgstr "Avançado"
+
 msgid "Advanced mode"
 msgstr "Modo avançado"
 
@@ -838,11 +486,17 @@ msgstr ""
 "Prime esta quantidade de material para a torre de limpeza para produzir "
 "sucessivas preenchimento ou sacrificial objeto extrusões de forma confiável."
 
+msgid "After layer change G-code"
+msgstr "Após a mudança da camada do G-code"
+
 msgid "Align the model to the given point."
 msgstr "Alinhar modelo de acordo com o ponto inserido."
 
 msgid "Align XY"
 msgstr "Alinhar XY"
+
+msgid "Aligned"
+msgstr "Alinhado(a)"
 
 msgid "All"
 msgstr "Todos"
@@ -1015,11 +669,20 @@ msgstr "Pontos de suporte gerados automaticamente"
 msgid "Autogeneration will erase all manually edited points."
 msgstr "Gerar automaticamente irá apagar todos os pontos manualmente editados."
 
+msgid "Automatic generation"
+msgstr "Geração Automática"
+
 msgid "Automatic updates"
 msgstr "Atualizações automáticas"
 
 msgid "Automatically repair an STL file"
 msgstr "Reparar automaticamente um arquivo STL"
+
+msgid "Autospeed (advanced)"
+msgstr "Velocidade automática (avançado)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Evitar cruzamento de perímetros"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Evitar cruzamento de perímetros - Comprimento máximo do desvio"
@@ -1053,6 +716,9 @@ msgstr "Processamento em segundo plano"
 msgid "Balanced"
 msgstr "Balanceado"
 
+msgid "Bed"
+msgstr "Mesa"
+
 msgid "Bed custom model"
 msgstr "Modelo customizado da mesa"
 
@@ -1074,6 +740,9 @@ msgstr "Temperatura da mesa"
 msgid "Bed Temperature:"
 msgstr "Temperatura da mesa:"
 
+msgid "Before layer change G-code"
+msgstr "Antes da mudança de camada G-code"
+
 msgid "Before roll back"
 msgstr "Antes de reverter"
 
@@ -1082,6 +751,9 @@ msgstr "Abaixo de Z"
 
 msgid "Between objects G-code"
 msgstr "G-code entre objetos"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "G-code entre objetos (para impressão sequencial)"
 
 msgid "Block seam"
 msgstr "Bloquear costura"
@@ -1098,6 +770,9 @@ msgstr "Volume do pote"
 msgid "Bottle weight"
 msgstr "Peso do pote"
 
+msgid "Bottom"
+msgstr "Base"
+
 msgid "Bottom fill pattern"
 msgstr "Padrão de preenchimento da base"
 
@@ -1113,11 +788,20 @@ msgstr "Camadas sólidas inferiores"
 msgid "Bottom View"
 msgstr "Vista da base"
 
+msgid "Bridge"
+msgstr "Ponte"
+
 msgid "Bridge flow ratio"
 msgstr "Relação de fluxo da ponte"
 
 msgid "Bridge infill"
 msgstr "Preenchimento de pontes"
+
+msgid "Bridges"
+msgstr "Pontes"
+
+msgid "Bridges fan speed"
+msgstr "Velocidade da ventoinha nas pontes"
 
 msgid "Bridging angle"
 msgstr "Ângulo de ponte"
@@ -1133,6 +817,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Ponte volumétrico"
+
+msgid "Brim"
+msgstr "Aba"
 
 msgid "Brim width"
 msgstr "Largura da aba"
@@ -1230,6 +917,9 @@ msgid ""
 msgstr ""
 "Não pode prosseguir sem pontos de suporte! Adicione pontos de suporte ou "
 "desative a geração de suporte."
+
+msgid "Capabilities"
+msgstr "Capacidades"
 
 msgid "Capture a configuration snapshot"
 msgstr "Capturar uma config"
@@ -1455,6 +1145,9 @@ msgstr "Assistente de config"
 msgid "Confirmation"
 msgstr "Confirmação"
 
+msgid "Connection of the support sticks and junctions"
+msgstr "Conexão das varas de suporte e junções"
+
 msgid ""
 "Controls the bridge type between two neighboring pillars. Can be zig-zag, "
 "cross (double zig-zag) or dynamic which will automatically switch between "
@@ -1466,6 +1159,9 @@ msgstr ""
 
 msgid "Convert from imperial units"
 msgstr "Converter de unidades imperiais"
+
+msgid "Cooling"
+msgstr "Resfriamento"
 
 msgid "Cooling tube length"
 msgstr "Comprimento do tubo de resfriamento"
@@ -1533,6 +1229,9 @@ msgstr "Direitos autorais"
 
 msgid "Correction for expansion"
 msgstr "Correção para expansão"
+
+msgid "Corrections"
+msgstr "Correções"
 
 msgid "Cost"
 msgstr "Custo"
@@ -1612,6 +1311,9 @@ msgstr ""
 "conexões HTTPS OctoPrint, no formato CRT/PEM. Se deixado em branco, o "
 "repositório de certificados do OS CA padrão é usado."
 
+msgid "Custom G-code"
+msgstr "G-code customizado"
+
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "Código G personalizado na camada atual (%1% mm)."
 
@@ -1650,6 +1352,12 @@ msgstr "descompressão falhou ou arquivo está corrompido"
 
 msgid "Decrease Instances"
 msgstr "Diminuir instâncias"
+
+msgid "default"
+msgstr "padrão"
+
+msgid "Default"
+msgstr "Padrão"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1801,8 +1509,14 @@ msgstr "Excluir todos os objetos"
 msgid "Deletes the current selection"
 msgstr "Excluir a seleção atual"
 
+msgid "Density"
+msgstr "Densidade"
+
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr "Densidade de preenchimento interno, expresso na faixa de 0%-100%."
+
+msgid "Dependencies"
+msgstr "Dependências"
 
 msgid "Deretraction Speed"
 msgstr "Velocidade de retorno de retração"
@@ -1866,6 +1580,9 @@ msgstr ""
 msgid "Direction"
 msgstr "Direção"
 
+msgid "Disable fan for the first"
+msgstr "Desabilite o ventoinha para a(s) primeira(s)"
+
 msgid "Discard"
 msgstr "Descartar"
 
@@ -1874,6 +1591,9 @@ msgstr "Descarte todas as alterações personalizadas"
 
 msgid "Discard changes"
 msgstr "Descartar mudanças"
+
+msgid "Display"
+msgstr "Exibição"
 
 msgid "Display height"
 msgstr "Altura do display"
@@ -2118,6 +1838,9 @@ msgstr "Habilitar altura de camada variável"
 msgid "Enable vertical mirroring of output images"
 msgstr "Habilitar espelhamento vertical de imagens de saída"
 
+msgid "End G-code"
+msgstr "G-code de finalização"
+
 msgid "Enforce"
 msgstr "Reforçar"
 
@@ -2135,6 +1858,9 @@ msgstr "Reforçar suportes"
 
 msgid "Enqueued"
 msgstr "Enfileirado"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Assegure a espessura vertical da parede"
 
 msgid "Enter a search term"
 msgstr "Entre com um termo de busca"
@@ -2391,10 +2117,16 @@ msgstr "Exportando o modelo de origem"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "O tempo de exposição está fora dos limites do perfil da impressora."
 
+msgid "Exposure"
+msgstr "Exposição"
+
 msgid "Exposure time"
 msgstr "Tempo de exposição"
 
 msgid "External perimeter"
+msgstr "Perímetro externo"
+
+msgid "external perimeter"
 msgstr "Perímetro externo"
 
 msgid "external perimeters"
@@ -2412,6 +2144,9 @@ msgstr "Comprimento extra no reinício"
 msgid "Extra loading distance"
 msgstr "Distância de carregamento extra"
 
+msgid "Extruder"
+msgstr "Extrusora"
+
 msgid "Extruder %d"
 msgstr "Extrusora %d"
 
@@ -2427,6 +2162,9 @@ msgstr "Cor da extrusora"
 msgid "Extruder offset"
 msgstr "Compensação da extrusora"
 
+msgid "Extruders"
+msgstr "Exrtrusoras"
+
 msgid "Extruders count"
 msgstr "Contagem de extrusoras"
 
@@ -2441,6 +2179,9 @@ msgstr "Multiplicador de extrusão"
 
 msgid "Extrusion Temperature:"
 msgstr "Temperatura de extrusão:"
+
+msgid "Extrusion width"
+msgstr "Espessura da extrusão"
 
 msgid "Facets"
 msgstr "Facetas"
@@ -2500,6 +2241,9 @@ msgstr "Tipos de características"
 msgid "filament"
 msgstr "filamento"
 
+msgid "Filament"
+msgstr "Filamento"
+
 msgid "Filament and Nozzle Diameters"
 msgstr "Diâmetro do bico e do filamento"
 
@@ -2530,6 +2274,9 @@ msgstr "Posição de estacionamento do filamento"
 
 msgid "Filament Profiles Selection"
 msgstr "Seleção de Perfis de Filamento"
+
+msgid "Filament properties"
+msgstr "Propriedades de filamento"
 
 msgid "Filament Settings"
 msgstr "Config. de filamento"
@@ -2603,6 +2350,9 @@ msgstr "Achar"
 msgid "Finished"
 msgstr "Finalizado"
 
+msgid "Firmware"
+msgstr "Firmware"
+
 msgid "Firmware flasher"
 msgstr "Atualizador de Firmware"
 
@@ -2618,6 +2368,12 @@ msgstr "Tipo de Firmware"
 msgid "first"
 msgstr "primeiro"
 
+msgid "First layer"
+msgstr "Primeira camada"
+
+msgid "first layer"
+msgstr "Primeira camada"
+
 msgid "First layer bed temperature"
 msgstr "Velocidade da primeira camada"
 
@@ -2626,6 +2382,9 @@ msgstr "Altura da primeira camada"
 
 msgid "First layer nozzle temperature"
 msgstr "Temperatura do bico da primeira camada"
+
+msgid "First layer speed"
+msgstr "Velocidade da primeira camada"
 
 msgid "First layer volumetric"
 msgstr "Primeira camada volumétrica"
@@ -2650,6 +2409,9 @@ msgstr "Atualização em progresso. Favor não desconectar sua impressora!"
 
 msgid "Flashing succeeded!"
 msgstr "Atualizado com sucesso!"
+
+msgid "Flow"
+msgstr "Fluxo"
 
 msgid "Flow rate"
 msgstr "Fluxo"
@@ -2720,6 +2482,9 @@ msgstr "nome customizado da config"
 msgid "G-code"
 msgstr "G-code"
 
+msgid "G-Code"
+msgstr "G-code"
+
 msgid ""
 "G-code associated to this tick mark is in a conflict with print mode.\n"
 "Editing it will cause changes of Slider data."
@@ -2745,6 +2510,15 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
+
+msgid "Gap fill"
+msgstr "Preenchimento de vão"
+
+msgid "Gap Fill"
+msgstr "Preenchimento de vão"
+
+msgid "General"
+msgstr "Geral"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -2982,6 +2756,9 @@ msgstr "Deixar o modelo oco para ter um interior vazio"
 msgid "Hollow this object"
 msgstr "Deixar este objeto oco"
 
+msgid "Hollowing"
+msgstr "Deixar oco"
+
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -3003,6 +2780,9 @@ msgstr "Mudança de parâmetro de suporte"
 
 msgid "Honeycomb"
 msgstr "Hexágono"
+
+msgid "Horizontal shells"
+msgstr "Paredes horizontais"
 
 msgid "Horizontal Slider"
 msgstr "Rolagem horizontal"
@@ -3382,6 +3162,12 @@ msgstr ""
 "Clique no ícone REDEFINIR para redefinir todas as config. do grupo de opções "
 "atual para a última predefinição salva."
 
+msgid "Infill"
+msgstr "Preenchimento"
+
+msgid "infill"
+msgstr "preenchimento"
+
 msgid "Infill before perimeters"
 msgstr "Preenchimento antes dos perímetros"
 
@@ -3590,11 +3376,23 @@ msgstr "A última instância de um objeto não pode ser excluída."
 msgid "Layer"
 msgstr "Camada"
 
+msgid "Layer height"
+msgstr "Altura da camada"
+
+msgid "Layer height limits"
+msgstr "Limites de altura da camada"
+
 msgid "Layer range Settings to modify"
 msgstr "Config. de intervalo de camada para modificar"
 
 msgid "layers"
 msgstr "camadas"
+
+msgid "Layers"
+msgstr "Camadas"
+
+msgid "Layers and perimeters"
+msgstr "Camadas e perímetros"
 
 msgid "Left"
 msgstr "Esquerda"
@@ -3613,6 +3411,9 @@ msgstr "Vista esquerda"
 
 msgid "Legend/Estimated printing time"
 msgstr "Legenda/Tempo estimado de impressão"
+
+msgid "Length"
+msgstr "Comprimento"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -3762,6 +3563,9 @@ msgstr "Arquivo SLA mascarado exportado para %1%"
 
 msgid "Mate&rial Settings Tab"
 msgstr "A&ba de config. de material"
+
+msgid "Material"
+msgstr "Material"
 
 msgid "Material Settings"
 msgstr "Config. de material"
@@ -3966,6 +3770,9 @@ msgstr "Velocidades alimentação mínimos"
 msgid "Minimum initial exposure time"
 msgstr "Tempo inicial mínimo de exposição"
 
+msgid "Minimum shell thickness"
+msgstr "Espessura mínima da concha"
+
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Espessura mínima de uma parede superior/inferior"
 
@@ -4004,6 +3811,9 @@ msgstr "Misto"
 
 msgid "ml"
 msgstr "ml"
+
+msgid "mm"
+msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (zero para desativar)"
@@ -4058,6 +3868,9 @@ msgstr "modificado"
 
 msgid "Modifier"
 msgstr "Modificador"
+
+msgid "Modifiers"
+msgstr "Modificadores"
 
 msgid "money/bottle"
 msgstr "dinheiro/pote"
@@ -4270,6 +4083,9 @@ msgstr "Nota: alguns atalhos funcionam somente em modos que não editam."
 msgid "Note: This preset will be replaced after saving"
 msgstr "Nota: Essa predefinição será substituída após salvar"
 
+msgid "Notes"
+msgstr "Notas"
+
 msgid "Notice"
 msgstr "Aviso"
 
@@ -4300,6 +4116,9 @@ msgid ""
 msgstr ""
 "Número de camadas de interface para inserir entre o objeto(s) e material de "
 "suporte."
+
+msgid "Number of pixels in"
+msgstr "Número de pixels em"
 
 msgid "Number of pixels in X"
 msgstr "Número de pixels em X"
@@ -4425,11 +4244,20 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "Somente preenchimento onde necessário"
 
+msgid "Only lift Z"
+msgstr "Apenas elevar Z"
+
 msgid "Only lift Z above"
 msgstr "Apenas elevar Z acima"
 
 msgid "Only lift Z below"
 msgstr "Apenas elevar Z abaixo"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Apenas retrair quando cruzar perímetros"
+
+msgid "Ooze prevention"
+msgstr "Prevenção de vazão"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -4484,6 +4312,12 @@ msgstr ""
 "Isto é principalmente útil com extrusoras Bowden que sofrem de escorrimento. "
 "Este recurso retarda a impressão e a geração de G-code."
 
+msgid "Options"
+msgstr "Opções de saída"
+
+msgid "Options for support material and raft"
+msgstr "Opções para material de suporte e estrado"
+
 msgid "Options:"
 msgstr "Opções de saída:"
 
@@ -4499,6 +4333,9 @@ msgstr "Pesquisa de orientação cancelada."
 msgid "Origin"
 msgstr "Origem"
 
+msgid "Other"
+msgstr "Outro"
+
 msgid "Other layers"
 msgstr "Outras camadas"
 
@@ -4508,11 +4345,17 @@ msgstr "Outros fornecedores"
 msgid "Output File"
 msgstr "Arquivo de saída"
 
+msgid "Output file"
+msgstr "Arquivo de saída"
+
 msgid "Output filename format"
 msgstr "Formato de nome de arquivo de saída"
 
 msgid "Output Model Info"
 msgstr "Informações do modelo de saída"
+
+msgid "Output options"
+msgstr "Opções de saída"
 
 msgid "Overhang perimeter"
 msgstr "Perímetro de angulação"
@@ -4520,8 +4363,14 @@ msgstr "Perímetro de angulação"
 msgid "Overhang threshold"
 msgstr "Limite de angulação"
 
+msgid "Overlap"
+msgstr "Cobrir"
+
 msgid "P&rint Settings Tab"
 msgstr "C&onfig. de impressão"
+
+msgid "Pad"
+msgstr "Bloco"
 
 msgid "Pad around object"
 msgstr "Pad em torno do objeto"
@@ -4598,6 +4447,9 @@ msgstr "Colar da área de transferência"
 msgid "Paste From Clipboard"
 msgstr "Colar da área de transferência"
 
+msgid "Pattern"
+msgstr "Padrão"
+
 msgid "Pattern angle"
 msgstr "Ângulo do padrão"
 
@@ -4613,6 +4465,9 @@ msgstr "Pausar"
 msgid "Pause print (\"%1%\")"
 msgstr "Pausar impressão (\"%1%\")"
 
+msgid "Pause Print G-code"
+msgstr "Pausa impressão ou código G personalizado"
+
 msgid "Percentage"
 msgstr "Porcentagem"
 
@@ -4627,6 +4482,9 @@ msgstr ""
 "artefatos indesejados."
 
 msgid "Perimeter"
+msgstr "Perímetro"
+
+msgid "perimeter"
 msgstr "Perímetro"
 
 msgid "Perimeter extruder"
@@ -4671,6 +4529,9 @@ msgstr "Coloque rolamentos em ranhuras e retome a impressão"
 
 msgid "Place on face"
 msgstr "Colocar em uma face"
+
+msgid "Plater"
+msgstr "Bandeja"
 
 msgid "Please check your object list before preset changing."
 msgstr "Verifique a lista de objetos antes de alterar a predefinição."
@@ -4758,6 +4619,9 @@ msgstr ""
 "Pressione para acelerar em 5 vezes enquanto move miniatura\n"
 "com as setas do teclado ou scroll do mouse"
 
+msgid "Preview"
+msgstr "Visualização"
+
 msgid "Preview hollowed and drilled model"
 msgstr "Modelo de visualização oco e perfurado"
 
@@ -4786,6 +4650,9 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "Diâmetros de impressão"
 
+msgid "Print Host upload"
+msgstr "Upload do host de impressão"
+
 msgid "Print host upload queue"
 msgstr "Fila de carregamento do host de impressão"
 
@@ -4803,6 +4670,9 @@ msgstr "Config. de impressão"
 
 msgid "Print Settings Tab"
 msgstr "Config. de impressão"
+
+msgid "Print speed override"
+msgstr "Substituição da velocidade de impressão"
 
 msgid "Print&er Settings Tab"
 msgstr "A&ba de config. da impressora"
@@ -4824,6 +4694,9 @@ msgstr "modelo de impressora"
 
 msgid "Printer notes"
 msgstr "Notas da impressora"
+
+msgid "Printer scaling correction"
+msgstr "Correção de dimensionamento da impressora"
 
 msgid "Printer Settings"
 msgstr "Config. da impressora"
@@ -4863,6 +4736,9 @@ msgstr ""
 msgid "Processing %s"
 msgstr "Processando %s"
 
+msgid "Profile dependencies"
+msgstr "Dependências de perfil"
+
 msgid "Profile:"
 msgstr "Perfil:"
 
@@ -4884,6 +4760,9 @@ msgstr "Volumes de purga-matriz"
 msgid "Purpose of Machine Limits"
 msgstr "Proposito dos Limites da máquina"
 
+msgid "Quality"
+msgstr "Qualidade"
+
 msgid "Quality / Speed"
 msgstr "Qualidade / Velocidade"
 
@@ -4904,6 +4783,9 @@ msgstr "Sair, eu moverei meus dados agora"
 
 msgid "Radius"
 msgstr "Raio"
+
+msgid "Raft"
+msgstr "Estrado"
 
 msgid "Raft layers"
 msgstr "Camadas da estrado"
@@ -4998,6 +4880,9 @@ msgstr[1] "Refazer ações de %1$d"
 
 msgid "Redo History"
 msgstr "Refazer histórico"
+
+msgid "Reducing printing time"
+msgstr "Reduzindo o tempo de impressão"
 
 msgid "Refresh Printers"
 msgstr "Atualizar Impressoras"
@@ -5191,6 +5076,9 @@ msgstr "Quantidade de retração antes da limpeza"
 msgid "Retract on layer change"
 msgstr "Retrair na mudança de camada"
 
+msgid "Retraction"
+msgstr "Retração"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr ""
@@ -5205,6 +5093,14 @@ msgstr "Comprimento de retração"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Comprimento de retração (mudança de ferramenta)"
+
+msgid "Retraction Speed"
+msgstr "Velocidade da retração"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Retração quando a ferramenta está desativada (config. avançadas para "
+"instalações multiextrusoras)"
 
 msgid "Retractions"
 msgstr "Retrações"
@@ -5375,6 +5271,9 @@ msgstr "Agendando upload para ` %1%` . Veja a aba -> Print Host Upload Queue"
 msgid "Seam painting"
 msgstr "Pintura de costura"
 
+msgid "Seam position"
+msgstr "Posição da costura"
+
 msgid "Seam preferred direction"
 msgstr "Direção de preferência da costura"
 
@@ -5522,6 +5421,9 @@ msgstr "Enviar para a impressora"
 
 msgid "Seq."
 msgstr "Seq."
+
+msgid "Sequential printing"
+msgstr "Impressão sequencial"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "Rolagem sequencial aplicado apenas na camada de topo"
@@ -5792,8 +5694,20 @@ msgstr "Parâmetros para extrusora única multimaterial"
 msgid "Single instance mode"
 msgstr "Modo instancia única"
 
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Size and coordinates"
+msgstr "Tamanho e coordenadas"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Tamanho no X e Y na mesa retangular."
+
+msgid "Skirt"
+msgstr "Saia"
+
+msgid "skirt"
+msgstr "Saia"
 
 msgid "Skirt and brim"
 msgstr "Saia e aba"
@@ -5892,6 +5806,9 @@ msgstr ""
 msgid "Sliced Info"
 msgstr "Informações fatiadas"
 
+msgid "Slicing"
+msgstr "Fatiamento"
+
 msgid "Slicing complete"
 msgstr "Fatiamento completo"
 
@@ -5937,11 +5854,17 @@ msgstr "Suavizar"
 msgid "Snapshot name"
 msgstr "Nome da captura"
 
+msgid "Solid"
+msgstr "Sólido"
+
 msgid "Solid "
 msgstr "Sólido "
 
 msgid "Solid infill"
 msgstr "Preenchimento sólido"
+
+msgid "solid infill"
+msgstr "preenchimento sólido"
 
 msgid "Solid infill every"
 msgstr "Preenchimento sólido a cada"
@@ -5951,6 +5874,9 @@ msgstr "Extrusora de preenchimento sólido"
 
 msgid "Solid infill threshold area"
 msgstr "Área de limiar de preenchimento sólido"
+
+msgid "Solid layers"
+msgstr "Camadas sólidas"
 
 msgid "Soluble material"
 msgstr "Material solúvel"
@@ -5989,6 +5915,12 @@ msgstr ""
 "Algumas impressoras ou config. de impressora podem ter dificuldades para "
 "imprimir com uma altura de camada variável. Ativado por padrão."
 
+msgid "Spacing"
+msgstr "Espaçamento"
+
+msgid "spacing"
+msgstr "Espaçamento"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Espaçamento entre as linhas de interface. Defina zero para obter uma "
@@ -5997,8 +5929,17 @@ msgstr ""
 msgid "Spacing between support material lines."
 msgstr "Espaçamento entre linhas de material de suporte."
 
+msgid "Speed"
+msgstr "Velocidade"
+
 msgid "Speed (mm/s)"
 msgstr "Velocidade (mm/s)"
+
+msgid "Speed for non-print moves"
+msgstr "Velocidade para movimentos não impressos"
+
+msgid "Speed for print moves"
+msgstr "Velocidade para movimentos de impressão"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr ""
@@ -6071,6 +6012,9 @@ msgstr "Começar um novo projeto"
 
 msgid "Start at height"
 msgstr "Começar na altura"
+
+msgid "Start G-code"
+msgstr "G-code de início"
 
 msgid "Start new slicing process"
 msgstr "Começar novo processo de fatiamento"
@@ -6169,8 +6113,17 @@ msgstr "Reforçador de suporte"
 msgid "Support Generator"
 msgstr "Gerador de suporte"
 
+msgid "Support head"
+msgstr "Cabeça de suporte"
+
 msgid "support interface"
 msgstr "interface de suporte"
+
+msgid "Support material"
+msgstr "Material de suporte"
+
+msgid "support material"
+msgstr "Material de suporte"
 
 msgid "Support material interface"
 msgstr "Interface do material de suporte"
@@ -6184,11 +6137,17 @@ msgstr "Suportes somente na mesa de impressão"
 msgid "Support parameter change"
 msgstr "Mudança de parâmetro de suporte"
 
+msgid "Support pillar"
+msgstr "Pilar de suporte"
+
 msgid "Support points density"
 msgstr "Densidade dos pontos de suporte"
 
 msgid "Support points edit"
 msgstr "Edição de pontos de suporte"
+
+msgid "Supports"
+msgstr "Suportes"
 
 msgid "supports and pad"
 msgstr "suportes e bloco"
@@ -6290,6 +6249,9 @@ msgstr "Variação de temperatura"
 
 msgid "Temperatures"
 msgstr "Temperaturas"
+
+msgid "Template Custom G-code"
+msgstr "Modelo de G-code customizado"
 
 msgid "Test"
 msgstr "Teste"
@@ -6947,6 +6909,12 @@ msgstr ""
 msgid "Threshold"
 msgstr "Limite"
 
+msgid "Tilt"
+msgstr "Inclinar"
+
+msgid "Tilt time"
+msgstr "Tempo de inclinação"
+
 msgid "Time"
 msgstr "Tempo"
 
@@ -7024,6 +6992,9 @@ msgstr "Ferramenta"
 msgid "Tool #"
 msgstr "Ferramenta #"
 
+msgid "Tool change G-code"
+msgstr "G-code de troca de ferramenta"
+
 msgid "Tool changes"
 msgstr "G-code de troca de ferramenta"
 
@@ -7032,6 +7003,14 @@ msgstr "Ferramenta de marcação"
 
 msgid "Tool position"
 msgstr "Posição da ferramenta"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr ""
+"Parâmetros de mudança de ferramenta com impressoras de multi material com "
+"apenas uma extrusora"
+
+msgid "Top"
+msgstr "Topo"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -7374,6 +7353,9 @@ msgstr "Versão"
 msgid "version"
 msgstr "versão"
 
+msgid "Vertical shells"
+msgstr "Paredes verticais"
+
 msgid "Vertical Slider"
 msgstr "Rolagem vertical"
 
@@ -7540,6 +7522,9 @@ msgstr "Palavra inteira"
 msgid "Width"
 msgstr "Espessura"
 
+msgid "width"
+msgstr "Espessura"
+
 msgid "Width (mm)"
 msgstr "Espessura (mm)"
 
@@ -7575,11 +7560,17 @@ msgstr "Limpe no preenchimento deste objeto"
 msgid "Wipe Tower"
 msgstr "Torre de limpeza"
 
+msgid "Wipe tower"
+msgstr "Torre de limpeza"
+
 msgid "wipe tower"
 msgstr "torre de limpeza"
 
 msgid "Wipe tower - Purging volume adjustment"
 msgstr "Torre de limpeza - Ajuste de volume de purga"
+
+msgid "Wipe tower parameters"
+msgstr "Parâmetros da torre de limpeza"
 
 msgid "Wipe tower rotation angle"
 msgstr "Ângulo de rotação da torre"
@@ -15574,2821 +15565,3 @@ msgstr ""
 "instância existente do GUI PrusaSlicer ou uma janela do PrusaSlicer "
 "existente é ativada. Substitui o valor de configuração \"single_instance\" "
 "das preferências do aplicativo."
-
-msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
-msgstr "PrusaSlicer encontrou um erro fatal: \"%1%\""
-
-msgid ""
-"Please save your project and restart PrusaSlicer. We would be glad if you "
-"reported the issue."
-msgstr ""
-"Por favor, salve seu projeto e reinicie o PrusaSlicer. Ficaríamos felizes se "
-"você relatar o problema."
-
-msgid "Access violation"
-msgstr "Violação de acesso"
-
-msgid "Illegal instruction"
-msgstr "Instrução ilegal"
-
-msgid "Divide by zero"
-msgstr "Divisão por zero"
-
-msgid "Stack overflow"
-msgstr "Estouro de pilha"
-
-msgid "Revert color to default"
-msgstr "Reverter a cor para o padrão"
-
-msgid ""
-"Layer height is not valid.\n"
-"\n"
-"The layer height will be reset to 0.01."
-msgstr ""
-"A altura da camada não é válida.\n"
-"\n"
-"A altura da camada será redefinida para 0.01."
-
-msgid ""
-"First layer height is not valid.\n"
-"\n"
-"The first layer height will be reset to 0.01."
-msgstr ""
-"A altura da primeira camada não é válida.\n"
-"\n"
-"A altura da primeira camada será redefinida para 0.01."
-
-msgid ""
-"Perform desktop integration (Sets this binary to be searchable by the "
-"system)."
-msgstr ""
-"Executar integração de área de trabalho (configura este binário para ser "
-"pesquisável pelo sistema)."
-
-msgid ""
-"%1% marked with <b>*</b> are <b>not</b> compatible with some installed "
-"printers."
-msgstr ""
-"%1% marcados com <b>*</b> são <b>não</b> compatíveis com algumas impressoras "
-"instaladas."
-
-msgid "SLA materials"
-msgstr "Materiais SLA"
-
-msgid "All installed printers are compatible with the selected %1%."
-msgstr "Todas as impressoras instaladas são compatíveis com o %1%."
-
-msgid ""
-"Only the following installed printers are compatible with the selected "
-"filaments"
-msgstr ""
-"Apenas as seguintes impressoras instaladas são compatíveis com os filamentos "
-"selecionados"
-
-msgid ""
-"Only the following installed printers are compatible with the selected SLA "
-"materials"
-msgstr ""
-"Somente as seguintes impressoras instaladas são compatíveis com os materiais "
-"SLA selecionados"
-
-msgid ""
-"Following printer profiles has no default filament: %1%Please select one "
-"manually."
-msgstr ""
-"Os seguintes perfis de impressora não tem filamento padrão: %1%Por favor "
-"selecione um manualmente."
-
-msgid ""
-"Following printer profiles has no default material: %1%Please select one "
-"manually."
-msgstr ""
-"Os seguintes perfis de impressora não possuem material padrão: %1%Por favor "
-"selecione um manualmente."
-
-msgid "Configuration is edited in ConfigWizard"
-msgstr "A configuração é editada no ConfigWizard"
-
-msgid "All user presets will be deleted."
-msgstr "Todas as predefinições do usuário serão excluídas."
-
-msgid "A new vendor was installed and one of its printers will be activated"
-msgid_plural ""
-"New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-"Um novo fornecedor foi instalado e uma de suas impressoras será ativada"
-msgstr[1] ""
-"Novos fornecedores foram instalados e uma de suas impressoras será ativada"
-
-msgid "Do you want to continue changing the configuration?"
-msgstr "Deseja continuar alterando a configuração?"
-
-msgid "A new Printer was installed and it will be activated."
-msgstr "Uma nova impressora foi instalada e será ativada."
-
-msgid "Some Printers were uninstalled."
-msgstr "Algumas impressoras foram desinstaladas."
-
-msgid "A new filament was installed and it will be activated."
-msgstr "Um novo filamento foi instalado e será ativado."
-
-msgid "A new SLA material was installed and it will be activated."
-msgstr "Um novo material de SLA foi instalado e será ativado."
-
-msgid "Some filaments were uninstalled."
-msgstr "Alguns filamentos foram desinstalados."
-
-msgid "Some SLA materials were uninstalled."
-msgstr "Alguns materiais de SLA foram desinstalados."
-
-msgid "Custom printer was installed and it will be activated."
-msgstr "A impressora personalizada foi instalada e será ativada."
-
-msgid ""
-"Performing desktop integration failed - boost::filesystem::canonical did not "
-"return appimage path."
-msgstr ""
-"Falha na integração da área de trabalho - boost::filesystem::canonical não "
-"retornar caminho da imagem do aplicativo."
-
-msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
-"Falha na execução da integração da área de trabalho - Não foi possível "
-"encontrar o executável."
-
-msgid ""
-"Performing desktop integration failed because the application directory was "
-"not found."
-msgstr ""
-"Falha na integração da área de trabalho porque o diretório do aplicativo não "
-"foi encontrado."
-
-msgid ""
-"Performing desktop integration failed - could not create Gcodeviewer desktop "
-"file. PrusaSlicer desktop file was probably created successfully."
-msgstr ""
-"Falha na integração da área de trabalho - não foi possível criar a área de "
-"trabalho do arquivo Gcodeviewer. O arquivo de desktop PrusaSlicer "
-"provavelmente foi criado com sucesso."
-
-msgid "Desktop Integration"
-msgstr "Integração da área de trabalho"
-
-msgid ""
-"Desktop Integration sets this binary to be searchable by the system.\n"
-"\n"
-"Press \"Perform\" to proceed."
-msgstr ""
-"Integração de Área de Trabalho define este binário para ser pesquisável pelo "
-"sistema.\n"
-"\n"
-"Pressione \"Executar\" para continuar."
-
-msgid "Perform"
-msgstr "Executar"
-
-msgid "This is wipe tower layer"
-msgstr "Esta é a camada da torre de limpeza"
-
-msgid ""
-"The sequential print is on.\n"
-"It's impossible to apply any custom G-code for objects printing sequentually."
-msgstr ""
-"A impressão sequencial está ativada.\n"
-"É impossível aplicar qualquer G-code personalizado para a impressão de "
-"objetos sequencialmente."
-
-msgid "continue"
-msgstr "continuar"
-
-msgid "Set auto color changes"
-msgstr "Definir mudança de cor automática"
-
-msgid "This action will cause deletion of all ticks on vertical slider."
-msgstr ""
-"Esta ação causará a exclusão de todos os tiques no controle deslizante "
-"vertical."
-
-msgid ""
-"This action is not revertible.\n"
-"Do you want to proceed?"
-msgstr ""
-"Esta ação não é reversível.\n"
-"Você quer prosseguir?"
-
-msgid "Random sequence"
-msgstr "Sequência Aleatório"
-
-msgid "If enabled, random sequence of the selected extruders will be used."
-msgstr ""
-"Se ativado, a sequência aleatória das extrusoras selecionadas será usada."
-
-msgid "Allow next color repetition"
-msgstr "Permitir a próxima repetição de cor"
-
-msgid "If enabled, a repetition of the next random color will be allowed."
-msgstr "Se habilitado, uma repetição da próxima cor aleatória será permitida."
-
-msgid "Select a file"
-msgstr "Selecione um arquivo"
-
-msgid "Shape Gallery"
-msgstr "Galeria de Formas"
-
-msgid "Select shape from the gallery"
-msgstr "Selecionar forma da galeria"
-
-msgid "Add to bed"
-msgstr "Adicionar a mesa"
-
-msgid "Add selected shape(s) to the bed"
-msgstr "Adicione a(s) forma(s) selecionada(s) à mesa"
-
-msgid "Add one or more custom shapes"
-msgstr "Adicionar uma ou mais formas personalizadas"
-
-msgid "Delete one or more custom shape. You can't delete system shapes"
-msgstr ""
-"Exclua uma ou mais formas personalizadas. Você não pode excluir formas do "
-"sistema"
-
-msgid "Choose one or more files (STL, OBJ):"
-msgstr "Escolha um ou mais arquivos (STL, OBJ):"
-
-msgid ""
-"It looks like selected %1%-file has an error or is destructed.\n"
-"We can't load this file"
-msgstr ""
-"Parece que o arquivo %1% selecionado tem um erro ou está destruído.\n"
-"Não podemos carregar este arquivo"
-
-msgid "Choose one PNG file:"
-msgstr "Escolha um arquivo PNG:"
-
-msgid "Replacing of the PNG"
-msgstr "Substituição do PNG"
-
-msgid "Change thumbnail"
-msgstr "Alterar miniatura"
-
-msgid "Loading of the \"%1%\""
-msgstr "Carregando o \"%1%\""
-
-msgid "Used filament"
-msgstr "Filamento utilizado"
-
-msgid "Temperature (°C)"
-msgstr "Temperatura (ºC)"
-
-msgid "Seams"
-msgstr "Costuras"
-
-msgid "Estimated printing times"
-msgstr "Tempos estimados de impressão"
-
-msgid "Total"
-msgstr "Total"
-
-msgid "Some objects are not visible during editing."
-msgstr "Alguns objetos não são visíveis durante a edição."
-
-msgid "Highlight overhang by angle"
-msgstr "Destaque o overhang por ângulo"
-
-msgid "Tool type"
-msgstr "Tipo de ferramenta"
-
-msgid "Brush"
-msgstr "Pincel"
-
-msgid "Smart fill"
-msgstr "Preenchimento inteligente"
-
-msgid "Smart fill angle"
-msgstr "Ângulo de preenchimento inteligente"
-
-msgid "Split triangles"
-msgstr "Dividir triângulos"
-
-msgid "On overhangs only"
-msgstr "Apenas em overhangs"
-
-msgid ""
-"Preselects faces by overhang angle. It is possible to restrict paintable "
-"facets to only preselected faces when the option \"%1%\" is enabled."
-msgstr ""
-"Pré-seleções faces por ângulo de overhang. É possível restringir pintando "
-"faces apenas para faces pré-selecionadas quando a opção \"%1%\" estiver "
-"habilitada."
-
-msgid "Paints facets according to the chosen painting brush."
-msgstr "Pinta faces de acordo com o pincel escolhido."
-
-msgid ""
-"Paints neighboring facets whose relative angle is less or equal to set angle."
-msgstr ""
-"Pinta faces vizinhas cujo ângulo relativo é menor ou igual ao ângulo "
-"definido."
-
-msgid "Allows painting only on facets selected by: \"%1%\""
-msgstr "Permite pintar apenas em faces selecionadas por: \"%1%\""
-
-msgid "Paints only one facet."
-msgstr "Pinta apenas uma face."
-
-msgid "Splits bigger facets into smaller ones while the object is painted."
-msgstr "Divide as faces maiores em menores enquanto o objeto é pintado."
-
-msgid ""
-"Your printer has more extruders than the multi-material painting gizmo "
-"supports. For this reason, only the first %1% extruders will be able to be "
-"used for painting."
-msgstr ""
-"Sua impressora tem mais extrusoras do que o aparelho de pintura "
-"multimateriais suporta. Por esta razão, apenas as primeiras %1% extrusoras "
-"poderão ser usadas para pintura."
-
-msgid "Multimaterial painting"
-msgstr "Pintura multimateriais"
-
-msgid "First color"
-msgstr "Primeira cor"
-
-msgid "Second color"
-msgstr "Segunda cor"
-
-msgid "Remove painted color"
-msgstr "Remova a cor pintada"
-
-msgid "Clear all"
-msgstr "Limpar tudo"
-
-msgid "Bucket fill"
-msgstr "Preenchimento de balde"
-
-msgid "Paints neighboring facets that have the same color."
-msgstr "Pinta as faces vizinhas que têm a mesma cor."
-
-msgid "Split bigger facets into smaller ones while the object is painted."
-msgstr "Divida as faces maiores em menores enquanto o objeto é pintado."
-
-msgid "Painted using: Extruder %1%"
-msgstr "Pintado usando: Extrusora %1%"
-
-msgid "Mesh name"
-msgstr "Nome da malha"
-
-msgid "Detail level"
-msgstr "Nível de detalhe"
-
-msgid "Decimate ratio"
-msgstr "Proporção de redução"
-
-msgid ""
-"Processing model '%1%' with more than 1M triangles could be slow. It is "
-"highly recommend to reduce amount of triangles."
-msgstr ""
-"O processamento do modelo '%1%' com mais de 1 milhão de triângulos pode ser "
-"lento. recomendo reduzir a quantidade de triângulos."
-
-msgid "Simplify model"
-msgstr "Modelo simplificado"
-
-msgid "Simplify"
-msgstr "Simplificar"
-
-msgid "Simplification is currently only allowed when a single part is selected"
-msgstr ""
-"Atualmente, a simplificação só é permitida quando uma única parte é "
-"selecionada"
-
-msgid "Extra high"
-msgstr "Muito alto"
-
-msgid "High"
-msgstr "Alto"
-
-msgid "Medium"
-msgstr "Medio"
-
-msgid "Low"
-msgstr "Baixo"
-
-msgid "Extra low"
-msgstr "Muito baixo"
-
-msgid "%d triangles"
-msgstr "%d triângulos"
-
-msgid "Show wireframe"
-msgstr "Mostrar estrutura de arame"
-
-msgid "Operation already cancelling. Please wait few seconds."
-msgstr "Operação já cancelada. Por favor, aguarde alguns segundos."
-
-msgid "Can't apply when proccess preview."
-msgstr "Não pode ser aplicado durante a visualização do processo."
-
-msgid "Process %1% / 100"
-msgstr "Processo %1% / 100"
-
-msgid "Simplify %1%"
-msgstr "Simplificar %1%"
-
-msgid "Save support points?"
-msgstr "Salvar pontos de suporte?"
-
-msgid ""
-"ERROR: Please close all manipulators available from the left toolbar first"
-msgstr ""
-"ERRO: Por favor, feche todos os manipuladores disponíveis na barra de "
-"ferramentas esquerda primeiro"
-
-msgid ""
-"You are currently editing SLA support points. Please, apply or discard your "
-"changes first."
-msgstr ""
-"Você está editando pontos de suporte de SLA. Por favor, aplique ou descarte "
-"suas alterações primeiro."
-
-msgid "Undefined"
-msgstr "Indefinido"
-
-msgid "%1% was substituted with %2%"
-msgstr "%1% foi substituído por %2%"
-
-msgid ""
-"Most likely the configuration was produced by a newer version of PrusaSlicer "
-"or by some PrusaSlicer fork."
-msgstr ""
-"Provavelmente a configuração foi produzida por uma versão mais recente do "
-"PrusaSlicer ou por algum fork PrusaSlicer."
-
-msgid "The following values were substituted:"
-msgstr "Os seguintes valores foram substituídos:"
-
-msgid "Review the substitutions and adjust them if needed."
-msgstr "Revise as substituições e ajuste-as, se necessário."
-
-msgid ""
-"Configuration bundle was loaded, however some configuration values were not "
-"recognized."
-msgstr ""
-"O pacote de configuração foi carregado, porém alguns valores de "
-"configuração  "
-
-msgid ""
-"Configuration file \"%1%\" was loaded, however some configuration values "
-"were not recognized."
-msgstr ""
-"Arquivo de configuração \"%1%\" foi carregado, porém alguns valores de "
-"configuração não foram reconhecidos."
-
-msgid "Developed by Prusa Research."
-msgstr "Desenvolvido por Prusa Research."
-
-msgid "Internal error: %1%"
-msgstr "Erro interno: %1%"
-
-msgid "You are opening %1% version %2%."
-msgstr "Você está abrindo %1% versão %2%."
-
-msgid ""
-"The active configuration was created by <b>%1% %2%</b>,\n"
-"while a newer configuration was found in <b>%3%</b>\n"
-"created by <b>%1% %4%</b>.\n"
-"\n"
-"Shall the newer configuration be imported?\n"
-"If so, your active configuration will be backed up before importing the new "
-"configuration."
-msgstr ""
-"A configuração ativa foi criada por <b>%1% %2%</b>,\n"
-"enquanto uma configuração mais recente foi encontrada em <b>%3%</b>\n"
-"criado por <b>%1% %4%</b>.\n"
-"\n"
-"A configuração mais recente deve ser importada?\n"
-"Em caso afirmativo, será feito backup de sua configuração ativa antes de "
-"importar a nova configuração."
-
-msgid ""
-"An existing configuration was found in <b>%3%</b>\n"
-"created by <b>%1% %2%</b>.\n"
-"\n"
-"Shall this configuration be imported?"
-msgstr ""
-"Uma configuração existente foi encontrada em <b>%3%</b>\n"
-"criado por <b>%1% %2%</b>.\n"
-"\n"
-"Esta configuração deve ser importada?"
-
-msgid "Import"
-msgstr "Importar"
-
-msgid "Don't import"
-msgstr "Não importar"
-
-msgid "Continue and import newer configuration?"
-msgstr "Continuar e importar nova configuração?"
-
-msgid ""
-"You are running a 32 bit build of PrusaSlicer on 64-bit Windows.\n"
-"32 bit build of PrusaSlicer will likely not be able to utilize all the RAM "
-"available in the system.\n"
-"Please download and install a 64 bit build of PrusaSlicer from https://www."
-"prusa3d.cz/prusaslicer/.\n"
-"Do you wish to continue?"
-msgstr ""
-"Você está executando uma compilação de 32 bits do PrusaSlicer no Windows de "
-"64 bits.\n"
-"A compilação de 32 bits do PrusaSlicer provavelmente não poderá utilizar "
-"toda a RAM disponível no sistema.\n"
-"Faça o download e instale uma versão de 64 bits do PrusaSlicer em https://"
-"www.prusa3d.cz/prusaslicer/.\n"
-"Você deseja continuar?"
-
-msgid "New release version %1% is available."
-msgstr "Nova versão de lançamento %1% está disponível."
-
-msgid "See Download page."
-msgstr "Consulte a página de download."
-
-msgid "New prerelease version %1% is available."
-msgstr "A nova versão de pré-lançamento %1% está disponível."
-
-msgid "Restore window position on start"
-msgstr "Restaurar a posição da janela ao iniciar"
-
-msgid "PrusaSlicer started after a crash"
-msgstr "PrusaSlicer iniciado após um acidente"
-
-msgid ""
-"PrusaSlicer crashed last time when attempting to set window position.\n"
-"We are sorry for the inconvenience, it unfortunately happens with certain "
-"multiple-monitor setups.\n"
-"More precise reason for the crash: \"%1%\".\n"
-"For more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n"
-"\n"
-"To avoid this problem, consider disabling \"%4%\" in \"Preferences\". "
-"Otherwise, the application will most likely crash again next time."
-msgstr ""
-"O PrusaSlicer travou da última vez ao tentar definir a posição da janela.\n"
-"Lamentamos o inconveniente, infelizmente acontece com certos configurações "
-"de vários monitores.\n"
-"Motivo mais preciso da falha: \"%1%\".\n"
-"Para obter mais informações, consulte nosso rastreador de problemas do "
-"GitHub: \"%2%\" e \"%3%\"\n"
-"\n"
-"Para evitar esse problema, considere desabilitar \"%4%\" em \"Preferências"
-"\". Caso contrário, o aplicativo provavelmente travará novamente na próxima "
-"vez."
-
-msgid "Disable \"%1%\""
-msgstr "Desabilitar \"%1%\""
-
-msgid "Leave \"%1%\" enabled"
-msgstr "Manter \"%1%\" habilitado"
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Escolha um ou mais arquivos (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
-msgid "Check for Configuration Updates"
-msgstr "Verificar atualizações de configuração"
-
-msgid "Flash Printer &Firmware"
-msgstr "Flash &Firmware de Impressora"
-
-msgid "Taking a configuration snapshot"
-msgstr "Tirando uma captura de configuração"
-
-msgid ""
-"Some presets are modified and the unsaved changes will not be captured by "
-"the configuration snapshot."
-msgstr ""
-"Algumas predefinições são modificadas e as alterações não salvas não serão "
-"capturadas pela captura de configuração."
-
-msgid "Loading a configuration snapshot"
-msgstr "Carregando uma captura de configuração"
-
-msgid "Continue to activate a configuration snapshot %1%?"
-msgstr "Continuar a ativar uma captura de configuração %1%?"
-
-msgid "Restart application"
-msgstr "Reiniciar aplicação"
-
-msgid "The preset modifications are successfully saved"
-msgid_plural "The presets modifications are successfully saved"
-msgstr[0] "As modificações da predefinição foram salvas com sucesso"
-msgstr[1] "As modificações das predefinições foram salvas com sucesso"
-
-msgid "For new project all modifications will be reseted"
-msgstr "Para novo projeto, todas as modificações serão redefinidas"
-
-msgid "Loading a new project while the current project is modified."
-msgstr "Carregando um novo projeto enquanto o projeto atual é modificado."
-
-msgid "Project is loading"
-msgstr "Projeto está carregando"
-
-msgid "Opening new project while some presets are unsaved."
-msgstr "Abrindo novo projeto enquanto algumas predefinições não são salvas."
-
-msgid "Configuration is editing from ConfigWizard"
-msgstr "A configuração está editando do ConfigWizard"
-
-msgid "Open hyperlink in default browser?"
-msgstr "Abrir link no navegador padrão?"
-
-msgid "PrusaSlicer: Open hyperlink"
-msgstr "PrusaSlicer: Abrir link"
-
-msgid "PrusaSlicer will remember your choice."
-msgstr "PrusaSlicer lembrará de sua escolha."
-
-msgid "You will not be asked about it again on hyperlinks hovering."
-msgstr "Você não será questionado sobre isso novamente em links suspensos."
-
-msgid ""
-"Visit \"Preferences\" and check \"%1%\"\n"
-"to changes your choice."
-msgstr ""
-"Visite \"Preferências\" e marque \"%1%\"\n"
-"para mudar sua escolha."
-
-msgid "Fuzzy Skin"
-msgstr "Pele Difusa"
-
-msgid "Add negative volume"
-msgstr "Adicionar volume negativo"
-
-msgid "Gallery"
-msgstr "Galeria"
-
-msgid "Replace with STL"
-msgstr "Substituir por STL"
-
-msgid "Replace the selected volume with new STL"
-msgstr "Substitua o volume selecionado por um novo STL"
-
-msgid "Convert from meters"
-msgstr "Converter de metros"
-
-msgid "Revert conversion from meters"
-msgstr "Reverter conversão de metros"
-
-msgid "Split the selected object into individual parts"
-msgstr "Dividir o objeto selecionado em partes individuais"
-
-msgid "No errors detected"
-msgstr "Sem erros detectados"
-
-msgid "Auto-repaired %1$d error"
-msgid_plural "Auto-repaired %1$d errors"
-msgstr[0] "Erro %1$d reparado automaticamente"
-msgstr[1] "Erros %1$d corrigidos automaticamente"
-
-msgid "%1$d degenerate facet"
-msgid_plural "%1$d degenerate facets"
-msgstr[0] "%1$d face degenerada"
-msgstr[1] "%1$d faces degeneradas"
-
-msgid "%1$d edge fixed"
-msgid_plural "%1$d edges fixed"
-msgstr[0] "%1$d borda corrigida"
-msgstr[1] "%1$d bordas corrigidas"
-
-msgid "%1$d facet removed"
-msgid_plural "%1$d facets removed"
-msgstr[0] "%1$d face removida"
-msgstr[1] "%1$d faces removidas"
-
-msgid "%1$d facet reversed"
-msgid_plural "%1$d facets reversed"
-msgstr[0] "%1$d face revertida"
-msgstr[1] "%1$d faces invertidas"
-
-msgid "%1$d backward edge"
-msgid_plural "%1$d backward edges"
-msgstr[0] "%1$d borda invertida"
-msgstr[1] "%1$d bordas invertidas"
-
-msgid "%1$d open edge"
-msgid_plural "%1$d open edges"
-msgstr[0] "%1$d borda aberta"
-msgstr[1] "%1$d bordas abertas"
-
-msgid "Remaining errors"
-msgstr "Erros restantes"
-
-msgid "Load Modifier"
-msgstr "Carregar modificadores"
-
-msgid "Add Shape from Gallery"
-msgstr "Adicionar forma da galeria"
-
-msgid "Add Shapes from Gallery"
-msgstr "Adicionar formas da galeria"
-
-msgid "Remove paint-on supports"
-msgstr "Remova os suportes de pintura"
-
-msgid "Remove paint-on seam"
-msgstr "Remova a costura de pintura"
-
-msgid "Remove Multi Material painting"
-msgstr "Remova a pintura de vários materiais"
-
-msgid "Shift objects to bed"
-msgstr "Deslocar objetos para a cama"
-
-msgid "Remove variable layer height"
-msgstr "Remover altura variável da camada"
-
-msgid "Negative Volume"
-msgstr "Volume Negativo"
-
-msgid "Repairing model"
-msgstr "Reparando modelo"
-
-msgid "Fixing through NetFabb"
-msgstr "Corrigindo através do NetFabb"
-
-msgid "The following model was repaired successfully"
-msgid_plural "The following models were repaired successfully"
-msgstr[0] "O seguinte modelo foi reparado com sucesso"
-msgstr[1] "Os seguintes modelos foram reparados com sucesso"
-
-msgid "Folowing model repair failed"
-msgid_plural "Folowing models repair failed"
-msgstr[0] "Falha no reparo do seguinte modelo"
-msgstr[1] "Falha no reparo dos seguintes modelos"
-
-msgid "Repairing was canceled"
-msgstr "A reparação foi cancelada"
-
-msgid "Set Printable group"
-msgstr "Definir grupo imprimível"
-
-msgid "Set Unprintable group"
-msgstr "Definir grupo não imprimível"
-
-msgid "Skirt/Brim"
-msgstr "Saia/aba"
-
-msgid "NOTE:"
-msgstr "NOTA:"
-
-msgid "Sliced object \"%1%\" looks like a logo or a sign"
-msgstr "O objeto fatiado \"%1%\" se parece com um logotipo ou sinal"
-
-msgid "Apply color change automatically"
-msgstr "Aplicar mudança de cor automaticamente"
-
-msgid "Open Preferences."
-msgstr "Abrir Preferências."
-
-msgid "Open Documentation in web browser."
-msgstr "Abra a Documentação no navegador da web."
-
-msgid ""
-"Arrangement ignored the following objects which can't fit into a single "
-"bed:\n"
-"%s"
-msgstr ""
-"Arranjo ignorou os seguintes objetos que não podem caber em um único cama:\n"
-"%s"
-
-msgid "Filling bed"
-msgstr "Enchendo a cama"
-
-msgid "Bed filling canceled."
-msgstr "Enchimento da cama cancelado."
-
-msgid "Bed filling done."
-msgstr "Enchimento da cama feito."
-
-msgid "An unexpected error occured"
-msgstr "Ocorreu um erro inesperado"
-
-msgid "Best surface quality"
-msgstr "Melhor qualidade de superfície"
-
-msgid "Optimize object rotation for best surface quality."
-msgstr ""
-"Otimize a rotação do objeto para obter a melhor qualidade de superfície."
-
-msgid "Reduced overhang slopes"
-msgstr "Inclinações de overhang reduzidas"
-
-msgid ""
-"Optimize object rotation to have minimum amount of overhangs needing support "
-"structures.\n"
-"Note that this method will try to find the best surface of the object for "
-"touching the print bed if no elevation is set."
-msgstr ""
-"Otimize a rotação do objeto para ter uma quantidade mínima de overhangs que "
-"precisam de suporteestruturas.\n"
-"Observe que este método tentará encontrar a melhor superfície do objeto para "
-"tocar na mesa de impressão se nenhuma elevação estiver definida."
-
-msgid "Lowest Z height"
-msgstr "Altura Z mais baixa"
-
-msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
-"Gire o modelo para ter a menor altura z para um tempo de impressão mais "
-"rápido."
-
-msgid ""
-"The SLA archive doesn't contain any presets. Please activate some SLA "
-"printer preset first before importing that SLA archive."
-msgstr ""
-"O arquivo de SLA não contém predefinições. Por favor, ative algum SLA "
-"impressora predefinida antes de importar esse arquivo SLA."
-
-msgid "The file does not exist."
-msgstr "O arquivo não existe."
-
-msgid ""
-"The imported SLA archive did not contain any presets. The current SLA "
-"presets were used as fallback."
-msgstr ""
-"O arquivo de SLA importado não continha nenhuma predefinição. O SLA atual os "
-"presets foram usados como fallback."
-
-msgid "Open project AMF/3MF with config, clear plater"
-msgstr "Abra o projeto AMF/3MF com config, limpar bandeja"
-
-msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
-msgstr "Importar STL/3MF/STEP/OBJ/AMF sem config, manter bandeja"
-
-msgid "Gizmo FDM paint-on supports"
-msgstr "Suportes de pintura Gizmo FDM"
-
-msgid "Gizmo FDM paint-on seam"
-msgstr "Costura de pintura Gizmo FDM"
-
-msgid "Gizmo Multi Material painting"
-msgstr "Pintura Gizmo Multi Material"
-
-msgid "Minimize application"
-msgstr "Minimizar aplicativo"
-
-msgid "Set selected items as Printable/Unprintable"
-msgstr "Definir itens selecionados como imprimíveis/não imprimíveis"
-
-msgid "Set default extruder for the selected items"
-msgstr "Definir extrusora padrão para os itens selecionados"
-
-msgid "Set extruder number for the selected items"
-msgstr "Definir o número da extrusora para os itens selecionados"
-
-msgid "Objects List"
-msgstr "Lista de objetos"
-
-msgid "Show/Hide G-code window"
-msgstr "Mostrar/ocultar janela de G-code"
-
-msgid "Closing PrusaSlicer. Current project is modified."
-msgstr "Fechando o PrusaSlicer. O projeto atual foi modificado."
-
-msgid "PrusaSlicer is closing"
-msgstr "PrusaSlicer está fechando"
-
-msgid "Closing PrusaSlicer while some presets are modified."
-msgstr ""
-"Fechando o PrusaSlicer enquanto algumas predefinições foram modificados."
-
-msgid "Untitled"
-msgstr "Sem título"
-
-msgid "Show Tip of the Day"
-msgstr "Mostrar dica do dia"
-
-msgid ""
-"Opens Tip of the day notification in bottom right corner or shows another "
-"tip if already opened."
-msgstr ""
-"Abre a notificação da Dica do dia no canto inferior direito ou mostra outra "
-"dica se já estiver aberta."
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "Importar STL/3MF/STEP/OBJ/AM&F"
-
-msgid "Import STL (Imperial Units)"
-msgstr "Importar STL (Unidades Imperiais)"
-
-msgid "Import SL1 / SL1S Archive"
-msgstr "Importar Arquivo SL1 / SL1S"
-
-msgid "Load an SL1 / Sl1S archive"
-msgstr "Carregar um arquivo SL1 / Sl1S"
-
-msgid "Import Config from &Project"
-msgstr "Importar Configuração de &Projeto"
-
-msgid "Export G-code to SD Card / Flash Drive"
-msgstr "Exporte o G-code para o cartão SD / Flash Drive"
-
-msgid "Export Plate as &STL"
-msgstr "Exportar bandeja como &STL"
-
-msgid "Export Plate as STL &Including Supports"
-msgstr "Exportar Bandeja como STL & Incluindo Suportes"
-
-msgid "Export &Toolpaths as OBJ"
-msgstr "Exportar &Percursos como OBJ"
-
-msgid "Ejec&t SD Card / Flash Drive"
-msgstr "Ejetar cartão SD / Flash Drive"
-
-msgid "&G-code Preview"
-msgstr "Visualizar &G-code"
-
-msgid "&Select All"
-msgstr "&Selecionar tudo"
-
-msgid "D&eselect All"
-msgstr "D&esmarcar todos"
-
-msgid "&Delete Selected"
-msgstr "&Excluir selecionados"
-
-msgid "Delete &All"
-msgstr "Deletar &Tudo"
-
-msgid "Re&load from Disk"
-msgstr "Re&carregar do disco"
-
-msgid "Open the dialog to modify shape gallery"
-msgstr "Abra a caixa de diálogo para modificar a galeria de formas"
-
-msgid "Open New Instance"
-msgstr "Abrir Nova Instância"
-
-msgid "Compare Presets"
-msgstr "Comparar predefinições"
-
-msgid "Compare presets"
-msgstr "Comparar predefinições"
-
-msgid "Show &Labels"
-msgstr "Mostrar &rótulos"
-
-msgid "&Collapse Sidebar"
-msgstr "&Recolher barra lateral"
-
-msgid "&Fullscreen"
-msgstr "&Tela cheia"
-
-msgid "Fullscreen"
-msgstr "Tela cheia"
-
-msgid "Loading of a configuration file"
-msgstr "Carregando um arquivo de configuração"
-
-msgid "Exporting configuration bundle"
-msgstr "Exportando pacote de configuração"
-
-msgid ""
-"Some presets are modified and the unsaved changes will not be exported into "
-"configuration bundle."
-msgstr ""
-"Algumas predefinições forma modificadas e as alterações não salvas não serão "
-"exportadas para pacote de configuração."
-
-msgid "Loading of a configuration bundle"
-msgstr "Carregando um pacote de configuração"
-
-msgid "%s warning"
-msgstr "Aviso do %s"
-
-msgid "%s has a warning"
-msgstr "%s tem um aviso"
-
-msgid "%s info"
-msgstr "%s info"
-
-msgid "%s information"
-msgstr "Informação do %s"
-
-msgid ""
-"No color change event was added to the print. The print does not look like a "
-"sign."
-msgstr ""
-"Nenhum evento de mudança de cor foi adicionado à impressão. A impressão não "
-"se parece com um sinal."
-
-msgid "Desktop integration was successful."
-msgstr "A integração da área de trabalho foi bem-sucedida."
-
-msgid "Desktop integration failed."
-msgstr "Falha na integração da área de trabalho."
-
-msgid "Undo desktop integration was successful."
-msgstr "Desfazer a integração da área de trabalho foi bem-sucedida."
-
-msgid "Undo desktop integration failed."
-msgstr "Falha ao desfazer a integração da área de trabalho."
-
-msgid "Exporting."
-msgstr "Exportando."
-
-msgid "CANCELED"
-msgstr "CANCELADO"
-
-msgid "COMPLETED"
-msgstr "CONCLUÍDO"
-
-msgid "Cancel upload"
-msgstr "Cancelar upload"
-
-msgid "%1$d object was loaded with custom supports."
-msgid_plural "%1$d objects were loaded with custom supports."
-msgstr[0] "O objeto %1$d foi carregado com suportes personalizados."
-msgstr[1] "%1$d objetos foram carregados com suportes personalizados."
-
-msgid "%1$d object was loaded with custom seam."
-msgid_plural "%1$d objects were loaded with custom seam."
-msgstr[0] "O objeto %1$d foi carregado com costura personalizada."
-msgstr[1] "%1$d objetos foram carregados com costura personalizada."
-
-msgid "%1$d object was loaded with multimaterial painting."
-msgid_plural "%1$d objects were loaded with multimaterial painting."
-msgstr[0] "%1$d objeto foi carregado com pintura multimaterial."
-msgstr[1] "%1$d objetos foram carregados com pintura multimaterial."
-
-msgid "%1$d object was loaded with variable layer height."
-msgid_plural "%1$d objects were loaded with variable layer height."
-msgstr[0] "O objeto %1$d foi carregado com altura de camada variável."
-msgstr[1] "%1$d objetos foram carregados com altura de camada variável."
-
-msgid "%1$d object was loaded with partial sinking."
-msgid_plural "%1$d objects were loaded with partial sinking."
-msgstr[0] "O objeto %1$d foi carregado com afundamento parcial."
-msgstr[1] "%1$d objetos foram carregados com afundamento parcial."
-
-msgid "Paint-on seam"
-msgstr "Costura de pintura"
-
-msgid "Sinking"
-msgstr "Afundar"
-
-msgid ""
-"As a workaround, you may run PrusaSlicer with a software rendered 3D "
-"graphics by running prusa-slicer.exe with the --sw-renderer parameter."
-msgstr ""
-"Como solução alternativa, você pode executar o PrusaSlicer com um software "
-"renderizado em 3D gráficos executando prusa-slicer.exe com o parâmetro --sw-"
-"renderer."
-
-msgid "You have to enter a printer name."
-msgstr "Você precisa introduzir um nome de impressora."
-
-msgid "The provided name is not valid;"
-msgstr "O nome fornecido não é válido;"
-
-msgid ""
-"For a multipart object, this value isn't accurate.\n"
-"It doesn't take account of intersections and negative volumes."
-msgstr ""
-"Para um objeto de várias partes, este valor não é preciso.\n"
-"Não leva em conta interseções e volumes negativos."
-
-msgid "object"
-msgid_plural "objects"
-msgstr[0] "objeto"
-msgstr[1] "objetos"
-
-msgid "Do you want to save the changes to \"%1%\"?"
-msgstr "Deseja salvar as alterações em \"%1%\"?"
-
-msgid "Ask for unsaved changes in project"
-msgstr "Questionar sobre alterações não salvas no projeto"
-
-msgid ""
-"You will not be asked about it again, when: \n"
-"- Closing PrusaSlicer,\n"
-"- Loading or creating a new project"
-msgstr ""
-"Você não será questionado sobre isso novamente, quando: \n"
-"- Fechando o PrusaSlicer,\n"
-"- Carregando ou criando um novo projeto"
-
-msgid "Failed loading file \"%1%\" due to an invalid configuration."
-msgstr ""
-"Falha ao carregar o arquivo \"%1%\" devido a uma configuração inválida."
-
-msgid "The size of the object is zero"
-msgstr "O tamanho do objeto é zero"
-
-msgid "The object is too small"
-msgstr "O objeto é muito pequeno"
-
-msgid "Apply to all the remaining small objects being loaded."
-msgstr ""
-"Aplica-se a todos os objetos pequenos restantes que estão sendo carregados."
-
-msgid ""
-"The dimensions of the object from file %s seem to be defined in inches.\n"
-"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
-"the dimensions of the object?"
-msgid_plural ""
-"The dimensions of some objects from file %s seem to be defined in inches.\n"
-"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
-"the dimensions of these objects?"
-msgstr[0] ""
-"As dimensões do objeto do arquivo %s parecem estar definidas em polegadas.\n"
-"A unidade interna do PrusaSlicer é um milímetro. Deseja recalcular as "
-"dimensões do objeto?"
-msgstr[1] ""
-"As dimensões de alguns objetos do arquivo %s parecem estar definidas em "
-"polegadas.\n"
-"A unidade interna do PrusaSlicer é um milímetro. Deseja recalcular as "
-"dimensões desses objetos?"
-
-msgid ""
-"This file contains several objects positioned at multiple heights.\n"
-"Instead of considering them as multiple objects, should \n"
-"the file be loaded as a single object having multiple parts?"
-msgstr ""
-"Este arquivo contém vários objetos posicionados em várias alturas.\n"
-"Em vez de considerá-los como vários objetos, deve-se \n"
-"o arquivo ser carregado como um único objeto com várias partes?"
-
-msgid "Delete All Objects"
-msgstr "Excluir Todos os Objetos"
-
-msgid ""
-"The selected object couldn't be split because it contains only one solid "
-"part."
-msgstr ""
-"O objeto selecionado não pode ser dividido porque contém apenas uma parte "
-"sólida. "
-
-msgid "All non-solid parts (modifiers) were deleted"
-msgstr "Todas as partes não sólidas (modificadores) foram excluídas"
-
-msgid ""
-"An object has custom support enforcers which will not be used because "
-"supports are disabled."
-msgstr ""
-"Um objeto tem reforçadores de suporte personalizados que não serão usados "
-"porque os suportes estão desabilitados."
-
-msgid "Enable supports for enforcers only"
-msgstr "Ativar suporte apenas para reforçadores"
-
-msgid "Replace from:"
-msgstr "Substituir de:"
-
-msgid "Unable to replace with more than one volume"
-msgstr "Não é possível substituir por mais de um volume"
-
-msgid "Error during replace"
-msgstr "Erro durante a substituição"
-
-msgid "Select the new file"
-msgstr "Selecione o novo arquivo"
-
-msgid "File for the replace wasn't selected"
-msgstr "O arquivo para a substituição não foi selecionado"
-
-msgid "differs from the original file"
-msgstr "difere do arquivo original"
-
-msgid "Do you want to replace it"
-msgstr "Deseja substituir"
-
-msgid "Undo / Redo is processing"
-msgstr "Desfazer / Refazer está sendo processado"
-
-msgid ""
-"Switching the printer technology from %1% to %2%.\n"
-"Some %1% presets were modified, which will be lost after switching the "
-"printer technology."
-msgstr ""
-"Mudando a tecnologia da impressora de %1% para %2%.\n"
-"Algumas %1% predefinições foram modificadas, e serão perdidas após a troca "
-"de  "
-
-msgid "Creating a new project while the current project is modified."
-msgstr "Criando um novo projeto enquanto o projeto atual é modificado."
-
-msgid "Creating a new project while some presets are modified."
-msgstr ""
-"Criando um novo projeto enquanto algumas predefinições são modificadas."
-
-msgid "You can keep presets modifications to the new project or discard them"
-msgstr ""
-"Você pode manter as modificações predefinidas no novo projeto ou descartá-las"
-
-msgid ""
-"You can keep presets modifications to the new project, discard them or save "
-"changes as new presets.\n"
-"Note, if changes will be saved then new project wouldn't keep them"
-msgstr ""
-"Você pode manter as modificações de predefinições no novo projeto, descartá-"
-"las ou salvá-las muda como novas predefinições.\n"
-"Observação, se as alterações forem salvas, o novo projeto não as manterá"
-
-msgid "Creating a new project"
-msgstr "Criando um novo projeto"
-
-msgid "Save SL1 / SL1S file as:"
-msgstr "Salve o arquivo SL1 / SL1S como:"
-
-msgid "The provided file name is not valid."
-msgstr "O nome do arquivo fornecido não é válido."
-
-msgid "The following characters are not allowed by a FAT file system:"
-msgstr ""
-"Os seguintes caracteres não são permitidos por um sistema de arquivos FAT:"
-
-msgid ""
-"The plater is empty.\n"
-"Do you want to save the project?"
-msgstr ""
-"A bandeja está vazia.\n"
-"Você deseja salvar o projeto?"
-
-msgid "Save project"
-msgstr "Salvar projeto"
-
-msgid ""
-"Custom supports, seams and multimaterial painting were removed after "
-"repairing the mesh."
-msgstr ""
-"Suportes personalizados, costuras e pintura multimaterial foram removidos "
-"após reparação da malha."
-
-msgid ""
-"Always ask for unsaved changes in project, when: \n"
-"- Closing PrusaSlicer,\n"
-"- Loading or creating a new project"
-msgstr ""
-"Sempre solicitar alterações não salvas no projeto, quando: \n"
-"- Fechando o PrusaSlicer,\n"
-"- Carregando ou criando um novo projeto"
-
-msgid ""
-"Ask to save unsaved changes in presets when closing the application or when "
-"loading a new project"
-msgstr ""
-"Peça para salvar as alterações não salvas nas predefinições ao fechar o "
-"aplicativo ou ao carregar um novo projeto"
-
-msgid ""
-"Always ask for unsaved changes in presets, when: \n"
-"- Closing PrusaSlicer while some presets are modified,\n"
-"- Loading a new project while some presets are modified"
-msgstr ""
-"Sempre solicitar alterações não salvas nas predefinições, quando: \n"
-"- Fechando o PrusaSlicer enquanto algumas predefinições são modificadas,\n"
-"- Carregando um novo projeto enquanto alguns presets são modificados"
-
-msgid "Ask for unsaved changes in presets when selecting new preset"
-msgstr ""
-"Solicitar alterações não salvas em predefinições ao selecionar uma nova "
-"predefinição"
-
-msgid ""
-"Always ask for unsaved changes in presets when selecting new preset or "
-"resetting a preset"
-msgstr ""
-"Sempre peça alterações não salvas nas predefinições ao selecionar uma nova "
-"predefinição ou redefinir uma predefinição"
-
-msgid "Ask for unsaved changes in presets when creating new project"
-msgstr ""
-"Solicitar alterações não salvas em predefinições ao criar um novo projeto"
-
-msgid "Always ask for unsaved changes in presets when creating new project"
-msgstr ""
-"Sempre peça alterações não salvas nas predefinições ao criar um novo projeto"
-
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr "Se ativado, o PrusaSlicer será aberto na posição em que foi fechado"
-
-msgid "Clear Undo / Redo stack on new project"
-msgstr "Limpar pilha Desfazer/Refazer em novo projeto"
-
-msgid ""
-"Clear Undo / Redo stack on new project or when an existing project is loaded."
-msgstr ""
-"Desmarque a pilha Desfazer/Refazer em um novo projeto ou quando um projeto "
-"existente for carregado."
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr "Se ativado, o PrusaSlicer não abrirá links em seu navegador."
-
-msgid "Use colors for axes values in Manipulation panel"
-msgstr "Use cores para valores de eixos no painel Manipulação"
-
-msgid ""
-"If enabled, the axes names and axes values will be colorized according to "
-"the axes colors. If disabled, old UI will be used."
-msgstr ""
-"Se ativado, os nomes dos eixos e os valores dos eixos serão coloridos de "
-"acordo com as cores dos eixos. Se desativado, interface do usuário antiga "
-"será usada."
-
-msgid "Order object volumes by types"
-msgstr "Ordenar volumes de objetos por tipos"
-
-msgid ""
-"If enabled, volumes will be always ordered inside the object. Correct order "
-"is Model Part, Negative Volume, Modifier, Support Blocker and Support "
-"Enforcer. If disabled, you can reorder Model Parts, Negative Volumes and "
-"Modifiers. But one of the model parts have to be on the first place."
-msgstr ""
-"Se habilitado, os volumes serão sempre ordenados dentro do objeto. A ordem "
-"correta é Parte do Modelo, Volume Negativo,Modificadores, Bloqueadores de "
-"Suporte e Reforçadores de Suporte. Se desativado, você pode reordenar peças "
-"de modelo, volumes negativos e Modificadores. Mas uma das partes do modelo "
-"tem que estar em primeiro lugar."
-
-msgid "Set settings tabs as menu items (experimental)"
-msgstr "Definir guias de configurações como itens de menu (experimental)"
-
-msgid ""
-"If enabled, Settings Tabs will be placed as menu items. If disabled, old UI "
-"will be used."
-msgstr ""
-"Se ativado, as guias de configurações serão colocadas como itens de menu. Se "
-"desativado, a interface do usuário antiga será usada."
-
-msgid "Show \"Tip of the day\" notification after start"
-msgstr "Mostrar notificação de \"Dica do dia\" após o início"
-
-msgid "If enabled, useful hints are displayed at startup."
-msgstr "Se ativado, dicas úteis são exibidas na inicialização."
-
-msgid "Notify about new releases"
-msgstr "Notificar sobre novos releases"
-
-msgid ""
-"You will be notified about new release after startup acordingly: All = "
-"Regular release and alpha / beta releases. Release only = regular release."
-msgstr ""
-"Você será notificado sobre o novo release após a inicialização de acordo: "
-"Todos = release regular e releases alfa / beta. Somente Release = release "
-"regular."
-
-msgid "Release only"
-msgstr "Somente Release"
-
-msgid "Dark mode (experimental)"
-msgstr "Modo escuro (experimental)"
-
-msgid "Enable dark mode"
-msgstr "Habilitar modo escuro"
-
-msgid ""
-"If enabled, UI will use Dark mode colors. If disabled, old UI will be used."
-msgstr ""
-"Se ativado, a interface do usuário usará as cores do modo escuro. Se "
-"desativado, a interface do usuário antiga será usada."
-
-msgid "Use system menu for application"
-msgstr "Use o menu do sistema para aplicação"
-
-msgid ""
-"If enabled, application will use the standard Windows system menu,\n"
-"but on some combination of display scales it can looks ugly. If disabled, "
-"old UI will be used."
-msgstr ""
-"Se ativado, o aplicativo usará o menu padrão do sistema Windows,\n"
-"mas em alguma combinação de escalas de exibição pode parecer feio. Se "
-"desabilitado, a interface do usuário antiga será usada."
-
-msgid "Changes for the critical options"
-msgstr "Mudanças para as opções críticas"
-
-msgid ""
-"Changing some options will trigger application restart.\n"
-"You will lose the content of the plater."
-msgstr ""
-"Alterar algumas opções acionará a reinicialização do aplicativo.\n"
-"Você vai perder o conteúdo da bandeja."
-
-msgid "Text colors"
-msgstr "Cores do texto"
-
-msgid "Change extruder color"
-msgstr "Alterar a cor da extrusora"
-
-msgid ""
-"If estimated layer time is greater, but still below ~%1%s, fan will run at "
-"%2%%%"
-msgstr ""
-"Se o tempo estimado da camada for maior, mas ainda estiver abaixo de ~%1%s, "
-"o ventilador funcionará em %2%%%"
-
-msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
-msgstr ""
-"O nome do arquivo de upload não termina com \"%s\". Você deseja continuar?"
-
-msgid "Upload and Print"
-msgstr "Upload e Imprimir"
-
-msgid "Upload and Simulate"
-msgstr "Upload e Simular"
-
-msgid "The name cannot be the same as a preset alias name."
-msgstr "O nome não pode ser igual a um nome de alias predefinido."
-
-msgid "Data to send"
-msgstr "Dados a serem enviados"
-
-msgid "Send system info"
-msgstr "Enviar informações do sistema"
-
-msgid ""
-"This is the first time you are running %1%. We would like to ask you to send "
-"some of your system information to us. This will only happen once and we "
-"will not ask you to do this again (only after you upgrade to the next "
-"version)."
-msgstr ""
-"Esta é a primeira vez que você está executando %1%. Gostaríamos de pedir que "
-"você envie algumas informações do seu sistema para nós. Isso acontecerá "
-"apenas uma vez e não solicitaremos que você faça isso novamente (somente "
-"depois de atualizar para a próxima versão)."
-
-msgid ""
-"If we know your hardware, operating system, etc., it will greatly help us in "
-"development and prioritization, because we will be able to focus our effort "
-"more efficiently and spend time on features that are needed the most."
-msgstr ""
-"Se conhecermos seu hardware, sistema operacional etc., isso nos ajudará "
-"muito no desenvolvimento e na priorização, porque poderemos concentrar "
-"nossos esforços de forma mais eficiente e gastar tempo em recursos que são "
-"necessários a maioria."
-
-msgid "Is it safe?"
-msgstr "Isto é seguro?"
-
-msgid ""
-"We do not send any personal information nor anything that would allow us to "
-"identify you later. To detect duplicate entries, a unique number derived "
-"from your system is sent, but the source information cannot be "
-"reconstructed. Apart from that, only general data about your OS, hardware "
-"and OpenGL installation are sent. PrusaSlicer is open source, if you want to "
-"inspect the code actually performing the communication, see %1%."
-msgstr ""
-"Não enviamos nenhuma informação pessoal nem nada que nos permita identificá-"
-"lo posteriormente. Para detectar entradas duplicadas, um número exclusivo "
-"derivado de seu sistema é enviado, mas as informações de origem não podem "
-"ser reconstruídas. Além disso, apenas dados gerais sobre seu sistema "
-"operacional, hardware e instalação do OpenGL são enviados.O PrusaSlicer é de "
-"código aberto, se você quiser inspecionar o código realmente realizando a "
-"comunicação, consulte %1%."
-
-msgid "Show verbatim data that will be sent"
-msgstr "Mostrar dados textuais que serão enviados"
-
-msgid "Ask me next time"
-msgstr "Pergunte-me da próxima vez"
-
-msgid "Do not send anything"
-msgstr "Não envie nada"
-
-msgid "System info sent successfully. Thank you."
-msgstr "Informações do sistema enviadas com sucesso. Obrigada."
-
-msgid "Sending system info failed!"
-msgstr "Falha ao enviar informações do sistema!"
-
-msgid "Sending system info was cancelled."
-msgstr "O envio de informações do sistema foi cancelado."
-
-msgid "Sending system info..."
-msgstr "Enviando informações do sistema..."
-
-msgid "Blacklisted libraries loaded into PrusaSlicer process:"
-msgstr "Bibliotecas na lista negra carregadas no processo PrusaSlicer:"
-
-msgid "Eigen vectorization supported:"
-msgstr "Vetorização Eigen suportada:"
-
-msgid "Compare this preset with some another"
-msgstr "Compare esta predefinição com alguma outra"
-
-msgid "Arachne perimeter generator"
-msgstr "Gerador de perímetro Arachne"
-
-msgid "Post processing scripts shall modify G-code file in place."
-msgstr ""
-"Os scripts de pós-processamento devem modificar o arquivo de G-code no local."
-
-msgid "Found reserved keywords in"
-msgstr "Palavras-chave reservadas encontradas em"
-
-msgid "New printer preset selected"
-msgstr "Nova predefinição de impressora selecionada"
-
-msgid "Regular expression"
-msgstr "Expressão regular"
-
-msgid "Case insensitive"
-msgstr "Não diferencia maiúsculas de minúsculas"
-
-msgid "Match single line"
-msgstr "Corresponder a uma única linha"
-
-msgid "Are you sure you want to delete all substitutions?"
-msgstr "Tem certeza de que deseja excluir todas as substituições?"
-
-msgid "Unsaved Changes"
-msgstr "Mudanças não salvas"
-
-msgid "Keep"
-msgstr "Manter"
-
-msgid "Don't save"
-msgstr "Não Salvar"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time you "
-"create new project"
-msgstr ""
-"Você não será perguntado sobre as alterações não salvas nas predefinições na "
-"próxima vez que criar um novo projeto"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time you "
-"switch a preset"
-msgstr ""
-"Você não será questionado sobre as alterações não salvas nas predefinições "
-"na próxima vez que alternar uma predefinição"
-
-msgid ""
-"You will not be asked about the unsaved changes in presets the next time "
-"you: \n"
-"- Closing PrusaSlicer while some presets are modified,\n"
-"- Loading a new project while some presets are modified"
-msgstr ""
-"Você não será questionado sobre as alterações não salvas nas predefinições "
-"na próxima vez que: \n"
-"- Fechando o PrusaSlicer enquanto algumas predefinições são modificadas,\n"
-"- Carregando um novo projeto enquanto alguns predefinições são modificados"
-
-msgid "All settings changes will not be saved"
-msgstr "Todas as alterações de configurações não serão salvas"
-
-msgid "Keep the selected settings."
-msgstr "Mantenha as configurações selecionadas."
-
-msgid "Select presets to compare"
-msgstr "Selecione predefinições para comparar"
-
-msgid "Show all presets (including incompatible)"
-msgstr "Mostrar todas as predefinições (incluindo incompatíveis)"
-
-msgid "Left Preset Value"
-msgstr "Valor predefinido esquerdo"
-
-msgid "Right Preset Value"
-msgstr "Valor predefinido direito"
-
-msgid "One of the presets doesn't found"
-msgstr "Uma das predefinições não foi encontrada"
-
-msgid "Compared presets has different printer technology"
-msgstr "As predefinições comparadas têm tecnologia de impressora diferente"
-
-msgid "Presets are the same"
-msgstr "As predefinições são as mesmas"
-
-msgid ""
-"Presets are different.\n"
-"Click this button to select the same preset for the right and left preset."
-msgstr ""
-"As predefinições são diferentes.\n"
-"Clique neste botão para selecionar a mesma predefinição para a predefinição "
-"direita e esquerda."
-
-msgid "Undef category"
-msgstr "Categoria indefinida"
-
-msgid "Undef group"
-msgstr "Grupo indefinido"
-
-msgid "Opening Configuration Wizard"
-msgstr "Abrindo o Assistente de Configuração"
-
-msgid ""
-"PrusaSlicer is not using the newest configuration available.\n"
-"Configuration Wizard may not offer the latest printers, filaments and SLA "
-"materials to be installed."
-msgstr ""
-"PrusaSlicer não está usando a configuração mais recente disponível.\n"
-"O Assistente de Configuração pode não oferecer as impressoras, filamentos e "
-"materiais SLA mais recentes a serem instalados."
-
-msgid "Install"
-msgstr "Instalar"
-
-msgid "Don't install"
-msgstr "Não instalar"
-
-msgid "Connection to Prusa SL1 / SL1S works correctly."
-msgstr "A conexão com Prusa SL1 / SL1S funciona corretamente."
-
-msgid "Connection to PrusaLink works correctly."
-msgstr "A conexão com o PrusaLink funciona corretamente."
-
-msgid "Could not connect to PrusaLink"
-msgstr "Não foi possível conectar ao PrusaLink"
-
-msgid "Copying of file %1% to %2% failed: %3%"
-msgstr "Falha na cópia do arquivo %1% para %2%: %3%"
-
-msgid "Continue and install configuration updates?"
-msgstr "Continuar e instalar atualizações de configuração?"
-
-msgid ""
-"Configuration Updates causes a lost of preset modification.\n"
-"So, check unsaved changes and save them if necessary."
-msgstr ""
-"Atualizações de configuração causam perda de modificação predefinida.\n"
-"Então, verifique as alterações não salvas e salve-as, se necessário."
-
-msgid "Updating"
-msgstr "Atualizando"
-
-msgid "Connection to Repetier works correctly."
-msgstr "A conexão com o Repetier funciona corretamente."
-
-msgid "Could not connect to Repetier"
-msgstr "Não foi possível conectar ao Repetier"
-
-msgid "Note: Repetier version at least 0.90.0 is required."
-msgstr "Nota: A versão do Repetier pelo menos 0.90.0 é necessária."
-
-msgid ""
-"HTTP status: %1%\n"
-"Message body: \"%2%\""
-msgstr ""
-"Status HTTP: %1%\n"
-"Corpo da mensagem: \"%2%\""
-
-msgid ""
-"Parsing of host response failed.\n"
-"Message body: \"%1%\"\n"
-"Error: \"%2%\""
-msgstr ""
-"Falha na análise da resposta do host.\n"
-"Corpo da mensagem: \"%1%\"\n"
-"Erro: \"%2%\""
-
-msgid ""
-"Enumeration of host printers failed.\n"
-"Message body: \"%1%\"\n"
-"Error: \"%2%\""
-msgstr ""
-"Falha na enumeração das impressoras do host.\n"
-"Corpo da mensagem: \"%1%\"\n"
-"Erro: \"%2%\""
-
-msgid "Taking a configuration snapshot failed."
-msgstr "Falha ao tirar uma captura de configuração."
-
-msgid ""
-"PrusaSlicer has encountered an error while taking a configuration snapshot."
-msgstr "O PrusaSlicer encontrou um erro ao tirar uma captura de configuração."
-
-msgid "PrusaSlicer error"
-msgstr "Erro do PrusaSlicer"
-
-msgid "Continue"
-msgstr "Continuar"
-
-msgid "Abort"
-msgstr "Abortar"
-
-msgid "There is an object with no extrusions in the first layer."
-msgstr "Há um objeto sem extrusões na primeira camada."
-
-msgid "Empty layer between %1% and %2%."
-msgstr "Camada vazia entre %1% e %2%."
-
-msgid "(Some lines not shown)"
-msgstr "(Algumas linhas não mostradas)"
-
-msgid "Object name: %1%"
-msgstr "Nome do objeto: %1%"
-
-msgid ""
-"Make sure the object is printable. This is usually caused by negligibly "
-"small extrusions or by a faulty model. Try to repair the model or change its "
-"orientation on the bed."
-msgstr ""
-"Certifique-se de que o objeto seja imprimível. Isso geralmente é causado por "
-"pequenas extrusões ou por um modelo defeituoso. Tente reparar o modelo ou "
-"troque sua orientação na mesa."
-
-msgid "Filament Start G-code"
-msgstr "G-code de início de filamento"
-
-msgid "Filament End G-code"
-msgstr "G-code de fim de filamento"
-
-msgid "In the custom G-code were found reserved keywords:"
-msgstr "No G-code personalizado foram encontradas palavras-chave reservadas:"
-
-msgid ""
-"This may cause problems in g-code visualization and printing time estimation."
-msgstr ""
-"Isso pode causar problemas na visualização do G-code e na estimativa do "
-"tempo de impressão."
-
-msgid "No extrusions were generated for objects."
-msgstr "Nenhuma extrusão foi gerada para objetos."
-
-msgid ""
-"The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr ""
-"O 3MF selecionado contém FDM objetos pintados de suporte usando uma versão "
-"mais recente do PrusaSlicer e não é compatível."
-
-msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr ""
-"O 3MF selecionado contém um objeto pintado com costura usando uma versão "
-"mais recente do PrusaSlicer e não é compatível."
-
-msgid ""
-"The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr ""
-"O 3MF selecionado contém um objeto pintado multimaterial usando uma versão "
-"mais recente do PrusaSlicer e não é compatível."
-
-msgid ""
-"Post-processing script %1% failed.\n"
-"\n"
-"The post-processing script is expected to change the G-code file %2% in "
-"place, but the G-code file was deleted and likely saved under a new name.\n"
-"Please adjust the post-processing script to change the G-code in place and "
-"consult the manual on how to optionally rename the post-processed G-code "
-"file.\n"
-msgstr ""
-"O script de pós-processamento %1% falhou.\n"
-"\n"
-"Espera-se que o script de pós-processamento altere o arquivo de G-code %2% "
-"no local, mas o arquivo de G-code foi excluídoe provavelmente salvo com um "
-"novo nome.\n"
-"Ajuste o script de pós-processamento para alterar o G-code em vigor e "
-"consulte o manual sobre como opcionalmente renomeie o arquivo de G-code pós-"
-"processado.\n"
-
-msgid ""
-"Relative extruder addressing requires resetting the extruder position at "
-"each layer to prevent loss of floating point accuracy. Add \"G92 E0\" to "
-"layer_gcode."
-msgstr ""
-"O endereçamento relativo da extrusora requer a redefinição da posição da "
-"extrusora em cada camada para evitar a perda de precisão de ponto flutuante. "
-"Adicione \"G92 E0\" ao layer_gcode."
-
-msgid ""
-"\"G92 E0\" was found in before_layer_gcode, which is incompatible with "
-"absolute extruder addressing."
-msgstr ""
-"\"G92 E0\" foi encontrado em before_layer_gcode, que é incompatível com o "
-"endereçamento absoluto da extrusora."
-
-msgid ""
-"\"G92 E0\" was found in layer_gcode, which is incompatible with absolute "
-"extruder addressing."
-msgstr ""
-"\"G92 E0\" foi encontrado em layer_gcode, que é incompatível com o "
-"endereçamento absoluto da extrusora."
-
-msgid "Generating skirt and brim"
-msgstr "Gerando saia e aba"
-
-msgid ""
-"Mesh to be hollowed is not suitable for hollowing (does not bound a volume)."
-msgstr "A malha a ser vazada não é adequada para vazar (não limita um volume)."
-
-msgid "Unable to drill the current configuration of holes into the model."
-msgstr "Não é possível perfurar a configuração atual de furos no modelo."
-
-msgid "Failed to drill some holes into the model"
-msgstr "Falha ao fazer alguns furos no modelo"
-
-msgid ""
-"Picture sizes to be stored into a .gcode and .sl1 / .sl1s files, in the "
-"following format: \"XxY, XxY, ...\""
-msgstr ""
-"Tamanhos de imagem a serem armazenados em arquivos .gcode e .sl1 / .sl1s, no "
-"seguinte formato: \"XxY, XxY, ...\""
-
-msgid "Format of G-code thumbnails"
-msgstr "Formato de miniaturas de G-code"
-
-msgid ""
-"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
-"QOI for low memory firmware"
-msgstr ""
-"Formato de miniaturas de G-code: PNG para melhor qualidade, JPG para tamanho "
-"menor, QOI para firmware com pouca memória"
-
-msgid "Ignore HTTPS certificate revocation checks"
-msgstr "Ignorar verificações de revogação de certificado HTTPS"
-
-msgid ""
-"Ignore HTTPS certificate revocation checks in case of missing or offline "
-"distribution points. One may want to enable this option for self signed "
-"certificates if connection fails."
-msgstr ""
-"Ignore as verificações de revogação de certificados HTTPS em caso de pontos "
-"de distribuição ausentes ou offline. Pode-se querer habilitar esta opção "
-"para certificados autoassinados se a conexão falhar."
-
-msgid "Printer preset names"
-msgstr "Nomes predefinidos da impressora"
-
-msgid "Names of presets related to the physical printer"
-msgstr "Nomes de predefinições relacionadas à impressora física"
-
-msgid ""
-"The horizontal width of the brim that will be printed around each object on "
-"the first layer. When raft is used, no brim is generated (use "
-"raft_first_layer_expansion)."
-msgstr ""
-"A largura horizontal da aba que será impressa ao redor de cada objeto na "
-"primeira camada. Quando a jangada for usado, nenhuma aba é gerada (use "
-"raft_first_layer_expansion)."
-
-msgid "Brim type"
-msgstr "Tipo de aba"
-
-msgid ""
-"The places where the brim will be printed around each object on the first "
-"layer."
-msgstr ""
-"Os lugares onde a aba será impressa em torno de cada objeto na primeira "
-"camada."
-
-msgid "No brim"
-msgstr "Sem borda"
-
-msgid "Outer brim only"
-msgstr "Somente aba externa"
-
-msgid "Inner brim only"
-msgstr "Somente aba interna"
-
-msgid "Outer and inner brim"
-msgstr "Aba exterior e interior"
-
-msgid "Brim separation gap"
-msgstr "Espaçamento de separação da borda"
-
-msgid ""
-"Offset of brim from the printed object. The offset is applied after the "
-"elephant foot compensation."
-msgstr ""
-"Deslocamento da aba do objeto impresso. O deslocamento é aplicado após a "
-"compensação do pé de elefante."
-
-msgid "Lightning"
-msgstr "Relâmpago"
-
-msgid "First object layer over raft interface"
-msgstr "Primeira camada de objeto sobre a interface de jangada"
-
-msgid ""
-"This is the acceleration your printer will use for first layer of object "
-"above raft interface. Set zero to disable acceleration control for first "
-"layer of object above raft interface."
-msgstr ""
-"Esta é a aceleração que sua impressora usará para a primeira camada do "
-"objeto acima da interface de jangada. Defina zero para desabilitar o "
-"controle de aceleração para a primeira camada do objeto acima da interface "
-"da balsa."
-
-msgid ""
-"When printing with very low layer heights, you might still want to print a "
-"thicker bottom layer to improve adhesion and tolerance for non perfect build "
-"plates."
-msgstr ""
-"Ao imprimir com alturas de camada muito baixas, você ainda pode querer "
-"imprimir uma camada inferior mais grossa para melhoraradesão e tolerância "
-"para placas de construção não perfeitas."
-
-msgid "Speed of object first layer over raft interface"
-msgstr "Velocidade da primeira camada do objeto sobre a interface de jangada"
-
-msgid ""
-"If expressed as absolute value in mm/s, this speed will be applied to all "
-"the print moves of the first object layer above raft interface, regardless "
-"of their type. If expressed as a percentage (for example: 40%) it will scale "
-"the default speeds."
-msgstr ""
-"Se expresso como valor absoluto em mm/s, esta velocidade será aplicada a "
-"todos os movimentos de impressão do primeiro objeto camada acima da "
-"interface da balsa, independentemente de seu tipo. Se expresso em "
-"porcentagem (por exemplo: 40%) será escalar as velocidades padrão."
-
-msgid "Outside walls"
-msgstr "Paredes externas"
-
-msgid "All walls"
-msgstr "Todas paredes"
-
-msgid "Fuzzy skin thickness"
-msgstr "Espessura da pele difusa"
-
-msgid ""
-"The maximum distance that each skin point can be offset (both ways), "
-"measured perpendicular to the perimeter wall."
-msgstr ""
-"A distância máxima que cada ponto da pele pode ser deslocado (nos dois "
-"sentidos), medido perpendicularmente ao perímetromuro."
-
-msgid "Fuzzy skin point distance"
-msgstr "Distância do ponto de pele difusa"
-
-msgid ""
-"Perimeters will be split into multiple segments by inserting Fuzzy skin "
-"points. Lowering the Fuzzy skin point distance will increase the number of "
-"randomly offset points on the perimeter wall."
-msgstr ""
-"Os perímetros serão divididos em vários segmentos inserindo pontos de pele "
-"difusos. Reduzindo o ponto de pele difuso a distância aumentará o número de "
-"pontos de deslocamento aleatórios na parede do perímetro."
-
-msgid "Fill gaps"
-msgstr "Preencher vãos"
-
-msgid ""
-"Enables filling of gaps between perimeters and between the inner most "
-"perimeters and infill."
-msgstr ""
-"Permite o preenchimento de lacunas entre perímetros e entre os perímetros "
-"mais internos e o preenchimento."
-
-msgid "G-code substitutions"
-msgstr "Substituições de G-code"
-
-msgid "Find / replace patterns in G-code lines and substitute them."
-msgstr "Encontre/substitua padrões em linhas de G-code e substitua-os."
-
-msgid "1 mm"
-msgstr "1 mm"
-
-msgid "2 mm"
-msgstr "2 mm"
-
-msgid "5 mm"
-msgstr "5 mm"
-
-msgid "10 mm"
-msgstr "10 mm"
-
-msgid "Maximum width of a segmented region"
-msgstr "Largura máxima de uma região segmentada"
-
-msgid "Maximum width of a segmented region. Zero disables this feature."
-msgstr "Largura máxima de uma região segmentada. Zero desativa esse recurso."
-
-msgid ""
-"Maximum acceleration when extruding (M204 P)\n"
-"\n"
-"Marlin (legacy) firmware flavor will use this also as travel acceleration "
-"(M204 T)."
-msgstr ""
-"Aceleração máxima na extrusão (M204 P)\n"
-"\n"
-"Firmware Marlin (legado) usará isso também como aceleração de deslocamento "
-"(M204 T)."
-
-msgid "Maximum acceleration when retracting (M204 R)"
-msgstr "Aceleração máxima ao retrair (M204 R)"
-
-msgid "Maximum acceleration for travel moves"
-msgstr "Aceleração máxima para movimentos de deslocamento"
-
-msgid "Maximum acceleration for travel moves (M204 T)"
-msgstr "Aceleração máxima para movimentos de deslocamento (M204 T)"
-
-msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from lower speed to higher speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s "
-"(feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-"Esta configuração experimental é usada para limitar a velocidade de mudança "
-"na taxa de extrusão para uma transição de velocidade para maior velocidade. "
-"Um valor de 1.8 mm³/s² garante, que uma mudança da taxa de extrusão de 1.8 "
-"mm³/s (0.45 mm de largura de extrusão, 0.2 mm de altura de extrusão, avanço "
-"de 20 mm/s) a 5.4 mm³/s (avanço de 60 mm/s) levará em pelo menos 2 segundos."
-
-msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
-"(feedrate 20 mm/s) will take at least 2 seconds."
-msgstr ""
-"Esta configuração experimental é usada para limitar a velocidade de mudança "
-"na taxa de extrusão para uma transição de velocidade para velocidade mais "
-"baixa. Um valor de 1.8 mm³/s² garante, que uma mudança da taxa de extrusão "
-"de 5.4 mm³/s (0.45 mm de largura de extrusão, 0.2 mm de altura de extrusão, "
-"avanço de 60 mm/s) a 1.8 mm³/s (avanço de 20 mm/s) levará a pelo menos 2 "
-"segundos."
-
-msgid "Raft contact Z distance"
-msgstr "Distância Z do contato da balsa"
-
-msgid ""
-"The vertical distance between object and raft. Ignored for soluble interface."
-msgstr ""
-"A distância vertical entre o objeto e a balsa. Ignorado para interface "
-"solúvel."
-
-msgid "Raft expansion"
-msgstr "Expansão da balsa"
-
-msgid "Expansion of the raft in XY plane for better stability."
-msgstr "Expansão da balsa no plano XY para melhor estabilidade."
-
-msgid "First layer density"
-msgstr "Densidade da primeira camada"
-
-msgid "Density of the first raft or support layer."
-msgstr "Densidade da primeira jangada ou camada de suporte."
-
-msgid "First layer expansion"
-msgstr "Expansão da primeira camada"
-
-msgid ""
-"Expansion of the first raft or support layer to improve adhesion to print "
-"bed."
-msgstr ""
-"Expansão da primeira jangada ou camada de suporte para melhorar a adesão à "
-"mesa de impressão."
-
-msgid "Slice resolution"
-msgstr "Resolução do fatiamento"
-
-msgid "G-code resolution"
-msgstr "Resolução do G-code"
-
-msgid ""
-"Maximum deviation of exported G-code paths from their full resolution "
-"counterparts. Very high resolution G-code requires huge amount of RAM to "
-"slice and preview, also a 3D printer may stutter not being able to process a "
-"high resolution G-code in a timely manner. On the other hand, a low "
-"resolution G-code will produce a low poly effect and because the G-code "
-"reduction is performed at each layer independently, visible artifacts may be "
-"produced."
-msgstr ""
-"Desvio máximo de caminhos de G-code exportados de suas contrapartes de "
-"resolução total. Resolução muito alta G-code requer uma enorme quantidade de "
-"RAM para fatiar e visualizar, também uma impressora 3D pode gaguejar não "
-"sendo capaz de processar um G-code de alta resolução em tempo hábil. Por "
-"outro lado, um G-code de baixa resolução produzirá um efeito poli e porque a "
-"redução do G-code é realizada em cada camada de forma independente, "
-"artefatos visíveis podem ser produzidos."
-
-msgid "Distance from brim/object"
-msgstr "Distância da aba/objeto"
-
-msgid ""
-"Distance between skirt and brim (when draft shield is not used) or objects."
-msgstr ""
-"Distância entre a saia e a aba (quando a capela de proteção não é usada) ou "
-"objetos."
-
-msgid "Height of skirt expressed in layers."
-msgstr "Altura da saia expressa em camadas."
-
-msgid ""
-"With draft shield active, the skirt will be printed skirt_distance from the "
-"object, possibly intersecting brim.\n"
-"Enabled = skirt is as tall as the highest printed object.\n"
-"Limited = skirt is as tall as specified by skirt_height.\n"
-"This is useful to protect an ABS or ASA print from warping and detaching "
-"from print bed due to wind draft."
-msgstr ""
-"Com o protetor de vento ativo, a saia será impressa skirt_distance do "
-"objeto, possivelmente cruzando a aba.\n"
-"Ativado = a saia é tão alta quanto o objeto impresso mais alto.\n"
-"Limitado = a saia tem a altura especificada por skirt_height.\n"
-"Isto é útil para proteger uma impressão ABS ou ASA contra deformação e "
-"descolamento da mesa de impressão devido à corrente de vento."
-
-msgid "Disabled"
-msgstr "Desabilitado"
-
-msgid "Limited"
-msgstr "Limitado"
-
-msgid "Enabled"
-msgstr "Habilitado"
-
-msgid "Slicing Mode"
-msgstr "Modo de fatiamento"
-
-msgid ""
-"Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
-"close all holes in the model."
-msgstr ""
-"Use \"Par-ímpar\" para modelos de avião 3DLabPrint. Use \"Fechar orifícios\" "
-"para fechar todos os orifícios no modelo."
-
-msgid "Even-odd"
-msgstr "Par-ímpar"
-
-msgid "Close holes"
-msgstr "Fechar orifícios"
-
-msgid "Top contact Z distance"
-msgstr "Distância Z do contato superior"
-
-msgid "0.1 (detachable)"
-msgstr "0.1 (destacável)"
-
-msgid "Bottom contact Z distance"
-msgstr "Distância Z do contato inferior"
-
-msgid ""
-"The vertical distance between the object top surface and the support "
-"material interface. If set to zero, support_material_contact_distance will "
-"be used for both top and bottom contact Z distances."
-msgstr ""
-"A distância vertical entre a superfície superior do objeto e a interface do "
-"material de suporte. Se definido como zero, "
-"support_material_contact_distance será usado para distâncias Z de contato "
-"superior e inferior."
-
-msgid "Same as top"
-msgstr "Igual ao topo"
-
-msgid "Top interface layers"
-msgstr "Camadas de interface superiores"
-
-msgid "0 (off)"
-msgstr "0 (desligado)"
-
-msgid "1 (light)"
-msgstr "1 (leve)"
-
-msgid "2 (default)"
-msgstr "2 (padrão)"
-
-msgid "3 (heavy)"
-msgstr "3 (pesado)"
-
-msgid "Bottom interface layers"
-msgstr "Camadas de interface inferiores"
-
-msgid ""
-"Number of interface layers to insert between the object(s) and support "
-"material. Set to -1 to use support_material_interface_layers"
-msgstr ""
-"Número de camadas de interface a serem inseridas entre o(s) objeto(s) e o "
-"material de suporte. Defina como -1 para usar "
-"support_material_interface_layers"
-
-msgid "Closing radius"
-msgstr "Raio de fechamento"
-
-msgid ""
-"For snug supports, the support regions will be merged using morphological "
-"closing operation. Gaps smaller than the closing radius will be filled in."
-msgstr ""
-"Para suportes confortáveis, as regiões de suporte serão mescladas usando a "
-"operação de fechamento morfológico. Lacunas menores que o raio de fechamento "
-"será preenchido."
-
-msgid "Interface pattern"
-msgstr "Padrão de interface"
-
-msgid ""
-"Pattern used to generate support material interface. Default pattern for non-"
-"soluble support interface is Rectilinear, while default pattern for soluble "
-"support interface is Concentric."
-msgstr ""
-"Padrão usado para gerar interface de material de suporte. O padrão padrão "
-"para interface de suporte não solúvel é Rectilíneo, enquanto o padrão "
-"default para interface de suporte solúvel é Concêntrico."
-
-msgid ""
-"Style and shape of the support towers. Projecting the supports into a "
-"regular grid will create more stable supports, while snug support towers "
-"will save material and reduce object scarring."
-msgstr ""
-"Estilo e forma das torres de suporte. Projetar os suportes em uma grade "
-"regular criará suportes mais estáveis, enquanto as torres de suporte "
-"confortáveis economizarão material e reduzirão as cicatrizes de objetos."
-
-msgid "Snug"
-msgstr "Confortável"
-
-msgid "Thick bridges"
-msgstr "Pontes grossas"
-
-msgid ""
-"If enabled, bridges are more reliable, can bridge longer distances, but may "
-"look worse. If disabled, bridges look better but are reliable just for "
-"shorter bridged distances."
-msgstr ""
-"Se habilitada, as pontes são mais confiáveis, podem cobrir distâncias "
-"maiores, mas podem parecer piores. Se desabilitadas, as pontes parecem "
-"melhores, mas são confiáveis apenas para distâncias de ponte mais curtas."
-
-msgid ""
-"This custom code is inserted before every toolchange. Placeholder variables "
-"for all PrusaSlicer settings as well as {toolchange_z}, {previous_extruder} "
-"and {next_extruder} can be used. When a tool-changing command which changes "
-"to the correct extruder is included (such as T{next_extruder}), PrusaSlicer "
-"will emit no other such command. It is therefore possible to script custom "
-"behaviour both before and after the toolchange."
-msgstr ""
-"Este código personalizado é inserido antes de cada troca de ferramenta. "
-"Variáveis de espaço reservado para todas as configurações do PrusaSlicer "
-"como {toolchange_z}, {previous_extruder} e {next_extruder} podem ser usados. "
-"Quando um comando de mudança de ferramenta qual alteração para a extrusora "
-"correta está incluída (como T{next_extruder}), o PrusaSlicer não emitirá "
-"nenhum outro tal comando. Portanto, é possível criar scripts de "
-"comportamento personalizado antes e depois da troca de ferramentas."
-
-msgid "Z travel"
-msgstr "Z deslocamento"
-
-msgid ""
-"Speed for movements along the Z axis.\n"
-"When set to zero, the value is ignored and regular travel speed is used "
-"instead."
-msgstr ""
-"Velocidade para movimentos ao longo do eixo Z.\n"
-"Quando definido como zero, o valor é ignorado e a velocidade de deslocamento "
-"normal é usada."
-
-msgid "Wipe tower brim width"
-msgstr "Largura da borda da torre de limpeza"
-
-msgid ""
-"Purging after toolchange will be done inside this object's infills. This "
-"lowers the amount of waste but may result in longer print time  due to "
-"additional travel moves."
-msgstr ""
-"A purga após a troca de ferramentas será feita dentro dos preenchimentos "
-"deste objeto. Isso reduz a quantidade de resíduos, mas pode resultar em "
-"maior tempo de impressão devido a movimentos de deslocamento adicionais."
-
-msgid "Perimeter generator"
-msgstr "Gerador de perímetro"
-
-msgid "Perimeter transition length"
-msgstr "Comprimento de transição do perímetro"
-
-msgid "Perimeter transitioning filter margin"
-msgstr "Margem do filtro de transição de perímetro"
-
-msgid ""
-"Prevent transitioning back and forth between one extra perimeter and one "
-"less. This margin extends the range of extrusion widths which follow to "
-"[Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. "
-"Increasing this margin reduces the number of transitions, which reduces the "
-"number of extrusion starts/stops and travel time. However, large extrusion "
-"width variation can lead to under- or overextrusion problems. If expressed "
-"as a percentage (for example 25%), it will be computed based on the nozzle "
-"diameter."
-msgstr ""
-"Impede a transição entre um perímetro extra e um a menos. Essa margem "
-"estende o alcance de larguras de extrusão que seguem para [Largura mínima do "
-"perímetro - margem, 2 * Largura mínima do perímetro + margem]. Aumentar esta "
-"margem reduz o número de transições, o que reduz o número de partidas/"
-"paradas de extrusão e tempo de deslocamento. No entanto, uma grande variação "
-"na largura de extrusão pode levar a problemas de subextrusão ou "
-"superextrusão. Se expresso em porcentagem (por exemplo 25%), será calculado "
-"com base no diâmetro do bocal."
-
-msgid "Perimeter transitioning threshold angle"
-msgstr "Ângulo limite de transição de perímetro"
-
-msgid ""
-"When to create transitions between even and odd numbers of perimeters. A "
-"wedge shape with an angle greater than this setting will not have "
-"transitions and no perimeters will be printed in the center to fill the "
-"remaining space. Reducing this setting reduces the number and length of "
-"these center perimeters, but may leave gaps or overextrude."
-msgstr ""
-"Quando criar transições entre números pares e ímpares de perímetros. Uma "
-"forma de cunha com um ângulo maior essa configuração não terá transições e "
-"nenhum perímetro será impresso no centro para preencher o espaço restante. "
-"Reduzir essa configuração reduz o número e o comprimento desses perímetros "
-"centrais, mas pode deixar lacunas ou overextrude."
-
-msgid "Perimeter distribution count"
-msgstr "Contagem de distribuição de perímetro"
-
-msgid ""
-"The number of perimeters, counted from the center, over which the variation "
-"needs to be spread. Lower values mean that the outer perimeters don't change "
-"in width."
-msgstr ""
-"O número de perímetros, contados a partir do centro, sobre os quais a "
-"variação precisa ser espalhada. Valores mais baixos significa que os "
-"perímetros externos não mudam de largura."
-
-msgid "Minimum feature size"
-msgstr "Tamanho mínimo do recurso"
-
-msgid "Minimum perimeter width"
-msgstr "Largura mínima do perímetro"
-
-msgid ""
-"Width of the perimeter that will replace thin features (according to the "
-"Minimum feature size) of the model. If the Minimum perimeter width is "
-"thinner than the thickness of the feature, the perimeter will become as "
-"thick as the feature itself. If expressed as a percentage (for example 85%), "
-"it will be computed based on the nozzle diameter."
-msgstr ""
-"Largura do perímetro que substituirá os recursos finos (de acordo com o "
-"tamanho mínimo do recurso) do modelo.Se a largura mínima do perímetro for "
-"mais fina que a espessura do recurso, o perímetro se tornará espesso como o "
-"próprio recurso. Se expresso em porcentagem (por exemplo, 85%), será "
-"calculado com base no diâmetro do bocal."
-
-msgid "High viscosity"
-msgstr "Alta viscosidade"
-
-msgid "Tilt for high viscosity resin"
-msgstr "Inclinação para resina de alta viscosidade"
-
-msgid "Time of the super slow tilt"
-msgstr "Tempo da inclinação super lenta"
-
-msgid "Printer scaling correction in X axis"
-msgstr "Correção de dimensionamento da impressora no eixo X"
-
-msgid "Printer scaling X axis correction"
-msgstr "Correção do eixo X da escala da impressora"
-
-msgid "Printer scaling correction in Y axis"
-msgstr "Correção de dimensionamento da impressora no eixo Y"
-
-msgid "Printer scaling Y axis correction"
-msgstr "Correção do eixo Y da escala da impressora"
-
-msgid "Printer scaling correction in Z axis"
-msgstr "Correção de dimensionamento da impressora no eixo Z"
-
-msgid "Printer scaling Z axis correction"
-msgstr "Correção do eixo Z de dimensionamento da impressora"
-
-msgid "Correction for expansion in X axis"
-msgstr "Correção para expansão no eixo X"
-
-msgid "Correction for expansion in Y axis"
-msgstr "Correção para expansão no eixo Y"
-
-msgid "Correction for expansion in Z axis"
-msgstr "Correção para expansão no eixo Z"
-
-msgid "Print speed"
-msgstr "Velocidade de impressão"
-
-msgid ""
-"A slower printing profile might be necessary when using materials with "
-"higher viscosity or with some hollowed parts. It slows down the tilt "
-"movement and adds a delay before exposure."
-msgstr ""
-"Um perfil de impressão mais lento pode ser necessário ao usar materiais com "
-"maior viscosidade ou com algumas peças ocas. Ele diminui o movimento de "
-"inclinação e adiciona um atraso antes da exposição."
-
-msgid "Ensure on bed"
-msgstr "Garanta na mesa"
-
-msgid ""
-"Lift the object above the bed when it is partially below. Enabled by "
-"default, use --no-ensure-on-bed to disable."
-msgstr ""
-"Levante o objeto acima da mesa quando estiver parcialmente abaixo. "
-"Habilitado por padrão, use --no-ensure-on-bed para desabilitar."
-
-msgid ""
-"Forward-compatibility rule when loading configurations from config files and "
-"project files (3MF, AMF)."
-msgstr ""
-"Regra de compatibilidade de encaminhamento ao carregar configurações de "
-"arquivos de configuração e arquivos de projeto (3MF, AMF)."
-
-msgid ""
-"This version of PrusaSlicer may not understand configurations produced by "
-"the newest PrusaSlicer versions. For example, newer PrusaSlicer may extend "
-"the list of supported firmware flavors. One may decide to bail out or to "
-"substitute an unknown value with a default silently or verbosely."
-msgstr ""
-"Esta versão do PrusaSlicer pode não entender as configurações produzidas "
-"pelas versões mais recentes do PrusaSlicer. Para exemplo, o PrusaSlicer mais "
-"recente pode estender a lista de tipos de firmware suportados. Pode-se "
-"decidir sair ou substitua um valor desconhecido por um padrão de forma "
-"silenciosa ou detalhada."
-
-msgid "Bail out on unknown configuration values"
-msgstr "Resgate em valores de configuração desconhecidos"
-
-msgid ""
-"Enable reading unknown configuration values by verbosely substituting them "
-"with defaults."
-msgstr ""
-"Habilite a leitura de valores de configuração desconhecidos substituindo-os "
-"detalhadamente por padrões."
-
-msgid ""
-"Enable reading unknown configuration values by silently substituting them "
-"with defaults."
-msgstr ""
-"Habilite a leitura de valores de configuração desconhecidos substituindo-os "
-"silenciosamente por padrões."
-
-msgid ""
-"Fuzzy skin\n"
-"Did you know that you can create rough fibre-like texture on the sides of "
-"your models using the<a>Fuzzy skin</a>feature? You can also use modifiers to "
-"apply fuzzy-skin only to a portion of your model."
-msgstr ""
-"Fuzzy skin (Pele difusa)\n"
-"Você sabia que pode criar texturas ásperas semelhantes a fibras nas laterais "
-"do seu modelos usando o recurso<a>Pele difusa</a>? Você também pode usar "
-"modificadores para aplicar pele difusa apenas para uma parte do seu modelo."
-
-msgid ""
-"Shapes gallery\n"
-"Did you know that PrusaSlicer has a Shapes Gallery? You can use the included "
-"models as modifiers, negative volumes or as printable objects. Right-click "
-"the platter and select<a>Add Shape - Gallery</a>."
-msgstr ""
-"Galeria de formas\n"
-"Você sabia que o PrusaSlicer tem uma Galeria de Formas? Você pode usar "
-"modelos incluídos como modificadores, volumes negativos ou como objetos "
-"imprimíveis. Clique com o botão direito do mouse na bandeja e "
-"selecione<a>Adicionar forma - Galeria</a>."
-
-msgid ""
-"Arrange settings\n"
-"Did you know that you can right-click the<a>Arrange icon</a>to adjust the "
-"size of the gap between objects and to allow automatic rotations?"
-msgstr ""
-"Organizar configurações\n"
-"Você sabia que pode clicar com o botão direito do mouse no<a>ícone "
-"Organizar</a>para ajustar o tamanho do espaço entre os objetos e para "
-"permitir rotações automáticas?"
-
-msgid ""
-"Negative volume\n"
-"Did you know that you can subtract one mesh from another using the Negative "
-"volume modifier? That way you can, for example, create easily resizable "
-"holes directly in PrusaSlicer. Read more in the documentation. (Requires "
-"Advanced or Expert mode.)"
-msgstr ""
-"Volume negativo\n"
-"Você sabia que pode subtrair uma malha de outra usando o modificador "
-"Negativo de volume? Dessa forma você pode, por exemplo, criar facilmente "
-"buracos diretamente no PrusaSlicer. Leia mais na documentação. (Requer Modo "
-"avançado ou Especialista.)"
-
-msgid ""
-"Simplify mesh\n"
-"Did you know that you can reduce the number of triangles in a mesh using the "
-"Simplify mesh feature? Right-click the model and select Simplify model. Read "
-"more in the documentation."
-msgstr ""
-"Simplificar malha\n"
-"Você sabia que pode reduzir o número de triângulos em uma malha usando o "
-"recurso Simplificar malha? Clique com o botão direito do mouse no modelo e "
-"selecione Simplificar modelo. Leia mais na documentação."
-
-msgid ""
-"Reload from disk\n"
-"Did you know that if you created a newer version of your model, you can "
-"simply reload it in PrusaSlicer? Right-click the model in the 3D view and "
-"choose Reload from disk. Read more in the documentation."
-msgstr ""
-"Recarregar do disco\n"
-"Você sabia que se você criou uma versão mais recente do seu modelo, você "
-"pode simplesmente recarregá-lo no PrusaSlicer? Clique com o botão direito do "
-"mouse no modelo na visualização 3D e escolha Recarregar do disco. Leia mais "
-"na documentação."
-
-msgid ""
-"Hiding sidebar\n"
-"Did you know that you can hide the right sidebar using the shortcut <b>Shift"
-"+Tab</b>? You can also enable the icon for this from the<a>Preferences</a>."
-msgstr ""
-"Esconder a barra lateral\n"
-"Você sabia que pode ocultar a barra lateral direita usando o atalho <b>Shift"
-"+Tab</b>? Você também pode ativar o ícone para isso nas <a>Preferências</a>."
-
-msgid ""
-"Perspective camera\n"
-"Did you know that you can use the <b>K</b> key to quickly switch between an "
-"orthographic and perspective camera?"
-msgstr ""
-"Câmera em perspectiva\n"
-"Você sabia que pode usar a tecla <b>K</b> para alternar rapidamente entre "
-"uma câmera ortográfica e perspectiva?"
-
-msgid ""
-"Camera Views\n"
-"Did you know that you can use the number keys <b>0-6</b> to quickly switch "
-"between predefined camera angles?"
-msgstr ""
-"Visualizações da Câmera\n"
-"Você sabia que pode usar as teclas numéricas <b>0-6</b> para alternar "
-"rapidamente entre ângulos de câmera predefinidos?"
-
-msgid ""
-"Place on face\n"
-"Did you know that you can quickly orient a model so that one of its faces "
-"sits on the print bed? Select the<a>Place on face</a>function or press the "
-"<b>F</b> key."
-msgstr ""
-"Colocar no rosto\n"
-"Você sabia que pode orientar rapidamente um modelo para que uma de suas "
-"faces fique na mesa de impressão? Selecione a função<a>Colocar no rosto</a> "
-"ou pressione o botão Tecla <b>F</b>."
-
-msgid ""
-"Set number of instances\n"
-"Did you know that you can right-click a model and set an exact number of "
-"instances instead of copy-pasting it several times?"
-msgstr ""
-"Definir número de instâncias\n"
-"Você sabia que pode clicar com o botão direito do mouse em um modelo e "
-"definir um número exato de instâncias em vez de copiar e colar várias vezes?"
-
-msgid ""
-"Combine infill\n"
-"Did you know that you can print the infill with a higher layer height "
-"compared to perimeters to save print time using the setting<a>Combine infill "
-"every</a>."
-msgstr ""
-"Combinar preenchimento\n"
-"Você sabia que pode imprimir o preenchimento com uma altura de camada mais "
-"altaem comparação com perímetros para economizar tempo de impressão usando a "
-"configuração<a>Combinar preenchimento cada</a>."
-
-msgid ""
-"Variable layer height\n"
-"Did you know that you can print different regions of your model with a "
-"different layer height and smooth the transitions between them? Try "
-"the<a>Variable layer height tool</a>. (Not available for SLA printers.)"
-msgstr ""
-"Altura da camada variável\n"
-"Você sabia que pode imprimir diferentes regiões do seu modelo com alturas "
-"diferentes de camada e suavizar as transições entre elas? Tente "
-"a<a>Ferramenta de altura de camada variável</a>. (Não disponível para "
-"impressoras SLA.)"
-
-msgid ""
-"Undo/redo history\n"
-"Did you know that you can right-click the<a>undo/redo arrows</a>to see the "
-"history of changes and to undo or redo several actions at once?"
-msgstr ""
-"Desfazer/refazer histórico\n"
-"Você sabia que pode clicar com o botão direito do mouse nas<a>setas de "
-"desfazer/refazer</a>para ver o histórico de mudanças e desfazer ou refazer "
-"várias ações de uma só vez?"
-
-msgid ""
-"Different layer height for each model\n"
-"Did you know that you can print each model on the plater with a different "
-"layer height? Right-click the model in the 3D view, choose Layers and "
-"Perimeters and adjust the values in the right panel. Read more in the "
-"documentation."
-msgstr ""
-"Altura de camada diferente para cada modelo\n"
-"Você sabia que pode imprimir cada modelo na bandeja com uma altura de camada "
-"diferente? Clique com o botão direito do mouse no modelo, na visualização "
-"3D, escolha Camadas e Perímetros e ajuste os valores no painel direito. Leia "
-"mais na documentação."
-
-msgid ""
-"Solid infill threshold area\n"
-"Did you know that you can make parts of your model with a small cross-"
-"section be filled with solid infill automatically? Set the<a>Solid infill "
-"threshold area</a>. (Expert mode only.)"
-msgstr ""
-"Área de limite de preenchimento sólido\n"
-"Você sabia que pode fazer partes do seu modelo com uma pequena cruz-seção "
-"ser preenchida com preenchimento sólido automaticamente? Defina "
-"o<a>preenchimento sólido área de limite</a>. (Somente no modo Especialista.)"
-
-msgid ""
-"Search functionality\n"
-"Did you know that you use the<a>Search</a>tool to quickly find a specific "
-"PrusaSlicer setting? Or use the familiar shortcut <b>Ctrl+F</b>."
-msgstr ""
-"Funcionalidade de pesquisa\n"
-"Você sabia que você pode usar a ferramenta <a>Pesquisar</a> para encontrar "
-"rapidamente uma Configuração do PrusaSlicer? Ou use o atalho habitual <b>Ctrl"
-"+F</b>."
-
-msgid ""
-"Box selection\n"
-"Did you know that you can do a box selection with Shift+Mouse drag? You can "
-"also box-deselect objects with <b>Alt+Mouse drag</b>."
-msgstr ""
-"Seleção de caixa\n"
-"Você sabia que pode fazer uma seleção de caixa com Shift+Mouse e arrastar? "
-"Você pode também desmarcar objetos com <b>Alt+Mouse e arrastar</b>."
-
-msgid ""
-"Zoom on selected objects or on all objects if none selected\n"
-"Did you know that you can zoom in on selected objects by pressing the <b>Z</"
-"b> key? If none are selected, the camera will zoom on all objects in the "
-"scene."
-msgstr ""
-"Zoom em objetos selecionados ou em todos os objetos se nenhum selecionado\n"
-"Você sabia que pode dar zoom em objetos selecionados pressionando tecla "
-"<b>Z</b>? Se nenhum estiver selecionado, a câmera aplicará zoom em todos os "
-"objetos na cena."
-
-msgid ""
-"Printable toggle\n"
-"Did you know that you can disable the G-code generation for the selected "
-"model without having to move or delete it? Toggle the Printable property of "
-"a model from the Right-click context menu."
-msgstr ""
-"Alternar para impressão\n"
-"Você sabia que pode desabilitar a geração do G-code para o modelo sem ter "
-"que movê-lo ou excluí-lo? Alterne a propriedade Imprimível de um modelo do "
-"menu de contexto do botão direito do mouse."
-
-msgid ""
-"Mirror\n"
-"Did you know that you can mirror the selected model to create a reversed "
-"version of it? Right-click the model, select Mirror and pick the mirror axis."
-msgstr ""
-"Espelho\n"
-"Você sabia que pode espelhar o modelo selecionado para criar uma versão "
-"dele? Clique com o botão direito do mouse no modelo, selecione Espelho e "
-"escolha o eixo do espelho."
-
-msgid ""
-"PageUp / PageDown quick rotation by 45 degrees\n"
-"Did you know that you can quickly rotate selected models by 45 degrees "
-"around the Z-axis clockwise or counter-clockwise by pressing <b>Page Up</b> "
-"or <b>Page Down</b> respectively?"
-msgstr ""
-"Rotação rápida PageUp / PageDown em 45 graus\n"
-"Você sabia que pode girar rapidamente modelos selecionados em 45 graus em "
-"torno do eixo Z no sentido horário ou anti-horário pressionando <b>Page Up</"
-"b> ou <b>Page Down</b> respectivamente?"
-
-msgid ""
-"Load config from G-code\n"
-"Did you know that you can use File-Import-Import Config to load print, "
-"filament and printer profiles from an existing G-code file? Similarly, you "
-"can use File-Import-Import SL1 / SL1S archive, which also lets you "
-"reconstruct 3D models from the voxel data."
-msgstr ""
-"Carregar configuração do G-code\n"
-"Você sabia que pode usar o Arquivo-Importar-Importar Configuração para "
-"carregar a impressão, perfis de filamento e impressora de um arquivo de G-"
-"code existente? Da mesma forma, você pode usar o Arquivo-Importar-Importar "
-"Arquivo SL1 / SL1S, que também permite reconstruir modelos 3D a partir dos "
-"dados de voxel."
-
-msgid ""
-"Ironing\n"
-"Did you know that you can smooth top surfaces of prints using Ironing? The "
-"nozzle will run a special second infill phase at the same layer to fill in "
-"holes and flatten any lifted plastic. Read more in the documentation. "
-"(Requires Advanced or Expert mode.)"
-msgstr ""
-"Passar Ferro\n"
-"Você sabia que pode suavizar as superfícies superiores das impressões usando "
-"o Passar Ferro? O bico executará uma segunda fase especial de preenchimento "
-"na mesma camada para preencher buracos e achatar qualquer plástico "
-"levantado. Leia mais na documentação. (Requer o modo Avançado ou "
-"Especialista)"
-
-msgid ""
-"Paint-on supports\n"
-"Did you know that you can paint directly on the object and select areas, "
-"where supports should be enforced or blocked? Try the<a>Paint-on supports</"
-"a>feature. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Suportes para pintura\n"
-"Você sabia que pode pintar diretamente no objeto e selecionar áreas, onde os "
-"suportes devem ser aplicados ou bloqueados? Experimente o recurso "
-"<a>suportes pintados</a>. (Requer o modo Avançado ou Especialista)"
-
-msgid ""
-"Paint-on seam\n"
-"Did you know that you can paint directly on the object and select where to "
-"place the start/endpoint of each perimeter loop? Try the<a>Seam painting</"
-"a>feature. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Costura pintada\n"
-"Você sabia que pode pintar diretamente no objeto e selecionar onde coloque o "
-"ponto inicial/final de cada loop de perímetro? Experimente o "
-"recurso<a>Pintura de costura</a>. (Requer o modo Avançado ou Especialista.)"
-
-msgid ""
-"Insert Pause\n"
-"Did you know that you can schedule the print to pause at a specific layer? "
-"Right-click the layer slider in the Preview and select Add pause print "
-"(M601). This can be used to insert magnets, weights or nuts into your "
-"prints. Read more in the documentation."
-msgstr ""
-"Inserir Pausa\n"
-"Você sabia que pode agendar a impressão para pausar em uma camada "
-"específica? Clique com o botão direito do mouse no controle deslizante de "
-"camada na visualização e selecione Adicionar pausa de impressão (M601). Isso "
-"pode ser usado para inserir ímãs, pesos ou porcas em suas impressões. Leia "
-"mais na documentação."
-
-msgid ""
-"Insert Custom G-code\n"
-"Did you know that you can insert a custom G-code at a specific layer? Left-"
-"click the layer in the Preview, Right-click the plus icon and select Add "
-"custom G-code. With this function you can, for example, create a temperature "
-"tower. Read more in the documentation."
-msgstr ""
-"Inserir G-code personalizado\n"
-"Você sabia que pode inserir um G-code personalizado em uma camada "
-"específica? Clique com o botão esquerdo do mouse a camada na visualização, "
-"clique com o botão direito do mouse no ícone de adição e selecione Adicionar "
-"G-code personalizado. Com esta função você pode, por exemplo, criar uma "
-"torre de temperatura . Leia mais na documentação."
-
-msgid ""
-"Configuration snapshots\n"
-"Did you know that you can roll back to a complete backup of all system and "
-"user profiles? You can view and move back and forth between snapshots using "
-"the Configuration - <a>Configuration snapshots menu</a>."
-msgstr ""
-"Capturas de configuração\n"
-"Você sabia que pode reverter para um backup completo de todo o sistema e "
-"perfis de usuário? Você pode visualizar e alternar entre as capturas usando "
-"a Configuração - <a>menu de capturas de configuração</a>."
-
-msgid ""
-"Minimum shell thickness\n"
-"Did you know that instead of the number of top and bottom layers, you can "
-"define the<a>Minimum shell thickness</a>in millimeters? This feature is "
-"especially useful when using the variable layer height function."
-msgstr ""
-"Espessura mínima da casca\n"
-"Você sabia que em vez do número de camadas superior e inferior, você pode "
-"definir a<a>espessura mínima da casca</a>em milímetros? Este recurso é "
-"especialmente útil ao usar a função de altura de camada variável."
-
-msgid ""
-"Settings in non-modal window\n"
-"Did you know that you can open the Settings in a new non-modal window? This "
-"means you can have settings open on one screen and the G-code Preview on the "
-"other. Go to the<a>Preferences</a>and select Settings in non-modal window."
-msgstr ""
-"Configurações na janela não modal\n"
-"Você sabia que pode abrir as Configurações em uma nova janela não modal? "
-"Isto significa que você pode ter as configurações abertas em uma tela e a "
-"visualização do G-code no outro. Vá para as <a>Preferências</a> e selecione "
-"Configurações em janela não modal."
-
-msgid ""
-"Adaptive infills\n"
-"Did you know that you can use the Adaptive cubic and Support cubic infills "
-"to decrease the print time and lower the filament consumption? Read more in "
-"the documentation."
-msgstr ""
-"Preenchimentos adaptáveis\n"
-"Você sabia que pode usar os preenchimentos Adaptativo e Pilar de suporte "
-"para diminuir o tempo de impressão e diminuir o consumo de filamento? Leia "
-"mais na documentação."
-
-msgid ""
-"Lightning infill\n"
-"Did you know that you can use the Lightning infill to support only the top "
-"surfaces, save a lot of the filament, and decrease the print time? Read more "
-"in the documentation."
-msgstr ""
-"Preenchimento de raio\n"
-"Você sabia que pode usar o preenchimento de Raio para suportar apenas "
-"superfícies de topo, para economizar muito filamento e diminuir o tempo de "
-"impressão? Leia mais na documentação."
-
-msgid ""
-"Fullscreen mode\n"
-"Did you know that you can switch PrusaSlicer to fullscreen mode? Use the "
-"<b>F11</b> hotkey."
-msgstr ""
-"Modo de tela cheia\n"
-"Você sabia que pode alternar o PrusaSlicer para o modo de tela cheia? Use a "
-"Tecla de atalho <b>F11</b>."
