@@ -1,67 +1,11 @@
 
 
-#: src/slic3r/GUI/Plater.cpp:5878
-#, possible-boost-format
-msgid " resin '%1%'"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:244
-msgid ""
-"! 1 for the Bridge fan speed is Deprecated, please set it to 0 to stop the "
-"fan!"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:242
-msgid ""
-"! 1 for the External perimeters fan speed is Deprecated, please set it to 0 "
-"to stop the fan!"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:246
-msgid ""
-"! 1 for the Infill bridge fan speed is Deprecated, please set it to 0 to "
-"stop the fan!"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:238 src/slic3r/GUI/PresetHints.cpp:240
-msgid ""
-"! 1 for the Top fan speed is Deprecated, please set it to 0 to stop the fan!"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5829
+#: src/libslic3r/PrintConfig.cpp:5243
 msgid "$ per hour"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l342
+#: ../../ui_layout/default/print.ui : l281
 msgid "% of perimeter flow"
-msgstr ""
-
-
-#: src/slic3r/GUI/BackgroundSlicingProcess.cpp:93
-#, possible-boost-format
-#Similar to me: %1% has encountered a fatal error: \"%2%\"
-# 12   changes: PrusaSlicer has encountered a fatal error: \"%1%\"
-#  translation: PrusaSlicer narazil na fatální chybu: \"%1%\"
-msgid "%1% has encountered a fatal error: \"%2%\""
-msgstr ""
-
-
-#: src/slic3r/GUI/BackgroundSlicingProcess.cpp:85
-#, possible-boost-format
-#Similar to me: %1% has encountered an error. It was likely caused by running out of memory. If you are sure you have enough RAM on your system, this may also be a bug and we would be glad if you reported it.
-# 2    changes: %s has encountered an error. It was likely caused by running out of memory. If you are sure you have enough RAM on your system, this may also be a bug and we would be glad if you reported it.
-#  translation: %s zaznamenal chybu. Bylo to pravděpodobně způsobeno nedostatkem paměti. Pokud jste si jisti, že máte v systému dostatek paměti RAM, může to být také chyba programu a v takovém případě bychom byli rádi, kdybyste nám to nahlásili.
-# 41   changes: %s has encountered an error. It was likely caused by running out of memory. If you are sure you have enough RAM on your system, this may also be a bug and we would be glad if you reported it.\n\nThe application will now terminate.
-#  translation: %s zaznamenal chybu. Bylo to pravděpodobně způsobeno nedostatkem paměti. Pokud jste si jisti, že máte v systému dostatek paměti RAM, může to být také chyba programu a v takovém případě bychom byli rádi, kdybyste nám to nahlásili.\n\nAplikace se nyní ukončí.
-msgid ""
-"%1% has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
 msgstr ""
 
 
@@ -71,7 +15,7 @@ msgid "%1% is closing"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:1434
+#: src/slic3r/GUI/GUI_App.cpp:1392
 #, possible-boost-format
 msgid "%1% started after a crash"
 msgstr ""
@@ -90,7 +34,7 @@ msgid "%1% will remember your action."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3429 src/slic3r/GUI/Plater.cpp:1756
+#: src/slic3r/GUI/GUI_App.cpp:3343 src/slic3r/GUI/Plater.cpp:1756
 #, possible-boost-format
 #Similar to me: %1% will remember your choice.
 # 2    changes: %s will remember your choice.
@@ -103,7 +47,7 @@ msgid "%1% will remember your choice."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3433 src/slic3r/GUI/Plater.cpp:1762
+#: src/slic3r/GUI/GUI_App.cpp:3347 src/slic3r/GUI/Plater.cpp:1762
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:913
 #, possible-boost-format
 #Similar to me: %1%: Don't ask me again
@@ -113,7 +57,7 @@ msgid "%1%: Don't ask me again"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3422 src/slic3r/GUI/GUI_App.cpp:3445
+#: src/slic3r/GUI/GUI_App.cpp:3336
 #, possible-boost-format
 #Similar to me: %1%: Open hyperlink
 # 3    changes: : Open hyperlink
@@ -122,7 +66,7 @@ msgid "%1%: Open hyperlink"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:1435
+#: src/slic3r/GUI/GUI_App.cpp:1393
 #, possible-boost-format
 #Similar to me: %5% crashed last time when attempting to set window position.\nWe are sorry for the inconvenience, it unfortunately happens with certain multiple-monitor setups.\nMore precise reason for the crash: \"%1%\".\nFor more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n\nTo avoid this problem, consider disabling \"%4%\" in \"Preferences\". Otherwise, the application will most likely crash again next time.
 # 11   changes: PrusaSlicer crashed last time when attempting to set window position.\nWe are sorry for the inconvenience, it unfortunately happens with certain multiple-monitor setups.\nMore precise reason for the crash: \"%1%\".\nFor more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n\nTo avoid this problem, consider disabling \"%4%\" in \"Preferences\". Otherwise, the application will most likely crash again next time.
@@ -139,7 +83,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/OpenGLManager.cpp:259
+#: src/slic3r/GUI/OpenGLManager.cpp:258
 #Similar to me: %s requires OpenGL 2.0 capable graphics driver to run correctly, \nwhile OpenGL version %1%, render %2%, vendor %3% was detected.
 # 6    changes: %s requires OpenGL 2.0 capable graphics driver to run correctly, \nwhile OpenGL version %s, render %s, vendor %s was detected.
 #  translation: %s vyžaduje ke správnému fungování grafický ovladač podporující OpenGL 2.0, \nzatímco verze OpenGL %s, render %s, byl zjištěn dodavatel.
@@ -151,13 +95,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5875
-#, possible-boost-format
-msgid "'%1%' of type %2%"
-msgstr ""
-
-
-#: src/slic3r/GUI/MainFrame.cpp:1895
+#: src/slic3r/GUI/MainFrame.cpp:1868
 #Similar to me: 3D &Platter Tab
 # 1    changes: 3D &Plater Tab
 #  translation: Karta 3D &Pohled
@@ -171,14 +109,7 @@ msgid "_"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:510
-msgid ""
-"A Client certificate file for use with 2-way ssl authentication, in p12/pfx "
-"format. If left blank, no client certificate is used."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2769
+#: src/libslic3r/PrintConfig.cpp:2583
 msgid ""
 "A percentage of the perimeter flow (mm3/s) is used as a limit for the gap "
 "fill flow, and so the gapfill may reduce its speed when the gap fill "
@@ -189,7 +120,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5986
+#: src/libslic3r/PrintConfig.cpp:5400
 #, possible-c-format, possible-boost-format
 msgid ""
 "Acceleration for travel moves (jumps between distant extrusion points).\n"
@@ -198,20 +129,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/BackgroundSlicingProcess.cpp:305
-#Similar to me: Access (status) violation
-# 9    changes: Access violation
-#  translation: Porušení přístupu
-msgid "Access (status) violation"
-msgstr ""
-
-
-#: src/slic3r/GUI/BackgroundSlicingProcess.cpp:307
-msgid "Access violation (misalignement)"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1547
+#: src/libslic3r/PrintConfig.cpp:1434
 #, possible-c-format, possible-boost-format
 #Similar to me: Activate this option to modify the flow to acknowledge that the nozzle is round and the corners will have a round shape, and so change the flow to realize that and avoid over-extrusion. 100% is activated, 0% is deactivated and 50% is half-activated.\nNote: At 100% this changes the flow by ~5% over a very small distance (~nozzle diameter), so it shouldn't be noticeable unless you have a very big nozzle and a very precise printer.
 # 106  changes: Activate this option to modify the flow to acknowledge that the nozzle is round and the corners will have a round shape, and so change the flow to realize that and avoid over-extrusion. 100% is activated, 0% is deactivated and 50% is half-activated.\nNote: At 100% this changes the flow by ~5% over a very small distance (~nozzle diameter), so it shouldn't be noticeable unless you have a very big nozzle and a very precise printer.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -226,50 +144,17 @@ msgid ""
 "nozzle and a very precise printer."
 msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:1672
-#Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
-# 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
-#  translation: Každé liché vrstvě přidejte jeden Perimetr. Tím se výplň převezme do sendvič a možná budete schopni drasticky zmenšit výplň/Perimetr nastavení překrytí. 
-msgid ""
-"Add one perimeter every even layer (and not on odd layers like the first "
-"one). With this, infill is taken into the sandwich and you may be able to "
-"reduce drastically the infill/perimeter overlap setting. "
+#: ../../ui_layout/default/print.ui
+#Similar to me: advanced
+# 1    changes: Advanced
+#  translation: Pokročilé
+# 3    changes: Balanced
+#  translation: Vyvážené
+msgid "advanced"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:666
-msgid ""
-"Add the layer height (before the layer count in parentheses) next to a "
-"widget of the layer double-scrollbar."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:659
-msgid ""
-"Add the layer height (first number in parentheses) next to a widget of the "
-"layer double-scrollbar."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2290
-msgid "Align sparse infill in z"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2689
-#Similar to me: All perimeters
-# 3    changes: Small perimeters
-#  translation: Malé perimetry
-# 4    changes: perimeters
-#  translation: perimetry
-# 5    changes: Extra perimeters
-#  translation: Extra perimetr
-msgid "All perimeters"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4612
+#: src/libslic3r/PrintConfig.cpp:4220
 #Similar to me: All surfaces
 # 3    changes: On surfaces
 #  translation: Na površích
@@ -281,7 +166,7 @@ msgid "All surfaces"
 msgstr ""
 
 
-#: src/slic3r/GUI/ImGuiWrapper.cpp:1022 src/slic3r/GUI/Search.cpp:724
+#: src/slic3r/GUI/ImGuiWrapper.cpp:1009 src/slic3r/GUI/Search.cpp:628
 #Similar to me: All tags
 # 3    changes: All walls
 #  translation: Všechny stěny
@@ -289,54 +174,28 @@ msgid "All tags"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5732
+#: src/libslic3r/PrintConfig.cpp:5149
 msgid ""
 "Allow all perimeters to overlap, instead of just external ones.\n"
 "100% means that perimeters can overlap completly on top of each other.\n"
-"0% will deactivate this setting.\n"
-"Values below 2% don't have any effect.\n"
-"-1% will also deactivate the anti-hysteris checks for internal perimeters."
+"0% will deactivate this setting"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5719
+#: src/libslic3r/PrintConfig.cpp:5138
+#Similar to me: Allow outermost perimeter to overlap itself to avoid the use of thin walls. Note that flow isn't adjusted and so this will result in over-extruding and undefined behavior.\n100% means that perimeters can overlap completly on top of each other.\n0% will deactivate this setting
+# 105  changes: Allow outermost perimeter to overlap itself to avoid the use of thin walls. Note that flow isn't adjusted and so this will result in over-extruding and undefined behavior.
+#  translation: Umožněte vnějšímu perimetru, aby se překrýval, abyste se vyhnuli použití tenkých stěn. Všimněte si, že tok není upraven, takže to povede k nadměrnému vytlačování a.
 msgid ""
 "Allow outermost perimeter to overlap itself to avoid the use of thin walls. "
 "Note that flow isn't adjusted and so this will result in over-extruding and "
 "undefined behavior.\n"
 "100% means that perimeters can overlap completly on top of each other.\n"
-"0% will deactivate this setting.\n"
-"Values below 2% don't have any effect.\n"
-"-1% will also deactivate the anti-hysteris checks for external perimeters."
+"0% will deactivate this setting"
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4323
-msgid "Allow outliers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:872
-msgid ""
-"Allow to create a brim over an island when it's inside a hole (or surrounded "
-"by an object).\n"
-"Incompatible with brim_width_interior, as it enables it with brim_width "
-"width."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:195
-#, possible-boost-format
-msgid "Also, the fan speed over %1% won't be touched by this feature."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2314
-msgid "Alternate Fill Angle"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:370
+#: src/slic3r/GUI/Preferences.cpp:353
 #Similar to me: Always ask for unsaved changes in presets, when: \n- Closing Slic3r while some presets are modified,\n- Loading a new project while some presets are modified
 # 6    changes: Always ask for unsaved changes in presets, when: \n- Closing PrusaSlicer while some presets are modified,\n- Loading a new project while some presets are modified
 #  translation: Vždy se dotázat na neuložené změny přednastavení během: \n- zavírání PrusaSliceru, pokud došlo k úpravě některých přednastavení,\n- načítání nového projektu,  pokud došlo k úpravě některých přednastavení.
@@ -349,7 +208,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:361
+#: src/slic3r/GUI/Preferences.cpp:344
 #Similar to me: Always ask for unsaved changes in project, when: \n- Closing Slic3r,\n- Loading or creating a new project
 # 6    changes: Always ask for unsaved changes in project, when: \n- Closing PrusaSlicer,\n- Loading or creating a new project
 #  translation: Vždy se dotázat na neuložené změny přednastavení během: \n- zavírání PrusaSliceru,\n- načítání nebo vytváření nového projektu.
@@ -363,25 +222,8 @@ msgid ""
 "- Loading or creating a new project"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui
-#Similar to me: Arachne perimeter generator (variable width)
-# 17   changes: Arachne perimeter generator
-#  translation: Arachne generátor perimetrů
-msgid "Arachne perimeter generator (variable width)"
-msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:590
-msgid "Arc fitting"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:598
-msgid "Arc fitting tolerance"
-msgstr ""
-
-
-#: src/slic3r/GUI/OpenGLManager.cpp:266
+#: src/slic3r/GUI/OpenGLManager.cpp:265
 #, possible-boost-format
 #Similar to me: As a workaround, you may run %1% with a software rendered 3D graphics by running %2%.exe with the --sw-renderer parameter.
 # 4    changes: As a workaround, you may run %s with a software rendered 3D graphics by running %s.exe with the --sw-renderer parameter.
@@ -394,20 +236,29 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:391
+#: src/slic3r/GUI/Preferences.cpp:374
 msgid "Ask for 'new project' on 'Delete all'"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l42
+
+#: src/slic3r/GUI/PresetHints.cpp:58 src/slic3r/GUI/PresetHints.cpp:101
+#, possible-boost-format
+#Similar to me: at %1%%% over support interface surfaces
+# 14   changes: at %1%%% over top fill surfaces
+#  translation: na %1%%% nad horními výplňovými plochami
+msgid "at %1%%% over support interface surfaces"
+msgstr ""
+
+#: ../../ui_layout/default/extruder.ui : l39
 msgid "At end"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l41
+#: ../../ui_layout/default/extruder.ui : l38
 msgid "At start"
 msgstr ""
 
 
-#: src/slic3r/GUI/Field.cpp:897
+#: src/slic3r/GUI/Field.cpp:611
 msgid ""
 "Auto Speed will try to maintain a constant flow rate accross all print "
 "moves.\n"
@@ -420,12 +271,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:637
-msgid "Avoid top surface for travels"
-msgstr ""
-
-
-#: src/slic3r/GUI/Tab.cpp:5341
+#: src/slic3r/GUI/Tab.cpp:4920
 #Similar to me: BACK ARROW icon indicates that the values this widget control were changed and at least one is not equal to the last saved preset.\nClick to reset current all values to the last saved preset.
 # 42   changes: BACK ARROW icon indicates that the value was changed and is not equal to the last saved preset.\nClick to reset current value to the last saved preset.
 #  translation: Ikona ŠIPKY ZPĚT indikuje, že se hodnota změnila a není shodná s naposledy uloženým přednastavením.\nKlikněte pro reset současné hodnoty na naposledy uložené přednastavení.
@@ -436,7 +282,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6075
+#: src/libslic3r/PrintConfig.cpp:5489
 msgid ""
 "Before extruding an external perimeter, this flag will place the nozzle a "
 "bit inward and in advance of the seam position before unretracting. It will "
@@ -453,14 +299,7 @@ msgid "Blacklisted libraries loaded into %1% process:"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:4467
-msgid ""
-"Both compatible and incompatible presets are shown. Click to hide presets "
-"not compatible with the current printer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:768
+#: src/libslic3r/PrintConfig.cpp:721
 #Similar to me: Bridge flow baseline
 # 6    changes: Bridge flow ratio
 #  translation: Poměr průtoku při vytváření mostů
@@ -479,22 +318,12 @@ msgid "Bridge type"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1441
-#Similar to me: Bridging fill pattern
-# 7    changes: Bottom fill pattern
-#  translation: Vzor spodní výplně
-# 8    changes: Top fill pattern
-#  translation: Vzor výplně horní vrstvy
-msgid "Bridging fill pattern"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:925 src/libslic3r/PrintConfig.cpp:974
+#: src/libslic3r/PrintConfig.cpp:869 src/libslic3r/PrintConfig.cpp:919
 msgid "Brim & Skirt"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:926
+#: src/libslic3r/PrintConfig.cpp:870
 #Similar to me: Brim & Skirt acceleration
 # 9    changes: Bridge acceleration
 #  translation: Zrychlení mostu
@@ -506,13 +335,8 @@ msgid "Brim & Skirt acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:975
+#: src/libslic3r/PrintConfig.cpp:920
 msgid "Brim & Skirt speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:878
-msgid "Brim per object"
 msgstr ""
 
 #: ../../ui_layout/default/printer_fff.ui
@@ -523,35 +347,7 @@ msgid "build volume"
 msgstr ""
 
 
-#: src/slic3r/GUI/AboutDialog.cpp:256
-msgid "Build:"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:176
-#, possible-boost-format
-msgid "but for %1% where the speed-up phase is skipped."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1463
-#Similar to me: But on first layer
-# 2    changes: Not on first layer
-#  translation: Ne v první vrstvě
-# 5    changes: On first layer
-#  translation: Na první vrstvě
-# 6    changes: Solid first layer
-#  translation: Plná první vrstva
-msgid "But on first layer"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:123
-msgid "By default, there won't be any fan speed command."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6095
+#: src/libslic3r/PrintConfig.cpp:5509
 #, possible-c-format, possible-boost-format
 msgid ""
 "By how much the 'wipe inside' can dive inside the object (if possible)?\n"
@@ -561,58 +357,31 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/ConfigWizard.cpp:149
+#: src/slic3r/GUI/ConfigWizard.cpp:152
 #, possible-boost-format
-msgid ""
-"Can't open directory '%1%'. Config bundles from here can't be loaded.\n"
-"Error: %2%"
+msgid "Can't open directory '%1%'. Config bundles from here can't be loaded."
 msgstr ""
 
 
-#: src/slic3r/GUI/SavePresetDialog.cpp:127
-msgid "Cannot overwrite an external profile. Please choose another name."
+#: src/libslic3r/PrintConfig.cpp:2581
+msgid "Cap gapfill speed with perimeter flow"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l342
-#Similar to me: Cap with
-# 3    changes: Max width
-#  translation: Max šířka
+#: ../../ui_layout/default/print.ui : l281
 msgid "Cap with"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2766
+#: src/libslic3r/PrintConfig.cpp:2580
 msgid "Cap with perimeter flow"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:285
-#Similar to me: CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 13   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-#  translation: SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní Slic3r od Alessandra Ranellucciho a komunity RepRap.
-msgid ""
-"CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by "
-"Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
-"community."
-msgstr ""
-
-
-#: src/slic3r/GUI/AboutDialog.cpp:285
-#Similar to me: CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 30   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-#  translation: SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní Slic3r od Alessandra Ranellucciho a komunity RepRap.
-msgid ""
-"CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by "
-"Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
-"community."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6935
+#: src/libslic3r/PrintConfig.cpp:6198
 msgid "Casting"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l393
 msgid "Change the bridge type and the bridge overlap to compute the same extrusions as when the PrusaSlicer 'thick bridge' isn't selected.\nAs long as it's selected, it will modify them.\nUnselect it to deactivate this enforcement."
 msgstr ""
 
@@ -621,105 +390,33 @@ msgid "Change the perimeter extrusion widths to ensure that there is an exact nu
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1534 src/libslic3r/PrintConfig.cpp:4177
-#, possible-c-format, possible-boost-format
+#: src/slic3r/GUI/Preferences.cpp:921
+#Similar to me: Changing some options will trigger application restart.\nYou will lose the content of the platter.
+# 1    changes: Changing some options will trigger application restart.\nYou will lose the content of the plater.
+#  translation: Změnou nastavení se aplikace restartuje.\nPřijdete o obsah tiskové podložky.
+# 21   changes: Switching the language will trigger application restart.\nYou will lose content of the platter.
+#  translation: Přepnutím jazyka se aplikace restartuje.\nPřijdete o obsah tiskové podložky.
+# 22   changes: Switching the language will trigger application restart.\nYou will lose content of the plater.
+#  translation: Přepnutím jazyka se aplikace restartuje.\nPřijdete o obsah tiskové podložky.
 msgid ""
-"Change width on every even layer (and not on odd layers like the first one) "
-"for better overlap with adjacent layers and getting stringer shells. Try "
-"values about +/- 0.1 with different sign for external and internal "
-"perimeters.\n"
-"This could be combined with extra permeters on even layers.\n"
-"Works as absolute spacing or a % of the spacing.\n"
-"set 0 to disable"
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the platter."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3183 src/libslic3r/PrintConfig.cpp:5018
-#, possible-c-format, possible-boost-format
-msgid ""
-"Change width on every even layer (and not on odd layers like the first one) "
-"for better overlap with adjacent layers and getting stringer shells. Try "
-"values about +/- 0.1 with different sign.\n"
-"This could be combined with extra permeters on even layers.\n"
-"Works as absolute spacing or a % of the spacing.\n"
-"set 0 to disable"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4798
-msgid ""
-"Check and penalize seams that are the most visible. launch rays to check "
-"from how many direction a point is visible.\n"
-"This is a compute-intensive option."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:769
+#: src/slic3r/GUI/Preferences.cpp:716
 msgid "Check for problematic dynamic libraries"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5882
-msgid "Checking your material"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:705
+#: src/slic3r/GUI/Preferences.cpp:652
 msgid ""
 "Choose the gui package to use. It controls colors, settings layout, quick "
 "settings, tags (simple/expert)."
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4333
-#Similar to me: Click to disable
-# 5    changes: Click to hide
-#  translation: Kliknutím skryjete
-# 6    changes: Click to show
-#  translation: Kliknutím zobrazíte
-msgid "Click to disable"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:4333
-#Similar to me: Click to enable
-# 5    changes: Click to hide
-#  translation: Kliknutím skryjete
-# 6    changes: Click to show
-#  translation: Kliknutím zobrazíte
-msgid "Click to enable"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:4464
-msgid "Click to return to continuous scale"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:4367
-msgid "Click to return to linear scale"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:4367
-msgid "Click to switch to logarithmic scale"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:4465
-#, possible-boost-format
-msgid ""
-"Click to switch to show a different color for each discrete value (%1% "
-"different values)."
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:451
-msgid "Client certificate (2-way SSL):"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:508
+#: src/libslic3r/PrintConfig.cpp:494
 #Similar to me: Client Certificate File
 # 8    changes: Open CA certificate file
 #  translation: Otevřít soubor s certifikátem CA
@@ -727,21 +424,17 @@ msgid "Client Certificate File"
 msgstr ""
 
 
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:437
+#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:432
+msgid ""
+"Client certificate file is optional. It is only needed if you use 2-way ssl."
+msgstr ""
+
+
+#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:418
 #Similar to me: Client certificate files (*.pfx, *.p12)|*.pfx;*.p12|All files|*.*
 # 17   changes: Certificate files (*.crt, *.pem)|*.crt;*.pem|All files|*.*
 #  translation: Soubory s certifikátem (*.crt, *.pem)|*.crt;*.pem|Všechny soubory|*.*
 msgid "Client certificate files (*.pfx, *.p12)|*.pfx;*.p12|All files|*.*"
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:452
-msgid "Client certificate is optional. It is only needed if you use 2-way ssl."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:516
-msgid "Client Certificate Password"
 msgstr ""
 
 
@@ -765,51 +458,12 @@ msgid "Closing %1%. Current project is modified."
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:850
+#: src/slic3r/GUI/Preferences.cpp:797
 msgid "Color template used by the icons on the platter."
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:490
-msgid "Compress png textures"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3088
-#Similar to me: Connection of bridged infill lines
-# 6    changes: Connection of bottom infill lines
-#  translation: Připojení spodních výplňových linek
-# 6    changes: Connection of solid infill lines
-#  translation: Připojení plných výplňových linek
-# 6    changes: Connection of sparse infill lines
-#  translation: Spojení řídkých výplňových čar
-msgid "Connection of bridged infill lines"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4685
-#Similar to me: Contiguous
-# 4    changes: Continue
-#  translation: Pokračovat
-# 4    changes: Controls
-#  translation: Řízení
-msgid "Contiguous"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4694
-#, possible-c-format, possible-boost-format
-#Similar to me: Cost of placing the seam at a bad angle. The worst angle (max penalty) is when it's flat.\n100% is the default penalty
-# 29   changes: Cost of placing the seam at a bad angle. The worst angle (max penalty) is when it's flat.
-#  translation: Náklady na umístění švu ve špatném úhlu. Nejhorší úhel (Max penalizace) je když je to ploché.
-msgid ""
-"Cost of placing the seam at a bad angle. The worst angle (max penalty) is "
-"when it's flat.\n"
-"100% is the default penalty"
-msgstr ""
-
-
-#: src/slic3r/Utils/OctoPrint.cpp:336
+#: src/slic3r/Utils/OctoPrint.cpp:324
 #Similar to me: Could not connect to Monoprice lcd
 # 10   changes: Could not connect to OctoPrint
 #  translation: Nelze se spojit s OctoPrintem
@@ -820,28 +474,8 @@ msgstr ""
 msgid "Could not connect to Monoprice lcd"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l274
-#Similar to me: Count
-# 2    changes: Cost
-#  translation: Náklady
-# 2    changes: Cut
-#  translation: Řezat
-# 2    changes: Cu&t
-#  translation: &Vyjmout
-msgid "Count"
-msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:880
-msgid ""
-"Create a brim per object instead of a brim for the plater. Useful for "
-"complete_object or if you have your brim detaching before printing the "
-"object.\n"
-"Be aware that the brim may be truncated if objects are too close together.."
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:5650
+#: src/slic3r/GUI/Plater.cpp:5635
 #Similar to me: Create a new project?
 # 4    changes: Creating a new project
 #  translation: Vytváření nového projektu
@@ -851,22 +485,28 @@ msgid "Create a new project?"
 msgstr ""
 
 
-#: src/libslic3r/Print.cpp:1232
-msgid "Creating arcs"
+#: src/slic3r/GUI/MainFrame.cpp:1975
+msgid "Create an mosaic-like tile with filament changes."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5997
+#: src/libslic3r/PrintConfig.cpp:496
+#Similar to me: Custom Client certificate file can be specified for 2-way ssl authentication, in p12/pfx format. If left blank, no client certificate is used.
+# 56   changes: Custom CA certificate file can be specified for HTTPS OctoPrint connections, in crt/pem format. If left blank, the default OS CA certificate repository is used.
+#  translation: Pro HTTPS připojení  OctoPrintu lze zadat vlastní CA certifikát ve formátu crt/pem. Pokud zůstane pole prázdné, použije se výchozí úložiště certifikátů OS CA.
+msgid ""
+"Custom Client certificate file can be specified for 2-way ssl "
+"authentication, in p12/pfx format. If left blank, no client certificate is "
+"used."
+msgstr ""
+
+
+#: src/libslic3r/PrintConfig.cpp:5411
 msgid "Decelerate with target acceleration"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:673
-msgid "Decimals for gcode viewer colors"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1256
+#: src/libslic3r/PrintConfig.cpp:1177
 #Similar to me: Default speed
 # 4    changes: Default fan speed
 #  translation: Výchozí rychlost ventilátoru
@@ -878,32 +518,11 @@ msgid "Default speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1235
-msgid ""
-"Default speed for the fan, to set the speed for features where there is no "
-"fan control. Useful for PLA and other low-temp filament.\n"
-"Set 0 to disable the fan by default. Useful for ABS and other high-temp "
-"filaments.\n"
-"Set -1 to disable. if disabled, the beahavior isn't defined yet. The goal is "
-"to avoid adding fan speed commands."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2354
-msgid ""
-"Density of internal infill, expressed in the range 0% - 100%.\n"
-"Set 0 to remove any sparse infill.\n"
-"Note that using a value of 100% won't change the type of infill from sparse "
-"to solid. If you want only solid infill, you can set the 'Solid infill every "
-"X layers' (solid_infill_every_layers) to 1 instead."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6936
+#: src/libslic3r/PrintConfig.cpp:6199
 msgid "Dental"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l43
+#: ../../ui_layout/default/extruder.ui : l40
 #Similar to me: Depth
 # 2    changes: tenth
 #  translation: desátého
@@ -911,72 +530,14 @@ msgid "Depth"
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4454
-msgid "Discrete Values"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4838
+#: src/libslic3r/PrintConfig.cpp:4355
 msgid ""
 "Distance between skirt and object(s) ; or from the brim if using draft "
 "shield or you set 'skirt_distance_from_brim'."
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l118
-msgid "Distance Margin"
-msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:1464
-msgid "Don't check crossings for retraction on first layer"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5450
-msgid ""
-"Each layer, add this angle to the interface pattern angle. 0 to keep the "
-"same angle, 90 to cross."
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:406
-#Similar to me: EBridge
-# 1    changes: Bridge
-#  translation: Mosty
-# 2    changes: Bridged
-#  translation: Přemostěný
-# 2    changes: Bridges
-#  translation: Mosty
-msgid "EBridge"
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:420
-msgid "Enable 2-way ssl authentication"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:592
-msgid ""
-"Enable this to get a G-code file which has G2 and G3 moves. And the fitting "
-"tolerance is same with resolution"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3994 src/libslic3r/PrintConfig.cpp:3995
-#Similar to me: Enforce overhangs speed
-# 9    changes: Overhangs speed
-#  translation: Rychlost Převisů
-msgid "Enforce overhangs speed"
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:400
-msgid "EPeri"
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:5642
+#: src/slic3r/GUI/Plater.cpp:5627
 #Similar to me: Erase all objects
 # 6    changes: Deletes all objects
 #  translation: Smazat všechny objekty
@@ -988,61 +549,7 @@ msgid "Erase all objects"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4201
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: seam notch."
-msgstr ""
-
-
-#: src/libslic3r/GCode.cpp:4688
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: wipe."
-msgstr ""
-
-
-#: src/libslic3r/GCode.cpp:4594
-msgid ""
-"Error while writing gcode: two points are at the same position. Please send "
-"the .3mf project to the dev team for debugging. Extrude loop: "
-"wipe_inside_start."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l414
-#Similar to me: even layers
-# 4    changes: Faded layers
-#  translation: Vrstvy počátečního osvitu
-# 4    changes: Other layers
-#  translation: Ostatní vrstvy
-# 4    changes: Raft layers
-#  translation: Vrstev raftu
-msgid "even layers"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:143
-#, possible-boost-format
-#Similar to me: Except for the first %1% layers where the fan is disabled
-# 1    changes: except for the first %1% layers where the fan is disabled
-#  translation: kromě prvních %1% vrstev, kde je ventilátor deaktivován
-# 6    changes: except for the first layer where the fan is disabled
-#  translation: kromě první vrstvy, kde je vypnutý ventilátor
-msgid "Except for the first %1% layers where the fan is disabled"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:148
-#Similar to me: Except for the first layer where the fan is disabled
-# 1    changes: except for the first layer where the fan is disabled
-#  translation: kromě první vrstvy, kde je vypnutý ventilátor
-# 6    changes: except for the first %1% layers where the fan is disabled
-#  translation: kromě prvních %1% vrstev, kde je ventilátor deaktivován
-msgid "Except for the first layer where the fan is disabled"
-msgstr ""
-
-
-#: src/slic3r/GUI/MainFrame.cpp:1758
+#: src/slic3r/GUI/MainFrame.cpp:1731
 #Similar to me: Export &Plate
 # 5    changes: Export &G-code
 #  translation: Exportovat &G-code
@@ -1052,17 +559,17 @@ msgid "Export &Plate"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1758
+#: src/slic3r/GUI/MainFrame.cpp:1731
 msgid "Export current plate (options available in the dialog)"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:306
+#: src/slic3r/GUI/Preferences.cpp:303
 msgid "Export headers with date and time"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6046
+#: src/slic3r/GUI/Plater.cpp:6003
 #Similar to me: Export Platter:
 # 6    changes: Exact pattern
 #  translation: Přesný vzor
@@ -1072,15 +579,7 @@ msgid "Export Platter:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2740
-#Similar to me: Extension
-# 2    changes: Extrusion
-#  translation: Extruze
-msgid "Extension"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1583
+#: src/libslic3r/PrintConfig.cpp:1469
 #Similar to me: External Perimeter acceleration
 # 9    changes: Perimeter acceleration
 #  translation: Zrychlení Perimetru
@@ -1092,7 +591,7 @@ msgid "External Perimeter acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1619
+#: src/libslic3r/PrintConfig.cpp:1505
 #Similar to me: External perimeters in vase mode
 # 3    changes: ExternalPerimeter in vase mode
 #  translation: Vnější perimetr v režimu vázy
@@ -1104,108 +603,17 @@ msgid "External perimeters in vase mode"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1532
-msgid "External perimeters spacing change on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2688
-msgid "External walls"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1670
-#Similar to me: Extra perimeter on even layers
-# 4    changes: Extra perimeter on odd layers
-#  translation: Extra perimetr na lichých vrstvách
-# 11   changes: Extra perimeters over overhangs
-#  translation: Extra perimetr přes převisy
-# 12   changes: Extra perimeters if needed
-#  translation: Extra perimetry (pokud jsou potřeba)
-msgid "Extra perimeter on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4036
-#Similar to me: Extrude perimeters that have an overhanging part in the reverse direction on even layers (not on odd layers like the first one). This alternating pattern can significantly improve steep overhangs.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
-# 63   changes: Extrude perimeters that have a part over an overhang in the reverse direction on odd layers. This alternating pattern can drastically improve steep overhang.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
-#  translation: Vysunout perimetry, které mají část přes přesah v opačném směrusměr na lichých vrstvách. Tento střídající se vzor může výrazně zlepšitstrmý převis.\n!! toto je velmi pomalý algoritmus (používá stejné výsledky jako extra_perimeters_overhangs) !!
-msgid ""
-"Extrude perimeters that have an overhanging part in the reverse direction on "
-"even layers (not on odd layers like the first one). This alternating pattern "
-"can significantly improve steep overhangs.\n"
-"!! this is a very slow algorithm (it uses the same results as "
-"extra_perimeters_overhangs) !!"
-msgstr ""
-
-
-#: src/slic3r/GUI/GCodeViewer.cpp:3863
+#: src/slic3r/GUI/GCodeViewer.cpp:3453
 msgid "Extrusion section (mm³/mm)"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:811
+#: src/libslic3r/GCode.cpp:789
 msgid "Extrusion type change G-code"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3456
-#Similar to me: Fan delay only for overhangs
-# 11   changes: Only for overhangs
-#  translation: Pouze pro převisy
-msgid "Fan delay only for overhangs"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2662
-#Similar to me: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if equal or lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.\nset 0 to disable
-# 27   changes: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.
-#  translation: Otáčky ventilátoru se lineárně zvýší z nuly ve vrstvě \"disable_fan_first_layers\" na maximum ve vrstvě \"full_fan_speed_layer\". Hodnota \"full_fan_speed_layer\" bude ignorována, pokud je nižší než \"disable_fan_first_layers\", v takovém případě se bude ventilátor točit na maximální povolenou hodnotu ve vrstvě \"disable_fan_first_layers\" + 1.
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if equal or lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1.\n"
-"set 0 to disable"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:125
-#Similar to me: Fan will be turned off by default.
-# 4    changes: will be turned off by default.
-#  translation: bude ve výchozím nastavení vypnuto.
-# 11   changes: Fan will be turned off.
-#  translation: Ventilátor bude vypnutý.
-msgid "Fan will be turned off by default."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:127 src/slic3r/GUI/PresetHints.cpp:129
-#, possible-boost-format
-#Similar to me: Fan will run at %1%%% by default.
-# 5    changes: will run at %1%%% by default
-#  translation: ve výchozím nastavení poběží na %1%%%
-msgid "Fan will run at %1%%% by default."
-msgstr ""
-
-
-#: src/slic3r/GUI/MainFrame.cpp:1980
-#Similar to me: Filament Flow Wall calibration
-# 5    changes: Filament Flow calibration
-#  translation: Kalibrace průtoku vlákna
-# 10   changes: Filament temperature calibration
-#  translation: Kalibrace teploty vlákna
-msgid "Filament Flow Wall calibration"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2334 src/libslic3r/PrintConfig.cpp:2335
-msgid "Fill angle template"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1385
+#: src/libslic3r/PrintConfig.cpp:1306
 msgid ""
 "Fill pattern for bottom infill. This only affects the bottom visible layer, "
 "and not its adjacent solid shells.\n"
@@ -1214,12 +622,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1443
-msgid "Fill pattern for bridges and internal bridge infill."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2392
+#: src/libslic3r/PrintConfig.cpp:2235
 msgid ""
 "Fill pattern for general low-density infill.\n"
 "If you want an 'aligned' pattern, set 90° to the fill angle increment "
@@ -1227,7 +630,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1413
+#: src/libslic3r/PrintConfig.cpp:1334
 #Similar to me: Fill pattern for solid (internal) infill. This only affects the solid not-visible layers. You should use rectilinear in most cases. You can try ironing for translucent material. Rectilinear (filled) replaces zig-zag patterns by a single big line & is more efficient for filling little spaces.\nIf you want an 'aligned' pattern, set 90° to the fill angle increment setting.
 # 80   changes: Fill pattern for solid (internal) infill. This only affects the solid not-visible layers. You should use rectilinear in most cases. You can try ironing for translucent material. Rectilinear (filled) replaces zig-zag patterns by a single big line & is more efficient for filling little spaces.
 #  translation: Vzor výplně pro pevnou (vnitřní) výplň. To ovlivní pouze těleso ne-viditelné vrstvy. Ve většině případů byste měli používat přímočaré. Můžete zkusit ironing pro průsvitný materiál. Přímé (plněné) nahrazuje cik-cak vzory na jedné velké linii a je efektivnější pro vyplnění malých míst.
@@ -1242,7 +645,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1354
+#: src/libslic3r/PrintConfig.cpp:1275
 msgid ""
 "Fill pattern for top infill. This only affects the top visible layer, and "
 "not its adjacent solid shells.\n"
@@ -1251,7 +654,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/Print.cpp:846
+#: src/libslic3r/Print.cpp:836
 #, possible-c-format, possible-boost-format
 #Similar to me: First layer height can't be lower than %s
 # 5    changes: First layer height can't be greater than %s
@@ -1264,31 +667,7 @@ msgid "First layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1976
-#Similar to me: First layer patch calibration
-# 6    changes: First layer calibration
-#  translation: Kalibrace první vrstvy
-# 7    changes: First layer acceleration
-#  translation: Zrychlení první vrstvy
-# 7    changes: First layer calibration.
-#  translation: Kalibrace první vrstvy.
-msgid "First layer patch calibration"
-msgstr ""
-
-
-#: src/slic3r/GUI/MainFrame.cpp:1974
-#Similar to me: First layer patttern calibration
-# 9    changes: First layer calibration
-#  translation: Kalibrace první vrstvy
-# 10   changes: First layer calibration.
-#  translation: Kalibrace první vrstvy.
-# 11   changes: First layer acceleration
-#  translation: Zrychlení první vrstvy
-msgid "First layer patttern calibration"
-msgstr ""
-
-
-#: src/slic3r/GUI/Tab.cpp:3205
+#: src/slic3r/GUI/Tab.cpp:3028
 #Similar to me: Flat time compensation
 # 7    changes: XY Size Compensation
 #  translation: Kompenzace XY rozměrů
@@ -1298,73 +677,32 @@ msgid "Flat time compensation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6934
+#: src/libslic3r/PrintConfig.cpp:6197
 msgid "Flexible"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:532
+#: src/slic3r/GUI/Preferences.cpp:506
 msgid "Focusing platter on mouse over"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4728
-msgid "for everything"
-msgstr ""
-
-#: ../../ui_layout/default/extruder.ui : l48
-#Similar to me: for external perimeters
-# 4    changes: external perimeters
-#  translation: vnější perimetry
-# 5    changes: external perimeter
-#  translation: Vnější perimetr
-# 5    changes: External perimeters
-#  translation: Vnější perimetry
-msgid "for external perimeters"
+#: src/libslic3r/PrintConfig.cpp:406
+#Similar to me: Format of G-code thumbnails
+# 10   changes: G-code thumbnails
+#  translation: Náhledy G-codu
+msgid "Format of G-code thumbnails"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4754
-msgid "for round holes"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4769
-#Similar to me: for round perimeters
-# 7    changes: Layers and perimeters
-#  translation: Vrstvy a perimetry
-# 8    changes: External perimeters
-#  translation: Vnější perimetry
-# 8    changes: external perimeters
-#  translation: vnější perimetry
-msgid "for round perimeters"
-msgstr ""
-
-#: ../../ui_layout/default/printer_fff.ui
-#Similar to me: Formatting
-# 4    changes: Floating
-#  translation: Obtékání
-msgid "Formatting"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2676
+#: src/libslic3r/PrintConfig.cpp:407
 msgid ""
-"Fuzzy skin type.\n"
-"None: setting disabled.\n"
-"Outside walls: Apply fuzzy skin only on the external perimeters of the "
-"outside (not the holes).\n"
-"External walls: Apply fuzzy skin only on all external perimeters.\n"
-"All perimeters: Apply fuzzy skin on all perimeters (external, internal and "
-"gapfill)."
-msgstr ""
-
-#: ../../ui_layout/default/printer_fff.ui
-msgid "G2/G3 generation"
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2727
+#: src/libslic3r/PrintConfig.cpp:2567
 #Similar to me: Gap fill acceleration
 # 4    changes: Infill acceleration
 #  translation: Zrychlení výplně
@@ -1375,103 +713,12 @@ msgstr ""
 msgid "Gap fill acceleration"
 msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:2752
-#Similar to me: Gap fill fan speed
-# 4    changes: Gap fill speed
-#  translation: Rychlost výplě mezery
-# 7    changes: Default fan speed
-#  translation: Výchozí rychlost ventilátoru
-# 7    changes: Max fan speed
-#  translation: Max rychlost ventilátoru
-msgid "Gap fill fan speed"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
-#Similar to me: Gap Fill threshold
-# 7    changes: XY holes threshold
-#  translation: Práh XY děr
-msgid "Gap Fill threshold"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2741
-msgid "Gap fill: extra extension"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:138
-#Similar to me: Gap fills
-# 1    changes: Gap fill
-#  translation: Výplň mezery
-# 2    changes: Gap Fill
-#  translation: Vyplnit mezery
-# 3    changes: Top fill
-#  translation: Vrchní výplň
-msgid "Gap fills"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2779
-#Similar to me: Gapfill: after last perimeter
-# 1    changes: Gapfill after last perimeter
-#  translation: Vyplnit mezery po posledním perimetru
-# 9    changes: after last perimeter
-#  translation: Po posledním perimetru
-msgid "Gapfill: after last perimeter"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2767
-msgid "Gapfill: cap speed with perimeter flow"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2787
-msgid "Gapfill: Max width"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2809
-msgid "Gapfill: Min length"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2798
-msgid "Gapfill: Min surface"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2820
-msgid "Gapfill: Min width"
-msgstr ""
-
 #: ../../ui_layout/default/extruder.ui
 msgid "General wipe"
 msgstr ""
 
 
-#: src/libslic3r/ExtrusionEntity.cpp:409
-#Similar to me: GFill
-# 1    changes: Fill
-#  translation: Výplně
-# 2    changes: &File
-#  translation: &Soubor
-# 2    changes: Mill
-#  translation: Mlýn
-msgid "GFill"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3090
-msgid ""
-"Give to the bridge infill algorithm if the infill needs to be connected, and "
-"on which perimeters. Can be useful to disconnect to reduce a little bit the "
-"pressure buildup when going over the bridge's anchors."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:838
+#: src/slic3r/GUI/Preferences.cpp:785
 #Similar to me: Gui Colors
 # 2    changes: Gui color
 #  translation: Upravit barvu
@@ -1481,17 +728,17 @@ msgid "Gui Colors"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6937
+#: src/libslic3r/PrintConfig.cpp:6200
 msgid "Heat-resistant"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:649
+#: src/slic3r/GUI/Preferences.cpp:623
 msgid "Hide tooltips on slice buttons"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:889
+#: src/libslic3r/PrintConfig.cpp:833
 #Similar to me: Horizontal width of the brim that will be printed around each object on the first layer.\nWhen raft is used, no brim is generated (use raft_first_layer_expansion).
 # 7    changes: The horizontal width of the brim that will be printed around each object on the first layer. When raft is used, no brim is generated (use raft_first_layer_expansion).
 #  translation: Horizontální šířka límce, který bude vytištěn kolem každého objektu v první vrstvě. Při použití raftu se nevytvoří žádný límec (použijte raft_first_layer_expansion).
@@ -1502,41 +749,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/ExtrusionEntity.cpp:407
-#Similar to me: IBridge
-# 1    changes: Bridge
-#  translation: Mosty
-# 2    changes: Bridged
-#  translation: Přemostěný
-# 2    changes: Bridges
-#  translation: Mosty
-msgid "IBridge"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:742
+#: src/slic3r/GUI/Preferences.cpp:689
 msgid "Icon"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3788
-#, possible-c-format, possible-boost-format
-#Similar to me: If a top surface has to be printed and it's partially covered by another layer, it won't be considered at a top layer where its width is below this value. This can be useful to not let the 'one perimeter on top' trigger on surface that should be covered only by perimeters. This value can be a mm or a % of the perimeter extrusion width.\nWarning: If enabled, artifacts can be created is you have some thin features on the next layer, like letters. Set this setting to 0 to remove these artifacts.
-# 160  changes: If a top surface has to be printed and it's partially covered by another layer, it won't be considered at a top layer where its width is below this value. This can be useful to not let the 'one perimeter on top' trigger on surface that should be covered only by perimeters. This value can be a mm or a % of the perimeter extrusion width.
-#  translation: Pokud musí být potištěn horní povrch a je částečně pokryt jinou vrstvou, nebude uvažována v horní vrstvě, kde je její šířka pod touto hodnotou. To může být užitečné k tomu, aby se jeden perimetr nahoře spustil plocha, která by měla být pokryta pouze perimetry. Tato hodnota může být mm nebo % šířky obvodového vysunutí.
-msgid ""
-"If a top surface has to be printed and it's partially covered by another "
-"layer, it won't be considered at a top layer where its width is below this "
-"value. This can be useful to not let the 'one perimeter on top' trigger on "
-"surface that should be covered only by perimeters. This value can be a mm or "
-"a % of the perimeter extrusion width.\n"
-"Warning: If enabled, artifacts can be created is you have some thin features "
-"on the next layer, like letters. Set this setting to 0 to remove these "
-"artifacts."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:534
+#: src/slic3r/GUI/Preferences.cpp:508
 msgid ""
 "If disabled, moving the mouse over the platter panel will not change the "
 "focus but some shortcuts from the platter may not work. If enabled, moving "
@@ -1545,16 +763,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/PresetHints.cpp:200
-#, possible-boost-format
-#Similar to me: If estimated layer time is below ~%1%s
-# 4    changes: \n\nIf estimated layer time is below ~%1%s
-#  translation: \n\nPokud je odhadovaný čas vrstvy pod ~%1%s
-msgid "If estimated layer time is below ~%1%s"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2611
+#: src/libslic3r/PrintConfig.cpp:2458
 #Similar to me: If expressed as absolute value in mm/s, this speed will be usedf as a max over all the print moves of the first object layer above raft interface, regardless of their type.\nIf expressed as a percentage it will scale the current speed (max 100%).\nSet it at 100% to remove this speed modification.
 # 92   changes: If expressed as absolute value in mm/s, this speed will be applied to all the print moves of the first object layer above raft interface, regardless of their type. If expressed as a percentage (for example: 40%) it will scale the default speeds.
 #  translation: Pokud je vyjádřena jako absolutní hodnota v mm / s, bude tato rychlost použita pro všechny pohyby tisku první vrstvy nad raftem bez ohledu na jejich typ. Pokud je hodnota vyjádřena procenty (například: 40%), změní v závislosti na výchozích rychlostech.
@@ -1569,38 +778,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6000
+#: src/libslic3r/PrintConfig.cpp:5414
 msgid ""
 "If selected, the deceleration of a travel will use the acceleration value of "
 "the extrusion that will be printed after it (if any) "
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4745
-msgid ""
-"If the (external) angle at the seam is higher than this value, then no notch "
-"will be set. If the angle is too high, there isn't enough room for the "
-"notch.\n"
-"Can't be lower than 180° or it filters everything. At 360, it allows "
-"everything."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:193
-#, possible-boost-format
-msgid "If the fan speed is set and is higher than %1%%%, it won't be changed."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:191
-#, possible-boost-format
-msgid ""
-"If the fan speed is set, it will proportionally increasing speed between "
-"this value and %1%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:308
+#: src/slic3r/GUI/Preferences.cpp:305
 msgid ""
 "If this is enabled, Slic3r will add the date of the export to the first line "
 "of any exported config and gcode file. Note that some software may rely on "
@@ -1608,14 +793,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:315
-msgid ""
-"If you constantly forgot to select the right filament/materail, check this "
-"option to have a really obtrusive reminder on each export."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:865
+#: src/slic3r/GUI/Preferences.cpp:812
 #, possible-c-format, possible-boost-format
 msgid ""
 "If you use a color with higher than 80% saturation and/or value, these will "
@@ -1623,81 +801,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4285
-msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here.\n"
-"Separate multiple scripts with a semicolon or a line return.\n"
-"!! please use '\\;' here if you want a not-line-separation ';'!!\n"
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables.\n"
-"The script, if passed as a relative path, will also be searched from the "
-"slic3r directory, the slic3r configuration directory and the user directory."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:492
-msgid ""
-"If your custom texture (in png format) is displayed black, then disable this "
-"option to remove the problematic optimisation."
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:402
-#Similar to me: IFill
-# 1    changes: Fill
-#  translation: Výplně
-# 2    changes: &File
-#  translation: &Soubor
-# 2    changes: Infill
-#  translation: Výplň
-msgid "IFill"
-msgstr ""
-
-
-#: src/slic3r/GUI/KBShortcutsDialog.cpp:83
-#Similar to me: Import STL/3MF/STEP/OBJ/AMF without config, keep platter
-# 1    changes: Import STL/3MF/STEP/OBJ/AMF without config, keep plater
-#  translation: Importovat STL/3MF/STEP/OBJ/AMF bez konfigurace, zachová stávající podložku
-# 12   changes: Import STL/OBJ/AMF/3MF without config, keep platter
-#  translation: Importovat STL/OBJ/AMF/3MF bez konfigurace, ponechat obsah podložky
-# 13   changes: Import STL/OBJ/AMF/3MF without config, keep plater
-#  translation: Importovat STL/OBJ/AMF/3MF bez konfigurace, zachová stávající podložku
-msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep platter"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4757
-#, possible-c-format, possible-boost-format
-msgid ""
-"In convex holes (circular/oval), it's sometimes very problematic to have a "
-"little buldge from the seam. This setting move the seam inside the part, in "
-"a little cavity (for all external perimeters in convex holes, unless it's in "
-"an overhang).\n"
-"The size of the cavity is in mm or a % of the external perimeter width\n"
-"Set zero to disable."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4772
-#, possible-c-format, possible-boost-format
-msgid ""
-"In convex perimeters (circular/oval), it's sometimes very problematic to "
-"have a little buldge from the seam. This setting move the seam inside the "
-"part, in a little cavity (for all external perimeters if the path is convex, "
-"unless it's in an overhang).\n"
-"The size of the cavity is in mm or a % of the external perimeter width\n"
-"Set zero to disable."
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:5996
+#: src/slic3r/GUI/Plater.cpp:5960
 msgid "Include modifiers"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5997
+#: src/slic3r/GUI/Plater.cpp:5961
 #Similar to me: Include presets
 # 6    changes: Compare presets
 #  translation: Porovnání přednastavení
@@ -1705,7 +814,7 @@ msgid "Include presets"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5994
+#: src/slic3r/GUI/Plater.cpp:5958
 #Similar to me: Include supports
 # 5    changes: Enforce supports
 #  translation: Vynucení podpěr
@@ -1717,66 +826,7 @@ msgid "Include supports"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2743
-#, possible-c-format, possible-boost-format
-msgid ""
-"Increase the length of all gapfills by this amount (may overextrude a little "
-"bit)\n"
-"Can be a % of the perimeter width"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l313
-#Similar to me: Increment
-# 1    changes: increment
-#  translation: Přírůstek
-msgid "Increment"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
-#Similar to me: Infill angle
-# 3    changes: Fill angle
-#  translation: Úhel výplně
-msgid "Infill angle"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3181
-msgid "Infill spacing change on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:427
-msgid ""
-"instead of writing 'thumbnails' as tag in the gcode, it will write "
-"'thumbnails_PNG', thumbnails_JPG', 'thumbnail_QOI', etc..\n"
-" Some firmware need it to know how to decode the thumbnail, some others "
-"don't support it."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l276
-#Similar to me: Interface layer height
-# 6    changes: Initial layer height
-#  translation: Výška první vrstvy
-# 7    changes: Variable layer height
-#  translation: Variabilní výška vrstvy
-# 7    changes: Interface layers
-#  translation: Kontaktní vrstvy
-msgid "Interface layer height"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l309
-#Similar to me: Interface spacing
-# 6    changes: Infill spacing
-#  translation: Mezery výplně
-# 6    changes: Interface shells
-#  translation: Mezilehlé stěny
-# 6    changes: Interface layers
-#  translation: Kontaktní vrstvy
-msgid "Interface spacing"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:717
+#: src/libslic3r/PrintConfig.cpp:669
 #Similar to me: Internal bridges acceleration
 # 11   changes: Bridge acceleration
 #  translation: Zrychlení mostu
@@ -1786,19 +836,7 @@ msgid "Internal bridges acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3209
-#Similar to me: Internal Infill fan speed
-# 9    changes: Internal bridge speed
-#  translation: Vnitřní rychlost mostu
-# 9    changes: Internal perimeters speed
-#  translation: Rychlost vnitřních perimetrů
-# 10   changes: External perimeter fan speed
-#  translation: Rychlost ventilátoru vnějšího perimetru
-msgid "Internal Infill fan speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4097
+#: src/libslic3r/PrintConfig.cpp:3793
 #Similar to me: Internal Perimeter acceleration
 # 9    changes: Perimeter acceleration
 #  translation: Zrychlení Perimetru
@@ -1808,83 +846,7 @@ msgid "Internal Perimeter acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4187
-#Similar to me: Internal Perimeter fan speed
-# 3    changes: External perimeter fan speed
-#  translation: Rychlost ventilátoru vnějšího perimetru
-# 5    changes: Internal perimeters speed
-#  translation: Rychlost vnitřních perimetrů
-# 7    changes: External perimeters speed
-#  translation: Rychlost vnějšího perimetru
-msgid "Internal Perimeter fan speed"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:131
-#Similar to me: Internal perimeters
-# 1    changes: Internal perimeter
-#  translation: Vnitřní perimetr
-# 2    changes: External perimeters
-#  translation: Vnější perimetry
-# 2    changes: external perimeters
-#  translation: vnější perimetry
-msgid "Internal perimeters"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4247
-#Similar to me: Internal perimeters will go around sharp corners by turning around instead of making the same sharp corner. This can help when there are visible holes in sharp corners on internal perimeters.\nCan incur some more processing time, and corners are a bit less sharp.
-# 50   changes: Internal perimeters will go around sharp corners by turning around instead of making the same sharp corner. This can help when there are visible holes in sharp corners on perimeters. It also help to print the letters on the benchy stern.\nCan incur some more processing time, and corners are a bit less sharp.
-#  translation: Vnitřní perimetry budou obcházet ostré rohy tím, že se místo toho otočívytvoření stejného ostrého rohu. To může pomoci, když jsou viditelné díryv ostrých rozích na perimetrech. Pomáhá také tisknout písmena na lavičková záď.\nMůže trvat delší dobu zpracování a rohy jsou o něco méně ostré.
-msgid ""
-"Internal perimeters will go around sharp corners by turning around instead "
-"of making the same sharp corner. This can help when there are visible holes "
-"in sharp corners on internal perimeters.\n"
-"Can incur some more processing time, and corners are a bit less sharp."
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:562
-msgid "Invert Pitch axis"
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:567
-msgid "Invert Roll axis"
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:542
-msgid "Invert X axis"
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:547
-msgid "Invert Y axis"
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:557
-msgid "Invert Yaw axis"
-msgstr ""
-
-
-#: src/slic3r/GUI/Mouse3DController.cpp:552
-msgid "Invert Z axis"
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:399
-msgid "IPeri"
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:405
-msgid "Iron"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3307
+#: src/libslic3r/PrintConfig.cpp:3035
 #Similar to me: Ironing acceleration
 # 5    changes: Bridge acceleration
 #  translation: Zrychlení mostu
@@ -1896,7 +858,7 @@ msgid "Ironing acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3366
+#: src/libslic3r/PrintConfig.cpp:3094
 #Similar to me: Ironing speed. Used for the ironing pass of the ironing infill pattern, and the post-process infill.\nThis can be expressed as a percentage (for example: 80%) over the Top Solid Infill speed.\nIroning extrusions are ignored from the automatic volumetric speed computation.
 # 44   changes: Ironing speed. Used for the ironing pass of the ironing infill pattern, and the post-process infill. Can be defined as mm.s, or a % of the top solid infill speed.\nIroning extrusions are ignored from the automatic volumetric speed computation.
 #  translation: Rychlost ironing. Používá se pro ironing průchod vzoru ironing výplně a výplň po zpracování. Může být definována jako mm.s nebo % horního tělesa rychlost výplně.\nVýlisky na ironing jsou ignorovány z automatické objemové rychlosti výpočet.
@@ -1910,48 +872,21 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/PresetHints.cpp:195
-#Similar to me: Ironings
-# 1    changes: Ironing
-#  translation: Ironing
-msgid "Ironings"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:879
+#: src/slic3r/GUI/Preferences.cpp:826
 msgid ""
 "It can be a good idea to use a bit darker color, as some hues can be a bit "
 "difficult to read."
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:851
+#: src/slic3r/GUI/Preferences.cpp:798
 msgid ""
 "It may need a lighter color, as it's used to replace white on top of a dark "
 "background."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2316
-msgid ""
-"It's better for some infill like rectilinear to rotate 90° each layer. If "
-"this setting is deactivated, they won't do that anymore."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4731
-#, possible-c-format, possible-boost-format
-msgid ""
-"It's sometimes very problematic to have a little buldge from the seam. This "
-"setting move the seam inside the part, in a little cavity (for every seams "
-"in external perimeters, unless it's in an overhang).\n"
-"The size of the cavity is in mm or a % of the external perimeter width. It's "
-"overriden by the two other 'seam notch' setting when applicable.\n"
-"Set zero to disable."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:784
+#: src/libslic3r/PrintConfig.cpp:737
 msgid "Keep current flow"
 msgstr ""
 
@@ -1960,7 +895,7 @@ msgid "Layer count"
 msgstr ""
 
 
-#: src/libslic3r/Print.cpp:865
+#: src/libslic3r/Print.cpp:855
 #, possible-c-format, possible-boost-format
 #Similar to me: Layer height can't be lower than %s
 # 4    changes: Layer height can't be higher than %s
@@ -1973,42 +908,7 @@ msgid "Layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1466
-msgid ""
-"let the retraction happens on the first layer even if the travel path does "
-"not exceed the upper layer's perimeters."
-msgstr ""
-
-#: ../../ui_layout/default/extruder.ui : l31
-#Similar to me: Lift
-# 1    changes: Left
-#  translation: Zleva
-msgid "Lift"
-msgstr ""
-
-
-#: src/slic3r/GUI/BedShapeDialog.cpp:305
-msgid ""
-"Load a png/svg file to be used as a texture. \n"
-"If it can be found via the executable, configuration or user directory then "
-"a relative path will be kept instead of the full one."
-msgstr ""
-
-
-#: src/slic3r/GUI/BedShapeDialog.cpp:383
-msgid ""
-"Load a stl file to be used as a model. \n"
-"If it can be found via the executable, configuration or user directory then "
-"a relative path will be kept instead of the full one."
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:2736
-msgid "Load these files as a single object with multiple parts?\n"
-msgstr ""
-
-
-#: src/slic3r/GUI/Tab.cpp:5336
+#: src/slic3r/GUI/Tab.cpp:4915
 #Similar to me: LOCKED LOCK icon indicates that the values this widget control are all the same as the system (or default) values.
 # 27   changes: LOCKED LOCK icon indicates that the value is the same as the system (or default) value.
 #  translation: Ikona ZAMKNUTÉHO ZÁMKU indikuje, že hodnota je shodná se systémovou (výchozí) hodnotou.
@@ -2018,38 +918,22 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3433
+#: src/libslic3r/PrintConfig.cpp:3161
 msgid "M73 & M117"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:864
+#: src/slic3r/GUI/Preferences.cpp:811
 msgid "Main color template."
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:862
+#: src/slic3r/GUI/Preferences.cpp:809
 msgid "Main Gui color template"
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4401
-#Similar to me: max
-# 1    changes: Max
-#  translation: Max
-msgid "max"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4742
-#Similar to me: max angle
-# 1    changes: Max angle
-#  translation: Max úhel
-msgid "max angle"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3672
+#: src/libslic3r/PrintConfig.cpp:3400
 #Similar to me: Max print speed for Autospeed
 # 9    changes: Volumetric speed for Autospeed
 #  translation: Objemová rychlost pro Automatickou rychlost
@@ -2057,7 +941,7 @@ msgid "Max print speed for Autospeed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2609
+#: src/libslic3r/PrintConfig.cpp:2456
 #Similar to me: Max speed of object first layer over raft interface
 # 5    changes: Speed of object first layer over raft interface
 #  translation: Rychlost první vrstvy objektu nad raftem
@@ -2067,76 +951,11 @@ msgid "Max speed of object first layer over raft interface"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6092
+#: src/libslic3r/PrintConfig.cpp:5506
 msgid "Max Wipe deviation"
 msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:6353
-#, possible-c-format, possible-boost-format
-#Similar to me: Maximum deflection of a point to the estimated radius of the circle.\nAs cylinders are often exported as triangles of varying size, points may not be on the circle circumference. This setting allows you some leeway to broaden the detection.\nIn mm or in % of the radius.
-# 2    changes: Maximum defection of a point to the estimated radius of the circle.\nAs cylinders are often exported as triangles of varying size, points may not be on the circle circumference. This setting allows you some leway to broaden the detection.\nIn mm or in % of the radius.
-#  translation: Maximální odchylka bodu od odhadovaného poloměru kruhu.\nVzhledem k tomu, že válce jsou často exportovány jako trojúhelníky různé velikosti, body nemusí být na perimetru kruhu. Toto nastavení vám umožňuje určitou volnost rozšířit detekci.\nV mm nebo v % poloměru.
-msgid ""
-"Maximum deflection of a point to the estimated radius of the circle.\n"
-"As cylinders are often exported as triangles of varying size, points may not "
-"be on the circle circumference. This setting allows you some leeway to "
-"broaden the detection.\n"
-"In mm or in % of the radius."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4438
-#, possible-c-format, possible-boost-format
-msgid ""
-"Maximum layer height for the raft interface.\n"
-"Can be a % of the nozzle diameter\n"
-"If set to 0, the support layer height will be used."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4426
-#, possible-c-format, possible-boost-format
-msgid ""
-"Maximum layer height for the raft, after the first layer that uses the first "
-"layer height, and before the interface layers.\n"
-"Can be a % of the nozzle diameter\n"
-"If set to 0, the support layer height will be used."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5535
-#, possible-c-format, possible-boost-format
-msgid ""
-"Maximum layer height for the support interface.\n"
-"Can be a % of the nozzle diameter\n"
-"If set to 0, the extruder maximum height will be used."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5610
-#, possible-c-format, possible-boost-format
-msgid ""
-"Maximum layer height for the support, after the first layer that uses the "
-"first layer height, and before the interface layers.\n"
-"Can be a % of the nozzle diameter\n"
-"If set to 0, the extruder maximum height will be used."
-msgstr ""
-
-
-#: src/slic3r/GUI/GLCanvas3D.cpp:328
-msgid "Maximum layer height. Limit for better quality/layer adhesion."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3700
-#Similar to me: Maximum Print Volumetric speed
-# 11   changes: Max volumetric speed
-#  translation: Max objemová rychlost
-msgid "Maximum Print Volumetric speed"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l341
+#: ../../ui_layout/default/print.ui : l280
 #Similar to me: maximum speed
 # 5    changes: Max fan speed
 #  translation: Max rychlost ventilátoru
@@ -2146,12 +965,12 @@ msgid "maximum speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6093
+#: src/libslic3r/PrintConfig.cpp:5507
 msgid "Maximum Wipe deviation to the inside"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:840
+#: src/libslic3r/GCode.cpp:818
 #Similar to me: Milling End G-code
 # 5    changes: Filament End G-code
 #  translation: Filament Konec G-code
@@ -2161,7 +980,7 @@ msgid "Milling End G-code"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:833
+#: src/libslic3r/GCode.cpp:811
 #Similar to me: Milling Start G-code
 # 5    changes: Filament Start G-code
 #  translation: Filament Začátek G-code
@@ -2173,58 +992,17 @@ msgid "Milling Start G-code"
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4400
-#Similar to me: min
-# 1    changes: in
-#  translation: in
-# 1    changes: Min
-#  translation: Min
-msgid "min"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
-msgid "Min feature"
+#: src/libslic3r/PrintConfig.cpp:2601
+msgid "Min surface for gap filling"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4318 src/libslic3r/PrintConfig.cpp:4319
-#Similar to me: Minimum fan speed
-# 6    changes: Max fan speed
-#  translation: Max rychlost ventilátoru
-msgid "Minimum fan speed"
-msgstr ""
-
-
-#: src/slic3r/GUI/GLCanvas3D.cpp:306
-msgid "Minimum layer height. Limit for better quality/layer adhesion."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:7494
+#: src/libslic3r/PrintConfig.cpp:6755
 msgid "Minimum resolution in nanometers"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui
-#Similar to me: Minimum travel after
-# 6    changes: Minimum travel feedrate
-#  translation: Minimální rychlost při přesunu
-# 8    changes: Minimum feedrates
-#  translation: Minimální rychlosti posuvu
-msgid "Minimum travel after"
-msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:4497
-#Similar to me: Minimum travel after z lift
-# 9    changes: Minimum travel after retraction
-#  translation: Minimální dráha extruderu po retrakci
-# 10   changes: Minimum travel feedrate
-#  translation: Minimální rychlost při přesunu
-msgid "Minimum travel after z lift"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4011
+#: src/libslic3r/PrintConfig.cpp:3708
 #, possible-c-format, possible-boost-format
 #Similar to me: Minimum unsupported width for an extrusion to apply the bridge fan & overhang speed to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate overhangs.
 # 10   changes: Minimum unsupported width for an extrusion to apply the bridge fan & overhang speed to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate.
@@ -2238,7 +1016,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4023
+#: src/libslic3r/PrintConfig.cpp:3720
 #, possible-c-format, possible-boost-format
 #Similar to me: Minimum unsupported width for an extrusion to apply the bridge flow to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate bridge flow for overhangs.
 # 26   changes: Minimum unsupported width for an extrusion to apply the bridge flow to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate.
@@ -2252,24 +1030,17 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1261
+#: src/libslic3r/PrintConfig.cpp:1182
 msgid "mm/s for %-based speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2802
-#Similar to me: mm² or %
-# 1    changes: mm or %
-#  translation: mm nebo %
-# 2    changes: mm/s or %
-#  translation: mm/s nebo %
-# 2    changes: mm/s² or %
-#  translation: mm/s² nebo %
-msgid "mm² or %"
+#: src/slic3r/GUI/MainFrame.cpp:1975
+msgid "Mosaic from picture"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI.cpp:245
+#: src/slic3r/GUI/GUI.cpp:350
 #, possible-boost-format
 #Similar to me: Most likely the configuration was produced by a newer version of %1% or PrusaSlicer.
 # 19   changes: Most likely the configuration was produced by a newer version of 
@@ -2282,19 +1053,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4613
+#: src/libslic3r/PrintConfig.cpp:4221
 msgid "Not on top"
 msgstr ""
 
 
-#: src/slic3r/GUI/PresetHints.cpp:233
-msgid ""
-"Note: The layer time for the cooling is currently computed with infinite "
-"acceleration, and so is very optimistic."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:966
+#: src/libslic3r/PrintConfig.cpp:910
 #Similar to me: Offset of brim from the printed object. Should be kept at 0 unless you encounter great difficulties to separate them.\nIt's subtracted to brim_width and brim_width_interior, so it has to be lower than them. The offset is applied after the first layer XY compensation (elephant foot).
 # 108  changes: Distance between the brim and the part. Should be kept at 0 unless you encounter great difficulties to separate them. It's subtracted to brim_width and brim_width_interior, so it has to be lower than them
 #  translation: Vzdálenost mezi okrajem a částí. Měla by být udržována na 0, pokud čelit velkým potížím při jejich oddělení. Odečítá se to od šířky okrajea brim_width_interior, takže musí být nižší než oni
@@ -2307,50 +1071,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1669
-#Similar to me: On even layers
-# 4    changes: On odd layers
-#  translation: Na lichých vrstvách
-# 5    changes: Other layers
-#  translation: Ostatní vrstvy
-msgid "On even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4238
-msgid ""
-"On even layers, all perimeter loops are reversed (it disables the overhang "
-"reversal, so it doesn't double-reverse).That setting will likely create "
-"defects on the perimeters, so it's only useful is for materials that have "
-"some direction-dependent properties (stress lines)."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:675
-msgid ""
-"On the gcode viewer window, how many decimals are used to separate colors? "
-"It's used for height, width, volumetric rate, section. Default is 2."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2857
-msgid "Only ascii characters in gcode"
-msgstr ""
-
-
-#: src/slic3r/GUI/Tab.cpp:4468
-msgid ""
-"Only compatible presets are shown. Click to show both the presets compatible "
-"and not compatible with the current printer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4614
+#: src/libslic3r/PrintConfig.cpp:4222
 msgid "Only on top"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5995
+#: src/slic3r/GUI/Plater.cpp:5959
 #Similar to me: Only selected objects
 # 7    changes: Delete Selected Objects
 #  translation: Odstranit vybrané objekty
@@ -2358,51 +1084,11 @@ msgid "Only selected objects"
 msgstr ""
 
 
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:438
+#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:419
 #Similar to me: Open Client certificate file
 # 5    changes: Open CA certificate file
 #  translation: Otevřít soubor s certifikátem CA
 msgid "Open Client certificate file"
-msgstr ""
-
-
-#: src/slic3r/GUI/KBShortcutsDialog.cpp:78
-#Similar to me: Open project AMF/3MF with config, clear platter
-# 1    changes: Open project AMF/3MF with config, clear plater
-#  translation: Otevřít projekt AMF/3MF s konfigurací, odstranit modely na podložce
-# 8    changes: Open project STL/OBJ/AMF/3MF with config, clear platter
-#  translation: Otevřít projekt STL/OBJ/AMF/3MF s konfigurací, vyprázdnit podložku
-# 9    changes: Open project STL/OBJ/AMF/3MF with config, clear plater
-#  translation: Otevřít projekt STL/OBJ/AMF/3MF s konfigurací, odstranit modely na podložce
-msgid "Open project AMF/3MF with config, clear platter"
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:401
-msgid "OPeri"
-msgstr ""
-
-
-#: src/libslic3r/PrintObject.cpp:677 src/libslic3r/PrintObject.cpp:688
-#: src/libslic3r/PrintObject.cpp:728
-#, possible-c-format, possible-boost-format
-#Similar to me: Optimizing layer %s / %s
-# 6    changes: Infilling layer %s / %s
-#  translation: Vyplňování vrstvy %s / %s
-msgid "Optimizing layer %s / %s"
-msgstr ""
-
-
-#: src/libslic3r/Print.cpp:1245 src/libslic3r/Print.cpp:1257
-#: src/libslic3r/Print.cpp:1262
-#, possible-c-format, possible-boost-format
-msgid "Optimizing skirt & brim %s%%"
-msgstr ""
-
-
-#: src/libslic3r/PrintObject.cpp:719
-#, possible-c-format, possible-boost-format
-msgid "Optimizing support layer %s / %s"
 msgstr ""
 
 
@@ -2436,84 +1122,12 @@ msgstr ""
 msgid "Output"
 msgstr ""
 
-
-#: src/slic3r/GUI/PresetHints.cpp:76
-#, possible-boost-format
-msgid "Over %1% and %2% it will be at least %3%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:40
-#, possible-boost-format
-msgid "Over %1% and %2% it will be fixed to %3%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:38 src/slic3r/GUI/PresetHints.cpp:74
-#, possible-boost-format
-msgid "Over %1% and %2% it will be off."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:26
-#, possible-boost-format
-msgid "Over %1% it will be at %2%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:85
-#, possible-boost-format
-msgid "Over %1% it will be at least %2%%%, and off over %3%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:87
-#, possible-boost-format
-msgid "Over %1% it will be at least %2%%%, and over %3% at least %4%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:63
-#, possible-boost-format
-msgid "Over %1% it will be at least %2%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:47
-#, possible-boost-format
-msgid "Over %1% it will be fixed to %2%%%, and off over %3%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:49
-#, possible-boost-format
-msgid "Over %1% it will be fixed to %2%%%, and over %3% to %4%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:83
-#, possible-boost-format
-msgid "Over %1% it will be off, and over %2% at least %3%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:45
-#, possible-boost-format
-msgid "Over %1% it will be off, and over %2% fixed to %3%%%."
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:24 src/slic3r/GUI/PresetHints.cpp:61
-#, possible-boost-format
-msgid "Over %1% it will be off."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l358
+#: ../../ui_layout/default/print.ui : l295
 msgid "Over raft"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3954
+#: src/libslic3r/PrintConfig.cpp:3679
 #Similar to me: Overhang acceleration
 # 7    changes: Bridge acceleration
 #  translation: Zrychlení mostu
@@ -2525,47 +1139,7 @@ msgid "Overhang acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4034
-#Similar to me: Overhang reversal on even layers
-# 12   changes: Overhang reversal threshold
-#  translation: Práh obrácení převisu
-msgid "Overhang reversal on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3967
-#Similar to me: Overhangs Perimeter fan speed
-# 8    changes: External perimeter fan speed
-#  translation: Rychlost ventilátoru vnějšího perimetru
-msgid "Overhangs Perimeter fan speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1084
-msgid "Parallel printing step"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:518
-msgid ""
-"Password for client certificate for 2-way ssl authentication. Leave blank if "
-"no password is needed"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
-#Similar to me: Pattern Angle
-# 1    changes: Pattern angle
-#  translation: Úhel vzoru
-msgid "Pattern Angle"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5311
-msgid "Pattern angle swap height"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5585
+#: src/libslic3r/PrintConfig.cpp:5016
 #, possible-c-format, possible-boost-format
 msgid ""
 "Pattern for interface layers.\n"
@@ -2573,41 +1147,8 @@ msgid ""
 "with soluble supports and 100% fill interface layer."
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui
-#Similar to me: Perimeter fan speed
-# 4    changes: Perimeter speed
-#  translation: Rychlost perimetru
-# 6    changes: Bridges fan speed
-#  translation: Rychlost ventilátoru při vytváření mostů
-# 7    changes: Default fan speed
-#  translation: Výchozí rychlost ventilátoru
-msgid "Perimeter fan speed"
-msgstr ""
 
-
-#: src/slic3r/GUI/PresetHints.cpp:137 src/slic3r/GUI/PresetHints.cpp:173
-#Similar to me: Perimeter overhangs
-# 4    changes: Perimeter overlap
-#  translation: Přesah perimetru
-# 5    changes: perimeter overlap
-#  translation: přesah perimetru
-# 7    changes: Perimeter bonding
-#  translation: Spojení perimetru
-msgid "Perimeter overhangs"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4236
-msgid "Perimeter reversal on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4175
-msgid "Perimeters spacing change on even layers"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2707
+#: src/libslic3r/PrintConfig.cpp:2547
 #, possible-c-format, possible-boost-format
 #Similar to me: Perimeters will be split into multiple segments by inserting Fuzzy skin points. Lowering the Fuzzy skin point distance will increase the number of randomly offset points on the perimeter wall.\nCan be a % of the nozzle diameter.
 # 36   changes: Perimeters will be split into multiple segments by inserting Fuzzy skin points. Lowering the Fuzzy skin point distance will increase the number of randomly offset points on the perimeter wall.
@@ -2620,45 +1161,26 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:848
+#: src/slic3r/GUI/Preferences.cpp:795
 msgid "Platter icons Color template"
 msgstr ""
 
 
-#: src/slic3r/GUI/BackgroundSlicingProcess.cpp:95
-#, possible-boost-format
-#Similar to me: Please save your project and restart %1%. We would be glad if you reported the issue.
-# 11   changes: Please save your project and restart PrusaSlicer. We would be glad if you reported the issue.
-#  translation: Uložte projekt a restartujte PrusaSlicer. Budeme rádi, když nám problém nahlásíte.
-msgid ""
-"Please save your project and restart %1%. We would be glad if you reported "
-"the issue."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l84
-msgid "Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4665
+#: src/libslic3r/PrintConfig.cpp:4273
 msgid ""
 "Position of perimeters' starting points.\n"
 "Cost-based option let you choose the angle and travel cost. A high angle "
 "cost will place the seam where it can be hidden by a corner, the travel cost "
 "place the seam near the last position (often at the end of the previous "
-"infill). Default is 60 % and 100 %. There is also the visibility and the "
-"overhang cost, but they are static.\n"
-" Scattered: seam is placed at a random position on external perimeters\n"
-" Random: seam is placed at a random position for all perimeters\n"
-" Aligned: seams are grouped in the best place possible (minimum 6 layers per "
-"group)\n"
-" Contiguous: seam is placed over a seam from the previous layer (useful with "
-"enforcers)\n"
-" Rear: seam is placed at the far side (highest Y coordinates)"
+"infill)."
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l72
+msgid "Position of perimeters' starting points.\nCustom can be defined in Advanced or Expert mode. Cost-based settings let you choose the angle and travel cost. A high angle cost will place the seam where it can be hidden by a corner, the travel cost place the seam near the last position (often at the end of the previous infill)."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6395
+#: src/libslic3r/PrintConfig.cpp:5789
 #Similar to me: Preferred orientation
 # 8    changes: Optimize orientation
 #  translation: Optimalizovat orientaci
@@ -2666,38 +1188,7 @@ msgid "Preferred orientation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6435
-#Similar to me: Prevent transitioning back and forth between one extra perimeter and one less. This margin extends the range of extrusion widths which follow to [Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. Increasing this margin reduces the number of transitions, which reduces the number of extrusion starts/stops and travel time. However, large extrusion width variation can lead to under- or overextrusion problems.If expressed as percentage (for example 25%), it will be computed over nozzle diameter.
-# 14   changes: Prevent transitioning back and forth between one extra perimeter and one less. This margin extends the range of extrusion widths which follow to [Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. Increasing this margin reduces the number of transitions, which reduces the number of extrusion starts/stops and travel time. However, large extrusion width variation can lead to under- or overextrusion problems. If expressed as a percentage (for example 25%), it will be computed based on the nozzle diameter.
-#  translation: Zabraní přechodům mezi stavy s jedním perimetrem navíc a o jeden perimetr méně. Tato okraj rozšiřuje rozsah šířek extruzí, které následují po [Minimální šířka perimetru - okraj, 2 * Minimální šířka perimetru + okraj]. Zvětšením tohoto okraje se sníží počet přechodů, čímž se sníží počet začátků/konců extrudování a přesunů. Velká odchylka šířky extrudování však může vést k problémům s nedostatečným nebo nadměrným vytlačováním materiálu. Pokud je hodnota vyjádřena v procentech (například 25%), vypočítá se v závislosti na průměru trysky.
-msgid ""
-"Prevent transitioning back and forth between one extra perimeter and one "
-"less. This margin extends the range of extrusion widths which follow to "
-"[Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. "
-"Increasing this margin reduces the number of transitions, which reduces the "
-"number of extrusion starts/stops and travel time. However, large extrusion "
-"width variation can lead to under- or overextrusion problems.If expressed as "
-"percentage (for example 25%), it will be computed over nozzle diameter."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6131
-msgid ""
-"Printing speed of the wipe tower. Capped by filament_max_volumetric_speed "
-"(if set).\n"
-"If set to zero, a value of 80mm/s is used."
-msgstr ""
-
-
-#: src/slic3r/GUI/CalibrationFirstLayerDialog.cpp:42
-#Similar to me: Quantity:
-# 3    changes: Quality
-#  translation: Kvalita
-msgid "Quantity:"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4394
+#: src/libslic3r/PrintConfig.cpp:4036
 #Similar to me: Raft first layer density
 # 6    changes: First layer density
 #  translation: Hustota první vrstvy
@@ -2705,7 +1196,7 @@ msgid "Raft first layer density"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4405
+#: src/libslic3r/PrintConfig.cpp:4047
 #Similar to me: Raft first layer expansion
 # 6    changes: First layer expansion
 #  translation: Rozšíření první vrstvy
@@ -2713,96 +1204,12 @@ msgid "Raft first layer expansion"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4436
-msgid "Raft interface layer height"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4424
-#Similar to me: Raft layer height
-# 3    changes: Max layer height
-#  translation: Max výška tisku
-# 4    changes: Base Layer height
-#  translation: Výška vrstvy
-# 4    changes: First layer height
-#  translation: Výška první vrstvy
-msgid "Raft layer height"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l132
-#Similar to me: Reverse on all perimeters
-# 8    changes: Also for all perimeters
-#  translation: Také pro všechny perimetry
-# 8    changes: Overlapping all perimeters
-#  translation: Překrývající se všechny perimetery
-# 9    changes: External perimeters
-#  translation: Vnější perimetry
-msgid "Reverse on all perimeters"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4033
-#Similar to me: Reverse on even
-# 4    changes: Reverse on odd
-#  translation: Reverzní na liché
-msgid "Reverse on even"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6397
+#: src/libslic3r/PrintConfig.cpp:5791
 msgid "Rotate stl around z axes while adding them to the bed."
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:232
-#, possible-c-format, possible-boost-format
-msgid "Save current %s as new preset"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4682
-msgid "Scattered"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4715
-#Similar to me: Seam gap for external perimeters
-# 8    changes: Extra Wipe for external perimeters
-#  translation: Extra očistit pro vnější perimetri
-# 11   changes: Overlapping external perimeter
-#  translation: Překrývající se vnější perimeter
-# 11   changes: at %1%%% over external perimeters
-#  translation: na %1%%% přes vnější perimetry
-msgid "Seam gap for external perimeters"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4729
-msgid "Seam notch"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4755
-msgid "Seam notch for round holes"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4770
-msgid "Seam notch for round perimeters"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4743
-msgid "Seam notch maximum angle"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4796
-msgid "Seam visibility check"
-msgstr ""
-
-
-#: src/slic3r/GUI/GUI_Preview.cpp:256
+#: src/slic3r/GUI/GUI_Preview.cpp:257
 #Similar to me: Section
 # 1    changes: Sections
 #  translation: Sekce
@@ -2814,72 +1221,20 @@ msgid "Section"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3997
-msgid ""
-"Set the speed of the full perimeters to the overhang speed, and also the "
-"next one(s) if any.\n"
-"Set to 0 to disable.\n"
-"Set to 1 to set the overhang speed to the full perimeter if there is any "
-"overhang detected inside it.\n"
-"Set to more than 1 to also set the overhang speed to the next perimeter(s) "
-"(only in classic mode)."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:699
+#: src/slic3r/GUI/Preferences.cpp:646
 msgid "Settings layout and colors"
 msgstr ""
 
-
-#: src/libslic3r/ExtrusionEntity.cpp:403
-#Similar to me: SFill
-# 1    changes: Fill
-#  translation: Výplně
-# 2    changes: &File
-#  translation: &Soubor
-# 2    changes: Mill
-#  translation: Mlýn
-msgid "SFill"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:313
-msgid "Show a Pop-up with the current material when exporting"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:320
-msgid "Show ignored settings when loading a project or configuration"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:657
-#Similar to me: Show layer height on the scroll bar
-# 12   changes: Show object height on the ruler
-#  translation: Zobrazit výšku objektu na pravítku
-msgid "Show layer height on the scroll bar"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:664
-msgid "Show layer time on the scroll bar"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l60
+#: ../../ui_layout/default/print.ui : l56
 msgid "Simple widget to enable/disable the overhangs detection (using 55% and 75% for the two thresholds)\nUse the expert mode to get more detailled widgets"
 msgstr ""
 
-
-#: src/libslic3r/Print.cpp:1234
-msgid "Simplifying paths"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l393
 msgid "Simulate Prusa 'no thick bridge'"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:618
+#: src/slic3r/GUI/Preferences.cpp:592
 #, possible-c-format, possible-boost-format
 msgid ""
 "Size of the font, and most of the gui (but not the menu and dialog ones). "
@@ -2889,12 +1244,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7493
+#: src/libslic3r/PrintConfig.cpp:6754
 msgid "SLA output precision"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3856
+#: src/libslic3r/PrintConfig.cpp:3581
 #Similar to me: Slic3r can upload G-code files to a printer host. This field must contain the kind of the host.\nPrusaLink is only available for prusa printer.
 # 48   changes: Slic3r can upload G-code files to a printer host. This field must contain the kind of the host.
 #  translation: Slic3r může nahrát soubory G-code do tiskového serveru. Toto pole musí obsahovat druh tiskového serveru.
@@ -2920,7 +1275,7 @@ msgid "Slic3r has encountered an error while taking a configuration snapshot."
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:880
+#: src/slic3r/GUI/Preferences.cpp:827
 #Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 275cad
 # 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 2172eb
 #  translation: Slic3r (žlutá): cabe39, PrusaSlicer (oranžová): ed6b21, SuperSlicer (modrá): 2172eb
@@ -2934,7 +1289,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:866
+#: src/slic3r/GUI/Preferences.cpp:813
 #Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 296acc
 # 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 2172eb
 #  translation: Slic3r (žlutá): cabe39, PrusaSlicer (oranžová): ed6b21, SuperSlicer (modrá): 2172eb
@@ -2948,7 +1303,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:852
+#: src/slic3r/GUI/Preferences.cpp:799
 #Similar to me: Slic3r(yellow): ccbe29, PrusaSlicer(orange): cc6429, SuperSlicer(blue): 3d83ed
 # 11   changes: Slic3r(yellow): cabe39, PrusaSlicer(orange): ed6b21, SuperSlicer(blue): 2172eb
 #  translation: Slic3r (žlutá): cabe39, PrusaSlicer (oranžová): ed6b21, SuperSlicer (modrá): 2172eb
@@ -2962,7 +1317,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5211
+#: src/libslic3r/PrintConfig.cpp:4698
 #Similar to me: Solid acceleration
 # 5    changes: Bridge acceleration
 #  translation: Zrychlení mostu
@@ -2974,7 +1329,7 @@ msgid "Solid acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4966
+#: src/libslic3r/PrintConfig.cpp:4483
 #Similar to me: Solid fill overlap
 # 5    changes: Gap fill overlap
 #  translation: Překrytí výplně mezery
@@ -2986,7 +1341,7 @@ msgid "Solid fill overlap"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1411
+#: src/libslic3r/PrintConfig.cpp:1332
 #Similar to me: Solid fill pattern
 # 4    changes: Top fill pattern
 #  translation: Vzor výplně horní vrstvy
@@ -2998,32 +1353,7 @@ msgid "Solid fill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5044
-#Similar to me: Solid Infill fan speed
-# 5    changes: Solid infill speed
-#  translation: Rychlost plné výplně
-msgid "Solid Infill fan speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5016
-msgid "Solid infill spacing change on even layers"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:133
-#Similar to me: Solid surfaces
-# 5    changes: All solid surfaces
-#  translation: Všechny plné povrchy
-# 5    changes: Min surface
-#  translation: Min povrch
-# 5    changes: On surfaces
-#  translation: Na površích
-msgid "Solid surfaces"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:771
+#: src/slic3r/GUI/Preferences.cpp:718
 msgid ""
 "Some software like (for example) ASUS Sonic Studio injects a DLL (library) "
 "that is known to create some instabilities. This option let Slic3r check at "
@@ -3031,25 +1361,13 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2390
+#: src/libslic3r/PrintConfig.cpp:2233
 #Similar to me: Sparse fill pattern
 # 6    changes: Bottom fill pattern
 #  translation: Vzor spodní výplně
 # 6    changes: Top fill pattern
 #  translation: Vzor výplně horní vrstvy
 msgid "Sparse fill pattern"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:132
-#Similar to me: Sparse infill
-# 5    changes: Bridge infill
-#  translation: Výplň mostů
-# 5    changes: Max infill
-#  translation: Max výplň
-# 5    changes: Smart fill
-#  translation: Chytré vybarvení
-msgid "Sparse infill"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -3064,7 +1382,7 @@ msgid "Sparse infill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2846
+#: src/libslic3r/PrintConfig.cpp:2626
 #Similar to me: Speed for filling small gaps using short zigzag moves. Keep this reasonably low to avoid too much shaking and resonance issues.\nGap fill extrusions are ignored from the automatic volumetric speed computation, unless you set it to 0.\nThis can be expressed as a percentage (for example: 80%) over the Internal Perimeter speed.
 # 93   changes: Speed for filling small gaps using short zigzag moves. Keep this reasonably low to avoid too much shaking and resonance issues.\nGap fill extrusions are ignored from the automatic volumetric speed computation, unless you set it to 0.
 #  translation: Rychlost pro vyplnění malých mezer pomocí krátkých klikatých pohybů. Udržujte ji přiměřeně nízkou, abyste se vyhnuli příliš velkým problémům s chvěním a rezonancí.\"\nVysunutí výplně mezery se při automatickém výpočtu objemové rychlosti ignoruje, pokud ji nenastavíte na 0.
@@ -3078,7 +1396,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4257
+#: src/libslic3r/PrintConfig.cpp:3918
 msgid ""
 "Speed for perimeters (contours, aka vertical shells).\n"
 "This can be expressed as a percentage (for example: 80%) over the Default "
@@ -3087,7 +1405,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:848
+#: src/libslic3r/PrintConfig.cpp:801
 msgid ""
 "Speed for printing bridges.\n"
 "This can be expressed as a percentage (for example: 60%) over the Default "
@@ -3096,7 +1414,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3984
+#: src/libslic3r/PrintConfig.cpp:3695
 #, possible-c-format, possible-boost-format
 msgid ""
 "Speed for printing overhangs.\n"
@@ -3105,7 +1423,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5061
+#: src/libslic3r/PrintConfig.cpp:4551
 #Similar to me: Speed for printing solid regions (top/bottom/internal horizontal shells). \nThis can be expressed as a percentage (for example: 80%) over the Default speed.\nSet zero to use autospeed for this feature.
 # 39   changes: Speed for printing solid regions (top/bottom/internal horizontal shells). This can be expressed as a percentage (for example: 80%) over the default infill speed. Set zero for auto.
 #  translation: Rychlost pro tisk plných oblastí (horní/spodní/vnitřní horizontální skořepiny). Lze ji vyjádřit jako procento (například: 80%) oproti výchozí rychlosti plnění. Nastavte nulu pro auto.
@@ -3119,7 +1437,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5557
+#: src/libslic3r/PrintConfig.cpp:4988
 #Similar to me: Speed for printing support material interface layers.\nIf expressed as percentage (for example 50%) it will be calculated over support material speed.\nSet zero to use autospeed for this feature.
 # 47   changes: Speed for printing support material interface layers. If expressed as percentage (for example 50%) it will be calculated over support material speed.
 #  translation: Rychlost tisku podpěrných kontaktních vrstev. Pokud je vyjádřen procentní podíl (například 50%), vypočítá se podle rychlosti tisku podpěr.
@@ -3131,7 +1449,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5632
+#: src/libslic3r/PrintConfig.cpp:5051
 msgid ""
 "Speed for printing support material.\n"
 "This can be expressed as a percentage (for example: 80%) over the Default "
@@ -3140,7 +1458,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3256
+#: src/libslic3r/PrintConfig.cpp:2984
 msgid ""
 "Speed for printing the internal fill.\n"
 "This can be expressed as a percentage (for example: 80%) over the Solid "
@@ -3149,7 +1467,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5947
+#: src/libslic3r/PrintConfig.cpp:5361
 #Similar to me: Speed for printing top solid layers (it only applies to the uppermost external layers and not to their internal solid layers). You may want to slow down this to get a nicer surface finish.\nThis can be expressed as a percentage (for example: 80%) over the Solid Infill speed.\nSet zero to use autospeed for this feature.
 # 34   changes: Speed for printing top solid layers (it only applies to the uppermost external layers and not to their internal solid layers). You may want to slow down this to get a nicer surface finish. This can be expressed as a percentage (for example: 80%) over the solid infill speed above. Set to zero for auto.
 #  translation: Rychlost tisku vrchních plných vrstev (vztahuje se pouze na nejvyšší horní vrstvy a nikoli na jejich vnitřní plné vrstvy). Rychlost lze zpomalit, abyste získali hezčí povrchovou úpravu. Může být vyjádřena procenty (například: 80%) z rychlosti plné výplně materiálu výše. Pro automatické nastavení zadejte nulu.
@@ -3165,32 +1483,13 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5802
+#: src/libslic3r/PrintConfig.cpp:5217
 msgid ""
 "Speed for thin walls (external extrusions that are alone because the obect "
 "is too thin at these places).\n"
 "This can be expressed as a percentage (for example: 80%) over the External "
 "Perimeter speed.\n"
 "Set zero to use autospeed for this feature."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6140
-#, possible-c-format, possible-boost-format
-msgid ""
-"Start of the wiping speed ramp up (for wipe tower).\n"
-"Can be a % of the 'Wipe tower speed'.\n"
-"Set to 0 to disable."
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:411
-msgid "Supp"
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:412
-msgid "SuppI"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -3205,7 +1504,7 @@ msgid "Support & Other"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5252
+#: src/libslic3r/PrintConfig.cpp:4739
 #Similar to me: Support acceleration
 # 6    changes: Default acceleration
 #  translation: Výchozí zrychlení
@@ -3217,7 +1516,7 @@ msgid "Support acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5274
+#: src/libslic3r/PrintConfig.cpp:4761
 #Similar to me: Support interface acceleration
 # 9    changes: Support interface pattern
 #  translation: Vzor kontaktní vrstvy podpěr
@@ -3227,69 +1526,13 @@ msgid "Support interface acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5448
-#Similar to me: Support interface angle increment
-# 12   changes: Support interface pattern
-#  translation: Vzor kontaktní vrstvy podpěr
-# 13   changes: Support interface speed
-#  translation: Rychlost kontaktní vrstvy podpěr
-msgid "Support interface angle increment"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5458
+#: src/libslic3r/PrintConfig.cpp:4901
 #Similar to me: Support interface fan speed
 # 4    changes: Support interface speed
 #  translation: Rychlost kontaktní vrstvy podpěr
 # 7    changes: Support interface pattern
 #  translation: Vzor kontaktní vrstvy podpěr
 msgid "Support interface fan speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5533
-#Similar to me: Support interface layer height
-# 10   changes: Support interface pattern
-#  translation: Vzor kontaktní vrstvy podpěr
-# 10   changes: Support interface speed
-#  translation: Rychlost kontaktní vrstvy podpěr
-msgid "Support interface layer height"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5438
-#Similar to me: Support interface pattern angle
-# 6    changes: Support interface pattern
-#  translation: Vzor kontaktní vrstvy podpěr
-# 10   changes: Support pattern angle
-#  translation: Úhel nosného vzoru
-# 12   changes: Support interface speed
-#  translation: Rychlost kontaktní vrstvy podpěr
-msgid "Support interface pattern angle"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:135 src/slic3r/GUI/PresetHints.cpp:169
-#Similar to me: Support interfaces
-# 2    changes: support interface
-#  translation: kontaktní vrstva podpěr
-# 5    changes: Support interface speed
-#  translation: Rychlost kontaktní vrstvy podpěr
-# 6    changes: Support Enforcer
-#  translation: Vynucení podpěr
-msgid "Support interfaces"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5608
-#Similar to me: Support layer height
-# 3    changes: Support base height
-#  translation: Výška podpěrné základny
-# 6    changes: First layer height
-#  translation: Výška první vrstvy
-# 7    changes: Initial layer height
-#  translation: Výška první vrstvy
-msgid "Support layer height"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -3304,24 +1547,12 @@ msgid "Support Material"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5423
-#Similar to me: Support Material fan speed
-# 8    changes: Support interface speed
-#  translation: Rychlost kontaktní vrstvy podpěr
-# 9    changes: Support material extruder
-#  translation: Extrudér podpůrného materiálu
-# 10   changes: Support material interface
-#  translation: Kontaktní vrstvy podpěr
-msgid "Support Material fan speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5643
+#: src/libslic3r/PrintConfig.cpp:5062
 msgid "Support tower style"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:1221
+#: src/slic3r/GUI/Preferences.cpp:1136
 #Similar to me: Tab layout Options
 # 5    changes: Layout Options
 #  translation: Možnosti rozložení
@@ -3329,37 +1560,17 @@ msgid "Tab layout Options"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:2562
-#Similar to me: Tags
-# 1    changes: Tabs
-#  translation: Panely
-msgid "Tags"
-msgstr ""
-
-
-#: src/slic3r/GUI/Search.cpp:394 src/slic3r/GUI/Search.cpp:463
+#: src/slic3r/GUI/Search.cpp:375 src/slic3r/GUI/Search.cpp:434
 msgid "tags"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:876
+#: src/slic3r/GUI/Preferences.cpp:823
 msgid "Text color template"
 msgstr ""
 
 
-#: src/libslic3r/ExtrusionEntity.cpp:404
-#Similar to me: TFill
-# 1    changes: Fill
-#  translation: Výplně
-# 2    changes: &File
-#  translation: &Soubor
-# 2    changes: Mill
-#  translation: Mlýn
-msgid "TFill"
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:2660
+#: src/slic3r/GUI/Plater.cpp:2648
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -3381,7 +1592,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2638
+#: src/slic3r/GUI/Plater.cpp:2626
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -3403,15 +1614,17 @@ msgstr[0] ""
 msgstr[1] ""
 
 
-#: src/slic3r/GUI/GUI.cpp:226
-#, possible-boost-format
-msgid ""
-"The following key-values are ignored, as the key doesn't have any "
-"substitution in this version of %1%:"
+#: src/slic3r/GUI/Jobs/SLAImportJob.cpp:187
+#Similar to me: The file does not exist.
+# 4    changes: : file does not exist!
+#  translation: : soubor neexistuje!
+# 9    changes: Directory does not exist
+#  translation: Adresář neexistuje
+msgid "The file does not exist."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2696
+#: src/libslic3r/PrintConfig.cpp:2536
 #, possible-c-format, possible-boost-format
 #Similar to me: The maximum distance that each skin point can be offset (both ways), measured perpendicular to the perimeter wall.\nCan be a % of the nozzle diameter.
 # 36   changes: The maximum distance that each skin point can be offset (both ways), measured perpendicular to the perimeter wall.
@@ -3423,12 +1636,6 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/PresetHints.cpp:129
-#, possible-boost-format
-msgid "The minimum speed is %1%%%."
-msgstr ""
-
-
 #: src/slic3r/GUI/Plater.cpp:1127
 msgid ""
 "The option you selected in the search dialog isn't available in the current "
@@ -3436,7 +1643,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6327
+#: src/slic3r/GUI/Plater.cpp:6284
 #Similar to me: The platter is empty.\nDo you want to save the project?
 # 1    changes: The plater is empty.\nDo you want to save the project?
 #  translation: Tisková podložka je prázdná.\nChcete projekt uložit?
@@ -3446,31 +1653,27 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/ConfigManipulation.cpp:93
+#: src/slic3r/GUI/ConfigManipulation.cpp:90
 #, possible-c-format, possible-boost-format
+#Similar to me: The Spiral Vase mode requires:\n- one perimeter\n- no top solid layers\n- 0% fill density\n- no support material\n- Ensure vertical shell thickness enabled\n- disabled 'no solid infill over perimeters'\n- unchecked 'exact last layer height'\n- unchecked 'dense infill'\n- unchecked 'extra perimeters'- unchecked 'gap fill after last perimeter'- disabled  'no solid fill over X perimeters'
+# 134  changes: The Spiral Vase mode requires:\n- one perimeter\n- no top solid layers\n- 0% fill density\n- no support material\n- Ensure vertical shell thickness enabled\n- unchecked 'exact last layer height'\n- unchecked 'dense infill'\n- unchecked 'extra perimeters'
+#  translation: Režim spirálové vázy vyžaduje:\n- jeden perimetr\n- žádné horní plné vrstvy\n- 0% hustota výplně\n- žádný podpůrný materiál\n- Ujistěte se, že je povolena svislá tloušťka skořepiny\n- nezaškrtnuto 'přesná výška poslední vrstvy'\n- nezaškrtnuto 'hustá výplň'\n- nezaškrtnuté 'extra perimetry'
 msgid ""
 "The Spiral Vase mode requires:\n"
+"- one perimeter\n"
 "- no top solid layers\n"
 "- 0% fill density\n"
-"- classic perimeter slicing\n"
 "- no support material\n"
 "- Ensure vertical shell thickness enabled\n"
 "- disabled 'no solid infill over perimeters'\n"
 "- unchecked 'exact last layer height'\n"
 "- unchecked 'dense infill'\n"
 "- unchecked 'extra perimeters'- unchecked 'gap fill after last perimeter'- "
-"disabled  'no solid fill over X perimeters'- disabled 'seam notch'"
+"disabled  'no solid fill over X perimeters'"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4377
-msgid ""
-"The vertical distance between object and raft. Ignored for soluble "
-"interface. It uses the same type as the support z-offset type."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5365
+#: src/libslic3r/PrintConfig.cpp:4843
 #, possible-c-format, possible-boost-format
 #Similar to me: The vertical distance between object and support material interface(when the support is printed on top of the object). Can be a % of the nozzle diameter.\nIf set to zero, support_material_contact_distance will be used for both top and bottom contact Z distances.
 # 91   changes: The vertical distance between the object top surface and the support material interface. If set to zero, support_material_contact_distance will be used for both top and bottom contact Z distances.
@@ -3486,7 +1689,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5348
+#: src/libslic3r/PrintConfig.cpp:4826
 #, possible-c-format, possible-boost-format
 #Similar to me: The vertical distance between support material interface and the object(when the object is printed on top of the support). Setting this to 0 will also prevent Slic3r from using bridge flow and speed for the first object layer. Can be a % of the nozzle diameter.
 # 37   changes: The vertical distance between support material interface and the object(when the object is printed on top of the support). Setting this to 0 will also prevent Slic3r from using bridge flow and speed for the first object layer. Can be a % of the extruding width used for the interface layers.
@@ -3499,29 +1702,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2292
-msgid ""
-"The voids of the pattern of sparse infill grows with the extrusion width, to "
-"keep the same percentage of fill. With this setting set to true, the "
-"algorithms will now only use the highest sparse infill width avaialble to "
-"create the pattern. This way, the pattern can still be aligned even if the "
-"width is changing (from first layer width, from a modifier, from aanother "
-"extruder with different diameter).\n"
-"Experimental: works only for infill that won't depends on the fill area. So "
-"for infill where it's not useful (Hilbert, Archimedean, Octagram, Scattered, "
-"Lightning), this setting is disabled.\n"
-" This setting is useful for rectilinear, monotonic, grid, trianlge, star, "
-"cubic, gyroid, honeycomb, 3D honeycomb, adaptative cubic, support cubic "
-"patterns."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:651
+#: src/slic3r/GUI/Preferences.cpp:625
 msgid "These tooltip may be bothersome. You can hide them with this option."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5785
+#: src/libslic3r/PrintConfig.cpp:5200
 #Similar to me: Thin Walls
 # 1    changes: Thin walls
 #  translation: Tenké stěny
@@ -3531,7 +1717,7 @@ msgid "Thin Walls"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5786
+#: src/libslic3r/PrintConfig.cpp:5201
 #Similar to me: Thin walls acceleration
 # 7    changes: Infill acceleration
 #  translation: Zrychlení výplně
@@ -3543,12 +1729,7 @@ msgid "Thin walls acceleration"
 msgstr ""
 
 
-#: src/libslic3r/ExtrusionEntity.cpp:408
-msgid "ThinW"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5863
+#: src/libslic3r/PrintConfig.cpp:5277
 #Similar to me: This custom code is inserted at every extruder change. If you don't leave this empty, you are expected to take care of the toolchange yourself - Slic3r will not output any other G-code to change the filament. You can use placeholder variables for all Slic3r settings as well as {toolchange_z}, {layer_z}, {layer_num}, {max_layer_z}, {previous_extruder} and {next_extruder}, so e.g. the standard toolchange command can be scripted as T{next_extruder}.!! Warning !!: if any character is written here, Slic3r won't output any toochange command by itself.
 # 55   changes: This custom code is inserted at every extruder change. If you don't leave this empty, you are expected to take care of the toolchange yourself - Slic3r will not output any other G-code to change the filament. You can use placeholder variables for all Slic3r settings as well as {previous_extruder} and {next_extruder}, so e.g. the standard toolchange command can be scripted as T{next_extruder}.!! Warning !!: if any character is written here, Slic3r won't output any toochange command by itself.
 #  translation: Tento vlastní kód se vkládá při každé výměně extruderu. Pokud toto nenecháte prázdné, očekává se, že se o výměnu nástroje postaráte sami - Slic3r nebude vydávat žádný jiný G-kód pro změnu vlákna. Můžete použít zástupné proměnné pro všechna nastavení Slic3r a také {previous_extruder} a {next_extruder}, takže např. standardní příkaz toolchange lze naskriptovat jako T{next_extruder}.!! Upozornění!!: pokud je zde napsán jakýkoli znak, Slic3r nevypíše žádnou změnu příkaz sám o sobě.
@@ -3558,41 +1739,13 @@ msgid ""
 "Slic3r will not output any other G-code to change the filament. You can use "
 "placeholder variables for all Slic3r settings as well as {toolchange_z}, "
 "{layer_z}, {layer_num}, {max_layer_z}, {previous_extruder} and "
-"{next_extruder}, so e.g. the standard toolchange command can be scripted as "
-"T{next_extruder}.!! Warning !!: if any character is written here, Slic3r "
+"{next_extruder}, so e.g. the standard toolchange command can be scripted as T"
+"{next_extruder}.!! Warning !!: if any character is written here, Slic3r "
 "won't output any toochange command by itself."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2337
-msgid ""
-"This define the succetion of infill angle. When defined, it replaces the "
-"fill_angle, and there won't be any extra 90° for each layer added, but the "
-"fill_angle_increment will still be used. The first layer start with the "
-"first angle. If a new pattern is used in a modifier, it will choose the "
-"layer angle from the pattern as if it has started from the first layer.Empty "
-"this settings to disable and recover the old behavior."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3713
-#Similar to me: This experimental setting is used to limit the speed of change in extrusion rate for a transition from lower speed to higher speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds.
-# 2    changes: This experimental setting is used to limit the speed of change in extrusion rate for a transition from lower speed to higher speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds.
-#  translation: Toto experimentální nastavení se používá k omezení rychlosti změny rychlosti vytlačování při přechodu z nižší rychlosti na vyšší. Hodnota 1,8 mm³/s² zajišťuje, že změna rychlosti vytlačování z 1,8 mm³/s (šířka vytlačování 0,45 mm, výška vytlačování 0,2 mm, rychlost posuvu 20 mm/s) na 5,4 mm³/s (rychlost posuvu 60 mm/s) bude trvat nejméně 2 sekundy.
-# 16   changes: This experimental setting is used to limit the speed of change in extrusion rate for a transition from higher speed to lower speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s (feedrate 20 mm/s) will take at least 2 seconds.
-#  translation: Toto experimentální nastavení se používá k omezení rychlosti změny rychlosti vytlačování při přechodu z vyšší rychlosti na nižší. Hodnota 1,8 mm³/s² zajišťuje, že změna rychlosti vytlačování z 5,4 mm³/s (šířka vytlačování 0,45 mm, výška vytlačování 0,2 mm, rychlost posuvu 20 mm/s) na 1,8 mm³/s (rychlost posuvu 60 mm/s) bude trvat nejméně 2 sekundy.
-# 50   changes: This experimental setting is used to limit the speed of change in extrusion rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds.
-#  translation: Toto experimentální nastavení se používá k omezení rychlosti změny objemového průtoku. Hodnota 1,8mm³/s² zajišťuje, že změna objemového průtoku z 1,8 mm³/s (šířka extruze 0,45 mm, výška extruze 0,2 mm, rychlost posuvu 20 mm/s) na 5,4 mm³/s (rychlost posuvu 60 mm/s) potrvá nejméně 2 sekundy.
-msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from lower speed to higher speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45mm "
-"extrusion width, 0.2mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s "
-"(feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:796
+#: src/libslic3r/PrintConfig.cpp:749
 #Similar to me: This factor affects the amount of plastic for bridging. You can decrease it slightly to pull the extrudates and prevent sagging, although default settings are usually good and you should experiment with cooling (use a fan) before tweaking this.\nFor reference, the default bridge flow is (in mm3/mm): (nozzle diameter) * (nozzle diameter) * PI/4
 # 101  changes: This factor affects the amount of plastic for bridging. You can decrease it slightly to pull the extrudates and prevent sagging, although default settings are usually good and you should experiment with cooling (use a fan) before tweaking this.
 #  translation: Tato hodnota určuje množství vytlačeného plastu při vytváření mostů. Mírným snížením této hodnoty můžete předejít pronášení, i když přednastavené hodnoty jsou většinou dobré a je lepší experimentovat s chlazením (využitím ventilátoru) než s touto hodnotou.
@@ -3606,161 +1759,32 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2754
-msgid ""
-"This fan speed is enforced during all gap fill Perimeter moves\n"
-"Set to 1 to disable fan.\n"
-"Set to -1 to disable this override (Gap Fill will use default fan speed).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:757
-#Similar to me: This fan speed is enforced during all infill bridges. It won't slow down the fan if it's currently running at a higher speed.\nSet to -1 to disable this override (Internal bridges will use Bridges fan speed).\nCan be disabled by disable_fan_first_layers and increased by low layer time.
-# 81   changes: This fan speed is enforced during all infill bridges. It won't slow down the fan if it's currently running at a higher speed.\nSet to 1 to follow default speed.\nSet to -1 to disable this override (internal bridges will use Bridges fan speed).\nCan only be overriden by disable_fan_first_layers.
-#  translation: Tato rychlost ventilátoru je vynucena během všech výplňových mostů. Nezpomalí ventilátor, pokud aktuálně běží na vyšší rychlost.\nNastavte na 1, abyste dodrželi výchozí rychlost.\nNastavením na -1 toto přepsání deaktivujete (interní mosty budou používat rychlost ventilátoru mostů).\nLze přepsat pouze pomocí disable_fan_first_layers.
-# 103  changes: This fan speed is enforced during bridges and overhangs. It won't slow down the fan if it's currently running at a higher speed.\nSet to -1 to disable this override.\nCan only be overriden by disable_fan_first_layers.
+#: src/libslic3r/PrintConfig.cpp:4903
+#Similar to me: This fan speed is enforced during all support interfaces, to be able to weaken their bonding with a high fan speed.\nSet to 1 to disable the fan.\nSet to -1 to disable this override.\nCan only be overriden by disable_fan_first_layers.
+# 71   changes: This fan speed is enforced during all top fills.\nSet to 1 to disable the fan.\nSet to -1 to disable this override.\nCan only be overriden by disable_fan_first_layers.
+#  translation: Tato rychlost ventilátoru je vynucena při všech horních plněních.\nNastavením na 1 deaktivujete ventilátor.\nPokud chcete toto přepsání deaktivovat, nastavte na -1.\nLze přepsat pouze pomocí disable_fan_first_layers.
+# 81   changes: This fan speed is enforced during bridges and overhangs. It won't slow down the fan if it's currently running at a higher speed.\nSet to -1 to disable this override.\nCan only be overriden by disable_fan_first_layers.
 #  translation: Tato rychlost ventilátoru je vynucena během mostů a převisů. Nezpomalí ventilátor, pokud aktuálně běží na vyšší rychlost.\nPokud chcete toto přepsání deaktivovat, nastavte na -1.\nLze přepsat pouze pomocí disable_fan_first_layers.
-msgid ""
-"This fan speed is enforced during all infill bridges. It won't slow down the "
-"fan if it's currently running at a higher speed.\n"
-"Set to -1 to disable this override (Internal bridges will use Bridges fan "
-"speed).\n"
-"Can be disabled by disable_fan_first_layers and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3211
-msgid ""
-"This fan speed is enforced during all Internal Infill moves\n"
-"Set to 1 to disable fan.\n"
-"Set to -1 to disable this override (Internal Infill will use default fan "
-"speed).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3969
-msgid ""
-"This fan speed is enforced during all Overhang Perimeter moves\n"
-"Set to 1 to disable fan.\n"
-"Set to -1 to disable this override (Overhang Perimeter use default fan "
-"speed).\n"
-"Can be disabled by disable_fan_first_layers and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4189
-msgid ""
-"This fan speed is enforced during all Perimeter moves\n"
-"Set to 1 to disable fan.\n"
-"Set to -1 to disable this override (Internal Perimeter use default fan "
-"speed).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5046
-msgid ""
-"This fan speed is enforced during all Solid Infill moves\n"
-"Set to 1 to disable fan.\n"
-"Set to -1 to disable this override (Solid Infill will use default fan "
-"speed).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5460
-#Similar to me: This fan speed is enforced during all support interfaces, to be able to weaken their bonding with a high fan speed.\nSet to 0 to disable the fan.\nSet to -1 to disable this override (Support Interface will use Support).\nCan only be overriden by disable_fan_first_layers.
-# 107  changes: This fan speed is enforced during all infill bridges. It won't slow down the fan if it's currently running at a higher speed.\nSet to 1 to follow default speed.\nSet to -1 to disable this override (internal bridges will use Bridges fan speed).\nCan only be overriden by disable_fan_first_layers.
-#  translation: Tato rychlost ventilátoru je vynucena během všech výplňových mostů. Nezpomalí ventilátor, pokud aktuálně běží na vyšší rychlost.\nNastavte na 1, abyste dodrželi výchozí rychlost.\nNastavením na -1 toto přepsání deaktivujete (interní mosty budou používat rychlost ventilátoru mostů).\nLze přepsat pouze pomocí disable_fan_first_layers.
 msgid ""
 "This fan speed is enforced during all support interfaces, to be able to "
 "weaken their bonding with a high fan speed.\n"
-"Set to 0 to disable the fan.\n"
-"Set to -1 to disable this override (Support Interface will use Support).\n"
+"Set to 1 to disable the fan.\n"
+"Set to -1 to disable this override.\n"
 "Can only be overriden by disable_fan_first_layers."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5425
-msgid ""
-"This fan speed is enforced during all support moves\n"
-"Set to 0 to disable fan.\n"
-"Set to -1 to disable this override (Support will use default fan speed).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5885
-msgid ""
-"This fan speed is enforced during all top fills (including ironing).\n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to disable this override (Top Solid Infill will use Solid "
-"Infill).\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:744
-#Similar to me: This fan speed is enforced during bridges and overhangs. It won't slow down the fan if it's currently running at a higher speed.\nSet to -1 to disable this override (Bridges will use default fan speed).\nCan be disabled by disable_fan_first_layers and increased by low layer time.
-# 79   changes: This fan speed is enforced during bridges and overhangs. It won't slow down the fan if it's currently running at a higher speed.\nSet to -1 to disable this override.\nCan only be overriden by disable_fan_first_layers.
-#  translation: Tato rychlost ventilátoru je vynucena během mostů a převisů. Nezpomalí ventilátor, pokud aktuálně běží na vyšší rychlost.\nPokud chcete toto přepsání deaktivovat, nastavte na -1.\nLze přepsat pouze pomocí disable_fan_first_layers.
-msgid ""
-"This fan speed is enforced during bridges and overhangs. It won't slow down "
-"the fan if it's currently running at a higher speed.\n"
-"Set to -1 to disable this override (Bridges will use default fan speed).\n"
-"Can be disabled by disable_fan_first_layers and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5093
-#Similar to me: This feature will raise Z gradually while printing a single-walled object in order to remove any visible seam. This option requires no infill, no top solid layers and no support material. You can still set any number of bottom solid layers as well as skirt/brim loops. After the bottom solid layers, the number of perimeters is enforce to 1.It won't work when printing more than one single object.
-# 92   changes: This feature will raise Z gradually while printing a single-walled object in order to remove any visible seam. This option requires a single perimeter, no infill, no top solid layers and no support material. You can still set any number of bottom solid layers as well as skirt/brim loops. It won't work when printing more than one single object.
-#  translation: Tato funkce zvýší postupně Z při tisku jednovrstvého objektu, aby se odstranil jakýkoli viditelný šev. Tato volba vyžaduje jediný perimetr, žádnou výplň, žádné vrchní plné vrstvy a žádný podpůrný materiál. Můžete stále nastavit libovolný počet spodních plných vrstev, stejně jako obrysové smyčky / límec. Při tisku více než jednoho samostatného objektu nebude toto nastavení fungovat.
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires no infill, no top "
-"solid layers and no support material. You can still set any number of bottom "
-"solid layers as well as skirt/brim loops. After the bottom solid layers, the "
-"number of perimeters is enforce to 1.It won't work when printing more than "
-"one single object."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6084
+#: src/libslic3r/PrintConfig.cpp:5498
 msgid ""
 "This flag will wipe the nozzle a bit inward after extruding an external "
 "perimeter. The wipe_extra_perimeter is executed first, then this move inward "
 "before the retraction wipe. Note that the retraction wipe will follow the "
 "exact external perimeter (center) line if this parameter is disabled, and "
-"will follow the inner side of the external perimeter line if enabled"
+"will follow the inner side of the external periemter line if enabled"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5159
-msgid ""
-"This G-code will be used as a code for the color change If empty, the "
-"default color change print command for the selected G-code flavor will be "
-"used (if any)."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5169
-msgid ""
-"This G-code will be used as a code for the pause print. If empty, the "
-"default pause print command for the selected G-code flavor will be used (if "
-"any)."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1211
+#: src/libslic3r/PrintConfig.cpp:1148
 #Similar to me: This is the acceleration your printer will be reset to after the role-specific acceleration values are used (perimeter/infill). \nAccelerations from the left column can also be expressed as a percentage of this value.\nThis can be expressed as a percentage (for example: 80%) over the machine Max Acceleration for X axis.\nSet zero to prevent resetting acceleration at all.
 # 137  changes: This is the acceleration your printer will be reset to after the role-specific acceleration values are used (perimeter/infill). \nYou can set it as a % of the max of the X machine acceleration limit.\nSet zero to prevent resetting acceleration at all.
 #  translation: Toto je zrychlení, na které bude vaše tiskárna resetována po použití hodnot zrychlení specifických pro roli (perimetr/výplň). \nMůžete to nastavit jako % z maxima limitu zrychlení X stroje.\nNastavte nulu, abyste vůbec zabránili resetování zrychlení.
@@ -3775,7 +1799,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:705
+#: src/libslic3r/PrintConfig.cpp:657
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for bridges.\nCan be a % of the default acceleration\nSet zero to use default acceleration for bridges.
 # 28   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3791,7 +1815,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:928
+#: src/libslic3r/PrintConfig.cpp:872
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for brim and skirt. \nCan be a % of the support acceleration\nSet zero to use support acceleration.
 # 47   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3807,7 +1831,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1585
+#: src/libslic3r/PrintConfig.cpp:1471
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for external perimeters. \nCan be a % of the internal perimeter acceleration\nSet zero to use internal perimeter acceleration for external perimeters.
 # 54   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -3823,7 +1847,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2524
+#: src/libslic3r/PrintConfig.cpp:2371
 #Similar to me: This is the acceleration your printer will use for first layer of object above raft interface.\nIf set to %, all accelerations will be reduced by that ratio.\nSet zero to disable acceleration control for first layer of object above raft interface.
 # 64   changes: This is the acceleration your printer will use for first layer of object above raft interface. Set zero to disable acceleration control for first layer of object above raft interface.
 #  translation: Toto je zrychlení, které tiskárna použije pro první vrstvu objektu nad raftem. Nastavením nuly vypnete řízení zrychlení pro první vrstvu objektu nad raftem.
@@ -3836,7 +1860,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2729
+#: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: This is the acceleration your printer will use for gap fills. \nThis can be expressed as a percentage over the perimeter acceleration.\nSet zero to use perimeter acceleration for gap fills.
 # 69   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
 #  translation: Toto je zrychlení, které tiskárna použije pro vyplnění.\nMůže být % výchozího zrychlení\nNastavte nulu pro deaktivaci ovládání zrychlení pro výplň.
@@ -3847,7 +1871,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:719
+#: src/libslic3r/PrintConfig.cpp:671
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for internal bridges. \nCan be a % of the default acceleration\nSet zero to use bridge acceleration for internal bridges.
 # 37   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3863,7 +1887,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4099
+#: src/libslic3r/PrintConfig.cpp:3795
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for internal perimeters. \nCan be a % of the default acceleration\nSet zero to use default acceleration for internal perimeters.
 # 28   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -3879,7 +1903,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3309
+#: src/libslic3r/PrintConfig.cpp:3037
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for ironing. \nCan be a % of the top solid infill acceleration\nSet zero to use top solid infill acceleration for ironing.
 # 49   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3895,7 +1919,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3956
+#: src/libslic3r/PrintConfig.cpp:3681
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for overhangs.\nCan be a % of the bridge acceleration\nSet zero to to use bridge acceleration for overhangs.
 # 40   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3911,7 +1935,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5213
+#: src/libslic3r/PrintConfig.cpp:4700
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for solid infills. \nCan be a % of the default acceleration\nSet zero to use default acceleration for solid infills.
 # 25   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3927,7 +1951,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2963
+#: src/libslic3r/PrintConfig.cpp:2735
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for Sparse infill.\nCan be a % of the solid infill acceleration\nSet zero to use solid infill acceleration for infill.
 # 38   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3943,7 +1967,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5276
+#: src/libslic3r/PrintConfig.cpp:4763
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for support material interfaces. \nCan be a % of the support material acceleration\nSet zero to use support acceleration for support material interfaces.
 # 65   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -3960,7 +1984,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5254
+#: src/libslic3r/PrintConfig.cpp:4741
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for support material. \nCan be a % of the default acceleration\nSet zero to use default acceleration for support material.
 # 34   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -3976,7 +2000,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5788
+#: src/libslic3r/PrintConfig.cpp:5203
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for thin walls. \nCan be a % of the external perimeter acceleration\nSet zero to use external perimeter acceleration for thin walls.
 # 55   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -3992,7 +2016,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5933
+#: src/libslic3r/PrintConfig.cpp:5347
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for top solid infills. \nCan be a % of the solid infill acceleration\nSet zero to use solid infill acceleration for top solid infills.
 # 45   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4008,7 +2032,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1820
+#: src/libslic3r/PrintConfig.cpp:1704
 #Similar to me: This is the DEFAULT extrusion width. It's ONLY used to REPLACE 0-width fields. It's useless when all other width fields have a value.\nSet this to a non-zero value to allow a manual extrusion width. If left to zero, Slic3r derives extrusion widths from the nozzle diameter (see the tooltips for perimeter extrusion width, infill extrusion width etc). If expressed as percentage (for example: 105%), it will be computed over nozzle diameter.\nYou can set either 'Spacing', or 'Width'; the other will be calculated, using the perimeter 'Overlap' percentages and default layer height.
 # 2    changes: This is the DEFAULT extrusion width. It's ONLY used to REPLACE 0-width fields. It's useless when all other width fields have a value.Set this to a non-zero value to allow a manual extrusion width. If left to zero, Slic3r derives extrusion widths from the nozzle diameter (see the tooltips for perimeter extrusion width, infill extrusion width etc). If expressed as percentage (for example: 105%), it will be computed over nozzle diameter.\nYou can set either 'Spacing', or 'Width'; the other will be calculated, using the perimeter 'Overlap' percentages and default layer height.
 #  translation: Toto je VÝCHOZÍ šířka vysunutí. Používá se POUZE k NAHRAZENÍ polí o šířce 0. Je to k ničemu, když všechna ostatní pole šířky mají hodnotu. Nastavte tuto hodnotu na nenulovou hodnotu, abyste povolili šířku ručního vysunutí. Pokud je ponecháno na nule, Slic3r odvozuje šířky vytlačování z průměru trysky (viz popisky pro šířku vysunutí po perimetru, šířku vysunutí výplně atd.). Pokud je vyjádřena v procentech (například: 105 %), bude vypočítána přes průměr trysky.\nMůžete nastavit buď 'Spacing', nebo 'Width'; druhá bude vypočítána pomocí procent 'překrytí' perimetru a výchozí výšky vrstvy.
@@ -4025,7 +2049,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2511
+#: src/libslic3r/PrintConfig.cpp:2358
 #Similar to me: This is the maximum acceleration your printer will use for first layer.\nIf set to %, all accelerations will be reduced by that ratio.\nSet zero to disable acceleration control for first layer.
 # 52   changes: This is the acceleration your printer will use for first layer.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for first layer.
 #  translation: Toto je zrychlení, které tiskárna použije pro první vrstvu.\nMůže být % výchozího zrychlení\nNastavte nulu pro deaktivaci ovládání zrychlení pro první vrstvu.
@@ -4040,7 +2064,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1257
+#: src/libslic3r/PrintConfig.cpp:1178
 msgid ""
 "This is the reference speed that other 'main' speed can reference to by a "
 "%.\n"
@@ -4052,7 +2076,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:977
+#: src/libslic3r/PrintConfig.cpp:922
 #Similar to me: This separate setting will affect the speed of brim and skirt. \nIf expressed as percentage (for example: 80%) it will be calculated over the Support speed setting.\nSet zero to use autospeed for this feature.
 # 74   changes: This separate setting will affect the speed of external perimeters (the visible ones). If expressed as percentage (for example: 80%) it will be calculated on the perimeters speed setting above. Set to zero for auto.
 #  translation: Toto oddělené nastavení ovlivní rychlost tisku vnějších perimetrů (těch viditelných). Pokud je hodnota vyjádřena procenty (například: 80%), bude rychlost vypočítána z hodnoty rychlosti tisku perimetrů, nastavené výše. Nastavte nulu pro automatický výpočet.
@@ -4068,7 +2092,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1599
+#: src/libslic3r/PrintConfig.cpp:1485
 #Similar to me: This separate setting will affect the speed of external perimeters (the visible ones). \nIf expressed as percentage (for example: 80%) it will be calculated over the Internal Perimeters speed setting.\nSet zero to use autospeed for this feature.
 # 45   changes: This separate setting will affect the speed of external perimeters (the visible ones). If expressed as percentage (for example: 80%) it will be calculated on the perimeters speed setting above. Set to zero for auto.
 #  translation: Toto oddělené nastavení ovlivní rychlost tisku vnějších perimetrů (těch viditelných). Pokud je hodnota vyjádřena procenty (například: 80%), bude rychlost vypočítána z hodnoty rychlosti tisku perimetrů, nastavené výše. Nastavte nulu pro automatický výpočet.
@@ -4085,7 +2109,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4919
+#: src/libslic3r/PrintConfig.cpp:4436
 #Similar to me: This separate setting will affect the speed of perimeters having radius <= 6.5mm (usually holes).\nIf expressed as percentage (for example: 80%) it will be calculated on the Internal Perimeters speed setting above.\nSet zero to disable.
 # 12   changes: This separate setting will affect the speed of perimeters having radius <= 6.5mm (usually holes). If expressed as percentage (for example: 80%) it will be calculated on the perimeters speed setting above.\nSet zero to disable.
 #  translation: Toto samostatné nastavení ovlivní rychlost perimetrů s poloměrem <= 6,5 mm (obvykle otvory). Pokud je vyjádřeno v procentech (například: 80%), bude vypočítáno podle výše uvedeného nastavení rychlosti perimetrů.\nNastavit nulu pro zakázání.
@@ -4102,7 +2126,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:770
+#: src/libslic3r/PrintConfig.cpp:723
 msgid ""
 "This setting allow you to choose the base for the bridge flow compute, the "
 "result will be multiplied by the bridge flow to have the final result.\n"
@@ -4125,21 +2149,34 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5854
+#: src/libslic3r/PrintConfig.cpp:3430
+#, possible-c-format, possible-boost-format
+msgid ""
+"This setting allow you to set the desired flow rate for the autospeed "
+"algorithm. It tries to keep a constant feedrate for the entire object.\n"
+"The autospeed is only enable on speed field that have a value of 0. If a "
+"speed field is a % of a 0 field, then it will be a % of the value it should "
+"have got from the autospeed.\n"
+"If this field is set to 0, then there is no autospeed. If a speed value i "
+"still set to 0, it will get the max speed"
+msgstr ""
+
+
+#: src/libslic3r/PrintConfig.cpp:5268
 msgid ""
 "This setting allows you to modify the time estimation by a flat amount for "
 "each toolchange."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5845
+#: src/libslic3r/PrintConfig.cpp:5259
 msgid ""
 "This setting allows you to modify the time estimation by a flat amount to "
 "compensate for start script, the homing routine, and other things."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4968
+#: src/libslic3r/PrintConfig.cpp:4485
 #, possible-c-format, possible-boost-format
 msgid ""
 "This setting allows you to reduce the overlap between the lines of the solid "
@@ -4150,7 +2187,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1573
+#: src/libslic3r/PrintConfig.cpp:1459
 #, possible-c-format
 #Similar to me: This setting allows you to reduce the overlap between the perimeters and the external one, to reduce the impact of the perimeters' artifacts. 100% means that no gap is left, and 0% means that the external perimeter isn't contributing to the overlap with the 'inner' one.
 # 106  changes: This setting allows you to reduce the overlap between the perimeters and the external one, to reduce the impact of the perimeters' artifacts. 100% means that no gap is left, and 0% means that the external perimeter isn't contributing to the overlap with the 'inner' one.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -4163,7 +2200,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2833
+#: src/libslic3r/PrintConfig.cpp:2613
 #, possible-c-format
 #Similar to me: This setting allows you to reduce the overlap between the perimeters and the gap fill. 100% means that no gaps are left, and 0% means that the gap fill won't touch the perimeters.\nMay be useful if you can see the gapfill on the exterrnal surface, to reduce that artifact.
 # 79   changes: This setting allows you to reduce the overlap between the perimeters and the gap fill. 100% means that no gaps are left, and 0% means that the gap fill won't touch the perimeters.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -4177,104 +2214,19 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5827
+#: src/libslic3r/PrintConfig.cpp:5241
 msgid ""
 "This setting allows you to set how much an hour of printing time is costing "
 "you in printer maintenance, loan, human albor, etc."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3702
-#, possible-c-format, possible-boost-format
-msgid ""
-"This setting allows you to set the maximum flowrate for your print, and so "
-"cap the desired flow rate for the autospeed algorithm. The autospeed tries "
-"to keep a constant feedrate for the entire object, and so can lower the "
-"volumetric speed for some features.\n"
-"The autospeed is only enable on speed fields that have a value of 0. If a "
-"speed field is a % of a 0 field, then it will be a % of the value it should "
-"have got from the autospeed.\n"
-"If this field is set to 0, then there is no autospeed nor maximum flowrate. "
-"If a speed value i still set to 0, it will get the max speed allwoed by the "
-"printer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4113
-#Similar to me: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nNote: it needs the external and perimeter overlap to be at 100% and to print the external perimeter first.
-# 84   changes: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
-#  translation: Toto nastavení může mírně zhoršit kvalitu vašeho vnějšího perimetru výměnou za lepší spojení mezi perimetry. Použijte jej, pokud máte velké potíže s lepením po perimetru, například s vysokoteplotními vlákny.\nToto procento je % překrytí mezi perimetry, trochu jako perimeter_overlap a external_perimeter_overlap, ale obráceně. Musíte nastavit perimeter_overlap a external_perimeter_overlap na 100 %, jinak toto nastavení nemá žádný vliv. 0: žádný účinek, 50 %: polovina tryska bude při vytlačování nové přes již vytlačený perimetr, pokud se nejedná o externí).\nJe to velmi experimentální, prosím podejte zprávu o užitečnosti. Může být odstraněno, pokud pro to není k ničemu.
-msgid ""
-"This setting may slightly degrade the quality of your external perimeter, in "
-"exchange for a better bonding between perimeters.Use it if you have great "
-"difficulties with perimeter bonding, for example with high temperature "
-"filaments.\n"
-"This percentage is the % of overlap between perimeters, a bit like "
-"perimeter_overlap and external_perimeter_overlap, but in reverse. You have "
-"to set perimeter_overlap and external_perimeter_overlap to 100%, or this "
-"setting has no effect. 0: no effect, 50%: half of the nozzle will be over an "
-"already extruded perimeter while extruding a new one, unless it's an "
-"external one).\n"
-"Note: it needs the external and perimeter overlap to be at 100% and to print "
-"the external perimeter first."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2789
-#, possible-c-format, possible-boost-format
-#Similar to me: This setting represents the maximum width of a gapfill. Points wider than this threshold won't be created.\nCan be a % of the perimeter width\n0 to auto
-# 56   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
-#  translation: Toto nastavení představuje minimální mm² pro vytvoření vytlačování s výplní mezer.\nMůže být % z (šířky perimetru)²
-msgid ""
-"This setting represents the maximum width of a gapfill. Points wider than "
-"this threshold won't be created.\n"
-"Can be a % of the perimeter width\n"
-"0 to auto"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4321
-#Similar to me: This setting represents the minimum fan speed (like minimum PWM) your fan needs to work.
-# 25   changes: This setting represents the minimum PWM your fan needs to work.
-#  translation: Toto nastavení představuje minimální hodnotu PWM, kterou ventilátor potřebuje, aby pracoval.
-msgid ""
-"This setting represents the minimum fan speed (like minimum PWM) your fan "
-"needs to work."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2811
-#, possible-c-format, possible-boost-format
-#Similar to me: This setting represents the minimum mm for a gapfill extrusion to be extruded.\nCan be a % of the perimeter width\n0 to auto
-# 22   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
-#  translation: Toto nastavení představuje minimální mm² pro vytvoření vytlačování s výplní mezer.\nMůže být % z (šířky perimetru)²
-msgid ""
-"This setting represents the minimum mm for a gapfill extrusion to be "
-"extruded.\n"
-"Can be a % of the perimeter width\n"
-"0 to auto"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2822
-#, possible-c-format, possible-boost-format
-#Similar to me: This setting represents the minimum width of a gapfill. Points thinner than this threshold won't be created.\nCan be a % of the perimeter width\n0 to auto
-# 56   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
-#  translation: Toto nastavení představuje minimální mm² pro vytvoření vytlačování s výplní mezer.\nMůže být % z (šířky perimetru)²
-msgid ""
-"This setting represents the minimum width of a gapfill. Points thinner than "
-"this threshold won't be created.\n"
-"Can be a % of the perimeter width\n"
-"0 to auto"
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:878
+#: src/slic3r/GUI/Preferences.cpp:825
 msgid "This template will be used for drawing button text on hover."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:9603
+#: src/libslic3r/PrintConfig.cpp:8462
 #Similar to me: This version of Slic3r may not understand configurations produced by the newest Slic3r versions. For example, newer Slic3r may extend the list of supported firmware flavors. One may decide to bail out or to substitute an unknown value with a default silently or verbosely.
 # 4    changes: This version of Slic3r may not understand configurations produced by newest Slic3r versions. For example, newer Slic3r may extend the list of supported firmware flavors. One may decide to bail out or to substitute an unknown value with a default silently or verbosely.
 #  translation: Tato verze Slic3r nemusí rozumět konfiguracím vytvořeným nejnovějšími verzemi Slic3r. Například novější Slic3r může rozšířit seznam podporovaných variant firmwaru. Člověk se může rozhodnout vykoupit nebo nahradit neznámou hodnotu výchozím potichu nebo podrobně.
@@ -4288,40 +2240,22 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5825
+#: src/libslic3r/PrintConfig.cpp:5239
 msgid "Time cost"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5843
+#: src/libslic3r/PrintConfig.cpp:5257
 msgid "Time for start custom gcode"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5852
+#: src/libslic3r/PrintConfig.cpp:5266
 msgid "Time for toolchange"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4717
-#, possible-c-format, possible-boost-format
-msgid ""
-"To avoid visible seam, the extrusion can be stoppped a bit before the end of "
-"the loop.\n"
-" this setting is enforced only for external perimeter. It overrides "
-"'seam_gap' if different than 0\n"
-"Can be a mm or a % of the current seam gap."
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:455
-msgid ""
-"To use a client cert on MacOS, you might need to add your certificate to "
-"your keychain and make sure it's trusted."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1352
+#: src/libslic3r/PrintConfig.cpp:1273
 #Similar to me: Top fill Pattern
 # 1    changes: Top fill pattern
 #  translation: Vzor výplně horní vrstvy
@@ -4344,7 +2278,7 @@ msgid "Top infill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5931
+#: src/libslic3r/PrintConfig.cpp:5345
 #Similar to me: Top solid acceleration
 # 7    changes: Travel acceleration
 #  translation: Cestovní zrychlení
@@ -4356,40 +2290,12 @@ msgid "Top solid acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5883
-#Similar to me: Top Solid fan speed
-# 5    changes: Top solid speed
-#  translation: Nejvyšší plná rychlost
-# 6    changes: Top fan speed
-#  translation: Nejvyšší rychlost ventilátoru
-msgid "Top Solid fan speed"
-msgstr ""
-
-
-#: src/slic3r/GUI/PresetHints.cpp:134 src/slic3r/GUI/PresetHints.cpp:195
-#Similar to me: Top surfaces
-# 3    changes: On surfaces
-#  translation: Na površích
-# 4    changes: Min surface
-#  translation: Min povrch
-# 4    changes: On top surfaces
-#  translation: Na horních plochách
-msgid "Top surfaces"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6933
+#: src/libslic3r/PrintConfig.cpp:6196
 msgid "Tough"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI.cpp:233
-#, possible-boost-format
-msgid "Unknow setting: <b>%1%</b>"
-msgstr ""
-
-
-#: src/slic3r/GUI/Tab.cpp:5337
+#: src/slic3r/GUI/Tab.cpp:4916
 #Similar to me: UNLOCKED LOCK icon indicates that the values this widget control were changed and at least one is not equal to the system (or default) value.\nClick to reset current all values to the system (or default) values.
 # 43   changes: UNLOCKED LOCK icon indicates that the value was changed and is not equal to the system (or default) value.\nClick to reset current value to the system (or default) value.
 #  translation: Ikona ODEMKNUTÉHO ZÁMKU indikuje, že se hodnota změnila a není shodná se systémovou (nebo výchozí) hodnotou.\nKlikněte pro reset současné hodnoty na systémovou hodnotu.
@@ -4400,66 +2306,8 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/GCodeViewer.cpp:4357
-msgid "Use log scale"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5998
+#: src/libslic3r/PrintConfig.cpp:5412
 msgid "Use target acceleration for travel deceleration"
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:422
-msgid "Use this option to enable 2-way ssl authentication with you printer."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5313
-#Similar to me: Use this setting to rotate the support material pattern by 90° at this height (in mm). Set 0 to disable.
-# 37   changes: Use this setting to rotate the support material pattern on the horizontal plane.
-#  translation: Toto nastavení použijte pro horizontální otočení vzoru.
-msgid ""
-"Use this setting to rotate the support material pattern by 90° at this "
-"height (in mm). Set 0 to disable."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:5440
-#Similar to me: Use this setting to rotate the support material pattern on the horizontal plane.\n0 to use the support_material_angle.
-# 38   changes: Use this setting to rotate the support material pattern on the horizontal plane.
-#  translation: Toto nastavení použijte pro horizontální otočení vzoru.
-msgid ""
-"Use this setting to rotate the support material pattern on the horizontal "
-"plane.\n"
-"0 to use the support_material_angle."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4795
-msgid "use visibility check"
-msgstr ""
-
-
-#: src/libslic3r/GCode.cpp:2804
-msgid ""
-"Using a color change gcode, but there isn't one for this printer.\n"
-"The printer won't stop for the filament change, unless you set it manually "
-"in the custom gcode section."
-msgstr ""
-
-
-#: src/libslic3r/GCode.cpp:2823
-msgid ""
-"Using a pause gcode, but there isn't one for this printer.\n"
-"The printer won't pause, unless you set it manually in the custom gcode "
-"section."
-msgstr ""
-
-
-#: src/slic3r/GUI/GUI.cpp:234
-#, possible-boost-format
-msgid "value: %1%"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l4
@@ -4469,69 +2317,18 @@ msgstr ""
 msgid "Wall Thickness"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui
-msgid "Wall Transition"
-msgstr ""
 
-
-#: src/slic3r/GUI/FreeCADDialog.cpp:256
+#: src/slic3r/GUI/FreeCADDialog.cpp:255
 #Similar to me: What to do with the result? insert it into the existing platter or replacing the current platter by a new one?
 # 2    changes: What to do with the result? insert it into the existing plater or replacing the current plater by a new one?
-#  translation: Co dělat s výsledkem? přidat jej ke stávajícímu obsahu podložky nebo nahradit stávající obsah za nový?
+#  translation: Co dělat s výsledkem? přidat jej ke stávajícimu obsahu podložky nebo nahradit obsah podložky za nový?
 msgid ""
 "What to do with the result? insert it into the existing platter or replacing "
 "the current platter by a new one?"
 msgstr ""
 
 
-#: src/slic3r/GUI/Preferences.cpp:322
-msgid ""
-"When loading a configuration, if it's coming from an earlier, a future or "
-"from another software, show the ignored settings that deosn't suit this "
-"version. Uncheck to remove this anoying pop-up."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1086
-msgid ""
-"When multiple objects are present, instead of jumping form one to another at "
-"each layer the printer will continue to print the current object layers up "
-"to this height before moving to the next object. (first layers will be still "
-"printed one by one).\n"
-"This feature also use the same extruder clearance radius field as 'complete "
-"individual objects' (complete_objects), but you can modify them to instead "
-"reflect the clerance of the nozzle, if this field reflect the z-clearance of "
-"it.\n"
-"This field is exclusive with 'complete individual "
-"objects' (complete_objects). Set to 0 to deactivate."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2859
-msgid ""
-"When printing the gcode file, replace any non-ascii character by a '_'. Can "
-"be useful if the firmware or a software in a workflow doesn't support uft-8."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:1556
-#Similar to me: When set to a non-zero value this fan speed is used only for external perimeters (visible ones) and thin walls.\nSet to 1 to disable the fan.\nSet to -1 to use the normal fan speed on external perimeters.External perimeters can benefit from higher fan speed to improve surface finish, while internal perimeters, infill, etc. benefit from lower fan speed to improve layer adhesion.\nCan be disabled by disable_fan_first_layers, slowed down by full_fan_speed_layer and increased by low layer time.
-# 130  changes: When set to a non-zero value this fan speed is used only for external perimeters (visible ones). \nSet to 1 to disable the fan.\nSet to -1 to use the normal fan speed on external perimeters.External perimeters can benefit from higher fan speed to improve surface finish, while internal perimeters, infill, etc. benefit from lower fan speed to improve layer adhesion.
-#  translation: Při nastavení na nenulovou hodnotu se tato rychlost ventilátoru používá pouze pro vnější perimetry (viditelné). \nNastavením na 1 deaktivujete ventilátor.\nNastavte na -1 pro použití normální rychlosti ventilátoru na vnějších perimetrech. Externí perimetry mohou těžit z vyšší rychlosti ventilátoru pro zlepšení povrchové úpravy, zatímco vnitřní perimetry, výplň atd. těží z nižší rychlosti ventilátoru pro zlepšení adheze vrstvy.
-msgid ""
-"When set to a non-zero value this fan speed is used only for external "
-"perimeters (visible ones) and thin walls.\n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to use the normal fan speed on external perimeters.External "
-"perimeters can benefit from higher fan speed to improve surface finish, "
-"while internal perimeters, infill, etc. benefit from lower fan speed to "
-"improve layer adhesion.\n"
-"Can be disabled by disable_fan_first_layers, slowed down by "
-"full_fan_speed_layer and increased by low layer time."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:3674
+#: src/libslic3r/PrintConfig.cpp:3402
 #Similar to me: When setting other speed settings to 0, Slic3r will autocalculate the optimal speed in order to keep constant extruder pressure. This experimental setting is used to set the highest print speed you want to allow.\nThis can be expressed as a percentage (for example: 100%) over the machine Max Feedrate for X axis.
 # 101  changes: When setting other speed settings to 0, Slic3r will autocalculate the optimal speed in order to keep constant extruder pressure. This experimental setting is used to set the highest print speed you want to allow.
 #  translation: Při nastavení dalších nastavení rychlosti na 0 Slic3r automaticky vypočítá optimální rychlost, aby byl zachován konstantní tlak extrudéru. Toto experimentální nastavení se používá k nastavení nejvyšší rychlosti tisku, kterou chcete povolit.
@@ -4546,42 +2343,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6424
-#Similar to me: When transitioning between different numbers of perimeters as the part becomesthinner, a certain amount of space is allotted to split or join the perimeter segments. If expressed as a percentage (for example 100%), it will be computed based on the nozzle diameter.
-# 1    changes: When transitioning between different numbers of perimeters as the part becomes thinner, a certain amount of space is allotted to split or join the perimeter segments. If expressed as a percentage (for example 100%), it will be computed based on the nozzle diameter.
-#  translation: Při přechodu mezi různými počty perimetrů se ztenčujícím se dílem, je vyhrazen určitý prostor pro rozdělení nebo spojení perimetrů. Pokud je vyjádřeno v procentech (například 100%), bude vypočítáno na základě průměru trysky.
-msgid ""
-"When transitioning between different numbers of perimeters as the part "
-"becomesthinner, a certain amount of space is allotted to split or join the "
-"perimeter segments. If expressed as a percentage (for example 100%), it will "
-"be computed based on the nozzle diameter."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:639
-msgid ""
-"When using 'Avoid crossing perimeters', consider the top surfaces as a void, "
-"to avoid travelling over them if possible."
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:601
-#, possible-c-format, possible-boost-format
-msgid ""
-"When using the arc_fitting option, allow the curve to deviate a cetain "
-"% from the collection of strait paths.\n"
-"Can be a mm value or a percentage of the current extrusion width."
-msgstr ""
-
-
-#: src/slic3r/GUI/Preferences.cpp:393
+#: src/slic3r/GUI/Preferences.cpp:376
 msgid ""
 "When you click on the garbage can (or ctrl+del), ask for the action to do. "
 "If disable, it will erase all object without asking"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5340
+#: src/slic3r/GUI/Tab.cpp:4919
 #Similar to me: WHITE BULLET icon indicates that the values this widget control are all the same as in the last saved preset.
 # 26   changes: WHITE BULLET icon indicates that the value is the same as in the last saved preset.
 #  translation: Ikona BÍLÉ TEČKY indikuje, že je hodnota shodná s naposledy uloženým přednastavením.
@@ -4590,61 +2359,13 @@ msgid ""
 "same as in the last saved preset."
 msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:6484
-#Similar to me: Width of the perimeter that will replace thin features (according to the Minimum feature size) of the model. If the Minimum perimeter width is thinner than the thickness of the feature, the perimeter will become as thick as the feature itself. If expressed as percentage (for example 85%), it will be computed over nozzle diameter.
-# 13   changes: Width of the perimeter that will replace thin features (according to the Minimum feature size) of the model. If the Minimum perimeter width is thinner than the thickness of the feature, the perimeter will become as thick as the feature itself. If expressed as a percentage (for example 85%), it will be computed based on the nozzle diameter.
-#  translation: Šířka perimetru, který nahradí tenké prvky (podle minimální velikosti prvku) modelu. Pokud je minimální šířka perimetru tenčí než tloušťka prvku, bude perimetr stejně tlustý jako samotný prvek. Je-li vyjádřené procentuálně (například 85%), bude vypočteno v závislosti na průměru trysky.
-msgid ""
-"Width of the perimeter that will replace thin features (according to the "
-"Minimum feature size) of the model. If the Minimum perimeter width is "
-"thinner than the thickness of the feature, the perimeter will become as "
-"thick as the feature itself. If expressed as percentage (for example 85%), "
-"it will be computed over nozzle diameter."
-msgstr ""
-
 #: ../../ui_layout/default/extruder.ui
 msgid "Wipe inside"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6082
-msgid "Wipe inside at end"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6073
+#: src/libslic3r/PrintConfig.cpp:5487 src/libslic3r/PrintConfig.cpp:5496
 msgid "Wipe inside at start"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6129
-#Similar to me: Wipe Tower Speed
-# 6    changes: Wipe Tower
-#  translation: Čistící Věž
-# 6    changes: Wipe tower Width
-#  translation: Čistící věž Šířka
-# 6    changes: Wipe tower X
-#  translation: Čistící věž X
-msgid "Wipe Tower Speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:6138
-#Similar to me: Wipe tower starting speed
-# 10   changes: Wipe tower rotation angle
-#  translation: Úhel natočení čistící věže
-msgid "Wipe tower starting speed"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:426
-msgid "Write the thumbnail type in gcode."
-msgstr ""
-
-
-#: src/libslic3r/ExtrusionEntity.cpp:413
-msgid "WTower"
 msgstr ""
 
 #: ../../ui_layout/default/printer_sla.ui : l9
@@ -4656,7 +2377,7 @@ msgid "Y"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:1121
+#: src/slic3r/GUI/GUI_App.cpp:1082
 #, possible-c-format, possible-boost-format
 #Similar to me: You are running a 32 bit build of %s on 64-bit Windows.\n32 bit build of %s will likely not be able to utilize all the RAM available in the system.\nPlease download and install a 64 bit build of %s.\nDo you wish to continue?
 # 71   changes: You are running a 32 bit build of PrusaSlicer on 64-bit Windows.\n32 bit build of PrusaSlicer will likely not be able to utilize all the RAM available in the system.\nPlease download and install a 64 bit build of PrusaSlicer from https://www.prusa3d.cz/prusaslicer/.\nDo you wish to continue?
@@ -4670,66 +2391,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1891
-#Similar to me: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. The variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese variables will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert everything to strings.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
-# 1    changes: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. The variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese variables will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert evrything to strings.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
-#  translation: Můžete přidat data přístupná pro vlastní makra gcode.\nKaždý řádek může definovat jednu proměnnou.\nFormát je 'název_proměnné=hodnota'. Název proměnné by měl mít pouze [a-zA-Z0-9] znaky nebo '_'.\nHodnota, kterou lze analyzovat jako int nebo float, bude k dispozici jako číselná hodnota.\nHodnota, která je uzavřena do dvojitých uvozovek, bude k dispozici jako řetězec (bez uvozovky)\nHodnota, která nabývá pouze hodnot 'true' nebo 'false', bude logická)\nKaždá další hodnota bude analyzována jako řetězec tak, jak je.\nTyto proměnné budou dostupné jako pole ve vlastním gcode (jedna položka na extruder), nezapomeňte je použít s indexem {current_extruder}, abyste získali aktuální hodnota. Pokud má vlákno v proměnné překlep, který mění jeho typ, pak analyzátor převede vše na řetězce.\nRada: před použitím proměnné je bezpečnější použít funkci'default_XXX(název_proměnné, výchozí_hodnota)' (uzavřeno v závorce, protože se jedná o skript) v případě, že není nastaven. XXX můžete nahradit výrazem 'int' 'bool' 'double' 'řetězec'.
-# 293  changes: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. the variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
-#  translation: Můžete přidat data přístupná pro vlastní makra gcode.\nKaždý řádek může definovat jednu proměnnou.\nFormát je 'název_proměnné=hodnota'. Název proměnné by měl mít pouze [a-zA-Z0-9] znaky nebo '_'.\nHodnota, kterou lze analyzovat jako int nebo float, bude k dispozici jako číselná hodnota.\nHodnota, která je uzavřena do dvojitých uvozovek, bude k dispozici jako řetězec (bez uvozovky)\nHodnota, která nabývá pouze hodnot 'true' nebo 'false', bude logická)\nKaždá další hodnota bude analyzována jako řetězec tak, jak je.\nRada: před použitím proměnné je bezpečnější použít funkci'default_XXX(název_proměnné, výchozí_hodnota)' (uzavřeno v závorce, protože se jedná o skript) v případě, že není nastaven. XXX můžete nahradit výrazem 'int' 'bool' 'double' 'řetězec'.
-msgid ""
-"You can add data accessible to custom-gcode macros.\n"
-"Each line can define one variable.\n"
-"The format is 'variable_name=value'. The variable name should only have [a-"
-"zA-Z0-9] characters or '_'.\n"
-"A value that can be parsed as a int or float will be avaible as a numeric "
-"value.\n"
-"A value that is enclosed by double-quotes will be available as a string "
-"(without the quotes)\n"
-"A value that only takes values as 'true' or 'false' will be a boolean)\n"
-"Every other value will be parsed as a string as-is.\n"
-"These variables will be available as an array in the custom gcode (one item "
-"per extruder), don't forget to use them with the {current_extruder} index to "
-"get the current value. If a filament has a typo on the variable that change "
-"its type, then the parser will convert everything to strings.\n"
-"Advice: before using a variable, it's safer to use the function "
-"'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a "
-"script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' "
-"'string'."
-msgstr ""
-
-
-#: src/slic3r/GUI/CalibrationFirstLayerDialog.cpp:39
-#: src/slic3r/GUI/CalibrationFirstLayerDialog.cpp:48
-#: src/slic3r/GUI/CalibrationWallsDialog.cpp:30
-#Similar to me: You can choose the size of the cube. It's a simple scale, you can modify it in the right panel yourself if you prefer. It's just quicker to select it here.
-# 7    changes: You can choose the dimension of the cube. It's a simple scale, you can modify it in the right panel yourself if you prefer. It's just quicker to select it here.
-#  translation: Můžete si vybrat rozměr krychle. Je to jednoduché měřítko, pokud chcete, můžete si ho upravit v pravém panelu sami. Jen je rychlejší vybrat ho zde.
-msgid ""
-"You can choose the size of the cube. It's a simple scale, you can modify it "
-"in the right panel yourself if you prefer. It's just quicker to select it "
-"here."
-msgstr ""
-
-
-#: src/slic3r/GUI/CalibrationFirstLayerPatchDialog.cpp:30
-#Similar to me: You can choose the size of the patch. It's a simple scale, you can modify it in the right panel yourself if you prefer. It's just quicker to select it here.
-# 12   changes: You can choose the dimension of the cube. It's a simple scale, you can modify it in the right panel yourself if you prefer. It's just quicker to select it here.
-#  translation: Můžete si vybrat rozměr krychle. Je to jednoduché měřítko, pokud chcete, můžete si ho upravit v pravém panelu sami. Jen je rychlejší vybrat ho zde.
-msgid ""
-"You can choose the size of the patch. It's a simple scale, you can modify it "
-"in the right panel yourself if you prefer. It's just quicker to select it "
-"here."
-msgstr ""
-
-
-#: src/slic3r/GUI/PhysicalPrinterDialog.cpp:456
-msgid ""
-"You can either use a path to your certificate or the name of your "
-"certificate as you can find it in your Keychain"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:2449
+#: src/libslic3r/PrintConfig.cpp:2296
 #Similar to me: You can increase this to over-extrude on the first layer if there is not enough plastic because your bed isn't levelled.\nNote: DON'T USE THIS if your only problem is bed leveling, LEVEL YOUR BED! Use this setting only as last resort after all calibrations failed.
 # 1    changes: You can increase this to over-extrude on the first layer if there is not enough plastic because your bed isn't levelled.\nNote: DON'T USE THIS if your only problem is bed levelling, LEVEL YOUR BED! Use this setting only as last resort after all calibrations failed.
 #  translation: Pokud není dostatek plastu, protože vaše postel není vyrovnána, můžete to zvýšit tak, aby došlo k nadměrnému vytlačení první vrstvy.\nPoznámka: NEPOUŽÍVEJTE TOTO, pokud je vaším jediným problémem vyrovnání postele, VYROVNĚTE POSTEL! Toto nastavení používejte pouze jako poslední možnost poté, co všechny kalibrace selhaly.
@@ -4738,12 +2400,6 @@ msgid ""
 "enough plastic because your bed isn't levelled.\n"
 "Note: DON'T USE THIS if your only problem is bed leveling, LEVEL YOUR BED! "
 "Use this setting only as last resort after all calibrations failed."
-msgstr ""
-
-
-#: src/slic3r/GUI/Plater.cpp:5881
-#, possible-boost-format
-msgid "You will export the file with the material profile(s): %1%"
 msgstr ""
 
 
@@ -4778,30 +2434,12 @@ msgstr ""
 msgid "Your current tags:"
 msgstr ""
 
-
-#: src/libslic3r/GCode.cpp:874
-msgid "Your firmware doesn't allow to print the remaining times with M117."
-msgstr ""
-
-
-#: src/libslic3r/GCode.cpp:866
-msgid "Your firmware doesn't allow to print the remaining times with M73."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l351
+#: ../../ui_layout/default/print.ui : l288
 msgid "z"
 msgstr ""
 
-#: ../../ui_layout/default/printer_sla.ui : l29
+#: ../../ui_layout/default/printer_sla.ui : l28
 msgid "Z"
-msgstr ""
-
-
-#: src/libslic3r/PrintConfig.cpp:4499
-#Similar to me: Z lift is not triggered when travel moves are shorter than this length.
-# 9    changes: Retraction is not triggered when travel moves are shorter than this length.
-#  translation: Retrakce není spuštěna, pokud jsou rychloposuny pojezdu kratší než tato délka.
-msgid "Z lift is not triggered when travel moves are shorter than this length."
 msgstr ""
 
 #: ../../ui_layout/default/printer_fff.ui

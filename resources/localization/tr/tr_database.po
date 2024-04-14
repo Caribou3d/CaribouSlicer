@@ -1,337 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "Hızlanma kontrolü (gelişmiş)"
-
-msgid "Activate"
-msgstr "Etkinleştir"
-
-msgid "Advanced"
-msgstr "Gelişmiş"
-
-msgid "After layer change G-code"
-msgstr "Katman değişiminden sonra G-code"
-
-msgid "Aligned"
-msgstr "Hizalı"
-
-msgid "Automatic generation"
-msgstr "Otomatik oluşturma"
-
-msgid "Autospeed (advanced)"
-msgstr "Otomatik hız (gelişmiş)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Yan duvarların üzerinden geçme"
-
-msgid "Bed"
-msgstr "Tabla"
-
-msgid "Before layer change G-code"
-msgstr "Katman değiştirmeden önce G-code"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "Nesneler arasında Gcode (sıralı baskı için)"
-
-msgid "Bottom"
-msgstr "Alt"
-
-msgid "Bridge"
-msgstr "Köprü"
-
-msgid "Bridges"
-msgstr "Köprüler"
-
-msgid "Bridges fan speed"
-msgstr "Köprü fan hızı"
-
-msgid "Brim"
-msgstr "Kenar (Brim)"
-
-msgid "Capabilities"
-msgstr "Kabiliyetler"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "Destek çubuklarının ve birleşimlerinin bağlantısı"
-
-msgid "Cooling"
-msgstr "Soğutma"
-
-msgid "Corrections"
-msgstr "Düzeltmeler"
-
-msgid "Custom G-code"
-msgstr "Özel G-code"
-
-msgid "Default"
-msgstr "Varsayılan"
-
-msgid "default"
-msgstr "varsayılan"
-
-msgid "Density"
-msgstr "Yoğunluk"
-
-msgid "Dependencies"
-msgstr "Bağımlılıklar"
-
-msgid "Disable fan for the first"
-msgstr "Fanın devre dışı bırakılacağı katman sayısı"
-
-msgid "Display"
-msgstr "Ekran"
-
-msgid "End G-code"
-msgstr "Bitiş G-code"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Dikey kabuk kalınlığını sağlamlaştır"
-
-msgid "Exposure"
-msgstr "Poz"
-
-msgid "external perimeter"
-msgstr "Dış duvar"
-
-msgid "Extruder"
-msgstr "Ekstrüder"
-
-msgid "Extruder clearance (mm)"
-msgstr "Ekstrüder boşluğu (mm)"
-
-msgid "Extruders"
-msgstr "Ekstrüder sayısı"
-
-msgid "Extrusion width"
-msgstr "Ekstrüzyon genişliği"
-
-msgid "Filament"
-msgstr "Filament"
-
-msgid "Filament properties"
-msgstr "Filament özellikleri"
-
-msgid "Firmware"
-msgstr "Yazılım"
-
-msgid "First layer"
-msgstr "İlk katman"
-
-msgid "first layer"
-msgstr "İlk katman"
-
-msgid "First layer speed"
-msgstr "İlk katman hızı"
-
-msgid "Flow"
-msgstr "Akış"
-
-msgid "G-Code"
-msgstr "G-kod"
-
-msgid "Gap fill"
-msgstr "Boşluk doldurma"
-
-msgid "Gap Fill"
-msgstr "Boşluk doldurma"
-
-msgid "General"
-msgstr "Genel"
-
-msgid "Horizontal shells"
-msgstr "Yatay katmanlar"
-
-msgid "Infill"
-msgstr "Dolgu"
-
-msgid "infill"
-msgstr "dolgu"
-
-msgid "Layer height"
-msgstr "Katman yüksekliği"
-
-msgid "Layer height limits"
-msgstr "Katman yüksekliği sınırları"
-
-msgid "Layers"
-msgstr "Katmanlar"
-
-msgid "Layers and perimeters"
-msgstr "Katmanlar ve duvarlar"
-
-msgid "Length"
-msgstr "Uzunluk"
-
-msgid "Material"
-msgstr "Malzeme"
-
-msgid "mm"
-msgstr "mm"
-
-msgid "Modifiers"
-msgstr "Düzenleyiciler"
-
-msgid "Notes"
-msgstr "Notlar"
-
-msgid "Number of pixels in"
-msgstr "Piksel sayısı"
-
-msgid "Only lift Z"
-msgstr "Koşullu Z kaldırma"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Yalnızca duvarların üzerinden geçerken geri çekme uygula"
-
-msgid "Ooze prevention"
-msgstr "Sızıntı önleme"
-
-msgid "Options"
-msgstr "Ayarlar"
-
-msgid "Options for support material and raft"
-msgstr "Destek ve alt destek (raft) için seçenekler"
-
-msgid "Other"
-msgstr "Diğer"
-
-msgid "Output file"
-msgstr "Çıktı dosyası"
-
-msgid "Output options"
-msgstr "Çıktı seçenekleri"
-
-msgid "Overlap"
-msgstr "Üzerine bindirme"
-
-msgid "Pad"
-msgstr "Altlık"
-
-msgid "Pattern"
-msgstr "Desen"
-
-msgid "perimeter"
-msgstr "Duvar"
-
-msgid "Plater"
-msgstr "Tabla"
-
-msgid "Preview"
-msgstr "Ön izleme"
-
-msgid "Print Host upload"
-msgstr "Ana Bilgisayar yüklemesini yazdır"
-
-msgid "Print speed override"
-msgstr "Baskı hızı geçersiz kılma"
-
-msgid "Printer scaling correction"
-msgstr "Yazıcı ölçeklendirme düzeltmesi"
-
-msgid "Profile dependencies"
-msgstr "Profil bağımlılıkları"
-
-msgid "Raft"
-msgstr "Alt Destek (Raft)"
-
-msgid "Reducing printing time"
-msgstr "Baskı süresine etki eden ayarlar"
-
-msgid "Retraction"
-msgstr "Geri çekme"
-
-msgid "Retraction Speed"
-msgstr "Geri çekme hızı"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Takım devre dışı bırakıldığında geri çekme (çoklu ekstrüder ayarları için "
-"gelişmiş ayarlar)"
-
-msgid "Seam position"
-msgstr "Katman başlangıç konumu"
-
-msgid "Sequential printing"
-msgstr "Sıralı baskı"
-
-msgid "Size"
-msgstr "Boyut"
-
-msgid "Size and coordinates"
-msgstr "Boyut ve koordinatlar"
-
-msgid "Skirt"
-msgstr "Etek (Skirt)"
-
-msgid "skirt"
-msgstr "Etek (Skirt)"
-
-msgid "Slicing"
-msgstr "Dilimleme"
-
-msgid "Solid"
-msgstr "Katı"
-
-msgid "solid infill"
-msgstr "katı dolgu"
-
-msgid "Solid layers"
-msgstr "Katı katmanlar"
-
-msgid "Spacing"
-msgstr "Aralık"
-
-msgid "Speed"
-msgstr "Hız"
-
-msgid "Speed for non-print moves"
-msgstr "Baskı haricinde kullanılacak hızlar"
-
-msgid "Speed for print moves"
-msgstr "Baskı esnasında kullanılacak hızlar"
-
-msgid "Start G-code"
-msgstr "Başlangıç G-code"
-
-msgid "Support head"
-msgstr "Destek kafa"
-
-msgid "Support material"
-msgstr "Destek"
-
-msgid "support material"
-msgstr "Destek"
-
-msgid "Support pillar"
-msgstr "Destek ayağı"
-
-msgid "Supports"
-msgstr "Destekler"
-
-msgid "Tilt"
-msgstr "Eğim"
-
-msgid "Tilt time"
-msgstr "Yatırma zamanı"
-
-msgid "Tool change G-code"
-msgstr "Takım değiştirme G kodu"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr ""
-"Tek ekstrüder Çoklu Filament (MM) yazıcılarla takım değiştirme parametreleri"
-
-msgid "Top"
-msgstr "Üst"
-
-msgid "Vertical shells"
-msgstr "Duvar sayısı"
-
-msgid "width"
-msgstr "Genişlik"
-
-msgid "Wipe tower"
-msgstr "Temizleme kulesi"
-
 msgid "%1% Preset"
 msgstr "%1% Ön Ayar"
 
@@ -512,6 +179,12 @@ msgstr "%s Hakkında"
 msgid "Above Z"
 msgstr "Z'nin üstünde"
 
+msgid "Acceleration control (advanced)"
+msgstr "Hızlanma kontrolü (gelişmiş)"
+
+msgid "Activate"
+msgstr "Etkinleştir"
+
 msgid "Active"
 msgstr "Aktif"
 
@@ -565,6 +238,9 @@ msgstr ""
 msgid "Address"
 msgstr "Adres"
 
+msgid "Advanced"
+msgstr "Gelişmiş"
+
 msgid "Advanced: Output log"
 msgstr "Gelişmiş: Çıktı günlüğü"
 
@@ -582,11 +258,17 @@ msgstr ""
 "şekilde üretmek için her zaman bu miktardaki malzemeyi temizleme kulesine "
 "doldurur."
 
+msgid "After layer change G-code"
+msgstr "Katman değişiminden sonra G-code"
+
 msgid "Align the model to the given point."
 msgstr "Modeli verilen noktaya hizala."
 
 msgid "Align XY"
 msgstr "XY'yi Hizala"
+
+msgid "Aligned"
+msgstr "Hizalı"
 
 msgid "All"
 msgstr "Tümü"
@@ -695,11 +377,20 @@ msgstr "Noktaları otomatik oluştur"
 msgid "Autodetected"
 msgstr "Otomatik tanımlandı"
 
+msgid "Automatic generation"
+msgstr "Otomatik oluşturma"
+
 msgid "Automatic updates"
 msgstr "Otomatik güncelleme"
 
 msgid "Automatically repair an STL file"
 msgstr "Bir STL dosyasını otomatik olarak onar"
+
+msgid "Autospeed (advanced)"
+msgstr "Otomatik hız (gelişmiş)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Yan duvarların üzerinden geçme"
 
 msgid "BACK ARROW"
 msgstr "GERİ OK"
@@ -727,6 +418,9 @@ msgstr ""
 msgid "Background processing"
 msgstr "Arkaplan işleme"
 
+msgid "Bed"
+msgstr "Tabla"
+
 msgid "Bed Shape"
 msgstr "Tabla Şekli"
 
@@ -742,6 +436,9 @@ msgstr "Tabla sıcaklığı"
 msgid "Bed Temperature:"
 msgstr "Tabla Sıcaklığı:"
 
+msgid "Before layer change G-code"
+msgstr "Katman değiştirmeden önce G-code"
+
 msgid "Before roll back"
 msgstr "Geri almadan önce"
 
@@ -750,6 +447,12 @@ msgstr "Z altında"
 
 msgid "Between objects G-code"
 msgstr "Nesneler arasında G-code"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "Nesneler arasında Gcode (sıralı baskı için)"
+
+msgid "Bottom"
+msgstr "Alt"
 
 msgid "Bottom fill pattern"
 msgstr "Alt dolgu deseni"
@@ -760,11 +463,20 @@ msgstr "Alt katı katman"
 msgid "Bottom View"
 msgstr "Alt Görünüm"
 
+msgid "Bridge"
+msgstr "Köprü"
+
 msgid "Bridge flow ratio"
 msgstr "Köprü akış oranı"
 
 msgid "Bridge infill"
 msgstr "Köprü dolgusu"
+
+msgid "Bridges"
+msgstr "Köprüler"
+
+msgid "Bridges fan speed"
+msgstr "Köprü fan hızı"
 
 msgid "Bridging angle"
 msgstr "Köprü açısı"
@@ -780,6 +492,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Hacimsel köprüleme"
+
+msgid "Brim"
+msgstr "Kenar (Brim)"
 
 msgid "Brim width"
 msgstr "Kenar genişliği"
@@ -823,6 +538,9 @@ msgid ""
 msgstr ""
 "Destek noktaları olmadan devam edemezsiniz! Destek noktaları ekleyin veya "
 "destek oluşturmayı devre dışı bırakın."
+
+msgid "Capabilities"
+msgstr "Kabiliyetler"
 
 msgid "Capture a configuration snapshot"
 msgstr "Yapılandırma anlık görüntüsünü kaydet"
@@ -947,6 +665,9 @@ msgstr "Yapılandırma Sihirbazını"
 msgid "Confirmation"
 msgstr "Onaylama"
 
+msgid "Connection of the support sticks and junctions"
+msgstr "Destek çubuklarının ve birleşimlerinin bağlantısı"
+
 msgid ""
 "Controls the bridge type between two neighboring pillars. Can be zig-zag, "
 "cross (double zig-zag) or dynamic which will automatically switch between "
@@ -955,6 +676,9 @@ msgstr ""
 "İki komşu sütun arasındaki köprü tipini kontrol eder. İki sütunun mesafesine "
 "bağlı olarak otomatik olarak ilk ikisi arasında geçiş yapacak zig-zag, "
 "çapraz (çift zig-zag) veya dinamik olabilir."
+
+msgid "Cooling"
+msgstr "Soğutma"
 
 msgid "Cooling tube length"
 msgstr "Soğutma tüpü uzunluğu"
@@ -984,6 +708,9 @@ msgstr "Telif Hakkı"
 
 msgid "Correction for expansion"
 msgstr "Genişleme için düzeltme"
+
+msgid "Corrections"
+msgstr "Düzeltmeler"
 
 msgid "Cost"
 msgstr "Maliyet"
@@ -1042,6 +769,9 @@ msgstr ""
 "dosyası belirtilebilir. Boş bırakılırsa, varsayılan OS CA sertifika "
 "kullanılır."
 
+msgid "Custom G-code"
+msgstr "Özel G-code"
+
 msgid "Custom Printer"
 msgstr "Özel Yazıcı"
 
@@ -1062,6 +792,12 @@ msgstr "Veri dizini"
 
 msgid "decompression failed or archive is corrupted"
 msgstr "açma işlemi başarısız oldu veya arşiv bozuk"
+
+msgid "default"
+msgstr "varsayılan"
+
+msgid "Default"
+msgstr "Varsayılan"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1149,8 +885,14 @@ msgstr "Tüm nesneleri sil"
 msgid "Deletes the current selection"
 msgstr "Mevcut seçimi siler"
 
+msgid "Density"
+msgstr "Yoğunluk"
+
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr "İç dolgu yoğunluğu, %0 - %100 aralığında ifade edilir."
+
+msgid "Dependencies"
+msgstr "Bağımlılıklar"
 
 msgid "Deretraction Speed"
 msgstr "İleri İtme Hızı"
@@ -1192,8 +934,14 @@ msgstr ""
 msgid "Direction"
 msgstr "Yön"
 
+msgid "Disable fan for the first"
+msgstr "Fanın devre dışı bırakılacağı katman sayısı"
+
 msgid "Discard changes"
 msgstr "Değişiklikleri iptal et"
+
+msgid "Display"
+msgstr "Ekran"
 
 msgid "Display height"
 msgstr "Ekran yüksekliği"
@@ -1294,6 +1042,9 @@ msgstr ""
 msgid "Enable variable layer height feature"
 msgstr "Değişken katman yüksekliği özelliğini etkinleştir"
 
+msgid "End G-code"
+msgstr "Bitiş G-code"
+
 msgid "Enforce support for the first"
 msgstr "İlk katman için desteğe zorla"
 
@@ -1302,6 +1053,9 @@ msgstr "İlk n katman için desteğe zorla"
 
 msgid "Enqueued"
 msgstr "Sıraya alındı"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Dikey kabuk kalınlığını sağlamlaştır"
 
 msgid "Enter new name"
 msgstr "Yeni isim girin"
@@ -1458,10 +1212,16 @@ msgstr "G-code dışa aktarılıyor"
 msgid "Exporting source model"
 msgstr "Kaynak model dışa aktarılıyor"
 
+msgid "Exposure"
+msgstr "Poz"
+
 msgid "Exposure time"
 msgstr "Pozlama süresi"
 
 msgid "External perimeter"
+msgstr "Dış duvar"
+
+msgid "external perimeter"
 msgstr "Dış duvar"
 
 msgid "external perimeters"
@@ -1479,17 +1239,26 @@ msgstr "Yeniden başlatma sırasında fazladan uzunluk"
 msgid "Extra loading distance"
 msgstr "Fazladan yükleme mesafesi"
 
+msgid "Extruder"
+msgstr "Ekstrüder"
+
 msgid "Extruder %d"
 msgstr "Ekstrüder %d"
 
 msgid "Extruder changed to"
 msgstr "Ekstrüder şuna değiştirildi"
 
+msgid "Extruder clearance (mm)"
+msgstr "Ekstrüder boşluğu (mm)"
+
 msgid "Extruder Color"
 msgstr "Ekstrüder Rengi"
 
 msgid "Extruder offset"
 msgstr "Ekstrüder ofset"
+
+msgid "Extruders"
+msgstr "Ekstrüder sayısı"
 
 msgid "Extrusion axis"
 msgstr "Ekstrüzyon ekseni"
@@ -1499,6 +1268,9 @@ msgstr "Ekstrüzyon çarpanı"
 
 msgid "Extrusion Temperature:"
 msgstr "Ekstrüder Sıcaklığı:"
+
+msgid "Extrusion width"
+msgstr "Ekstrüzyon genişliği"
 
 msgid "Facets"
 msgstr "Yüzey Sayısı"
@@ -1536,6 +1308,9 @@ msgstr "Özellik türleri"
 msgid "filament"
 msgstr "filaman"
 
+msgid "Filament"
+msgstr "Filament"
+
 msgid "Filament and Nozzle Diameters"
 msgstr "Filament ve Nozül Çapları"
 
@@ -1557,6 +1332,9 @@ msgstr "Filament notları"
 
 msgid "Filament parking position"
 msgstr "Filament park yeri"
+
+msgid "Filament properties"
+msgstr "Filament özellikleri"
 
 msgid "Filament Settings"
 msgstr "Filament Ayarları"
@@ -1621,6 +1399,9 @@ msgstr "Bul"
 msgid "Finished"
 msgstr "Bitti"
 
+msgid "Firmware"
+msgstr "Yazılım"
+
 msgid "Firmware flasher"
 msgstr "Yazılım yükleme"
 
@@ -1636,8 +1417,17 @@ msgstr "Yazılım Türü"
 msgid "first"
 msgstr "birinci"
 
+msgid "First layer"
+msgstr "İlk katman"
+
+msgid "first layer"
+msgstr "İlk katman"
+
 msgid "First layer height"
 msgstr "İlk katman yüksekliği"
+
+msgid "First layer speed"
+msgstr "İlk katman hızı"
 
 msgid "First layer volumetric"
 msgstr "İlk katman hacimsel"
@@ -1659,6 +1449,9 @@ msgstr "Yükleme devam ediyor. Lütfen yazıcı bağlantısını kesmeyin!"
 
 msgid "Flashing succeeded!"
 msgstr "Yükleme tamamlandı!"
+
+msgid "Flow"
+msgstr "Akış"
 
 msgid ""
 "For the Wipe Tower to work with the soluble supports, the support layers "
@@ -1698,6 +1491,9 @@ msgstr "Ön görünüm"
 msgid "G-code"
 msgstr "G-kod"
 
+msgid "G-Code"
+msgstr "G-kod"
+
 msgid "G-code file exported to %1%"
 msgstr "Dışa aktarılan G-code dosyası %1%"
 
@@ -1706,6 +1502,15 @@ msgstr "G-code derleyici"
 
 msgid "g/cm³"
 msgstr "g/cm³"
+
+msgid "Gap fill"
+msgstr "Boşluk doldurma"
+
+msgid "Gap Fill"
+msgstr "Boşluk doldurma"
+
+msgid "General"
+msgstr "Genel"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -1862,6 +1667,9 @@ msgstr ""
 
 msgid "Honeycomb"
 msgstr "Bal peteği"
+
+msgid "Horizontal shells"
+msgstr "Yatay katmanlar"
 
 msgid "Host"
 msgstr "Sunucu"
@@ -2068,6 +1876,12 @@ msgstr ""
 "Geçerli seçenek grubunun tüm ayarlarını en son kaydedilen ön ayara "
 "sıfırlamak için GERİ OK tuşuna basın."
 
+msgid "Infill"
+msgstr "Dolgu"
+
+msgid "infill"
+msgstr "dolgu"
+
 msgid "Infill before perimeters"
 msgstr "Duvarlardan önce dolgu yap"
 
@@ -2197,8 +2011,20 @@ msgstr "Dil"
 msgid "Language selection"
 msgstr "Dil seçimi"
 
+msgid "Layer height"
+msgstr "Katman yüksekliği"
+
+msgid "Layer height limits"
+msgstr "Katman yüksekliği sınırları"
+
 msgid "layers"
 msgstr "katman"
+
+msgid "Layers"
+msgstr "Katmanlar"
+
+msgid "Layers and perimeters"
+msgstr "Katmanlar ve duvarlar"
 
 msgid "Left"
 msgstr "Sol"
@@ -2208,6 +2034,9 @@ msgstr "Sol tık"
 
 msgid "Left View"
 msgstr "Sol görünüm"
+
+msgid "Length"
+msgstr "Uzunluk"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -2317,6 +2146,9 @@ msgstr "Dışa aktarılan maskelenmiş SLA dosyası %1%"
 
 msgid "Mate&rial Settings Tab"
 msgstr "Mate&ryal Ayarları Sekmesi"
+
+msgid "Material"
+msgstr "Malzeme"
 
 msgid "Material Settings"
 msgstr "Malzeme Ayarları"
@@ -2492,6 +2324,9 @@ msgstr "Eşleşmeyen baskı sunucusu türü: %s"
 msgid "Mixed"
 msgstr "Karışık"
 
+msgid "mm"
+msgstr "mm"
+
 msgid "mm (zero to disable)"
 msgstr "mm (devre dışı bırakmak için sıfır)"
 
@@ -2539,6 +2374,9 @@ msgstr "değiştirilmiş"
 
 msgid "Modifier"
 msgstr "Niteleyici"
+
+msgid "Modifiers"
+msgstr "Düzenleyiciler"
 
 msgid "money/kg"
 msgstr "fiyat/kg"
@@ -2644,6 +2482,9 @@ msgstr "Not: OctoPrint sürümü en az 1.1.0 gereklidir."
 msgid "Note: some shortcuts work in (non)editing mode only."
 msgstr "Not: Bazı kısayollar yalnızca düzenleme modunda çalışır."
 
+msgid "Notes"
+msgstr "Notlar"
+
 msgid "Notice"
 msgstr "Bilgilendirme"
 
@@ -2667,6 +2508,9 @@ msgid ""
 "material."
 msgstr ""
 "Nesneler ve destek arasına eklenecek ara bağlantı katmanlarının sayısı."
+
+msgid "Number of pixels in"
+msgstr "Piksel sayısı"
 
 msgid "Number of pixels in X"
 msgstr "X'teki piksel sayısı"
@@ -2754,11 +2598,20 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "Sadece ihtiyaç duyulan yerlerde dolgu yap"
 
+msgid "Only lift Z"
+msgstr "Koşullu Z kaldırma"
+
 msgid "Only lift Z above"
 msgstr "Sadece yukarıdaki Z kaldıracı"
 
 msgid "Only lift Z below"
 msgstr "Sadece aşağıda Z kaldırarak"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Yalnızca duvarların üzerinden geçerken geri çekme uygula"
+
+msgid "Ooze prevention"
+msgstr "Sızıntı önleme"
 
 msgid "Open a project file"
 msgstr "Bir proje dosyası açın"
@@ -2784,6 +2637,12 @@ msgstr ""
 "optimize eder. Bu çoğunlukla sızmaya maruz kalan Bowden ekstrüderleri ile "
 "faydalıdır. Bu özellik hem yazdırmayı hem de G-code oluşumunu yavaşlatır."
 
+msgid "Options"
+msgstr "Ayarlar"
+
+msgid "Options for support material and raft"
+msgstr "Destek ve alt destek (raft) için seçenekler"
+
 msgid "Options:"
 msgstr "Ayarlar:"
 
@@ -2796,6 +2655,9 @@ msgstr "Oryantasyon araması iptal edildi."
 msgid "Origin"
 msgstr "Başlangıç Noktası"
 
+msgid "Other"
+msgstr "Diğer"
+
 msgid "Other layers"
 msgstr "Diğer katmanlar"
 
@@ -2805,11 +2667,17 @@ msgstr "Diğer Üreticiler"
 msgid "Output File"
 msgstr "Çıktı dosyası"
 
+msgid "Output file"
+msgstr "Çıktı dosyası"
+
 msgid "Output filename format"
 msgstr "Çıktı dosya adı ve türü"
 
 msgid "Output Model Info"
 msgstr "Çıktı Model Bilgisi"
+
+msgid "Output options"
+msgstr "Çıktı seçenekleri"
 
 msgid "Overhang perimeter"
 msgstr "Çıkıntı duvar"
@@ -2817,8 +2685,14 @@ msgstr "Çıkıntı duvar"
 msgid "Overhang threshold"
 msgstr "Destek konulacak açı"
 
+msgid "Overlap"
+msgstr "Üzerine bindirme"
+
 msgid "P&rint Settings Tab"
 msgstr "B&askı Ayarları Sekmesi"
+
+msgid "Pad"
+msgstr "Altlık"
 
 msgid "Pad wall height"
 msgstr "Ped duvar yüksekliği"
@@ -2862,6 +2736,9 @@ msgstr "Panodan yapıştır"
 msgid "Paste From Clipboard"
 msgstr "Panodan yapıştır"
 
+msgid "Pattern"
+msgstr "Desen"
+
 msgid "Pattern angle"
 msgstr "Desen açısı"
 
@@ -2878,6 +2755,9 @@ msgid "Perform cut"
 msgstr "Kesme islemini uygula"
 
 msgid "Perimeter"
+msgstr "Duvar"
+
+msgid "perimeter"
 msgstr "Duvar"
 
 msgid "Perimeter extruder"
@@ -2900,6 +2780,9 @@ msgstr "Pinhead çapı, sütun çapından daha küçük olmalıdır."
 
 msgid "Place on face"
 msgstr "Yüzeye yerleştir"
+
+msgid "Plater"
+msgstr "Tabla"
 
 msgid "Please check your object list before preset changing."
 msgstr ""
@@ -2933,6 +2816,9 @@ msgstr "Dikişin tercih edilen yönü - titreme"
 msgid "Preparing infill"
 msgstr "Dolgu hazırlama"
 
+msgid "Preview"
+msgstr "Ön izleme"
+
 msgid "Previously sliced file ("
 msgstr "Önceden dilimlenmiş dosya ("
 
@@ -2956,6 +2842,9 @@ msgstr "Duvarları önce en dıştan başlayarak en içe doğru basar."
 msgid "Print Diameters"
 msgstr "Baskı Çapları"
 
+msgid "Print Host upload"
+msgstr "Ana Bilgisayar yüklemesini yazdır"
+
 msgid "Print host upload queue"
 msgstr "Ana bilgisayar yükleme kuyruğunu yazdır"
 
@@ -2964,6 +2853,9 @@ msgstr "Baskı ayarları"
 
 msgid "Print Settings"
 msgstr "Baskı Ayarları"
+
+msgid "Print speed override"
+msgstr "Baskı hızı geçersiz kılma"
 
 msgid "Print&er Settings Tab"
 msgstr "Yazıcı Ayarları S&ekmesi"
@@ -2985,6 +2877,9 @@ msgstr "yazıcı modeli"
 
 msgid "Printer notes"
 msgstr "Yazıcı notları"
+
+msgid "Printer scaling correction"
+msgstr "Yazıcı ölçeklendirme düzeltmesi"
 
 msgid "Printer Settings"
 msgstr "Yazıcı ayarları"
@@ -3018,6 +2913,9 @@ msgstr ""
 msgid "Processing %s"
 msgstr "%s"
 
+msgid "Profile dependencies"
+msgstr "Profil bağımlılıkları"
+
 msgid "Progress"
 msgstr "İlerleme"
 
@@ -3044,6 +2942,9 @@ msgstr "%s uygulamasını kapat"
 
 msgid "Radius"
 msgstr "Yarıçap"
+
+msgid "Raft"
+msgstr "Alt Destek (Raft)"
 
 msgid "Raft layers"
 msgstr "Alt destek katman sayısı"
@@ -3117,6 +3018,9 @@ msgstr "Doğrusal ızgara"
 
 msgid "Redo"
 msgstr "Yinele"
+
+msgid "Reducing printing time"
+msgstr "Baskı süresine etki eden ayarlar"
 
 msgid "Regular"
 msgstr "Normal"
@@ -3227,6 +3131,9 @@ msgstr "Temizleme işleminden önce geri çekilecek miktar"
 msgid "Retract on layer change"
 msgstr "Katman değişiminde geri çek"
 
+msgid "Retraction"
+msgstr "Geri çekme"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr "Boşta hareket bu uzunluktan kısa olduğunda geri çekme tetiklenmez."
@@ -3239,6 +3146,14 @@ msgstr "Geri çekme uzunluğu"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Geri Çekme Uzunluğu (Takım Değişimi)"
+
+msgid "Retraction Speed"
+msgstr "Geri çekme hızı"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Takım devre dışı bırakıldığında geri çekme (çoklu ekstrüder ayarları için "
+"gelişmiş ayarlar)"
 
 msgid "Retractions"
 msgstr "Geri Çekme"
@@ -3366,6 +3281,9 @@ msgstr ""
 "%1% için karşıya yükleme planlanıyor. Bkz. Pencere -> Ana Bilgisayar Yükleme "
 "Sırası"
 
+msgid "Seam position"
+msgstr "Katman başlangıç konumu"
+
 msgid "Seam preferred direction"
 msgstr "Dikiş yönü tercih"
 
@@ -3431,6 +3349,9 @@ msgstr "G-Kodunu yazıcı ana bilgisayarına gönderin"
 
 msgid "Send to printer"
 msgstr "Yazıcıya gönder"
+
+msgid "Sequential printing"
+msgstr "Sıralı baskı"
 
 msgid "Serial port:"
 msgstr "Bağlantı noktası:"
@@ -3540,8 +3461,20 @@ msgstr "Tek Ekstrüder Çoklu Filament"
 msgid "Single extruder multimaterial parameters"
 msgstr "Tek ekstrüder çok yönlü parametreler"
 
+msgid "Size"
+msgstr "Boyut"
+
+msgid "Size and coordinates"
+msgstr "Boyut ve koordinatlar"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Dikdörtgen tablanın X ve Y eksen ölçüsü."
+
+msgid "Skirt"
+msgstr "Etek (Skirt)"
+
+msgid "skirt"
+msgstr "Etek (Skirt)"
 
 msgid "Skirt and brim"
 msgstr "Etek ve kenar"
@@ -3619,6 +3552,9 @@ msgstr ""
 msgid "Sliced Info"
 msgstr "Dilimlenmiş Bilgi"
 
+msgid "Slicing"
+msgstr "Dilimleme"
+
 msgid "Slicing complete"
 msgstr "Dilimleme tamamlandı"
 
@@ -3646,11 +3582,17 @@ msgstr "Yavaş eğim"
 msgid "Snapshot name"
 msgstr "Anlık görüntü adı"
 
+msgid "Solid"
+msgstr "Katı"
+
 msgid "Solid "
 msgstr "Katı "
 
 msgid "Solid infill"
 msgstr "Katı dolgu"
+
+msgid "solid infill"
+msgstr "katı dolgu"
 
 msgid "Solid infill every"
 msgstr "Her n katmanda bir katı dolgu yap"
@@ -3660,6 +3602,9 @@ msgstr "Katı dolgu"
 
 msgid "Solid infill threshold area"
 msgstr "Katı dolgu eşik alanı"
+
+msgid "Solid layers"
+msgstr "Katı katmanlar"
 
 msgid "Soluble material"
 msgstr "Çözünür malzeme"
@@ -3700,6 +3645,9 @@ msgstr ""
 "Bazı yazıcılarda veya yazıcı ayarlarında, değişken katman yüksekliğinde "
 "yazdırmakta zorluk olabilir. Varsayılan olarak etkindir."
 
+msgid "Spacing"
+msgstr "Aralık"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Ara bağlantı çizgileri arasındaki boşluk. Sağlam bir ara bağlantı elde etmek "
@@ -3708,8 +3656,17 @@ msgstr ""
 msgid "Spacing between support material lines."
 msgstr "Destek hatları arasındaki boşluk."
 
+msgid "Speed"
+msgstr "Hız"
+
 msgid "Speed (mm/s)"
 msgstr "Hız (mm / s)"
+
+msgid "Speed for non-print moves"
+msgstr "Baskı haricinde kullanılacak hızlar"
+
+msgid "Speed for print moves"
+msgstr "Baskı esnasında kullanılacak hızlar"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "Boşta hareket için hız (uzak ekstrüzyon noktaları arasında atlar)."
@@ -3775,6 +3732,9 @@ msgstr "Yıldızlar"
 msgid "Start a new project"
 msgstr "Yeni bir proje başlat"
 
+msgid "Start G-code"
+msgstr "Başlangıç G-code"
+
 msgid "Start new slicing process"
 msgstr "Yeni dilimleme işlemine başla"
 
@@ -3817,8 +3777,17 @@ msgstr "Destek Uygulayıcı"
 msgid "Support Generator"
 msgstr "Destek Üreticisi"
 
+msgid "Support head"
+msgstr "Destek kafa"
+
 msgid "support interface"
 msgstr "destek bağlantısı"
+
+msgid "Support material"
+msgstr "Destek"
+
+msgid "support material"
+msgstr "Destek"
 
 msgid "Support material interface"
 msgstr "Destek ara bağlantısı"
@@ -3829,8 +3798,14 @@ msgstr "Destek/sal (raft) bağlantı ekstrüder"
 msgid "Support on build plate only"
 msgstr "Yalnızca tablada destek"
 
+msgid "Support pillar"
+msgstr "Destek ayağı"
+
 msgid "Support points density"
 msgstr "Destek noktaları yoğunluğu"
+
+msgid "Supports"
+msgstr "Destekler"
 
 msgid "supports and pad"
 msgstr "destekler ve ped"
@@ -4287,6 +4262,12 @@ msgstr ""
 "parçacığı sayısı, kullanılabilir çekirdek / işlemci sayısının biraz "
 "üzerindedir."
 
+msgid "Tilt"
+msgstr "Eğim"
+
+msgid "Tilt time"
+msgstr "Yatırma zamanı"
+
 msgid "Time"
 msgstr "Zaman"
 
@@ -4344,6 +4325,16 @@ msgstr "Araç"
 
 msgid "Tool #"
 msgstr "Araç #"
+
+msgid "Tool change G-code"
+msgstr "Takım değiştirme G kodu"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr ""
+"Tek ekstrüder Çoklu Filament (MM) yazıcılarla takım değiştirme parametreleri"
+
+msgid "Top"
+msgstr "Üst"
 
 msgid "Top solid infill"
 msgstr "Üst katı dolgu"
@@ -4553,6 +4544,9 @@ msgstr "Sürüm"
 msgid "version"
 msgstr "sürüm"
 
+msgid "Vertical shells"
+msgstr "Duvar sayısı"
+
 msgid "View"
 msgstr "Görünüm"
 
@@ -4664,6 +4658,9 @@ msgstr "Tam kelime"
 msgid "Width"
 msgstr "Genişlik"
 
+msgid "width"
+msgstr "Genişlik"
+
 msgid "Width (mm)"
 msgstr "Genişlik (mm)"
 
@@ -4691,6 +4688,9 @@ msgstr "Bu nesnenin dolgusu içinde temizlik işlemi yap"
 
 msgid "Wipe Tower"
 msgstr "Kule Sil"
+
+msgid "Wipe tower"
+msgstr "Temizleme kulesi"
 
 msgid "wipe tower"
 msgstr "temizleme kulesi"
@@ -11688,10 +11688,3 @@ msgstr ""
 "Nesne, XY düzleminde yapılandırılmış değerle büyütülecek / küçültülecektir "
 "(negatif = içe, pozitif = dışarı doğru). Bu, ince ayar delik boyutları için "
 "yararlı olabilir."
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr ""
-"Bir veya daha fazla dosya seçin (STL / OBJ / AMF / 3MF / PRUSA / STEP):"
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "STL/3MF/STEP/OBJ/AM&F"

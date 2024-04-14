@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-13 00:00\n"
-"PO-Revision-Date: 2024-04-13 00:00\n"
+"POT-Creation-Date: 2022-04-15 00:00\n"
+"PO-Revision-Date: 2022-04-15 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -116,6 +116,15 @@ msgstr "%s tiene un aviso"
 
 msgid "%s has encountered an error"
 msgstr "%s ha ocurrido un error"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"%s ha encontrado un error. Probablemente fue causado por quedarse sin "
+"memoria. Si estás seguro de tener suficiente RAM en su sistema, esto también "
+"puede ser un error y nos complacería que lo informaras."
 
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
@@ -442,6 +451,9 @@ msgstr "Encima de Z"
 msgid "Acceleration control (advanced)"
 msgstr "Control de aceleración (avanzado)"
 
+msgid "Access violation"
+msgstr "Violación de acceso"
+
 msgid "Accuracy"
 msgstr "Precisión"
 
@@ -701,6 +713,9 @@ msgstr "Todas las superficies superiores"
 msgid "All user presets will be deleted."
 msgstr "Se borrarán todos los ajustes del usuario."
 
+msgid "All walls"
+msgstr "Todas las paredes"
+
 msgid "allocation failed"
 msgstr "asignación fallida"
 
@@ -790,9 +805,6 @@ msgstr "Aplicar a todos los objetos pequeños restantes que se cargan."
 
 msgid "approximate seconds"
 msgstr "segundos aproximadamente"
-
-msgid "Arachne"
-msgstr "Arachne"
 
 msgid "Archimedean Chords"
 msgstr "Acordes de Arquímedes"
@@ -1190,6 +1202,9 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "No se puede sobre-escribir un perfil del sistema."
 
+msgid "Cannot overwrite an external profile."
+msgstr "No puedo sobre-escribir un valor externo."
+
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
@@ -1260,13 +1275,6 @@ msgstr "Cambios para las opciones críticas"
 msgid "Changing of an application language"
 msgstr "Cambio de idioma de una aplicación"
 
-msgid ""
-"Changing some options will trigger application restart.\n"
-"You will lose the content of the plater."
-msgstr ""
-"El cambio de algunas opciones hará que se reinicie la aplicación.\n"
-"Se perderá el contenido de la plataforma."
-
 msgid "Check for application updates"
 msgstr "Comprueba si hay actualizaciones de la aplicación"
 
@@ -1295,8 +1303,8 @@ msgstr "Selecciona un archivo (3MF/AMF):"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Elige un archivo (GCODE/.GCO/.G/.ngc/NGC):"
 
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Escoje uno o más archivos (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "Escoje uno o más archivos (STL/OBJ/AMF/3MF/PRUSA):"
 
 msgid "Choose SLA archive:"
 msgstr "Elegir archivo SLA:"
@@ -1309,20 +1317,6 @@ msgstr "Círculo"
 
 msgid "Circular"
 msgstr "Circular"
-
-msgid "Classic"
-msgstr "Clásico"
-
-msgid ""
-"Classic perimeter generator produces perimeters with constant extrusion "
-"width and for very thin areas is used gap-fill. Arachne engine produces "
-"perimeters with variable extrusion width. This setting also affects the "
-"Concentric infill."
-msgstr ""
-"El generador de perímetros clásico produce perímetros con una anchura de "
-"extrusión constante y para las zonas muy finas se utiliza gap-fill. El motor "
-"de Arachne produce perímetros con un ancho de extrusión variable. Este "
-"ajuste también afecta al relleno Concéntrico."
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Borrar la pila de Deshacer / Rehacer en el nuevo proyecto"
@@ -1952,6 +1946,9 @@ msgstr "Borrar la selección actual"
 
 msgid "Density"
 msgstr "Densidad"
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr "Densidad de relleno interior, expresado en el rango 0% - 100%."
 
 msgid "Density of the first raft or support layer."
 msgstr "Densidad de la primera balsa o capa de soporte."
@@ -2601,6 +2598,12 @@ msgstr "Exportar plataforma actual como código G"
 msgid "Export current plate as G-code to SD card / Flash drive"
 msgstr "Exporta a G-code en la tarjeta SD / disco USB"
 
+msgid "Export current plate as STL"
+msgstr "Exportar plataforma actual como STL"
+
+msgid "Export current plate as STL including supports"
+msgstr "Exportar la plataforma actual como STL incluyendo soportes"
+
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
 msgstr ""
@@ -2624,6 +2627,12 @@ msgstr "Exportar archivo OBJ:"
 
 msgid "Export of a temporary 3mf file failed"
 msgstr "La exportación de un archivo temporal de 3mf falló"
+
+msgid "Export Plate as &STL"
+msgstr "Exportar Plataforma como &STL"
+
+msgid "Export Plate as STL &Including Supports"
+msgstr "Exportar plataforma como STL &Incluyendo Soportes"
 
 msgid "Export SLA"
 msgstr "Exportar SLA"
@@ -2686,11 +2695,11 @@ msgstr "Tiempo de exposición"
 msgid "External perimeter"
 msgstr "Perímetro externo"
 
-msgid "External perimeters"
-msgstr "Perímetros externos"
-
 msgid "external perimeters"
 msgstr "perímetros externos"
+
+msgid "External perimeters"
+msgstr "Perímetros externos"
 
 msgid "External perimeters first"
 msgstr "Perímetros externos primero"
@@ -2770,6 +2779,19 @@ msgstr "Velocidad del ventilador"
 
 msgid "Fan Speed (%)"
 msgstr "Velocidad Ventilador (%)"
+
+msgid ""
+"Fan speed will be ramped up linearly from zero at layer "
+"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" will be ignored if lower than "
+"\"disable_fan_first_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
+msgstr ""
+"La velocidad del ventilador aumentará linealmente desde cero en la capa "
+"\"disable_fan_first_layers\" al máximo en la capa \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" será ignorada si es menor que "
+"\"disable_fan_first_layers\",en cuyo caso el ventilador funcionará a la "
+"velocidad máxima permitida en la capa \"disable_fan_first_layers\" + 1."
 
 msgid "Fast"
 msgstr "Rápida"
@@ -3035,9 +3057,6 @@ msgid_plural "Folowing models repair failed"
 msgstr[0] "La siguiente reparación del modelo falló"
 msgstr[1] "Los siguientes reparaciones de modelos fallaron"
 
-msgid "Font size"
-msgstr "Tamaño de letra"
-
 msgid ""
 "For a multipart object, this value isn't accurate.\n"
 "It doesn't take account of intersections and negative volumes."
@@ -3099,16 +3118,6 @@ msgstr ""
 "adyacentes. Útil para impresiones de múltiples extrusoras con materiales "
 "translúcidos o material de soporte soluble manual."
 
-msgid "Format of G-code thumbnails"
-msgstr "Formato de miniaturas de código G"
-
-msgid ""
-"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
-"QOI for low memory firmware"
-msgstr ""
-"Formato de miniaturas de código G: PNG para la mejor calidad, JPG para el "
-"tamaño más pequeño, QOI para el firmware de baja memoria"
-
 msgid ""
 "Forward-compatibility rule when loading configurations from config files and "
 "project files (3MF, AMF)."
@@ -3156,6 +3165,9 @@ msgstr "Distancia del punto de piel difusa"
 
 msgid "Fuzzy skin thickness"
 msgstr "Espesor de la piel difusa"
+
+msgid "Fuzzy skin type."
+msgstr "Tipo de Piel difusa."
 
 msgid "G-code"
 msgstr "Código G"
@@ -3410,9 +3422,6 @@ msgstr "Ocultar regla"
 
 msgid "High extruder current on filament swap"
 msgstr "Alta intensidad en el extrusor durante el cambio de filamento"
-
-msgid "High viscosity"
-msgstr "Alta viscosidad"
 
 msgid "Higher print quality versus higher print speed."
 msgstr "Mayor calidad de impresión contra mayor velocidad de impresión."
@@ -3783,6 +3792,19 @@ msgstr ""
 "limitar la elevación a las primeras capas."
 
 msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
+msgstr ""
+"Si desea procesar el código G de salida a través de scripts personalizados, "
+"simplemente haga una lista de sus rutas absolutas aquí. Separe los scripts "
+"múltiples con un punto y coma. Los scripts se pasarán por la ruta absoluta "
+"al archivo de código G como primer argumento, y pueden acceder a la "
+"configuración de configuración de Slic3r leyendo las variables de entorno."
+
+msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
 "code to take it into account. This option lets you specify the displacement "
 "of each extruder with respect to the first one. It expects positive "
@@ -3874,8 +3896,8 @@ msgstr "Importar archivo SLA"
 msgid "Import STL (Imperial Units)"
 msgstr "Importar STL (Unidades Imperiales)"
 
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "Importar STL/3MF/STEP/OBJ/AM&F"
+msgid "Import STL/OBJ/AM&F/3MF"
+msgstr "Importar STL/OBJ/AM&F/3MF"
 
 msgid "Importing canceled."
 msgstr "Importación cancelada."
@@ -4440,9 +4462,6 @@ msgstr "Distancia máxima de puentes"
 msgid "Max bridges on a pillar"
 msgstr "Puentes maximos en un pilar"
 
-msgid "Max height"
-msgstr "Altura máxima"
-
 msgid "Max merge distance"
 msgstr "Distancia máxima de combinación"
 
@@ -4463,9 +4482,6 @@ msgstr "Máx. Pendiente volumétrica positiva"
 
 msgid "Max volumetric speed"
 msgstr "Velocidad volumétrica máxima"
-
-msgid "Max width"
-msgstr "Anchura máxima"
 
 msgid "Maximal bridging distance"
 msgstr "Distancia máxima de puentes"
@@ -4642,9 +4658,6 @@ msgstr "Mensaje para pausa de impresión en la capa actual (%1% mm)."
 msgid "Min"
 msgstr "Min"
 
-msgid "Min height"
-msgstr "Altura mínima"
-
 msgid "Min print speed"
 msgstr "Velocidad de impresión mínima"
 
@@ -4675,9 +4688,6 @@ msgstr "El espesor mínimo de la carcasa inferior es %1% mm."
 msgid "Minimum exposure time"
 msgstr "Tiempo de exposición mínimo"
 
-msgid "Minimum feature size"
-msgstr "Tamaño mínimo de la característica"
-
 msgid "Minimum feedrate when extruding"
 msgstr "Avance mínimo al extruir"
 
@@ -4690,27 +4700,11 @@ msgstr "Avances míninos"
 msgid "Minimum initial exposure time"
 msgstr "Tiempo de exposición inicial mínimo"
 
-msgid "Minimum perimeter width"
-msgstr "Ancho mínimo del perímetro"
-
 msgid "Minimum shell thickness"
 msgstr "Espesor mínimo de pared"
 
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Espesor mínimo de una carcasa superior / inferior"
-
-msgid ""
-"Minimum thickness of thin features. Model features that are thinner than "
-"this value will not be printed, while features thicker than the Minimum "
-"feature size will be widened to the Minimum perimeter width. If expressed as "
-"a percentage (for example 25%), it will be computed based on the nozzle "
-"diameter."
-msgstr ""
-"Espesor mínimo de las características delgadas. Las características del "
-"modelo que sean más finas que este valor no se imprimirán, mientras que las "
-"características más gruesas que el tamaño mínimo de la característica se "
-"ensancharán hasta el ancho mínimo del perímetro. Si se expresa en porcentaje "
-"(por ejemplo 25%), se calculará en función del diámetro de la boquilla."
 
 msgid "Minimum top shell thickness"
 msgstr "Espesor mínimo de la carcasa superior"
@@ -5627,23 +5621,8 @@ msgstr ""
 msgid "Perimeter"
 msgstr "Perímetro"
 
-msgid "Perimeter distribution count"
-msgstr "Recuento de la distribución del perímetro"
-
 msgid "Perimeter extruder"
 msgstr "Extrusor para perímetros"
-
-msgid "Perimeter generator"
-msgstr "Generador de perímetros"
-
-msgid "Perimeter transition length"
-msgstr "Longitud de transición del perímetro"
-
-msgid "Perimeter transitioning filter margin"
-msgstr "Margen del filtro de transición del perímetro"
-
-msgid "Perimeter transitioning threshold angle"
-msgstr "Ángulo del umbral de transición del perímetro"
 
 msgid "perimeters"
 msgstr "perímetros"
@@ -5699,6 +5678,13 @@ msgid "Please check your object list before preset changing."
 msgstr ""
 "Por favor comprueba tu lista de objetos antes de cambiar los ajustes "
 "iniciales."
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr ""
+"Por favor, guarda tu proyecto y reinicia PrusaSlicer. Estaremos encantados "
+"de que nos informes del problema."
 
 msgid "Please select the file to reload"
 msgstr "Por favor selecciona el archivo a volver a cargar"
@@ -5807,9 +5793,6 @@ msgid ""
 msgstr ""
 "Presiona para acelerar 5 veces mientras mueves el pulgar\n"
 "con teclas de flecha o rueda del ratón"
-
-msgid "Pressure equalizer (experimental)"
-msgstr "Ecualizador de presión (experimental)"
 
 msgid "Preview"
 msgstr "Previsualización"
@@ -5966,6 +5949,12 @@ msgstr "Progreso:"
 
 msgid "Project is loading"
 msgstr "El proyecto se está cargando"
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "PrusaSlicer ha encontrado un error fatal: \"%1%\""
+
+msgid "PrusaSlicer: Open hyperlink"
+msgstr "PrusaSlicer: Abrir hipervínculo"
 
 msgid ""
 "Purging after toolchange will be done inside this object's infills. This "
@@ -7078,9 +7067,6 @@ msgstr "Tamaño y coordenadas"
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Tamaño en X e Y de la placa rectangular."
 
-msgid "Size:"
-msgstr "Tamaño:"
-
 msgid "Skirt"
 msgstr "Falda"
 
@@ -7128,6 +7114,13 @@ msgstr "Puntos de soporte SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Se detectaron soportes SLA fuera del área de impresión."
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
+msgstr ""
+"Slic3r puede subir archivos de código G a un host de impresión. Este campo "
+"debe contener el tipo de host."
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7820,9 +7813,6 @@ msgstr ""
 msgid "The filament material type for use in custom G-codes."
 msgstr "El tipo de material de filamento para uso en códigos G personalizados."
 
-msgid "The file does not exist."
-msgstr "El archivo no existe."
-
 msgid ""
 "The file where the output will be written (if not specified, it will be "
 "based on the input file)."
@@ -7974,15 +7964,6 @@ msgstr ""
 "El número de capas sólidas en la base se incrementa por encima de "
 "bottom_solid_layers si es necesario para asegurar un espesor mínimo en la "
 "pared de inferior."
-
-msgid ""
-"The number of perimeters, counted from the center, over which the variation "
-"needs to be spread. Lower values mean that the outer perimeters don't change "
-"in width."
-msgstr ""
-"El número de perímetros, contados desde el centro, sobre el que hay que "
-"repartir la variación. Los valores más bajos significan que los perímetros "
-"exteriores no cambian de ancho."
 
 msgid ""
 "The number of top solid layers is increased above top_solid_layers if "
@@ -8197,6 +8178,12 @@ msgid "The uploads are still ongoing"
 msgstr "Las subidas aún están en curso"
 
 msgid ""
+"The vertical distance between object and raft. Ignored for soluble interface."
+msgstr ""
+"La distancia vertical entre el objeto y la balsa. Se ignora para la interfaz "
+"soluble."
+
+msgid ""
 "The Wipe option is not available when using the Firmware Retraction mode.\n"
 "\n"
 "Shall I disable it in order to enable Firmware Retraction?"
@@ -8342,17 +8329,15 @@ msgstr ""
 
 msgid ""
 "This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
-"(feedrate 20 mm/s) will take at least 2 seconds."
+"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
+"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
+"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
 msgstr ""
 "Esta configuración experimental se usa para limitar la velocidad de cambio "
-"en la velocidad de extrusión para pasar de una velocidad menor a una "
-"velocidad mayor. Un valor de 1.8 mm³/s² asegura que se cambia la velocidad "
-"de extrusión de 5.4 mm³/s (ancho de extrusión de 0.45 mm, altura de "
-"extrusión de 0.2 mm, avance de 20 mm/s) a 1.8 mm³/s  (avance de 60 mm/s) "
-"durará al menos 2 segundos."
+"en la velocidad de extrusión. Un valor de 1,8 mm³ / s² asegura que se cambia "
+"la velocidad de extrusión de 1,8 mm³ / s (ancho de extrusión de 0,45 mm, "
+"altura de extrusión de 0,2 mm, avance de 20 mm / s) a 5,4 mm³ / s (avance de "
+"60 mm / s) durará al menos 2 segundos."
 
 msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
@@ -8372,6 +8357,20 @@ msgstr ""
 "y corregir el ancho de una sola pared. Los valores usuales están entre 0.9 y "
 "1.1. Si cree que necesita cambiar esto más, verifique el diámetro del "
 "filamento y los pasos del E en el firmware."
+
+msgid ""
+"This feature will raise Z gradually while printing a single-walled object in "
+"order to remove any visible seam. This option requires a single perimeter, "
+"no infill, no top solid layers and no support material. You can still set "
+"any number of bottom solid layers as well as skirt/brim loops. It won't work "
+"when printing more than one single object."
+msgstr ""
+"Esta función aumentará Z gradualmente mientras imprimes un objeto de pared "
+"simple para eliminar cualquier costura visible. Esta opción requiere un "
+"perímetro único, sin relleno, sin capas sólidas superiores y sin material de "
+"soporte. Puedes establecer cualquier cantidad de capas sólidas inferiores, "
+"así como los bucles de falda/balsa. No funcionará al imprimir más de un "
+"objeto."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -8411,6 +8410,12 @@ msgstr ""
 "Este indicador habilita la lógica de enfriamiento automático que ajusta la "
 "velocidad de impresión y la velocidad del ventilador según el tiempo de "
 "impresión de la capa."
+
+msgid "This G-code will be used as a code for the color change"
+msgstr "Este código G se utilizará como código para el cambio de color"
+
+msgid "This G-code will be used as a code for the pause print"
+msgstr "Este código G se utilizará como código para la pausa de impresión"
 
 msgid "This G-code will be used as a custom code"
 msgstr "Este código G se utilizará como código personalizado"
@@ -8570,9 +8575,6 @@ msgstr ""
 msgid "Tilt"
 msgstr "Inclinación"
 
-msgid "Tilt for high viscosity resin"
-msgstr "Inclinación para resina de alta viscosidad"
-
 msgid "Tilt time"
 msgstr "Tiempo de inclinación"
 
@@ -8604,9 +8606,6 @@ msgstr "Tiempo de la inclinación rápida"
 
 msgid "Time of the slow tilt"
 msgstr "Tiempo de la inclinación lenta"
-
-msgid "Time of the super slow tilt"
-msgstr "Tiempo de la inclinación super lenta"
 
 msgid ""
 "Time to wait after the filament is unloaded. May help to get reliable "
@@ -9089,9 +9088,6 @@ msgstr "Versión"
 msgid "version"
 msgstr "versión"
 
-msgid "Version:"
-msgstr "Versión:"
-
 msgid "Vertical shells"
 msgstr "Carcasas verticales"
 
@@ -9241,19 +9237,6 @@ msgid ""
 msgstr ""
 "Cuando la retracción se compensa después de un movimiento, el extrusor "
 "necesitará introducir más filamento. Este ajuste raramente se necesita."
-
-msgid ""
-"When to create transitions between even and odd numbers of perimeters. A "
-"wedge shape with an angle greater than this setting will not have "
-"transitions and no perimeters will be printed in the center to fill the "
-"remaining space. Reducing this setting reduces the number and length of "
-"these center perimeters, but may leave gaps or overextrude."
-msgstr ""
-"Cuándo se crean transiciones entre números pares e impares de perímetros. "
-"Una forma de cuña con un ángulo mayor que este ajuste no tendrá transiciones "
-"y no se imprimirán perímetros en el centro para rellenar el espacio "
-"restante. Reduciendo este ajuste se reduce el número y la longitud de estos "
-"perímetros centrales, pero puede dejar huecos o sobresalir."
 
 msgid "WHITE BULLET"
 msgstr "VIÑETA BLANCA"
@@ -9496,14 +9479,14 @@ msgstr ""
 "Tiene los siguientes ajustes preestablecidos con opciones guardadas para "
 "\"Subida del host de impresión\""
 
-msgid "You have to enter a printer name."
-msgstr "Tienes que introducir un nombre de impresora."
-
 msgid "You may need to update your graphics card driver."
 msgstr "Puede que necesites actualizar tu tarjeta de gráficos."
 
 msgid "You must install a configuration update."
 msgstr "Es necesario instalar una actualización de la configuración."
+
+msgid "You should change the name of your printer device."
+msgstr "Deberías cambiar el nombre de tu dispositivo de impresión."
 
 msgid "You started your selection with %s Item."
 msgstr "Has empezado la selección con %s Items."
