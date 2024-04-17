@@ -89,7 +89,7 @@ bool Bundle::load(fs::path source_path, bool ais_in_resources, bool ais_prusa_bu
     if (presets_loaded == 0) {
         BOOST_LOG_TRIVIAL(error) << boost::format("Vendor bundle: `%1%`: No profile loaded.") % path_string;
         return false;
-    } 
+    }
 
     BOOST_LOG_TRIVIAL(trace) << boost::format("Vendor bundle: `%1%`: %2% profiles loaded.") % path_string % presets_loaded;
     this->vendor_profile = &first_vendor->second;
@@ -347,11 +347,11 @@ PrinterPicker::PrinterPicker(wxWindow *parent, const VendorProfile &vendor, wxSt
         auto *sel_all_std = new wxButton(this, wxID_ANY, titles.size() > 1 ? _L("All standard") : _L("Standard"));
         auto *sel_all = new wxButton(this, wxID_ANY, _L("All"));
         auto *sel_none = new wxButton(this, wxID_ANY, _L("None"));
-        if (is_variants) 
+        if (is_variants)
         sel_all_std->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &event) { this->select_all(true, false); });
         sel_all->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &event) { this->select_all(true, true); });
         sel_none->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &event) { this->select_all(false); });
-        if (is_variants) 
+        if (is_variants)
         title_sizer->Add(sel_all_std, 0, wxRIGHT, BTN_SPACING);
         title_sizer->Add(sel_all, 0, wxRIGHT, BTN_SPACING);
         title_sizer->Add(sel_none);
@@ -419,7 +419,7 @@ bool PrinterPicker::any_selected() const
     return false;
 }
 
-std::set<std::string> PrinterPicker::get_selected_models() const 
+std::set<std::string> PrinterPicker::get_selected_models() const
 {
     std::set<std::string> ret_set;
 
@@ -464,9 +464,9 @@ ConfigWizardPage::ConfigWizardPage(ConfigWizard *parent, wxString title, wxStrin
 
     SetSizer(sizer);
 
-    // There is strange layout on Linux with GTK3, 
+    // There is strange layout on Linux with GTK3,
     // see https://github.com/prusa3d/PrusaSlicer/issues/5103 and https://github.com/prusa3d/PrusaSlicer/issues/4861
-    // So, non-active pages will be hidden later, on wxEVT_SHOW, after completed Layout() for all pages 
+    // So, non-active pages will be hidden later, on wxEVT_SHOW, after completed Layout() for all pages
     if (!wxLinux_gtk3)
         this->Hide();
 
@@ -497,11 +497,7 @@ void ConfigWizardPage::append_spacer(int space)
 
 PageWelcome::PageWelcome(ConfigWizard *parent)
     : ConfigWizardPage(parent, from_u8((boost::format(
-#ifdef __APPLE__
             _utf8(L("Welcome to the %s Configuration Assistant"))
-#else
-            _utf8(L("Welcome to the %s Configuration Wizard"))
-#endif
             ) % SLIC3R_APP_NAME).str()), _L("Welcome"))
     , welcome_text(append_text(from_u8((boost::format(
         _utf8(L("Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print.")))
@@ -517,7 +513,7 @@ PageWelcome::PageWelcome(ConfigWizard *parent)
 {
     welcome_text->Hide();
     cbox_reset->Hide();
-    cbox_integrate->Hide();    
+    cbox_integrate->Hide();
 }
 
 void PageWelcome::set_run_reason(ConfigWizard::RunReason run_reason)
@@ -623,7 +619,7 @@ void PagePrinters::set_run_reason(ConfigWizard::RunReason run_reason)
 #ifdef ALLOW_PRUSA_FIRST
     if (is_primary_printer_page
         && (run_reason == ConfigWizard::RR_DATA_EMPTY || run_reason == ConfigWizard::RR_DATA_LEGACY)
-        && printer_pickers.size() > 0 
+        && printer_pickers.size() > 0
         && printer_pickers[0]->vendor_id == ALLOW_PRUSA_FIRST) {
         printer_pickers[0]->select_one(0, true);
     }
@@ -759,7 +755,7 @@ void PageMaterials::reload_presets()
 
 void PageMaterials::set_compatible_printers_html_window(const std::vector<std::string>& printer_names, bool all_printers)
 {
-    const auto bgr_clr = 
+    const auto bgr_clr =
 #if defined(__APPLE__)
         html_window->GetParent()->GetBackgroundColour();
 #else
@@ -833,7 +829,7 @@ void PageMaterials::set_compatible_printers_html_window(const std::vector<std::s
             "</html>"
         );
     }
-   
+
     wxFont font = get_default_font_for_dpi(this, get_dpi_for_window(this));
     const int fs = font.GetPointSize();
     int size[] = { fs,fs,fs,fs,fs,fs,fs };
@@ -964,7 +960,7 @@ void PageMaterials::update_lists(int sel_type, int sel_vendor, int last_selected
 		list_type->SetSelection(sel_type);
 		list_profile->Clear();
 	}
-	
+
 	if (sel_type != sel_type_prev) {
 		// Refresh vendor list
 
@@ -1001,7 +997,7 @@ void PageMaterials::update_lists(int sel_type, int sel_vendor, int last_selected
 		list_vendor->SetSelection(sel_vendor);
 		list_profile->Clear();
 	}
-         
+
 	if (sel_vendor != sel_vendor_prev) {
 		// Refresh material list
 
@@ -1064,7 +1060,7 @@ void PageMaterials::sort_list_data(StringList* list, bool add_All_item, bool mat
 // then prusa profiles
 // then the rest
 // in alphabetical order
-    
+
     std::vector<std::reference_wrapper<const std::string>> prusa_profiles;
     std::vector<std::reference_wrapper<const std::string>> other_profiles;
     for (int i = 0 ; i < list->size(); ++i) {
@@ -1073,11 +1069,11 @@ void PageMaterials::sort_list_data(StringList* list, bool add_All_item, bool mat
             continue;
         if (!material_type_ordering && data.find("Prusa") != std::string::npos)
             prusa_profiles.push_back(data);
-        else 
+        else
             other_profiles.push_back(data);
     }
     if(material_type_ordering) {
-        
+
         const ConfigOptionDef* def = print_config_def.get("filament_type");
         std::vector<std::string>enum_values = def->enum_values;
         size_t end_of_sorted = 0;
@@ -1105,7 +1101,7 @@ void PageMaterials::sort_list_data(StringList* list, bool add_All_item, bool mat
             return a.get() < b.get();
             });
     }
-    
+
     list->Clear();
     if (add_All_item)
         list->append(_L("(All)"), &EMPTY);
@@ -1113,7 +1109,7 @@ void PageMaterials::sort_list_data(StringList* list, bool add_All_item, bool mat
         list->append(item, &const_cast<std::string&>(item.get()));
     for (const auto& item : other_profiles)
         list->append(item, &const_cast<std::string&>(item.get()));
-}     
+}
 
 void PageMaterials::sort_list_data(PresetList* list, const std::vector<ProfilePrintData>& data)
 {
@@ -1217,7 +1213,7 @@ PageCustom::PageCustom(ConfigWizard *parent)
     cb_custom->Bind(wxEVT_CHECKBOX, [this](wxCommandEvent &event) {
         tc_profile_name->Enable(custom_wanted());
         wizard_p()->on_custom_setup(custom_wanted());
-		
+
     });
 
     append(cb_custom);
@@ -1335,7 +1331,7 @@ void PageMode::serialize_mode(AppConfig *app_config) const
     // If "Mode" page wasn't selected (no one radiobutton is checked),
     // we shouldn't to update a view_mode value in app_config
     if (mode.empty())
-        return; 
+        return;
 
     app_config->set("view_mode", mode);
     app_config->set("use_inches", check_inch->GetValue() ? "1" : "0");
@@ -1442,7 +1438,7 @@ void PageBedShape::apply_custom_config(DynamicPrintConfig &config)
     config.set_key_value("bed_custom_model", new ConfigOptionString(custom_model));
 }
 
-static void focus_event(wxFocusEvent& e, wxTextCtrl* ctrl, double def_value) 
+static void focus_event(wxFocusEvent& e, wxTextCtrl* ctrl, double def_value)
 {
     e.Skip();
     wxString str = ctrl->GetValue();
@@ -1654,7 +1650,7 @@ ConfigWizardIndex::ConfigWizardIndex(wxWindow *parent)
     , item_hover(NO_ITEM)
     , last_page((size_t)-1)
 {
-#ifndef __WXOSX__ 
+#ifndef __WXOSX__
     SetDoubleBuffered(true);// SetDoubleBuffered exists on Win and Linux/GTK, but is missing on OSX
 #endif //__WXOSX__
     SetMinSize(bg.bmp().GetSize());
@@ -2190,12 +2186,12 @@ void ConfigWizard::priv::update_materials(Technology technology)
 						if (!filaments.containts(&filament)) {
 							filaments.push(&filament);
 							if (!filament.alias.empty())
-								aliases_fff[filament.alias].insert(filament.name); 
-						} 
+								aliases_fff[filament.alias].insert(filament.name);
+						}
 						filaments.add_printer(&printer);
                     }
 				}
-				
+
             }
         }
         // count compatible printers
@@ -2261,9 +2257,9 @@ void ConfigWizard::priv::update_materials(Technology technology)
                 }
             }
         }
-        // count compatible printers        
+        // count compatible printers
         for (const auto& preset : sla_materials.presets) {
-            
+
             const auto filter = [preset](const std::pair<std::string, size_t> element) {
                 return preset->alias == element.first;
             };
@@ -2348,7 +2344,7 @@ void ConfigWizard::priv::select_default_materials_for_printer_models(Technology 
     PageMaterials     *page_materials    = technology & T_FFF ? page_filaments : page_sla_materials;
     const std::string &appconfig_section = page_materials->materials->appconfig_section();
 
-    // Following block was unnecessary. Its enough to iterate printer_models once. Not for every vendor printer page. 
+    // Following block was unnecessary. Its enough to iterate printer_models once. Not for every vendor printer page.
     // Filament is selected on same page for all printers of same technology.
     /*
     auto select_default_materials_for_printer_page = [this, appconfig_section, printer_models, technology](PagePrinters *page_printers, Technology technology)
@@ -2366,7 +2362,7 @@ void ConfigWizard::priv::select_default_materials_for_printer_models(Technology 
     if (page_printers)
         select_default_materials_for_printer_page(page_printers, technology);
 
-    for (const auto& printer : pages_3rdparty) 
+    for (const auto& printer : pages_3rdparty)
     {
         page_printers = technology & T_FFF ? printer.second.first : printer.second.second;
         if (page_printers)
@@ -2416,7 +2412,7 @@ void ConfigWizard::priv::on_3rdparty_install(const VendorProfile *vendor, bool i
     auto it = pages_3rdparty.find(vendor->id);
     wxCHECK_RET(it != pages_3rdparty.end(), "Internal error: GUI page not found for 3rd party vendor profile");
 
-    for (PagePrinters* page : { it->second.first, it->second.second }) 
+    for (PagePrinters* page : { it->second.first, it->second.second })
         if (page) {
             if (page->install && !install)
                 page->select_all(false);
@@ -2434,11 +2430,11 @@ void ConfigWizard::priv::on_3rdparty_install(const VendorProfile *vendor, bool i
 bool ConfigWizard::priv::on_bnt_finish()
 {
     wxBusyCursor wait;
-    /* When Filaments or Sla Materials pages are activated, 
+    /* When Filaments or Sla Materials pages are activated,
      * materials for this pages are automaticaly updated and presets are reloaded.
-     * 
-     * But, if _Finish_ button was clicked without activation of those pages 
-     * (for example, just some printers were added/deleted), 
+     *
+     * But, if _Finish_ button was clicked without activation of those pages
+     * (for example, just some printers were added/deleted),
      * than last changes wouldn't be updated for filaments/materials.
      * SO, do that before close of Wizard
      */
@@ -2459,7 +2455,7 @@ bool ConfigWizard::priv::on_bnt_finish()
 //
 // In case only_for_model_id is set, then the test is done for that particular printer model only, and the default materials are installed silently.
 // Otherwise the user is quieried whether to install the missing default materials or not.
-// 
+//
 // Return true if the tested Printer Models already had materials installed.
 // Return false if there were some Printer Models with missing materials, independent from whether the defaults were installed for these
 // respective Printer Models or not.
@@ -2557,7 +2553,7 @@ bool ConfigWizard::priv::check_and_install_missing_materials(Technology technolo
     return true;
 }
 
-static std::set<std::string> get_new_added_presets(const std::map<std::string, std::string>& old_data, const std::map<std::string, std::string>& new_data) 
+static std::set<std::string> get_new_added_presets(const std::map<std::string, std::string>& old_data, const std::map<std::string, std::string>& new_data)
 {
     auto get_aliases = [](const std::map<std::string, std::string>& data) {
         std::set<std::string> old_aliases;
@@ -2665,7 +2661,7 @@ bool ConfigWizard::priv::apply_config(AppConfig *app_config, PresetBundle *prese
 
 #ifdef __linux__
     // Desktop integration on Linux
-    if (page_welcome->integrate_desktop()) 
+    if (page_welcome->integrate_desktop())
         DesktopIntegrationDialog::perform_desktop_integration();
 #endif
 
@@ -2782,7 +2778,7 @@ bool ConfigWizard::priv::apply_config(AppConfig *app_config, PresetBundle *prese
     // if unsaved changes was not cheched till this moment
     if (!check_unsaved_preset_changes) {
         if ((check_unsaved_preset_changes = !first_added_filament.empty() || !first_added_sla_material.empty())) {
-            header = !first_added_filament.empty() ? 
+            header = !first_added_filament.empty() ?
                      _L("A new filament was installed and it will be activated.") :
                      _L("A new SLA material was installed and it will be activated.");
             if (!wxGetApp().check_and_keep_current_preset_changes(caption, header, act_btns, &apply_keeped_changes))
@@ -2837,12 +2833,12 @@ bool ConfigWizard::priv::apply_config(AppConfig *app_config, PresetBundle *prese
     // and the Wizard shall not create any new values that would require substitution.
     // Throw on substitutions in system profiles, as the system profiles provided over the air should be compatible with this PrusaSlicer version.
     if (check_unsaved_preset_changes)
-        preset_bundle->load_presets(*app_config, ForwardCompatibilitySubstitutionRule::EnableSilentDisableSystem, 
+        preset_bundle->load_presets(*app_config, ForwardCompatibilitySubstitutionRule::EnableSilentDisableSystem,
                                     {preferred_model, preferred_variant, first_added_filament, first_added_sla_material});
 
     if (!only_sla_mode && page_custom->custom_wanted()) {
         // if unsaved changes was not cheched till this moment
-        if (!check_unsaved_preset_changes && 
+        if (!check_unsaved_preset_changes &&
             !wxGetApp().check_and_keep_current_preset_changes(caption, _L("Custom printer was installed and it will be activated."), act_btns, &apply_keeped_changes))
             return false;
 
@@ -2869,10 +2865,10 @@ void ConfigWizard::priv::update_presets_in_config(const std::string& section, co
         if (add)
             appconfig_new.set(s, key, "1");
         else
-            appconfig_new.erase(s, key); 
+            appconfig_new.erase(s, key);
     };
 
-    // add or delete presets had a same alias 
+    // add or delete presets had a same alias
     auto it = aliases.find(alias_key);
     if (it != aliases.end())
         for (const std::string& name : it->second)
@@ -3040,7 +3036,7 @@ ConfigWizard::ConfigWizard(wxWindow *parent)
         _L("SLA Material Profiles Selection") + " ", _L("SLA Materials"), _L("Type:") ));
 
     p->add_page(p->page_custom   = new PageCustom(this));
-    
+
     p->add_page(p->page_update   = new PageUpdate(this));
     p->add_page(p->page_reload_from_disk = new PageReloadFromDisk(this));
 #ifdef _WIN32
@@ -3075,8 +3071,8 @@ ConfigWizard::ConfigWizard(wxWindow *parent)
     {
         // check, that there is selected at least one filament/material
         ConfigWizardPage* active_page = this->p->index->active_page();
-        if (// Leaving the filaments or SLA materials page and 
-        	(active_page == p->page_filaments || active_page == p->page_sla_materials) && 
+        if (// Leaving the filaments or SLA materials page and
+        	(active_page == p->page_filaments || active_page == p->page_sla_materials) &&
         	// some Printer models had no filament or SLA material selected.
         	! p->check_and_install_missing_materials(dynamic_cast<PageMaterials*>(active_page)->materials->technology))
         	// In that case don't leave the page and the function above queried the user whether to install default materials.
@@ -3168,13 +3164,8 @@ const wxString& ConfigWizard::name(const bool from_menu/* = false*/)
     // Note: Don't call _() macro here.
     //       This function just return the current name according to the OS.
     //       Translation is implemented inside GUI_App::add_config_menu()
-#if __APPLE__
     static const wxString config_wizard_name =  L("Configuration Assistant");
     static const wxString config_wizard_name_menu = L("Configuration &Assistant");
-#else
-    static const wxString config_wizard_name = L("Configuration Wizard");
-    static const wxString config_wizard_name_menu = L("Configuration &Wizard");
-#endif
     return from_menu ? config_wizard_name_menu : config_wizard_name;
 }
 
@@ -3184,7 +3175,7 @@ void ConfigWizard::on_dpi_changed(const wxRect &suggested_rect)
 
     const int em = em_unit();
 
-    msw_buttons_rescale(this, em, { wxID_APPLY, 
+    msw_buttons_rescale(this, em, { wxID_APPLY,
                                     wxID_CANCEL,
                                     p->btn_sel_all->GetId(),
                                     p->btn_next->GetId(),
