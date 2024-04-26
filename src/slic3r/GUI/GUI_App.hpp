@@ -254,7 +254,7 @@ public:
     void            calibration_cube_dialog();
     void            calibration_first_layer_dialog();
     void            calibration_first_layer_patch_dialog();
-    void            calibration_flow_walls_dialog();
+    void            calibration_extrusion_multiplier_dialog();
 	void            calibration_retraction_dialog();
     void            freecad_script_dialog();
     void            tiled_canvas_dialog();

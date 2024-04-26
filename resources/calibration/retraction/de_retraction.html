@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kalibrierung des Extruderr&uuml;ckzugs</title>
+</head>
+<body>
+
+<table width="100%">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<h1>Kalibrierung des Extruderr&uuml;ckzugs</h1>
+</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>
+    <table><tr><td>Needs:</td>
+        <td style="text-align: left;">Bettnivellierung</td>
+        <td style="text-align: left;">Fluss</td>
+        <td style="text-align: left;">Temperatur</td></tr>
+    </table>
+    </strong>
+</tr>
+</tbody>
+</table>
+
+<h2>Wie es funktioniert</h2>
+<p>Es ist ratsam, die Durchfluss- und Temperaturkalibrierung durchzuf&uuml;hren.
+Diese Kalibrierung hilft Ihnen, die richtige R&uuml;ckzugsl&auml;nge f&uuml;r Ihren Extruder
+ und das aktuelle Filament zu w&auml;hlen.</p>
+<p>Bei diesem Test wird ein Testst&uuml;ck gedruckt, dessen R&uuml;ckzugsl&auml;nge f&uuml;r
+jeden in der z-Achse gedruckten Millimeter zunimmt.</p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./retraction.png" width="750 height="527"/></td>
+</tr>
+<tr>
+</tbody>
+</table>
+
+<h3>Schrittweite und H&ouml;he</h3>
+<p> Wenn Sie einen Direktextruder haben, versuchen Sie es am besten mit einer
+Schrittweite von 0.1mm und einer H&ouml;he von ca. 15mm, da man in der Regel nicht
+mehr als 1mm R&uuml;ckzug ben&ouml;tigt.</p>
+
+<p> Wenn Sie einen Bowden-Extruder haben, versuchen Sie es am besten mit einer
+0.5mm-Schrittweite und ~ 15mm H&ouml;he, da es nicht ungew&ouml;hnlich ist, dass Sie
+mehr als 6mm R&uuml;ckzug ben&ouml;tigen. Sie k&ouml;nnen auch eine 0.2mm-Schrittweite und
+eine gr&ouml;&szlig;ere H&ouml;he verwenden. Seien Sie vorsichtig, da eine hohe R&uuml;ckzugsl&auml;nge
+erh&ouml;ht das Risiko einer D&uuml;senverstopfung erheblich.
+</p>
+<h3>Starttemperatur und Reduzierung der Temperatur</h3>
+<p>Hier sollten Sie mit der h&ouml;chstm&ouml;glichen Temperatur beginnen.</p>
+
+<p>Bei der Temperaturkalibrierung haben Sie ein Temperaturintervall, in dem Ihr
+Druck "gut genug" ist.</p>
+
+<p>W&auml;hlen Sie dann im Feld "Tempabnahme" eine Option, die die Temperatur nicht zu sehr
+absenkt. "3x10&deg;" bedeutet, dass drei Tests gedruckt werden, wobei der erste
+der erste mit der maximalen Temperatur und jeder weitere mit 10&deg;C weniger Temperatur.</p>
+
+<h3>Verlangsamung des Filaments entfernen</h3>
+
+<p>Diese Schaltfl&auml;che &auml;ndert Ihre Einstellungen in Filament / K&uuml;hlung, um alle Funktionen
+zu deaktivieren die ausgel&ouml;st werden, wenn eine Schicht zu klein ist, um rechtzeitig
+abgek&uuml;hlt werden zu k&ouml;nnen. Mit diese Algorithmen deaktiviert sind, wird Ihr Druck in
+Bezug auf den  R&uuml;ckzug, also ein guter Stresstest. Um sie wieder zu aktivieren, entfernen
+Sie alle &Auml;nderungen  auf der Registerkarte Filament (der kleine  "Zur&uuml;ck-Pfeil").</p>
+
+  <h3>Ergebnisse</h3>
+<p>Wenn die Testst&uuml;cke gedruckt sind, k&ouml;nnen Sie den Millimeter mit den Rillen
+an den Seiten der Druckt&uuml;rme z&auml;hlen. Ich z&auml;hle sie mit meinem Nagel. Wenn du die H&ouml;he
+erreicht hast H&ouml;he, wo keine F&auml;den mehr vorhanden sind, k&ouml;nnen Sie die Millimeterzahl
+notieren. Multipliziere Sie mit Ihrem Schrittparameter (0.1, 0.2, 0.5 oder 1) und Sie
+hast IhreR&uuml;ckzugsl&auml;nge. Sie k&ouml;nnen 20% mehr L&auml;nge hinzuf&uuml;gen, um einen kleinen
+Spielraum zu haben.</p>
+
+<p>Wenn Sie mehrere Drucke mit unterschiedlichen Temperaturen haben, m&uuml;ssen Sie den
+den besten Druck ausw&auml;hlen, den mit der geringsten Fadenbildung, es sei denn, die
+Es sei denn, der R&uuml;ckgang der Fadenziehung ist nicht gro&szlig; genug, um die Absenkung der
+Temperatur zu rechtfertigen.</p>
+
+<h2>Beispiel</h2>
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./retraction.jpg" width="480" height="270" /></td>
+<td>In diesem Druck erfolgt der letzte kleine Faden auf einer H&ouml;he von ~10.
+Da ich einen Schritt von 0.5 verwendet habe, bedeutet dies, dass ich mindestens
+5mm R&uuml;ckzug brauche, aber Ich setze ihn auf 6, um sicher zu sein, dass fast alle
+F&auml;den entfernt werden.</td>
+<td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+
+<h2>Anmerkungen</h2>
+<p>Die R&uuml;ckzugsgeschwindigkeit sollte auf den maximalen Wert eingestellt werden, den Ihr
+Extruder/Treiber / Firmware zuverl&auml;ssig unterst&uuml;tzen kann, mit einer Sicherheitsmarge.
+ 50mm/s f&uuml;r den Einzug und 20mm/s f&uuml;r den R&uuml;ckzug sind ein guter Anfang f&uuml;r PLA.</p>
+
+<p>Lizenz f&uuml;r die f&uuml;r diesen Kalibrierungstest verwendeten Modelle: CC BY-SA 3.0</p>
+</body>
+</html>

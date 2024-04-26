@@ -10,7 +10,7 @@ src/slic3r/GUI/CalibrationBridgeDialog.cpp
 src/slic3r/GUI/CalibrationCubeDialog.cpp
 src/slic3r/GUI/CalibrationFirstLayerDialog.cpp
 src/slic3r/GUI/CalibrationFirstLayerPatchDialog.cpp
-src/slic3r/GUI/CalibrationWallsDialog.cpp
+src/slic3r/GUI/CalibrationExtruderDialog.cpp
 src/slic3r/GUI/CalibrationFlowDialog.cpp
 src/slic3r/GUI/CalibrationOverBridgeDialog.cpp
 src/slic3r/GUI/CalibrationRetractionDialog.cpp

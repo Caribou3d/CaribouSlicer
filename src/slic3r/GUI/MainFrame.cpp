@@ -1977,8 +1977,8 @@ void MainFrame::init_menubar_as_editor()
            [this](wxCommandEvent&) { wxGetApp().calibration_first_layer_patch_dialog(); });
         m_calibration_menu->AppendSeparator();
 
-        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Filament Flow Wall calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
-           [this](wxCommandEvent&) { wxGetApp().calibration_flow_walls_dialog(); });
+        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Extrusion Multiplier calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
+           [this](wxCommandEvent&) { wxGetApp().calibration_extrusion_multiplier_dialog(); });
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Filament Flow calibration")), _(L("Create a test print to help you to set your filament extrusion multiplier.")),
             [this](wxCommandEvent&) { wxGetApp().flow_ratio_dialog(); });
         m_calibration_menu->AppendSeparator();
@@ -1991,7 +1991,7 @@ void MainFrame::init_menubar_as_editor()
         m_calibration_menu->AppendSeparator();
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Bridge flow calibration")), _(L("Create a test print to help you to set your bridge flow ratio.")),
             [this](wxCommandEvent&) { wxGetApp().bridge_tuning_dialog(); });
-        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Ironing pattern calibration")), _(L("Create a test print to help you to set your over-bridge flow ratio and ironing pattern.")),
+        append_menu_item(m_calibration_menu, wxID_ANY, _(L("Over-Bridge flow calibration")), _(L("Create a test print to help you to set your over-bridge flow ratio and ironing pattern.")),
             [this](wxCommandEvent&) { wxGetApp().over_bridge_dialog(); });
         m_calibration_menu->AppendSeparator();
         append_menu_item(m_calibration_menu, wxID_ANY, _(L("Calibration cube")), _(L("Print a calibration cube, for various calibration goals.")),

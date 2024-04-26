@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Extrusion Multiplier Calibration (Walls)</title>
+</head>
+<body>
+
+<table width="100%">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<h1>Extrusion Multiplier Calibration (Walls)</h1>
+</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>
+    <table><tr><td>Needs:</td>
+        <td style="text-align: left;">Bed Leveling</td>
+        <td style="text-align: left;">Temperature</td></tr>
+    </table>
+    </strong>
+</tr>
+</tbody>
+</table>
+
+<p>Test cube that can be used to test extrusion multiplier or layer quality
+(like Z banding or inconsistent extrusion).
+It has a small fillet on one corner to keep in mind print orientation.</p>
+
+<p>The extrusion multiplier will be different for each type of filament and
+the clibration should be done for each type!</p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./lowcube.png" width="600" height="441"/></td>
+</tr>
+<tr>
+
+<p>We recommend a micrometer instead of a caliper for the following steps.
+Calipers are not precise enough to measure such small values and a micrometer
+has a ratchet system made to apply same pressure for all measures.</p>
+
+<p> If you still want to use caliper, make sure to always use the same
+pressure when you measure and don't press too strongly.</p>
+
+
+<h2>Proceduere </h2>
+<p>First measure the diameter of the filament. measure at several
+places and calculate the average.</p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./filamentmeasure.png" width="750" height="562"/></td>
+</tr>
+<tr>
+
+<p>Enter the diameter into the slicer under filament settings.</p>
+
+<p>Make sure the exrusion multiplier is set to 1!</p>
+
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./filamentslicer.png" width="750" height="435"/></td>
+</tr>
+<tr>
+
+<p>Now you can generate the gcode (recommended size 80mm or 100mm) and print
+the gcode.</p>
+
+<P>Measure thickness of all the perimeters and calculate the average.
+The most reliable measure is on the center of each walls as shown on the
+ image.</p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./printmeasure.png" width="750" height="562"/></td>
+</tr>
+<tr>
+
+<p>Calculate the new extrusion multiplier, like in this example:</p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./formula.png" width="750" height="160"/></td>
+</tr>
+<tr>
+
+<ul>
+<li>Your original extrusion multiplier = 1.00 and your average perimeter thickness = 0.47mm.</li>
+<li>Your are using a 0.4mm nozzle, so your target / expected extrusion width is 0.45mm.</li>
+<li>Your new extrusion multiplier = (1.00 x 0.45) / 0.47 = 0.957</li>
+</ui>
+<p>Enter the new extrusion multiplier value in the filament settings page of
+the slicer:</p>
+
+
+<table width="100%">
+<tbody>
+<tr>
+<td><img src="./filamentslicer2.png" width="750" height="445"/></td>
+</tr>
+<tr>
+
+<p>Slice and print the calibration model again with the new extrusion multiplier
+ value. Verify the wall thickness with your micrometer. Repeat the previous steps
+  if refinement is needed.</p>
+
+ <h2>Notes</h2>
+ <p>The extrusion multiplier is generally constant for a whole spool
+ (if you do not change temperature) but the filament diameter will change.
+ Therefore, before slicing a part, measure the filament diameter you are going
+ to use and enter it into the slicer.</p>
+
+<p>Based on the procedure created by <a href="https://guides.bear-lab.com/Guide/Extrusion+multiplier+and+filament+diameter/8?lang=en">
+ Gr&#233;goire Saunier</a> .<p>
+
+</body>
+</html>

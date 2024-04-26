@@ -32,8 +32,8 @@ set(SLIC3R_GUI_SOURCES
     GUI/CalibrationFirstLayerDialog.hpp
     GUI/CalibrationFirstLayerPatchDialog.cpp
     GUI/CalibrationFirstLayerPatchDialog.hpp
-    GUI/CalibrationWallsDialog.cpp
-    GUI/CalibrationWallsDialog.hpp
+    GUI/CalibrationExtruderDialog.cpp
+    GUI/CalibrationExtruderDialog.hpp
     GUI/CalibrationFlowDialog.cpp
     GUI/CalibrationFlowDialog.hpp
     GUI/CalibrationOverBridgeDialog.cpp

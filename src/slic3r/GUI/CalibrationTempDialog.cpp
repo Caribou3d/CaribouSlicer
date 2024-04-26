@@ -32,12 +32,12 @@ void CalibrationTempDialog::create_buttons(wxStdDialogButtonSizer* buttons){
     steps->SetToolTip(_L("Select the step in celcius between two tests."));
     steps->SetSelection(1);
 
-    wxString choices_temp[] = {"170","180","190","200","210","220","230","240","250","260","270","280","290","300" };
-    temp_low = new wxComboBox(this, wxID_ANY, wxString{ "200" }, wxDefaultPosition, wxDefaultSize, 14, choices_temp);
+    wxString choices_temp[] = {"100","110","120","130","140","150","160", "170","180","190","200","210","220","230","240","250","260","270","280","290" };
+    temp_low = new wxComboBox(this, wxID_ANY, wxString{ "200" }, wxDefaultPosition, wxDefaultSize, 20, choices_temp);
     temp_low->SetToolTip(_L("Select the lower temperature."));
     temp_low->SetSelection(4);
 
-    temp_high = new wxComboBox(this, wxID_ANY, wxString{ "200" }, wxDefaultPosition, wxDefaultSize, 14, choices_temp);
+    temp_high = new wxComboBox(this, wxID_ANY, wxString{ "200" }, wxDefaultPosition, wxDefaultSize, 20, choices_temp);
     temp_high->SetToolTip(_L("Select the higher temperature."));
     temp_high->SetSelection(8);
 
