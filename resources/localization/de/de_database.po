@@ -23,7 +23,7 @@ msgstr "% of Perimeterfluss"
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
 msgstr[0] "%1$d rückwärtige Kante"
-msgstr[1] "%1$d rückwärtige Kanten"
+msgstr[1] "%1$d rückwärtige Kante"
 
 msgid "%1$d degenerate facet"
 msgid_plural "%1$d degenerate facets"
@@ -12918,7 +12918,7 @@ msgid "When using 'Avoid crossing perimeters', consider the top surfaces as a vo
 msgstr "Wenn Sie die Option 'Überqueren von Begrenzungen vermeiden' verwenden, betrachten Sie die oberen Flächen als Leerstelle, um ein Überfahren nach Möglichkeit zu vermeiden."
 
 msgid "When using 'Complete individual objects', the default behavior is to draw the skirt around each object. if you prefer to have only one skirt for the whole platter, use this option."
-msgstr "Wenn Sie die Option 'Einzelne Objekte vervollständigen' verwenden, wird standardmäßig eine Umrandung um jedes Objekt gezeichnet. Wenn Sie es vorziehen, nur eine Umrandung für für die gesamte Druckplatte zu haben, verwenden Sie diese Option."
+msgstr "Wenn Sie die Option 'Einzelne Objekte vervollständigen' verwenden, wird standardmäßig eine Umrandung um jedes Objekt gezeichnet. Wenn Sie es vorziehen, nur eine Umrandung für die gesamte Druckplatte zu haben, verwenden Sie diese Option."
 
 msgid ""
 "When using the arc_fitting option, allow the curve to deviate a cetain % from the collection of strait paths.\n"
