@@ -7778,7 +7778,7 @@ msgstr "Keine Updates verfügbar"
 #: src/slic3r/GUI/Plater.cpp:579 src/slic3r/GUI/Preferences.cpp:436
 #: src/libslic3r/PrintConfig.cpp:1286
 msgid "None"
-msgstr "Kein"
+msgstr "Keine"
 
 #: src/slic3r/GUI/Search.cpp:90 src/slic3r/GUI/Search.cpp:336
 #: src/slic3r/GUI/Tab.cpp:2643

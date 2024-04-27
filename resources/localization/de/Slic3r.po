@@ -7827,7 +7827,7 @@ msgid "No updates available"
 msgstr "Keine Updates verfügbar"
 
 msgid "None"
-msgstr "Kein"
+msgstr "Keine"
 
 msgid "None (soluble)"
 msgstr "Keine (löslich)"

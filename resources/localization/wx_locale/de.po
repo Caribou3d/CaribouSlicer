@@ -5200,7 +5200,7 @@ msgstr "Keine gültige Abbildung in der Datei „%s“ gefunden."
 #: ../src/richtext/richtextsizepage.cpp:248
 #: ../src/richtext/richtextsizepage.cpp:252
 msgid "None"
-msgstr "Kein"
+msgstr "Keine"
 
 #: ../src/common/fmapbase.cpp:157
 msgid "Nordic (ISO-8859-10)"
