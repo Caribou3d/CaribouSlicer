@@ -1683,7 +1683,7 @@ msgid "Capture a configuration snapshot"
 msgstr "Erfassen einer Konfigurations-Momentaufnahme"
 
 msgid "CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."
-msgstr "CaribouSlicer ist eine abgespeckte Version von SuperSlicer, basierend auf PrusaSlicer von Prusa und dem originalen Slic3r von Alessandro Ranellucci & der RepRap-Community."
+msgstr "CaribouSlicer ist eine modifizierte Version von SuperSlicer, basierend auf PrusaSlicer von Prusa und dem originalen Slic3r von Alessandro Ranellucci & der RepRap-Community."
 
 msgid "CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."
 msgstr "CaribouSlicer basiert auf dem SuperSlicer, der auf dem PrusaSlicer von Prusa und dem ursprünglichen Slic3r von Alessandro Ranellucci & der RepRap-Community basiert."
@@ -2018,7 +2018,7 @@ msgid "Color Print"
 msgstr "Color Print"
 
 msgid "Color template used by the icons on the platter."
-msgstr "Farbvorlage, die von den Symbolen auf dem Tablett verwendet wird."
+msgstr "Farbvorlage, die von den Symbolen auf der Druckplatte verwendet wird."
 
 msgid "Colorprint height"
 msgstr "Colorprint Höhe"
@@ -7375,7 +7375,7 @@ msgid "Only for overhangs"
 msgstr "Nur für Überhänge"
 
 msgid "Only if on platter"
-msgstr "Nur wenn auf einem Tablett"
+msgstr "Nur wenn auf einer Druckplatte"
 
 msgid "Only infill where needed"
 msgstr "Infill nur wo es notwendig ist drucken"
@@ -8002,7 +8002,7 @@ msgid "Plater"
 msgstr "Druckplatte"
 
 msgid "Platter"
-msgstr "Tablett"
+msgstr "Druckplatte"
 
 msgid "Platter icons Color template"
 msgstr "Teller-Symbole Farbige Vorlage"
@@ -12918,7 +12918,7 @@ msgid "When using 'Avoid crossing perimeters', consider the top surfaces as a vo
 msgstr "Wenn Sie die Option 'Überqueren von Begrenzungen vermeiden' verwenden, betrachten Sie die oberen Flächen als Leerstelle, um ein Überfahren nach Möglichkeit zu vermeiden."
 
 msgid "When using 'Complete individual objects', the default behavior is to draw the skirt around each object. if you prefer to have only one skirt for the whole platter, use this option."
-msgstr "Wenn Sie die Option 'Einzelne Objekte vervollständigen' verwenden, wird standardmäßig eine Umrandung um jedes Objekt gezeichnet. Wenn Sie es vorziehen, nur eine Umrandung für das gesamte Tablett zu haben, verwenden Sie diese Option."
+msgstr "Wenn Sie die Option 'Einzelne Objekte vervollständigen' verwenden, wird standardmäßig eine Umrandung um jedes Objekt gezeichnet. Wenn Sie es vorziehen, nur eine Umrandung für für die gesamte Druckplatte zu haben, verwenden Sie diese Option."
 
 msgid ""
 "When using the arc_fitting option, allow the curve to deviate a cetain % from the collection of strait paths.\n"
