@@ -9419,7 +9419,7 @@ msgid ""
 msgstr ""
 "Der PrusaSlicer verwendet nicht die neueste verfügbare Konfiguration.\n"
 "Der Konfigurationsassistent bietet möglicherweise nicht die neuesten zu "
-"installierenden Drucker, Filamente und SLA-Materialien an"
+"installierenden Drucker, Filamente und SLA-Materialien an."
 
 #: src/slic3r/GUI/OpenGLManager.cpp:257
 #, c-format, boost-format
@@ -13018,7 +13018,7 @@ msgstr[1] ""
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
 msgstr[0] "Die Änderungen der Voreinstellung wurden erfolgreich gespeichert"
-msgstr[1] "Die Änderungen der Voreinstellungen wurden erfolgreich gespeichert."
+msgstr[1] "Die Änderungen der Voreinstellungen wurden erfolgreich gespeichert"
 
 #: src/libslic3r/PrintConfig.cpp:2478
 msgid "The printer multiplexes filaments into a single hot end."
