@@ -9515,7 +9515,7 @@ msgid "Remove extruder from sequence"
 msgstr "Extruder aus der Sequenz entfernen"
 
 msgid "Remove fil. slowdown"
-msgstr "Verlangsamung der Datei entfernen"
+msgstr "Verlangsamung des Filaments entfernen"
 
 msgid "Remove instance"
 msgstr "Kopie entfernen"
@@ -11727,7 +11727,7 @@ msgid "Temp"
 msgstr "Temp"
 
 msgid "Temp decr:"
-msgstr "Temp. dekr:"
+msgstr "Anzahl:"
 
 msgid "Temperature"
 msgstr "Temperatur"
@@ -13813,7 +13813,7 @@ msgid "Top fill Pattern"
 msgstr "Deckenfüllmuster"
 
 msgid "Top flow calibration"
-msgstr "Top Flow Kalibrierung"
+msgstr "Kalbrierung oberste Schicht"
 
 msgid "top infill"
 msgstr "obere Füllung"
