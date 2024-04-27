@@ -10686,7 +10686,7 @@ msgstr ""
 "Odpojení proběhlo úspěšné. Zařízení %s(%s) lze nyní bezpečně odebrat z počítače."
 
 msgid ""
-"SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa "
+"SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa "
 "and the original Slic3r by Alessandro Ranellucci & the RepRap community."
 msgstr ""
 "SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní "

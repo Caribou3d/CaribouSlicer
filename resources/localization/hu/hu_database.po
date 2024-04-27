@@ -10392,7 +10392,7 @@ msgstr ""
 "számítógépről."
 
 msgid ""
-"SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the "
+"SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the "
 "original Slic3r by Alessandro Ranellucci & the RepRap community."
 msgstr ""
 "A SuperSlicer a Slic3r nyúzott változata, amely a Prusa PrusaSlicerén, valamint "

@@ -154,7 +154,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:487
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
 #  translation: es maximitza el flux de material
 msgid "%s flow rate is maximized "
@@ -185,7 +185,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:95
 #, possible-c-format, possible-boost-format
-#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed. 
+#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed.
 # 19   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
 #  translation: PrusaSlicer no està utilitzant la configuració més recent disponible.\nÉs possible que l'Auxiliar de configuració no ofereixi les impressores, filaments i materials SLA més recents que s'instal·laran.
 msgid ""
@@ -1226,7 +1226,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:285
 msgid ""
-"CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by "
+"CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by "
 "Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
 "community."
 msgstr ""
@@ -1699,7 +1699,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2137
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
 # 4    changes: Cooling moves are gradually accelerating towards this speed.
 #  translation: Els moviments de refredament s'estan accelerant gradualment cap a aquesta velocitat.
 # 16   changes: Cooling moves are gradually accelerating beginning at this speed.
@@ -1709,7 +1709,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2116
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
 # 10   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: Els moviments de refredament s'estan accelerant gradualment començant a aquesta velocitat.
 # 14   changes: Cooling moves are gradually accelerating towards this speed.

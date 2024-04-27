@@ -62,10 +62,10 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:95
 #, possible-c-format, possible-boost-format
-#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed. 
-# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed. 
-#  translation: %s n'utilise pas la dernière configuration disponible.\nL'assistant de configuration peut ne pas proposer les dernières imprimantes, filaments et matériaux SLA à installer. 
-# 18   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed. 
+#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed.
+# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
+#  translation: %s n'utilise pas la dernière configuration disponible.\nL'assistant de configuration peut ne pas proposer les dernières imprimantes, filaments et matériaux SLA à installer.
+# 18   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
 #  translation: PrusaSlicer n'utilise pas la dernière configuration disponible.\nL'assistant de configuration peut ne pas proposer les dernières imprimantes, filaments et matériaux SLA à installer.
 # 19   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
 #  translation: PrusaSlicer n'utilise pas la dernière configuration disponible.\nL'assistant de configuration peut ne pas proposer les dernières imprimantes, filaments et matériaux SLA à installer.
@@ -131,10 +131,10 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:1672
-#Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
-# 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
+#Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting.
+# 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting.
 #  translation: Ajouter un périmètre à chaque couche impaire. Avec cela, le remplissage est pris en sandwich et vous pourrez peut-être réduire considérablement le paramètre de chevauchement remplissage / périmètre.
-# 49   changes: Add one perimeter every odd layer. With this, infill is taken into sandwitch and you may be able to reduce drastically the infill/perimeter overlap setting. 
+# 49   changes: Add one perimeter every odd layer. With this, infill is taken into sandwitch and you may be able to reduce drastically the infill/perimeter overlap setting.
 #  translation: Ajouter un périmètre à chaque couche impaire. Avec cela, le remplissage est pris en sandwich et vous pourrez peut-être réduire considérablement le paramètre de chevauchement remplissage / périmètre.
 msgid ""
 "Add one perimeter every even layer (and not on odd layers like the first "
@@ -329,11 +329,11 @@ msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:285
-#Similar to me: CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 13   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+#Similar to me: CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+# 13   changes: SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 #  translation: SuperSlicer est une version améliorée de Slic3r, basée sur PrusaSlicer de Prusa. et de la version originale de Slic3r par Alessandro Ranellucci et la communauté RepRap.
 msgid ""
-"CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by "
+"CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by "
 "Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
 "community."
 msgstr ""
@@ -341,7 +341,7 @@ msgstr ""
 
 #: src/slic3r/GUI/AboutDialog.cpp:285
 #Similar to me: CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 30   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+# 30   changes: SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 #  translation: SuperSlicer est une version améliorée de Slic3r, basée sur PrusaSlicer de Prusa. et de la version originale de Slic3r par Alessandro Ranellucci et la communauté RepRap.
 # 54   changes: SuperSlicer is based on PrusaSlicer which is based on Slic3r by Alessandro Ranellucci and the RepRap community.
 #  translation: SuperSlicer est basé sur PrusaSlicer qui est basé sur Slic3r d’Alessandro Ranellucci et de la communauté RepRap.
@@ -765,7 +765,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:2662
 #Similar to me: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if equal or lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.\nset 0 to disable
 # 27   changes: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.
-#  translation: La vitesse du ventilateur va augmenter de façon linéaire en partant de zéro pour la couche \"disable_fan_first_layers\" jusqu'au maximum pour la couche \"full_fan_speed_layer\". \"full_fan_speed_layer\" sera ignorée si inférieure à \"disable_fan_first_layers\", auquel cas le ventilateur fonctionnera à la vitesse maximum autorisée pour la couche \"disable_fan_first_layers\" +1. 
+#  translation: La vitesse du ventilateur va augmenter de façon linéaire en partant de zéro pour la couche \"disable_fan_first_layers\" jusqu'au maximum pour la couche \"full_fan_speed_layer\". \"full_fan_speed_layer\" sera ignorée si inférieure à \"disable_fan_first_layers\", auquel cas le ventilateur fonctionnera à la vitesse maximum autorisée pour la couche \"disable_fan_first_layers\" +1.
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
 "\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "

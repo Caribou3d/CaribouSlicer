@@ -141,9 +141,9 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:95
 #, possible-c-format, possible-boost-format
-#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed. 
-# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed. 
-#  translation: %s nepoužívá nejnovější dostupnou konfiguraci.\nPrůvodce konfigurací nemusí nabízet nejnovější tiskárny, vlákna a SLA materiály k instalaci. 
+#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed.
+# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
+#  translation: %s nepoužívá nejnovější dostupnou konfiguraci.\nPrůvodce konfigurací nemusí nabízet nejnovější tiskárny, vlákna a SLA materiály k instalaci.
 # 19   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
 #  translation: PrusaSlicer nepoužívá nejnovější dostupnou konfiguraci.\nPrůvodce nastavením proto nemusí k instalaci nabízet nejnovější tiskárny, filamenty a SLA materiály.
 msgid ""
@@ -252,9 +252,9 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:1672
-#Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
-# 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
-#  translation: Každé liché vrstvě přidejte jeden Perimetr. Tím se výplň převezme do sendvič a možná budete schopni drasticky zmenšit výplň/Perimetr nastavení překrytí. 
+#Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting.
+# 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting.
+#  translation: Každé liché vrstvě přidejte jeden Perimetr. Tím se výplň převezme do sendvič a možná budete schopni drasticky zmenšit výplň/Perimetr nastavení překrytí.
 msgid ""
 "Add one perimeter every even layer (and not on odd layers like the first "
 "one). With this, infill is taken into the sandwich and you may be able to "
@@ -608,11 +608,11 @@ msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:285
-#Similar to me: CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 13   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+#Similar to me: CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+# 13   changes: SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 #  translation: SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní Slic3r od Alessandra Ranellucciho a komunity RepRap.
 msgid ""
-"CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by "
+"CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by "
 "Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
 "community."
 msgstr ""
@@ -620,7 +620,7 @@ msgstr ""
 
 #: src/slic3r/GUI/AboutDialog.cpp:285
 #Similar to me: CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
-# 30   changes: SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
+# 30   changes: SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 #  translation: SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní Slic3r od Alessandra Ranellucciho a komunity RepRap.
 msgid ""
 "CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by "
@@ -2293,8 +2293,8 @@ msgstr ""
 #: src/slic3r/GUI/GUI.cpp:245
 #, possible-boost-format
 #Similar to me: Most likely the configuration was produced by a newer version of %1% or PrusaSlicer.
-# 19   changes: Most likely the configuration was produced by a newer version of 
-#  translation: S největší pravděpodobností byla konfigurace vytvořena novější verzí 
+# 19   changes: Most likely the configuration was produced by a newer version of
+#  translation: S největší pravděpodobností byla konfigurace vytvořena novější verzí
 # 24   changes: Most likely the configuration was produced by a newer version of PrusaSlicer or by some PrusaSlicer fork.
 #  translation: Konfiguraci pravděpodobně vytvořila novější verze programu PrusaSlicer nebo nějaký fork PrusaSliceru.
 msgid ""
