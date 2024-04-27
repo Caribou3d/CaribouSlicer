@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2022-04-15 00:00\n"
-"PO-Revision-Date: 2022-04-15 00:00\n"
+"POT-Creation-Date: 2024-04-27 00:00\n"
+"PO-Revision-Date: 2024-04-27 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -50,9 +50,6 @@ msgstr "Before rollback"
 
 msgid "Buttons And Text Colors Description"
 msgstr "Buttons and Text Colors Description"
-
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "Density of internal infill, expressed in the range 0% - 100%."
 
 msgid "Don't notify about new releases any more"
 msgstr "Don't notify about new releases anymore"

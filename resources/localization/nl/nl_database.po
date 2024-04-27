@@ -17068,3 +17068,20 @@ msgstr "gisteren"
 
 msgid "zlib error %d"
 msgstr "zlib-fout %d"
+
+msgid "Artwork model by Leslie Ing"
+msgstr "Kunstwerkmodel door Leslie Ing"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Kies één of meer STL-, 3MF-, STEP-, OBJ-, AMF- of PRUSA- bestanden:"
+
+msgid "Open project AMF/3MF with config, clear plater"
+msgstr "Open AMF- of 3MF-project met configuratie, verwijder huidige modellen"
+
+msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
+msgstr ""
+"Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden zonder configuratie en "
+"behoud modellen"
+
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden"

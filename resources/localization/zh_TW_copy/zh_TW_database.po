@@ -10736,3 +10736,9 @@ msgid ""
 "tuning hole sizes."
 msgstr ""
 "該物體將以指定值（負=往內，正=往外）變大/收縮。對於精確調節孔洞尺寸可能有用。"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "選擇一個或多個文件  (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "導入 STL/3MF/STEP/OBJ/AM&F"
