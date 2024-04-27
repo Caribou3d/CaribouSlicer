@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2022-07-12 00:00\n"
-"PO-Revision-Date: 2022-07-12 00:00\n"
-"Last-Translator: renemosner\n"
+"POT-Creation-Date: 2024-04-27 00:00\n"
+"PO-Revision-Date: 2024-04-27 00:00\n"
+"Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,15 +167,6 @@ msgstr "%s Došlo k chybě v programu"
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
 "If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
-msgstr ""
-"%s zaznamenal chybu. Bylo to pravděpodobně způsobeno nedostatkem paměti. Pokud jste "
-"si jisti, že máte v systému dostatek paměti RAM, může to být také chyba programu a "
-"v takovém případě bychom byli rádi, kdybyste nám to nahlásili."
-
-msgid ""
-"%s has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
 "and we would be glad if you reported it.\n"
 "\n"
 "The application will now terminate."
@@ -197,15 +188,6 @@ msgstr "%s info"
 
 msgid "%s information"
 msgstr "%s informace"
-
-msgid ""
-"%s is not using the newest configuration available.\n"
-"Configuration Wizard may not offer the latest printers, filaments and SLA "
-"materials to be installed. "
-msgstr ""
-"%s nepoužívá nejnovější dostupnou konfiguraci.\n"
-"Průvodce konfigurací nemusí nabízet nejnovější tiskárny, vlákna a SLA materiály k "
-"instalaci. "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -243,12 +225,6 @@ msgstr "%s Režim zobrazení"
 
 msgid "%s warning"
 msgstr "%s varování"
-
-msgid "%s website"
-msgstr "%s webová stránka"
-
-msgid "%s wiki"
-msgstr "%s wiki"
 
 msgid ""
 "%s will now start updates. Otherwise it won't be able to start.\n"
@@ -323,9 +299,6 @@ msgstr "&Fullscreen"
 
 msgid "&G-code Preview"
 msgstr "&G-code Prohlížeč"
-
-msgid "&Generate"
-msgstr "&Generovat"
 
 msgid "&Help"
 msgstr "&Pomoc"
@@ -470,9 +443,6 @@ msgstr "3x5°"
 msgid "4x10°"
 msgstr "4x10°"
 
-msgid "5x5°"
-msgstr "5x5°"
-
 msgid "< &Back"
 msgstr "<&Zpět"
 
@@ -509,15 +479,6 @@ msgid ""
 msgstr ""
 "V kódu layer_gcode byl nalezen kód \"G92 E0\", který není kompatibilní s "
 "absolutním adresováním extruderu."
-
-msgid ""
-"\n"
-"\n"
-"If estimated layer time is below ~%1%s"
-msgstr ""
-"\n"
-"\n"
-"Pokud je odhadovaný čas vrstvy pod ~%1%s"
 
 msgid ""
 "\n"
@@ -618,9 +579,6 @@ msgstr "Kontrola akcelerací (pokročilé)"
 
 msgid "Access via settings button in the top menu"
 msgstr "Přístup přes tlačítko nastavení v horní nabídce"
-
-msgid "Access violation"
-msgstr "Porušení přístupu"
 
 msgid "Accuracy"
 msgstr "Přesnost"
@@ -758,14 +716,6 @@ msgstr ""
 "bezprostředně najde podporováno.\n"
 "Pokud se vám podaří spustit algoritmus za tímto nastavením, pošlete prosím Mně "
 "zprávu. Osobně si myslím, že je to zbytečné."
-
-msgid ""
-"Add one perimeter every odd layer. With this, infill is taken into the "
-"sandwich and you may be able to reduce drastically the infill/perimeter "
-"overlap setting. "
-msgstr ""
-"Každé liché vrstvě přidejte jeden Perimetr. Tím se výplň převezme do sendvič a "
-"možná budete schopni drasticky zmenšit výplň/Perimetr nastavení překrytí. "
 
 msgid "Add pause print"
 msgstr "Přidat pozastavení tisku"
@@ -980,17 +930,11 @@ msgstr "Všechny horní povrchy"
 msgid "All user presets will be deleted."
 msgstr "Všechna uživatelská přednastavení budou odstraněna."
 
-msgid "All walls"
-msgstr "Všechny stěny"
-
 msgid "allocation failed"
 msgstr "alokace selhala"
 
 msgid "Allow empty layers"
 msgstr "Povolit prázdné vrstvy"
-
-msgid "Allow fan delay on overhangs"
-msgstr "Povolit zpoždění ventilátoru na převisech"
 
 msgid "Allow just a single %1% instance"
 msgstr "Povolit pouze jednu %1% instanci"
@@ -1015,13 +959,6 @@ msgid ""
 msgstr ""
 "Umožněte vnějšímu perimetru spojit tenké stěny v cestě. Můžete deaktivujte, pokud "
 "používáte tenké stěny jako vlastní podporu, abyste snížili trochu adheze."
-
-msgid ""
-"Allow to create a brim over an island when it's inside a hole (or surrounded "
-"by an object)."
-msgstr ""
-"Umožněte vytvořit okraj nad ostrůvkem, když je uvnitř díry (nebo je obklopen "
-"předmětem)."
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Umožňuje malovat pouze na fasety vybrané pomocí: \"%1%\""
@@ -1086,6 +1023,9 @@ msgstr "Plná výplň kotvy o X mm"
 msgid "Anchored"
 msgstr "Ukotvený"
 
+msgid "and will gradually speed-up to the above speeds over %1% layers"
+msgstr "a postupně se zrychlí na výše uvedené rychlosti přes %1% vrstev"
+
 msgid " and will gradually speed-up to the above speeds over %1% layers"
 msgstr " a postupně se zrychlí na výše uvedené rychlosti přes %1% vrstev"
 
@@ -1135,6 +1075,9 @@ msgstr "Použít na všechny zbývající malé načítané objekty."
 
 msgid "approximate seconds"
 msgstr "vteřin přibližně"
+
+msgid "Arachne"
+msgstr "Arachne"
 
 msgid "Archimedean Chords"
 msgstr "Archimedean Chords"
@@ -1249,21 +1192,6 @@ msgstr "Přidružit soubory .gcode k %1%"
 
 msgid "Associate .stl files to %1%"
 msgstr "Přidružit soubory .stl k %1%"
-
-msgid "at %1%%% over all bridges"
-msgstr "na %1%%% přes všechny mosty"
-
-msgid "at %1%%% over bridges"
-msgstr "na %1%%% přes mosty"
-
-msgid "at %1%%% over external perimeters"
-msgstr "na %1%%% přes vnější perimetry"
-
-msgid "at %1%%% over infill bridges"
-msgstr "při %1%%% přes výplňové můstky"
-
-msgid "at %1%%% over top fill surfaces"
-msgstr "na %1%%% nad horními výplňovými plochami"
 
 msgid "Attention!"
 msgstr "Pozor!"
@@ -1404,9 +1332,6 @@ msgstr ""
 msgid "Bed Temperature:"
 msgstr "Teplota tiskové podložky:"
 
-msgid "Bed/Extruder leveling"
-msgstr "Vyrovnání lůžka/extrudéru"
-
 msgid "Before layer change G-code"
 msgstr "G-Code před změnou vrstvy"
 
@@ -1424,15 +1349,6 @@ msgstr "Nejlepší kvalita povrchu"
 
 msgid "Better bonding"
 msgstr "Lepší spojení"
-
-msgid "between %1%%% %2%%% over bridges"
-msgstr "mezi %1%%% %2%%% přes mosty"
-
-msgid "between %1%%% %2%%% over external perimeters"
-msgstr "mezi %1%%% %2%%% přes vnější perimetry"
-
-msgid "between %1%%% %2%%% over infill bridges"
-msgstr "mezi %1%%% %2%%% přes výplňové můstky"
 
 msgid "Between extrusion role change G-code"
 msgstr "Mezi změnou role G-kódu vytlačování"
@@ -1686,9 +1602,6 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "Nelze přepsat systémový profil."
 
-msgid "Cannot overwrite an external profile."
-msgstr "Nelze přepsat externí profil."
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
@@ -1774,6 +1687,13 @@ msgstr "Změny u kritických voleb"
 msgid "Changing of an application language"
 msgstr "Změnit jazyk aplikace"
 
+msgid ""
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the plater."
+msgstr ""
+"Změnou nastavení se aplikace restartuje.\n"
+"Ztratíte objekty na tiskové podložce."
+
 msgid "Check for application updates"
 msgstr "Zkontrolovat aktualizace aplikace"
 
@@ -1815,8 +1735,8 @@ msgstr "Vyberte jeden soubor (GCODE/.GCO/.G/.ngc/NGC):"
 msgid "Choose one file (py):"
 msgstr "Vyberte jeden soubor (py):"
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Vyberte jeden nebo více souborů (STL/OBJ/AMF/3MF/PRUSA):"
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Vyberte jeden nebo více souborů (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 
 msgid "Choose SLA archive:"
 msgstr "Vyberte SLA archiv:"
@@ -1848,6 +1768,20 @@ msgstr "Kruh"
 
 msgid "Circular"
 msgstr "Kruhový"
+
+msgid "Classic"
+msgstr "Klasický"
+
+msgid ""
+"Classic perimeter generator produces perimeters with constant extrusion "
+"width and for very thin areas is used gap-fill. Arachne engine produces "
+"perimeters with variable extrusion width. This setting also affects the "
+"Concentric infill."
+msgstr ""
+"Klasický generátor obvodových stěn vytváří perimetry s konstantní šířkou "
+"vytlačovaného materiálu a pro velmi malé plochy se používá technika "
+"vyplňování mezer. Algoritmus Arachne vytváří perimetry s proměnnou šířkou "
+"vytlačovaného materiálu. Toto nastavení ovlivňuje také koncentrickou výplň."
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Vymazat historii operací Zpět / Vpřed"
@@ -2002,9 +1936,6 @@ msgstr "Soustředný (vyplněný)"
 msgid "Configuration &Assistant"
 msgstr "Průvodce n&astavením"
 
-msgid "Configuration &Wizard"
-msgstr "Průvodce &nastavením"
-
 msgid "Configuration Assistant"
 msgstr "Průvodce nastavení tiskárny"
 
@@ -2051,9 +1982,6 @@ msgid ""
 msgstr ""
 "Aktualizace konfigurace způsobí ztrátu změn v přednastaveních.\n"
 "Zkontrolujte tedy neuložené změny a případně je uložte."
-
-msgid "Configuration Wizard"
-msgstr "Průvodce nastavením"
 
 msgid "Confirmation"
 msgstr "Potvrzení"
@@ -2301,13 +2229,6 @@ msgstr ""
 "Náklady na přesun extruderu. Nejvyšší pokuta je, když je bod nejdále od pozice "
 "extruderu před vytlačením vnějšího perimetru"
 
-msgid ""
-"Cost of placing the seam at a bad angle. The worst angle (max penalty) is "
-"when it's flat."
-msgstr ""
-"Náklady na umístění švu ve špatném úhlu. Nejhorší úhel (Max penalizace) je když je "
-"to ploché."
-
 msgid "Cost-based"
 msgstr "Na základě nákladů"
 
@@ -2353,9 +2274,6 @@ msgstr ""
 msgid "CRC-32 check failed"
 msgstr "CRC-32 kontrola selhala"
 
-msgid "Create a test print to help you to level your printer bed."
-msgstr "Vytvořte zkušební tisk, který vám pomůže vyrovnat postel tiskárny."
-
 msgid "Create a test print to help you to set your bridge flow ratio."
 msgstr "Vytvořte zkušební tisk, který vám pomůže nastavit poměr průtoku mostu."
 
@@ -2377,9 +2295,6 @@ msgstr ""
 
 msgid "Create a test print to help you to set your retraction length."
 msgstr "Vytvořte zkušební tisk, který vám pomůže nastavit délku zatažení."
-
-msgid "Create an object by writing little easy script."
-msgstr "Vytvořte objekt napsáním malého jednoduchého skriptu."
 
 msgid "Create pad around object and ignore the support elevation"
 msgstr "Vytvoří podložku kolem objektu a ignorujte nadzvednutí objektu podpěrami"
@@ -2730,9 +2645,6 @@ msgstr "Hustá výplňová vrstva"
 
 msgid "Density"
 msgstr "Hustota"
-
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "Hustota vnitřní výplně, vyjádřená v rozmezí 0% - 100%."
 
 msgid "Density of the first raft or support layer."
 msgstr "Hustota prvního vrstvy raftu nebo podpěrné vrstvy."
@@ -3525,8 +3437,8 @@ msgid ""
 " * Keep only bridges: remove the perimeters in the bridge areas, keep only "
 "bridges that end in solid area.\n"
 " * Keep bridges and overhangs: remove the unsupported perimeters, keep only "
-"bridges that end in solid area, fill the rest with overhang perimeters"
-"+bridges.\n"
+"bridges that end in solid area, fill the rest with overhang "
+"perimeters+bridges.\n"
 " * Fill the voids with bridges: remove the unsupported perimeters, draw "
 "bridges over the whole hole.* !! this one can escalate to problems with "
 "overhangs shaped like  /\\, so you should use it only on one layer at a time "
@@ -3750,11 +3662,11 @@ msgstr "Nejprve vnější perimetr"
 msgid "external perimeter overlap"
 msgstr "překrytí vnějšího perimetru"
 
-msgid "external perimeters"
-msgstr "vnější perimetry"
-
 msgid "External perimeters"
 msgstr "Vnější perimetry"
+
+msgid "external perimeters"
+msgstr "vnější perimetry"
 
 msgid "External perimeters first"
 msgstr "Nejprve tisknout vnější perimetry"
@@ -3773,9 +3685,6 @@ msgstr "Extra vzdálenost při návratu"
 
 msgid "Extra loading distance"
 msgstr "Extra délka při zavádění"
-
-msgid "Extra perimeter on odd layers"
-msgstr "Extra perimetr na lichých vrstvách"
 
 msgid "Extra perimeters"
 msgstr "Extra perimetr"
@@ -3797,18 +3706,6 @@ msgstr "Extra očistit pro vnější perimetri"
 
 msgid "Extrat length on toolchange restart"
 msgstr "Extra délka při restartu výměny nástroje"
-
-msgid ""
-"Extrude perimeters that have a part over an overhang in the reverse "
-"direction on odd layers. This alternating pattern can drastically improve "
-"steep overhang.\n"
-"!! this is a very slow algorithm (it uses the same results as "
-"extra_perimeters_overhangs) !!"
-msgstr ""
-"Vysunout perimetry, které mají část přes přesah v opačném směrusměr na lichých "
-"vrstvách. Tento střídající se vzor může výrazně zlepšitstrmý převis.\n"
-"!! toto je velmi pomalý algoritmus (používá stejné výsledky jako "
-"extra_perimeters_overhangs) !!"
 
 msgid "Extruder"
 msgstr "Extruder"
@@ -3930,19 +3827,6 @@ msgstr "Rychlost ventilátoru (%)"
 
 msgid "Fan speed - default"
 msgstr "Rychlost ventilátoru - výchozí"
-
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
-msgstr ""
-"Otáčky ventilátoru se lineárně zvýší z nuly ve vrstvě \"disable_fan_first_layers\" "
-"na maximum ve vrstvě \"full_fan_speed_layer\". Hodnota \"full_fan_speed_layer\" "
-"bude ignorována, pokud je nižší než \"disable_fan_first_layers\", v takovém případě "
-"se bude ventilátor točit na maximální povolenou hodnotu ve vrstvě "
-"\"disable_fan_first_layers\" + 1."
 
 msgid "Fan startup delay"
 msgstr "Zpoždění spuštění ventilátoru"
@@ -4164,6 +4048,9 @@ msgstr "Teplota tiskové podložky při první vrstvě"
 msgid "First layer calibration"
 msgstr "Kalibrace první vrstvy"
 
+msgid "First layer calibration."
+msgstr "Kalibrace první vrstvy."
+
 msgid "First layer density"
 msgstr "Hustota první vrstvy"
 
@@ -4377,6 +4264,16 @@ msgstr ""
 "tisk s více extrudery s průsvitnými materiály nebo ručně rozpustným podpůrným "
 "materiálem."
 
+msgid "Format of G-code thumbnails"
+msgstr "Formát náhledových obrázků G-codu"
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr ""
+"Formát náhledových obrázků G-codu: Pro nejlepší kvalitu PNG, pro nejmenší "
+"velikost JPG, pro firmware s malou pamětí QOI"
+
 msgid ""
 "Forward-compatibility rule when loading configurations from config files and "
 "project files (3MF, AMF)."
@@ -4386,12 +4283,6 @@ msgstr ""
 
 msgid "Found reserved keywords in"
 msgstr "Nalezená vyhrazená klíčová slova v"
-
-msgid "FreeCAD path"
-msgstr "Cesta FreeCAD"
-
-msgid "FreeCad python script"
-msgstr "FreeCad python skript"
 
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD: skriptovací stroj pro FreeCAD"
@@ -4440,9 +4331,6 @@ msgstr "Vzdálenosti bodů členitého povrchu"
 
 msgid "Fuzzy skin thickness"
 msgstr "Tloušťka členitého povrchu"
-
-msgid "Fuzzy skin type."
-msgstr "Typ členitého povrchu."
 
 msgid "G-code"
 msgstr "G-Code"
@@ -4498,9 +4386,6 @@ msgstr "Překrytí výplně mezery"
 
 msgid "Gap fill speed"
 msgstr "Rychlost výplě mezery"
-
-msgid "Gapfill after last perimeter"
-msgstr "Vyplnit mezery po posledním perimetru"
 
 msgid "Gcode done"
 msgstr "Gcode hotovo"
@@ -4792,6 +4677,9 @@ msgstr "Skrýt pravítko"
 msgid "High extruder current on filament swap"
 msgstr "Zvýšený proud do extruderového motoru při výměně filamentu"
 
+msgid "High viscosity"
+msgstr "Vysoká viskozita"
+
 msgid "Higher print quality versus higher print speed."
 msgstr "Vyšší kvalita tisku versus vyšší rychlost tisku."
 
@@ -4953,9 +4841,6 @@ msgstr ""
 "Z roviny: používá rovinu-z. Stejné jako z vlákna, pokud není mostextrudovaný.\n"
 "Žádný: Bez posunu z. Užitečné pro solubilní podpory.\n"
 
-msgid "How to use the FreeCad python script window."
-msgstr "Jak používat okno skriptu FreeCad python."
-
 msgid "How to use this menu and calibrations."
 msgstr "Jak používat toto menu a kalibrace."
 
@@ -4998,18 +4883,6 @@ msgstr ""
 
 msgid "idx"
 msgstr "idx"
-
-msgid ""
-"If a top surface has to be printed and it's partially covered by another "
-"layer, it won't be considered at a top layer where its width is below this "
-"value. This can be useful to not let the 'one perimeter on top' trigger on "
-"surface that should be covered only by perimeters. This value can be a mm or "
-"a % of the perimeter extrusion width."
-msgstr ""
-"Pokud musí být potištěn horní povrch a je částečně pokryt jinou vrstvou, nebude "
-"uvažována v horní vrstvě, kde je její šířka pod touto hodnotou. To může být "
-"užitečné k tomu, aby se jeden perimetr nahoře spustil plocha, která by měla být "
-"pokryta pouze perimetry. Tato hodnota může být mm nebo % šířky obvodového vysunutí."
 
 msgid ""
 "If activated, at the end of each layer, the printer will switch to a milling "
@@ -5265,14 +5138,6 @@ msgstr ""
 "(ale pro výplň)."
 
 msgid ""
-"If it point to a valid freecad instance (the bin directory or the python "
-"executable), you can use the built-in python script to quickly generate "
-"geometry."
-msgstr ""
-"Pokud ukazuje na platnou instanci freecadu (adresář bin nebo python spustitelný, "
-"můžete použít vestavěný skript python k rychlému vygenerování geometrie."
-
-msgid ""
 "If layer print time is estimated below this number of seconds, fan will be "
 "enabled and its speed will be calculated by interpolating the default and "
 "maximum speeds.\n"
@@ -5372,18 +5237,6 @@ msgid ""
 msgstr ""
 "Zadáním kladné hodnoty se zdvih Z uskuteční pouze pod zadanou absolutní hodnotou Z. "
 "Toto nastavení můžete zvolit pro přeskočení přizvednutí u prvních vrstev."
-
-msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"Pokud chcete zpracovat výstupní G-code pomocí vlastních skriptů, stačí zde uvést "
-"jejich absolutní cesty. Oddělte více skriptů středníkem. Skripty předají absolutní "
-"cestu k souboru G-code jako první argument a mohou přistupovat k nastavení "
-"konfigurace Slic3ru čtením proměnných prostředí."
 
 msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
@@ -5504,11 +5357,8 @@ msgstr "Importovat SLA archiv"
 msgid "Import STL (Imperial Units)"
 msgstr "Importovat STL (imperiální jednotky)"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "Importovat STL/OBJ/AM&F/3MF"
-
-msgid "Import STL/OBJ/AMF/3MF without config, keep platter"
-msgstr "Importovat STL/OBJ/AMF/3MF bez konfigurace, ponechat obsah podložky"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Importovat STL/3MF/STEP/OBJ/AM&F"
 
 msgid "Importing canceled."
 msgstr "Import zrušen."
@@ -5623,9 +5473,6 @@ msgstr "Zrychlení výplně"
 msgid "Infill before perimeters"
 msgstr "Tisknout výplň před tiskem perimetrů"
 
-msgid "Infill bridges"
-msgstr "Výplň mostů"
-
 msgid "Infill bridges fan speed"
 msgstr "Rychlost ventilátoru výplní mostů"
 
@@ -5735,11 +5582,11 @@ msgstr "Vnitřní výplň mostu"
 msgid "Internal bridge speed"
 msgstr "Vnitřní rychlost mostu"
 
-msgid "Internal bridges "
-msgstr "Vnitřní mosty "
-
 msgid "Internal bridges"
 msgstr "Vnitřní mosty"
+
+msgid "Internal bridges "
+msgstr "Vnitřní mosty "
 
 msgid "internal error"
 msgstr "interní chyba"
@@ -5755,18 +5602,6 @@ msgstr "Vnitřní perimetr"
 
 msgid "Internal perimeters speed"
 msgstr "Rychlost vnitřních perimetrů"
-
-msgid ""
-"Internal perimeters will go around sharp corners by turning around instead "
-"of making the same sharp corner. This can help when there are visible holes "
-"in sharp corners on perimeters. It also help to print the letters on the "
-"benchy stern.\n"
-"Can incur some more processing time, and corners are a bit less sharp."
-msgstr ""
-"Vnitřní perimetry budou obcházet ostré rohy tím, že se místo toho otočívytvoření "
-"stejného ostrého rohu. To může pomoci, když jsou viditelné díryv ostrých rozích na "
-"perimetrech. Pomáhá také tisknout písmena na lavičková záď.\n"
-"Může trvat delší dobu zpracování a rohy jsou o něco méně ostré."
 
 msgid "Internal resolution"
 msgstr "Interní rozlišení"
@@ -5818,9 +5653,6 @@ msgstr "Rozdělení proudu ironing"
 
 msgid "Ironing infill pattern tuning"
 msgstr "Ladění vzoru výplně ironing"
-
-msgid "Ironing pattern calibration"
-msgstr "Kalibrace vzoru ironing"
 
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "Následný proces ironing (bude pokračovat na výplních a perimetrech)"
@@ -5995,12 +5827,6 @@ msgstr "Čas vrstvy"
 
 msgid "Layer time"
 msgstr "Čas vrstvy"
-
-msgid "Layer Time (log)"
-msgstr "Čas vrstvy (protokol)"
-
-msgid "Layer time (log)"
-msgstr "Čas vrstvy (protokol)"
 
 msgid "Layer time goal"
 msgstr "Čas vrstvy"
@@ -6295,9 +6121,6 @@ msgstr ""
 "Ikona ZAMKNUTÉHO ZÁMKU indikuje, že hodnota je shodná se systémovou (výchozí) "
 "hodnotou."
 
-msgid "Log time"
-msgstr "Čas přihlášení"
-
 msgid "Logging level"
 msgstr "Úroveň logování"
 
@@ -6431,6 +6254,9 @@ msgstr "Max počet mostů na sloupu"
 msgid "Max fan speed"
 msgstr "Max rychlost ventilátoru"
 
+msgid "Max height"
+msgstr "Max šířka"
+
 msgid "Max infill"
 msgstr "Max výplň"
 
@@ -6478,6 +6304,9 @@ msgstr "Max pozitivní objemový sklon"
 
 msgid "Max volumetric speed"
 msgstr "Max objemová rychlost"
+
+msgid "Max width"
+msgstr "Max šířka"
 
 msgid "Maximal bridging distance"
 msgstr "Maximální vzdálenost přemostění"
@@ -6555,19 +6384,6 @@ msgstr ""
 "Maximální plocha pro díru, kde se plně uplatní kompenzace velikosti hole.Poté se "
 "sníží na 0 na čtyřnásobek této oblasti. Nastavte na 0 na nechte hodnotu "
 "hole_size_compensation plně aplikovat na všechny zjištěné díry"
-
-msgid ""
-"Maximum defection of a point to the estimated radius of the circle.\n"
-"As cylinders are often exported as triangles of varying size, points may not "
-"be on the circle circumference. This setting allows you some leway to "
-"broaden the detection.\n"
-"In mm or in % of the radius."
-msgstr ""
-"Maximální odchylka bodu od odhadovaného poloměru kruhu.\n"
-"Vzhledem k tomu, že válce jsou často exportovány jako trojúhelníky různé velikosti, "
-"body nemusí být na perimetru kruhu. Toto nastavení vám umožňuje určitou volnost "
-"rozšířit detekci.\n"
-"V mm nebo v % poloměru."
 
 msgid ""
 "Maximum density for bridge lines. If you want more space between line (or "
@@ -6777,6 +6593,9 @@ msgstr "Min konvexní úhel"
 msgid "Min first layer speed"
 msgstr "Min rychlost první vrstvy"
 
+msgid "Min height"
+msgstr "Min výška"
+
 msgid "Min height for travel"
 msgstr "Min výška pro cestování"
 
@@ -6883,6 +6702,9 @@ msgstr "Minimální doba osvitu"
 msgid "Minimum extrusion length"
 msgstr "Minimální délka extruze"
 
+msgid "Minimum feature size"
+msgstr "Minimální velikost prvku"
+
 msgid "Minimum feedrate when extruding"
 msgstr "Minimální rychlosti posuvu během extruze"
 
@@ -6894,6 +6716,9 @@ msgstr "Minimální rychlosti posuvu"
 
 msgid "Minimum initial exposure time"
 msgstr "Minimální doba počátečního osvitu"
+
+msgid "Minimum perimeter width"
+msgstr "Minimální šířka perimetru"
 
 msgid "Minimum retraction"
 msgstr "Minimální retrakce"
@@ -6910,6 +6735,18 @@ msgstr ""
 
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Minimální tloušťka vrchní / spodní skořepiny"
+
+msgid ""
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum perimeter width. If expressed as "
+"a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"Minimální tloušťka tenkých prvků. Prvky modelu, které jsou tenčí než tato "
+"hodnota, nebudou vytištěny, zatímco prvky silnější než minimální velikost "
+"prvku budou rozšířeny na minimální šířku perimetru. Pokud je vyjádřeno v "
+"procentech (například 25%), bude vypočítáno na základě průměru trysky."
 
 msgid "Minimum top shell thickness"
 msgstr "Minimální tloušťka vrchní skořepiny"
@@ -7219,15 +7056,6 @@ msgstr "Název profilu, ze kterého tento profil zdědí."
 
 msgid "Names of presets related to the physical printer"
 msgstr "Názvy přednastavení souvisejících s fyzickou tiskárnou"
-
-msgid "Nb down:"
-msgstr "Nb dolů:"
-
-msgid "Nb tests:"
-msgstr "Nb testy:"
-
-msgid "Nb up:"
-msgstr "Nb nahoru:"
 
 msgid "Nearest"
 msgstr "Nejbližší"
@@ -7609,9 +7437,6 @@ msgstr "Na"
 msgid "On first layer"
 msgstr "Na první vrstvě"
 
-msgid "On odd layers"
-msgstr "Na lichých vrstvách"
-
 msgid ""
 "On OSX there is always only one instance of app running by default. However "
 "it is allowed to run multiple instances of same app from the command line. "
@@ -7829,26 +7654,11 @@ msgstr "Otevřít novou instanci"
 msgid "Open New Instance"
 msgstr "Otevřít Novou Instanci"
 
-msgid "Open project STL/OBJ/AMF/3MF with config, clear platter"
-msgstr "Otevřít projekt STL/OBJ/AMF/3MF s konfigurací, vyprázdnit podložku"
-
 msgid "Open the %s releases page in your browser"
 msgstr "Otevřete ve svém prohlížeči stránku vydání %s"
 
-msgid "Open the %s wiki in your browser"
-msgstr "Otevřete %s wiki ve svém prohlížeči"
-
 msgid "Open the dialog to modify shape gallery"
 msgstr "Otevřete dialogové okno pro úpravu galerie tvarů"
-
-msgid "Open the Slic3r Manual in your browser"
-msgstr "Otevřete ve svém prohlížeči příručku Slic3r"
-
-msgid "Open the Slic3r website in your browser"
-msgstr "Otevřete webovou stránku Slic3r ve svém prohlížeči"
-
-msgid "Opening Configuration Wizard"
-msgstr "Otevírání průvodce nastavením"
 
 msgid "Opening new project while some presets are unsaved."
 msgstr "Otevírání nového projektu. Některá přednastavení nejsou uložena."
@@ -7977,9 +7787,6 @@ msgstr "Práh rychlosti převislého mostu"
 
 msgid "Overhang perimeter"
 msgstr "Perimetr převisu"
-
-msgid "Overhang reversal"
-msgstr "Zvrat převisu"
 
 msgid "Overhang reversal threshold"
 msgstr "Práh obrácení převisu"
@@ -8129,9 +7936,6 @@ msgstr "Vložit ze schránky"
 msgid "Paste From Clipboard"
 msgstr "Vložení ze schránky"
 
-msgid "Paths"
-msgstr "Cesty"
-
 msgid "Pattern"
 msgstr "Vzor"
 
@@ -8208,8 +8012,14 @@ msgstr "Kotva perimetru"
 msgid "Perimeter bonding"
 msgstr "Spojení perimetru"
 
+msgid "Perimeter distribution count"
+msgstr "Počet ovlivněných perimetrů"
+
 msgid "Perimeter extruder"
 msgstr "Extruder pro perimetry"
+
+msgid "Perimeter generator"
+msgstr "Generátor obvodových stěn"
 
 msgid "Perimeter loop seam"
 msgstr "Obvodový smyčkový šev"
@@ -8225,6 +8035,15 @@ msgstr "Obvodová vzdálenost"
 
 msgid "Perimeter speed"
 msgstr "Rychlost perimetru"
+
+msgid "Perimeter transition length"
+msgstr "Délka přechodu perimetru"
+
+msgid "Perimeter transitioning filter margin"
+msgstr "Filtr přechodového rozpětí perimetrů"
+
+msgid "Perimeter transitioning threshold angle"
+msgstr "Prahový úhel přechodu perimetru"
 
 msgid "Perimeter width"
 msgstr "Šířka perimetru"
@@ -8295,13 +8114,6 @@ msgstr "Podložka"
 
 msgid "Please check your object list before preset changing."
 msgstr "Před změnou nastavení zkontrolujte prosím seznam objektů."
-
-msgid ""
-"Please save your project and restart PrusaSlicer. We would be glad if you "
-"reported the issue."
-msgstr ""
-"Uložte projekt a restartujte PrusaSlicer. Budeme rádi, když nám problém "
-"nahlásíte."
 
 msgid "Please select the file to reload"
 msgstr "Vyberte soubor, který chcete znovu načíst"
@@ -8425,6 +8237,9 @@ msgstr ""
 "5×  zrychlíte pohyb posuvníku pomocí\n"
 "šipek nebo kolečkem myši"
 
+msgid "Pressure equalizer (experimental)"
+msgstr "Vyrovnávač tlaku (experimentální)"
+
 msgid ""
 "Prevent the gcode builder from triggering an exception if a full layer is "
 "empty, and allow the print to start from thin air afterward."
@@ -8455,9 +8270,6 @@ msgstr "Fronta na&hrávání do tiskového serveru"
 
 msgid "Print a calibration cube, for various calibration goals."
 msgstr "Vytiskněte si kalibrační kostku pro různé kalibrační cíle."
-
-msgid "Print all brim at startup"
-msgstr "Při spuštění vytiskněte všechny límce"
 
 msgid "Print at the end"
 msgstr "Konec G-code"
@@ -8636,12 +8448,6 @@ msgstr "Projekt se načítá"
 msgid "Prusa SL1"
 msgstr "Importovat archiv SL1 / SL1S"
 
-msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
-msgstr "PrusaSlicer narazil na fatální chybu: \"%1%\""
-
-msgid "PrusaSlicer: Open hyperlink"
-msgstr "PrusaSlicer: Otevřít hypertextový odkaz"
-
 msgid ""
 "Purging after toolchange will be done inside this object's infills. This "
 "lowers the amount of waste but may result in longer print time  due to "
@@ -8664,8 +8470,8 @@ msgid "Purpose of Machine Limits"
 msgstr "Účel limitů stroje"
 
 msgid ""
-"Put here the gcode to change the toolhead (called after the g-code T"
-"{next_extruder}). You have access to {next_extruder} and "
+"Put here the gcode to change the toolhead (called after the g-code "
+"T{next_extruder}). You have access to {next_extruder} and "
 "{previous_extruder}. next_extruder is the 'extruder number' of the new "
 "milling tool, it's equal to the index (begining at 0) of the milling tool "
 "plus the number of extruders. previous_extruder is the 'extruder number' of "
@@ -9134,9 +8940,6 @@ msgstr "Retrakce"
 msgid "Reverse direction of zoom with mouse wheel"
 msgstr "Reverzovat funkci kolečka myši při zoomu"
 
-msgid "Reverse on odd"
-msgstr "Reverzní na liché"
-
 msgid "Reverse threshold"
 msgstr "Reverzní práh"
 
@@ -9233,9 +9036,6 @@ msgstr "Režim pravítka"
 
 msgid "Run %s"
 msgstr "Spustit %s"
-
-msgid "Run the fan at default speed when possible"
-msgstr "Pokud je to možné, spusťte ventilátor na výchozí rychlost"
 
 msgid "Running post-processing scripts"
 msgstr "Vykonávají se Následné-Zpracování skripty"
@@ -9347,9 +9147,6 @@ msgstr "Přímočará"
 
 msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
 msgstr "Plánování nahrávání do `%1%`. Viz Okno -> Fronta nahrávaní do tiskového serveru"
-
-msgid "Script help page"
-msgstr "Stránka nápovědy skriptu"
 
 msgid "Seam"
 msgstr "Šev"
@@ -9487,13 +9284,6 @@ msgid "Select the number of tests"
 msgstr "Vyberte číslo extruderu"
 
 msgid ""
-"Select the number of tests with higher temperature than the current one."
-msgstr "Vyberte počet testů s vyšší teplotou než je aktuální."
-
-msgid "Select the number of tests with lower temperature than the current one."
-msgstr "Vyberte počet testů s nižší teplotou než je aktuální."
-
-msgid ""
 "Select the number tower to print, and by how many degrees C to decrease each "
 "time."
 msgstr "Vyberte počet testů s nižší teplotou než je aktuální."
@@ -9513,13 +9303,6 @@ msgid ""
 msgstr ""
 "Vyberte krok v % mezi dvěma testy.\n"
 "Všimněte si, že na součástech je vyryto pouze násobek 5."
-
-msgid ""
-"Select the step in celcius between two tests.\n"
-"Note that only multiple of 5 are engraved on the part."
-msgstr ""
-"Vyberte krok ve stupních Celsia mezi dvěma testy.\n"
-"Všimněte si, že na součásti jsou vyryty pouze násobky 5."
 
 msgid "Select the STL file to repair:"
 msgstr "Vyberte STL soubor k opravě:"
@@ -10121,6 +9904,9 @@ msgstr "Rozměr obdélníkové tiskové podložky v ose X a Y."
 msgid "Size of the tab icons, in pixels. Set to 0 to remove icons."
 msgstr "Velikost ikon karet v pixelech. Nastavením na 0 ikony odstraníte."
 
+msgid "Size:"
+msgstr "Velikost:"
+
 msgid ""
 "Skinnydip performs a secondary dip into the meltzone to burn off fine "
 "strings of filament"
@@ -10213,9 +9999,6 @@ msgstr ""
 msgid "Slic3r logo designed by Corey Daniels."
 msgstr "Logo Slic3r navrhl Corey Daniels."
 
-msgid "Slic3r Manual"
-msgstr "Manuál Slic3r"
-
 msgid "Slic3r will never scale the speed below this one."
 msgstr "Slic3r nikdy nezvýší rychlost pod tuto."
 
@@ -10255,9 +10038,6 @@ msgstr "Informace o slicování"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "Slicovaný objekt \"%1%\" vypadá jako logo nebo nápis"
-
-msgid "Sliced preview"
-msgstr "Náhled na Slicování"
 
 msgid "Slicing"
 msgstr "Slicování"
@@ -10700,13 +10480,6 @@ msgid ""
 msgstr ""
 "Odpojení proběhlo úspěšné. Zařízení %s(%s) lze nyní bezpečně odebrat z počítače."
 
-msgid ""
-"SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa "
-"and the original Slic3r by Alessandro Ranellucci & the RepRap community."
-msgstr ""
-"SuperSlicer je skinovaná verze Slic3r, založená na PrusaSlicer od Prusa a původní "
-"Slic3r od Alessandra Ranellucciho a komunity RepRap."
-
 msgid "support"
 msgstr "podpěry"
 
@@ -10977,9 +10750,6 @@ msgstr "Šablona s vlastním G-code"
 msgid "Test"
 msgstr "Test"
 
-msgid "Test Flow Ratio"
-msgstr "Poměr zkušebního průtoku"
-
 msgid "Text colors"
 msgstr "Podbarvení textu"
 
@@ -11106,6 +10876,9 @@ msgstr ""
 
 msgid "The filament material type for use in custom G-codes."
 msgstr "Typ filamentu pro použití ve vlastních G-code."
+
+msgid "The file does not exist."
+msgstr "Soubor neexistuje."
 
 msgid ""
 "The file where the output will be written (if not specified, it will be "
@@ -11310,6 +11083,14 @@ msgstr ""
 "Počet vrstev, na kterých bude aktivní kompenzace sloní nohy. První vrstva se "
 "zmenšuje o hodnotu kompenzace sloní nohy, další vrstvy se pak postupně zmenšují až "
 "na vrstvu označenou touto hodnotou."
+
+msgid ""
+"The number of perimeters, counted from the center, over which the variation "
+"needs to be spread. Lower values mean that the outer perimeters don't change "
+"in width."
+msgstr ""
+"Počet perimetrů počítaných od středu, na které je třeba variaci rozložit. "
+"Nižší hodnoty znamenají, že se šířka vnějších obvodů nemění."
 
 msgid ""
 "The number of top solid layers is increased above top_solid_layers if "
@@ -11592,12 +11373,6 @@ msgid "The uploads are still ongoing"
 msgstr "Nahrávání stále probíhá"
 
 msgid ""
-"The vertical distance between object and raft. Ignored for soluble interface."
-msgstr ""
-"Verikální vzdálenost mezi objektem a raftem. Ignorováno pro rozpustné "
-"podpěry."
-
-msgid ""
 "The volume multiplier used to compute the final volume to extrude by the "
 "algorithm."
 msgstr ""
@@ -11791,8 +11566,8 @@ msgid ""
 "default extruder and bed temperature are reset using non-wait command; "
 "however if M104, M109, M140 or M190 are detected in this custom code, Slic3r "
 "will not add temperature commands. Note that you can use placeholder "
-"variables for all Slic3r settings, so you can put a \"M109 S"
-"{first_layer_temperature}\" command wherever you want."
+"variables for all Slic3r settings, so you can put a \"M109 "
+"S{first_layer_temperature}\" command wherever you want."
 msgstr ""
 "Tento kód je vložen mezi objekty při použití sekvenčního tisku. Ve výchozím "
 "nastavení se teplota extrudéru a lože resetuje pomocí příkazu bez čekání; pokud "
@@ -11862,14 +11637,16 @@ msgstr ""
 
 msgid ""
 "This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
+"(feedrate 20 mm/s) will take at least 2 seconds."
 msgstr ""
-"Toto experimentální nastavení se používá k omezení rychlosti změny objemového "
-"průtoku. Hodnota 1,8mm³/s² zajišťuje, že změna objemového průtoku z 1,8 mm³/s "
-"(šířka extruze 0,45 mm, výška extruze 0,2 mm, rychlost posuvu 20 mm/s) na 5,4 mm³/s "
-"(rychlost posuvu 60 mm/s) potrvá nejméně 2 sekundy."
+"Toto experimentální nastavení se používá k omezení rychlosti změny rychlosti "
+"vytlačování při přechodu z vyšší rychlosti na nižší. Hodnota 1,8 mm³/s² "
+"zajišťuje, že změna rychlosti vytlačování z 5,4 mm³/s (šířka vytlačování "
+"0,45 mm, výška vytlačování 0,2 mm, rychlost posuvu 20 mm/s) na 1,8 mm³/s "
+"(rychlost posuvu 60 mm/s) bude trvat nejméně 2 sekundy."
 
 msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
@@ -11920,43 +11697,6 @@ msgstr ""
 "objektů."
 
 msgid ""
-"This fan speed is enforced during all infill bridges. It won't slow down the "
-"fan if it's currently running at a higher speed.\n"
-"Set to 1 to follow default speed.\n"
-"Set to -1 to disable this override (internal bridges will use Bridges fan "
-"speed).\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"Tato rychlost ventilátoru je vynucena během všech výplňových mostů. Nezpomalí "
-"ventilátor, pokud aktuálně běží na vyšší rychlost.\n"
-"Nastavte na 1, abyste dodrželi výchozí rychlost.\n"
-"Nastavením na -1 toto přepsání deaktivujete (interní mosty budou používat rychlost "
-"ventilátoru mostů).\n"
-"Lze přepsat pouze pomocí disable_fan_first_layers."
-
-msgid ""
-"This fan speed is enforced during all top fills.\n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to disable this override.\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"Tato rychlost ventilátoru je vynucena při všech horních plněních.\n"
-"Nastavením na 1 deaktivujete ventilátor.\n"
-"Pokud chcete toto přepsání deaktivovat, nastavte na -1.\n"
-"Lze přepsat pouze pomocí disable_fan_first_layers."
-
-msgid ""
-"This fan speed is enforced during bridges and overhangs. It won't slow down "
-"the fan if it's currently running at a higher speed.\n"
-"Set to -1 to disable this override.\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"Tato rychlost ventilátoru je vynucena během mostů a převisů. Nezpomalí ventilátor, "
-"pokud aktuálně běží na vyšší rychlost.\n"
-"Pokud chcete toto přepsání deaktivovat, nastavte na -1.\n"
-"Lze přepsat pouze pomocí disable_fan_first_layers."
-
-msgid ""
 "This feature allows you to combine infill and speed up your print by "
 "extruding thicker infill layers while preserving thin perimeters, thus "
 "accuracy."
@@ -11974,19 +11714,6 @@ msgstr ""
 "vrstev. Nula pro deaktivaci. Tuto hodnotu můžete nastavit na libovolnou hodnotu "
 "(například 9999); Slic3r automaticky vybere maximální možný počet vrstev ke spojení "
 "podle průměru trysky a výška vrstvy."
-
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires a single perimeter, "
-"no infill, no top solid layers and no support material. You can still set "
-"any number of bottom solid layers as well as skirt/brim loops. It won't work "
-"when printing more than one single object."
-msgstr ""
-"Tato funkce zvýší postupně Z při tisku jednovrstvého objektu, aby se odstranil "
-"jakýkoli viditelný šev. Tato volba vyžaduje jediný perimetr, žádnou výplň, žádné "
-"vrchní plné vrstvy a žádný podpůrný materiál. Můžete stále nastavit libovolný počet "
-"spodních plných vrstev, stejně jako obrysové smyčky / límec. Při tisku více než "
-"jednoho samostatného objektu nebude toto nastavení fungovat."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -12040,12 +11767,6 @@ msgstr ""
 "netěsných extrudérech.\n"
 "Všimněte si, že utírání se děje pouze při zatažení, nastavení tisku 'pouze při "
 "překročení perimetru' může výrazně snížit počet stírání."
-
-msgid "This G-code will be used as a code for the color change"
-msgstr "Tento G-code bude použit jako kód pro změnu barvy"
-
-msgid "This G-code will be used as a code for the pause print"
-msgstr "Tento G-code bude použit jako kód pro pozastavení tisku"
 
 msgid "This G-code will be used as a custom code"
 msgstr "Tento G-code bude použit jako vlastní kód"
@@ -12371,31 +12092,6 @@ msgstr ""
 "tiskem stírací věže."
 
 msgid ""
-"This setting may slightly degrade the quality of your external perimeter, in "
-"exchange for a better bonding between perimeters.Use it if you have great "
-"difficulties with perimeter bonding, for example with high temperature "
-"filaments.\n"
-"This percentage is the % of overlap between perimeters, a bit like "
-"perimeter_overlap and external_perimeter_overlap, but in reverse. You have "
-"to set perimeter_overlap and external_perimeter_overlap to 100%, or this "
-"setting has no effect. 0: no effect, 50%: half of the nozzle will be over an "
-"already extruded perimeter while extruding a new one, unless it's an "
-"external one).\n"
-"It's very experimental, please report about the usefulness. It may be "
-"removed if there is no use for it."
-msgstr ""
-"Toto nastavení může mírně zhoršit kvalitu vašeho vnějšího perimetru výměnou za "
-"lepší spojení mezi perimetry. Použijte jej, pokud máte velké potíže s lepením po "
-"perimetru, například s vysokoteplotními vlákny.\n"
-"Toto procento je % překrytí mezi perimetry, trochu jako perimeter_overlap a "
-"external_perimeter_overlap, ale obráceně. Musíte nastavit perimeter_overlap a "
-"external_perimeter_overlap na 100 %, jinak toto nastavení nemá žádný vliv. 0: žádný "
-"účinek, 50 %: polovina tryska bude při vytlačování nové přes již vytlačený "
-"perimetr, pokud se nejedná o externí).\n"
-"Je to velmi experimentální, prosím podejte zprávu o užitečnosti. Může být "
-"odstraněno, pokud pro to není k ničemu."
-
-msgid ""
 "This setting represents the base fan speed this filament needs, or at least "
 "the minimum PWM your fan needs to work."
 msgstr ""
@@ -12442,8 +12138,8 @@ msgid ""
 "Slic3r detects M104, M109, M140 or M190 in your custom codes, such commands "
 "will not be prepended automatically so you're free to customize the order of "
 "heating commands and other custom actions. Note that you can use placeholder "
-"variables for all Slic3r settings, so you can put a \"M109 S"
-"{first_layer_temperature}\" command wherever you want. If you have multiple "
+"variables for all Slic3r settings, so you can put a \"M109 "
+"S{first_layer_temperature}\" command wherever you want. If you have multiple "
 "extruders, the gcode is processed in extruder order."
 msgstr ""
 "Tato procedura spouštění se vkládá na začátek, po každém gkódu spuštění tiskárny (a "
@@ -12464,8 +12160,8 @@ msgid ""
 "you can use placeholder variables for all Slic3r settings, so you can put a "
 "\"M109 S{first_layer_temperature}\" command wherever you want.\n"
 " placeholders: initial_extruder, total_layer_count, has_wipe_tower, "
-"has_single_extruder_multi_material_priming, total_toolchanges, bounding_box"
-"[minx,miny,maxx,maxy]"
+"has_single_extruder_multi_material_priming, total_toolchanges, "
+"bounding_box[minx,miny,maxx,maxy]"
 msgstr ""
 "Tato procedura spouštění je vložena na začátku poté, co lože dosáhlo cílové teploty "
 "a extrudér právě začal zahřívat, ale předtím, než extrudér dokončil ohřev. Pokud "
@@ -12562,6 +12258,9 @@ msgstr "Velikost náhledů"
 msgid "Tilt"
 msgstr "Náklon"
 
+msgid "Tilt for high viscosity resin"
+msgstr "Tilt pro resin s vysokou viskozitou"
+
 msgid "Tilt time"
 msgstr "Doba náklonu"
 
@@ -12597,6 +12296,9 @@ msgstr "Doba trvání rychlého náklonu"
 
 msgid "Time of the slow tilt"
 msgstr "Doba trvání pomalého náklonu"
+
+msgid "Time of the super slow tilt"
+msgstr "Čas super pomalého náklonu"
 
 msgid ""
 "Time to wait after the filament is unloaded. May help to get reliable "
@@ -12707,9 +12409,6 @@ msgid ""
 msgstr ""
 "Nápověda pro tloušťku vrchní / spodní skořepiny: Není k dipozici z důvodu neplatné "
 "výšky vrstvy."
-
-msgid "Top fan speed"
-msgstr "Nejvyšší rychlost ventilátoru"
 
 msgid "Top fill"
 msgstr "Vrchní výplň"
@@ -13195,6 +12894,9 @@ msgstr "Verze"
 msgid "version"
 msgstr "verze"
 
+msgid "Version:"
+msgstr "Verze:"
+
 msgid "vertical"
 msgstr "svislé"
 
@@ -13265,9 +12967,6 @@ msgstr "Objemový průtok (mm³/s)"
 msgid "Volumetric speed"
 msgstr "Objemová rychlost"
 
-msgid "Volumetric speed for Autospeed"
-msgstr "Objemová rychlost pro Automatickou rychlost"
-
 msgid "Voron Cube"
 msgstr "Voronova kostka"
 
@@ -13292,9 +12991,6 @@ msgstr "Vítejte"
 
 msgid "Welcome to the %s Configuration Assistant"
 msgstr "Vítejte v  %s Konfiguračním Asistentu"
-
-msgid "Welcome to the %s Configuration Wizard"
-msgstr "Vítejte v %s Konfiguračním průvodci"
 
 msgid "What would you like to do with \"%1%\" preset after saving?"
 msgstr "Co chcete udělat s přednastavením \"%1%\" po uložení?"
@@ -13407,23 +13103,6 @@ msgstr ""
 "surovém filamentu, než vstoupí do extruderu)."
 
 msgid ""
-"When set to a non-zero value this fan speed is used only for external "
-"perimeters (visible ones). \n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to use the normal fan speed on external perimeters.External "
-"perimeters can benefit from higher fan speed to improve surface finish, "
-"while internal perimeters, infill, etc. benefit from lower fan speed to "
-"improve layer adhesion."
-msgstr ""
-"Při nastavení na nenulovou hodnotu se tato rychlost ventilátoru používá pouze pro "
-"vnější perimetry (viditelné). \n"
-"Nastavením na 1 deaktivujete ventilátor.\n"
-"Nastavte na -1 pro použití normální rychlosti ventilátoru na vnějších perimetrech. "
-"Externí perimetry mohou těžit z vyšší rychlosti ventilátoru pro zlepšení povrchové "
-"úpravy, zatímco vnitřní perimetry, výplň atd. těží z nižší rychlosti ventilátoru "
-"pro zlepšení adheze vrstvy."
-
-msgid ""
 "When set to zero, the distance the filament is moved from parking position "
 "during load is exactly the same as it was moved back during unload. When "
 "positive, it is loaded further,  if negative, the loading move is shorter "
@@ -13460,14 +13139,18 @@ msgstr ""
 "množství filamentu. Toto nastavení je zřídkakdy potřeba."
 
 msgid ""
-"When using 'Complete individual objects', the default behavior is to draw "
-"the brim at the beginning of each object. if you prefer to have more place "
-"for you objects, you can print all the brims at the beginning, so ther is "
-"less problem with collision."
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
 msgstr ""
-"Při použití Dokončení jednotlivých objektů je výchozím chováním nakreslit okraj na "
-"začátek každého objektu. Pokud chcete mít pro své objekty více místa, můžete "
-"vytisknout všechny okraje na začátku, takže je méně problémů s kolizí."
+"Kdy vytvářet přechody mezi sudým a lichým počtem perimetrů. U klínového "
+"tvaru s úhlem větším než toto nastavení nebudou přechody vytvořeny a "
+"uprostřed se nevytisknou žádné perimetry, které by vyplnily zbývající "
+"prostor. Snížením tohoto nastavení se sníží počet a délka těchto středových "
+"perimetrů, ale mohou vzniknout mezery nebo vytlačení nadbytečného množství "
+"materiálu."
 
 msgid ""
 "When using 'Complete individual objects', the default behavior is to draw "
@@ -13535,9 +13218,6 @@ msgstr "Šířka displeje"
 msgid "width&spacing combo"
 msgstr "Vzdálenost"
 
-msgid "will be turned off by default."
-msgstr "bude ve výchozím nastavení vypnuto."
-
 msgid ""
 "Will inflate or deflate the sliced 2D polygons according to the sign of the "
 "correction."
@@ -13548,9 +13228,6 @@ msgstr ""
 
 msgid "Will only take into account the delay for the cooling of overhangs."
 msgstr "Bude zohledňovat pouze zpoždění chlazení převisů."
-
-msgid "will run at %1%%% by default"
-msgstr "ve výchozím nastavení poběží na %1%%%"
 
 msgid "Wipe"
 msgstr "Čištění"
@@ -13715,9 +13392,10 @@ msgid ""
 "(without the quotes)\n"
 "A value that only takes values as 'true' or 'false' will be a boolean)\n"
 "Every other value will be parsed as a string as-is.\n"
-"Advice: before using a variable, it's safer to use the function 'default_XXX"
-"(variable_name, default_value)' (enclosed in bracket as it's a script) in "
-"case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'."
+"Advice: before using a variable, it's safer to use the function "
+"'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a "
+"script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' "
+"'string'."
 msgstr ""
 "Můžete přidat data přístupná pro vlastní makra gcode.\n"
 "Každý řádek může definovat jednu proměnnou.\n"
@@ -13728,42 +13406,6 @@ msgstr ""
 "uvozovky)\n"
 "Hodnota, která nabývá pouze hodnot 'true' nebo 'false', bude logická)\n"
 "Každá další hodnota bude analyzována jako řetězec tak, jak je.\n"
-"Rada: před použitím proměnné je bezpečnější použít funkci"
-"'default_XXX(název_proměnné, výchozí_hodnota)' (uzavřeno v závorce, protože se jedná o skript) "
-"v případě, že není nastaven. XXX můžete nahradit výrazem 'int' 'bool' 'double' 'řetězec'."
-
-msgid ""
-"You can add data accessible to custom-gcode macros.\n"
-"Each line can define one variable.\n"
-"The format is 'variable_name=value'. The variable name should only have [a-"
-"zA-Z0-9] characters or '_'.\n"
-"A value that can be parsed as a int or float will be avaible as a numeric "
-"value.\n"
-"A value that is enclosed by double-quotes will be available as a string "
-"(without the quotes)\n"
-"A value that only takes values as 'true' or 'false' will be a boolean)\n"
-"Every other value will be parsed as a string as-is.\n"
-"These variables will be available as an array in the custom gcode (one item "
-"per extruder), don't forget to use them with the {current_extruder} index to "
-"get the current value. If a filament has a typo on the variable that change "
-"its type, then the parser will convert evrything to strings.\n"
-"Advice: before using a variable, it's safer to use the function 'default_XXX"
-"(variable_name, default_value)' (enclosed in bracket as it's a script) in "
-"case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'."
-msgstr ""
-"Můžete přidat data přístupná pro vlastní makra gcode.\n"
-"Každý řádek může definovat jednu proměnnou.\n"
-"Formát je 'název_proměnné=hodnota'. Název proměnné by měl mít pouze [a-zA-Z0-9] "
-"znaky nebo '_'.\n"
-"Hodnota, kterou lze analyzovat jako int nebo float, bude k dispozici jako číselná hodnota.\n"
-"Hodnota, která je uzavřena do dvojitých uvozovek, bude k dispozici jako řetězec (bez "
-"uvozovky)\n"
-"Hodnota, která nabývá pouze hodnot 'true' nebo 'false', bude logická)\n"
-"Každá další hodnota bude analyzována jako řetězec tak, jak je.\n"
-"Tyto proměnné budou dostupné jako pole ve vlastním gcode (jedna položka na "
-"extruder), nezapomeňte je použít s indexem {current_extruder}, abyste získali "
-"aktuální hodnota. Pokud má vlákno v proměnné překlep, který mění jeho typ, pak "
-"analyzátor převede vše na řetězce.\n"
 "Rada: před použitím proměnné je bezpečnější použít funkci"
 "'default_XXX(název_proměnné, výchozí_hodnota)' (uzavřeno v závorce, protože se jedná o skript) "
 "v případě, že není nastaven. XXX můžete nahradit výrazem 'int' 'bool' 'double' 'řetězec'."
@@ -13828,8 +13470,8 @@ msgid "You can't change a type of the last solid part of the object."
 msgstr "Nelze změnit typ poslední plné části objektu."
 
 msgid ""
-"You can't to add the object(s) from %s because of one or some of them is"
-"(are) multi-part"
+"You can't to add the object(s) from %s because of one or some of them "
+"is(are) multi-part"
 msgstr ""
 "Nemůžete přidat objekt(y) z %s, protože jeden nebo některé z nich je(jsou) vícedílné"
 
@@ -13863,14 +13505,14 @@ msgstr ""
 "Následující přednastavení máte s uloženým nastavením pro „Nahrávání do tiskového "
 "serveru“"
 
+msgid "You have to enter a printer name."
+msgstr "Musíte zadat název tiskárny."
+
 msgid "You may need to update your graphics card driver."
 msgstr "Možná budete muset aktualizovat ovladač grafické karty."
 
 msgid "You must install a configuration update."
 msgstr "Je nutné nainstalovat aktualizaci konfigurace."
-
-msgid "You should change the name of your printer device."
-msgstr "Měli byste změnit název tiskového zařízení."
 
 msgid "You started your selection with %s Item."
 msgstr "Začali jste výběr s položkou %s."

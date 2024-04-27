@@ -106,7 +106,7 @@ while getopts ":hugbdrsltiw" opt; do
         echo "   -s: build CaribouSlicer"
         echo "   -l: update language .pot file"
         echo "   -t: build tests (in combination with -s)"
-        echo "   -i: Generate appimage (optional)"
+        echo "   -i: generate .tgz and appimage (optional)"
         echo -e "\n   For a first use, you want to 'sudo ./BuildLinux.sh -u'"
         echo -e "   and then './BuildLinux.sh -dsi'\n"
         exit 0
@@ -127,7 +127,7 @@ then
     echo "   -s: build CaribouSlicer"
     echo "   -l: update language .pot file"
     echo "   -t: build tests (in combination with -s)"
-    echo "   -i: generate appimage (optional)"
+    echo "   -i: generate .tgz and appimage (optional)"
     echo -e "\n   For a first use, you want to 'sudo ./BuildLinux.sh -u'"
     echo -e "   and then './BuildLinux.sh -dsi'\n"
     exit 0

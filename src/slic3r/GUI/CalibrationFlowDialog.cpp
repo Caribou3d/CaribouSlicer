@@ -60,7 +60,7 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
     assert(objs_idx.size() == 5);
     const DynamicPrintConfig* print_config = this->gui_app->get_tab(Preset::TYPE_FFF_PRINT)->get_config();
     const DynamicPrintConfig* printerConfig = this->gui_app->get_tab(Preset::TYPE_PRINTER)->get_config();
-    
+
     /// --- scale ---
     // model is created for a 0.4 nozzle, scale xy with nozzle size.
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
@@ -91,8 +91,8 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
     ((first_layer_height + layer_height) / 2) represents the midpoint of our indicator tab (it is scaled to be 2 layers tall)
     The 0.3 constant is the same as the delta calculated in add_part below, this should probably be calculated per the model object
     */
-    float zshift = -(zscale / 2) + ((first_layer_height + layer_height) / 2) + 0.3;
-    
+    float zshift = -(zscale / 2) + ((first_layer_height + layer_height) / 2) ;
+
     // it's rotated but not around the good origin: correct that
     double init_z_rotate_angle = Geometry::deg2rad(plat->config()->opt_float("init_z_rotate"));
     Matrix3d rot_matrix = Eigen::Quaterniond(Eigen::AngleAxisd(init_z_rotate_angle, Vec3d{0,0,1})).toRotationMatrix();
@@ -102,11 +102,11 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
             trsf.set_offset(rot_matrix * translation - translation + trsf.get_offset());
             vol->set_transformation(trsf);
         };
-    
+
     if (delta == 10.f && start == 80.f) {
         add_part(model.objects[objs_idx[0]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "m20.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
         add_part(model.objects[objs_idx[1]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "m10.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number });
-        add_part(model.objects[objs_idx[2]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "_0.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number });
+        add_part(model.objects[objs_idx[2]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "pm0.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number });
         add_part(model.objects[objs_idx[3]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "p10.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number });
         add_part(model.objects[objs_idx[4]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "p20.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number });
     } else if (delta == 2.f && start == 92.f) {
@@ -114,14 +114,14 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
         add_part(model.objects[objs_idx[1]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "m6.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
         add_part(model.objects[objs_idx[2]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "m4.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
         add_part(model.objects[objs_idx[3]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "m2.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
-        add_part(model.objects[objs_idx[4]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "_0.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
+        add_part(model.objects[objs_idx[4]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "pm0.amf").string(), Vec3d{ 10 * xyScale,0,zshift }, Vec3d{ xyScale , xyScale, zscale_number});
     }
     for (size_t i = 0; i < 5; i++) {
         translate_from_rotation(i, Vec3d{ 10 * xyScale,0,zshift });
-        add_part(model.objects[objs_idx[i]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "O.amf").string(), Vec3d{ 0,0,zscale/2.f + 0.5 }, Vec3d{xyScale , xyScale, layer_height / 0.2}); // base: 0.2mm height
+        add_part(model.objects[objs_idx[i]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "filament_flow" / "O.amf").string(), Vec3d{ 0,0,zscale/2.f }, Vec3d{xyScale , xyScale, layer_height / 0.2}); // base: 0.2mm height
     }
 
-    
+
     /// --- translate ---;
     bool has_to_arrange = init_z_rotate_angle != 0;
     const ConfigOptionFloat* extruder_clearance_radius = print_config->option<ConfigOptionFloat>("extruder_clearance_radius");
@@ -131,11 +131,13 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
     Vec2d bed_min = BoundingBoxf(bed_shape->values).min;
     float offsetx = 3 + 20 * xyScale + extruder_clearance_radius->value + brim_width + (brim_width > extruder_clearance_radius->value ? brim_width - extruder_clearance_radius->value : 0);
     float offsety = 3 + 20 * xyScale + extruder_clearance_radius->value + brim_width + (brim_width > extruder_clearance_radius->value ? brim_width - extruder_clearance_radius->value : 0);
-    model.objects[objs_idx[0]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2, bed_min.y() + bed_size.y() / 2 - offsety, zscale / 2 });
-    model.objects[objs_idx[1]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2, bed_min.y() + bed_size.y() / 2          , zscale / 2 });
-    model.objects[objs_idx[2]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2, bed_min.y() + bed_size.y() / 2 + offsety, zscale / 2 });
-    model.objects[objs_idx[3]]->translate({ bed_min.x() + bed_size.x() / 2 + offsetx / 2, bed_min.y() + bed_size.y() / 2 - offsety, zscale / 2 });
-    model.objects[objs_idx[4]]->translate({ bed_min.x() + bed_size.x() / 2 + offsetx / 2, bed_min.y() + bed_size.y() / 2 + offsety, zscale / 2 });
+    float ox = extruder_clearance_radius->value / 2 - brim_width;
+    float oy = extruder_clearance_radius->value / 2 + brim_width;
+    model.objects[objs_idx[0]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2 - oy , bed_min.y() - bed_size.y() / 2 - offsety -ox, zscale / 2 });
+    model.objects[objs_idx[1]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2 - oy , bed_min.y() - bed_size.y() / 2           - ox, zscale / 2 });
+    model.objects[objs_idx[2]]->translate({ bed_min.x() + bed_size.x() / 2 - offsetx / 2 - oy, bed_min.y() - bed_size.y() / 2 + offsety -ox, zscale / 2 });
+    model.objects[objs_idx[3]]->translate({ bed_min.x() + bed_size.x() / 2 + offsetx / 2 - oy, bed_min.y() - bed_size.y() / 2 - offsety -ox, zscale / 2 });
+    model.objects[objs_idx[4]]->translate({ bed_min.x() + bed_size.x() / 2 + offsetx / 2 - oy , bed_min.y() - bed_size.y() / 2 + offsety -ox, zscale / 2 });
 
     // if not enough space, forget about complete_objects
     if (bed_size.y() < offsety * 2 + 25 * xyScale + brim_width || bed_size.x() < offsetx + 25 * xyScale + brim_width)
@@ -163,7 +165,7 @@ void CalibrationFlowDialog::create_geometry(float start, float delta) {
         model.objects[objs_idx[i]]->config.set_key_value("top_solid_layers", new ConfigOptionInt(100));
         model.objects[objs_idx[i]]->config.set_key_value("thin_walls", new ConfigOptionBool(true));
         model.objects[objs_idx[i]]->config.set_key_value("thin_walls_min_width", new ConfigOptionFloatOrPercent(50,true));
-        model.objects[objs_idx[i]]->config.set_key_value("gap_fill_enabled", new ConfigOptionBool(true)); 
+        model.objects[objs_idx[i]]->config.set_key_value("gap_fill_enabled", new ConfigOptionBool(true));
         model.objects[objs_idx[i]]->config.set_key_value("layer_height", new ConfigOptionFloat(layer_height));
         model.objects[objs_idx[i]]->config.set_key_value("first_layer_height", new ConfigOptionFloatOrPercent(first_layer_height, false));
         model.objects[objs_idx[i]]->config.set_key_value("external_infill_margin", new ConfigOptionFloatOrPercent(100, true));

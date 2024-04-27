@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2022-04-15 00:00\n"
-"PO-Revision-Date: 2022-04-15 00:00\n"
+"POT-Creation-Date: 2024-04-27 00:00\n"
+"PO-Revision-Date: 2024-04-27 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -116,15 +116,6 @@ msgstr "%s té un avís"
 
 msgid "%s has encountered an error"
 msgstr "%s hi ha hagut un error"
-
-msgid ""
-"%s has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
-msgstr ""
-"%s ha trobat un error. Probablement ha estat causat per haver-se quedat "
-"sense memòria. Si estàs segur que tens suficient RAM al vostre sistema, "
-"podria ser un error  i ens complauria que el reportessis."
 
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
@@ -455,9 +446,6 @@ msgstr "Per sobre de Z"
 msgid "Acceleration control (advanced)"
 msgstr "Control d'acceleració (avançat)"
 
-msgid "Access violation"
-msgstr "Violació d'accés"
-
 msgid "Accuracy"
 msgstr "Precisió"
 
@@ -716,9 +704,6 @@ msgstr "Totes les superfícies superiors"
 msgid "All user presets will be deleted."
 msgstr "S'esborraran tots els paràmetres de l'usuari."
 
-msgid "All walls"
-msgstr "Totes les parets"
-
 msgid "allocation failed"
 msgstr "assignació fallida"
 
@@ -809,6 +794,9 @@ msgstr "Aplica-ho a tots els objectes petits restants que s'estan carregant."
 msgid "approximate seconds"
 msgstr "segons aproximats"
 
+msgid "Arachne"
+msgstr "Aràcne"
+
 msgid "Archimedean Chords"
 msgstr "Acords d'Arquimedes"
 
@@ -896,6 +884,11 @@ msgstr "Fletxa cap amunt"
 msgid "Ask for unsaved changes in presets when creating new project"
 msgstr ""
 "Preguntar pels canvis no desats en predefinits en crear un nou projecte"
+
+msgid "Ask for unsaved changes in presets when selecting new preset"
+msgstr ""
+"Preguntar sempre pels canvis no guardats en predefinits en seleccionar un "
+"nou predefinit"
 
 msgid "Ask for unsaved changes in project"
 msgstr "Preguntar pels canvis no desats al projecte"
@@ -1197,9 +1190,6 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "No es pot sobreescriure un perfil del sistema."
 
-msgid "Cannot overwrite an external profile."
-msgstr "No es pot sobreescriure un perfil extern."
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
@@ -1270,6 +1260,13 @@ msgstr "Canvis per a les opcions crítiques"
 msgid "Changing of an application language"
 msgstr "Canvi d'idioma d'una aplicació"
 
+msgid ""
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the plater."
+msgstr ""
+"El canvi d'algunes opcions farà que l'aplicació es reiniciï.\n"
+"Es perdrà el contingut de la plataforma."
+
 msgid "Check for application updates"
 msgstr "Comprovar si hi ha actualitzacions de l'aplicació"
 
@@ -1298,8 +1295,8 @@ msgstr "Trieu un fitxer (3MF/AMF):"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Trieu un fitxer (GCODE/. GCO/. G/.ngc/NGC):"
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Trieu un o més fitxers (STL / OBJ / AMF / 3MF / PRUSA):"
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Trieu un o més fitxers (STL / 3MF / STEP / OBJ / AMF / PRUSA):"
 
 msgid "Choose SLA archive:"
 msgstr "Escollir fitxer SLA:"
@@ -1314,6 +1311,20 @@ msgstr "Cercle"
 
 msgid "Circular"
 msgstr "Circular"
+
+msgid "Classic"
+msgstr "Clàssic"
+
+msgid ""
+"Classic perimeter generator produces perimeters with constant extrusion "
+"width and for very thin areas is used gap-fill. Arachne engine produces "
+"perimeters with variable extrusion width. This setting also affects the "
+"Concentric infill."
+msgstr ""
+"El generador perimetral clàssic produeix perímetres amb amplada d'extrusió "
+"constant i per a zones molt fines s'utilitza l'ompliment de buits. El motor "
+"aracne produeix perímetres amb una amplada d'extrusió variable. Aquesta "
+"configuració també afecta el farciment concèntric."
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Esborrar la pila de Desfer / Refer al nou projecte"
@@ -1450,9 +1461,6 @@ msgstr "Concèntric"
 msgid "Configuration &Assistant"
 msgstr "&Assistent de configuració"
 
-msgid "Configuration &Wizard"
-msgstr "&Ajudant de configuració"
-
 msgid "Configuration Assistant"
 msgstr "Assistent de Configuració"
 
@@ -1501,9 +1509,6 @@ msgstr ""
 "L'actualització de la configuració fa que es perdi la modificació de la "
 "configuració.\n"
 "Per tant, comprova els canvis no guardats i guarda'ls si cal."
-
-msgid "Configuration Wizard"
-msgstr "Ajudant de configuració"
 
 msgid "Confirmation"
 msgstr "Confirmació"
@@ -1941,9 +1946,6 @@ msgstr "Suprimeix la selecció actual"
 
 msgid "Density"
 msgstr "Densitat"
-
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "Densitat del farciment intern, expressat en el rang 0% - 100%."
 
 msgid "Density of the first raft or support layer."
 msgstr "Densitat de la primera bassa o capa de suport."
@@ -2588,12 +2590,6 @@ msgstr "Exportar plataforma actual com a codi G"
 msgid "Export current plate as G-code to SD card / Flash drive"
 msgstr "Exporta a G-code a la targeta SD / disc USB"
 
-msgid "Export current plate as STL"
-msgstr "Exportar plataforma actual com a STL"
-
-msgid "Export current plate as STL including supports"
-msgstr "Exportar la plataforma actual com a STL incloent suports"
-
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
 msgstr ""
@@ -2617,12 +2613,6 @@ msgstr "Exporta el fitxer OBJ:"
 
 msgid "Export of a temporary 3mf file failed"
 msgstr "No s'ha pogut exportar un fitxer temporal 3mf"
-
-msgid "Export Plate as &STL"
-msgstr "Exportar plataforma com a &ST"
-
-msgid "Export Plate as STL &Including Supports"
-msgstr "Exportar plataforma com a STL &incloent suports"
 
 msgid "Export SLA"
 msgstr "Exporta SLA"
@@ -2684,11 +2674,11 @@ msgstr "Temps d'exposició"
 msgid "External perimeter"
 msgstr "Perímetre extern"
 
-msgid "external perimeters"
-msgstr "perímetres externs"
-
 msgid "External perimeters"
 msgstr "Perímetres externs"
+
+msgid "external perimeters"
+msgstr "perímetres externs"
 
 msgid "External perimeters first"
 msgstr "Primer els perímetres externs"
@@ -2768,19 +2758,6 @@ msgstr "Velocitat del ventilador"
 
 msgid "Fan Speed (%)"
 msgstr "Velocitat Ventilador (%)"
-
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
-msgstr ""
-"La velocitat del ventilador augmentarà linealment des de zero a la capa "
-"\"disable_fan_first_layers\" al màxim a la capa \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" serà ignorada si és menor que "
-"\"disable_fan_first_layers\", en aquest cas el ventilador funcionarà a la "
-"velocitat màxima permesa a la capa \"disable_fan_first_layers\" + 1."
 
 msgid "Fast"
 msgstr "Ràpida"
@@ -3046,6 +3023,9 @@ msgid_plural "Folowing models repair failed"
 msgstr[0] "Ha fallat la reparació del següent model"
 msgstr[1] "Ha fallat la reparació dels següents models"
 
+msgid "Font size"
+msgstr "Mida de la lletra"
+
 msgid ""
 "For a multipart object, this value isn't accurate.\n"
 "It doesn't take account of intersections and negative volumes."
@@ -3106,6 +3086,16 @@ msgstr ""
 "Útil per a impressions de múltiples extrusores amb materials translúcids o "
 "material de suport soluble manual."
 
+msgid "Format of G-code thumbnails"
+msgstr "Format de les miniatures del codi G"
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr ""
+"Format de les miniatures del codi G: PNG per a la millor qualitat, JPG per a "
+"la mida més petita, QOI per al firmware de memòria baixa"
+
 msgid ""
 "Forward-compatibility rule when loading configurations from config files and "
 "project files (3MF, AMF)."
@@ -3153,9 +3143,6 @@ msgstr "Distància del punt de la pell difusa"
 
 msgid "Fuzzy skin thickness"
 msgstr "Gruix de la pell difusa"
-
-msgid "Fuzzy skin type."
-msgstr "Tipus de pell difusa."
 
 msgid "G-code"
 msgstr "Codi G"
@@ -3409,6 +3396,9 @@ msgstr "Amagar regla"
 
 msgid "High extruder current on filament swap"
 msgstr "Alta intensitat a l'extrusor durant el canvi de filament"
+
+msgid "High viscosity"
+msgstr "Alta viscositat"
 
 msgid "Higher print quality versus higher print speed."
 msgstr "Major qualitat d'impressió versus més velocitat d'impressió."
@@ -3771,19 +3761,6 @@ msgstr ""
 "l'aixecament a les primeres capes."
 
 msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"Si voleu processar el codi G de sortida a través de scripts personalitzats, "
-"simplement feu una llista de les seves rutes absolutes aquí. Separeu els "
-"scripts múltiples amb un punt i coma. Els scripts es passaran per la ruta "
-"absoluta al fitxer de codi G com a primer argument, i poden accedir a la "
-"configuració de configuració de Slic3r llegint les variables d'entorn."
-
-msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
 "code to take it into account. This option lets you specify the displacement "
 "of each extruder with respect to the first one. It expects positive "
@@ -3873,8 +3850,8 @@ msgstr "Importar fitxer SLA"
 msgid "Import STL (Imperial Units)"
 msgstr "Importar STL (unitats imperials)"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "Importar STL/OBJ/AM&F/3MF"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Importar STL/3MF/STEP/OBJ/AM&F"
 
 msgid "Importing canceled."
 msgstr "S'ha cancel·lat la importació."
@@ -4440,6 +4417,9 @@ msgstr "Longitud màxima del pont"
 msgid "Max bridges on a pillar"
 msgstr "Ponts màxims en un pilar"
 
+msgid "Max height"
+msgstr "Alçada màxima"
+
 msgid "Max merge distance"
 msgstr "Distància màxima de combinació"
 
@@ -4460,6 +4440,9 @@ msgstr "Màx. Pendent volumètrica positiva"
 
 msgid "Max volumetric speed"
 msgstr "Velocitat volumètrica màxima"
+
+msgid "Max width"
+msgstr "Amplada màxima"
 
 msgid "Maximal bridging distance"
 msgstr "Distància màxima de ponts"
@@ -4634,6 +4617,9 @@ msgstr "Missatge per a pausa d'impressió a la capa actual (%1% mm)."
 msgid "Min"
 msgstr "Mín"
 
+msgid "Min height"
+msgstr "Alçada mínima"
+
 msgid "Min print speed"
 msgstr "Velocitat d'impressió mínima"
 
@@ -4664,6 +4650,9 @@ msgstr "El gruix mínim de la carcassa inferior és %1% mm."
 msgid "Minimum exposure time"
 msgstr "Temps mínim d'exposició"
 
+msgid "Minimum feature size"
+msgstr "Mida mínima de la característica"
+
 msgid "Minimum feedrate when extruding"
 msgstr "Mínima velocitat en extruir"
 
@@ -4676,11 +4665,27 @@ msgstr "Velocitats d'alimentació mínimes"
 msgid "Minimum initial exposure time"
 msgstr "Temps mínim d'exposició inicial"
 
+msgid "Minimum perimeter width"
+msgstr "Amplada perimetral mínima"
+
 msgid "Minimum shell thickness"
 msgstr "Gruix mínim de la carcassa"
 
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Gruix mínim d'una carcassa superior / inferior"
+
+msgid ""
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum perimeter width. If expressed as "
+"a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"Gruix mínim de característiques fines. Les característiques del model més "
+"primes que aquest valor no s'imprimiran, mentre que les característiques més "
+"gruixudes que la mida mínima de la característica mínima s'ampliaran a "
+"l'amplada mínima del perímetre. Si s'expressa en percentatge (per exemple "
+"25%), es calcularà en funció del diàmetre de la boquilla."
 
 msgid "Minimum top shell thickness"
 msgstr "Gruix mínim de la carcassa superior"
@@ -5328,9 +5333,6 @@ msgstr "Obre una instància nova"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Obre el diàleg per modificar la galeria de formes"
 
-msgid "Opening Configuration Wizard"
-msgstr "Obrint Assistent de Configuració"
-
 msgid "Opening new project while some presets are unsaved."
 msgstr "Obre un nou projecte mentre alguns paràmetres estan sense desar."
 
@@ -5592,8 +5594,23 @@ msgstr ""
 msgid "Perimeter"
 msgstr "Perímetre"
 
+msgid "Perimeter distribution count"
+msgstr "Recompte de distribució perimetral"
+
 msgid "Perimeter extruder"
 msgstr "Extrusor per a perímetres"
+
+msgid "Perimeter generator"
+msgstr "Generador de perímetres"
+
+msgid "Perimeter transition length"
+msgstr "Longitud de transició perimetral"
+
+msgid "Perimeter transitioning filter margin"
+msgstr "Marge de filtre de transició perimetral"
+
+msgid "Perimeter transitioning threshold angle"
+msgstr "Angle llindar de transició perimetral"
 
 msgid "perimeters"
 msgstr "perímetres"
@@ -5648,13 +5665,6 @@ msgstr "Plataforma"
 msgid "Please check your object list before preset changing."
 msgstr ""
 "Comproveu la llista d'objectes abans de canviar els paràmetres inicials."
-
-msgid ""
-"Please save your project and restart PrusaSlicer. We would be glad if you "
-"reported the issue."
-msgstr ""
-"Si us plau, desa el teu projecte i reinicia PrusaSlicer. T'agrairíem que "
-"reportessis el problema."
 
 msgid "Please select the file to reload"
 msgstr "Seleccioneu el fitxer que voleu tornar a carregar"
@@ -5761,6 +5771,9 @@ msgid ""
 msgstr ""
 "Prem per accelerar 5 vegades mentre mous el polze\n"
 "amb tecles de fletxa o roda del ratolí"
+
+msgid "Pressure equalizer (experimental)"
+msgstr "Equalitzador de pressió (experimental)"
 
 msgid "Preview"
 msgstr "Previsualització"
@@ -5917,12 +5930,6 @@ msgstr "Progrés:"
 
 msgid "Project is loading"
 msgstr "El projecte s'està carregant"
-
-msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
-msgstr "PrusaSlicer ha trobat un error crític: \"%1%\""
-
-msgid "PrusaSlicer: Open hyperlink"
-msgstr "PrusaSlicer: Obrir hipervincle"
 
 msgid ""
 "Purging after toolchange will be done inside this object's infills. This "
@@ -7036,6 +7043,9 @@ msgstr "Mida i coordenades"
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Grandària en X i Y de la placa rectangular."
 
+msgid "Size:"
+msgstr "Mida:"
+
 msgid "Skirt"
 msgstr "Faldilla"
 
@@ -7083,13 +7093,6 @@ msgstr "Punts de suport SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "S'han detectat suports SLA fora de l'àrea d'impressió."
-
-msgid ""
-"Slic3r can upload G-code files to a printer host. This field must contain "
-"the kind of the host."
-msgstr ""
-"Slic3r pot pujar fitxers de codi G a un host d'impressió. Aquest camp ha de "
-"contenir el tipus de host."
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7782,6 +7785,9 @@ msgid "The filament material type for use in custom G-codes."
 msgstr ""
 "El tipus de material de filament per al seu ús en codis G personalitzats."
 
+msgid "The file does not exist."
+msgstr "El fitxer no existeix."
+
 msgid ""
 "The file where the output will be written (if not specified, it will be "
 "based on the input file)."
@@ -7930,6 +7936,15 @@ msgstr ""
 "El nombre de capes sòlides a la base s'incrementa per sobre de "
 "bottom_solid_layers si és necessari per assegurar un gruix mínim a la paret "
 "d'inferior."
+
+msgid ""
+"The number of perimeters, counted from the center, over which the variation "
+"needs to be spread. Lower values mean that the outer perimeters don't change "
+"in width."
+msgstr ""
+"El nombre de perímetres, comptats des del centre, sobre els quals s'ha de "
+"repartir la variació. Els valors més baixos signifiquen que els perímetres "
+"exteriors no canvien d'amplada."
 
 msgid ""
 "The number of top solid layers is increased above top_solid_layers if "
@@ -8142,12 +8157,6 @@ msgid "The uploads are still ongoing"
 msgstr "Les pujades encara estan en curs"
 
 msgid ""
-"The vertical distance between object and raft. Ignored for soluble interface."
-msgstr ""
-"La distància vertical entre l'objecte i la bassa. S'ignora per a la "
-"interfície soluble."
-
-msgid ""
 "The Wipe option is not available when using the Firmware Retraction mode.\n"
 "\n"
 "Shall I disable it in order to enable Firmware Retraction?"
@@ -8293,15 +8302,17 @@ msgstr ""
 
 msgid ""
 "This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
+"(feedrate 20 mm/s) will take at least 2 seconds."
 msgstr ""
-"Aquesta configuració experimental es fa servir per limitar la velocitat de "
-"canvi a la velocitat d'extrusió. Un valor d'1,8 mm³/s² assegura que es "
-"canvia la velocitat d'extrusió de 1,8 mm³/s (amplada d'extrusió de 0,45 mm, "
-"alçada d'extrusió de 0,2 mm, avanç de 20 mm/s) a 5,4 mm³/s (avenç de 60 mm/"
-"s) durarà almenys 2 segons."
+"Aquesta configuració experimental s'utilitza per limitar la velocitat de "
+"canvi en la velocitat d'extrusió per a una transició de major velocitat a "
+"menor velocitat. Un valor d'1,8 mm³/s² garanteix que un canvi de la "
+"velocitat d'extrusió de 5,4 mm³/s (amplada d'extrusió de 0,45 mm, alçada "
+"d'extrusió de 0,2 mm, taxa d'alimentació de 60 mm/s) a 1,8 mm³/s (taxa "
+"d'alimentació 20 mm/s) trigarà almenys 2 segons."
 
 msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
@@ -8321,20 +8332,6 @@ msgstr ""
 "superficial i corregir l'amplada d'una sola paret. Els valors usuals són "
 "entre 0.9 i 1.1. Si creieu que heu de canviar això més, verifiqueu el "
 "diàmetre del filament i els passos de l'E al firmware."
-
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires a single perimeter, "
-"no infill, no top solid layers and no support material. You can still set "
-"any number of bottom solid layers as well as skirt/brim loops. It won't work "
-"when printing more than one single object."
-msgstr ""
-"Aquesta funció augmentarà Z gradualment mentre imprimeix un objecte de paret "
-"simple per eliminar qualsevol costura visible. Aquesta opció requereix un "
-"perímetre únic, sense farciment, sense capes sòlides superiors i sense "
-"material de suport. Pots establir qualsevol quantitat de capes sòlides "
-"inferiors, així com els bucles de faldilla/bassa. No funcionarà quan "
-"imprimiu més d'un objecte."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -8373,12 +8370,6 @@ msgstr ""
 "Aquest indicador habilita la lògica de refredament automàtic que ajusta la "
 "velocitat i la velocitat del ventilador segons el temps d'impressió de la "
 "capa."
-
-msgid "This G-code will be used as a code for the color change"
-msgstr "Aquest codi G s'utilitzarà com a codi per al canvi de color"
-
-msgid "This G-code will be used as a code for the pause print"
-msgstr "Aquest codi G s'utilitzarà com a codi per a la pausa d'impressió"
 
 msgid "This G-code will be used as a custom code"
 msgstr "Aquest codi G s'utilitzarà com a codi personalitzat"
@@ -8534,6 +8525,9 @@ msgstr ""
 msgid "Tilt"
 msgstr "Inclinació"
 
+msgid "Tilt for high viscosity resin"
+msgstr "Inclinació per resina d'alta viscositat"
+
 msgid "Tilt time"
 msgstr "Temps d'inclinació"
 
@@ -8565,6 +8559,9 @@ msgstr "Tiempo de la inclinación rápida"
 
 msgid "Time of the slow tilt"
 msgstr "Temps de la inclinació lenta"
+
+msgid "Time of the super slow tilt"
+msgstr "Temps de la inclinació súper lenta"
 
 msgid ""
 "Time to wait after the filament is unloaded. May help to get reliable "
@@ -9044,6 +9041,9 @@ msgstr "Versió"
 msgid "version"
 msgstr "versió"
 
+msgid "Version:"
+msgstr "Versió:"
+
 msgid "Vertical shells"
 msgstr "Carcasses Verticals"
 
@@ -9121,9 +9121,6 @@ msgstr "Benvingut"
 msgid "Welcome to the %s Configuration Assistant"
 msgstr "Benvingut al %s Assistent de Configuració"
 
-msgid "Welcome to the %s Configuration Wizard"
-msgstr "Benvingut al %s Ajudant de Configuració"
-
 msgid "What would you like to do with \"%1%\" preset after saving?"
 msgstr ""
 "Què t'agradaria fer amb la configuració preestablerta \"%1%\" després de "
@@ -9189,6 +9186,19 @@ msgid ""
 msgstr ""
 "Quan la retracció es compensa després d'un moviment, l'extrusor necessita "
 "introduir més filament. Aquest ajustament rarament es necessita."
+
+msgid ""
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
+msgstr ""
+"Quan crear transicions entre nombres parells i senars de perímetres. Una "
+"forma de falca amb un angle superior a aquest paràmetre no tindrà "
+"transicions i no s'imprimiran perímetres al centre per omplir l'espai "
+"restant. La reducció d'aquesta configuració redueix el nombre i la longitud "
+"d'aquests perímetres centrals, però pot deixar buits o sobreesforços."
 
 msgid "WHITE BULLET"
 msgstr "VINYETA BLANCA"
@@ -9435,14 +9445,14 @@ msgstr ""
 "Teniu els paràmetres preestablerts següents amb opcions desades per a "
 "\"Pujada del host d'impressió\""
 
+msgid "You have to enter a printer name."
+msgstr "Heu d'introduir un nom d'impressora."
+
 msgid "You may need to update your graphics card driver."
 msgstr "Potser necessiteu actualitzar la vostra targeta gràfica."
 
 msgid "You must install a configuration update."
 msgstr "Heu d'instal·lar una actualització de configuració."
-
-msgid "You should change the name of your printer device."
-msgstr "Hauríeu de canviar el nom del dispositiu d'impressió."
 
 msgid "You started your selection with %s Item."
 msgstr "Heu començat la selecció amb %s element."

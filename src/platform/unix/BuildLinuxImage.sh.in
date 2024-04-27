@@ -34,8 +34,8 @@ while getopts ":ihag" opt; do
         ;;
     h ) echo "Usage: ./BuildLinuxImage.sh [-g][-i][-a][-h]"
         echo "   -g: force gtk2 build"
-        echo "   -i: generate Appimage (optional)"
-	    echo "   -a: generate tgz (optional)"
+        echo "   -i: generate .tgz and Appimage (optional)"
+	    echo "   -a: generate app (optional)"
         echo "   -h: help"
         exit 0
         ;;
@@ -61,13 +61,26 @@ then
     ln -rs package/bin/@SLIC3R_APP_CMD@ package/bin/@GCODEVIEWER_APP_CMD@
     # remove unneeded po from resources
     find package/resources/localization -name "*.po" -type f -delete
-    find package/resources/localization -name "P*.mo" -o -name "*.txt" -o -name "P*.pot" -type f -delete
-
+    find package/resources/localization -name "*.pot" -type f -delete
+    find package/resources/localization -name "*.ini" -type f -delete
+    find package/resources/localization -name "*.py" -type f -delete
+    find package/resources/localization -name "*.md" -type f -delete
+    find package/resources/localization -name "*.txt" -type f -delete
+    find package/resources/localization -name "*database*" -type f -delete
+    find package/resources/localization -name "Slic3r.mo" -type f -delete
+    find package/resources/localization -name "SuperSlicer.mo" -type f -delete
     # create bin
     echo -e '#!/bin/bash\nDIR=$(readlink -f "$0" | xargs dirname)\nexport LD_LIBRARY_PATH="$DIR/bin"\nexec "$DIR/bin/@SLIC3R_APP_CMD@" "$@"' > package/@SLIC3R_APP_CMD@
     chmod ug+x package/@SLIC3R_APP_CMD@
     echo -e '#!/bin/bash\nDIR=$(readlink -f "$0" | xargs dirname)\nexport LD_LIBRARY_PATH="$DIR/bin"\nexec "$DIR/bin/@GCODEVIEWER_APP_CMD@" "$@"' > package/@GCODEVIEWER_APP_CMD@
     chmod ug+x package/@GCODEVIEWER_APP_CMD@
+    echo -e "\n... done\n"
+fi
+
+if [[ -n "$BUILD_IMAGE" ]]
+then
+    echo -e "\n[9/9] Creating .tgz and Appimage for distribution ...\n"
+
     pushd package > /dev/null
     if [[ -z "$FORCE_GTK2" ]]
     then
@@ -76,14 +89,6 @@ then
 	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK2-linux64.tgz .  &>/dev/null
     fi
 
-    popd > /dev/null
-    echo -e "\n... done\n"
-fi
-
-if [[ -n "$BUILD_IMAGE" ]]
-then
-    echo -e "\n[9/9] Creating Appimage for distribution ...\n"
-    pushd package  > /dev/null
     chmod +x ../src/build_appimage.sh
     ../src/build_appimage.sh
     popd  > /dev/null

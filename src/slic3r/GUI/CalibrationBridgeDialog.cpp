@@ -36,13 +36,13 @@ void CalibrationBridgeDialog::create_buttons(wxStdDialogButtonSizer* buttons){
     nb_tests->SetToolTip(_L("Select the number of tests"));
     nb_tests->SetSelection(4);
 
-    buttons->Add(new wxStaticText(this, wxID_ANY,_L("Step:")));
+    buttons->Add(new wxStaticText(this, wxID_ANY,_L("Step width:")));
     buttons->Add(steps);
     buttons->AddSpacer(15);
-    buttons->Add(new wxStaticText(this, wxID_ANY, _L("Nb tests:")));
+    buttons->Add(new wxStaticText(this, wxID_ANY, _L("Number of steps:")));
     buttons->Add(nb_tests);
     buttons->AddSpacer(40);
-    wxButton* bt = new wxButton(this, wxID_FILE1, _L("Test Flow Ratio"));
+    wxButton* bt = new wxButton(this, wxID_FILE1, _L("Generate"));
     bt->Bind(wxEVT_BUTTON, &CalibrationBridgeDialog::create_geometry_flow_ratio, this);
     buttons->Add(bt);
     //buttons->AddSpacer(15);
@@ -101,7 +101,7 @@ void CalibrationBridgeDialog::create_geometry(std::string setting_to_test, bool 
     } else {
         z_scale = 1;
     }
-    
+
     // it's rotated but not around the good origin: correct that
     double init_z_rotate_angle = Geometry::deg2rad(plat->config()->opt_float("init_z_rotate"));
     Matrix3d rot_matrix = Eigen::Quaterniond(Eigen::AngleAxisd(init_z_rotate_angle, Vec3d{0,0,1})).toRotationMatrix();

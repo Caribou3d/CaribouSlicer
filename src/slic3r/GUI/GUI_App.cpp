@@ -63,7 +63,7 @@
 #include "CalibrationCubeDialog.hpp"
 #include "CalibrationFirstLayerDialog.hpp"
 #include "CalibrationFirstLayerPatchDialog.hpp"
-#include "CalibrationWallsDialog.hpp"
+#include "CalibrationExtruderDialog.hpp"
 #include "CalibrationFlowDialog.hpp"
 #include "CalibrationOverBridgeDialog.hpp"
 #include "CalibrationTempDialog.hpp"
@@ -1983,9 +1983,9 @@ void GUI_App::calibration_first_layer_patch_dialog()
 {
     change_calibration_dialog(nullptr, new CalibrationFirstLayerPatchDialog(this, mainframe));
 }
-void GUI_App::calibration_flow_walls_dialog()
+void GUI_App::calibration_extrusion_multiplier_dialog()
 {
-    change_calibration_dialog(nullptr, new CalibrationWallsDialog(this, mainframe));
+    change_calibration_dialog(nullptr, new CalibrationExtruderDialog(this, mainframe));
 }
 void GUI_App::calibration_retraction_dialog()
 {

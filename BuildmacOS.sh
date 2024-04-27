@@ -109,7 +109,7 @@ while getopts ":idaxbhcsltwr" opt; do
         echo "   -d: build dependencies"
         echo "   -s: build CaribouSlicer"
         echo "   -t: build tests (in combination with -s)"
-        echo "   -i: generate DMG image (optional)\n"
+        echo "   -i: generate .tgz and DMG image (optional)\n"
         exit 0
         ;;
   esac
@@ -128,7 +128,7 @@ then
     echo "   -d: build dependencies"
     echo "   -s: build CaribouSlicer"
     echo "   -t: build tests (in combination with -s)"
-    echo -e "   -i: Generate DMG image (optional)\n"
+    echo -e "   -i: Generate .tgz and DMG image (optional)\n"
     exit 0
 fi
 
@@ -159,9 +159,9 @@ then
         BUILD_ARGS="${BUILD_ARGS} -DCMAKE_BUILD_TYPE=Debug"
     fi
     # cmake deps
-    echo "Cmake command: cmake .. -DCMAKE_OSX_DEPLOYMENT_TARGET=\"10.14\" ${BUILD_ARCH} "
+    echo "Cmake command: cmake .. -DCMAKE_OSX_DEPLOYMENT_TARGET=\"10.15\" ${BUILD_ARCH} "
     pushd deps/build > /dev/null
-    cmake .. -DCMAKE_OSX_DEPLOYMENT_TARGET="10.14" $BUILD_ARGS
+    cmake .. -DCMAKE_OSX_DEPLOYMENT_TARGET="10.15" $BUILD_ARGS
 
     echo -e "\n ... done\n"
 

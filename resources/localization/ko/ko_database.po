@@ -11670,3 +11670,9 @@ msgstr "어제"
 
 msgid "zlib error %d"
 msgstr "압축모듈(zlib) 오류 %d"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "파일을 선택하세요 (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "가져오기 STL/3MF/STEP/OBJ/AM&F"
