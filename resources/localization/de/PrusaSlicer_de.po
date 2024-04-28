@@ -3325,7 +3325,7 @@ msgstr "Kein Lüfter für die ersten"
 
 #: src/libslic3r/PrintConfig.cpp:2292
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "deaktiviert"
 
 #: src/libslic3r/PrintConfig.cpp:1906
 msgid ""
@@ -3818,7 +3818,7 @@ msgstr "Vertikale Spiegelung der Ausgabebilder aktivieren"
 
 #: src/libslic3r/PrintConfig.cpp:2294
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "aktiviert"
 
 #: src/libslic3r/PrintConfig.cpp:1315
 msgid ""
@@ -6692,7 +6692,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2293
 msgid "Limited"
-msgstr "Begrenzt"
+msgstr "begrenzt"
 
 #: src/libslic3r/PrintConfig.cpp:1170
 msgid "Line"
@@ -6862,7 +6862,7 @@ msgstr "Logging-Level"
 
 #: src/libslic3r/PrintConfig.cpp:2299
 msgid "Loops (minimum)"
-msgstr "Schleifen (minimal)"
+msgstr "Umrundungen (minimal)"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:253
 msgid "Low"
@@ -7465,11 +7465,11 @@ msgstr "Änderungen am aktuellen Profil werden gespeichert."
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:3780
 msgid "Modifier"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 #: src/slic3r/GUI/Tab.cpp:1599
 msgid "Modifiers"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 #: src/libslic3r/PrintConfig.cpp:727
 msgid "Monotonic"
@@ -8159,7 +8159,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1491
 msgid "Only infill where needed"
-msgstr "Infill nur wo es notwendig ist drucken"
+msgstr "Füllung nur wo es notwendig ist drucken"
 
 #: src/slic3r/GUI/Tab.cpp:2812
 msgid "Only lift Z"
@@ -11412,7 +11412,7 @@ msgstr "Schürze"
 
 #: src/libslic3r/PrintConfig.cpp:2300
 msgid "Skirt Loops"
-msgstr "Schleifen für die Schürze"
+msgstr "Umrundungen für die Schürze"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:136 src/slic3r/GUI/Tab.cpp:1533
 #: src/libslic3r/PrintConfig.cpp:516 src/libslic3r/PrintConfig.cpp:527

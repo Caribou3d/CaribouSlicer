@@ -1028,7 +1028,7 @@ msgstr ""
 "Das Problem lösen, um mit dem Slicen fortzufahren."
 
 msgid "Anchor solid infill by X mm"
-msgstr "Verankern Sie die feste Füllung um X mm"
+msgstr "Erhöhung der massiven  Füllung um X mm"
 
 msgid "Anchored"
 msgstr "Verankert"
@@ -1495,31 +1495,31 @@ msgid "Brim"
 msgstr "Rand"
 
 msgid "Brim & Skirt"
-msgstr "Krempe & Rock"
+msgstr "Rand und Schürze"
 
 msgid "Brim & Skirt acceleration"
-msgstr "Beschleunigung der Krempe und des Rocks"
+msgstr "Beschleunigung für Rand und Schürze"
 
 msgid "Brim & Skirt speed"
-msgstr "Geschwindigkeit der Krempe & des Rocks"
+msgstr "Geschwindigkeit für Rand und Schürze"
 
 msgid "Brim configuration"
-msgstr "Konfiguration der Krempe"
+msgstr "Konfiguration des Randes"
 
 msgid "Brim ear detection length"
-msgstr "Länge der Ohrmuschelerkennung"
+msgstr "Rand-Ohr Erkennungslängeerkennung"
 
 msgid "Brim ear max angle"
-msgstr "Maximaler Winkel der Ohrmuschel"
+msgstr "Rand-Ohr max Winkel"
 
 msgid "Brim ears"
-msgstr "Krempe Ohren"
+msgstr "Ohren am Rand"
 
 msgid "Brim inside holes"
-msgstr "Krempe innen Löcher"
+msgstr "Rand innere Löcher"
 
 msgid "Brim per object"
-msgstr "Krempe pro Objekt"
+msgstr "Rand pro Objekt"
 
 msgid "Brim separation gap"
 msgstr "Rand Trennungsspalt"
@@ -2150,10 +2150,10 @@ msgid "Connected"
 msgstr "verbunden"
 
 msgid "Connected to hole perimeters"
-msgstr "verbunden mit Lochperimetern"
+msgstr "verbunden mit hohlen Wänden"
 
 msgid "Connected to outer perimeters"
-msgstr "verbunden mit äußeren Perimetern"
+msgstr "verbunden mit äußeren Wänden"
 
 msgid "Connection length"
 msgstr "Länge der Verbindung"
@@ -2365,7 +2365,7 @@ msgid ""
 "Create a brim per object instead of a brim for the plater. Useful for complete_object or if you have your brim detaching before printing the object.\n"
 "Be aware that the brim may be truncated if objects are too close together.."
 msgstr ""
-"Erstellen Sie einen Rand pro Objekt anstelle eines Randes für den Plater. Nützlich für complete_object oder wenn Sie den Rand vor dem Drucken des Objekts ablösen möchten.\n"
+"Erstelle einen Rand pro Objekt anstatt eines Randes für die  Druckplatte.. Nützlich für complete_object oder wenn Sie den Rand vor dem Drucken des Objekts ablösen möchten.\n"
 "Beachten Sie, dass der Rand abgeschnitten werden kann, wenn die Objekte zu dicht beieinander liegen."
 
 msgid "Create a new project?"
@@ -2844,7 +2844,7 @@ msgid "Disable fan for the first"
 msgstr "Kein Lüfter für die ersten"
 
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "deaktiviert"
 
 msgid "Disables retraction when the travel path does not exceed the upper layer's perimeters (and thus any ooze will probably be invisible)."
 msgstr "Deaktiviert den Rückzug, wenn der Reiseweg die Grenzen der oberen Schicht nicht überschreitet (und daher wird der Schlamm wahrscheinlich unsichtbar sein)."
@@ -2895,7 +2895,7 @@ msgid "Distance between ironing lines"
 msgstr "Abstand zwischen Bügellinien"
 
 msgid "Distance between skirt and object(s) ; or from the brim if using draft shield or you set 'skirt_distance_from_brim'."
-msgstr "Abstand zwischen Rock und Objekt(en) ; oder von der Krempe, wenn Sie Windschutz verwenden oder 'skirt_distance_from_brim' einstellen."
+msgstr "Abstand zwischen Rock und Objekt(en) ; oder von dem Rand, wenn Sie Windschutz verwenden oder 'skirt_distance_from_brim' einstellen."
 
 msgid "Distance between two connector sticks which connect the object and the generated pad."
 msgstr "Abstand zwischen zwei Verbindungsstäben, die das Objekt mit der erzeugten Grundschicht verbinden."
@@ -3183,7 +3183,7 @@ msgid "Enable wipe tower"
 msgstr "Aktivieren Sie Wischturm"
 
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "aktiviert"
 
 msgid "Enables the creation of a support layer under the first solid layer. This allows you to use a lower infill ratio without compromising the top quality. The dense infill is laid out with a 50% infill density."
 msgstr "Ermöglicht die Erstellung einer Stützschicht unter der ersten festen Schicht. Dadurch können Sie einen geringeren Füllungsgrad verwenden, ohne die Spitzenqualität zu beeinträchtigen. Die dichte Füllung wird mit einer Fülldichte von 50% in ausgelegt."
@@ -3668,13 +3668,13 @@ msgid "Extra perimeters over overhangs"
 msgstr "Zusätzlicher Umfang über Überhänge"
 
 msgid "Extra skirt lines on the first layer."
-msgstr "Extra-Rocklinien auf der ersten Ebene."
+msgstr "Zusätzliche Schürzenlinien auf der ersten Schicht."
 
 msgid "Extra unretraction"
 msgstr "Extra Retraktion"
 
 msgid "Extra Wipe for external perimeters"
-msgstr "Extra Wischtuch für äußere Begrenzungen"
+msgstr "Zusätzliches wischen für Außenränder"
 
 msgid "Extrat length on toolchange restart"
 msgstr "Extralänge bei Neustart des Werkzeugwechsels"
@@ -3973,7 +3973,7 @@ msgid "Files association"
 msgstr "Zuordnung der Dateien"
 
 msgid "Fill"
-msgstr "Füllen"
+msgstr "Füllung"
 
 msgid "Fill angle"
 msgstr "Füllwinkel"
@@ -4282,7 +4282,7 @@ msgid "From"
 msgstr "Von"
 
 msgid "from brim"
-msgstr "von der Krempe"
+msgstr "von dem Rand"
 
 msgid "From filament"
 msgstr "Vom Glühfaden"
@@ -4291,7 +4291,7 @@ msgid "From Object List You can't delete the last solid part from object."
 msgstr "Sie können nicht das letzte solide Teil des Objekts von der Objektliste löschen."
 
 msgid "From plane"
-msgstr "Vom Flugzeug"
+msgstr "Von der Ebene"
 
 msgid "Front"
 msgstr "Front"
@@ -4470,7 +4470,7 @@ msgid "generated warnings"
 msgstr "erzeugte Warnungen"
 
 msgid "Generating brim"
-msgstr "Krempe generieren"
+msgstr "Rand generieren"
 
 msgid "Generating G-code"
 msgstr "Generiere G-Code"
@@ -5440,13 +5440,13 @@ msgid "Interface spacing"
 msgstr "Abstand zwischen den Schnittstellen"
 
 msgid "Interior Brim width"
-msgstr "Innere Breite der Krempe"
+msgstr "Innere Breite des Rands"
 
 msgid "Internal"
 msgstr "Intern"
 
 msgid "Internal bridge infill"
-msgstr "Interne Brückenausfachung"
+msgstr "Interne Brückenfüllung"
 
 msgid "Internal bridge speed"
 msgstr "Geschwindigkeit der internen Brücke"
@@ -5888,7 +5888,7 @@ msgstr ""
 "Sie können entweder 'Abstand' oder 'Breite' einstellen; das andere wird anhand der Standardhöhe der Ebene berechnet."
 
 msgid "Limited"
-msgstr "Begrenzt"
+msgstr "begrenzt"
 
 msgid "Line"
 msgstr "Linie"
@@ -6037,7 +6037,7 @@ msgid "Logging level"
 msgstr "Logging-Level"
 
 msgid "Loops (minimum)"
-msgstr "Schleifen (minimal)"
+msgstr "Umrundungen (minimal)"
 
 msgid "Lower temp:"
 msgstr "Untere Temperatur:"
@@ -6285,8 +6285,8 @@ msgid ""
 "If set to 0, no brim will be created. \n"
 "If set to ~178, brim will be created on everything but straight sections."
 msgstr ""
-"Maximaler Winkel, in dem ein Krempenohr erscheinen soll.\n"
-"Bei einem Wert von 0 wird keine Krempe erstellt.\n"
+"Maximaler Winkel, in dem ein Ohr am Rand gedruckt werden soll.\n"
+"Bei einem Wert von 0 wird kein Randerstellt.\n"
 "Bei einem Wert von ~178 wird ein Rand an allen Abschnitten außer an geraden erstellt."
 
 msgid "Maximum area for the hole where the hole_size_compensation will apply fully. After that, it will decrease down to 0 for four times this area. Set to 0 to let the hole_size_compensation apply fully for all detected holes"
@@ -6795,10 +6795,10 @@ msgid "modified"
 msgstr "geändert"
 
 msgid "Modifier"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 msgid "Modifiers"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 msgid "Modifying slices"
 msgstr "Slices ändern"
@@ -7363,7 +7363,7 @@ msgid "Only do the vase trick on the external side. Useful when you only want to
 msgstr "Machen Sie den Vasen-Trick nur an der Außenseite. Nützlich, wenn Sie nur die Naht vom Schraubenloch entfernen möchten."
 
 msgid "Only draw brim over the sharp edges of the model."
-msgstr "Ziehen Sie die Krempe nur über die scharfen Kanten des Modells."
+msgstr "Zeichne den Rand nur über die scharfen Kanten des Modells."
 
 msgid "Only for inner side"
 msgstr "Nur für die Innenseite"
@@ -7378,7 +7378,7 @@ msgid "Only if on platter"
 msgstr "Nur wenn auf einer Druckplatte"
 
 msgid "Only infill where needed"
-msgstr "Infill nur wo es notwendig ist drucken"
+msgstr "Füllung nur wo es notwendig ist drucken"
 
 msgid "Only lift Z"
 msgstr "Nur Z anheben"
@@ -7405,7 +7405,7 @@ msgid "Only one perimeter on Top surfaces"
 msgstr "Nur eine Umrandung auf den Oberseiten"
 
 msgid "Only retract when crossing perimeters"
-msgstr "Nur bei Kontursüberquerungen einziehen"
+msgstr "Rückzug nur bei Wandüberquerung"
 
 msgid "Only selected objects"
 msgstr "Nur ausgewählte Objekte"
@@ -7520,7 +7520,7 @@ msgid "Optimizing layer %s / %s"
 msgstr "Optimierungsebene %s / %s"
 
 msgid "Optimizing skirt & brim %s%%"
-msgstr "Optimierung von Rock und Krempe %s%%"
+msgstr "Optimierung von Schürze und Rand%s%%"
 
 msgid "Optimizing support layer %s / %s"
 msgstr "Optimierung der Tragschicht %s / %s"
@@ -7884,7 +7884,7 @@ msgid "Perimeter acceleration"
 msgstr "Perimeter-Beschleunigung"
 
 msgid "Perimeter anchor"
-msgstr "Perimeter-Anker"
+msgstr "Wand-Anker"
 
 msgid "Perimeter bonding"
 msgstr "Perimetrische Bindung"
@@ -9749,7 +9749,7 @@ msgid "Skirt height"
 msgstr "Schürzenhöhe"
 
 msgid "Skirt Loops"
-msgstr "Schleifen für die Schürze"
+msgstr "Umrundungen für die Schürze"
 
 msgid "Skirt width"
 msgstr "Breite des Rocks"
@@ -11779,7 +11779,7 @@ msgid "This option will limit infill to the areas actually needed for supporting
 msgstr "Mit dieser Option beschränken Sie die Füllung auf die Bereiche, die tatsächlich für die Stützung von Decken benötigt werden (sie dient als internes Stützmaterial). Wenn diese Option aktiviert ist, verlangsamt sich die Generierung des G-Codes aufgrund der zahlreichen Prüfungen."
 
 msgid "This option will switch the print order of perimeters and infill, making the latter first."
-msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, sodass der Infill zuerst gedruckt wird."
+msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Wand und Füllung um, sodass die Füllung zuerst gedruckt wird."
 
 msgid "This parameter grows the bridged solid infill layers by the specified mm to anchor them into the sparse infill and over the perimeters below. Put 0 to deactivate it. Can be a % of the width of the external perimeter."
 msgstr "Dieser Parameter vergrößert die überbrückten soliden Ausfachungsschichten um den angegebenen mm, um sie in der spärlichen Ausfachung und über den darunter liegenden Perimetern zu verankern. Setzen Sie 0, um ihn zu deaktivieren. Kann ein % of die Breite der äußeren Begrenzung sein."
@@ -11795,7 +11795,7 @@ msgid ""
 "If expressed as percentage (for example: 80%) it will be calculated over the Support speed setting.\n"
 "Set zero to use autospeed for this feature."
 msgstr ""
-"Diese separate Einstellung wirkt sich auf die Geschwindigkeit der Krempe und des Rocks aus.\n"
+"Diese separate Einstellung wirkt sich auf die Geschwindigkeit für Rand und Schürze aus.\n"
 "Wenn sie als Prozentsatz ausgedrückt wird (z.B.: 80%), wird sie über die Einstellung für die Unterstützungsgeschwindigkeit berechnet.\n"
 "Stellen Sie Null ein, um die automatische Geschwindigkeit für diese Funktion zu verwenden."
 
