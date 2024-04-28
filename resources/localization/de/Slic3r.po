@@ -1082,7 +1082,7 @@ msgid "Also emit limits to G-code"
 msgstr "Geben Sie auch Grenzen für G-Code aus"
 
 msgid "Also for all perimeters"
-msgstr "Auch für alle Perimeter"
+msgstr "Auch für alle Wände"
 
 msgid "Also, the fan speed over %1% won't be touched by this feature."
 msgstr "Auch die Lüftergeschwindigkeit über %1% wird von dieser Funktion nicht berührt."
@@ -1152,7 +1152,7 @@ msgstr ""
 "Das Problem lösen, um mit dem Slicen fortzufahren."
 
 msgid "Anchor solid infill by X mm"
-msgstr "Verankern Sie die feste Füllung um X mm"
+msgstr "Erhöhung der massiven  Füllung um X mm"
 
 msgid "Anchored"
 msgstr "Verankert"
@@ -1213,7 +1213,7 @@ msgid "Arachne"
 msgstr "Arachne"
 
 msgid "Arachne perimeter generator (variable width)"
-msgstr "Arachne Umfangsgenerator (variable Breite)"
+msgstr "Arachne Wandgenerator (variable Breite)"
 
 msgid "Arc fitting"
 msgstr "Bogenanpassung"
@@ -1425,7 +1425,7 @@ msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Kreuzen der Wände vermeiden - Maximale Umleitungslänge"
 
 msgid "Avoid top surface for travels"
-msgstr "Vermeiden Sie die Oberseite für Reisen"
+msgstr "Vermeide die Überfahrt der Oberseite"
 
 msgid "BACK ARROW"
 msgstr "PFEIL ZURÜCK"
@@ -1463,7 +1463,7 @@ msgid "Balanced"
 msgstr "Balanziert"
 
 msgid "Base Layer height"
-msgstr "Höhe der Basisschicht"
+msgstr "Schichthöhe"
 
 msgid "Bed"
 msgstr "Druckbett"
@@ -1647,31 +1647,31 @@ msgid "Brim"
 msgstr "Rand"
 
 msgid "Brim & Skirt"
-msgstr "Krempe & Rock"
+msgstr "Rand und Schürze"
 
 msgid "Brim & Skirt acceleration"
-msgstr "Beschleunigung der Krempe und des Rocks"
+msgstr "Beschleunigung für Rand und Schürze"
 
 msgid "Brim & Skirt speed"
-msgstr "Geschwindigkeit der Krempe & des Rocks"
+msgstr "Geschwindigkeit für Rand und Schürze"
 
 msgid "Brim configuration"
-msgstr "Konfiguration der Krempe"
+msgstr "Konfiguration des Randes"
 
 msgid "Brim ear detection length"
-msgstr "Länge der Ohrmuschelerkennung"
+msgstr "Rand-Ohr Erkennungslängeerkennung"
 
 msgid "Brim ear max angle"
-msgstr "Maximaler Winkel der Ohrmuschel"
+msgstr "Rand-Ohr max Winkel"
 
 msgid "Brim ears"
-msgstr "Krempe Ohren"
+msgstr "Ohren am Rand"
 
 msgid "Brim inside holes"
-msgstr "Krempe innen Löcher"
+msgstr "Rand innere Löcher"
 
 msgid "Brim per object"
-msgstr "Krempe pro Objekt"
+msgstr "Rand pro Objekt"
 
 msgid "Brim separation gap"
 msgstr "Rand Trennungsspalt"
@@ -1840,7 +1840,7 @@ msgid "Cap with perimeter flow"
 msgstr "Kappe mit Umfangsströmung"
 
 msgid "Capabilities"
-msgstr "Fähigkeiten"
+msgstr "Eigenschaften"
 
 msgid "Capture a configuration snapshot"
 msgstr "Erfassen einer Konfigurations-Momentaufnahme"
@@ -2214,7 +2214,7 @@ msgid "Colour Change G-code"
 msgstr "Farbe ändern G-Code"
 
 msgid "Combine infill every"
-msgstr "Infill kombinieren alle"
+msgstr "Füllung kombinieren alle"
 
 msgid "Combine infill every n layers"
 msgstr "Kombiniere das Infill all n Schichten"
@@ -2265,10 +2265,10 @@ msgid "compression failed"
 msgstr "Komprimierung fehlgeschlagen"
 
 msgid "Concentric"
-msgstr "Konzentrisch"
+msgstr "konzentrisch"
 
 msgid "Concentric (filled)"
-msgstr "Konzentrisch (gefüllt)"
+msgstr "konzentrisch (gefüllt)"
 
 msgid "Configuration &Assistant"
 msgstr "Konfigurations &Assistent"
@@ -2349,13 +2349,13 @@ msgstr ""
 "Wenn Sie den Parameter auf 0 setzen, wird der alte Algorithmus für die Infill-Verbindung verwendet. Er sollte das gleiche Ergebnis liefern wie bei 1000 & 0."
 
 msgid "Connected"
-msgstr "Verbunden"
+msgstr "verbunden"
 
 msgid "Connected to hole perimeters"
-msgstr "Verbunden mit Lochperimetern"
+msgstr "verbunden mit hohlen Wänden"
 
 msgid "Connected to outer perimeters"
-msgstr "Verbunden mit äußeren Perimetern"
+msgstr "verbunden mit äußeren Wänden"
 
 msgid "Connection length"
 msgstr "Länge der Verbindung"
@@ -2596,7 +2596,7 @@ msgid ""
 "object.\n"
 "Be aware that the brim may be truncated if objects are too close together.."
 msgstr ""
-"Erstellen Sie einen Rand pro Objekt anstelle eines Randes für den Plater. Nützlich für complete_object oder wenn Sie den Rand vor dem Drucken des Objekts ablösen möchten.\n"
+"Erstelle einen Rand pro Objekt anstatt eines Randes für die  Druckplatte.. Nützlich für complete_object oder wenn Sie den Rand vor dem Drucken des Objekts ablösen möchten.\n"
 "Beachten Sie, dass der Rand abgeschnitten werden kann, wenn die Objekte zu dicht beieinander liegen."
 
 msgid "Create a new project?"
@@ -3111,7 +3111,7 @@ msgid "Disable fan for the first"
 msgstr "Kein Lüfter für die ersten"
 
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "deaktiviert"
 
 msgid ""
 "Disables retraction when the travel path does not exceed the upper layer's "
@@ -3166,7 +3166,7 @@ msgstr "Abstand zwischen Bügellinien"
 msgid ""
 "Distance between skirt and object(s) ; or from the brim if using draft "
 "shield or you set 'skirt_distance_from_brim'."
-msgstr "Abstand zwischen Rock und Objekt(en) ; oder von der Krempe, wenn Sie Windschutz verwenden oder 'skirt_distance_from_brim' einstellen."
+msgstr "Abstand zwischen Rock und Objekt(en) ; oder von dem Rand, wenn Sie Windschutz verwenden oder 'skirt_distance_from_brim' einstellen."
 
 msgid ""
 "Distance between two connector sticks which connect the object and the "
@@ -3488,7 +3488,7 @@ msgid "Enable wipe tower"
 msgstr "Aktivieren Sie Wischturm"
 
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "aktiviert"
 
 msgid ""
 "Enables the creation of a support layer under the first solid layer. This "
@@ -3503,7 +3503,7 @@ msgid "Enforce"
 msgstr "Erzwinge"
 
 msgid "Enforce 100% fill volume"
-msgstr "100% fill Volumen durchsetzen"
+msgstr "100% Füllvolumen erzwingen"
 
 msgid ""
 "Enforce a specific color on thumbnails. If not enforced, their color will be "
@@ -3514,7 +3514,7 @@ msgid "Enforce lift on first layer"
 msgstr "Lifting der ersten Schicht durchsetzen"
 
 msgid "Enforce on first layer"
-msgstr "Durchsetzen auf der ersten Ebene"
+msgstr "Erzwingen auf der ersten Schicht"
 
 msgid "Enforce overhangs speed"
 msgstr "Überhänge durchsetzen Geschwindigkeit"
@@ -3996,7 +3996,7 @@ msgid "External perimeter fan speed"
 msgstr "Externe Lüftergeschwindigkeit"
 
 msgid "External perimeter first"
-msgstr "Äußeres Perimeter zuerst"
+msgstr "Äußere Wand zuerst"
 
 msgid "external perimeter overlap"
 msgstr "überlappung der äußeren Begrenzung"
@@ -4047,13 +4047,13 @@ msgid "Extra perimeters over overhangs"
 msgstr "Zusätzlicher Umfang über Überhänge"
 
 msgid "Extra skirt lines on the first layer."
-msgstr "Extra-Rocklinien auf der ersten Ebene."
+msgstr "Zusätzliche Schürzenlinien auf der ersten Schicht."
 
 msgid "Extra unretraction"
 msgstr "Extra Retraktion"
 
 msgid "Extra Wipe for external perimeters"
-msgstr "Extra Wischtuch für äußere Begrenzungen"
+msgstr "Zusätzliches wischen für Außenränder"
 
 msgid "Extrat length on toolchange restart"
 msgstr "Extralänge bei Neustart des Werkzeugwechsels"
@@ -4110,13 +4110,13 @@ msgid ""
 msgstr "Extruderdüsentemperatur für Schichten nach der ersten. Setzen Sie den Wert auf Null, um die Befehle zur Temperatursteuerung im Ausgabe-G-Code zu deaktivieren."
 
 msgid "Extruder offset"
-msgstr "Extruder Offset"
+msgstr "Extruder Versatz"
 
 msgid "Extruder retraction calibration"
 msgstr "Kalibrierung des Extruderrückzugs"
 
 msgid "Extruder temp offset"
-msgstr "Extruder-Temperatur-Offset"
+msgstr "Extruder-Temperatur Versatz"
 
 msgid "Extruders"
 msgstr "Extruder"
@@ -4366,7 +4366,7 @@ msgid "Files association"
 msgstr "Zuordnung der Dateien"
 
 msgid "Fill"
-msgstr "Füllen"
+msgstr "Füllung"
 
 msgid "Fill angle"
 msgstr "Füllwinkel"
@@ -4678,7 +4678,7 @@ msgstr "Grundschicht überall um Objekt erzwingen"
 msgid ""
 "Force solid infill for regions having a smaller area than the specified "
 "threshold."
-msgstr "Massives Infill für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
+msgstr "Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
 
 msgid ""
 "Force the generation of solid shells between adjacent materials/volumes. "
@@ -4715,7 +4715,7 @@ msgid "From"
 msgstr "Von"
 
 msgid "from brim"
-msgstr "von der Krempe"
+msgstr "von dem Rand"
 
 msgid "From filament"
 msgstr "Vom Glühfaden"
@@ -4724,7 +4724,7 @@ msgid "From Object List You can't delete the last solid part from object."
 msgstr "Sie können nicht das letzte solide Teil des Objekts von der Objektliste löschen."
 
 msgid "From plane"
-msgstr "Vom Flugzeug"
+msgstr "Von der Ebene"
 
 msgid "Front"
 msgstr "Front"
@@ -4812,7 +4812,7 @@ msgid "g/ml"
 msgstr "g/ml"
 
 msgid "G2/G3 generation"
-msgstr "G2/G3 Generation"
+msgstr "G2/G3 Generierung"
 
 msgid "Gap fill"
 msgstr "Lückenfüllung"
@@ -4912,7 +4912,7 @@ msgid "generated warnings"
 msgstr "erzeugte Warnungen"
 
 msgid "Generating brim"
-msgstr "Krempe generieren"
+msgstr "Rand generieren"
 
 msgid "Generating G-code"
 msgstr "Generiere G-Code"
@@ -5089,7 +5089,7 @@ msgid "Height (mm)"
 msgstr "Höhe (mm)"
 
 msgid "height in layers"
-msgstr "höhe in Ebenen"
+msgstr "Anzahl"
 
 msgid ""
 "Height of skirt expressed in layers. Set this to a tall value to use skirt "
@@ -5198,7 +5198,7 @@ msgid "horizontal"
 msgstr "Horizontal"
 
 msgid "Horizontal shells"
-msgstr "Horizontale Konturhüllen"
+msgstr "Schichten"
 
 msgid "Horizontal Slider"
 msgstr "Horizontaler Schieberegler"
@@ -5922,7 +5922,7 @@ msgid "Increase/decrease edit area"
 msgstr "Bearbeitungsbereich vergrößern/verkleinern"
 
 msgid "increment"
-msgstr "inkrement"
+msgstr "Inkrement"
 
 msgid "Increment"
 msgstr "Inkrement"
@@ -5951,25 +5951,25 @@ msgstr ""
 "Klicken Sie auf das Symbol PFEIL ZURÜCK, um alle Einstellungen für die aktuelle Optionsgruppe auf das zuletzt gespeicherte Preset zurückzusetzen."
 
 msgid "Infill"
-msgstr "Infill"
+msgstr "Füllung"
 
 msgid "infill"
-msgstr "Infill"
+msgstr "Füllung"
 
 msgid "Infill acceleration"
-msgstr "Infill Beschleunigung"
+msgstr "Beschleunigung Füllung"
 
 msgid "Infill angle"
-msgstr "Ausfüllwinkel"
+msgstr "Füllwinkel"
 
 msgid "Infill before perimeters"
-msgstr "Infill vor Kontur"
+msgstr "Füllung vor Wand"
 
 msgid "Infill bridges fan speed"
-msgstr "Infill Brücken Lüftergeschwindigkeit"
+msgstr "Gebläsegeschwindigkeit für Füllbrücken"
 
 msgid "Infill extruder"
-msgstr "Infill Extruder"
+msgstr "Extruder Füllung"
 
 msgid "Infill max first layer speed"
 msgstr "Infill max. Geschwindigkeit der ersten Schicht"
@@ -6014,7 +6014,7 @@ msgid "Initial layer height"
 msgstr "Anfangsschichthöhe"
 
 msgid "Inner"
-msgstr "Innere"
+msgstr "Innen"
 
 msgid "Inner brim only"
 msgstr "Nur innerer Rand"
@@ -6081,13 +6081,13 @@ msgid "Interface spacing"
 msgstr "Abstand zwischen den Schnittstellen"
 
 msgid "Interior Brim width"
-msgstr "Innere Breite der Krempe"
+msgstr "Innere Breite des Rands"
 
 msgid "Internal"
 msgstr "Intern"
 
 msgid "Internal bridge infill"
-msgstr "Interne Brückenausfachung"
+msgstr "Interne Brückenfüllung"
 
 msgid "Internal bridge speed"
 msgstr "Geschwindigkeit der internen Brücke"
@@ -6417,7 +6417,7 @@ msgstr ""
 "Die Schichthöhe wird auf 0,01 zurückgesetzt."
 
 msgid "Layer height limits"
-msgstr "Schichthöhen Grenzen"
+msgstr "Grenzen für Schichthöhe"
 
 msgid "Layer previe&w Tab"
 msgstr "Ebene previe&w Tab"
@@ -6572,7 +6572,7 @@ msgstr ""
 "Sie können entweder 'Abstand' oder 'Breite' einstellen; das andere wird anhand der Standardhöhe der Ebene berechnet."
 
 msgid "Limited"
-msgstr "Begrenzt"
+msgstr "begrenzt"
 
 msgid "Line"
 msgstr "Linie"
@@ -6734,7 +6734,7 @@ msgid "Logging level"
 msgstr "Logging-Level"
 
 msgid "Loops (minimum)"
-msgstr "Schleifen (minimal)"
+msgstr "Umrundungen (minimal)"
 
 msgid "Lower temp:"
 msgstr "Untere Temperatur:"
@@ -6996,8 +6996,8 @@ msgid ""
 "If set to 0, no brim will be created. \n"
 "If set to ~178, brim will be created on everything but straight sections."
 msgstr ""
-"Maximaler Winkel, in dem ein Krempenohr erscheinen soll.\n"
-"Bei einem Wert von 0 wird keine Krempe erstellt.\n"
+"Maximaler Winkel, in dem ein Ohr am Rand gedruckt werden soll.\n"
+"Bei einem Wert von 0 wird kein Randerstellt.\n"
 "Bei einem Wert von ~178 wird ein Rand an allen Abschnitten außer an geraden erstellt."
 
 msgid ""
@@ -7195,7 +7195,7 @@ msgid "Merging slices and calculating statistics"
 msgstr "Zusammenführung der Slices und Berechnung der Statistiken"
 
 msgid "Merging with perimeters"
-msgstr "Verschmelzen mit Perimetern"
+msgstr "Verschmelzen mit Wänden"
 
 msgid "Mesh repair failed."
 msgstr "Netzreparatur fehlgeschlagen."
@@ -7567,10 +7567,10 @@ msgid "modified"
 msgstr "geändert"
 
 msgid "Modifier"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 msgid "Modifiers"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 msgid "Modifying slices"
 msgstr "Slices ändern"
@@ -7582,10 +7582,10 @@ msgid "money/kg"
 msgstr "Kosten/kg"
 
 msgid "Monotonic"
-msgstr "Monotonisch"
+msgstr "monoton"
 
 msgid "Monotonic (filled)"
-msgstr "Monoton (gefüllt)"
+msgstr "monoton (gefüllt)"
 
 msgid "More"
 msgstr "Mehr"
@@ -7845,7 +7845,7 @@ msgid "not a ZIP archive"
 msgstr "kein ZIP Archiv"
 
 msgid "Not connected"
-msgstr "Nicht verbunden"
+msgstr "nicht verbunden"
 
 msgid "Not found:"
 msgstr "Nicht gefunden:"
@@ -8087,7 +8087,7 @@ msgstr ""
 "Er wird von brim_width und brim_width_interior subtrahiert, muss also kleiner als diese sein. Der Versatz wird nach dem XY-Ausgleich der ersten Ebene (Elefantenfuß) angewendet."
 
 msgid "Offsets (for multi-extruder printers)"
-msgstr "Offsets (für Multi-Extruder-Drucker)"
+msgstr "Versatz (für Multi-Extruder-Drucker)"
 
 msgid ""
 "Old layout: all windows are in the application, settings are on the top tab "
@@ -8207,7 +8207,7 @@ msgid ""
 msgstr "Machen Sie den Vasen-Trick nur an der Außenseite. Nützlich, wenn Sie nur die Naht vom Schraubenloch entfernen möchten."
 
 msgid "Only draw brim over the sharp edges of the model."
-msgstr "Ziehen Sie die Krempe nur über die scharfen Kanten des Modells."
+msgstr "Zeichne den Rand nur über die scharfen Kanten des Modells."
 
 msgid "Only for inner side"
 msgstr "Nur für die Innenseite"
@@ -8222,7 +8222,7 @@ msgid "Only if on platter"
 msgstr "Nur wenn auf einer Druckplatte"
 
 msgid "Only infill where needed"
-msgstr "Infill nur wo es notwendig ist drucken"
+msgstr "Füllung nur wo es notwendig ist drucken"
 
 msgid "Only lift Z"
 msgstr "Nur Z anheben"
@@ -8240,7 +8240,7 @@ msgid "Only one peri - other algo"
 msgstr "Nur ein Peri - anderer Algo"
 
 msgid "Only one perimeter"
-msgstr "Nur eine Begrenzung"
+msgstr "Nur eine äußere Wand"
 
 msgid "Only one perimeter on First layer"
 msgstr "Nur ein Perimeter auf der ersten Ebene"
@@ -8249,7 +8249,7 @@ msgid "Only one perimeter on Top surfaces"
 msgstr "Nur eine Umrandung auf den Oberseiten"
 
 msgid "Only retract when crossing perimeters"
-msgstr "Nur bei Kontursüberquerungen einziehen"
+msgstr "Rückzug nur bei Wandüberquerung"
 
 msgid "Only selected objects"
 msgstr "Nur ausgewählte Objekte"
@@ -8377,7 +8377,7 @@ msgid "Optimizing layer %s / %s"
 msgstr "Optimierungsebene %s / %s"
 
 msgid "Optimizing skirt & brim %s%%"
-msgstr "Optimierung von Rock und Krempe %s%%"
+msgstr "Optimierung von Schürze und Rand%s%%"
 
 msgid "Optimizing support layer %s / %s"
 msgstr "Optimierung der Tragschicht %s / %s"
@@ -8761,13 +8761,13 @@ msgid "Perimeter acceleration"
 msgstr "Perimeter-Beschleunigung"
 
 msgid "Perimeter anchor"
-msgstr "Perimeter-Anker"
+msgstr "Wand-Anker"
 
 msgid "Perimeter bonding"
 msgstr "Perimetrische Bindung"
 
 msgid "Perimeter distribution count"
-msgstr "Umfangsverteilung Anzahl"
+msgstr "Anzahl Wände für Verteilung"
 
 msgid "Perimeter extruder"
 msgstr "Umfang Extruder"
@@ -8776,7 +8776,7 @@ msgid "Perimeter fan speed"
 msgstr "Geschwindigkeit des Perimeterlüfters"
 
 msgid "Perimeter generator"
-msgstr "Umfangsgenerator"
+msgstr "Wandgenerator"
 
 msgid "Perimeter loop seam"
 msgstr "Perimeter-Schleifennaht"
@@ -8818,7 +8818,7 @@ msgid "Perimeters"
 msgstr "Wände"
 
 msgid "Perimeters & Shell"
-msgstr "Perimeter & Hülle"
+msgstr "Schichten und Wände"
 
 msgid "Perimeters count"
 msgstr "Umfänge zählen"
@@ -9113,7 +9113,7 @@ msgid "Print pauses"
 msgstr "Druckpausen"
 
 msgid "Print remaining times"
-msgstr "Restliche Zeiten drucken"
+msgstr "Restzeit ausgeben"
 
 msgid "Print settings"
 msgstr "Druckeinstellungen"
@@ -9426,10 +9426,10 @@ msgid "Rectangular"
 msgstr "Rechteckig"
 
 msgid "Rectilinear"
-msgstr "Geradlinig"
+msgstr "geradlinig"
 
 msgid "Rectilinear (filled)"
-msgstr "Geradlinig (gefüllt)"
+msgstr "geradlinig (gefüllt)"
 
 msgid "Rectilinear grid"
 msgstr "Rechtwinkliges Gitter"
@@ -9449,7 +9449,7 @@ msgid "Reduced overhang slopes"
 msgstr "Reduzierte Überhangneigungen"
 
 msgid "Reducing printing time"
-msgstr "Druckzeit wird verkürzt"
+msgstr "Verkürzung der Druckzeit"
 
 msgid "Refresh Printers"
 msgstr "Drucker aktualisieren"
@@ -9721,7 +9721,7 @@ msgid "Retraction when tool is disabled (advanced settings for multi-extruder se
 msgstr "Einzug, wenn das Werkzeug deaktiviert ist (weiterführende Einstellungen für Multi-Extruder-Einrichtungen)"
 
 msgid "Retraction wipe"
-msgstr "Retraktionstuch"
+msgstr "Wischen beim Rückzug"
 
 msgid "Retractions"
 msgstr "Einzüge"
@@ -10750,13 +10750,13 @@ msgid "skirt"
 msgstr "Schürze"
 
 msgid "Skirt & Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "Skirt and brim"
 msgstr "Schürze und Rand"
 
 msgid "Skirt brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "Skirt distance from brim"
 msgstr "Abstand des Rocks vom Rand"
@@ -10765,13 +10765,13 @@ msgid "Skirt height"
 msgstr "Schürzenhöhe"
 
 msgid "Skirt Loops"
-msgstr "Schleifen für die Schürze"
+msgstr "Umrundungen für die Schürze"
 
 msgid "Skirt width"
 msgstr "Breite des Rocks"
 
 msgid "Skirt/Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "SLA gizmo keyboard shortcuts"
 msgstr "SLA Gizmo Tastaturkürzel"
@@ -10960,7 +10960,7 @@ msgid "Snug"
 msgstr "Nahtlos"
 
 msgid "Solid"
-msgstr "Fett"
+msgstr "Massiv"
 
 msgid "Solid "
 msgstr "Fett "
@@ -10975,19 +10975,19 @@ msgid "Solid fill pattern"
 msgstr "Füllmuster für solide Füllung"
 
 msgid "Solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 msgid "solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 msgid "Solid infill every"
-msgstr "Massives Infill alle"
+msgstr "Massive Füllung alle"
 
 msgid "Solid infill extruder"
-msgstr "Massives Infill Extruder"
+msgstr "Extruder massive Füllung"
 
 msgid "Solid Infill fan speed"
-msgstr "Solid Infill Gebläsegeschwindigkeit"
+msgstr "Massive Füllung Gebläsegeschwindigkeit"
 
 msgid "Solid infill spacing"
 msgstr "Fester Abstand der Füllung"
@@ -10999,7 +10999,7 @@ msgid "Solid infill speed"
 msgstr "Solide Ausfüllgeschwindigkeit"
 
 msgid "Solid infill threshold area"
-msgstr "Massives Infill Flächen Schwellwert"
+msgstr "Massive Füllung Flächen Schwellwert"
 
 msgid "Solid infill width"
 msgstr "Breite der festen Füllung"
@@ -12609,7 +12609,7 @@ msgid ""
 "first angle. If a new pattern is used in a modifier, it will choose the "
 "layer angle from the pattern as if it has started from the first layer.Empty "
 "this settings to disable and recover the old behavior."
-msgstr "Definiert die Abfolge der Ausfüllwinkel. Wenn er definiert ist, ersetzt er den Füllwinkel und es gibt keine zusätzlichen 90° für jede hinzugefügte Ebene, aber die Füllwinkelerhöhung wird weiterhin verwendet. Die erste Ebene beginnt mit dem ersten Winkel. Wenn ein neues Muster in einem Modifikator verwendet wird, wird der Ebenenwinkel aus dem Muster ausgewählt, als ob mit der ersten Ebene begonnen wurde. Leeren Sie diese Einstellung, um das alte Verhalten wiederherzustellen."
+msgstr "Definiert die Abfolge der Füllwinkel. Wenn er definiert ist, ersetzt er den Füllwinkel und es gibt keine zusätzlichen 90° für jede hinzugefügte Ebene, aber die Füllwinkelerhöhung wird weiterhin verwendet. Die erste Ebene beginnt mit dem ersten Winkel. Wenn ein neues Muster in einem Modifikator verwendet wird, wird der Ebenenwinkel aus dem Muster ausgewählt, als ob mit der ersten Ebene begonnen wurde. Leeren Sie diese Einstellung, um das alte Verhalten wiederherzustellen."
 
 msgid ""
 "This end procedure is inserted at the end of the output file, before the "
@@ -12806,7 +12806,7 @@ msgid ""
 "This feature allows you to combine infill and speed up your print by "
 "extruding thicker infill layers while preserving thin perimeters, thus "
 "accuracy."
-msgstr "Mit dieser Funktion können Sie Infill kombinieren und Ihren Druck beschleunigen, indem Sie dickere Infill-Schichten extrudieren und dabei dünne Umrisse und damit Genauigkeit beibehalten."
+msgstr "Mit dieser Funktion können Sie Füllung kombinieren und Ihren Druck beschleunigen, indem Sie dickere Infill-Schichten extrudieren und dabei dünne Umrisse und damit Genauigkeit beibehalten."
 
 msgid ""
 "This feature allows you to force a solid layer every given number of layers. "
@@ -13237,7 +13237,7 @@ msgstr "Mit dieser Option beschränken Sie die Füllung auf die Bereiche, die ta
 msgid ""
 "This option will switch the print order of perimeters and infill, making the "
 "latter first."
-msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, sodass der Infill zuerst gedruckt wird."
+msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Wand und Füllung um, sodass die Füllung zuerst gedruckt wird."
 
 msgid ""
 "This parameter grows the bridged solid infill layers by the specified mm to "
@@ -13260,7 +13260,7 @@ msgid ""
 "Support speed setting.\n"
 "Set zero to use autospeed for this feature."
 msgstr ""
-"Diese separate Einstellung wirkt sich auf die Geschwindigkeit der Krempe und des Rocks aus.\n"
+"Diese separate Einstellung wirkt sich auf die Geschwindigkeit für Rand und Schürze aus.\n"
 "Wenn sie als Prozentsatz ausgedrückt wird (z.B.: 80%), wird sie über die Einstellung für die Unterstützungsgeschwindigkeit berechnet.\n"
 "Stellen Sie Null ein, um die automatische Geschwindigkeit für diese Funktion zu verwenden."
 
@@ -13797,7 +13797,7 @@ msgid "Toolchange temperature enabled"
 msgstr "Werkzeugwechseltemperatur aktiviert"
 
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -14353,7 +14353,7 @@ msgid "Vertical Hole shrinking compensation"
 msgstr "Kompensation der vertikalen Lochverkleinerung"
 
 msgid "Vertical shells"
-msgstr "Vertikale Konturhüllen"
+msgstr "Wände"
 
 msgid "Vertical Slider"
 msgstr "Vertikaler Schieberegler"
@@ -14687,7 +14687,7 @@ msgid "width"
 msgstr "Breite"
 
 msgid "Width & Flow"
-msgstr "Breite & Fluss"
+msgstr "Extrusionsbreite und Fluss"
 
 msgid "Width (mm)"
 msgstr "Breite (mm)"
@@ -14748,7 +14748,7 @@ msgid "Wipe into this object's infill"
 msgstr "Das Infill dieses Objekts zum Reinigen verwenden"
 
 msgid "Wipe only when crossing perimeters"
-msgstr "Wischen Sie nur, wenn Sie die Grenzen überschreiten"
+msgstr "Nur wischen, falls Wände gekreuzt werden"
 
 msgid "Wipe speed"
 msgstr "Wischgeschwindigkeit"

@@ -6506,7 +6506,7 @@ msgstr "Drucktaste"
 
 #: ../src/richtext/richtextborderspage.cpp:611
 msgid "Solid"
-msgstr "Fett"
+msgstr "Massiv"
 
 #: ../src/common/docview.cpp:1791
 msgid "Sorry, could not open this file."
@@ -9929,7 +9929,7 @@ msgstr "~"
 #~ msgstr "Kodierung %i"
 
 #~ msgid "establish"
-#~ msgstr "Verbunden"
+#~ msgstr "verbunden"
 
 #~ msgid "initiate"
 #~ msgstr "einleiten"

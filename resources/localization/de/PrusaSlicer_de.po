@@ -1268,7 +1268,7 @@ msgstr "Arachne"
 
 #: src/slic3r/GUI/Tab.cpp:1674
 msgid "Arachne perimeter generator"
-msgstr "Arachne Umfangsgenerator"
+msgstr "Arachne Wandgenerator"
 
 #: src/libslic3r/PrintConfig.cpp:731 src/libslic3r/PrintConfig.cpp:1176
 msgid "Archimedean Chords"
@@ -1957,7 +1957,7 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:2297 src/slic3r/GUI/UnsavedChangesDialog.cpp:1287
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1677
 msgid "Capabilities"
-msgstr "Fähigkeiten"
+msgstr "Eigenschaften"
 
 #: src/slic3r/GUI/GUI_App.cpp:2240
 msgid "Capture a configuration snapshot"
@@ -2287,14 +2287,14 @@ msgid ""
 "Did you know that you can print the infill with a higher layer height compared "
 "to perimeters to save print time using the setting<a>Combine infill every</a>."
 msgstr ""
-"Infill kombinieren\n"
+"Füllung kombinieren\n"
 "Wussten Sie, dass Sie den Infill mit einer höheren Schichthöhe als den "
 "Perimeter drucken können, um Druckzeit zu sparen, indem Sie die "
-"Einstellung<a>Infill kombinieren alle</a> verwenden."
+"Einstellung<a>Füllung kombinieren alle</a> verwenden."
 
 #: src/libslic3r/PrintConfig.cpp:1402
 msgid "Combine infill every"
-msgstr "Infill kombinieren alle"
+msgstr "Füllung kombinieren alle"
 
 #: src/libslic3r/PrintConfig.cpp:1407
 msgid "Combine infill every n layers"
@@ -2352,7 +2352,7 @@ msgstr "Fertig"
 #: src/libslic3r/PrintConfig.cpp:729 src/libslic3r/PrintConfig.cpp:1171
 #: src/libslic3r/PrintConfig.cpp:2740
 msgid "Concentric"
-msgstr "Konzentrisch"
+msgstr "konzentrisch"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3037
 msgid "Configuration &Assistant"
@@ -3325,7 +3325,7 @@ msgstr "Kein Lüfter für die ersten"
 
 #: src/libslic3r/PrintConfig.cpp:2292
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "deaktiviert"
 
 #: src/libslic3r/PrintConfig.cpp:1906
 msgid ""
@@ -3818,7 +3818,7 @@ msgstr "Vertikale Spiegelung der Ausgabebilder aktivieren"
 
 #: src/libslic3r/PrintConfig.cpp:2294
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "aktiviert"
 
 #: src/libslic3r/PrintConfig.cpp:1315
 msgid ""
@@ -4371,7 +4371,7 @@ msgstr "Extruder Freiraum"
 
 #: src/libslic3r/PrintConfig.cpp:833
 msgid "Extruder offset"
-msgstr "Extruder Offset"
+msgstr "Extruder Versatz"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:133 src/slic3r/GUI/Tab.cpp:1620
 #: src/slic3r/GUI/Tab.cpp:2301 src/libslic3r/PrintConfig.cpp:792
@@ -4904,7 +4904,7 @@ msgid ""
 "Force solid infill for regions having a smaller area than the specified "
 "threshold."
 msgstr ""
-"Massives Infill für Bereiche, die eine kleinere Fläche als die angegebene "
+"Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene "
 "Schwelle aufweisen."
 
 #: src/libslic3r/PrintConfig.cpp:1536
@@ -5476,7 +5476,7 @@ msgstr "Horizontaler Schieberegler"
 
 #: src/slic3r/GUI/Tab.cpp:1465
 msgid "Horizontal shells"
-msgstr "Horizontale Konturhüllen"
+msgstr "Schichten"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:219
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:223
@@ -6180,11 +6180,11 @@ msgstr "Infill"
 
 #: src/libslic3r/PrintConfig.cpp:1485
 msgid "Infill before perimeters"
-msgstr "Infill vor Kontur"
+msgstr "Füllung vor Wand"
 
 #: src/libslic3r/PrintConfig.cpp:1464
 msgid "Infill extruder"
-msgstr "Infill Extruder"
+msgstr "Extruder Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:1500
 msgid "Infill/perimeters overlap"
@@ -6571,7 +6571,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2801
 msgid "Layer height limits"
-msgstr "Schichthöhen Grenzen"
+msgstr "Grenzen für Schichthöhe"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2486
 msgid "Layer range Settings to modify"
@@ -6692,7 +6692,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2293
 msgid "Limited"
-msgstr "Begrenzt"
+msgstr "begrenzt"
 
 #: src/libslic3r/PrintConfig.cpp:1170
 msgid "Line"
@@ -6862,7 +6862,7 @@ msgstr "Logging-Level"
 
 #: src/libslic3r/PrintConfig.cpp:2299
 msgid "Loops (minimum)"
-msgstr "Schleifen (minimal)"
+msgstr "Umrundungen (minimal)"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:253
 msgid "Low"
@@ -7465,15 +7465,15 @@ msgstr "Änderungen am aktuellen Profil werden gespeichert."
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:3780
 msgid "Modifier"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 #: src/slic3r/GUI/Tab.cpp:1599
 msgid "Modifiers"
-msgstr "Veränderer"
+msgstr "Änderung"
 
 #: src/libslic3r/PrintConfig.cpp:727
 msgid "Monotonic"
-msgstr "Monotonisch"
+msgstr "monoton"
 
 #: src/slic3r/GUI/HintNotification.cpp:771 src/slic3r/GUI/HintNotification.cpp:797
 #: src/slic3r/GUI/NotificationManager.cpp:374
@@ -8159,7 +8159,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1491
 msgid "Only infill where needed"
-msgstr "Infill nur wo es notwendig ist drucken"
+msgstr "Füllung nur wo es notwendig ist drucken"
 
 #: src/slic3r/GUI/Tab.cpp:2812
 msgid "Only lift Z"
@@ -8754,7 +8754,7 @@ msgstr "Kontur"
 
 #: src/libslic3r/PrintConfig.cpp:3119
 msgid "Perimeter distribution count"
-msgstr "Umfangsverteilung Anzahl"
+msgstr "Anzahl Wände für Verteilung"
 
 #: src/libslic3r/PrintConfig.cpp:1964
 msgid "Perimeter extruder"
@@ -8762,7 +8762,7 @@ msgstr "Umfang Extruder"
 
 #: src/libslic3r/PrintConfig.cpp:3065
 msgid "Perimeter generator"
-msgstr "Umfangsgenerator"
+msgstr "Wandgenerator"
 
 #: src/libslic3r/PrintConfig.cpp:3080
 msgid "Perimeter transition length"
@@ -9675,7 +9675,7 @@ msgstr "Rechteckig"
 #: src/libslic3r/PrintConfig.cpp:726 src/libslic3r/PrintConfig.cpp:1164
 #: src/libslic3r/PrintConfig.cpp:2722 src/libslic3r/PrintConfig.cpp:2739
 msgid "Rectilinear"
-msgstr "Geradlinig"
+msgstr "geradlinig"
 
 #: src/libslic3r/PrintConfig.cpp:2723
 msgid "Rectilinear grid"
@@ -9703,7 +9703,7 @@ msgstr "Reduzierte Überhangneigungen"
 
 #: src/slic3r/GUI/Tab.cpp:1520
 msgid "Reducing printing time"
-msgstr "Druckzeit wird verkürzt"
+msgstr "Verkürzung der Druckzeit"
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:337
 msgid "Refresh Printers"
@@ -11412,7 +11412,7 @@ msgstr "Schürze"
 
 #: src/libslic3r/PrintConfig.cpp:2300
 msgid "Skirt Loops"
-msgstr "Schleifen für die Schürze"
+msgstr "Umrundungen für die Schürze"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:136 src/slic3r/GUI/Tab.cpp:1533
 #: src/libslic3r/PrintConfig.cpp:516 src/libslic3r/PrintConfig.cpp:527
@@ -11427,7 +11427,7 @@ msgstr "Schürzenhöhe"
 #: src/slic3r/GUI/GUI_Preview.cpp:248 src/libslic3r/ExtrusionEntity.cpp:339
 #: src/libslic3r/ExtrusionEntity.cpp:370
 msgid "Skirt/Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:461
 msgid "Slab"
@@ -11616,19 +11616,19 @@ msgstr "Software &Release"
 #: src/libslic3r/ExtrusionEntity.cpp:360 src/libslic3r/PrintConfig.cpp:2360
 #: src/libslic3r/PrintConfig.cpp:2372
 msgid "Solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:2348
 msgid "Solid infill every"
-msgstr "Massives Infill alle"
+msgstr "Massive Füllung alle"
 
 #: src/libslic3r/PrintConfig.cpp:2340
 msgid "Solid infill extruder"
-msgstr "Massives Infill Extruder"
+msgstr "Extruder massive Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:2331
 msgid "Solid infill threshold area"
-msgstr "Massives Infill Flächen Schwellwert"
+msgstr "Massive Füllung Flächen Schwellwert"
 
 #: resources/data/hints.ini: [hint:Solid infill threshold area]
 msgid ""
@@ -11795,8 +11795,8 @@ msgstr "Geschwindigkeit für Bewegungen zwischen den Druckvorgängen"
 msgid ""
 "Speed for perimeters (contours, aka vertical shells). Set to zero for auto."
 msgstr ""
-"Geschwindigkeit für Außenkonturen (Wände, bzw. vertikale Hüllen). Für "
-"Automatik auf null setzen."
+"Geschwindigkeit für Außenkonturen (Wände, bzw. vertikale Hüllen). Für Automatik "
+"auf null setzen."
 
 #: src/slic3r/GUI/Tab.cpp:1582
 msgid "Speed for print moves"
@@ -13178,10 +13178,10 @@ msgstr ""
 "der das mittlere Umfang (falls vorhanden) in zwei geteilt wird. Verringern Sie "
 "diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, "
 "um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob "
-"die gesamte Form mit Wände gefüllt werden sollte. Die Mitte bezieht sich "
-"hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch "
-"wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, "
-"anstatt der Wände."
+"die gesamte Form mit Wände gefüllt werden sollte. Die Mitte bezieht sich hier "
+"also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch wenn "
+"tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, anstatt "
+"der Wände."
 
 #: src/libslic3r/PrintConfig.cpp:2224
 msgid ""
@@ -13764,9 +13764,8 @@ msgid ""
 msgstr ""
 "Diese Stellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt "
 "werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge "
-"Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser "
-"drucken lassen, wenn die \"Zusätzliche Wände falls notwendig\" Option "
-"aktiviert ist."
+"Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser drucken "
+"lassen, wenn die \"Zusätzliche Wände falls notwendig\" Option aktiviert ist."
 
 #: src/libslic3r/PrintConfig.cpp:1913
 msgid ""
@@ -13794,8 +13793,8 @@ msgid ""
 "This option will switch the print order of perimeters and infill, making the "
 "latter first."
 msgstr ""
-"Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, "
-"sodass der Infill zuerst gedruckt wird."
+"Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, sodass "
+"der Infill zuerst gedruckt wird."
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:83
 msgid "This printer will be shown in the presets list as"
@@ -13809,8 +13808,8 @@ msgid ""
 msgstr ""
 "Diese separate Einstellung wirkt sich auf die Geschwindigkeit der äußeren "
 "(sichtbaren) Wände aus. Als Prozentwert eingegeben (z.B. 80%), wird sie "
-"ausgehend von der obigen Geschwindigkeitseinstellung für Wände berechnet. "
-"Für die automatische Berechnung auf null setzen."
+"ausgehend von der obigen Geschwindigkeitseinstellung für Wände berechnet. Für "
+"die automatische Berechnung auf null setzen."
 
 #: src/libslic3r/PrintConfig.cpp:2321
 msgid ""
@@ -13831,11 +13830,11 @@ msgid ""
 "cause gaps. If expressed as percentage (example: 15%) it is calculated over "
 "perimeter extrusion width."
 msgstr ""
-"Diese Einstellung fügt eine zusätzliche Überlappung zwischen Wände und "
-"Infill ein, um die Haftung zu verbessern. Theoretisch sollte dies nicht "
-"notwendig sein, doch vorhandenes Getriebespiel könnte Lücken erzeugen.  Als "
-"Prozentwert eingegeben (z.B. 15%) wird sie ausgehend von der Extrusionsbreite "
-"für die Kontur ausgerechnet."
+"Diese Einstellung fügt eine zusätzliche Überlappung zwischen Wände und Infill "
+"ein, um die Haftung zu verbessern. Theoretisch sollte dies nicht notwendig "
+"sein, doch vorhandenes Getriebespiel könnte Lücken erzeugen.  Als Prozentwert "
+"eingegeben (z.B. 15%) wird sie ausgehend von der Extrusionsbreite für die "
+"Kontur ausgerechnet."
 
 #: src/libslic3r/PrintConfig.cpp:287
 msgid ""
@@ -14127,14 +14126,14 @@ msgstr "Werkzeugwechsel-Parameter für MM-Drucker mit einem Extruder"
 #: src/slic3r/GUI/OptionsGroup.cpp:352
 msgctxt "Layers"
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 #. TRN To be shown in the main menu View->Top
 #. TRN To be shown in Print Settings "Top solid layers"
 #: src/slic3r/GUI/MainFrame.cpp:1118 src/libslic3r/PrintConfig.cpp:2867
 #: src/libslic3r/PrintConfig.cpp:2876
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 #: src/slic3r/GUI/PresetHints.cpp:269
 msgid ""
@@ -14149,7 +14148,7 @@ msgstr "Ansicht von oben"
 
 #: src/libslic3r/PrintConfig.cpp:2566
 msgid "Top contact Z distance"
-msgstr "Decke Kontakt Z Abstand"
+msgstr "Oberer Kontakt Z Abstand"
 
 #: src/libslic3r/PrintConfig.cpp:714
 msgid "Top fill pattern"
@@ -14687,7 +14686,7 @@ msgstr "Vertikaler Schieberegler"
 
 #: src/slic3r/GUI/Tab.cpp:1453
 msgid "Vertical shells"
-msgstr "Vertikale Konturhüllen"
+msgstr "Wände"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:218
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:222
@@ -15978,7 +15977,7 @@ msgstr "s"
 
 #: src/slic3r/GUI/PresetHints.cpp:176
 msgid "solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 #: src/slic3r/GUI/Plater.cpp:1436
 msgid "stealth mode"
@@ -22235,7 +22234,7 @@ msgstr "Drucktaste"
 
 #: ../src/richtext/richtextborderspage.cpp:611
 msgid "Solid"
-msgstr "Fett"
+msgstr "Massiv"
 
 #: ../src/common/docview.cpp:1791
 msgid "Sorry, could not open this file."
