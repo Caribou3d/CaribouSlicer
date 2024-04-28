@@ -1088,7 +1088,7 @@ msgid "Arachne"
 msgstr "Arachne"
 
 msgid "Arachne perimeter generator (variable width)"
-msgstr "Arachne Umfangsgenerator (variable Breite)"
+msgstr "Arachne Wandgenerator (variable Breite)"
 
 msgid "Arc fitting"
 msgstr "Bogenanpassung"
@@ -1677,7 +1677,7 @@ msgid "Cap with perimeter flow"
 msgstr "Kappe mit Umfangsströmung"
 
 msgid "Capabilities"
-msgstr "Fähigkeiten"
+msgstr "Eigenschaften"
 
 msgid "Capture a configuration snapshot"
 msgstr "Erfassen einer Konfigurations-Momentaufnahme"
@@ -2030,7 +2030,7 @@ msgid "Colour Change G-code"
 msgstr "Farbe ändern G-Code"
 
 msgid "Combine infill every"
-msgstr "Infill kombinieren alle"
+msgstr "Füllung kombinieren alle"
 
 msgid "Combine infill every n layers"
 msgstr "Kombiniere das Infill all n Schichten"
@@ -3195,7 +3195,7 @@ msgid "Enforce"
 msgstr "Erzwinge"
 
 msgid "Enforce 100% fill volume"
-msgstr "100% fill Volumen durchsetzen"
+msgstr "100% fill Volumen erzwingen"
 
 msgid "Enforce a specific color on thumbnails. If not enforced, their color will be the one defined by the filament."
 msgstr "Erzwingen Sie eine bestimmte Farbe für Miniaturansichten. Wenn dies nicht der Fall ist, entspricht die Farbe derjenigen, die durch das Filament definiert ist."
@@ -3617,7 +3617,7 @@ msgid "External perimeter fan speed"
 msgstr "Externe Lüftergeschwindigkeit"
 
 msgid "External perimeter first"
-msgstr "Äußeres Perimeter zuerst"
+msgstr "Äußere Wand zuerst"
 
 msgid "external perimeter overlap"
 msgstr "überlappung der äußeren Begrenzung"
@@ -4252,7 +4252,7 @@ msgid "Force pad around object everywhere"
 msgstr "Grundschicht überall um Objekt erzwingen"
 
 msgid "Force solid infill for regions having a smaller area than the specified threshold."
-msgstr "Massives Infill für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
+msgstr "Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
 
 msgid "Force the generation of solid shells between adjacent materials/volumes. Useful for multi-extruder prints with translucent materials or manual soluble support material."
 msgstr "Erzwingt die Erzeugung von massiven Schalen zwischen benachbarten Materialien/Volumina. Geeignet für Multiextruderdrucke mit transluzenten Materialien oder manuell löslichen Trägermaterialien."
@@ -4731,7 +4731,7 @@ msgid "horizontal"
 msgstr "Horizontal"
 
 msgid "Horizontal shells"
-msgstr "Horizontale Konturhüllen"
+msgstr "Schichten"
 
 msgid "Horizontal Slider"
 msgstr "Horizontaler Schieberegler"
@@ -5312,25 +5312,25 @@ msgstr ""
 "Klicken Sie auf das Symbol PFEIL ZURÜCK, um alle Einstellungen für die aktuelle Optionsgruppe auf das zuletzt gespeicherte Preset zurückzusetzen."
 
 msgid "Infill"
-msgstr "Infill"
+msgstr "Füllung"
 
 msgid "infill"
-msgstr "Infill"
+msgstr "Füllung"
 
 msgid "Infill acceleration"
-msgstr "Infill Beschleunigung"
+msgstr "Beschleunigung Füllung"
 
 msgid "Infill angle"
-msgstr "Ausfüllwinkel"
+msgstr "Füllwinkel"
 
 msgid "Infill before perimeters"
-msgstr "Infill vor Kontur"
+msgstr "Füllung vor Wand"
 
 msgid "Infill bridges fan speed"
-msgstr "Infill Brücken Lüftergeschwindigkeit"
+msgstr "Gebläsegeschwindigkeit für Füllbrücken"
 
 msgid "Infill extruder"
-msgstr "Infill Extruder"
+msgstr "Extruder Füllung"
 
 msgid "Infill max first layer speed"
 msgstr "Infill max. Geschwindigkeit der ersten Schicht"
@@ -7890,7 +7890,7 @@ msgid "Perimeter bonding"
 msgstr "Perimetrische Bindung"
 
 msgid "Perimeter distribution count"
-msgstr "Umfangsverteilung Anzahl"
+msgstr "Anzahl Wände für Verteilung"
 
 msgid "Perimeter extruder"
 msgstr "Umfang Extruder"
@@ -7899,7 +7899,7 @@ msgid "Perimeter fan speed"
 msgstr "Geschwindigkeit des Perimeterlüfters"
 
 msgid "Perimeter generator"
-msgstr "Umfangsgenerator"
+msgstr "Wandgenerator"
 
 msgid "Perimeter loop seam"
 msgstr "Perimeter-Schleifennaht"
@@ -7941,7 +7941,7 @@ msgid "Perimeters"
 msgstr "Wände"
 
 msgid "Perimeters & Shell"
-msgstr "Perimeter & Hülle"
+msgstr "Schichten und Wände"
 
 msgid "Perimeters count"
 msgstr "Umfänge zählen"
@@ -9734,13 +9734,13 @@ msgid "skirt"
 msgstr "Schürze"
 
 msgid "Skirt & Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "Skirt and brim"
 msgstr "Schürze und Rand"
 
 msgid "Skirt brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "Skirt distance from brim"
 msgstr "Abstand des Rocks vom Rand"
@@ -9755,7 +9755,7 @@ msgid "Skirt width"
 msgstr "Breite des Rocks"
 
 msgid "Skirt/Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 msgid "SLA gizmo keyboard shortcuts"
 msgstr "SLA Gizmo Tastaturkürzel"
@@ -9942,19 +9942,19 @@ msgid "Solid fill pattern"
 msgstr "Füllmuster für solide Füllung"
 
 msgid "Solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 msgid "solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 msgid "Solid infill every"
-msgstr "Massives Infill alle"
+msgstr "Massive Füllung alle"
 
 msgid "Solid infill extruder"
-msgstr "Massives Infill Extruder"
+msgstr "Extruder massive Füllung"
 
 msgid "Solid Infill fan speed"
-msgstr "Solid Infill Gebläsegeschwindigkeit"
+msgstr "Massive Füllung Gebläsegeschwindigkeit"
 
 msgid "Solid infill spacing"
 msgstr "Fester Abstand der Füllung"
@@ -9966,7 +9966,7 @@ msgid "Solid infill speed"
 msgstr "Solide Ausfüllgeschwindigkeit"
 
 msgid "Solid infill threshold area"
-msgstr "Massives Infill Flächen Schwellwert"
+msgstr "Massive Füllung Flächen Schwellwert"
 
 msgid "Solid infill width"
 msgstr "Breite der festen Füllung"
@@ -11296,7 +11296,7 @@ msgid "This custom code is inserted at every layer change, right before the Z mo
 msgstr "Dieser benutzerdefinierte Code wird bei jedem Ebenenwechsel eingefügt, direkt vor der Z-Bewegung. Beachte, dass du Platzhaltervariablen für alle Slic3r-Einstellungen sowie für {layer_num} und {layer_z} verwenden kannst."
 
 msgid "This define the succetion of infill angle. When defined, it replaces the fill_angle, and there won't be any extra 90° for each layer added, but the fill_angle_increment will still be used. The first layer start with the first angle. If a new pattern is used in a modifier, it will choose the layer angle from the pattern as if it has started from the first layer.Empty this settings to disable and recover the old behavior."
-msgstr "Definiert die Abfolge der Ausfüllwinkel. Wenn er definiert ist, ersetzt er den Füllwinkel und es gibt keine zusätzlichen 90° für jede hinzugefügte Ebene, aber die Füllwinkelerhöhung wird weiterhin verwendet. Die erste Ebene beginnt mit dem ersten Winkel. Wenn ein neues Muster in einem Modifikator verwendet wird, wird der Ebenenwinkel aus dem Muster ausgewählt, als ob mit der ersten Ebene begonnen wurde. Leeren Sie diese Einstellung, um das alte Verhalten wiederherzustellen."
+msgstr "Definiert die Abfolge der Füllwinkel. Wenn er definiert ist, ersetzt er den Füllwinkel und es gibt keine zusätzlichen 90° für jede hinzugefügte Ebene, aber die Füllwinkelerhöhung wird weiterhin verwendet. Die erste Ebene beginnt mit dem ersten Winkel. Wenn ein neues Muster in einem Modifikator verwendet wird, wird der Ebenenwinkel aus dem Muster ausgewählt, als ob mit der ersten Ebene begonnen wurde. Leeren Sie diese Einstellung, um das alte Verhalten wiederherzustellen."
 
 msgid "This end procedure is inserted at the end of the output file, before the printer end gcode (and before any toolchange from this filament in case of multimaterial printers). Note that you can use placeholder variables for all Slic3r settings. If you have multiple extruders, the gcode is processed in extruder order."
 msgstr "Diese Endprozedur wird am Ende der Ausgabedatei eingefügt, und zwar vor dem End-Gcode des Druckers (und bei Multimaterialdruckern vor jedem Werkzeugwechsel an diesem Filament). Beachten Sie, dass Sie für alle Slic3r-Einstellungen Platzhaltervariablen verwenden können. Wenn Sie mehrere Extruder haben, wird der Gcode in der Reihenfolge der Extruder verarbeitet."
@@ -11436,7 +11436,7 @@ msgstr ""
 "Kann durch disable_fan_first_layers deaktiviert und durch low layer time erhöht werden."
 
 msgid "This feature allows you to combine infill and speed up your print by extruding thicker infill layers while preserving thin perimeters, thus accuracy."
-msgstr "Mit dieser Funktion können Sie Infill kombinieren und Ihren Druck beschleunigen, indem Sie dickere Infill-Schichten extrudieren und dabei dünne Umrisse und damit Genauigkeit beibehalten."
+msgstr "Mit dieser Funktion können Sie Füllung kombinieren und Ihren Druck beschleunigen, indem Sie dickere Infill-Schichten extrudieren und dabei dünne Umrisse und damit Genauigkeit beibehalten."
 
 msgid "This feature allows you to force a solid layer every given number of layers. Zero to disable. You can set this to any value (for example 9999); Slic3r will automatically choose the maximum possible number of layers to combine according to nozzle diameter and layer height."
 msgstr "Mit dieser Funktion können Sie eine feste Ebene für eine bestimmte Anzahl von Ebenen erzwingen. Null zum Deaktivieren. Sie können diesen Wert auf einen beliebigen Wert setzen (z.B. 9999); Slic3r wählt dann automatisch die maximal mögliche Anzahl der zu kombinierenden Schichten entsprechend dem Düsendurchmesser und der Schichthöhe."
@@ -12184,7 +12184,7 @@ msgid "Toolchange temperature enabled"
 msgstr "Werkzeugwechseltemperatur aktiviert"
 
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 msgid "Top / bottom shell thickness hint: Not available due to invalid layer height."
 msgstr "Hinweis zur Ober-/Bodenschalestärke: Nicht verfügbar wegen ungültiger Schichthöhe."
@@ -12712,7 +12712,7 @@ msgid "Vertical Hole shrinking compensation"
 msgstr "Kompensation der vertikalen Lochverkleinerung"
 
 msgid "Vertical shells"
-msgstr "Vertikale Konturhüllen"
+msgstr "Wände"
 
 msgid "Vertical Slider"
 msgstr "Vertikaler Schieberegler"
@@ -12955,7 +12955,7 @@ msgid "width"
 msgstr "Breite"
 
 msgid "Width & Flow"
-msgstr "Breite & Fluss"
+msgstr "Extrusionsbreite und Fluss"
 
 msgid "Width (mm)"
 msgstr "Breite (mm)"
@@ -13741,8 +13741,8 @@ msgid ""
 "Combine infill\n"
 "Did you know that you can print the infill with a higher layer height compared to perimeters to save print time using the setting<a>Combine infill every</a>."
 msgstr ""
-"Infill kombinieren\n"
-"Wussten Sie, dass Sie den Infill mit einer höheren Schichthöhe als den Perimeter drucken können, um Druckzeit zu sparen, indem Sie die Einstellung<a>Infill kombinieren alle</a> verwenden."
+"Füllung kombinieren\n"
+"Wussten Sie, dass Sie den Infill mit einer höheren Schichthöhe als den Perimeter drucken können, um Druckzeit zu sparen, indem Sie die Einstellung<a>Füllung kombinieren alle</a> verwenden."
 
 msgid ""
 "Configuration snapshots\n"
@@ -15015,7 +15015,7 @@ msgid "To parts"
 msgstr "Zu Teilen"
 
 msgid "Top contact Z distance"
-msgstr "Decke Kontakt Z Abstand"
+msgstr "Oberer Kontakt Z Abstand"
 
 msgid "Top fill pattern"
 msgstr "Deckenfüllmuster"
@@ -20627,7 +20627,7 @@ msgid "Add middle perimeter threshold"
 msgstr "Ergänzung der mittleren Umfänge Grenzschwelle"
 
 msgid "Arachne perimeter generator"
-msgstr "Arachne Umfangsgenerator"
+msgstr "Arachne Wandgenerator"
 
 msgid "Artwork model by Leslie Ing"
 msgstr "Kunstwerk Modell von Leslie Ing"

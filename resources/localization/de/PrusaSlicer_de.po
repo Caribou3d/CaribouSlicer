@@ -1268,7 +1268,7 @@ msgstr "Arachne"
 
 #: src/slic3r/GUI/Tab.cpp:1674
 msgid "Arachne perimeter generator"
-msgstr "Arachne Umfangsgenerator"
+msgstr "Arachne Wandgenerator"
 
 #: src/libslic3r/PrintConfig.cpp:731 src/libslic3r/PrintConfig.cpp:1176
 msgid "Archimedean Chords"
@@ -1957,7 +1957,7 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:2297 src/slic3r/GUI/UnsavedChangesDialog.cpp:1287
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1677
 msgid "Capabilities"
-msgstr "Fähigkeiten"
+msgstr "Eigenschaften"
 
 #: src/slic3r/GUI/GUI_App.cpp:2240
 msgid "Capture a configuration snapshot"
@@ -2287,14 +2287,14 @@ msgid ""
 "Did you know that you can print the infill with a higher layer height compared "
 "to perimeters to save print time using the setting<a>Combine infill every</a>."
 msgstr ""
-"Infill kombinieren\n"
+"Füllung kombinieren\n"
 "Wussten Sie, dass Sie den Infill mit einer höheren Schichthöhe als den "
 "Perimeter drucken können, um Druckzeit zu sparen, indem Sie die "
-"Einstellung<a>Infill kombinieren alle</a> verwenden."
+"Einstellung<a>Füllung kombinieren alle</a> verwenden."
 
 #: src/libslic3r/PrintConfig.cpp:1402
 msgid "Combine infill every"
-msgstr "Infill kombinieren alle"
+msgstr "Füllung kombinieren alle"
 
 #: src/libslic3r/PrintConfig.cpp:1407
 msgid "Combine infill every n layers"
@@ -4904,7 +4904,7 @@ msgid ""
 "Force solid infill for regions having a smaller area than the specified "
 "threshold."
 msgstr ""
-"Massives Infill für Bereiche, die eine kleinere Fläche als die angegebene "
+"Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene "
 "Schwelle aufweisen."
 
 #: src/libslic3r/PrintConfig.cpp:1536
@@ -5476,7 +5476,7 @@ msgstr "Horizontaler Schieberegler"
 
 #: src/slic3r/GUI/Tab.cpp:1465
 msgid "Horizontal shells"
-msgstr "Horizontale Konturhüllen"
+msgstr "Schichten"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:219
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:223
@@ -6180,11 +6180,11 @@ msgstr "Infill"
 
 #: src/libslic3r/PrintConfig.cpp:1485
 msgid "Infill before perimeters"
-msgstr "Infill vor Kontur"
+msgstr "Füllung vor Wand"
 
 #: src/libslic3r/PrintConfig.cpp:1464
 msgid "Infill extruder"
-msgstr "Infill Extruder"
+msgstr "Extruder Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:1500
 msgid "Infill/perimeters overlap"
@@ -8754,7 +8754,7 @@ msgstr "Kontur"
 
 #: src/libslic3r/PrintConfig.cpp:3119
 msgid "Perimeter distribution count"
-msgstr "Umfangsverteilung Anzahl"
+msgstr "Anzahl Wände für Verteilung"
 
 #: src/libslic3r/PrintConfig.cpp:1964
 msgid "Perimeter extruder"
@@ -8762,7 +8762,7 @@ msgstr "Umfang Extruder"
 
 #: src/libslic3r/PrintConfig.cpp:3065
 msgid "Perimeter generator"
-msgstr "Umfangsgenerator"
+msgstr "Wandgenerator"
 
 #: src/libslic3r/PrintConfig.cpp:3080
 msgid "Perimeter transition length"
@@ -11427,7 +11427,7 @@ msgstr "Schürzenhöhe"
 #: src/slic3r/GUI/GUI_Preview.cpp:248 src/libslic3r/ExtrusionEntity.cpp:339
 #: src/libslic3r/ExtrusionEntity.cpp:370
 msgid "Skirt/Brim"
-msgstr "Schürze/Rand"
+msgstr "Schürze und Rand"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:461
 msgid "Slab"
@@ -11616,19 +11616,19 @@ msgstr "Software &Release"
 #: src/libslic3r/ExtrusionEntity.cpp:360 src/libslic3r/PrintConfig.cpp:2360
 #: src/libslic3r/PrintConfig.cpp:2372
 msgid "Solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:2348
 msgid "Solid infill every"
-msgstr "Massives Infill alle"
+msgstr "Massive Füllung alle"
 
 #: src/libslic3r/PrintConfig.cpp:2340
 msgid "Solid infill extruder"
-msgstr "Massives Infill Extruder"
+msgstr "Extruder massive Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:2331
 msgid "Solid infill threshold area"
-msgstr "Massives Infill Flächen Schwellwert"
+msgstr "Massive Füllung Flächen Schwellwert"
 
 #: resources/data/hints.ini: [hint:Solid infill threshold area]
 msgid ""
@@ -14127,14 +14127,14 @@ msgstr "Werkzeugwechsel-Parameter für MM-Drucker mit einem Extruder"
 #: src/slic3r/GUI/OptionsGroup.cpp:352
 msgctxt "Layers"
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 #. TRN To be shown in the main menu View->Top
 #. TRN To be shown in Print Settings "Top solid layers"
 #: src/slic3r/GUI/MainFrame.cpp:1118 src/libslic3r/PrintConfig.cpp:2867
 #: src/libslic3r/PrintConfig.cpp:2876
 msgid "Top"
-msgstr "Decke"
+msgstr "Oben"
 
 #: src/slic3r/GUI/PresetHints.cpp:269
 msgid ""
@@ -14149,7 +14149,7 @@ msgstr "Ansicht von oben"
 
 #: src/libslic3r/PrintConfig.cpp:2566
 msgid "Top contact Z distance"
-msgstr "Decke Kontakt Z Abstand"
+msgstr "Oberer Kontakt Z Abstand"
 
 #: src/libslic3r/PrintConfig.cpp:714
 msgid "Top fill pattern"
@@ -14687,7 +14687,7 @@ msgstr "Vertikaler Schieberegler"
 
 #: src/slic3r/GUI/Tab.cpp:1453
 msgid "Vertical shells"
-msgstr "Vertikale Konturhüllen"
+msgstr "Wände"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:218
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:222
@@ -15978,7 +15978,7 @@ msgstr "s"
 
 #: src/slic3r/GUI/PresetHints.cpp:176
 msgid "solid infill"
-msgstr "Massives Infill"
+msgstr "Massive Füllung"
 
 #: src/slic3r/GUI/Plater.cpp:1436
 msgid "stealth mode"
