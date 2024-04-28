@@ -1281,10 +1281,10 @@ msgid "Autospeed (advanced)"
 msgstr "Automatische Geschwindigkeit (fortgeschritten)"
 
 msgid "Avoid crossing perimeters"
-msgstr "Kreuzen der Kontur vermeiden"
+msgstr "Kreuzen der Wände vermeiden"
 
 msgid "Avoid crossing perimeters - Max detour length"
-msgstr "Kreuzen von Konturen Vermeiden - Maximale Umleitungslänge"
+msgstr "Kreuzen der Wände vermeiden - Maximale Umleitungslänge"
 
 msgid "Avoid top surface for travels"
 msgstr "Vermeiden Sie die Oberseite für Reisen"
@@ -1682,7 +1682,7 @@ msgstr "Fähigkeiten"
 msgid "Capture a configuration snapshot"
 msgstr "Erfassen einer Konfigurations-Momentaufnahme"
 
-msgid "CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."
+msgid "CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."
 msgstr "CaribouSlicer ist eine modifizierte Version von SuperSlicer, basierend auf PrusaSlicer von Prusa und dem originalen Slic3r von Alessandro Ranellucci & der RepRap-Community."
 
 msgid "CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."
@@ -1892,7 +1892,7 @@ msgid "Classic"
 msgstr "Klassisch"
 
 msgid "Classic perimeter generator produces perimeters with constant extrusion width and for very thin areas is used gap-fill. Arachne engine produces perimeters with variable extrusion width. This setting also affects the Concentric infill."
-msgstr "Der klassische Perimetergenerator erzeugt Perimeter mit konstanter Extrusionsbreite und für sehr dünne Bereiche wird der Lückenfüller verwendet. Die Arachne-Engine erzeugt Konturen mit variabler Extrusionsbreite. Diese Einstellung wirkt sich auch auf die Konzentrische Füllung aus."
+msgstr "Der klassische Perimetergenerator erzeugt Perimeter mit konstanter Extrusionsbreite und für sehr dünne Bereiche wird der Lückenfüller verwendet. Die Arachne-Engine erzeugt Wände mit variabler Extrusionsbreite. Diese Einstellung wirkt sich auch auf die Konzentrische Füllung aus."
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Undo/Redo-Stapel bei neuem Projekt löschen"
@@ -4485,7 +4485,7 @@ msgid "Generating pad"
 msgstr "Generiere Grundschicht"
 
 msgid "Generating perimeters"
-msgstr "Generiere Konturen"
+msgstr "Generiere Wände"
 
 msgid "Generating perimeters: layer %s / %s"
 msgstr "Erzeugen von Perimetern: Ebene %s / %s"
@@ -5775,7 +5775,7 @@ msgid "Layers"
 msgstr "Schichten"
 
 msgid "Layers and perimeters"
-msgstr "Schichten und Konturen"
+msgstr "Schichten und Wände"
 
 msgid "Layout with the tab bar"
 msgstr "Layout mit der Registerkartenleiste"
@@ -7042,7 +7042,7 @@ msgid "No updates available"
 msgstr "Keine Updates verfügbar"
 
 msgid "None"
-msgstr "Kein"
+msgstr "Keine"
 
 msgid "None (soluble)"
 msgstr "Keine (löslich)"
@@ -7514,7 +7514,7 @@ msgid "Optimize Rotation"
 msgstr "Rotation optimieren"
 
 msgid "Optimize travel moves in order to minimize the crossing of perimeters. This is mostly useful with Bowden extruders which suffer from oozing. This feature slows down both the print and the G-code generation."
-msgstr "Optimieren Sie die Verfahrbewegungen, um das Überschreiten von Konturen zu minimieren. Dies ist vor allem bei Bowdenextrudern nützlich, die unter sickerndem Material leiden. Diese Funktion verlangsamt sowohl den Druck als auch die Generierung des G-Codes."
+msgstr "Optimieren Sie die Verfahrbewegungen, um das Überschreiten von Wände zu minimieren. Dies ist vor allem bei Bowdenextrudern nützlich, die unter sickerndem Material leiden. Diese Funktion verlangsamt sowohl den Druck als auch die Generierung des G-Codes."
 
 msgid "Optimizing layer %s / %s"
 msgstr "Optimierungsebene %s / %s"
@@ -7935,10 +7935,10 @@ msgid "Perimeter width"
 msgstr "Wandstärke"
 
 msgid "perimeters"
-msgstr "Konturen"
+msgstr "Wände"
 
 msgid "Perimeters"
-msgstr "Konturen"
+msgstr "Wände"
 
 msgid "Perimeters & Shell"
 msgstr "Perimeter & Hülle"
@@ -8570,7 +8570,7 @@ msgid "Remove extruder from sequence"
 msgstr "Extruder aus der Sequenz entfernen"
 
 msgid "Remove fil. slowdown"
-msgstr "Verlangsamung der Datei entfernen"
+msgstr "Verlangsamung des Filaments entfernen"
 
 msgid "Remove instance"
 msgstr "Kopie entfernen"
@@ -9350,7 +9350,7 @@ msgid "Set the new lift-z value for this override. 0 will disable the z-lift. -&
 msgstr "Legen Sie den neuen Lift-Z-Wert für diesen Override fest. 0 schaltet den z-Lift aus. -& zum Deaktivieren. Funktioniert möglicherweise nur bei Modifikatoren für den Höhenbereich."
 
 msgid "Set the shape of your printer's bed."
-msgstr "Stellen Sie die Konturen Ihres Druckerbettes ein."
+msgstr "Stellen Sie die Wände Ihres Druckerbettes ein."
 
 msgid ""
 "Set the speed of the full perimeters to the overhang speed, and also the next one(s) if any.\n"
@@ -10088,7 +10088,7 @@ msgid ""
 "This can be expressed as a percentage (for example: 80%) over the Default speed.\n"
 "Set zero to use autospeed for this feature."
 msgstr ""
-"Geschwindigkeit für Umrisse (Konturen, auch vertikale Schalen genannt).\n"
+"Geschwindigkeit für Umrisse (Wände, auch vertikale Schalen genannt).\n"
 "Dies kann als Prozentsatz (z. B. 80%) gegenüber der Standardgeschwindigkeit ausgedrückt werden.\n"
 "Setzen Sie Null, um die automatische Geschwindigkeit für diese Funktion zu verwenden."
 
@@ -10630,7 +10630,7 @@ msgid "Temp"
 msgstr "Temp"
 
 msgid "Temp decr:"
-msgstr "Temp. dekr:"
+msgstr "Anzahl:"
 
 msgid "Temperature"
 msgstr "Temperatur"
@@ -11770,7 +11770,7 @@ msgstr ""
 "Möchten Sie fortfahren?"
 
 msgid "This option sets the number of perimeters to generate for each layer. Note that Slic3r may increase this number automatically when it detects sloping surfaces which benefit from a higher number of perimeters if the Extra Perimeters option is enabled."
-msgstr "Diese Einstellung bestimmt die Anzahl der Konturen, die für jede Schicht erzeugt werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge Oberflächen erkennt, die sich mit einer höheren Zahl von Konturen besser drucken lassen, wenn die \"Zusätzliche Außenkonturen falls notwendig\" Option aktiviert ist."
+msgstr "Diese Einstellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser drucken lassen, wenn die \"Zusätzliche Außenkonturen falls notwendig\" Option aktiviert ist."
 
 msgid "This option will drop the temperature of the inactive extruders to prevent oozing. It will enable a tall skirt automatically and move extruders outside such skirt when changing temperatures."
 msgstr "Mit dieser Option wird die Temperatur der inaktiven Extruder gesenkt, um ein Materialnachsickern zu verhindern. Es aktiviert automatisch eine hohe Schürze und bewegt die Extruder bei Temperaturänderungen außerhalb dieser Schürze."
@@ -11779,7 +11779,7 @@ msgid "This option will limit infill to the areas actually needed for supporting
 msgstr "Mit dieser Option beschränken Sie die Füllung auf die Bereiche, die tatsächlich für die Stützung von Decken benötigt werden (sie dient als internes Stützmaterial). Wenn diese Option aktiviert ist, verlangsamt sich die Generierung des G-Codes aufgrund der zahlreichen Prüfungen."
 
 msgid "This option will switch the print order of perimeters and infill, making the latter first."
-msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Konturen und Infill um, sodass der Infill zuerst gedruckt wird."
+msgstr "Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, sodass der Infill zuerst gedruckt wird."
 
 msgid "This parameter grows the bridged solid infill layers by the specified mm to anchor them into the sparse infill and over the perimeters below. Put 0 to deactivate it. Can be a % of the width of the external perimeter."
 msgstr "Dieser Parameter vergrößert die überbrückten soliden Ausfachungsschichten um den angegebenen mm, um sie in der spärlichen Ausfachung und über den darunter liegenden Perimetern zu verankern. Setzen Sie 0, um ihn zu deaktivieren. Kann ein % of die Breite der äußeren Begrenzung sein."
@@ -12199,7 +12199,7 @@ msgid "Top fill Pattern"
 msgstr "Deckenfüllmuster"
 
 msgid "Top flow calibration"
-msgstr "Top Flow Kalibrierung"
+msgstr "Kalbrierung oberste Schicht"
 
 msgid "top infill"
 msgstr "obere Füllung"
@@ -13945,7 +13945,7 @@ msgid "Extra low"
 msgstr "Sehr niedrig"
 
 msgid "Extra perimeters if needed"
-msgstr "Extra Konturen wenn notwendig"
+msgstr "Extra Wände wenn notwendig"
 
 msgid "Extruder clearance"
 msgstr "Extruder Freiraum"
@@ -13975,13 +13975,13 @@ msgid "Fill gaps"
 msgstr "Lücken füllen"
 
 msgid "Fill pattern for bottom infill. This only affects the bottom external visible layer, and not its adjacent solid shells."
-msgstr "Füllmuster für die Boden Füllung. Dies wirkt sich nur auf die äußere sichtbare Bodenschicht aus, nicht aber auf die angrenzenden massiven Konturen."
+msgstr "Füllmuster für die Boden Füllung. Dies wirkt sich nur auf die äußere sichtbare Bodenschicht aus, nicht aber auf die angrenzenden massiven Wände."
 
 msgid "Fill pattern for general low-density infill."
 msgstr "Füllmuster für allgemeines Infill mit niedriger Dichte."
 
 msgid "Fill pattern for top infill. This only affects the top visible layer, and not its adjacent solid shells."
-msgstr "Füllmuster für die obere Füllung. Dies betrifft nur die obere sichtbare Schicht und nicht die angrenzenden massiven Konturen."
+msgstr "Füllmuster für die obere Füllung. Dies betrifft nur die obere sichtbare Schicht und nicht die angrenzenden massiven Wände."
 
 msgid "Fill the remaining area of bed with instances of the selected object"
 msgstr "Den verbleibenden Bereich des Bettes mit Kopien des ausgewählten Objekts auffüllen"
@@ -14153,7 +14153,7 @@ msgid "Layer height can't be greater than nozzle diameter"
 msgstr "Schichthöhe darf nicht größer sein als der Düsendurchmesser"
 
 msgid "Layers and Perimeters"
-msgstr "Schichten und Konturen"
+msgstr "Schichten und Wände"
 
 msgid "Layout Options"
 msgstr "Layout-Optionen"
@@ -14733,7 +14733,7 @@ msgid "Speed for filling small gaps using short zigzag moves. Keep this reasonab
 msgstr "Geschwindigkeit, mit der kleine Lücken mit kurzen Zickzackbewegungen gefüllt werden. Beschränken Sie diese auf einen mäßigen Wert, um übermässiges Rütteln und Resonanzprobleme zu vermeiden. Auf Null gesetzt, wird das Füllen kleiner Lücken deaktiviert."
 
 msgid "Speed for perimeters (contours, aka vertical shells). Set to zero for auto."
-msgstr "Geschwindigkeit für Außenkonturen (Konturen, bzw. vertikale Hüllen). Für Automatik auf null setzen."
+msgstr "Geschwindigkeit für Außenkonturen (Wände, bzw. vertikale Hüllen). Für Automatik auf null setzen."
 
 msgid "Speed for printing bridges."
 msgstr "Brückendruckgeschwindigkeit."
@@ -14844,7 +14844,7 @@ msgid "The horizontal width of the brim that will be printed around each object 
 msgstr "Die horizontale Breite des Rands, der um jedes Objekt in der ersten Schicht gedruckt wird. Wenn Raft verwendet wird, wird kein Rand erzeugt (verwenden Sie raft_first_layer_expansion)."
 
 msgid "The maximum detour length for avoid crossing perimeters. If the detour is longer than this value, avoid crossing perimeters is not applied for this travel path. Detour length could be specified either as an absolute value or as percentage (for example 50%) of a direct travel path."
-msgstr "Die maximale Umleitungslänge für kreuzen der Kontur vermeiden. Wenn die Umleitung länger als dieser Wert ist, wird die Umgehung von Konturen nicht für diesen Fahrweg angewendet. Die Umleitungslänge kann entweder als absoluter Wert oder als Prozentsatz (z. B. 50 %) eines direkten Verfahrwegs angegeben werden."
+msgstr "Die maximale Umleitungslänge für kreuzen der Wände vermeiden. Wenn die Umleitung länger als dieser Wert ist, wird die Umgehung von Wände nicht für diesen Fahrweg angewendet. Die Umleitungslänge kann entweder als absoluter Wert oder als Prozentsatz (z. B. 50 %) eines direkten Verfahrwegs angegeben werden."
 
 msgid "The maximum distance that each skin point can be offset (both ways), measured perpendicular to the perimeter wall."
 msgstr "Der maximale Abstand, um den jeder Außenhautpunkt (in beide Richtungen) versetzt werden kann, gemessen senkrecht zur Umfangswand."
@@ -20652,10 +20652,10 @@ msgid "Split middle perimeter threshold"
 msgstr "Trennung der mittleren Umfänge Grenzschwelle"
 
 msgid "The smallest extrusion width, as a factor of the normal extrusion width, above which a middle perimeter (if there wasn't one already) will be added. Reduce this setting to use more, thinner perimeters. Increase to use fewer, wider perimeters. Note that this applies -as if- the entire shape should be filled with perimeter, so the middle here refers to the middle of the object between two outer edges of the shape, even if there actually is infill or other extrusion types in the print instead of the perimeter."
-msgstr "Die kleinste Extrusionsbreite als Faktor der normalen Extrusionsbreite, oberhalb derer eine mittlerer Umfang (falls noch nicht vorhanden) hinzugefügt wird. Verringern Sie diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob die gesamte Form mit Konturen gefüllt werden sollte. Die Mitte bezieht sich hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, anstatt der Konturen."
+msgstr "Die kleinste Extrusionsbreite als Faktor der normalen Extrusionsbreite, oberhalb derer eine mittlerer Umfang (falls noch nicht vorhanden) hinzugefügt wird. Verringern Sie diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob die gesamte Form mit Wände gefüllt werden sollte. Die Mitte bezieht sich hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, anstatt der Wände."
 
 msgid "The smallest extrusion width, as a factor of the normal extrusion width, above which the middle perimeter (if there is one) will be split into two. Reduce this setting to use more, thinner perimeters. Increase to use fewer, wider perimeters. Note that this applies -as if- the entire shape should be filled with perimeter, so the middle here refers to the middle of the object between two outer edges of the shape, even if there actually is infill or other extrusion types in the print instead of the perimeter."
-msgstr "Die kleinste Extrusionsbreite, als Faktor der normalen Extrusionsbreite, über der das mittlere Umfang (falls vorhanden) in zwei geteilt wird. Verringern Sie diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob die gesamte Form mit Konturen gefüllt werden sollte. Die Mitte bezieht sich hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, anstatt der Konturen."
+msgstr "Die kleinste Extrusionsbreite, als Faktor der normalen Extrusionsbreite, über der das mittlere Umfang (falls vorhanden) in zwei geteilt wird. Verringern Sie diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob die gesamte Form mit Wände gefüllt werden sollte. Die Mitte bezieht sich hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, anstatt der Wände."
 
 msgid "This experimental setting is used to limit the speed of change in extrusion rate for a transition from lower speed to higher speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
 msgstr "Diese experimentelle Einstellung wird verwendet, um die Geschwindigkeit der Änderung der Extrusionsrate für einen Übergang von einer niedrigeren Geschwindigkeit zu einer höheren Geschwindigkeit zu begrenzen. Ein Wert von 1,8 mm³/s² stellt sicher, dass ein Wechsel von der Extrusionsrate von 1,8 mm³/s (0,45 mm Extrusionsbreite, 0,2 mm Extrusionshöhe, Vorschubgeschwindigkeit 20 mm/s) auf 5,4 mm³/s (Vorschubgeschwindigkeit 60 mm/s) mindestens 2 Sekunden dauert."

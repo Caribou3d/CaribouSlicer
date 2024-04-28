@@ -2773,7 +2773,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:285
 msgid ""
-"CaribouSlicer is a skinned version of SuperSlicer, based on PrusaSlicer by "
+"CaribouSlicer is a modified version of SuperSlicer, based on PrusaSlicer by "
 "Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
 "community."
 msgstr ""

@@ -1513,7 +1513,7 @@ msgstr "Automatische Geschwindigkeit (fortgeschritten)"
 
 #: src/libslic3r/PrintConfig.cpp:394
 msgid "Avoid crossing perimeters"
-msgstr "Kreuzen der Kontur vermeiden"
+msgstr "Kreuzen der Wände vermeiden"
 
 #: src/libslic3r/PrintConfig.cpp:402
 msgid "Avoid crossing perimeters - Max detour length"
@@ -2145,7 +2145,7 @@ msgid ""
 msgstr ""
 "Der klassische Perimetergenerator erzeugt Perimeter mit konstanter "
 "Extrusionsbreite und für sehr dünne Bereiche wird der Lückenfüller verwendet. "
-"Die Arachne-Engine erzeugt Konturen mit variabler Extrusionsbreite. Diese "
+"Die Arachne-Engine erzeugt Wände mit variabler Extrusionsbreite. Diese "
 "Einstellung wirkt sich auch auf die Konzentrische Füllung aus."
 
 #: src/slic3r/GUI/Preferences.cpp:295
@@ -4338,7 +4338,7 @@ msgstr "Sehr niedrig"
 
 #: src/libslic3r/PrintConfig.cpp:781
 msgid "Extra perimeters if needed"
-msgstr "Extra Konturen wenn notwendig"
+msgstr "Extra Wände wenn notwendig"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:3347 src/slic3r/GUI/GCodeViewer.cpp:3393
 #: src/slic3r/GUI/GCodeViewer.cpp:3398 src/slic3r/GUI/GUI_ObjectList.cpp:312
@@ -4646,7 +4646,7 @@ msgid ""
 "layer, and not its adjacent solid shells."
 msgstr ""
 "Füllmuster für die Boden Füllung. Dies wirkt sich nur auf die äußere sichtbare "
-"Bodenschicht aus, nicht aber auf die angrenzenden massiven Konturen."
+"Bodenschicht aus, nicht aber auf die angrenzenden massiven Wände."
 
 #: src/libslic3r/PrintConfig.cpp:1145
 msgid "Fill pattern for general low-density infill."
@@ -4658,7 +4658,7 @@ msgid ""
 "its adjacent solid shells."
 msgstr ""
 "Füllmuster für die obere Füllung. Dies betrifft nur die obere sichtbare Schicht "
-"und nicht die angrenzenden massiven Konturen."
+"und nicht die angrenzenden massiven Wände."
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1094
 msgid "Fill the remaining area of bed with instances of the selected object"
@@ -6593,7 +6593,7 @@ msgstr "Schichten"
 #: src/libslic3r/PrintConfig.cpp:2826 src/libslic3r/PrintConfig.cpp:2886
 #: src/libslic3r/PrintConfig.cpp:2895 src/libslic3r/PrintConfig.cpp:3066
 msgid "Layers and Perimeters"
-msgstr "Schichten und Konturen"
+msgstr "Schichten und Wände"
 
 #: src/slic3r/GUI/Tab.cpp:1447 src/slic3r/GUI/Tab.cpp:4654
 msgid "Layers and perimeters"
@@ -7778,7 +7778,7 @@ msgstr "Keine Updates verfügbar"
 #: src/slic3r/GUI/Plater.cpp:579 src/slic3r/GUI/Preferences.cpp:436
 #: src/libslic3r/PrintConfig.cpp:1286
 msgid "None"
-msgstr "Kein"
+msgstr "Keine"
 
 #: src/slic3r/GUI/Search.cpp:90 src/slic3r/GUI/Search.cpp:336
 #: src/slic3r/GUI/Tab.cpp:2643
@@ -8349,7 +8349,7 @@ msgid ""
 "mostly useful with Bowden extruders which suffer from oozing. This feature "
 "slows down both the print and the G-code generation."
 msgstr ""
-"Optimieren Sie die Verfahrbewegungen, um das Überschreiten von Konturen zu "
+"Optimieren Sie die Verfahrbewegungen, um das Überschreiten von Wände zu "
 "minimieren. Dies ist vor allem bei Bowdenextrudern nützlich, die unter "
 "sickerndem Material leiden. Diese Funktion verlangsamt sowohl den Druck als "
 "auch die Generierung des G-Codes."
@@ -8779,7 +8779,7 @@ msgstr "Umfangsübergang Schwellenwinkel"
 #: src/libslic3r/PrintConfig.cpp:1956 src/libslic3r/PrintConfig.cpp:1973
 #: src/libslic3r/PrintConfig.cpp:1987 src/libslic3r/PrintConfig.cpp:1997
 msgid "Perimeters"
-msgstr "Konturen"
+msgstr "Wände"
 
 #: src/libslic3r/PrintConfig.cpp:1305
 msgid ""
@@ -10884,7 +10884,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1399
 msgid "Set the shape of your printer's bed."
-msgstr "Stellen Sie die Konturen Ihres Druckerbettes ein."
+msgstr "Stellen Sie die Wände Ihres Druckerbettes ein."
 
 #: src/libslic3r/PrintConfig.cpp:861
 msgid ""
@@ -10897,7 +10897,7 @@ msgstr ""
 "Setzen Sie dies auf einen Nicht-Nullwert, um eine manuelle Extrusionsbreite "
 "zuzulassen. Falls auf null belassen, wird PrusaSlicer die Extrusionsbreiten vom "
 "Durchmesser der Druckdüse ableiten (siehe die Hilfstexte für die "
-"Extrusionsbreite für Konturen, Infill usw.). Falls als Prozentwert (z.B. 230%) "
+"Extrusionsbreite für Wände, Infill usw.). Falls als Prozentwert (z.B. 230%) "
 "angegeben, wird dieser ausgehend von der Schichthöhe berechnet."
 
 #: src/libslic3r/PrintConfig.cpp:751
@@ -10980,7 +10980,7 @@ msgid ""
 "computed over layer height."
 msgstr ""
 "Setzen Sie dies auf einen Nicht-Nullwert, um eine manuelle Extrusionsbreite für "
-"Konturen anzugeben. Dünnere Extrusionsbreiten sind vorteilhaft, um genauere "
+"Wände anzugeben. Dünnere Extrusionsbreiten sind vorteilhaft, um genauere "
 "Oberflächen zu erhalten. Falls auf null belassen, wird die Standard-"
 "Extrusionsbreite verwendet (falls angeben), ansonsten wird der Durchmesser der "
 "Druckdüse x 1,125 verwendet. Falls als Prozentwert (z.B. 200%) angegeben, wird "
@@ -11795,7 +11795,7 @@ msgstr "Geschwindigkeit für Bewegungen zwischen den Druckvorgängen"
 msgid ""
 "Speed for perimeters (contours, aka vertical shells). Set to zero for auto."
 msgstr ""
-"Geschwindigkeit für Außenkonturen (Konturen, bzw. vertikale Hüllen). Für "
+"Geschwindigkeit für Außenkonturen (Wände, bzw. vertikale Hüllen). Für "
 "Automatik auf null setzen."
 
 #: src/slic3r/GUI/Tab.cpp:1582
@@ -12852,8 +12852,8 @@ msgid ""
 "travel path. Detour length could be specified either as an absolute value or as "
 "percentage (for example 50%) of a direct travel path."
 msgstr ""
-"Die maximale Umleitungslänge für kreuzen der Kontur vermeiden. Wenn die "
-"Umleitung länger als dieser Wert ist, wird die Umgehung von Konturen nicht für "
+"Die maximale Umleitungslänge für kreuzen der Wände vermeiden. Wenn die "
+"Umleitung länger als dieser Wert ist, wird die Umgehung von Wände nicht für "
 "diesen Fahrweg angewendet. Die Umleitungslänge kann entweder als absoluter Wert "
 "oder als Prozentsatz (z. B. 50 %) eines direkten Verfahrwegs angegeben werden."
 
@@ -13159,10 +13159,10 @@ msgstr ""
 "oberhalb derer eine mittlerer Umfang (falls noch nicht vorhanden) hinzugefügt "
 "wird. Verringern Sie diese Einstellung, um mehr, dünnere Umfänge zu verwenden. "
 "Erhöhen Sie den Wert, um weniger, breitere Umfänge zu verwenden. Beachten Sie, "
-"dass dies gilt, als ob die gesamte Form mit Konturen gefüllt werden sollte. Die "
+"dass dies gilt, als ob die gesamte Form mit Wände gefüllt werden sollte. Die "
 "Mitte bezieht sich hier also auf die Mitte des Objekts zwischen zwei "
 "Außenkanten der Form, auch wenn tatsächlich Infill oder andere Extrusionstypen "
-"im Druck vorhanden sind, anstatt der Konturen."
+"im Druck vorhanden sind, anstatt der Wände."
 
 #: src/libslic3r/PrintConfig.cpp:3128
 msgid ""
@@ -13178,10 +13178,10 @@ msgstr ""
 "der das mittlere Umfang (falls vorhanden) in zwei geteilt wird. Verringern Sie "
 "diese Einstellung, um mehr, dünnere Umfänge zu verwenden. Erhöhen Sie den Wert, "
 "um weniger, breitere Umfänge zu verwenden. Beachten Sie, dass dies gilt, als ob "
-"die gesamte Form mit Konturen gefüllt werden sollte. Die Mitte bezieht sich "
+"die gesamte Form mit Wände gefüllt werden sollte. Die Mitte bezieht sich "
 "hier also auf die Mitte des Objekts zwischen zwei Außenkanten der Form, auch "
 "wenn tatsächlich Infill oder andere Extrusionstypen im Druck vorhanden sind, "
-"anstatt der Konturen."
+"anstatt der Wände."
 
 #: src/libslic3r/PrintConfig.cpp:2224
 msgid ""
@@ -13640,7 +13640,7 @@ msgid ""
 "acceleration at all."
 msgstr ""
 "Dies ist der Beschleunigungswert, auf den Ihr Drucker zurückgesetzt wird, "
-"nachdem aufgabenspezifische Beschleunigungswerte (Konturen/Infill) verwendet "
+"nachdem aufgabenspezifische Beschleunigungswerte (Wände/Infill) verwendet "
 "wurden. Setzen Sie dies auf null, um ein Zurückstellen der Beschleunigungswerte "
 "zu deaktivieren."
 
@@ -13762,10 +13762,10 @@ msgid ""
 "which benefit from a higher number of perimeters if the Extra Perimeters option "
 "is enabled."
 msgstr ""
-"Diese Stellung bestimmt die Anzahl der Konturen, die für jede Schicht erzeugt "
+"Diese Stellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt "
 "werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge "
-"Oberflächen erkennt, die sich mit einer höheren Zahl von Konturen besser "
-"drucken lassen, wenn die \"Zusätzliche Konturen falls notwendig\" Option "
+"Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser "
+"drucken lassen, wenn die \"Zusätzliche Wände falls notwendig\" Option "
 "aktiviert ist."
 
 #: src/libslic3r/PrintConfig.cpp:1913
@@ -13794,7 +13794,7 @@ msgid ""
 "This option will switch the print order of perimeters and infill, making the "
 "latter first."
 msgstr ""
-"Diese Einstellungen kehrt die Druckreihenfolge von Konturen und Infill um, "
+"Diese Einstellungen kehrt die Druckreihenfolge von Wände und Infill um, "
 "sodass der Infill zuerst gedruckt wird."
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:83
@@ -13808,8 +13808,8 @@ msgid ""
 "the perimeters speed setting above. Set to zero for auto."
 msgstr ""
 "Diese separate Einstellung wirkt sich auf die Geschwindigkeit der äußeren "
-"(sichtbaren) Konturen aus. Als Prozentwert eingegeben (z.B. 80%), wird sie "
-"ausgehend von der obigen Geschwindigkeitseinstellung für Konturen berechnet. "
+"(sichtbaren) Wände aus. Als Prozentwert eingegeben (z.B. 80%), wird sie "
+"ausgehend von der obigen Geschwindigkeitseinstellung für Wände berechnet. "
 "Für die automatische Berechnung auf null setzen."
 
 #: src/libslic3r/PrintConfig.cpp:2321
@@ -13818,10 +13818,10 @@ msgid ""
 "6.5mm (usually holes). If expressed as percentage (for example: 80%) it will be "
 "calculated on the perimeters speed setting above. Set to zero for auto."
 msgstr ""
-"Diese separate Einstellung wirkt sich auf die Geschwindigkeit von Konturen mit "
+"Diese separate Einstellung wirkt sich auf die Geschwindigkeit von Wände mit "
 "einem Radius <= 6,5 mm (üblicherweise Bohrungen) aus. Als Prozentwert "
 "eingegeben (z.B. 80%), wird sie ausgehend von der obigen "
-"Geschwindigkeitseinstellung für Konturen berechnet. Für eine automatische "
+"Geschwindigkeitseinstellung für Wände berechnet. Für eine automatische "
 "Berechnung setzen Sie dies auf null."
 
 #: src/libslic3r/PrintConfig.cpp:1502
@@ -13831,7 +13831,7 @@ msgid ""
 "cause gaps. If expressed as percentage (example: 15%) it is calculated over "
 "perimeter extrusion width."
 msgstr ""
-"Diese Einstellung fügt eine zusätzliche Überlappung zwischen Konturen und "
+"Diese Einstellung fügt eine zusätzliche Überlappung zwischen Wände und "
 "Infill ein, um die Haftung zu verbessern. Theoretisch sollte dies nicht "
 "notwendig sein, doch vorhandenes Getriebespiel könnte Lücken erzeugen.  Als "
 "Prozentwert eingegeben (z.B. 15%) wird sie ausgehend von der Extrusionsbreite "
@@ -15933,7 +15933,7 @@ msgstr "Parametername"
 
 #: src/slic3r/GUI/PresetHints.cpp:171
 msgid "perimeters"
-msgstr "Konturen"
+msgstr "Wände"
 
 #: src/slic3r/GUI/ConfigSnapshotDialog.cpp:64 src/libslic3r/Preset.cpp:1340
 msgid "print"
