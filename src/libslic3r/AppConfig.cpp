@@ -72,7 +72,7 @@ AppConfig::hsv AppConfig::rgb2hsv(const AppConfig::rgb& in)
     if (max > 0.0) { // NOTE: if Max is == 0, this divide would cause a crash
         out.s = (delta / max);                  // s
     } else {
-        // if max is 0, then r = g = b = 0              
+        // if max is 0, then r = g = b = 0
         // s = 0, h is undefined
         out.s = 0.0;
         out.h = NAN;                            // its now undefined
@@ -157,7 +157,8 @@ uint32_t AppConfig::hex2int(const std::string& hex)
 {
     uint32_t int_color;
     if (hex.empty() || !(hex.size() == 6 || hex.size() == 7)) {
-        int_color = 0x2172eb;
+        //int_color = 0x2172eb;
+        int_color = 0x107c18;
     } else {
         std::stringstream ss;
         ss << std::hex << (hex[0] == '#' ? hex.substr(1) : hex);
@@ -224,7 +225,7 @@ uint32_t AppConfig::create_color(float saturation, float value, EAppColorType co
     hsv_color.v = std::min(1., hsv_color.v * 1.25 * value);
 
     rgb_color = hsv2rgb(hsv_color);
-    
+
     //use the other endian style
     return rgb2int(rgb_color);
 }
@@ -377,7 +378,7 @@ void AppConfig::set_defaults()
 #endif
 
         if (get("single_instance").empty())
-            set("single_instance", 
+            set("single_instance",
 #ifdef __APPLE__
                 "1"
 #else // __APPLE__
@@ -421,7 +422,7 @@ void AppConfig::set_defaults()
 
         if (get("auto_toolbar_size").empty())
             set("auto_toolbar_size", "100");
- 
+
        if (get("notify_release").empty())
            set("notify_release", "all"); // or "none" or "release"
 
@@ -437,10 +438,10 @@ void AppConfig::set_defaults()
             set("use_inches", "0");
 
         if (get("default_action_on_close_application").empty())
-            set("default_action_on_close_application", "none"); // , "discard" or "save" 
+            set("default_action_on_close_application", "none"); // , "discard" or "save"
 
         if (get("default_action_on_select_preset").empty())
-            set("default_action_on_select_preset", "none");     // , "transfer", "discard" or "save" 
+            set("default_action_on_select_preset", "none");     // , "transfer", "discard" or "save"
 
         if (get("default_action_on_new_project").empty())
             set("default_action_on_new_project", "none");       // , "none" or 0
@@ -833,7 +834,7 @@ std::string AppConfig::load(const std::string &path)
         if (! recovered) {
             // Report the initial error of parsing PrusaSlicer.ini.
             // Error while parsing config file. We'll customize the error message and rethrow to be displayed.
-            // ! But to avoid the use of _utf8 (related to use of wxWidgets) 
+            // ! But to avoid the use of _utf8 (related to use of wxWidgets)
             // we will rethrow this exception from the place of load() call, if returned value wouldn't be empty
             /*
             throw Slic3r::RuntimeError(
@@ -972,7 +973,7 @@ void AppConfig::save()
     c << appconfig_md5_hash_line(config_str);
 #endif
     c.close();
-    
+
 #ifdef WIN32
     // Make a backup of the configuration file before copying it to the final destination.
     std::string error_message;
@@ -1203,7 +1204,7 @@ std::string AppConfig::splashscreen(bool is_editor) {
     if (file_name == "icon") {
         file_name = "";
     }
-    
+
     if (file_name == "random") {
         std::vector<std::string> names;
         //get all images in the spashscreen dir
