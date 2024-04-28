@@ -962,7 +962,7 @@ msgid "Also emit limits to G-code"
 msgstr "Geben Sie auch Grenzen für G-Code aus"
 
 msgid "Also for all perimeters"
-msgstr "Auch für alle Perimeter"
+msgstr "Auch für alle Wände"
 
 msgid "Also, the fan speed over %1% won't be touched by this feature."
 msgstr "Auch die Lüftergeschwindigkeit über %1% wird von dieser Funktion nicht berührt."
@@ -1287,7 +1287,7 @@ msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Kreuzen der Wände vermeiden - Maximale Umleitungslänge"
 
 msgid "Avoid top surface for travels"
-msgstr "Vermeiden Sie die Oberseite für Reisen"
+msgstr "Vermeide die Überfahrt der Oberseite"
 
 msgid "BACK ARROW"
 msgstr "PFEIL ZURÜCK"
@@ -1321,7 +1321,7 @@ msgid "Balanced"
 msgstr "Balanziert"
 
 msgid "Base Layer height"
-msgstr "Höhe der Basisschicht"
+msgstr "Schichthöhe"
 
 msgid "Bed"
 msgstr "Druckbett"
@@ -2081,10 +2081,10 @@ msgid "compression failed"
 msgstr "Komprimierung fehlgeschlagen"
 
 msgid "Concentric"
-msgstr "Konzentrisch"
+msgstr "konzentrisch"
 
 msgid "Concentric (filled)"
-msgstr "Konzentrisch (gefüllt)"
+msgstr "konzentrisch (gefüllt)"
 
 msgid "Configuration &Assistant"
 msgstr "Konfigurations &Assistent"
@@ -2147,13 +2147,13 @@ msgstr ""
 "Wenn Sie den Parameter auf 0 setzen, wird der alte Algorithmus für die Infill-Verbindung verwendet. Er sollte das gleiche Ergebnis liefern wie bei 1000 & 0."
 
 msgid "Connected"
-msgstr "Verbunden"
+msgstr "verbunden"
 
 msgid "Connected to hole perimeters"
-msgstr "Verbunden mit Lochperimetern"
+msgstr "verbunden mit Lochperimetern"
 
 msgid "Connected to outer perimeters"
-msgstr "Verbunden mit äußeren Perimetern"
+msgstr "verbunden mit äußeren Perimetern"
 
 msgid "Connection length"
 msgstr "Länge der Verbindung"
@@ -3195,7 +3195,7 @@ msgid "Enforce"
 msgstr "Erzwinge"
 
 msgid "Enforce 100% fill volume"
-msgstr "100% fill Volumen erzwingen"
+msgstr "100% Füllvolumen erzwingen"
 
 msgid "Enforce a specific color on thumbnails. If not enforced, their color will be the one defined by the filament."
 msgstr "Erzwingen Sie eine bestimmte Farbe für Miniaturansichten. Wenn dies nicht der Fall ist, entspricht die Farbe derjenigen, die durch das Filament definiert ist."
@@ -3204,7 +3204,7 @@ msgid "Enforce lift on first layer"
 msgstr "Lifting der ersten Schicht durchsetzen"
 
 msgid "Enforce on first layer"
-msgstr "Durchsetzen auf der ersten Ebene"
+msgstr "Erzwingen auf der ersten Schicht"
 
 msgid "Enforce overhangs speed"
 msgstr "Überhänge durchsetzen Geschwindigkeit"
@@ -3723,13 +3723,13 @@ msgid "Extruder nozzle temperature for layers after the first one. Set zero to d
 msgstr "Extruderdüsentemperatur für Schichten nach der ersten. Setzen Sie den Wert auf Null, um die Befehle zur Temperatursteuerung im Ausgabe-G-Code zu deaktivieren."
 
 msgid "Extruder offset"
-msgstr "Extruder Offset"
+msgstr "Extruder Versatz"
 
 msgid "Extruder retraction calibration"
 msgstr "Kalibrierung des Extruderrückzugs"
 
 msgid "Extruder temp offset"
-msgstr "Extruder-Temperatur-Offset"
+msgstr "Extruder-Temperatur Versatz"
 
 msgid "Extruders"
 msgstr "Extruder"
@@ -4377,7 +4377,7 @@ msgid "g/ml"
 msgstr "g/ml"
 
 msgid "G2/G3 generation"
-msgstr "G2/G3 Generation"
+msgstr "G2/G3 Generierung"
 
 msgid "Gap fill"
 msgstr "Lückenfüllung"
@@ -4635,7 +4635,7 @@ msgid "Height (mm)"
 msgstr "Höhe (mm)"
 
 msgid "height in layers"
-msgstr "höhe in Ebenen"
+msgstr "Anzahl"
 
 msgid "Height of skirt expressed in layers. Set this to a tall value to use skirt as a shield against drafts."
 msgstr "Höhe des Rocks, ausgedrückt in Schichten. Setzen Sie diesen Wert auf einen hohen Wert, um den Rock als Schutz vor Zugluft zu verwenden."
@@ -5289,7 +5289,7 @@ msgid "Increase/decrease edit area"
 msgstr "Bearbeitungsbereich vergrößern/verkleinern"
 
 msgid "increment"
-msgstr "inkrement"
+msgstr "Inkrement"
 
 msgid "Increment"
 msgstr "Inkrement"
@@ -5375,7 +5375,7 @@ msgid "Initial layer height"
 msgstr "Anfangsschichthöhe"
 
 msgid "Inner"
-msgstr "Innere"
+msgstr "Innen"
 
 msgid "Inner brim only"
 msgstr "Nur innerer Rand"
@@ -5751,7 +5751,7 @@ msgstr ""
 "Die Schichthöhe wird auf 0,01 zurückgesetzt."
 
 msgid "Layer height limits"
-msgstr "Schichthöhen Grenzen"
+msgstr "Grenzen für Schichthöhe"
 
 msgid "Layer previe&w Tab"
 msgstr "Ebene previe&w Tab"
@@ -6456,7 +6456,7 @@ msgid "Merging slices and calculating statistics"
 msgstr "Zusammenführung der Slices und Berechnung der Statistiken"
 
 msgid "Merging with perimeters"
-msgstr "Verschmelzen mit Perimetern"
+msgstr "Verschmelzen mit Wänden"
 
 msgid "Mesh repair failed."
 msgstr "Netzreparatur fehlgeschlagen."
@@ -6810,10 +6810,10 @@ msgid "money/kg"
 msgstr "Kosten/kg"
 
 msgid "Monotonic"
-msgstr "Monotonisch"
+msgstr "monoton"
 
 msgid "Monotonic (filled)"
-msgstr "Monoton (gefüllt)"
+msgstr "monoton (gefüllt)"
 
 msgid "More"
 msgstr "Mehr"
@@ -7060,7 +7060,7 @@ msgid "not a ZIP archive"
 msgstr "kein ZIP Archiv"
 
 msgid "Not connected"
-msgstr "Nicht verbunden"
+msgstr "nicht verbunden"
 
 msgid "Not found:"
 msgstr "Nicht gefunden:"
@@ -7272,7 +7272,7 @@ msgstr ""
 "Er wird von brim_width und brim_width_interior subtrahiert, muss also kleiner als diese sein. Der Versatz wird nach dem XY-Ausgleich der ersten Ebene (Elefantenfuß) angewendet."
 
 msgid "Offsets (for multi-extruder printers)"
-msgstr "Offsets (für Multi-Extruder-Drucker)"
+msgstr "Versatz (für Multi-Extruder-Drucker)"
 
 msgid "Old layout: all windows are in the application, settings are on the top tab bar and the platter choice in on the bottom of the platter view."
 msgstr "Altes Layout: alle Fenster befinden sich in der Anwendung, die Einstellungen befinden sich in der oberen Registerkartenleiste und die Plattenauswahl befindet sich am unteren Rand der Plattenansicht."
@@ -7396,7 +7396,7 @@ msgid "Only one peri - other algo"
 msgstr "Nur ein Peri - anderer Algo"
 
 msgid "Only one perimeter"
-msgstr "Nur eine Begrenzung"
+msgstr "Nur eine äußere Wand"
 
 msgid "Only one perimeter on First layer"
 msgstr "Nur ein Perimeter auf der ersten Ebene"
@@ -8200,7 +8200,7 @@ msgid "Print pauses"
 msgstr "Druckpausen"
 
 msgid "Print remaining times"
-msgstr "Restliche Zeiten drucken"
+msgstr "Restzeit ausgeben"
 
 msgid "Print settings"
 msgstr "Druckeinstellungen"
@@ -8481,10 +8481,10 @@ msgid "Rectangular"
 msgstr "Rechteckig"
 
 msgid "Rectilinear"
-msgstr "Geradlinig"
+msgstr "geradlinig"
 
 msgid "Rectilinear (filled)"
-msgstr "Geradlinig (gefüllt)"
+msgstr "geradlinig (gefüllt)"
 
 msgid "Rectilinear grid"
 msgstr "Rechtwinkliges Gitter"
@@ -8504,7 +8504,7 @@ msgid "Reduced overhang slopes"
 msgstr "Reduzierte Überhangneigungen"
 
 msgid "Reducing printing time"
-msgstr "Druckzeit wird verkürzt"
+msgstr "Verkürzung der Druckzeit"
 
 msgid "Refresh Printers"
 msgstr "Drucker aktualisieren"
@@ -8771,7 +8771,7 @@ msgid "Retraction when tool is disabled (advanced settings for multi-extruder se
 msgstr "Einzug, wenn das Werkzeug deaktiviert ist (weiterführende Einstellungen für Multi-Extruder-Einrichtungen)"
 
 msgid "Retraction wipe"
-msgstr "Retraktionstuch"
+msgstr "Wischen beim Rückzug"
 
 msgid "Retractions"
 msgstr "Einzüge"
@@ -9927,7 +9927,7 @@ msgid "Snug"
 msgstr "Nahtlos"
 
 msgid "Solid"
-msgstr "Fett"
+msgstr "Massiv"
 
 msgid "Solid "
 msgstr "Fett "
@@ -13006,7 +13006,7 @@ msgid "Wipe into this object's infill"
 msgstr "Das Infill dieses Objekts zum Reinigen verwenden"
 
 msgid "Wipe only when crossing perimeters"
-msgstr "Wischen Sie nur, wenn Sie die Grenzen überschreiten"
+msgstr "Nur wischen, falls Wände gekreuzt werden"
 
 msgid "Wipe speed"
 msgstr "Wischgeschwindigkeit"

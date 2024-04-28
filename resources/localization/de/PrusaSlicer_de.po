@@ -2352,7 +2352,7 @@ msgstr "Fertig"
 #: src/libslic3r/PrintConfig.cpp:729 src/libslic3r/PrintConfig.cpp:1171
 #: src/libslic3r/PrintConfig.cpp:2740
 msgid "Concentric"
-msgstr "Konzentrisch"
+msgstr "konzentrisch"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3037
 msgid "Configuration &Assistant"
@@ -4371,7 +4371,7 @@ msgstr "Extruder Freiraum"
 
 #: src/libslic3r/PrintConfig.cpp:833
 msgid "Extruder offset"
-msgstr "Extruder Offset"
+msgstr "Extruder Versatz"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:133 src/slic3r/GUI/Tab.cpp:1620
 #: src/slic3r/GUI/Tab.cpp:2301 src/libslic3r/PrintConfig.cpp:792
@@ -6571,7 +6571,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2801
 msgid "Layer height limits"
-msgstr "Schichthöhen Grenzen"
+msgstr "Grenzen für Schichthöhe"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2486
 msgid "Layer range Settings to modify"
@@ -7473,7 +7473,7 @@ msgstr "Veränderer"
 
 #: src/libslic3r/PrintConfig.cpp:727
 msgid "Monotonic"
-msgstr "Monotonisch"
+msgstr "monoton"
 
 #: src/slic3r/GUI/HintNotification.cpp:771 src/slic3r/GUI/HintNotification.cpp:797
 #: src/slic3r/GUI/NotificationManager.cpp:374
@@ -9675,7 +9675,7 @@ msgstr "Rechteckig"
 #: src/libslic3r/PrintConfig.cpp:726 src/libslic3r/PrintConfig.cpp:1164
 #: src/libslic3r/PrintConfig.cpp:2722 src/libslic3r/PrintConfig.cpp:2739
 msgid "Rectilinear"
-msgstr "Geradlinig"
+msgstr "geradlinig"
 
 #: src/libslic3r/PrintConfig.cpp:2723
 msgid "Rectilinear grid"
@@ -9703,7 +9703,7 @@ msgstr "Reduzierte Überhangneigungen"
 
 #: src/slic3r/GUI/Tab.cpp:1520
 msgid "Reducing printing time"
-msgstr "Druckzeit wird verkürzt"
+msgstr "Verkürzung der Druckzeit"
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:337
 msgid "Refresh Printers"
@@ -22235,7 +22235,7 @@ msgstr "Drucktaste"
 
 #: ../src/richtext/richtextborderspage.cpp:611
 msgid "Solid"
-msgstr "Fett"
+msgstr "Massiv"
 
 #: ../src/common/docview.cpp:1791
 msgid "Sorry, could not open this file."
