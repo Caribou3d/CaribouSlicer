@@ -9,7 +9,7 @@ Note: The configuration folder is created at the first launch of superslicer.
 To add a new layout, copy-paste the `default` directory, and rename it to your new name ('newlayout' for this wiki)
 Go inside this directory.
 
-Edit the version.ini file: 
+Edit the version.ini file:
  * the name will be displayed in the preference combobox and the description will be used as the tooltip.
 Then, you can edit teh ui file to change the layout of each tab (print, filament and printer).
 Note that each setting has to be in its tab, it can't change. That's why there is print_temperature, as the temperature field is linked to the filament, and can't be in a print setting.
@@ -39,57 +39,57 @@ STR represent a label that can conatins any character but ':', leading and trail
 INT represent an integer
 parameters that are inside [] are optionals
 each parameter is separated by ':'
-* Page: 
-	`page[:idx]:STR:STR`
-	* first STR is for the label and the second for the icon, with or without the .svg / .png
-	* idx: append the index of the page (for extruder ui) to the name
-* Group: 
-	`group[:no_title][:title_width$INT][:label_width$INT][:sidetext_width$INT][:EVENT][:id$INT][:idx]:STR`
-	* `EVENT` can be extruders_count_event if the group contains extruders_count and is a printer tab ; silent_mode_event if the group contains silent_mode and is a printer tab ; material_density_event if the group contains material_density.
-	* `title_width$INT` is used to set the size of the left column, where titles are draw.
-	* `label_width$INT` is used to set the size of the labels on lines.
-	* `sidetext_width$INT` is used to set the size of the suffix label (see sidetext in setting).
-	* `no_title` is used to remove the left column, where titles are draw.
-	* `no_search` to not add this group's widgets into the search tool.
+* Page:
+    `page[:idx]:STR:STR`
+    * first STR is for the label and the second for the icon, with or without the .svg / .png
+    * idx: append the index of the page (for extruder ui) to the name
+* Group:
+    `group[:no_title][:title_width$INT][:label_width$INT][:sidetext_width$INT][:EVENT][:id$INT][:idx]:STR`
+    * `EVENT` can be extruders_count_event if the group contains extruders_count and is a printer tab ; silent_mode_event if the group contains silent_mode and is a printer tab ; material_density_event if the group contains material_density.
+    * `title_width$INT` is used to set the size of the left column, where titles are draw.
+    * `label_width$INT` is used to set the size of the labels on lines.
+    * `sidetext_width$INT` is used to set the size of the suffix label (see sidetext in setting).
+    * `no_title` is used to remove the left column, where titles are draw.
+    * `no_search` to not add this group's widgets into the search tool.
 * Line:
-	`line:STR*`
+    `line:STR*`
 * setting:
-	`setting[label$STR][label_width$INT][:full_label][:full_width][:sidetext$STR][sidetext_width$INT][:simple|advanced|expert][:width$INT][:height$INT][:id$INT]:STR`
-	* `STR`, the last parameter: the id name of the setting.
-	* `label$STR`: to override the label by this new one (if it ends with '_' it won't have a ':' ; if empty it won't have a length).
-	* `label_width$INT`: change the width of the label. Only works if it's in a line. Override the group one. -1 for auto.
-	* `label_left`: Draw the label aligned to the left instead of the right.
-	* `full_label$STR`: to override the full_label by this new one (full_label is used on modifiers).
-	* `full_label`: to override the label by the "full one".
-	* `tooltip$STR`: to override the tooltip. Note that you can write '\t' for a tabulation, '\n' for a new line, '\.' for a ':' and '\£' for a '$'.
-	* `full_width`: to tell to create a field that span the full width.
-	* `sidetext$STR`: the suffix at the right of the widget (like 'mm').
-	* `sidetext_width$INT`: the suffix label length (override the group one). -1 for auto.
-	* `max_literal$INT[%]`: if the user enter a value higher than that and it's a 'float or percent' field, then emit a pop-up to question if he doesn't forgot a '%'. If negative, it check if the value isn't lower than the absolute max_literal, instead of greater. If there is a '%' after the value, then it's multiplied by the biggest nozzle diameter.
-	* `tags$STR[$STR]*`: to set the tags in which the setting can show up. Each tag has to be suffixed by a `$`. 
-	* simple|advanced|expert: old way to set the tags: simple will set the tags to 'Simple', advanced will set the tags to 'Simple' and 'Advanced', and 'expert' will set the tags to 'Simple' 'Advanced' and 'Expert'.
-	* `width$INT`: change the width of the field. Shouod work on most type of settings.
-	* `height$INT`: change the height of the field. Don't works with every type of setting (mostly multilne text). Set to -1 to 'disable'.
-	* `precision$INT`: number of digit after the dot displayed.
-	* `url$STR`: the url to call when clicking on it.
-	* `id $INT`: for setting only a single value of a setting array.
-	* `idx`: for setting only a single value of a setting array, with the index of the page (for extruder ui page)
-	* `script`: to tell that this setting doesn't exist and is defined in a script (see script section). You have to also define the type. They comes in two flavor: single value and array (Single values have to be used, but for filament and extruder tabs that require arrays):
-		* `bool`: Single vlaue. Tell the sotfware it's a checkbox (boolean return value)
-		* `int`: Single vlaue. Tell the sotfware it's a int entry field (int return value)
-		* `float`: Single vlaue. Tell the sotfware it's a numeric entry field (float return value)
-		* `percent`: Single vlaue. Tell the sotfware it's a percentage (float return value)
-		* `float_or_percent`: Single vlaue. Tell the sotfware it's a numeric that can acept a % value (float return value)
-		* `string`: Single vlaue. Tell the sotfware it's a numeric an entry field where you can enter a text(string return value)
-		* `bools`: Array. Tell the sotfware it's a checkbox (boolean return value)
-		* `ints`: Array. Tell the sotfware it's a int entry field (int return value)
-		* `floats`: Array. Tell the sotfware it's a numeric entry field (float return value)
-		* `percents`: Array. Tell the sotfware it's a percentage (float return value)
-		* `floats_or_percents: mandatory`: Array. Tell the sotfware it's a numeric that can acept a % value (boolean return value)
-		* `strings`: Array. Tell mandatory for a filament or an extruder value. The sotfware it's a numeric an entry field where you can enter a text(string return value)
-		* `enum$STR$STR[$STR$STR]*`: tell the sotfware it's a combobox (string return value). It has to be followed by $name$label for each option you want to show.
-	* Also, script may depends on normal fields. When a setting it depends is modified, the scripted widget will appear modified. And resetting a widget will reset all depending fields.
-		* `depends$STR[$STR]*`: add the setting fields this scripted widget depends on. Each one has to be suffixed by a '$'
+    `setting[label$STR][label_width$INT][:full_label][:full_width][:sidetext$STR][sidetext_width$INT][:simple|advanced|expert][:width$INT][:height$INT][:id$INT]:STR`
+    * `STR`, the last parameter: the id name of the setting.
+    * `label$STR`: to override the label by this new one (if it ends with '_' it won't have a ':' ; if empty it won't have a length).
+    * `label_width$INT`: change the width of the label. Only works if it's in a line. Override the group one. -1 for auto.
+    * `label_left`: Draw the label aligned to the left instead of the right.
+    * `full_label$STR`: to override the full_label by this new one (full_label is used on modifiers).
+    * `full_label`: to override the label by the "full one".
+    * `tooltip$STR`: to override the tooltip. Note that you can write '\t' for a tabulation, '\n' for a new line, '\.' for a ':' and '\£' for a '$'.
+    * `full_width`: to tell to create a field that span the full width.
+    * `sidetext$STR`: the suffix at the right of the widget (like 'mm').
+    * `sidetext_width$INT`: the suffix label length (override the group one). -1 for auto.
+    * `max_literal$INT[%]`: if the user enter a value higher than that and it's a 'float or percent' field, then emit a pop-up to question if he doesn't forgot a '%'. If negative, it check if the value isn't lower than the absolute max_literal, instead of greater. If there is a '%' after the value, then it's multiplied by the biggest nozzle diameter.
+    * `tags$STR[$STR]*`: to set the tags in which the setting can show up. Each tag has to be suffixed by a `$`.
+    * simple|advanced|expert: old way to set the tags: simple will set the tags to 'Simple', advanced will set the tags to 'Simple' and 'Advanced', and 'expert' will set the tags to 'Simple' 'Advanced' and 'Expert'.
+    * `width$INT`: change the width of the field. Shouod work on most type of settings.
+    * `height$INT`: change the height of the field. Don't works with every type of setting (mostly multilne text). Set to -1 to 'disable'.
+    * `precision$INT`: number of digit after the dot displayed.
+    * `url$STR`: the url to call when clicking on it.
+    * `id $INT`: for setting only a single value of a setting array.
+    * `idx`: for setting only a single value of a setting array, with the index of the page (for extruder ui page)
+    * `script`: to tell that this setting doesn't exist and is defined in a script (see script section). You have to also define the type. They comes in two flavor: single value and array (Single values have to be used, but for filament and extruder tabs that require arrays):
+        * `bool`: Single vlaue. Tell the sotfware it's a checkbox (boolean return value)
+        * `int`: Single vlaue. Tell the sotfware it's a int entry field (int return value)
+        * `float`: Single vlaue. Tell the sotfware it's a numeric entry field (float return value)
+        * `percent`: Single vlaue. Tell the sotfware it's a percentage (float return value)
+        * `float_or_percent`: Single vlaue. Tell the sotfware it's a numeric that can acept a % value (float return value)
+        * `string`: Single vlaue. Tell the sotfware it's a numeric an entry field where you can enter a text(string return value)
+        * `bools`: Array. Tell the sotfware it's a checkbox (boolean return value)
+        * `ints`: Array. Tell the sotfware it's a int entry field (int return value)
+        * `floats`: Array. Tell the sotfware it's a numeric entry field (float return value)
+        * `percents`: Array. Tell the sotfware it's a percentage (float return value)
+        * `floats_or_percents: mandatory`: Array. Tell the sotfware it's a numeric that can acept a % value (boolean return value)
+        * `strings`: Array. Tell mandatory for a filament or an extruder value. The sotfware it's a numeric an entry field where you can enter a text(string return value)
+        * `enum$STR$STR[$STR$STR]*`: tell the sotfware it's a combobox (string return value). It has to be followed by $name$label for each option you want to show.
+    * Also, script may depends on normal fields. When a setting it depends is modified, the scripted widget will appear modified. And resetting a widget will reset all depending fields.
+        * `depends$STR[$STR]*`: add the setting fields this scripted widget depends on. Each one has to be suffixed by a '$'
 
 There is also special commands:
 * `height:INT`: change the default height of settings. Don't works with every type of setting (mostly multilne text). Set to 0 or -1 to disable.
@@ -113,13 +113,13 @@ You can end page, group and line section by end_page, end_group but it's not man
 exemple:
 
     page:my page:my icon name
-    	group:my group name
-    		setting:label$Choose your base layer height, if you dare:layer_height
-    		line:perimeters
-    			settings:label$count:perimeters
-    			settings:label$only one is spiral:spiral_vase
-    		end_line
-    	end_group
+        group:my group name
+            setting:label$Choose your base layer height, if you dare:layer_height
+            line:perimeters
+                settings:label$count:perimeters
+                settings:label$only one is spiral:spiral_vase
+            end_line
+        end_group
     end_page
 
 # Scripts
@@ -128,7 +128,7 @@ exemple:
 
 The file the script is written is a .as file. If a scripted widget is used in the print.ui file, then it has to be defined in the print.as file.
 
-The language used is [angelscript](https://www.angelcode.com/angelscript). 
+The language used is [angelscript](https://www.angelcode.com/angelscript).
 
 To write the functions for a scripted widget with a 'my_widget' name and a type 'int', then you have to write these methods:
 * int my_widget_get()
@@ -152,7 +152,7 @@ If it use scripted widget, they have to be in the print.as file. The syntax is s
 ## Script API: called by the slicer
 Here are all the functions you need to define for your custom widget to work (for your type):
 ### type bool:
- * int **OPTNAME_get**() 
+ * int **OPTNAME_get**()
       Will return 1 if checked, 0 if unchecked and -1 if half-checked (not all os, will be unchecked if not available)
  * void **OPTNAME_set**(bool set)
 ###  type int:
@@ -189,7 +189,7 @@ These functions can be called everywhere.
  * bool  **is_percent**(string &in key)
  * void  **get_string**(string &in key, string &out get_val)
     Can be used by type string and enum (return the enum_value, not the label)
-    
+
 ### to set the value of real settings
 These functions can only be called in a `set` or `reset` function. If you need to set a variable in a `get`, call ask_for_refresh() and write it in the set method.
  * void **set_bool**(string &in key, bool new_val)
@@ -207,7 +207,7 @@ These functions can only be called in a `set` or `reset` function. If you need t
   * void **ask_for_refresh**()
     ask for a OPTNAME_set() after the current OPTNAME_get(), to be able to set settings.
   * bool **is_enabled**(string setting_key)
-    Experimental. Ask if this setting is currently enabled. Dangerous, as it will be true if it's not constructed. 
+    Experimental. Ask if this setting is currently enabled. Dangerous, as it will be true if it's not constructed.
 
 ### to get/set the value of a custom variable
 The first argument is the index of the tab setting: 0 for print settings, 1 for filament settings and 2 for printer settings.

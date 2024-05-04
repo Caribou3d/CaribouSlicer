@@ -93,14 +93,14 @@ while getopts ":idaxbhcsltwr" opt; do
         BUILD_XCODE="1"
         ;;
     w )
-	    BUILD_WIPE="1"
-	;;
+        BUILD_WIPE="1"
+    ;;
     r )
-	    BUILD_CLEANDEPEND="1"
-	;;
+        BUILD_CLEANDEPEND="1"
+    ;;
     h ) echo "Usage: ./BuildMacOS.sh  [-h][-w][-a][-r][-x][-b][-c][-d][-s][-l][-t][-i]"
         echo "   -h: this message"
-	    echo "   -w: wipe build directories bfore building"
+        echo "   -w: wipe build directories bfore building"
         echo "   -a: build for arm64 (Apple Silicon)"
         echo "   -r: clean dependencies"
         echo "   -x: build for x86_64 (Intel)"
@@ -119,7 +119,7 @@ if [ $OPTIND -eq 1 ]
 then
     echo "Usage: ./BuildLinux.sh [-h][-w][-a][-r][-x][-b][-c][-d][-s][-l][-t][-i]"
     echo "   -h: this message"
-	echo "   -w: wipe build directories bfore building"
+    echo "   -w: wipe build directories bfore building"
     echo "   -a: Build for arm64 (Apple Silicon)"
     echo "   -r: clean dependencies"
     echo "   -x: build for x86_64 (Intel)"
@@ -207,7 +207,7 @@ then
     # mkdir build
     if [ ! -d "build" ]
     then
-	mkdir build
+    mkdir build
     fi
 
     BUILD_ARGS=""

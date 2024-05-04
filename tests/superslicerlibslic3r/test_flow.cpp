@@ -31,7 +31,7 @@ using namespace Slic3r;
 SCENARIO("Extrusion width specifics", "[!mayfail]") {
     GIVEN("A config with a skirt, brim, some fill density, 3 perimeters, and 1 bottom solid layer and a 20mm cube mesh") {
         // this is a sharedptr
-		DynamicPrintConfig &config {Slic3r::DynamicPrintConfig::full_print_config()};
+        DynamicPrintConfig &config {Slic3r::DynamicPrintConfig::full_print_config()};
         config.set_key_value("skirts", new ConfigOptionInt{1});
         config.set_key_value("brim_width", new ConfigOptionFloat{2});
         config.set_key_value("perimeters", new ConfigOptionInt{3});
@@ -55,7 +55,7 @@ SCENARIO("Extrusion width specifics", "[!mayfail]") {
             std::vector<double> E_per_mm_bottom;
             std::string gcode_filepath("");
             Slic3r::Test::gcode(gcode_filepath, print);
-			GCodeReader parser {Slic3r::GCodeReader()};
+            GCodeReader parser {Slic3r::GCodeReader()};
             const double layer_height = config.opt_float("layer_height");
             const double first_layer_height = config.get_computed_value("first_layer_height");
             std::string gcode_from_file= read_to_string(gcode_filepath);
@@ -113,7 +113,7 @@ SCENARIO(" Bridge flow specifics.", "[!mayfail]") {
     }
 }
 
-/// Test the expected behavior for auto-width, 
+/// Test the expected behavior for auto-width,
 /// spacing, etc
 SCENARIO("Flow: Flow math for non-bridges", "[!mayfail]") {
     auto width_0 = ConfigOptionFloatOrPercent(0.0, false);
@@ -232,7 +232,7 @@ SCENARIO("Flow: stats are okay") {
     config.set_key_value("external_perimeter_extrusion_width", new ConfigOptionFloatOrPercent(0.5, false));
     config.set_key_value("perimeter_extrusion_width", new ConfigOptionFloatOrPercent(0.5, false));
     config.update_phony({});
-    
+
     double cube_side_spacing = 20;
     std::string name;
 
@@ -243,7 +243,7 @@ SCENARIO("Flow: stats are okay") {
         name = "no_peri";
     }
 
-    
+
     WHEN("20x20x20 cube with one perimeter")
     {
         // only infill -> the perimeter width touch the border, so it has less fill than with only infill.
@@ -251,7 +251,7 @@ SCENARIO("Flow: stats are okay") {
         cube_side_spacing = 20 - 0.2/*height*/ * float(1. - 0.25 * PI);
         config.set_key_value("perimeters", new ConfigOptionInt{1});
         config.set_key_value("seam_gap", (new ConfigOptionFloatsOrPercents(1, FloatOrPercent{0,false}))->set_is_extruder_size());
-        
+
         name = "one_peri";
     }
 
@@ -262,10 +262,10 @@ SCENARIO("Flow: stats are okay") {
         cube_side_spacing = 20 - 0.2/*height*/ * float(1. - 0.25 * PI);
         config.set_key_value("perimeters", new ConfigOptionInt{3});
         config.set_key_value("seam_gap", (new ConfigOptionFloatsOrPercents(1, FloatOrPercent{0,false}))->set_is_extruder_size());
-        
+
         name = "three_peri";
     }
-    
+
     WHEN("20x20x20 cube with three arachne perimeters")
     {
         // only infill -> the perimeter width touch the border, so it has less fill than with only infill.
@@ -285,7 +285,7 @@ SCENARIO("Flow: stats are okay") {
     print.process();
     REQUIRE(print.get_object(0)->get_layer(0)->height == Approx(0.2));
     REQUIRE(print.get_object(0)->get_layer(1)->height == Approx(0.2));
-        
+
     std::string gcode_filepath{ "" };
     Slic3r::Test::gcode(gcode_filepath, print);
     std::string gcode_from_file = read_to_string(gcode_filepath);
@@ -329,7 +329,7 @@ SCENARIO("Flow: stats are okay") {
         REQUIRE( (config.option("perimeters")->get_int() == 0) == (volumeExtrPerimeter == 0));
         REQUIRE( (volumeExtrPerimeter == 0) == print.get_object(0)->get_layer(0)->regions()[0]->fill_no_overlap_expolygons.empty());
     }
-    
+
     std::cout<<name<<" : "<<volume<<" mm3\n";
     REQUIRE(volume == Approx(volume_infill_extruded+volume_perimeter_extruded));
     REQUIRE(volume == Approx(volume_extruded));
@@ -348,9 +348,9 @@ SCENARIO("Flow: stats are okay") {
 //    Slic3r::Model model;
 //    bool                      ret = load_3mf(path.c_str(), config, ctxt, &model, false);
 //    Print         print;
-//    
+//
 //    print.set_status_callback([](const PrintBase::SlicingStatus &) {});
-//    print.apply(model, config); 
+//    print.apply(model, config);
 //    const double layer_height = config.option("layer_height")->get_float();
 //    std::cout<<"cube side: "<< (20 + layer_height * float(1. - 0.25 * PI))<<"\n";
 //    const double cube_side_spacing = 20;// - layer_height * float(1. - 0.25 * PI);
@@ -359,7 +359,7 @@ SCENARIO("Flow: stats are okay") {
 //    print.process();
 //    REQUIRE(print.get_object(0)->get_layer(0)->height == Approx(layer_height));
 //    REQUIRE(print.get_object(0)->get_layer(1)->height == Approx(layer_height));
-//        
+//
 //    std::string gcode_filepath{ "" };
 //    Slic3r::Test::gcode(gcode_filepath, print);
 //    std::string gcode_from_file = read_to_string(gcode_filepath);
@@ -415,7 +415,7 @@ SCENARIO("Flow: stats are okay") {
 //
 //        tot_vol_extrusion_struct += volumeExtrPerimeter + volumeExtrInfill;
 //    }
-//    
+//
 //    std::cout<<"from3mf"<<" : "<<volume<<" mm3\n";
 //    REQUIRE(volume == Approx(tot_vol_extrusion_struct));
 //    REQUIRE(volume == Approx(volume_infill_extruded+volume_perimeter_extruded));

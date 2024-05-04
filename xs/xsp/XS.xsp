@@ -155,9 +155,9 @@ path_to_parent_path(src)
 void
 xspp_test_croak_hangs_on_strawberry()
     CODE:
-    	try {
-    		throw 1;
-    	} catch (...) {
-    		croak("xspp_test_croak_hangs_on_strawberry: exception catched\n");
-    	}
+        try {
+            throw 1;
+        } catch (...) {
+            croak("xspp_test_croak_hangs_on_strawberry: exception catched\n");
+        }
 %}

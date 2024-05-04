@@ -15,7 +15,7 @@ using namespace Slic3r::Test;
 class ExtrusionVolumeVisitor : public ExtrusionVisitorConst {
     double volume = 0;
 public:
-    virtual void use(const ExtrusionPath &path) override { 
+    virtual void use(const ExtrusionPath &path) override {
         for (int i = 0; i < path.polyline.size() - 1; i++) volume += unscaled(path.polyline.get_points()[i].distance_to(path.polyline.get_points()[i + 1])) * path.mm3_per_mm;
     };
     virtual void use(const ExtrusionPath3D &path3D) override { std::cout << "error, not supported"; };
@@ -50,7 +50,7 @@ SCENARIO("extrude_thinwalls") {
         Flow periflow = Flow::new_from_width(1.1f, 0.4f, 0.2f, 1.f, false);
         ExtrusionEntityCollection gap_fill;
         gap_fill.append(thin_variable_width(res, erGapFill, periflow, SCALED_EPSILON*2, true));
-        
+
         //Flow gapfill_max_flow = Flow::new_from_spacing(1.f, 0.4f, 0.2f, 1.f, false);
 
         //std::string gcode = gcodegen.get_visitor_gcode();
@@ -70,9 +70,9 @@ SCENARIO("thin walls: ")
         Points test_set;
         test_set.reserve(4);
         Points square {Point::new_scale(100, 100),
-			Point::new_scale(200, 100),
-			Point::new_scale(200, 200),
-			Point::new_scale(100, 200)};
+            Point::new_scale(200, 100),
+            Point::new_scale(200, 200),
+            Point::new_scale(100, 200)};
         Slic3r::Polygon hole_in_square{ Points{
             Point::new_scale(140, 140),
             Point::new_scale(140, 160),
@@ -141,13 +141,13 @@ SCENARIO("thin walls: ")
     GIVEN("semicicumference") {
         ExPolygon expolygon;
         expolygon.contour = Slic3r::Polygon{ Points{
-            Point{ 1185881, 829367 }, Point{ 1421988, 1578184 }, Point{ 1722442, 2303558 }, Point{ 2084981, 2999998 }, Point{ 2506843, 3662186 }, Point{ 2984809, 4285086 }, Point{ 3515250, 4863959 }, Point{ 4094122, 5394400 }, Point{ 4717018, 5872368 }, 
-            Point{ 5379210, 6294226 }, Point{ 6075653, 6656769 }, Point{ 6801033, 6957229 }, Point{ 7549842, 7193328 }, Point{ 8316383, 7363266 }, Point{ 9094809, 7465751 }, Point{ 9879211, 7500000 }, Point{ 10663611, 7465750 }, Point{ 11442038, 7363265 }, 
-            Point{ 12208580, 7193327 }, Point{ 12957389, 6957228 }, Point{ 13682769, 6656768 }, Point{ 14379209, 6294227 }, Point{ 15041405, 5872366 }, Point{ 15664297, 5394401 }, Point{ 16243171, 4863960 }, Point{ 16758641, 4301424 }, Point{ 17251579, 3662185 }, 
-            Point{ 17673439, 3000000 }, Point{ 18035980, 2303556 }, Point{ 18336441, 1578177 }, Point{ 18572539, 829368 }, Point{ 18750748, 0 }, Point{ 19758422, 0 }, Point{ 19727293, 236479 }, Point{ 19538467, 1088188 }, Point{ 19276136, 1920196 }, 
-            Point{ 18942292, 2726179 }, Point{ 18539460, 3499999 }, Point{ 18070731, 4235755 }, Point{ 17539650, 4927877 }, Point{ 16950279, 5571067 }, Point{ 16307090, 6160437 }, Point{ 15614974, 6691519 }, Point{ 14879209, 7160248 }, Point{ 14105392, 7563079 }, 
+            Point{ 1185881, 829367 }, Point{ 1421988, 1578184 }, Point{ 1722442, 2303558 }, Point{ 2084981, 2999998 }, Point{ 2506843, 3662186 }, Point{ 2984809, 4285086 }, Point{ 3515250, 4863959 }, Point{ 4094122, 5394400 }, Point{ 4717018, 5872368 },
+            Point{ 5379210, 6294226 }, Point{ 6075653, 6656769 }, Point{ 6801033, 6957229 }, Point{ 7549842, 7193328 }, Point{ 8316383, 7363266 }, Point{ 9094809, 7465751 }, Point{ 9879211, 7500000 }, Point{ 10663611, 7465750 }, Point{ 11442038, 7363265 },
+            Point{ 12208580, 7193327 }, Point{ 12957389, 6957228 }, Point{ 13682769, 6656768 }, Point{ 14379209, 6294227 }, Point{ 15041405, 5872366 }, Point{ 15664297, 5394401 }, Point{ 16243171, 4863960 }, Point{ 16758641, 4301424 }, Point{ 17251579, 3662185 },
+            Point{ 17673439, 3000000 }, Point{ 18035980, 2303556 }, Point{ 18336441, 1578177 }, Point{ 18572539, 829368 }, Point{ 18750748, 0 }, Point{ 19758422, 0 }, Point{ 19727293, 236479 }, Point{ 19538467, 1088188 }, Point{ 19276136, 1920196 },
+            Point{ 18942292, 2726179 }, Point{ 18539460, 3499999 }, Point{ 18070731, 4235755 }, Point{ 17539650, 4927877 }, Point{ 16950279, 5571067 }, Point{ 16307090, 6160437 }, Point{ 15614974, 6691519 }, Point{ 14879209, 7160248 }, Point{ 14105392, 7563079 },
             Point{ 13299407, 7896927 }, Point{ 12467399, 8159255 }, Point{ 11615691, 8348082 }, Point{ 10750769, 8461952 }, Point{ 9879211, 8500000 }, Point{ 9007652, 8461952 }, Point{ 8142729, 8348082 }, Point{ 7291022, 8159255 }, Point{ 6459015, 7896927 },
-            Point{ 5653029, 7563079 }, Point{ 4879210, 7160247 }, Point{ 4143447, 6691519 }, Point{ 3451331, 6160437 }, Point{ 2808141, 5571066 }, Point{ 2218773, 4927878 }, Point{ 1687689, 4235755 }, Point{ 1218962, 3499999 }, Point{ 827499, 2748020 }, 
+            Point{ 5653029, 7563079 }, Point{ 4879210, 7160247 }, Point{ 4143447, 6691519 }, Point{ 3451331, 6160437 }, Point{ 2808141, 5571066 }, Point{ 2218773, 4927878 }, Point{ 1687689, 4235755 }, Point{ 1218962, 3499999 }, Point{ 827499, 2748020 },
             Point{ 482284, 1920196 }, Point{ 219954, 1088186 }, Point{ 31126, 236479 }, Point{ 0, 0 }, Point{ 1005754, 0 }
         } };
 
@@ -180,7 +180,7 @@ SCENARIO("thin walls: ")
             }
         }
     }
-    
+
 
     GIVEN("round with large and very small distance between points"){
         ExPolygon expolygon;
@@ -256,9 +256,9 @@ SCENARIO("thin walls: ")
     //{
     //    ExPolygon expolygon;
     //    expolygon.contour = Slic3r::Polygon{ Points{
-    //        Point::new_scale(0.86526705, 1.4509841), Point::new_scale(0.57696039, 1.8637021), 
-    //        Point::new_scale(0.4502297, 2.5569978), Point::new_scale(0.45626199, 3.2965596), 
-    //        Point::new_scale(1.1218851, 3.3049455), Point::new_scale(0.96681072, 2.8243202), 
+    //        Point::new_scale(0.86526705, 1.4509841), Point::new_scale(0.57696039, 1.8637021),
+    //        Point::new_scale(0.4502297, 2.5569978), Point::new_scale(0.45626199, 3.2965596),
+    //        Point::new_scale(1.1218851, 3.3049455), Point::new_scale(0.96681072, 2.8243202),
     //        Point::new_scale(0.86328971, 2.2056997), Point::new_scale(0.85367905, 1.7790778)
     //    } };
     //    expolygon.contour.make_counter_clockwise();
@@ -275,7 +275,7 @@ SCENARIO("thin walls: ")
     //            }
     //        }
     //    }
-    //} 
+    //}
 
     GIVEN("Anchor & Tapers")
     {

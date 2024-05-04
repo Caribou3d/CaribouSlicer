@@ -25,15 +25,15 @@ patches, but please also read below for more specific information about
 contributing to the Slic3r project.
 
 * Development
-	* [Low Effort tasks](https://github.com/slic3r/Slic3r/labels/Low%20Effort): pick one of them!
-	* [Help Wanted tasks](https://github.com/slic3r/Slic3r/labels/help%20wanted): pick one of them!
-	* [More available tasks](https://github.com/slic3r/Slic3r/milestone/32): let's discuss together before you start working on them
-	* Please comment in the related GitHub issue that you are working on it so that other people know.
+    * [Low Effort tasks](https://github.com/slic3r/Slic3r/labels/Low%20Effort): pick one of them!
+    * [Help Wanted tasks](https://github.com/slic3r/Slic3r/labels/help%20wanted): pick one of them!
+    * [More available tasks](https://github.com/slic3r/Slic3r/milestone/32): let's discuss together before you start working on them
+    * Please comment in the related GitHub issue that you are working on it so that other people know.
 * Review the [TODO wiki page](https://github.com/slic3r/Slic3r/wiki/TODO).
 * Contribute to the [Manual](http://manual.slic3r.org/)! (see its [GitHub repository](https://github.com/slic3r/Slic3r-Manual))
 * Add an [issue](https://github.com/slic3r/Slic3r/issues) to the GitHub tracker if it isn't already present.
 * Update Slic3r's test suite to improve test coverage [Writing Test Cases](https://github.com/slic3r/Slic3r/wiki/Code:-Writing-Test-Cases)
-* A good place to start if you can is to look over the [Pull Request or Bust](https://github.com/alexrj/Slic3r/milestones/Pull%20Request%20or%20Bust) milestone. This contains all of the things (mostly new feature requests) that there isn't time or resources to address at this time. 
+* A good place to start if you can is to look over the [Pull Request or Bust](https://github.com/alexrj/Slic3r/milestones/Pull%20Request%20or%20Bust) milestone. This contains all of the things (mostly new feature requests) that there isn't time or resources to address at this time.
      * Things that are probably fixable via scripts (usually marked as such) have the lowest bar to getting something that works, as you don't need to recompile Slic3r to test.
 * If you're starting on an issue, please say something in the related issues thread so that someone else doesn't start working on it too.
 * If there's nothing in the [Pull Request or Bust](https://github.com/alexrj/Slic3r/milestones/Pull%20Request%20or%20Bust) milestone that interests you, the next place to look is for issues that don't have a milestone. Lots of people commit ideas to Slic3r, and it's difficult to keep up and sort through them.

@@ -29,7 +29,7 @@ sub buffer {
 
     my $print_config = Slic3r::Config::Print->new;
     $print_config->apply_dynamic($config);
-    
+
     $gcodegen = Slic3r::GCode->new;
     $gcodegen->apply_print_config($print_config);
     $gcodegen->set_layer_count(10);
@@ -78,7 +78,7 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
 }
 
 {
-    my $gcode_src  = 
+    my $gcode_src  =
         "G1 X50 F2500\n" .
         "G1 F3000;_EXTRUDE_SET_SPEED\n" .
         "G1 X100 E1\n" .
@@ -110,8 +110,8 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
 {
     # use an elapsed time which is < the threshold but greater than it when summed twice
     my $buffer = buffer($config, {
-            'fan_below_layer_time'      => [ $print_time2 * 0.65], 
-            'slowdown_below_layer_time' => [ $print_time2 * 0.7 ] 
+            'fan_below_layer_time'      => [ $print_time2 * 0.65],
+            'slowdown_below_layer_time' => [ $print_time2 * 0.7 ]
         });
     my $gcode = $buffer->process_layer($gcode2, 0) .
                 $buffer->process_layer($gcode2, 1);
@@ -121,8 +121,8 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
 {
     # use an elapsed time which is < the threshold even when summed twice
     my $buffer = buffer($config, {
-            'fan_below_layer_time'      => [ $print_time2 + 1 ], 
-            'slowdown_below_layer_time' => [ $print_time2 + 2 ] 
+            'fan_below_layer_time'      => [ $print_time2 + 1 ],
+            'slowdown_below_layer_time' => [ $print_time2 + 2 ]
         });
     my $gcode = $buffer->process_layer($gcode2, 0) .
                 $buffer->process_layer($gcode2, 1);
@@ -132,10 +132,10 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
 {
     my $buffer = buffer($config, {
             'cooling'                   => [ 1               , 0                ],
-            'fan_below_layer_time'      => [ $print_time2 + 1, $print_time2 + 1 ], 
+            'fan_below_layer_time'      => [ $print_time2 + 1, $print_time2 + 1 ],
             'slowdown_below_layer_time' => [ $print_time2 + 2, $print_time2 + 2 ]
         },
-	[ 0, 1]);
+    [ 0, 1]);
     my $gcode = $buffer->process_layer($gcode1 . "T1\nG1 X0 E1 F3000\n", 0);
     like $gcode, qr/^M106/, 'fan is activated for the 1st tool';
     like $gcode, qr/.*M107/, 'fan is disabled for the 2nd tool';
@@ -150,14 +150,14 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
     $config->set('bridge_speed', 99);
     $config->set('top_solid_layers', 1);     # internal bridges use solid_infil speed
     $config->set('bottom_solid_layers', 1);  # internal bridges use solid_infil speed
-    
+
     my $print = Slic3r::Test::init_print('overhang', config => $config);
     my $fan = 0;
     my $fan_with_incorrect_speeds = my $fan_with_incorrect_print_speeds = 0;
     my $bridge_with_no_fan = 0;
     Slic3r::GCode::Reader->new->parse(Slic3r::Test::gcode($print), sub {
         my ($self, $cmd, $args, $info) = @_;
-        
+
         if ($cmd eq 'M106') {
             $fan = $args->{S};
             $fan_with_incorrect_speeds++ if $fan != 255;
@@ -184,13 +184,13 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
     $config->set('start_gcode', '');
     $config->set('first_layer_speed', '100%');
     $config->set('external_perimeter_speed', 99);
-    
+
     my $print = Slic3r::Test::init_print('20mm_cube', config => $config);
     my @layer_times = (0);  # in seconds
     my %layer_external = ();  # z => 1
     Slic3r::GCode::Reader->new->parse(my $gcode = Slic3r::Test::gcode($print), sub {
         my ($self, $cmd, $args, $info) = @_;
-        
+
         if ($cmd eq 'G1') {
             if ($info->{dist_Z}) {
                 push @layer_times, 0;
@@ -205,7 +205,7 @@ $config->set('disable_fan_first_layers',    [ 0 ]);
     @layer_times = grep $_, @layer_times;
     my $all_below = none { $_ < $config->slowdown_below_layer_time->[0] } @layer_times;
     ok $all_below, 'slowdown_below_layer_time is honored';
-    
+
     # check that all layers have at least one unaltered external perimeter speed
 #    my $external = all { $_ > 0 } values %layer_external;
 #    ok $external, 'slowdown_below_layer_time does not alter external perimeters';

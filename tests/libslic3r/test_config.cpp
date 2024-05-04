@@ -6,8 +6,8 @@
 #include <test_data.hpp>
 
 #include <cereal/types/polymorphic.hpp>
-#include <cereal/types/string.hpp> 
-#include <cereal/types/vector.hpp> 
+#include <cereal/types/string.hpp>
+#include <cereal/types/vector.hpp>
 #include <cereal/archives/binary.hpp>
 
 using namespace Slic3r;
@@ -73,8 +73,8 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
             }
         }
 #if 0
-		//FIXME better design accessors for vector elements.
-		WHEN("An integer-based option is set through the integer interface") {
+        //FIXME better design accessors for vector elements.
+        WHEN("An integer-based option is set through the integer interface") {
             config.set("bed_temperature", 100);
             THEN("The underlying value is set correctly.") {
                 REQUIRE(config.opt<ConfigOptionInts>("bed_temperature")->get_at(0) == 100);
@@ -201,12 +201,12 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
 
 SCENARIO("Config ini load/save interface", "[Config]") {
     WHEN("new_from_ini is called") {
-		Slic3r::DynamicPrintConfig config;
-		std::string path = std::string(TEST_DATA_DIR) + "/test_config/new_from_ini.ini";
-		config.load_from_ini(path, ForwardCompatibilitySubstitutionRule::Disable);
+        Slic3r::DynamicPrintConfig config;
+        std::string path = std::string(TEST_DATA_DIR) + "/test_config/new_from_ini.ini";
+        config.load_from_ini(path, ForwardCompatibilitySubstitutionRule::Disable);
         THEN("Config object contains ini file options.") {
-			REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.size() == 1);
-			REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.front() == "#ABCD");
+            REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.size() == 1);
+            REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.front() == "#ABCD");
         }
     }
 }
