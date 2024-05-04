@@ -60,7 +60,7 @@
    style="fill:none;fill-opacity:1;stroke:#0043c8;stroke-width:1.10094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><g
    id="extruder_x2B_funnel"
    transform="matrix(0.80060859,0,0,0.80060859,1.4861858,1.2980841)">
-	<rect
+    <rect
    id="rect22"
    height="6"
    width="14"
@@ -69,19 +69,19 @@
    y="1"
    x="1" />
 
-	<polygon
+    <polygon
    id="polygon26"
    points="11,7 5,7 5,8 8,10 11,8 "
    fill="#808080"
    display="none" />
-	<g
+    <g
    id="g30">
-		<path
+        <path
    id="path28"
    d="M 14,2 V 6 C 13.135218,6.6244211 10.714859,8.3536126 8.0412851,8.3548646 5.2726825,8.356161 2.7133111,6.389468 2,6 V 2 H 14 M 14,1 H 2 C 1.45,1 1,1.45 1,2 V 6 C 2.0571492,7.6283205 6.0091875,9.175597 7.9977579,9.239386 10.321702,9.0449928 13.89612,7.8376478 15,6 V 2 C 15,1.45 14.55,1 14,1 Z"
    fill="#808080"
    sodipodi:nodetypes="ccscccssscccss" />
-	</g>
+    </g>
 </g><g
    transform="matrix(-1.1321815,0,0,-0.80060859,17.123705,3.7011227)"
    id="extruder_x2B_funnel-3"><rect

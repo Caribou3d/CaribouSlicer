@@ -77,11 +77,11 @@
     #undef wait
     #undef abort
 
-	// Breaks compilation with Eigen matrices embedded into Slic3r::Point.
-	#undef malloc
-	#undef realloc
-	#undef free
-	#undef select
+    // Breaks compilation with Eigen matrices embedded into Slic3r::Point.
+    #undef malloc
+    #undef realloc
+    #undef free
+    #undef select
 
     // Because of TBB
     #define _WIN32_WINNT 0x0502
@@ -102,9 +102,9 @@
 #include <TriangleMesh.hpp>
 
 namespace Slic3r {
-    
+
 template<class T>
-struct ClassTraits { 
+struct ClassTraits {
     // Name of a Perl alias of a C++ class type, owned by Perl, reference counted.
     static const char* name;
     // Name of a Perl alias of a C++ class type, owned by the C++ code.
@@ -117,7 +117,7 @@ struct ClassTraits {
 // in REGISTER_CLASS won't work
 #define __REGISTER_CLASS(cname, perlname)                                            \
     template <>const char* ClassTraits<cname>::name = "Slic3r::" perlname;           \
-    template <>const char* ClassTraits<cname>::name_ref = "Slic3r::" perlname "::Ref"; 
+    template <>const char* ClassTraits<cname>::name_ref = "Slic3r::" perlname "::Ref";
 
 #define REGISTER_CLASS(cname,perlname)                                               \
     class cname;                                                                     \
@@ -151,7 +151,7 @@ SV* perl_to_SV_clone_ref(const T &t) {
 
 // Reference wrapper to provide a C++ instance to Perl while keeping Perl from destroying the instance.
 // The instance is created temporarily by XS.cpp just to provide Perl with a CLASS name and a object instance pointer.
-template <class T> 
+template <class T>
 class Ref {
     T* val;
 public:

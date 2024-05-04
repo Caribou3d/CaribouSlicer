@@ -18,10 +18,10 @@
 #endif
 
 #ifdef _WIN32
-	#undef XS_EXTERNAL
-	#define XS_EXTERNAL(name) __declspec(dllexport) XSPROTO(name)
+    #undef XS_EXTERNAL
+    #define XS_EXTERNAL(name) __declspec(dllexport) XSPROTO(name)
 #endif /* MSVC */
 
-MODULE = Slic3r::XS	PACKAGE = Slic3r::XS
+MODULE = Slic3r::XS    PACKAGE = Slic3r::XS
 
 @INCLUDE_COMMANDS@

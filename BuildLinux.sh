@@ -91,10 +91,10 @@ while getopts ":hugbdrsltiw" opt; do
         ;;
     r )
         BUILD_CLEANDEPEND="1"
-	;;
+    ;;
     w )
-	BUILD_WIPE="1"
-	;;
+    BUILD_WIPE="1"
+    ;;
     h ) echo "Usage: ./BuildLinux.sh [-h][-u][-w][-g][-b][-r][-d][-s][-l][-t][-i]"
         echo "   -h: this message"
         echo "   -u: only update dependency packets (optional and need sudo)"
@@ -179,9 +179,9 @@ if [[ -z "$FOUND_GTK2_DEV" ]]
 then
     if [[ -z "$FOUND_GTK3_DEV" ]]
     then
-	echo -e "\nError, you must install the dependencies before."
-	echo -e "Use option -u with sudo\n"
-	exit 0
+    echo -e "\nError, you must install the dependencies before."
+    echo -e "Use option -u with sudo\n"
+    exit 0
     fi
 fi
 
@@ -196,7 +196,7 @@ then
     # mkdir build in deps
     if [ ! -d "deps/build" ]
     then
-	mkdir deps/build
+    mkdir deps/build
     fi
     echo -e "[1/9] Configuring dependencies ...\n"
     BUILD_ARGS=""
@@ -209,10 +209,10 @@ then
     if [[ -n "$BUILD_DEBUG" ]]
     then
         # have to build deps with debug & release or the cmake won't find evrything it needs
-	if [ ! -d "deps/build/release" ]
-	then
-	    mkdir deps/build/release
-	fi
+    if [ ! -d "deps/build/release" ]
+    then
+        mkdir deps/build/release
+    fi
         pushd deps/build/release > /dev/null
         cmake ../.. -DDESTDIR="../destdir" $BUILD_ARGS
         popd > /dev/null
@@ -263,7 +263,7 @@ then
     # mkdir build
     if [ ! -d "build" ]
     then
-	mkdir build
+    mkdir build
     fi
 
     BUILD_ARGS=""

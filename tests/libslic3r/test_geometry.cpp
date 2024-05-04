@@ -187,7 +187,7 @@ SCENARIO("polygon_is_convex works") {
             THEN("it is convex") {
                 REQUIRE(polygon_is_convex(ccw_square));
             }
-        } 
+        }
     }
     GIVEN("A concave polygon") {
         Polygon concave = { {0,0}, {10,0}, {10,10}, {0,10}, {0,6}, {4,6}, {4,4}, {0,4} };
@@ -225,7 +225,7 @@ TEST_CASE("Bounding boxes are scaled appropriately", "[Geometry]"){
 
 
 TEST_CASE("Offseting a line generates a polygon correctly", "[Geometry]"){
-	Slic3r::Polyline tmp = { Point(10,10), Point(20,10) };
+    Slic3r::Polyline tmp = { Point(10,10), Point(20,10) };
     Slic3r::Polygon area = offset(tmp,5).at(0);
     REQUIRE(area.area() == Slic3r::Polygon(std::vector<Point>({Point(10,5),Point(20,5),Point(20,15),Point(10,15)})).area());
 }
@@ -261,7 +261,7 @@ SCENARIO("Circle Fit, TaubinFit with Newton's method", "[Geometry]") {
     GIVEN("A vector of Vec2ds arranged in a half-circle with approximately the same distance R from some point") {
         Vec2d expected_center(-3, 9);
         Pointfs sample {Vec2d(6.0, 0), Vec2d(5.1961524, 3), Vec2d(3 ,5.1961524),
-                        Vec2d(0, 6.0), 
+                        Vec2d(0, 6.0),
                         Vec2d(3, 5.1961524), Vec2d(-5.1961524, 3), Vec2d(-6.0, 0)};
 
         std::transform(sample.begin(), sample.end(), sample.begin(), [expected_center] (const Vec2d& a) { return a + expected_center;});
@@ -291,8 +291,8 @@ SCENARIO("Circle Fit, TaubinFit with Newton's method", "[Geometry]") {
     }
     GIVEN("A vector of Points arranged in a half-circle with approximately the same distance R from some point") {
         Point expected_center { Point::new_scale(-3, 9)};
-        Points sample {Point::new_scale(6.0, 0), Point::new_scale(5.1961524, 3), Point::new_scale(3 ,5.1961524), 
-                        Point::new_scale(0, 6.0), 
+        Points sample {Point::new_scale(6.0, 0), Point::new_scale(5.1961524, 3), Point::new_scale(3 ,5.1961524),
+                        Point::new_scale(0, 6.0),
                         Point::new_scale(3, 5.1961524), Point::new_scale(-5.1961524, 3), Point::new_scale(-6.0, 0)};
 
         std::transform(sample.begin(), sample.end(), sample.begin(), [expected_center] (const Point& a) { return a + expected_center;});
@@ -324,8 +324,8 @@ SCENARIO("Circle Fit, TaubinFit with Newton's method", "[Geometry]") {
 
 TEST_CASE("smallest_enclosing_circle_welzl", "[Geometry]") {
     // Some random points in plane.
-    Points pts { 
-        { 89243, 4359 }, { 763465, 59687 }, { 3245, 734987 }, { 2459867, 987634 }, { 759866, 67843982 }, { 9754687, 9834658 }, { 87235089, 743984373 }, 
+    Points pts {
+        { 89243, 4359 }, { 763465, 59687 }, { 3245, 734987 }, { 2459867, 987634 }, { 759866, 67843982 }, { 9754687, 9834658 }, { 87235089, 743984373 },
         { 65874456, 2987546 }, { 98234524, 657654873 }, { 786243598, 287934765 }, { 824356, 734265 }, { 82576449, 7864534 }, { 7826345, 3984765 }
     };
 
@@ -341,43 +341,43 @@ TEST_CASE("smallest_enclosing_circle_welzl", "[Geometry]") {
 }
 
 SCENARIO("Path chaining", "[Geometry][!mayfail]") {
-	GIVEN("A path") {
-		std::vector<Point> points = { Point(26,26),Point(52,26),Point(0,26),Point(26,52),Point(26,0),Point(0,52),Point(52,52),Point(52,0) };
-		THEN("Chained with no diagonals (thus 26 units long)") { //this will fail as i deactivated the pusa traveller salesman code.
-			std::vector<Points::size_type> indices = chain_points(points);
-			for (Points::size_type i = 0; i + 1 < indices.size(); ++ i) {
-				double dist = (points.at(indices.at(i)).cast<double>() - points.at(indices.at(i+1)).cast<double>()).norm();
+    GIVEN("A path") {
+        std::vector<Point> points = { Point(26,26),Point(52,26),Point(0,26),Point(26,52),Point(26,0),Point(0,52),Point(52,52),Point(52,0) };
+        THEN("Chained with no diagonals (thus 26 units long)") { //this will fail as i deactivated the pusa traveller salesman code.
+            std::vector<Points::size_type> indices = chain_points(points);
+            for (Points::size_type i = 0; i + 1 < indices.size(); ++ i) {
+                double dist = (points.at(indices.at(i)).cast<double>() - points.at(indices.at(i+1)).cast<double>()).norm();
                 std::stringstream log;
-				REQUIRE(std::abs(dist-26) <= EPSILON);
-			}
-		}
-	}
-	GIVEN("Gyroid infill end points") {
-		const Polylines polylines = {
-			{ {28122608, 3221037}, {27919139, 56036027} },
-			{ {33642863, 3400772}, {30875220, 56450360} },
-			{ {34579315, 3599827}, {35049758, 55971572} },
-			{ {26483070, 3374004}, {23971830, 55763598} },
-			{ {38931405, 4678879}, {38740053, 55077714} },
-			{ {20311895, 5015778}, {20079051, 54551952} },
-			{ {16463068, 6773342}, {18823514, 53992958} },
-			{ {44433771, 7424951}, {42629462, 53346059} },
-			{ {15697614, 7329492}, {15350896, 52089991} },
-			{ {48085792, 10147132}, {46435427, 50792118} },
-			{ {48828819, 10972330}, {49126582, 48368374} },
-			{ {9654526, 12656711}, {10264020, 47691584} },
-			{ {5726905, 18648632}, {8070762, 45082416} },
-			{ {54818187, 39579970}, {52974912, 43271272} }, 
-			{ {4464342, 37371742}, {5027890, 39106220} },
-			{ {54139746, 18417661}, {55177987, 38472580} }, 
-			{ {56527590, 32058461}, {56316456, 34067185} },
-			{ {3303988, 29215290}, {3569863, 32985633} },
-			{ {56255666, 25025857}, {56478310, 27144087} }, 
-			{ {4300034, 22805361}, {3667946, 25752601} },
-			{ {8266122, 14250611}, {6244813, 17751595} },
-			{ {12177955, 9886741}, {10703348, 11491900} } 
-		};
-		const Polylines chained = chain_polylines(polylines);
+                REQUIRE(std::abs(dist-26) <= EPSILON);
+            }
+        }
+    }
+    GIVEN("Gyroid infill end points") {
+        const Polylines polylines = {
+            { {28122608, 3221037}, {27919139, 56036027} },
+            { {33642863, 3400772}, {30875220, 56450360} },
+            { {34579315, 3599827}, {35049758, 55971572} },
+            { {26483070, 3374004}, {23971830, 55763598} },
+            { {38931405, 4678879}, {38740053, 55077714} },
+            { {20311895, 5015778}, {20079051, 54551952} },
+            { {16463068, 6773342}, {18823514, 53992958} },
+            { {44433771, 7424951}, {42629462, 53346059} },
+            { {15697614, 7329492}, {15350896, 52089991} },
+            { {48085792, 10147132}, {46435427, 50792118} },
+            { {48828819, 10972330}, {49126582, 48368374} },
+            { {9654526, 12656711}, {10264020, 47691584} },
+            { {5726905, 18648632}, {8070762, 45082416} },
+            { {54818187, 39579970}, {52974912, 43271272} },
+            { {4464342, 37371742}, {5027890, 39106220} },
+            { {54139746, 18417661}, {55177987, 38472580} },
+            { {56527590, 32058461}, {56316456, 34067185} },
+            { {3303988, 29215290}, {3569863, 32985633} },
+            { {56255666, 25025857}, {56478310, 27144087} },
+            { {4300034, 22805361}, {3667946, 25752601} },
+            { {8266122, 14250611}, {6244813, 17751595} },
+            { {12177955, 9886741}, {10703348, 11491900} }
+        };
+        const Polylines chained = chain_polylines(polylines);
         THEN("Chained taking the shortest path") {
             double connection_length = 0.;
             std::cout << "{ {" << chained[0].points.front().x() << ", " << chained[0].points.front().y() << "}, {" << chained[0].points.back().x() << ", " << chained[0].points.back().x() << "} },\n";
@@ -452,29 +452,29 @@ SCENARIO("Path chaining", "[Geometry][!mayfail]") {
             REQUIRE(connection_length > 85206000.);
             REQUIRE(polylines[18].points.front() != coll.entities[18]->first_point());
         }
-	}
-	GIVEN("Loop pieces") {
-		Point a { 2185796, 19058485 };
-		Point b { 3957902, 18149382 };
-		Point c { 2912841, 18790564 };
-		Point d { 2831848, 18832390 };
-		Point e { 3179601, 18627769 };
-		Point f { 3137952, 18653370 };
-		Polylines polylines = { { a, b },
-								{ c, d },
-								{ e, f },
-								{ d, a },
-								{ f, c },
-								{ b, e } };
-		Polylines chained = chain_polylines(polylines, &a);
-		THEN("Connected without a gap") {
-			for (size_t i = 0; i < chained.size(); ++i) {
-				const Polyline &pl1 = (i == 0) ? chained.back() : chained[i - 1];
-				const Polyline &pl2 = chained[i];
-				REQUIRE(pl1.points.back() == pl2.points.front());
-			}
-		}
-	}
+    }
+    GIVEN("Loop pieces") {
+        Point a { 2185796, 19058485 };
+        Point b { 3957902, 18149382 };
+        Point c { 2912841, 18790564 };
+        Point d { 2831848, 18832390 };
+        Point e { 3179601, 18627769 };
+        Point f { 3137952, 18653370 };
+        Polylines polylines = { { a, b },
+                                { c, d },
+                                { e, f },
+                                { d, a },
+                                { f, c },
+                                { b, e } };
+        Polylines chained = chain_polylines(polylines, &a);
+        THEN("Connected without a gap") {
+            for (size_t i = 0; i < chained.size(); ++i) {
+                const Polyline &pl1 = (i == 0) ? chained.back() : chained[i - 1];
+                const Polyline &pl2 = chained[i];
+                REQUIRE(pl1.points.back() == pl2.points.front());
+            }
+        }
+    }
 }
 
 SCENARIO("Line distances", "[Geometry]"){
@@ -484,7 +484,7 @@ SCENARIO("Line distances", "[Geometry]"){
             REQUIRE(line.distance_to(Point(0, 0))  == 0);
             REQUIRE(line.distance_to(Point(20, 0)) == 0);
             REQUIRE(line.distance_to(Point(10, 0)) == 0);
-        
+
         }
         THEN("Points off the line have the appropriate distance"){
             REQUIRE(line.distance_to(Point(10, 10)) == 10);
@@ -588,22 +588,22 @@ TEST_CASE("Triangle Simplification does not result in less than 3 points", "[Geo
 
 SCENARIO("Ported from xs/t/14_geometry.t", "[Geometry]"){
     GIVEN(("square")){
-    	Slic3r::Points points { { 100, 100 }, {100, 200 }, { 200, 200 }, { 200, 100 }, { 150, 150 } };
-		Slic3r::Polygon hull = Slic3r::Geometry::convex_hull(points);
-		SECTION("convex hull returns the correct number of points") { REQUIRE(hull.points.size() == 4); }
+        Slic3r::Points points { { 100, 100 }, {100, 200 }, { 200, 200 }, { 200, 100 }, { 150, 150 } };
+        Slic3r::Polygon hull = Slic3r::Geometry::convex_hull(points);
+        SECTION("convex hull returns the correct number of points") { REQUIRE(hull.points.size() == 4); }
     }
-	SECTION("arrange returns expected number of positions") {
-		Pointfs positions;
-		Slic3r::Geometry::arrange(4, Vec2d(20, 20), 5, nullptr, positions);
-    	REQUIRE(positions.size() == 4);
+    SECTION("arrange returns expected number of positions") {
+        Pointfs positions;
+        Slic3r::Geometry::arrange(4, Vec2d(20, 20), 5, nullptr, positions);
+        REQUIRE(positions.size() == 4);
     }
-	SECTION("directions_parallel") {
-    	REQUIRE(Slic3r::Geometry::directions_parallel(0, 0, 0)); 
-    	REQUIRE(Slic3r::Geometry::directions_parallel(0, M_PI, 0)); 
-    	REQUIRE(Slic3r::Geometry::directions_parallel(0, 0, M_PI / 180));
-    	REQUIRE(Slic3r::Geometry::directions_parallel(0, M_PI, M_PI / 180));
-    	REQUIRE(! Slic3r::Geometry::directions_parallel(M_PI /2, M_PI, 0));
-    	REQUIRE(! Slic3r::Geometry::directions_parallel(M_PI /2, PI, M_PI /180));
+    SECTION("directions_parallel") {
+        REQUIRE(Slic3r::Geometry::directions_parallel(0, 0, 0));
+        REQUIRE(Slic3r::Geometry::directions_parallel(0, M_PI, 0));
+        REQUIRE(Slic3r::Geometry::directions_parallel(0, 0, M_PI / 180));
+        REQUIRE(Slic3r::Geometry::directions_parallel(0, M_PI, M_PI / 180));
+        REQUIRE(! Slic3r::Geometry::directions_parallel(M_PI /2, M_PI, 0));
+        REQUIRE(! Slic3r::Geometry::directions_parallel(M_PI /2, PI, M_PI /180));
     }
 }
 

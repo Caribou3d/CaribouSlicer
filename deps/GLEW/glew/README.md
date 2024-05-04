@@ -19,7 +19,7 @@ https://github.com/nigels-com/glew
 Current release is [2.0.0](https://sourceforge.net/projects/glew/files/glew/2.0.0/).
 [(Change Log)](http://glew.sourceforge.net/log.html)
 
-Sources available as 
+Sources available as
 [ZIP](https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.zip/download) or
 [TGZ](https://sourceforge.net/projects/glew/files/glew/2.0.0/glew-2.0.0.tgz/download).
 
@@ -51,9 +51,9 @@ RedHat/CentOS/Fedora:  `$ sudo yum install libXmu-devel libXi-devel libGL-devel 
 
 ##### Build
 
-	$ make
-	$ sudo make install
-	$ make clean
+    $ make
+    $ sudo make install
+    $ make clean
 
 Targets:    `all, glew.lib, glew.bin, clean, install, uninstall`
 
@@ -71,9 +71,9 @@ RedHat/CentOS/Fedora: `$ sudo yum install libXmu-devel libXi-devel libGL-devel g
 
 ##### Build
 
-	$ cd build
-	$ cmake ./cmake 
-	$ make -j4
+    $ cd build
+    $ cmake ./cmake
+    $ make -j4
 
 | Target     | Description |
 | ---------- | ----------- |
@@ -106,9 +106,9 @@ Available from [Mingw](http://www.mingw.org/)
 
 Requirements: bash, make, gcc
 
-	$ mingw32-make
-	$ mingw32-make install
-	$ mingw32-make install.all
+    $ mingw32-make
+    $ mingw32-make install
+    $ mingw32-make install.all
 
 Alternative toolchain:  `SYSTEM=mingw-win32`
 
@@ -118,10 +118,10 @@ Available from [Msys2](http://msys2.github.io/) and/or [Mingw-w64](http://mingw-
 
 Requirements: bash, make, gcc
 
-	$ pacman -S gcc make  mingw-w64-i686-gcc mingw-w64-x86_64-gcc 
-	$ make
-	$ make install
-	$ make install.all
+    $ pacman -S gcc make  mingw-w64-i686-gcc mingw-w64-x86_64-gcc
+    $ make
+    $ make install
+    $ make install.all
 
 Alternative toolchain:  `SYSTEM=msys, SYSTEM=msys-win32, SYSTEM=msys-win64`
 
@@ -129,28 +129,28 @@ Alternative toolchain:  `SYSTEM=msys, SYSTEM=msys-win32, SYSTEM=msys-win64`
 
 `glewinfo` is a command-line tool useful for inspecting the capabilities of an
 OpenGL implementation and GLEW support for that.  Please include the output of
-`glewinfo` with bug reports, as appropriate.	
+`glewinfo` with bug reports, as appropriate.
 
-	---------------------------
-	    GLEW Extension Info
-	---------------------------
+    ---------------------------
+        GLEW Extension Info
+    ---------------------------
 
-	GLEW version 2.0.0
-	Reporting capabilities of pixelformat 3
-	Running on a Intel(R) HD Graphics 3000 from Intel
-	OpenGL version 3.1.0 - Build 9.17.10.4229 is supported
+    GLEW version 2.0.0
+    Reporting capabilities of pixelformat 3
+    Running on a Intel(R) HD Graphics 3000 from Intel
+    OpenGL version 3.1.0 - Build 9.17.10.4229 is supported
 
-	GL_VERSION_1_1:                                                OK
-	---------------
+    GL_VERSION_1_1:                                                OK
+    ---------------
 
-	GL_VERSION_1_2:                                                OK
-	---------------
-	  glCopyTexSubImage3D:                                         OK
-	  glDrawRangeElements:                                         OK
-	  glTexImage3D:                                                OK
-	  glTexSubImage3D:                                             OK
-	
-	...
+    GL_VERSION_1_2:                                                OK
+    ---------------
+      glCopyTexSubImage3D:                                         OK
+      glDrawRangeElements:                                         OK
+      glTexImage3D:                                                OK
+      glTexSubImage3D:                                             OK
+
+    ...
 
 ## Code Generation
 
@@ -158,7 +158,7 @@ A Unix or Mac environment is neded for building GLEW from scratch to
 include new extensions, or customize the code generation. The extension
 data is regenerated from the top level source directory with:
 
-	make extensions
+    make extensions
 
 An alternative to generating the GLEW sources from scratch is to
 download a pre-generated (unsupported) snapshot:
@@ -177,20 +177,20 @@ with bug fixes, new OpenGL extension support and new releases.
 GLEW was developed by [Milan Ikits](http://www.cs.utah.edu/~ikits/)
 and [Marcelo Magallon](http://wwwvis.informatik.uni-stuttgart.de/~magallon/).
 Aaron Lefohn, Joe Kniss, and Chris Wyman were the first users and also
-assisted with the design and debugging process.  
+assisted with the design and debugging process.
 
 The acronym GLEW originates from Aaron Lefohn.
 Pasi K&auml;rkk&auml;inen identified and fixed several problems with
 GLX and SDL.  Nate Robins created the `wglinfo` utility, to
-which modifications were made by Michael Wimmer.  
+which modifications were made by Michael Wimmer.
 
 ## Copyright and Licensing
 
 GLEW is originally derived from the EXTGL project by Lev Povalahev.
-The source code is licensed under the 
-[Modified BSD License](http://glew.sourceforge.net/glew.txt), the 
+The source code is licensed under the
+[Modified BSD License](http://glew.sourceforge.net/glew.txt), the
 [Mesa 3-D License](http://glew.sourceforge.net/mesa.txt) (MIT) and the
 [Khronos License](http://glew.sourceforge.net/khronos.txt) (MIT).
 
-The automatic code generation scripts are released under the 
+The automatic code generation scripts are released under the
 [GNU GPL](http://glew.sourceforge.net/gpl.txt).

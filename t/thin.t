@@ -23,14 +23,14 @@ if (0) {
     $config->set('first_layer_extrusion_width', '200%'); # check this one too
     $config->set('skirts', 0);
     $config->set('thin_walls', 1);
-    
+
     my $print = Slic3r::Test::init_print('gt2_teeth', config => $config);
-    
+
     my %extrusion_paths = ();  # Z => count of continuous extrusions
     my $extruding = 0;
     Slic3r::GCode::Reader->new->parse(Slic3r::Test::gcode($print), sub {
         my ($self, $cmd, $args, $info) = @_;
-        
+
         if ($cmd eq 'G1') {
             if ($info->{extruding} && $info->{dist_XY}) {
                 if (!$extruding) {
@@ -43,7 +43,7 @@ if (0) {
             }
         }
     });
-    
+
     ok !(first { $_ != 3 } values %extrusion_paths),
         'no superfluous thin walls are generated for toothed profile';
 }
@@ -80,7 +80,7 @@ if (0) {
     my $res = $expolygon->medial_axis(scale 20, scale 0.5);
     is scalar(@$res), 1, 'medial axis of a narrow rectangle is a single line';
     ok unscale($res->[0]->length) >= (200-100 - (120-100)) - epsilon, 'medial axis has reasonable length';
-    
+
     $expolygon = Slic3r::ExPolygon->new(Slic3r::Polygon->new_scale(
         [100, 100],
         [120, 100],
@@ -100,11 +100,11 @@ if (0) {
     );
     my $res = $expolygon->medial_axis(scale 1.324888, scale 0.25);
     is scalar(@$res), 1, 'medial axis of a semicircumference is a single line';
-    
+
     # check whether turns are all CCW or all CW
     my @alllines = @{$res->[0]->lines};
-	# remove lines taht are near the end.
-	my @lines = grep($_->a->y >= 1578184 || $_->b->y >= 1578184, @alllines);
+    # remove lines taht are near the end.
+    my @lines = grep($_->a->y >= 1578184 || $_->b->y >= 1578184, @alllines);
     my @angles = map { $lines[$_-1]->ccw($lines[$_]->b) } 1..$#lines;
     ok !!(none { $_ < 0 } @angles) || (none { $_ > 0 } @angles),
         'all medial axis segments of a semicircumference have the same orientation';
@@ -115,14 +115,14 @@ if (0) {
         [4.3, 4], [4.3, 0], [4,0], [4,4], [0,4], [0,4.5], [4,4.5], [4,10], [4.3,10], [4.3, 4.5],
         [6, 4.5], [6,10], [6.2,10], [6.2,4.5], [10,4.5], [10,4], [6.2,4], [6.2,0], [6, 0], [6, 4],
     ));
-	$expolygon->contour->make_counter_clockwise();
+    $expolygon->contour->make_counter_clockwise();
     my $res = $expolygon->medial_axis(scale 0.55, scale 0.25);
     is scalar(@$res), 2, 'medial axis of a (bit too narrow) french cross is two lines';
     ok unscale($res->[0]->length) >= (9.9) - epsilon, 'medial axis has reasonable length';
     ok unscale($res->[1]->length) >= (9.9) - epsilon, 'medial axis has reasonable length';
-	my @lines1 = @{$res->[0]->lines};
+    my @lines1 = @{$res->[0]->lines};
     my @angles1 = map { $lines1[$_-1]->ccw($lines1[$_]->b) } 1..$#lines1;
-	my @lines2 = @{$res->[1]->lines};
+    my @lines2 = @{$res->[1]->lines};
     my @angles2 = map { $lines2[$_-1]->ccw($lines2[$_]->b) } 1..$#lines2;
     my @angles = (@angles1, @angles2);
     ok !!(none { $_ != 0 } @angles),
@@ -133,12 +133,12 @@ if (0) {
     my $expolygon = Slic3r::ExPolygon->new(Slic3r::Polygon->new_scale(
         [0.86526705,1.4509841], [0.57696039,1.8637021], [0.4502297,2.5569978], [0.45626199,3.2965596], [1.1218851,3.3049455], [0.96681072,2.8243202], [0.86328971,2.2056997], [0.85367905,1.7790778],
     ));
-	$expolygon->contour->make_counter_clockwise();
+    $expolygon->contour->make_counter_clockwise();
     my $res = $expolygon->medial_axis(scale 1, scale 0.25);
     is scalar(@$res), 1, 'medial axis of a (bit too narrow) french cross is two lines';
     ok unscale($res->[0]->length) >= (1.4) - epsilon, 'medial axis has reasonable length';
-	# TODO: check if min width is < 0.3 and max width is > 0.6 (min($res->[0]->width.front, $res->[0]->width.back) # problem: can't have access to width
-	
+    # TODO: check if min width is < 0.3 and max width is > 0.6 (min($res->[0]->width.front, $res->[0]->width.back) # problem: can't have access to width
+
 }
 
 {
@@ -175,7 +175,7 @@ if (0) {
         [-220815482,-37738966],[-221117540,-37738966],[-221117540,-51762024],[-203064906,-51762024],
     ));
     my $polylines = $expolygon->medial_axis(819998, 102499.75);
-    
+
     my $perimeter = $expolygon->contour->split_at_first_point->length;
     ok sum(map $_->length, @$polylines) > $perimeter/2/4*3, 'medial axis has a reasonable length';
 }
@@ -199,18 +199,18 @@ if (0) {
     my $polylines = $expolygon->medial_axis(1871238, 500000);
     is scalar(@$polylines), 1, 'medial axis is a single polyline';
     my $polyline = $polylines->[0];
-    
+
     my $expected_y = $expolygon->bounding_box->center->y; #;;
     ok abs(sum(map $_->y, @$polyline) / @$polyline - $expected_y) < scaled_epsilon, #,,
         'medial axis is horizontal and is centered';
-    
+
     # order polyline from left to right
     $polyline->reverse if $polyline->first_point->x > $polyline->last_point->x;
-    
+
     my $polyline_bb = $polyline->bounding_box;
     is $polyline->first_point->x, $polyline_bb->x_min, 'expected x_min';
     is $polyline->last_point->x,  $polyline_bb->x_max, 'expected x_max';
-    
+
     is_deeply [ map $_->x, @$polyline ], [ sort map $_->x, @$polyline ],
         'medial axis is not self-overlapping';
 }

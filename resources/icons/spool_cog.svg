@@ -56,7 +56,7 @@
    id="spool"
    transform="matrix(0.7671546,0,0,0.7671546,3.4927042,3.4959972)">
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="2"
    y1="2"
@@ -65,7 +65,7 @@
    id="line2"
    style="fill:none;stroke:#808080;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="14"
    y1="2"
@@ -74,7 +74,7 @@
    id="line4"
    style="fill:none;stroke:#808080;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="4"
    y1="3"
@@ -83,7 +83,7 @@
    id="line6"
    style="fill:none;stroke:#107C18;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="6"
    y1="3"
@@ -92,7 +92,7 @@
    id="line8"
    style="fill:none;stroke:#107C18;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="8"
    y1="3"
@@ -101,7 +101,7 @@
    id="line10"
    style="fill:none;stroke:#107C18;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="10"
    y1="3"
@@ -110,7 +110,7 @@
    id="line12"
    style="fill:none;stroke:#107C18;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10" />
 
-		<line
+        <line
    stroke-miterlimit="10"
    x1="12"
    y1="3"
