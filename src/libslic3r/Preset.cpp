@@ -688,7 +688,7 @@ static std::vector<std::string> s_Preset_print_options {
         "compatible_printers", "compatible_printers_condition", "inherits", 
         "infill_dense", "infill_dense_algo",
         "no_perimeter_unsupported_algo",
-        "exact_last_layer_height",
+        // "exact_last_layer_height",
         "perimeter_loop",
         "perimeter_loop_seam",
         "infill_connection", "infill_connection_solid", "infill_connection_top", "infill_connection_bottom", "infill_connection_bridge",
@@ -1742,6 +1742,8 @@ std::string Preset::type_name(Type t) {
     case Preset::TYPE_SLA_PRINT:    return "sla_print";
     case Preset::TYPE_SLA_MATERIAL: return "sla_material";
     case Preset::TYPE_PRINTER:      return "printer";
+    case Preset::TYPE_FREQUENT_FFF: return "freq_fff";
+    case Preset::TYPE_FREQUENT_SLA: return "freq_sla";
     default:                        return "invalid";
     }
 }
@@ -1757,6 +1759,10 @@ Preset::Type Preset::type_from_name(std::string name) {
         return Preset::TYPE_SLA_MATERIAL;
     if ("printer" == name)
         return Preset::TYPE_PRINTER;
+    if ("freq_fff" == name)
+        return Preset::TYPE_FREQUENT_FFF;
+    if ("freq_sla" == name)
+        return Preset::TYPE_FREQUENT_SLA;
     return Preset::TYPE_INVALID;
 }
 
