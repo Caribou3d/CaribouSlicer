@@ -243,7 +243,7 @@ msgstr ""
 "Bitte fahren Sie fort mit '%s'. Dies folgt nun, um die neuen Einstellungen einzurichten sowie auszuwählen, ob Einstellungen automatisch aktualisiert werden dürfen."
 
 msgid "%s Releases"
-msgstr "%s Veröffentlichungen"
+msgstr "%s Versionen"
 
 msgid ""
 "%s requires OpenGL 2.0 capable graphics driver to run correctly, \n"
@@ -453,7 +453,7 @@ msgid "3 (heavy)"
 msgstr "3 (schwer)"
 
 msgid "3D &Platter Tab"
-msgstr "registerkarte 3D &Platter"
+msgstr "Druckplatte"
 
 msgid "3D editor view"
 msgstr "3D Editiermodus"
@@ -4848,13 +4848,13 @@ msgid "Gcode done"
 msgstr "Gcode fertig"
 
 msgid "GCode Pre&view Tab"
-msgstr "GCode Vorschau Tab"
+msgstr "GCode Vorschau"
 
 msgid "Gcode precision"
 msgstr "Gcode Präzision"
 
 msgid "Gcode preview"
-msgstr "Gcode-Vorschau"
+msgstr "Gcode Vorschau"
 
 msgid "General"
 msgstr "Allgemein"
@@ -6405,19 +6405,19 @@ msgid "Layer height limits"
 msgstr "Grenzen für Schichthöhe"
 
 msgid "Layer previe&w Tab"
-msgstr "Ebene previe&w Tab"
+msgstr "Ebenenvorschau"
 
 msgid "Layer range Settings to modify"
 msgstr "Schichtbereicheinstellungen zum Ändern"
 
 msgid "Layer Time"
-msgstr "Ebene Zeit"
+msgstr "Zeit pro Schicht"
 
 msgid "Layer time"
-msgstr "Ebene Zeit"
+msgstr "Zeit pro Schicht"
 
 msgid "Layer time goal"
-msgstr "Ebene Zeitziel"
+msgstr "Zeitziel pro Schicht"
 
 msgid "layers"
 msgstr "Schichten"
@@ -7990,7 +7990,7 @@ msgid "Number of tool changes"
 msgstr "Anzahl der Werkzeugwechsel"
 
 msgid "O&pen %s"
-msgstr "O&öffnen %s"
+msgstr "Ö&öffne %s"
 
 msgid "Object elevation"
 msgstr "Objekt-Hebung"
@@ -10064,7 +10064,7 @@ msgid "Select Filament Settings Tab"
 msgstr "Wählt Filamenteinstellungsreiter"
 
 msgid "Select Gcode preview Tab"
-msgstr "Wählen Sie die Registerkarte Gcode-Vorschau"
+msgstr "Wählen Sie die Registerkarte Gcode Vorschau"
 
 msgid "Select Layer Preview Tab"
 msgstr "Wählen Sie die Registerkarte Ebenenvorschau"
