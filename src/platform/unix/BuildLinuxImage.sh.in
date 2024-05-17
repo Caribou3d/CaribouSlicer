@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# This script can download and compile dependencies, compile CaribouSlicer
+# This script can download and compile dependencies, compile AMSlicer
 # and optional build a .tgz and an appimage.
 #
 # Original script from SuperSclier by supermerill https://github.com/supermerill/SuperSlicer
@@ -35,7 +35,7 @@ while getopts ":ihag" opt; do
     h ) echo "Usage: ./BuildLinuxImage.sh [-g][-i][-a][-h]"
         echo "   -g: force gtk2 build"
         echo "   -i: generate .tgz and Appimage (optional)"
-	    echo "   -a: generate app (optional)"
+        echo "   -a: generate app (optional)"
         echo "   -h: help"
         exit 0
         ;;
@@ -67,6 +67,7 @@ then
     find package/resources/localization -name "*.md" -type f -delete
     find package/resources/localization -name "*.txt" -type f -delete
     find package/resources/localization -name "*database*" -type f -delete
+    find package/resources/localization -name "CaribouSlicer.mo" -type f -delete
     find package/resources/localization -name "Slic3r.mo" -type f -delete
     find package/resources/localization -name "SuperSlicer.mo" -type f -delete
     # create bin
@@ -84,9 +85,9 @@ then
     pushd package > /dev/null
     if [[ -z "$FORCE_GTK2" ]]
     then
-	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK3-linux64.tgz .  &>/dev/null
+       tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-linux-x64-GTK3.tgz .  &>/dev/null
     else
-	tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK2-linux64.tgz .  &>/dev/null
+       tar -czvf ../@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-linux-x64-GTK2.tgz .  &>/dev/null
     fi
 
     chmod +x ../src/build_appimage.sh
@@ -94,10 +95,9 @@ then
     popd  > /dev/null
     if [[ -z "$FORCE_GTK2" ]]
     then
-	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK3-linux-x64.AppImage"
+        mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-linux-x64-GTK3.AppImage"
     else
-	mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-GTK2-linux-x64.AppImage"
+        mv package/"@SLIC3R_APP_KEY@_ubu64.AppImage" "@SLIC3R_APP_KEY@-@SLIC3R_VERSION_FULL@-@SLIC3R_GITBUILD_NR@-linux-x64-GTK2.AppImage"
     fi
-
     echo -e "\n... done\n"
 fi

@@ -18,7 +18,6 @@ local-lib
 build/*
 Build.log
 deps/build*
-deps/deps-*
 cmake/CPackConfig.cmake
 
 # MacOS Ignores

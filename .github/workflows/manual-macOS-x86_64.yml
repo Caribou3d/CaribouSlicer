@@ -1,0 +1,47 @@
+# This is a basic workflow that is manually triggered
+
+name: manual macOS-x86_64
+on:
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: macos-12
+    steps:
+    - uses: actions/checkout@v4
+    - name: install required packages
+      run: |
+        brew install automake texinfo ninja
+        brew list
+    - name: build deps and app
+      run: |
+         ./BuildmacOS.sh -ds
+    - name: extract variables
+      run: |
+        # Command to extract SLIC3R_AP from version.inc
+        SLIC3R_AP=$(grep '^set *(SLIC3R_APP ' version.inc | awk -F '"' '{print $2}' | head -n 1)
+        SLIC3R_VERSION_FULL=$(grep '^set *(SLIC3R_VERSION_FULL' version.inc | awk -F '"' '{print $2}')
+        SLIC3R_GITBUILD_NR=$(grep '^set *(SLIC3R_GITBUILD_NR' version.inc | awk -F '"' '{print $2}')
+        # Combine the variables into a single string
+        FILENAME="${SLIC3R_AP}Slicer-${SLIC3R_VERSION_FULL}-${SLIC3R_GITBUILD_NR}-macOS"
+        ls -al build
+        ls -al build/package
+        ls -al build/pack/AMSlicer/AMSlicer.app/Contents/MacOS
+        echo "FILENAME=${FILENAME}" >> $GITHUB_ENV
+    - name: build image
+      run: ./BuildmacOS.sh -i
+    - name: check files
+      run: ls -al build
+    - name: upload artifact tgz
+      uses: actions/upload-artifact@v4
+      with:
+          name: ${{ env.FILENAME }}.tgz
+          path: ./build/${{ env.FILENAME }}.tgz
+    - name: upload appimage
+      uses: actions/upload-artifact@v4
+      with:
+          name: ${{ env.FILENAME }}.dmg
+          path: ./build/${{ env.FILENAME }}.dmg
+
