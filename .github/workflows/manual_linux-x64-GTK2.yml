@@ -1,0 +1,38 @@
+name: manual linux-x64-GTK2
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v4
+    - name: update apt
+      run: sudo apt update
+    - name: install required packages for GTK2
+      run: sudo apt install cmake libgtk2.0-dev libglew-dev libudev-dev libdbus-1-dev gettext cmake extra-cmake-modules libcurl4-openssl-dev libmspack-dev libosmesa6-dev libfuse2
+    - name: build-deps and app
+      run: ./BuildLinux.sh -gds
+    - name: build tgz and AppImage
+      working-directory: ./build
+      run: src/BuildLinuxImage.sh -gi
+    - name: ls build dir
+      working-directory: ./build
+      run: ls -al
+    - name: extract version information
+      run: |
+        SLIC3R_AP=$(grep '^set *(SLIC3R_APP ' version.inc | awk -F '"' '{print $2}' | head -n 1)
+        SLIC3R_VERSION_FULL=$(grep '^set *(SLIC3R_VERSION_FULL' version.inc | awk -F '"' '{print $2}')
+        SLIC3R_GITBUILD_NR=$(grep '^set *(SLIC3R_GITBUILD_NR' version.inc | awk -F '"' '{print $2}')
+        FILENAME="${SLIC3R_AP}Slicer-${SLIC3R_VERSION_FULL}-${SLIC3R_GITBUILD_NR}-linux-x64-GTK2"
+        echo "FILENAME=${FILENAME}" >> $GITHUB_ENV
+    - name: upload artifact tgz
+      uses: actions/upload-artifact@v4
+      with:
+          name: ${{ env.FILENAME }}.tgz
+          path: ./build/${{ env.FILENAME }}.tgz
+    - name: upload artifact AppImage
+      uses: actions/upload-artifact@v4
+      with:
+          name: ${{ env.FILENAME }}.AppImage
+          path: ./build/${{ env.FILENAME }}.AppImage
