@@ -62,16 +62,9 @@ endif ()
 
 prusaslicer_add_cmake_project(CURL
   # GIT_REPOSITORY      https://github.com/curl/curl.git
-  # GIT_TAG             curl-7_75_0
-  # URL                 https://github.com/curl/curl/archive/refs/tags/curl-7_75_0.zip
-  # URL_HASH            SHA256=a63ae025bb0a14f119e73250f2c923f4bf89aa93b8d4fafa4a9f5353a96a765a
   URL                   https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.zip
   URL_HASH              SHA256=a5850615a9f4a1fdf55dc6023cf9b10c8b320eb6cc17ed77dc7edb7603e06684
-  #URL                 https://github.com/curl/curl/archive/refs/tags/curl-8_7_1.zip
-  #URL_HASH            SHA256=1522999600630964adc3130eada47dc0be2a71908a36944b7aa78aad2b1006b7
   DEPENDS             ${ZLIB_PKG}
-  # PATCH_COMMAND       ${GIT_EXECUTABLE} checkout -f -- . && git clean -df &&
-  #                     ${GIT_EXECUTABLE} apply --whitespace=fix ${CMAKE_CURRENT_LIST_DIR}/curl-mods.patch
   PATCH_COMMAND       "${_patch_command}"
   CMAKE_ARGS
     -DBUILD_TESTING:BOOL=OFF
