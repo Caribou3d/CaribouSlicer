@@ -1,16 +1,46 @@
 find_package(OpenGL QUIET REQUIRED)
 
-prusaslicer_add_cmake_project(TIFF
-URL https://gitlab.com/libtiff/libtiff/-/archive/v4.6.0/libtiff-v4.6.0.zip
-URL_HASH SHA256=5d652432123223338a6ee642a6499d98ebc5a702f8a065571e1001d4c08c37e6
+if (APPLE)
+    message(STATUS "Compiling TIFF for macos ${CMAKE_SYSTEM_VERSION}.")
+    if (${CMAKE_OSX_ARCHITECTURES} MATCHES "arm")
+        prusaslicer_add_cmake_project(TIFF
+            URL https://gitlab.com/libtiff/libtiff/-/archive/v4.3.0/libtiff-v4.3.0.zip
+            URL_HASH SHA256=4fca1b582c88319f3ad6ecd5b46320eadaf5eb4ef6f6c32d44caaae4a03d0726
+            DEPENDS ${ZLIB_PKG} ${PNG_PKG} dep_JPEG
+            CMAKE_ARGS
+                -Dlzma:BOOL=OFF
+                -Dwebp:BOOL=OFF
+                -Djbig:BOOL=OFF
+                -Dzstd:BOOL=OFF
+                -Dpixarlog:BOOL=OFF
+        )
+    else()
+        prusaslicer_add_cmake_project(TIFF
+            URL https://gitlab.com/libtiff/libtiff/-/archive/v4.3.0/libtiff-v4.3.0.zip
+            URL_HASH SHA256=4fca1b582c88319f3ad6ecd5b46320eadaf5eb4ef6f6c32d44caaae4a03d0726
+            DEPENDS ${ZLIB_PKG} ${PNG_PKG} dep_JPEG
+            CMAKE_ARGS
+                -Dlzma:BOOL=OFF
+                -Dwebp:BOOL=OFF
+                -Djbig:BOOL=OFF
+                -Dzstd:BOOL=OFF
+                -Dpixarlog:BOOL=OFF
+        )
+    endif()
+else()
+        prusaslicer_add_cmake_project(TIFF
+            URL https://gitlab.com/libtiff/libtiff/-/archive/v4.6.0/libtiff-v4.6.0.zip
+            URL_HASH SHA256=5d652432123223338a6ee642a6499d98ebc5a702f8a065571e1001d4c08c37e6
 
-DEPENDS ${ZLIB_PKG} ${PNG_PKG} dep_JPEG
-CMAKE_ARGS
-    -Dlzma:BOOL=OFF
-    -Dwebp:BOOL=OFF
-    -Djbig:BOOL=OFF
-    -Dzstd:BOOL=OFF
-    -Dlibdeflate:BOOL=OFF
-    -Dpixarlog:BOOL=OFF
-    -Dlerc:BOOL=OFF
-)
+            DEPENDS ${ZLIB_PKG} ${PNG_PKG} dep_JPEG
+            CMAKE_ARGS
+                -Dlzma:BOOL=OFF
+                -Dwebp:BOOL=OFF
+                -Djbig:BOOL=OFF
+                -Dzstd:BOOL=OFF
+                -Dlibdeflate:BOOL=OFF
+                -Dpixarlog:BOOL=OFF
+                -Dlerc:BOOL=OFF
+            )
+endif()
+
