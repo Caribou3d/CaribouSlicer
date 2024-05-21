@@ -9,9 +9,15 @@ set(SLIC3R_APP_KEY "${SLIC3R_APP}Slicer")
 # exe name of the slicer
 set(SLIC3R_APP_CMD "${SLIC3R_APP}Slicer")
 # versions
+<<<<<<< HEAD
 set(SLIC3R_VERSION "2.5.59")
 set(SLIC3R_VERSION_FULL "2.5.59.9")
 set(SLIC3R_GITBUILD_NR "20860")
+=======
+set(SLIC3R_VERSION "2.5.59-dev")
+set(SLIC3R_VERSION_FULL "2.5.59.9-dev")
+set(SLIC3R_GITBUILD_NR "20866")
+>>>>>>> origin/CaribouSlicer-dev
 set(SLIC3R_BUILD_ID "${SLIC3R_APP_KEY}_${SLIC3R_VERSION_FULL}_${SLIC3R_GITBUILD_NR}")
 set(SLIC3R_RC_VERSION "2,5,59,9")
 set(SLIC3R_RC_VERSION_DOTS "2.5.59.9")

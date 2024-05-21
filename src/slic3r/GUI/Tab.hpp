@@ -2,7 +2,7 @@
 #define slic3r_Tab_hpp_
 
 //	 The "Expert" tab at the right of the main tabbed window.
-//	
+//
 //	 This file implements following packages:
 //	   Slic3r::GUI::Tab;
 //	       Slic3r::GUI::Tab::Print;
@@ -76,7 +76,7 @@ public:
 							const std::string& notes  = std::string());
 	void update_from_config();
 	void delete_all();
-	void edit_substitution(int substitution_id, 
+	void edit_substitution(int substitution_id,
 						   int opt_pos, // option position insubstitution [0, 2]
 						   const std::string& value);
 	void set_cb_edited_substitution(std::function<void()> cb_edited_substitution) {
@@ -245,7 +245,7 @@ protected:
 	PresetDependencies 	m_compatible_prints;
 
     /* Indicates, that default preset or preset inherited from default is selected
-     * This value is used for a options color updating 
+     * This value is used for a options color updating
      * (use green color only for options, which values are equal to system values)
      */
     bool                    m_is_default_preset {false};
@@ -266,9 +266,9 @@ protected:
 	ScalableBitmap 		   *m_bmp_non_system;
 	// Bitmaps to be shown on the "Undo user changes" button next to each input field.
 	ScalableBitmap 			m_bmp_value_revert;
-    
-    std::vector<ScalableButton*>	m_scaled_buttons = {};    
-    std::vector<ScalableBitmap*>	m_scaled_bitmaps = {};    
+
+    std::vector<ScalableButton*>	m_scaled_buttons = {};
+    std::vector<ScalableBitmap*>	m_scaled_bitmaps = {};
     std::vector<ScalableBitmap>     m_scaled_icons_list = {};
 
 	// Colors for ui "decoration"
@@ -354,7 +354,7 @@ protected:
 		bool*			m_show_blink_ptr{nullptr};
 		int				m_blink_counter	{0};
 	    wxTimer         m_timer;
-	} 
+	}
     m_highlighter;
 
 	DynamicPrintConfig 	m_cache_config;
@@ -363,7 +363,7 @@ protected:
 
 	bool				m_page_switch_running = false;
 	bool				m_page_switch_planned = false;
-	
+
 	DynamicPrintConfig* m_config = nullptr;
 	ConfigBase*			m_config_base = nullptr;
 public:
@@ -373,7 +373,7 @@ public:
 	ogStaticText*		m_parent_preset_description_line = nullptr;
 	ScalableButton*		m_detach_preset_btn	= nullptr;
 
-	// map of option name -> wxColour (color of the colored label, associated with option) 
+	// map of option name -> wxColour (color of the colored label, associated with option)
     // Used for options which don't have corresponded field
 	std::map<std::string, wxColour>	m_colored_Label_colors;
 
@@ -398,8 +398,8 @@ public:
 	virtual PrinterTechnology get_printer_technology() const = 0;
 
 	void		create_preset_tab();
-    void        add_scaled_button(wxWindow* parent, ScalableButton** btn, const std::string& icon_name, 
-                                  const wxString& label = wxEmptyString, 
+    void        add_scaled_button(wxWindow* parent, ScalableButton** btn, const std::string& icon_name,
+                                  const wxString& label = wxEmptyString,
                                   long style = wxBU_EXACTFIT | wxNO_BORDER);
     void        add_scaled_bitmap(wxWindow* parent, ScalableBitmap& btn, const std::string& icon_name);
 	void		update_ui_items_related_on_parent_preset(const Preset* selected_preset_parent);
@@ -464,7 +464,7 @@ public:
 	bool			current_preset_is_dirty() const;
 	bool			saved_preset_is_dirty() const;
 	void            update_saved_preset_from_current_preset();
-	
+
 	DynamicPrintConfig*	get_config() { return m_config; }
 	ConfigBase*		get_config_base() { return m_config_base; }
 	PresetCollection*	get_presets() { return m_presets; }
@@ -514,12 +514,13 @@ public:
         Tab(parent, title, tab_type) {}
 
 	std::string icon_name(int icon_size, PrinterTechnology tech) const override { return "cog"; }
-	
+
 	void		init() override;
 	void		build() override;
 	void		toggle_options() override;
-	void		update() override {}
-	PrinterTechnology get_printer_technology() const override { return (m_type & Preset::Type::TYPE_TECHNOLOGY) == Preset::Type::TYPE_FFF ? PrinterTechnology::ptFFF : 
+    void        update() {};
+	void		update_changed_setting(const std::string& opt_key);
+	PrinterTechnology get_printer_technology() const override { return (m_type & Preset::Type::TYPE_TECHNOLOGY) == Preset::Type::TYPE_FFF ? PrinterTechnology::ptFFF :
 																	   (m_type & Preset::Type::TYPE_TECHNOLOGY) == Preset::Type::TYPE_SLA ? PrinterTechnology::ptSLA :
 																	   PrinterTechnology::ptAny; }
 };
@@ -532,7 +533,7 @@ public:
 	~TabPrint() {}
 
 	std::string icon_name(int icon_size, PrinterTechnology tech) const override { return "cog"; }
-	
+
 	void		init() override;
 	void		build() override;
 	void		reload_config() override;
@@ -545,7 +546,7 @@ public:
 	wxSizer*	create_substitutions_widget(wxWindow* parent);
 
 	ogStaticText*	m_recommended_thin_wall_thickness_description_line = nullptr;
-	ogStaticText*	m_recommended_extrusion_width_description_line = nullptr; 
+	ogStaticText*	m_recommended_extrusion_width_description_line = nullptr;
 	ogStaticText*	m_top_bottom_shell_thickness_explanation = nullptr;
 	ogStaticText*	m_post_process_explanation = nullptr;
 	ScalableButton* m_del_all_substitutions_btn{nullptr};
@@ -570,7 +571,7 @@ public:
 	~TabFilament() {}
 
 	std::string icon_name(int icon_size, PrinterTechnology tech) const override { return (icon_size < 16) ? "spool" : "spool_cog"; }
-	
+
 	void		init() override;
 	void		build() override;
 	void		reload_config() override;
@@ -630,7 +631,7 @@ public:
     TabPrinter(wxBookCtrlBase* parent) :
         Tab(parent, _L("Printer Settings"), Slic3r::Preset::TYPE_PRINTER) {}
 	~TabPrinter() {}
-	
+
 	void		init() override;
 	void		build() override;
     void		build_fff();
@@ -666,7 +667,7 @@ public:
     ~TabSLAMaterial() {}
 
 	std::string icon_name(int icon_size, PrinterTechnology tech) const override { return (icon_size < 16) ? "resin" : "resin_cog"; }
-	
+
 	void		init() override;
 	void		build() override;
 	void		reload_config() override;
@@ -686,7 +687,7 @@ public:
 	std::string icon_name(int icon_size, PrinterTechnology tech) const override { return "cog"; }
 
 	ogStaticText* m_support_object_elevation_description_line = nullptr;
-	
+
 	void		init() override;
     void		build() override;
 	void		reload_config() override;
