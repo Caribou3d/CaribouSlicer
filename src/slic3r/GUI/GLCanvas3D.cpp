@@ -5922,11 +5922,20 @@ Vec3d GLCanvas3D::_mouse_to_3d(const Point& mouse_pos, float* z)
     Vec4i32 viewport(camera.get_viewport().data());
 
     GLint y = viewport[3] - (GLint)mouse_pos(1);
-    GLfloat mouse_z;
-    if (z == nullptr)
-        glsafe(::glReadPixels((GLint)mouse_pos(0), y, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, (void*)&mouse_z));
-    else
+    double mouse_z;
+    if (z == nullptr) {
+        GLuint render_z;
+        if(sizeof(render_z)==2)
+            glsafe(::glReadPixels((GLint) mouse_pos(0), y, 1, 1, GL_DEPTH_COMPONENT, GL_UNSIGNED_SHORT, (void *) &render_z));
+        else if(sizeof(render_z)==4)
+            glsafe(::glReadPixels((GLint) mouse_pos(0), y, 1, 1, GL_DEPTH_COMPONENT, GL_UNSIGNED_INT, (void *) &render_z));
+        else {
+            BOOST_LOG_TRIVIAL(error) << "error, opengl depth buffer of odd size.";
+        }
+        mouse_z = (double(render_z)/std::numeric_limits<GLuint>::max());
+    } else {
         mouse_z = *z;
+    }
 
     Vec3d out;
     igl::unproject(Vec3d(mouse_pos(0), y, mouse_z), modelview, projection, viewport, out);
@@ -6645,6 +6654,7 @@ void GLCanvas3D::_set_warning_notification(EWarning warning, bool state)
             "Resolve the current problem to continue slicing.");
         error = ErrorType::PLATER_ERROR;
         break;
+    case EWarning::PrintWarning: text = ""; error = ErrorType::PLATER_WARNING; break;
     }
     auto& notification_manager = *wxGetApp().plater()->get_notification_manager();
     switch (error)
