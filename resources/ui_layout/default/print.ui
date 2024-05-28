@@ -22,10 +22,11 @@ group:Vertical shells
 	recommended_thin_wall_thickness_description
 =======
 group:Vertical shells
-    setting:width$6:perimeters
-    setting:tags$Simple$Expert$SuSi:script:float:depends$perimeter_spacing$external_perimeter_spacing:label$Wall Thickness:tooltip$Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0.:s_wall_thickness
-    setting:spiral_vase
-    recommended_thin_wall_thickness_description
+	setting:width$6:perimeters
+	setting:width$6:perimeters_hole
+	setting:tags$Simple$Expert$SuSi:script:float:depends$perimeter_spacing$external_perimeter_spacing:label$Wall Thickness:tooltip$Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0.:s_wall_thickness
+	setting:spiral_vase
+	recommended_thin_wall_thickness_description
 group:Horizontal shells
     line:Solid layers
         setting:top_solid_layers
@@ -154,34 +155,40 @@ group:Layer height
 group:Extrusion direction
     setting:label$Reverse on all perimeters:sidetext_width$2:perimeter_reverse
 group:Filtering
-    setting:resolution
-    setting:resolution_internal
-    setting:model_precision
-    setting:slice_closing_radius
+	setting:resolution
+	setting:resolution_internal
+	setting:model_precision
+	setting:slice_closing_radius
+    setting:bridge_precision
 # gcode_resolution
 group:Modifying slices
-    line:Curve smoothing
-        setting:width$6:curve_smoothing_precision
-        setting:width$6:curve_smoothing_angle_convex
-        setting:width$6:curve_smoothing_angle_concave
-        setting:width$6:curve_smoothing_cutoff_dist
-    end_line
-    line:XY compensation
-        setting:width$6:xy_size_compensation
-        setting:width$6:xy_inner_size_compensation
-    end_line
-    line:XY First layer compensation
-        setting:width$6:first_layer_size_compensation
-        setting:width$6:first_layer_size_compensation_layers
-    end_line
-    line:Vertical Hole shrinking compensation
-        setting:width$6:hole_size_compensation
-        setting:width$6:hole_size_threshold
-    end_line
-    line:Convert round vertical holes to polyholes
-        setting:label$_:hole_to_polyhole
-        setting:sidetext_width$5:hole_to_polyhole_threshold
-        setting:hole_to_polyhole_twisted
+	line:Curve smoothing
+		setting:width$6:curve_smoothing_precision
+		setting:width$6:curve_smoothing_angle_convex
+		setting:width$6:curve_smoothing_angle_concave
+		setting:width$6:curve_smoothing_cutoff_dist
+	end_line
+	line:XY compensation
+		setting:width$6:xy_size_compensation
+		setting:width$6:xy_inner_size_compensation
+	end_line
+	line:XY First layer compensation
+		setting:width$6:first_layer_size_compensation
+		setting:width$6:first_layer_size_compensation_layers
+	end_line
+	line:Vertical Hole shrinking compensation
+		setting:width$6:hole_size_compensation
+		setting:width$6:hole_size_threshold
+	end_line
+	line:Convert round vertical holes to polyholes
+		setting:label$_:hole_to_polyhole
+		setting:sidetext_width$5:hole_to_polyhole_threshold
+		setting:hole_to_polyhole_twisted
+	end_line
+    line:Overhangs cut
+        setting:overhangs_max_slope
+        setting:overhangs_bridge_threshold
+        setting:overhangs_bridge_upper_layers
     end_line
 group:Other
     setting:slicing_mode
@@ -234,17 +241,21 @@ group:sidetext_width$5:Infill angle
     vector_line:fill_angle_template
 #    setting:fill_angle_template
 group:sidetext_width$5:Advanced
-    setting:solid_infill_every_layers
-    setting:solid_infill_below_area
-    line:Anchor solid infill by X mm
-        setting:label_width$8:width$5:external_infill_margin
-        setting:label_width$6:width$5:bridged_infill_margin
-    end_line
-    line:Only retract when crossing perimeters
-        setting:label_width$0:label$_:only_retract_when_crossing_perimeters
-        setting:enforce_retract_first_layer
-    end_line
-    setting:infill_first
+	setting:solid_infill_every_layers
+	line:Solid infill is area below
+        setting:label$From region:solid_infill_below_area
+        setting:label$From the whole layer:solid_infill_below_layer_area
+	end_line
+    setting:solid_infill_below_width
+	line:Anchor solid infill by X mm
+		setting:label_width$8:width$5:external_infill_margin
+		setting:label_width$6:width$5:bridged_infill_margin
+	end_line
+	line:Only retract when crossing perimeters
+		setting:label_width$0:label$_:only_retract_when_crossing_perimeters
+		setting:enforce_retract_first_layer
+	end_line
+	setting:infill_first
 group:Advanced Infill options
     line:Ironing infill pattern tuning
         setting:label_width$8:width$5:fill_smooth_distribution
@@ -464,17 +475,20 @@ group:Extrusion width
     end_line
     recommended_extrusion_width_description
 group:Overlap
-    line:Perimeter overlap
-        setting:label_width$7:label$Default:perimeter_overlap
-        setting:label_width$7:label$External:external_perimeter_overlap
-        setting:label_width$7:label$Gap Fill:gap_fill_overlap
-    end_line
-    setting:width$4:solid_infill_overlap
-    line:Bridge lines density
-        setting:label_width$7:bridge_overlap_min
-        setting:label_width$7:bridge_overlap
-    end_line
-    setting:width$4:sidetext_width$7:infill_overlap
+	line:Perimeter overlap
+		setting:label_width$7:label$Default:perimeter_overlap
+		setting:label_width$7:label$External:external_perimeter_overlap
+		setting:label_width$7:label$Gap Fill:gap_fill_overlap
+	end_line
+    line:Solid infill ovelrap
+        setting:label$Inside:width$4:solid_infill_overlap
+        setting:label$Top:width$4:top_solid_infill_overlap
+	end_line
+	line:Bridge lines density
+		setting:label_width$7:bridge_overlap_min
+		setting:label_width$7:bridge_overlap
+	end_line
+	setting:width$4:sidetext_width$7:infill_overlap
 group:sidetext_width$2:Flow
     line:Flow ratio
         setting:bridge_flow_ratio

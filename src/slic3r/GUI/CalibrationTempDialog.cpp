@@ -76,6 +76,7 @@ void CalibrationTempDialog::create_geometry(wxCommandEvent& event_args) {
 
     // -- get temps
     const ConfigOptionInts* temperature_config = filament_config->option<ConfigOptionInts>("temperature");
+    const int first_layer_temperature = filament_config->option<ConfigOptionInts>("temperature")->get_at(0);
     assert(temperature_config->values.size() >= 1);
 
     long temp_items_val1 = 1;
