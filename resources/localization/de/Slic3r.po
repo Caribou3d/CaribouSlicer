@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-01 00:00\n"
-"PO-Revision-Date: 2024-06-01 00:00\n"
+"POT-Creation-Date: 2024-06-02 00:00\n"
+"PO-Revision-Date: 2024-06-02 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -625,7 +625,7 @@ msgid "Above Z"
 msgstr "Über Z"
 
 msgid "Acceleration control (advanced)"
-msgstr "Beschleunigungskontrolle (fortgeschritten)"
+msgstr "Beschleunigungen"
 
 msgid ""
 "Acceleration for travel moves (jumps between distant extrusion points).\n"
@@ -967,7 +967,7 @@ msgid ""
 "If the first charater is '[' or '(', then this field will be considered as a "
 "regexp (enter '[^a-zA-Z0-9]' to only use ascii char)."
 msgstr ""
-"Alle Zeichen, die hier eingegeben werden, werden beim Schreiben des gcode-Dateinamens durch '_' ersetzt.\n"
+"Alle Zeichen, die hier eingegeben werden, werden beim Schreiben des Gcode-Dateinamens durch '_' ersetzt.\n"
 "Wenn das erste Zeichen '[' oder '(' ist, dann wird dieses Feld als Regexp betrachtet (geben Sie '[^a-zA-Z0-9]' ein, um nur ASCII-Zeichen zu verwenden)."
 
 msgid ""
@@ -1034,7 +1034,7 @@ msgstr ""
 "-1% deaktiviert auch die Anti-Hysterese-Prüfungen für interne Begrenzungen."
 
 msgid "Allow empty layers"
-msgstr "Leere Ebenen zulassen"
+msgstr "leere Ebenen zulassen"
 
 msgid "Allow just a single %1% instance"
 msgstr "Nur eine einzige %1%-Instanz zulassen"
@@ -1424,7 +1424,7 @@ msgid "Automation"
 msgstr "Automatisierung"
 
 msgid "Autospeed (advanced)"
-msgstr "automatische Geschwindigkeit (fortgeschritten)"
+msgstr "automatische Geschwindigkeit"
 
 msgid "Avoid crossing perimeters"
 msgstr "Kreuzen der Wände vermeiden"
@@ -1589,7 +1589,7 @@ msgid "Bridge"
 msgstr "Überbrückung"
 
 msgid "Bridge acceleration"
-msgstr "Beschleunigung Brücken"
+msgstr "Brücken"
 
 msgid "Bridge calibration"
 msgstr "Brückenkalibrierung"
@@ -1622,7 +1622,7 @@ msgid "Bridge precision"
 msgstr "Präzision der Brücke"
 
 msgid "Bridge speed"
-msgstr "Geschwindigkeit der Brücke"
+msgstr "Brücken"
 
 msgid "Bridge speed and fan"
 msgstr "Brückengeschwindigkeit und Lüfter"
@@ -1664,7 +1664,7 @@ msgid "Brim & Skirt"
 msgstr "Rand und Schürze"
 
 msgid "Brim & Skirt acceleration"
-msgstr "Beschleunigung für Rand und Schürze"
+msgstr "für Rand und Schürze"
 
 msgid "Brim & Skirt speed"
 msgstr "Geschwindigkeit für Rand und Schürze"
@@ -2011,40 +2011,40 @@ msgid "Check for problematic dynamic libraries"
 msgstr "Prüfen Sie auf problematische dynamische Bibliotheken"
 
 msgid "Checking your material"
-msgstr "Prüfen Sie Ihr Material"
+msgstr "Prüfung des Materials"
 
 msgid "Choose a file to import bed texture from (PNG/SVG):"
 msgstr "Wählen Sie eine Datei aus, aus der Sie die Druckbetttextur importieren möchten (PNG/SVG):"
 
 msgid "Choose a file to slice (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Wählen Sie eine Datei zum Slicen (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "Wähle eine Datei zum Slicen (STL/OBJ/AMF/3MF/PRUSA):"
 
 msgid "Choose an STL file to import bed model from:"
-msgstr "Wählen Sie eine STL-Datei aus, aus der Sie das Druckbettmodell importieren möchten:"
+msgstr "Wähle eine STL-Datei aus der das Druckbettmodell importiert werden soll:"
 
 msgid "Choose an STL file to import bed shape from:"
-msgstr "Wählen Sie eine STL-Datei aus, aus der Sie die Druckbettform importieren möchten:"
+msgstr "Wähle eine STL-Datei aus der die Druckbettform importiert werden soll:"
 
 msgid "Choose how many digits after the dot for extruder moves."
-msgstr "Wählen Sie, wie viele Ziffern nach dem Punkt für die Extruderbewegungen."
+msgstr "Wähle, wie viele Ziffern nach dem Punkt für die Extruderbewegungen geschrieben werden."
 
 msgid "Choose how many digits after the dot for xyz coordinates."
-msgstr "Wählen Sie, wie viele Ziffern nach dem Punkt für xyz-Koordinaten."
+msgstr "Wähle, wie viele Ziffern nach dem Punkt für xyz-Koordinaten geschrieben werden."
 
 msgid "Choose how the windows are selectable and displayed:"
-msgstr "Wählen Sie, wie die Fenster ausgewählt und angezeigt werden sollen:"
+msgstr "Wähle, wie die Fenster ausgewählt und angezeigt werden sollen:"
 
 msgid "Choose one file (3MF/AMF):"
-msgstr "Wählen Sie eine Datei (3MF/AMF):"
+msgstr "Wähle eine Datei (3MF/AMF):"
 
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Datei auswählen (GCODE/.GCO/.G/.ngc/NGC):"
 
 msgid "Choose one file (py):"
-msgstr "Wählen Sie eine Datei (py):"
+msgstr "Wähle eine Datei (py):"
 
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Wählen Sie eine oder mehrere Dateien (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Wähle eine oder mehrere Dateien (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 
 msgid "Choose SLA archive:"
 msgstr "SLA Archiv wählen:"
@@ -3417,10 +3417,10 @@ msgstr "Die Erhöhung ist zu niedrig für das Objekt. Verwenden Sie die Funktion
 msgid ""
 "Emit something at 1 minute intervals into the G-code to let the firmware "
 "show accurate remaining time."
-msgstr "Senden Sie in Abständen von 1 Minute etwas in den G-Code, damit die Firmware die genaue verbleibende Zeit anzeigt."
+msgstr "Schreibe in Abständen von 1 Minute Informationen in den G-Code, damit die Firmware die genaue verbleibende Zeit anzeigt."
 
 msgid "Empty layer between %1% and %2%."
-msgstr "Leere Schicht zwischen %1% und %2%."
+msgstr "leere Schicht zwischen %1% und %2%."
 
 msgid "Enable"
 msgstr "aktivieren"
@@ -4119,7 +4119,7 @@ msgid "Extruder Color"
 msgstr "Extruder Farbe"
 
 msgid "Extruder decimals"
-msgstr "Extruder-Dezimale"
+msgstr "Extruder-Dezimalstellen"
 
 msgid "Extruder fan offset"
 msgstr "Versatz des Extrudergebläses"
@@ -4499,7 +4499,7 @@ msgid "first layer"
 msgstr "erste Schicht"
 
 msgid "First layer acceleration"
-msgstr "Beschleunigung erste Schicht"
+msgstr "erste Schicht"
 
 msgid "First layer bed temperature"
 msgstr "erste Schicht Bett-Temperatur"
@@ -4874,19 +4874,19 @@ msgid "Gap Fill"
 msgstr "Lücken füllen"
 
 msgid "Gap fill acceleration"
-msgstr "Beschleunigung beim Füllen von Lücken"
+msgstr "beim Füllen von Lücken"
 
 msgid "Gap fill fan speed"
-msgstr "Gebläsedrehzahl für Lückenfüller"
+msgstr "Lüfterdrehzahl für Lückenfüllung"
 
 msgid "Gap fill overlap"
-msgstr "Lücken füllen Überlappung"
+msgstr "Überlappung Lückenfüllung"
 
 msgid "Gap fill speed"
 msgstr "Geschwindigkeit der Lückenfüllung"
 
 msgid "Gap Fill threshold"
-msgstr "Lücken füllen Schwelle"
+msgstr "Schwelle Lückenfüllung"
 
 msgid "Gap fill: extra extension"
 msgstr "Lückenfüllung: zusätzliche Verlängerung"
@@ -4904,13 +4904,13 @@ msgid "Gapfill: Max width"
 msgstr "Lückenfüllung: Maximale Breite"
 
 msgid "Gapfill: Min length"
-msgstr "Lückenfüllung: Min. Länge"
+msgstr "Lückenfüllung: min. Länge"
 
 msgid "Gapfill: Min surface"
-msgstr "Lückenfüllung: Min Oberfläche"
+msgstr "Lückenfüllung: min. Oberfläche"
 
 msgid "Gapfill: Min width"
-msgstr "Lückenfüllung: Min. Breite"
+msgstr "Lückenfüllung: min. Breite"
 
 msgid "Gcode done"
 msgstr "Gcode fertig"
@@ -5800,7 +5800,7 @@ msgid "Ignores facets facing away from the camera."
 msgstr "Ignoriert die von der Kamera abgewandten Flächen."
 
 msgid "Illegal characters"
-msgstr "Unerlaubte Zeichen"
+msgstr "unerlaubte Zeichen"
 
 msgid "Illegal characters for filename"
 msgstr "Unzulässige Zeichen für den Dateinamen"
@@ -6010,7 +6010,7 @@ msgid "infill"
 msgstr "Füllung"
 
 msgid "Infill acceleration"
-msgstr "Beschleunigung Füllung"
+msgstr "Füllung"
 
 msgid "Infill angle"
 msgstr "Füllwinkel"
@@ -6034,7 +6034,7 @@ msgid "Infill spacing change on even layers"
 msgstr "Änderung der Füllungsabstände bei gleichmäßigen Schichten"
 
 msgid "Infill speed"
-msgstr "Geschwindigkeit Füllung"
+msgstr "Füllung"
 
 msgid "Infill width"
 msgstr "Breite der Füllung"
@@ -6173,7 +6173,7 @@ msgid "Internal perimeter"
 msgstr "innere Wände"
 
 msgid "Internal Perimeter acceleration"
-msgstr "Beschleunigung interne Wände"
+msgstr "interne Wände"
 
 msgid "Internal Perimeter fan speed"
 msgstr "Lüftergeschwindigkeit interne Wände"
@@ -6253,10 +6253,10 @@ msgid "Iron"
 msgstr "Eisen"
 
 msgid "Ironing"
-msgstr "Bügeln"
+msgstr "bügeln"
 
 msgid "Ironing acceleration"
-msgstr "Beschleunigung beim Bügeln"
+msgstr "beim Bügeln"
 
 msgid "Ironing angle"
 msgstr "Bügelwinkel"
@@ -6821,8 +6821,8 @@ msgid ""
 "M117: Send a command to display a message to the printer, this is 'Time "
 "Left .h..m..s'."
 msgstr ""
-"M73: Emittieren Sie M73 P{Prozent gedruckt} R{Restzeit in Minuten} in 1-Minuten-Intervallen in den G-Code ein, damit die Firmware die genaue Restzeit anzeigt. Bis jetzt erkennt nur die Prusa i3 MK3 Firmware M73. Außerdem unterstützt die i3 MK3-Firmware M73 Qxx Sxx für den stillen Modus.\n"
-"M117: Senden Sie einen Befehl, um dem Drucker eine Meldung anzuzeigen, nämlich 'Time Left .h..m..s'."
+"M73: Schreibe M73 P{Prozent gedruckt} R{Restzeit in Minuten} in 1-Minuten-Intervallen in den G-Code ein, damit die Firmware die genaue Restzeit anzeigt. Bis jetzt erkennt nur die Prusa i3 MK3 Firmware M73. Außerdem unterstützt die i3 MK3-Firmware M73 Qxx Sxx für den stillen Modus.\n"
+"M117: Senden einen Befehl, um dem Drucker eine Meldung anzuzeigen, nämlich 'Time Left .h..m..s'."
 
 msgid "Machine limits"
 msgstr "Maschinengrenzen"
@@ -8263,7 +8263,7 @@ msgid ""
 msgstr "Im Modus \"Spiralvase\" darf immer nur ein einziges Objekt gedruckt werden. Entfernen Sie entweder alle bis auf das letzte Objekt, oder aktivieren Sie den sequenziellen Modus durch \"complete_objects\"."
 
 msgid "Only ascii characters in gcode"
-msgstr "Nur ASCII-Zeichen in gcode"
+msgstr "nur ASCII-Zeichen in Gcode"
 
 msgid ""
 "Only compatible presets are shown. Click to show both the presets compatible "
@@ -8507,13 +8507,13 @@ msgid "Other"
 msgstr "Sonstige"
 
 msgid "Other extrusions acceleration"
-msgstr "sonstige Extrusionsbeschleunigung"
+msgstr "sonstige Extrusions"
 
 msgid "Other layers"
 msgstr "andere Schichten"
 
 msgid "Other speed"
-msgstr "sonstige Geschwindigkeiten"
+msgstr "sonstige"
 
 msgid "Other Vendors"
 msgstr "Andere Hersteller"
@@ -8591,7 +8591,7 @@ msgid "Over %1% it will be off."
 msgstr "Über %1% ist sie ausgeschaltet."
 
 msgid "Over raft"
-msgstr "Über Floß"
+msgstr "über Floß"
 
 msgid "Over-Bridge calibration"
 msgstr "Kalibrierung des Überbrückungsflusses"
@@ -8858,7 +8858,7 @@ msgid "perimeter"
 msgstr "Wand"
 
 msgid "Perimeter acceleration"
-msgstr "Beschleunigung Wände"
+msgstr "Wände"
 
 msgid "Perimeter anchor"
 msgstr "Wand-Anker"
@@ -8897,7 +8897,7 @@ msgid "Perimeter spacing"
 msgstr "Wand-Abstand"
 
 msgid "Perimeter speed"
-msgstr "Geschwindigkeit Wände"
+msgstr "Wände"
 
 msgid "Perimeter transition length"
 msgstr "Umfangsübergang Länge"
@@ -9830,7 +9830,7 @@ msgid "Reverse direction of zoom with mouse wheel"
 msgstr "Umkehrung der Zoom-Richtung des Mausrads"
 
 msgid "Reverse on all perimeters"
-msgstr "Umgekehrt auf allen Wänden"
+msgstr "umgekehrt auf allen Wänden"
 
 msgid "Reverse on even"
 msgstr "Rückwärtsgang bei Gerade"
@@ -10091,7 +10091,7 @@ msgid "Seam preferred direction jitter"
 msgstr "bevorzugte Zitterrichtung für Nähte"
 
 msgid "Seam travel cost"
-msgstr "Reisekosten für die Naht"
+msgstr "Fahrtekosten für die Naht"
 
 msgid "Seam visibility check"
 msgstr "Prüfung der Nahtsichtbarkeit"
@@ -11577,7 +11577,7 @@ msgid "Support & Other"
 msgstr "Stützen & Sonstiges"
 
 msgid "Support acceleration"
-msgstr "Beschleunigung Stützen"
+msgstr "Stützen"
 
 msgid "Support base diameter"
 msgstr "Stützfuß Durchmesser"
@@ -11592,7 +11592,7 @@ msgid "Support Blocker"
 msgstr "Stützblocker"
 
 msgid "Support contact distance type"
-msgstr "Unterstützt den Typ Kontaktabstand"
+msgstr "unterstützt den Typ Kontaktabstand"
 
 msgid "Support Cubic"
 msgstr "Stütz kubisch"
@@ -11625,7 +11625,7 @@ msgid "Support interface pattern"
 msgstr "Schnittstellenmuster unterstützen"
 
 msgid "Support interface pattern angle"
-msgstr "Unterstützt Schnittstellenmusterwinkel"
+msgstr "unterstützt Schnittstellenmusterwinkel"
 
 msgid "Support interface speed"
 msgstr "Unterstützung der Schnittstellengeschwindigkeit"
@@ -11693,7 +11693,7 @@ msgid "Support points edit"
 msgstr "Stützpunkte editieren"
 
 msgid "Support speed"
-msgstr "Geschwindigkeit Stützmaterialtützen"
+msgstr "Stützmaterial"
 
 msgid "Support tower style"
 msgstr "Stützturm Stil"
@@ -11708,13 +11708,13 @@ msgid "supports and pad"
 msgstr "Stützen und Grundschicht"
 
 msgid "Supports remaining times"
-msgstr "Unterstützt Restzeit"
+msgstr "unterstützt Restzeit"
 
 msgid "Supports remaining times method"
-msgstr "Unterstützt die Restzeitmethode"
+msgstr "unterstützt die Restzeitmethode"
 
 msgid "Supports stealth mode"
-msgstr "Unterstützt Stealth Modus"
+msgstr "unterstützt Stealth Modus"
 
 msgid ""
 "Supports work better, if the following feature is enabled:\n"
@@ -12031,7 +12031,7 @@ msgid ""
 msgstr "Die Datei, in die die Ausgabe geschrieben wird (falls nicht angegeben, basiert sie auf der Eingabedatei)."
 
 msgid "The firmware supports stealth mode"
-msgstr "Die Firmware unterstützt den Stealth Modus"
+msgstr "Die Firmware unterstützt den Stealth Modus."
 
 msgid ""
 "The first layer will be grown / shrunk in the XY plane by the configured "
@@ -14072,13 +14072,13 @@ msgid "Travel"
 msgstr "Eilgang"
 
 msgid "Travel acceleration"
-msgstr "Reisebeschleunigung"
+msgstr "Fahrbewegungen"
 
 msgid "Travel cost"
-msgstr "Reisekosten"
+msgstr "Fahrtkosten"
 
 msgid "Travel speed"
-msgstr "Reisegeschwindigkeit"
+msgstr "Fahrgeschwindigkeit"
 
 msgid "Triangles"
 msgstr "Dreiecke"
@@ -15054,7 +15054,7 @@ msgid ""
 msgstr "XY-Abstand zwischen einem Objekt und seinen Stützen. Falls in Prozenten angegeben (z.B. 50%), wird der Abstand von der Breite der Außenkontur ausgehend berechnet."
 
 msgid "xyz decimals"
-msgstr "xyz-Dezimale"
+msgstr "xyz-Dezimalstellen"
 
 msgid "Y coordinate of the left front corner of a wipe tower"
 msgstr "Y-Koordinate der linken vorderen Ecke des Reinigungsturms"
