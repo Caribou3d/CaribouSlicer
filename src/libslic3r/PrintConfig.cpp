@@ -2389,6 +2389,7 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("42");
     def->enum_values.push_back("55");
     def->enum_values.push_back("75");
+    def->enum_values.push_back("100");
     def->enum_labels.push_back("0");
     def->enum_labels.push_back("4");
     def->enum_labels.push_back("5.5");
@@ -2401,6 +2402,7 @@ void PrintConfigDef::init_fff_params()
     def->enum_labels.push_back("42");
     def->enum_labels.push_back("55");
     def->enum_labels.push_back("75");
+    def->enum_labels.push_back("100");
     def->mode = comSimpleAE | comPrusa;
     def->set_default_value(new ConfigOptionPercent(18));
 

@@ -911,7 +911,7 @@ msgid "Advanced mode"
 msgstr "Fortgeschrittener Modus"
 
 msgid "Advanced wipe tower purge volume calculs"
-msgstr "Erweiterte Berechnung des Spülvolumens im Wischturm"
+msgstr "Erweiterte Berechnung des Spülvolumens im Reinigungsturm"
 
 msgid "Advanced: Output log"
 msgstr "Fortgeschritten: Ausgabeprotokoll"
@@ -922,7 +922,7 @@ msgid ""
 "stable. Before purging the print head into an infill or a sacrificial "
 "object, Slic3r will always prime this amount of material into the wipe tower "
 "to produce successive infill or sacrificial object extrusions reliably."
-msgstr "Nach einem Werkzeugwechsel ist die genaue Position des neu geladenen Filaments innerhalb der Düse möglicherweise nicht bekannt, und der Filamentdruck ist wahrscheinlich noch nicht stabil. Bevor der Druckkopf in eine Füllung oder ein Opferobjekt wischt, wird PrusaSlicer immer diese Materialmenge in den Wischturm leiten, um aufeinanderfolgende Füll- oder Opferobjekt-Extrusionen zuverlässig herzustellen."
+msgstr "Nach einem Werkzeugwechsel ist die genaue Position des neu geladenen Filaments innerhalb der Düse möglicherweise nicht bekannt, und der Filamentdruck ist wahrscheinlich noch nicht stabil. Bevor der Druckkopf in eine Füllung oder ein Opferobjekt wischt, wird PrusaSlicer immer diese Materialmenge in den Reinigungsturm leiten, um aufeinanderfolgende Füll- oder Opferobjekt-Extrusionen zuverlässig herzustellen."
 
 msgid "after last perimeter"
 msgstr "nach der letzten Begrenzung"
@@ -1000,7 +1000,7 @@ msgid "All settings changes will not be saved"
 msgstr "Alle Einstellungsänderungen werden nicht gesichert"
 
 msgid "All solid surfaces"
-msgstr "Alle massiven Oberflächen"
+msgstr "alle massiven Oberflächen"
 
 msgid "All standard"
 msgstr "Alles standard"
@@ -1009,7 +1009,7 @@ msgid "All surfaces"
 msgstr "alle Oberflächen"
 
 msgid "All tags"
-msgstr "Alle Tags"
+msgstr "alle Tags"
 
 msgid "All top surfaces"
 msgstr "alle Oberseiten"
@@ -1087,10 +1087,10 @@ msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Erlaubt das Malen nur auf Flächen, ausgewählt mit: \"%1%\""
 
 msgid "Also emit limits to G-code"
-msgstr "Geben Sie auch Grenzen für G-Code aus"
+msgstr "auch Grenzen für G-Code ausgeben"
 
 msgid "Also for all perimeters"
-msgstr "Auch für alle Wände"
+msgstr "auch für alle Wände"
 
 msgid "Also, the fan speed over %1% won't be touched by this feature."
 msgstr "Auch die Lüftergeschwindigkeit über %1% wird von dieser Funktion nicht berührt."
@@ -1099,10 +1099,10 @@ msgid "Alt + Mouse wheel"
 msgstr "Alt + Mausrad"
 
 msgid "Alternate Fill Angle"
-msgstr "Alternativer Befüllungswinkel"
+msgstr "alternativer Befüllungswinkel"
 
 msgid "Alternate nozzles:"
-msgstr "Alternative Düsen:"
+msgstr "alternative Düsen:"
 
 msgid "Always ask for unsaved changes in presets when creating new project"
 msgstr "Stets nach ungespeicherten Änderungen in Voreinstellungen fragen, wenn ein neues Projekt erstellt wird"
@@ -1483,7 +1483,7 @@ msgid "Bed custom texture"
 msgstr "Druckbett individuelle Textur"
 
 msgid "Bed on thumbnail"
-msgstr "Bett auf dem Vorschaubild"
+msgstr "Bett auf dem Bild"
 
 msgid "Bed Shape"
 msgstr "Druckbettprofil"
@@ -1539,7 +1539,7 @@ msgid "Between objects G-code (for sequential printing)"
 msgstr "G-Code zwischen Objekten (Sequentielles Drucken)"
 
 msgid "Big"
-msgstr "Groß"
+msgstr "groß"
 
 msgid "Blacklisted libraries loaded into %1% process:"
 msgstr "Auf der schwarzen Liste stehende Bibliotheken in Prozess %1% geladen:"
@@ -1589,7 +1589,7 @@ msgid "Bridge"
 msgstr "Überbrückung"
 
 msgid "Bridge acceleration"
-msgstr "Beschleunigung der Brücke"
+msgstr "Beschleunigung Brücken"
 
 msgid "Bridge calibration"
 msgstr "Brückenkalibrierung"
@@ -1616,7 +1616,7 @@ msgid "Bridge margin"
 msgstr "Brückenrand"
 
 msgid "Bridge max length"
-msgstr "maximale Länge der Brücke"
+msgstr "max. Länge der Brücke"
 
 msgid "Bridge precision"
 msgstr "Präzision der Brücke"
@@ -2077,7 +2077,7 @@ msgid "Circle"
 msgstr "Kreis"
 
 msgid "Circular"
-msgstr "Kreisförmig"
+msgstr "kreisförmig"
 
 msgid "Classic"
 msgstr "klassisch"
@@ -2147,7 +2147,7 @@ msgid "Client certificate files (*.pfx, *.p12)|*.pfx;*.p12|All files|*.*"
 msgstr "Client-Zertifikatsdateien (*.pfx, *.p12)|*.pfx;*.p12|Alle Dateien|*.*"
 
 msgid "Client certificate is optional. It is only needed if you use 2-way ssl."
-msgstr "Das Client-Zertifikat ist optional. Es wird nur benötigt, wenn Sie 2-Wege-SSL verwenden."
+msgstr "Das Client-Zertifikat ist optional. Es wird nur ben&ouml;tigt, wenn Sie 2-Wege-SSL verwenden."
 
 msgid "Client Certificate Password"
 msgstr "Client-Zertifikat Passwort"
@@ -2252,16 +2252,16 @@ msgid "Compared presets has different printer technology"
 msgstr "Verglichene Voreinstellungen haben unterschiedliche Druckertechnologie"
 
 msgid "Compatible print profiles"
-msgstr "Kompatible Druckprofile"
+msgstr "kompatible Druckprofile"
 
 msgid "Compatible print profiles condition"
-msgstr "Kompatible Druckprofile Bedingung"
+msgstr "kompatible Druckprofile Bedingung"
 
 msgid "Compatible printers"
-msgstr "Kompatible Drucker"
+msgstr "kompatible Drucker"
 
 msgid "Compatible printers condition"
-msgstr "Kompatible Druckerbedingung"
+msgstr "kompatible Druckerbedingung"
 
 msgid "Complete individual objects"
 msgstr "Objekte nacheinander drucken"
@@ -2908,13 +2908,13 @@ msgid "Delete &All"
 msgstr "&Alles löschen"
 
 msgid "Delete all"
-msgstr "Alle löschen"
+msgstr "alle löschen"
 
 msgid "Delete All Instances from Object"
-msgstr "Alle Kopien des Objektes löschen"
+msgstr "alle Kopien des Objektes löschen"
 
 msgid "Delete All Objects"
-msgstr "Alle Objekte löschen"
+msgstr "alle Objekte löschen"
 
 msgid "Delete color change"
 msgstr "Farbwechsel löschen"
@@ -3042,7 +3042,7 @@ msgid "Deselect by rectangle"
 msgstr "Abwahl über Rechteck"
 
 msgid "Deselects all objects"
-msgstr "Alle Objekte abwählen"
+msgstr "alle Objekte abwählen"
 
 msgid "Desktop Integration"
 msgstr "Desktop Integration"
@@ -3119,7 +3119,7 @@ msgid "Direction"
 msgstr "Richtung"
 
 msgid "Disable"
-msgstr "Deaktivieren"
+msgstr "deaktivieren"
 
 msgid "Disable 'Avoid crossing perimeters' for the first layer."
 msgstr "Deaktivieren Sie für die erste Ebene die Option 'Überqueren von Begrenzungen vermeiden'."
@@ -3128,7 +3128,7 @@ msgid "Disable \"%1%\""
 msgstr "\"%1%\" abschalten"
 
 msgid "Disable fan for the first"
-msgstr "Kein Lüfter für die ersten"
+msgstr "kein Lüfter für die ersten"
 
 msgid "Disabled"
 msgstr "deaktiviert"
@@ -3508,13 +3508,13 @@ msgid ""
 msgstr "aktiviere diese Option, um eine G-Code-Datei zu erhalten, die G2 und G3 Bewegungen enthält. Und die Anpassungstoleranz ist dieselbe wie die Auflösung"
 
 msgid "Enable variable layer height feature"
-msgstr "Variable Schichthöhen aktivieren"
+msgstr "variable Schichthöhen aktivieren"
 
 msgid "Enable vertical mirroring of output images"
 msgstr "Vertikale Spiegelung der Ausgabebilder aktivieren"
 
 msgid "Enable wipe tower"
-msgstr "aktiviere den Wischturm"
+msgstr "aktiviere den Reinigungsturm"
 
 msgid "Enabled"
 msgstr "aktiviert"
@@ -3670,7 +3670,7 @@ msgid "EPeri"
 msgstr "EPeri"
 
 msgid "Erase all objects"
-msgstr "Alle Objekte löschen"
+msgstr "alle Objekte löschen"
 
 msgid "Error"
 msgstr "Fehler"
@@ -4007,7 +4007,7 @@ msgid "Extension"
 msgstr "Erweiterung"
 
 msgid "External"
-msgstr "Extern"
+msgstr "extern"
 
 msgid "External perimeter"
 msgstr "Außenkontur"
@@ -4499,10 +4499,10 @@ msgid "first layer"
 msgstr "erste Schicht"
 
 msgid "First layer acceleration"
-msgstr "ersteSchicht Beschleunigung"
+msgstr "Beschleunigung erste Schicht"
 
 msgid "First layer bed temperature"
-msgstr "ersteSchicht Bett-Temperatur"
+msgstr "erste Schicht Bett-Temperatur"
 
 msgid "First layer calibration"
 msgstr "Kalibrierung der ersten Schicht"
@@ -4517,7 +4517,7 @@ msgid "First layer expansion"
 msgstr "Expansion der ersten Schicht"
 
 msgid "First layer extruder"
-msgstr "ersteSchicht Extruder"
+msgstr "erste Schicht Extruder"
 
 msgid "First layer flow ratio"
 msgstr "Fließverhältnis der ersten Schicht"
@@ -4541,7 +4541,7 @@ msgstr ""
 "Die Höhe der ersten Schicht wird auf 0,01 zurückgesetzt."
 
 msgid "First layer nozzle temperature"
-msgstr "ersteSchicht Düsentemperatur"
+msgstr "erste Schicht Düsentemperatur"
 
 msgid "First layer patch calibration"
 msgstr "Expansion der ersten Schicht (Fläche)"
@@ -4562,13 +4562,13 @@ msgid "First layer width"
 msgstr "Breite der ersten Schicht"
 
 msgid "First object layer over raft interface"
-msgstr "ersteObjektschicht über der Raft-Schnittstelle"
+msgstr "erste Objektschicht über der Raft-Schnittstelle"
 
 msgid "Fix through NetFabb"
-msgstr "Reparieren mittels Netfabb"
+msgstr "reparieren mittels Netfabb"
 
 msgid "Fixing through NetFabb"
-msgstr "Reparieren durch NetFabb"
+msgstr "reparieren durch NetFabb"
 
 msgid "Flash Printer &Firmware"
 msgstr "Flashe Drucker &Firmware"
@@ -4592,7 +4592,7 @@ msgid "Flashing succeeded!"
 msgstr "Flashen erfolgreich!"
 
 msgid "Flat time compensation"
-msgstr "Pauschaler Zeitausgleich"
+msgstr "pauschaler Zeitausgleich"
 
 msgid "Flexible"
 msgstr "Flexibel"
@@ -4685,7 +4685,7 @@ msgid ""
 "usually 30-32mm.  Start with a low value and gradually increase it until "
 "strings are gone.  If there are blobs on your wipe tower, your value is too "
 "high."
-msgstr "Bei Standard-Extrudern in der Regel 40-42 mm.  Bei Bondtech-Extrudern, die aufgerüstet werden, in der Regel 30-32 mm.  Beginnen Sie mit einem niedrigen Wert und erhöhen Sie ihn allmählich, bis keine Fäden mehr vorhanden sind.  Wenn Sie Kleckse auf Ihrem Wischturm haben, ist Ihr Wert zu hoch."
+msgstr "Bei Standard-Extrudern in der Regel 40-42 mm.  Bei Bondtech-Extrudern, die aufgerüstet werden, in der Regel 30-32 mm.  Beginnen Sie mit einem niedrigen Wert und erhöhen Sie ihn allmählich, bis keine Fäden mehr vorhanden sind.  Wenn Sie Kleckse auf Ihrem Reinigungsturm haben, ist Ihr Wert zu hoch."
 
 msgid ""
 "for the left button: indicates a non-system (or non-default) preset,\n"
@@ -4734,12 +4734,12 @@ msgid ""
 msgstr "Erzwingt die Erzeugung von massiven Schalen zwischen benachbarten Materialien/Volumina. Geeignet für Multiextruderdrucke mit transluzenten Materialien oder manuell löslichen Stützmaterialien."
 
 msgid "Format of G-code thumbnails"
-msgstr "Format der G-Code-Miniaturbilder"
+msgstr "Format der Bilder"
 
 msgid ""
 "Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
 "QOI for low memory firmware"
-msgstr "Format der G-Code-Miniaturansichten: PNG für beste Qualität, JPG für kleinste Größe, QOI für speicherarme Firmware"
+msgstr "Format der Bilder: PNG für beste Qualität, JPG für kleinste Größe, QOI für speicherarme Firmware"
 
 msgid "Formatting"
 msgstr "Formatierung"
@@ -4759,25 +4759,25 @@ msgid "from"
 msgstr "von"
 
 msgid "From"
-msgstr "Von"
+msgstr "von"
 
 msgid "from brim"
 msgstr "von dem Rand"
 
 msgid "From filament"
-msgstr "Vom Glühfaden"
+msgstr "vom Filament"
 
 msgid "From Object List You can't delete the last solid part from object."
 msgstr "Sie können nicht das letzte solide Teil des Objekts von der Objektliste löschen."
 
 msgid "From plane"
-msgstr "Von der Ebene"
+msgstr "von der Ebene"
 
 msgid "From region"
-msgstr "Aus der Region"
+msgstr "aus der Region"
 
 msgid "From the whole layer"
-msgstr "Von der gesamten Schicht"
+msgstr "von der gesamten Schicht"
 
 msgid "Front"
 msgstr "Front"
@@ -4786,7 +4786,7 @@ msgid "Front View"
 msgstr "Frontalansicht"
 
 msgid "Full fan speed at layer"
-msgstr "Volle Lüfterdrehzahl auf Schicht"
+msgstr "volle Lüfterdrehzahl ab Schicht"
 
 msgid "full profile name"
 msgstr "vollständiger Profilname"
@@ -5317,7 +5317,7 @@ msgid ""
 msgstr "Wie stark die Stützen das gestützte Objekt anheben sollen. Wenn dieser Wert gleich Null ist, wird der untere Teil der Modellgeometrie als Teil des Pads betrachtet. Wenn \"Pad around object\" aktiviert ist, wird dieser Wert ignoriert."
 
 msgid "How to apply limits"
-msgstr "Wie man Grenzen anwendet"
+msgstr "Maschinengrenzen"
 
 msgid ""
 "How to apply the Machine Limits.\n"
@@ -6022,7 +6022,7 @@ msgid "Infill bridges fan speed"
 msgstr "Gebläsegeschwindigkeit für Füllbrücken"
 
 msgid "Infill extruder"
-msgstr "Extruder Füllung"
+msgstr "Extruder für Füllung"
 
 msgid "Infill max first layer speed"
 msgstr "Infill max. Geschwindigkeit der ersten Schicht"
@@ -6482,13 +6482,13 @@ msgid "Layer range Settings to modify"
 msgstr "Schichtbereicheinstellungen zum Ändern"
 
 msgid "Layer Time"
-msgstr "Ebene Zeit"
+msgstr "Zeit pro Schicht"
 
 msgid "Layer time"
-msgstr "Ebene Zeit"
+msgstr "Zeit pro Schicht"
 
 msgid "Layer time goal"
-msgstr "Ebene Zeitziel"
+msgstr "Zeitlimit pro Schicht"
 
 msgid "layers"
 msgstr "Schichten"
@@ -6912,49 +6912,49 @@ msgid "max %s version"
 msgstr "max %s Version"
 
 msgid "Max angle"
-msgstr "maximaler Winkel"
+msgstr "max. Winkel"
 
 msgid "max angle"
-msgstr "maximaler Winkel"
+msgstr "max. Winkel"
 
 msgid "Max auto-speed"
-msgstr "maximale Autogeschwindigkeit"
+msgstr "max. Autogeschwindigkeit"
 
 msgid "Max bridge density"
-msgstr "maximale Brückendichte"
+msgstr "max. Brückendichte"
 
 msgid "Max bridge length"
-msgstr "maximale Überbrückungslänge"
+msgstr "max. Überbrückungslänge"
 
 msgid "Max bridges on a pillar"
-msgstr "maximale Brücken auf einem Pfeiler"
+msgstr "max. Brücken auf einem Pfeiler"
 
 msgid "Max fan speed"
-msgstr "maximale Lüftergeschwindigkeit"
+msgstr "max. Lüftergeschwindigkeit"
 
 msgid "Max height"
-msgstr "maximale Höhe"
+msgstr "max. Höhe"
 
 msgid "Max infill"
 msgstr "max. Füllung"
 
 msgid "Max layer height"
-msgstr "maximale Schichthöhe"
+msgstr "max. Schichthöhe"
 
 msgid "Max layer height can't be greater than nozzle diameter"
 msgstr "Die maximale Schichthöhe darf nicht größer sein als der Düsendurchmesser"
 
 msgid "Max length"
-msgstr "maximale Länge"
+msgstr "max. Länge"
 
 msgid "Max line overlap"
-msgstr "maximale Linienüberlappung"
+msgstr "max. Linienüberlappung"
 
 msgid "Max merge distance"
-msgstr "maximaler Zusammenfügeabstand"
+msgstr "max. Zusammenfügeabstand"
 
 msgid "Max perimeter count for holes"
-msgstr "maximale Umfangszahl für Löcher"
+msgstr "max. Umfangszahl für Löcher"
 
 msgid "Max pillar linking distance"
 msgstr "max. Pfeiler Verbindungsabstand"
@@ -6963,22 +6963,22 @@ msgid "Max print height"
 msgstr "max. Druckhöhe"
 
 msgid "Max print speed for Autospeed"
-msgstr "maximale Druckgeschwindigkeit für Autospeed"
+msgstr "max. Druckgeschwindigkeit für Autospeed"
 
 msgid "Max small perimeters length"
-msgstr "maximale Länge der kleinen Perimeter"
+msgstr "max. Länge der kleinen Perimeter"
 
 msgid "Max speed"
 msgstr "max. Geschwindigkeit"
 
 msgid "Max speed of object first layer over raft interface"
-msgstr "maximale Geschwindigkeit des Objekts erste Schicht über der Floßoberfläche"
+msgstr "max. Geschwindigkeit des Objekts erste Schicht über der Floßoberfläche"
 
 msgid "Max speed on the wipe tower"
-msgstr "maximale Geschwindigkeit auf dem Wischturm"
+msgstr "max. Geschwindigkeit auf dem Reinigungsturm"
 
 msgid "Max speed reduction"
-msgstr "maximale Geschwindigkeitsreduzierung"
+msgstr "max. Geschwindigkeitsreduzierung"
 
 msgid "Max volumetric slope negative"
 msgstr "max. volumetrische Steigung negativ"
@@ -6987,40 +6987,40 @@ msgid "Max volumetric slope positive"
 msgstr "max. volumetrische Steigung positiv"
 
 msgid "Max volumetric speed"
-msgstr "maximale Volumengeschwindigkeit"
+msgstr "max. Volumengeschwindigkeit"
 
 msgid "Max width"
-msgstr "maximale Breite"
+msgstr "max. Breite"
 
 msgid "Max Wipe deviation"
-msgstr "maximale Wischabweichung"
+msgstr "max. Wischabweichung"
 
 msgid "Maximal bridging distance"
-msgstr "maximaler Überbrückungsabstand"
+msgstr "max. Überbrückungsabstand"
 
 msgid "Maximal distance between supports on sparse infill sections. "
 msgstr "Maximalabstand zwischen Stützen auf spärlichen Infill-Abschnitten. "
 
 msgid "Maximum acceleration E"
-msgstr "maximale Beschleunigung E"
+msgstr "max. Beschleunigung E"
 
 msgid "Maximum acceleration for travel moves"
-msgstr "maximale Beschleunigung für Fahrbewegungen"
+msgstr "max. Beschleunigung für Fahrbewegungen"
 
 msgid "Maximum acceleration of the E axis"
-msgstr "maximale Beschleunigung der E-Achse"
+msgstr "max. Beschleunigung der E-Achse"
 
 msgid "Maximum acceleration of the X axis"
-msgstr "maximale Beschleunigung der X-Achse"
+msgstr "max. Beschleunigung der X-Achse"
 
 msgid "Maximum acceleration of the Y axis"
-msgstr "maximale Beschleunigung der Y-Achse"
+msgstr "max. Beschleunigung der Y-Achse"
 
 msgid "Maximum acceleration of the Z axis"
-msgstr "maximale Beschleunigung der Z-Achse"
+msgstr "max. Beschleunigung der Z-Achse"
 
 msgid "Maximum acceleration when extruding"
-msgstr "maximale Beschleunigung beim Extrudieren"
+msgstr "max. Beschleunigung beim Extrudieren"
 
 msgid ""
 "Maximum acceleration when extruding (M204 P)\n"
@@ -7028,30 +7028,30 @@ msgid ""
 "Marlin (legacy) firmware flavor will use this also as travel acceleration "
 "(M204 T)."
 msgstr ""
-"maximale Beschleunigung beim Extrudieren (M204 P)\n"
+"max. Beschleunigung beim Extrudieren (M204 P)\n"
 "\n"
 "Marlin (Legacy) Firmware Flavor verwendet dies auch als Fahrbeschleunigung (M204 T)."
 
 msgid "Maximum acceleration when retracting"
-msgstr "maximale Beschleunigung beim Einzug"
+msgstr "max. Beschleunigung beim Einzug"
 
 msgid "Maximum acceleration when retracting (M204 R)"
-msgstr "maximale Beschleunigung beim Einzug (M204 R)"
+msgstr "max. Beschleunigung beim Einzug (M204 R)"
 
 msgid "Maximum acceleration when travelling (M204 T)"
-msgstr "maximale Beschleunigung während der Fahrt (M204 T)"
+msgstr "max. Beschleunigung während der Fahrt (M204 T)"
 
 msgid "Maximum acceleration X"
-msgstr "maximale Beschleunigung X"
+msgstr "max. Beschleunigung X"
 
 msgid "Maximum acceleration Y"
-msgstr "maximale Beschleunigung Y"
+msgstr "max. Beschleunigung Y"
 
 msgid "Maximum acceleration Z"
-msgstr "maximale Beschleunigung Z"
+msgstr "max. Beschleunigung Z"
 
 msgid "Maximum accelerations"
-msgstr "maximale Beschleunigungen"
+msgstr "max. Beschleunigungen"
 
 msgid ""
 "Maximum angle to let a brim ear appear. \n"
@@ -7114,64 +7114,64 @@ msgstr ""
 "Setze 0, um Brücken zu ignorieren."
 
 msgid "Maximum exposure time"
-msgstr "maximale Belichtungszeit"
+msgstr "max. Belichtungszeit"
 
 msgid "Maximum feedrate E"
-msgstr "maximaler Vorschub E"
+msgstr "max. Vorschub E"
 
 msgid "Maximum feedrate of the E axis"
-msgstr "maximaler Vorschub auf der E-Achse"
+msgstr "max. Vorschub auf der E-Achse"
 
 msgid "Maximum feedrate of the X axis"
-msgstr "maximaler Vorschub auf der X-Achse"
+msgstr "max. Vorschub auf der X-Achse"
 
 msgid "Maximum feedrate of the Y axis"
-msgstr "maximaler Vorschub auf der Y-Achse"
+msgstr "max. Vorschub auf der Y-Achse"
 
 msgid "Maximum feedrate of the Z axis"
-msgstr "maximaler Vorschub auf der Z-Achse"
+msgstr "max. Vorschub auf der Z-Achse"
 
 msgid "Maximum feedrate X"
-msgstr "maximaler Vorschub X"
+msgstr "max. Vorschub X"
 
 msgid "Maximum feedrate Y"
-msgstr "maximaler Vorschub Y"
+msgstr "max. Vorschub Y"
 
 msgid "Maximum feedrate Z"
-msgstr "maximaler Vorschub Z"
+msgstr "max. Vorschub Z"
 
 msgid "Maximum feedrates"
-msgstr "maximaler Vorschub"
+msgstr "max. Vorschub"
 
 msgid "Maximum G1 per second"
 msgstr "Maximal G1 pro Sekunde"
 
 msgid "Maximum initial exposure time"
-msgstr "maximale Anfang-Belichtungszeit"
+msgstr "max. Anfang-Belichtungszeit"
 
 msgid "Maximum jerk E"
-msgstr "maximaler Ruck E"
+msgstr "max. Ruck E"
 
 msgid "Maximum jerk of the E axis"
-msgstr "maximaler Ruck auf der E-Achse"
+msgstr "max. Ruck auf der E-Achse"
 
 msgid "Maximum jerk of the X axis"
-msgstr "maximaler Ruck auf der X-Achse"
+msgstr "max. Ruck auf der X-Achse"
 
 msgid "Maximum jerk of the Y axis"
-msgstr "maximaler Ruck auf der Y-Achse"
+msgstr "max. Ruck auf der Y-Achse"
 
 msgid "Maximum jerk of the Z axis"
-msgstr "maximaler Ruck auf der Z-Achse"
+msgstr "max. Ruck auf der Z-Achse"
 
 msgid "Maximum jerk X"
-msgstr "maximaler Ruck X"
+msgstr "max. Ruck X"
 
 msgid "Maximum jerk Y"
-msgstr "maximaler Ruck Y"
+msgstr "max. Ruck Y"
 
 msgid "Maximum jerk Z"
-msgstr "maximaler Ruck Z"
+msgstr "max. Ruck Z"
 
 msgid ""
 "Maximum layer height for the raft interface.\n"
@@ -7215,7 +7215,7 @@ msgid "Maximum layer height. Limit for better quality/layer adhesion."
 msgstr "Maximale Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
 msgid "Maximum length of the infill anchor"
-msgstr "maximale Länge des Infill-Ankers"
+msgstr "max. Länge des Infill-Ankers"
 
 msgid ""
 "Maximum number of bridges that can be placed on a pillar. Bridges hold "
@@ -7234,7 +7234,7 @@ msgstr ""
 "Zum Deaktivieren auf 0 setzen."
 
 msgid "Maximum speed"
-msgstr "maximale Geschwindigkeit"
+msgstr "max. Geschwindigkeit"
 
 msgid ""
 "Maximum speed allowed for this filament. Limits the maximum speed of a print "
@@ -7252,13 +7252,13 @@ msgid ""
 msgstr "Maximal zulässige volumetrische Geschwindigkeit für dieses Filament. Begrenzt die maximale volumetrische Geschwindigkeit eines Drucks auf das Minimum der volumetrischen Geschwindigkeit von Druck und Filament. Setzen Sie Null für keine Begrenzung."
 
 msgid "Maximum width of a segmented region"
-msgstr "maximale Breite einer segmentierten Region"
+msgstr "max. Breite einer segmentierten Region"
 
 msgid "Maximum width of a segmented region. Zero disables this feature."
 msgstr "Maximale Breite eines segmentierten Bereichs. Null schaltet diese Funktion aus."
 
 msgid "Maximum Wipe deviation to the inside"
-msgstr "maximale Wischabweichung nach innen"
+msgstr "max. Wischabweichung nach innen"
 
 msgid "Merge"
 msgstr "Zusammenfügen"
@@ -7327,10 +7327,10 @@ msgid "milliseconds"
 msgstr "Milisekunden"
 
 msgid "min"
-msgstr "min"
+msgstr "min."
 
 msgid "Min"
-msgstr "min"
+msgstr "min."
 
 msgid "min %s version"
 msgstr "min %s Version"
@@ -7351,13 +7351,13 @@ msgid "Min first layer speed"
 msgstr "min. Geschwindigkeit der ersten Schicht"
 
 msgid "Min height"
-msgstr "minimale Höhe"
+msgstr "min. Höhe"
 
 msgid "Min height for travel"
-msgstr "minimale Höhe für Reisen"
+msgstr "min. Höhe für Reisen"
 
 msgid "Min layer height"
-msgstr "minimale Schichthöhe"
+msgstr "min. Schichthöhe"
 
 msgid "Min layer height can't be greater than Max layer height"
 msgstr "Die minimale Schichthöhe kann nicht größer sein als die maximale Schichthöhe"
@@ -7366,7 +7366,7 @@ msgid "Min length"
 msgstr "min. Länge"
 
 msgid "Min print speed"
-msgstr "minimale Druckgeschwindigkeit"
+msgstr "min. Druckgeschwindigkeit"
 
 msgid "Min small perimeters length"
 msgstr "min. Länge der kleinen Perimeter"
@@ -7375,19 +7375,19 @@ msgid "Min surface"
 msgstr "min. Oberfläche"
 
 msgid "Min width"
-msgstr "minimale Breite"
+msgstr "min. Breite"
 
 msgid "Minimal distance of the support points"
-msgstr "minimaler Abstand der Stützpunkte"
+msgstr "min. Abstand der Stützpunkte"
 
 msgid "Minimal filament extrusion length"
-msgstr "minimale Filament Extrusionlänge"
+msgstr "min. Filament Extrusionlänge"
 
 msgid "Minimal points distance"
-msgstr "minimaler Prunktabstand"
+msgstr "min. Prunktabstand"
 
 msgid "Minimal purge on wipe tower"
-msgstr "minimale Wischmenge im Wischturm"
+msgstr "min. Wischmenge im Reinigungsturm"
 
 msgid "Minimize application"
 msgstr "Anwendung minimieren"
@@ -7405,7 +7405,7 @@ msgid ""
 msgstr "Minimaler (konvexer) Winkel an einem Scheitelpunkt, um eine Glättung zu ermöglichen (es wird versucht, eine Kurve um den Scheitelpunkt zu erstellen). 180 : es wird nichts geglättet, 0 : alle Winkel werden geglättet."
 
 msgid "Minimum bottom shell thickness"
-msgstr "minimale Stärke der Bodenschale"
+msgstr "min. Stärke der Bodenschale"
 
 msgid "Minimum bottom shell thickness is %1% mm."
 msgstr "Die Mindeststärke der Bodenschale beträgt %1% mm."
@@ -7442,43 +7442,43 @@ msgstr ""
 "Füllungen und dünne Bereiche werden bis zu 0,0125 mm vereinfacht."
 
 msgid "Minimum exposure time"
-msgstr "minimale Belichtungszeit"
+msgstr "min. Belichtungszeit"
 
 msgid "Minimum extrusion length"
-msgstr "minimale Extrusionslänge"
+msgstr "min. Extrusionslänge"
 
 msgid "Minimum fan speed"
-msgstr "minimale Lüftergeschwindigkeit"
+msgstr "min. Lüftergeschwindigkeit"
 
 msgid "Minimum feature size"
-msgstr "minimale Merkmalgröße"
+msgstr "min. Merkmalgröße"
 
 msgid "Minimum feedrate when extruding"
-msgstr "minimaler Vorschub bei Extrusion"
+msgstr "min. Vorschub bei Extrusion"
 
 msgid "Minimum feedrate when extruding (M205 S)"
-msgstr "minimaler Vorschub beim Extrudieren (M205 S)"
+msgstr "min. Vorschub beim Extrudieren (M205 S)"
 
 msgid "Minimum feedrates"
-msgstr "minimaler Vorschub"
+msgstr "min. Vorschub"
 
 msgid "Minimum initial exposure time"
-msgstr "minimale Anfang-Belichtungszeit"
+msgstr "min. Anfang-Belichtungszeit"
 
 msgid "Minimum layer height. Limit for better quality/layer adhesion."
-msgstr "minimale Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
+msgstr "min. Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
 msgid "Minimum perimeter width"
-msgstr "minimale Umfangsbreite"
+msgstr "min. Umfangsbreite"
 
 msgid "Minimum resolution in nanometers"
-msgstr "minimale Auflösung in Nanometern"
+msgstr "min. Auflösung in Nanometern"
 
 msgid "Minimum retraction"
-msgstr "minimaler Rückzug"
+msgstr "min. Rückzug"
 
 msgid "Minimum shell thickness"
-msgstr "minimale Schalenstärke"
+msgstr "min. Schalenstärke"
 
 msgid ""
 "Minimum speed when printing the first layer.\n"
@@ -7505,7 +7505,7 @@ msgid "Minimum top shell thickness is %1% mm."
 msgstr "Die Mindeststärke der Oberschale beträgt %1% mm."
 
 msgid "Minimum top width for infill"
-msgstr "minimale obere Breite für die Füllung"
+msgstr "min. obere Breite für die Füllung"
 
 msgid "Minimum travel after"
 msgstr "Minimalbewegung nach"
@@ -7514,13 +7514,13 @@ msgid "Minimum travel after retraction"
 msgstr "Minimalbewegung nach Einziehen"
 
 msgid "Minimum travel after z lift"
-msgstr "minimaler Weg nach z Lift"
+msgstr "min. Weg nach z Lift"
 
 msgid "Minimum travel feedrate"
-msgstr "minimaler Vorschub im Eilgang"
+msgstr "min. Vorschub im Eilgang"
 
 msgid "Minimum travel feedrate (M205 T)"
-msgstr "minimaler Vorschub im Eilgang (M205 T)"
+msgstr "min. Vorschub im Eilgang (M205 T)"
 
 msgid ""
 "Minimum unsupported width for an extrusion to apply the bridge fan & "
@@ -8358,7 +8358,7 @@ msgid "Ooze prevention"
 msgstr "Vermeidung von Nachsickern (Ooze)"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
-msgstr "Die Sickervermeidung wird derzeit nicht unterstützt, wenn der Wischturm aktiviert ist."
+msgstr "Die Sickervermeidung wird derzeit nicht unterstützt, wenn der Reinigungsturm aktiviert ist."
 
 msgid "Open %s"
 msgstr "Offen %s"
@@ -8870,7 +8870,7 @@ msgid "Perimeter distribution count"
 msgstr "Anzahl Wände für Verteilung"
 
 msgid "Perimeter extruder"
-msgstr "Extruder Wände"
+msgstr "Extruder für Wände"
 
 msgid "Perimeter fan speed"
 msgstr "Geschwindigkeit des Perimeterlüfters"
@@ -9059,13 +9059,13 @@ msgid "Preferences"
 msgstr "Einstellungen"
 
 msgid "Preferred direction of the seam"
-msgstr "Bevorzugte Richtung für die Naht"
+msgstr "bevorzugte Richtung für die Naht"
 
 msgid "Preferred direction of the seam - jitter"
-msgstr "Bevorzugte Zitterrichtung für die Naht"
+msgstr "bevorzugte Zitterrichtung für die Naht"
 
 msgid "Preferred orientation"
-msgstr "Bevorzugte Ausrichtung"
+msgstr "bevorzugte Ausrichtung"
 
 msgid "Preparing infill"
 msgstr "Infill wird vorbereitet"
@@ -9161,7 +9161,7 @@ msgid "Previously sliced file ("
 msgstr "Vorher geslicete Datei ("
 
 msgid "Prime all printing extruders"
-msgstr "Alle Druckextruder vorfüllen"
+msgstr "alle Druckextruder vorfüllen"
 
 msgid "print"
 msgstr "Druck"
@@ -9176,7 +9176,7 @@ msgid "Print a calibration cube, for various calibration goals."
 msgstr "Drucken Sie einen Kalibrierungswürfel für verschiedene Kalibrierungsziele."
 
 msgid "Print at the end"
-msgstr "Drucken am Ende"
+msgstr "am Ende ausgeben"
 
 msgid ""
 "Print contour perimeters from the outermost one to the innermost one instead "
@@ -9316,7 +9316,7 @@ msgid ""
 "(if set).\n"
 "If set to zero, a value of 80mm/s is used."
 msgstr ""
-"Druckgeschwindigkeit des Wischturms. Begrenzt durch filament_max_volumetric_speed (falls festgelegt).\n"
+"Druckgeschwindigkeit des Reinigungsturms. Begrenzt durch filament_max_volumetric_speed (falls festgelegt).\n"
 "Wenn auf Null gesetzt, wird ein Wert von 80mm/s verwendet."
 
 msgid ""
@@ -9523,7 +9523,7 @@ msgid "Recreating"
 msgstr "Neu Erzeugen"
 
 msgid "Rectangular"
-msgstr "Rechteckig"
+msgstr "rechteckig"
 
 msgid "Rectilinear"
 msgstr "geradlinig"
@@ -9600,10 +9600,10 @@ msgid "remove"
 msgstr "Entfernen"
 
 msgid "Remove all holes"
-msgstr "Alle Löcher entfernen"
+msgstr "alle Löcher entfernen"
 
 msgid "Remove all points"
-msgstr "Alle Punkte entfernen"
+msgstr "alle Punkte entfernen"
 
 msgid "Remove all selection"
 msgstr "Gesamte Auswahl entfernen"
@@ -9660,7 +9660,7 @@ msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Benutzerprofile entfernen (eine Momentaufnahme wird vorab erstellt)"
 
 msgid "Remove variable layer height"
-msgstr "Variable Schichthöhe entfernen"
+msgstr "variable Schichthöhe entfernen"
 
 msgid "Rename Object"
 msgstr "Objekt umbenennen"
@@ -10073,7 +10073,7 @@ msgid "Seam notch for round perimeters"
 msgstr "Nahtaussparung für runde Umfänge"
 
 msgid "Seam notch maximum angle"
-msgstr "maximaler Winkel der Nahtkerbe"
+msgstr "max. Winkel der Nahtkerbe"
 
 msgid "Seam painting"
 msgstr "Aufmal-Nähte"
@@ -10085,10 +10085,10 @@ msgid "Seam position"
 msgstr "Nahtposition"
 
 msgid "Seam preferred direction"
-msgstr "Bevorzugte Richtung für Nähte"
+msgstr "bevorzugte Richtung für Nähte"
 
 msgid "Seam preferred direction jitter"
-msgstr "Bevorzugte Zitterrichtung für Nähte"
+msgstr "bevorzugte Zitterrichtung für Nähte"
 
 msgid "Seam travel cost"
 msgstr "Reisekosten für die Naht"
@@ -10155,10 +10155,10 @@ msgid ""
 msgstr "Wählen Sie ein Ziel aus. Dadurch werden die Einstellungen geändert, um die Effekte der Suche zu erhöhen."
 
 msgid "Select all objects"
-msgstr "Alle Objekte auswählen"
+msgstr "alle Objekte auswählen"
 
 msgid "Select all points"
-msgstr "Alle Punkte auswählen"
+msgstr "alle Punkte auswählen"
 
 msgid "Select all standard printers in this page"
 msgstr "Wählen Sie alle Standarddrucker auf dieser Seite aus"
@@ -10304,7 +10304,7 @@ msgid "Selection-Remove Object"
 msgstr "Auswahl Objekt entfernen"
 
 msgid "Selects all objects"
-msgstr "Alle Objekte auswählen"
+msgstr "alle Objekte auswählen"
 
 msgid "Send G-code"
 msgstr "Sende G-code"
@@ -10647,10 +10647,10 @@ msgid "Show about dialog"
 msgstr "\"Über\"-Dialog anzeigen"
 
 msgid "Show advanced settings"
-msgstr "Ausführliche Einstellungen anzeigen"
+msgstr "ausführliche Einstellungen anzeigen"
 
 msgid "Show all presets (including incompatible)"
-msgstr "Alle Voreinstellungen anzeigen (auch inkompatible)"
+msgstr "alle Voreinstellungen anzeigen (auch inkompatible)"
 
 msgid "Show drop project dialog"
 msgstr "Projekt-Drop-Dialog anzeigen"
@@ -10659,16 +10659,16 @@ msgid "Show error message"
 msgstr "Fehlermeldungen anzeigen"
 
 msgid "Show estimated print time"
-msgstr "Geschätzte Druckzeit anzeigen"
+msgstr "geschätzte Druckzeit anzeigen"
 
 msgid "Show estimated print time on the ruler"
-msgstr "Geschätzte Druckzeit auf dem Lineal anzeigen"
+msgstr "geschätzte Druckzeit auf dem Lineal anzeigen"
 
 msgid "Show ignored settings when loading a project or configuration"
 msgstr "Ignorierte Einstellungen beim Laden eines Projekts oder einer Konfiguration anzeigen"
 
 msgid "Show incompatible print and filament presets"
-msgstr "Inkompatible Druck- und Filamenteinstellungen anzeigen"
+msgstr "inkompatible Druck- und Filamenteinstellungen anzeigen"
 
 msgid "Show keyboard shortcuts list"
 msgstr "Liste der Tastaturkürzel anzeigen"
@@ -10815,7 +10815,7 @@ msgid "Sinking"
 msgstr "Absenken"
 
 msgid "Size"
-msgstr "OfFile||Größe"
+msgstr "Größe"
 
 msgid "Size and coordinates"
 msgstr "Größe und Koordinaten"
@@ -11084,7 +11084,7 @@ msgid "Solid infill every"
 msgstr "massive Füllung alle"
 
 msgid "Solid infill extruder"
-msgstr "Extruder massive Füllung"
+msgstr "Extruder für müssive Füllung"
 
 msgid "Solid Infill fan speed"
 msgstr "massive Füllung Gebläsegeschwindigkeit"
@@ -11123,13 +11123,13 @@ msgid "Solid layers"
 msgstr "massive Schichten"
 
 msgid "Solid spacing"
-msgstr "Feste Abstände"
+msgstr "feste Abstände"
 
 msgid "Solid surfaces"
-msgstr "Alle massiven Oberflächen"
+msgstr "alle massiven Oberflächen"
 
 msgid "Soluble material"
-msgstr "Lösliches Material"
+msgstr "lösliches Material"
 
 msgid "Soluble material is most likely used for a soluble support."
 msgstr "Lösliches Material wird meistens für lösliche Stützen verwendet."
@@ -11473,8 +11473,8 @@ msgid ""
 "Can be a % of the 'Wipe tower main speed'.\n"
 "Set to 0 to disable."
 msgstr ""
-"Beginn der Erhöhung der Wischgeschwindigkeit (für Wischturm).\n"
-"Kann ein % of der 'Wischturm-Hauptgeschwindigkeit' sein.\n"
+"Beginn der Erhöhung der Wischgeschwindigkeit (für Reinigungsturm).\n"
+"Kann ein % of der 'Reinigungsturm-Hauptgeschwindigkeit' sein.\n"
 "Zum Deaktivieren auf 0 setzen."
 
 msgid "Start temp:"
@@ -11574,10 +11574,10 @@ msgid "support"
 msgstr "Stützen"
 
 msgid "Support & Other"
-msgstr "Unterstützung & Sonstiges"
+msgstr "Stützen & Sonstiges"
 
 msgid "Support acceleration"
-msgstr "Unterstützung der Beschleunigung"
+msgstr "Beschleunigung Stützen"
 
 msgid "Support base diameter"
 msgstr "Stützfuß Durchmesser"
@@ -11666,7 +11666,7 @@ msgid ""
 msgstr "Für Überhänge, deren Neigungswinkel (90° = vertikal) über dem angegebenen Schwellenwert liegt, wird kein Stützmaterial erzeugt. Mit anderen Worten: Dieser Wert stellt die größte horizontale Neigung (gemessen von der horizontalen Ebene) dar, die Sie ohne Stützmaterial drucken können. Stellen Sie Null für die automatische Erkennung ein (empfohlen)."
 
 msgid "Support material/raft interface extruder"
-msgstr "Stützmaterial/Raft Schnittstellen Extruder"
+msgstr "Extruder für Stützmaterial/Raft Schnittstellen"
 
 msgid "Support on build plate only"
 msgstr "Stützen nur auf dem Druckbett"
@@ -12541,7 +12541,7 @@ msgstr ""
 msgid ""
 "The Wipe Tower is currently not supported for multimaterial sequential "
 "prints."
-msgstr "Der Wischturm wird derzeit nicht für sequentielle Multimaterialdrucke unterstützt."
+msgstr "Der Reinigungsturm wird derzeit nicht für sequentielle Multimaterialdrucke unterstützt."
 
 msgid ""
 "The Wipe Tower is currently only supported for the Marlin, RepRap/Sprinter "
@@ -12551,32 +12551,32 @@ msgstr "Der Wipe Tower wird derzeit nur für die G-Code-Varianten Marlin, RepRap
 msgid ""
 "The Wipe Tower is currently only supported with the relative extruder "
 "addressing (use_relative_e_distances=1)."
-msgstr "Der Wischturm wird derzeit nur mit relativer Extruder-Adressierung unterstützt ((use_relative_e_distances=1)."
+msgstr "Der Reinigungsturm wird derzeit nur mit relativer Extruder-Adressierung unterstützt ((use_relative_e_distances=1)."
 
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they are printed "
 "over an equal number of raft layers"
-msgstr "Der Wischturm wird nur für mehrere Objekte unterstützt, wenn diese mit der gleichen Anzahl von Raftschichten gedruckt werden"
+msgstr "Der Reinigungsturm wird nur für mehrere Objekte unterstützt, wenn diese mit der gleichen Anzahl von Raftschichten gedruckt werden"
 
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they are printed "
 "with the same support_material_contact_distance"
-msgstr "Der Wischturm wird nur für mehrere Objekte unterstützt, wenn diese mit der gleichen support_material_contact_distance gedruckt werden"
+msgstr "Der Reinigungsturm wird nur für mehrere Objekte unterstützt, wenn diese mit der gleichen support_material_contact_distance gedruckt werden"
 
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they are sliced "
 "equally."
-msgstr "Der Wischturm wird nur für mehrere Objekte unterstützt, wenn diese gleich gesliced werden."
+msgstr "Der Reinigungsturm wird nur für mehrere Objekte unterstützt, wenn diese gleich gesliced werden."
 
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they have equal "
 "layer heights"
-msgstr "Der Wischturm wird nur für mehrere Objekte unterstützt, wenn diese die gleiche Schichthöhe haben"
+msgstr "Der Reinigungsturm wird nur für mehrere Objekte unterstützt, wenn diese die gleiche Schichthöhe haben"
 
 msgid ""
 "The wipe tower is only supported if all extruders have the same nozzle "
 "diameter and use filaments of the same diameter."
-msgstr "Der Wischturm wird nur unterstützt, wenn alle Extruder den gleichen Düsendurchmesser haben und Filamente mit dem gleichen Durchmesser verwenden."
+msgstr "Der Reinigungsturm wird nur unterstützt, wenn alle Extruder den gleichen Düsendurchmesser haben und Filamente mit dem gleichen Durchmesser verwenden."
 
 msgid ""
 "The Wipe tower is only supported if all objects have the same variable layer "
@@ -13303,7 +13303,7 @@ msgstr ""
 "Wenn Sie Probleme mit Ihrem Bügelprozess haben, vergessen Sie nicht, einen Blick auf die Einstellung Fluss->Überbrückungsfluss zu werfen, denn diese Einstellung sollte auf mindestens 110% to gesetzt werden, damit Sie genügend Plastik in der obersten Schicht haben. Ein zu niedriger Wert führt dazu, dass Ihr Extruder das Filament auffrisst."
 
 msgid "This is wipe tower layer"
-msgstr "Dies ist die Wischturmschicht"
+msgstr "Dies ist die Reinigungsturmschicht"
 
 msgid ""
 "This matrix describes volumes (in cubic milimetres) required to purge the "
@@ -13602,14 +13602,14 @@ msgid ""
 "If using marlin, M220 B/R is used to save the speed override before the wipe "
 "tower print."
 msgstr ""
-"Diese Einstellung wird verwendet, um die maximale Geschwindigkeit beim Extrudieren im Wischturm festzulegen (verwenden Sie M220). In % stellen Sie 0 ein, um zu deaktivieren und stattdessen den Filamenttyp zu verwenden.\n"
+"Diese Einstellung wird verwendet, um die maximale Geschwindigkeit beim Extrudieren im Reinigungsturm festzulegen (verwenden Sie M220). In % stellen Sie 0 ein, um zu deaktivieren und stattdessen den Filamenttyp zu verwenden.\n"
 "Wenn diese Option deaktiviert ist, haben diese Filamenttypen einen Standardwert von:\n"
 " - PVA: 80% to 60%\n"
 " - SCAFF: 35%\n"
 " - FLEX: 35%\n"
 " - ANDERE: 100%\n"
-"Beachten Sie, dass der Wischturm die Geschwindigkeit in jedem Fall auf 100% f oder den Rückzug zurücksetzt.\n"
-"Wenn Sie Marlin verwenden, wird M220 B/R verwendet, um die Geschwindigkeitsüberschreibung vor dem Druck des Wischturms zu speichern."
+"Beachten Sie, dass der Reinigungsturm die Geschwindigkeit in jedem Fall auf 100% f oder den Rückzug zurücksetzt.\n"
+"Wenn Sie Marlin verwenden, wird M220 B/R verwendet, um die Geschwindigkeitsüberschreibung vor dem Druck des Reinigungsturms zu speichern."
 
 msgid ""
 "This setting may slightly degrade the quality of your external perimeter, in "
@@ -13796,7 +13796,7 @@ msgid "Thumbnail color"
 msgstr "Farbe der Vorschaubilder"
 
 msgid "Thumbnail options"
-msgstr "Miniaturansicht Einstellungen"
+msgstr "Einstellungen"
 
 msgid "Thumbnails"
 msgstr "Vorschaubilder"
@@ -13996,6 +13996,9 @@ msgstr "obere Schichten"
 
 msgid "Top shell is %1% mm thick for layer height %2% mm."
 msgstr "Die obere Schale ist %1% mm stark für eine Schichthöhe von %2% mm."
+
+msgid "Top solid "
+msgstr "obere massive Schichten "
 
 msgid "Top solid"
 msgstr "oberste massive Schicht"
@@ -14295,7 +14298,7 @@ msgid ""
 msgstr "Verwenden Sie \"Gerade-ungerade\" für 3DLabPrint-Flugzeugmodelle. Verwenden Sie \"Löcher schließen\", um alle Löcher im Modell zu schließen."
 
 msgid "Use also for time estimate"
-msgstr "Auch für Zeitschätzungen verwenden"
+msgstr "auch für Zeitschätzungen verwenden"
 
 msgid "Use another extruder"
 msgstr "Einen anderen Extruder verwenden"
@@ -14331,7 +14334,7 @@ msgid "Use log scale"
 msgstr "Logarithmische Skala verwenden"
 
 msgid "Use only as safeguards"
-msgstr "Nur als Schutzmaßnahme verwenden"
+msgstr "nur als Schutzmaßnahme verwenden"
 
 msgid ""
 "Use only one perimeter on first layer, to give more space to the top infill "
@@ -14347,16 +14350,16 @@ msgid "Use pad"
 msgstr "Grundschicht benutzen"
 
 msgid "Use part fan to cool hotend"
-msgstr "Verwenden Sie einen Teillüfter zur Kühlung der Heizeinheit"
+msgstr "Verwenden den Teillüfter zur Kühlung der Heizeinheit"
 
 msgid "Use perspective camera"
 msgstr "Benutze perspektivische Kamera"
 
 msgid "Use relative E distances"
-msgstr "Relative Abstände für Extrusion benutzen"
+msgstr "relative Abstände für Extrusion benutzen"
 
 msgid "Use Retina resolution for the 3D scene"
-msgstr "Verwende Retina Auflösung für die 3D Anzeige"
+msgstr "verwende Retina Auflösung für die 3D Anzeige"
 
 msgid "Use system menu for application"
 msgstr "Systemmenü für Anwendung verwenden"
@@ -14475,19 +14478,19 @@ msgid "Values in this column are for Stealth mode"
 msgstr "Werte in dieser Spalte sind für den Stealth Modus"
 
 msgid "Variable layer height"
-msgstr "Variable Schichthöhe"
+msgstr "variable Schichthöhe"
 
 msgid "Variable layer height - Adaptive"
-msgstr "Variable Schichthöhe - Adaptiv"
+msgstr "variable Schichthöhe - adaptiv"
 
 msgid "Variable layer height - Manual edit"
-msgstr "Variable Schichthöhe - Manuell bearbeiten"
+msgstr "variable Schichthöhe - manuell bearbeiten"
 
 msgid "Variable layer height - Reset"
-msgstr "Variable Schichthöhe - Zurücksetzen"
+msgstr "variable Schichthöhe - zurücksetzen"
 
 msgid "Variable layer height - Smooth all"
-msgstr "Variable Schichthöhe - Alles glätten"
+msgstr "variable Schichthöhe - alles glätten"
 
 msgid "variants"
 msgstr "Varianten"
@@ -14499,7 +14502,7 @@ msgid "Vendor:"
 msgstr "Hersteller:"
 
 msgid "Verbose G-code"
-msgstr "Ausführlicher G-Code"
+msgstr "ausführlicher G-Code"
 
 msgid "Version"
 msgstr "Version"
@@ -14868,7 +14871,7 @@ msgstr "Breite des Reinigungsturms"
 msgid ""
 "Width of the brim for the wipe tower. Can be in mm or in % of the (assumed) "
 "only one nozzle diameter."
-msgstr "Breite des Randes für den Wischturm. Kann in mm oder in % of der (angenommen) nur ein Düsendurchmesser sein."
+msgstr "Breite des Randes für den Reinigungsturm. Kann in mm oder in % of der (angenommen) nur ein Düsendurchmesser sein."
 
 msgid ""
 "Width of the connector sticks which connect the object and the generated pad."
@@ -14936,7 +14939,7 @@ msgid "Wipe tower - Purging volume adjustment"
 msgstr "Reinigungsturm - Anpassung des Reinigungsvolumens"
 
 msgid "Wipe tower brim width"
-msgstr "Wischturm Randbreite"
+msgstr "Reinigungsturm Randbreite"
 
 msgid "Wipe tower parameters"
 msgstr "Reinigungsturm Parameter"
@@ -14951,13 +14954,13 @@ msgid "Wipe tower rotation angle with respect to x-axis."
 msgstr "Rotationswinkel des Reinigungsturms bezogen auf die X-Achse."
 
 msgid "Wipe Tower Speed"
-msgstr "Geschwindigkeit des Wischturms"
+msgstr "Geschwindigkeit des Reinigungsturms"
 
 msgid "Wipe tower Width"
-msgstr "Wischturm Breite"
+msgstr "Reinigungsturm Breite"
 
 msgid "Wipe tower wipe starting speed"
-msgstr "Wischturm wischt Startgeschwindigkeit"
+msgstr "Reinigungsturm wischt Startgeschwindigkeit"
 
 msgid "Wipe tower X"
 msgstr "Turm wischen X"
@@ -15013,7 +15016,7 @@ msgid "Write information about the model to the console."
 msgstr "Schreibt Informationen über das Modell auf die Konsole."
 
 msgid "Write the thumbnail type in gcode."
-msgstr "Schreiben Sie den Typ der Miniaturansicht in gcode."
+msgstr "Typ des Bildes in Gcode schreiben"
 
 msgid "Wrong password"
 msgstr "Ungültiges Kennwort"
@@ -15318,7 +15321,7 @@ msgid ""
 msgstr "Ihr Druck ist sehr nahe an den Priming-Bereichen. Stellen Sie sicher, dass es keine Kollision gibt."
 
 msgid "Z full step"
-msgstr "Z Vollschritt"
+msgstr "Z-Vollschritt"
 
 msgid "Z lift is not triggered when travel moves are shorter than this length."
 msgstr "Z-Lift wird nicht ausgelöst, wenn die Fahrbewegungen kürzer als diese Länge sind."
@@ -15330,10 +15333,10 @@ msgid "Z Travel"
 msgstr "Z Bewegung"
 
 msgid "Z travel speed"
-msgstr "Z Fahrgeschwindigkeit"
+msgstr "Z-Fahrgeschwindigkeit"
 
 msgid "z utilities"
-msgstr "z Hilfsmittel"
+msgstr "Z-Einstellungen"
 
 msgid "Z-lift override"
 msgstr "Z-Lift Überbrückung"
