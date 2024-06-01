@@ -2558,7 +2558,7 @@ msgstr "Aktuelles Verzeichnis:"
 #: ../src/propgrid/advprops.cpp:896 ../src/propgrid/advprops.cpp:1574
 #: ../src/propgrid/advprops.cpp:1612
 msgid "Custom"
-msgstr "Benutzerdefiniert"
+msgstr "benutzerdefiniert"
 
 #: ../src/gtk/print.cpp:217
 msgid "Custom size"
@@ -5102,7 +5102,7 @@ msgstr "NeuerName"
 
 #: ../src/common/prntbase.cpp:1567 ../src/html/helpwnd.cpp:665
 msgid "Next page"
-msgstr "Nächste Seite"
+msgstr "nächste Seite"
 
 #: ../include/wx/msgdlg.h:277 ../src/common/stockitem.cpp:177
 #: ../src/motif/msgdlg.cpp:196

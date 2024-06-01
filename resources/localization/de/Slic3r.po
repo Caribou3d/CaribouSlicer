@@ -730,10 +730,10 @@ msgid "Add color change marker for current layer"
 msgstr "Fügt einen Farbwechselmarker der aktuellen Schicht hinzu"
 
 msgid "Add custom G-code"
-msgstr "Benutzerdefinierten G-Code hinzufügen"
+msgstr "benutzerdefinierten G-Code hinzufügen"
 
 msgid "Add custom template"
-msgstr "Benutzerdefinierte Vorlage hinzufügen"
+msgstr "benutzerdefinierte Vorlage hinzufügen"
 
 msgid "Add detail"
 msgstr "Detail hinzufügen"
@@ -956,7 +956,7 @@ msgid "Align XY"
 msgstr "Ausrichten von XY"
 
 msgid "Aligned"
-msgstr "Ausgerichtet"
+msgstr "ausgerichtet"
 
 msgid "All"
 msgstr "Alle"
@@ -1527,7 +1527,7 @@ msgid "Best surface quality"
 msgstr "Beste Oberflächenqualität"
 
 msgid "Better bonding"
-msgstr "Bessere Bindung"
+msgstr "bessere Bindung"
 
 msgid "Between extrusion role change G-code"
 msgstr "Zwischen Extrusion Rolle ändern G-Code"
@@ -2080,7 +2080,7 @@ msgid "Circular"
 msgstr "Kreisförmig"
 
 msgid "Classic"
-msgstr "Klassisch"
+msgstr "klassisch"
 
 msgid ""
 "Classic perimeter generator produces perimeters with constant extrusion "
@@ -2408,7 +2408,7 @@ msgid "Contact distance under the bottom of supports"
 msgstr "Kontaktabstand unter der Unterseite der Stützen"
 
 msgid "Contiguous"
-msgstr "Zusammenhängend"
+msgstr "zusammenhängend"
 
 msgid "Continue"
 msgstr "Weiter"
@@ -2700,7 +2700,7 @@ msgid "Curve smoothing precision"
 msgstr "Präzision der Kurvenglättung"
 
 msgid "Custom"
-msgstr "Benutzerdefiniert"
+msgstr "benutzerdefiniert"
 
 msgid ""
 "Custom CA certificate file can be specified for HTTPS OctoPrint connections, "
@@ -2709,34 +2709,34 @@ msgid ""
 msgstr "Benutzerdefinierte CA-Zertifikatsdatei kann für HTTPS OctoPrint-Verbindungen im crt/pem-Format angegeben werden. Wenn das Feld leer bleibt, wird das standardmäßige Zertifikatsverzeichnis der Betriebssystem-Zertifizierungsstelle verwendet."
 
 msgid "Custom Filament variables"
-msgstr "Benutzerdefinierte Filament-Variablen"
+msgstr "benutzerdefinierte Filament-Variablen"
 
 msgid "Custom G-code"
-msgstr "Benutzerdefinierter G-Code"
+msgstr "benutzerdefinierter G-Code"
 
 msgid "Custom G-code on current layer (%1% mm)."
-msgstr "Benutzerdefinierter G-Code auf der aktuellen Ebene (%1% mm)."
+msgstr "benutzerdefinierter G-Code auf der aktuellen Ebene (%1% mm)."
 
 msgid "Custom G-codes"
-msgstr "Benutzerdefinierte G-Codes"
+msgstr "benutzerdefinierte G-Codes"
 
 msgid "Custom Print variables"
-msgstr "Benutzerdefinierte Druckvariablen"
+msgstr "benutzerdefinierte Druckvariablen"
 
 msgid "Custom Printer"
-msgstr "Benutzerdefinierter Drucker"
+msgstr "benutzerdefinierter Drucker"
 
 msgid "Custom Printer Setup"
-msgstr "Benutzerdefinierte Drucker-Einrichtung"
+msgstr "benutzerdefinierte Drucker-Einrichtung"
 
 msgid "Custom Printer variables"
-msgstr "Benutzerdefinierte Druckervariablen"
+msgstr "benutzerdefinierte Druckervariablen"
 
 msgid "Custom printer was installed and it will be activated."
 msgstr "Der benutzerdefinierte Drucker wurde installiert und wird aktiviert."
 
 msgid "Custom profile name:"
-msgstr "Benutzerdefinierter Profilname:"
+msgstr "benutzerdefinierter Profilname:"
 
 msgid ""
 "Custom supports, seams and multimaterial painting were removed after "
@@ -2744,10 +2744,10 @@ msgid ""
 msgstr "Individuelle Stützen, Nähte und Multimaterialbemalung wurden nach der Reparatur des Netzes entfernt."
 
 msgid "Custom template (\"%1%\")"
-msgstr "Benutzerdefinierte Vorlage (\"%1%\")"
+msgstr "benutzerdefinierte Vorlage (\"%1%\")"
 
 msgid "Custom variables"
-msgstr "Benutzerdefinierte Variablen"
+msgstr "benutzerdefinierte Variablen"
 
 msgid "Cut"
 msgstr "Schneiden"
@@ -2886,7 +2886,7 @@ msgid "default value"
 msgstr "Standardwert"
 
 msgid "Define a custom printer profile"
-msgstr "Benutzerdefiniertes Druckerprofil definieren"
+msgstr "benutzerdefiniertes Druckerprofil definieren"
 
 msgid ""
 "Defines the pad cavity depth. Set zero to disable the cavity. Be careful "
@@ -2923,7 +2923,7 @@ msgid "Delete color change marker for current layer"
 msgstr "Löscht einen Farbwechselmarker der aktuellen Schicht"
 
 msgid "Delete custom G-code"
-msgstr "Benutzerdefinierten G-Code löschen"
+msgstr "benutzerdefinierten G-Code löschen"
 
 msgid "Delete drainage hole"
 msgstr "Drainageloch entfernen"
@@ -3368,7 +3368,7 @@ msgid "Edit current color - Right click the colored slider segment"
 msgstr "Aktuelle Farbe bearbeiten - Rechtsklick auf das farbige Schiebereglersegment"
 
 msgid "Edit custom G-code"
-msgstr "Benutzerdefinierten G-Code bearbeiten"
+msgstr "benutzerdefinierten G-Code bearbeiten"
 
 msgid "Edit Height Range"
 msgstr "Höhenbereich bearbeiten"
@@ -3582,7 +3582,7 @@ msgid "Enter a search term"
 msgstr "Suchbegriff eingeben"
 
 msgid "Enter custom G-code used on current layer"
-msgstr "Benutzerdefinierten G-Code für die aktuelle Schicht eingeben"
+msgstr "benutzerdefinierten G-Code für die aktuelle Schicht eingeben"
 
 msgid ""
 "Enter here the gcode to end the toolhead action, like stopping the spindle. "
@@ -4457,7 +4457,7 @@ msgstr ""
 "Wenn Sie ein 'ausgerichtetes' Muster wünschen, stellen Sie 90° auf die Einstellung für den Füllwinkel ein."
 
 msgid "Fill the voids with bridges"
-msgstr "Füllen Sie die Lücken mit Brücken"
+msgstr "fülle die Lücken mit Brücken"
 
 msgid "filling horizontal gaps on slopes"
 msgstr "füllen horizontaler Lücken an Hängen"
@@ -5937,7 +5937,7 @@ msgid "In this mode you can select only other %s Items%s"
 msgstr "In diesem Modus wählen Sie nur andere %s Elemente%s"
 
 msgid "In vase mode (no seam)"
-msgstr "Im Vasenmodus (ohne Naht)"
+msgstr "im Vasenmodus (ohne Naht)"
 
 msgid "Inches"
 msgstr "Zoll"
@@ -6398,7 +6398,7 @@ msgid "Keep"
 msgstr "Behalten"
 
 msgid "Keep bridges and overhangs"
-msgstr "Halten Sie Brücken und Überhänge"
+msgstr "behalte Brücken und Überhänge"
 
 msgid "Keep current flow"
 msgstr "Stromfluss beibehalten"
@@ -6413,7 +6413,7 @@ msgid "Keep min"
 msgstr "Halte min"
 
 msgid "Keep only bridges"
-msgstr "Nur Brücken behalten"
+msgstr "nur Brücken behalten"
 
 msgid "Keep the selected settings."
 msgstr "Die gewählten Einstellungen werden beibehalten."
@@ -7823,7 +7823,7 @@ msgid "Names of presets related to the physical printer"
 msgstr "Namen der Voreinstellungen, die sich auf den physischen Drucker beziehen"
 
 msgid "Nearest"
-msgstr "Nächste"
+msgstr "nächste"
 
 msgid "Negative Volume"
 msgstr "Negatives Volumen"
@@ -7885,7 +7885,7 @@ msgid "No pad can be generated for this model with the current configuration"
 msgstr "Für dieses Modell kann mit der aktuellen Konfiguration keine Grundschicht generiert werden"
 
 msgid "No perimeters on bridge areas"
-msgstr "Keine Wände auf Brückenbereichen"
+msgstr "keine Wände auf Brückenbereichen"
 
 msgid "No previously sliced file."
 msgstr "Keine vorher gesclicete Datei."
@@ -9467,7 +9467,7 @@ msgid "Ramming settings"
 msgstr "Einstellungen für das Rammen"
 
 msgid "Random"
-msgstr "Zufällig"
+msgstr "zufällig"
 
 msgid "Random sequence"
 msgstr "Zufallsfolge"
@@ -9488,7 +9488,7 @@ msgid "Ready"
 msgstr "Fertig"
 
 msgid "Rear"
-msgstr "Hinten"
+msgstr "hinten"
 
 msgid "Rear View"
 msgstr "Ansicht von Hinten"
@@ -10043,10 +10043,10 @@ msgid "Scaling factor or percentage."
 msgstr "Skalierungsfaktor oder Prozentsatz."
 
 msgid "Scattered"
-msgstr "Verstreut"
+msgstr "verstreut"
 
 msgid "Scattered Rectilinear"
-msgstr "Verstreut Rektilinear"
+msgstr "verstreut Rektilinear"
 
 msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
 msgstr "Geplante Hochladung auf `%1%`. Siehe Fenster -> Druck-Host Uploadwarteschlange"
@@ -13997,11 +13997,8 @@ msgstr "obere Schichten"
 msgid "Top shell is %1% mm thick for layer height %2% mm."
 msgstr "Die obere Schale ist %1% mm stark für eine Schichthöhe von %2% mm."
 
-msgid "Top solid "
-msgstr "obere massive Schichten "
-
 msgid "Top solid"
-msgstr "obere massive Schicht"
+msgstr "oberste massive Schicht"
 
 msgid "Top solid acceleration"
 msgstr "Top solide Beschleunigung"
@@ -14019,7 +14016,7 @@ msgid "Top solid infill overlap"
 msgstr "obere feste Füllung Überlappung"
 
 msgid "Top solid layers"
-msgstr "obere massive Schichten"
+msgstr "massive Schichten oben"
 
 msgid "Top solid spacing"
 msgstr "oberer massiver Abstand"
@@ -14307,10 +14304,10 @@ msgid "Use colors for axes values in Manipulation panel"
 msgstr "Farben für Achsenwerte im Manipulationsfenster verwenden"
 
 msgid "Use custom size for toolbar icons"
-msgstr "Benutzerdefinierte Größe für Symbolleistensymbole verwenden"
+msgstr "benutzerdefinierte Größe für Symbolleistensymbole verwenden"
 
 msgid "Use custom tooltip"
-msgstr "Benutzerdefinierte QuickInfo verwenden"
+msgstr "benutzerdefinierte QuickInfo verwenden"
 
 msgid "Use environment map"
 msgstr "Environment Map verwenden"
@@ -14394,7 +14391,7 @@ msgstr ""
 "0, um den support_material_angle zu verwenden."
 
 msgid "use visibility check"
-msgstr "sichtbarkeitsprüfung verwenden"
+msgstr "Sichtbarkeitsprüfung verwenden"
 
 msgid "Use volumetric E"
 msgstr "Volumetrisches E benutzen"
@@ -14430,7 +14427,7 @@ msgid "User"
 msgstr "Benutzer"
 
 msgid "User presets"
-msgstr "Benutzerdefinierte Voreinstellungen"
+msgstr "benutzerdefinierte Voreinstellungen"
 
 msgid ""
 "Using a color change gcode, but there isn't one for this printer.\n"
