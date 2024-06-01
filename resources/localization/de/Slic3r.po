@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-05-01 00:00\n"
-"PO-Revision-Date: 2024-05-01 00:00\n"
+"POT-Creation-Date: 2024-06-01 00:00\n"
+"PO-Revision-Date: 2024-06-01 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -258,7 +258,7 @@ msgstr ""
 "Bitte fahren Sie fort mit '%s'. Dies folgt nun, um die neuen Einstellungen einzurichten sowie auszuwählen, ob Einstellungen automatisch aktualisiert werden dürfen."
 
 msgid "%s Releases"
-msgstr "%s Veröffentlichungen"
+msgstr "%s Versionen"
 
 msgid ""
 "%s requires OpenGL 2.0 capable graphics driver to run correctly, \n"
@@ -288,7 +288,7 @@ msgstr ""
 "\n"
 "Beachten Sie, dass zuerst ein vollständiger Konfigurations-Snapshot erstellt wird. Er kann dann jederzeit wiederhergestellt werden, falls es ein Problem mit der neuen Version geben sollte.\n"
 "\n"
-"Aktualisierte Konfigurations-Bundles:"
+"Aktualisierte Konfigurationsbündel:"
 
 msgid ""
 "%s's user interfaces comes in three variants:\n"
@@ -415,6 +415,9 @@ msgid ""
 "1500, it won't export a gcode that will tell to go over 1500)."
 msgstr "(selbst wenn die Beschleunigung im Druckprofil auf 3000 eingestellt ist, wird bei einem Wert von 1500 kein G-Code exportiert, der einen Wert über 1500 angibt)."
 
+msgid " (finished at %1%)"
+msgstr " (beendet bei %1%)"
+
 msgid ""
 "(however, speed will never be reduced below %1%mm/s or up to %2%%% reduction)"
 msgstr "(die Geschwindigkeit wird jedoch nie unter %1%mm/s oder bis zu einer Reduktion von %2%%% reduziert)"
@@ -468,7 +471,7 @@ msgid "3 (heavy)"
 msgstr "3 (schwer)"
 
 msgid "3D &Platter Tab"
-msgstr "registerkarte 3D &Platter"
+msgstr "Druckplatte"
 
 msgid "3D editor view"
 msgstr "3D Editiermodus"
@@ -616,7 +619,7 @@ msgid "Above bridge flow ratio"
 msgstr "Flussverhältnis über der Brücke"
 
 msgid "Above the bridges"
-msgstr "Oberhalb der Brücken"
+msgstr "oberhalb der Brücken"
 
 msgid "Above Z"
 msgstr "Über Z"
@@ -652,7 +655,7 @@ msgid "Action"
 msgstr "Aktion"
 
 msgid "Activate"
-msgstr "Aktivieren"
+msgstr "aktivieren"
 
 msgid ""
 "Activate this option to modify the flow to acknowledge that the nozzle is "
@@ -663,7 +666,7 @@ msgid ""
 "(~nozzle diameter), so it shouldn't be noticeable unless you have a very big "
 "nozzle and a very precise printer."
 msgstr ""
-"Aktivieren Sie diese Option, um den Fluss so zu ändern, dass er erkennt, dass die Düse rund ist und die Ecken eine runde Form haben werden, und um den Fluss so zu ändern, dass er dies berücksichtigt und eine Überextrusion verhindert. 100% is aktiviert, 0% is deaktiviert und 50% is halb-aktiviert.\n"
+"aktiviere diese Option, um den Fluss so zu ändern, dass er erkennt, dass die Düse rund ist und die Ecken eine runde Form haben werden, und um den Fluss so zu ändern, dass er dies berücksichtigt und eine Überextrusion verhindert. 100% is aktiviert, 0% is deaktiviert und 50% is halb-aktiviert.\n"
 "Hinweis: Bei 100% ändert sich der Fluss um ~5% over eine sehr kleine Strecke (~Düsendurchmesser), so dass es nicht auffallen sollte, es sei denn, Sie haben eine sehr große Düse und einen sehr präzisen Drucker."
 
 msgid "Active"
@@ -677,13 +680,6 @@ msgstr "Adaptiv"
 
 msgid "Adaptive Cubic"
 msgstr "Adaptiv kubisch"
-
-msgid "Adaptive infills\nDid you know that you can use the Adaptive cubic and Support cubic infills to decrease the print time and lower the filament consumption? Read more in the documentation."
-msgstr ""
-"Adaptive Füllungen\n"
-"Wussten Sie schon, dass Sie die kubischen Füllungen Adaptiv kubisch und "
-"Stütz kubisch verwenden können, um die Druckzeit zu verkürzen und den "
-"Filamentverbrauch zu senken? Lesen Sie mehr in der Dokumentation."
 
 msgid "Add"
 msgstr "Hinzufügen"
@@ -855,14 +851,19 @@ msgid "Add supports by angle"
 msgstr "Stützen nach Winkel hinzufügen"
 
 msgid ""
-"Add the layer height (before the layer count in parentheses) next to a "
-"widget of the layer double-scrollbar."
-msgstr "Fügen Sie die Ebenenhöhe (vor der Ebenenanzahl in Klammern) neben einem Widget der Ebenen-Doppelscrollleiste hinzu."
+"Add the layer area (the number just below the layer id) next to a widget of "
+"the layer double-scrollbar."
+msgstr "Füge den Ebenenbereich (die Zahl direkt unter der Ebenen-ID) neben einem Widget der Ebenen-Doppelscrollbar hinzu."
 
 msgid ""
-"Add the layer height (first number in parentheses) next to a widget of the "
-"layer double-scrollbar."
-msgstr "Fügen Sie die Höhe der Ebene (erste Zahl in Klammern) neben einem Widget der Double-Scrollbar der Ebene hinzu."
+"Add the layer height (first number after the layer z position) next to a "
+"widget of the layer double-scrollbar."
+msgstr "Füge die Höhe der Ebene (erste Zahl nach der Z-Position der Ebene) neben einem Widget der Doppelscrollleiste der Ebene hinzu."
+
+msgid ""
+"Add the layer time (after the layer height, or if it's hidden after the "
+"layer z position) next to a widget of the layer double-scrollbar."
+msgstr "Füge die Ebenenzeit (nach der Ebenenhöhe oder, wenn sie ausgeblendet ist, nach der Ebenen-Z-Position) neben einem Widget der Ebenen-Doppelscrollbar ein."
 
 msgid ""
 "Add this angle each layer to the base angle for infill. May be useful for "
@@ -990,7 +991,7 @@ msgid "All objects will be removed, continue?"
 msgstr "Alle Objekte werden entfernt, fortfahren?"
 
 msgid "All perimeters"
-msgstr "Alle Perimeter"
+msgstr "alle Wände"
 
 msgid "All settings changes will be discarded."
 msgstr "Alle Einstellungsänderungen werden verworfen."
@@ -1005,13 +1006,13 @@ msgid "All standard"
 msgstr "Alles standard"
 
 msgid "All surfaces"
-msgstr "Alle Oberflächen"
+msgstr "alle Oberflächen"
 
 msgid "All tags"
 msgstr "Alle Tags"
 
 msgid "All top surfaces"
-msgstr "Alle Oberseiten"
+msgstr "alle Oberseiten"
 
 msgid "All user presets will be deleted."
 msgstr "Alle Benutzervoreinstellungen werden gelöscht."
@@ -1274,13 +1275,6 @@ msgstr "Anordnungsoptionen"
 msgid "Arrange selection"
 msgstr "Auswahl anordnen"
 
-msgid "Arrange settings\nDid you know that you can right-click the<a>Arrange icon</a>to adjust the size of the gap between objects and to allow automatic rotations?"
-msgstr ""
-"Anordnungs-Einstellungen\n"
-"Wussten Sie, dass Sie mit der rechten Maustaste auf<a>Arrange icon</"
-"a>klicken können, um die Größe des Abstands zwischen den Objekten anzupassen "
-"und automatische Drehungen zu ermöglichen?"
-
 msgid ""
 "Arrange the supplied models in a plate and merge them in a single model in "
 "order to perform actions once."
@@ -1397,7 +1391,7 @@ msgid "Auto-wipe multiplier"
 msgstr "Auto-Wipe-Multiplikator"
 
 msgid "Autodetected"
-msgstr "Automatisch erkannt"
+msgstr "automatisch erkannt"
 
 msgid "Autogenerate support points"
 msgstr "Stützpunkte automatisch generieren"
@@ -1406,22 +1400,22 @@ msgid "Autogeneration will erase all manually edited points."
 msgstr "Die automatische Generierung löscht alle manuell bearbeiteten Punkte."
 
 msgid "Automatic"
-msgstr "Automatisch"
+msgstr "automatisch"
 
 msgid "Automatic generation"
-msgstr "Automatische Erzeugung"
+msgstr "automatische Erzeugung"
 
 msgid "Automatic updates"
-msgstr "Automatische Updates"
+msgstr "automatische Updates"
 
 msgid "Automatic, only for small areas"
-msgstr "Automatisch, nur für kleine Flächen"
+msgstr "automatisch, nur für kleine Flächen"
 
 msgid "Automatic, or anchored if too big"
-msgstr "Automatisch, oder verankert, wenn zu groß"
+msgstr "automatisch, oder verankert, wenn zu groß"
 
 msgid "Automatic, unless full"
-msgstr "Automatisch, sofern nicht voll"
+msgstr "automatisch, sofern nicht voll"
 
 msgid "Automatically repair an STL file"
 msgstr "Repariere automatisch die STL Datei"
@@ -1430,7 +1424,7 @@ msgid "Automation"
 msgstr "Automatisierung"
 
 msgid "Autospeed (advanced)"
-msgstr "Automatische Geschwindigkeit (fortgeschritten)"
+msgstr "automatische Geschwindigkeit (fortgeschritten)"
 
 msgid "Avoid crossing perimeters"
 msgstr "Kreuzen der Wände vermeiden"
@@ -1439,7 +1433,7 @@ msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Kreuzen der Wände vermeiden - Maximale Umleitungslänge"
 
 msgid "Avoid top surface for travels"
-msgstr "Vermeide die Überfahrt der Oberseite"
+msgstr "vermeide die Überfahrt der Oberseite"
 
 msgid "BACK ARROW"
 msgstr "PFEIL ZURÜCK"
@@ -1571,13 +1565,13 @@ msgid "Bottle weight"
 msgstr "Flaschengewicht"
 
 msgid "Bottom"
-msgstr "Unten"
+msgstr "unten"
 
 msgid "Bottom fill pattern"
 msgstr "Bodenfüllmuster"
 
 msgid "Bottom interface layers"
-msgstr "Untere Schnittstellenschichten"
+msgstr "untere Schnittstellenschichten"
 
 msgid "Bottom is open."
 msgstr "Boden ist offen."
@@ -1586,17 +1580,10 @@ msgid "Bottom shell is %1% mm thick for layer height %2% mm."
 msgstr "Die Bodenschale ist %1% mm stark für eine Schichthöhe von %2% mm."
 
 msgid "Bottom solid layers"
-msgstr "Massive Basisschichten"
+msgstr "massive Basisschichten"
 
 msgid "Bottom View"
 msgstr "Ansicht von unten"
-
-msgid "Box selection\nDid you know that you can do a box selection with Shift+Mouse drag? You can also box-deselect objects with <b>Alt+Mouse drag</b>."
-msgstr ""
-"Box-Auswahl\n"
-"Wussten Sie, dass Sie mit Umschalt+Maus-Ziehen eine Kastenauswahl treffen "
-"können? Mit <b>Alt+Maus ziehen</b> können Sie auch die Auswahl von Objekten "
-"aufheben."
 
 msgid "Bridge"
 msgstr "Überbrückung"
@@ -1627,6 +1614,12 @@ msgstr "Dichte der Brückenlinien"
 
 msgid "Bridge margin"
 msgstr "Brückenrand"
+
+msgid "Bridge max length"
+msgstr "maximale Länge der Brücke"
+
+msgid "Bridge precision"
+msgstr "Präzision der Brücke"
 
 msgid "Bridge speed"
 msgstr "Geschwindigkeit der Brücke"
@@ -1778,12 +1771,6 @@ msgstr "Kamera"
 
 msgid "Camera view"
 msgstr "Kameraansicht"
-
-msgid "Camera Views\nDid you know that you can use the number keys <b>0-6</b> to quickly switch between predefined camera angles?"
-msgstr ""
-"Kamera-Ansichten\n"
-"Wussten Sie, dass Sie mit den Zifferntasten <b>0-6</b> schnell zwischen "
-"vordefinierten Kamerawinkeln wechseln können?"
 
 msgid ""
 "Can be useful to avoid bondtech gears deforming hot tips, but not ordinarily "
@@ -2246,13 +2233,6 @@ msgstr "Füllung kombinieren alle"
 msgid "Combine infill every n layers"
 msgstr "Kombiniere das Infill all n Schichten"
 
-msgid "Combine infill\nDid you know that you can print the infill with a higher layer height compared to perimeters to save print time using the setting<a>Combine infill every</a>."
-msgstr ""
-"Infill kombinieren\n"
-"Wussten Sie, dass Sie den Infill mit einer höheren Schichthöhe als den "
-"Perimeter drucken können, um Druckzeit zu sparen, indem Sie die "
-"Einstellung<a>Infill kombinieren alle</a> verwenden."
-
 msgid "Commands"
 msgstr "Befehle"
 
@@ -2305,7 +2285,7 @@ msgid "Concentric (filled)"
 msgstr "konzentrisch (gefüllt)"
 
 msgid "Configuration &Assistant"
-msgstr "Konfigurations &Assistent"
+msgstr "Konfigurations-&Assistent"
 
 msgid "Configuration Assistant"
 msgstr "Konfigurations-Assistent"
@@ -2313,7 +2293,7 @@ msgstr "Konfigurations-Assistent"
 msgid ""
 "Configuration bundle was loaded, however some configuration values were not "
 "recognized."
-msgstr "Konfigurations-Bundle wurde geladen, jedoch wurden einige Konfigurationswerte nicht erkannt."
+msgstr "Konfigurationsbündel wurde geladen, jedoch wurden einige Konfigurationswerte nicht erkannt."
 
 msgid ""
 "Configuration file \"%1%\" was loaded, however some configuration values "
@@ -2331,14 +2311,6 @@ msgstr "Konfigurationsnotizen"
 
 msgid "Configuration Snapshots"
 msgstr "Konfigurations-Momentaufnahmen"
-
-msgid "Configuration snapshots\nDid you know that you can roll back to a complete backup of all system and user profiles? You can view and move back and forth between snapshots using the Configuration - <a>Configuration snapshots menu</a>."
-msgstr ""
-"Konfigurations-Schnappschüsse\n"
-"Wussten Sie schon, dass Sie zu einem vollständigen Backup aller System- und "
-"Benutzerprofile zurückkehren können? Über das Menü Konfiguration - "
-"<a>Konfigurations-Schnappschüsse</a> können Sie Schnappschüsse anzeigen und "
-"zwischen ihnen hin und her wechseln."
 
 msgid "Configuration update"
 msgstr "Konfigurationsupdate"
@@ -2374,7 +2346,7 @@ msgid ""
 "single infill line."
 msgstr ""
 "Verbinden Sie eine Infill-Linie mit einer internen Begrenzung durch ein kurzes Segment einer zusätzlichen Begrenzung. Wenn sie als Prozentsatz ausgedrückt wird (Beispiel: 15%), wird sie über die Infill-Extrusionsbreite berechnet. Slic3r versucht, zwei nahe beieinander liegende Infill-Linien mit einem kurzen Perimetersegment zu verbinden. Wenn kein solches Begrenzungssegment gefunden wird, das kürzer als infill_anchor_max ist, wird die Infill-Linie nur an einer Seite mit einem Begrenzungssegment verbunden und die Länge des genommenen Begrenzungssegments ist auf diesen Parameter begrenzt, aber nicht länger als anchor_length_max.\n"
-"Setzen Sie diesen Parameter auf Null, um die Verankerung von Perimetern zu deaktivieren, die mit einer einzelnen Infill-Linie verbunden sind."
+"Setzen Sie diesen Parameter auf Null, um die Verankerung von Wänden zu deaktivieren, die mit einer einzelnen Infill-Linie verbunden sind."
 
 msgid ""
 "Connect an infill line to an internal perimeter with a short segment of an "
@@ -2425,6 +2397,9 @@ msgstr "Die Verbindung zu %s funktioniert korrekt."
 
 msgid "Connection to PrusaLink works correctly."
 msgstr "Die Verbindung zu PrusaLink funktioniert einwandfrei."
+
+msgid "Consider upper bridges"
+msgstr "obere Brücken berücksichtigen"
 
 msgid "Contact distance on top of supports"
 msgstr "Kontaktabstand auf der Oberseite der Stützen"
@@ -2696,6 +2671,9 @@ msgid ""
 "CURL init has failed. The slicer will be unable to establish network "
 "connections. See logs for additional details."
 msgstr "CURL init ist fehlgeschlagen. Der Slicer ist nicht in der Lage, Netzwerkverbindungen herzustellen. Siehe Protokolle für weitere Details."
+
+msgid "Current mode is %s"
+msgstr "Aktueller Modus ist %s"
 
 msgid "Current preset is inherited from"
 msgstr "Aktuelle Voreinstellung ist abgeleitet von"
@@ -3128,14 +3106,6 @@ msgid ""
 "center."
 msgstr "Durchmesser des Druckbettes. Es wird angenommen, dass der Ursprung (0,0) sich im Mittelpunkt befindet."
 
-msgid "Different layer height for each model\nDid you know that you can print each model on the plater with a different layer height? Right-click the model in the 3D view, choose Layers and Perimeters and adjust the values in the right panel. Read more in the documentation."
-msgstr ""
-"Unterschiedliche Schichthöhen für jedes Modell\n"
-"Wussten Sie, dass Sie jedes Modell auf der Platform mit einer anderen "
-"Schichthöhe drucken können? Klicken Sie mit der rechten Maustaste auf das "
-"Modell in der 3D-Ansicht, wählen Sie Schichten und Perimeter und passen Sie "
-"die Werte im rechten Fenster an. Lesen Sie mehr in der Dokumentation."
-
 msgid "differs from the original file"
 msgstr "weicht von der Originaldatei ab"
 
@@ -3243,7 +3213,7 @@ msgid ""
 msgstr "Abstand der Extruderspitze von der Position, an der das Filament beim Entladen abgestellt wird. Dies sollte mit dem Wert in der Drucker-Firmware übereinstimmen. "
 
 msgid "Distribution"
-msgstr "Vertrieb"
+msgstr "Verteilung"
 
 msgid "Divide by zero"
 msgstr "Division durch Null"
@@ -3309,6 +3279,15 @@ msgstr "Nicht installieren"
 
 msgid "Don't notify about new releases any more"
 msgstr "Keine Benachrichtigung mehr über neue Releases"
+
+msgid ""
+"Don't put overhangs if the area will filled in next layer by bridges.\n"
+"Set to -1 to accept all upper layers.\n"
+"Set to 0 to only consider our layer bridges."
+msgstr ""
+"Füge keine Überhänge ein, wenn der Bereich in der nächsten Schicht durch Brücken aufgefüllt wird.\n"
+"Setze auf -1, um alle oberen Schichten zu akzeptieren.\n"
+"Setze den Wert 0, um nur die Brücken unserer Schicht zu berücksichtigen."
 
 msgid "Don't save"
 msgstr "Nicht sichern"
@@ -3444,16 +3423,16 @@ msgid "Empty layer between %1% and %2%."
 msgstr "Leere Schicht zwischen %1% und %2%."
 
 msgid "Enable"
-msgstr "Aktivieren"
+msgstr "aktivieren"
 
 msgid "Enable 2-way ssl authentication"
-msgstr "Aktivieren Sie die 2-Wege-SSL-Authentifizierung"
+msgstr "aktiviere die 2-Wege-SSL-Authentifizierung"
 
 msgid "Enable advanced wiping volume"
 msgstr "Erweitertes Wischvolumen aktivieren"
 
 msgid "Enable auto cooling"
-msgstr "Automatische Kühlung aktivieren"
+msgstr "automatische Kühlung aktivieren"
 
 msgid "Enable dark mode"
 msgstr "Dunkelmodus aktivieren"
@@ -3462,12 +3441,12 @@ msgid "Enable fan if layer print time is below"
 msgstr "Lüfter einschalten wenn die Schichtdruckzeit geringer ist als"
 
 msgid "Enable Gap fill"
-msgstr "Lückenfüller aktivieren"
+msgstr "Lückenfüllung aktivieren"
 
 msgid ""
 "Enable gap fill algorithm. It will extrude small lines between perimeters "
 "when there is not enough space for another perimeter or an infill."
-msgstr "Aktivieren Sie den Algorithmus zum Füllen von Lücken. Er extrudiert kleine Linien zwischen Perimetern, wenn nicht genügend Platz für ein weiteres Perimeter oder eine Füllung vorhanden ist."
+msgstr "aktiviere den Algorithmus zum Füllen von Lücken. Er extrudiert kleine Linien zwischen Wänden, wenn nicht genügend Platz für ein weiteres Perimeter oder eine Füllung vorhanden ist."
 
 msgid "Enable hollowing"
 msgstr "Aushöhlung aktivieren"
@@ -3515,18 +3494,18 @@ msgid ""
 "object they belong to, which is useful for the Octoprint CancelObject "
 "plugin. This settings is NOT compatible with Single Extruder Multi Material "
 "setup and Wipe into Object / Wipe into Infill."
-msgstr "Aktivieren Sie dies, um Kommentare in den G-Code einzufügen, die die Druckbewegungen beschriften zu welchem Objekt sie gehören, was für das OctoPrint CancelObject Plugin nützlich ist. Diese Einstellungen sind NICHT kompatibel mit der Einstellung Single Extruder Multi Material und Wischen ins Objekt / Wischen ins Infill."
+msgstr "aktiviere dies, um Kommentare in den G-Code einzufügen, die die Druckbewegungen beschriften zu welchem Objekt sie gehören, was für das OctoPrint CancelObject Plugin nützlich ist. Diese Einstellungen sind NICHT kompatibel mit der Einstellung Single Extruder Multi Material und Wischen ins Objekt / Wischen ins Infill."
 
 msgid ""
 "Enable this to get a commented G-code file, with each line explained by "
 "descriptive text. If you print from an SD card, the additional weight of the "
 "file could make your firmware slow down."
-msgstr "Aktivieren Sie diese Option, um eine kommentierte G-Code-Datei zu erhalten, in der jede Zeile durch einen beschreibenden Text erläutert wird. Wenn Sie von einer SD-Karte drucken, könnte das zusätzliche Gewicht der Datei Ihre Firmware verlangsamen."
+msgstr "aktiviere diese Option, um eine kommentierte G-Code-Datei zu erhalten, in der jede Zeile durch einen beschreibenden Text erläutert wird. Wenn Sie von einer SD-Karte drucken, könnte das zusätzliche Gewicht der Datei Ihre Firmware verlangsamen."
 
 msgid ""
 "Enable this to get a G-code file which has G2 and G3 moves. And the fitting "
 "tolerance is same with resolution"
-msgstr "Aktivieren Sie diese Option, um eine G-Code-Datei zu erhalten, die G2 und G3 Bewegungen enthält. Und die Anpassungstoleranz ist dieselbe wie die Auflösung"
+msgstr "aktiviere diese Option, um eine G-Code-Datei zu erhalten, die G2 und G3 Bewegungen enthält. Und die Anpassungstoleranz ist dieselbe wie die Auflösung"
 
 msgid "Enable variable layer height feature"
 msgstr "Variable Schichthöhen aktivieren"
@@ -3535,7 +3514,7 @@ msgid "Enable vertical mirroring of output images"
 msgstr "Vertikale Spiegelung der Ausgabebilder aktivieren"
 
 msgid "Enable wipe tower"
-msgstr "Aktivieren Sie Wischturm"
+msgstr "aktiviere den Wischturm"
 
 msgid "Enabled"
 msgstr "aktiviert"
@@ -3597,7 +3576,7 @@ msgid ""
 msgstr "Stellen Sie sicher, dass der Slicer keine Heiz-, Lüfter-, Extruder-... Befehle vor oder direkt nach Ihrem start_gcode hinzufügt. Wenn Sie diese Option auf true setzen, müssen Sie einen guten und vollständigen start_gcode schreiben, da keine Überprüfungen mehr stattfinden."
 
 msgid "Ensure vertical shell thickness"
-msgstr "Stelle die vertikale Hüllenstärke sicher"
+msgstr "Stelle die vertikale Wandstärke sicher"
 
 msgid "Enter a search term"
 msgstr "Suchbegriff eingeben"
@@ -3784,9 +3763,6 @@ msgstr "Gerade-ungerade"
 msgid "Event"
 msgstr "Ereignis"
 
-msgid "Exact last layer height"
-msgstr "Genaue Höhe der letzten Ebene"
-
 msgid "Exact pattern"
 msgstr "Genaues Muster"
 
@@ -3819,7 +3795,7 @@ msgstr "Ausdehnung des Rafts in der XY-Ebene für bessere Stabilität."
 msgid ""
 "Experimental option for preventing support material from being generated "
 "under bridged areas."
-msgstr "Experimentelle Option zur Verhinderung der Bildung von Trägermaterial unter Überbrückungsflächen."
+msgstr "Experimentelle Option zur Verhinderung der Bildung von Stützmaterial unter Überbrückungsflächen."
 
 msgid ""
 "Experimental option to remove perimeters where there is nothing under them "
@@ -3881,7 +3857,7 @@ msgid "Export &G-code"
 msgstr "Export &G-Code"
 
 msgid "Export &Plate"
-msgstr "Exportieren &Plattieren"
+msgstr "Export &Plattieren"
 
 msgid "Export &Toolpaths as OBJ"
 msgstr "Werkzeugwege als OBJ expor&tieren"
@@ -3908,7 +3884,7 @@ msgid "Export Config &Bundle"
 msgstr "Konfigurationssa&mlung exportieren"
 
 msgid "Export Config Bundle With Physical Printers"
-msgstr "Konfigurations-Bundle mit physischen Druckern exportieren"
+msgstr "Konfigurationsbündel mit physischen Druckern exportieren"
 
 msgid "Export current configuration to file"
 msgstr "Exportiere die aktuelle Konfiguration in eine Datei"
@@ -3916,7 +3892,7 @@ msgstr "Exportiere die aktuelle Konfiguration in eine Datei"
 msgid ""
 "Export current configuration to file, with only settings compatible with "
 "PrusaSlicer"
-msgstr "Exportieren Sie die aktuelle Konfiguration in eine Datei, die nur Einstellungen enthält, die mit PrusaSlicer kompatibel sind"
+msgstr "Exportiere die aktuelle Konfiguration in eine Datei, die nur Einstellungen enthält, die mit PrusaSlicer kompatibel sind"
 
 msgid "Export current plate (options available in the dialog)"
 msgstr "Aktuelle Platte exportieren (Optionen im Dialogfeld verfügbar)"
@@ -3929,7 +3905,7 @@ msgstr "Aktuelle Druckplatte als G-Code auf SD-Karte/Flash-Laufwerk exportieren"
 
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
-msgstr "Exportieren Sie die vollständigen Pfadnamen der Modelle und Teilequellen in 3mf- und amf-Dateien"
+msgstr "Exportiere die vollständigen Pfadnamen der Modelle und Teilequellen in 3mf- und amf-Dateien"
 
 msgid "Export G-code"
 msgstr "Export G-Code"
@@ -3980,7 +3956,7 @@ msgid "Export the model(s) as STL."
 msgstr "Exportiert das/die Modell(e) als STL Datei."
 
 msgid "Export to &Prusa Config"
-msgstr "Exportieren nach &Prusa Config"
+msgstr "Exportieren nach &Caribou Konfiguration"
 
 msgid "Export to SD card / Flash drive"
 msgstr "Export auf SD-Karte/Flash-Laufwerk"
@@ -4037,7 +4013,7 @@ msgid "External perimeter"
 msgstr "Außenkontur"
 
 msgid "external perimeter"
-msgstr "äußerer Perimeter"
+msgstr "äußere Wand"
 
 msgid "External Perimeter acceleration"
 msgstr "Externe Beschleunigung des Perimeters"
@@ -4183,11 +4159,17 @@ msgstr "Extrusionsachse"
 msgid "Extrusion direction"
 msgstr "Richtung der Extrusion"
 
+msgid "Extrusion multipler"
+msgstr "Extrusionsmultiplikator"
+
 msgid "Extrusion multiplier"
 msgstr "Extrusionsfaktor"
 
 msgid "Extrusion Multiplier calibration"
 msgstr "Kalibrierung des Extrusionsfaktors"
+
+msgid "Extrusion multiplier per speed"
+msgstr "Extrusionsmultiplikator pro Geschwindigkeit"
 
 msgid "Extrusion section (mm³/mm)"
 msgstr "Strangpressprofil (mm³/mm)"
@@ -4511,16 +4493,16 @@ msgid "first"
 msgstr "erste"
 
 msgid "First layer"
-msgstr "Erste Schicht"
+msgstr "erste Schicht"
 
 msgid "first layer"
-msgstr "Erste Schicht"
+msgstr "erste Schicht"
 
 msgid "First layer acceleration"
-msgstr "Erste Schicht Beschleunigung"
+msgstr "ersteSchicht Beschleunigung"
 
 msgid "First layer bed temperature"
-msgstr "Erste Schicht Bett-Temperatur"
+msgstr "ersteSchicht Bett-Temperatur"
 
 msgid "First layer calibration"
 msgstr "Kalibrierung der ersten Schicht"
@@ -4535,7 +4517,7 @@ msgid "First layer expansion"
 msgstr "Expansion der ersten Schicht"
 
 msgid "First layer extruder"
-msgstr "Erste Schicht Extruder"
+msgstr "ersteSchicht Extruder"
 
 msgid "First layer flow ratio"
 msgstr "Fließverhältnis der ersten Schicht"
@@ -4559,7 +4541,7 @@ msgstr ""
 "Die Höhe der ersten Schicht wird auf 0,01 zurückgesetzt."
 
 msgid "First layer nozzle temperature"
-msgstr "Erste Schicht Düsentemperatur"
+msgstr "ersteSchicht Düsentemperatur"
 
 msgid "First layer patch calibration"
 msgstr "Expansion der ersten Schicht (Fläche)"
@@ -4580,7 +4562,7 @@ msgid "First layer width"
 msgstr "Breite der ersten Schicht"
 
 msgid "First object layer over raft interface"
-msgstr "Erste Objektschicht über der Raft-Schnittstelle"
+msgstr "ersteObjektschicht über der Raft-Schnittstelle"
 
 msgid "Fix through NetFabb"
 msgstr "Reparieren mittels Netfabb"
@@ -4715,15 +4697,25 @@ msgstr ""
 msgid ""
 "For the Wipe Tower to work with the soluble supports, the support layers "
 "need to be synchronized with the object layers."
-msgstr "Damit der Reinigungsturm mit den löslichen Trägermaterialien arbeiten kann, müssen die Stützschichten mit den Objektschichten synchronisiert sein."
+msgstr "Damit der Reinigungsturm mit den löslichen Stützmaterialien arbeiten kann, müssen die Stützschichten mit den Objektschichten synchronisiert sein."
 
 msgid ""
 "For the Wipe Tower to work with the soluble supports, the support layers\n"
 "need to be synchronized with the object layers."
-msgstr "Damit der Reinigungsturm mit den löslichen Trägermaterialien arbeiten kann, müssen die Stützschichten mit den Objektschichten synchronisiert sein."
+msgstr "Damit der Reinigungsturm mit den löslichen Stützmaterialien arbeiten kann, müssen die Stützschichten mit den Objektschichten synchronisiert sein."
 
 msgid "Force pad around object everywhere"
 msgstr "Grundschicht überall um Objekt erzwingen"
+
+msgid ""
+"Force solid infill for parts of regions having a smaller width than the "
+"specified threshold.\n"
+"Can be a % of the current solid infill spacing.\n"
+"Set 0 to disable"
+msgstr ""
+"Erzwingt eine Füllung für Teile von Regionen, die eine geringere Breite als den angegebenen Schwellenwert haben.\n"
+"Kann ein % of der aktuelle Abstand für die Füllung sein.\n"
+"Setze 0 zum Deaktivieren"
 
 msgid ""
 "Force solid infill for regions having a smaller area than the specified "
@@ -4731,10 +4723,15 @@ msgid ""
 msgstr "Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
 
 msgid ""
+"Force solid infill for the whole layer when the combined area of all objects "
+"that are printed at the same layer is smaller than this value."
+msgstr "Erzwinge eine solide Füllung für die gesamte Ebene, wenn die kombinierte Fläche aller Objekte, die auf derselben Ebene gedruckt werden, kleiner als dieser Wert ist."
+
+msgid ""
 "Force the generation of solid shells between adjacent materials/volumes. "
 "Useful for multi-extruder prints with translucent materials or manual "
 "soluble support material."
-msgstr "Erzwingt die Erzeugung von massiven Schalen zwischen benachbarten Materialien/Volumina. Geeignet für Multiextruderdrucke mit transluzenten Materialien oder manuell löslichen Trägermaterialien."
+msgstr "Erzwingt die Erzeugung von massiven Schalen zwischen benachbarten Materialien/Volumina. Geeignet für Multiextruderdrucke mit transluzenten Materialien oder manuell löslichen Stützmaterialien."
 
 msgid "Format of G-code thumbnails"
 msgstr "Format der G-Code-Miniaturbilder"
@@ -4776,6 +4773,12 @@ msgstr "Sie können nicht das letzte solide Teil des Objekts von der Objektliste
 msgid "From plane"
 msgstr "Von der Ebene"
 
+msgid "From region"
+msgstr "Aus der Region"
+
+msgid "From the whole layer"
+msgstr "Von der gesamten Schicht"
+
 msgid "Front"
 msgstr "Front"
 
@@ -4790,12 +4793,6 @@ msgstr "vollständiger Profilname"
 
 msgid "Fullscreen"
 msgstr "Vollbild"
-
-msgid "Fullscreen mode\nDid you know that you can switch PrusaSlicer to fullscreen mode? Use the <b>F11</b> hotkey."
-msgstr ""
-"Vollbildmodus\n"
-"Wussten Sie, dass Sie PrusaSlicer in den Vollbildmodus schalten können? "
-"Verwenden Sie die Tastenkombination <b>F11</b>."
 
 msgid "Fuzzy Skin"
 msgstr "Fuzzy Skin"
@@ -4823,14 +4820,6 @@ msgstr ""
 "Äußere Wände: Wenden Sie die unscharfe Haut nur auf die äußeren Begrenzungen der Außenseite an (nicht auf die Löcher).\n"
 "Außenwände: Wenden Sie Fuzzy-Skin nur auf alle Außenumfänge an.\n"
 "Alle Umfänge: Wenden Sie die unscharfe Haut auf alle Umfänge an (außen, innen und Lückenfüller)."
-
-msgid "Fuzzy skin\nDid you know that you can create rough fibre-like texture on the sides of your models using the<a>Fuzzy skin</a>feature? You can also use modifiers to apply fuzzy-skin only to a portion of your model."
-msgstr ""
-"Fuzzy Skin\n"
-"Wussten Sie schon, dass Sie mit der Funktion \"Fuzzy Skin\" raue, "
-"faserähnliche Texturen an den Seiten Ihres Modells erstellen können? Sie "
-"können auch Modifizierer verwenden, um Fuzzy-Skin nur auf einen Teil Ihres "
-"Modells anzuwenden."
 
 msgid "G-code"
 msgstr "G-Code"
@@ -4882,7 +4871,7 @@ msgid "Gap fill"
 msgstr "Lückenfüllung"
 
 msgid "Gap Fill"
-msgstr "Lücke füllen"
+msgstr "Lücken füllen"
 
 msgid "Gap fill acceleration"
 msgstr "Beschleunigung beim Füllen von Lücken"
@@ -4891,43 +4880,43 @@ msgid "Gap fill fan speed"
 msgstr "Gebläsedrehzahl für Lückenfüller"
 
 msgid "Gap fill overlap"
-msgstr "Lücke füllen Überlappung"
+msgstr "Lücken füllen Überlappung"
 
 msgid "Gap fill speed"
 msgstr "Geschwindigkeit der Lückenfüllung"
 
 msgid "Gap Fill threshold"
-msgstr "Lücke füllen Schwelle"
+msgstr "Lücken füllen Schwelle"
 
 msgid "Gap fill: extra extension"
-msgstr "Lückenfüller: zusätzliche Verlängerung"
+msgstr "Lückenfüllung: zusätzliche Verlängerung"
 
 msgid "Gap fills"
-msgstr "Lückenfüller"
+msgstr "Lückenfüllung"
 
 msgid "Gapfill: after last perimeter"
-msgstr "Lückenfüller: nach dem letzten Perimeter"
+msgstr "Lückenfüllung: nach dem letzten Perimeter"
 
 msgid "Gapfill: cap speed with perimeter flow"
 msgstr "Gapfill: Kappengeschwindigkeit mit Perimeterfluss"
 
 msgid "Gapfill: Max width"
-msgstr "Lückenfüller: Maximale Breite"
+msgstr "Lückenfüllung: Maximale Breite"
 
 msgid "Gapfill: Min length"
-msgstr "Lückenfüller: Min. Länge"
+msgstr "Lückenfüllung: Min. Länge"
 
 msgid "Gapfill: Min surface"
-msgstr "Lückenfüller: Min Oberfläche"
+msgstr "Lückenfüllung: Min Oberfläche"
 
 msgid "Gapfill: Min width"
-msgstr "Lückenfüller: Min. Breite"
+msgstr "Lückenfüllung: Min. Breite"
 
 msgid "Gcode done"
 msgstr "Gcode fertig"
 
 msgid "GCode Pre&view Tab"
-msgstr "GCode Vorschau Tab"
+msgstr "GCode Vorschau"
 
 msgid "Gcode precision"
 msgstr "Gcode Präzision"
@@ -4994,7 +4983,7 @@ msgid "Generating perimeters"
 msgstr "Generiere Wände"
 
 msgid "Generating perimeters: layer %s / %s"
-msgstr "Erzeugen von Perimetern: Ebene %s / %s"
+msgstr "Erzeugen von Wänden: Ebene %s / %s"
 
 msgid "Generating skirt"
 msgstr "Erzeuge Umrandung"
@@ -5030,7 +5019,7 @@ msgid ""
 "Give to the infill algorithm if the infill needs to be connected, and on "
 "which perimeters Can be useful for art or with high infill/perimeter "
 "overlap. The result may vary between infill types."
-msgstr "Geben Sie dem Ausfachungsalgorithmus vor, ob die Ausfachung verbunden werden muss und an welchen Perimetern. Kann für Kunst oder mit hoher Überlappung von Ausfachung/Perimeter nützlich sein. Das Ergebnis kann je nach Infill-Typ variieren."
+msgstr "Geben Sie dem Ausfachungsalgorithmus vor, ob die Ausfachung verbunden werden muss und an welchen Wänden. Kann für Kunst oder mit hoher Überlappung von Ausfachung/Perimeter nützlich sein. Das Ergebnis kann je nach Infill-Typ variieren."
 
 msgid "Gizmo cut"
 msgstr "Gizmo Schnitt"
@@ -5204,13 +5193,6 @@ msgstr "Lineal verbergen"
 
 msgid "Hide tooltips on slice buttons"
 msgstr "Tooltips auf Slice-Schaltflächen ausblenden"
-
-msgid "Hiding sidebar\nDid you know that you can hide the right sidebar using the shortcut <b>Shift+Tab</b>? You can also enable the icon for this from the<a>Preferences</a>."
-msgstr ""
-"Seitenleiste ausblenden\n"
-"Wussten Sie, dass Sie die rechte Seitenleiste mit der Tastenkombination "
-"<b>Shift+Tab</b> ausblenden können? Sie können das Symbol dafür auch in "
-"den<a>Einstellungen</a> aktivieren."
 
 msgid "High extruder current on filament swap"
 msgstr "Hohe Extruderstromstärke beim Filamentwechsel"
@@ -5449,6 +5431,12 @@ msgid ""
 "current control."
 msgstr "Wenn diese Funktion deaktiviert ist, ändert sich der Fokus nicht, wenn Sie mit der Maus über die Platte fahren, aber einige Tastenkombinationen auf der Platte funktionieren möglicherweise nicht. Wenn diese Option aktiviert ist, verschiebt sich der Fokus, wenn Sie die Maus über die Platte bewegen, dorthin und weg von der aktuellen Steuerung."
 
+msgid "If enabled, %1% will be open at the position it was closed"
+msgstr "Wenn aktiviert, wird %1% an der Stelle geöffnet, an der es geschlossen wurde"
+
+msgid "If enabled, %1% will not open hyperlinks in your browser."
+msgstr "Wenn diese Option aktiviert ist, öffnet %1% keine Hyperlinks in deinem Browser."
+
 msgid ""
 "If enabled, %s checks for new application versions online. When a new "
 "version becomes available, a notification is displayed at the next "
@@ -5498,12 +5486,6 @@ msgid ""
 "to gcode top layer. If disabled, changes made using the sequential slider, "
 "in preview, apply to the whole gcode."
 msgstr "Wenn diese Option aktiviert ist, werden Änderungen, die Sie mit dem Schieberegler in der Vorschau vornehmen, nur auf den G-Code der obersten Schicht angewendet. Wenn Sie diese Option deaktivieren, werden die mit dem Schieberegler in der Vorschau vorgenommenen Änderungen auf den gesamten G-Code angewendet."
-
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr "Wenn diese Option aktiviert ist, wird PrusaSlicer an der Position geöffnet, an der er geschlossen wurde"
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr "Wenn diese Option aktiviert ist, wird PrusaSlicer keine Hyperlinks in Ihrem Browser öffnen."
 
 msgid "If enabled, random sequence of the selected extruders will be used."
 msgstr "Wenn aktiviert, wird eine zufällige Reihenfolge der ausgewählten Extruder verwendet."
@@ -5833,7 +5815,7 @@ msgid "Import &Config"
 msgstr "Importiere &Konfiguration"
 
 msgid "Import Config &Bundle"
-msgstr "Importiere Konfi&gurationssamlung"
+msgstr "Importiere Konfi&gurationsbündel"
 
 msgid "Import Config from &Project"
 msgstr "Importiere Konfiguration von &Projekt"
@@ -5869,10 +5851,10 @@ msgid "Import profile only"
 msgstr "Nur Profil importieren"
 
 msgid "Import Prusa Config"
-msgstr "Prusa-Konfiguration importieren"
+msgstr "Caribou-Konfiguration importieren"
 
 msgid "Import Prusa Config Bundle"
-msgstr "Prusa Config Bundle importieren"
+msgstr "Caribou Konfigurationsbündel importieren"
 
 msgid "Import SL1 / SL1S Archive"
 msgstr "Import SL1 / SL1S Archiv"
@@ -5941,7 +5923,7 @@ msgid ""
 "!! ensure_vertical_shell_thickness needs to be activated so this algorithm "
 "can work !!."
 msgstr ""
-"In geneigten Bereichen, wenn Sie eine Reihe von oberen/unteren Solid-Layern und nur wenige Perimeter haben, kann es notwendig sein, einige Solid-Infills über/unter den Perimetern zu platzieren, um die Kriterien für die oberen/unteren Layer zu erfüllen.\n"
+"In geneigten Bereichen, wenn Sie eine Reihe von oberen/unteren Solid-Layern und nur wenige Perimeter haben, kann es notwendig sein, einige Solid-Infills über/unter den Wänden zu platzieren, um die Kriterien für die oberen/unteren Layer zu erfüllen.\n"
 "Wenn Sie diesen Wert auf einen höheren Wert als 0 setzen, können Sie dieses Verhalten steuern, was wünschenswert sein kann, wenn\n"
 "unerwünschte feste Füllungen an Hängen erzeugt werden.\n"
 "Die hier eingestellte Zahl gibt die Anzahl der Schichten zwischen der Innenseite des Teils und der Luft an, ab der oben/unten keine feste Füllung mehr hinzugefügt werden soll. Wenn diese Einstellung gleich oder höher ist als die Anzahl der oberen/unteren festen Schichten, wird nichts unternommen. Wenn diese Einstellung auf 1 gesetzt wird, werden alle festen Füllungen oberhalb/unterhalb der Begrenzungen entfernt.\n"
@@ -6085,7 +6067,7 @@ msgid "Initial layer height"
 msgstr "Anfangsschichthöhe"
 
 msgid "Inner"
-msgstr "Innen"
+msgstr "innen"
 
 msgid "Inner brim only"
 msgstr "Nur innerer Rand"
@@ -6103,27 +6085,11 @@ msgstr ""
 "Eingabewert liegt außerhalb des Bereichs\n"
 "Sind Sie sicher, dass %s ein korrekter Wert ist und Sie fortfahren möchten?"
 
-msgid "Insert Custom G-code\nDid you know that you can insert a custom G-code at a specific layer? Left-click the layer in the Preview, Right-click the plus icon and select Add custom G-code. With this function you can, for example, create a temperature tower. Read more in the documentation."
-msgstr ""
-"Benutzerdefinierten G-Code einfügen\n"
-"Wussten Sie, dass Sie einen benutzerdefinierten G-Code in eine bestimmte "
-"Schicht einfügen können? Klicken Sie mit der linken Maustaste auf die "
-"Schicht in der Vorschau, klicken Sie mit der rechten Maustaste auf das Plus-"
-"Symbol und wählen Sie Benutzerdefinierten G-Code hinzufügen. Mit dieser "
-"Funktion können Sie z.B. einen Temperaturturm erstellen. Lesen Sie mehr in "
-"der Dokumentation."
-
-msgid "Insert Pause\nDid you know that you can schedule the print to pause at a specific layer? Right-click the layer slider in the Preview and select Add pause print (M601). This can be used to insert magnets, weights or nuts into your prints. Read more in the documentation."
-msgstr ""
-"Pause einfügen\n"
-"Wussten Sie, dass Sie den Druck auf einer bestimmten Schicht unterbrechen "
-"können? Klicken Sie mit der rechten Maustaste auf den Schieberegler der "
-"Schicht in der Vorschau und wählen Sie Druckpause hinzufügen (M601). Auf "
-"diese Weise können Sie Magnete, Gewichte oder Muttern in Ihre Drucke "
-"einfügen. Weitere Informationen finden Sie in der Dokumentation."
-
 msgid "Insertion distance"
 msgstr "Einfügeabstand"
+
+msgid "Inside"
+msgstr "innerhalb"
 
 msgid "Inspect / activate configuration snapshots"
 msgstr "Inspiziere / aktiviere Konfigurations-Momentaufnahmen"
@@ -6174,49 +6140,49 @@ msgid "Interior Brim width"
 msgstr "Innere Breite des Rands"
 
 msgid "Internal"
-msgstr "Intern"
+msgstr "intern"
 
 msgid "Internal bridge infill"
-msgstr "Interne Brückenfüllung"
+msgstr "interne Brückenfüllung"
 
 msgid "Internal bridge speed"
 msgstr "Geschwindigkeit der internen Brücke"
 
 msgid "Internal bridges"
-msgstr "Interne Brücken"
+msgstr "interne Brücken"
 
 msgid "Internal bridges "
-msgstr "Interne Brücken "
+msgstr "interne Brücken "
 
 msgid "Internal bridges acceleration"
-msgstr "Interne Brücken Beschleunigung"
+msgstr "interne Brücken Beschleunigung"
 
 msgid "internal error"
 msgstr "interner Fehler"
 
 msgid "Internal error: %1%"
-msgstr "Interner Fehler: %1%"
+msgstr "interner Fehler: %1%"
 
 msgid "Internal infill"
-msgstr "Internes Infill"
+msgstr "internes Infill"
 
 msgid "Internal Infill fan speed"
-msgstr "Interne Infill-Lüftergeschwindigkeit"
+msgstr "interne Infill-Lüftergeschwindigkeit"
 
 msgid "Internal perimeter"
-msgstr "Innere Wände"
+msgstr "innere Wände"
 
 msgid "Internal Perimeter acceleration"
-msgstr "Interne Perimeter-Beschleunigung"
+msgstr "Beschleunigung interne Wände"
 
 msgid "Internal Perimeter fan speed"
-msgstr "Interne Lüftergeschwindigkeit Perimeter"
+msgstr "Lüftergeschwindigkeit interne Wände"
 
 msgid "Internal perimeters"
-msgstr "Interne Umgrenzungen"
+msgstr "interne Wände"
 
 msgid "Internal perimeters speed"
-msgstr "Geschwindigkeit der internen Perimeter"
+msgstr "Geschwindigkeit interne Wände"
 
 msgid ""
 "Internal perimeters will go around sharp corners by turning around instead "
@@ -6228,7 +6194,7 @@ msgstr ""
 "Dies kann etwas mehr Zeit in Anspruch nehmen, und die Ecken sind etwas weniger scharf."
 
 msgid "Internal resolution"
-msgstr "Interne Auflösung"
+msgstr "interne Auflösung"
 
 msgid "Introduction"
 msgstr "Einführung"
@@ -6327,15 +6293,6 @@ msgstr "Bügeltyp"
 
 msgid "Ironing width"
 msgstr "Breite bügeln"
-
-msgid "Ironing\nDid you know that you can smooth top surfaces of prints using Ironing? The nozzle will run a special second infill phase at the same layer to fill in holes and flatten any lifted plastic. Read more in the documentation. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Bügeln\n"
-"Wussten Sie, dass Sie die Oberseite von Drucken mit Hilfe des Bügelns "
-"glätten können? Die Düse führt eine spezielle zweite Infill-Phase in "
-"derselben Schicht durch, um Löcher aufzufüllen und angehobenen Kunststoff zu "
-"glätten. Weitere Informationen finden Sie in der Dokumentation. (Erfordert "
-"den Modus Erweitert oder Experte.)"
 
 msgid "Ironings"
 msgstr "Bügelwäsche"
@@ -6450,7 +6407,7 @@ msgid "Keep fan always on"
 msgstr "Lüfter ständig laufen lassen"
 
 msgid "Keep lower part"
-msgstr "Unteren Teil behalten"
+msgstr "unteren Teil behalten"
 
 msgid "Keep min"
 msgstr "Halte min"
@@ -6462,7 +6419,7 @@ msgid "Keep the selected settings."
 msgstr "Die gewählten Einstellungen werden beibehalten."
 
 msgid "Keep upper part"
-msgstr "Oberen Teil behalten"
+msgstr "oberen Teil behalten"
 
 msgid "Keyboard shortcuts"
 msgstr "Tastaturkürzel"
@@ -6519,7 +6476,7 @@ msgid "Layer height limits"
 msgstr "Grenzen für Schichthöhe"
 
 msgid "Layer previe&w Tab"
-msgstr "Ebene previe&w Tab"
+msgstr "Ebenenvorschau"
 
 msgid "Layer range Settings to modify"
 msgstr "Schichtbereicheinstellungen zum Ändern"
@@ -6614,20 +6571,13 @@ msgstr "Lift z Durchsetzung"
 msgid "Lightning"
 msgstr "Lightning"
 
-msgid "Lightning infill\nDid you know that you can use the Lightning infill to support only the top surfaces, save a lot of the filament, and decrease the print time? Read more in the documentation."
-msgstr ""
-"Lightning Infill\n"
-"Wussten Sie, dass Sie das Lightning Infill verwenden können, um nur die "
-"Oberseiten zu unterstützen, viel Filament zu sparen und die Druckzeit zu "
-"verkürzen? Lesen Sie mehr in der Dokumentation."
-
 msgid ""
 "Like First layer width but spacing is the distance between two lines (as "
 "they overlap a bit, it's not the same).\n"
 "You can set either 'Spacing', or 'Width'; the other will be calculated, "
 "using default layer height."
 msgstr ""
-"Wie Erste Ebenenbreite, aber der Abstand ist der Abstand zwischen zwei Zeilen (da sie sich ein wenig überlappen, ist es nicht dasselbe).\n"
+"Wie ersteEbenenbreite, aber der Abstand ist der Abstand zwischen zwei Zeilen (da sie sich ein wenig überlappen, ist es nicht dasselbe).\n"
 "Sie können entweder 'Abstand' oder 'Breite' einstellen; das andere wird anhand der Standardhöhe der Ebene berechnet."
 
 msgid ""
@@ -6725,15 +6675,6 @@ msgstr "Lädt und speichert Einstellungen im angegebenen Verzeichnis. Dies ist n
 
 msgid "Load config file"
 msgstr "Lade Konfigurationsdatei"
-
-msgid "Load config from G-code\nDid you know that you can use File-Import-Import Config to load print, filament and printer profiles from an existing G-code file? Similarly, you can use File-Import-Import SL1 / SL1S archive, which also lets you reconstruct 3D models from the voxel data."
-msgstr ""
-"Konfiguration aus G-Code laden\n"
-"Wussten Sie, dass Sie File-Import-Import Konfig verwenden können, um Druck-, "
-"Filament- und Druckerprofile aus einer vorhandenen G-Code-Datei zu laden? In "
-"ähnlicher Weise können Sie mit File-Import-Import SL1 / SL1S Archive "
-"verwenden, mit denen Sie ebenfalls 3D-Modelle aus den Voxel-Daten "
-"rekonstruieren können."
 
 msgid "Load Config from ini/amf/3mf/gcode and merge"
 msgstr "Lade und füge Konfiguration von ini/amf/3mf/gcode hinzu"
@@ -6852,7 +6793,7 @@ msgid "Loops (minimum)"
 msgstr "Umrundungen (minimal)"
 
 msgid "Lower temp:"
-msgstr "Untere Temperatur:"
+msgstr "untere Temperatur:"
 
 msgid "lowest Y"
 msgstr "niedrigstes Y"
@@ -6916,6 +6857,9 @@ msgstr "Haupt-GUI immer im Expertenmodus"
 msgid "Main Gui color template"
 msgstr "Farbvorlage für die Haupt-GUI"
 
+msgid "Main speed"
+msgstr "Geschwindigkeit"
+
 msgid ""
 "Make sure the object is printable. This is usually caused by negligibly "
 "small extrusions or by a faulty model. Try to repair the model or change its "
@@ -6962,118 +6906,121 @@ msgid "max"
 msgstr "max"
 
 msgid "Max"
-msgstr "Max"
+msgstr "max"
 
 msgid "max %s version"
 msgstr "max %s Version"
 
 msgid "Max angle"
-msgstr "Maximaler Winkel"
+msgstr "maximaler Winkel"
 
 msgid "max angle"
 msgstr "maximaler Winkel"
 
+msgid "Max auto-speed"
+msgstr "maximale Autogeschwindigkeit"
+
 msgid "Max bridge density"
-msgstr "Maximale Brückendichte"
+msgstr "maximale Brückendichte"
 
 msgid "Max bridge length"
-msgstr "Max Überbrückungslänge"
+msgstr "maximale Überbrückungslänge"
 
 msgid "Max bridges on a pillar"
-msgstr "Max Brücken auf einem Pfeiler"
+msgstr "maximale Brücken auf einem Pfeiler"
 
 msgid "Max fan speed"
-msgstr "Maximale Lüftergeschwindigkeit"
+msgstr "maximale Lüftergeschwindigkeit"
 
 msgid "Max height"
-msgstr "Maximale Höhe"
+msgstr "maximale Höhe"
 
 msgid "Max infill"
-msgstr "Max Füllung"
+msgstr "max. Füllung"
 
 msgid "Max layer height"
-msgstr "Maximale Schichthöhe"
+msgstr "maximale Schichthöhe"
 
 msgid "Max layer height can't be greater than nozzle diameter"
 msgstr "Die maximale Schichthöhe darf nicht größer sein als der Düsendurchmesser"
 
 msgid "Max length"
-msgstr "Maximale Länge"
+msgstr "maximale Länge"
 
 msgid "Max line overlap"
-msgstr "Maximale Linienüberlappung"
+msgstr "maximale Linienüberlappung"
 
 msgid "Max merge distance"
-msgstr "Maximaler Zusammenfügeabstand"
+msgstr "maximaler Zusammenfügeabstand"
+
+msgid "Max perimeter count for holes"
+msgstr "maximale Umfangszahl für Löcher"
 
 msgid "Max pillar linking distance"
-msgstr "Max. Pfeiler Verbindungsabstand"
+msgstr "max. Pfeiler Verbindungsabstand"
 
 msgid "Max print height"
-msgstr "Max. Druckhöhe"
-
-msgid "Max print speed"
-msgstr "Maximale Druckgeschwindigkeit"
+msgstr "max. Druckhöhe"
 
 msgid "Max print speed for Autospeed"
-msgstr "Maximale Druckgeschwindigkeit für Autospeed"
+msgstr "maximale Druckgeschwindigkeit für Autospeed"
 
 msgid "Max small perimeters length"
-msgstr "Maximale Länge der kleinen Perimeter"
+msgstr "maximale Länge der kleinen Perimeter"
 
 msgid "Max speed"
-msgstr "Max. Geschwindigkeit"
+msgstr "max. Geschwindigkeit"
 
 msgid "Max speed of object first layer over raft interface"
-msgstr "Maximale Geschwindigkeit des Objekts erste Schicht über der Floßoberfläche"
+msgstr "maximale Geschwindigkeit des Objekts erste Schicht über der Floßoberfläche"
 
 msgid "Max speed on the wipe tower"
-msgstr "Maximale Geschwindigkeit auf dem Wischturm"
+msgstr "maximale Geschwindigkeit auf dem Wischturm"
 
 msgid "Max speed reduction"
-msgstr "Maximale Geschwindigkeitsreduzierung"
+msgstr "maximale Geschwindigkeitsreduzierung"
 
 msgid "Max volumetric slope negative"
-msgstr "Max. volumetrische Steigung negativ"
+msgstr "max. volumetrische Steigung negativ"
 
 msgid "Max volumetric slope positive"
-msgstr "Max. volumetrische Steigung positiv"
+msgstr "max. volumetrische Steigung positiv"
 
 msgid "Max volumetric speed"
-msgstr "Maximale Volumengeschwindigkeit"
+msgstr "maximale Volumengeschwindigkeit"
 
 msgid "Max width"
-msgstr "Maximale Breite"
+msgstr "maximale Breite"
 
 msgid "Max Wipe deviation"
-msgstr "Maximale Wischabweichung"
+msgstr "maximale Wischabweichung"
 
 msgid "Maximal bridging distance"
-msgstr "Maximaler Überbrückungsabstand"
+msgstr "maximaler Überbrückungsabstand"
 
 msgid "Maximal distance between supports on sparse infill sections. "
 msgstr "Maximalabstand zwischen Stützen auf spärlichen Infill-Abschnitten. "
 
 msgid "Maximum acceleration E"
-msgstr "Maximale Beschleunigung E"
+msgstr "maximale Beschleunigung E"
 
 msgid "Maximum acceleration for travel moves"
-msgstr "Maximale Beschleunigung für Fahrbewegungen"
+msgstr "maximale Beschleunigung für Fahrbewegungen"
 
 msgid "Maximum acceleration of the E axis"
-msgstr "Maximale Beschleunigung der E-Achse"
+msgstr "maximale Beschleunigung der E-Achse"
 
 msgid "Maximum acceleration of the X axis"
-msgstr "Maximale Beschleunigung der X-Achse"
+msgstr "maximale Beschleunigung der X-Achse"
 
 msgid "Maximum acceleration of the Y axis"
-msgstr "Maximale Beschleunigung der Y-Achse"
+msgstr "maximale Beschleunigung der Y-Achse"
 
 msgid "Maximum acceleration of the Z axis"
-msgstr "Maximale Beschleunigung der Z-Achse"
+msgstr "maximale Beschleunigung der Z-Achse"
 
 msgid "Maximum acceleration when extruding"
-msgstr "Maximale Beschleunigung beim Extrudieren"
+msgstr "maximale Beschleunigung beim Extrudieren"
 
 msgid ""
 "Maximum acceleration when extruding (M204 P)\n"
@@ -7081,30 +7028,30 @@ msgid ""
 "Marlin (legacy) firmware flavor will use this also as travel acceleration "
 "(M204 T)."
 msgstr ""
-"Maximale Beschleunigung beim Extrudieren (M204 P)\n"
+"maximale Beschleunigung beim Extrudieren (M204 P)\n"
 "\n"
 "Marlin (Legacy) Firmware Flavor verwendet dies auch als Fahrbeschleunigung (M204 T)."
 
 msgid "Maximum acceleration when retracting"
-msgstr "Maximale Beschleunigung beim Einzug"
+msgstr "maximale Beschleunigung beim Einzug"
 
 msgid "Maximum acceleration when retracting (M204 R)"
-msgstr "Maximale Beschleunigung beim Einzug (M204 R)"
+msgstr "maximale Beschleunigung beim Einzug (M204 R)"
 
 msgid "Maximum acceleration when travelling (M204 T)"
-msgstr "Maximale Beschleunigung während der Fahrt (M204 T)"
+msgstr "maximale Beschleunigung während der Fahrt (M204 T)"
 
 msgid "Maximum acceleration X"
-msgstr "Maximale Beschleunigung X"
+msgstr "maximale Beschleunigung X"
 
 msgid "Maximum acceleration Y"
-msgstr "Maximale Beschleunigung Y"
+msgstr "maximale Beschleunigung Y"
 
 msgid "Maximum acceleration Z"
-msgstr "Maximale Beschleunigung Z"
+msgstr "maximale Beschleunigung Z"
 
 msgid "Maximum accelerations"
-msgstr "Maximale Beschleunigungen"
+msgstr "maximale Beschleunigungen"
 
 msgid ""
 "Maximum angle to let a brim ear appear. \n"
@@ -7156,65 +7103,75 @@ msgstr ""
 "Maximaler Abstand zwischen zwei Punkten, um das Hinzufügen neuer Punkte zu ermöglichen. Erlaubt, um die Verzerrung langer gerader Bereiche zu vermeiden.\n"
 "Setzen Sie Null, um zu deaktivieren."
 
+msgid ""
+"Maximum distance for bridges. If the distance is over that, it will be "
+"considered as overhangs for 'overhangs_max_slope'.\n"
+"Set to -1 to accept all distances.\n"
+"Set to 0 to ignore bridges."
+msgstr ""
+"Maximaler Abstand für Brücken. Liegt der Abstand darüber, wird er als Überhang für 'overhangs_max_slope' betrachtet.\n"
+"Setze auf -1, um alle Abstände zu akzeptieren.\n"
+"Setze 0, um Brücken zu ignorieren."
+
 msgid "Maximum exposure time"
-msgstr "Maximale Belichtungszeit"
+msgstr "maximale Belichtungszeit"
 
 msgid "Maximum feedrate E"
-msgstr "Maximaler Vorschub E"
+msgstr "maximaler Vorschub E"
 
 msgid "Maximum feedrate of the E axis"
-msgstr "Maximaler Vorschub auf der E-Achse"
+msgstr "maximaler Vorschub auf der E-Achse"
 
 msgid "Maximum feedrate of the X axis"
-msgstr "Maximaler Vorschub auf der X-Achse"
+msgstr "maximaler Vorschub auf der X-Achse"
 
 msgid "Maximum feedrate of the Y axis"
-msgstr "Maximaler Vorschub auf der Y-Achse"
+msgstr "maximaler Vorschub auf der Y-Achse"
 
 msgid "Maximum feedrate of the Z axis"
-msgstr "Maximaler Vorschub auf der Z-Achse"
+msgstr "maximaler Vorschub auf der Z-Achse"
 
 msgid "Maximum feedrate X"
-msgstr "Maximaler Vorschub X"
+msgstr "maximaler Vorschub X"
 
 msgid "Maximum feedrate Y"
-msgstr "Maximaler Vorschub Y"
+msgstr "maximaler Vorschub Y"
 
 msgid "Maximum feedrate Z"
-msgstr "Maximaler Vorschub Z"
+msgstr "maximaler Vorschub Z"
 
 msgid "Maximum feedrates"
-msgstr "Maximaler Vorschub"
+msgstr "maximaler Vorschub"
 
 msgid "Maximum G1 per second"
 msgstr "Maximal G1 pro Sekunde"
 
 msgid "Maximum initial exposure time"
-msgstr "Maximale Anfang-Belichtungszeit"
+msgstr "maximale Anfang-Belichtungszeit"
 
 msgid "Maximum jerk E"
-msgstr "Maximaler Ruck E"
+msgstr "maximaler Ruck E"
 
 msgid "Maximum jerk of the E axis"
-msgstr "Maximaler Ruck auf der E-Achse"
+msgstr "maximaler Ruck auf der E-Achse"
 
 msgid "Maximum jerk of the X axis"
-msgstr "Maximaler Ruck auf der X-Achse"
+msgstr "maximaler Ruck auf der X-Achse"
 
 msgid "Maximum jerk of the Y axis"
-msgstr "Maximaler Ruck auf der Y-Achse"
+msgstr "maximaler Ruck auf der Y-Achse"
 
 msgid "Maximum jerk of the Z axis"
-msgstr "Maximaler Ruck auf der Z-Achse"
+msgstr "maximaler Ruck auf der Z-Achse"
 
 msgid "Maximum jerk X"
-msgstr "Maximaler Ruck X"
+msgstr "maximaler Ruck X"
 
 msgid "Maximum jerk Y"
-msgstr "Maximaler Ruck Y"
+msgstr "maximaler Ruck Y"
 
 msgid "Maximum jerk Z"
-msgstr "Maximaler Ruck Z"
+msgstr "maximaler Ruck Z"
 
 msgid ""
 "Maximum layer height for the raft interface.\n"
@@ -7258,24 +7215,35 @@ msgid "Maximum layer height. Limit for better quality/layer adhesion."
 msgstr "Maximale Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
 msgid "Maximum length of the infill anchor"
-msgstr "Maximale Länge des Infill-Ankers"
+msgstr "maximale Länge des Infill-Ankers"
 
 msgid ""
 "Maximum number of bridges that can be placed on a pillar. Bridges hold "
 "support point pinheads and connect to pillars as small branches."
 msgstr "Maximale Anzahl von Brücken, die auf einen Pfeiler gesetzt werden können. Brücken halten Stützpunkt-Nadelköpfe und verbinden sich als kleine Äste mit den Pfeilern."
 
-msgid "Maximum Print Volumetric speed"
-msgstr "Maximale volumetrische Druckgeschwindigkeit"
+msgid ""
+"Maximum slope for overhangs. if at each layer, the overhangs hangs by more "
+"than this value, then the geometry will be cut. It doesn't cut into detected "
+"bridgeable areas.\n"
+"Can be a % of the highest nozzle diameter.\n"
+"Set to 0 to disable."
+msgstr ""
+"Maximale Neigung für Überhänge. Wenn in jeder Schicht die Überhänge um mehr als diesen Wert hängen, wird die Geometrie geschnitten. Es wird nicht in erkannte überbrückbare Bereiche geschnitten.\n"
+"Kann ein % of der höchste Düsendurchmesser sein.\n"
+"Zum Deaktivieren auf 0 setzen."
 
-msgid "maximum speed"
-msgstr "höchstgeschwindigkeit"
+msgid "Maximum speed"
+msgstr "maximale Geschwindigkeit"
 
 msgid ""
 "Maximum speed allowed for this filament. Limits the maximum speed of a print "
 "to the minimum of the print speed and the filament speed. Set zero for no "
 "limit."
 msgstr "Maximal zulässige Geschwindigkeit für dieses Filament. Begrenzt die maximale Geschwindigkeit eines Drucks auf das Minimum aus Druckgeschwindigkeit und Filamentgeschwindigkeit. Setzen Sie Null für keine Begrenzung."
+
+msgid "Maximum Volumetric print speed for Autospeed"
+msgstr "Maximale volumetrische Druckgeschwindigkeit für Autospeed"
 
 msgid ""
 "Maximum volumetric speed allowed for this filament. Limits the maximum "
@@ -7284,13 +7252,13 @@ msgid ""
 msgstr "Maximal zulässige volumetrische Geschwindigkeit für dieses Filament. Begrenzt die maximale volumetrische Geschwindigkeit eines Drucks auf das Minimum der volumetrischen Geschwindigkeit von Druck und Filament. Setzen Sie Null für keine Begrenzung."
 
 msgid "Maximum width of a segmented region"
-msgstr "Maximale Breite einer segmentierten Region"
+msgstr "maximale Breite einer segmentierten Region"
 
 msgid "Maximum width of a segmented region. Zero disables this feature."
 msgstr "Maximale Breite eines segmentierten Bereichs. Null schaltet diese Funktion aus."
 
 msgid "Maximum Wipe deviation to the inside"
-msgstr "Maximale Wischabweichung nach innen"
+msgstr "maximale Wischabweichung nach innen"
 
 msgid "Merge"
 msgstr "Zusammenfügen"
@@ -7310,7 +7278,7 @@ msgid "Merging slices and calculating statistics"
 msgstr "Zusammenführung der Slices und Berechnung der Statistiken"
 
 msgid "Merging with perimeters"
-msgstr "Verschmelzen mit Wänden"
+msgstr "verschmelzen mit Wänden"
 
 msgid "Mesh repair failed."
 msgstr "Netzreparatur fehlgeschlagen."
@@ -7362,64 +7330,64 @@ msgid "min"
 msgstr "min"
 
 msgid "Min"
-msgstr "Min"
+msgstr "min"
 
 msgid "min %s version"
 msgstr "min %s Version"
 
 msgid "Min bridge density"
-msgstr "Min. Brückendichte"
+msgstr "min. Brückendichte"
 
 msgid "Min concave angle"
-msgstr "Min konkaver Winkel"
+msgstr "min. konkaver Winkel"
 
 msgid "Min convex angle"
-msgstr "Min. konvexer Winkel"
+msgstr "min. konvexer Winkel"
 
 msgid "Min feature"
-msgstr "Min Merkmal"
+msgstr "min. Merkmal"
 
 msgid "Min first layer speed"
-msgstr "Min. Geschwindigkeit der ersten Schicht"
+msgstr "min. Geschwindigkeit der ersten Schicht"
 
 msgid "Min height"
-msgstr "Minimale Höhe"
+msgstr "minimale Höhe"
 
 msgid "Min height for travel"
-msgstr "Minimale Höhe für Reisen"
+msgstr "minimale Höhe für Reisen"
 
 msgid "Min layer height"
-msgstr "Minimale Schichthöhe"
+msgstr "minimale Schichthöhe"
 
 msgid "Min layer height can't be greater than Max layer height"
 msgstr "Die minimale Schichthöhe kann nicht größer sein als die maximale Schichthöhe"
 
 msgid "Min length"
-msgstr "Min. Länge"
+msgstr "min. Länge"
 
 msgid "Min print speed"
-msgstr "Minimale Druckgeschwindigkeit"
+msgstr "minimale Druckgeschwindigkeit"
 
 msgid "Min small perimeters length"
-msgstr "Min. Länge der kleinen Perimeter"
+msgstr "min. Länge der kleinen Perimeter"
 
 msgid "Min surface"
-msgstr "Min Oberfläche"
+msgstr "min. Oberfläche"
 
 msgid "Min width"
-msgstr "Minimale Breite"
+msgstr "minimale Breite"
 
 msgid "Minimal distance of the support points"
-msgstr "Minimaler Abstand der Stützpunkte"
+msgstr "minimaler Abstand der Stützpunkte"
 
 msgid "Minimal filament extrusion length"
-msgstr "Minimale Filament Extrusionlänge"
+msgstr "minimale Filament Extrusionlänge"
 
 msgid "Minimal points distance"
-msgstr "Minimaler Prunktabstand"
+msgstr "minimaler Prunktabstand"
 
 msgid "Minimal purge on wipe tower"
-msgstr "Minimale Wischmenge im Wischturm"
+msgstr "minimale Wischmenge im Wischturm"
 
 msgid "Minimize application"
 msgstr "Anwendung minimieren"
@@ -7437,7 +7405,7 @@ msgid ""
 msgstr "Minimaler (konvexer) Winkel an einem Scheitelpunkt, um eine Glättung zu ermöglichen (es wird versucht, eine Kurve um den Scheitelpunkt zu erstellen). 180 : es wird nichts geglättet, 0 : alle Winkel werden geglättet."
 
 msgid "Minimum bottom shell thickness"
-msgstr "Minimale Stärke der Bodenschale"
+msgstr "minimale Stärke der Bodenschale"
 
 msgid "Minimum bottom shell thickness is %1% mm."
 msgstr "Die Mindeststärke der Bodenschale beträgt %1% mm."
@@ -7474,51 +7442,43 @@ msgstr ""
 "Füllungen und dünne Bereiche werden bis zu 0,0125 mm vereinfacht."
 
 msgid "Minimum exposure time"
-msgstr "Minimale Belichtungszeit"
+msgstr "minimale Belichtungszeit"
 
 msgid "Minimum extrusion length"
-msgstr "Minimale Extrusionslänge"
+msgstr "minimale Extrusionslänge"
 
 msgid "Minimum fan speed"
-msgstr "Minimale Lüftergeschwindigkeit"
+msgstr "minimale Lüftergeschwindigkeit"
 
 msgid "Minimum feature size"
-msgstr "Minimale Merkmalgröße"
+msgstr "minimale Merkmalgröße"
 
 msgid "Minimum feedrate when extruding"
-msgstr "Minimaler Vorschub bei Extrusion"
+msgstr "minimaler Vorschub bei Extrusion"
 
 msgid "Minimum feedrate when extruding (M205 S)"
-msgstr "Minimaler Vorschub beim Extrudieren (M205 S)"
+msgstr "minimaler Vorschub beim Extrudieren (M205 S)"
 
 msgid "Minimum feedrates"
-msgstr "Minimaler Vorschub"
+msgstr "minimaler Vorschub"
 
 msgid "Minimum initial exposure time"
-msgstr "Minimale Anfang-Belichtungszeit"
+msgstr "minimale Anfang-Belichtungszeit"
 
 msgid "Minimum layer height. Limit for better quality/layer adhesion."
-msgstr "Minimale Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
+msgstr "minimale Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
 msgid "Minimum perimeter width"
-msgstr "Minimale Umfangsbreite"
+msgstr "minimale Umfangsbreite"
 
 msgid "Minimum resolution in nanometers"
-msgstr "Minimale Auflösung in Nanometern"
+msgstr "minimale Auflösung in Nanometern"
 
 msgid "Minimum retraction"
-msgstr "Minimaler Rückzug"
+msgstr "minimaler Rückzug"
 
 msgid "Minimum shell thickness"
-msgstr "Minimale Schalenstärke"
-
-msgid "Minimum shell thickness\nDid you know that instead of the number of top and bottom layers, you can define the<a>Minimum shell thickness</a>in millimeters? This feature is especially useful when using the variable layer height function."
-msgstr ""
-"Minimale Hüllenstärke\n"
-"Wussten Sie, dass Sie anstelle der Anzahl der oberen und unteren Schichten "
-"auch die <a>Mindesthüllenstärke</a> in Millimetern angeben können? Diese "
-"Funktion ist besonders nützlich, wenn Sie die Funktion der variablen "
-"Schichthöhe verwenden."
+msgstr "minimale Schalenstärke"
 
 msgid ""
 "Minimum speed when printing the first layer.\n"
@@ -7545,7 +7505,7 @@ msgid "Minimum top shell thickness is %1% mm."
 msgstr "Die Mindeststärke der Oberschale beträgt %1% mm."
 
 msgid "Minimum top width for infill"
-msgstr "Minimale obere Breite für die Füllung"
+msgstr "minimale obere Breite für die Füllung"
 
 msgid "Minimum travel after"
 msgstr "Minimalbewegung nach"
@@ -7554,13 +7514,13 @@ msgid "Minimum travel after retraction"
 msgstr "Minimalbewegung nach Einziehen"
 
 msgid "Minimum travel after z lift"
-msgstr "Minimaler Weg nach z Lift"
+msgstr "minimaler Weg nach z Lift"
 
 msgid "Minimum travel feedrate"
-msgstr "Minimaler Vorschub im Eilgang"
+msgstr "minimaler Vorschub im Eilgang"
 
 msgid "Minimum travel feedrate (M205 T)"
-msgstr "Minimaler Vorschub im Eilgang (M205 T)"
+msgstr "minimaler Vorschub im Eilgang (M205 T)"
 
 msgid ""
 "Minimum unsupported width for an extrusion to apply the bridge fan & "
@@ -7604,13 +7564,6 @@ msgstr "Objekt spiegeln"
 
 msgid "Mirror vertically"
 msgstr "Vertikal spiegeln"
-
-msgid "Mirror\nDid you know that you can mirror the selected model to create a reversed version of it? Right-click the model, select Mirror and pick the mirror axis."
-msgstr ""
-"Spiegeln\n"
-"Wussten Sie schon, dass Sie das ausgewählte Modell spiegeln können, um eine "
-"umgekehrte Version davon zu erstellen? Klicken Sie mit der rechten Maustaste "
-"auf das Modell, wählen Sie Spiegeln und wählen Sie die Spiegelachse."
 
 msgid "Mismatched type of print host: %s"
 msgstr "Nicht übereinstimmender Typ des Druckhosts: %s"
@@ -7807,8 +7760,7 @@ msgstr "Objekt mit mehreren Teilen erkannt"
 
 msgid "Multimaterial"
 msgstr ""
-"Multim\n"
-"aterial"
+"Multimaterial"
 
 msgid "Multimaterial painting"
 msgstr "Multimaterial Bemalung"
@@ -7876,14 +7828,6 @@ msgstr "Nächste"
 msgid "Negative Volume"
 msgstr "Negatives Volumen"
 
-msgid "Negative volume\nDid you know that you can subtract one mesh from another using the Negative volume modifier? That way you can, for example, create easily resizable holes directly in PrusaSlicer. Read more in the documentation. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Negatives Volumen\n"
-"Wussten Sie, dass Sie mit dem Modifizierer \"Negatives Volumen\" ein Netz "
-"von einem anderen subtrahieren können? Auf diese Weise können Sie z.B. "
-"leicht veränderbare Löcher direkt in PrusaSlicer erstellen. Lesen Sie mehr "
-"in der Dokumentation. (Erfordert den Fortgeschrittenen- oder Expertenmodus.)"
-
 msgid "Network lookup"
 msgstr "Network Lookup"
 
@@ -7941,7 +7885,7 @@ msgid "No pad can be generated for this model with the current configuration"
 msgstr "Für dieses Modell kann mit der aktuellen Konfiguration keine Grundschicht generiert werden"
 
 msgid "No perimeters on bridge areas"
-msgstr "Keine Begrenzungen für Brückenbereiche"
+msgstr "Keine Wände auf Brückenbereichen"
 
 msgid "No previously sliced file."
 msgstr "Keine vorher gesclicete Datei."
@@ -7950,10 +7894,10 @@ msgid "NO RAMMING AT ALL"
 msgstr "ÜBERHAUPT KEIN RAMMEN"
 
 msgid "No solid infill over"
-msgstr "Keine feste Füllung über"
+msgstr "keine massive Füllung über"
 
 msgid "No solid infill over perimeters"
-msgstr "Keine feste Füllung über den Perimetern"
+msgstr "keine massive Füllung über den Wänden"
 
 msgid "No sparse layers (EXPERIMENTAL)"
 msgstr "Keine spärlichen Schichten (EXPERIMENTELL)"
@@ -7989,10 +7933,10 @@ msgid "Not found:"
 msgstr "Nicht gefunden:"
 
 msgid "Not on first layer"
-msgstr "Nicht auf der ersten Schicht"
+msgstr "nicht auf der ersten Schicht"
 
 msgid "Not on top"
-msgstr "Nicht auf der Oberfläche"
+msgstr "nicht auf der Oberfläche"
 
 msgid "Note"
 msgstr "Hinweis"
@@ -8092,12 +8036,12 @@ msgstr "Anzahl der Extruder des Druckers."
 msgid ""
 "Number of interface layers to insert between the object(s) and support "
 "material."
-msgstr "Anzahl der Schnittstellenschichten, die zwischen Objekt(en) und Trägermaterial eingefügt werden sollen."
+msgstr "Anzahl der Schnittstellenschichten, die zwischen Objekt(en) und Stützmaterial eingefügt werden sollen."
 
 msgid ""
 "Number of interface layers to insert between the object(s) and support "
 "material. Set to -1 to use support_material_interface_layers"
-msgstr "Anzahl der Schnittstellenschichten, die zwischen Objekt(en) und Trägermaterial eingefügt werden. Auf -1 gesetzt, um support_material_interface_layers zu verwenden"
+msgstr "Anzahl der Schnittstellenschichten, die zwischen Objekt(en) und Stützmaterial eingefügt werden. Auf -1 gesetzt, um support_material_interface_layers zu verwenden"
 
 msgid ""
 "Number of loops for the skirt. If the Minimum Extrusion Length option is "
@@ -8180,7 +8124,7 @@ msgstr[1] ""
 "Diese Objekte wurden aus dem Modell entfernt"
 
 msgid "Object sort"
-msgstr "Objekt sortieren"
+msgstr "Objekte sortieren"
 
 msgid "Object too large?"
 msgstr "Objekt zu groß?"
@@ -8236,10 +8180,10 @@ msgid "Old Value"
 msgstr "Alter Wert"
 
 msgid "On"
-msgstr "An"
+msgstr "auf"
 
 msgid "On even layers"
-msgstr "Auf Schichten mit gerader Zahl"
+msgstr "auf Schichten mit gerader Zahl"
 
 msgid ""
 "On even layers, all perimeter loops are reversed (it disables the overhang "
@@ -8249,7 +8193,7 @@ msgid ""
 msgstr "Bei geraden Ebenen werden alle Umfangsschleifen umgekehrt (die Umkehrung des Überhangs wird deaktiviert, so dass keine doppelte Umkehrung erfolgt). Diese Einstellung führt wahrscheinlich zu Defekten an den Rändern, so dass sie nur für Materialien mit richtungsabhängigen Eigenschaften (Spannungslinien) nützlich ist."
 
 msgid "On first layer"
-msgstr "Auf der ersten Schicht"
+msgstr "auf der ersten Schicht"
 
 msgid ""
 "On OSX there is always only one instance of app running by default. However "
@@ -8258,10 +8202,10 @@ msgid ""
 msgstr "Unter OSX wird standardmäßig immer nur eine Instanz der Anwendung ausgeführt. Es ist jedoch erlaubt, mehrere Instanzen derselben Anwendung von der Befehlszeile aus auszuführen. In einem solchen Fall erlauben diese Einstellungen nur eine Instanz."
 
 msgid "On overhangs"
-msgstr "Nur für Überhänge"
+msgstr "nur für Überhänge"
 
 msgid "On overhangs only"
-msgstr "Nur für Überhänge"
+msgstr "nur für Überhänge"
 
 msgid ""
 "On some OS like MacOS or some Linux, tooltips can't stay on for a long time. "
@@ -8288,7 +8232,7 @@ msgid ""
 msgstr "Auf diesem System verwendet %s HTTPS-Zertifikate aus dem System Zertifikatsspeicher oder Schlüsselbund."
 
 msgid "On top surfaces"
-msgstr "Alle Oberseiten"
+msgstr "alle Oberseiten"
 
 msgid "On/Off one layer mode of the vertical slider"
 msgstr "Ein/Aus Einschichtmodus des vertikalen Schiebereglers"
@@ -8348,13 +8292,13 @@ msgid "Only draw brim over the sharp edges of the model."
 msgstr "Zeichne den Rand nur über die scharfen Kanten des Modells."
 
 msgid "Only for inner side"
-msgstr "Nur für die Innenseite"
+msgstr "nur für die Innenseite"
 
 msgid "Only for outer side"
-msgstr "Nur für die Außenseite"
+msgstr "nur für die Außenseite"
 
 msgid "Only for overhangs"
-msgstr "Nur für Überhänge"
+msgstr "nur für Überhänge"
 
 msgid "Only if on platter"
 msgstr "Nur wenn auf einer Druckplatte"
@@ -8440,6 +8384,9 @@ msgstr "Änderungsseite öffnen"
 msgid "Open Client certificate file"
 msgstr "Client-Zertifikatsdatei öffnen"
 
+msgid "Open Documentation in web browser."
+msgstr "Dokumentation im Webbrowser öffnen."
+
 msgid "Open download page"
 msgstr "Downloadseite öffnen"
 
@@ -8463,6 +8410,9 @@ msgstr "Neue Instanz öffnen"
 
 msgid "Open New Instance"
 msgstr "Neue Instanz öffnen"
+
+msgid "Open Preferences."
+msgstr "Einstellungen öffnen."
 
 msgid "Open project AMF/3MF with config, clear platter"
 msgstr "Offenes Projekt AMF/3MF mit Konfiguration, klarem Plattenteller"
@@ -8533,7 +8483,7 @@ msgid "Options for support material and raft"
 msgstr "Optionen für Stützmaterial und Raft"
 
 msgid "Options for support material interface"
-msgstr "Optionen für die Schnittstelle zum Trägermaterial"
+msgstr "Optionen für die Schnittstelle zum Stützmaterial"
 
 msgid "Options:"
 msgstr "Optionen:"
@@ -8557,28 +8507,28 @@ msgid "Other"
 msgstr "Sonstige"
 
 msgid "Other extrusions acceleration"
-msgstr "Andere Extrusionsbeschleunigung"
+msgstr "sonstige Extrusionsbeschleunigung"
 
 msgid "Other layers"
-msgstr "Andere Schichten"
+msgstr "andere Schichten"
 
 msgid "Other speed"
-msgstr "Andere Geschwindigkeit"
+msgstr "sonstige Geschwindigkeiten"
 
 msgid "Other Vendors"
 msgstr "Andere Hersteller"
 
 msgid "Outer"
-msgstr "Außen"
+msgstr "außen"
 
 msgid "Outer and inner brim"
-msgstr "Äußere und innerer Rand"
+msgstr "äußerer und innerer Rand"
 
 msgid "Outer brim only"
-msgstr "Nur äußerer Rand"
+msgstr "nur äußerer Rand"
 
 msgid "Outer XY size compensation"
-msgstr "Äußerer XY-Größenausgleich"
+msgstr "äußerer XY-Größenausgleich"
 
 msgid "Output"
 msgstr "Ausgabe"
@@ -8602,7 +8552,7 @@ msgid "Output options"
 msgstr "Ausgabeoptionen"
 
 msgid "Outside walls"
-msgstr "Äußere Wände"
+msgstr "äußere Wände"
 
 msgid "Over %1% and %2% it will be at least %3%%%."
 msgstr "Über %1% und %2% wird es mindestens %3%%% sein."
@@ -8679,6 +8629,12 @@ msgstr "Überhangsschwellwert"
 msgid "Overhangs"
 msgstr "Überhänge"
 
+msgid "Overhangs cut"
+msgstr "Überhänge schneiden"
+
+msgid "Overhangs max slope"
+msgstr "Überhänge max. Neigung"
+
 msgid "Overhangs Perimeter fan speed"
 msgstr "Überhänge Lüftergeschwindigkeit am Rand"
 
@@ -8694,7 +8650,7 @@ msgid ""
 msgstr "Überlappung zwischen der dünnen Wand und den Begrenzungen. Kann ein % of der Breite des äußeren Umfangs sein (Standardwert 50%)"
 
 msgid "Overlapping all perimeters"
-msgstr "Überschneidungen mit allen Perimetern"
+msgstr "Überschneidungen mit allen Wänden"
 
 msgid "Overlapping external perimeter"
 msgstr "Überlappende äußere Begrenzung"
@@ -8703,6 +8659,12 @@ msgid ""
 "Override the retract_length setting from the printer config. Used for "
 "calibration. Set negative to disable"
 msgstr "Setzt die Einstellung retract_length aus der Druckerkonfiguration außer Kraft. Wird für die Kalibrierung verwendet. Negativ setzen, um zu deaktivieren"
+
+msgid ""
+"Override the temperature of the extruder (for the first layer). Avoid making "
+"too many changes, it won't stop for cooling/heating. 0 to disable (using "
+"print_temperature if defined). May only work on Height range modifiers."
+msgstr "Überschreibe die Temperatur des Extruders (für die erste Schicht). Vermeide es, zu viele Änderungen vorzunehmen, da er nicht zum Kühlen/Heizen anhält. 0 zum Deaktivieren (mit print_temperature, falls definiert). Funktioniert möglicherweise nur bei Modifikatoren für den Höhenbereich."
 
 msgid ""
 "Override the temperature of the extruder. Avoid making too many changes, it "
@@ -8755,34 +8717,11 @@ msgstr "Page Down"
 msgid "Page Up"
 msgstr "Page Up"
 
-msgid "PageUp / PageDown quick rotation by 45 degrees\nDid you know that you can quickly rotate selected models by 45 degrees around the Z-axis clockwise or counter-clockwise by pressing <b>Page Up</b> or <b>Page Down</b> respectively?"
-msgstr ""
-"BildAuf / BildAb schnelle Drehung um 45 Grad\n"
-"Wussten Sie, dass Sie ausgewählte Modelle schnell um 45 Grad um die Z-Achse "
-"im oder gegen den Uhrzeigersinn drehen können, indem Sie <b>Bild nach oben</"
-"b> bzw. <b>Bild nach unten</b> drücken?"
-
 msgid "Paint-on seam"
 msgstr "Aufmal-Naht"
 
-msgid "Paint-on seam\nDid you know that you can paint directly on the object and select where to place the start/endpoint of each perimeter loop? Try the<a>Seam painting</a>feature. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Aufmal Nähte\n"
-"Wussten Sie schon, dass Sie direkt auf das Objekt malen und auswählen "
-"können, wo der Start-/Endpunkt jeder Perimeterschleife liegen soll? "
-"Probieren Sie die Funktion<a>Aufmal-Naht</a> aus. (Erfordert den Modus "
-"\"Fortgeschritten\" oder \"Experte\")."
-
 msgid "Paint-on supports"
 msgstr "Aufmal-Stützen"
-
-msgid "Paint-on supports\nDid you know that you can paint directly on the object and select areas, where supports should be enforced or blocked? Try the<a>Paint-on supports</a>feature. (Requires Advanced or Expert mode.)"
-msgstr ""
-"Aufmal Stützen\n"
-"Wussten Sie, dass Sie direkt auf das Objekt malen und Bereiche auswählen "
-"können, in denen Stützen erzwungen oder blockiert werden sollen? Probieren "
-"Sie die Funktion <a>Aufmal-Stützen</a> aus. (Erfordert den Modus "
-"\"Fortgeschritten\" oder \"Experte\")."
 
 msgid "Paints all facets inside, regardless of their orientation."
 msgstr "Bemalt alle umfassten Flächen, unabhängig von ihrer Ausrichtung."
@@ -8913,25 +8852,25 @@ msgid ""
 msgstr "Leistung vs. Genauigkeit der Berechnung. Niedrigere Werte können zu unerwünschten Artefakten führen."
 
 msgid "Perimeter"
-msgstr "Kontur"
+msgstr "Wand"
 
 msgid "perimeter"
-msgstr "Umkreis"
+msgstr "Wand"
 
 msgid "Perimeter acceleration"
-msgstr "Perimeter-Beschleunigung"
+msgstr "Beschleunigung Wände"
 
 msgid "Perimeter anchor"
 msgstr "Wand-Anker"
 
 msgid "Perimeter bonding"
-msgstr "Perimetrische Bindung"
+msgstr "Bindung der Wände"
 
 msgid "Perimeter distribution count"
 msgstr "Anzahl Wände für Verteilung"
 
 msgid "Perimeter extruder"
-msgstr "Umfang Extruder"
+msgstr "Extruder Wände"
 
 msgid "Perimeter fan speed"
 msgstr "Geschwindigkeit des Perimeterlüfters"
@@ -8943,22 +8882,22 @@ msgid "Perimeter loop seam"
 msgstr "Perimeter-Schleifennaht"
 
 msgid "Perimeter overhangs"
-msgstr "Perimeter Überhänge"
+msgstr "Wandüberhänge"
 
 msgid "perimeter overlap"
-msgstr "perimeterüberlappung"
+msgstr "Überlappung der Wände"
 
 msgid "Perimeter overlap"
-msgstr "Perimeter Überlappung"
+msgstr "Überlappung der Wände"
 
 msgid "Perimeter reversal on even layers"
-msgstr "Perimeterumkehrung auf geraden Ebenen"
+msgstr "Wandumkehrung auf geraden Ebenen"
 
 msgid "Perimeter spacing"
-msgstr "Perimeter-Abstand"
+msgstr "Wand-Abstand"
 
 msgid "Perimeter speed"
-msgstr "Perimeter Geschwindigkeit"
+msgstr "Geschwindigkeit Wände"
 
 msgid "Perimeter transition length"
 msgstr "Umfangsübergang Länge"
@@ -8982,13 +8921,13 @@ msgid "Perimeters & Shell"
 msgstr "Schichten und Wände"
 
 msgid "Perimeters count"
-msgstr "Umfänge zählen"
+msgstr "Wände zählen"
 
 msgid "Perimeters loop"
 msgstr "Perimeter-Schleife"
 
 msgid "Perimeters spacing change on even layers"
-msgstr "Die Abstände der Perimeter ändern sich auf geraden Ebenen"
+msgstr "Die Abstände der Wände ändern sich auf geraden Ebenen"
 
 msgid ""
 "Perimeters will be split into multiple segments by inserting Fuzzy skin "
@@ -8998,12 +8937,6 @@ msgid ""
 msgstr ""
 "Perimeter werden in mehrere Segmente aufgeteilt, indem Fuzzy-Skin-Punkte eingefügt werden. Wenn Sie den Abstand der Fuzzy-Skin-Punkte verringern, erhöht sich die Anzahl der zufällig versetzten Punkte an der Umfangswand.\n"
 "Kann ein % of der Düsendurchmesser sein."
-
-msgid "Perspective camera\nDid you know that you can use the <b>K</b> key to quickly switch between an orthographic and perspective camera?"
-msgstr ""
-"Perspektivische Kamera\n"
-"Wussten Sie, dass Sie mit der Taste <b>K</b> schnell zwischen "
-"orthografischer und perspektivischer Kamera wechseln können?"
 
 msgid "Physical Printer"
 msgstr "Physischer Drucker"
@@ -9045,13 +8978,6 @@ msgstr "Lager in Nuten einsetzen und Druck wieder aufnehmen"
 
 msgid "Place on face"
 msgstr "Auf Fläche legen"
-
-msgid "Place on face\nDid you know that you can quickly orient a model so that one of its faces sits on the print bed? Select the<a>Place on face</a>function or press the <b>F</b> key."
-msgstr ""
-"Auf Fläche legen\n"
-"Wussten Sie, dass Sie ein Modell schnell so ausrichten können, dass eine "
-"seiner Flächen auf dem Druckbett sitzt? Wählen Sie die Funktion <a>Auf "
-"Fläche legen</a> oder drücken Sie die Taste <b>F</b>."
 
 msgid "Plater"
 msgstr "Druckplatte"
@@ -9318,14 +9244,6 @@ msgstr ""
 
 msgid "Print&er Settings Tab"
 msgstr "Druck&ereinstellungen"
-
-msgid "Printable toggle\nDid you know that you can disable the G-code generation for the selected model without having to move or delete it? Toggle the Printable property of a model from the Right-click context menu."
-msgstr ""
-"Druckbar Umschaltfunktion\n"
-"Wussten Sie, dass Sie die G-Code-Erzeugung für das ausgewählte Modell "
-"deaktivieren können, ohne es verschieben oder löschen zu müssen? Schalten "
-"Sie die Eigenschaft \"Druckbar\" eines Modells über das Kontextmenü der "
-"rechten Maustaste um."
 
 msgid "printer"
 msgstr "Drucker"
@@ -9651,14 +9569,6 @@ msgstr "Alles von der Festplatte neu laden"
 msgid "Reload from disk"
 msgstr "Neuladen von Festplatte"
 
-msgid "Reload from disk\nDid you know that if you created a newer version of your model, you can simply reload it in PrusaSlicer? Right-click the model in the 3D view and choose Reload from disk. Read more in the documentation."
-msgstr ""
-"Neu laden von der Festplatte\n"
-"Wussten Sie, dass Sie, wenn Sie eine neuere Version Ihres Modells erstellt "
-"haben, diese einfach in PrusaSlicer neu laden können? Klicken Sie mit der "
-"rechten Maustaste auf das Modell in der 3D-Ansicht und wählen Sie Von "
-"Festplatte neu laden. Lesen Sie mehr in der Dokumentation."
-
 msgid "Reload from:"
 msgstr "Neuladen von:"
 
@@ -9920,7 +9830,7 @@ msgid "Reverse direction of zoom with mouse wheel"
 msgstr "Umkehrung der Zoom-Richtung des Mausrads"
 
 msgid "Reverse on all perimeters"
-msgstr "Umgekehrt auf allen Perimetern"
+msgstr "Umgekehrt auf allen Wänden"
 
 msgid "Reverse on even"
 msgstr "Rückwärtsgang bei Gerade"
@@ -9962,7 +9872,7 @@ msgid "Right mouse button:"
 msgstr "Rechte Maustaste:"
 
 msgid "Right panel"
-msgstr "Rechte Tafel"
+msgstr "rechtes Feld"
 
 msgid "Right Preset Value"
 msgstr "Rechter voreingestellter Wert"
@@ -9971,16 +9881,16 @@ msgid "Right View"
 msgstr "Ansicht von rechts"
 
 msgid "Rotate"
-msgstr "Drehen"
+msgstr "drehen"
 
 msgid "Rotate around X"
-msgstr "Rotiere um X"
+msgstr "rotiere um X"
 
 msgid "Rotate around Y"
-msgstr "Rotiere um Y"
+msgstr "rotiere um Y"
 
 msgid "Rotate lower part upwards"
-msgstr "Unteren Teil umdrehen"
+msgstr "unteren Teil umdrehen"
 
 msgid "Rotate selection 45 degrees CCW"
 msgstr "Auswahl um 45 Grad drehen gegen UZS"
@@ -9989,13 +9899,13 @@ msgid "Rotate selection 45 degrees CW"
 msgstr "Auswahl um 45 Grad drehen im UZS"
 
 msgid "Rotate stl around z axes while adding them to the bed."
-msgstr "Drehen Sie stl um die Z-Achse, während Sie sie dem Bett hinzufügen."
+msgstr "Drehe die STL um die Z-Achse, während sie dem Bett hinzufügt wird."
 
 msgid "Rotate the model to have the lowest z height for faster print time."
 msgstr "Rotiert das Modell so, dass es die geringste z-Höhe hat, um die Druckzeit zu verkürzen."
 
 msgid "Rotate the polyhole every layer."
-msgstr "Drehen Sie das Polyhole auf jeder Ebene."
+msgstr "Drehe das Polyhole auf jeder Ebene."
 
 msgid "Rotation"
 msgstr "Rotation"
@@ -10163,7 +10073,7 @@ msgid "Seam notch for round perimeters"
 msgstr "Nahtaussparung für runde Umfänge"
 
 msgid "Seam notch maximum angle"
-msgstr "Maximaler Winkel der Nahtkerbe"
+msgstr "maximaler Winkel der Nahtkerbe"
 
 msgid "Seam painting"
 msgstr "Aufmal-Nähte"
@@ -10203,13 +10113,6 @@ msgid ""
 msgstr ""
 "Suchen Sie nach fast kreisförmigen Löchern, die sich über mehr als eine Ebene erstrecken, und konvertieren Sie die Geometrie in Polyholes. Verwenden Sie die Düsengröße und den (größten) Durchmesser, um das Polyhole zu berechnen.\n"
 "Siehe http://hydraraptor.blogspot.com/2011/02/polyholes.html"
-
-msgid "Search functionality\nDid you know that you use the<a>Search</a>tool to quickly find a specific PrusaSlicer setting? Or use the familiar shortcut <b>Ctrl+F</b>."
-msgstr ""
-"Die Suchfunktion\n"
-"Wussten Sie schon, dass Sie mit dem<a>Suchen</a>-Werkzeug schnell eine "
-"bestimmte PrusaSlicer-Einstellung finden können? Oder verwenden Sie den "
-"bekannten Shortcut <b>Strg+F</b>."
 
 msgid "Search in English"
 msgstr "Suche in Englisch"
@@ -10434,7 +10337,7 @@ msgid "Set"
 msgstr "Setzen"
 
 msgid "Set auto color changes"
-msgstr "Automatische Farbwechsel einstellen"
+msgstr "automatische Farbwechsel einstellen"
 
 msgid "Set default extruder for the selected items"
 msgstr "Standard-Extruder für die ausgewählten Elemente festlegen"
@@ -10458,17 +10361,10 @@ msgid "Set left thumb as active"
 msgstr "Linken Schieber aktiv setzen"
 
 msgid "Set lower thumb as active"
-msgstr "Unteren Schieber aktiv setzen"
+msgstr "unteren Schieber aktiv setzen"
 
 msgid "Set Mirror"
 msgstr "Spiegel setzen"
-
-msgid "Set number of instances\nDid you know that you can right-click a model and set an exact number of instances instead of copy-pasting it several times?"
-msgstr ""
-"Anzahl der Kopien festlegen\n"
-"Wussten Sie schon, dass Sie mit der rechten Maustaste auf ein Modell klicken "
-"und die genaue Anzahl der Kopien festlegen können, anstatt es mehrmals zu "
-"kopieren und einzufügen?"
 
 msgid "Set numbers of copies to %d"
 msgstr "Setze Anzahl der Kopien auf %d"
@@ -10610,7 +10506,7 @@ msgid ""
 "material. If left as zero, default extrusion width will be used if set, "
 "otherwise nozzle diameter will be used. If expressed as percentage (for "
 "example 110%) it will be computed over nozzle diameter."
-msgstr "Setzen Sie diesen Wert auf einen Wert ungleich Null, um eine manuelle Extrusionsbreite für das Trägermaterial festzulegen. Wenn Sie den Wert auf Null belassen, wird die Standard-Extrusionsbreite verwendet, falls diese eingestellt ist, andernfalls wird der Düsendurchmesser verwendet. Wenn der Wert in Prozent angegeben wird (z.B. 110%), wird er über den Düsendurchmesser berechnet."
+msgstr "Setzen Sie diesen Wert auf einen Wert ungleich Null, um eine manuelle Extrusionsbreite für das Stützmaterial festzulegen. Wenn Sie den Wert auf Null belassen, wird die Standard-Extrusionsbreite verwendet, falls diese eingestellt ist, andernfalls wird der Düsendurchmesser verwendet. Wenn der Wert in Prozent angegeben wird (z.B. 110%), wird er über den Düsendurchmesser berechnet."
 
 msgid ""
 "Set this to the clearance radius around your extruder. If the extruder is "
@@ -10655,7 +10551,7 @@ msgid "Set Unprintable Instance"
 msgstr "Setze undruckbare Kopie"
 
 msgid "Set upper thumb as active"
-msgstr "Oberen Schieber aktiv setzen"
+msgstr "oberen Schieber aktiv setzen"
 
 msgid ""
 "Sets logging sensitivity. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
@@ -10678,15 +10574,6 @@ msgstr "Einstellungen für Höhenbereich"
 
 msgid "Settings in non-modal window"
 msgstr "Einstellungen im nicht-modalen Fenster"
-
-msgid "Settings in non-modal window\nDid you know that you can open the Settings in a new non-modal window? This means you can have settings open on one screen and the G-code Preview on the other. Go to the<a>Preferences</a>and select Settings in non-modal window."
-msgstr ""
-"Einstellungen in nicht-modalem Fenster\n"
-"Wussten Sie schon, dass Sie die Einstellungen in einem neuen, nicht-modalen "
-"Fenster öffnen können? Das bedeutet, dass Sie die Einstellungen auf einem "
-"Bildschirm und die G-Code-Vorschau auf dem anderen öffnen können. Gehen Sie "
-"zu den <a>Einstellungen</a> und wählen Sie Einstellungen in nicht-modalem "
-"Fenster."
 
 msgid "Settings layout and colors"
 msgstr "Einstellungen Layout und Farben"
@@ -10722,14 +10609,6 @@ msgstr "Form"
 
 msgid "Shape Gallery"
 msgstr "Formen-Galerie"
-
-msgid "Shapes gallery\nDid you know that PrusaSlicer has a Shapes Gallery? You can use the included models as modifiers, negative volumes or as printable objects. Right-click the platter and select<a>Add Shape - Gallery</a>."
-msgstr ""
-"Formen-Galerie\n"
-"Wussten Sie, dass PrusaSlicer eine Formen-Galerie hat? Sie können die "
-"enthaltenen Modelle als Modifizierer, negative Volumen oder als druckbare "
-"Objekte verwenden. Klicken Sie mit der rechten Maustaste auf die Plattform "
-"und wählen Sie<a>Form hinzufügen - Galerie</a>."
 
 msgid "Shells"
 msgstr "Konturhüllen"
@@ -10793,6 +10672,9 @@ msgstr "Inkompatible Druck- und Filamenteinstellungen anzeigen"
 
 msgid "Show keyboard shortcuts list"
 msgstr "Liste der Tastaturkürzel anzeigen"
+
+msgid "Show layer area on the scroll bar"
+msgstr "Ebenenbereich auf der Bildlaufleiste anzeigen"
 
 msgid "Show layer height on the scroll bar"
 msgstr "Ebenenhöhe in der Bildlaufleiste anzeigen"
@@ -10900,14 +10782,6 @@ msgid "Simple widget to enable/disable the overhangs detection (using 55% and 75
 msgstr ""
 "Einfaches Widget zum Aktivieren/Deaktivieren der Überhangserkennung (mit 55% aund 75% foder den beiden Schwellenwerten)\n"
 "Verwenden Sie den Expertenmodus, um detailliertere Widgets zu erhalten"
-
-msgid "Simplify mesh\nDid you know that you can reduce the number of triangles in a mesh using the Simplify mesh feature? Right-click the model and select Simplify model. Read more in the documentation."
-msgstr ""
-"Netz vereinfachen\n"
-"Wussten Sie schon, dass Sie die Anzahl der Dreiecke in einem Netz mit der "
-"Funktion Netz vereinfachen reduzieren können? Klicken Sie mit der rechten "
-"Maustaste auf das Modell und wählen Sie Modell vereinfachen. Weitere "
-"Informationen finden Sie in der Dokumentation."
 
 msgid "Simplifying paths"
 msgstr "Vereinfachung der Pfade"
@@ -11159,16 +11033,16 @@ msgid "Slow tilt"
 msgstr "Langsames Kippen"
 
 msgid "Small"
-msgstr "Klein"
+msgstr "klein"
 
 msgid "Small perimeter speed"
-msgstr "Kleine Umfangsgeschwindigkeit"
+msgstr "kleine Umfangsgeschwindigkeit"
 
 msgid "Small perimeters speed"
-msgstr "Kleine Umfänge Geschwindigkeit"
+msgstr "kleine Umfänge Geschwindigkeit"
 
 msgid "Small pillar diameter percent"
-msgstr "Kleiner Pfeilerdurchmesser in Prozent"
+msgstr "kleiner Pfeilerdurchmesser in Prozent"
 
 msgid "Smart fill"
 msgstr "Intelligentes Füllen"
@@ -11186,37 +11060,46 @@ msgid "Snapshot name"
 msgstr "Name der Momentaufnahme"
 
 msgid "Snug"
-msgstr "Nahtlos"
+msgstr "nahtlos"
 
 msgid "Solid"
-msgstr "Massiv"
+msgstr "massiv"
 
 msgid "Solid "
-msgstr "Fett "
+msgstr "massiv"
 
 msgid "Solid acceleration"
 msgstr "Solide Beschleunigung"
 
-msgid "Solid fill overlap"
-msgstr "Feste Füllung Überlappung"
-
 msgid "Solid fill pattern"
-msgstr "Füllmuster für solide Füllung"
+msgstr "Muster für massive Füllung"
 
 msgid "Solid infill"
-msgstr "Massive Füllung"
+msgstr "massive Füllung"
 
 msgid "solid infill"
-msgstr "Massive Füllung"
+msgstr "massive Füllung"
 
 msgid "Solid infill every"
-msgstr "Massive Füllung alle"
+msgstr "massive Füllung alle"
 
 msgid "Solid infill extruder"
 msgstr "Extruder massive Füllung"
 
 msgid "Solid Infill fan speed"
-msgstr "Massive Füllung Gebläsegeschwindigkeit"
+msgstr "massive Füllung Gebläsegeschwindigkeit"
+
+msgid "Solid infill is area below"
+msgstr "massive Füllung ist die Fläche darunter"
+
+msgid "Solid infill layer threshold area"
+msgstr "massive Füllschicht Schwellenwert"
+
+msgid "Solid infill ovelrap"
+msgstr "Überlappung massive Füllung"
+
+msgid "Solid infill overlap"
+msgstr "Überlappung massive  Füllung"
 
 msgid "Solid infill spacing"
 msgstr "Fester Abstand der Füllung"
@@ -11228,20 +11111,16 @@ msgid "Solid infill speed"
 msgstr "Solide Ausfüllgeschwindigkeit"
 
 msgid "Solid infill threshold area"
-msgstr "Massive Füllung Flächen Schwellwert"
+msgstr "massive Füllung Flächen Schwellwert"
 
-msgid "Solid infill threshold area\nDid you know that you can make parts of your model with a small cross-section be filled with solid infill automatically? Set the<a>Solid infill threshold area</a>. (Expert mode only.)"
-msgstr ""
-"Solid Infill Schwellenbereich\n"
-"Wussten Sie, dass Sie Teile Ihres Modells mit einem kleinen Querschnitt "
-"automatisch mit Solid Infill füllen lassen können? Stellen Sie "
-"den<a>Schwellenwertbereich für Solid Infill</a> ein (nur im Expertenmodus)."
+msgid "Solid infill threshold width"
+msgstr "massive Füllung Schwellenwert"
 
 msgid "Solid infill width"
 msgstr "Breite der festen Füllung"
 
 msgid "Solid layers"
-msgstr "Massive Schichten"
+msgstr "massive Schichten"
 
 msgid "Solid spacing"
 msgstr "Feste Abstände"
@@ -11316,7 +11195,7 @@ msgid "Spacing"
 msgstr "Abstand"
 
 msgid "spacing"
-msgstr "abstände"
+msgstr "Abstand"
 
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr "Abstand zwischen den Schnittstellenlinien. Auf null stellen, um ein massives Interface zu erhalten."
@@ -11328,7 +11207,7 @@ msgid "Spacing between support material lines."
 msgstr "Abstand zwischen Stützmateriallinien."
 
 msgid "Sparse"
-msgstr "Wenig"
+msgstr "nicht massiv"
 
 msgid "Sparse fill pattern"
 msgstr "Spärliches Füllmuster"
@@ -11422,8 +11301,8 @@ msgid ""
 "support material speed.\n"
 "Set zero to use autospeed for this feature."
 msgstr ""
-"Geschwindigkeit für den Druck von Zwischenschichten des Trägermaterials.\n"
-"Wird sie als Prozentsatz angegeben (z.B. 50%), wird sie über die Geschwindigkeit des Trägermaterials berechnet.\n"
+"Geschwindigkeit für den Druck von Zwischenschichten des Stützmaterials.\n"
+"Wird sie als Prozentsatz angegeben (z.B. 50%), wird sie über die Geschwindigkeit des Stützmaterials berechnet.\n"
 "Setzen Sie Null, um die automatische Geschwindigkeit für diese Funktion zu verwenden."
 
 msgid ""
@@ -11432,7 +11311,7 @@ msgid ""
 "speed.\n"
 "Set zero to use autospeed for this feature."
 msgstr ""
-"Geschwindigkeit für das Drucken von Trägermaterial.\n"
+"Geschwindigkeit für das Drucken von Stützmaterial.\n"
 "Dies kann als Prozentsatz (z.B. 80%) gegenüber der Standardgeschwindigkeit ausgedrückt werden.\n"
 "Stellen Sie Null ein, um die automatische Geschwindigkeit für diese Funktion zu verwenden."
 
@@ -11591,11 +11470,11 @@ msgstr "Neuen Slicing-Prozess starten"
 
 msgid ""
 "Start of the wiping speed ramp up (for wipe tower).\n"
-"Can be a % of the 'Wipe tower speed'.\n"
+"Can be a % of the 'Wipe tower main speed'.\n"
 "Set to 0 to disable."
 msgstr ""
 "Beginn der Erhöhung der Wischgeschwindigkeit (für Wischturm).\n"
-"Kann ein % of der 'Wischturmgeschwindigkeit' sein.\n"
+"Kann ein % of der 'Wischturm-Hauptgeschwindigkeit' sein.\n"
 "Zum Deaktivieren auf 0 setzen."
 
 msgid "Start temp:"
@@ -11767,7 +11646,7 @@ msgid "Support Material"
 msgstr "Stützmaterial"
 
 msgid "Support material extruder"
-msgstr "Extruder für Trägermaterial"
+msgstr "Extruder für Stützmaterial"
 
 msgid "Support Material fan speed"
 msgstr "Unterstützung Material Lüftergeschwindigkeit"
@@ -11776,7 +11655,7 @@ msgid "Support material interface"
 msgstr "Schnittstellenmaterial zum Stützmaterial"
 
 msgid "Support material width"
-msgstr "Breite des Trägermaterials"
+msgstr "Breite des Stützmaterials"
 
 msgid ""
 "Support material will not be generated for overhangs whose slope angle (90° "
@@ -11814,7 +11693,7 @@ msgid "Support points edit"
 msgstr "Stützpunkte editieren"
 
 msgid "Support speed"
-msgstr "Geschwindigkeit unterstützen"
+msgstr "Geschwindigkeit Stützmaterialtützen"
 
 msgid "Support tower style"
 msgstr "Stützturm Stil"
@@ -11881,6 +11760,9 @@ msgstr "Beim Schneiden zur Vorschau wechseln"
 
 msgid "Switch to Settings"
 msgstr "Zu Einstellungen wechseln"
+
+msgid "Switch to the %s mode"
+msgstr "Wechseln zum %s Modus"
 
 msgid "Switch when possible"
 msgstr "Wechseln, wenn möglich"
@@ -12039,15 +11921,15 @@ msgstr ""
 
 msgid ""
 "The convex holes will be grown / shrunk in the XY plane by the configured "
-"value (negative = inwards, positive = outwards, should be negative as the "
-"holes are always a bit smaller irl). This might be useful for fine-tuning "
-"hole sizes.\n"
+"value (negative = inwards = remove area, positive = outwards = add area, "
+"should be negative as the holes are always a bit smaller irl). This might be "
+"useful for fine-tuning hole sizes.\n"
 "This setting behaves the same as 'Inner XY size compensation' but only for "
 "convex shapes. It's added to 'Inner XY size compensation', it does not "
 "replace it. "
 msgstr ""
-"Die konvexen Löcher werden in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen, positiv = nach außen, sollte negativ sein, da die Löcher immer ein bisschen kleiner sind). Dies kann für die Feinabstimmung der Lochgrößen nützlich sein.\n"
-"Diese Einstellung verhält sich genauso wie der \"Innere XY-Größenausgleich\", allerdings nur für konvexe Formen. Sie wird zum \"Inneren XY-Größenausgleich\" hinzugefügt, ersetzt ihn aber nicht. "
+"Die konvexen Löcher werden in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen = Fläche wegnehmen, positiv = nach außen = Fläche hinzufügen, sollte negativ sein, da die Löcher irl immer etwas kleiner sind). Dies kann für die Feinabstimmung der Lochgrößen nützlich sein.\n"
+"Diese Einstellung verhält sich genauso wie der \"Innere XY-Größenausgleich\", allerdings nur für konvexe Formen. Sie wird zum \"Inneren XY-Größenausgleich\" hinzugefügt, ersetzt ihn aber nicht."
 
 msgid ""
 "The current custom preset will be detached from the parent system preset."
@@ -12130,7 +12012,7 @@ msgstr "Der Extruder der beim Drucken von massivem Infill benutzt werden soll."
 msgid ""
 "The extruder to use when printing support material (1+, 0 to use the current "
 "extruder to minimize tool changes)."
-msgstr "Der Extruder, der beim Drucken von Trägermaterial verwendet werden soll (1+, 0, um den aktuellen Extruder zu verwenden, um den Werkzeugwechsel zu minimieren)."
+msgstr "Der Extruder, der beim Drucken von Stützmaterial verwendet werden soll (1+, 0, um den aktuellen Extruder zu verwenden, um den Werkzeugwechsel zu minimieren)."
 
 msgid ""
 "The extruder to use when printing support material interface (1+, 0 to use "
@@ -12154,8 +12036,8 @@ msgstr "Die Firmware unterstützt den Stealth Modus"
 msgid ""
 "The first layer will be grown / shrunk in the XY plane by the configured "
 "value to compensate for the 1st layer squish aka an Elephant Foot effect. "
-"(should be negative = inwards)"
-msgstr "Die erste Schicht wird in der XY-Ebene um den konfigurierten Wert vergrößert/verkleinert, um die Verformung der ersten Schicht, auch bekannt als Elefantenfuß-Effekt, auszugleichen. (sollte negativ = nach innen gerichtet sein)"
+"(should be negative = inwards = remove area)"
+msgstr "Die erste Schicht wird in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert, um die Verformung der ersten Schicht, auch Elefantenfuß-Effekt genannt, auszugleichen. (sollte negativ sein = nach innen = Fläche entfernen)"
 
 msgid "The following characters are not allowed by a FAT file system:"
 msgstr "Die folgenden Zeichen sind in einem FAT-Dateisystem nicht zulässig:"
@@ -12337,30 +12219,30 @@ msgstr "Das Objekt ist zu klein"
 
 msgid ""
 "The object will be grown/shrunk in the XY plane by the configured value "
-"(negative = inwards, positive = outwards). This might be useful for fine-"
-"tuning sizes.\n"
+"(negative = inwards = remove area, positive = outwards = add area). This "
+"might be useful for fine-tuning sizes.\n"
 "This one only applies to the 'exterior' shell of the object.\n"
 " !!! it's recommended you put the same value into the 'Inner XY size "
 "compensation', unless you are sure you don't have horizontal holes. !!! "
 msgstr ""
-"Das Objekt wird in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen, positiv = nach außen). Das kann für die Feinabstimmung der Größe nützlich sein.\n"
+"Das Objekt wird in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen = Fläche entfernen, positiv = nach außen = Fläche hinzufügen). Das kann für die Feinabstimmung der Größe nützlich sein.\n"
 "Dies gilt nur für die \"äußere\" Hülle des Objekts.\n"
-" es wird empfohlen, den gleichen Wert in den \"Inneren XY-Größenausgleich\" einzugeben, es sei denn, du bist sicher, dass du keine horizontalen Löcher hast. !!! "
+" es wird empfohlen, denselben Wert in den \"Inneren XY-Größenausgleich\" einzugeben, es sei denn, du bist sicher, dass du keine horizontalen Löcher hast. !!!"
 
 msgid ""
 "The object will be grown/shrunk in the XY plane by the configured value "
-"(negative = inwards, positive = outwards). This might be useful for fine-"
-"tuning sizes.\n"
+"(negative = inwards = remove area, positive = outwards = add area). This "
+"might be useful for fine-tuning sizes.\n"
 "This one only applies to the 'inner' shell of the object (!!! horizontal "
 "holes break the shell !!!)"
 msgstr ""
-"Das Objekt wird in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen, positiv = nach außen). Dies kann für die Feinabstimmung der Größe nützlich sein.\n"
-"Dies gilt nur für die 'innere' Hülle des Objekts (!!! horizontale Löcher brechen die Hülle auf!!!)"
+"Das Objekt wird in der XY-Ebene um den eingestellten Wert vergrößert/verkleinert (negativ = nach innen = Fläche entfernen, positiv = nach außen = Fläche hinzufügen). Das kann für die Feinabstimmung der Größe nützlich sein.\n"
+"Dies gilt nur für die \"innere\" Hülle des Objekts (!!! horizontale Löcher brechen die Hülle auf!!!)"
 
 msgid ""
 "The object will be raised by this number of layers, and support material "
 "will be generated under it."
-msgstr "Das Objekt wird um diese Anzahl von Schichten angehoben, und darunter wird Trägermaterial erzeugt."
+msgstr "Das Objekt wird um diese Anzahl von Schichten angehoben, und darunter wird Stützmaterial erzeugt."
 
 msgid ""
 "The option you selected in the search dialog isn't available in the current "
@@ -12421,13 +12303,11 @@ msgid ""
 msgstr "Die Position des Modellursprungs (Punkt mit den Koordinaten x:0, y:0, z:0) muss sich in der Mitte des Druckbettbereichs befinden. Wenn Sie ein benutzerdefiniertes Modell laden und es falsch ausgerichtet erscheint, ist der Ursprung nicht richtig eingestellt."
 
 msgid ""
-"The preset below was temporarily installed on the active instance of "
-"PrusaSlicer"
+"The preset below was temporarily installed on the active instance of %1%"
 msgid_plural ""
-"The presets below were temporarily installed on the active instance of "
-"PrusaSlicer"
-msgstr[0] "Die folgende Voreinstellung wurde vorübergehend auf der aktiven Instanz von PrusaSlicer installiert"
-msgstr[1] "Die folgenden Voreinstellungen wurden vorübergehend auf der aktiven Instanz von PrusaSlicer installiert"
+"The presets below were temporarily installed on the active instance of %1%"
+msgstr[0] "Die folgende Voreinstellung wurde vorübergehend auf der aktiven Instanz von %1% installiert"
+msgstr[1] "Die folgenden Voreinstellungen wurden vorübergehend auf der aktiven Instanz von %1% installiert"
 
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
@@ -12445,18 +12325,18 @@ msgstr "Der angegebene Name ist ungültig;"
 
 msgid ""
 "The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr "Das ausgewählte 3MF enthält Objekte mit bemalten FDM-Stützen, die eine neuere Version von PrusaSlicer verwenden und nicht kompatibel sind."
+"of the slicer and is not compatible."
+msgstr "Die ausgewählte 3MF enthält FDM unterstützt gemalte Objekte, die eine neuere Version des Slicers verwenden und nicht kompatibel sind."
 
 msgid ""
 "The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr "Das ausgewählte 3MF enthält ein mit Multimaterial Aufmal Objekt, das eine neuere Version von PrusaSlicer verwendet und nicht kompatibel ist."
+"version of the slicer and is not compatible."
+msgstr "Die ausgewählte 3MF enthält ein gemaltes Multimaterial-Objekt, das eine neuere Version des Slicers verwendet und nicht kompatibel ist."
 
 msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr "Das ausgewählte 3MF enthält ein Aufmal-Naht Objekt, das eine neuere Version von PrusaSlicer verwendet und nicht kompatibel ist."
+"The selected 3MF contains seam painted object using a newer version of the "
+"slicer and is not compatible."
+msgstr "Das ausgewählte 3MF enthält ein nahtgezeichnetes Objekt, das eine neuere Version des Slicers verwendet und nicht kompatibel ist."
 
 msgid "The selected file"
 msgstr "Die gewählte Datei"
@@ -12542,21 +12422,19 @@ msgid ""
 "- no support material\n"
 "- Ensure vertical shell thickness enabled\n"
 "- disabled 'no solid infill over perimeters'\n"
-"- unchecked 'exact last layer height'\n"
 "- unchecked 'dense infill'\n"
 "- unchecked 'extra perimeters'- unchecked 'gap fill after last perimeter'- "
 "disabled  'no solid fill over X perimeters'- disabled 'seam notch'"
 msgstr ""
-"Der Modus Spiralvase erfordert:\n"
+"Der Modus \"Spiralvase\" erfordert:\n"
 "- keine oberen festen Schichten\n"
 "- 0% fill Dichte\n"
 "- klassisches Perimeter-Slicing\n"
 "- kein Stützmaterial\n"
 "- Sicherstellen der vertikalen Schalendicke aktiviert\n"
-"- deaktiviert 'keine solide Füllung über Perimetern'\n"
-"- nicht aktiviert 'exakte Höhe der letzten Schicht'\n"
-"- nicht markiert 'dichte Füllung'\n"
-"- nicht markiert 'zusätzliche Umfänge'- nicht markiert 'Lückenfüllung nach letztem Umfang'- deaktiviert 'keine feste Füllung über X Umfänge'- deaktiviert 'Nahtaussparung'"
+"- deaktiviert 'keine solide Ausfachung über Perimetern'\n"
+"- nicht angekreuzt \"dichte Füllung\n"
+"- zusätzliche Begrenzungen\" nicht aktiviert - \"Lückenfüllung nach letzter Begrenzung\" nicht aktiviert - \"keine feste Füllung über X Begrenzungen\" deaktiviert - \"Nahtaussparung\" deaktiviert"
 
 msgid ""
 "The Spiral Vase option can only be used when printing single material "
@@ -12593,7 +12471,7 @@ msgid ""
 "If set to zero, support_material_contact_distance will be used for both top "
 "and bottom contact Z distances."
 msgstr ""
-"Der vertikale Abstand zwischen dem Objekt und der Schnittstelle des Trägermaterials (wenn der Träger auf das Objekt gedruckt wird). Kann ein % of der Düsendurchmesser sein.\n"
+"Der vertikale Abstand zwischen dem Objekt und der Schnittstelle des Stützmaterials (wenn der Träger auf das Objekt gedruckt wird). Kann ein % of der Düsendurchmesser sein.\n"
 "Wenn dieser Wert auf Null gesetzt wird, wird support_material_contact_distance sowohl für den oberen als auch für den unteren Z-Abstand verwendet."
 
 msgid ""
@@ -12601,7 +12479,7 @@ msgid ""
 "the object is printed on top of the support). Setting this to 0 will also "
 "prevent Slic3r from using bridge flow and speed for the first object layer. "
 "Can be a % of the nozzle diameter."
-msgstr "Der vertikale Abstand zwischen der Oberfläche des Trägermaterials und dem Objekt (wenn das Objekt auf dem Träger gedruckt wird). Wenn Sie diesen Wert auf 0 setzen, verhindert Slic3r auch, dass der Fluss und die Geschwindigkeit der Brücke für die erste Objektschicht verwendet werden. Kann ein % of der Düsendurchmesser sein."
+msgstr "Der vertikale Abstand zwischen der Oberfläche des Stützmaterials und dem Objekt (wenn das Objekt auf dem Träger gedruckt wird). Wenn Sie diesen Wert auf 0 setzen, verhindert Slic3r auch, dass der Fluss und die Geschwindigkeit der Brücke für die erste Objektschicht verwendet werden. Kann ein % of der Düsendurchmesser sein."
 
 msgid ""
 "The voids of the pattern of sparse infill grows with the extrusion width, to "
@@ -12754,28 +12632,28 @@ msgid "These tooltip may be bothersome. You can hide them with this option."
 msgstr "Diese Tooltips können störend sein. Sie können sie mit dieser Option ausblenden."
 
 msgid "Thin wall"
-msgstr "Dünne Wand"
+msgstr "dünne Wand"
 
 msgid "Thin wall merge"
 msgstr "Dünnwandig verschmelzen"
 
 msgid "Thin wall overlap"
-msgstr "Dünne Wandüberlappung"
+msgstr "dünne Wandüberlappung"
 
 msgid "Thin walls"
-msgstr "Dünne Wände"
+msgstr "dünne Wände"
 
 msgid "Thin Walls"
-msgstr "Dünne Mauern"
+msgstr "dünne Wände"
 
 msgid "Thin walls acceleration"
-msgstr "Dünne Wände Beschleunigung"
+msgstr "dünne Wände Beschleunigung"
 
 msgid "Thin walls min width"
-msgstr "Dünne Wände Mindestbreite"
+msgstr "dünne Wände Mindestbreite"
 
 msgid "Thin walls speed"
-msgstr "Dünne Wände Geschwindigkeit"
+msgstr "dünne Wände Geschwindigkeit"
 
 msgid "ThinW"
 msgstr "ThinW"
@@ -13277,8 +13155,8 @@ msgid ""
 "Can be a % of the support material acceleration\n"
 "Set zero to use support acceleration for support material interfaces."
 msgstr ""
-"Dies ist die Beschleunigung, die Ihr Drucker für Trägermaterialschnittstellen verwendet.\n"
-"Kann ein % of die Beschleunigung des Trägermaterials sein\n"
+"Dies ist die Beschleunigung, die Ihr Drucker für Stützmaterialschnittstellen verwendet.\n"
+"Kann ein % of die Beschleunigung des Stützmaterials sein\n"
 "Setzen Sie den Wert auf Null, um die Beschleunigung für Support-Materialschnittstellen zu verwenden."
 
 msgid ""
@@ -13286,9 +13164,9 @@ msgid ""
 "Can be a % of the default acceleration\n"
 "Set zero to use default acceleration for support material."
 msgstr ""
-"Dies ist die Beschleunigung, die Ihr Drucker für das Trägermaterial verwenden wird.\n"
+"Dies ist die Beschleunigung, die Ihr Drucker für das Stützmaterial verwenden wird.\n"
 "Kann eine % of die Standardbeschleunigung sein\n"
-"Setzen Sie Null, um die Standardbeschleunigung für das Trägermaterial zu verwenden."
+"Setzen Sie Null, um die Standardbeschleunigung für das Stützmaterial zu verwenden."
 
 msgid ""
 "This is the acceleration your printer will use for thin walls. \n"
@@ -13383,6 +13261,14 @@ msgid ""
 msgstr "Dies ist der Prozentsatz des Durchflusses, der für den zweiten Bügeldurchgang verwendet wird. Normalerweise 10-20%. Der Wert sollte nicht höher als 20% sein, es sei denn, die Breite Ihrer oberen Extrusion ist wesentlich größer als die Breite Ihrer Düse. Ein zu niedriger Wert und Ihr Extruder frisst das Filament. Ein zu hoher Wert und der erste Durchgang wird nicht gut gedruckt."
 
 msgid ""
+"This is the precision of the bridge detection. If you put it too low, the "
+"bridge detection will be very inneficient.\n"
+"Can be a % of the bridge spacing."
+msgstr ""
+"Das ist die Genauigkeit der Brückenerkennung. Wenn du ihn zu niedrig einstellst, ist die Brückenerkennung sehr ungenau.\n"
+"Kann ein % of der Brückenabstand sein."
+
+msgid ""
 "This is the reference speed that other 'main' speed can reference to by a "
 "%.\n"
 "This setting doesn't do anything by itself, and so is deactivated unless a "
@@ -13452,11 +13338,31 @@ msgstr ""
 "Möchten Sie fortfahren?"
 
 msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr "Diese Einstellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser drucken lassen, wenn die \"Zusätzliche Außenkonturen falls notwendig\" Option aktiviert ist."
+"This option sets the number of perimeters to generate for each layer.\n"
+"If perimeters_hole is activated, then this number is only for contour "
+"periemters.Note that if a contour perimeter encounter a hole, it will go "
+"around like a hole perimeter.\n"
+"Note that Slic3r may increase this number automatically when it detects "
+"sloping surfaces which benefit from a higher number of perimeters if the "
+"Extra Perimeters option is enabled."
+msgstr ""
+"Mit dieser Option legst du die Anzahl der Umrisse fest, die für jede Ebene erzeugt werden.\n"
+"Wenn perimeters_hole aktiviert ist, gilt diese Anzahl nur für Konturumfänge. Wenn ein Konturumfang auf ein Loch trifft, wird er wie ein Lochumfang behandelt.\n"
+"Beachte, dass Slic3r diese Zahl automatisch erhöhen kann, wenn es schräge Flächen erkennt, die von einer höheren Anzahl von Umfängen profitieren, wenn die Option Zusätzliche Umfänge aktiviert ist."
+
+msgid ""
+"This option sets the number of perimeters to have over holes. Note that if a "
+"hole-perimeter fuse with the contour, then it will go around like a contour "
+"perimeter..\n"
+"Set to -1 to deactivate, then holes will have the same number of perimeters "
+"as contour.\n"
+"Note that Slic3r may increase this number automatically when it detects "
+"sloping surfaces which benefit from a higher number of perimeters if the "
+"Extra Perimeters option is enabled."
+msgstr ""
+"Diese Option legt die Anzahl der Umfänge fest, die über Löcher gelegt werden. Wenn ein Lochumfang mit der Kontur verschmilzt, wird er wie ein Konturumfang umlaufen.\n"
+"Wenn du -1 einstellst, haben Löcher die gleiche Anzahl an Umfängen wie die Kontur.\n"
+"Beachte, dass Slic3r diese Zahl automatisch erhöhen kann, wenn es schräge Flächen erkennt, die von einer höheren Anzahl von Umfängen profitieren, wenn die Option Zusätzliche Umfänge aktiviert ist."
 
 msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
@@ -13479,7 +13385,7 @@ msgid ""
 "This parameter grows the bridged solid infill layers by the specified mm to "
 "anchor them into the sparse infill and over the perimeters below. Put 0 to "
 "deactivate it. Can be a % of the width of the external perimeter."
-msgstr "Dieser Parameter vergrößert die überbrückten soliden Ausfachungsschichten um den angegebenen mm, um sie in der spärlichen Ausfachung und über den darunter liegenden Perimetern zu verankern. Setzen Sie 0, um ihn zu deaktivieren. Kann ein % of die Breite der äußeren Begrenzung sein."
+msgstr "Dieser Parameter vergrößert die überbrückten soliden Ausfachungsschichten um den angegebenen mm, um sie in der spärlichen Ausfachung und über den darunter liegenden Wänden zu verankern. Setzen Sie 0, um ihn zu deaktivieren. Kann ein % of die Breite der äußeren Begrenzung sein."
 
 msgid ""
 "This parameter grows the top/bottom/solid layers by the specified mm to "
@@ -13518,7 +13424,7 @@ msgid ""
 "Internal Perimeters speed setting above.\n"
 "Set zero to disable."
 msgstr ""
-"Diese separate Einstellung wirkt sich auf die Geschwindigkeit von Perimetern mit einem Radius <= 6,5 mm (normalerweise Löcher) aus.\n"
+"Diese separate Einstellung wirkt sich auf die Geschwindigkeit von Wänden mit einem Radius <= 6,5 mm (normalerweise Löcher) aus.\n"
 "Wenn sie als Prozentsatz ausgedrückt wird (z.B.: 80%), wird sie auf der obigen Einstellung für die Geschwindigkeit der internen Umfänge berechnet.\n"
 "Setzen Sie Null, um sie zu deaktivieren."
 
@@ -13587,15 +13493,34 @@ msgid ""
 "fill, to reduce the % filled if you see overextrusion signs on solid areas. "
 "Note that you should be sure that your flow (filament extrusion multiplier) "
 "is well calibrated and your filament max overlap is set before thinking to "
-"modify this."
-msgstr "Mit dieser Einstellung können Sie die Überlappung zwischen den Linien der Volltonfüllung verringern, um die % fFüllung zu reduzieren, wenn Sie Anzeichen von Überextrusion in Volltonbereichen sehen. Beachten Sie, dass Sie sich vergewissern sollten, dass Ihr Fluss (Filament-Extrusionsmultiplikator) gut kalibriert und Ihre maximale Filamentüberlappung eingestellt ist, bevor Sie daran denken, dies zu ändern."
+"modify this.\n"
+"Note: top surfaces are still extruded with 100% overlap to prevent gaps."
+msgstr ""
+"Mit dieser Einstellung kannst du die Überlappung zwischen den Linien der Volltonfüllung verringern, um die % fFüllung zu reduzieren, wenn du Anzeichen von Überextrusion in Volltonbereichen siehst. Beachte, dass du sicher sein solltest, dass dein Fluss (Filament-Extrusions-Multiplikator) gut kalibriert ist und deine maximale Filament-Überlappung eingestellt ist, bevor du daran denkst, dies zu ändern.\n"
+"Hinweis: Die Oberseiten werden weiterhin mit 100% oÜberlappung extrudiert, um Lücken zu vermeiden."
+
+msgid ""
+"This setting allows you to reduce the overlap between the lines of the top "
+"solid fill, to reduce the % filled if you see overextrusion signs on solid "
+"areas.\n"
+"Note that you should be sure that your flow (filament extrusion multiplier) "
+"is well calibrated and your filament max overlap is set before thinking to "
+"modify this.\n"
+"Also, lowering it below 100% may create visible gaps in the top surfaces\n"
+"Set overlap setting is the only one that can't be reduced by the filament's "
+"max overlap."
+msgstr ""
+"Mit dieser Einstellung kannst du die Überlappung zwischen den Linien der oberen Füllung verringern, um die % Füllung zu reduzieren, wenn du Anzeichen von Überextrusion in festen Bereichen siehst.\n"
+"Beachte, dass du sicher sein solltest, dass dein Fluss (Filament-Extrusions-Multiplikator) gut kalibriert und die maximale Überlappung des Filaments eingestellt ist, bevor du daran denkst, diese Einstellung zu ändern.\n"
+"Wenn du den Wert unter 100% setzt, kann es zu sichtbaren Lücken in den oberen Flächen kommen\n"
+"Die eingestellte Überlappung ist die einzige Einstellung, die nicht durch die maximale Überlappung des Filaments reduziert werden kann."
 
 msgid ""
 "This setting allows you to reduce the overlap between the perimeters and the "
 "external one, to reduce the impact of the perimeters' artifacts. 100% means "
 "that no gap is left, and 0% means that the external perimeter isn't "
 "contributing to the overlap with the 'inner' one."
-msgstr "Mit dieser Einstellung können Sie die Überlappung zwischen den Perimetern und dem externen Perimeter reduzieren, um die Auswirkungen der Artefakte der Perimeter zu verringern. 100% bedeutet, dass keine Lücke verbleibt, und 0% bedeutet, dass der externe Perimeter nicht zur Überlappung mit dem 'inneren' Perimeter beiträgt."
+msgstr "Mit dieser Einstellung können Sie die Überlappung zwischen den Wänden und dem externen Perimeter reduzieren, um die Auswirkungen der Artefakte der Perimeter zu verringern. 100% bedeutet, dass keine Lücke verbleibt, und 0% bedeutet, dass der externe Perimeter nicht zur Überlappung mit dem 'inneren' Perimeter beiträgt."
 
 msgid ""
 "This setting allows you to reduce the overlap between the perimeters and the "
@@ -13604,7 +13529,7 @@ msgid ""
 "May be useful if you can see the gapfill on the exterrnal surface, to reduce "
 "that artifact."
 msgstr ""
-"Mit dieser Einstellung können Sie die Überlappung zwischen den Perimetern und der Lückenfüllung reduzieren. 100% bedeutet, dass keine Lücken übrig bleiben, und 0% bedeutet, dass die Lückenfüllung die Umrisse nicht berührt.\n"
+"Mit dieser Einstellung können Sie die Überlappung zwischen den Wänden und der Lückenfüllung reduzieren. 100% bedeutet, dass keine Lücken übrig bleiben, und 0% bedeutet, dass die Lückenfüllung die Umrisse nicht berührt.\n"
 "Dies kann nützlich sein, wenn Sie die Lückenfüllung auf der äußeren Oberfläche sehen können, um dieses Artefakt zu reduzieren."
 
 msgid ""
@@ -13614,7 +13539,7 @@ msgid ""
 "It's very experimental, please report about the usefulness. It may be "
 "removed if there is no use for it."
 msgstr ""
-"Mit dieser Einstellung können Sie die Überlappung zwischen den Perimetern reduzieren, um die Auswirkungen der Artefakte der Perimeter zu verringern. 100% bedeutet, dass keine Lücke bleibt, und 0% bedeutet, dass sich die Perimeter nicht mehr berühren.\n"
+"Mit dieser Einstellung können Sie die Überlappung zwischen den Wänden reduzieren, um die Auswirkungen der Artefakte der Perimeter zu verringern. 100% bedeutet, dass keine Lücke bleibt, und 0% bedeutet, dass sich die Perimeter nicht mehr berühren.\n"
 "Diese Funktion ist noch sehr experimentell, bitte berichten Sie über ihre Nützlichkeit. Sie kann entfernt werden, wenn es keine Verwendung dafür gibt."
 
 msgid ""
@@ -13646,7 +13571,7 @@ msgid ""
 "Don't put a value higher than 50% (of the perimeter width), as it will fuse "
 "with it and follow the perimeter."
 msgstr ""
-"Diese Einstellung sorgt für eine zusätzliche Überlappung zwischen Füllung und Perimetern, um eine bessere Verklebung zu erreichen. Theoretisch sollte dies nicht nötig sein, aber das Spiel kann Lücken verursachen. Wenn Sie den Wert in Prozent angeben (Beispiel: 15%), wird er über die Breite der Extrusion des Perimeters berechnet.\n"
+"Diese Einstellung sorgt für eine zusätzliche Überlappung zwischen Füllung und Wänden, um eine bessere Verklebung zu erreichen. Theoretisch sollte dies nicht nötig sein, aber das Spiel kann Lücken verursachen. Wenn Sie den Wert in Prozent angeben (Beispiel: 15%), wird er über die Breite der Extrusion des Perimeters berechnet.\n"
 "Geben Sie keinen höheren Wert als 50% (der Umfangsbreite) an, da er mit diesem verschmilzt und dem Umfang folgt."
 
 msgid ""
@@ -13663,11 +13588,6 @@ msgid ""
 "This setting controls the height (and thus the total number) of the slices/"
 "layers. Thinner layers give better accuracy but take more time to print."
 msgstr "Diese Einstellung bestimmt die Höhe (und damit die Gesamtanzahl) der Scheiben/Schichten. Dünnere Schichten ergeben eine bessere Genauigkeit, benötigen aber mehr Zeit zum Drucken."
-
-msgid ""
-"This setting controls the height of last object layers to put the last layer "
-"at the exact highest height possible. Experimental."
-msgstr "Diese Einstellung steuert die Höhe der letzten Objektebenen, so dass die letzte Ebene genau auf der höchstmöglichen Höhe liegt. Experimentell."
 
 msgid ""
 "This setting is used to set the maximum speed when extruding inside the wipe "
@@ -13705,8 +13625,8 @@ msgid ""
 "Note: it needs the external and perimeter overlap to be at 100% and to print "
 "the external perimeter first."
 msgstr ""
-"Diese Einstellung kann die Qualität Ihres externen Perimeters etwas verschlechtern, im Austausch für eine bessere Verbindung zwischen den Perimetern. Verwenden Sie diese Einstellung, wenn Sie große Schwierigkeiten mit der Perimeterverbindung haben, z.B. bei Filamenten mit hohen Temperaturen.\n"
-"Dieser Prozentsatz ist die % of Überlappung zwischen den Perimetern, ähnlich wie perimeter_overlap und external_perimeter_overlap, aber in umgekehrter Reihenfolge. Sie müssen perimeter_overlap und external_perimeter_overlap auf 100% setzen, sonst hat diese Einstellung keine Wirkung. 0: keine Auswirkung, 50%: die Hälfte der Düse befindet sich über einem bereits extrudierten Umfang, während ein neuer Umfang extrudiert wird (es sei denn, es handelt sich um einen externen Umfang).\n"
+"Diese Einstellung kann die Qualität Ihres externen Perimeters etwas verschlechtern, im Austausch für eine bessere Verbindung zwischen den Wänden. Verwenden Sie diese Einstellung, wenn Sie große Schwierigkeiten mit der Perimeterverbindung haben, z.B. bei Filamenten mit hohen Temperaturen.\n"
+"Dieser Prozentsatz ist die % of Überlappung zwischen den Wänden, ähnlich wie perimeter_overlap und external_perimeter_overlap, aber in umgekehrter Reihenfolge. Sie müssen perimeter_overlap und external_perimeter_overlap auf 100% setzen, sonst hat diese Einstellung keine Wirkung. 0: keine Auswirkung, 50%: die Hälfte der Düse befindet sich über einem bereits extrudierten Umfang, während ein neuer Umfang extrudiert wird (es sei denn, es handelt sich um einen externen Umfang).\n"
 "Hinweis: Die Überlappung zwischen dem externen und dem Perimeter muss 100% and betragen, damit der externe Perimeter zuerst gedruckt wird."
 
 msgid ""
@@ -13771,8 +13691,11 @@ msgstr "Diese Einstellung beschränkt das Nachbearbeiten auf eine bestimmte Höh
 msgid ""
 "This setting will ensure that all 'overlap' are not higher than this value. "
 "This is useful for filaments that are too viscous, as the line can't flow "
-"under the previous one."
-msgstr "Diese Einstellung stellt sicher, dass alle 'Überlappungen' nicht höher als dieser Wert sind. Dies ist nützlich für Filamente, die zu zähflüssig sind, da die Linie nicht unter die vorherige fließen kann."
+"under the previous one.\n"
+"Note: top solid infill lines are excluded, to prevent visual defects."
+msgstr ""
+"Mit dieser Einstellung wird sichergestellt, dass alle \"Überlappungen\" nicht höher als dieser Wert sind. Das ist nützlich für zu zähflüssige Filamente, da die Linie nicht unter die vorherige Linie fließen kann.\n"
+"Hinweis: Obere, durchgehende Fülllinien werden ausgeschlossen, um optische Fehler zu vermeiden."
 
 msgid ""
 "This start procedure is inserted at the beginning, after any printer start "
@@ -13800,6 +13723,11 @@ msgid ""
 msgstr ""
 "Dieser Startvorgang wird zu Beginn eingefügt, nachdem das Bett die Zieltemperatur erreicht hat und der Extruder gerade mit dem Aufheizen begonnen hat, aber bevor der Extruder das Aufheizen beendet hat. Wenn Slic3r M104 oder M190 in Ihren benutzerdefinierten Codes erkennt, werden diese Befehle nicht automatisch vorangestellt, so dass Sie die Reihenfolge der Heizbefehle und anderer benutzerdefinierter Aktionen selbst festlegen können. Beachten Sie, dass Sie für alle Slic3r-Einstellungen Platzhaltervariablen verwenden können, so dass Sie einen \"M109 S{first_layer_temperature}\"-Befehl an beliebiger Stelle einfügen können.\n"
 " platzhalter: initial_extruder, total_layer_count, has_wipe_tower, has_single_extruder_multi_material_priming, total_toolchanges, bounding_box[minx,miny,maxx,maxy]"
+
+msgid ""
+"This string is edited by a Dialog and contains extusion multiplier for "
+"different speeds."
+msgstr "Diese Zeichenkette wird von einem Dialog bearbeitet und enthält den Ausstoßmultiplikator für verschiedene Geschwindigkeiten."
 
 msgid ""
 "This string is edited by RammingDialog and contains ramming specific "
@@ -14033,14 +13961,14 @@ msgid "Toolchange temperature enabled"
 msgstr "Werkzeugwechseltemperatur aktiviert"
 
 msgid "Top"
-msgstr "Oben"
+msgstr "oben"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
 msgstr "Hinweis zur Ober-/Bodenschalestärke: Nicht verfügbar wegen ungültiger Schichthöhe."
 
 msgid "Top fill"
-msgstr "Obere Füllung"
+msgstr "obere Füllung"
 
 msgid "Top fill flow ratio"
 msgstr "Fließverhältnis oben füllen"
@@ -14058,22 +13986,22 @@ msgid "Top infill pattern"
 msgstr "Muster der oberen Füllung"
 
 msgid "Top interface layers"
-msgstr "Obere Schnittstellenschichten"
+msgstr "obere Schnittstellenschichten"
 
 msgid "Top is open."
 msgstr "Oben ist offen."
 
 msgid "Top layers"
-msgstr "Obere Schichten"
+msgstr "obere Schichten"
 
 msgid "Top shell is %1% mm thick for layer height %2% mm."
 msgstr "Die obere Schale ist %1% mm stark für eine Schichthöhe von %2% mm."
 
 msgid "Top solid "
-msgstr "Obere massive Schichten "
+msgstr "obere massive Schichten "
 
 msgid "Top solid"
-msgstr "Obere massive Schicht"
+msgstr "obere massive Schicht"
 
 msgid "Top solid acceleration"
 msgstr "Top solide Beschleunigung"
@@ -14082,16 +14010,19 @@ msgid "Top Solid fan speed"
 msgstr "Top Solid Lüftergeschwindigkeit"
 
 msgid "Top solid infill"
-msgstr "Oberes massives Infill"
+msgstr "oberes massives Infill"
 
 msgid "top solid infill"
-msgstr "Oberes massives Infill"
+msgstr "oberes massives Infill"
+
+msgid "Top solid infill overlap"
+msgstr "obere feste Füllung Überlappung"
 
 msgid "Top solid layers"
-msgstr "Obere massive Schichten"
+msgstr "obere massive Schichten"
 
 msgid "Top solid spacing"
-msgstr "Oberer Massivholz-Abstand"
+msgstr "oberer massiver Abstand"
 
 msgid "Top solid speed"
 msgstr "Solide Höchstgeschwindigkeit"
@@ -14161,7 +14092,7 @@ msgid "Tuning ironing"
 msgstr "Tuning bügeln"
 
 msgid "Twisting"
-msgstr "Verdrehen"
+msgstr "verdrehen"
 
 msgid "Type"
 msgstr "Typ"
@@ -14228,13 +14159,6 @@ msgstr "Die Desktop-Integration wurde erfolgreich rückgängig gemacht."
 
 msgid "Undo History"
 msgstr "Undo Verlauf"
-
-msgid "Undo/redo history\nDid you know that you can right-click the<a>undo/redo arrows</a>to see the history of changes and to undo or redo several actions at once?"
-msgstr ""
-"Undo/Redo-Verlauf\n"
-"Wussten Sie schon, dass Sie mit der rechten Maustaste auf die <a>Undo/Redo "
-"Pfeile</a> klicken können, um den Änderungsverlauf zu sehen und mehrere "
-"Aktionen auf einmal rückgängig zu machen oder wiederherzustellen?"
 
 msgid "unexpected decompressed size"
 msgstr "unerwartete dekomprimierte Größe"
@@ -14366,7 +14290,7 @@ msgid "Uploading"
 msgstr "Lade hoch"
 
 msgid "Upper temp:"
-msgstr "Obere Temperatur:"
+msgstr "obere Temperatur:"
 
 msgid ""
 "Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
@@ -14454,7 +14378,7 @@ msgstr "Verwenden Sie diese Einstellung, um den Buchstaben der Achse anzugeben, 
 msgid ""
 "Use this setting to rotate the support material pattern by 90° at this "
 "height (in mm). Set 0 to disable."
-msgstr "Verwenden Sie diese Einstellung, um das Muster des Trägermaterials in dieser Höhe (in mm) um 90° zu drehen. Setzen Sie 0 zum Deaktivieren."
+msgstr "Verwenden Sie diese Einstellung, um das Muster des Stützmaterials in dieser Höhe (in mm) um 90° zu drehen. Setzen Sie 0 zum Deaktivieren."
 
 msgid ""
 "Use this setting to rotate the support material pattern on the horizontal "
@@ -14568,14 +14492,6 @@ msgstr "Variable Schichthöhe - Zurücksetzen"
 msgid "Variable layer height - Smooth all"
 msgstr "Variable Schichthöhe - Alles glätten"
 
-msgid "Variable layer height\nDid you know that you can print different regions of your model with a different layer height and smooth the transitions between them? Try the<a>Variable layer height tool</a>. (Not available for SLA printers.)"
-msgstr ""
-"Variable Schichthöhe\n"
-"Wussten Sie schon, dass Sie verschiedene Bereiche Ihres Modells mit einer "
-"unterschiedlichen Schichthöhe drucken und die Übergänge zwischen ihnen "
-"glätten können? Versuchen Sie es mit dem<a>Werkzeug für variable "
-"Schichthöhen</a>. (Nicht verfügbar für SLA-Drucker.)"
-
 msgid "variants"
 msgstr "Varianten"
 
@@ -14658,6 +14574,9 @@ msgstr "Volumen in Objekt neu angeordnet"
 
 msgid "Volumetric"
 msgstr "Volumetrisch"
+
+msgid "Volumetric auto-speed"
+msgstr "volumetrische Auto-Geschwindigkeit"
 
 msgid "Volumetric flow hints not available"
 msgstr "Hinweise zum Volumenstrom nicht verfügbar"
@@ -14970,7 +14889,7 @@ msgid ""
 msgstr "Breite der Umrandung, die dünne Features (entsprechend der Mindest-Featuregröße) des Modells ersetzen wird. Wenn die minimale Umfangsbreite dünner ist als die Dicke des Features, wird der Umfang so dick wie das Feature selbst. Wenn die Breite als Prozentsatz ausgedrückt wird (z.B. 85%), wird sie über den Düsendurchmesser berechnet."
 
 msgid "width&spacing combo"
-msgstr "breite&Abstand-Kombination"
+msgstr "Breite/Abstand-Kombination"
 
 msgid ""
 "Will inflate or deflate the sliced 2D polygons according to the sign of the "
@@ -14984,7 +14903,7 @@ msgid "Wipe"
 msgstr "Reinigen"
 
 msgid "Wipe inside"
-msgstr "Innen abwischen"
+msgstr "innen abwischen"
 
 msgid "Wipe inside at end"
 msgstr "Am Ende innen abwischen"
@@ -15003,6 +14922,9 @@ msgstr "Nur wischen, falls Wände gekreuzt werden"
 
 msgid "Wipe speed"
 msgstr "Wischgeschwindigkeit"
+
+msgid "Wipe starting speed"
+msgstr "Startgeschwindigkeit wischen"
 
 msgid "Wipe Tower"
 msgstr "Reinigungsturm"
@@ -15034,11 +14956,11 @@ msgstr "Rotationswinkel des Reinigungsturms bezogen auf die X-Achse."
 msgid "Wipe Tower Speed"
 msgstr "Geschwindigkeit des Wischturms"
 
-msgid "Wipe tower starting speed"
-msgstr "Startgeschwindigkeit des Wischturms"
-
 msgid "Wipe tower Width"
 msgstr "Wischturm Breite"
+
+msgid "Wipe tower wipe starting speed"
+msgstr "Wischturm wischt Startgeschwindigkeit"
 
 msgid "Wipe tower X"
 msgstr "Turm wischen X"
@@ -15115,7 +15037,7 @@ msgid "XY First layer compensation"
 msgstr "XY Kompensation der ersten Schicht"
 
 msgid "XY First layer compensation height in layers"
-msgstr "XY Erste Schichtausgleichshöhe in Schichten"
+msgstr "XY ersteSchichtausgleichshöhe in Schichten"
 
 msgid "XY holes compensation"
 msgstr "Kompensation von XY-Löchern"
@@ -15430,14 +15352,6 @@ msgstr "Zoom"
 
 msgid "Zoom in"
 msgstr "Heranzoomen"
-
-msgid "Zoom on selected objects or on all objects if none selected\nDid you know that you can zoom in on selected objects by pressing the <b>Z</b> key? If none are selected, the camera will zoom on all objects in the scene."
-msgstr ""
-"Zoom auf ausgewählte Objekte oder auf alle Objekte, wenn keine ausgewählt "
-"sind\n"
-"Wussten Sie, dass Sie auf ausgewählte Objekte zoomen können, indem Sie die "
-"Taste <b>Z</b> drücken? Wenn keine Objekte ausgewählt sind, zoomt die Kamera "
-"auf alle Objekte in der Szene."
 
 msgid "Zoom out"
 msgstr "Herauszoomen"

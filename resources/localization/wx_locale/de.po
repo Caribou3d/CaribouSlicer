@@ -3783,7 +3783,7 @@ msgstr "Erste(r)"
 
 #: ../src/common/prntbase.cpp:1548
 msgid "First page"
-msgstr "Erste Seite"
+msgstr "ersteSeite"
 
 #: ../src/richtext/richtextsizepage.cpp:521
 msgid "Fixed"
@@ -4042,7 +4042,7 @@ msgstr "%s ausblenden"
 
 #: ../src/osx/menu_osx.cpp:579
 msgid "Hide Others"
-msgstr "Andere ausblenden"
+msgstr "andereausblenden"
 
 #: ../src/generic/infobar.cpp:84
 msgid "Hide this notification message."
