@@ -7894,19 +7894,16 @@ msgid "No updates available"
 msgstr "Keine Updates verfügbar"
 
 msgid "None"
-msgstr "Keine"
+msgstr "keine"
 
 msgid "None (soluble)"
-msgstr "Keine (löslich)"
+msgstr "keine (löslich)"
 
 msgid "Normal"
-msgstr "Normal"
+msgstr "normal"
 
 msgid "Normal mode"
-msgstr "Normaler Modus"
-
-msgid "normal mode"
-msgstr "Normaler Modus"
+msgstr "normaler Modus"
 
 msgid "not a ZIP archive"
 msgstr "kein ZIP Archiv"
@@ -9540,7 +9537,7 @@ msgid "Refresh Printers"
 msgstr "Drucker aktualisieren"
 
 msgid "Regular"
-msgstr "Normal"
+msgstr "normal"
 
 msgid "Regular expression"
 msgstr "Regulärer Ausdruck"
@@ -9567,7 +9564,7 @@ msgid "Reload the platter from disk"
 msgstr "Laden Sie den Plattenteller von der Festplatte neu"
 
 msgid "Remaining errors"
-msgstr "Verbleibende Fehler"
+msgstr "verbleibende Fehler"
 
 msgid "Remaining time"
 msgstr "Restzeit"
@@ -9579,10 +9576,10 @@ msgid "Remember output directory"
 msgstr "Ausgabeverzeichnis merken"
 
 msgid "Remove"
-msgstr "Entfernen"
+msgstr "entfernen"
 
 msgid "remove"
-msgstr "Entfernen"
+msgstr "entfernen"
 
 msgid "Remove all holes"
 msgstr "alle Löcher entfernen"
@@ -9654,7 +9651,7 @@ msgid "Rename Sub-object"
 msgstr "Subobjekt umbenennen"
 
 msgid "Renaming"
-msgstr "Am Umbenennen"
+msgstr "Umbenennen"
 
 msgid ""
 "Renaming of the G-code after copying to the selected destination folder has "
@@ -9718,7 +9715,7 @@ msgid "Report an I&ssue"
 msgstr "Ein &Problem melden"
 
 msgid "Report an issue on %s"
-msgstr "Einen Problem melden über %s"
+msgstr "Ein Problem melden über %s"
 
 msgid "requires max. %s"
 msgstr "benötigt max. %s"
@@ -10668,7 +10665,7 @@ msgid "Show layer time on the scroll bar"
 msgstr "Ebenenzeit auf der Bildlaufleiste anzeigen"
 
 msgid "Show normal mode"
-msgstr "Normalen Modus zeigen"
+msgstr "normalen Modus zeigen"
 
 msgid "Show object height"
 msgstr "Objekthöhe anzeigen"
@@ -16957,7 +16954,7 @@ msgid "Estimating curled extrusions"
 msgstr "Schätzen von aufrollenden Extrusionen"
 
 msgid "Everywhere"
-msgstr "Überall"
+msgstr "überall"
 
 msgid "except for the first %1% layers."
 msgstr "außer für die ersten %1% Schichten."
