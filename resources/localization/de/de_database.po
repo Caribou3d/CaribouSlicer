@@ -892,9 +892,6 @@ msgstr "Erweiterte Einstellungen"
 msgid "Advanced Infill options"
 msgstr "Erweiterte Infill-Optionen"
 
-msgid "Advanced mode"
-msgstr "Fortgeschrittener Modus"
-
 msgid "Advanced wipe tower purge volume calculs"
 msgstr "Erweiterte Berechnung des Spülvolumens im Reinigungsturm"
 
@@ -3829,8 +3826,8 @@ msgid ""
 "to extraction to reduce wait time."
 msgstr "Experimentell: Senkt die Düsentemperatur während der Abkühlungsbewegungen statt vor der Extraktion, um die Wartezeit zu verkürzen."
 
-msgid "Expert mode"
-msgstr "Expertenmodus"
+msgid "Expert"
+msgstr "Experte"
 
 msgid "Export"
 msgstr "Export"
@@ -10757,8 +10754,8 @@ msgstr "Objekt-/Kopiebeschriftungen ein-/ausblenden"
 msgid "Shrinkage"
 msgstr "Schrumpfung"
 
-msgid "Simple mode"
-msgstr "Einfacher Modus"
+msgid "Simple"
+msgstr "Einfach"
 
 msgid "Simple widget to enable/disable the overhangs detection (using 55% and 75% for the two thresholds)\nUse the expert mode to get more detailled widgets"
 msgstr ""
@@ -15351,6 +15348,15 @@ msgstr ""
 msgid "°C"
 msgstr "°C"
 
+msgid "Advanced mode"
+msgstr "Fortgeschrittener Modus"
+
+msgid "Expert mode"
+msgstr "Expertenmodus"
+
+msgid "Simple mode"
+msgstr "Einfacher Modus"
+
 msgid "min."
 msgstr "min."
 
@@ -16970,9 +16976,6 @@ msgstr "Verlassen (&X)"
 
 msgid "Experimental option to adjust flow for overhangs (bridge flow will be used), to apply bridge speed to them and enable fan."
 msgstr "Experimentelle Option zur Anpassung des Durchflusses für Überhänge (Brückenvolumenfluss wird verwendet), zur Anwendung der Brückengeschwindigkeit und zur Aktivierung des Lüfters."
-
-msgid "Expert"
-msgstr "Experte"
 
 msgid "Expert View Mode"
 msgstr "Experten Anzeigemodus"
@@ -18865,9 +18868,6 @@ msgstr "Ausführlich Daten anzeigen, die gesendet werden"
 
 msgid "Show wireframe"
 msgstr "Drahtgitter anzeigen"
-
-msgid "Simple"
-msgstr "Einfach"
 
 msgid ""
 "Simple mode supports manipulation with single-part object(s)\n"
