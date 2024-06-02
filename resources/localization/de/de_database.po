@@ -39,10 +39,10 @@ msgid "Arachne perimeter generator (variable width)"
 msgstr "Arachne Wandgenerator (variable Breite)"
 
 msgid "At end"
-msgstr "Am Ende"
+msgstr "am Ende"
 
 msgid "At start"
-msgstr "Beim Start"
+msgstr "beim Start"
 
 msgid "Automatic generation"
 msgstr "automatische Erzeugung"
@@ -229,7 +229,7 @@ msgid "External perimeter first"
 msgstr "Äußere Wand zuerst"
 
 msgid "Extra perimeters"
-msgstr "Zusätzliche Wände"
+msgstr "zusätzliche Wände"
 
 msgid "Extra unretraction"
 msgstr "Extra Retraktion"
@@ -418,7 +418,7 @@ msgid "Lift"
 msgstr "Aufzug"
 
 msgid "Lift z enforcement"
-msgstr "Lift z Durchsetzung"
+msgstr "Erzwinge Anhebung von Z"
 
 msgid "Main speed"
 msgstr "Geschwindigkeit"
@@ -506,10 +506,10 @@ msgid "Only for overhangs"
 msgstr "nur für Überhänge"
 
 msgid "Only lift Z"
-msgstr "Nur Z anheben"
+msgstr "nur Z anheben"
 
 msgid "Only one perimeter"
-msgstr "Nur eine äußere Wand"
+msgstr "nur eine äußere Wand"
 
 msgid "Only retract when crossing perimeters"
 msgstr "Rückzug nur bei Wandüberquerung"
@@ -638,13 +638,13 @@ msgid "Reducing printing time"
 msgstr "Verkürzung der Druckzeit"
 
 msgid "Retraction"
-msgstr "Einzug"
+msgstr "Rückzug"
 
 msgid "Retraction Speed"
-msgstr "Einzugsgeschwindigkeit"
+msgstr "Rückzugsgeschwindigkeit"
 
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr "Einzug, wenn das Werkzeug deaktiviert ist (weiterführende Einstellungen für Multi-Extruder-Einrichtungen)"
+msgstr "Rückzug, wenn das Werkzeug deaktiviert ist (weiterführende Einstellungen für Multi-Extruder-Einrichtungen)"
 
 msgid "Retraction wipe"
 msgstr "Wischen beim Rückzug"
@@ -1499,7 +1499,7 @@ msgid "Above the bridges"
 msgstr "oberhalb der Brücken"
 
 msgid "Above Z"
-msgstr "Über Z"
+msgstr "über Z"
 
 msgid ""
 "Acceleration for travel moves (jumps between distant extrusion points).\n"
@@ -1762,7 +1762,7 @@ msgid "Additional information:"
 msgstr "Weitere Informationen:"
 
 msgid "Additional Settings"
-msgstr "Zusätzliche Einstellungen"
+msgstr "zusätzliche Einstellungen"
 
 msgid ""
 "Additionally a backup snapshot of the whole configuration is created before "
@@ -1890,7 +1890,7 @@ msgid "Allow empty layers"
 msgstr "leere Ebenen zulassen"
 
 msgid "Allow just a single %1% instance"
-msgstr "Nur eine einzige %1%-Instanz zulassen"
+msgstr "nur eine einzige %1%-Instanz zulassen"
 
 msgid "Allow next color repetition"
 msgstr "Nächste Farbwiederholung erlauben"
@@ -4195,7 +4195,7 @@ msgid ""
 msgstr "Ermöglicht die Erstellung einer Stützschicht unter der ersten festen Schicht. Dadurch können Sie einen geringeren Füllungsgrad verwenden, ohne die Spitzenqualität zu beeinträchtigen. Die dichte Füllung wird mit einer Fülldichte von 50% in ausgelegt."
 
 msgid "Enforce"
-msgstr "Erzwinge"
+msgstr "erzwinge"
 
 msgid "Enforce 100% fill volume"
 msgstr "100% Füllvolumen erzwingen"
@@ -4209,7 +4209,7 @@ msgid "Enforce lift on first layer"
 msgstr "Lifting der ersten Schicht durchsetzen"
 
 msgid "Enforce on first layer"
-msgstr "Erzwingen auf der ersten Schicht"
+msgstr "auf der ersten Schicht"
 
 msgid "Enforce overhangs speed"
 msgstr "Überhänge durchsetzen Geschwindigkeit"
@@ -4218,10 +4218,10 @@ msgid "Enforce seam"
 msgstr "Naht erzwingen"
 
 msgid "Enforce support for the first"
-msgstr "Erzwinge Stützen bei den ersten"
+msgstr "erzwinge Stützen bei den ersten"
 
 msgid "Enforce support for the first n layers"
-msgstr "Erzwinge Stützen bei den ersten n Schichten"
+msgstr "erzwinge Stützen bei den ersten n Schichten"
 
 msgid "Enforce supports"
 msgstr "Stützen erzwingen"
@@ -4703,25 +4703,25 @@ msgid "External walls"
 msgstr "Außenwände"
 
 msgid "Extra length on restart"
-msgstr "Extra Länge bei Neustart"
+msgstr "zusätzliche Länge bei Neustart"
 
 msgid "Extra loading distance"
-msgstr "Zusätzliche Ladestrecke"
+msgstr "zusätzliche Ladestrecke"
 
 msgid "Extra perimeter on even layers"
-msgstr "Zusätzliche Wände auf geraden Ebenen hinzu"
+msgstr "zusätzliche Wände auf geraden Ebenen hinzu"
 
 msgid "Extra perimeters (do nothing)"
-msgstr "Zusätzliche Begrenzungen (nichts tun)"
+msgstr "zusätzliche Begrenzungen (nichts tun)"
 
 msgid "Extra perimeters over overhangs"
-msgstr "Zusätzlicher Umfang über Überhänge"
+msgstr "zusätzlicher Umfang über Überhänge"
 
 msgid "Extra skirt lines on the first layer."
-msgstr "Zusätzliche Schürzenlinien auf der ersten Schicht."
+msgstr "zusätzliche Schürzenlinien auf der ersten Schicht."
 
 msgid "Extra Wipe for external perimeters"
-msgstr "Zusätzliches wischen für Außenränder"
+msgstr "zusätzliches wischen für Außenwände"
 
 msgid "Extrat length on toolchange restart"
 msgstr "Extralänge bei Neustart des Werkzeugwechsels"
@@ -6358,19 +6358,19 @@ msgid "Import Config from ini/amf/3mf/gcode"
 msgstr "Konfiguration aus ini/amf/3mf/gcode importieren"
 
 msgid "Import config only"
-msgstr "Nur Konfiguration importieren"
+msgstr "nur Konfiguration importieren"
 
 msgid "Import file"
 msgstr "Datei importieren"
 
 msgid "Import geometry only"
-msgstr "Nur Geometrie importieren"
+msgstr "nur Geometrie importieren"
 
 msgid "Import model and profile"
 msgstr "Modell und Profil importieren"
 
 msgid "Import model only"
-msgstr "Nur Modell importieren"
+msgstr "nur Modell importieren"
 
 msgid "Import Object"
 msgstr "Objekt importieren"
@@ -6382,7 +6382,7 @@ msgid "Import of the repaired 3mf file failed"
 msgstr "Import einer reparierten 3MF Datei fehlgeschlagen"
 
 msgid "Import profile only"
-msgstr "Nur Profil importieren"
+msgstr "nur Profil importieren"
 
 msgid "Import Prusa Config"
 msgstr "Caribou-Konfiguration importieren"
@@ -6583,7 +6583,7 @@ msgid "Inner"
 msgstr "innen"
 
 msgid "Inner brim only"
-msgstr "Nur innerer Rand"
+msgstr "nur innerer Rand"
 
 msgid "Inner XY size compensation"
 msgstr "Innerer XY-Größenausgleich"
@@ -7014,7 +7014,7 @@ msgid ""
 msgstr "Lizenzvereinbarungen für alle folgenden Programme (Bibliotheken) sind Teil der Anwendungslizenzvereinbarung"
 
 msgid "Lift only on"
-msgstr "Nur anheben"
+msgstr "nur anheben"
 
 msgid ""
 "Lift the object above the bed when it is partially below. Enabled by "
@@ -7022,7 +7022,7 @@ msgid ""
 msgstr "Hebt das Objekt über das Bett, wenn es sich teilweise darunter befindet. Standardmäßig aktiviert, zum Deaktivieren --no-ensure-on-bed verwenden."
 
 msgid "Lift Z"
-msgstr "Z Hebung"
+msgstr "Z anheben"
 
 msgid "Lightning"
 msgstr "Lightning"
@@ -8318,6 +8318,9 @@ msgstr "normal"
 msgid "Normal mode"
 msgstr "normaler Modus"
 
+msgid "normal mode"
+msgstr "normaler Modus"
+
 msgid "not a ZIP archive"
 msgstr "kein ZIP Archiv"
 
@@ -8647,7 +8650,7 @@ msgid ""
 msgstr "Nur dann Stützen schaffen, wenn sie auf der Druckplattform aufbauen. Erstellt keine Stützen, die auf dem Ausdruck gründen würden."
 
 msgid "Only custom Start G-code"
-msgstr "Nur benutzerdefinierter Start G-Code"
+msgstr "nur benutzerdefinierter Start G-Code"
 
 msgid ""
 "Only do the vase trick on the external side. Useful when the thickness is "
@@ -8669,7 +8672,7 @@ msgid "Only for outer side"
 msgstr "nur für die Außenseite"
 
 msgid "Only if on platter"
-msgstr "Nur wenn auf einer Druckplatte"
+msgstr "nur wenn auf einer Druckplatte"
 
 msgid "Only infill where needed"
 msgstr "Füllung nur wo es notwendig ist drucken"
@@ -8681,19 +8684,19 @@ msgid "Only lift Z below"
 msgstr "Z anheben nur unter"
 
 msgid "Only on top"
-msgstr "Nur oben"
+msgstr "nur oben"
 
 msgid "Only one peri - other algo"
-msgstr "Nur ein Peri - anderer Algo"
+msgstr "nur ein Peri - anderer Algo"
 
 msgid "Only one perimeter on First layer"
-msgstr "Nur ein Perimeter auf der ersten Ebene"
+msgstr "nur ein Perimeter auf der ersten Ebene"
 
 msgid "Only one perimeter on Top surfaces"
-msgstr "Nur eine Umrandung auf den Oberseiten"
+msgstr "nur eine Umrandung auf den Oberseiten"
 
 msgid "Only selected objects"
-msgstr "Nur ausgewählte Objekte"
+msgstr "nur ausgewählte Objekte"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -8711,7 +8714,7 @@ msgid ""
 msgstr "Wird nur für Klipper verwendet, wo Sie den Extruder benennen können. Wenn nicht festgelegt, wird 'extruderX' verwendet, wobei 'X' durch die Extruder-Nummer ersetzt wird."
 
 msgid "Only when GCode is ready"
-msgstr "Nur wenn GCode bereit ist"
+msgstr "nur wenn GCode bereit ist"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr "Die Sickervermeidung wird derzeit nicht unterstützt, wenn der Reinigungsturm aktiviert ist."
@@ -9797,7 +9800,7 @@ msgid "Regular expression"
 msgstr "Regulärer Ausdruck"
 
 msgid "Release only"
-msgstr "Nur Vollversion"
+msgstr "nur Vollversion"
 
 msgid "Reload all from disk"
 msgstr "Alles von der Festplatte neu laden"
@@ -10026,10 +10029,10 @@ msgid "Retr."
 msgstr "Retr."
 
 msgid "Retract amount before wipe"
-msgstr "Einzugslänge vor einer Reinigung"
+msgstr "Rückzugslänge vor einer Reinigung"
 
 msgid "Retract on layer change"
-msgstr "Bei Schichtwechsel einziehen"
+msgstr "bei Schichtwechsel zurückziehen"
 
 msgid "Retraction calibration"
 msgstr "Kalibrierung des Extruderrückzugs"
@@ -10039,13 +10042,13 @@ msgid ""
 msgstr "Der Einzug wird nicht ausgelöst, wenn die Fahrbewegungen kürzer als diese Länge sind."
 
 msgid "Retraction Length"
-msgstr "Einzugslänge"
+msgstr "Rückzugslänge"
 
 msgid "Retraction length"
-msgstr "Einzugslänge"
+msgstr "Rückzugslänge"
 
 msgid "Retraction Length (Toolchange)"
-msgstr "Einzugslänge (Werkzeugwechsel)"
+msgstr "Rückzugslänge (Werkzeugwechsel)"
 
 msgid "Retractions"
 msgstr "Einzüge"
@@ -11843,7 +11846,7 @@ msgid "Switch to editing mode"
 msgstr "Zum Bearbeitungsmodus umschalten"
 
 msgid "Switch to Preview when sliced"
-msgstr "Beim Schneiden zur Vorschau wechseln"
+msgstr "beim Schneiden zur Vorschau wechseln"
 
 msgid "Switch to Settings"
 msgstr "Zu Einstellungen wechseln"
@@ -14079,7 +14082,7 @@ msgid "Top View"
 msgstr "Ansicht von oben"
 
 msgid "Topmost surface only"
-msgstr "Nur oberste Fläche"
+msgstr "nur oberste Fläche"
 
 msgid "Total"
 msgstr "Gesamt"
@@ -14912,10 +14915,10 @@ msgid "Wipe"
 msgstr "Reinigen"
 
 msgid "Wipe inside at end"
-msgstr "Am Ende innen abwischen"
+msgstr "am Ende innen abwischen"
 
 msgid "Wipe inside at start"
-msgstr "Beim Start innen abwischen"
+msgstr "beim Start innen abwischen"
 
 msgid "Wipe into this object"
 msgstr "Dieses Objekt zum Reinigen verwenden"
@@ -14924,7 +14927,7 @@ msgid "Wipe into this object's infill"
 msgstr "Das Infill dieses Objekts zum Reinigen verwenden"
 
 msgid "Wipe only when crossing perimeters"
-msgstr "Nur wischen, falls Wände gekreuzt werden"
+msgstr "nur wischen, falls Wände gekreuzt werden"
 
 msgid "Wipe speed"
 msgstr "Wischgeschwindigkeit"
@@ -14963,7 +14966,7 @@ msgid "Wipe tower Y"
 msgstr "Turm wischen Y"
 
 msgid "Wipe while retracting"
-msgstr "Während Einzug reinigen"
+msgstr "Während Rückzug reinigen"
 
 msgid ""
 "With bowden extruders, it may be wise to do some amount of quick retract "
@@ -15348,12 +15351,6 @@ msgstr ""
 msgid "°C"
 msgstr "°C"
 
-msgid "normal mode"
-msgstr "normaler Modus"
-
-msgid "Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode."
-msgstr "Position der Anfangspunkte der Wände. Kann den Winkel und die Fahrtkosten (mit den festen Sichtbarkeits- und Überhangkosten) verwenden, um den besten Platz zu finden.\nEcken\\. mindestens 100% angle Kosten und nicht mehr als 80% Reisekosten (Standardwert: 120-40).\nAm nächsten\\. nicht mehr als 100% angle Kosten und mindestens 100% Reisekosten (Standardwert 80-100).\nverstreut\\. Die Naht wird an einer zufälligen Position an den Außenrändern platziert.\nzufällig\\. Die Naht wird an einer zufälligen Position für alle Begrenzungen platziert.\nAusgerichtet\\. Nähte werden an der bestmöglichen Stelle gruppiert (mindestens 6 Schichten pro Gruppe).\nzusammenhängend\\. Die Naht wird über einer Naht der vorherigen Schicht platziert (nützlich bei Verstärkern als Seeds).\nhinten\\. Naht wird an der äußersten Seite platziert (höchste Y-Koordinaten).\nbenutzerdefiniert\\. Andere Kombination von Winkel & Wegkosten als 'Ecken' und 'Nächste', (Standardwert: 60-100).\nBenutzerdefiniert und Gewicht können im Modus Erweitert oder Experte definiert werden."
-
 msgid "Advanced mode"
 msgstr "Fortgeschrittener Modus"
 
@@ -15709,7 +15706,7 @@ msgstr ""
 "- nicht markiert 'zusätzliche Umfänge'- nicht markiert 'Lückenfüllung nach letztem Umfang'- deaktiviert 'keine feste Füllung über X Umfänge'- deaktiviert 'Nahtaussparung'"
 
 msgid "This option sets the number of perimeters to generate for each layer. Note that Slic3r may increase this number automatically when it detects sloping surfaces which benefit from a higher number of perimeters if the Extra Perimeters option is enabled."
-msgstr "Diese Einstellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser drucken lassen, wenn die \"Zusätzliche Außenkonturen falls notwendig\" Option aktiviert ist."
+msgstr "Diese Einstellung bestimmt die Anzahl der Wände, die für jede Schicht erzeugt werden.  PusaSlicer kann diese Zahl automatisch vergrößern, wenn es schräge Oberflächen erkennt, die sich mit einer höheren Zahl von Wände besser drucken lassen, wenn die \"zusätzliche Außenkonturen falls notwendig\" Option aktiviert ist."
 
 msgid "This setting allows you to reduce the overlap between the lines of the solid fill, to reduce the % filled if you see overextrusion signs on solid areas. Note that you should be sure that your flow (filament extrusion multiplier) is well calibrated and your filament max overlap is set before thinking to modify this."
 msgstr "Mit dieser Einstellung können Sie die Überlappung zwischen den Linien der Volltonfüllung verringern, um die % fFüllung zu reduzieren, wenn Sie Anzeichen von Überextrusion in Volltonbereichen sehen. Beachten Sie, dass Sie sich vergewissern sollten, dass Ihr Fluss (Filament-Extrusionsmultiplikator) gut kalibriert und Ihre maximale Filamentüberlappung eingestellt ist, bevor Sie daran denken, dies zu ändern."
@@ -15933,7 +15930,7 @@ msgid "Allow downloads from Printables.com"
 msgstr "Downloads von Printables.com zulassen"
 
 msgid "Allow just a single PrusaSlicer instance"
-msgstr "Nur eine einzige PrusaSlicer-Instanz zulassen"
+msgstr "nur eine einzige PrusaSlicer-Instanz zulassen"
 
 msgid "(all values in mm³)"
 msgstr "(alle Werte in mm³)"
@@ -17005,7 +17002,7 @@ msgid "Extra deretraction"
 msgstr "Extra Wiedereinzug"
 
 msgid "Extra flow for purging"
-msgstr "Zusätzlicher Fluss für die Reinigung"
+msgstr "zusätzlicher Fluss für die Reinigung"
 
 msgid "Extra flow used for the purging lines on the wipe tower. This makes the purging lines thicker or narrower than they normally would be. The spacing is adjusted automatically."
 msgstr "Zusätzlicher Durchfluss für die Reinigungslinien des Reinigungsturms. Dies macht die Reinigungslinien dicker oder schmaler als sie es normalerweise wären. Die Abstände werden automatisch angepasst."
@@ -17020,7 +17017,7 @@ msgid "Extra perimeters if needed"
 msgstr "Extra Perimeter wenn notwendig"
 
 msgid "Extra perimeters on overhangs (Experimental)"
-msgstr "Zusätzliche Perimeter bei Überhängen (Experimentell)"
+msgstr "zusätzliche Perimeter bei Überhängen (Experimentell)"
 
 msgid "Extruder clearance"
 msgstr "Extruder Freiraum"
@@ -17406,7 +17403,7 @@ msgid "Import 3D models"
 msgstr "3D Modelle imortieren"
 
 msgid "Import 3D models only"
-msgstr "Nur 3D-Modelle importieren"
+msgstr "nur 3D-Modelle importieren"
 
 msgid "Import is unavailable for this archive format."
 msgstr "Der Import ist für dieses Archivformat nicht verfügbar."
@@ -17970,7 +17967,7 @@ msgid "Only create support if it lies in a support enforcer."
 msgstr "Stützen nur erzeugen, wenn sie in einem Stützenverstärker liegen."
 
 msgid "Only lift"
-msgstr "Nur Hub"
+msgstr "nur Hub"
 
 msgid "Only valid font can be added to style."
 msgstr "Nur eine gültige Schriftart kann dem Stil hinzugefügt werden."

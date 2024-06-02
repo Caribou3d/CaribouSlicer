@@ -7850,7 +7850,7 @@ msgstr "Ganzes Wort"
 
 #: ../src/html/helpwnd.cpp:534
 msgid "Whole words only"
-msgstr "Nur ganze Worte"
+msgstr "nur ganze Worte"
 
 #: ../src/univ/themes/win32.cpp:1102
 msgid "Win32 theme"
