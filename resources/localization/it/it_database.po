@@ -8359,7 +8359,7 @@ msgstr "Lo spessore minimo del guscio superiore è di %1% mm."
 msgid "Minimum top width for infill"
 msgstr "Larghezza minima superiore per il riempimento"
 
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr "Spostamento minimo dopo"
 
 msgid "Minimum travel after retraction"

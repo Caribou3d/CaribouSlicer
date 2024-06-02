@@ -5423,7 +5423,7 @@ msgstr ""
 #  translation: Avance mínimo de movimiento
 # 8    changes: Minimum feedrates
 #  translation: Avances míninos
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 

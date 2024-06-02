@@ -545,7 +545,7 @@ msgstr ""
 #  translation: 최소 이송 속도
 # 8    changes: Minimum feedrates
 #  translation: 최소 공급률
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

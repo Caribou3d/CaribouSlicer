@@ -2558,7 +2558,7 @@ msgstr "Aktuelles Verzeichnis:"
 #: ../src/propgrid/advprops.cpp:896 ../src/propgrid/advprops.cpp:1574
 #: ../src/propgrid/advprops.cpp:1612
 msgid "Custom"
-msgstr "Benutzerdefiniert"
+msgstr "benutzerdefiniert"
 
 #: ../src/gtk/print.cpp:217
 msgid "Custom size"
@@ -3783,7 +3783,7 @@ msgstr "Erste(r)"
 
 #: ../src/common/prntbase.cpp:1548
 msgid "First page"
-msgstr "Erste Seite"
+msgstr "ersteSeite"
 
 #: ../src/richtext/richtextsizepage.cpp:521
 msgid "Fixed"
@@ -4042,7 +4042,7 @@ msgstr "%s ausblenden"
 
 #: ../src/osx/menu_osx.cpp:579
 msgid "Hide Others"
-msgstr "Andere ausblenden"
+msgstr "andereausblenden"
 
 #: ../src/generic/infobar.cpp:84
 msgid "Hide this notification message."
@@ -5102,7 +5102,7 @@ msgstr "NeuerName"
 
 #: ../src/common/prntbase.cpp:1567 ../src/html/helpwnd.cpp:665
 msgid "Next page"
-msgstr "Nächste Seite"
+msgstr "nächste Seite"
 
 #: ../include/wx/msgdlg.h:277 ../src/common/stockitem.cpp:177
 #: ../src/motif/msgdlg.cpp:196
@@ -7850,7 +7850,7 @@ msgstr "Ganzes Wort"
 
 #: ../src/html/helpwnd.cpp:534
 msgid "Whole words only"
-msgstr "Nur ganze Worte"
+msgstr "nur ganze Worte"
 
 #: ../src/univ/themes/win32.cpp:1102
 msgid "Win32 theme"

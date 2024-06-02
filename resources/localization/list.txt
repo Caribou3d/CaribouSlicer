@@ -44,7 +44,9 @@ src/slic3r/GUI/GUI_ObjectLayers.cpp
 src/slic3r/GUI/GUI_ObjectList.cpp
 src/slic3r/GUI/GUI_ObjectManipulation.cpp
 src/slic3r/GUI/GUI_ObjectSettings.cpp
+src/slic3r/GUI/GUI_Tags.cpp
 src/slic3r/GUI/GUI_Preview.cpp
+src/slic3r/GUI/HintNotification.cpp
 src/slic3r/GUI/ImGuiWrapper.cpp
 src/slic3r/GUI/Jobs/ArrangeJob.cpp
 src/slic3r/GUI/Jobs/Job.cpp

@@ -457,7 +457,7 @@ msgstr "Retrazione minima"
 msgid "Minimum shell thickness"
 msgstr "Minimo spessore guscio"
 
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr "Spostamento minimo dopo"
 
 msgid "Minimum width"
