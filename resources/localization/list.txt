@@ -6,6 +6,7 @@ src/slic3r/GUI/BedShapeDialog.hpp
 src/slic3r/GUI/BonjourDialog.cpp
 src/slic3r/GUI/ButtonsDescription.cpp
 src/slic3r/GUI/CalibrationAbstractDialog.cpp
+src/slic3r/GUI/CalibrationBedDialog.cpp
 src/slic3r/GUI/CalibrationBridgeDialog.cpp
 src/slic3r/GUI/CalibrationCubeDialog.cpp
 src/slic3r/GUI/CalibrationFirstLayerDialog.cpp
