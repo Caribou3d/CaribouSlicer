@@ -503,7 +503,7 @@ msgstr ""
 #  translation: 最小移動進給率
 # 8    changes: Minimum feedrates
 #  translation: 最小進給率
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

@@ -1412,7 +1412,7 @@ msgid "Avoid crossing perimeters"
 msgstr "Kreuzen der Wände vermeiden"
 
 msgid "Avoid crossing perimeters - Max detour length"
-msgstr "Kreuzen der Wände vermeiden - Maximale Umleitungslänge"
+msgstr "Kreuzen der Wände vermeiden - max. Umleitungslänge"
 
 msgid "Avoid top surface for travels"
 msgstr "vermeide die Überfahrt der Oberseite"
@@ -3006,10 +3006,10 @@ msgid "Dere."
 msgstr "Dere."
 
 msgid "Deretraction"
-msgstr "Wiedereinzugsgeschwindigkeit"
+msgstr "Wiedereinzug"
 
 msgid "Deretraction Speed"
-msgstr "Wiedereinzugsgeschwindigkeit"
+msgstr "Wiedereinzug"
 
 msgid "Deretractions"
 msgstr "Wiedereinzüge"
@@ -7450,6 +7450,9 @@ msgstr "min. Anfang-Belichtungszeit"
 msgid "Minimum layer height. Limit for better quality/layer adhesion."
 msgstr "min. Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
+msgid "Minimum movement"
+msgstr "Minimalbewegungen"
+
 msgid "Minimum perimeter width"
 msgstr "min. Umfangsbreite"
 
@@ -7488,9 +7491,6 @@ msgstr "Die Mindeststärke der Oberschale beträgt %1% mm."
 
 msgid "Minimum top width for infill"
 msgstr "min. obere Breite für die Füllung"
-
-msgid "Minimum travel after"
-msgstr "Minimalbewegung nach"
 
 msgid "Minimum travel after retraction"
 msgstr "Minimalbewegung nach Einziehen"
@@ -7858,7 +7858,7 @@ msgid "No errors detected"
 msgstr "Keine Fehler gefunden"
 
 msgid "No extrusion"
-msgstr "Keine Extrusion"
+msgstr "keine Extrusion"
 
 msgid "No extrusions were generated for objects."
 msgstr "Es wurden keine Extrusionen für Objekte erzeugt."
@@ -12391,7 +12391,7 @@ msgid ""
 "The speed for loading of a filament into extruder after retraction (this "
 "only applies to the extruder motor). If left as zero, the retraction speed "
 "is used."
-msgstr "Die Geschwindigkeit, mit der ein Filament nach dem Einzug wieder in den Extruder vorgeschoben wird. Falls null, wird die Einzugsgeschwindigkeit verwendet."
+msgstr "Die Geschwindigkeit, mit der ein Filament nach dem Rückzug wieder in den Extruder vorgeschoben wird. Falls null, wird die Rückzugsgeschwindigkeit verwendet."
 
 msgid "The speed for retractions (this only applies to the extruder motor)."
 msgstr "Die Geschwindigkeit für den Rückzug (dies gilt nur für den Extrudermotor)."
@@ -19374,7 +19374,7 @@ msgstr ""
 "Der Stealth-Modus wird nicht angewendet und ist deaktiviert."
 
 msgid "The speed for loading of a filament into extruder after retraction (it only applies to the extruder motor). If left to zero, the retraction speed is used."
-msgstr "Die Geschwindigkeit, mit der ein Filament nach dem Einzug wieder in den Extruder vorgeschoben wird. Falls null, wird die Einzugsgeschwindigkeit verwendet."
+msgstr "Die Geschwindigkeit, mit der ein Filament nach dem Rückzug wieder in den Extruder vorgeschoben wird. Falls null, wird die Rückzugsgeschwindigkeit verwendet."
 
 msgid "The speed for retractions (it only applies to the extruder motor)."
 msgstr "Die Einzugsgeschwindigkeit (sie betrifft nur den Extruderantrieb)."

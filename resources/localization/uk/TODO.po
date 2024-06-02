@@ -554,7 +554,7 @@ msgstr ""
 #  translation: Мінімальна швидкість подачі
 # 8    changes: Minimum feedrates
 #  translation: Мінімальна швидкість подачі
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

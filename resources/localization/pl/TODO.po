@@ -560,7 +560,7 @@ msgstr ""
 #  translation: Minimalna prędkość posuwu ruchu jałowego
 # 8    changes: Minimum feedrates
 #  translation: Minimalna prędkość posuwu
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

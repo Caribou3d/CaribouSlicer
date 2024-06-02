@@ -523,7 +523,7 @@ msgstr ""
 #  translation: Скорость подачи при минимальных перемещениях
 # 8    changes: Minimum feedrates
 #  translation: Минимальная скорость (#define DEFAULT_MINIMUMFEEDRATE и #define DEFAULT_MINTRAVELFEEDRATE)
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

@@ -530,7 +530,7 @@ msgstr ""
 #  translation: Taxa de alimentação mínima ao viajar
 # 8    changes: Minimum feedrates
 #  translation: Velocidades alimentação mínimos
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

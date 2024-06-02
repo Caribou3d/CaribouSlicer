@@ -1426,7 +1426,7 @@ msgstr ""
 #  translation: Minimális utazási előtolás
 # 8    changes: Minimum feedrates
 #  translation: Minimális adagolási sebességek
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 

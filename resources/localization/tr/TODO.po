@@ -513,7 +513,7 @@ msgstr ""
 #  translation: En düşük boşta ilerleme hızı
 # 8    changes: Minimum feedrates
 #  translation: En düşük besleme hızı
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29

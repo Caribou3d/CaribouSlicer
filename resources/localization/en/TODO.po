@@ -11312,7 +11312,7 @@ msgid "Minimum top width for infill"
 msgstr ""
 
 #: ../../ui_layout/default/extruder.ui
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 

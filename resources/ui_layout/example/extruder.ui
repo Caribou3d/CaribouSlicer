@@ -27,7 +27,7 @@ group:Retraction
         setting:idx:label$Deretraction:deretract_speed
     end_line
     setting:idx:retract_restart_extra
-    line:Minimum travel after
+    line:Minimum movement
         setting:idx:label$Retraction:retract_before_travel
         setting:idx:label$Lift:retract_lift_before_travel
     end_line

@@ -1477,7 +1477,7 @@ msgstr ""
 #  translation: Vitesse minimum en déplacement
 # 8    changes: Minimum feedrates
 #  translation: Vitesses minimums
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 

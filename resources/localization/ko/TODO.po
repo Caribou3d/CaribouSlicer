@@ -479,7 +479,7 @@ msgstr ""
 #: ../../ui_layout/default/extruder.ui : l31
 #Similar to me: Lift
 # 1    changes: Left
-#  translation: 왼쪽 
+#  translation: 왼쪽
 msgid "Lift"
 msgstr ""
 
@@ -530,7 +530,7 @@ msgstr ""
 #  translation: 최소 이송 속도
 # 8    changes: Minimum feedrates
 #  translation: 최대 이송속도
-msgid "Minimum travel after"
+msgid "Minimum movement"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l29
