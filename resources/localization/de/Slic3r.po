@@ -1518,7 +1518,7 @@ msgid "Behavior"
 msgstr "Verhalten"
 
 msgid "Below Z"
-msgstr "Unter Z"
+msgstr "unter Z"
 
 msgid "Best surface quality"
 msgstr "Beste Oberflächenqualität"
@@ -1527,13 +1527,13 @@ msgid "Better bonding"
 msgstr "bessere Bindung"
 
 msgid "Between extrusion role change G-code"
-msgstr "Zwischen Extrusion Rolle ändern G-Code"
+msgstr "G-Code zwischen Extrusionsarten"
 
 msgid "Between objects G-code"
 msgstr "G-Code zwischen Objekten"
 
 msgid "Between objects G-code (for sequential printing)"
-msgstr "G-Code zwischen Objekten (Sequentielles Drucken)"
+msgstr "G-Code zwischen Objekten (sequentielles Drucken)"
 
 msgid "Big"
 msgstr "groß"
@@ -2222,7 +2222,7 @@ msgid "Colors"
 msgstr "Farben"
 
 msgid "Colour Change G-code"
-msgstr "Farbe ändern G-Code"
+msgstr "G-Code für Farbwechsel "
 
 msgid "Combine infill every"
 msgstr "Füllung kombinieren alle"
@@ -2459,7 +2459,7 @@ msgid "Cooling"
 msgstr "Kühlung"
 
 msgid "Cooling fan"
-msgstr "Kühlgebläse"
+msgstr "Lüfter"
 
 msgid "Cooling moves are gradually accelerated towards this speed. "
 msgstr "Die Abkühlungsbewegungen werden allmählich auf diese Geschwindigkeit beschleunigt. "
@@ -4073,7 +4073,7 @@ msgid "Extra skirt lines on the first layer."
 msgstr "zusätzliche Schürzenlinien auf der ersten Schicht."
 
 msgid "Extra unretraction"
-msgstr "Extra Retraktion"
+msgstr "zusätzlicher Rückzug"
 
 msgid "Extra Wipe for external perimeters"
 msgstr "zusätzliches wischen für Außenwände"
@@ -4119,7 +4119,7 @@ msgid "Extruder decimals"
 msgstr "Extruder-Dezimalstellen"
 
 msgid "Extruder fan offset"
-msgstr "Versatz des Extrudergebläses"
+msgstr "Extruderlüfter"
 
 msgid ""
 "Extruder nozzle temperature for first layer. If you want to control "
@@ -4133,13 +4133,13 @@ msgid ""
 msgstr "Extruderdüsentemperatur für Schichten nach der ersten. Setzen Sie den Wert auf Null, um die Befehle zur Temperatursteuerung im Ausgabe-G-Code zu deaktivieren."
 
 msgid "Extruder offset"
-msgstr "Extruder Versatz"
+msgstr "Extruderposition"
 
 msgid "Extruder retraction calibration"
 msgstr "Kalibrierung des Extruderrückzugs"
 
 msgid "Extruder temp offset"
-msgstr "Extruder-Temperatur Versatz"
+msgstr "Extruder-Temperatur"
 
 msgid "Extruders"
 msgstr "Extruder"
@@ -4658,7 +4658,7 @@ msgid "for everything"
 msgstr "für alles"
 
 msgid "for external perimeters"
-msgstr "für äußere Perimeter"
+msgstr "für äußere Wände"
 
 msgid "For more information please visit Prusa wiki page:"
 msgstr "Für weitere Informationen besuchen Sie bitte die Prusa Wiki-Seite:"
@@ -6549,7 +6549,7 @@ msgid ""
 msgstr "Lizenzvereinbarungen für alle folgenden Programme (Bibliotheken) sind Teil der Anwendungslizenzvereinbarung"
 
 msgid "Lift"
-msgstr "Aufzug"
+msgstr "Z-Anhebung"
 
 msgid "Lift only on"
 msgstr "nur anheben"
@@ -6563,7 +6563,7 @@ msgid "Lift Z"
 msgstr "Z anheben"
 
 msgid "Lift z enforcement"
-msgstr "Erzwinge Anhebung von Z"
+msgstr "erzwinge Anhebung von Z"
 
 msgid "Lightning"
 msgstr "Lightning"
@@ -7141,7 +7141,7 @@ msgid "Maximum feedrates"
 msgstr "max. Vorschub"
 
 msgid "Maximum G1 per second"
-msgstr "Maximal G1 pro Sekunde"
+msgstr "max. G1 pro Sekunde"
 
 msgid "Maximum initial exposure time"
 msgstr "max. Anfang-Belichtungszeit"
@@ -7351,7 +7351,7 @@ msgid "Min height"
 msgstr "min. Höhe"
 
 msgid "Min height for travel"
-msgstr "min. Höhe für Reisen"
+msgstr "min. Höhe für Fahrten"
 
 msgid "Min layer height"
 msgstr "min. Schichthöhe"
@@ -8216,7 +8216,7 @@ msgstr ""
 "Beachten Sie, dass Sie bei den Zahlenkontrollen den Mauszeiger über die Pfeile bewegen müssen, um die benutzerdefinierte QuickInfo zu erhalten. Außerdem behält das Dialogfeld den Fokus, gibt ihn aber zurück, wenn es geschlossen wird. Er wird nicht angezeigt, wenn Sie das Feld bearbeiten."
 
 msgid "On surfaces"
-msgstr "Auf Oberflächen"
+msgstr "auf Oberflächen"
 
 msgid ""
 "On the gcode viewer window, how many decimals are used to separate colors? "
@@ -8825,7 +8825,7 @@ msgid "Pause print (\"%1%\")"
 msgstr "Druck pausieren (\"%1%\")"
 
 msgid "Pause Print G-code"
-msgstr "Druckpausen G-Code"
+msgstr "G-Code für Druckpausen"
 
 msgid ""
 "Percent of a flow rate relative to object's normal layer height. It's the "
@@ -9812,7 +9812,7 @@ msgid "Retraction Length (Toolchange)"
 msgstr "Rückzugslänge (Werkzeugwechsel)"
 
 msgid "Retraction Speed"
-msgstr "Rückzugsgeschwindigkeit"
+msgstr "Rückzug"
 
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr "Rückzug, wenn das Werkzeug deaktiviert ist (weiterführende Einstellungen für Multi-Extruder-Einrichtungen)"
@@ -11869,7 +11869,7 @@ msgid "Temperatures"
 msgstr "Temperaturen"
 
 msgid "Template Custom G-code"
-msgstr "Vorlage Benutzerdefinierter G-Code"
+msgstr "Vorlage benutzerdefinierter G-Code"
 
 msgid "Test"
 msgstr "Test"
@@ -13314,7 +13314,7 @@ msgstr "Dies kann zu Problemen bei der Visualisierung des G-Codes und der Schät
 msgid ""
 "This offset wil be added to all fan values set in the filament properties. "
 "It won't make them go higher than 100% nor lower than 0%."
-msgstr "Dieser Offset wird zu allen in den Filamenteigenschaften eingestellten Ventilatorwerten addiert. Er bewirkt nicht, dass sie höher als 100% noder niedriger als 0% werden."
+msgstr "Dieser Versatz wird zu allen in den Filamenteigenschaften eingestellten Ventilatorwerten addiert. Er bewirkt nicht, dass sie höher als 100% noder niedriger als 0% werden."
 
 msgid ""
 "This offset will be added to all extruder temperatures set in the filament "
@@ -13323,7 +13323,7 @@ msgid ""
 "extruder_temperature_offset{initial_extruder}}'\n"
 "instead of 'M104 S{first_layer_temperature}' in the start_gcode"
 msgstr ""
-"Dieser Offset wird zu allen Extrudertemperaturen addiert, die in den Filamenteinstellungen festgelegt wurden.\n"
+"Dieser Versatz wird zu allen Extrudertemperaturen addiert, die in den Filamenteinstellungen festgelegt wurden.\n"
 "Beachten Sie, dass Sie 'M104 S{first_layer_temperature{initial_extruder} + extruder_temperature_offset{initial_extruder}}' einstellen sollten\n"
 "anstelle von 'M104 S{first_layer_temperature}' im start_gcode"
 
@@ -13473,7 +13473,7 @@ msgid ""
 "This setting allows you to modify the time estimation by a % amount. As "
 "Slic3r only uses the Marlin algorithm, it's not precise enough if another "
 "firmware is used."
-msgstr "Mit dieser Einstellung können Sie die Zeitschätzung um einen % a-Mount verändern. Da Slic3r nur den Marlin-Algorithmus verwendet, ist er nicht genau genug, wenn eine andere Firmware verwendet wird."
+msgstr "Mit dieser Einstellung können Sie die Zeitschätzung um einen %-Wert verändern. Da Slic3r nur den Marlin-Algorithmus verwendet, ist er nicht genau genug, wenn eine andere Firmware verwendet wird."
 
 msgid ""
 "This setting allows you to modify the time estimation by a flat amount for "
@@ -13542,7 +13542,7 @@ msgstr ""
 msgid ""
 "This setting allows you to set how much an hour of printing time is costing "
 "you in printer maintenance, loan, human albor, etc."
-msgstr "Mit dieser Einstellung können Sie festlegen, wie viel eine Stunde Druckzeit Sie in Form von Druckerwartung, Leihgebühren, menschlichem Albor usw. kostet."
+msgstr "Mit dieser Einstellung können Sie festlegen, wie viel eine Stunde Druckzeit Sie in Form von Druckerwartung, Leihgebühren, Arbeitszeit usw. kostet."
 
 msgid ""
 "This setting allows you to set the maximum flowrate for your print, and so "
@@ -13817,7 +13817,7 @@ msgid "time"
 msgstr "Zeit"
 
 msgid "Time cost"
-msgstr "Zeitaufwand"
+msgstr "Aufwand"
 
 msgid "Time estimation compensation"
 msgstr "Kompensation der Zeitschätzung"
@@ -14966,7 +14966,7 @@ msgid "Wipe tower Y"
 msgstr "Turm wischen Y"
 
 msgid "Wipe while retracting"
-msgstr "Während Rückzug reinigen"
+msgstr "während Rückzug reinigen"
 
 msgid ""
 "With bowden extruders, it may be wise to do some amount of quick retract "
