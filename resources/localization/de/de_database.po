@@ -14332,7 +14332,7 @@ msgid "Use pad"
 msgstr "Grundschicht benutzen"
 
 msgid "Use part fan to cool hotend"
-msgstr "verwende den Teillüfter zur Kühlung der Heizeinheit"
+msgstr "verwende den Bauteillüfter zur Kühlung der Heizeinheit"
 
 msgid "Use perspective camera"
 msgstr "Benutze perspektivische Kamera"
