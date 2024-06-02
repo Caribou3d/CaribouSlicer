@@ -1634,7 +1634,7 @@ msgid "Bridges"
 msgstr "Überbrückungen"
 
 msgid "Bridges fan speed"
-msgstr "Brückenlüftergeschwindigkeit"
+msgstr "Brücken"
 
 msgid "Bridging"
 msgstr "Überbrückung"
@@ -2865,7 +2865,7 @@ msgid "default SLA print profile"
 msgstr "Standard-SLA-Druckprofil"
 
 msgid "Default speed"
-msgstr "Standard Geschwindigkeit"
+msgstr "Standard-Geschwindigkeit"
 
 msgid ""
 "Default speed for the fan, to set the speed for features where there is no "
@@ -3210,7 +3210,7 @@ msgid ""
 msgstr "Abstand der Extruderspitze von der Position, an der das Filament beim Entladen abgestellt wird. Dies sollte mit dem Wert in der Drucker-Firmware übereinstimmen. "
 
 msgid "Distribution"
-msgstr "Verteilung"
+msgstr "Flussrate"
 
 msgid "Divide by zero"
 msgstr "Division durch Null"
@@ -3755,7 +3755,7 @@ msgid "even layers"
 msgstr "Schichten mit gerader Zahl"
 
 msgid "Even-odd"
-msgstr "Gerade-ungerade"
+msgstr "gerade-ungerade"
 
 msgid "Event"
 msgstr "Ereignis"
@@ -4252,7 +4252,7 @@ msgid "Fast"
 msgstr "Schnell"
 
 msgid "Fast mode"
-msgstr "Schneller Modus"
+msgstr "schneller Modus"
 
 msgid "Fast tilt"
 msgstr "Schnelles Kippen"
@@ -4874,13 +4874,13 @@ msgid "Gap fill acceleration"
 msgstr "beim Füllen von Lücken"
 
 msgid "Gap fill fan speed"
-msgstr "Lüfterdrehzahl für Lückenfüllung"
+msgstr "Lückenfüllung"
 
 msgid "Gap fill overlap"
 msgstr "Überlappung Lückenfüllung"
 
 msgid "Gap fill speed"
-msgstr "Geschwindigkeit der Lückenfüllung"
+msgstr "Lückenfüllung"
 
 msgid "Gap Fill threshold"
 msgstr "Schwelle Lückenfüllung"
@@ -6164,7 +6164,7 @@ msgid "Internal infill"
 msgstr "internes Infill"
 
 msgid "Internal Infill fan speed"
-msgstr "interne Infill-Lüftergeschwindigkeit"
+msgstr "Füllung"
 
 msgid "Internal perimeter"
 msgstr "innere Wände"
@@ -7466,7 +7466,7 @@ msgid "Minimum layer height. Limit for better quality/layer adhesion."
 msgstr "min. Schichthöhe. Grenze für bessere Qualität/Schichthaftung."
 
 msgid "Minimum movement"
-msgstr "Minimalbewegungen"
+msgstr "min. Bewegungen"
 
 msgid "Minimum perimeter width"
 msgstr "min. Umfangsbreite"
@@ -7897,7 +7897,7 @@ msgid "No solid infill over perimeters"
 msgstr "keine massive Füllung über den Wänden"
 
 msgid "No sparse layers (EXPERIMENTAL)"
-msgstr "Keine spärlichen Schichten (EXPERIMENTELL)"
+msgstr "keine spärlichen Schichten (EXPERIMENTELL)"
 
 msgid "No support points will be placed closer than this threshold."
 msgstr "Es werden keine Stützpunkte näher als dieser Schwellenwert platziert."
@@ -8307,7 +8307,7 @@ msgid "Only lift Z"
 msgstr "nur Z anheben"
 
 msgid "Only lift Z above"
-msgstr "Z nur Anheben über"
+msgstr "Z nur anheben über"
 
 msgid "Only lift Z below"
 msgstr "Z anheben nur unter"
@@ -8633,7 +8633,7 @@ msgid "Overhangs max slope"
 msgstr "Überhänge max. Neigung"
 
 msgid "Overhangs Perimeter fan speed"
-msgstr "Überhänge Lüftergeschwindigkeit am Rand"
+msgstr "Überhänge an Wänden"
 
 msgid "Overhangs speed"
 msgstr "Überhänge Geschwindigkeit"
@@ -8870,7 +8870,7 @@ msgid "Perimeter extruder"
 msgstr "Extruder für Wände"
 
 msgid "Perimeter fan speed"
-msgstr "Geschwindigkeit des Perimeterlüfters"
+msgstr "Wände"
 
 msgid "Perimeter generator"
 msgstr "Wandgenerator"
@@ -10623,7 +10623,7 @@ msgid "Shift objects to bed"
 msgstr "Objekte auf Bett verschieben"
 
 msgid "Short layer time - began to increase base fan speed"
-msgstr "Kurze Schichtzeit - begann, die Geschwindigkeit des Basisgebläses zu erhöhen"
+msgstr "Kurze Schichtzeit - Beginn, die Standard-Lüftergeschwindigkeit zu erhöhen"
 
 msgid "Show"
 msgstr "Anzeigen"
@@ -11084,7 +11084,7 @@ msgid "Solid infill extruder"
 msgstr "Extruder für müssive Füllung"
 
 msgid "Solid Infill fan speed"
-msgstr "massive Füllung Gebläsegeschwindigkeit"
+msgstr "Füllung"
 
 msgid "Solid infill is area below"
 msgstr "massive Füllung ist die Fläche darunter"
@@ -11646,7 +11646,7 @@ msgid "Support material extruder"
 msgstr "Extruder für Stützmaterial"
 
 msgid "Support Material fan speed"
-msgstr "Unterstützung Material Lüftergeschwindigkeit"
+msgstr "Stützen"
 
 msgid "Support material interface"
 msgstr "Schnittstellenmaterial zum Stützmaterial"
@@ -11801,7 +11801,7 @@ msgid ""
 msgstr "Stützschichten mit den Druckschichten des Objekts synchronisieren. Dies ist nützlich bei Multi-Material-Druckern, bei denen der Wechsel des Extruders kostenaufwendig ist."
 
 msgid "Synchronize with object layers"
-msgstr "Mit Objektschichten synchronisieren"
+msgstr "mit Objektschichten synchronisieren"
 
 msgid "System &Info"
 msgstr "System&informationen"
@@ -14066,7 +14066,7 @@ msgid "Translation"
 msgstr "Position"
 
 msgid "Travel"
-msgstr "Eilgang"
+msgstr "Fahrt"
 
 msgid "Travel acceleration"
 msgstr "Fahrbewegungen"
@@ -14292,7 +14292,7 @@ msgstr "obere Temperatur:"
 msgid ""
 "Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
 "close all holes in the model."
-msgstr "Verwenden Sie \"Gerade-ungerade\" für 3DLabPrint-Flugzeugmodelle. Verwenden Sie \"Löcher schließen\", um alle Löcher im Modell zu schließen."
+msgstr "Verwenden Sie \"gerade-ungerade\" für 3DLabPrint-Flugzeugmodelle. Verwenden Sie \"Löcher schließen\", um alle Löcher im Modell zu schließen."
 
 msgid "Use also for time estimate"
 msgstr "auch für Zeitschätzungen verwenden"
@@ -14347,7 +14347,7 @@ msgid "Use pad"
 msgstr "Grundschicht benutzen"
 
 msgid "Use part fan to cool hotend"
-msgstr "Verwenden den Teillüfter zur Kühlung der Heizeinheit"
+msgstr "verwende den Teillüfter zur Kühlung der Heizeinheit"
 
 msgid "Use perspective camera"
 msgstr "Benutze perspektivische Kamera"
@@ -14529,7 +14529,7 @@ msgid "Vertical slider - Move active thumb Up"
 msgstr "Vertikaler Schieberegler - Aktiven Schieber nach oben bewegen"
 
 msgid "Very short layer time - began to decrease extrusion rate"
-msgstr "Sehr kurze Schichtzeit - begann, die Extrusionsrate zu verringern"
+msgstr "Sehr kurze Schichtzeit - Beginn, die Extrusionsrate zu verringern"
 
 msgid "View"
 msgstr "Ansicht"
@@ -14987,7 +14987,7 @@ msgstr ""
 "Dies ist nützlich, um einen ABS- oder ASA-Druck vor Verformung und Ablösung vom Druckbett aufgrund von Windzug zu schützen."
 
 msgid "With sheath around the support"
-msgstr "Mit Umhüllung der Stützen"
+msgstr "mit Umhüllung der Stützen"
 
 msgid "World coordinates"
 msgstr "Weltkoordinaten"

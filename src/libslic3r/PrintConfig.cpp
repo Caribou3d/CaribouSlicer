@@ -1249,6 +1249,7 @@ void PrintConfigDef::init_fff_params()
     def->min                = -1;
     def->max                = 100;
     def->is_vector_extruder = true;
+    def->sidetext = L("%");
     def->set_default_value(new ConfigOptionInts({-1}));
     def->aliases = { "min_fan_speed" }; // only if "fan_always_on"
 
