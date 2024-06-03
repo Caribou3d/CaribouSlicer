@@ -1343,7 +1343,6 @@ static inline std::vector<const PrintInstance*> sort_object_instances_by_max_y(c
             BoundingBox bb(poly.points);
             Vec2crd offset = object->instances()[i].shift - object->center_offset();
             bb.translate(offset.x(), offset.y());
-            std::cout<<"bbobj (mod*inst) "<<i<<" : x:"<<unscaled(bb.min.x())<<"->"<<unscaled(bb.max.x())<<" ; y:"<<unscaled(bb.min.y())<<"->"<<unscaled(bb.max.y())<<"\n";
             map_min_y[instances.back()] = bb.min.y();
         }
     }
@@ -1870,6 +1869,11 @@ void GCode::_do_export(Print& print_mod, GCodeOutputStream &file, ThumbnailsGene
         start_filament_gcode = this->placeholder_parser_process("start_filament_gcode", m_config.start_filament_gcode.get_at(initial_extruder_id), initial_extruder_id, &config);
     }
     std::string start_all_gcode = start_gcode + "\"n" + start_filament_gcode;
+
+    // Set chamber temperature
+    if((initial_extruder_id != (uint16_t)-1) && !this->config().start_gcode_manual && print.config().chamber_temperature.get_at(initial_extruder_id) != 0)
+         this->_print_first_layer_chamber_temperature(preamble_to_put_start_layer, print, start_all_gcode, initial_extruder_id, false);
+
     // Set bed temperature if the start G-code does not contain any bed temp control G-codes.
     if((initial_extruder_id != (uint16_t)-1) && !this->config().start_gcode_manual && this->config().gcode_flavor != gcfKlipper && print.config().first_layer_bed_temperature.get_at(initial_extruder_id) != 0)
          this->_print_first_layer_bed_temperature(preamble_to_put_start_layer, print, start_all_gcode, initial_extruder_id, false);
@@ -2171,6 +2175,8 @@ void GCode::_do_export(Print& print_mod, GCodeOutputStream &file, ThumbnailsGene
             }
         }
         file.writeln(this->placeholder_parser_process("end_gcode", print.config().end_gcode, m_writer.tool()->id(), &config));
+    } else {
+        assert(false); // what is the use-case?
     }
     file.write(m_writer.update_progress(m_layer_count, m_layer_count, true)); // 100%
     file.write(m_writer.postamble());
@@ -2708,6 +2714,28 @@ void GCode::_print_first_layer_bed_temperature(std::string &out, const Print &pr
     // the custom start G-code emited these.
     std::string set_temp_gcode = m_writer.set_bed_temperature(temp, wait);
     if ( !temp_set_by_gcode)
+        out += (set_temp_gcode);
+}
+
+// Write 1st layer chamber temperatures into the G-code.
+// Only do that if the start G-code does not already contain any M-code controlling an extruder temperature.
+// M141 - Set chamber Temperature
+// M191 - Set chamber Temperature and Wait
+void GCode::_print_first_layer_chamber_temperature(std::string &out, const Print &print, const std::string &gcode, uint16_t first_printing_extruder_id, bool wait)
+{
+    // Initial bed temperature based on the first extruder.
+    int  temp = print.config().chamber_temperature.get_at(first_printing_extruder_id);
+    //disable bed temp control if 0
+    if (temp == 0) return;
+    // Is the bed temperature set by the provided custom G-code?
+    int  temp_by_gcode     = -1;
+    bool temp_set_by_gcode = custom_gcode_sets_temperature(gcode, 141, 191, false, temp_by_gcode);
+    if (temp_set_by_gcode && temp_by_gcode >= 0 && temp_by_gcode < 1000)
+        temp = temp_by_gcode;
+    // Always call m_writer.set_chamber_temperature() so it will set the internal "current" state of the chamber temp as if
+    // the custom start G-code emited these.
+    std::string set_temp_gcode = m_writer.set_chamber_temperature(temp, wait);
+    if (!temp_set_by_gcode && !set_temp_gcode.empty())
         out += (set_temp_gcode);
 }
 
@@ -4806,7 +4834,8 @@ std::string GCode::extrude_loop(const ExtrusionLoop &original_loop, const std::s
             throw Slic3r::SlicingError(_(L("Error while writing gcode: two points are at the same position. Please send the .3mf project to the dev team for debugging. Extrude loop: wipe.")));
         }
 
-        gcode += ";" + GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Wipe_Start) + "\n";
+        // start the wipe. Note: you have to end it! (no return before emmitting it)
+        std::string start_wipe = ";" + GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Wipe_Start) + "\n";
         //extra wipe before the little move.
         if (dist_wipe_extra_perimeter > 0) {
             coordf_t wipe_dist = scale_(dist_wipe_extra_perimeter);
@@ -4848,6 +4877,10 @@ std::string GCode::extrude_loop(const ExtrusionLoop &original_loop, const std::s
                 for (const Point& pt : path.polyline.get_points()) {
                     prev_point = current_point;
                     current_point = pt;
+                    if (!start_wipe.empty()) {
+                        gcode += start_wipe;
+                        start_wipe = "";
+                    }
                     gcode += m_writer.travel_to_xy(this->point_to_gcode(pt), 0.0, config().gcode_comments ? "; extra wipe" : "");
                     this->set_last_pos(pt);
                 }
@@ -4883,7 +4916,7 @@ std::string GCode::extrude_loop(const ExtrusionLoop &original_loop, const std::s
         const double setting_max_depth = (m_config.wipe_inside_depth.get_abs_value(m_writer.tool()->id(), nozzle_diam));
         coordf_t dist   = setting_max_depth <= 0 ? scale_d(nozzle_diam) / 2 : scale_d(setting_max_depth);
         if (nozzle_diam != 0 && setting_max_depth > nozzle_diam * 0.55)
-            dist = coordf_t(check_wipe::max_depth(wipe_paths, scale_t(setting_max_depth), scale_t(nozzle_diam),
+            dist = coordf_t(check_wipe::max_depth(wipe_paths, scale_t(setting_max_depth), scale_t(nozzle_diam), 
                 [current_pos, current_point, vec_dist, vec_norm, angle, sin_a](coord_t dist)->Point {
                     Point pt = (current_pos + vec_dist * (dist / (vec_norm * sin_a))).cast<coord_t>();
                     pt.rotate(angle, current_point);
@@ -4894,10 +4927,13 @@ std::string GCode::extrude_loop(const ExtrusionLoop &original_loop, const std::s
         Point pt_inside = (/*(nd >= vec_norm) ? next_pos : */ (current_pos + vec_dist * ( dist / (vec_norm * sin_a))))
                               .cast<coord_t>();
         pt_inside.rotate(angle, current_point);
-        Point aiuhazudp = m_last_pos;
 
         if (EXTRUDER_CONFIG_WITH_DEFAULT(wipe_inside_end, true)) {
             if (!m_wipe.enable) {
+                if (!start_wipe.empty()) {
+                    gcode += start_wipe;
+                    start_wipe = "";
+                }
                 // generate the travel move
                 gcode += m_writer.travel_to_xy(this->point_to_gcode(pt_inside), 0.0, "move inwards before travel");
                 this->set_last_pos(pt_inside);
@@ -5037,12 +5073,19 @@ std::string GCode::extrude_loop(const ExtrusionLoop &original_loop, const std::s
                     }
                     for (size_t pt_idx = 0; pt_idx < best_pt_idx; pt_idx++) { m_wipe.append(poly.points[pt_idx]); }
                 }
-
+                
+                if (!start_wipe.empty()) {
+                    gcode += start_wipe;
+                    start_wipe = "";
+                }
                 // generate the travel move
                 gcode += m_writer.travel_to_xy(this->point_to_gcode(start_point), 0.0, "move inwards before wipe");
                 this->set_last_pos(start_point);
             }
 
+        }
+        // if we started wiping, then end the wipe section.
+        if (start_wipe.empty()) {
             gcode += ";" + GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Wipe_End) + "\n";
         }
     }
@@ -6088,7 +6131,7 @@ std::string GCode::_before_extrude(const ExtrusionPath &path, const std::string 
     // compute speed here to be able to know it for travel_deceleration_use_target
     std::string speed_comment = "";
     speed = _compute_speed_mm_per_sec(path, speed, m_config.gcode_comments ? &speed_comment : nullptr);
-
+        
     if (m_config.travel_deceleration_use_target){
         if (travel_acceleration <= acceleration || travel_acceleration == 0 || acceleration == 0) {
             m_writer.set_travel_acceleration((uint32_t)floor(acceleration + 0.5));
