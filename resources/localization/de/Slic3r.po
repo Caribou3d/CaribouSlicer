@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-02 00:00\n"
-"PO-Revision-Date: 2024-06-02 00:00\n"
+"POT-Creation-Date: 2024-06-03 00:00\n"
+"PO-Revision-Date: 2024-06-03 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -1040,7 +1040,7 @@ msgid "Allow next color repetition"
 msgstr "Nächste Farbwiederholung erlauben"
 
 msgid "Allow only one skirt loop"
-msgstr "Erlauben Sie nur eine Rockschleife"
+msgstr "nur eine Schürzenlinie erlauben"
 
 msgid ""
 "Allow outermost perimeter to overlap itself to avoid the use of thin walls. "
@@ -1206,7 +1206,7 @@ msgid "Apply color change automatically"
 msgstr "Farbwechsel automatisch anwenden"
 
 msgid "Apply on"
-msgstr "Anwenden auf"
+msgstr "anwenden auf"
 
 msgid "Apply to all the remaining small objects being loaded."
 msgstr "Anwenden auf alle verbleibenden kleinen Objekte, die geladen werden."
@@ -1480,7 +1480,7 @@ msgid "Bed custom texture"
 msgstr "Druckbett individuelle Textur"
 
 msgid "Bed on thumbnail"
-msgstr "Bett auf dem Bild"
+msgstr "Druckbett auf dem Bild"
 
 msgid "Bed Shape"
 msgstr "Druckbettprofil"
@@ -1628,7 +1628,7 @@ msgid "Bridge type"
 msgstr "Brückenart"
 
 msgid "Bridged"
-msgstr "Überbrückt"
+msgstr "überbrückt"
 
 msgid "Bridges"
 msgstr "Überbrückungen"
@@ -1718,7 +1718,7 @@ msgid "but for %1% where the speed-up phase is skipped."
 msgstr "außer für %1%, wo die Beschleunigungsphase übersprungen wird."
 
 msgid "But on first layer"
-msgstr "Aber auf der ersten Ebene"
+msgstr "trotzdem auf der ersten Ebene"
 
 msgid ""
 "But since this version of %s we don't show this information in Printer "
@@ -2774,7 +2774,7 @@ msgid "Deadzone:"
 msgstr "Todeszone:"
 
 msgid "Decelerate with target acceleration"
-msgstr "Abbremsen mit Zielbeschleunigung"
+msgstr "abbremsen mit Zielbeschleunigung"
 
 msgid "Decimals for gcode viewer colors"
 msgstr "Dezimalzahlen für Gcode-Viewer-Farben"
@@ -3194,7 +3194,7 @@ msgid "Distance from object"
 msgstr "Entfernung vom Objekt"
 
 msgid "Distance Margin"
-msgstr "Abstand Marge"
+msgstr "Abstandsmarge"
 
 msgid ""
 "Distance of the 0,0 G-code coordinate from the front left corner of the "
@@ -3297,11 +3297,6 @@ msgstr "Brücken nicht unterstützen"
 
 msgid "Don't switch"
 msgstr "Wechseln Sie nicht"
-
-msgid ""
-"Don't wipe when you don't cross a perimeter. Need "
-"'only_retract_when_crossing_perimeters'and 'wipe' enabled."
-msgstr "Wischen Sie nicht, wenn Sie einen Umkreis nicht überqueren. Sie müssen 'only_retract_when_crossing_perimeters' und 'wipe' aktivieren."
 
 msgid "Downgrade"
 msgstr "Downgrade"
@@ -3543,7 +3538,7 @@ msgid "Enforce on first layer"
 msgstr "auf der ersten Schicht"
 
 msgid "Enforce overhangs speed"
-msgstr "Überhänge durchsetzen Geschwindigkeit"
+msgstr "Überhanggeschwindigkeit erzwingen"
 
 msgid "Enforce seam"
 msgstr "Naht erzwingen"
@@ -3565,12 +3560,6 @@ msgstr "In der Warteschlange"
 
 msgid "Ensure on bed"
 msgstr "Auf dem Bett sicherstellen"
-
-msgid ""
-"Ensure that the slicer won't add heating, fan, extruder... commands before "
-"or just after your start-gcode.If set to true, you have to write a good and "
-"complete start_gcode, as no checks are made anymore."
-msgstr "Stellen Sie sicher, dass der Slicer keine Heiz-, Lüfter-, Extruder-... Befehle vor oder direkt nach Ihrem start_gcode hinzufügt. Wenn Sie diese Option auf true setzen, müssen Sie einen guten und vollständigen start_gcode schreiben, da keine Überprüfungen mehr stattfinden."
 
 msgid "Ensure vertical shell thickness"
 msgstr "Stelle die vertikale Wandstärke sicher"
@@ -3854,7 +3843,7 @@ msgid "Export &G-code"
 msgstr "Export &G-Code"
 
 msgid "Export &Plate"
-msgstr "Export &Plattieren"
+msgstr "Export &Druckplatte"
 
 msgid "Export &Toolpaths as OBJ"
 msgstr "Werkzeugwege als OBJ expor&tieren"
@@ -4407,7 +4396,7 @@ msgid "Fill angle template"
 msgstr "Schablone für Füllwinkel"
 
 msgid "Fill bed"
-msgstr "Bett auffüllen"
+msgstr "Druckbett auffüllen"
 
 msgid "Fill density"
 msgstr "Fülldichte"
@@ -4600,9 +4589,6 @@ msgstr "Reservierter Gleitkomma-Operand"
 msgid "Flow"
 msgstr "Fluss"
 
-msgid "Flow calibration"
-msgstr "Durchfluss-Kalibrierung"
-
 msgid "Flow rate"
 msgstr "Flussrate"
 
@@ -4771,7 +4757,7 @@ msgid "From plane"
 msgstr "von der Ebene"
 
 msgid "From region"
-msgstr "aus der Region"
+msgstr "für Bereiche unter"
 
 msgid "From the whole layer"
 msgstr "von der gesamten Schicht"
@@ -6258,9 +6244,6 @@ msgstr "beim Bügeln"
 msgid "Ironing angle"
 msgstr "Bügelwinkel"
 
-msgid "Ironing angle. if negative, it will use the fill angle."
-msgstr "Bügelwinkel. Wenn negativ, wird der Füllwinkel verwendet."
-
 msgid "Ironing flow distribution"
 msgstr "Verteilung des Bügelflusses"
 
@@ -7306,7 +7289,7 @@ msgid "Milling End G-code"
 msgstr "Fräsen Ende G-code"
 
 msgid "Milling extra XY size"
-msgstr "Extra XY-Größe fräsen"
+msgstr "zusätzliche XY-Größe zum Fräsen"
 
 msgid "Milling only after"
 msgstr "Fräsen nur nach"
@@ -7773,7 +7756,7 @@ msgid ""
 msgstr "Mehrere %s Geräte gefunden. Bitte immer nur eins zum Flashen anschließen."
 
 msgid "Multiple extruders"
-msgstr "Mehrere Extruder"
+msgstr "mehrere Extruder"
 
 msgid ""
 "Multiple objects were loaded for a multi-material printer.\n"
@@ -8590,12 +8573,6 @@ msgstr "Über %1% ist sie ausgeschaltet."
 msgid "Over raft"
 msgstr "über Floß"
 
-msgid "Over-Bridge calibration"
-msgstr "Kalibrierung des Überbrückungsflusses"
-
-msgid "Over-bridge calibration"
-msgstr "Kalibrierung des Überbrückungsflusses"
-
 msgid "Over-Bridge flow calibration"
 msgstr "Over-Bridge Durchflusskalibrierung"
 
@@ -8734,7 +8711,7 @@ msgid "Paints only one facet."
 msgstr "Bemalt nur eine Fläche."
 
 msgid "Parallel printing step"
-msgstr "Paralleler Druckschritt"
+msgstr "paralleler Druckschritt"
 
 msgid "parameter name"
 msgstr "Parametername"
@@ -9047,7 +9024,7 @@ msgid "Post-processing script"
 msgstr "Nachbearbeitungsskript"
 
 msgid "Post-processing scripts"
-msgstr "Nachbearbeitungs Script"
+msgstr "Nachbearbeitungsskript"
 
 msgid "Precision"
 msgstr "Präzision"
@@ -9827,13 +9804,13 @@ msgid "Reverse direction of zoom with mouse wheel"
 msgstr "Umkehrung der Zoom-Richtung des Mausrads"
 
 msgid "Reverse on all perimeters"
-msgstr "umgekehrt auf allen Wänden"
+msgstr "Umkehrung auf allen Schichten"
 
 msgid "Reverse on even"
-msgstr "Rückwärtsgang bei Gerade"
+msgstr "Umkehrung gerade/ungerade"
 
 msgid "Reverse threshold"
-msgstr "Schwelle umkehren"
+msgstr "Schwellwert"
 
 msgid "Revert color to default"
 msgstr "Standardfarbe wiederherstellen"
@@ -9923,7 +9900,7 @@ msgid "Round corners for perimeters"
 msgstr "Runde Ecken für Umrandungen"
 
 msgid "Roundness margin"
-msgstr "Rand der Rundheit"
+msgstr "Rand der Rundung"
 
 msgid "Ruler mode"
 msgstr "Lineal-Modus"
@@ -11059,6 +11036,9 @@ msgstr "Name der Momentaufnahme"
 msgid "Snug"
 msgstr "nahtlos"
 
+msgid "Sold Infill"
+msgstr "massive Füllung"
+
 msgid "Solid"
 msgstr "massiv"
 
@@ -11696,7 +11676,7 @@ msgid "Support tower style"
 msgstr "Stützturm Stil"
 
 msgid "Supporting dense layer"
-msgstr "Unterstützende dichte Schicht"
+msgstr "unterstützende massive Schicht"
 
 msgid "Supports"
 msgstr "Stützen"
@@ -13973,9 +13953,6 @@ msgstr "Fließverhältnis oben füllen"
 msgid "Top fill Pattern"
 msgstr "Deckenfüllmuster"
 
-msgid "Top flow calibration"
-msgstr "Kalbrierung oberste Schicht"
-
 msgid "top infill"
 msgstr "obere Füllung"
 
@@ -14086,7 +14063,7 @@ msgid ""
 msgstr "Repariere alle ungeschlossenen Netze (diese Option wird implizit hinzugefügt, wenn wir das Modell slicen müssen, um die gewünschte Aktion ausführen zu können)."
 
 msgid "Tuning ironing"
-msgstr "Tuning bügeln"
+msgstr "Optionen für das Bügeln"
 
 msgid "Twisting"
 msgstr "verdrehen"
@@ -14921,7 +14898,7 @@ msgid "Wipe speed"
 msgstr "Wischgeschwindigkeit"
 
 msgid "Wipe starting speed"
-msgstr "Startgeschwindigkeit wischen"
+msgstr "Start wischen"
 
 msgid "Wipe Tower"
 msgstr "Reinigungsturm"
@@ -15013,7 +14990,7 @@ msgid "Write information about the model to the console."
 msgstr "Schreibt Informationen über das Modell auf die Konsole."
 
 msgid "Write the thumbnail type in gcode."
-msgstr "Typ des Bildes in Gcode schreiben"
+msgstr "Bildformat in Gcode schreiben"
 
 msgid "Wrong password"
 msgstr "Ungültiges Kennwort"
