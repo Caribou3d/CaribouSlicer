@@ -1025,7 +1025,7 @@ msgid "Allow next color repetition"
 msgstr "Nächste Farbwiederholung erlauben"
 
 msgid "Allow only one skirt loop"
-msgstr "Erlauben Sie nur eine Rockschleife"
+msgstr "nur eine Schürzenlinie erlauben"
 
 msgid ""
 "Allow outermost perimeter to overlap itself to avoid the use of thin walls. "
@@ -1191,7 +1191,7 @@ msgid "Apply color change automatically"
 msgstr "Farbwechsel automatisch anwenden"
 
 msgid "Apply on"
-msgstr "Anwenden auf"
+msgstr "anwenden auf"
 
 msgid "Apply to all the remaining small objects being loaded."
 msgstr "Anwenden auf alle verbleibenden kleinen Objekte, die geladen werden."
@@ -3179,7 +3179,7 @@ msgid "Distance from object"
 msgstr "Entfernung vom Objekt"
 
 msgid "Distance Margin"
-msgstr "Abstand Marge"
+msgstr "Abstandsmarge"
 
 msgid ""
 "Distance of the 0,0 G-code coordinate from the front left corner of the "
@@ -3528,7 +3528,7 @@ msgid "Enforce on first layer"
 msgstr "auf der ersten Schicht"
 
 msgid "Enforce overhangs speed"
-msgstr "Überhänge durchsetzen Geschwindigkeit"
+msgstr "Überhanggeschwindigkeit erzwingen"
 
 msgid "Enforce seam"
 msgstr "Naht erzwingen"
@@ -7291,7 +7291,7 @@ msgid "Milling End G-code"
 msgstr "Fräsen Ende G-code"
 
 msgid "Milling extra XY size"
-msgstr "Zuätzliche XY-Größe zum Fräsen"
+msgstr "zusätzliche XY-Größe zum Fräsen"
 
 msgid "Milling only after"
 msgstr "Fräsen nur nach"
@@ -7758,7 +7758,7 @@ msgid ""
 msgstr "Mehrere %s Geräte gefunden. Bitte immer nur eins zum Flashen anschließen."
 
 msgid "Multiple extruders"
-msgstr "Mehrere Extruder"
+msgstr "mehrere Extruder"
 
 msgid ""
 "Multiple objects were loaded for a multi-material printer.\n"
@@ -17804,7 +17804,7 @@ msgid "Multimaterial painting editing"
 msgstr "Multimaterial Bemalung bearbeiten"
 
 msgid "Multiple Extruders"
-msgstr "Mehrere Extruder"
+msgstr "mehrere Extruder"
 
 msgid "Multiple resolved IP addresses"
 msgstr "Mehrere aufgelöste IP-Adressen"
