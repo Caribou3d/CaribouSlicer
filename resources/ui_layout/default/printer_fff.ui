@@ -3,13 +3,13 @@ page:General:printer
 group:Size and coordinates
     bed_shape
     line:build volume
-        setting:max_print_height
-        setting:init_z_rotate
+        setting:label_width$12:max_print_height
+        setting:label_width$14:init_z_rotate
     end_line
     line:z utilities
-        setting:z_step
-        setting:lift_min
-        setting:z_offset
+        setting:label_width$12:z_step
+        setting:label_width$14:lift_min
+        setting:label_width$12:z_offset
     end_line
 group:extruders_count_event:milling_count_event:Capabilities
     extruders_count
@@ -20,23 +20,23 @@ group:silent_mode_event:Firmware
     setting:silent_mode
     line:Print remaining times
         setting:label$:remaining_times
-        setting:remaining_times_type
+        setting:label:width$7:remaining_times_type
     end_line
     line:Gcode precision
-        setting:gcode_precision_xyz
-        setting:gcode_precision_e
+        setting:label_width$16:gcode_precision_xyz
+        setting:label_width$16:gcode_precision_e
     end_line
     line:Processing limit
-        setting:max_gcode_per_second
-        setting:min_length
+        setting:label_width$16:max_gcode_per_second
+        setting:label_width$16:min_length
     end_line
     line:G2/G3 generation
-        setting:arc_fitting
-        setting:arc_fitting_tolerance
+        setting:label_width$16:arc_fitting
+        setting:label_width$21:arc_fitting_tolerance
     end_line
     line:Formatting
-        setting:gcode_filename_illegal_char
-        setting:gcode_ascii
+        setting:label_width$16:gcode_filename_illegal_char
+        setting:label_width$16:gcode_ascii
     end_line
 group:Cooling fan
     setting:fan_printer_min_speed
@@ -96,10 +96,15 @@ height:0
 unregular_pages
 
 page:Notes:note.png
-group:no_title:Notes
+#group:no_title:Notes
+group:label_width$0:Notes
         setting:full_width:height$25:printer_notes
-group:no_title:Custom variables
+group:label_width$0:Custom variables        
+#group:no_title:Custom variables
         setting:full_width:height$15:printer_custom_variables
+
+
+
 
 page:Dependencies:wrench.png
     group:Profile dependencies
