@@ -1784,7 +1784,7 @@ ProcessSurfaceResult PerimeterGenerator::process_classic(int& contour_count, int
                     contours.emplace_back();
                 }
             }
-            
+
             assert(contours.size() == contour_count);
             assert(holes.size() == holes_count);
 

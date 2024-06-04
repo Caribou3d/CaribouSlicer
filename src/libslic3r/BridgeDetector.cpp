@@ -221,7 +221,7 @@ bool BridgeDetector::detect_angle(double bridge_direction_override)
                                     if (!poly.contains(middle_point_right) || !poly.contains(middle_point_left)) {
                                         fake_bridge = false;
                                         goto stop_fake_bridge_test;
-                                    }
+                                        }
                                 }
                             }
                             // if still bad, the line is long enough to warrant two more test point? (1/2000 on a benchy)
@@ -244,9 +244,9 @@ bool BridgeDetector::detect_angle(double bridge_direction_override)
                                                                   // boundingbox and only then the other
                                             fake_bridge = false;
                                             goto stop_fake_bridge_test;
-                                        }
                                 }
                             }
+                        }
                             // If the line is still bad and is a long one, use the more costly intersection_ln. This
                             // case is rare enough to swallow the cost. (1/10000 on a benchy)
                             if (fake_bridge && len > this->spacing * 40) {
@@ -599,9 +599,9 @@ Polygons BridgeDetector::coverage(double angle) const
                         ++it;
                     } else {
                         it = unsupported_bigger.erase(it);
-                    }
                 }
             }
+                        }
             assert(unsupported_bigger.size() == 1);
             {
                 std::vector<Line> support_lines;

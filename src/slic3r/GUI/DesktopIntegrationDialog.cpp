@@ -301,7 +301,6 @@ void DesktopIntegrationDialog::perform_desktop_integration()
                 break; // success
             else
                 target_dir_icons.clear(); // copying failed
-        }
         // if all failed - try creating default home folder
         if (i == target_candidates.size() - 1) {
             // create $HOME/.local/share
@@ -318,7 +317,7 @@ void DesktopIntegrationDialog::perform_desktop_integration()
             }
         }
     }
-
+    }
      if(target_dir_icons.empty()) {
         BOOST_LOG_TRIVIAL(error) << "Copying " SLIC3R_APP_KEY " icon to icons directory failed.";
     } else
@@ -327,7 +326,11 @@ void DesktopIntegrationDialog::perform_desktop_integration()
 
     // desktop file
     // iterate thru target_candidates to find applications folder
-
+    for (size_t i = 0; i < target_candidates.size(); ++i)
+    {
+        if (contains_path_dir(target_candidates[i], "applications")) {
+            target_dir_desktop = target_candidates[i];
+            // Write slicer desktop file
     std::string desktop_file = GUI::format(
         "[Desktop Entry]\n"
         "Name=" SLIC3R_APP_NAME "%1%\n"
@@ -342,17 +345,8 @@ void DesktopIntegrationDialog::perform_desktop_integration()
         "StartupNotify=false\n"
         "StartupWMClass=prusa-slicer\n", name_suffix, version_suffix, excutable_path);
 
-    bool candidate_found = false;
-    for (size_t i = 0; i < target_candidates.size(); ++i)
-    {
-        std::cout << "i " << i << " " << target_candidates[i] << std::endl;
-        if (contains_path_dir(target_candidates[i], "applications")) {
-            target_dir_desktop = target_candidates[i];
-            // Write slicer desktop file
-
             std::string path = GUI::format("%1%/applications/" SLIC3R_APP_KEY "%2%.desktop", target_dir_desktop, version_suffix);
             if (create_desktop_file(path, desktop_file)){
-                candidate_found = true;
                 BOOST_LOG_TRIVIAL(debug) << "" SLIC3R_APP_KEY ".desktop file installation success.";
                 break;
             } else {
@@ -360,11 +354,8 @@ void DesktopIntegrationDialog::perform_desktop_integration()
                 BOOST_LOG_TRIVIAL(debug) << "Attempt to " SLIC3R_APP_KEY ".desktop file installation failed. failed path: " << target_candidates[i];
                 target_dir_desktop.clear();
             }
-        }
-    }
-
     // if all failed - try creating default home folder
-    if (!candidate_found) {
+            if (i == target_candidates.size() - 1) {
          // create $HOME/.local/share
         create_path(boost::nowide::narrow(wxFileName::GetHomeDir()), ".local/share/applications");
         // create desktop file
@@ -382,7 +373,8 @@ void DesktopIntegrationDialog::perform_desktop_integration()
             return;
         }
     }
-
+        }
+    }
     if(target_dir_desktop.empty()) {
     	// Desktop file not written - end desktop integration
         BOOST_LOG_TRIVIAL(error) << "Performing desktop integration failed because the application directory was not found.";

@@ -130,6 +130,8 @@ void CopyrightsDialog::fill_entries()
                             , "Daniel Lemire, João Paulo Magalhaes and contributors", "https://github.com/fastfloat/fast_float" },
         { "CuraEngine (Arachne, etc.)"
                             , "Ultimaker"                                   , "https://github.com/Ultimaker/CuraEngine" },
+        { "Arc Welder"
+                            , "Brad Hochgesang"                             , "https://github.com/FormerLurker/ArcWelderLib/" },
         { "AngelScript"
                             , "Andreas Jönsson"                             , "https://www.angelcode.com/angelscript/" },
         { "JSON for Modern C++"
