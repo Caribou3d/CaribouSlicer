@@ -28,10 +28,10 @@ if (APPLE)
         )
     endif()
 else()
-        prusaslicer_add_cmake_project(TIFF
-            URL https://gitlab.com/libtiff/libtiff/-/archive/v4.6.0/libtiff-v4.6.0.zip
-            URL_HASH SHA256=5d652432123223338a6ee642a6499d98ebc5a702f8a065571e1001d4c08c37e6
 
+prusaslicer_add_cmake_project(TIFF
+    URL https://gitlab.com/libtiff/libtiff/-/archive/v4.1.0/libtiff-v4.1.0.zip
+    URL_HASH SHA256=c56edfacef0a60c0de3e6489194fcb2f24c03dbb550a8a7de5938642d045bd32
             DEPENDS ${ZLIB_PKG} ${PNG_PKG} dep_JPEG
             CMAKE_ARGS
                 -Dlzma:BOOL=OFF

@@ -5,8 +5,7 @@ if (APPLE)
     # TODO: we need to fix notarization with the separate shared library
     add_library(OCCTWrapper STATIC OCCTWrapper.cpp)
 else ()
-    # add_library(OCCTWrapper MODULE OCCTWrapper.cpp)
-    add_library(OCCTWrapper  OCCTWrapper.cpp)
+    add_library(OCCTWrapper SHARED OCCTWrapper.cpp)
 endif ()
 
 set_target_properties(OCCTWrapper
