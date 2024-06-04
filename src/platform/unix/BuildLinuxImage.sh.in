@@ -72,7 +72,7 @@ then
     find package/resources/localization -name "SuperSlicer.mo" -type f -delete
 
     # copy occtwrapper
-    # cp src/OCCTWrapper.so package/bin/OCCTWrapper.so
+    cp src/OCCTWrapper.so package/bin/OCCTWrapper.so
 
     # create bin
     echo -e '#!/bin/bash\nDIR=$(readlink -f "$0" | xargs dirname)\nexport LD_LIBRARY_PATH="$DIR/bin"\nexec "$DIR/bin/@SLIC3R_APP_CMD@" "$@"' > package/@SLIC3R_APP_CMD@
