@@ -148,6 +148,12 @@ endif ()
 
 target_link_libraries(Slic3r libslic3r cereal)
 
+if (NOT APPLE AND NOT WIN32)
+    if (SLIC3R_ENABLE_FORMAT_STEP)
+        target_link_libraries(Slic3r OCCTWrapper)
+    endif ()
+endif ()
+
 if (APPLE)
 #    add_compile_options(-stdlib=libc++)
 #    add_definitions(-DBOOST_THREAD_DONT_USE_CHRONO -DBOOST_NO_CXX11_RVALUE_REFERENCES -DBOOST_THREAD_USES_MOVE)
@@ -164,7 +170,7 @@ endif ()
 # Add the Slic3r GUI library, libcurl, OpenGL and GLU libraries.
 if (SLIC3R_GUI)
 #    target_link_libraries(PrusaSlicer ws2_32 uxtheme setupapi libslic3r_gui ${wxWidgets_LIBRARIES})
-target_link_libraries(Slic3r libslic3r_gui)
+    target_link_libraries(Slic3r libslic3r_gui)
     if (MSVC)
         # Generate debug symbols even in release mode.
         target_link_options(Slic3r PUBLIC "$<$<CONFIG:RELEASE>:/DEBUG>")
@@ -307,3 +313,4 @@ else ()
     # Install the symlink for gcodeviewer
     install(CODE "execute_process(COMMAND ${CMAKE_COMMAND} -E create_symlink ${SLIC3R_APP_CMD} ${GCODEVIEWER_APP_CMD} WORKING_DIRECTORY \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR})")
 endif ()
+
