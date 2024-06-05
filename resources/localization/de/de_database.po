@@ -13749,7 +13749,7 @@ msgid "Threshold"
 msgstr "Schwellwert"
 
 msgid "threshold for"
-msgstr "Schwelle für"
+msgstr "Schwelle aktivieren"
 
 msgid "Thumbnail color"
 msgstr "Farbe der Vorschaubilder"

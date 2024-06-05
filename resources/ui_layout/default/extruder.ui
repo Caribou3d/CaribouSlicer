@@ -35,7 +35,7 @@ group:Retraction
     setting:idx:retract_layer_change
 group:Retraction wipe
     setting:idx:wipe
-    setting:idx:wipe_speed
+    setting:idx:sidetext_width$7:wipe_speed
     setting:idx:retract_before_wipe
     setting:idx:wipe_only_crossing
 group:General wipe
@@ -46,8 +46,8 @@ group:General wipe
     end_line
     setting:idx:wipe_extra_perimeter
     line:Seam gap
-        setting:idx:label$_:sidetext_width$5:seam_gap
-        setting:idx:label$for external perimeters:sidetext_width$5:seam_gap_external
+        setting:sidetext_width$10:idx:label$_:seam_gap
+        setting:sidetext_width$10:idx:label$for external perimeters:seam_gap_external
     end_line
 group:Retraction when tool is disabled (advanced settings for multi-extruder setups)
     setting:label$Minimum retraction:idx:retract_length_toolchange

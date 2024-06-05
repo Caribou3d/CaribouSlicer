@@ -4075,6 +4075,7 @@ void PrintConfigDef::init_fff_params()
         " Set to 0 to deactivate overhangs.");
     def->ratio_over = "nozzle_diameter";
     def->min = 0;
+    def->sidetext = L("mm or %");
     def->mode = comExpert | comSuSi;
     def->set_default_value(new ConfigOptionFloatOrPercent(55,true));
 
@@ -4088,6 +4089,7 @@ void PrintConfigDef::init_fff_params()
     def->ratio_over = "nozzle_diameter";
     def->min = 0;
     def->max_literal = { 10, true };
+    def->sidetext = L("mm or %");
     def->mode = comExpert | comSuSi;
     def->set_default_value(new ConfigOptionFloatOrPercent(75, true));
 
@@ -5868,6 +5870,7 @@ void PrintConfigDef::init_fff_params()
     def->ratio_over = "nozzle_diameter";
     def->mode = comExpert | comSuSi;
     def->min = 0;
+    def->sidetext = L("mm or %");
     def->max_literal = { 20, true };
     def->set_default_value(new ConfigOptionFloatOrPercent(33, true));
 
@@ -5879,6 +5882,7 @@ void PrintConfigDef::init_fff_params()
     def->ratio_over = "external_perimeter_extrusion_width";
     def->mode = comExpert | comSuSi;
     def->min = 0;
+    def->sidetext = L("mm or %");
     def->max_literal = { 10, true };
     def->set_default_value(new ConfigOptionFloatOrPercent(50, true));
 
@@ -6237,6 +6241,7 @@ void PrintConfigDef::init_fff_params()
     def->tooltip = L("Speed in mm/s of the wipe. If it's faster, it will try to go further away, as the wipe time is set by ( 100% - 'retract before wipe') * 'retaction length' / 'retraction speed'."
         "\nIf set to zero, the travel speed is used.");
     def->mode = comAdvancedE | comSuSi;
+    def->sidetext = L("mm/s");
     def->set_default_value(new ConfigOptionFloats{ 0 });
 
     def = this->add("wipe_tower", coBool);

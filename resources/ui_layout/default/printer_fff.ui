@@ -32,7 +32,7 @@ group:silent_mode_event:Firmware
     end_line
     line:G2/G3 generation
         setting:label_width$16:arc_fitting
-        setting:label_width$21:arc_fitting_tolerance
+        setting:sidetext_width$7:label_width$21:arc_fitting_tolerance
     end_line
     line:Formatting
         setting:label_width$16:gcode_filename_illegal_char
@@ -102,9 +102,6 @@ group:label_width$0:Notes
 group:label_width$0:Custom variables        
 #group:no_title:Custom variables
         setting:full_width:height$15:printer_custom_variables
-
-
-
 
 page:Dependencies:wrench.png
     group:Profile dependencies

@@ -18,6 +18,7 @@ group:freq_settings_event:no_title:no_search:
     line:
         setting:label_left:width$6:sidetext_width$3:brim_width
         setting:simple:script:bool:depends$brim_width:label$Brim:tooltip$Set the brim. Will be set to 5mm if nothing was previously set.:s_brim
+		freq_purging_volumes
     end_line
     line:
         setting:label_left:label_width$14:width$5:skirts
