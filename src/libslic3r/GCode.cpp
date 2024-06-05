@@ -3441,7 +3441,7 @@ LayerResult GCode::process_layer(
         //extrude object-only skirt (for sequential)
         //TODO: use it also for wiping like the other one (as they are exlusiev)
         if (single_object_instance_idx != size_t(-1) && !layers.front().object()->skirt().empty()
-            && extruder_id == layer_tools.extruders.front()) {
+            && extruder_id == layer_tools.extruders.front() && object_layer) {
 
             const PrintObject *print_object = layers.front().object();
             //object skirt & brim use the object settings.
@@ -3459,7 +3459,7 @@ LayerResult GCode::process_layer(
         }
         //extrude object-only brim (for sequential)
         if (single_object_instance_idx != size_t(-1) && !layers.front().object()->brim().empty()
-            && extruder_id == layer_tools.extruders.front()) {
+            && extruder_id == layer_tools.extruders.front() && object_layer) {
 
             const PrintObject* print_object = layers.front().object();
             //object skirt & brim use the object settings.
@@ -5114,9 +5114,15 @@ std::string GCode::extrude_multi_path(const ExtrusionMultiPath &multipath, const
         //reverse to get a shorter point (hopefully there is still no feature that choose a point that need no perimeter crossing before).
         // extrude along the  reversedpath
         for (size_t idx_path = multipath.paths.size() - 1; idx_path < multipath.paths.size(); --idx_path) {
-            assert(multipath.paths[idx_path].can_reverse());
-            //extrude_path will reverse the path by itself, no need to copy it do to it here.
-            gcode += extrude_path(multipath.paths[idx_path], description, speed);
+            //it's possible to have un-reverseable paths into a reversable multipath: this means that only the whole thing can be reversed, and not individual apths.
+            if (multipath.paths[idx_path].can_reverse()) {
+                // extrude_path will reverse the path by itself, no need to copy it do to it here.
+                gcode += extrude_path(multipath.paths[idx_path], description, speed);
+            } else {
+                ExtrusionPath path = multipath.paths[idx_path];
+                path.reverse();
+                gcode += extrude_path(path, description, speed);
+            }
         }
     } else {
         // extrude along the path
@@ -6373,7 +6379,7 @@ Polyline GCode::travel_to(std::string &gcode, const Point &point, ExtrusionRole 
     bool needs_retraction = this->needs_retraction(travel, role);
     if (m_config.only_retract_when_crossing_perimeters &&
         !(m_config.enforce_retract_first_layer && m_layer_index == 0))
-        needs_retraction = needs_retraction && this->can_cross_perimeter(travel, false);
+        needs_retraction = needs_retraction && this->can_cross_perimeter(travel, true);
 
     // Re-allow avoid_crossing_perimeters for the next travel moves
     m_avoid_crossing_perimeters.reset_once_modifiers();
