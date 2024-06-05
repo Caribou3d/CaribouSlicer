@@ -1079,7 +1079,7 @@ msgstr "Alle installierten Drucker sind mit dem ausgewählten %1% kompatibel."
 
 #: src/slic3r/GUI/Plater.cpp:3114
 msgid "All non-solid parts (modifiers) were deleted"
-msgstr "Alle nicht soliden Teile (Modifikatoren) wurden gelöscht"
+msgstr "Alle nicht massiven Teile (Modifikatoren) wurden gelöscht"
 
 #: src/libslic3r/Print.cpp:451
 msgid "All objects are outside of the print volume."
@@ -2458,16 +2458,16 @@ msgid ""
 "parameter to zero to disable anchoring perimeters connected to a single infill "
 "line."
 msgstr ""
-"Verbindet eine Infill-Linie mit einem kurzen Segment eines zusätzlichen "
+"Verbindet eine Fülllinie mit einem kurzen Segment eines zusätzlichen "
 "Perimeters mit einem internen Perimeter. Wenn sie als Prozentsatz ausgedrückt "
 "wird (Beispiel: 15%), wird sie über die Breite der Infill-Extrusion berechnet. "
-"PrusaSlicer versucht, zwei nahe beieinander liegende Infill-Linien mit einem "
+"PrusaSlicer versucht, zwei nahe beieinander liegende Fülllinien mit einem "
 "kurzen Umfangssegment zu verbinden. Wenn kein solches Perimetersegment gefunden "
-"wird, das kürzer als infill_anchor_max ist, wird die Infill-Linie nur an einer "
+"wird, das kürzer als infill_anchor_max ist, wird die Fülllinie nur an einer "
 "Seite mit einem Perimetersegment verbunden und die Länge des genommenen "
 "Perimetersegments ist auf diesen Parameter begrenzt, aber nicht länger als "
 "anchor_length_max. Setzen Sie diesen Parameter auf Null, um die Verankerung von "
-"Perimetern zu deaktivieren, die mit einer einzelnen Infill-Linie verbunden sind."
+"Perimetern zu deaktivieren, die mit einer einzelnen Fülllinie verbunden sind."
 
 #: src/libslic3r/PrintConfig.cpp:1443
 msgid ""
@@ -2480,12 +2480,12 @@ msgid ""
 "limited to infill_anchor, but no longer than this parameter. Set this parameter "
 "to zero to disable anchoring."
 msgstr ""
-"Verbindet eine Infill-Linie mit einem kurzen Segment eines zusätzlichen "
+"Verbindet eine Fülllinie mit einem kurzen Segment eines zusätzlichen "
 "Perimeters mit einem internen Perimeter. Wenn sie als Prozentsatz ausgedrückt "
 "wird (Beispiel: 15%), wird sie über die Breite der Infill-Extrusion berechnet. "
-"PrusaSlicer versucht, zwei nahe beieinander liegende Infill-Linien mit einem "
+"PrusaSlicer versucht, zwei nahe beieinander liegende Fülllinien mit einem "
 "kurzen Umfangssegment zu verbinden. Wenn kein solches Perimetersegment gefunden "
-"wird, das kürzer als dieser Parameter ist, wird die Infill-Linie nur an einer "
+"wird, das kürzer als dieser Parameter ist, wird die Fülllinie nur an einer "
 "Seite mit einem Perimetersegment verbunden und die Länge des genommenen "
 "Perimetersegments wird auf infill_anchor begrenzt, aber nicht länger als dieser "
 "Parameter. Setzen Sie diesen Parameter auf Null, um die Verankerung zu "
@@ -2631,11 +2631,11 @@ msgstr "Auswahl in Zwischenablage kopieren"
 
 #: src/slic3r/GUI/SysInfoDialog.cpp:169
 msgid "Copy to Clipboard"
-msgstr "Zu Zwischenablage kopieren"
+msgstr "In Zwischenablage kopieren"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:99
 msgid "Copy to clipboard"
-msgstr "Zu Zwischenablage kopieren"
+msgstr "In Zwischenablage kopieren"
 
 #: src/slic3r/Utils/PresetUpdater.cpp:61
 #, boost-format
@@ -7260,7 +7260,7 @@ msgstr "Minimaler Abstand der Stützpunkte"
 
 #: src/libslic3r/PrintConfig.cpp:1856
 msgid "Minimal filament extrusion length"
-msgstr "Minimale Filament Extrusionlänge"
+msgstr "Minimale Filament-Extrusionslänge"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:45
 msgid "Minimal points distance"
@@ -11628,7 +11628,7 @@ msgstr "Extruder massive Füllung"
 
 #: src/libslic3r/PrintConfig.cpp:2331
 msgid "Solid infill threshold area"
-msgstr "Massive Füllung Flächen Schwellwert"
+msgstr "Massive Füllung Flächen-Schwellenwert"
 
 #: resources/data/hints.ini: [hint:Solid infill threshold area]
 msgid ""
@@ -11814,7 +11814,7 @@ msgid ""
 msgstr ""
 "Druckgeschwindigkeit für massive Bereiche (obere/untere/innenliegende "
 "waagrechte Hüllen). Sie kann als Prozentwert (z.B. 80%) der oben eingegebenen "
-"standardmäßigen Infill-Geschwindigkeit angegeben werden. Für Automatik auf null "
+"standardmäßigen Füllung Geschwindigkeit angegeben werden. Für Automatik auf null "
 "setzen."
 
 #: src/libslic3r/PrintConfig.cpp:2706
@@ -15264,7 +15264,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:3775
 msgid "You can't change a type of the last solid part of the object."
-msgstr "Sie können nicht die Art des letzten soliden Teils des Objektes ändern."
+msgstr "Sie können nicht die Art des letzten massiven Teils des Objektes ändern."
 
 #: src/slic3r/GUI/Plater.cpp:2646
 #, c-format, boost-format

@@ -29,11 +29,11 @@ group:Print speed override
 
 page:Cooling:time
 group:Fan speed - default
+    setting:id$0:default_fan_speed
     line:Disable fan for the first
         setting:id$0:width$5:label$_:sidetext_width$7:width$8:disable_fan_first_layers
         setting:id$0:width$5:label_width$24:width$8:full_fan_speed_layer
     end_line
-    setting:id$0:default_fan_speed
     line:Perimeter fan speed
         setting:id$0:label_width$12:label$Internal:perimeter_fan_speed
         setting:id$0:label_width$14:label$External:external_perimeter_fan_speed

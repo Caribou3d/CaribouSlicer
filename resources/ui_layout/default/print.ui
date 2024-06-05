@@ -69,6 +69,18 @@ group:label_width$12:Overhangs
         setting:label_width$12:width$5:overhangs_reverse_threshold
         setting:label$All perimeters:sidetext_width$2:perimeter_reverse
     end_line
+group:sidetext_width$8:Arachne perimeter generator (variable width)
+    setting:perimeter_generator
+    line:Wall Transition
+        setting:label$Angle:wall_transition_angle
+        setting:label$Distance Margin:wall_transition_filter_deviation
+        setting:label$Length:wall_transition_length
+    end_line
+    setting:wall_distribution_count
+    line:Min feature
+        setting:min_bead_width
+        setting:min_feature_size
+    end_line
 group:sidetext_width$8:Advanced
     setting:width$25:no_perimeter_unsupported_algo
     line:Gap Fill
@@ -113,18 +125,6 @@ group:External perimeter first
     end_line
     setting:external_perimeters_vase
     setting:perimeter_bonding
-group:sidetext_width$8:Arachne perimeter generator (variable width)
-    setting:perimeter_generator
-    line:Wall Transition
-        setting:label$Angle:wall_transition_angle
-        setting:label$Distance Margin:wall_transition_filter_deviation
-        setting:label$Length:wall_transition_length
-    end_line
-    setting:wall_distribution_count
-    line:Min feature
-        setting:min_bead_width
-        setting:min_feature_size
-    end_line
 
 page:Slicing:layers
 group:Layer height
@@ -191,7 +191,7 @@ group:title_width$0:Infill
     end_line
     line:_
         setting:tags$Advanced$Expert$Prusa:label_left:label_width$24:label$Top:top_fill_pattern
-        setting:label_width$7:label$Type:width$18:infill_connection_top        
+        setting:label_width$7:label$Type:width$18:infill_connection_top
     end_line
     line:_
         setting:label_left:label_width$24:label$Bottom:bottom_fill_pattern
