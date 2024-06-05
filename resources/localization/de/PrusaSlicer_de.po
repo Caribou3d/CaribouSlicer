@@ -3388,7 +3388,7 @@ msgstr "Abstand zwischen Bügellinien"
 msgid ""
 "Distance between skirt and brim (when draft shield is not used) or objects."
 msgstr ""
-"Abstand zwischen Schürze und Rand (wenn der Windschutz nicht verwendet wird) "
+"Abstand zwischen Rand und Schürze (wenn der Windschutz nicht verwendet wird) "
 "oder Objekten."
 
 #: src/libslic3r/PrintConfig.cpp:3821
@@ -6862,7 +6862,7 @@ msgstr "Logging-Level"
 
 #: src/libslic3r/PrintConfig.cpp:2299
 msgid "Loops (minimum)"
-msgstr "Umrundungen (minimal)"
+msgstr "Schürze"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:253
 msgid "Low"
@@ -11418,7 +11418,7 @@ msgstr "Umrundungen für die Schürze"
 #: src/libslic3r/PrintConfig.cpp:516 src/libslic3r/PrintConfig.cpp:527
 #: src/libslic3r/PrintConfig.cpp:543
 msgid "Skirt and brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 #: src/libslic3r/PrintConfig.cpp:2276
 msgid "Skirt height"
@@ -11427,7 +11427,7 @@ msgstr "Schürzenhöhe"
 #: src/slic3r/GUI/GUI_Preview.cpp:248 src/libslic3r/ExtrusionEntity.cpp:339
 #: src/libslic3r/ExtrusionEntity.cpp:370
 msgid "Skirt/Brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:461
 msgid "Slab"

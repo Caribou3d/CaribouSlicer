@@ -889,9 +889,6 @@ msgstr "Adresse"
 msgid "Advanced"
 msgstr "Erweitert"
 
-msgid "Advanced Infill options"
-msgstr "Erweiterte Infill-Optionen"
-
 msgid "Advanced wipe tower purge volume calculs"
 msgstr "Erweiterte Berechnung des Spülvolumens im Reinigungsturm"
 
@@ -4957,7 +4954,7 @@ msgid "Generating skirt"
 msgstr "Erzeuge Umrandung"
 
 msgid "Generating skirt and brim"
-msgstr "Erzeuge Schürze und Rand"
+msgstr "Erzeuge Rand und Schürze"
 
 msgid "Generating support material"
 msgstr "Generiere Stützmaterial"
@@ -6232,9 +6229,6 @@ msgstr "Bügelwinkel"
 msgid "Ironing flow distribution"
 msgstr "Verteilung des Bügelflusses"
 
-msgid "Ironing infill pattern tuning"
-msgstr "Bügeln von Füllmustern"
-
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "Bügeln im Nachhinein (Dies wird auf die Füllungen und Umrandungen gelegt)"
 
@@ -6755,7 +6749,7 @@ msgid "Logging level"
 msgstr "Logging-Level"
 
 msgid "Loops (minimum)"
-msgstr "Umrundungen (minimal)"
+msgstr "Schürze"
 
 msgid "Lower temp:"
 msgstr "untere Temperatur:"
@@ -8430,7 +8424,7 @@ msgid "Optimizing layer %s / %s"
 msgstr "Optimierungsebene %s / %s"
 
 msgid "Optimizing skirt & brim %s%%"
-msgstr "Optimierung von Schürze und Rand%s%%"
+msgstr "Optimierung von Rand und Schürze%s%%"
 
 msgid "Optimizing support layer %s / %s"
 msgstr "Optimierung der Tragschicht %s / %s"
@@ -10812,13 +10806,13 @@ msgid "skirt"
 msgstr "Schürze"
 
 msgid "Skirt & Brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt and brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt distance from brim"
 msgstr "Abstand des Rocks vom Rand"
@@ -10833,7 +10827,7 @@ msgid "Skirt width"
 msgstr "Breite des Rocks"
 
 msgid "Skirt/Brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "SLA gizmo keyboard shortcuts"
 msgstr "SLA Gizmo Tastaturkürzel"
@@ -11020,6 +11014,9 @@ msgstr "Name der Momentaufnahme"
 
 msgid "Snug"
 msgstr "nahtlos"
+
+msgid "Sold Infill"
+msgstr "massive Füllung"
 
 msgid "Solid"
 msgstr "massiv"
@@ -15325,8 +15322,14 @@ msgstr ""
 msgid "°C"
 msgstr "°C"
 
-msgid "Sold Infill"
-msgstr "massive Füllung"
+msgid "Brim first layer"
+msgstr "zusätzlich auf erster Schicht"
+
+msgid "Advanced Infill options"
+msgstr "Erweiterte Infill-Optionen"
+
+msgid "Ironing infill pattern tuning"
+msgstr "Bügeln von Füllmustern"
 
 msgid ""
 "Don't wipe when you don't cross a perimeter. Need "
@@ -16703,7 +16706,7 @@ msgid "Distance between lines"
 msgstr "Zeilenabstand"
 
 msgid "Distance between skirt and brim (when draft shield is not used) or objects."
-msgstr "Abstand zwischen Schürze und Rand (wenn der Windschutz nicht verwendet wird) oder Objekten."
+msgstr "Abstand zwischen Rand und Schürze (wenn der Windschutz nicht verwendet wird) oder Objekten."
 
 msgid "Distance from brim/object"
 msgstr "Abstand vom Rand/Objekt"

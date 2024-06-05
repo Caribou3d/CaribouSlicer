@@ -40,7 +40,7 @@ msgid "_"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6229
+#: src/libslic3r/PrintConfig.cpp:6233
 #Similar to me: Don't wipe when you don't cross a perimeter. Need 'avoid_crossing_perimeters' and 'wipe' enabled.
 # 17   changes: Don't wipe when you don't cross a perimeter. Need 'only_retract_when_crossing_perimeters'and 'wipe' enabled.
 #  translation: Wischen Sie nicht, wenn Sie einen Umkreis nicht überqueren. Sie müssen 'only_retract_when_crossing_perimeters' und 'wipe' aktivieren.
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5232
+#: src/libslic3r/PrintConfig.cpp:5234
 msgid ""
 "Ensure that the slicer won't add heating, fan, extruder... commands before "
 "or just after your start-gcode.\n"
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l387
+#: ../../ui_layout/default/print.ui : l366
 msgid "z"
 msgstr ""
 

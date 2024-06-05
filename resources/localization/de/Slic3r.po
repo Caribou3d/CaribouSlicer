@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-03 00:00\n"
-"PO-Revision-Date: 2024-06-03 00:00\n"
+"POT-Creation-Date: 2024-06-05 00:00\n"
+"PO-Revision-Date: 2024-06-05 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -904,9 +904,6 @@ msgstr "Adresse"
 msgid "Advanced"
 msgstr "Erweitert"
 
-msgid "Advanced Infill options"
-msgstr "Erweiterte Infill-Optionen"
-
 msgid "Advanced wipe tower purge volume calculs"
 msgstr "Erweiterte Berechnung des Spülvolumens im Reinigungsturm"
 
@@ -1677,6 +1674,9 @@ msgstr "Rand-Ohr max Winkel"
 
 msgid "Brim ears"
 msgstr "Ohren am Rand"
+
+msgid "Brim first layer"
+msgstr "zusätzlich auf erster Schicht"
 
 msgid "Brim inside holes"
 msgstr "Rand innere Löcher"
@@ -4972,7 +4972,7 @@ msgid "Generating skirt"
 msgstr "Erzeuge Umrandung"
 
 msgid "Generating skirt and brim"
-msgstr "Erzeuge Schürze und Rand"
+msgstr "Erzeuge Rand und Schürze"
 
 msgid "Generating support material"
 msgstr "Generiere Stützmaterial"
@@ -6247,9 +6247,6 @@ msgstr "Bügelwinkel"
 msgid "Ironing flow distribution"
 msgstr "Verteilung des Bügelflusses"
 
-msgid "Ironing infill pattern tuning"
-msgstr "Bügeln von Füllmustern"
-
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "Bügeln im Nachhinein (Dies wird auf die Füllungen und Umrandungen gelegt)"
 
@@ -6770,7 +6767,7 @@ msgid "Logging level"
 msgstr "Logging-Level"
 
 msgid "Loops (minimum)"
-msgstr "Umrundungen (minimal)"
+msgstr "Schürze"
 
 msgid "Lower temp:"
 msgstr "untere Temperatur:"
@@ -8445,7 +8442,7 @@ msgid "Optimizing layer %s / %s"
 msgstr "Optimierungsebene %s / %s"
 
 msgid "Optimizing skirt & brim %s%%"
-msgstr "Optimierung von Schürze und Rand%s%%"
+msgstr "Optimierung von Rand und Schürze%s%%"
 
 msgid "Optimizing support layer %s / %s"
 msgstr "Optimierung der Tragschicht %s / %s"
@@ -10827,13 +10824,13 @@ msgid "skirt"
 msgstr "Schürze"
 
 msgid "Skirt & Brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt and brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "Skirt distance from brim"
 msgstr "Abstand des Rocks vom Rand"
@@ -10848,7 +10845,7 @@ msgid "Skirt width"
 msgstr "Breite des Rocks"
 
 msgid "Skirt/Brim"
-msgstr "Schürze und Rand"
+msgstr "Rand und Schürze"
 
 msgid "SLA gizmo keyboard shortcuts"
 msgstr "SLA Gizmo Tastaturkürzel"
