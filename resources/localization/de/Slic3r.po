@@ -14863,7 +14863,7 @@ msgid ""
 msgstr "Breite der Umrandung, die dünne Features (entsprechend der Mindest-Featuregröße) des Modells ersetzen wird. Wenn die minimale Umfangsbreite dünner ist als die Dicke des Features, wird der Umfang so dick wie das Feature selbst. Wenn die Breite als Prozentsatz ausgedrückt wird (z.B. 85%), wird sie über den Düsendurchmesser berechnet."
 
 msgid "width&spacing combo"
-msgstr "Breite/Abstand-Kombination"
+msgstr "Abstand"
 
 msgid ""
 "Will inflate or deflate the sliced 2D polygons according to the sign of the "
