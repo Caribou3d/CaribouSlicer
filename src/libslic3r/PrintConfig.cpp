@@ -4963,6 +4963,7 @@ void PrintConfigDef::init_fff_params()
                    "the number of loops might be greater than the one configured here. Set zero "
                    "to disable skirt completely.");
     def->min = 0;
+    def->sidetext = L("lines");
     def->mode = comSimpleAE | comPrusa;
     def->set_default_value(new ConfigOptionInt(1));
 

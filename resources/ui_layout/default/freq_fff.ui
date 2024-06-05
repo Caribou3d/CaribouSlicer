@@ -6,7 +6,7 @@ group:freq_settings_event:no_title:no_search:
     end_line
     line:Solid layers
         setting:label_left:full_label:width$5:top_solid_layers
-        setting:label_left:label_width$7:width$5:bottom_solid_layers     
+        setting:label_left:label_width$7:width$5:bottom_solid_layers
     end_line
     line:
         setting:label_left:label$Infill:width$6:sidetext_width$3:fill_density
@@ -18,9 +18,9 @@ group:freq_settings_event:no_title:no_search:
     line:
         setting:label_left:width$6:sidetext_width$3:brim_width
         setting:simple:script:bool:depends$brim_width:label$Brim:tooltip$Set the brim. Will be set to 5mm if nothing was previously set.:s_brim
-		freq_purging_volumes
+#		freq_purging_volumes
     end_line
     line:
-        setting:label_left:label_width$14:width$5:skirts
+        setting:label_left:width$5:skirts
         setting:label_left:label_width$7:label$Height:width$5:skirt_height
     end_line
