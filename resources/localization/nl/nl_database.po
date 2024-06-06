@@ -239,16 +239,10 @@ msgstr "Printtijd verkorten"
 msgid "Retraction"
 msgstr "Retractie"
 
-msgid "Retraction Speed"
-msgstr "Retractiesnelheid"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Retractie als de tool uit staat (geavanceerde instelling voor multi-"
 "extrudersetups)"
-
-msgid "Seam position"
-msgstr "Naadpositie"
 
 msgid "Sequential printing"
 msgstr "Achtereenvolgens printen"
@@ -319,6 +313,12 @@ msgstr "Toolwisselparameter voor multi-materialprinters met één extruder"
 msgid "Top"
 msgstr "Bovenkant"
 
+msgid "Travel"
+msgstr "Beweging"
+
+msgid "Type"
+msgstr "Type"
+
 msgid "Vertical shells"
 msgstr "Verticale shells"
 
@@ -327,6 +327,12 @@ msgstr "Afveegblok"
 
 msgid "Wipe tower parameters"
 msgstr "Afveegblokparameters"
+
+msgid "Retraction Speed"
+msgstr "Retractiesnelheid"
+
+msgid "Seam position"
+msgstr "Naadpositie"
 
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
@@ -8460,9 +8466,6 @@ msgstr "Verplaats"
 msgid "Translation"
 msgstr "Verplaatsing"
 
-msgid "Travel"
-msgstr "Beweging"
-
 msgid "Triangles"
 msgstr "Facetten"
 
@@ -8472,9 +8475,6 @@ msgid ""
 msgstr ""
 "Probeer alle niet-gesloten meshes te repareren (deze optie is impliciet "
 "toegevoegd om, wanneer dat nodig is, onmogelijke modellen toch te slicen)."
-
-msgid "Type"
-msgstr "Type"
 
 msgid "Type here the name of your printer device"
 msgstr "Type hier de naam van je printer"

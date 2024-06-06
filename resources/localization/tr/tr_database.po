@@ -239,16 +239,10 @@ msgstr "Baskı süresine etki eden ayarlar"
 msgid "Retraction"
 msgstr "Geri çekme"
 
-msgid "Retraction Speed"
-msgstr "Geri çekme hızı"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Takım devre dışı bırakıldığında geri çekme (çoklu ekstrüder ayarları için "
 "gelişmiş ayarlar)"
-
-msgid "Seam position"
-msgstr "Katman başlangıç konumu"
 
 msgid "Sequential printing"
 msgstr "Sıralı baskı"
@@ -323,6 +317,12 @@ msgstr ""
 msgid "Top"
 msgstr "Üst"
 
+msgid "Travel"
+msgstr "Boşta ilerleme"
+
+msgid "Type"
+msgstr "Tür"
+
 msgid "Vertical shells"
 msgstr "Duvar sayısı"
 
@@ -331,6 +331,12 @@ msgstr "Genişlik"
 
 msgid "Wipe tower"
 msgstr "Temizleme kulesi"
+
+msgid "Retraction Speed"
+msgstr "Geri çekme hızı"
+
+msgid "Seam position"
+msgstr "Katman başlangıç konumu"
 
 msgid "%1% Preset"
 msgstr "%1% Ön Ayar"
@@ -4373,9 +4379,6 @@ msgstr "Toplam sıkıştırma süresi"
 msgid "Translate"
 msgstr "Çeviri"
 
-msgid "Travel"
-msgstr "Boşta ilerleme"
-
 msgid "Triangles"
 msgstr "Üçgenler"
 
@@ -4386,9 +4389,6 @@ msgstr ""
 "Herhangi bir manifold olmayan örgüyü onarmaya çalışın (bu seçenek, istenen "
 "eylemi gerçekleştirmek için modeli dilimlememiz gerektiğinde dolaylı olarak "
 "eklenir)."
-
-msgid "Type"
-msgstr "Tür"
 
 msgid "Type of the printer."
 msgstr "Yazıcının tipi."

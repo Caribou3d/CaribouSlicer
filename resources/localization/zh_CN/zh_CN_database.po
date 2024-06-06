@@ -8,9 +8,6 @@ msgstr "激活"
 msgid "Advanced"
 msgstr "高级"
 
-msgid "Advanced Infill options"
-msgstr "高级填充选项"
-
 msgid "After layer change G-code"
 msgstr "图层更改 G 代码后"
 
@@ -289,9 +286,6 @@ msgstr "内部的"
 msgid "Internal bridges"
 msgstr "内部桥梁"
 
-msgid "Ironing infill pattern tuning"
-msgstr "熨烫填充图案调整"
-
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "熨烫后处理（这将在填充物和周边进行）"
 
@@ -505,9 +499,6 @@ msgstr "缩短打印时间"
 msgid "Retraction"
 msgstr "回抽"
 
-msgid "Retraction Speed"
-msgstr "回抽速度"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr "工具禁用时的回抽 (多挤出机设置的高级设置)"
 
@@ -519,9 +510,6 @@ msgstr "进入缝画"
 
 msgid "Seam gap"
 msgstr "接缝间隙"
-
-msgid "Seam position"
-msgstr "接缝位置"
 
 msgid "Sequential printing"
 msgstr "顺序打印"
@@ -570,9 +558,6 @@ msgstr "间距"
 
 msgid "spacing"
 msgstr "间距"
-
-msgid "Spacing between ironing lines"
-msgstr "熨烫线间距"
 
 msgid "Sparse"
 msgstr "填充密度"
@@ -652,6 +637,9 @@ msgstr "顶部实心填充"
 msgid "Top solid"
 msgstr "顶部固体"
 
+msgid "Travel"
+msgstr "旅行"
+
 msgid "Travel acceleration"
 msgstr "行驶加速度"
 
@@ -660,6 +648,9 @@ msgstr "行驶速度"
 
 msgid "Tuning ironing"
 msgstr "调整熨烫"
+
+msgid "Type"
+msgstr "类型："
 
 msgid "vertical"
 msgstr "确保垂直外壳厚度"
@@ -702,6 +693,21 @@ msgstr "XY 第一层补偿"
 
 msgid "Z-offset"
 msgstr "Z 偏移"
+
+msgid "Advanced Infill options"
+msgstr "高级填充选项"
+
+msgid "Ironing infill pattern tuning"
+msgstr "熨烫填充图案调整"
+
+msgid "Retraction Speed"
+msgstr "回抽速度"
+
+msgid "Seam position"
+msgstr "接缝位置"
+
+msgid "Spacing between ironing lines"
+msgstr "熨烫线间距"
 
 msgid "!! Can be unstable in some os distribution !!"
 msgstr "!! 在某些操作系统发行版中可能不稳定！！"
@@ -12055,9 +12061,6 @@ msgstr "翻译"
 msgid "Translation"
 msgstr "翻译"
 
-msgid "Travel"
-msgstr "旅行"
-
 msgid "Travel cost"
 msgstr "差旅费"
 
@@ -12072,9 +12075,6 @@ msgstr ""
 
 msgid "Twisting"
 msgstr "加捻"
-
-msgid "Type"
-msgstr "类型："
 
 msgid "Type here the name of your printer device"
 msgstr "在此处键入打印机设备的名称"

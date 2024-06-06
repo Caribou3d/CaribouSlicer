@@ -619,9 +619,6 @@ msgstr "Adreça"
 msgid "Advanced"
 msgstr "Mode Avançat"
 
-msgid "Advanced mode"
-msgstr "Mode Avançat"
-
 msgid "Advanced: Output log"
 msgstr "Avançat: Registre de sortida"
 
@@ -1688,6 +1685,9 @@ msgstr "Ctrl + Roda del ratolí"
 msgid "Cubic"
 msgstr "Cúbic"
 
+msgid "Current mode is %s"
+msgstr "El mode actual és %s"
+
 msgid "Current preset is inherited from"
 msgstr "El predefinit actual s'hereta de"
 
@@ -2525,8 +2525,8 @@ msgstr ""
 "Opció experimental per evitar que es generi material de suport sota les "
 "àrees amb pont."
 
-msgid "Expert mode"
-msgstr "Mode Expert"
+msgid "Expert"
+msgstr "Expert"
 
 msgid "Export"
 msgstr "Exportar"
@@ -3585,13 +3585,6 @@ msgstr ""
 "canvis realitzats amb el lliscador seqüencial, a la vista prèvia, s'apliquen "
 "a tot el codi G."
 
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr ""
-"Si està habilitat, PrusaSlicer s'obrirà en la posició en què s'ha tancat"
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr "Si està habilitat, PrusaSlicer no obrirà hipervincles al navegador."
-
 msgid "If enabled, random sequence of the selected extruders will be used."
 msgstr ""
 "Si s'activa, s'utilitzarà una seqüència aleatòria dels extrusors "
@@ -4413,9 +4406,6 @@ msgstr "Distància màxima d'enllaç del pilar"
 
 msgid "Max print height"
 msgstr "Alçada màxima d'impressió"
-
-msgid "Max print speed"
-msgstr "Velocitat màxima d'impressió"
 
 msgid "Max volumetric slope negative"
 msgstr "Màx. Pendent volumètrica negativa"
@@ -5291,6 +5281,9 @@ msgstr "Obrir fitxer de certificat CA"
 msgid "Open changelog page"
 msgstr "Obre la pàgina del registre de canvis"
 
+msgid "Open Documentation in web browser."
+msgstr "Obre la Documentació al navegador web."
+
 msgid "Open download page"
 msgstr "Obre la pàgina de baixada"
 
@@ -5314,6 +5307,9 @@ msgstr "Obre una instància nova"
 
 msgid "Open New Instance"
 msgstr "Obre una instància nova"
+
+msgid "Open Preferences."
+msgstr "Obrir preferències."
 
 msgid "Open the dialog to modify shape gallery"
 msgstr "Obre el diàleg per modificar la galeria de formes"
@@ -6990,8 +6986,8 @@ msgstr "Mostrar/Ocultar Llegenda i Temps d'impressió estimat"
 msgid "Show/Hide object/instance labels"
 msgstr "Mostra/Oculta etiquetes de peça/repetició"
 
-msgid "Simple mode"
-msgstr "Mode Simple"
+msgid "Simple"
+msgstr "Simple"
 
 msgid "Single extruder MM setup"
 msgstr "Ajust per a MM amb un sol extrusor"
@@ -7584,6 +7580,9 @@ msgstr "Canvia al mode d'edició"
 msgid "Switch to Settings"
 msgstr "Canviar a Configuració"
 
+msgid "Switch to the %s mode"
+msgstr "Canvia al mode %s"
+
 msgid "Switching Presets: Unsaved Changes"
 msgstr "S'estan canviant els predefinits: canvis no desats"
 
@@ -7999,19 +7998,6 @@ msgstr ""
 "Els llocs on s'imprimeix la vora al voltant de cada objecte a la primera "
 "capa."
 
-msgid ""
-"The preset below was temporarily installed on the active instance of "
-"PrusaSlicer"
-msgid_plural ""
-"The presets below were temporarily installed on the active instance of "
-"PrusaSlicer"
-msgstr[0] ""
-"El paràmetre de sota ha estat instal·lat temporalment a la instància activa "
-"de PrusaSlicer"
-msgstr[1] ""
-"Els paràmetres de sota han estat instal·lats temporalment a la instància "
-"activa de PrusaSlicer"
-
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
 msgstr[0] "Les modificacions del paràmetre s'han desat correctament"
@@ -8025,27 +8011,6 @@ msgstr "El nom del fitxer proporcionat no és vàlid."
 
 msgid "The provided name is not valid;"
 msgstr "El nom proporcionat no és vàlid;"
-
-msgid ""
-"The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionat conté L'objecte pintat amb una versió més recent del "
-"PrusaSlicer i no és compatible."
-
-msgid ""
-"The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionat conté un objecte pintat multi-material utilitzant una "
-"versió més recent del PrusaSlicer i no és compatible."
-
-msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionat conté un objecte pintat amb costura utilitzant una versió "
-"més recent del PrusaSlicer i no és compatible."
 
 msgid "The selected file"
 msgstr "El fitxer seleccionat"
@@ -8404,18 +8369,6 @@ msgid ""
 msgstr ""
 "Aquesta operació és irreversible.\n"
 "Voleu continuar?"
-
-msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"Aquesta opció estableix la quantitat de perímetres que es generaran per a "
-"cada capa. Tingueu en compte que Slic3r pot augmentar aquest nombre "
-"automàticament quan detecta superfícies inclinades que es beneficien d'un "
-"nombre més gran de perímetres si l'opció Perímetres addicionals està "
-"habilitada."
 
 msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
@@ -9520,6 +9473,71 @@ msgstr ""
 msgid "°C"
 msgstr "°C"
 
+msgid "Advanced mode"
+msgstr "Mode Avançat"
+
+msgid "Expert mode"
+msgstr "Mode Expert"
+
+msgid "If enabled, PrusaSlicer will be open at the position it was closed"
+msgstr ""
+"Si està habilitat, PrusaSlicer s'obrirà en la posició en què s'ha tancat"
+
+msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
+msgstr "Si està habilitat, PrusaSlicer no obrirà hipervincles al navegador."
+
+msgid "Max print speed"
+msgstr "Velocitat màxima d'impressió"
+
+msgid "Simple mode"
+msgstr "Mode Simple"
+
+msgid ""
+"The preset below was temporarily installed on the active instance of "
+"PrusaSlicer"
+msgid_plural ""
+"The presets below were temporarily installed on the active instance of "
+"PrusaSlicer"
+msgstr[0] ""
+"El paràmetre de sota ha estat instal·lat temporalment a la instància activa "
+"de PrusaSlicer"
+msgstr[1] ""
+"Els paràmetres de sota han estat instal·lats temporalment a la instància "
+"activa de PrusaSlicer"
+
+msgid ""
+"The selected 3MF contains FDM supports painted object using a newer version "
+"of PrusaSlicer and is not compatible."
+msgstr ""
+"El 3MF seleccionat conté L'objecte pintat amb una versió més recent del "
+"PrusaSlicer i no és compatible."
+
+msgid ""
+"The selected 3MF contains multi-material painted object using a newer "
+"version of PrusaSlicer and is not compatible."
+msgstr ""
+"El 3MF seleccionat conté un objecte pintat multi-material utilitzant una "
+"versió més recent del PrusaSlicer i no és compatible."
+
+msgid ""
+"The selected 3MF contains seam painted object using a newer version of "
+"PrusaSlicer and is not compatible."
+msgstr ""
+"El 3MF seleccionat conté un objecte pintat amb costura utilitzant una versió "
+"més recent del PrusaSlicer i no és compatible."
+
+msgid ""
+"This option sets the number of perimeters to generate for each layer. Note "
+"that Slic3r may increase this number automatically when it detects sloping "
+"surfaces which benefit from a higher number of perimeters if the Extra "
+"Perimeters option is enabled."
+msgstr ""
+"Aquesta opció estableix la quantitat de perímetres que es generaran per a "
+"cada capa. Tingueu en compte que Slic3r pot augmentar aquest nombre "
+"automàticament quan detecta superfícies inclinades que es beneficien d'un "
+"nombre més gran de perímetres si l'opció Perímetres addicionals està "
+"habilitada."
+
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
 "If you are sure you have enough RAM on your system, this may also be a bug "
@@ -10021,17 +10039,11 @@ msgstr ""
 "informació als paràmetres d'impressora.\n"
 "Els paràmetres es mostraran a la configuració d'impressora física."
 
-msgid "Simple"
-msgstr "Simple"
-
 msgid "Simple View Mode"
 msgstr "Mode de visualització simple"
 
 msgid "Advanced View Mode"
 msgstr "Mode de visualització avançada"
-
-msgid "Expert"
-msgstr "Expert"
 
 msgid "Expert View Mode"
 msgstr "Mode de visualització expert"
@@ -10204,12 +10216,6 @@ msgstr "Omple l'àrea restant del llit amb instàncies de l'objecte seleccionat"
 
 msgid "Generic"
 msgstr "Genèric"
-
-msgid "Open Preferences."
-msgstr "Obrir preferències."
-
-msgid "Open Documentation in web browser."
-msgstr "Obre la Documentació al navegador web."
 
 msgid "Filling bed"
 msgstr "Omplint base"
@@ -10693,12 +10699,6 @@ msgstr ""
 
 msgid "For more information please visit our wiki page:"
 msgstr "Per a més informació, visiteu la pàgina de la nostra wiki:"
-
-msgid "Switch to the %s mode"
-msgstr "Canvia al mode %s"
-
-msgid "Current mode is %s"
-msgstr "El mode actual és %s"
 
 msgid "Connection to AstroBox works correctly."
 msgstr "La connexió a Astrobox funciona correctament."

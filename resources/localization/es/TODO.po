@@ -6,7 +6,7 @@ msgid " and will gradually speed-up to the above speeds over %1% layers"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5908
+#: src/slic3r/GUI/Plater.cpp:5910
 #, possible-boost-format
 msgid " resin '%1%'"
 msgstr ""
@@ -104,7 +104,7 @@ msgid "%1% will remember your action."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3433 src/slic3r/GUI/Plater.cpp:1785
+#: src/slic3r/GUI/GUI_App.cpp:3433 src/slic3r/GUI/Plater.cpp:1787
 #, possible-boost-format
 #Similar to me: %1% will remember your choice.
 # 11   changes: PrusaSlicer will remember your choice.
@@ -113,7 +113,7 @@ msgid "%1% will remember your choice."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3437 src/slic3r/GUI/Plater.cpp:1791
+#: src/slic3r/GUI/GUI_App.cpp:3437 src/slic3r/GUI/Plater.cpp:1793
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:913
 #, possible-boost-format
 msgid "%1%: Don't ask me again"
@@ -238,7 +238,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5905
+#: src/slic3r/GUI/Plater.cpp:5907
 #, possible-boost-format
 msgid "'%1%' of type %2%"
 msgstr ""
@@ -269,8 +269,8 @@ msgid "'Top Fill' flow calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5312 src/slic3r/GUI/Tab.cpp:5320
-#: src/slic3r/GUI/Tab.cpp:5324
+#: src/slic3r/GUI/Tab.cpp:5327 src/slic3r/GUI/Tab.cpp:5335
+#: src/slic3r/GUI/Tab.cpp:5339
 msgid ""
 "(even if the acceleration is set to 3000 in the print profile, if this is at "
 "1500, it won't export a gcode that will tell to go over 1500)."
@@ -515,7 +515,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:3468
+#: src/slic3r/GUI/Tab.cpp:3483
 msgid "Advanced wipe tower purge volume calculs"
 msgstr ""
 
@@ -899,7 +899,7 @@ msgid "Avoid top surface for travels"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5488
+#: src/slic3r/GUI/Tab.cpp:5503
 #Similar to me: BACK ARROW icon indicates that the values this widget control were changed and at least one is not equal to the last saved preset.\nClick to reset current all values to the last saved preset.
 # 42   changes: BACK ARROW icon indicates that the value was changed and is not equal to the last saved preset.\nClick to reset current value to the last saved preset.
 #  translation: La FLECHA ATRÁS indica que el valor ha cambiado y ya no es el mismo que el guardado la última vez.\nHaz clic para restaurar el valor al último ajuste guardado.
@@ -976,7 +976,7 @@ msgid "Blacklisted libraries loaded into %1% process:"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:4613
+#: src/slic3r/GUI/Tab.cpp:4628
 msgid ""
 "Both compatible and incompatible presets are shown. Click to hide presets "
 "not compatible with the current printer."
@@ -1352,7 +1352,7 @@ msgid "Check for problematic dynamic libraries"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5912
+#: src/slic3r/GUI/Plater.cpp:5914
 msgid "Checking your material"
 msgstr ""
 
@@ -1379,6 +1379,13 @@ msgstr ""
 # 8    changes: Choose one PNG file:
 #  translation: Elije un archivo PNG:
 msgid "Choose one file (py):"
+msgstr ""
+
+
+#: src/slic3r/GUI/GraphDialog.cpp:126
+msgid ""
+"Choose the extrusion multipler value for multiple speeds.\n"
+"You can add/remove points with a right clic."
 msgstr ""
 
 
@@ -1507,7 +1514,7 @@ msgid "Closing %1%. Current project is modified."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1178
+#: src/slic3r/GUI/GUI_Preview.cpp:1198
 #Similar to me: Col/C
 # 2    changes: Color
 #  translation: Color
@@ -1515,8 +1522,8 @@ msgid "Col/C"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1359 src/slic3r/GUI/Plater.cpp:1371
-#: src/slic3r/GUI/Plater.cpp:1420 src/slic3r/GUI/Plater.cpp:1435
+#: src/slic3r/GUI/Plater.cpp:1361 src/slic3r/GUI/Plater.cpp:1373
+#: src/slic3r/GUI/Plater.cpp:1422 src/slic3r/GUI/Plater.cpp:1437
 #, possible-boost-format
 #Similar to me: Color %1% at extruder %2%
 # 9    changes: Filament at extruder %1%
@@ -1840,7 +1847,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5680
+#: src/slic3r/GUI/Plater.cpp:5682
 #Similar to me: Create a new project?
 # 4    changes: Creating a new project
 #  translation: Creando un nuevo proyecto
@@ -2077,7 +2084,7 @@ msgid "Depth"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1175
+#: src/slic3r/GUI/GUI_Preview.cpp:1195
 #Similar to me: Dere.
 # 2    changes: Done.
 #  translation: Hecho.
@@ -2410,7 +2417,7 @@ msgid "EPeri"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5672
+#: src/slic3r/GUI/Plater.cpp:5674
 #Similar to me: Erase all objects
 # 6    changes: Deletes all objects
 #  translation: Borra todos los objetos
@@ -2447,21 +2454,21 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4291
+#: src/libslic3r/GCode.cpp:4320
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: seam notch."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4793
+#: src/libslic3r/GCode.cpp:4822
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: wipe."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4699
+#: src/libslic3r/GCode.cpp:4728
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: "
@@ -2588,7 +2595,7 @@ msgid "Export headers with date and time"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6076
+#: src/slic3r/GUI/Plater.cpp:6078
 msgid "Export Platter:"
 msgstr ""
 
@@ -2910,7 +2917,12 @@ msgid "Extrusion Multiplier calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2563
+#: src/slic3r/GUI/GraphDialog.cpp:27
+msgid "Extrusion multiplier per extrusion speed"
+msgstr ""
+
+
+#: src/slic3r/GUI/Tab.cpp:2575
 #Similar to me: Extrusion multiplier per speed
 # 10   changes: Extrusion multiplier
 #  translation: Multiplicador de extrusión
@@ -3242,7 +3254,7 @@ msgid "First layer width"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:3339
+#: src/slic3r/GUI/Tab.cpp:3354
 #Similar to me: Flat time compensation
 # 7    changes: XY Size Compensation
 #  translation: Compensación de tamaño XY
@@ -3558,7 +3570,7 @@ msgid "Generating brim"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:1466 src/libslic3r/GCode.cpp:3738
+#: src/libslic3r/GCode.cpp:1466 src/libslic3r/GCode.cpp:3766
 #, possible-c-format, possible-boost-format
 msgid "Generating G-code layer %s / %s"
 msgstr ""
@@ -3612,7 +3624,12 @@ msgid "Goal:"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5314
+#: src/slic3r/GUI/GraphDialog.cpp:147
+msgid "Graph max speed"
+msgstr ""
+
+
+#: src/slic3r/GUI/Tab.cpp:5329
 msgid ""
 "Grey values means that they can't be send to your firmware (no g-code "
 "available)."
@@ -3653,7 +3670,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2418
+#: src/slic3r/GUI/Tab.cpp:2430
 msgid "Help / Details:"
 msgstr ""
 
@@ -3981,7 +3998,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2437
+#: src/slic3r/GUI/Tab.cpp:2449
 msgid ""
 "If the perimeter overlap is set at 100%, the yellow areas should be filled "
 "by the overlap.\n"
@@ -4175,12 +4192,12 @@ msgid "In vase mode (no seam)"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6026
+#: src/slic3r/GUI/Plater.cpp:6028
 msgid "Include modifiers"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6027
+#: src/slic3r/GUI/Plater.cpp:6029
 #Similar to me: Include presets
 # 6    changes: Compare presets
 #  translation: Comparar justes
@@ -4188,7 +4205,7 @@ msgid "Include presets"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6024
+#: src/slic3r/GUI/Plater.cpp:6026
 #Similar to me: Include supports
 # 5    changes: Enforce supports
 #  translation: Imponer soportes
@@ -4699,7 +4716,7 @@ msgid "Legacy layout"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1183
+#: src/slic3r/GUI/GUI_Preview.cpp:1203
 msgid "Legend"
 msgstr ""
 
@@ -4831,12 +4848,12 @@ msgid "Load presets from a PrusaSlicer bundle"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2765
+#: src/slic3r/GUI/Plater.cpp:2767
 msgid "Load these files as a single object with multiple parts?\n"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5483
+#: src/slic3r/GUI/Tab.cpp:5498
 #Similar to me: LOCKED LOCK icon indicates that the values this widget control are all the same as the system (or default) values.
 # 27   changes: LOCKED LOCK icon indicates that the value is the same as the system (or default) value.
 #  translation: El icono de CANDADO BLOQUEADO indica que el valor es el mismo que el del sistema (por defecto)
@@ -4890,7 +4907,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:3349
+#: src/slic3r/GUI/Tab.cpp:3364
 #Similar to me: Machine Limits
 # 1    changes: Machine limits
 #  translation: Límites de la máquina
@@ -4898,24 +4915,24 @@ msgid "Machine Limits"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5327
+#: src/slic3r/GUI/Tab.cpp:5342
 msgid "Machine limits are disabled. They are not used for anything."
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5323
+#: src/slic3r/GUI/Tab.cpp:5338
 msgid "Machine limits are used as safegard when generating gcode"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5310
+#: src/slic3r/GUI/Tab.cpp:5325
 msgid ""
 "Machine limits will be emitted to G-code and used to estimate print time. "
 "They are also used as safegard when generating gcode"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5317
+#: src/slic3r/GUI/Tab.cpp:5332
 #Similar to me: Machine limits will NOT be emitted to G-code, however they will be used to estimate print time, which may therefore not be accurate as the printer may apply a different set of machine limits. They are also used as safegard when generating gcode
 # 53   changes: Machine limits will NOT be emitted to G-code, however they will be used to estimate print time, which may therefore not be accurate as the printer may apply a different set of machine limits.
 #  translation: Los límites máquina NO se emitirán al código G, sin embargo, se utilizarán para estimar el tiempo de impresión, que por lo tanto puede no ser exacto ya que la impresora puede aplicar un conjunto diferente de límites de la máquina.
@@ -4958,7 +4975,7 @@ msgid "Manual by Gary Hodgson. Inspired by the RepRap community."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1182
+#: src/slic3r/GUI/GUI_Preview.cpp:1202
 msgid "Marker"
 msgstr ""
 
@@ -5180,6 +5197,11 @@ msgid ""
 msgstr ""
 
 
+#: src/slic3r/GUI/GraphDialog.cpp:160
+msgid "Maximum flow"
+msgstr ""
+
+
 #: src/libslic3r/PrintConfig.cpp:3656
 msgid "Maximum G1 per second"
 msgstr ""
@@ -5306,7 +5328,7 @@ msgid "Milling cutter"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2659
+#: src/slic3r/GUI/Tab.cpp:2671
 msgid "Milling cutters"
 msgstr ""
 
@@ -5524,6 +5546,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4399 src/libslic3r/PrintConfig.cpp:4400
 msgid "Minimum fan speed"
+msgstr ""
+
+
+#: src/slic3r/GUI/GraphDialog.cpp:157
+msgid "Minimum flow"
 msgstr ""
 
 
@@ -5776,6 +5803,11 @@ msgid "New project, clear platter"
 msgstr ""
 
 
+#: src/slic3r/GUI/GraphDialog.cpp:119
+msgid "No compensation"
+msgstr ""
+
+
 #: src/libslic3r/PrintConfig.cpp:4118
 msgid "No perimeters on bridge areas"
 msgstr ""
@@ -5827,7 +5859,7 @@ msgid "Note that only Multiple of 5 can be engraved in the part"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2504
+#: src/slic3r/GUI/Tab.cpp:2516
 #, possible-c-format, possible-boost-format
 #Similar to me: Note: All parameters from this group are moved to the Physical Printer settings (see changelog).\n\nA new Physical Printer profile is created by clicking on the \"cog\" icon right of the Printer profiles combo box, by selecting the \"Add physical printer\" item in the Printer combo box. The Physical Printer profile editor opens also when clicking on the \"cog\" icon in the Printer settings tab. The Physical Printer profiles are being stored into %s/physical_printer directory.
 # 10   changes: Note: All parameters from this group are moved to the Physical Printer settings (see changelog).\n\nA new Physical Printer profile is created by clicking on the \"cog\" icon right of the Printer profiles combo box, by selecting the \"Add physical printer\" item in the Printer combo box. The Physical Printer profile editor opens also when clicking on the \"cog\" icon in the Printer settings tab. The Physical Printer profiles are being stored into PrusaSlicer/physical_printer directory.
@@ -5871,7 +5903,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2660
+#: src/slic3r/GUI/Tab.cpp:2672
 #Similar to me: Number of milling heads.
 # 8    changes: Number of cooling moves
 #  translation: Número de movimientos de enfriamiento
@@ -6014,7 +6046,7 @@ msgid "Only ascii characters in gcode"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:4614
+#: src/slic3r/GUI/Tab.cpp:4629
 msgid ""
 "Only compatible presets are shown. Click to show both the presets compatible "
 "and not compatible with the current printer."
@@ -6094,7 +6126,7 @@ msgid "Only one perimeter on Top surfaces"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6025
+#: src/slic3r/GUI/Plater.cpp:6027
 #Similar to me: Only selected objects
 # 7    changes: Delete Selected Objects
 #  translation: Eliminar Objetos Seleccionados
@@ -6198,7 +6230,7 @@ msgid "Optimizing support layer %s / %s"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1136
+#: src/slic3r/GUI/Plater.cpp:1138
 #Similar to me: Option tags:
 # 4    changes: Options:
 #  translation: Opciones:
@@ -6206,7 +6238,7 @@ msgid "Option tags:"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1148
+#: src/slic3r/GUI/Plater.cpp:1150
 msgid "Option use another tags than the current mode."
 msgstr ""
 
@@ -6988,7 +7020,12 @@ msgid "Remove perimeters"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1174
+#: src/slic3r/GUI/GraphDialog.cpp:151
+msgid "Reset all values to 1. Also reset all points to defaults."
+msgstr ""
+
+
+#: src/slic3r/GUI/GUI_Preview.cpp:1194
 #Similar to me: Retr.
 # 2    changes: Rear
 #  translation: Trasera
@@ -8476,7 +8513,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2689
+#: src/slic3r/GUI/Plater.cpp:2691
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -8498,7 +8535,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2667
+#: src/slic3r/GUI/Plater.cpp:2669
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -8646,7 +8683,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1147
+#: src/slic3r/GUI/Plater.cpp:1149
 msgid ""
 "The option you selected in the search dialog isn't available in the current "
 "mode/tags. Do you want to switch to the option tag?"
@@ -8660,7 +8697,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6357
+#: src/slic3r/GUI/Plater.cpp:6359
 #Similar to me: The platter is empty.\nDo you want to save the project?
 # 1    changes: The plater is empty.\nDo you want to save the project?
 #  translation: La plataforma está vacía.\n¿Quieres guardar el proyecto?
@@ -8678,7 +8715,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2596
+#: src/slic3r/GUI/Plater.cpp:2598
 #, possible-boost-format
 #Similar to me: The preset below was temporarily installed on the active instance of %1%"
 msgid_plural "The presets below were temporarily installed on the active instance of %1%
@@ -10073,7 +10110,7 @@ msgid "Time cost"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:3335 src/libslic3r/PrintConfig.cpp:5929
+#: src/slic3r/GUI/Tab.cpp:3350 src/libslic3r/PrintConfig.cpp:5929
 msgid "Time estimation compensation"
 msgstr ""
 
@@ -10148,7 +10185,7 @@ msgid "Tool z offset"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_Preview.cpp:1177
+#: src/slic3r/GUI/GUI_Preview.cpp:1197
 #Similar to me: Tool/C
 # 2    changes: Tool
 #  translation: Herramienta
@@ -10339,7 +10376,7 @@ msgid "Unknow setting: <b>%1%</b>"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5484
+#: src/slic3r/GUI/Tab.cpp:5499
 #Similar to me: UNLOCKED LOCK icon indicates that the values this widget control were changed and at least one is not equal to the system (or default) value.\nClick to reset current all values to the system (or default) values.
 # 43   changes: UNLOCKED LOCK icon indicates that the value was changed and is not equal to the system (or default) value.\nClick to reset current value to the system (or default) value.
 #  translation: El icono de CANDADO DESBLOQUEADO indica que se cambiaron algunas configuraciones y no son iguales a los valores del sistema (o predeterminados).\nHaz clic para reiniciar el valor actual a los del sistema (o predeterminados)
@@ -10443,7 +10480,7 @@ msgid "use visibility check"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2889
+#: src/libslic3r/GCode.cpp:2904
 msgid ""
 "Using a color change gcode, but there isn't one for this printer.\n"
 "The printer won't stop for the filament change, unless you set it manually "
@@ -10451,7 +10488,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2908
+#: src/libslic3r/GCode.cpp:2923
 msgid ""
 "Using a pause gcode, but there isn't one for this printer.\n"
 "The printer won't pause, unless you set it manually in the custom gcode "
@@ -10716,7 +10753,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:5487
+#: src/slic3r/GUI/Tab.cpp:5502
 #Similar to me: WHITE BULLET icon indicates that the values this widget control are all the same as in the last saved preset.
 # 26   changes: WHITE BULLET icon indicates that the value is the same as in the last saved preset.
 #  translation: El símbolo de VIÑETA BLANCA indica que los valores son los mismos que los de los ajustes guardados la última vez.
@@ -11045,13 +11082,13 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5911
+#: src/slic3r/GUI/Plater.cpp:5913
 #, possible-boost-format
 msgid "You will export the file with the material profile(s): %1%"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1786
+#: src/slic3r/GUI/Plater.cpp:1788
 #, possible-boost-format
 #Similar to me: You will not be asked about it again, when: \n- Closing %1%,\n- Loading or creating a new project
 # 11   changes: You will not be asked about it again, when: \n- Closing PrusaSlicer,\n- Loading or creating a new project
@@ -11078,7 +11115,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1135
+#: src/slic3r/GUI/Plater.cpp:1137
 msgid "Your current tags:"
 msgstr ""
 

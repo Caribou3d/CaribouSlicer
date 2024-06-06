@@ -257,16 +257,10 @@ msgstr "Reduzindo o tempo de impressão"
 msgid "Retraction"
 msgstr "Retração"
 
-msgid "Retraction Speed"
-msgstr "Velocidade da retração"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Retração quando a ferramenta está desativada (config. avançadas para "
 "instalações multiextrusoras)"
-
-msgid "Seam position"
-msgstr "Posição da costura"
 
 msgid "Sequential printing"
 msgstr "Impressão sequencial"
@@ -348,6 +342,12 @@ msgstr ""
 msgid "Top"
 msgstr "Topo"
 
+msgid "Travel"
+msgstr "Viagem"
+
+msgid "Type"
+msgstr "Tipo"
+
 msgid "Vertical shells"
 msgstr "Paredes verticais"
 
@@ -359,6 +359,12 @@ msgstr "Torre de limpeza"
 
 msgid "Wipe tower parameters"
 msgstr "Parâmetros da torre de limpeza"
+
+msgid "Retraction Speed"
+msgstr "Velocidade da retração"
+
+msgid "Seam position"
+msgstr "Posição da costura"
 
 msgid "%1% Preset"
 msgstr "%1% Predefinição"
@@ -7091,9 +7097,6 @@ msgstr "Tradução"
 msgid "Translation"
 msgstr "Tradução"
 
-msgid "Travel"
-msgstr "Viagem"
-
 msgid "Triangles"
 msgstr "Triângulos"
 
@@ -7104,9 +7107,6 @@ msgstr ""
 "Tente reparar qualquer malhas não multiplicadas (essa opção é implicitamente "
 "adicionada sempre que precisamos cortar o modelo para executar a ação "
 "solicitada)."
-
-msgid "Type"
-msgstr "Tipo"
 
 msgid "Type here the name of your printer device"
 msgstr "Insira o formato da mesa de impressão"

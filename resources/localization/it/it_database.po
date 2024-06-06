@@ -11,9 +11,6 @@ msgstr "Attiva"
 msgid "Advanced"
 msgstr "Avanzato"
 
-msgid "Advanced Infill options"
-msgstr "Opzioni avanzate di riempimento"
-
 msgid "After layer change G-code"
 msgstr "Dopo il cambio di livello G-code"
 
@@ -382,9 +379,6 @@ msgstr "Ponti interni"
 msgid "Internal Infill fan speed"
 msgstr "Velocità ventola riempimento interno"
 
-msgid "Ironing infill pattern tuning"
-msgstr "Regolazione trama di riempimento della stiratura"
-
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "Post-processo stiratura (Andrà sopra a riempimenti e perimetri)"
 
@@ -430,20 +424,17 @@ msgstr "correzione_materiale"
 msgid "Max fan speed"
 msgstr "Velocità massima ventola"
 
-msgid "maximum speed"
-msgstr "velocità massima"
-
 msgid "Min feature"
 msgstr "Elemento minimo"
+
+msgid "Minimum movement"
+msgstr "Spostamento minimo dopo"
 
 msgid "Minimum retraction"
 msgstr "Retrazione minima"
 
 msgid "Minimum shell thickness"
 msgstr "Minimo spessore guscio"
-
-msgid "Minimum movement"
-msgstr "Spostamento minimo dopo"
 
 msgid "Minimum width"
 msgstr "Minima larghezza"
@@ -631,9 +622,6 @@ msgstr "Riduzione del tempo di stampa"
 msgid "Retraction"
 msgstr "Retrazione"
 
-msgid "Retraction Speed"
-msgstr "Velocità di retrazione"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Retrazione quando l'attrezzo è disabilitato (impostazioni avanzate per setup "
@@ -650,9 +638,6 @@ msgstr "Spazio cucitura"
 
 msgid "Seam notch"
 msgstr "Tacca cucitura"
-
-msgid "Seam position"
-msgstr "Posizione della cucitura"
 
 msgid "Sequential printing"
 msgstr "Stampa sequenziale"
@@ -715,9 +700,6 @@ msgstr "Spaziatura"
 
 msgid "spacing"
 msgstr "spaziatura"
-
-msgid "Spacing between ironing lines"
-msgstr "Spaziatura tra le linee dell'ironing"
 
 msgid "Sparse"
 msgstr "Sparsi"
@@ -815,6 +797,9 @@ msgstr "Trama riempimento superiore"
 msgid "Top solid"
 msgstr "Superiore solido"
 
+msgid "Travel"
+msgstr "Spostamento"
+
 msgid "Travel acceleration"
 msgstr "Accelerazione di spostamento"
 
@@ -823,6 +808,9 @@ msgstr "Velocità dello spostamento"
 
 msgid "Tuning ironing"
 msgstr "Messa a punto stiratura"
+
+msgid "Type"
+msgstr "Tipo"
 
 msgid "vertical"
 msgstr "verticale"
@@ -878,6 +866,24 @@ msgstr "Utilità Z"
 
 msgid "Z-offset"
 msgstr "Scostamento Z"
+
+msgid "Advanced Infill options"
+msgstr "Opzioni avanzate di riempimento"
+
+msgid "Ironing infill pattern tuning"
+msgstr "Regolazione trama di riempimento della stiratura"
+
+msgid "maximum speed"
+msgstr "velocità massima"
+
+msgid "Retraction Speed"
+msgstr "Velocità di retrazione"
+
+msgid "Seam position"
+msgstr "Posizione della cucitura"
+
+msgid "Spacing between ironing lines"
+msgstr "Spaziatura tra le linee dell'ironing"
 
 msgid ""
 "! 1 for the Bridge fan speed is Deprecated, please set it to 0 to stop the "
@@ -15957,9 +15963,6 @@ msgstr "Traduci"
 msgid "Translation"
 msgstr "Traduzione"
 
-msgid "Travel"
-msgstr "Spostamento"
-
 msgid "Travel cost"
 msgstr "Costo dello spostamento"
 
@@ -15976,9 +15979,6 @@ msgstr ""
 
 msgid "Twisting"
 msgstr "Torcere"
-
-msgid "Type"
-msgstr "Tipo"
 
 msgid "Type here the name of your printer device"
 msgstr "Digita qui il nome del tuo dispositivo di stampa"

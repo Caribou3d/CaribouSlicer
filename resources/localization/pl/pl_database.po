@@ -243,16 +243,10 @@ msgstr "Obniżanie czasu wydruku"
 msgid "Retraction"
 msgstr "Retrakcja"
 
-msgid "Retraction Speed"
-msgstr "Prędkość retrakcji"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Retrakcja gdy dany ekstruder nie jest w użyciu (funkcja zaawansowana dla "
 "drukarek z kilkoma ekstruderami)"
-
-msgid "Seam position"
-msgstr "Pozycja szwu"
 
 msgid "Sequential printing"
 msgstr "Drukowanie sekwencyjne (model po modelu)"
@@ -323,6 +317,12 @@ msgstr "Parametry zmiany narzędzia dla drukarek MM z jednym ekstruderem"
 msgid "Top"
 msgstr "Góra"
 
+msgid "Travel"
+msgstr "Jałowy"
+
+msgid "Type"
+msgstr "Typ"
+
 msgid "Vertical shells"
 msgstr "Powłoka pionowa"
 
@@ -331,6 +331,12 @@ msgstr "Wieża czyszcząca"
 
 msgid "Wipe tower parameters"
 msgstr "Parametry wieży czyszczącej"
+
+msgid "Retraction Speed"
+msgstr "Prędkość retrakcji"
+
+msgid "Seam position"
+msgstr "Pozycja szwu"
 
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
@@ -8694,9 +8700,6 @@ msgstr "Konwersja"
 msgid "Translation"
 msgstr "Tłumaczenie"
 
-msgid "Travel"
-msgstr "Jałowy"
-
 msgid "Triangles"
 msgstr "Trójkąty"
 
@@ -8707,9 +8710,6 @@ msgstr ""
 "Podejmij próbę naprawienia wszystkich niezamkniętych obszarów siatki (ta "
 "opcja jest dodana w przypadku, w którym potrzebujemy pociąć model, aby "
 "przeprowadzić jakieś zadanie)."
-
-msgid "Type"
-msgstr "Typ"
 
 msgid "Type here the name of your printer device"
 msgstr "Wpisz tutaj nazwę drukarki"

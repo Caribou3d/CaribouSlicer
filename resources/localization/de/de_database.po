@@ -386,11 +386,20 @@ msgstr "&Fenster"
 msgid "'%1%' of type %2%"
 msgstr "'%1%' vom Typ %2%"
 
+msgid "'Above the Bridges flow calibration"
+msgstr "kalibrierung über den Brückenfluss"
+
+msgid "'Above the Bridges' flow calibration"
+msgstr "Flusskalibrierung \"Überbrückung\""
+
 msgid "'As bridge' flow threshold"
 msgstr "flussschwelle 'Als Brücke'"
 
 msgid "'As bridge' speed threshold"
 msgstr "geschwindigkeitsschwelle 'Als Brücke'"
+
+msgid "'Top Fill' flow calibration"
+msgstr "Durchflusskalibrierung 'obere Füllung'"
 
 msgid "(All)"
 msgstr "(Alles)"
@@ -399,9 +408,6 @@ msgid ""
 "(even if the acceleration is set to 3000 in the print profile, if this is at "
 "1500, it won't export a gcode that will tell to go over 1500)."
 msgstr "(selbst wenn die Beschleunigung im Druckprofil auf 3000 eingestellt ist, wird bei einem Wert von 1500 kein G-Code exportiert, der einen Wert über 1500 angibt)."
-
-msgid " (finished at %1%)"
-msgstr " (beendet bei %1%)"
 
 msgid ""
 "(however, speed will never be reduced below %1%mm/s or up to %2%%% reduction)"
@@ -2032,6 +2038,13 @@ msgid "Choose SLA archive:"
 msgstr "SLA Archiv wählen:"
 
 msgid ""
+"Choose the extrusion multipler value for multiple speeds.\n"
+"You can add/remove points with a right clic."
+msgstr ""
+"Wähle den Extrusionsmultiplikatorwert für verschiedene Geschwindigkeiten.\n"
+"Du kannst Punkte mit einem Rechtsklick hinzufügen/entfernen."
+
+msgid ""
 "Choose the gui package to use. It controls colors, settings layout, quick "
 "settings, tags (simple/expert)."
 msgstr "Wählen Sie das zu verwendende Gui-Paket. Es steuert die Farben, das Layout der Einstellungen, die Schnelleinstellungen und die Tags (einfach/expert)."
@@ -3283,6 +3296,13 @@ msgstr "Brücken nicht unterstützen"
 msgid "Don't switch"
 msgstr "Wechseln Sie nicht"
 
+msgid ""
+"Don't wipe when you don't cross a perimeter. Need "
+"'avoid_crossing_perimeters' and 'wipe' enabled."
+msgstr ""
+"Wische nicht, wenn du eine Grenze nicht überschreitest. Du musst \"avoid_crossing_perimeters\" und \"wipe\" "
+"aktivieren."
+
 msgid "Downgrade"
 msgstr "Downgrade"
 
@@ -3545,6 +3565,27 @@ msgstr "In der Warteschlange"
 
 msgid "Ensure on bed"
 msgstr "Auf dem Bett sicherstellen"
+
+msgid ""
+"Ensure that the slicer won't add heating, fan, extruder... commands before "
+"or just after your start-gcode.\n"
+"If set to true, you have to write a good and complete start_gcode, as no "
+"checks are made anymore.\n"
+"Exemple:\n"
+"G21 ; set units to millimeters\n"
+"G90 ; use absolute coordinates\n"
+"{if use_relative_e_distances}M83{else}M82{endif}\n"
+"G92 E0 ; reset extrusion distance"
+msgstr ""
+"Stellt sicher, dass der Slicer keine Befehle für Heizung, Lüfter, Extruder usw. vor oder direkt nach deinem "
+"Start-Gcode hinzufügt.\n"
+"Wenn du diese Option auf true setzt, musst du einen guten und vollständigen start_gcode schreiben, da keine "
+"Prüfungen mehr durchgeführt werden.\n"
+"Beispiel:\n"
+"G21 ; Einheiten auf Millimeter setzen\n"
+"G90 ; absolute Koordinaten verwenden\n"
+"{if use_relative_e_distances}M83{else}M82{endif}\n"
+"G92 E0 ; Extrusionsabstand zurücksetzen"
 
 msgid "Ensure vertical shell thickness"
 msgstr "vertikale Wandstärke sicherstellen"
@@ -4139,6 +4180,9 @@ msgstr "Extrusionsfaktor"
 msgid "Extrusion Multiplier calibration"
 msgstr "Kalibrierung des Extrusionsfaktors"
 
+msgid "Extrusion multiplier per extrusion speed"
+msgstr "Extrusionsmultiplikator pro Extrusionsgeschwindigkeit"
+
 msgid "Extrusion multiplier per speed"
 msgstr "Extrusionsmultiplikator pro Geschwindigkeit"
 
@@ -4574,6 +4618,12 @@ msgstr "Reservierter Gleitkomma-Operand"
 msgid "Flow"
 msgstr "Fluss"
 
+msgid "Flow 10 percent calibration"
+msgstr "Durchfluss 10 Prozent Kalibrierung"
+
+msgid "Flow 2 percent calibration"
+msgstr "Durchfluss 2 Prozent Kalibrierung"
+
 msgid "Flow rate"
 msgstr "Flussrate"
 
@@ -4676,24 +4726,9 @@ msgid "Force pad around object everywhere"
 msgstr "Grundschicht überall um Objekt erzwingen"
 
 msgid ""
-"Force solid infill for parts of regions having a smaller width than the "
-"specified threshold.\n"
-"Can be a % of the current solid infill spacing.\n"
-"Set 0 to disable"
-msgstr ""
-"Erzwingt eine Füllung für Teile von Regionen, die eine geringere Breite als den angegebenen Schwellenwert haben.\n"
-"Kann ein % of der aktuelle Abstand für die Füllung sein.\n"
-"Setze 0 zum Deaktivieren"
-
-msgid ""
 "Force solid infill for regions having a smaller area than the specified "
 "threshold."
 msgstr "Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
-
-msgid ""
-"Force solid infill for the whole layer when the combined area of all objects "
-"that are printed at the same layer is smaller than this value."
-msgstr "Erzwinge eine solide Füllung für die gesamte Ebene, wenn die kombinierte Fläche aller Objekte, die auf derselben Ebene gedruckt werden, kleiner als dieser Wert ist."
 
 msgid ""
 "Force the generation of solid shells between adjacent materials/volumes. "
@@ -4743,9 +4778,6 @@ msgstr "von der Ebene"
 
 msgid "From region"
 msgstr "für Bereiche unter"
-
-msgid "From the whole layer"
-msgstr "von der gesamten Schicht"
 
 msgid "Front"
 msgstr "Front"
@@ -5062,6 +5094,9 @@ msgid ""
 "Good precision is required, so use a caliper and do multiple measurements "
 "along the filament, then compute the average."
 msgstr "Eine hohe Genauigkeit ist erforderlich, also verwenden Sie einen Messschieber und führen Sie mehrere Messungen entlang des Filaments durch, um dann den Mittelwert zu berechnen."
+
+msgid "Graph max speed"
+msgstr "Grafik max. Geschwindigkeit"
 
 msgid ""
 "Grey values means that they can't be send to your firmware (no g-code "
@@ -6235,6 +6270,17 @@ msgstr "Verteilung des Bügelflusses"
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr "Bügeln im Nachhinein (Dies wird auf die Füllungen und Umrandungen gelegt)"
 
+msgid ""
+"Ironing post-process angle.\n"
+"If positive, the ironing will use this angle.\n"
+"If -1, it will use the fill angle.\n"
+"If lower than -1, it will use the fill angle minus this angle."
+msgstr ""
+"Winkel der Bügelnachbearbeitung.\n"
+"Ist er positiv, wird dieser Winkel für das Bügeln verwendet.\n"
+"Ist er -1, wird der Füllwinkel verwendet.\n"
+"Ist er kleiner als -1, wird der Füllwinkel abzüglich dieses Winkels verwendet."
+
 msgid "Ironing speed"
 msgstr "Bügelgeschwindigkeit"
 
@@ -7105,6 +7151,9 @@ msgstr "max. Vorschub Z"
 msgid "Maximum feedrates"
 msgstr "max. Vorschub"
 
+msgid "Maximum flow"
+msgstr "Maximaler Durchfluss"
+
 msgid "Maximum G1 per second"
 msgstr "max. G1 pro Sekunde"
 
@@ -7423,6 +7472,9 @@ msgstr "min. Vorschub beim Extrudieren (M205 S)"
 
 msgid "Minimum feedrates"
 msgstr "min. Vorschub"
+
+msgid "Minimum flow"
+msgstr "Minimaler Durchfluss"
 
 msgid "Minimum initial exposure time"
 msgstr "min. Anfang-Belichtungszeit"
@@ -7833,6 +7885,9 @@ msgid ""
 "No color change event was added to the print. The print does not look like a "
 "sign."
 msgstr "Dem Druck wurde kein Farbwechsel hinzugefügt. Der Druck sieht nicht wie ein Schild aus."
+
+msgid "No compensation"
+msgstr "keine Kompensation"
 
 msgid "No errors detected"
 msgstr "Keine Fehler gefunden"
@@ -9706,6 +9761,9 @@ msgstr "Rescan"
 msgid "Reset"
 msgstr "Rücksetzen"
 
+msgid "Reset all values to 1. Also reset all points to defaults."
+msgstr "Setze alle Werte auf 1 zurück. Setze auch alle Punkte auf die Standardwerte zurück."
+
 msgid "Reset clipping plane"
 msgstr "Beschnittebene zurücksetzen"
 
@@ -11051,9 +11109,6 @@ msgstr "Füllung"
 msgid "Solid infill is area below"
 msgstr "massive Füllung ist die Fläche darunter"
 
-msgid "Solid infill layer threshold area"
-msgstr "massive Füllschicht Schwellenwert"
-
 msgid "Solid infill ovelrap"
 msgstr "Überlappung massive Füllung"
 
@@ -11071,9 +11126,6 @@ msgstr "Solide Ausfüllgeschwindigkeit"
 
 msgid "Solid infill threshold area"
 msgstr "massive Füllung Flächen-Schwellenwert"
-
-msgid "Solid infill threshold width"
-msgstr "massive Füllung Schwellenwert"
 
 msgid "Solid infill width"
 msgstr "Breite der festen Füllung"
@@ -13929,6 +13981,9 @@ msgstr "Hinweis zur Ober-/Bodenschalestärke: Nicht verfügbar wegen ungültiger
 msgid "Top fill"
 msgstr "obere Füllung"
 
+msgid "Top Fill flow calibration"
+msgstr "obere Füllung Durchflusskalibrierung"
+
 msgid "Top fill flow ratio"
 msgstr "Fließverhältnis oben füllen"
 
@@ -15324,6 +15379,33 @@ msgstr ""
 
 msgid "°C"
 msgstr "°C"
+
+msgid " (finished at %1%)"
+msgstr " (beendet bei %1%)"
+
+msgid ""
+"Force solid infill for parts of regions having a smaller width than the "
+"specified threshold.\n"
+"Can be a % of the current solid infill spacing.\n"
+"Set 0 to disable"
+msgstr ""
+"Erzwingt eine Füllung für Teile von Regionen, die eine geringere Breite als den angegebenen Schwellenwert haben.\n"
+"Kann ein % of der aktuelle Abstand für die Füllung sein.\n"
+"Setze 0 zum Deaktivieren"
+
+msgid ""
+"Force solid infill for the whole layer when the combined area of all objects "
+"that are printed at the same layer is smaller than this value."
+msgstr "Erzwinge eine solide Füllung für die gesamte Ebene, wenn die kombinierte Fläche aller Objekte, die auf derselben Ebene gedruckt werden, kleiner als dieser Wert ist."
+
+msgid "From the whole layer"
+msgstr "von der gesamten Schicht"
+
+msgid "Solid infill layer threshold area"
+msgstr "massive Füllschicht Schwellenwert"
+
+msgid "Solid infill threshold width"
+msgstr "massive Füllung Schwellenwert"
 
 msgid "Advanced Infill options"
 msgstr "Erweiterte Infill-Optionen"

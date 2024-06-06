@@ -242,14 +242,8 @@ msgstr "縮短列印時間"
 msgid "Retraction"
 msgstr "回縮"
 
-msgid "Retraction Speed"
-msgstr "回抽速度"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr "禁用工具時的回縮 (多擠出機設置的高級設置)"
-
-msgid "Seam position"
-msgstr "接合位置"
 
 msgid "Sequential printing"
 msgstr "順序列印"
@@ -323,6 +317,12 @@ msgstr "單擠出機 MM 印表機的工具更換參數"
 msgid "Top"
 msgstr "頂部"
 
+msgid "Travel"
+msgstr "空程"
+
+msgid "Type"
+msgstr "類型"
+
 msgid "Vertical shells"
 msgstr "垂直外殼"
 
@@ -331,6 +331,12 @@ msgstr "寬度"
 
 msgid "Wipe tower"
 msgstr "擦料塔"
+
+msgid "Retraction Speed"
+msgstr "回抽速度"
+
+msgid "Seam position"
+msgstr "接合位置"
 
 msgid "%d presets successfully imported."
 msgstr "%d 預設已成功導入。"
@@ -3636,9 +3642,6 @@ msgstr "總衝擊時間"
 msgid "Translate"
 msgstr "翻譯"
 
-msgid "Travel"
-msgstr "空程"
-
 msgid "Triangles"
 msgstr "三角形"
 
@@ -3648,9 +3651,6 @@ msgid ""
 msgstr ""
 "嘗試修復任何非流形網格 (每當我們需要對模型進行切片以執行請求的操作時, 都會隱"
 "式添加此選項)。"
-
-msgid "Type"
-msgstr "類型"
 
 msgid "Type of the printer."
 msgstr "印表機的類型."

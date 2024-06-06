@@ -260,16 +260,10 @@ msgstr "Сокращение времени печати"
 msgid "Retraction"
 msgstr "Ретракт (втягивание)"
 
-msgid "Retraction Speed"
-msgstr "Скорость ретракта"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Ретракт, при отключении сопла (дополнительные настройки для "
 "многоэкструдерных принтеров)"
-
-msgid "Seam position"
-msgstr "Позиция шва"
 
 msgid "Sequential printing"
 msgstr "Последовательность печати"
@@ -346,6 +340,12 @@ msgstr "Параметры смены сопла в одноэкструдерн
 msgid "Top"
 msgstr "Сверху"
 
+msgid "Travel"
+msgstr "Перемещение"
+
+msgid "Type"
+msgstr "Тип"
+
 msgid "Vertical shells"
 msgstr "Вертикальные оболочки"
 
@@ -357,6 +357,12 @@ msgstr "Башня очистки"
 
 msgid "Wipe tower parameters"
 msgstr "Параметры башни очистки"
+
+msgid "Retraction Speed"
+msgstr "Скорость ретракта"
+
+msgid "Seam position"
+msgstr "Позиция шва"
 
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
@@ -8658,9 +8664,6 @@ msgstr "Перемещение"
 msgid "Translation"
 msgstr "Перемещение"
 
-msgid "Travel"
-msgstr "Перемещение"
-
 msgid "Triangles"
 msgstr "Треугольники"
 
@@ -8671,9 +8674,6 @@ msgstr ""
 "Попробуйте отремонтировать любые нецелостные сетки (эта опция добавляется "
 "всякий раз, когда нужно нарезать модель для выполнения запрошенного "
 "действия)."
-
-msgid "Type"
-msgstr "Тип"
 
 msgid "Type here the name of your printer device"
 msgstr "Введите здесь имя вашего принтера"

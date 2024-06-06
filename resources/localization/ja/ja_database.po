@@ -242,16 +242,10 @@ msgstr "造形時間短縮"
 msgid "Retraction"
 msgstr "リトラクション"
 
-msgid "Retraction Speed"
-msgstr "引き込み速度"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "非アクティブなツールのフィラメントを待避する(マルチエクストルーダーの高度な設"
 "定)"
-
-msgid "Seam position"
-msgstr "シーム位置"
 
 msgid "Sequential printing"
 msgstr "順次プリンティング"
@@ -322,6 +316,12 @@ msgstr "単一エクストルーダーMMプリンターのツールチェンジ�
 msgid "Top"
 msgstr "レイヤー||トップ"
 
+msgid "Travel"
+msgstr "移動"
+
+msgid "Type"
+msgstr "種類"
+
 msgid "Vertical shells"
 msgstr "外壁設定"
 
@@ -330,6 +330,12 @@ msgstr "ワイプタワー"
 
 msgid "Wipe tower parameters"
 msgstr "ワイプタワーのパラメータ"
+
+msgid "Retraction Speed"
+msgstr "引き込み速度"
+
+msgid "Seam position"
+msgstr "シーム位置"
 
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
@@ -8335,9 +8341,6 @@ msgstr "移動"
 msgid "Translation"
 msgstr "変形"
 
-msgid "Travel"
-msgstr "移動"
-
 msgid "Triangles"
 msgstr "三角形"
 
@@ -8347,9 +8350,6 @@ msgid ""
 msgstr ""
 "非定型メッシュの修正を試みてください（このオプションは、モデルをカットする必"
 "要がある場合にデフォルトで追加されます）。"
-
-msgid "Type"
-msgstr "種類"
 
 msgid "Type here the name of your printer device"
 msgstr "ここにプリンタデバイスの名前を入力します"

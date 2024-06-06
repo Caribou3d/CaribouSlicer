@@ -1,6 +1,6 @@
 
 
-#: src/slic3r/GUI/Plater.cpp:5908
+#: src/slic3r/GUI/Plater.cpp:5910
 #, possible-boost-format
 msgid " resin '%1%'"
 msgstr ""
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5905
+#: src/slic3r/GUI/Plater.cpp:5907
 #, possible-boost-format
 msgid "'%1%' of type %2%"
 msgstr ""
@@ -268,7 +268,7 @@ msgid "Avoid top surface for travels"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:4613
+#: src/slic3r/GUI/Tab.cpp:4628
 msgid ""
 "Both compatible and incompatible presets are shown. Click to hide presets "
 "not compatible with the current printer."
@@ -415,7 +415,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5912
+#: src/slic3r/GUI/Plater.cpp:5914
 msgid "Checking your material"
 msgstr ""
 
@@ -427,6 +427,13 @@ msgstr ""
 # 20   changes: Choose one or more files (STL, OBJ):
 #  translation: Egy vagy több fájl kiválasztása (STL, OBJ):
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr ""
+
+
+#: src/slic3r/GUI/GraphDialog.cpp:126
+msgid ""
+"Choose the extrusion multipler value for multiple speeds.\n"
+"You can add/remove points with a right clic."
 msgstr ""
 
 
@@ -693,21 +700,21 @@ msgid "EPeri"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4291
+#: src/libslic3r/GCode.cpp:4320
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: seam notch."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4793
+#: src/libslic3r/GCode.cpp:4822
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: wipe."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4699
+#: src/libslic3r/GCode.cpp:4728
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: "
@@ -803,7 +810,12 @@ msgid "Extrusion Multiplier calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:2563
+#: src/slic3r/GUI/GraphDialog.cpp:27
+msgid "Extrusion multiplier per extrusion speed"
+msgstr ""
+
+
+#: src/slic3r/GUI/Tab.cpp:2575
 #Similar to me: Extrusion multiplier per speed
 # 10   changes: Extrusion multiplier
 #  translation: Extrudálási szorzó
@@ -1050,6 +1062,18 @@ msgid ""
 "Give to the bridge infill algorithm if the infill needs to be connected, and "
 "on which perimeters. Can be useful to disconnect to reduce a little bit the "
 "pressure buildup when going over the bridge's anchors."
+msgstr ""
+
+
+#: src/slic3r/GUI/GraphDialog.cpp:147
+#Similar to me: Graph max speed
+# 6    changes: Gap fill speed
+#  translation: Hézagkitöltési sebesség
+# 6    changes: Max fan speed
+#  translation: Max. ventilátor sebesség
+# 6    changes: Top fan speed
+#  translation: Max ventilátor sebesség
+msgid "Graph max speed"
 msgstr ""
 
 
@@ -1437,7 +1461,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2765
+#: src/slic3r/GUI/Plater.cpp:2767
 msgid "Load these files as a single object with multiple parts?\n"
 msgstr ""
 
@@ -1509,6 +1533,11 @@ msgid ""
 "considered as overhangs for 'overhangs_max_slope'.\n"
 "Set to -1 to accept all distances.\n"
 "Set to 0 to ignore bridges."
+msgstr ""
+
+
+#: src/slic3r/GUI/GraphDialog.cpp:160
+msgid "Maximum flow"
 msgstr ""
 
 
@@ -1619,6 +1648,11 @@ msgid "Minimum feature size"
 msgstr ""
 
 
+#: src/slic3r/GUI/GraphDialog.cpp:157
+msgid "Minimum flow"
+msgstr ""
+
+
 #: src/slic3r/GUI/GLCanvas3D.cpp:306
 msgid "Minimum layer height. Limit for better quality/layer adhesion."
 msgstr ""
@@ -1670,6 +1704,14 @@ msgid "mm² or %"
 msgstr ""
 
 
+#: src/slic3r/GUI/GraphDialog.cpp:119
+#Similar to me: No compensation
+# 2    changes: XY compensation
+#  translation: XY kompenzáció
+msgid "No compensation"
+msgstr ""
+
+
 #: src/slic3r/GUI/PresetHints.cpp:234
 msgid ""
 "Note: The layer time for the cooling is currently computed with infinite "
@@ -1713,7 +1755,7 @@ msgid "Only ascii characters in gcode"
 msgstr ""
 
 
-#: src/slic3r/GUI/Tab.cpp:4614
+#: src/slic3r/GUI/Tab.cpp:4629
 msgid ""
 "Only compatible presets are shown. Click to show both the presets compatible "
 "and not compatible with the current printer."
@@ -2061,6 +2103,11 @@ msgstr ""
 msgid "Raft layer height"
 msgstr ""
 
+
+#: src/slic3r/GUI/GraphDialog.cpp:151
+msgid "Reset all values to 1. Also reset all points to defaults."
+msgstr ""
+
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
 # 8    changes: Also for all perimeters
@@ -2233,10 +2280,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui
 #Similar to me: Solid infill ovelrap
-# 4    changes: Solid fill overlap
-#  translation: Szilárd töltés átfedés
 # 4    changes: Solid infill every
 #  translation: Tömör kitöltés minden
+# 4    changes: Solid fill overlap
+#  translation: Szilárd töltés átfedés
 # 6    changes: Solid infill speed
 #  translation: Tömör kitöltési sebesség
 msgid "Solid infill ovelrap"
@@ -2486,7 +2533,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2596
+#: src/slic3r/GUI/Plater.cpp:2598
 #, possible-boost-format
 #Similar to me: The preset below was temporarily installed on the active instance of %1%"
 msgid_plural "The presets below were temporarily installed on the active instance of %1%
@@ -3087,7 +3134,7 @@ msgid "use visibility check"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2889
+#: src/libslic3r/GCode.cpp:2904
 msgid ""
 "Using a color change gcode, but there isn't one for this printer.\n"
 "The printer won't stop for the filament change, unless you set it manually "
@@ -3095,7 +3142,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2908
+#: src/libslic3r/GCode.cpp:2923
 msgid ""
 "Using a pause gcode, but there isn't one for this printer.\n"
 "The printer won't pause, unless you set it manually in the custom gcode "
@@ -3326,7 +3373,7 @@ msgid "You have to enter a printer name."
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5911
+#: src/slic3r/GUI/Plater.cpp:5913
 #, possible-boost-format
 msgid "You will export the file with the material profile(s): %1%"
 msgstr ""
