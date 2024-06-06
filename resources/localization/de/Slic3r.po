@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-05 00:00\n"
-"PO-Revision-Date: 2024-06-05 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -414,9 +414,6 @@ msgid ""
 "(even if the acceleration is set to 3000 in the print profile, if this is at "
 "1500, it won't export a gcode that will tell to go over 1500)."
 msgstr "(selbst wenn die Beschleunigung im Druckprofil auf 3000 eingestellt ist, wird bei einem Wert von 1500 kein G-Code exportiert, der einen Wert über 1500 angibt)."
-
-msgid " (finished at %1%)"
-msgstr " (beendet bei %1%)"
 
 msgid ""
 "(however, speed will never be reduced below %1%mm/s or up to %2%%% reduction)"
@@ -4691,24 +4688,9 @@ msgid "Force pad around object everywhere"
 msgstr "Grundschicht überall um Objekt erzwingen"
 
 msgid ""
-"Force solid infill for parts of regions having a smaller width than the "
-"specified threshold.\n"
-"Can be a % of the current solid infill spacing.\n"
-"Set 0 to disable"
-msgstr ""
-"Erzwingt eine Füllung für Teile von Regionen, die eine geringere Breite als den angegebenen Schwellenwert haben.\n"
-"Kann ein % of der aktuelle Abstand für die Füllung sein.\n"
-"Setze 0 zum Deaktivieren"
-
-msgid ""
 "Force solid infill for regions having a smaller area than the specified "
 "threshold."
 msgstr "Massive Füllung für Bereiche, die eine kleinere Fläche als die angegebene Schwelle aufweisen."
-
-msgid ""
-"Force solid infill for the whole layer when the combined area of all objects "
-"that are printed at the same layer is smaller than this value."
-msgstr "Erzwinge eine solide Füllung für die gesamte Ebene, wenn die kombinierte Fläche aller Objekte, die auf derselben Ebene gedruckt werden, kleiner als dieser Wert ist."
 
 msgid ""
 "Force the generation of solid shells between adjacent materials/volumes. "
@@ -4758,9 +4740,6 @@ msgstr "von der Ebene"
 
 msgid "From region"
 msgstr "für Bereiche unter"
-
-msgid "From the whole layer"
-msgstr "von der gesamten Schicht"
 
 msgid "Front"
 msgstr "Front"
@@ -11066,9 +11045,6 @@ msgstr "Füllung"
 msgid "Solid infill is area below"
 msgstr "massive Füllung ist die Fläche darunter"
 
-msgid "Solid infill layer threshold area"
-msgstr "massive Füllschicht Schwellenwert"
-
 msgid "Solid infill ovelrap"
 msgstr "Überlappung massive Füllung"
 
@@ -11086,9 +11062,6 @@ msgstr "Solide Ausfüllgeschwindigkeit"
 
 msgid "Solid infill threshold area"
 msgstr "massive Füllung Flächen-Schwellenwert"
-
-msgid "Solid infill threshold width"
-msgstr "massive Füllung Schwellenwert"
 
 msgid "Solid infill width"
 msgstr "Breite der festen Füllung"

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -257,16 +257,10 @@ msgstr "造形時間短縮"
 msgid "Retraction"
 msgstr "リトラクション"
 
-msgid "Retraction Speed"
-msgstr "引き込み速度"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "非アクティブなツールのフィラメントを待避する(マルチエクストルーダーの高度な設"
 "定)"
-
-msgid "Seam position"
-msgstr "シーム位置"
 
 msgid "Sequential printing"
 msgstr "順次プリンティング"
@@ -336,6 +330,12 @@ msgstr "単一エクストルーダーMMプリンターのツールチェンジ�
 
 msgid "Top"
 msgstr "レイヤー||トップ"
+
+msgid "Travel"
+msgstr "移動"
+
+msgid "Type"
+msgstr "種類"
 
 msgid "Vertical shells"
 msgstr "外壁設定"

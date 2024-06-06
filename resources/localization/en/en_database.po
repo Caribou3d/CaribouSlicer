@@ -36,9 +36,6 @@ msgstr "Before rollback"
 msgid "Buttons And Text Colors Description"
 msgstr "Buttons and Text Colors Description"
 
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "Density of internal infill, expressed in the range 0% - 100%."
-
 msgid "Don't notify about new releases any more"
 msgstr "Don't notify about new releases anymore"
 
@@ -163,6 +160,9 @@ msgstr ""
 
 msgid "WHITE BULLET icon indicates a non system (or non default) preset."
 msgstr "WHITE BULLET icon indicates a non-system (or non-default) preset."
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr "Density of internal infill, expressed in the range 0% - 100%."
 
 msgid ""
 "Add solid infill near sloping surfaces to guarantee the vertical shell "

@@ -3,24 +3,101 @@
 msgid "_"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l84
-#Similar to me: Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode.
-# 8    changes: Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\\. seam is placed at a random position on external perimeters.\nRandom\\. seam is placed at a random position for all perimeters.\nAligned\\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\\. seam is placed at the far side (highest Y coordinates).\nCustom\\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode.
-#  translation: Posizione dei punti di partenza dei perimetri. Può usare il costo angolo e viaggio (con il costo fisso di visibilità e sporgenze) per trovare il posto migliore.\nAngoli\\. almeno il 100% del costo dell'angolo e non più dell'80% del costo del viaggio (predefinito 120-40).\nPiù vicino\\. non più del 100% del costo dell'angolo e almeno il 100% del costo del viaggio (predefinito 80-100).\nSparpagliato: la cucitura è posizionata in una posizione casuale sui perimetri esterni\nCasuale: la cucitura è posizionata in una posizione casuale per tutti i perimetri\nAllineato: le cuciture sono raggruppate nel miglior posto possibile (minimo 6 strati per gruppo).\nContiguo: la cucitura è posizionata sopra una cucitura dello strato precedente (utile con gli esecutori)\nPosteriore: la cucitura è posizionata sul lato opposto (coordinate Y più alte).\nPersonalizzato: altra combinazione di angolo e costo del viaggio rispetto a 'Angoli' e 'Più vicino' (predefinito 60-100).\nPersonalizzato può essere definito in modalità Avanzato o Esperto.
-# 16   changes: Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners: at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest: no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered: seam is placed at a random position on external perimeters.\nRandom: seam is placed at a random position for all perimeters.\nAligned: seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous: seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear: seam is placed at the far side (highest Y coordinates).\nCustom: Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode.
-#  translation: Posizione dei punti di partenza dei perimetri. Può utilizzare l'angolo e il costo del viaggio (con la visibilità fissa e il costo delle sporgenze) per trovare il posto migliore.\nAngoli: almeno il 100% del costo dell'angolo e non più dell'80% del costo del viaggio (predefinito 120-40).\nPiù vicino: non più del 100% del costo dell'angolo e almeno il 100% del costo del viaggio (predefinito 80-100).\nSparpagliato: la cucitura è posizionata in una posizione casuale sui perimetri esterni\nCasuale: la cucitura è posizionata in una posizione casuale per tutti i perimetri\nAllineato: le cuciture sono raggruppate nel miglior posto possibile (minimo 6 strati per gruppo).\nContiguo: la cucitura è posizionata sopra una cucitura dello strato precedente (utile con gli esecutori)\nPosteriore: la cucitura è posizionata sul lato opposto (coordinate Y più alte).\nPersonalizzato: altra combinazione di angolo e costo del viaggio rispetto a 'Angoli' e 'Più vicino' (predefinito 60-100).\nPersonalizzato può essere definito in modalità Avanzato o Esperto.
-msgid "Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode."
+#: ../../ui_layout/default/print.ui : l274
+#Similar to me: Brim first layer
+# 4    changes: On first layer
+#  translation: Primo strato
+# 4    changes: Solid first layer
+#  translation: Primo strato solido
+# 5    changes: first layer
+#  translation: primo layer
+msgid "Brim first layer"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l132
+#: ../../ui_layout/default/print.ui : l226
+msgid "From region"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l462
+msgid "Inside"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l359
+#Similar to me: Main speed
+# 2    changes: Fan speed
+#  translation: Velocità della ventola
+# 2    changes: Max speed
+#  translation: Velocità massima
+# 3    changes: Print speed
+#  translation: Velocità di stampa
+msgid "Main speed"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l353
+#Similar to me: Maximum speed
+# 1    changes: maximum speed
+#  translation: velocità massima
+# 4    changes: Max fan speed
+#  translation: Velocità massima ventola
+# 4    changes: Max speed
+#  translation: Velocità massima
+msgid "Maximum speed"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Overhangs cut
+# 4    changes: Overhangs
+#  translation: Sporgenze
+# 5    changes: Overhangs speed
+#  translation: Velocità degli sbalzi
+msgid "Overhangs cut"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
 # 8    changes: Also for all perimeters
 #  translation: Anche per tutti i perimetri
 # 8    changes: Overlapping all perimeters
 #  translation: Sovrapposizione di tutti i perimetri
-# 9    changes: External perimeters
-#  translation: Perimetri esterni
+# 9    changes: Layers and perimeters
+#  translation: Strati e perimetri
 msgid "Reverse on all perimeters"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Sold Infill
+# 2    changes: Solid infill
+#  translation: Riempimento solido
+# 3    changes: solid infill
+#  translation: riempimento solido
+# 4    changes: top infill
+#  translation: riempimento superiore
+msgid "Sold Infill"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Solid infill is area below
+# 10   changes: Solid infill speed
+#  translation: Velocità di riempimento solido
+msgid "Solid infill is area below"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Solid infill ovelrap
+# 4    changes: Solid fill overlap
+#  translation: Sovrapposizione riempimento solido
+# 4    changes: Solid infill every
+#  translation: Riempimento solido ogni
+# 6    changes: Solid infill speed
+#  translation: Velocità di riempimento solido
+msgid "Solid infill ovelrap"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l360
+#Similar to me: Wipe starting speed
+# 6    changes: Wipe tower starting speed
+#  translation: Velocità iniziale torre pulizia
+msgid "Wipe starting speed"
 msgstr ""
 
 #: ../../ui_layout/default/printer_sla.ui : l9
@@ -31,7 +108,7 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l351
+#: ../../ui_layout/default/print.ui : l364
 msgid "z"
 msgstr ""
 

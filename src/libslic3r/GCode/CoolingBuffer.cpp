@@ -1145,21 +1145,11 @@ std::string CoolingBuffer::apply_layer_cooldown(
                     new_gcode.append(end, line_end - end);
                 }
             }
-            if (modify) {
-                if (!comment_speed.empty()) {
-                    assert(new_gcode.back() == '\n');
-                    new_gcode.resize(new_gcode.size() - 1);
-                    new_gcode.append(comment_speed);
-                    new_gcode.append("\n");
-                }
-            }
         } else if(line->type == CoolingLine::TYPE_ADJUSTABLE_EMPTY) {
             // nothing useful, don't write it (an extrusion that don't move because it wasn't printed as it's too small).
-            if (m_config.gcode_comments) {
-                std::string deleted(line_start, line_end - line_start);
-                boost::replace_all(deleted, "\n", "");
-                new_gcode.append(std::string("; deleted empty line: ") + deleted);
-            }
+            std::string deleted(line_start, line_end - line_start);
+            boost::replace_all(deleted, "\n", "");
+            new_gcode.append(std::string("; deleted stuff: ") + deleted);
         } else {
             new_gcode.append(line_start, line_end - line_start);
         }

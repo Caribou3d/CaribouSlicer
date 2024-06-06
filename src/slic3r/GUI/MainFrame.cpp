@@ -988,15 +988,9 @@ void MainFrame::update_title()
     	}
     }
 
-    std::string gitbuild_id = SLIC3R_GITBUILD_NR;
-    if (wxGetApp().is_editor() && !has_name) {
-        title += wxString(SLIC3R_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
-    }
-    else if (!wxGetApp().is_editor() && !has_name) {
-        title += wxString(GCODEVIEWER_APP_NAME) + "-" + wxString(SLIC3R_VERSION) ;
-    }
-    title += " Build: " + wxString(gitbuild_id);
-    title += (" " + _L(SLIC3R_BASED_ON));
+    title += wxString(SLIC3R_APP_NAME) + "_" + wxString(SLIC3R_VERSION_FULL) ;
+    if (wxGetApp().is_editor() && !has_name)
+        title += (" " + _L(SLIC3R_BASED_ON));
 
     SetTitle(title);
 }

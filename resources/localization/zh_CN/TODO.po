@@ -1,5 +1,5 @@
 
-#: ../../ui_layout/default/print.ui : l342
+#: ../../ui_layout/default/print.ui : l354
 msgid "% of perimeter flow"
 msgstr ""
 
@@ -7,7 +7,7 @@ msgstr ""
 msgid "_"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l68
+#: ../../ui_layout/default/print.ui : l69
 #Similar to me: All perimeters
 # 3    changes: Small perimeters
 #  translation: 小边界
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Arachne perimeter generator (variable width)"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l42
+#: ../../ui_layout/default/extruder.ui : l43
 msgid "At end"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l41
+#: ../../ui_layout/default/extruder.ui : l42
 msgid "At start"
 msgstr ""
 
@@ -44,6 +44,17 @@ msgstr ""
 msgid "Bridge type"
 msgstr ""
 
+#: ../../ui_layout/default/print.ui : l274
+#Similar to me: Brim first layer
+# 4    changes: On first layer
+#  translation: 第一层
+# 4    changes: Solid first layer
+#  translation: 实心第一层
+# 5    changes: first layer
+#  translation: 第一层
+msgid "Brim first layer"
+msgstr ""
+
 #: ../../ui_layout/default/printer_fff.ui
 #Similar to me: build volume
 # 4    changes: build %lu
@@ -51,19 +62,19 @@ msgstr ""
 msgid "build volume"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l342
+#: ../../ui_layout/default/print.ui : l354
 msgid "Cap with"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l479
 msgid "Change the bridge type and the bridge overlap to compute the same extrusions as when the PrusaSlicer 'thick bridge' isn't selected.\nAs long as it's selected, it will modify them.\nUnselect it to deactivate this enforcement."
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l4
+#: ../../ui_layout/default/print.ui : l16
 msgid "Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0."
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l274
+#: ../../ui_layout/default/print.ui : l286
 #Similar to me: Count
 # 2    changes: Cost
 #  translation: 费用
@@ -78,25 +89,25 @@ msgstr ""
 #Similar to me: Default speed
 # 4    changes: Default fan speed
 #  translation: 默认风扇速度
-# 5    changes: Default color
-#  translation: 默认颜色
 # 5    changes: Infill speed
 #  translation: 固体填充速度
+# 5    changes: Default color
+#  translation: 默认颜色
 msgid "Default speed"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l43
+#: ../../ui_layout/default/extruder.ui : l44
 #Similar to me: Depth
 # 2    changes: tenth
 #  translation: 第十
 msgid "Depth"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l118
+#: ../../ui_layout/default/print.ui : l93
 msgid "Distance Margin"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l414
+#: ../../ui_layout/default/print.ui : l427
 #Similar to me: even layers
 # 4    changes: Faded layers
 #  translation: 褪色图层
@@ -107,7 +118,7 @@ msgstr ""
 msgid "even layers"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l48
+#: ../../ui_layout/default/extruder.ui : l49
 #Similar to me: for external perimeters
 # 4    changes: external perimeters
 #  translation: 外围轮廓
@@ -125,6 +136,10 @@ msgstr ""
 msgid "Formatting"
 msgstr ""
 
+#: ../../ui_layout/default/print.ui : l226
+msgid "From region"
+msgstr ""
+
 #: ../../ui_layout/default/printer_fff.ui
 msgid "G2/G3 generation"
 msgstr ""
@@ -133,10 +148,10 @@ msgstr ""
 #Similar to me: Gap fill fan speed
 # 4    changes: Gap fill speed
 #  translation: 间隙填充速度
-# 7    changes: Default fan speed
-#  translation: 默认风扇速度
 # 7    changes: Max fan speed
 #  translation: 最大风扇转速
+# 7    changes: Default fan speed
+#  translation: 默认风扇速度
 msgid "Gap fill fan speed"
 msgstr ""
 
@@ -155,7 +170,7 @@ msgstr ""
 msgid "idx"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l313
+#: ../../ui_layout/default/print.ui : l325
 #Similar to me: Increment
 # 1    changes: increment
 #  translation: 增量
@@ -169,7 +184,11 @@ msgstr ""
 msgid "Infill angle"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l276
+#: ../../ui_layout/default/print.ui : l462
+msgid "Inside"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l288
 #Similar to me: Interface layer height
 # 6    changes: Initial layer height
 #  translation: 初始层高度
@@ -180,7 +199,7 @@ msgstr ""
 msgid "Interface layer height"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l309
+#: ../../ui_layout/default/print.ui : l321
 #Similar to me: Interface spacing
 # 6    changes: Infill spacing
 #  translation: 填充间距
@@ -213,13 +232,24 @@ msgstr ""
 msgid "Lift"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l341
-#Similar to me: maximum speed
-# 5    changes: Max fan speed
-#  translation: 最大风扇转速
-# 5    changes: Max speed
+#: ../../ui_layout/default/print.ui : l359
+#Similar to me: Main speed
+# 2    changes: Fan speed
+#  translation: 风扇速度
+# 2    changes: Max speed
 #  translation: 最大速度
-msgid "maximum speed"
+# 3    changes: Print speed
+#  translation: 打印速度
+msgid "Main speed"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l353
+#Similar to me: Maximum speed
+# 4    changes: Max fan speed
+#  translation: 最大风扇转速
+# 4    changes: Max speed
+#  translation: 最大速度
+msgid "Maximum speed"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -227,11 +257,6 @@ msgid "Min feature"
 msgstr ""
 
 #: ../../ui_layout/default/extruder.ui
-#Similar to me: Minimum travel after
-# 6    changes: Minimum travel feedrate
-#  translation: 最小移动进给率
-# 8    changes: Minimum feedrates
-#  translation: 最小进给率
 msgid "Minimum movement"
 msgstr ""
 
@@ -250,8 +275,17 @@ msgstr ""
 msgid "Output"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l358
+#: ../../ui_layout/default/print.ui : l371
 msgid "Over raft"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Overhangs cut
+# 4    changes: Overhangs
+#  translation: 悬垂
+# 5    changes: Overhangs speed
+#  translation: 悬垂速度
+msgid "Overhangs cut"
 msgstr ""
 
 #: ../../ui_layout/default/filament.ui
@@ -274,23 +308,19 @@ msgstr ""
 #  translation: 周长速度
 # 6    changes: Bridges fan speed
 #  translation: 桥接风扇速度
-# 7    changes: Default fan speed
-#  translation: 默认风扇速度
+# 7    changes: Perimeter anchor
+#  translation: 周长
 msgid "Perimeter fan speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l84
-msgid "Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode."
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l132
+#: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
 # 8    changes: Also for all perimeters
 #  translation: 在填充前先打印轮廓
 # 8    changes: Overlapping all perimeters
 #  translation: 重叠所有周长
-# 9    changes: external perimeters
-#  translation: 外围轮廓
+# 9    changes: Layers and perimeters
+#  translation: 层和轮廓
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -298,12 +328,23 @@ msgstr ""
 msgid "Seam notch"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l60
+#: ../../ui_layout/default/print.ui : l61
 msgid "Simple widget to enable/disable the overhangs detection (using 55% and 75% for the two thresholds)\nUse the expert mode to get more detailled widgets"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l479
 msgid "Simulate Prusa 'no thick bridge'"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Sold Infill
+# 2    changes: Solid infill
+#  translation: 实心填充
+# 3    changes: solid infill
+#  translation: 实心填充
+# 4    changes: top infill
+#  translation: 顶部实心填充
+msgid "Sold Infill"
 msgstr ""
 
 #: ../../ui_layout/default/filament.ui
@@ -311,6 +352,24 @@ msgstr ""
 # 5    changes: Solid infill speed
 #  translation: 固体填充速度
 msgid "Solid Infill fan speed"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Solid infill is area below
+# 10   changes: Solid infill speed
+#  translation: 固体填充速度
+msgid "Solid infill is area below"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Solid infill ovelrap
+# 4    changes: Solid infill every
+#  translation: 固体填充每个
+# 6    changes: Solid infill speed
+#  translation: 固体填充速度
+# 7    changes: No solid infill over
+#  translation: 没有固体填充物
+msgid "Solid infill ovelrap"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -330,8 +389,8 @@ msgstr ""
 #  translation: 支撑去除器
 # 5    changes: Support pattern
 #  translation: 支撑模式
-# 6    changes: Support Enforcer
-#  translation: 支撑添加器
+# 6    changes: Support head
+#  translation: 支撑头
 msgid "Support & Other"
 msgstr ""
 
@@ -368,7 +427,7 @@ msgstr ""
 msgid "Support Material fan speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l23
+#: ../../ui_layout/default/print.ui : l24
 #Similar to me: Top infill pattern
 # 2    changes: Top fill pattern
 #  translation: 顶部填充模式
@@ -379,7 +438,7 @@ msgstr ""
 msgid "Top infill pattern"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l4
+#: ../../ui_layout/default/print.ui : l16
 #Similar to me: Wall Thickness
 # 1    changes: Wall thickness
 #  translation: 室壁厚度
@@ -394,6 +453,10 @@ msgstr ""
 msgid "Wipe inside"
 msgstr ""
 
+#: ../../ui_layout/default/print.ui : l360
+msgid "Wipe starting speed"
+msgstr ""
+
 #: ../../ui_layout/default/printer_sla.ui : l9
 msgid "X"
 msgstr ""
@@ -402,7 +465,7 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l351
+#: ../../ui_layout/default/print.ui : l364
 msgid "z"
 msgstr ""
 

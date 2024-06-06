@@ -1,4 +1,333 @@
 
+msgid "Acceleration control (advanced)"
+msgstr "Acceleraties (geavanceerd)"
+
+msgid "Activate"
+msgstr "Activeer"
+
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+msgid "After layer change G-code"
+msgstr "G-code die komt na de laagwisseling"
+
+msgid "Aligned"
+msgstr "Uitgelijnd"
+
+msgid "Automatic generation"
+msgstr "Automatisch genereren"
+
+msgid "Autospeed (advanced)"
+msgstr "Automatische snelheid (geavanceerd)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Vermijd kruisende perimeters"
+
+msgid "Bed"
+msgstr "Bed"
+
+msgid "Before layer change G-code"
+msgstr "G-code die komt vóór de laagwisseling"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "G-code die komt tussen objecten (bij achtereenvolgens printen)"
+
+msgid "Bottom"
+msgstr "Onderkant"
+
+msgid "Bridge"
+msgstr "Brug"
+
+msgid "Bridges"
+msgstr "Bruggen"
+
+msgid "Bridges fan speed"
+msgstr "Ventilatorsnelheid voor bruggen"
+
+msgid "Brim"
+msgstr "Brim"
+
+msgid "Capabilities"
+msgstr "Mogelijkheden"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "Verbindingen van de supporttakken en kruisingen"
+
+msgid "Cooling"
+msgstr "Koeling"
+
+msgid "Corrections"
+msgstr "Correcties"
+
+msgid "Custom G-code"
+msgstr "Custom G-code"
+
+msgid "Default"
+msgstr "Standaard"
+
+msgid "default"
+msgstr "standaard"
+
+msgid "Density"
+msgstr "Dichtheid"
+
+msgid "Dependencies"
+msgstr "Afhankelijkheden"
+
+msgid "Disable fan for the first"
+msgstr "Zet ventilator uit voor de eerste"
+
+msgid "Display"
+msgstr "Scherm"
+
+msgid "End G-code"
+msgstr "Eind G-code"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Garandeer verticale shelldikte"
+
+msgid "Exposure"
+msgstr "Belichtingstijd"
+
+msgid "Extruder"
+msgstr "Extruder"
+
+msgid "Extruders"
+msgstr "Extruders"
+
+msgid "Extrusion width"
+msgstr "Extrusiebreedte"
+
+msgid "Filament"
+msgstr "Filament"
+
+msgid "Filament properties"
+msgstr "Filamenteigenschappen"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "First layer"
+msgstr "Eerste laag"
+
+msgid "First layer speed"
+msgstr "Snelheid eerste laag"
+
+msgid "Flow"
+msgstr "Stroom"
+
+msgid "Fuzzy skin (experimental)"
+msgstr "Oneffen oppervlak (experimenteel)"
+
+msgid "Gap fill"
+msgstr "Gatenvulling"
+
+msgid "General"
+msgstr "Algemeen"
+
+msgid "Hollowing"
+msgstr "Uithollen"
+
+msgid "Horizontal shells"
+msgstr "Horizontale shells"
+
+msgid "Infill"
+msgstr "Vulling"
+
+msgid "infill"
+msgstr "vulling"
+
+msgid "Layer height"
+msgstr "Laagdikte"
+
+msgid "Layer height limits"
+msgstr "Laagdiktelimieten"
+
+msgid "Layers"
+msgstr "Lagen"
+
+msgid "Layers and perimeters"
+msgstr "Lagen en perimeters"
+
+msgid "Length"
+msgstr "Lengte"
+
+msgid "Material"
+msgstr "Materiaal"
+
+msgid "Material printing profile"
+msgstr "Materiaal-printprofiel"
+
+msgid "Minimum shell thickness"
+msgstr "Minimale shelldikte"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "Modifiers"
+msgstr "Modificators"
+
+msgid "Notes"
+msgstr "Opmerkingen"
+
+msgid "Number of pixels in"
+msgstr "Aantal pixels"
+
+msgid "Only lift Z"
+msgstr "Beweeg alleen Z omhoog"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Alleen retracten bij kruisende perimeters"
+
+msgid "Ooze prevention"
+msgstr "Druippreventie"
+
+msgid "Options"
+msgstr "Opties"
+
+msgid "Options for support material and raft"
+msgstr "Opties voor support en raft"
+
+msgid "Other"
+msgstr "Overige"
+
+msgid "Output file"
+msgstr "Outputbestand"
+
+msgid "Output options"
+msgstr "Output-opties"
+
+msgid "Overlap"
+msgstr "Overlapping"
+
+msgid "Pad"
+msgstr "Basisplaat"
+
+msgid "Pattern"
+msgstr "Patroon"
+
+msgid "Pause Print G-code"
+msgstr "Pauzeer print G-code"
+
+msgid "Plater"
+msgstr "Modelweergave"
+
+msgid "Preview"
+msgstr "Sliceweergave"
+
+msgid "Print Host upload"
+msgstr "Printhost-upload"
+
+msgid "Print speed override"
+msgstr "Printsnelheid overschrijven"
+
+msgid "Printer scaling correction"
+msgstr "Verschalingscorrectie voor printer"
+
+msgid "Profile dependencies"
+msgstr "Profielafhankelijkheden"
+
+msgid "Quality"
+msgstr "Kwaliteit"
+
+msgid "Raft"
+msgstr "Raft"
+
+msgid "Reducing printing time"
+msgstr "Printtijd verkorten"
+
+msgid "Retraction"
+msgstr "Retractie"
+
+msgid "Retraction Speed"
+msgstr "Retractiesnelheid"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Retractie als de tool uit staat (geavanceerde instelling voor multi-"
+"extrudersetups)"
+
+msgid "Seam position"
+msgstr "Naadpositie"
+
+msgid "Sequential printing"
+msgstr "Achtereenvolgens printen"
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Size and coordinates"
+msgstr "Grootte en coördinaten"
+
+msgid "Skirt"
+msgstr "Skirt"
+
+msgid "Slicing"
+msgstr "Slicen"
+
+msgid "Solid"
+msgstr "Solide"
+
+msgid "solid infill"
+msgstr "dichte vulling"
+
+msgid "Solid layers"
+msgstr "Dichte lagen"
+
+msgid "Spacing"
+msgstr "Tussenruimte"
+
+msgid "Speed"
+msgstr "Snelheid"
+
+msgid "Speed for non-print moves"
+msgstr "Snelheid voor niet-print bewegingen"
+
+msgid "Speed for print moves"
+msgstr "Snelheid voor printbewegingen"
+
+msgid "Start G-code"
+msgstr "Start G-code"
+
+msgid "Support head"
+msgstr "Supportkop"
+
+msgid "Support material"
+msgstr "Support"
+
+msgid "Support pillar"
+msgstr "Supportpijler"
+
+msgid "Supports"
+msgstr "Support"
+
+msgid "Template Custom G-code"
+msgstr "Template custom G-code"
+
+msgid "Tilt"
+msgstr "Draaiing"
+
+msgid "Tilt time"
+msgstr "Draaitijd"
+
+msgid "Tool change G-code"
+msgstr "Toolwisseling G-code"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "Toolwisselparameter voor multi-materialprinters met één extruder"
+
+msgid "Top"
+msgstr "Bovenkant"
+
+msgid "Vertical shells"
+msgstr "Verticale shells"
+
+msgid "Wipe tower"
+msgstr "Afveegblok"
+
+msgid "Wipe tower parameters"
+msgstr "Afveegblokparameters"
+
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
 msgstr[0] "%1$d lijn achterstevoren"
@@ -419,9 +748,6 @@ msgstr "boven"
 msgid "Above Z"
 msgstr "Boven Z"
 
-msgid "Acceleration control (advanced)"
-msgstr "Acceleraties (geavanceerd)"
-
 msgid "Access violation"
 msgstr "Toegangsschending"
 
@@ -433,9 +759,6 @@ msgstr "Nauwkeurig"
 
 msgid "Action"
 msgstr "Commando"
-
-msgid "Activate"
-msgstr "Activeer"
 
 msgid "Active"
 msgstr "Actief"
@@ -608,9 +931,6 @@ msgstr ""
 msgid "Address"
 msgstr "Adres"
 
-msgid "Advanced"
-msgstr "Geavanceerd"
-
 msgid "Advanced mode"
 msgstr "Geavanceerde modus"
 
@@ -630,17 +950,11 @@ msgstr ""
 "afvegen aan het afveegblok om vervolgens de vulling of overige objecten goed "
 "te kunnen printen."
 
-msgid "After layer change G-code"
-msgstr "G-code die komt na de laagwisseling"
-
 msgid "Align the model to the given point."
 msgstr "Lijn de modellen uit op het gegeven punt."
 
 msgid "Align XY"
 msgstr "XY uitlijnen"
-
-msgid "Aligned"
-msgstr "Uitgelijnd"
 
 msgid "All"
 msgstr "Alles"
@@ -869,20 +1183,11 @@ msgid "Autogeneration will erase all manually edited points."
 msgstr ""
 "Automatisch genereren zal alle handmatig aangepaste punten verwijderen."
 
-msgid "Automatic generation"
-msgstr "Automatisch genereren"
-
 msgid "Automatic updates"
 msgstr "Automatische updates"
 
 msgid "Automatically repair an STL file"
 msgstr "Automatisch een STL-bestand repareren"
-
-msgid "Autospeed (advanced)"
-msgstr "Automatische snelheid (geavanceerd)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Vermijd kruisende perimeters"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Vermijd kruisende perimeters - maximale omleidingslengte"
@@ -920,9 +1225,6 @@ msgstr "Sla onbekende configuratiewaarden over"
 msgid "Balanced"
 msgstr "Gebalanceerd"
 
-msgid "Bed"
-msgstr "Bed"
-
 msgid "Bed custom model"
 msgstr "Custom bedmodel"
 
@@ -944,9 +1246,6 @@ msgstr "Bedtemperatuur"
 msgid "Bed Temperature:"
 msgstr "Bedtemperatuur:"
 
-msgid "Before layer change G-code"
-msgstr "G-code die komt vóór de laagwisseling"
-
 msgid "Before roll back"
 msgstr "Voor terugrollen"
 
@@ -955,9 +1254,6 @@ msgstr "Onder Z"
 
 msgid "Between objects G-code"
 msgstr "G-code die komt tussen objecten"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "G-code die komt tussen objecten (bij achtereenvolgens printen)"
 
 msgid "Block seam"
 msgstr "Blokkeer naad"
@@ -973,9 +1269,6 @@ msgstr "Flesinhoud (volume)"
 
 msgid "Bottle weight"
 msgstr "Flesinhoud (gewicht)"
-
-msgid "Bottom"
-msgstr "Onderkant"
 
 msgid "Bottom fill pattern"
 msgstr "Vulpatroon voor onderzijde"
@@ -995,20 +1288,11 @@ msgstr "Dichte bodemlagen"
 msgid "Bottom View"
 msgstr "Onderaanzicht"
 
-msgid "Bridge"
-msgstr "Brug"
-
 msgid "Bridge flow ratio"
 msgstr "Brugextrusieverhouding"
 
 msgid "Bridge infill"
 msgstr "Brugvulling"
-
-msgid "Bridges"
-msgstr "Bruggen"
-
-msgid "Bridges fan speed"
-msgstr "Ventilatorsnelheid voor bruggen"
 
 msgid "Bridging angle"
 msgstr "Brughoek"
@@ -1024,9 +1308,6 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Volumetrische bruggen"
-
-msgid "Brim"
-msgstr "Brim"
 
 msgid "Brim separation gap"
 msgstr "Brim-scheidingsgat"
@@ -1136,9 +1417,6 @@ msgid ""
 msgstr ""
 "Kan niet doorgaan zonder supportpunten! Voeg supportpunten toe of schakel "
 "supportgeneratie uit."
-
-msgid "Capabilities"
-msgstr "Mogelijkheden"
 
 msgid "Capture a configuration snapshot"
 msgstr "Neem een configuratiesnapshot op"
@@ -1428,9 +1706,6 @@ msgstr "Configuratie-assistent"
 msgid "Confirmation"
 msgstr "Bevestiging"
 
-msgid "Connection of the support sticks and junctions"
-msgstr "Verbindingen van de supporttakken en kruisingen"
-
 msgid "Connection to PrusaLink works correctly."
 msgstr "Verbinding met PrusaLink werkt naar behoren."
 
@@ -1457,9 +1732,6 @@ msgstr "Converteer naar Engelse eenheden"
 
 msgid "Convert from meters"
 msgstr "Converteer vanaf meters"
-
-msgid "Cooling"
-msgstr "Koeling"
 
 msgid "Cooling tube length"
 msgstr "Koelbuislengte"
@@ -1537,9 +1809,6 @@ msgstr "Uitzettingscorrectie over de Y-as"
 
 msgid "Correction for expansion in Z axis"
 msgstr "Uitzettingscorrectie over de Z-as"
-
-msgid "Corrections"
-msgstr "Correcties"
 
 msgid "Cost"
 msgstr "Kosten"
@@ -1628,9 +1897,6 @@ msgstr ""
 "OctoPrint verbindingen in CRT/PEM-formaat. Als er niets wordt ingevuld, "
 "wordt de standaard OS-CA-certificaatopslaglocatie gebruikt."
 
-msgid "Custom G-code"
-msgstr "Custom G-code"
-
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "Custom G-code voor huidige laag (%1% mm)."
 
@@ -1685,12 +1951,6 @@ msgstr "decompressie mislukt of archief is beschadigd"
 
 msgid "Decrease Instances"
 msgstr "Verlaag aantal instanties"
-
-msgid "default"
-msgstr "standaard"
-
-msgid "Default"
-msgstr "Standaard"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1847,18 +2107,12 @@ msgstr "Verwijdert alle objecten"
 msgid "Deletes the current selection"
 msgstr "Verwijdert huidige selectie"
 
-msgid "Density"
-msgstr "Dichtheid"
-
 msgid "Density of internal infill, expressed in the range 0% - 100%."
 msgstr ""
 "Dichtheid van inwendige vulling, uitgedrukt in een percentage (0 - 100%)"
 
 msgid "Density of the first raft or support layer."
 msgstr "Dichtheid van de eerste raft- of supportlaag."
-
-msgid "Dependencies"
-msgstr "Afhankelijkheden"
 
 msgid "Deretraction Speed"
 msgstr "Deretractiesnelheid"
@@ -1934,9 +2188,6 @@ msgstr "verschilt ten opzichte van het originele bestand"
 msgid "Direction"
 msgstr "Richting"
 
-msgid "Disable fan for the first"
-msgstr "Zet ventilator uit voor de eerste"
-
 msgid "Disabled"
 msgstr "Uit"
 
@@ -1948,9 +2199,6 @@ msgstr "Verwijder alle wijzigingen"
 
 msgid "Discard changes"
 msgstr "Wijzigingen afwijzen"
-
-msgid "Display"
-msgstr "Scherm"
 
 msgid "Display height"
 msgstr "Schermhoogte"
@@ -2241,9 +2489,6 @@ msgstr "Verticaal spiegelen"
 msgid "Enabled"
 msgstr "Aan"
 
-msgid "End G-code"
-msgstr "Eind G-code"
-
 msgid "Enforce"
 msgstr "Forceer"
 
@@ -2264,9 +2509,6 @@ msgstr "In de wachtrij geplaatst"
 
 msgid "Ensure on bed"
 msgstr "Plaats op bed"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Garandeer verticale shelldikte"
 
 msgid "Enter a search term"
 msgstr "Voer een zoekterm in"
@@ -2571,9 +2813,6 @@ msgstr "Exporteren."
 msgid "Exposition time is out of printer profile bounds."
 msgstr "De belichtingstijd valt buiten de grenzen van het printerprofiel."
 
-msgid "Exposure"
-msgstr "Belichtingstijd"
-
 msgid "Exposure time"
 msgstr "Belichtingstijd"
 
@@ -2595,9 +2834,6 @@ msgstr "Extra lengte bij herstart"
 msgid "Extra loading distance"
 msgstr "Extra laadafstand"
 
-msgid "Extruder"
-msgstr "Extruder"
-
 msgid "Extruder %d"
 msgstr "Extruder %d"
 
@@ -2613,9 +2849,6 @@ msgstr "Extruderkleur"
 msgid "Extruder offset"
 msgstr "Extruder-offset"
 
-msgid "Extruders"
-msgstr "Extruders"
-
 msgid "Extruders count"
 msgstr "Aantal extruders"
 
@@ -2630,9 +2863,6 @@ msgstr "Extrusie vermenigvuldigingsfactor"
 
 msgid "Extrusion Temperature:"
 msgstr "Extrusietemperatuur:"
-
-msgid "Extrusion width"
-msgstr "Extrusiebreedte"
 
 msgid "Facets"
 msgstr "Vlakken"
@@ -2698,9 +2928,6 @@ msgstr "Type opties"
 msgid "filament"
 msgstr "filament"
 
-msgid "Filament"
-msgstr "Filament"
-
 msgid "Filament and Nozzle Diameters"
 msgstr "Filament en nozzle diameters"
 
@@ -2734,9 +2961,6 @@ msgstr "Filament parkeerpositie"
 
 msgid "Filament Profiles Selection"
 msgstr "Filament profielselectie"
-
-msgid "Filament properties"
-msgstr "Filamenteigenschappen"
 
 msgid "Filament Settings"
 msgstr "Filamentinstellingen"
@@ -2816,9 +3040,6 @@ msgstr "Zoeken"
 msgid "Finished"
 msgstr "Klaar"
 
-msgid "Firmware"
-msgstr "Firmware"
-
 msgid "Firmware flasher"
 msgstr "Firmwareflasher"
 
@@ -2833,9 +3054,6 @@ msgstr "Firmwaretype"
 
 msgid "first"
 msgstr "eerste"
-
-msgid "First layer"
-msgstr "Eerste laag"
 
 msgid "First layer bed temperature"
 msgstr "Bedtemperatuur eerste laag"
@@ -2860,9 +3078,6 @@ msgstr ""
 
 msgid "First layer nozzle temperature"
 msgstr "Nozzletemperatuur eerste laag"
-
-msgid "First layer speed"
-msgstr "Snelheid eerste laag"
 
 msgid "First layer volumetric"
 msgstr "Eerste laag volumetrisch"
@@ -2899,9 +3114,6 @@ msgstr "Flashen succesvol!"
 
 msgid "Floating reserved operand"
 msgstr "Fout: floating reserved operand"
-
-msgid "Flow"
-msgstr "Stroom"
 
 msgid "Flow rate"
 msgstr "Debiet"
@@ -3032,9 +3244,6 @@ msgstr "Volledig scherm"
 msgid "Fuzzy Skin"
 msgstr "Oneffen oppervlak"
 
-msgid "Fuzzy skin (experimental)"
-msgstr "Oneffen oppervlak (experimenteel)"
-
 msgid "Fuzzy skin point distance"
 msgstr "Puntafstand van oneffen oppervlak"
 
@@ -3075,12 +3284,6 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
-
-msgid "Gap fill"
-msgstr "Gatenvulling"
-
-msgid "General"
-msgstr "Algemeen"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -3317,9 +3520,6 @@ msgstr "Hol een model uit voor een leeg binnenste"
 msgid "Hollow this object"
 msgstr "Dit object uithollen"
 
-msgid "Hollowing"
-msgstr "Uithollen"
-
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -3341,9 +3541,6 @@ msgstr "Wijziging van uitholparameter"
 
 msgid "Honeycomb"
 msgstr "Honingraat"
-
-msgid "Horizontal shells"
-msgstr "Horizontale shells"
 
 msgid "Horizontal Slider"
 msgstr "Horizontale schuif"
@@ -3810,12 +4007,6 @@ msgstr ""
 "Klik op het pijltje-terug-pictogram om alle instellingen te resetten naar de "
 "laatst opgeslagen preset voor de huidige optiegroep."
 
-msgid "Infill"
-msgstr "Vulling"
-
-msgid "infill"
-msgstr "vulling"
-
 msgid "Infill before perimeters"
 msgstr "Vulling vóór perimeters"
 
@@ -4038,9 +4229,6 @@ msgstr "Laatste instantie van een object kan niet verwijderd worden."
 msgid "Layer"
 msgstr "Laag"
 
-msgid "Layer height"
-msgstr "Laagdikte"
-
 msgid ""
 "Layer height is not valid.\n"
 "\n"
@@ -4050,20 +4238,11 @@ msgstr ""
 "\n"
 "De laagdikte wordt ingesteld op 0,01."
 
-msgid "Layer height limits"
-msgstr "Laagdiktelimieten"
-
 msgid "Layer range Settings to modify"
 msgstr "Laagbereikinstellingen om te bewerken"
 
 msgid "layers"
 msgstr "lagen"
-
-msgid "Layers"
-msgstr "Lagen"
-
-msgid "Layers and perimeters"
-msgstr "Lagen en perimeters"
 
 msgid "Left"
 msgstr "Links"
@@ -4085,9 +4264,6 @@ msgstr "Linkerzijaanzicht"
 
 msgid "Legend/Estimated printing time"
 msgstr "Legenda / Geschatte printtijd"
-
-msgid "Length"
-msgstr "Lengte"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -4271,12 +4447,6 @@ msgstr "Gemaskeerd SLA bestand geëxporteerd naar %1%"
 
 msgid "Mate&rial Settings Tab"
 msgstr "Materiaalinstellingentab"
-
-msgid "Material"
-msgstr "Materiaal"
-
-msgid "Material printing profile"
-msgstr "Materiaal-printprofiel"
 
 msgid "Material Settings"
 msgstr "Materiaalinstellingen"
@@ -4529,9 +4699,6 @@ msgstr "Minimale snelheden"
 msgid "Minimum initial exposure time"
 msgstr "Minimale initiële belichtingstijd"
 
-msgid "Minimum shell thickness"
-msgstr "Minimale shelldikte"
-
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Minimale dikte van top-/bodemshell"
 
@@ -4570,9 +4737,6 @@ msgstr "Gemengd"
 
 msgid "ml"
 msgstr "ml"
-
-msgid "mm"
-msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (stel in op 0 om uit te schakelen)"
@@ -4627,9 +4791,6 @@ msgstr "aangepast"
 
 msgid "Modifier"
 msgstr "Modificator"
-
-msgid "Modifiers"
-msgstr "Modificators"
 
 msgid "money/bottle"
 msgstr "€/fles"
@@ -4899,9 +5060,6 @@ msgstr "Let op: sommige sneltoetsen werken alleen in bewerkmodus."
 msgid "Note: This preset will be replaced after saving"
 msgstr "Let op: deze preset wordt vervangen na het opslaan"
 
-msgid "Notes"
-msgstr "Opmerkingen"
-
 msgid "Notice"
 msgstr "Let op"
 
@@ -4940,9 +5098,6 @@ msgid ""
 msgstr ""
 "Het aantal interfacelagen tussen de objecten en het supportmateriaal. Stel "
 "in op -1 om evenveel lagen als op bovenkant te gebruiken"
-
-msgid "Number of pixels in"
-msgstr "Aantal pixels"
 
 msgid "Number of pixels in X"
 msgstr "Aantal pixels in de breedte"
@@ -5098,17 +5253,11 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "Alleen vulling waar nodig"
 
-msgid "Only lift Z"
-msgstr "Beweeg alleen Z omhoog"
-
 msgid "Only lift Z above"
 msgstr "Beweeg Z alleen omhoog boven"
 
 msgid "Only lift Z below"
 msgstr "Beweeg Z alleen omhoog onder"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Alleen retracten bij kruisende perimeters"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -5123,9 +5272,6 @@ msgid ""
 msgstr ""
 "Alleen de volgende geïnstalleerde printers zijn compatibel met de "
 "geselecteerde SLA materialen"
-
-msgid "Ooze prevention"
-msgstr "Druippreventie"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -5201,12 +5347,6 @@ msgstr ""
 "handig bij bowden-extruders die gevoelig zijn voor druipen. Deze aanpassing "
 "vertraagd zowel de print als de G-code-generatie."
 
-msgid "Options"
-msgstr "Opties"
-
-msgid "Options for support material and raft"
-msgstr "Opties voor support en raft"
-
 msgid "Options:"
 msgstr "Opties:"
 
@@ -5225,9 +5365,6 @@ msgstr "Oriëntatie zoeken geannuleerd."
 msgid "Origin"
 msgstr "Nulpunt"
 
-msgid "Other"
-msgstr "Overige"
-
 msgid "Other layers"
 msgstr "Overige lagen"
 
@@ -5243,17 +5380,11 @@ msgstr "Alleen buitenste brim"
 msgid "Output File"
 msgstr "Outputbestand"
 
-msgid "Output file"
-msgstr "Outputbestand"
-
 msgid "Output filename format"
 msgstr "Formaat van bestandsnaam"
 
 msgid "Output Model Info"
 msgstr "Output model-info"
-
-msgid "Output options"
-msgstr "Output-opties"
 
 msgid "Outside walls"
 msgstr "Alleen buitenwanden"
@@ -5267,14 +5398,8 @@ msgstr "Overhangende perimeter"
 msgid "Overhang threshold"
 msgstr "Maximale overhanghoek"
 
-msgid "Overlap"
-msgstr "Overlapping"
-
 msgid "P&rint Settings Tab"
 msgstr "Tabblad printinstellingen"
-
-msgid "Pad"
-msgstr "Basisplaat"
 
 msgid "Pad around object"
 msgstr "Basisplaat rondom object"
@@ -5375,9 +5500,6 @@ msgstr "Plak van klembord"
 msgid "Paste From Clipboard"
 msgstr "Plak van klembord"
 
-msgid "Pattern"
-msgstr "Patroon"
-
 msgid "Pattern angle"
 msgstr "Patroonhoek"
 
@@ -5392,9 +5514,6 @@ msgstr "Pauzeer"
 
 msgid "Pause print (\"%1%\")"
 msgstr "Pauzeer print (%1%)"
-
-msgid "Pause Print G-code"
-msgstr "Pauzeer print G-code"
 
 msgid "Percentage"
 msgstr "Percentage"
@@ -5467,9 +5586,6 @@ msgstr "Plaats lagers in gleuven en ga door met printen"
 
 msgid "Place on face"
 msgstr "Plaats op vlak"
-
-msgid "Plater"
-msgstr "Modelweergave"
 
 msgid "Please check your object list before preset changing."
 msgstr "Controleer de objectenlijst voor het wijzigen van de preset."
@@ -5586,9 +5702,6 @@ msgstr ""
 "Druk om 5x zo snel te gaan bij het verplaatsen van de markering\n"
 "met pijltjestoetsen of het scrollwieltje"
 
-msgid "Preview"
-msgstr "Sliceweergave"
-
 msgid "Preview hollowed and drilled model"
 msgstr "Toon voorbeeld van uitgehold model met gat"
 
@@ -5616,9 +5729,6 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "Printdiameter"
 
-msgid "Print Host upload"
-msgstr "Printhost-upload"
-
 msgid "Print host upload queue"
 msgstr "Printhost-uploadwachtrij"
 
@@ -5639,9 +5749,6 @@ msgstr "Printinstellingentab"
 
 msgid "Print speed"
 msgstr "Printsnelheid"
-
-msgid "Print speed override"
-msgstr "Printsnelheid overschrijven"
 
 msgid "Print&er Settings Tab"
 msgstr "Tabblad printerinstellingen"
@@ -5666,9 +5773,6 @@ msgstr "Printeropmerkingen"
 
 msgid "Printer preset names"
 msgstr "Printerpresetnamen"
-
-msgid "Printer scaling correction"
-msgstr "Verschalingscorrectie voor printer"
 
 msgid "Printer scaling correction in X axis"
 msgstr "Verschalingscorrectie over de X-as"
@@ -5726,9 +5830,6 @@ msgstr ""
 msgid "Processing %s"
 msgstr "%s verwerken"
 
-msgid "Profile dependencies"
-msgstr "Profielafhankelijkheden"
-
 msgid "Profile:"
 msgstr "Profiel:"
 
@@ -5765,9 +5866,6 @@ msgstr "Afveegvolume - matrix"
 msgid "Purpose of Machine Limits"
 msgstr "Doel van de machinelimieten"
 
-msgid "Quality"
-msgstr "Kwaliteit"
-
 msgid "Quality / Speed"
 msgstr "Kwaliteit / Snelheid"
 
@@ -5788,9 +5886,6 @@ msgstr "Afsluiten, ik zal mijn data nu verplaatsen"
 
 msgid "Radius"
 msgstr "Radius"
-
-msgid "Raft"
-msgstr "Raft"
 
 msgid "Raft contact Z distance"
 msgstr "Z-afstand voor raft"
@@ -5896,9 +5991,6 @@ msgstr[1] "Doe %1$d acties opnieuw"
 
 msgid "Redo History"
 msgstr "Geschiedenis opnieuw doen"
-
-msgid "Reducing printing time"
-msgstr "Printtijd verkorten"
 
 msgid "Refresh Printers"
 msgstr "Ververs printers"
@@ -6124,9 +6216,6 @@ msgstr "Retracthoeveelheid voor het afvegen"
 msgid "Retract on layer change"
 msgstr "Retracten bij laagwisselingen"
 
-msgid "Retraction"
-msgstr "Retractie"
-
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr ""
@@ -6138,14 +6227,6 @@ msgstr "Retractielengte"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Retractielengte (toolwissel)"
-
-msgid "Retraction Speed"
-msgstr "Retractiesnelheid"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Retractie als de tool uit staat (geavanceerde instelling voor multi-"
-"extrudersetups)"
 
 msgid "Retractions"
 msgstr "Retracties"
@@ -6338,9 +6419,6 @@ msgstr ""
 msgid "Seam painting"
 msgstr "Naad kleuren"
 
-msgid "Seam position"
-msgstr "Naadpositie"
-
 msgid "Seam preferred direction"
 msgstr "Richtingsvoorkeur voor de naad"
 
@@ -6493,9 +6571,6 @@ msgstr "Stuur naar printer"
 
 msgid "Seq."
 msgstr "Volg."
-
-msgid "Sequential printing"
-msgstr "Achtereenvolgens printen"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "Opeenvolgende schuif alleen toegepast op toplaag"
@@ -6813,17 +6888,8 @@ msgstr "Enkele instantiemodus"
 msgid "Sinking"
 msgstr "Verzakken"
 
-msgid "Size"
-msgstr "Grootte"
-
-msgid "Size and coordinates"
-msgstr "Grootte en coördinaten"
-
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Afmeting in X en Y van het rechthoekig platform."
-
-msgid "Skirt"
-msgstr "Skirt"
 
 msgid "Skirt and brim"
 msgstr "Skirt en brim"
@@ -6934,9 +7000,6 @@ msgstr "Slice-info"
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "Gesliced object \"%1%\" lijkt op een logo of bord"
 
-msgid "Slicing"
-msgstr "Slicen"
-
 msgid "Slicing complete"
 msgstr "Slicen gelukt"
 
@@ -6993,17 +7056,11 @@ msgstr "Snapshotnaam"
 msgid "Snug"
 msgstr "Handvast"
 
-msgid "Solid"
-msgstr "Solide"
-
 msgid "Solid "
 msgstr "Solide "
 
 msgid "Solid infill"
 msgstr "Dichte vulling"
-
-msgid "solid infill"
-msgstr "dichte vulling"
 
 msgid "Solid infill every"
 msgstr "Dichte vulling elke"
@@ -7013,9 +7070,6 @@ msgstr "Extruder voor dichte vulling"
 
 msgid "Solid infill threshold area"
 msgstr "Dichte vulling bij oppervlak"
-
-msgid "Solid layers"
-msgstr "Dichte lagen"
 
 msgid "Soluble material"
 msgstr "Oplosbaar materiaal"
@@ -7082,9 +7136,6 @@ msgstr "Sommige printers zijn verwijderd."
 msgid "Some SLA materials were uninstalled."
 msgstr "Sommige SLA-materialen zijn verwijderd."
 
-msgid "Spacing"
-msgstr "Tussenruimte"
-
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Ruimte tussen lijnen van supportinterface. Als dit ingesteld is op 0, wordt "
@@ -7092,9 +7143,6 @@ msgstr ""
 
 msgid "Spacing between support material lines."
 msgstr "Afstand tussen supportlijnen."
-
-msgid "Speed"
-msgstr "Snelheid"
 
 msgid "Speed (mm/s)"
 msgstr "Snelheid (mm/s)"
@@ -7107,12 +7155,6 @@ msgstr ""
 "Snelheid voor bewegingen van de Z-as.\n"
 "Als dit ingesteld is op 0, zal de waarde worden genegeerd en "
 "standaardwaarden worden gebruikt."
-
-msgid "Speed for non-print moves"
-msgstr "Snelheid voor niet-print bewegingen"
-
-msgid "Speed for print moves"
-msgstr "Snelheid voor printbewegingen"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "Bewegingssnelheid als niet geëxtrudeerd wordt."
@@ -7189,9 +7231,6 @@ msgstr "Start nieuw project"
 
 msgid "Start at height"
 msgstr "Start op hoogte"
-
-msgid "Start G-code"
-msgstr "Start G-code"
 
 msgid "Start new slicing process"
 msgstr "Start nieuw sliceproces"
@@ -7299,14 +7338,8 @@ msgstr "Supportforcering"
 msgid "Support Generator"
 msgstr "Supportgenerator"
 
-msgid "Support head"
-msgstr "Supportkop"
-
 msgid "support interface"
 msgstr "supportinterface"
-
-msgid "Support material"
-msgstr "Support"
 
 msgid "Support material interface"
 msgstr "Supportinterface"
@@ -7320,17 +7353,11 @@ msgstr "Support alleen op het bed"
 msgid "Support parameter change"
 msgstr "Wijzig supportparameter"
 
-msgid "Support pillar"
-msgstr "Supportpijler"
-
 msgid "Support points density"
 msgstr "Dichtheid van supportpunten"
 
 msgid "Support points edit"
 msgstr "Bewerk supportpunten"
-
-msgid "Supports"
-msgstr "Support"
 
 msgid "supports and pad"
 msgstr "support en basisplaat"
@@ -7445,9 +7472,6 @@ msgstr "Temperatuurverschil"
 
 msgid "Temperatures"
 msgstr "Temperaturen"
-
-msgid "Template Custom G-code"
-msgstr "Template custom G-code"
 
 msgid "Test"
 msgstr "Test"
@@ -8294,12 +8318,6 @@ msgstr ""
 "draaien. Het optimaal aantal processen is vlak boven het aanwezige aantal "
 "kernen/processoren."
 
-msgid "Tilt"
-msgstr "Draaiing"
-
-msgid "Tilt time"
-msgstr "Draaitijd"
-
 msgid "Time"
 msgstr "Tijd"
 
@@ -8369,9 +8387,6 @@ msgstr "Tool"
 msgid "Tool #"
 msgstr "Tool #"
 
-msgid "Tool change G-code"
-msgstr "Toolwisseling G-code"
-
 msgid "Tool changes"
 msgstr "Toolwisselingen"
 
@@ -8383,12 +8398,6 @@ msgstr "Toolpositie"
 
 msgid "Tool type"
 msgstr "Tooltype"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "Toolwisselparameter voor multi-materialprinters met één extruder"
-
-msgid "Top"
-msgstr "Bovenkant"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -8797,9 +8806,6 @@ msgstr "Versie"
 msgid "version"
 msgstr "versie"
 
-msgid "Vertical shells"
-msgstr "Verticale shells"
-
 msgid "Vertical Slider"
 msgstr "Verticale schuif"
 
@@ -9002,9 +9008,6 @@ msgstr "Afvegen in de vulling van het object"
 msgid "Wipe Tower"
 msgstr "Afveegblok"
 
-msgid "Wipe tower"
-msgstr "Afveegblok"
-
 msgid "wipe tower"
 msgstr "afveegblok"
 
@@ -9013,9 +9016,6 @@ msgstr "Afveegblok - afveegvolume aanpassen"
 
 msgid "Wipe tower brim width"
 msgstr "Brimbreedte van het afveegblok"
-
-msgid "Wipe tower parameters"
-msgstr "Afveegblokparameters"
 
 msgid "Wipe tower rotation angle"
 msgstr "Rotatie van het afveegblok"

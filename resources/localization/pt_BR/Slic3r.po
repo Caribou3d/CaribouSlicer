@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -272,16 +272,10 @@ msgstr "Reduzindo o tempo de impressão"
 msgid "Retraction"
 msgstr "Retração"
 
-msgid "Retraction Speed"
-msgstr "Velocidade da retração"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Retração quando a ferramenta está desativada (config. avançadas para "
 "instalações multiextrusoras)"
-
-msgid "Seam position"
-msgstr "Posição da costura"
 
 msgid "Sequential printing"
 msgstr "Impressão sequencial"
@@ -362,6 +356,12 @@ msgstr ""
 
 msgid "Top"
 msgstr "Topo"
+
+msgid "Travel"
+msgstr "Viagem"
+
+msgid "Type"
+msgstr "Tipo"
 
 msgid "Vertical shells"
 msgstr "Paredes verticais"

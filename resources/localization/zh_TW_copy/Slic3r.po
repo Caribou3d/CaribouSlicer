@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -257,14 +257,8 @@ msgstr "縮短列印時間"
 msgid "Retraction"
 msgstr "回縮"
 
-msgid "Retraction Speed"
-msgstr "回抽速度"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr "禁用工具時的回縮 (多擠出機設置的高級設置)"
-
-msgid "Seam position"
-msgstr "接合位置"
 
 msgid "Sequential printing"
 msgstr "順序列印"
@@ -337,6 +331,12 @@ msgstr "單擠出機 MM 印表機的工具更換參數"
 
 msgid "Top"
 msgstr "頂部"
+
+msgid "Travel"
+msgstr "空程"
+
+msgid "Type"
+msgstr "類型"
 
 msgid "Vertical shells"
 msgstr "垂直外殼"

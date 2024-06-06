@@ -222,11 +222,9 @@ group:sidetext_width$5:Infill angle
 group:sidetext_width$7:Advanced
     line:Sold Infill
 	    setting:label_width$12:solid_infill_every_layers
-        setting:label_width$18:solid_infill_below_width
     end_line
 	line:Solid infill is area below
         setting:label_width$12:label$From region:solid_infill_below_area
-        setting:label_width$18:label$From the whole layer:solid_infill_below_layer_area
 	end_line
 	line:Anchor solid infill by X mm
 		setting:label_width$12:width$8:external_infill_margin

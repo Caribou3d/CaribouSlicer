@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -254,16 +254,10 @@ msgstr "Baskı süresine etki eden ayarlar"
 msgid "Retraction"
 msgstr "Geri çekme"
 
-msgid "Retraction Speed"
-msgstr "Geri çekme hızı"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr ""
 "Takım devre dışı bırakıldığında geri çekme (çoklu ekstrüder ayarları için "
 "gelişmiş ayarlar)"
-
-msgid "Seam position"
-msgstr "Katman başlangıç konumu"
 
 msgid "Sequential printing"
 msgstr "Sıralı baskı"
@@ -337,6 +331,12 @@ msgstr ""
 
 msgid "Top"
 msgstr "Üst"
+
+msgid "Travel"
+msgstr "Boşta ilerleme"
+
+msgid "Type"
+msgstr "Tür"
 
 msgid "Vertical shells"
 msgstr "Duvar sayısı"

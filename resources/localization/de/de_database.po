@@ -1660,6 +1660,9 @@ msgstr "Rand-Ohr max Winkel"
 msgid "Brim ears"
 msgstr "Ohren am Rand"
 
+msgid "Brim first layer"
+msgstr "zusätzlich auf erster Schicht"
+
 msgid "Brim inside holes"
 msgstr "Rand innere Löcher"
 
@@ -15321,9 +15324,6 @@ msgstr ""
 
 msgid "°C"
 msgstr "°C"
-
-msgid "Brim first layer"
-msgstr "zusätzlich auf erster Schicht"
 
 msgid "Advanced Infill options"
 msgstr "Erweiterte Infill-Optionen"

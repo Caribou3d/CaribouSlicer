@@ -1,5 +1,5 @@
 
-#: ../../ui_layout/default/print.ui : l342
+#: ../../ui_layout/default/print.ui : l354
 msgid "% of perimeter flow"
 msgstr ""
 
@@ -7,11 +7,7 @@ msgstr ""
 msgid "_"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui
-msgid "Advanced Infill options"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l68
+#: ../../ui_layout/default/print.ui : l69
 #Similar to me: All perimeters
 # 3    changes: Small perimeters
 #  translation: 작은 둘레
@@ -22,7 +18,7 @@ msgstr ""
 msgid "All perimeters"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l41
+#: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
 # 9    changes: external perimeters
 #  translation: 외부 둘레
@@ -37,7 +33,7 @@ msgstr ""
 msgid "Anchor solid infill by X mm"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l117
+#: ../../ui_layout/default/print.ui : l92
 #Similar to me: Angle
 # 2    changes: Single
 #  translation: 일반
@@ -52,11 +48,11 @@ msgstr ""
 msgid "Arachne perimeter generator (variable width)"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l42
+#: ../../ui_layout/default/extruder.ui : l43
 msgid "At end"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l41
+#: ../../ui_layout/default/extruder.ui : l42
 msgid "At start"
 msgstr ""
 
@@ -68,7 +64,7 @@ msgstr ""
 msgid "Between extrusion role change G-code"
 msgstr ""
 
-#: ../../ui_layout/default/printer_fff.ui : l53
+#: ../../ui_layout/default/printer_fff.ui : l51
 msgid "Big"
 msgstr ""
 
@@ -81,7 +77,7 @@ msgstr ""
 msgid "Bridge acceleration"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l62
+#: ../../ui_layout/default/print.ui : l63
 msgid "Bridge flow"
 msgstr ""
 
@@ -93,7 +89,7 @@ msgstr ""
 msgid "Bridge speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l61
+#: ../../ui_layout/default/print.ui : l62
 msgid "Bridge speed and fan"
 msgstr ""
 
@@ -110,19 +106,26 @@ msgstr ""
 msgid "Brim ears"
 msgstr ""
 
+#: ../../ui_layout/default/print.ui : l274
+#Similar to me: Brim first layer
+# 6    changes: First layer
+#  translation: 첫 레이어
+msgid "Brim first layer"
+msgstr ""
+
 #: ../../ui_layout/default/printer_fff.ui
 msgid "build volume"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l342
+#: ../../ui_layout/default/print.ui : l354
 msgid "Cap with"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l479
 msgid "Change the bridge type and the bridge overlap to compute the same extrusions as when the PrusaSlicer 'thick bridge' isn't selected.\nAs long as it's selected, it will modify them.\nUnselect it to deactivate this enforcement."
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l4
+#: ../../ui_layout/default/print.ui : l16
 msgid "Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0."
 msgstr ""
 
@@ -137,7 +140,7 @@ msgstr ""
 msgid "Colour Change G-code"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l177
+#: ../../ui_layout/default/print.ui : l185
 #Similar to me: Connection length
 # 6    changes: Retraction Length
 #  translation: 리트랙션 길이
@@ -155,7 +158,7 @@ msgstr ""
 msgid "Cooling fan"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l274
+#: ../../ui_layout/default/print.ui : l286
 #Similar to me: Count
 # 2    changes: Cost
 #  translation: 비용
@@ -191,14 +194,14 @@ msgstr ""
 msgid "Default speed"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l43
+#: ../../ui_layout/default/extruder.ui : l44
 #Similar to me: Depth
 # 2    changes: tenth
 #  translation: 열 번째
 msgid "Depth"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l26
+#: ../../ui_layout/default/extruder.ui : l27
 #Similar to me: Deretraction
 # 3    changes: Retraction
 #  translation: 리트렉션
@@ -220,7 +223,7 @@ msgstr ""
 msgid "Distance"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l118
+#: ../../ui_layout/default/print.ui : l93
 msgid "Distance Margin"
 msgstr ""
 
@@ -228,7 +231,7 @@ msgstr ""
 msgid "Enable ironing post-process"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l414
+#: ../../ui_layout/default/print.ui : l427
 #Similar to me: even layers
 # 4    changes: Faded layers
 #  translation: 페이드 레이어
@@ -239,7 +242,7 @@ msgstr ""
 msgid "even layers"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l34
+#: ../../ui_layout/default/filament.ui : l38
 #Similar to me: External
 # 3    changes: Material
 #  translation: 재료
@@ -279,7 +282,7 @@ msgstr ""
 msgid "Extra perimeters"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l52
+#: ../../ui_layout/default/extruder.ui : l53
 msgid "Extra unretraction"
 msgstr ""
 
@@ -324,7 +327,7 @@ msgstr ""
 msgid "Flow ratio"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l48
+#: ../../ui_layout/default/extruder.ui : l49
 #Similar to me: for external perimeters
 # 4    changes: external perimeters
 #  translation: 외부 둘레
@@ -339,8 +342,12 @@ msgstr ""
 msgid "Formatting"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l246
+#: ../../ui_layout/default/print.ui : l270
 msgid "from brim"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l226
+msgid "From region"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -393,11 +400,11 @@ msgstr ""
 msgid "idx"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l209
+#: ../../ui_layout/default/print.ui : l217
 msgid "increment"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l313
+#: ../../ui_layout/default/print.ui : l325
 msgid "Increment"
 msgstr ""
 
@@ -419,11 +426,15 @@ msgstr ""
 msgid "Infill speed"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l42
+#: ../../ui_layout/default/print.ui : l462
+msgid "Inside"
+msgstr ""
+
+#: ../../ui_layout/default/filament.ui : l46
 msgid "Interface"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l276
+#: ../../ui_layout/default/print.ui : l288
 #Similar to me: Interface layer height
 # 6    changes: Initial layer height
 #  translation: 초기 레이어 높이
@@ -434,21 +445,21 @@ msgstr ""
 msgid "Interface layer height"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l309
+#: ../../ui_layout/default/print.ui : l321
 #Similar to me: Interface spacing
 # 6    changes: Interface shells
 #  translation: 접점 셸(shells)
 msgid "Interface spacing"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l33
+#: ../../ui_layout/default/filament.ui : l37
 #Similar to me: Internal
 # 3    changes: Material
 #  translation: 재료
 msgid "Internal"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l45
+#: ../../ui_layout/default/filament.ui : l49
 msgid "Internal bridges"
 msgstr ""
 
@@ -457,14 +468,10 @@ msgid "Internal Infill fan speed"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
-msgid "Ironing infill pattern tuning"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
 msgid "Ironing post-process (This will go on top of infills and perimeters)"
 msgstr ""
 
-#: ../../ui_layout/default/printer_fff.ui : l48
+#: ../../ui_layout/default/printer_fff.ui : l46
 msgid "Kickstart duration"
 msgstr ""
 
@@ -479,12 +486,21 @@ msgstr ""
 #: ../../ui_layout/default/extruder.ui : l31
 #Similar to me: Lift
 # 1    changes: Left
-#  translation: 왼쪽
+#  translation: 왼쪽 
 msgid "Lift"
 msgstr ""
 
 #: ../../ui_layout/default/extruder.ui
 msgid "Lift z enforcement"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l359
+#Similar to me: Main speed
+# 2    changes: Fan speed
+#  translation: 팬 속도
+# 4    changes: Loading speed
+#  translation: 로딩 속도
+msgid "Main speed"
 msgstr ""
 
 #: ../../ui_layout/default/sla_material.ui
@@ -509,31 +525,26 @@ msgstr ""
 msgid "Max fan speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l341
-msgid "maximum speed"
+#: ../../ui_layout/default/print.ui : l353
+msgid "Maximum speed"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
 msgid "Min feature"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui : l51
+#: ../../ui_layout/default/extruder.ui
+msgid "Minimum movement"
+msgstr ""
+
+#: ../../ui_layout/default/extruder.ui : l52
 #Similar to me: Minimum retraction
 # 7    changes: Minimum feedrates
 #  translation: 최대 이송속도
 msgid "Minimum retraction"
 msgstr ""
 
-#: ../../ui_layout/default/extruder.ui
-#Similar to me: Minimum travel after
-# 6    changes: Minimum travel feedrate
-#  translation: 최소 이송 속도
-# 8    changes: Minimum feedrates
-#  translation: 최대 이송속도
-msgid "Minimum movement"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l29
+#: ../../ui_layout/default/print.ui : l30
 #Similar to me: Minimum width
 # 5    changes: Brim width
 #  translation: 브림 폭
@@ -574,7 +585,7 @@ msgstr ""
 msgid "Name and Size"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l55
+#: ../../ui_layout/default/print.ui : l56
 msgid "Not on first layer"
 msgstr ""
 
@@ -585,18 +596,18 @@ msgstr ""
 msgid "Offsets (for multi-extruder printers)"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l233
+#: ../../ui_layout/default/print.ui : l245
 msgid "On"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l27
+#: ../../ui_layout/default/print.ui : l28
 #Similar to me: On first layer
 # 4    changes: First layer
 #  translation: 첫 레이어
 msgid "On first layer"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l28
+#: ../../ui_layout/default/print.ui : l29
 msgid "On top surfaces"
 msgstr ""
 
@@ -609,7 +620,7 @@ msgstr ""
 msgid "One-loop perimeters"
 msgstr ""
 
-#: ../../ui_layout/default/printer_fff.ui : l46
+#: ../../ui_layout/default/printer_fff.ui : l44
 msgid "Only for overhangs"
 msgstr ""
 
@@ -641,12 +652,16 @@ msgstr ""
 msgid "Output"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l358
+#: ../../ui_layout/default/print.ui : l371
 msgid "Over raft"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l47
+#: ../../ui_layout/default/filament.ui : l51
 msgid "Overhangs"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+msgid "Overhangs cut"
 msgstr ""
 
 #: ../../ui_layout/default/filament.ui
@@ -688,7 +703,7 @@ msgstr ""
 msgid "Perimeter acceleration"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l178
+#: ../../ui_layout/default/print.ui : l186
 msgid "Perimeter anchor"
 msgstr ""
 
@@ -716,10 +731,6 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui
 msgid "Perimeters & Shell"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l84
-msgid "Position of perimeters' starting points. May use the angle & travel cost (with the fixed visilibity & ovehangs cost) to find the best place.\nCorners\. at least 100% angle cost and no more than 80% travel cost (default to 120-40).\nNearest\. no more than 100% angle cost and at least 100% travel cost (default to 80-100).\nScattered\. seam is placed at a random position on external perimeters.\nRandom\. seam is placed at a random position for all perimeters.\nAligned\. seams are grouped in the best place possible (minimum 6 layers per group).\nContiguous\. seam is placed over a seam from the previous layer (useful with enforcers as seeds).\nRear\. seam is placed at the far side (highest Y coordinates).\nCustom\. Other conbination of angle & travel cost than 'Corners' and 'Nearest', (default to 60-100).\nCustom & weight can be defined in Advanced or Expert mode."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -769,14 +780,14 @@ msgstr ""
 msgid "Retraction wipe"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l132
+#: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
+# 9    changes: Layers and perimeters
+#  translation: 레이어 및 둘레
 # 9    changes: external perimeters
 #  translation: 외부 둘레
 # 9    changes: External perimeters
 #  translation: 외측 둘레
-# 9    changes: Layers and perimeters
-#  translation: 레이어 및 둘레
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -796,11 +807,11 @@ msgstr ""
 msgid "Short layer time - began to increase base fan speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l60
+#: ../../ui_layout/default/print.ui : l61
 msgid "Simple widget to enable/disable the overhangs detection (using 55% and 75% for the two thresholds)\nUse the expert mode to get more detailled widgets"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l463
+#: ../../ui_layout/default/print.ui : l479
 msgid "Simulate Prusa 'no thick bridge'"
 msgstr ""
 
@@ -822,7 +833,7 @@ msgstr ""
 msgid "Skirt & Brim"
 msgstr ""
 
-#: ../../ui_layout/default/printer_fff.ui : l52
+#: ../../ui_layout/default/printer_fff.ui : l50
 #Similar to me: Small
 # 2    changes: Scale
 #  translation: 크기
@@ -836,22 +847,42 @@ msgstr ""
 msgid "Small perimeter speed"
 msgstr ""
 
+#: ../../ui_layout/default/print.ui
+#Similar to me: Sold Infill
+# 2    changes: Solid infill
+#  translation: 솔리드 인필
+# 3    changes: solid infill
+#  translation: 외부(solid)부분 채움
+msgid "Sold Infill"
+msgstr ""
+
 #: ../../ui_layout/default/filament.ui
 msgid "Solid Infill fan speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l405
+#: ../../ui_layout/default/print.ui
+msgid "Solid infill is area below"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui
+#Similar to me: Solid infill ovelrap
+# 4    changes: Solid infill every
+#  translation: 솔리드 인필 간격
+# 8    changes: Solid infill
+#  translation: 솔리드 인필
+# 8    changes: Solid infill extruder
+#  translation: 솔리드 인필 익스트루더
+msgid "Solid infill ovelrap"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l418
 #Similar to me: spacing
 # 1    changes: Spacing
 #  translation: 간격
 msgid "spacing"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l228
-msgid "Spacing between ironing lines"
-msgstr ""
-
-#: ../../ui_layout/default/filament.ui : l36
+#: ../../ui_layout/default/filament.ui : l40
 #Similar to me: Sparse
 # 2    changes: Stars
 #  translation: 별(Stars)
@@ -877,10 +908,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: 서포트 금지 영역
-# 6    changes: Support Enforcer
-#  translation: 서포트 지원 영역
 # 6    changes: Support head
 #  translation: 서포트 헤드
+# 6    changes: Support pillar
+#  translation: 서포트 기둥
 msgid "Support & Other"
 msgstr ""
 
@@ -929,7 +960,7 @@ msgstr ""
 msgid "Support speed"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l24
+#: ../../ui_layout/default/print.ui : l25
 msgid "Supporting dense layer"
 msgstr ""
 
@@ -973,12 +1004,12 @@ msgstr ""
 #  translation: 공백 채움
 # 4    changes: infill
 #  translation: 채움(infill)
-# 4    changes: Solid infill
-#  translation: 솔리드 인필
+# 4    changes: solid infill
+#  translation: 외부(solid)부분 채움
 msgid "top infill"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l23
+#: ../../ui_layout/default/print.ui : l24
 #Similar to me: Top infill pattern
 # 2    changes: Top fill pattern
 #  translation: 상단 채우기 패턴
@@ -989,7 +1020,7 @@ msgstr ""
 msgid "Top infill pattern"
 msgstr ""
 
-#: ../../ui_layout/default/filament.ui : l39
+#: ../../ui_layout/default/filament.ui : l43
 msgid "Top solid"
 msgstr ""
 
@@ -1017,7 +1048,7 @@ msgstr ""
 msgid "Very short layer time - began to decrease extrusion rate"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l4
+#: ../../ui_layout/default/print.ui : l16
 msgid "Wall Thickness"
 msgstr ""
 
@@ -1025,7 +1056,7 @@ msgstr ""
 msgid "Wall Transition"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l404
+#: ../../ui_layout/default/print.ui : l417
 #Similar to me: width
 # 1    changes: Width
 #  translation: 폭
@@ -1040,12 +1071,16 @@ msgstr ""
 msgid "Width & Flow"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l418
+#: ../../ui_layout/default/print.ui : l431
 msgid "width&spacing combo"
 msgstr ""
 
 #: ../../ui_layout/default/extruder.ui
 msgid "Wipe inside"
+msgstr ""
+
+#: ../../ui_layout/default/print.ui : l360
+msgid "Wipe starting speed"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -1059,7 +1094,7 @@ msgstr ""
 msgid "X"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l350
+#: ../../ui_layout/default/print.ui : l363
 msgid "xy"
 msgstr ""
 
@@ -1081,7 +1116,7 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l351
+#: ../../ui_layout/default/print.ui : l364
 msgid "z"
 msgstr ""
 

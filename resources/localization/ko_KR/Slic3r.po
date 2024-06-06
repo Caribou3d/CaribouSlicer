@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -248,14 +248,8 @@ msgstr "인쇄 시간 단축"
 msgid "Retraction"
 msgstr "리트랙션 후 최소 이동 거리"
 
-msgid "Retraction Speed"
-msgstr "리트랙션 속도"
-
 msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
 msgstr "도구가 비활성화된 때의 철회(다중 압출기 설정에 대한 고급 설정)"
-
-msgid "Seam position"
-msgstr "재봉선 위치"
 
 msgid "Sequential printing"
 msgstr "순차적 인쇄"
@@ -325,6 +319,12 @@ msgstr "MMU 프린터의 툴체인지 매개 변수"
 
 msgid "Top"
 msgstr "상단 "
+
+msgid "Travel"
+msgstr "이송"
+
+msgid "Type"
+msgstr "타입"
 
 msgid "Vertical shells"
 msgstr "수직 쉘"

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-04-27 00:00\n"
-"PO-Revision-Date: 2024-04-27 00:00\n"
+"POT-Creation-Date: 2024-06-06 00:00\n"
+"PO-Revision-Date: 2024-06-06 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -629,9 +629,6 @@ msgstr "Dirección"
 
 msgid "Advanced"
 msgstr "Avanzado"
-
-msgid "Advanced mode"
-msgstr "Modo avanzado"
 
 msgid "Advanced: Output log"
 msgstr "Avanzado: Registro de salida"
@@ -1701,6 +1698,9 @@ msgstr "Ctrl + Rueda del ratón"
 msgid "Cubic"
 msgstr "Cúbico"
 
+msgid "Current mode is %s"
+msgstr "El modo actual es %s"
+
 msgid "Current preset is inherited from"
 msgstr "El ajuste fue heredado de"
 
@@ -2545,8 +2545,8 @@ msgstr ""
 "Opción experimental para evitar que se genere material de soporte debajo de "
 "las áreas con puente."
 
-msgid "Expert mode"
-msgstr "Modo experto"
+msgid "Expert"
+msgstr "Experto"
 
 msgid "Export"
 msgstr "Exportar"
@@ -3614,13 +3614,6 @@ msgstr ""
 "desactiva, los cambios realizados con el deslizador secuencial, en la vista "
 "previa, se aplican a todo el código G."
 
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr "Si se activa, PrusaSlicer se abrirá en la posición en la que se cerró"
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr ""
-"Si está activado, PrusaSlicer no abrirá los hipervínculos en tu navegador."
-
 msgid "If enabled, random sequence of the selected extruders will be used."
 msgstr ""
 "Si se activa, se utilizará una secuencia aleatoria de los extrusores "
@@ -4445,9 +4438,6 @@ msgstr "Distancia máxima de enlace del pilar"
 
 msgid "Max print height"
 msgstr "Máxima altura de impresión"
-
-msgid "Max print speed"
-msgstr "Velocidad máxima de impresión"
 
 msgid "Max volumetric slope negative"
 msgstr "Máx. Pendiente volumétrica negativa"
@@ -5329,6 +5319,9 @@ msgstr "Abrir archivo de certificado CA"
 msgid "Open changelog page"
 msgstr "Abrir la página del registro de cambios"
 
+msgid "Open Documentation in web browser."
+msgstr "Abrir la documentación en el navegador web."
+
 msgid "Open download page"
 msgstr "Abrir página de descarga"
 
@@ -5352,6 +5345,9 @@ msgstr "Abrir instancia nueva"
 
 msgid "Open New Instance"
 msgstr "Abrir Nueva Instancia"
+
+msgid "Open Preferences."
+msgstr "Abrir Preferencias."
 
 msgid "Open the dialog to modify shape gallery"
 msgstr "Abre el diálogo para modificar la galería de formas"
@@ -7031,8 +7027,8 @@ msgstr "Mostrar/Ocultar Leyenda y Tiempo de impresión estimado"
 msgid "Show/Hide object/instance labels"
 msgstr "Muestra/Oculta etiquetas de pieza/repetición"
 
-msgid "Simple mode"
-msgstr "Modo Simple"
+msgid "Simple"
+msgstr "Sencillo"
 
 msgid "Single extruder MM setup"
 msgstr "Ajuste para MM con un solo extrusor"
@@ -7628,6 +7624,9 @@ msgstr "Cambiar al modo edición"
 msgid "Switch to Settings"
 msgstr "Cambiar a Ajustes"
 
+msgid "Switch to the %s mode"
+msgstr "Cambiar al modo %s"
+
 msgid "Switching Presets: Unsaved Changes"
 msgstr "Cambio de ajustes preestablecidos: Cambios No guardados"
 
@@ -8044,19 +8043,6 @@ msgstr ""
 "Los lugares donde se imprimirá el borde alrededor de cada objeto en la "
 "primera capa."
 
-msgid ""
-"The preset below was temporarily installed on the active instance of "
-"PrusaSlicer"
-msgid_plural ""
-"The presets below were temporarily installed on the active instance of "
-"PrusaSlicer"
-msgstr[0] ""
-"El ajuste de abajo fue instalado temporalmente en la instancia activa de "
-"PrusaSlicer"
-msgstr[1] ""
-"Los ajustes de abajo fueron instalados temporalmente en la instancia activa "
-"de PrusaSlicer"
-
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
 msgstr[0] "Las modificaciones del ajuste se ha guardado correctamente"
@@ -8070,27 +8056,6 @@ msgstr "El nombre proporcionado no es válido."
 
 msgid "The provided name is not valid;"
 msgstr "El nombre proporcionado no es válido;"
-
-msgid ""
-"The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionado contiene un objeto pintado compatible con FDM que "
-"utiliza una versión más reciente de PrusaSlicer y no es compatible."
-
-msgid ""
-"The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionado contiene un objeto pintado multimaterial que utiliza una "
-"versión más reciente de PrusaSlicer y no es compatible."
-
-msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr ""
-"El 3MF seleccionado contiene un objeto pintado con una versión más reciente "
-"de PrusaSlicer y no es compatible."
 
 msgid "The selected file"
 msgstr "El archivo seleccionado"
@@ -8454,17 +8419,6 @@ msgid ""
 msgstr ""
 "Esta operación es irreversible. \n"
 "¿Deseas continuar?"
-
-msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"Esta opción establece la cantidad de perímetros que se generarán para cada "
-"capa. Tenga en cuenta que Slic3r puede aumentar este número automáticamente "
-"cuando detecta superficies inclinadas que se benefician de un mayor número "
-"de perímetros si la opción Perímetros adicionales está habilitada."
 
 msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
