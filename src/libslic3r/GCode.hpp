@@ -41,11 +41,11 @@ class OozePrevention {
 public:
     bool enable;
     Points standby_points;
-    
+
     OozePrevention() : enable(false) {}
     std::string pre_toolchange(GCode &gcodegen);
     std::string post_toolchange(GCode &gcodegen);
-    
+
 private:
     int _get_temp(GCode &gcodegen);
 };
@@ -139,15 +139,15 @@ struct LayerResult {
 };
 
 class GCode : ExtrusionVisitorConst  {
-public:        
-    GCode() : 
+public:
+    GCode() :
     	m_origin(Vec2d::Zero()),
-        m_enable_loop_clipping(true), 
-        m_enable_cooling_markers(false), 
-        m_enable_extrusion_role_markers(false), 
+        m_enable_loop_clipping(true),
+        m_enable_cooling_markers(false),
+        m_enable_extrusion_role_markers(false),
         m_last_processor_extrusion_role(erNone),
         m_layer_count(0),
-        m_layer_index(-1), 
+        m_layer_index(-1),
         m_layer(nullptr),
         m_object_layer_over_raft(false),
         m_volumetric_speed(0),
@@ -227,7 +227,7 @@ private:
 
         bool is_open() const { return f; }
         bool is_error() const;
-        
+
         void flush();
         void close();
 
@@ -235,12 +235,12 @@ private:
         void write(const std::string& what) { this->write(what.c_str()); }
         void write(const char* what);
 
-        // Write a string into a file. 
+        // Write a string into a file.
         // Add a newline, if the string does not end with a newline already.
         // Used to export a custom G-code section processed by the PlaceholderParser.
         void writeln(const std::string& what);
 
-        // Formats and write into a file the given data. 
+        // Formats and write into a file the given data.
         void write_format(const char* format, ...);
 
     private:
@@ -372,7 +372,7 @@ private:
         InstanceToPrint(ObjectByExtruder& object_by_extruder, size_t layer_id, const PrintObject& print_object, size_t instance_id) :
             object_by_extruder(object_by_extruder), layer_id(layer_id), print_object(print_object), instance_id(instance_id) {}
 
-		// Repository 
+		// Repository
 		ObjectByExtruder		&object_by_extruder;
 		// Index into std::vector<LayerToPrint>, which contains Object and Support layers for the current print_z, collected for a single object, or for possibly multiple objects with multiple instances.
 		const size_t       		 layer_id;
@@ -523,20 +523,21 @@ private:
     void print_machine_envelope(GCodeOutputStream &file, const Print &print);
     void _print_first_layer_bed_temperature(std::string &out, const Print &print, const std::string &gcode, uint16_t first_printing_extruder_id, bool wait);
     void _print_first_layer_extruder_temperatures(std::string &out, const Print &print, const std::string &gcode, uint16_t first_printing_extruder_id, bool wait);
+    void _print_first_layer_chamber_temperature(std::string &out, const Print &print, const std::string &gcode, uint16_t first_printing_extruder_id, bool wait);
     // On the first printing layer. This flag triggers first layer speeds.
     bool                                on_first_layer() const { return m_layer != nullptr && m_layer->id() == 0; }
     // To control print speed of 1st object layer over raft interface.
     bool                                object_layer_over_raft() const { return m_object_layer_over_raft; }
 
     friend ObjectByExtruder& object_by_extruder(
-        std::map<uint16_t, std::vector<ObjectByExtruder>>      &by_extruder, 
-        uint16_t                                                extruder_id, 
-        size_t                                                  object_idx, 
+        std::map<uint16_t, std::vector<ObjectByExtruder>>      &by_extruder,
+        uint16_t                                                extruder_id,
+        size_t                                                  object_idx,
         size_t                                                  num_objects);
     friend std::vector<ObjectByExtruder::Island>& object_islands_by_extruder(
-        std::map<uint16_t, std::vector<ObjectByExtruder>>      &by_extruder, 
-        uint16_t                                                extruder_id, 
-        size_t                                                  object_idx, 
+        std::map<uint16_t, std::vector<ObjectByExtruder>>      &by_extruder,
+        uint16_t                                                extruder_id,
+        size_t                                                  object_idx,
         size_t                                                  num_objects,
         size_t                                                  num_islands);
 
