@@ -1176,7 +1176,7 @@ msgid ""
 msgstr ""
 "Immer nach nicht gespeicherten Änderungen in Voreinstellungen fragen, beim: \n"
 "- Schließen von PrusaSlicer, während einige Voreinstellungen geändert wurden,\n"
-"- Laden eines neuen Projekts, während einige Voreinstellungen geändert werden"
+"- Laden eines neuen Projekts, während einige Voreinstellungen geändert wurden"
 
 #: src/slic3r/GUI/Preferences.cpp:224
 msgid ""
@@ -12757,7 +12757,7 @@ msgstr[1] "Folgende Modelle wurden erfolgreich repariert"
 msgid "The following preset was modified"
 msgid_plural "The following presets were modified"
 msgstr[0] "Die folgende Voreinstellung wurde geändert"
-msgstr[1] "Die folgenden Voreinstellungen wurden geändert"
+msgstr[1] "Die folgende(n) Voreinstellunge(n) wurde(n) geändert"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:254
 msgid ""
@@ -13011,7 +13011,7 @@ msgstr[0] ""
 "Die folgende Voreinstellung wurde vorübergehend auf der aktiven Instanz von "
 "PrusaSlicer installiert"
 msgstr[1] ""
-"Die folgenden Voreinstellungen wurden vorübergehend auf der aktiven Instanz von "
+"Die folgende(n) Voreinstellunge(n) wurde(n) vorübergehend auf der aktiven Instanz von "
 "PrusaSlicer installiert"
 
 #: src/slic3r/GUI/GUI_App.cpp:2533 src/slic3r/GUI/GUI_App.cpp:2594

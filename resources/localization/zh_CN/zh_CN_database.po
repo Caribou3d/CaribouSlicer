@@ -1,714 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "加速控制（高级）"
-
-msgid "Activate"
-msgstr "激活"
-
-msgid "Advanced"
-msgstr "高级"
-
-msgid "After layer change G-code"
-msgstr "图层更改 G 代码后"
-
-msgid "Aligned"
-msgstr "对齐"
-
-msgid "Also for all perimeters"
-msgstr "在填充前先打印轮廓"
-
-msgid "Anchor solid infill by X mm"
-msgstr "顶部实心填充"
-
-msgid "Angle"
-msgstr "熨烫角度。 如果为负，它将使用填充角度。"
-
-msgid "Apply on"
-msgstr "选择要应用于文件的操作"
-
-msgid "Automatic generation"
-msgstr "自动生成"
-
-msgid "Autospeed (advanced)"
-msgstr "自动调速 (高级)"
-
-msgid "Avoid crossing perimeters"
-msgstr "避免跨越轮廓边界"
-
-msgid "Bed"
-msgstr "床"
-
-msgid "Before layer change G-code"
-msgstr "在图层更改 G 代码之前"
-
-msgid "Behavior"
-msgstr ""
-"使用“完成单个对象”时，默认行为是围绕每个对象绘制裙子。 如果您希望整个电镀机只"
-"有一条裙子，请使用此选项。"
-
-msgid "Between extrusion role change G-code"
-msgstr "图层更改 G 代码后"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "模型对象之间的 G-code  (用于顺序打印)"
-
-msgid "Big"
-msgstr "网桥"
-
-msgid "Bottom"
-msgstr "底部"
-
-msgid "Bridge"
-msgstr "网桥"
-
-msgid "Bridge acceleration"
-msgstr "桥接加速度"
-
-msgid "Bridge flow"
-msgstr "桥接流量比"
-
-msgid "Bridge lines density"
-msgstr "填充密度"
-
-msgid "Bridge speed"
-msgstr "桥接速度"
-
-msgid "Bridge speed and fan"
-msgstr "桥接风扇速度"
-
-msgid "Bridges"
-msgstr "桥接"
-
-msgid "Bridges fan speed"
-msgstr "桥接风扇速度"
-
-msgid "Brim"
-msgstr "侧裙"
-
-msgid "Brim ears"
-msgstr "边缘耳朵"
-
-msgid "Capabilities"
-msgstr "权限"
-
-msgid "Color override"
-msgstr "彩色打印"
-
-msgid "Colour Change G-code"
-msgstr "工具更改 G 代码"
-
-msgid "Connection length"
-msgstr "回抽长度"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "支撑杆和接头的连接"
-
-msgid "Convert round vertical holes to polyholes"
-msgstr "将圆形垂直孔转换为多孔"
-
-msgid "Cooling"
-msgstr "冷却"
-
-msgid "Cooling fan"
-msgstr "冷却管长度"
-
-msgid "Corrections"
-msgstr "修正"
-
-msgid "Curve smoothing"
-msgstr "曲线平滑最小角度（凸）"
-
-msgid "Custom G-code"
-msgstr "自定义 G-code"
-
-msgid "Custom variables"
-msgstr "自定义打印机"
-
-msgid "Default"
-msgstr "默认"
-
-msgid "default"
-msgstr "默认"
-
-msgid "Default acceleration"
-msgstr "默认加速度"
-
-msgid "Density"
-msgstr "密度"
-
-msgid "Dependencies"
-msgstr "依赖"
-
-msgid "Deretraction"
-msgstr "减速速度"
-
-msgid "Disable fan for the first"
-msgstr "禁用风扇在前"
-
-msgid "Display"
-msgstr "显示"
-
-msgid "Display mirroring"
-msgstr "显示垂直镜像"
-
-msgid "Distance"
-msgstr "最小点距离"
-
-msgid "Enable ironing post-process"
-msgstr "运行后处理脚本"
-
-msgid "End G-code"
-msgstr "结尾 G-code"
-
-msgid "Ensure vertical shell thickness"
-msgstr "确保垂直外壳厚度"
-
-msgid "Exposure"
-msgstr "曝光"
-
-msgid "External"
-msgstr "外部轮廓"
-
-msgid "external perimeter"
-msgstr "外部轮廓"
-
-msgid "External perimeter first"
-msgstr "首先打印外部轮廓"
-
-msgid "Extra perimeters"
-msgstr "外部轮廓"
-
-msgid "Extra unretraction"
-msgstr "固件回抽"
-
-msgid "Extruder"
-msgstr "挤出机"
-
-msgid "Extruder clearance (mm)"
-msgstr "挤出机间隙（mm）"
-
-msgid "Extruders"
-msgstr "挤出机"
-
-msgid "Extrusion direction"
-msgstr "挤出宽度"
-
-msgid "Extrusion width"
-msgstr "挤出宽度"
-
-msgid "Fan speed - default"
-msgstr "风扇速度"
-
-msgid "Filament"
-msgstr "打印丝"
-
-msgid "Filament properties"
-msgstr "耗材丝特性"
-
-msgid "Filtering"
-msgstr "过滤"
-
-msgid "Firmware"
-msgstr "固件"
-
-msgid "First layer"
-msgstr "第一层"
-
-msgid "first layer"
-msgstr "第一层"
-
-msgid "First layer acceleration"
-msgstr "第一层加速"
-
-msgid "First layer speed"
-msgstr "第一层速度"
-
-msgid "Flow"
-msgstr "流量"
-
-msgid "Flow ratio"
-msgstr "测试流量比"
-
-msgid "from brim"
-msgstr "从边缘"
-
-msgid "Fuzzy skin (experimental)"
-msgstr "模糊皮肤（实验）"
-
-msgid "G-Code"
-msgstr "G-code"
-
-msgid "Gap fill"
-msgstr "间隙填充"
-
-msgid "Gap Fill"
-msgstr "间隙填充"
-
-msgid "Gap fill speed"
-msgstr "间隙填充速度"
-
-msgid "Gcode precision"
-msgstr "Ooze 预防"
-
-msgid "General"
-msgstr "常规"
-
-msgid "Hollowing"
-msgstr "镂空"
-
-msgid "horizontal"
-msgstr "填补斜坡上的水平间隙"
-
-msgid "Horizontal shells"
-msgstr "水平外壳"
-
-msgid "increment"
-msgstr "增量"
-
-msgid "Infill"
-msgstr "填充"
-
-msgid "infill"
-msgstr "加密"
-
-msgid "Infill acceleration"
-msgstr "填充加速度"
-
-msgid "Infill speed"
-msgstr "固体填充速度"
-
-msgid "Interface"
-msgstr "界面"
-
-msgid "Internal"
-msgstr "内部的"
-
-msgid "Internal bridges"
-msgstr "内部桥梁"
-
-msgid "Ironing post-process (This will go on top of infills and perimeters)"
-msgstr "熨烫后处理（这将在填充物和周边进行）"
-
-msgid "Kickstart duration"
-msgstr "启动持续时间"
-
-msgid "Layer height"
-msgstr "层高度"
-
-msgid "Layer height limits"
-msgstr "层高度限制"
-
-msgid "Layer time goal"
-msgstr "图层时间目标"
-
-msgid "Layers"
-msgstr "图层"
-
-msgid "Layers and perimeters"
-msgstr "层和轮廓"
-
-msgid "Length"
-msgstr "长度"
-
-msgid "Lift z enforcement"
-msgstr "提升 z 执行"
-
-msgid "Material"
-msgstr "材料"
-
-msgid "Material printing profile"
-msgstr "材料打印配置文件"
-
-msgid "material_correction"
-msgstr "打印机缩放校正"
-
-msgid "Max fan speed"
-msgstr "最大风扇转速"
-
-msgid "Minimum retraction"
-msgstr "回抽最小行程"
-
-msgid "Minimum shell thickness"
-msgstr "最小顶壳厚度"
-
-msgid "Minimum width"
-msgstr "最小宽度"
-
-msgid "mm"
-msgstr "mm"
-
-msgid "Modifiers"
-msgstr "修改器"
-
-msgid "Modifying slices"
-msgstr "修改器"
-
-msgid "Multimaterial"
-msgstr "材料"
-
-msgid "Multimaterial toolchange string reduction"
-msgstr "多材料换刀string reduction"
-
-msgid "Multimaterial toolchange temperature"
-msgstr "多材料换刀温度"
-
-msgid "Multiple extruders"
-msgstr ""
-"使用不同喷嘴直径的多个挤出机进行打印。如果要使用当前挤出机"
-"(support_material_extruder == 0 或 support_material_interface_extruder == 0)"
-"打印支撑物, 则所有喷嘴的直径必须相同。"
-
-msgid "Name and Size"
-msgstr "热床形状和大小"
-
-msgid "Not on first layer"
-msgstr "第一层校准"
-
-msgid "Notes"
-msgstr "备注"
-
-msgid "Number of pixels in"
-msgstr "像素点的数量"
-
-msgid "Offsets (for multi-extruder printers)"
-msgstr "偏移量（用于多挤出机打印机）"
-
-msgid "On"
-msgstr "打开"
-
-msgid "On first layer"
-msgstr "第一层"
-
-msgid "On top surfaces"
-msgstr "所有顶面"
-
-msgid "One-loop perimeters"
-msgstr "轮廓"
-
-msgid "Only for overhangs"
-msgstr "仅用于悬垂"
-
-msgid "Only lift Z"
-msgstr "仅提升 Z"
-
-msgid "Only one perimeter"
-msgstr "在填充前先打印轮廓"
-
-msgid "Only retract when crossing perimeters"
-msgstr "仅在跨越轮廓时回抽"
-
-msgid "Ooze prevention"
-msgstr "Ooze 预防"
-
-msgid "Options"
-msgstr "选项"
-
-msgid "Options for support material and raft"
-msgstr "支撑材料和基座的选项"
-
-msgid "Options for support material interface"
-msgstr "支撑材料和基座的选项"
-
-msgid "Other"
-msgstr "其他"
-
-msgid "Output file"
-msgstr "输出文件"
-
-msgid "Output options"
-msgstr "输出选项"
-
-msgid "Overhangs"
-msgstr "悬垂"
-
-msgid "Overlap"
-msgstr "交叠"
-
-msgid "Overlapping external perimeter"
-msgstr "重叠的外周"
-
-msgid "Pad"
-msgstr "垫"
-
-msgid "Pattern"
-msgstr "模式"
-
-msgid "Pause Print G-code"
-msgstr "暂停打印 G 代码"
-
-msgid "perimeter"
-msgstr "周长"
-
-msgid "Perimeter acceleration"
-msgstr "圆周加速度"
-
-msgid "Perimeter anchor"
-msgstr "周长"
-
-msgid "Perimeter overlap"
-msgstr "外壁重叠"
-
-msgid "Perimeter speed"
-msgstr "周长速度"
-
-msgid "Perimeters & Shell"
-msgstr "轮廓"
-
-msgid "Plater"
-msgstr "构建板"
-
-msgid "Post-processing milling"
-msgstr "后处理脚本"
-
-msgid "Post-processing script"
-msgstr "后处理脚本"
-
-msgid "Pressure equalizer (experimental)"
-msgstr "压力均衡器（实验）"
-
-msgid "Preview"
-msgstr "预览"
-
-msgid "Print Host upload"
-msgstr "打印主机上传"
-
-msgid "Print remaining times"
-msgstr "支撑剩余时间"
-
-msgid "Print speed override"
-msgstr "打印速度覆盖"
-
-msgid "Printer scaling correction"
-msgstr "打印机缩放校正"
-
-msgid "Processing limit"
-msgstr "处理 %s"
-
-msgid "Profile dependencies"
-msgstr "配置文件依赖"
-
-msgid "Quality"
-msgstr "质量"
-
-msgid "Raft"
-msgstr "基座"
-
-msgid "Reducing printing time"
-msgstr "缩短打印时间"
-
-msgid "Retraction"
-msgstr "回抽"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr "工具禁用时的回抽 (多挤出机设置的高级设置)"
-
-msgid "Retraction wipe"
-msgstr "回抽速度"
-
-msgid "Seam"
-msgstr "进入缝画"
-
-msgid "Seam gap"
-msgstr "接缝间隙"
-
-msgid "Sequential printing"
-msgstr "顺序打印"
-
-msgid "Short layer time - began to increase base fan speed"
-msgstr "短层时间 - 开始增加基础风扇速度"
-
-msgid "Size"
-msgstr "大小"
-
-msgid "Size and coordinates"
-msgstr "大小和坐标"
-
-msgid "Size for Gcode"
-msgstr "发送 G 代码"
-
-msgid "Skirt"
-msgstr "裙边"
-
-msgid "skirt"
-msgstr "裙边"
-
-msgid "Skirt & Brim"
-msgstr "裙边"
-
-msgid "Slicing"
-msgstr "切片"
-
-msgid "Small"
-msgstr "小"
-
-msgid "Small perimeter speed"
-msgstr "小周长速度"
-
-msgid "Solid"
-msgstr "内部固体"
-
-msgid "solid infill"
-msgstr "实心填充"
-
-msgid "Solid layers"
-msgstr "实心层"
-
-msgid "Spacing"
-msgstr "间距"
-
-msgid "spacing"
-msgstr "间距"
-
-msgid "Sparse"
-msgstr "填充密度"
-
-msgid "Speed"
-msgstr "速度"
-
-msgid "Speed for non-print moves"
-msgstr "非打印移动的速度"
-
-msgid "Speed for print moves"
-msgstr "打印移动速度"
-
-msgid "Speedup time"
-msgstr "加速时间"
-
-msgid "Start G-code"
-msgstr "起始 G-code"
-
-msgid "Support head"
-msgstr "支撑头"
-
-msgid "Support material"
-msgstr "支撑材料"
-
-msgid "support material"
-msgstr "支撑材料"
-
-msgid "Support pillar"
-msgstr "支撑支柱"
-
-msgid "Support speed"
-msgstr "支撑速度"
-
-msgid "Supporting dense layer"
-msgstr "支撑点密度"
-
-msgid "Supports"
-msgstr "支持"
-
-msgid "Temperature °C"
-msgstr "温度"
-
-msgid "Template Custom G-code"
-msgstr "自定义 G-code"
-
-msgid "Thin walls"
-msgstr "薄壁"
-
-msgid "threshold for"
-msgstr "临界点："
-
-msgid "Thumbnail options"
-msgstr "缩略图选项"
-
-msgid "Thumbnails"
-msgstr "缩略图大小"
-
-msgid "Tilt"
-msgstr "倾斜"
-
-msgid "Tilt time"
-msgstr "倾斜时间"
-
-msgid "Tool change G-code"
-msgstr "工具更改 G 代码"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "单挤出机 多色 打印机的工具更换参数"
-
-msgid "Top"
-msgstr "顶部"
-
-msgid "top infill"
-msgstr "顶部实心填充"
-
-msgid "Top solid"
-msgstr "顶部固体"
-
-msgid "Travel"
-msgstr "旅行"
-
-msgid "Travel acceleration"
-msgstr "行驶加速度"
-
-msgid "Travel speed"
-msgstr "行驶速度"
-
-msgid "Tuning ironing"
-msgstr "调整熨烫"
-
-msgid "Type"
-msgstr "类型："
-
-msgid "vertical"
-msgstr "确保垂直外壳厚度"
-
-msgid "Vertical Hole shrinking compensation"
-msgstr "垂直缩孔补偿"
-
-msgid "Vertical shells"
-msgstr "垂直外壳"
-
-msgid "Very short layer time - began to decrease extrusion rate"
-msgstr "非常短的层时间 - 开始降低挤出率"
-
-msgid "width"
-msgstr "宽度"
-
-msgid "Width & Flow"
-msgstr "宽度 & 流量"
-
-msgid "width&spacing combo"
-msgstr "宽度&间距组合"
-
-msgid "Wipe tower"
-msgstr "擦料塔"
-
-msgid "Wipe tower parameters"
-msgstr "擦料塔参数"
-
-msgid "Wipe tower position"
-msgstr "擦料塔旋转角度"
-
-msgid "xy"
-msgstr "XY 第一层补偿"
-
-msgid "XY compensation"
-msgstr "XY补偿"
-
-msgid "XY First layer compensation"
-msgstr "XY 第一层补偿"
-
-msgid "Z-offset"
-msgstr "Z 偏移"
-
-msgid "Advanced Infill options"
-msgstr "高级填充选项"
-
-msgid "Ironing infill pattern tuning"
-msgstr "熨烫填充图案调整"
-
-msgid "Retraction Speed"
-msgstr "回抽速度"
-
-msgid "Seam position"
-msgstr "接缝位置"
-
-msgid "Spacing between ironing lines"
-msgstr "熨烫线间距"
-
 msgid "!! Can be unstable in some os distribution !!"
 msgstr "!! 在某些操作系统发行版中可能不稳定！！"
 
@@ -824,14 +114,6 @@ msgstr "%s 遇到错误"
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
 "If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
-msgstr ""
-"%s 遇到错误。这可能是由于内存不足造成的。如果您确定您的系统上有足够的内存，这"
-"可能也是一个软件错误，欢迎你向我们提交问题报告。"
-
-msgid ""
-"%s has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
 "and we would be glad if you reported it.\n"
 "\n"
 "The application will now terminate."
@@ -852,14 +134,6 @@ msgstr "%s信息"
 
 msgid "%s information"
 msgstr "%s 信息"
-
-msgid ""
-"%s is not using the newest configuration available.\n"
-"Configuration Wizard may not offer the latest printers, filaments and SLA "
-"materials to be installed. "
-msgstr ""
-"%s 没有使用可用的最新配置。\n"
-"配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -893,12 +167,6 @@ msgstr "%s 视图模式"
 
 msgid "%s warning"
 msgstr "%s 警告"
-
-msgid "%s website"
-msgstr "%s 网站"
-
-msgid "%s wiki"
-msgstr "%s 维基"
 
 msgid ""
 "%s will now start updates. Otherwise it won't be able to start.\n"
@@ -971,9 +239,6 @@ msgstr "&全屏"
 
 msgid "&G-code Preview"
 msgstr "&G代码预览"
-
-msgid "&Generate"
-msgstr "&生成"
 
 msgid "&Help"
 msgstr "&帮助"
@@ -1142,15 +407,6 @@ msgstr "“G92 E0”出现在layer_gcode中，这与绝对挤出机寻址不兼�
 msgid ""
 "\n"
 "\n"
-"If estimated layer time is below ~%1%s"
-msgstr ""
-"\n"
-"\n"
-"如果估计层时间低于 ~%1%s"
-
-msgid ""
-"\n"
-"\n"
 "If estimated layer time is below ~%1%s, but still greater than ~%2%s, fan "
 "will run at a proportionally increasing speed between %3%%% and %4%%%"
 msgstr ""
@@ -1229,11 +485,11 @@ msgstr "在桥梁之上"
 msgid "Above Z"
 msgstr "Z 高于"
 
+msgid "Acceleration control (advanced)"
+msgstr "加速控制（高级）"
+
 msgid "Access via settings button in the top menu"
 msgstr "通过顶部菜单中的设置按钮访问"
-
-msgid "Access violation"
-msgstr "访问冲突"
 
 msgid "Accuracy"
 msgstr "准确性"
@@ -1243,6 +499,9 @@ msgstr "准确的"
 
 msgid "Action"
 msgstr "行动"
+
+msgid "Activate"
+msgstr "激活"
 
 msgid "Active"
 msgstr "激活"
@@ -1364,13 +623,8 @@ msgstr ""
 "以上的循环。\n"
 "如果你成功触发了这个设置背后的算法，请给我留言。 个人觉得没啥用。"
 
-msgid ""
-"Add one perimeter every odd layer. With this, infill is taken into the "
-"sandwich and you may be able to reduce drastically the infill/perimeter "
-"overlap setting. "
-msgstr ""
-"每奇数层添加一个周长。 有了这个，填充物被带入了三明治，你可以大大减少填充物/"
-"周边重叠设置。 "
+msgid "Add one or more custom shapes"
+msgstr "添加一个或多个自定义形状"
 
 msgid "Add pause print"
 msgstr "添加暂停打印"
@@ -1386,6 +640,9 @@ msgstr "将点添加到选择"
 
 msgid "Add preset for this printer device"
 msgstr "为此打印机设备添加预设"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "将选定形状添加到床上"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "为高度范围添加配置组"
@@ -1441,6 +698,9 @@ msgstr ""
 "低，也可以确保达到每个对象的特征。 仍在实验中，告诉我是什么使它有用，或者使用"
 "它时出现的问题。"
 
+msgid "Add to bed"
+msgstr "加在床上"
+
 msgid "Add..."
 msgstr "添加..."
 
@@ -1470,8 +730,8 @@ msgstr "此外，在应用更新之前，将创建整个配置的备份快照。
 msgid "Address"
 msgstr "地址"
 
-msgid "Advanced mode"
-msgstr "高级模式"
+msgid "Advanced"
+msgstr "高级"
 
 msgid "Advanced wipe tower purge volume calculs"
 msgstr "先进的擦拭塔吹扫体积计算"
@@ -1492,6 +752,9 @@ msgstr ""
 
 msgid "after last perimeter"
 msgstr "在最后一圈之后"
+
+msgid "After layer change G-code"
+msgstr "图层更改 G 代码后"
 
 msgid "Algorithm"
 msgstr "算法"
@@ -1515,6 +778,9 @@ msgstr "将模型与给定点对齐。"
 
 msgid "Align XY"
 msgstr "对齐 XY"
+
+msgid "Aligned"
+msgstr "对齐"
 
 msgid "All"
 msgstr "所有"
@@ -1567,17 +833,11 @@ msgstr "所有顶面"
 msgid "All user presets will be deleted."
 msgstr "所有用户预设都将被删除。"
 
-msgid "All walls"
-msgstr "所有的墙"
-
 msgid "allocation failed"
 msgstr "分配失败"
 
 msgid "Allow empty layers"
 msgstr "允许空层"
-
-msgid "Allow fan delay on overhangs"
-msgstr "允许悬垂的风扇延迟"
 
 msgid "Allow just a single %1% instance"
 msgstr "只允许单个 %1% 实例"
@@ -1602,16 +862,14 @@ msgstr ""
 "允许外部周边合并路径中的薄壁。 如果您使用薄壁作为自定义支撑，您可以停用此功"
 "能，以稍微减少附着力。"
 
-msgid ""
-"Allow to create a brim over an island when it's inside a hole (or surrounded "
-"by an object)."
-msgstr "当岛位于洞内（或被物体包围）时，允许在岛上创建边缘。"
-
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "仅允许在选择的面上绘制：\"%1%'"
 
 msgid "Also emit limits to G-code"
 msgstr "还发出对 G 代码的限制"
+
+msgid "Also for all perimeters"
+msgstr "在填充前先打印轮廓"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + 鼠标滚轮"
@@ -1626,9 +884,6 @@ msgid ""
 "Always ask for unsaved changes in presets when selecting new preset or "
 "resetting a preset"
 msgstr "选择新预设或重置预设时，始终要求对预设进行未保存的更改"
-
-msgid "Always keep current preset changes on a new project"
-msgstr "始终保持新项目的当前预设更改"
 
 msgid "Amount of lift for travel."
 msgstr "强制支撑前 n 层."
@@ -1659,11 +914,20 @@ msgstr ""
 "检测到打印区域外的物体。\n"
 "解决当前问题继续切片。"
 
+msgid "Anchor solid infill by X mm"
+msgstr "顶部实心填充"
+
 msgid "Anchored"
 msgstr "锚定"
 
+msgid "and will gradually speed-up to the above speeds over %1% layers"
+msgstr "并将在 %1% 层上逐渐加速到上述速度"
+
 msgid " and will gradually speed-up to the above speeds over %1% layers"
 msgstr "并将在 %1% 层上逐渐加速到上述速度"
+
+msgid "Angle"
+msgstr "熨烫角度。 如果为负，它将使用填充角度。"
 
 msgid "Angle cost"
 msgstr "角度成本"
@@ -1699,11 +963,17 @@ msgstr "应用更改"
 msgid "Apply color change automatically"
 msgstr "自动应用颜色更改"
 
+msgid "Apply on"
+msgstr "选择要应用于文件的操作"
+
 msgid "Apply to all the remaining small objects being loaded."
 msgstr "应用于正在加载的所有剩余小对象。"
 
 msgid "approximate seconds"
 msgstr "近似秒"
+
+msgid "Arachne"
+msgstr "Arachne"
 
 msgid "Archimedean Chords"
 msgstr "阿基米德和弦"
@@ -1814,21 +1084,6 @@ msgstr "将 .gcode 文件关联到 %1%"
 msgid "Associate .stl files to %1%"
 msgstr "将 .stl 文件关联到 %1%"
 
-msgid "at %1%%% over all bridges"
-msgstr "在所有桥梁的 %1%%%"
-
-msgid "at %1%%% over bridges"
-msgstr "在 %1%%% 的桥梁上"
-
-msgid "at %1%%% over external perimeters"
-msgstr "在 %1%%% 的外围"
-
-msgid "at %1%%% over infill bridges"
-msgstr "在 %1%%% 的填充桥上"
-
-msgid "at %1%%% over top fill surfaces"
-msgstr "在顶部填充表面上的 %1%%%"
-
 msgid "Attention!"
 msgstr "注意！"
 
@@ -1866,6 +1121,9 @@ msgstr "自动生成将删除所有手动编辑的点。"
 msgid "Automatic"
 msgstr "自动的"
 
+msgid "Automatic generation"
+msgstr "自动生成"
+
 msgid "Automatic updates"
 msgstr "自动更新"
 
@@ -1883,6 +1141,12 @@ msgstr "自动修复 STL 文件"
 
 msgid "Automation"
 msgstr "自动化"
+
+msgid "Autospeed (advanced)"
+msgstr "自动调速 (高级)"
+
+msgid "Avoid crossing perimeters"
+msgstr "避免跨越轮廓边界"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "避免跨越边界 - 最大绕行长度"
@@ -1919,6 +1183,9 @@ msgstr "均衡"
 msgid "Base Layer height"
 msgstr "层高度"
 
+msgid "Bed"
+msgstr "床"
+
 msgid "Bed custom model"
 msgstr "床自定义模型"
 
@@ -1948,8 +1215,16 @@ msgstr "第一层之后层的床温。将此设置为零以禁用输出中的床
 msgid "Bed Temperature:"
 msgstr "热床温度:"
 
+msgid "Before layer change G-code"
+msgstr "在图层更改 G 代码之前"
+
 msgid "Before roll back"
 msgstr "回滚前"
+
+msgid "Behavior"
+msgstr ""
+"使用“完成单个对象”时，默认行为是围绕每个对象绘制裙子。 如果您希望整个电镀机只"
+"有一条裙子，请使用此选项。"
 
 msgid "Below Z"
 msgstr "Z 低于"
@@ -1960,17 +1235,17 @@ msgstr "最佳表面质量"
 msgid "Better bonding"
 msgstr "更好的粘合"
 
-msgid "between %1%%% %2%%% over bridges"
-msgstr "在 %1%%% %2%%% 之间通过桥梁"
-
-msgid "between %1%%% %2%%% over external perimeters"
-msgstr "外围轮廓 %1%%% %2%%%"
-
-msgid "between %1%%% %2%%% over infill bridges"
-msgstr "在填充桥上 %1%%% %2%%% 之间"
+msgid "Between extrusion role change G-code"
+msgstr "图层更改 G 代码后"
 
 msgid "Between objects G-code"
 msgstr "对象之间的 G-code"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "模型对象之间的 G-code  (用于顺序打印)"
+
+msgid "Big"
+msgstr "网桥"
 
 msgid "Block seam"
 msgstr "块缝"
@@ -1986,6 +1261,9 @@ msgstr "瓶子容积"
 
 msgid "Bottle weight"
 msgstr "瓶重"
+
+msgid "Bottom"
+msgstr "底部"
 
 msgid "Bottom fill pattern"
 msgstr "底部填充模式"
@@ -2005,8 +1283,17 @@ msgstr "底部实心层"
 msgid "Bottom View"
 msgstr "底部视图"
 
+msgid "Bridge"
+msgstr "网桥"
+
+msgid "Bridge acceleration"
+msgstr "桥接加速度"
+
 msgid "Bridge calibration"
 msgstr "电桥校准"
+
+msgid "Bridge flow"
+msgstr "桥接流量比"
 
 msgid "Bridge flow calibration"
 msgstr "桥接流量校准"
@@ -2017,11 +1304,26 @@ msgstr "桥接流量比"
 msgid "Bridge infill"
 msgstr "搭桥填充"
 
+msgid "Bridge lines density"
+msgstr "填充密度"
+
 msgid "Bridge margin"
 msgstr "桥边距"
 
+msgid "Bridge speed"
+msgstr "桥接速度"
+
+msgid "Bridge speed and fan"
+msgstr "桥接风扇速度"
+
 msgid "Bridged"
 msgstr "桥接"
+
+msgid "Bridges"
+msgstr "桥接"
+
+msgid "Bridges fan speed"
+msgstr "桥接风扇速度"
 
 msgid "Bridging"
 msgstr "桥接"
@@ -2040,6 +1342,9 @@ msgstr ""
 msgid "Bridging volumetric"
 msgstr "桥接流量"
 
+msgid "Brim"
+msgstr "侧裙"
+
 msgid "Brim configuration"
 msgstr "帽檐配置"
 
@@ -2048,6 +1353,9 @@ msgstr "边缘耳朵检测长度"
 
 msgid "Brim ear max angle"
 msgstr "帽檐最大角度"
+
+msgid "Brim ears"
+msgstr "边缘耳朵"
 
 msgid "Brim inside holes"
 msgstr "孔内边缘"
@@ -2174,13 +1482,13 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "无法覆盖系统配置文件。"
 
-msgid "Cannot overwrite an external profile."
-msgstr "无法覆盖外部配置文件。"
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
 msgstr "没有支撑点就无法继续！添加支撑点或禁用支撑生成。"
+
+msgid "Capabilities"
+msgstr "权限"
 
 msgid "Capture a configuration snapshot"
 msgstr "捕获配置快照"
@@ -2247,6 +1555,9 @@ msgstr "更改零件类型"
 msgid "Change point head diameter"
 msgstr "改变支撑点的头直径"
 
+msgid "Change thumbnail"
+msgstr "更改缩略图"
+
 msgid "Changelog & Download"
 msgstr "更改日志&下载"
 
@@ -2255,6 +1566,13 @@ msgstr "关键选项的更改"
 
 msgid "Changing of an application language"
 msgstr "更改应用程序语言"
+
+msgid ""
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the plater."
+msgstr ""
+"更改某些选项将触发应用程序重启。\n"
+"你会失去盘子里的东西。"
 
 msgid "Check for application updates"
 msgstr "检查应用程序更新"
@@ -2295,8 +1613,14 @@ msgstr "选择一个文件 (GCODE/.GCO/.G/.ngc/NGC)："
 msgid "Choose one file (py):"
 msgstr "选择一个文件（py）："
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "选择一个或多个文件  (STL/OBJ/AMF/3MF/PRUSA):"
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "选择一个或多个文件（STL、OBJ）："
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "选择一个或多个文件  (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose one PNG file:"
+msgstr "选择一个PNG文件："
 
 msgid "Choose SLA archive:"
 msgstr "选择 SLA 存档："
@@ -2327,6 +1651,18 @@ msgstr "圆圈"
 
 msgid "Circular"
 msgstr "圆"
+
+msgid "Classic"
+msgstr "经典"
+
+msgid ""
+"Classic perimeter generator produces perimeters with constant extrusion "
+"width and for very thin areas is used gap-fill. Arachne engine produces "
+"perimeters with variable extrusion width. This setting also affects the "
+"Concentric infill."
+msgstr ""
+"经典轮廓生成器产生具有恒定挤出宽度的轮廓，并且对于非常薄的区域使用间隙填充。 "
+"Arachne 引擎产生具有可变挤出宽度的轮廓。这个设置也会影响回环填充。"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "清除新项目上的撤消/重做堆栈"
@@ -2407,6 +1743,9 @@ msgstr "颜色变化 G 代码"
 msgid "Color changes"
 msgstr "颜色变化"
 
+msgid "Color override"
+msgstr "彩色打印"
+
 msgid "Color Print"
 msgstr "彩色打印"
 
@@ -2415,6 +1754,9 @@ msgstr "彩色打印高度"
 
 msgid "Colors"
 msgstr "颜色"
+
+msgid "Colour Change G-code"
+msgstr "工具更改 G 代码"
 
 msgid "Combine infill every"
 msgstr "将填充每个"
@@ -2473,9 +1815,6 @@ msgstr "同心（填充）"
 msgid "Configuration &Assistant"
 msgstr "配置&助手"
 
-msgid "Configuration &Wizard"
-msgstr "配置&向导"
-
 msgid "Configuration Assistant"
 msgstr "配置助手"
 
@@ -2519,9 +1858,6 @@ msgid ""
 msgstr ""
 "配置更新会导致预设修改丢失。\n"
 "So，检查未保存的更改，必要时保存。"
-
-msgid "Configuration Wizard"
-msgstr "配置向导"
 
 msgid "Confirmation"
 msgstr "确认"
@@ -2569,6 +1905,9 @@ msgstr "内孔线条互相连接"
 msgid "Connected to outer perimeters"
 msgstr "外围线条互相连接"
 
+msgid "Connection length"
+msgstr "回抽长度"
+
 msgid "Connection of bottom infill lines"
 msgstr "底部填充线的连接"
 
@@ -2577,6 +1916,9 @@ msgstr "实心填充管线的连接"
 
 msgid "Connection of sparse infill lines"
 msgstr "稀疏填充线的连接"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "支撑杆和接头的连接"
 
 msgid "Connection of top infill lines"
 msgstr "顶部填充线的连接"
@@ -2646,6 +1988,15 @@ msgstr "从米换算"
 
 msgid "Convert round holes to polyholes"
 msgstr "将圆孔转换为多孔"
+
+msgid "Convert round vertical holes to polyholes"
+msgstr "将圆形垂直孔转换为多孔"
+
+msgid "Cooling"
+msgstr "冷却"
+
+msgid "Cooling fan"
+msgstr "冷却管长度"
 
 msgid "Cooling moves are gradually accelerated towards this speed. "
 msgstr "冷却动作逐渐加速到这个速度。 "
@@ -2728,6 +2079,9 @@ msgstr "Y轴膨胀修正"
 msgid "Correction for expansion in Z axis"
 msgstr "Z轴膨胀修正"
 
+msgid "Corrections"
+msgstr "修正"
+
 msgid "Cost"
 msgstr "费用"
 
@@ -2739,11 +2093,6 @@ msgid ""
 "furthest from the position of the extruder before extruding the external "
 "perimeter"
 msgstr "移动挤出机的成本。 最高惩罚是在挤出外周之前，点距挤出机位置最远时"
-
-msgid ""
-"Cost of placing the seam at a bad angle. The worst angle (max penalty) is "
-"when it's flat."
-msgstr "以错误的角度放置接缝的成本。 最坏的角度（最大惩罚）是在它平坦的时候。"
 
 msgid "Cost-based"
 msgstr "基于成本"
@@ -2786,9 +2135,6 @@ msgstr ""
 msgid "CRC-32 check failed"
 msgstr "CRC-32 检查失败"
 
-msgid "Create a test print to help you to level your printer bed."
-msgstr "创建测试打印以帮助您调平打印机底座。"
-
 msgid "Create a test print to help you to set your bridge flow ratio."
 msgstr "创建测试打印以帮助您设置桥梁流量比。"
 
@@ -2806,9 +2152,6 @@ msgstr "创建一个测试打印，以帮助您设置过桥流量比和熨烫模
 
 msgid "Create a test print to help you to set your retraction length."
 msgstr "创建测试打印以帮助您设置回缩长度。"
-
-msgid "Create an object by writing little easy script."
-msgstr "通过编写一些简单的脚本来创建一个对象。"
 
 msgid "Create pad around object and ignore the support elevation"
 msgstr "在对象周围创建垫盘并忽略支撑高程"
@@ -2843,6 +2186,9 @@ msgid ""
 msgstr ""
 "CURL 初始化失败。 切片器将无法建立网络连接。 有关其他详细信息，请参阅日志。"
 
+msgid "Current mode is %s"
+msgstr "当前模式为 %s"
+
 msgid "Current preset is inherited from"
 msgstr "当前预设继承自"
 
@@ -2851,6 +2197,9 @@ msgstr "当前预设从默认预设继承。"
 
 msgid "Current version:"
 msgstr "当前版本:"
+
+msgid "Curve smoothing"
+msgstr "曲线平滑最小角度（凸）"
 
 msgid "Curve smoothing cutoff dist"
 msgstr "曲线平滑截止距离"
@@ -2877,6 +2226,9 @@ msgstr ""
 
 msgid "Custom Filament variables"
 msgstr "耗材丝参数替换"
+
+msgid "Custom G-code"
+msgstr "自定义 G-code"
 
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "当前层上的自定义 G 代码 (%1% mm)。"
@@ -2910,6 +2262,9 @@ msgstr "修复网格后，移除了定制支架、接缝和多材料喷漆。"
 msgid "Custom template (\"%1%\")"
 msgstr "自定义模板（“%1%”）"
 
+msgid "Custom variables"
+msgstr "自定义打印机"
+
 msgid "Cut"
 msgstr "剪切"
 
@@ -2942,6 +2297,15 @@ msgstr "解压缩失败或存档已损坏"
 
 msgid "Decrease Instances"
 msgstr "减少实例"
+
+msgid "default"
+msgstr "默认"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Default acceleration"
+msgstr "默认加速度"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -3074,6 +2438,9 @@ msgstr "删除实例"
 msgid "Delete Object"
 msgstr "删除对象"
 
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr "删除一个或多个自定义形状。不能删除系统形状"
+
 msgid "Delete Option %s"
 msgstr "删除选项 %s"
 
@@ -3131,13 +2498,19 @@ msgstr "密集填充算法"
 msgid "Dense infill layer"
 msgstr "密集填充层"
 
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "内部填充的密度，表示在0%- 100%的范围内。"
+msgid "Density"
+msgstr "密度"
 
 msgid "Density of the first raft or support layer."
 msgstr "第一个筏板或支撑层的密度。"
 
+msgid "Dependencies"
+msgstr "依赖"
+
 msgid "Dere."
+msgstr "减速速度"
+
+msgid "Deretraction"
 msgstr "减速速度"
 
 msgid "Deretraction Speed"
@@ -3243,6 +2616,9 @@ msgstr "避免跨越轮廓边界"
 msgid "Disable \"%1%\""
 msgstr "禁用\"%1%\""
 
+msgid "Disable fan for the first"
+msgstr "禁用风扇在前"
+
 msgid "Disabled"
 msgstr "已禁用"
 
@@ -3260,11 +2636,17 @@ msgstr "放弃所有自定义更改"
 msgid "Discard changes"
 msgstr "放弃更改"
 
+msgid "Display"
+msgstr "显示"
+
 msgid "Display height"
 msgstr "显示高度"
 
 msgid "Display horizontal mirroring"
 msgstr "显示水平镜像"
+
+msgid "Display mirroring"
+msgstr "显示垂直镜像"
 
 msgid "Display orientation"
 msgstr "显示方向"
@@ -3280,6 +2662,9 @@ msgstr "显示垂直镜像"
 
 msgid "Display width"
 msgstr "显示宽度"
+
+msgid "Distance"
+msgstr "最小点距离"
 
 msgid "Distance between ironing lines"
 msgstr "熨烫线之间的距离"
@@ -3382,11 +2767,6 @@ msgstr "不支持桥接"
 
 msgid "Don't switch"
 msgstr "不要切换"
-
-msgid ""
-"Don't wipe when you don't cross a perimeter. Need "
-"'only_retract_when_crossing_perimeters'and 'wipe' enabled."
-msgstr "不越过边界时不要擦拭。需要启用“仅在越界时缩回”和“擦拭”。"
 
 msgid "Downgrade"
 msgstr "降级"
@@ -3534,6 +2914,9 @@ msgid ""
 "Enable ironing of the top layers with the hot print head for smooth surface"
 msgstr "使用热打印头熨烫顶层以获得光滑的表面"
 
+msgid "Enable ironing post-process"
+msgstr "运行后处理脚本"
+
 msgid ""
 "Enable reading unknown configuration values by silently substituting them "
 "with defaults."
@@ -3597,6 +2980,9 @@ msgstr ""
 "允许在第一个实体层下创建支撑层。 这使您可以使用较低的填充率，而不会影响最高质"
 "量。 密集填充以 50% 的填充密度布置。"
 
+msgid "End G-code"
+msgstr "结尾 G-code"
+
 msgid "Enforce"
 msgstr "执行"
 
@@ -3636,13 +3022,8 @@ msgstr "加入队列"
 msgid "Ensure on bed"
 msgstr "确保在床上"
 
-msgid ""
-"Ensure that the slicer won't add heating, fan, extruder... commands before "
-"or just after your start-gcode.If set to true, you have to write a good and "
-"complete start_gcode, as no checks are made anymore."
-msgstr ""
-"确保切片机不会在 start-gcode 之前或之后添加加热、风扇、挤出机...命令。如果设"
-"置为 true，则必须编写一个完整的 start_gcode，因为不再进行检查。"
+msgid "Ensure vertical shell thickness"
+msgstr "确保垂直外壳厚度"
 
 msgid "Enter a search term"
 msgstr "输入搜索词"
@@ -3822,9 +3203,6 @@ msgstr "奇偶"
 msgid "Event"
 msgstr "事件"
 
-msgid "Exact last layer height"
-msgstr "精确的最后一层高度"
-
 msgid "Exact pattern"
 msgstr "精确模式"
 
@@ -3861,8 +3239,8 @@ msgid ""
 " * Keep only bridges: remove the perimeters in the bridge areas, keep only "
 "bridges that end in solid area.\n"
 " * Keep bridges and overhangs: remove the unsupported perimeters, keep only "
-"bridges that end in solid area, fill the rest with overhang perimeters"
-"+bridges.\n"
+"bridges that end in solid area, fill the rest with overhang "
+"perimeters+bridges.\n"
 " * Fill the voids with bridges: remove the unsupported perimeters, draw "
 "bridges over the whole hole.* !! this one can escalate to problems with "
 "overhangs shaped like  /\\, so you should use it only on one layer at a time "
@@ -3906,8 +3284,8 @@ msgid ""
 "to extraction to reduce wait time."
 msgstr "实验性：在冷却过程中降低喷嘴温度，而不是在提取之前，以减少等待时间。"
 
-msgid "Expert mode"
-msgstr "专业级"
+msgid "Expert"
+msgstr "专家"
 
 msgid "Export"
 msgstr "导出"
@@ -3959,12 +3337,6 @@ msgstr "将当构建板导出为 G-code"
 msgid "Export current plate as G-code to SD card / Flash drive"
 msgstr "将当前板作为 G 代码导出到 SD 卡/闪存驱动器"
 
-msgid "Export current plate as STL"
-msgstr "将当前构建板导出为 STL"
-
-msgid "Export current plate as STL including supports"
-msgstr "导出当前构建板为 STL,包括支撑"
-
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
 msgstr "将模型和零件源的完整路径名导出到 3mf 和 amf 文件中"
@@ -3986,12 +3358,6 @@ msgstr "导出 OBJ 文件："
 
 msgid "Export of a temporary 3mf file failed"
 msgstr "导出临时 3mf 文件失败"
-
-msgid "Export Plate as &STL"
-msgstr "将板材导出为&STL"
-
-msgid "Export Plate as STL &Including Supports"
-msgstr "将板材导出为STL，包括支架"
 
 msgid "Export SLA"
 msgstr "导出 SLA"
@@ -4047,6 +3413,9 @@ msgstr "出口。"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "曝光时间超出打印机配置文件限制。"
 
+msgid "Exposure"
+msgstr "曝光"
+
 msgid "Exposure time"
 msgstr "曝光时间"
 
@@ -4062,20 +3431,29 @@ msgstr "分机 围。 偷工减料"
 msgid "Ext. peri. overlap"
 msgstr "分机 围。 重叠"
 
+msgid "External"
+msgstr "外部轮廓"
+
 msgid "External perimeter"
+msgstr "外部轮廓"
+
+msgid "external perimeter"
 msgstr "外部轮廓"
 
 msgid "External perimeter fan speed"
 msgstr "外围风扇转速"
 
+msgid "External perimeter first"
+msgstr "首先打印外部轮廓"
+
 msgid "external perimeter overlap"
 msgstr "外周重叠"
 
-msgid "external perimeters"
-msgstr "外围轮廓"
-
 msgid "External perimeters"
 msgstr "外部轮廓"
+
+msgid "external perimeters"
+msgstr "外围轮廓"
 
 msgid "External perimeters first"
 msgstr "首先打印外部轮廓"
@@ -4095,8 +3473,8 @@ msgstr "重新启动时的额外长度"
 msgid "Extra loading distance"
 msgstr "额外装载距离"
 
-msgid "Extra perimeter on odd layers"
-msgstr "奇数层上的额外周长"
+msgid "Extra perimeters"
+msgstr "外部轮廓"
 
 msgid "Extra perimeters (do nothing)"
 msgstr "额外的周长（什么都不做）"
@@ -4107,22 +3485,17 @@ msgstr "悬垂的额外周长"
 msgid "Extra skirt lines on the first layer."
 msgstr "第一层的额外裙边线。"
 
+msgid "Extra unretraction"
+msgstr "固件回抽"
+
 msgid "Extra Wipe for external perimeters"
 msgstr "外部周边的额外擦拭"
 
 msgid "Extrat length on toolchange restart"
 msgstr "换刀重启时的额外长度"
 
-msgid ""
-"Extrude perimeters that have a part over an overhang in the reverse "
-"direction on odd layers. This alternating pattern can drastically improve "
-"steep overhang.\n"
-"!! this is a very slow algorithm (it uses the same results as "
-"extra_perimeters_overhangs) !!"
-msgstr ""
-"在奇数层上以相反的方向挤出有一部分超出悬垂部分的周长。 这种交替模式可以大大改"
-"善陡峭的悬垂。\n"
-"!! 这是一个非常慢的算法（它使用与 extra_perimeters_overhangs 相同的结果）！！"
+msgid "Extruder"
+msgstr "挤出机"
 
 msgid "Extruder %d"
 msgstr "挤出机 %d"
@@ -4132,6 +3505,9 @@ msgstr "挤出机（工具）改为挤出机“%1%”"
 
 msgid "Extruder changed to"
 msgstr "挤出机更改为"
+
+msgid "Extruder clearance (mm)"
+msgstr "挤出机间隙（mm）"
 
 msgid "Extruder clearance height"
 msgstr "挤出机间隙高度"
@@ -4168,6 +3544,9 @@ msgstr "挤出机回缩校准"
 msgid "Extruder temp offset"
 msgstr "挤出机温度偏移"
 
+msgid "Extruders"
+msgstr "挤出机"
+
 msgid "Extruders count"
 msgstr "挤出机数"
 
@@ -4177,11 +3556,17 @@ msgstr "挤压"
 msgid "Extrusion axis"
 msgstr "挤出轴"
 
+msgid "Extrusion direction"
+msgstr "挤出宽度"
+
 msgid "Extrusion multiplier"
 msgstr "挤出乘数"
 
 msgid "Extrusion Temperature:"
 msgstr "挤出温度："
+
+msgid "Extrusion width"
+msgstr "挤出宽度"
 
 msgid "Facets"
 msgstr "平面"
@@ -4222,17 +3607,8 @@ msgstr "风扇速度"
 msgid "Fan Speed (%)"
 msgstr "风扇转速 （％）"
 
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
-msgstr ""
-"风扇速度将从“disable_fan_first_layers”层的零线性增加"
-"到“full_fan_speed_layer”层的最大值。 如果低"
-"于“disable_fan_first_layers”，“full_fan_speed_layer”将被忽略，在这种情况下，"
-"风扇将在“disable_fan_first_layers”+1层以允许的最大速度运行。"
+msgid "Fan speed - default"
+msgstr "风扇速度"
 
 msgid "Fan startup delay"
 msgstr "风扇启动延迟"
@@ -4266,6 +3642,9 @@ msgstr "功能类型"
 
 msgid "filament"
 msgstr "丝"
+
+msgid "Filament"
+msgstr "打印丝"
 
 msgid "Filament and Nozzle Diameters"
 msgstr "耗材丝和喷嘴直径"
@@ -4310,6 +3689,9 @@ msgstr "耗材丝停车位"
 
 msgid "Filament Profiles Selection"
 msgstr "灯丝配置文件选择"
+
+msgid "Filament properties"
+msgstr "耗材丝特性"
 
 msgid "Filament Settings"
 msgstr "耗材丝设置"
@@ -4401,6 +3783,9 @@ msgstr "用桥梁填补空白"
 msgid "filling horizontal gaps on slopes"
 msgstr "填补斜坡上的水平间隙"
 
+msgid "Filtering"
+msgstr "过滤"
+
 msgid "Find"
 msgstr "查找"
 
@@ -4409,6 +3794,9 @@ msgstr "查找/替换G代码行中的模式并替换它们。"
 
 msgid "Finished"
 msgstr "已完成"
+
+msgid "Firmware"
+msgstr "固件"
 
 msgid "Firmware flasher"
 msgstr "固件烧录器"
@@ -4425,11 +3813,23 @@ msgstr "固件类型"
 msgid "first"
 msgstr "第一层"
 
+msgid "First layer"
+msgstr "第一层"
+
+msgid "first layer"
+msgstr "第一层"
+
+msgid "First layer acceleration"
+msgstr "第一层加速"
+
 msgid "First layer bed temperature"
 msgstr "第一层床温"
 
 msgid "First layer calibration"
 msgstr "第一层校准"
+
+msgid "First layer calibration."
+msgstr "第一层校准."
 
 msgid "First layer density"
 msgstr "第一层密度"
@@ -4463,6 +3863,9 @@ msgstr "第一层喷嘴温度"
 
 msgid "First layer spacing"
 msgstr "首层间距"
+
+msgid "First layer speed"
+msgstr "第一层速度"
 
 msgid "First layer volumetric"
 msgstr "首层流量"
@@ -4503,11 +3906,14 @@ msgstr "烧录成功!"
 msgid "Floating reserved operand"
 msgstr "浮动保留操作数"
 
-msgid "Flow calibration"
-msgstr "流量校准"
+msgid "Flow"
+msgstr "流量"
 
 msgid "Flow rate"
 msgstr "流量"
+
+msgid "Flow ratio"
+msgstr "测试流量比"
 
 msgid ""
 "Flow ratio to compensate for the gaps in a bridged top surface. Used for "
@@ -4541,6 +3947,9 @@ msgstr "以下打印机配置文件没有默认材料：%1%请手动选择一种
 msgid "Folowing model repair failed"
 msgid_plural "Folowing models repair failed"
 msgstr[0] "以下模型修复失败"
+
+msgid "Font size"
+msgstr "字体大小"
 
 msgid ""
 "For a multipart object, this value isn't accurate.\n"
@@ -4605,6 +4014,14 @@ msgstr ""
 "强制在相邻材料/体积之间生成固体壳。适用于具有半透明材料或手动可溶性支撑材料的"
 "多挤出机打印。"
 
+msgid "Format of G-code thumbnails"
+msgstr "G-Code 缩略图格式"
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr "G-Code 缩略图格式: PNG 质量最佳，JPG 尺寸最小，QOI 用于低内存固件"
+
 msgid ""
 "Forward-compatibility rule when loading configurations from config files and "
 "project files (3MF, AMF)."
@@ -4612,12 +4029,6 @@ msgstr "从配置文件和项目文件（3MF、AMF）加载配置时的前向兼
 
 msgid "Found reserved keywords in"
 msgstr "在中找到保留关键字"
-
-msgid "FreeCAD path"
-msgstr "FreeCAD 路径"
-
-msgid "FreeCad python script"
-msgstr "FreeCad python 脚本"
 
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD：FreeCAD 的脚本引擎"
@@ -4627,6 +4038,9 @@ msgstr "从"
 
 msgid "From"
 msgstr "从"
+
+msgid "from brim"
+msgstr "从边缘"
 
 msgid "From filament"
 msgstr "从灯丝"
@@ -4655,16 +4069,19 @@ msgstr "全屏"
 msgid "Fuzzy Skin"
 msgstr "毛茸茸的皮肤"
 
+msgid "Fuzzy skin (experimental)"
+msgstr "模糊皮肤（实验）"
+
 msgid "Fuzzy skin point distance"
 msgstr "模糊集肤点距离"
 
 msgid "Fuzzy skin thickness"
 msgstr "模糊表皮厚度"
 
-msgid "Fuzzy skin type."
-msgstr "毛茸茸的皮肤类型。"
-
 msgid "G-code"
+msgstr "G-code"
+
+msgid "G-Code"
 msgstr "G-code"
 
 msgid ""
@@ -4704,11 +4121,17 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "克/毫升"
 
+msgid "Gap fill"
+msgstr "间隙填充"
+
+msgid "Gap Fill"
+msgstr "间隙填充"
+
 msgid "Gap fill overlap"
 msgstr "间隙填充重叠"
 
-msgid "Gapfill after last perimeter"
-msgstr "最后一圈后的间隙填充"
+msgid "Gap fill speed"
+msgstr "间隙填充速度"
 
 msgid "Gcode done"
 msgstr "Gcode 完成"
@@ -4716,8 +4139,14 @@ msgstr "Gcode 完成"
 msgid "GCode Pre&view Tab"
 msgstr "GCode 预览"
 
+msgid "Gcode precision"
+msgstr "Ooze 预防"
+
 msgid "Gcode preview"
 msgstr "G代码预览"
+
+msgid "General"
+msgstr "常规"
 
 msgid "Generate"
 msgstr "产生"
@@ -4976,6 +4405,9 @@ msgstr "隐藏标尺"
 msgid "High extruder current on filament swap"
 msgstr "耗材丝切换时的高挤出机电流"
 
+msgid "High viscosity"
+msgstr "高粘性"
+
 msgid "Higher print quality versus higher print speed."
 msgstr "更高的打印质量与更高的打印速度。"
 
@@ -5003,6 +4435,9 @@ msgstr "挖空一个模型以获得一个空的内部"
 msgid "Hollow this object"
 msgstr "挖空这个物体"
 
+msgid "Hollowing"
+msgstr "镂空"
+
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -5022,6 +4457,12 @@ msgstr "空心参数变化"
 
 msgid "Honeycomb"
 msgstr "蜂窝"
+
+msgid "horizontal"
+msgstr "填补斜坡上的水平间隙"
+
+msgid "Horizontal shells"
+msgstr "水平外壳"
 
 msgid "Horizontal Slider"
 msgstr "水平滑块"
@@ -5120,9 +4561,6 @@ msgstr ""
 "从平面：它使用平面-z。 如果没有挤出“桥”，则与“来自细丝”相同。\n"
 "无：无 z 偏移。 对可溶性支撑有用。\n"
 
-msgid "How to use the FreeCad python script window."
-msgstr "如何使用 FreeCad python 脚本窗口。"
-
 msgid "How to use this menu and calibrations."
 msgstr "如何使用此菜单和校准。"
 
@@ -5161,17 +4599,6 @@ msgid ""
 msgstr ""
 "理想情况下，两个挤压件之间的间距不应小于喷嘴直径。 下面是间距等于喷嘴直径的挤"
 "出宽度。\n"
-
-msgid ""
-"If a top surface has to be printed and it's partially covered by another "
-"layer, it won't be considered at a top layer where its width is below this "
-"value. This can be useful to not let the 'one perimeter on top' trigger on "
-"surface that should be covered only by perimeters. This value can be a mm or "
-"a % of the perimeter extrusion width."
-msgstr ""
-"如果必须打印顶面并且它被另一层部分覆盖，则不会在其宽度低于此值的顶层考虑它。 "
-"这对于不让“顶部有一个周边”触发应该只被周边覆盖的表面很有用。 该值可以是周长挤"
-"出宽度的毫米或百分比。"
 
 msgid ""
 "If activated, at the end of each layer, the printer will switch to a milling "
@@ -5248,12 +4675,6 @@ msgid ""
 msgstr ""
 "如果启用，在预览中使用顺序滑块所做的更改仅适用于 gcode 顶层。 如果禁用，在预"
 "览中使用顺序滑块所做的更改将应用于整个 gcode。"
-
-msgid "If enabled, PrusaSlicer will be open at the position it was closed"
-msgstr "如果启用，PrusaSlicer将在其关闭的位置打开"
-
-msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
-msgstr "如果启用，PrusaSlicer将不会在浏览器中打开超链接。"
 
 msgid "If enabled, random sequence of the selected extruders will be used."
 msgstr "如果启用，将使用所选挤出机的随机序列。"
@@ -5369,14 +4790,6 @@ msgstr ""
 "将其设置为 100% 可删除任何第一层速度修改（不包含填充）。"
 
 msgid ""
-"If it point to a valid freecad instance (the bin directory or the python "
-"executable), you can use the built-in python script to quickly generate "
-"geometry."
-msgstr ""
-"如果它指向一个有效的freecad 实例（bin 目录或python 可执行文件），您可以使用内"
-"置的python 脚本快速生成几何图形。"
-
-msgid ""
 "If layer print time is estimated below this number of seconds, fan will be "
 "enabled and its speed will be calculated by interpolating the default and "
 "maximum speeds.\n"
@@ -5469,17 +4882,6 @@ msgid ""
 msgstr ""
 "如果将此值设置为正值，则 Z 提升将仅发生在指定的绝对 Z 以下。您可以调整此设"
 "置，将提升限制为第一个图层。"
-
-msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"如果要通过自定义脚本处理输出 G-code , 只需在此处列出它们的绝对路径即可。用分"
-"号分隔多个脚本。脚本将作为第一个参数传递到 G-code 文件的绝对路径, 并且它们可"
-"以通过读取环境变量访问 Slic3r 配置设置。"
 
 msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
@@ -5594,11 +4996,8 @@ msgstr "导入 SLA 存档"
 msgid "Import STL (Imperial Units)"
 msgstr "导入STL（英制单位）"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "导入 STL/OBJ/AM&F/3MF"
-
-msgid "Import STL/OBJ/AMF/3MF without config, keep platter"
-msgstr "无配置导入 STL/OBJ/AMF/3MF"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "导入 STL/3MF/STEP/OBJ/AM&F"
 
 msgid "Importing canceled."
 msgstr "导入已取消。"
@@ -5666,6 +5065,9 @@ msgstr "增加实例"
 msgid "Increase/decrease edit area"
 msgstr "增加/减少编辑区域"
 
+msgid "increment"
+msgstr "增量"
+
 msgid ""
 "indicates that some settings were changed and are not equal to the system "
 "(or default) values for the current option group.\n"
@@ -5689,11 +5091,17 @@ msgstr ""
 "指示设置已更改,不等于当前选项组的最后一个保存预设。\n"
 "单击\"后退箭头\"图标可将当前选项组的所有设置重置为上次保存的预设。"
 
+msgid "Infill"
+msgstr "填充"
+
+msgid "infill"
+msgstr "加密"
+
+msgid "Infill acceleration"
+msgstr "填充加速度"
+
 msgid "Infill before perimeters"
 msgstr "在填充前先打印轮廓"
-
-msgid "Infill bridges"
-msgstr "填充挤出机"
 
 msgid "Infill bridges fan speed"
 msgstr "填充桥风扇速度"
@@ -5703,6 +5111,9 @@ msgstr "填充挤出机"
 
 msgid "Infill spacing"
 msgstr "填充间距"
+
+msgid "Infill speed"
+msgstr "固体填充速度"
 
 msgid "Infill width"
 msgstr "填充宽度"
@@ -5774,6 +5185,9 @@ msgstr "实例"
 msgid "Instances to Separated Objects"
 msgstr "分隔对象的实例"
 
+msgid "Interface"
+msgstr "界面"
+
 msgid "Interface loops"
 msgstr "接触面圈数"
 
@@ -5786,11 +5200,17 @@ msgstr "接触面外壳"
 msgid "Interior Brim width"
 msgstr "内部边缘宽度"
 
+msgid "Internal"
+msgstr "内部的"
+
 msgid "Internal bridge infill"
 msgstr "内部桥梁填充物"
 
 msgid "Internal bridge speed"
 msgstr "内部桥接速度"
+
+msgid "Internal bridges"
+msgstr "内部桥梁"
 
 msgid "Internal bridges "
 msgstr "内部桥梁 "
@@ -5809,17 +5229,6 @@ msgstr "内部周长"
 
 msgid "Internal perimeters speed"
 msgstr "内周速度"
-
-msgid ""
-"Internal perimeters will go around sharp corners by turning around instead "
-"of making the same sharp corner. This can help when there are visible holes "
-"in sharp corners on perimeters. It also help to print the letters on the "
-"benchy stern.\n"
-"Can incur some more processing time, and corners are a bit less sharp."
-msgstr ""
-"内部周边将通过转身而不是制作相同的尖角来绕过尖角。当周边的尖角有可见孔时，这"
-"会有所帮助。它还有助于在船尾打印字母。\n"
-"可能需要更多的处理时间，并且拐角不那么锐利。"
 
 msgid "Internal resolution"
 msgstr "内部填充"
@@ -5862,14 +5271,11 @@ msgstr "熨烫"
 msgid "Ironing angle"
 msgstr "熨烫角度"
 
-msgid "Ironing angle. if negative, it will use the fill angle."
-msgstr "熨烫角度。 如果为负，它将使用填充角度。"
-
 msgid "Ironing flow distribution"
 msgstr "熨烫流量分配"
 
-msgid "Ironing pattern calibration"
-msgstr "熨烫图案校准"
+msgid "Ironing post-process (This will go on top of infills and perimeters)"
+msgstr "熨烫后处理（这将在填充物和周边进行）"
 
 msgid "Ironing speed"
 msgstr "加载速度"
@@ -5891,6 +5297,13 @@ msgstr "Iso 视图"
 
 msgid "It can't be deleted or modified."
 msgstr "无法删除或修改它。"
+
+msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"看起来选定的%1%文件有错误或已被破坏。\n"
+"我们无法加载此文件"
 
 msgid ""
 "It may be beneficial to increase the extruder motor current during the "
@@ -5989,6 +5402,9 @@ msgstr "键盘快捷键"
 msgid "kg"
 msgstr "公斤"
 
+msgid "Kickstart duration"
+msgstr "启动持续时间"
+
 msgid "Label objects"
 msgstr "标记对象"
 
@@ -6007,6 +5423,9 @@ msgstr "无法删除对象的最后一个实例。"
 msgid "Layer"
 msgstr "层"
 
+msgid "Layer height"
+msgstr "层高度"
+
 msgid "Layer height can't be greater than %s"
 msgstr "层高度不能大于 %s"
 
@@ -6018,6 +5437,9 @@ msgstr ""
 "层高无效。\n"
 "\n"
 "层高度将重置为0.01。"
+
+msgid "Layer height limits"
+msgstr "层高度限制"
 
 msgid "Layer previe&w Tab"
 msgstr "图层预览"
@@ -6031,14 +5453,17 @@ msgstr "图层时间"
 msgid "Layer time"
 msgstr "图层时间"
 
-msgid "Layer Time (log)"
-msgstr "层时间（日志）"
-
-msgid "Layer time (log)"
-msgstr "层时间（日志）"
+msgid "Layer time goal"
+msgstr "图层时间目标"
 
 msgid "layers"
 msgstr "层"
+
+msgid "Layers"
+msgstr "图层"
+
+msgid "Layers and perimeters"
+msgstr "层和轮廓"
 
 msgid "Layout with the tab bar"
 msgstr "带有标签栏的常规布局"
@@ -6073,6 +5498,9 @@ msgstr "图例"
 msgid "Legend/Estimated printing time"
 msgstr "图例/估计打印时间"
 
+msgid "Length"
+msgstr "长度"
+
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr "冷却管的长度，以限制冷却管内部的冷却移动空间。"
 
@@ -6094,6 +5522,9 @@ msgstr "当物体部分位于床下方时，将其抬到床上方。默认情况
 
 msgid "Lift Z"
 msgstr "提升 Z"
+
+msgid "Lift z enforcement"
+msgstr "提升 z 执行"
 
 msgid "Lightning"
 msgstr "闪电"
@@ -6266,6 +5697,9 @@ msgstr "加载模式视图"
 msgid "Loading of current presets"
 msgstr "加载当前预设"
 
+msgid "Loading of the \"%1%\""
+msgstr "正在加载\"%1%\""
+
 msgid "Loading repaired model"
 msgstr "加载修复模型"
 
@@ -6293,9 +5727,6 @@ msgid ""
 "LOCKED LOCK icon indicates that the value is the same as the system (or "
 "default) value."
 msgstr "锁定锁定图标表示该值与系统(或默认值)值相同。"
-
-msgid "Log time"
-msgstr "记录时间"
 
 msgid "Logging level"
 msgstr "日志级别"
@@ -6388,11 +5819,20 @@ msgstr "匹配单线"
 msgid "Mate&rial Settings Tab"
 msgstr "配合设置选项卡"
 
+msgid "Material"
+msgstr "材料"
+
+msgid "Material printing profile"
+msgstr "材料打印配置文件"
+
 msgid "Material Settings"
 msgstr "材料设置"
 
 msgid "Material Settings Tab"
 msgstr "材料设置选项卡"
+
+msgid "material_correction"
+msgstr "打印机缩放校正"
 
 msgid "Max"
 msgstr "最大"
@@ -6411,6 +5851,12 @@ msgstr "最大桥长"
 
 msgid "Max bridges on a pillar"
 msgstr "柱子上的最大桥梁"
+
+msgid "Max fan speed"
+msgstr "最大风扇转速"
+
+msgid "Max height"
+msgstr "最达高度"
 
 msgid "Max layer height"
 msgstr "最大层高"
@@ -6433,9 +5879,6 @@ msgstr "最大柱线链接距离"
 msgid "Max print height"
 msgstr "最大打印高度"
 
-msgid "Max print speed"
-msgstr "最大打印速度"
-
 msgid "Max small perimeters length"
 msgstr "最大小周长"
 
@@ -6456,6 +5899,9 @@ msgstr "最大流量增加率"
 
 msgid "Max volumetric speed"
 msgstr "最大体积速度"
+
+msgid "Max width"
+msgstr "最大宽度"
 
 msgid "Maximal bridging distance"
 msgstr "最大桥接距离"
@@ -6522,18 +5968,6 @@ msgid ""
 msgstr ""
 "孔尺寸补偿将完全应用的孔的最大面积。 之后，它将在该区域的四倍内减少到 0。 设"
 "置为 0 以使hole_size_compensation 完全适用于所有检测到的孔洞"
-
-msgid ""
-"Maximum defection of a point to the estimated radius of the circle.\n"
-"As cylinders are often exported as triangles of varying size, points may not "
-"be on the circle circumference. This setting allows you some leway to "
-"broaden the detection.\n"
-"In mm or in % of the radius."
-msgstr ""
-"一个点对圆的估计半径的最大偏差。\n"
-"由于圆柱体通常以不同大小的三角形导出，因此点可能不在圆周上。 此设置允许您有一"
-"些余地来扩大检测范围。\n"
-"以毫米或半径的百分比为单位。"
 
 msgid ""
 "Maximum density for bridge lines. If you want more space between line (or "
@@ -6733,6 +6167,9 @@ msgstr "最小凸角"
 msgid "Min first layer speed"
 msgstr "最小第一层速度"
 
+msgid "Min height"
+msgstr "最小高度"
+
 msgid "Min height for travel"
 msgstr "滑行的最低高度"
 
@@ -6835,6 +6272,9 @@ msgstr "最短曝光时间"
 msgid "Minimum extrusion length"
 msgstr "最小挤压长度"
 
+msgid "Minimum feature size"
+msgstr "最小特征尺寸"
+
 msgid "Minimum feedrate when extruding"
 msgstr "挤出时的最小进给率"
 
@@ -6847,6 +6287,15 @@ msgstr "最小进给率"
 msgid "Minimum initial exposure time"
 msgstr "最短初始暴露时间"
 
+msgid "Minimum perimeter width"
+msgstr "最小轮廓宽度"
+
+msgid "Minimum retraction"
+msgstr "回抽最小行程"
+
+msgid "Minimum shell thickness"
+msgstr "最小顶壳厚度"
+
 msgid ""
 "Minimum speed when printing the first layer.\n"
 "Set zero to disable."
@@ -6856,6 +6305,17 @@ msgstr ""
 
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "顶壳/底壳的最小厚度"
+
+msgid ""
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum perimeter width. If expressed as "
+"a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"薄型特征的最小厚度。比这个值薄的模型特征将不被打印，而比最小特征尺寸厚的特征"
+"将被加宽到最小轮廓的宽度。如果以百分比表示（例如 25%），它将根据喷嘴直径计"
+"算。"
 
 msgid "Minimum top shell thickness"
 msgstr "最小顶壳厚度"
@@ -6879,6 +6339,9 @@ msgid "Minimum wall thickness of a hollowed model."
 msgstr "空心模型的最小壁厚。"
 
 msgid "minimum width"
+msgstr "最小宽度"
+
+msgid "Minimum width"
 msgstr "最小宽度"
 
 msgid ""
@@ -6914,6 +6377,9 @@ msgstr "混合"
 
 msgid "ml"
 msgstr "毫升"
+
+msgid "mm"
+msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (0禁用)"
@@ -6983,6 +6449,12 @@ msgstr "修改"
 
 msgid "Modifier"
 msgstr "修改器  Modifier"
+
+msgid "Modifiers"
+msgstr "修改器"
+
+msgid "Modifying slices"
+msgstr "修改器"
 
 msgid "money/bottle"
 msgstr "钱/瓶"
@@ -7082,12 +6554,27 @@ msgstr ""
 msgid "Multi-part object detected"
 msgstr "检测到多部分对象"
 
+msgid "Multimaterial"
+msgstr "材料"
+
 msgid "Multimaterial painting"
 msgstr "多材料绘画"
+
+msgid "Multimaterial toolchange string reduction"
+msgstr "多材料换刀string reduction"
+
+msgid "Multimaterial toolchange temperature"
+msgstr "多材料换刀温度"
 
 msgid ""
 "Multiple %s devices found. Please only connect one at a time for flashing."
 msgstr "找到多个 %s 设备。请一次只连接一个设备来烧录。"
+
+msgid "Multiple extruders"
+msgstr ""
+"使用不同喷嘴直径的多个挤出机进行打印。如果要使用当前挤出机"
+"(support_material_extruder == 0 或 support_material_interface_extruder == 0)"
+"打印支撑物, 则所有喷嘴的直径必须相同。"
 
 msgid ""
 "Multiple objects were loaded for a multi-material printer.\n"
@@ -7113,6 +6600,9 @@ msgstr "N/A"
 msgid "Name"
 msgstr "名称"
 
+msgid "Name and Size"
+msgstr "热床形状和大小"
+
 msgid "Name of the printer"
 msgstr "打印机名称"
 
@@ -7129,15 +6619,6 @@ msgstr "此配置文件从中继承的配置文件的名称。"
 
 msgid "Names of presets related to the physical printer"
 msgstr "与物理打印机相关的预设名称"
-
-msgid "Nb down:"
-msgstr "铌下降："
-
-msgid "Nb tests:"
-msgstr "铌测试："
-
-msgid "Nb up:"
-msgstr "铌向上："
 
 msgid "Nearest"
 msgstr "最近的"
@@ -7249,6 +6730,9 @@ msgstr "不连接"
 msgid "Not found:"
 msgstr "未找到："
 
+msgid "Not on first layer"
+msgstr "第一层校准"
+
 msgid "Note"
 msgstr "笔记"
 
@@ -7307,6 +6791,9 @@ msgstr "注意:某些快捷方式仅在(非)编辑模式下工作。"
 msgid "Note: This preset will be replaced after saving"
 msgstr "注意：此预设保存后将被替换"
 
+msgid "Notes"
+msgstr "备注"
+
 msgid "Notice"
 msgstr "通知"
 
@@ -7362,6 +6849,9 @@ msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width."
 msgstr "要使反转被认为有用，需要悬垂的毫米数。 可以是周长的 %。"
+
+msgid "Number of pixels in"
+msgstr "像素点的数量"
 
 msgid "Number of pixels in X"
 msgstr "X 中的像素数"
@@ -7456,6 +6946,9 @@ msgstr "当前对象的"
 msgid "Offset"
 msgstr "抵消"
 
+msgid "Offsets (for multi-extruder printers)"
+msgstr "偏移量（用于多挤出机打印机）"
+
 msgid ""
 "Old layout: all windows are in the application, settings are on the top tab "
 "bar and the platter choice in on the bottom of the platter view."
@@ -7466,8 +6959,11 @@ msgstr ""
 msgid "Old Value"
 msgstr "旧值"
 
-msgid "On odd layers"
-msgstr "在奇数层"
+msgid "On"
+msgstr "打开"
+
+msgid "On first layer"
+msgstr "第一层"
 
 msgid ""
 "On OSX there is always only one instance of app running by default. However "
@@ -7504,6 +7000,9 @@ msgid ""
 "or Keychain."
 msgstr "在此系统上,%s 使用来自系统证书存储或钥匙串的 HTTPS 证书。"
 
+msgid "On top surfaces"
+msgstr "所有顶面"
+
 msgid "On/Off one layer mode of the vertical slider"
 msgstr "打开/关闭垂直滑块的一层模式"
 
@@ -7519,6 +7018,9 @@ msgstr "为一个或多个对象分配了打印机没有的挤出机。"
 
 msgid "one test"
 msgstr "一项测试"
+
+msgid "One-loop perimeters"
+msgstr "轮廓"
 
 msgid "Ongoing uploads"
 msgstr "持续上传"
@@ -7558,11 +7060,17 @@ msgstr "仅用于内侧"
 msgid "Only for outer side"
 msgstr "仅用于外侧"
 
+msgid "Only for overhangs"
+msgstr "仅用于悬垂"
+
 msgid "Only if on platter"
 msgstr "仅提升 Z 高于"
 
 msgid "Only infill where needed"
 msgstr "仅在需要时填充"
+
+msgid "Only lift Z"
+msgstr "仅提升 Z"
 
 msgid "Only lift Z above"
 msgstr "仅提升 Z 高于"
@@ -7573,11 +7081,17 @@ msgstr "仅提升 Z 低于"
 msgid "Only one peri - other algo"
 msgstr "只有一个 peri - 其他算法"
 
+msgid "Only one perimeter"
+msgstr "在填充前先打印轮廓"
+
 msgid "Only one perimeter on First layer"
 msgstr "第一层只有一个周长"
 
 msgid "Only one perimeter on Top surfaces"
 msgstr "顶面上只有一个周长"
+
+msgid "Only retract when crossing perimeters"
+msgstr "仅在跨越轮廓时回抽"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -7598,6 +7112,9 @@ msgstr ""
 
 msgid "Only when GCode is ready"
 msgstr "仅当 GCode 准备就绪时"
+
+msgid "Ooze prevention"
+msgstr "Ooze 预防"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr "启用擦料塔时，当前不支持 Ooze 预防。"
@@ -7623,6 +7140,9 @@ msgstr "打开 CA 证书文件"
 msgid "Open changelog page"
 msgstr "打开更改日志页面"
 
+msgid "Open Documentation in web browser."
+msgstr "在web浏览器中打开文档。"
+
 msgid "Open download page"
 msgstr "打开下载页面"
 
@@ -7647,26 +7167,14 @@ msgstr "打开新实例"
 msgid "Open New Instance"
 msgstr "打开新实例"
 
-msgid "Open project STL/OBJ/AMF/3MF with config, clear platter"
-msgstr "使用配置打开项目 STL/OBJ/AMF/3MF，清除当前拼版"
+msgid "Open Preferences."
+msgstr "打开首选项。"
 
 msgid "Open the %s releases page in your browser"
 msgstr "在浏览器中打开 %s 版本页面"
 
-msgid "Open the %s wiki in your browser"
-msgstr "在浏览器中打开 %s wiki"
-
 msgid "Open the dialog to modify shape gallery"
 msgstr "打开对话框以修改形状库"
-
-msgid "Open the Slic3r Manual in your browser"
-msgstr "在浏览器中打开 Slic3r 手册"
-
-msgid "Open the Slic3r website in your browser"
-msgstr "在浏览器中打开 Slic3r 网站"
-
-msgid "Opening Configuration Wizard"
-msgstr "打开配置向导"
 
 msgid "Opening new project while some presets are unsaved."
 msgstr "在某些预设未保存时打开新项目。"
@@ -7702,6 +7210,15 @@ msgstr ""
 "优化移动移动，以尽量减少周界交叉。这在鲍登挤出机中最有用，它们容易渗漏。此功"
 "能可降低打印和 G 代码生成速度。"
 
+msgid "Options"
+msgstr "选项"
+
+msgid "Options for support material and raft"
+msgstr "支撑材料和基座的选项"
+
+msgid "Options for support material interface"
+msgstr "支撑材料和基座的选项"
+
 msgid "Options:"
 msgstr "选项："
 
@@ -7719,6 +7236,9 @@ msgstr "方向搜索已取消。"
 
 msgid "Origin"
 msgstr "起源"
+
+msgid "Other"
+msgstr "其他"
 
 msgid "Other layers"
 msgstr "其他图层"
@@ -7741,6 +7261,9 @@ msgstr "外XY尺寸补偿"
 msgid "Output File"
 msgstr "输出文件"
 
+msgid "Output file"
+msgstr "输出文件"
+
 msgid "Output filename format"
 msgstr "输出文件名格式"
 
@@ -7750,14 +7273,11 @@ msgstr "输出格式"
 msgid "Output Model Info"
 msgstr "输出模型信息"
 
+msgid "Output options"
+msgstr "输出选项"
+
 msgid "Outside walls"
 msgstr "外墙"
-
-msgid "Over-Bridge calibration"
-msgstr "过桥校准"
-
-msgid "Over-bridge calibration"
-msgstr "过桥校准"
 
 msgid "Overflow"
 msgstr "溢出"
@@ -7771,17 +7291,20 @@ msgstr "悬索桥限速"
 msgid "Overhang perimeter"
 msgstr "悬空轮廓"
 
-msgid "Overhang reversal"
-msgstr "悬垂反转"
-
 msgid "Overhang reversal threshold"
 msgstr "悬垂反转阈值"
 
 msgid "Overhang threshold"
 msgstr "悬垂阈值"
 
+msgid "Overhangs"
+msgstr "悬垂"
+
 msgid "Overhangs speed"
 msgstr "悬垂速度"
+
+msgid "Overlap"
+msgstr "交叠"
 
 msgid ""
 "Overlap between the thin wall and the perimeters. Can be a % of the external "
@@ -7790,6 +7313,9 @@ msgstr "薄壁和周边之间的重叠。 可以是外周宽的 %（默认 50%�
 
 msgid "Overlapping all perimeters"
 msgstr "重叠所有周长"
+
+msgid "Overlapping external perimeter"
+msgstr "重叠的外周"
 
 msgid ""
 "Override the retract_length setting from the printer config. Used for "
@@ -7806,6 +7332,9 @@ msgstr ""
 
 msgid "P&rint Settings Tab"
 msgstr "&打印设置选项卡"
+
+msgid "Pad"
+msgstr "垫"
 
 msgid "Pad around object"
 msgstr "对象周围填充"
@@ -7904,8 +7433,8 @@ msgstr "從剪貼板粘貼"
 msgid "Paste From Clipboard"
 msgstr "从剪贴板粘贴"
 
-msgid "Paths"
-msgstr "路径"
+msgid "Pattern"
+msgstr "模式"
 
 msgid "Pattern angle"
 msgstr "模式角度"
@@ -7936,6 +7465,9 @@ msgstr "在熔化区暂停"
 msgid "Pause print (\"%1%\")"
 msgstr "暂停打印（“%1%”）"
 
+msgid "Pause Print G-code"
+msgstr "暂停打印 G 代码"
+
 msgid ""
 "Percent of a flow rate relative to object's normal layer height. It's the "
 "percentage of the layer that will be over-extruded on top to do the ironing."
@@ -7961,11 +7493,26 @@ msgstr "性能与计算的准确性。 较低的值可能会产生不需要的�
 msgid "Perimeter"
 msgstr "周长"
 
+msgid "perimeter"
+msgstr "周长"
+
+msgid "Perimeter acceleration"
+msgstr "圆周加速度"
+
+msgid "Perimeter anchor"
+msgstr "周长"
+
 msgid "Perimeter bonding"
 msgstr "周边粘接"
 
+msgid "Perimeter distribution count"
+msgstr "轮廓分布计数"
+
 msgid "Perimeter extruder"
 msgstr "轮廓挤出机"
+
+msgid "Perimeter generator"
+msgstr "轮廓生成器"
 
 msgid "Perimeter loop seam"
 msgstr "周边环缝"
@@ -7973,8 +7520,23 @@ msgstr "周边环缝"
 msgid "perimeter overlap"
 msgstr "周界重叠"
 
+msgid "Perimeter overlap"
+msgstr "外壁重叠"
+
 msgid "Perimeter spacing"
 msgstr "周长间距"
+
+msgid "Perimeter speed"
+msgstr "周长速度"
+
+msgid "Perimeter transition length"
+msgstr "轮廓过渡长度"
+
+msgid "Perimeter transitioning filter margin"
+msgstr "轮廓过渡过滤器余量"
+
+msgid "Perimeter transitioning threshold angle"
+msgstr "轮廓过渡阈值角度"
 
 msgid "Perimeter width"
 msgstr "周长宽度"
@@ -7983,6 +7545,9 @@ msgid "perimeters"
 msgstr "轮廓"
 
 msgid "Perimeters"
+msgstr "轮廓"
+
+msgid "Perimeters & Shell"
 msgstr "轮廓"
 
 msgid "Perimeters count"
@@ -8033,16 +7598,14 @@ msgstr "将轴承放入槽中并恢复打印"
 msgid "Place on face"
 msgstr "放置在平面"
 
+msgid "Plater"
+msgstr "构建板"
+
 msgid "Platter"
 msgstr "构建板"
 
 msgid "Please check your object list before preset changing."
 msgstr "请在预设更改之前检查对象列表。"
-
-msgid ""
-"Please save your project and restart PrusaSlicer. We would be glad if you "
-"reported the issue."
-msgstr "请保存项目并重新启动PrusaSlicer。如果你能报告这个问题，我们会很高兴的。"
 
 msgid "Please select the file to reload"
 msgstr "请选择要重新加载的文件"
@@ -8067,6 +7630,12 @@ msgstr "轮廓起点的位置。"
 
 msgid "Post processing scripts shall modify G-code file in place."
 msgstr "后处理脚本应适当修改G代码文件。"
+
+msgid "Post-processing milling"
+msgstr "后处理脚本"
+
+msgid "Post-processing script"
+msgstr "后处理脚本"
 
 msgid "Post-processing scripts"
 msgstr "后处理脚本"
@@ -8151,10 +7720,16 @@ msgstr ""
 "移动拇指的同时按下可加速 5 次\n"
 "带方向键或鼠标滚轮"
 
+msgid "Pressure equalizer (experimental)"
+msgstr "压力均衡器（实验）"
+
 msgid ""
 "Prevent the gcode builder from triggering an exception if a full layer is "
 "empty, and allow the print to start from thin air afterward."
 msgstr "如果整个图层为空，请防止 gcode 构建器触发异常，然后允许打印从零开始。"
+
+msgid "Preview"
+msgstr "预览"
 
 msgid "Preview hollowed and drilled model"
 msgstr "预览镂空和钻孔模型"
@@ -8176,9 +7751,6 @@ msgstr "打印&主机上传队列"
 
 msgid "Print a calibration cube, for various calibration goals."
 msgstr "打印校准立方体，用于各种校准目标。"
-
-msgid "Print all brim at startup"
-msgstr "启动时打印所有边缘"
 
 msgid "Print at the end"
 msgstr "打印机供应商"
@@ -8208,6 +7780,9 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "打印直径"
 
+msgid "Print Host upload"
+msgstr "打印主机上传"
+
 msgid "Print host upload queue"
 msgstr "打印主机上传队列"
 
@@ -8216,6 +7791,9 @@ msgstr "打印模式"
 
 msgid "Print pauses"
 msgstr "打印暂停"
+
+msgid "Print remaining times"
+msgstr "支撑剩余时间"
 
 msgid "Print settings"
 msgstr "打印设置"
@@ -8228,6 +7806,9 @@ msgstr "打印设置选项卡"
 
 msgid "Print speed"
 msgstr "打印速度"
+
+msgid "Print speed override"
+msgstr "打印速度覆盖"
 
 msgid ""
 "print speed will be reduced so that no less than %1%s are spent on that layer"
@@ -8264,6 +7845,9 @@ msgstr "打印机备注"
 
 msgid "Printer preset names"
 msgstr "打印机预设名称"
+
+msgid "Printer scaling correction"
+msgstr "打印机缩放校正"
 
 msgid "Printer scaling correction in X axis"
 msgstr "X轴上的打印机缩放校正"
@@ -8320,6 +7904,12 @@ msgstr ""
 msgid "Processing %s"
 msgstr "处理 %s"
 
+msgid "Processing limit"
+msgstr "处理 %s"
+
+msgid "Profile dependencies"
+msgstr "配置文件依赖"
+
 msgid "Profile:"
 msgstr "轮廓："
 
@@ -8334,12 +7924,6 @@ msgstr "项目正在加载"
 
 msgid "Prusa SL1"
 msgstr "普鲁萨SL1"
-
-msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
-msgstr "PrusaSlicer遇到致命错误：“%1%”"
-
-msgid "PrusaSlicer: Open hyperlink"
-msgstr "PrusaSlicer:打开超链接"
 
 msgid ""
 "Purging after toolchange will be done inside this object's infills. This "
@@ -8380,6 +7964,9 @@ msgstr ""
 msgid "Quadratric"
 msgstr "二次方"
 
+msgid "Quality"
+msgstr "质量"
+
 msgid "Quality / Speed"
 msgstr "质量/速度"
 
@@ -8403,6 +7990,9 @@ msgstr "退出，我现在要移动我的数据"
 
 msgid "Radius"
 msgstr "半径"
+
+msgid "Raft"
+msgstr "基座"
 
 msgid "Raft contact Z distance"
 msgstr "筏板接触Z距离"
@@ -8526,6 +8116,9 @@ msgstr "重做历史操作"
 
 msgid "Reduced overhang slopes"
 msgstr "减少悬垂斜坡"
+
+msgid "Reducing printing time"
+msgstr "缩短打印时间"
 
 msgid "Refresh Printers"
 msgstr "刷新打印机"
@@ -8709,6 +8302,9 @@ msgstr "替换为STL"
 msgid "Replace?"
 msgstr "代替？"
 
+msgid "Replacing of the PNG"
+msgstr "替换 PNG"
+
 msgid "Report an I&ssue"
 msgstr "报告&问题"
 
@@ -8772,6 +8368,9 @@ msgstr "擦拭前的回抽量"
 msgid "Retract on layer change"
 msgstr "在图层更改时回抽"
 
+msgid "Retraction"
+msgstr "回抽"
+
 msgid "Retraction calibration"
 msgstr "回缩校准"
 
@@ -8788,14 +8387,20 @@ msgstr "回抽长度"
 msgid "Retraction Length (Toolchange)"
 msgstr "回抽长度 (工具更换)"
 
+msgid "Retraction Speed"
+msgstr "回抽速度"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr "工具禁用时的回抽 (多挤出机设置的高级设置)"
+
+msgid "Retraction wipe"
+msgstr "回抽速度"
+
 msgid "Retractions"
 msgstr "回抽"
 
 msgid "Reverse direction of zoom with mouse wheel"
 msgstr "用鼠标滚轮反向缩放"
-
-msgid "Reverse on odd"
-msgstr "奇数反转"
 
 msgid "Reverse threshold"
 msgstr "反向阈值"
@@ -8892,9 +8497,6 @@ msgstr "标尺模式"
 
 msgid "Run %s"
 msgstr "运行 %s"
-
-msgid "Run the fan at default speed when possible"
-msgstr "尽可能以默认速度运行风扇"
 
 msgid "Running post-processing scripts"
 msgstr "运行后处理脚本"
@@ -9007,16 +8609,22 @@ msgstr "分散直线"
 msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
 msgstr "计划上传到 `%1%`。请参阅窗口-> 打印主机上传队列"
 
-msgid "Script help page"
-msgstr "脚本帮助页面"
+msgid "Seam"
+msgstr "进入缝画"
 
 msgid "Seam angle cost"
 msgstr "缝角成本"
+
+msgid "Seam gap"
+msgstr "接缝间隙"
 
 msgid "Seam painting"
 msgstr "缝画"
 
 msgid "Seam Position"
+msgstr "接缝位置"
+
+msgid "Seam position"
 msgstr "接缝位置"
 
 msgid "Seam preferred direction"
@@ -9123,6 +8731,9 @@ msgstr "选择 打印设置 选项卡"
 msgid "Select Printer Settings Tab"
 msgstr "选择 打印机设置 选项卡"
 
+msgid "Select shape from the gallery"
+msgstr "从图库中选择形状"
+
 msgid "Select the language"
 msgstr "选择语言"
 
@@ -9134,13 +8745,6 @@ msgstr "为塔选择毫米数。"
 
 msgid "Select the number of tests"
 msgstr "选择测试次数"
-
-msgid ""
-"Select the number of tests with higher temperature than the current one."
-msgstr "选择比当前温度更高的测试次数。"
-
-msgid "Select the number of tests with lower temperature than the current one."
-msgstr "选择比当前温度低的测试次数。"
 
 msgid ""
 "Select the number tower to print, and by how many degrees C to decrease each "
@@ -9161,13 +8765,6 @@ msgid ""
 "Note that only multiple of 5 are engraved on the parts."
 msgstr ""
 "选择两个测试之间的 % 步长。\n"
-"请注意，零件上仅刻有 5 的倍数。"
-
-msgid ""
-"Select the step in celcius between two tests.\n"
-"Note that only multiple of 5 are engraved on the part."
-msgstr ""
-"选择两个测试之间的摄氏度步长。\n"
 "请注意，零件上仅刻有 5 的倍数。"
 
 msgid "Select the STL file to repair:"
@@ -9252,6 +8849,9 @@ msgstr "发送到打印机"
 
 msgid "Seq."
 msgstr "序列。"
+
+msgid "Sequential printing"
+msgstr "顺序打印"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "仅应用于顶层的顺序滑块"
@@ -9562,6 +9162,9 @@ msgstr "Shift + 鼠标右键："
 msgid "Shift objects to bed"
 msgstr "把物品转移到床上"
 
+msgid "Short layer time - began to increase base fan speed"
+msgstr "短层时间 - 开始增加基础风扇速度"
+
 msgid "Show"
 msgstr "显示"
 
@@ -9694,8 +9297,8 @@ msgstr "显示/隐藏对象/实例标签"
 msgid "Shrinkage"
 msgstr "收缩率"
 
-msgid "Simple mode"
-msgstr "简单模式"
+msgid "Simple"
+msgstr "简单"
 
 msgid "Single extruder MM setup"
 msgstr "单挤出机 MM 设置"
@@ -9722,16 +9325,37 @@ msgstr "单实例模式"
 msgid "Sinking"
 msgstr "下沉"
 
+msgid "Size"
+msgstr "大小"
+
+msgid "Size and coordinates"
+msgstr "大小和坐标"
+
+msgid "Size for Gcode"
+msgstr "发送 G 代码"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "矩形框在X和Y方向的尺寸。"
 
 msgid "Size of the tab icons, in pixels. Set to 0 to remove icons."
 msgstr "选项卡图标的大小，以像素为单位。设置为 0 以删除图标。"
 
+msgid "Size:"
+msgstr "大小:"
+
 msgid ""
 "Skinnydip performs a secondary dip into the meltzone to burn off fine "
 "strings of filament"
 msgstr "Skinnydip 在熔体区进行二次浸渍以烧掉细丝"
+
+msgid "Skirt"
+msgstr "裙边"
+
+msgid "skirt"
+msgstr "裙边"
+
+msgid "Skirt & Brim"
+msgstr "裙边"
 
 msgid "Skirt and brim"
 msgstr "裙边"
@@ -9788,11 +9412,6 @@ msgid "SLA supports outside the print area were detected."
 msgstr "检测到打印区域外的 SLA 支撑."
 
 msgid ""
-"Slic3r can upload G-code files to a printer host. This field must contain "
-"the kind of the host."
-msgstr "Slic3r 可以将 G-code 文件上传到打印机主机。此字段必须包含主机的类型。"
-
-msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
 msgstr ""
@@ -9811,18 +9430,8 @@ msgstr ""
 "身份验证的 HAProxy 背后的打印主机：https://username:password@your-octopi-"
 "address/"
 
-msgid ""
-"Slic3r contains sizable contributions from Prusa Research. Original work by "
-"Alessandro Ranellucci and the RepRap community."
-msgstr ""
-"Slic3r 包含来自 Prusa Research 的大量贡献。 Alessandro Ranellucci 和 RepRap "
-"社区的原创作品。"
-
 msgid "Slic3r logo designed by Corey Daniels."
 msgstr "由 Corey Daniels 设计的 Slic3r 标志。"
-
-msgid "Slic3r Manual"
-msgstr "Slic3r 手册"
 
 msgid "Slic3r will never scale the speed below this one."
 msgstr "Slic3r 永远不会将速度扩展到低于这个速度。"
@@ -9862,8 +9471,8 @@ msgstr "切片信息"
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "切片对象\"%1%\"看起来像一个徽标或标志"
 
-msgid "Sliced preview"
-msgstr "切片预览"
+msgid "Slicing"
+msgstr "切片"
 
 msgid "Slicing complete"
 msgstr "切片完成"
@@ -9899,6 +9508,12 @@ msgstr "如果图层打印时间低于"
 msgid "Slow tilt"
 msgstr "缓慢倾斜"
 
+msgid "Small"
+msgstr "小"
+
+msgid "Small perimeter speed"
+msgstr "小周长速度"
+
 msgid "Small perimeters speed"
 msgstr "小周长速度"
 
@@ -9923,10 +9538,16 @@ msgstr "快照名称"
 msgid "Snug"
 msgstr "舒适的"
 
+msgid "Solid"
+msgstr "内部固体"
+
 msgid "Solid "
 msgstr "内部固体 "
 
 msgid "Solid infill"
+msgstr "实心填充"
+
+msgid "solid infill"
 msgstr "实心填充"
 
 msgid "Solid infill every"
@@ -9946,6 +9567,9 @@ msgstr "实心填充阈值区域"
 
 msgid "Solid infill width"
 msgstr "实心填充宽度"
+
+msgid "Solid layers"
+msgstr "实心层"
 
 msgid "Solid spacing"
 msgstr "实体间距"
@@ -10012,14 +9636,29 @@ msgstr "一些打印机被卸载。"
 msgid "Some SLA materials were uninstalled."
 msgstr "一些SLA材料已卸载。"
 
+msgid "Spacing"
+msgstr "间距"
+
+msgid "spacing"
+msgstr "间距"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr "接触面行之间的间距。设置为零以获得实心接触面。"
+
+msgid "Spacing between ironing lines"
+msgstr "熨烫线间距"
 
 msgid "Spacing between support material lines."
 msgstr "支撑材料线之间的间距。"
 
+msgid "Sparse"
+msgstr "填充密度"
+
 msgid "Sparse infill speed"
 msgstr "稀疏填充速度"
+
+msgid "Speed"
+msgstr "速度"
 
 msgid "Speed (mm/s)"
 msgstr "回退速度(mm/s)"
@@ -10034,6 +9673,12 @@ msgid ""
 msgstr ""
 "沿Z轴移动的速度。\n"
 "当设置为零时，该值将被忽略，而使用常规行驶速度。"
+
+msgid "Speed for non-print moves"
+msgstr "非打印移动的速度"
+
+msgid "Speed for print moves"
+msgstr "打印移动速度"
 
 msgid ""
 "Speed for printing the bridges that support the top layer.\n"
@@ -10084,6 +9729,9 @@ msgstr "冲压后立即卸载耗材尖端的速度。. "
 
 msgid "Speed:"
 msgstr "速度:"
+
+msgid "Speedup time"
+msgstr "加速时间"
 
 msgid "Sphere"
 msgstr "球"
@@ -10146,6 +9794,9 @@ msgstr "启动一个新项目"
 
 msgid "Start at height"
 msgstr "开始高度"
+
+msgid "Start G-code"
+msgstr "起始 G-code"
 
 msgid "Start new slicing process"
 msgstr "开始新的切片流程"
@@ -10261,6 +9912,9 @@ msgstr "支撑添加器"
 msgid "Support Generator"
 msgstr "支撑生成器"
 
+msgid "Support head"
+msgstr "支撑头"
+
 msgid "support interface"
 msgstr "支撑面"
 
@@ -10269,6 +9923,12 @@ msgstr "支撑界面模式"
 
 msgid "Support interface speed"
 msgstr "支撑接口速度"
+
+msgid "Support material"
+msgstr "支撑材料"
+
+msgid "support material"
+msgstr "支撑材料"
 
 msgid "Support material extruder"
 msgstr "支撑材料挤出机"
@@ -10308,11 +9968,23 @@ msgstr "支撑模式"
 msgid "Support pattern angle"
 msgstr "支撑图案角度"
 
+msgid "Support pillar"
+msgstr "支撑支柱"
+
 msgid "Support points density"
 msgstr "支撑点密度"
 
 msgid "Support points edit"
 msgstr "支撑点编辑"
+
+msgid "Support speed"
+msgstr "支撑速度"
+
+msgid "Supporting dense layer"
+msgstr "支撑点密度"
+
+msgid "Supports"
+msgstr "支持"
 
 msgid "supports and pad"
 msgstr "支撑和垫"
@@ -10372,6 +10044,9 @@ msgstr "切片时切换到预览"
 
 msgid "Switch to Settings"
 msgstr "切换到设置"
+
+msgid "Switch to the %s mode"
+msgstr "切换到 %s 模式"
 
 msgid "Switch when possible"
 msgstr "尽可能切换"
@@ -10470,14 +10145,17 @@ msgstr ""
 msgid "Temperature variation"
 msgstr "温度变化"
 
+msgid "Temperature °C"
+msgstr "温度"
+
 msgid "Temperatures"
 msgstr "温度"
 
+msgid "Template Custom G-code"
+msgstr "自定义 G-code"
+
 msgid "Test"
 msgstr "测试"
-
-msgid "Test Flow Ratio"
-msgstr "测试流量比"
 
 msgid "Text colors"
 msgstr "文本颜色"
@@ -10514,20 +10192,6 @@ msgstr ""
 "\n"
 "是否要导入所有较新的配置？\n"
 "如果是这样，在导入新配置之前，将备份活动配置。"
-
-msgid ""
-"The convex holes will be grown / shrunk in the XY plane by the configured "
-"value (negative = inwards, positive = outwards, should be negative as the "
-"holes are always a bit smaller irl). This might be useful for fine-tuning "
-"hole sizes.\n"
-"This setting behaves the same as 'Inner XY size compensation' but only for "
-"convex shapes. It's added to 'Inner XY size compensation', it does not "
-"replace it. "
-msgstr ""
-"凸孔将按配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外，应为负，因为孔总是"
-"小一点 irl）。 这对于微调孔尺寸可能很有用。\n"
-"此设置的行为与“内部 XY 尺寸补偿”相同，但仅适用于凸面形状。 它被添加到“内部 "
-"XY 尺寸补偿”中，它不会取代它 "
 
 msgid ""
 "The current custom preset will be detached from the parent system preset."
@@ -10596,6 +10260,9 @@ msgstr ""
 msgid "The filament material type for use in custom G-codes."
 msgstr "用于自定义 G-codes的耗材丝材料类型。"
 
+msgid "The file does not exist."
+msgstr "该文件不存在。"
+
 msgid ""
 "The file where the output will be written (if not specified, it will be "
 "based on the input file)."
@@ -10603,14 +10270,6 @@ msgstr "将写入输出的文件（如果未指定，则基于输入文件）。
 
 msgid "The firmware supports stealth mode"
 msgstr "固件支持隐身模式"
-
-msgid ""
-"The first layer will be grown / shrunk in the XY plane by the configured "
-"value to compensate for the 1st layer squish aka an Elephant Foot effect. "
-"(should be negative = inwards)"
-msgstr ""
-"第一层将通过配置的值在 XY 平面中生长/收缩，以补偿第一层挤压，即象脚效应。 "
-"（应为负 = 向内）"
 
 msgid "The following characters are not allowed by a FAT file system:"
 msgstr "FAT文件系统不允许使用以下字符："
@@ -10765,6 +10424,14 @@ msgstr ""
 "缩较少，直到该值指示的层。"
 
 msgid ""
+"The number of perimeters, counted from the center, over which the variation "
+"needs to be spread. Lower values mean that the outer perimeters don't change "
+"in width."
+msgstr ""
+"从中心开始计算的轮廓数量，变化需要在这些轮廓上展开。较低的值意味着外部轮廓的"
+"宽度不发生变化。"
+
+msgid ""
 "The number of top solid layers is increased above top_solid_layers if "
 "necessary to satisfy minimum thickness of top shell. This is useful to "
 "prevent pillowing effect when printing with variable layer height."
@@ -10774,30 +10441,6 @@ msgstr ""
 
 msgid "The object is too small"
 msgstr "这个物体太小了"
-
-msgid ""
-"The object will be grown/shrunk in the XY plane by the configured value "
-"(negative = inwards, positive = outwards). This might be useful for fine-"
-"tuning sizes.\n"
-"This one only applies to the 'exterior' shell of the object.\n"
-" !!! it's recommended you put the same value into the 'Inner XY size "
-"compensation', unless you are sure you don't have horizontal holes. !!! "
-msgstr ""
-"对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大"
-"小可能很有用。\n"
-"这仅适用于对象的“外部”外壳。\n"
-"  ！！！ 建议您将相同的值放入“内部 XY 尺寸补偿”中，除非您确定没有水平孔。 "
-
-msgid ""
-"The object will be grown/shrunk in the XY plane by the configured value "
-"(negative = inwards, positive = outwards). This might be useful for fine-"
-"tuning sizes.\n"
-"This one only applies to the 'inner' shell of the object (!!! horizontal "
-"holes break the shell !!!)"
-msgstr ""
-"对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大"
-"小可能很有用。\n"
-"这个只适用于物体的“内”壳（！！！水平孔破壳！！！）"
 
 msgid ""
 "The object will be raised by this number of layers, and support material "
@@ -10853,14 +10496,6 @@ msgstr ""
 "模型原点的位置（坐标为 x:0、y:0、z:0 的点）需要位于打印床区域的中间。 如果您"
 "加载自定义模型并且它看起来未对齐，则原点设置不正确。"
 
-msgid ""
-"The preset below was temporarily installed on the active instance of "
-"PrusaSlicer"
-msgid_plural ""
-"The presets below were temporarily installed on the active instance of "
-"PrusaSlicer"
-msgstr[0] "以下预设已临时安装在PrusaSlicer的活动实例上"
-
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
 msgstr[0] "预设修改已成功保存"
@@ -10873,21 +10508,6 @@ msgstr "提供的文件名无效。"
 
 msgid "The provided name is not valid;"
 msgstr "提供的名称无效;"
-
-msgid ""
-"The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr "所选3MF包含FDM，支持使用较新版本的PrusaSlicer绘制对象，不兼容。"
-
-msgid ""
-"The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr "所选3MF包含使用较新版本的PrusaSlicer绘制的多材质对象，不兼容。"
-
-msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr "所选3MF包含使用较新版本的PrusaSlicer的接缝绘制对象，不兼容。"
 
 msgid "The selected file"
 msgstr "所选文件"
@@ -10991,10 +10611,6 @@ msgstr "垫的厚度及其可选的腔壁。"
 
 msgid "The uploads are still ongoing"
 msgstr "上传仍在进行中"
-
-msgid ""
-"The vertical distance between object and raft. Ignored for soluble interface."
-msgstr "物体与木筏之间的垂直距离。对于可溶解的界面忽略。"
 
 msgid ""
 "The volume multiplier used to compute the final volume to extrude by the "
@@ -11135,9 +10751,6 @@ msgstr ""
 "手工制作的 3D 模型。\n"
 "它真的只对平滑功能模型或非常宽的角度有用。"
 
-msgid "Thin extrusions speed"
-msgstr "最小打印速度"
-
 msgid "Thin wall"
 msgstr "薄壁"
 
@@ -11146,6 +10759,9 @@ msgstr "薄壁合并"
 
 msgid "Thin wall overlap"
 msgstr "薄壁重叠"
+
+msgid "Thin walls"
+msgstr "薄壁"
 
 msgid "Thin walls min width"
 msgstr "薄壁最小宽度"
@@ -11236,13 +10852,14 @@ msgstr ""
 
 msgid ""
 "This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
+"(feedrate 20 mm/s) will take at least 2 seconds."
 msgstr ""
-"该实验设置用于限制挤出速率的变化速度。值为 1.8 mm3/s2 可确保从 1.8 mm3/"
-"s（0.45mm 挤出宽度、0.2mm 挤出高度、进给率 20 mm/s）的挤出速率更改为 5.4 mm3/"
-"s（进料速率 60 mm/s）至少需要 2 秒。"
+"该实验设置用于限制挤出速率的变化速度，以便从较高速度过渡到较低速度。1.8 mm³/"
+"s² 的值可确保挤出速率从 5.4 mm³/s（挤出宽度 0.45 mm，挤出高度 0.2 mm，进给速"
+"率 60 mm/s）变为 1.8 mm³/s（进给速率 20 mm/s） 至少需要 2 秒。"
 
 msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
@@ -11287,42 +10904,6 @@ msgstr ""
 "是在每个对象的基础上提供相同的功能。"
 
 msgid ""
-"This fan speed is enforced during all infill bridges. It won't slow down the "
-"fan if it's currently running at a higher speed.\n"
-"Set to 1 to follow default speed.\n"
-"Set to -1 to disable this override (internal bridges will use Bridges fan "
-"speed).\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"在所有填充桥期间强制执行此风扇速度。如果它当前以更高的速度运行，它不会减慢风"
-"扇的速度。\n"
-"设置为 1 以遵循默认速度。\n"
-"设置为 -1 以禁用此覆盖（内部网桥将使用网桥风扇速度）。\n"
-"只能被 disable_fan_first_layers 覆盖。"
-
-msgid ""
-"This fan speed is enforced during all top fills.\n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to disable this override.\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"在所有顶部填充期间强制执行此风扇速度。\n"
-"设置为 1 以禁用风扇。\n"
-"设置为 -1 以禁用此覆盖。\n"
-"只能被 disable_fan_first_layers 覆盖。"
-
-msgid ""
-"This fan speed is enforced during bridges and overhangs. It won't slow down "
-"the fan if it's currently running at a higher speed.\n"
-"Set to -1 to disable this override.\n"
-"Can only be overriden by disable_fan_first_layers."
-msgstr ""
-"此风扇速度在桥梁和悬垂期间强制执行。如果它当前以更高的速度运行，它不会减慢风"
-"扇的速度。\n"
-"设置为 -1 以禁用此覆盖。\n"
-"只能被 disable_fan_first_layers 覆盖。"
-
-msgid ""
 "This feature allows you to combine infill and speed up your print by "
 "extruding thicker infill layers while preserving thin perimeters, thus "
 "accuracy."
@@ -11339,17 +10920,6 @@ msgstr ""
 "此功能允许您在每个给定的层数中强制建立一个实体层。 零表示禁用。 您可以将其设"
 "置为任何值（例如 9999）； Slic3r 将根据喷嘴直径和层高自动选择最大可能的层数进"
 "行组合。"
-
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires a single perimeter, "
-"no infill, no top solid layers and no support material. You can still set "
-"any number of bottom solid layers as well as skirt/brim loops. It won't work "
-"when printing more than one single object."
-msgstr ""
-"此功能将在打印单壁对象时逐渐升高 Z，以去除任何可见的接缝。 此选项需要单个周"
-"边、无填充、无顶部固体层和无支撑材料。 您仍然可以设置任意数量的底部实体层以及"
-"裙边/边缘环。 当打印一个以上的对象时，它不起作用。"
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -11398,12 +10968,6 @@ msgstr ""
 "该标志将在缩回时移动喷嘴，以最大限度地减少泄漏挤出机上可能出现的斑点。\n"
 "请注意，由于仅在回缩时才会进行擦拭，因此“仅在穿过周边时回缩”打印设置可以大大"
 "减少擦拭次数。"
-
-msgid "This G-code will be used as a code for the color change"
-msgstr "此 G 代码将用作颜色更改的代码"
-
-msgid "This G-code will be used as a code for the pause print"
-msgstr "此 G 代码将用作暂停打印的代码"
 
 msgid "This G-code will be used as a custom code"
 msgstr "此 G 代码将用作自定义代码"
@@ -11554,15 +11118,6 @@ msgstr ""
 "是否要继续？"
 
 msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"此选项设置要为每个图层生成的轮廓数。请注意，Slic3r 在检测到倾斜曲面时可能会自"
-"动增加此数字，如果启用了\"额外轮廓\"选项，则这些坡度曲面受益于较高的轮廓数。"
-
-msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
 "oozing. It will enable a tall skirt automatically and move extruders outside "
 "such skirt when changing temperatures."
@@ -11670,13 +11225,6 @@ msgstr ""
 "长。"
 
 msgid ""
-"This setting controls the height of last object layers to put the last layer "
-"at the exact highest height possible. Experimental."
-msgstr ""
-"此设置控制最后一个对象图层的高度，以将最后一个图层置于可能的最高高度。 实验性"
-"的。"
-
-msgid ""
 "This setting is used to set the maximum speed when extruding inside the wipe "
 "tower (use M220). In %, set 0 to disable and use the Filament type instead.\n"
 "If disabled, these filament types will have a defaut value of:\n"
@@ -11698,28 +11246,6 @@ msgstr ""
 "  - 其他：100%\n"
 "请注意，在任何情况下，擦拭塔都会将退缩速度重置为 100%。\n"
 "如果使用马林鱼，M220 B/R 用于在擦拭塔打印之前保存速度覆盖。"
-
-msgid ""
-"This setting may slightly degrade the quality of your external perimeter, in "
-"exchange for a better bonding between perimeters.Use it if you have great "
-"difficulties with perimeter bonding, for example with high temperature "
-"filaments.\n"
-"This percentage is the % of overlap between perimeters, a bit like "
-"perimeter_overlap and external_perimeter_overlap, but in reverse. You have "
-"to set perimeter_overlap and external_perimeter_overlap to 100%, or this "
-"setting has no effect. 0: no effect, 50%: half of the nozzle will be over an "
-"already extruded perimeter while extruding a new one, unless it's an "
-"external one).\n"
-"It's very experimental, please report about the usefulness. It may be "
-"removed if there is no use for it."
-msgstr ""
-"此设置可能会稍微降低外部周边的质量，以换取周边之间更好的粘合。如果周边粘合有"
-"很大困难，例如使用高温灯丝，请使用它。\n"
-"这个百分比是周长之间重叠的百分比，有点像perimeter_overlap 和"
-"external_perimeter_overlap，但反过来。 您必须将perimeter_overlap 和"
-"external_perimeter_overlap 设置为100%，否则此设置无效。 0：没有影响，50%：喷"
-"嘴的一半将在挤出一个新的时在已经挤出的周边上，除非它是外部的）。\n"
-"这是非常实验性的，请报告有用性。 如果没有用，它可能会被删除。"
 
 msgid ""
 "This setting represents the base fan speed this filament needs, or at least "
@@ -11746,14 +11272,6 @@ msgid ""
 msgstr ""
 "此设置将后处理铣削限制在一定高度，以避免铣削床身。 它可以是第一层高度的mm"
 "或%（因此它可以取决于对象）。"
-
-msgid ""
-"This setting will ensure that all 'overlap' are not higher than this value. "
-"This is useful for filaments that are too viscous, as the line can't flow "
-"under the previous one."
-msgstr ""
-"此设置将确保所有“重叠”不高于此值。这对于太粘的细丝很有用，因为线不能在前一条"
-"下面流动。"
 
 msgid ""
 "This start procedure is inserted at the beginning, after any printer start "
@@ -11853,11 +11371,29 @@ msgstr ""
 msgid "Threshold"
 msgstr "临界点"
 
+msgid "threshold for"
+msgstr "临界点："
+
 msgid "Thumbnail color"
 msgstr "缩略图颜色"
 
+msgid "Thumbnail options"
+msgstr "缩略图选项"
+
+msgid "Thumbnails"
+msgstr "缩略图大小"
+
 msgid "Thumbnails size"
 msgstr "缩略图大小"
+
+msgid "Tilt"
+msgstr "倾斜"
+
+msgid "Tilt for high viscosity resin"
+msgstr "高粘性树脂倾斜"
+
+msgid "Tilt time"
+msgstr "倾斜时间"
 
 msgid "Time"
 msgstr "时间"
@@ -11889,6 +11425,9 @@ msgstr "快速倾斜的时间"
 
 msgid "Time of the slow tilt"
 msgstr "缓慢倾斜的时间"
+
+msgid "Time of the super slow tilt"
+msgstr "超慢倾斜的时间"
 
 msgid ""
 "Time to wait after the filament is unloaded. May help to get reliable "
@@ -11944,6 +11483,9 @@ msgstr "工具"
 msgid "Tool #"
 msgstr "工具 #"
 
+msgid "Tool change G-code"
+msgstr "工具更改 G 代码"
+
 msgid "Tool changes"
 msgstr "换刀"
 
@@ -11971,6 +11513,9 @@ msgstr "刀具 z 偏移"
 msgid "Tool/C"
 msgstr "工具/C"
 
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "单挤出机 多色 打印机的工具更换参数"
+
 msgid "Toolchange part fan speed"
 msgstr "换刀部分风扇转速"
 
@@ -11980,12 +11525,12 @@ msgstr "换刀温度"
 msgid "Toolchange temperature enabled"
 msgstr "启用换刀温度"
 
+msgid "Top"
+msgstr "顶部"
+
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
 msgstr "顶/底壳厚度提示：由于层高无效，不可用。"
-
-msgid "Top fan speed"
-msgstr "顶部风扇转速"
 
 msgid "Top fill"
 msgstr "顶部填充"
@@ -11993,8 +11538,8 @@ msgstr "顶部填充"
 msgid "Top fill flow ratio"
 msgstr "顶部填充流量比"
 
-msgid "Top flow calibration"
-msgstr "顶流校准"
+msgid "top infill"
+msgstr "顶部实心填充"
 
 msgid "Top interface layers"
 msgstr "顶层接口层"
@@ -12010,6 +11555,9 @@ msgstr "对于层高 %2% 毫米，顶壳厚度为 %1% 毫米。"
 
 msgid "Top solid "
 msgstr "顶部固体 "
+
+msgid "Top solid"
+msgstr "顶部固体"
 
 msgid "Top solid infill"
 msgstr "顶部实心填充"
@@ -12061,8 +11609,17 @@ msgstr "翻译"
 msgid "Translation"
 msgstr "翻译"
 
+msgid "Travel"
+msgstr "旅行"
+
+msgid "Travel acceleration"
+msgstr "行驶加速度"
+
 msgid "Travel cost"
 msgstr "差旅费"
+
+msgid "Travel speed"
+msgstr "行驶速度"
 
 msgid "Triangles"
 msgstr "三角形"
@@ -12073,8 +11630,14 @@ msgid ""
 msgstr ""
 "尝试修复面（每当我们需要执行模型切片请求的操作时，都会隐式添加此选项）。"
 
+msgid "Tuning ironing"
+msgstr "调整熨烫"
+
 msgid "Twisting"
 msgstr "加捻"
+
+msgid "Type"
+msgstr "类型："
 
 msgid "Type here the name of your printer device"
 msgstr "在此处键入打印机设备的名称"
@@ -12431,6 +11994,18 @@ msgstr "版本"
 msgid "version"
 msgstr "版本"
 
+msgid "Version:"
+msgstr "版本:"
+
+msgid "vertical"
+msgstr "确保垂直外壳厚度"
+
+msgid "Vertical Hole shrinking compensation"
+msgstr "垂直缩孔补偿"
+
+msgid "Vertical shells"
+msgstr "垂直外壳"
+
 msgid "Vertical Slider"
 msgstr "垂直滑块"
 
@@ -12439,6 +12014,9 @@ msgstr "垂直滑块 - 向下移动活动拇指"
 
 msgid "Vertical slider - Move active thumb Up"
 msgstr "垂直滑块 - 向上移动活动拇指"
+
+msgid "Very short layer time - began to decrease extrusion rate"
+msgstr "非常短的层时间 - 开始降低挤出率"
 
 msgid "View"
 msgstr "查看"
@@ -12493,9 +12071,6 @@ msgstr "体积流量 (mm³/s)"
 msgid "Volumetric speed"
 msgstr "流量速度"
 
-msgid "Volumetric speed for Autospeed"
-msgstr "流量速度"
-
 msgid "Voron Cube"
 msgstr "沃龙立方体"
 
@@ -12518,9 +12093,6 @@ msgstr "欢迎"
 
 msgid "Welcome to the %s Configuration Assistant"
 msgstr "欢迎访问 %s 配置助手"
-
-msgid "Welcome to the %s Configuration Wizard"
-msgstr "欢迎访问 %s 配置向导"
 
 msgid "What would you like to do with \"%1%\" preset after saving?"
 msgstr "保存后您想对“%1%”预设做什么？"
@@ -12627,20 +12199,6 @@ msgstr ""
 "触发回抽时，耗材丝按指定量拉回（长度在进入挤出机之前在原始耗材丝上测量）。"
 
 msgid ""
-"When set to a non-zero value this fan speed is used only for external "
-"perimeters (visible ones). \n"
-"Set to 1 to disable the fan.\n"
-"Set to -1 to use the normal fan speed on external perimeters.External "
-"perimeters can benefit from higher fan speed to improve surface finish, "
-"while internal perimeters, infill, etc. benefit from lower fan speed to "
-"improve layer adhesion."
-msgstr ""
-"当设置为非零值时，此风扇速度仅用于外部边界（可见边界）。\n"
-"设置为 1 以禁用风扇。\n"
-"设置为 -1 以在外周使用正常风扇速度。外周可受益于较高的风扇速度以改善表面光洁"
-"度，而内周、填充等可受益于较低的风扇速度以改善层粘附。"
-
-msgid ""
 "When set to zero, the distance the filament is moved from parking position "
 "during load is exactly the same as it was moved back during unload. When "
 "positive, it is loaded further,  if negative, the loading move is shorter "
@@ -12672,13 +12230,15 @@ msgstr ""
 "当回抽在打印后得到补偿时，挤出机将推进这个额外的耗材丝量。很少需要此设置。"
 
 msgid ""
-"When using 'Complete individual objects', the default behavior is to draw "
-"the brim at the beginning of each object. if you prefer to have more place "
-"for you objects, you can print all the brims at the beginning, so ther is "
-"less problem with collision."
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
 msgstr ""
-"使用“完成单个对象”时，默认行为是在每个对象的开头绘制边缘。 如果你喜欢有更多的"
-"地方给你的物体，你可以在开始时打印所有的边缘，这样碰撞问题就少了。"
+"何时在偶数和奇数轮廓之间创建过渡。 角度大于此设置的楔形将没有过渡，并且不会在"
+"中心打印轮廓以填充剩余空间。 减少此设置会减少这些中心轮廓的数量和长度，但可能"
+"会留下间隙或过度拉伸。"
 
 msgid ""
 "When using 'Complete individual objects', the default behavior is to draw "
@@ -12687,11 +12247,6 @@ msgid ""
 msgstr ""
 "使用“完成单个对象”时，默认行为是围绕每个对象绘制裙边。如果您希望整个盘子只有"
 "一条裙边，请使用此选项。"
-
-msgid ""
-"When you create a new project, it will keep the current preset state, and "
-"won't open the preset change dialog."
-msgstr "创建新项目时，将保持当前预设状态，不会打开预设更改对话框。"
 
 msgid "WHITE BULLET"
 msgstr "白色子弹"
@@ -12715,6 +12270,12 @@ msgstr "整字"
 msgid "Width"
 msgstr "宽度"
 
+msgid "width"
+msgstr "宽度"
+
+msgid "Width & Flow"
+msgstr "宽度 & 流量"
+
 msgid "Width (mm)"
 msgstr "宽度 (mm)"
 
@@ -12736,8 +12297,8 @@ msgstr "连接对象和生成的焊盘的连接器杆的宽度。"
 msgid "Width of the display"
 msgstr "显示宽度"
 
-msgid "will be turned off by default."
-msgstr "将默认关闭。"
+msgid "width&spacing combo"
+msgstr "宽度&间距组合"
 
 msgid ""
 "Will inflate or deflate the sliced 2D polygons according to the sign of the "
@@ -12746,9 +12307,6 @@ msgstr "将根据校正的符号放大或收缩切片的 2D 多边形。"
 
 msgid "Will only take into account the delay for the cooling of overhangs."
 msgstr "将仅考虑悬垂冷却的延迟。"
-
-msgid "will run at %1%%% by default"
-msgstr "默认情况下将在 %1%%% 运行"
 
 msgid "Wipe"
 msgstr "擦拭"
@@ -12768,6 +12326,9 @@ msgstr "擦拭速度"
 msgid "Wipe Tower"
 msgstr "擦料塔"
 
+msgid "Wipe tower"
+msgstr "擦料塔"
+
 msgid "wipe tower"
 msgstr "擦料塔"
 
@@ -12776,6 +12337,12 @@ msgstr "擦料塔 - 清除体积调整"
 
 msgid "Wipe tower brim width"
 msgstr "擦拭塔边缘宽度"
+
+msgid "Wipe tower parameters"
+msgstr "擦料塔参数"
+
+msgid "Wipe tower position"
+msgstr "擦料塔旋转角度"
 
 msgid "Wipe tower rotation angle"
 msgstr "擦料塔旋转角度"
@@ -12845,6 +12412,15 @@ msgstr "密码错误"
 
 msgid "X coordinate of the left front corner of a wipe tower"
 msgstr "擦料塔左前角的 X 坐标"
+
+msgid "xy"
+msgstr "XY 第一层补偿"
+
+msgid "XY compensation"
+msgstr "XY补偿"
+
+msgid "XY First layer compensation"
+msgstr "XY 第一层补偿"
 
 msgid "XY First layer compensation height in layers"
 msgstr "XY 第一层补偿高度（以层为单位）"
@@ -12966,14 +12542,14 @@ msgid ""
 "You have the following presets with saved options for \"Print Host upload\""
 msgstr "您有以下预设，其中包含“打印主机上传”的保存选项"
 
+msgid "You have to enter a printer name."
+msgstr "您必须输入打印机名称。"
+
 msgid "You may need to update your graphics card driver."
 msgstr "您可能需要更新图形卡驱动程序。"
 
 msgid "You must install a configuration update."
 msgstr "您必须安装配置更新。"
-
-msgid "You should change the name of your printer device."
-msgstr "您应该更改打印机设备的名称。"
 
 msgid "You started your selection with %s Item."
 msgstr "你从 %s 项开始选择。"
@@ -13030,6 +12606,9 @@ msgstr "Z行走速度"
 msgid "Z-lift override"
 msgstr "Z-提升覆盖"
 
+msgid "Z-offset"
+msgstr "Z 偏移"
+
 msgid "Zig-Zag"
 msgstr "锯齿形"
 
@@ -13054,6 +12633,619 @@ msgstr ""
 
 msgid "°C"
 msgstr "°C"
+
+msgid "Advanced Infill options"
+msgstr "高级填充选项"
+
+msgid "Ironing infill pattern tuning"
+msgstr "熨烫填充图案调整"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"%s 遇到错误。这可能是由于内存不足造成的。如果您确定您的系统上有足够的内存，这"
+"可能也是一个软件错误，欢迎你向我们提交问题报告。"
+
+msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s 没有使用可用的最新配置。\n"
+"配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 "
+
+msgid "%s website"
+msgstr "%s 网站"
+
+msgid "%s wiki"
+msgstr "%s 维基"
+
+msgid "&Generate"
+msgstr "&生成"
+
+msgid ""
+"\n"
+"\n"
+"If estimated layer time is below ~%1%s"
+msgstr ""
+"\n"
+"\n"
+"如果估计层时间低于 ~%1%s"
+
+msgid "Access violation"
+msgstr "访问冲突"
+
+msgid ""
+"Add one perimeter every odd layer. With this, infill is taken into the "
+"sandwich and you may be able to reduce drastically the infill/perimeter "
+"overlap setting. "
+msgstr ""
+"每奇数层添加一个周长。 有了这个，填充物被带入了三明治，你可以大大减少填充物/"
+"周边重叠设置。 "
+
+msgid "Advanced mode"
+msgstr "高级模式"
+
+msgid "All walls"
+msgstr "所有的墙"
+
+msgid "Allow fan delay on overhangs"
+msgstr "允许悬垂的风扇延迟"
+
+msgid ""
+"Allow to create a brim over an island when it's inside a hole (or surrounded "
+"by an object)."
+msgstr "当岛位于洞内（或被物体包围）时，允许在岛上创建边缘。"
+
+msgid "Always keep current preset changes on a new project"
+msgstr "始终保持新项目的当前预设更改"
+
+msgid "at %1%%% over all bridges"
+msgstr "在所有桥梁的 %1%%%"
+
+msgid "at %1%%% over bridges"
+msgstr "在 %1%%% 的桥梁上"
+
+msgid "at %1%%% over external perimeters"
+msgstr "在 %1%%% 的外围"
+
+msgid "at %1%%% over infill bridges"
+msgstr "在 %1%%% 的填充桥上"
+
+msgid "at %1%%% over top fill surfaces"
+msgstr "在顶部填充表面上的 %1%%%"
+
+msgid "between %1%%% %2%%% over bridges"
+msgstr "在 %1%%% %2%%% 之间通过桥梁"
+
+msgid "between %1%%% %2%%% over external perimeters"
+msgstr "外围轮廓 %1%%% %2%%%"
+
+msgid "between %1%%% %2%%% over infill bridges"
+msgstr "在填充桥上 %1%%% %2%%% 之间"
+
+msgid "Cannot overwrite an external profile."
+msgstr "无法覆盖外部配置文件。"
+
+msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "选择一个或多个文件  (STL/OBJ/AMF/3MF/PRUSA):"
+
+msgid "Configuration &Wizard"
+msgstr "配置&向导"
+
+msgid "Configuration Wizard"
+msgstr "配置向导"
+
+msgid ""
+"Cost of placing the seam at a bad angle. The worst angle (max penalty) is "
+"when it's flat."
+msgstr "以错误的角度放置接缝的成本。 最坏的角度（最大惩罚）是在它平坦的时候。"
+
+msgid "Create a test print to help you to level your printer bed."
+msgstr "创建测试打印以帮助您调平打印机底座。"
+
+msgid "Create an object by writing little easy script."
+msgstr "通过编写一些简单的脚本来创建一个对象。"
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr "内部填充的密度，表示在0%- 100%的范围内。"
+
+msgid ""
+"Don't wipe when you don't cross a perimeter. Need "
+"'only_retract_when_crossing_perimeters'and 'wipe' enabled."
+msgstr "不越过边界时不要擦拭。需要启用“仅在越界时缩回”和“擦拭”。"
+
+msgid ""
+"Ensure that the slicer won't add heating, fan, extruder... commands before "
+"or just after your start-gcode.If set to true, you have to write a good and "
+"complete start_gcode, as no checks are made anymore."
+msgstr ""
+"确保切片机不会在 start-gcode 之前或之后添加加热、风扇、挤出机...命令。如果设"
+"置为 true，则必须编写一个完整的 start_gcode，因为不再进行检查。"
+
+msgid "Exact last layer height"
+msgstr "精确的最后一层高度"
+
+msgid "Expert mode"
+msgstr "专业级"
+
+msgid "Export current plate as STL"
+msgstr "将当前构建板导出为 STL"
+
+msgid "Export current plate as STL including supports"
+msgstr "导出当前构建板为 STL,包括支撑"
+
+msgid "Export Plate as &STL"
+msgstr "将板材导出为&STL"
+
+msgid "Export Plate as STL &Including Supports"
+msgstr "将板材导出为STL，包括支架"
+
+msgid "Extra perimeter on odd layers"
+msgstr "奇数层上的额外周长"
+
+msgid ""
+"Extrude perimeters that have a part over an overhang in the reverse "
+"direction on odd layers. This alternating pattern can drastically improve "
+"steep overhang.\n"
+"!! this is a very slow algorithm (it uses the same results as "
+"extra_perimeters_overhangs) !!"
+msgstr ""
+"在奇数层上以相反的方向挤出有一部分超出悬垂部分的周长。 这种交替模式可以大大改"
+"善陡峭的悬垂。\n"
+"!! 这是一个非常慢的算法（它使用与 extra_perimeters_overhangs 相同的结果）！！"
+
+msgid ""
+"Fan speed will be ramped up linearly from zero at layer "
+"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" will be ignored if lower than "
+"\"disable_fan_first_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
+msgstr ""
+"风扇速度将从“disable_fan_first_layers”层的零线性增加"
+"到“full_fan_speed_layer”层的最大值。 如果低"
+"于“disable_fan_first_layers”，“full_fan_speed_layer”将被忽略，在这种情况下，"
+"风扇将在“disable_fan_first_layers”+1层以允许的最大速度运行。"
+
+msgid "Flow calibration"
+msgstr "流量校准"
+
+msgid "FreeCAD path"
+msgstr "FreeCAD 路径"
+
+msgid "FreeCad python script"
+msgstr "FreeCad python 脚本"
+
+msgid "Fuzzy skin type."
+msgstr "毛茸茸的皮肤类型。"
+
+msgid "Gapfill after last perimeter"
+msgstr "最后一圈后的间隙填充"
+
+msgid "How to use the FreeCad python script window."
+msgstr "如何使用 FreeCad python 脚本窗口。"
+
+msgid ""
+"If a top surface has to be printed and it's partially covered by another "
+"layer, it won't be considered at a top layer where its width is below this "
+"value. This can be useful to not let the 'one perimeter on top' trigger on "
+"surface that should be covered only by perimeters. This value can be a mm or "
+"a % of the perimeter extrusion width."
+msgstr ""
+"如果必须打印顶面并且它被另一层部分覆盖，则不会在其宽度低于此值的顶层考虑它。 "
+"这对于不让“顶部有一个周边”触发应该只被周边覆盖的表面很有用。 该值可以是周长挤"
+"出宽度的毫米或百分比。"
+
+msgid "If enabled, PrusaSlicer will be open at the position it was closed"
+msgstr "如果启用，PrusaSlicer将在其关闭的位置打开"
+
+msgid "If enabled, PrusaSlicer will not open hyperlinks in your browser."
+msgstr "如果启用，PrusaSlicer将不会在浏览器中打开超链接。"
+
+msgid ""
+"If it point to a valid freecad instance (the bin directory or the python "
+"executable), you can use the built-in python script to quickly generate "
+"geometry."
+msgstr ""
+"如果它指向一个有效的freecad 实例（bin 目录或python 可执行文件），您可以使用内"
+"置的python 脚本快速生成几何图形。"
+
+msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
+msgstr ""
+"如果要通过自定义脚本处理输出 G-code , 只需在此处列出它们的绝对路径即可。用分"
+"号分隔多个脚本。脚本将作为第一个参数传递到 G-code 文件的绝对路径, 并且它们可"
+"以通过读取环境变量访问 Slic3r 配置设置。"
+
+msgid "Import STL/OBJ/AM&F/3MF"
+msgstr "导入 STL/OBJ/AM&F/3MF"
+
+msgid "Import STL/OBJ/AMF/3MF without config, keep platter"
+msgstr "无配置导入 STL/OBJ/AMF/3MF"
+
+msgid "Infill bridges"
+msgstr "填充挤出机"
+
+msgid ""
+"Internal perimeters will go around sharp corners by turning around instead "
+"of making the same sharp corner. This can help when there are visible holes "
+"in sharp corners on perimeters. It also help to print the letters on the "
+"benchy stern.\n"
+"Can incur some more processing time, and corners are a bit less sharp."
+msgstr ""
+"内部周边将通过转身而不是制作相同的尖角来绕过尖角。当周边的尖角有可见孔时，这"
+"会有所帮助。它还有助于在船尾打印字母。\n"
+"可能需要更多的处理时间，并且拐角不那么锐利。"
+
+msgid "Ironing angle. if negative, it will use the fill angle."
+msgstr "熨烫角度。 如果为负，它将使用填充角度。"
+
+msgid "Ironing pattern calibration"
+msgstr "熨烫图案校准"
+
+msgid "Layer Time (log)"
+msgstr "层时间（日志）"
+
+msgid "Layer time (log)"
+msgstr "层时间（日志）"
+
+msgid "Log time"
+msgstr "记录时间"
+
+msgid "Max print speed"
+msgstr "最大打印速度"
+
+msgid ""
+"Maximum defection of a point to the estimated radius of the circle.\n"
+"As cylinders are often exported as triangles of varying size, points may not "
+"be on the circle circumference. This setting allows you some leway to "
+"broaden the detection.\n"
+"In mm or in % of the radius."
+msgstr ""
+"一个点对圆的估计半径的最大偏差。\n"
+"由于圆柱体通常以不同大小的三角形导出，因此点可能不在圆周上。 此设置允许您有一"
+"些余地来扩大检测范围。\n"
+"以毫米或半径的百分比为单位。"
+
+msgid "Nb down:"
+msgstr "铌下降："
+
+msgid "Nb tests:"
+msgstr "铌测试："
+
+msgid "Nb up:"
+msgstr "铌向上："
+
+msgid "On odd layers"
+msgstr "在奇数层"
+
+msgid "Open project STL/OBJ/AMF/3MF with config, clear platter"
+msgstr "使用配置打开项目 STL/OBJ/AMF/3MF，清除当前拼版"
+
+msgid "Open the %s wiki in your browser"
+msgstr "在浏览器中打开 %s wiki"
+
+msgid "Open the Slic3r Manual in your browser"
+msgstr "在浏览器中打开 Slic3r 手册"
+
+msgid "Open the Slic3r website in your browser"
+msgstr "在浏览器中打开 Slic3r 网站"
+
+msgid "Opening Configuration Wizard"
+msgstr "打开配置向导"
+
+msgid "Over-Bridge calibration"
+msgstr "过桥校准"
+
+msgid "Over-bridge calibration"
+msgstr "过桥校准"
+
+msgid "Overhang reversal"
+msgstr "悬垂反转"
+
+msgid "Paths"
+msgstr "路径"
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr "请保存项目并重新启动PrusaSlicer。如果你能报告这个问题，我们会很高兴的。"
+
+msgid "Print all brim at startup"
+msgstr "启动时打印所有边缘"
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "PrusaSlicer遇到致命错误：“%1%”"
+
+msgid "PrusaSlicer: Open hyperlink"
+msgstr "PrusaSlicer:打开超链接"
+
+msgid "Reverse on odd"
+msgstr "奇数反转"
+
+msgid "Run the fan at default speed when possible"
+msgstr "尽可能以默认速度运行风扇"
+
+msgid "Script help page"
+msgstr "脚本帮助页面"
+
+msgid ""
+"Select the number of tests with higher temperature than the current one."
+msgstr "选择比当前温度更高的测试次数。"
+
+msgid "Select the number of tests with lower temperature than the current one."
+msgstr "选择比当前温度低的测试次数。"
+
+msgid ""
+"Select the step in celcius between two tests.\n"
+"Note that only multiple of 5 are engraved on the part."
+msgstr ""
+"选择两个测试之间的摄氏度步长。\n"
+"请注意，零件上仅刻有 5 的倍数。"
+
+msgid "Simple mode"
+msgstr "简单模式"
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
+msgstr "Slic3r 可以将 G-code 文件上传到打印机主机。此字段必须包含主机的类型。"
+
+msgid ""
+"Slic3r contains sizable contributions from Prusa Research. Original work by "
+"Alessandro Ranellucci and the RepRap community."
+msgstr ""
+"Slic3r 包含来自 Prusa Research 的大量贡献。 Alessandro Ranellucci 和 RepRap "
+"社区的原创作品。"
+
+msgid "Slic3r Manual"
+msgstr "Slic3r 手册"
+
+msgid "Sliced preview"
+msgstr "切片预览"
+
+msgid "Test Flow Ratio"
+msgstr "测试流量比"
+
+msgid ""
+"The convex holes will be grown / shrunk in the XY plane by the configured "
+"value (negative = inwards, positive = outwards, should be negative as the "
+"holes are always a bit smaller irl). This might be useful for fine-tuning "
+"hole sizes.\n"
+"This setting behaves the same as 'Inner XY size compensation' but only for "
+"convex shapes. It's added to 'Inner XY size compensation', it does not "
+"replace it. "
+msgstr ""
+"凸孔将按配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外，应为负，因为孔总是"
+"小一点 irl）。 这对于微调孔尺寸可能很有用。\n"
+"此设置的行为与“内部 XY 尺寸补偿”相同，但仅适用于凸面形状。 它被添加到“内部 "
+"XY 尺寸补偿”中，它不会取代它 "
+
+msgid ""
+"The first layer will be grown / shrunk in the XY plane by the configured "
+"value to compensate for the 1st layer squish aka an Elephant Foot effect. "
+"(should be negative = inwards)"
+msgstr ""
+"第一层将通过配置的值在 XY 平面中生长/收缩，以补偿第一层挤压，即象脚效应。 "
+"（应为负 = 向内）"
+
+msgid ""
+"The object will be grown/shrunk in the XY plane by the configured value "
+"(negative = inwards, positive = outwards). This might be useful for fine-"
+"tuning sizes.\n"
+"This one only applies to the 'exterior' shell of the object.\n"
+" !!! it's recommended you put the same value into the 'Inner XY size "
+"compensation', unless you are sure you don't have horizontal holes. !!! "
+msgstr ""
+"对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大"
+"小可能很有用。\n"
+"这仅适用于对象的“外部”外壳。\n"
+"  ！！！ 建议您将相同的值放入“内部 XY 尺寸补偿”中，除非您确定没有水平孔。 "
+
+msgid ""
+"The object will be grown/shrunk in the XY plane by the configured value "
+"(negative = inwards, positive = outwards). This might be useful for fine-"
+"tuning sizes.\n"
+"This one only applies to the 'inner' shell of the object (!!! horizontal "
+"holes break the shell !!!)"
+msgstr ""
+"对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大"
+"小可能很有用。\n"
+"这个只适用于物体的“内”壳（！！！水平孔破壳！！！）"
+
+msgid ""
+"The preset below was temporarily installed on the active instance of "
+"PrusaSlicer"
+msgid_plural ""
+"The presets below were temporarily installed on the active instance of "
+"PrusaSlicer"
+msgstr[0] "以下预设已临时安装在PrusaSlicer的活动实例上"
+
+msgid ""
+"The selected 3MF contains FDM supports painted object using a newer version "
+"of PrusaSlicer and is not compatible."
+msgstr "所选3MF包含FDM，支持使用较新版本的PrusaSlicer绘制对象，不兼容。"
+
+msgid ""
+"The selected 3MF contains multi-material painted object using a newer "
+"version of PrusaSlicer and is not compatible."
+msgstr "所选3MF包含使用较新版本的PrusaSlicer绘制的多材质对象，不兼容。"
+
+msgid ""
+"The selected 3MF contains seam painted object using a newer version of "
+"PrusaSlicer and is not compatible."
+msgstr "所选3MF包含使用较新版本的PrusaSlicer的接缝绘制对象，不兼容。"
+
+msgid ""
+"The vertical distance between object and raft. Ignored for soluble interface."
+msgstr "物体与木筏之间的垂直距离。对于可溶解的界面忽略。"
+
+msgid "Thin extrusions speed"
+msgstr "最小打印速度"
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
+"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
+"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"该实验设置用于限制挤出速率的变化速度。值为 1.8 mm3/s2 可确保从 1.8 mm3/"
+"s（0.45mm 挤出宽度、0.2mm 挤出高度、进给率 20 mm/s）的挤出速率更改为 5.4 mm3/"
+"s（进料速率 60 mm/s）至少需要 2 秒。"
+
+msgid ""
+"This fan speed is enforced during all infill bridges. It won't slow down the "
+"fan if it's currently running at a higher speed.\n"
+"Set to 1 to follow default speed.\n"
+"Set to -1 to disable this override (internal bridges will use Bridges fan "
+"speed).\n"
+"Can only be overriden by disable_fan_first_layers."
+msgstr ""
+"在所有填充桥期间强制执行此风扇速度。如果它当前以更高的速度运行，它不会减慢风"
+"扇的速度。\n"
+"设置为 1 以遵循默认速度。\n"
+"设置为 -1 以禁用此覆盖（内部网桥将使用网桥风扇速度）。\n"
+"只能被 disable_fan_first_layers 覆盖。"
+
+msgid ""
+"This fan speed is enforced during all top fills.\n"
+"Set to 1 to disable the fan.\n"
+"Set to -1 to disable this override.\n"
+"Can only be overriden by disable_fan_first_layers."
+msgstr ""
+"在所有顶部填充期间强制执行此风扇速度。\n"
+"设置为 1 以禁用风扇。\n"
+"设置为 -1 以禁用此覆盖。\n"
+"只能被 disable_fan_first_layers 覆盖。"
+
+msgid ""
+"This fan speed is enforced during bridges and overhangs. It won't slow down "
+"the fan if it's currently running at a higher speed.\n"
+"Set to -1 to disable this override.\n"
+"Can only be overriden by disable_fan_first_layers."
+msgstr ""
+"此风扇速度在桥梁和悬垂期间强制执行。如果它当前以更高的速度运行，它不会减慢风"
+"扇的速度。\n"
+"设置为 -1 以禁用此覆盖。\n"
+"只能被 disable_fan_first_layers 覆盖。"
+
+msgid ""
+"This feature will raise Z gradually while printing a single-walled object in "
+"order to remove any visible seam. This option requires a single perimeter, "
+"no infill, no top solid layers and no support material. You can still set "
+"any number of bottom solid layers as well as skirt/brim loops. It won't work "
+"when printing more than one single object."
+msgstr ""
+"此功能将在打印单壁对象时逐渐升高 Z，以去除任何可见的接缝。 此选项需要单个周"
+"边、无填充、无顶部固体层和无支撑材料。 您仍然可以设置任意数量的底部实体层以及"
+"裙边/边缘环。 当打印一个以上的对象时，它不起作用。"
+
+msgid "This G-code will be used as a code for the color change"
+msgstr "此 G 代码将用作颜色更改的代码"
+
+msgid "This G-code will be used as a code for the pause print"
+msgstr "此 G 代码将用作暂停打印的代码"
+
+msgid ""
+"This option sets the number of perimeters to generate for each layer. Note "
+"that Slic3r may increase this number automatically when it detects sloping "
+"surfaces which benefit from a higher number of perimeters if the Extra "
+"Perimeters option is enabled."
+msgstr ""
+"此选项设置要为每个图层生成的轮廓数。请注意，Slic3r 在检测到倾斜曲面时可能会自"
+"动增加此数字，如果启用了\"额外轮廓\"选项，则这些坡度曲面受益于较高的轮廓数。"
+
+msgid ""
+"This setting controls the height of last object layers to put the last layer "
+"at the exact highest height possible. Experimental."
+msgstr ""
+"此设置控制最后一个对象图层的高度，以将最后一个图层置于可能的最高高度。 实验性"
+"的。"
+
+msgid ""
+"This setting may slightly degrade the quality of your external perimeter, in "
+"exchange for a better bonding between perimeters.Use it if you have great "
+"difficulties with perimeter bonding, for example with high temperature "
+"filaments.\n"
+"This percentage is the % of overlap between perimeters, a bit like "
+"perimeter_overlap and external_perimeter_overlap, but in reverse. You have "
+"to set perimeter_overlap and external_perimeter_overlap to 100%, or this "
+"setting has no effect. 0: no effect, 50%: half of the nozzle will be over an "
+"already extruded perimeter while extruding a new one, unless it's an "
+"external one).\n"
+"It's very experimental, please report about the usefulness. It may be "
+"removed if there is no use for it."
+msgstr ""
+"此设置可能会稍微降低外部周边的质量，以换取周边之间更好的粘合。如果周边粘合有"
+"很大困难，例如使用高温灯丝，请使用它。\n"
+"这个百分比是周长之间重叠的百分比，有点像perimeter_overlap 和"
+"external_perimeter_overlap，但反过来。 您必须将perimeter_overlap 和"
+"external_perimeter_overlap 设置为100%，否则此设置无效。 0：没有影响，50%：喷"
+"嘴的一半将在挤出一个新的时在已经挤出的周边上，除非它是外部的）。\n"
+"这是非常实验性的，请报告有用性。 如果没有用，它可能会被删除。"
+
+msgid ""
+"This setting will ensure that all 'overlap' are not higher than this value. "
+"This is useful for filaments that are too viscous, as the line can't flow "
+"under the previous one."
+msgstr ""
+"此设置将确保所有“重叠”不高于此值。这对于太粘的细丝很有用，因为线不能在前一条"
+"下面流动。"
+
+msgid "Top fan speed"
+msgstr "顶部风扇转速"
+
+msgid "Top flow calibration"
+msgstr "顶流校准"
+
+msgid "Volumetric speed for Autospeed"
+msgstr "流量速度"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "欢迎访问 %s 配置向导"
+
+msgid ""
+"When set to a non-zero value this fan speed is used only for external "
+"perimeters (visible ones). \n"
+"Set to 1 to disable the fan.\n"
+"Set to -1 to use the normal fan speed on external perimeters.External "
+"perimeters can benefit from higher fan speed to improve surface finish, "
+"while internal perimeters, infill, etc. benefit from lower fan speed to "
+"improve layer adhesion."
+msgstr ""
+"当设置为非零值时，此风扇速度仅用于外部边界（可见边界）。\n"
+"设置为 1 以禁用风扇。\n"
+"设置为 -1 以在外周使用正常风扇速度。外周可受益于较高的风扇速度以改善表面光洁"
+"度，而内周、填充等可受益于较低的风扇速度以改善层粘附。"
+
+msgid ""
+"When using 'Complete individual objects', the default behavior is to draw "
+"the brim at the beginning of each object. if you prefer to have more place "
+"for you objects, you can print all the brims at the beginning, so ther is "
+"less problem with collision."
+msgstr ""
+"使用“完成单个对象”时，默认行为是在每个对象的开头绘制边缘。 如果你喜欢有更多的"
+"地方给你的物体，你可以在开始时打印所有的边缘，这样碰撞问题就少了。"
+
+msgid ""
+"When you create a new project, it will keep the current preset state, and "
+"won't open the preset change dialog."
+msgstr "创建新项目时，将保持当前预设状态，不会打开预设更改对话框。"
+
+msgid "will be turned off by default."
+msgstr "将默认关闭。"
+
+msgid "will run at %1%%% by default"
+msgstr "默认情况下将在 %1%%% 运行"
+
+msgid "You should change the name of your printer device."
+msgstr "您应该更改打印机设备的名称。"
 
 msgid "ExternalPerimeter in vase mode"
 msgstr "花瓶模式下的外部周长"
@@ -13308,9 +13500,6 @@ msgstr "检查更新"
 msgid "Continue with applying configuration changes?"
 msgstr "继续应用配置更改？"
 
-msgid "Current mode is %s"
-msgstr "当前模式为 %s"
-
 msgid "Custom supports and seams were removed after repairing the mesh."
 msgstr "修复网格后，自定义支撑和接缝被移除。"
 
@@ -13378,9 +13567,6 @@ msgstr "错误：请在修复网格之前关闭左侧工具栏中的所有可用
 
 msgid "Everywhere"
 msgstr "任何地方"
-
-msgid "Expert"
-msgstr "专家"
 
 msgid "Expert View Mode"
 msgstr "专家界面模式"
@@ -13840,9 +14026,6 @@ msgstr "在每次启动时从列表中显示随机启动屏幕图像"
 msgid "Show/Hide Legend & Estimated printing time"
 msgstr "显示/隐藏图例和估计打印时间"
 
-msgid "Simple"
-msgstr "简单"
-
 msgid "Simple View Mode"
 msgstr "简单界面模式"
 
@@ -13990,9 +14173,6 @@ msgstr "上传后开始打印"
 
 msgid "STL file exported to %s"
 msgstr "STL 文件导出到 %s"
-
-msgid "Switch to the %s mode"
-msgstr "切换到 %s 模式"
 
 msgid "Taking configuration snapshot"
 msgstr "创建配置快照"
@@ -18091,9 +18271,6 @@ msgstr "显示字体预览。"
 msgid "Simple monochrome theme"
 msgstr "简单黑白主题"
 
-msgid "Size:"
-msgstr "大小:"
-
 msgid "Skip"
 msgstr "跳过"
 
@@ -20440,43 +20617,6 @@ msgstr ""
 msgid "Perform"
 msgstr "执行"
 
-msgid "Select shape from the gallery"
-msgstr "从图库中选择形状"
-
-msgid "Add to bed"
-msgstr "加在床上"
-
-msgid "Add selected shape(s) to the bed"
-msgstr "将选定形状添加到床上"
-
-msgid "Add one or more custom shapes"
-msgstr "添加一个或多个自定义形状"
-
-msgid "Delete one or more custom shape. You can't delete system shapes"
-msgstr "删除一个或多个自定义形状。不能删除系统形状"
-
-msgid "Choose one or more files (STL, OBJ):"
-msgstr "选择一个或多个文件（STL、OBJ）："
-
-msgid ""
-"It looks like selected %1%-file has an error or is destructed.\n"
-"We can't load this file"
-msgstr ""
-"看起来选定的%1%文件有错误或已被破坏。\n"
-"我们无法加载此文件"
-
-msgid "Choose one PNG file:"
-msgstr "选择一个PNG文件："
-
-msgid "Replacing of the PNG"
-msgstr "替换 PNG"
-
-msgid "Change thumbnail"
-msgstr "更改缩略图"
-
-msgid "Loading of the \"%1%\""
-msgstr "正在加载\"%1%\""
-
 msgid "Your printer has more extruders than the multi-material painting gizmo supports. For this reason, only the first %1% extruders will be able to be used for painting."
 msgstr "打印机的挤出机数量超过了多材质绘画gizmo支持的数量。因此，只有前%1%的挤出机才能用于绘制。"
 
@@ -20645,12 +20785,6 @@ msgstr "用新的STL替换选定的卷"
 msgid "Split the selected object into individual parts"
 msgstr "将选定对象拆分为各个部分"
 
-msgid "Open Preferences."
-msgstr "打开首选项。"
-
-msgid "Open Documentation in web browser."
-msgstr "在web浏览器中打开文档。"
-
 msgid "Filling bed"
 msgstr "填充床"
 
@@ -20770,13 +20904,6 @@ msgstr "联合gcode文件到PrusaSlicer G代码查看器"
 
 msgid "If enabled, sets PrusaSlicer G-code Viewer as default application to open .gcode files."
 msgstr "如果启用，将PrusaSlicer G-code Viewer设置为要打开的默认应用程序。gcode文件。"
-
-msgid ""
-"Changing some options will trigger application restart.\n"
-"You will lose the content of the plater."
-msgstr ""
-"更改某些选项将触发应用程序重启。\n"
-"你会失去盘子里的东西。"
 
 msgid "Old regular layout with the tab bar"
 msgstr "带有选项卡栏的旧常规布局"
@@ -21385,34 +21512,14 @@ msgstr ""
 msgid "Artwork model by Leslie Ing"
 msgstr "Leslie Ing 的艺术品模型"
 
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "选择一个或多个文件  (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
-msgid "The file does not exist."
-msgstr "该文件不存在。"
-
 msgid "Open project AMF/3MF with config, clear plater"
 msgstr "使用配置打开项目 AMF/3MF，清除模板"
 
 msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
 msgstr "导入 STL/3MF/STEP/OBJ/AMF 而不配置，保留模板"
 
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "导入 STL/3MF/STEP/OBJ/AM&F"
-
-msgid "You have to enter a printer name."
-msgstr "您必须输入打印机名称。"
-
 msgid "Arachne perimeter generator"
 msgstr "Arachne 轮廓生成器"
-
-msgid "Format of G-code thumbnails"
-msgstr "G-Code 缩略图格式"
-
-msgid ""
-"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
-"QOI for low memory firmware"
-msgstr "G-Code 缩略图格式: PNG 质量最佳，JPG 尺寸最小，QOI 用于低内存固件"
 
 msgid ""
 "This experimental setting is used to limit the speed of change in extrusion "
@@ -21426,38 +21533,6 @@ msgstr ""
 "率 20 mm/s）变为 5.4 mm³/s（进给速率 60 mm/s） 至少需要 2 秒。"
 
 msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
-"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
-"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
-"(feedrate 20 mm/s) will take at least 2 seconds."
-msgstr ""
-"该实验设置用于限制挤出速率的变化速度，以便从较高速度过渡到较低速度。1.8 mm³/"
-"s² 的值可确保挤出速率从 5.4 mm³/s（挤出宽度 0.45 mm，挤出高度 0.2 mm，进给速"
-"率 60 mm/s）变为 1.8 mm³/s（进给速率 20 mm/s） 至少需要 2 秒。"
-
-msgid "Perimeter generator"
-msgstr "轮廓生成器"
-
-msgid ""
-"Classic perimeter generator produces perimeters with constant extrusion "
-"width and for very thin areas is used gap-fill. Arachne engine produces "
-"perimeters with variable extrusion width. This setting also affects the "
-"Concentric infill."
-msgstr ""
-"经典轮廓生成器产生具有恒定挤出宽度的轮廓，并且对于非常薄的区域使用间隙填充。 "
-"Arachne 引擎产生具有可变挤出宽度的轮廓。这个设置也会影响回环填充。"
-
-msgid "Classic"
-msgstr "经典"
-
-msgid "Arachne"
-msgstr "Arachne"
-
-msgid "Perimeter transition length"
-msgstr "轮廓过渡长度"
-
-msgid ""
 "When transitioning between different numbers of perimeters as the part "
 "becomes thinner, a certain amount of space is allotted to split or join the "
 "perimeter segments. If expressed as a percentage (for example 100%), it will "
@@ -21465,9 +21540,6 @@ msgid ""
 msgstr ""
 "当随着零件变薄而在不同数量的轮廓之间过渡时，会分配出一定的空间来分割或连接轮"
 "廓段。如果用百分比表示（例如 100%），它将根据喷嘴直径计算出来。"
-
-msgid "Perimeter transitioning filter margin"
-msgstr "轮廓过渡过滤器余量"
 
 msgid ""
 "Prevent transitioning back and forth between one extra perimeter and one "
@@ -21484,48 +21556,6 @@ msgstr ""
 "少挤压开始/停止的次数和移动时间。然而，大的挤出宽度变化会导致挤出不足或过度挤"
 "出的问题。如果用百分比表示（例如25%），将根据喷嘴直径计算。"
 
-msgid "Perimeter transitioning threshold angle"
-msgstr "轮廓过渡阈值角度"
-
-msgid ""
-"When to create transitions between even and odd numbers of perimeters. A "
-"wedge shape with an angle greater than this setting will not have "
-"transitions and no perimeters will be printed in the center to fill the "
-"remaining space. Reducing this setting reduces the number and length of "
-"these center perimeters, but may leave gaps or overextrude."
-msgstr ""
-"何时在偶数和奇数轮廓之间创建过渡。 角度大于此设置的楔形将没有过渡，并且不会在"
-"中心打印轮廓以填充剩余空间。 减少此设置会减少这些中心轮廓的数量和长度，但可能"
-"会留下间隙或过度拉伸。"
-
-msgid "Perimeter distribution count"
-msgstr "轮廓分布计数"
-
-msgid ""
-"The number of perimeters, counted from the center, over which the variation "
-"needs to be spread. Lower values mean that the outer perimeters don't change "
-"in width."
-msgstr ""
-"从中心开始计算的轮廓数量，变化需要在这些轮廓上展开。较低的值意味着外部轮廓的"
-"宽度不发生变化。"
-
-msgid "Minimum feature size"
-msgstr "最小特征尺寸"
-
-msgid ""
-"Minimum thickness of thin features. Model features that are thinner than "
-"this value will not be printed, while features thicker than the Minimum "
-"feature size will be widened to the Minimum perimeter width. If expressed as "
-"a percentage (for example 25%), it will be computed based on the nozzle "
-"diameter."
-msgstr ""
-"薄型特征的最小厚度。比这个值薄的模型特征将不被打印，而比最小特征尺寸厚的特征"
-"将被加宽到最小轮廓的宽度。如果以百分比表示（例如 25%），它将根据喷嘴直径计"
-"算。"
-
-msgid "Minimum perimeter width"
-msgstr "最小轮廓宽度"
-
 msgid ""
 "Width of the perimeter that will replace thin features (according to the "
 "Minimum feature size) of the model. If the Minimum perimeter width is "
@@ -21536,15 +21566,6 @@ msgstr ""
 "将替换模型的细特征（根据最小特征尺寸）的轮廓宽度。 如果最小轮廓宽度小于特征的"
 "厚度，则轮廓将变得与特征本身一样厚。 如果以百分比表示（例如 85%），它将根据喷"
 "嘴直径计算。"
-
-msgid "High viscosity"
-msgstr "高粘性"
-
-msgid "Tilt for high viscosity resin"
-msgstr "高粘性树脂倾斜"
-
-msgid "Time of the super slow tilt"
-msgstr "超慢倾斜的时间"
 
 msgid ""
 "Lightning infill\n"

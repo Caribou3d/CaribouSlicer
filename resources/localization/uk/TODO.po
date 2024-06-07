@@ -774,10 +774,10 @@ msgstr ""
 #Similar to me: after last perimeter
 # 6    changes: External perimeter
 #  translation: Зовнішній периметр
-# 7    changes: external perimeters
-#  translation: зовнішні периметри
 # 7    changes: External perimeters
 #  translation: Зовнішні периметри
+# 7    changes: external perimeters
+#  translation: зовнішні периметри
 msgid "after last perimeter"
 msgstr ""
 
@@ -956,10 +956,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: зовнішні периметри
 # 9    changes: External perimeters
 #  translation: Зовнішні периметри
+# 9    changes: external perimeters
+#  translation: зовнішні периметри
 # 9    changes: Small perimeters
 #  translation: Маленькі периметри
 msgid "Also for all perimeters"
@@ -1277,10 +1277,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: Висота шару
 # 5    changes: First layer height
 #  translation: Висота першого шару
+# 5    changes: Layer height
+#  translation: Висота шару
 msgid "Base Layer height"
 msgstr ""
 
@@ -1642,6 +1642,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Макс. ширина
 msgid "Cap with"
 msgstr ""
 
@@ -2854,6 +2857,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Напрямок
+# 4    changes: Version:
+#  translation: Версія:
 msgid "Dimension:"
 msgstr ""
 
@@ -2995,6 +3000,8 @@ msgstr ""
 #Similar to me: Don't save
 # 1    changes: Don't Save
 #  translation: Не зберігати
+# 4    changes: Font size
+#  translation: Розмір шрифту
 # 4    changes: font size
 #  translation: Розмір шрифту:
 msgid "Don't save"
@@ -4174,12 +4181,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: Швидкість першого шару
 # 5    changes: First layer height
 #  translation: Висота першого шару
-# 6    changes: First layer
-#  translation: Перший шар
+# 5    changes: First layer speed
+#  translation: Швидкість першого шару
+# 6    changes: Display width
+#  translation: Ширина дисплея
 msgid "First layer width"
 msgstr ""
 
@@ -4329,10 +4336,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Шари та периметри
-# 8    changes: external perimeters
-#  translation: зовнішні периметри
 # 8    changes: External perimeters
 #  translation: Зовнішні периметри
+# 8    changes: external perimeters
+#  translation: зовнішні периметри
 msgid "for round perimeters"
 msgstr ""
 
@@ -4399,10 +4406,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5422
 #Similar to me: From filament
-# 5    changes: Filament
-#  translation: Філамент
 # 5    changes: filament
 #  translation: філамент
+# 5    changes: Filament
+#  translation: Філамент
 msgid "From filament"
 msgstr ""
 
@@ -5232,10 +5239,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: Заповнення
 # 2    changes: &File
 #  translation: &Файл
+# 2    changes: Infill
+#  translation: Заповнення
 # 2    changes: File
 #  translation: Файл
 msgid "IFill"
@@ -5607,10 +5614,10 @@ msgstr ""
 #Similar to me: Internal perimeter
 # 2    changes: External perimeter
 #  translation: Зовнішній периметр
-# 3    changes: external perimeters
-#  translation: зовнішні периметри
 # 3    changes: External perimeters
 #  translation: Зовнішні периметри
+# 3    changes: external perimeters
+#  translation: зовнішні периметри
 msgid "Internal perimeter"
 msgstr ""
 
@@ -5630,10 +5637,10 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: зовнішні периметри
 # 2    changes: External perimeters
 #  translation: Зовнішні периметри
+# 2    changes: external perimeters
+#  translation: зовнішні периметри
 # 3    changes: External perimeter
 #  translation: Зовнішній периметр
 msgid "Internal perimeters"
@@ -5644,10 +5651,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Спочатку зовнішні периметри
-# 8    changes: external perimeters
-#  translation: зовнішні периметри
 # 8    changes: External perimeters
 #  translation: Зовнішні периметри
+# 8    changes: external perimeters
+#  translation: зовнішні периметри
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -6385,10 +6392,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: Висота шару
 # 5    changes: First layer height
 #  translation: Висота першого шару
+# 5    changes: Layer height
+#  translation: Висота шару
 # 5    changes: Max print height
 #  translation: Максимальна висота друку
 msgid "Max layer height"
@@ -6407,6 +6414,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: Макс. висота
+# 4    changes: Max width
+#  translation: Макс. ширина
 # 4    changes: Max height:
 #  translation: Макс. висота:
 msgid "Max length"
@@ -6826,10 +6837,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: Висота першого шару
-# 5    changes: Layer height
-#  translation: Висота шару
 # 5    changes: Display height
 #  translation: Висота дисплея
+# 5    changes: Layer height
+#  translation: Висота шару
 msgid "Min layer height"
 msgstr ""
 
@@ -6846,6 +6857,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: Мін. висота
 # 4    changes: Min width
 #  translation: Мінімальна ширина
 # 4    changes: Min height:
@@ -8755,10 +8768,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: Висота першого шару
-# 6    changes: Layer height
-#  translation: Висота шару
 # 6    changes: Initial layer height
 #  translation: Висота першого шару
+# 6    changes: Layer height
+#  translation: Висота шару
 msgid "Raft layer height"
 msgstr ""
 
@@ -9005,12 +9018,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: Шари та периметри
-# 9    changes: external perimeters
-#  translation: зовнішні периметри
 # 9    changes: External perimeters
 #  translation: Зовнішні периметри
+# 9    changes: external perimeters
+#  translation: зовнішні периметри
+# 9    changes: Layers and perimeters
+#  translation: Шари та периметри
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -10429,10 +10442,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Блокувальник підтримок
+# 6    changes: Support Enforcer
+#  translation: Примусова підтримка
 # 6    changes: Support head
 #  translation: Головка підтримки
-# 6    changes: Support pillar
-#  translation: Стовп підтримки
 msgid "Support & Other"
 msgstr ""
 
@@ -10497,10 +10510,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: інтерфейс підтримки
-# 6    changes: Support material
-#  translation: Підтримка
 # 6    changes: Support Enforcer
 #  translation: Примусова підтримка
+# 6    changes: Support material
+#  translation: Підтримка
 msgid "Support interfaces"
 msgstr ""
 
@@ -10591,8 +10604,8 @@ msgstr ""
 #  translation: Підтримка
 # 5    changes: Support pillar
 #  translation: Стовп підтримки
-# 6    changes: Support head
-#  translation: Головка підтримки
+# 6    changes: Support Blocker
+#  translation: Блокувальник підтримок
 msgid "Support pattern"
 msgstr ""
 
@@ -10611,10 +10624,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Головка підтримки
-# 5    changes: Supports
-#  translation: Підтримки
 # 5    changes: Support Cubic
 #  translation: Кубічна підтримка
+# 5    changes: Supports
+#  translation: Підтримки
 msgid "Support speed"
 msgstr ""
 
@@ -10778,10 +10791,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: Нахил
 # 2    changes: &File
 #  translation: &Файл
+# 2    changes: Tilt
+#  translation: Нахил
 # 2    changes: File
 #  translation: Файл
 msgid "TFill"
@@ -12724,8 +12737,8 @@ msgstr ""
 #  translation: Заповнення розриву
 # 4    changes: infill
 #  translation: наповнення
-# 4    changes: solid infill
-#  translation: суцільне наповнення
+# 4    changes: Solid infill
+#  translation: Суцільне наповнення
 msgid "top infill"
 msgstr ""
 
@@ -12748,12 +12761,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: Суцільні шари
 # 4    changes: Add Layers
 #  translation: Додати шари
 # 4    changes: layers
 #  translation: шару(ів)
+# 4    changes: Raft layers
+#  translation: Плоскі шари
 msgid "Top layers"
 msgstr ""
 
@@ -12936,10 +12949,10 @@ msgstr ""
 
 #: src/slic3r/Utils/PresetUpdater.cpp:888
 #Similar to me: Updating
-# 3    changes: Spacing
-#  translation: Проміжки
 # 3    changes: Editing
 #  translation: Редагування
+# 3    changes: Spacing
+#  translation: Проміжки
 # 3    changes: Updates
 #  translation: Оновлення
 msgid "Updating"
@@ -13456,11 +13469,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: Вежа витирання
 # 4    changes: Fan speed
 #  translation: Швидкість вентилятора
 # 4    changes: Wipe Tower
+#  translation: Вежа витирання
+# 4    changes: Wipe tower
 #  translation: Вежа витирання
 msgid "Wipe speed"
 msgstr ""

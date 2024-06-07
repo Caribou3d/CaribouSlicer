@@ -522,12 +522,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2800
 #Similar to me: after last perimeter
-# 6    changes: external perimeter
-#  translation: Внешний периметр
 # 6    changes: External perimeter
 #  translation: Внешний периметр
-# 7    changes: external perimeters
-#  translation: внешних периметров
+# 6    changes: external perimeter
+#  translation: Внешний периметр
+# 7    changes: External perimeters
+#  translation: Внешние периметры
 msgid "after last perimeter"
 msgstr ""
 
@@ -674,10 +674,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: внешних периметров
 # 9    changes: External perimeters
 #  translation: Внешние периметры
+# 9    changes: external perimeters
+#  translation: внешних периметров
 # 9    changes: Small perimeters
 #  translation: Маленькие периметры
 msgid "Also for all perimeters"
@@ -912,10 +912,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: Высота слоя
 # 5    changes: First layer height
 #  translation: Высота первого слоя
+# 5    changes: Layer height
+#  translation: Высота слоя
 msgid "Base Layer height"
 msgstr ""
 
@@ -1255,6 +1255,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Макс. ширина
 msgid "Cap with"
 msgstr ""
 
@@ -2149,6 +2152,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Направление
+# 4    changes: Version:
+#  translation: Версия:
 msgid "Dimension:"
 msgstr ""
 
@@ -3166,10 +3171,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1709
 #Similar to me: First layer extruder
-# 7    changes: First layer speed
-#  translation: Скорость печати первого слоя
 # 7    changes: First layer expansion
 #  translation: Расширение первого слоя
+# 7    changes: First layer speed
+#  translation: Скорость печати первого слоя
 # 8    changes: First layer density
 #  translation: Плотность первого слоя
 msgid "First layer extruder"
@@ -3223,12 +3228,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: Скорость печати первого слоя
 # 5    changes: First layer height
 #  translation: Высота первого слоя
-# 6    changes: First layer
-#  translation: Первый слой
+# 5    changes: First layer speed
+#  translation: Скорость печати первого слоя
+# 6    changes: Display width
+#  translation: Ширина дисплея
 msgid "First layer width"
 msgstr ""
 
@@ -3311,10 +3316,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Слои и периметры
-# 8    changes: external perimeters
-#  translation: внешних периметров
 # 8    changes: External perimeters
 #  translation: Внешние периметры
+# 8    changes: external perimeters
+#  translation: внешних периметров
 msgid "for round perimeters"
 msgstr ""
 
@@ -3352,10 +3357,10 @@ msgstr ""
 #Similar to me: From filament
 # 4    changes: Used filament
 #  translation: Использовано прутка
-# 5    changes: Filament
-#  translation: Пруток
 # 5    changes: filament
 #  translation: пруток
+# 5    changes: Filament
+#  translation: Пруток
 msgid "From filament"
 msgstr ""
 
@@ -4038,10 +4043,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: Заполнение
 # 2    changes: &File
 #  translation: &Файл
+# 2    changes: Infill
+#  translation: Заполнение
 # 2    changes: File
 #  translation: Файл
 msgid "IFill"
@@ -4356,12 +4361,12 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Preview.cpp:275 src/libslic3r/ExtrusionEntity.cpp:327
 #: src/libslic3r/ExtrusionEntity.cpp:355
 #Similar to me: Internal perimeter
-# 2    changes: external perimeter
-#  translation: Внешний периметр
 # 2    changes: External perimeter
 #  translation: Внешний периметр
-# 3    changes: external perimeters
-#  translation: внешних периметров
+# 2    changes: external perimeter
+#  translation: Внешний периметр
+# 3    changes: External perimeters
+#  translation: Внешние периметры
 msgid "Internal perimeter"
 msgstr ""
 
@@ -4381,11 +4386,11 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: внешних периметров
 # 2    changes: External perimeters
 #  translation: Внешние периметры
-# 3    changes: external perimeter
+# 2    changes: external perimeters
+#  translation: внешних периметров
+# 3    changes: External perimeter
 #  translation: Внешний периметр
 msgid "Internal perimeters"
 msgstr ""
@@ -4395,10 +4400,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Внешние периметры печатать первыми
-# 8    changes: external perimeters
-#  translation: внешних периметров
 # 8    changes: External perimeters
 #  translation: Внешние периметры
+# 8    changes: external perimeters
+#  translation: внешних периметров
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -4984,10 +4989,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: Высота слоя
 # 5    changes: First layer height
 #  translation: Высота первого слоя
+# 5    changes: Layer height
+#  translation: Высота слоя
 # 5    changes: Max print height
 #  translation: Максимальная высота печати
 msgid "Max layer height"
@@ -5006,6 +5011,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: Макс. высота
+# 4    changes: Max width
+#  translation: Макс. ширина
 # 4    changes: Max height:
 #  translation: Макс. высота:
 msgid "Max length"
@@ -5378,10 +5387,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: Высота первого слоя
-# 5    changes: Layer height
-#  translation: Высота слоя
 # 5    changes: Display height
 #  translation: Высота дисплея
+# 5    changes: Layer height
+#  translation: Высота слоя
 msgid "Min layer height"
 msgstr ""
 
@@ -5398,6 +5407,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: Мин. высота
 # 4    changes: Min width
 #  translation: Мин. ширина
 # 4    changes: Min height:
@@ -6868,10 +6879,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: Высота первого слоя
-# 6    changes: Layer height
-#  translation: Высота слоя
 # 6    changes: Initial layer height
 #  translation: Высота исходного слоя
+# 6    changes: Layer height
+#  translation: Высота слоя
 msgid "Raft layer height"
 msgstr ""
 
@@ -6997,12 +7008,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: Слои и периметры
-# 9    changes: external perimeters
-#  translation: внешних периметров
 # 9    changes: External perimeters
 #  translation: Внешние периметры
+# 9    changes: external perimeters
+#  translation: внешних периметров
+# 9    changes: Layers and perimeters
+#  translation: Слои и периметры
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -8107,10 +8118,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Блокировщик поддержки
+# 6    changes: Support Enforcer
+#  translation: Принудительная поддержка
 # 6    changes: Support head
 #  translation: Носик поддержки
-# 6    changes: Support pillar
-#  translation: Опорная стойка
 msgid "Support & Other"
 msgstr ""
 
@@ -8179,10 +8190,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: связующая слой поддержки
-# 6    changes: Support material
-#  translation: Материал поддержки
 # 6    changes: Support Enforcer
 #  translation: Принудительная поддержка
+# 6    changes: Support material
+#  translation: Материал поддержки
 msgid "Support interfaces"
 msgstr ""
 
@@ -8216,8 +8227,8 @@ msgstr ""
 #  translation: Связующий слой поддержки
 # 9    changes: Support material
 #  translation: Материал поддержки
-# 10   changes: support material
-#  translation: Материал поддержки
+# 10   changes: Support base diameter
+#  translation: Диаметр основания поддержки
 msgid "Support material extruder"
 msgstr ""
 
@@ -8266,8 +8277,8 @@ msgstr ""
 #  translation: Материал поддержки
 # 5    changes: Support pillar
 #  translation: Опорная стойка
-# 6    changes: Support head
-#  translation: Носик поддержки
+# 6    changes: Support Blocker
+#  translation: Блокировщик поддержки
 msgid "Support pattern"
 msgstr ""
 
@@ -8288,10 +8299,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Носик поддержки
-# 5    changes: Supports
-#  translation: Поддержки
 # 5    changes: Support Cubic
 #  translation: Динам. куб. поддержка
+# 5    changes: Supports
+#  translation: Поддержки
 msgid "Support speed"
 msgstr ""
 
@@ -8412,10 +8423,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: Наклон ванночки
 # 2    changes: &File
 #  translation: &Файл
+# 2    changes: Tilt
+#  translation: Наклон ванночки
 # 2    changes: File
 #  translation: Файл
 msgid "TFill"
@@ -10163,8 +10174,8 @@ msgstr ""
 #  translation: Заполнение пробелов
 # 4    changes: infill
 #  translation: заполнение
-# 4    changes: solid infill
-#  translation: сплошные слои заполнения
+# 4    changes: Solid infill
+#  translation: Сплошное заполнение
 msgid "top infill"
 msgstr ""
 
@@ -10182,12 +10193,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: Сплошных слоёв
 # 4    changes: Add Layers
 #  translation: Добавить слои
 # 4    changes: layers
 #  translation: слои
+# 4    changes: Raft layers
+#  translation: Слоёв в подложке
 msgid "Top layers"
 msgstr ""
 
@@ -10733,12 +10744,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: Башня очистки
 # 4    changes: Fan speed
 #  translation: Скорость вентилятора
 # 4    changes: Print speed
 #  translation: Скорость печати
+# 4    changes: Wipe Tower
+#  translation: Башня очистки
 msgid "Wipe speed"
 msgstr ""
 

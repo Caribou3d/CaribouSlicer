@@ -676,6 +676,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: 最大宽度
 msgid "Cap with"
 msgstr ""
 
@@ -975,10 +978,10 @@ msgstr ""
 #Similar to me: Default speed
 # 4    changes: Default fan speed
 #  translation: 默认风扇速度
-# 5    changes: Infill speed
-#  translation: 固体填充速度
 # 5    changes: Default color
 #  translation: 默认颜色
+# 5    changes: Infill speed
+#  translation: 固体填充速度
 msgid "Default speed"
 msgstr ""
 
@@ -1066,9 +1069,9 @@ msgstr ""
 #Similar to me: EBridge
 # 1    changes: Bridge
 #  translation: 网桥
-# 2    changes: Bridges
-#  translation: 桥接
 # 2    changes: Bridged
+#  translation: 桥接
+# 2    changes: Bridges
 #  translation: 桥接
 msgid "EBridge"
 msgstr ""
@@ -1423,8 +1426,8 @@ msgstr ""
 #  translation: 第一层校准
 # 7    changes: First layer acceleration
 #  translation: 第一层加速
-# 11   changes: First layer flow ratio
-#  translation: 首层流量比
+# 7    changes: First layer calibration.
+#  translation: 第一层校准.
 msgid "First layer patch calibration"
 msgstr ""
 
@@ -1433,10 +1436,10 @@ msgstr ""
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: 第一层校准
+# 10   changes: First layer calibration.
+#  translation: 第一层校准.
 # 11   changes: First layer acceleration
 #  translation: 第一层加速
-# 11   changes: Ironing pattern calibration
-#  translation: 熨烫图案校准
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -1499,10 +1502,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: 层和轮廓
-# 8    changes: Extra perimeters
+# 8    changes: External perimeters
 #  translation: 外部轮廓
-# 8    changes: One-loop perimeters
-#  translation: 轮廓
+# 8    changes: external perimeters
+#  translation: 外围轮廓
 msgid "for round perimeters"
 msgstr ""
 
@@ -1550,10 +1553,10 @@ msgstr ""
 #Similar to me: Gap fill fan speed
 # 4    changes: Gap fill speed
 #  translation: 间隙填充速度
-# 7    changes: Max fan speed
-#  translation: 最大风扇转速
 # 7    changes: Default fan speed
 #  translation: 默认风扇速度
+# 7    changes: Max fan speed
+#  translation: 最大风扇转速
 msgid "Gap fill fan speed"
 msgstr ""
 
@@ -1688,9 +1691,9 @@ msgstr ""
 #Similar to me: IBridge
 # 1    changes: Bridge
 #  translation: 网桥
-# 2    changes: Bridges
-#  translation: 桥接
 # 2    changes: Bridged
+#  translation: 桥接
+# 2    changes: Bridges
 #  translation: 桥接
 msgid "IBridge"
 msgstr ""
@@ -1870,10 +1873,10 @@ msgstr ""
 #Similar to me: IFill
 # 1    changes: Fill
 #  translation: 填
-# 2    changes: Infill
-#  translation: 填充
 # 2    changes: &File
 #  translation: 文件(&F)
+# 2    changes: Infill
+#  translation: 填充
 msgid "IFill"
 msgstr ""
 
@@ -2062,10 +2065,10 @@ msgstr ""
 #Similar to me: Internal perimeters
 # 1    changes: Internal perimeter
 #  translation: 内部周长
-# 2    changes: external perimeters
-#  translation: 外围轮廓
 # 2    changes: External perimeters
 #  translation: 外部轮廓
+# 2    changes: external perimeters
+#  translation: 外围轮廓
 msgid "Internal perimeters"
 msgstr ""
 
@@ -2964,8 +2967,8 @@ msgstr ""
 #  translation: 周长速度
 # 6    changes: Bridges fan speed
 #  translation: 桥接风扇速度
-# 7    changes: Perimeter anchor
-#  translation: 周长
+# 7    changes: Default fan speed
+#  translation: 默认风扇速度
 msgid "Perimeter fan speed"
 msgstr ""
 
@@ -3121,8 +3124,8 @@ msgstr ""
 #  translation: 在填充前先打印轮廓
 # 8    changes: Overlapping all perimeters
 #  translation: 重叠所有周长
-# 9    changes: Layers and perimeters
-#  translation: 层和轮廓
+# 9    changes: External perimeters
+#  translation: 外部轮廓
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -3241,10 +3244,10 @@ msgstr ""
 #Similar to me: SFill
 # 1    changes: Fill
 #  translation: 填
-# 2    changes: Small
-#  translation: 小
 # 2    changes: &File
 #  translation: 文件(&F)
+# 2    changes: Mill
+#  translation: 磨
 msgid "SFill"
 msgstr ""
 
@@ -3649,8 +3652,8 @@ msgstr ""
 #  translation: 支撑去除器
 # 5    changes: Support pattern
 #  translation: 支撑模式
-# 6    changes: Support head
-#  translation: 支撑头
+# 6    changes: Support Enforcer
+#  translation: 支撑添加器
 msgid "Support & Other"
 msgstr ""
 
@@ -3725,8 +3728,8 @@ msgstr ""
 #  translation: 支撑面
 # 5    changes: Support interface speed
 #  translation: 支撑接口速度
-# 6    changes: Support material
-#  translation: 支撑材料
+# 6    changes: Support Enforcer
+#  translation: 支撑添加器
 msgid "Support interfaces"
 msgstr ""
 
@@ -3801,10 +3804,10 @@ msgstr ""
 #Similar to me: TFill
 # 1    changes: Fill
 #  translation: 填
-# 2    changes: Tilt
-#  translation: 倾斜
 # 2    changes: &File
 #  translation: 文件(&F)
+# 2    changes: Mill
+#  translation: 磨
 msgid "TFill"
 msgstr ""
 
@@ -5026,10 +5029,10 @@ msgstr ""
 #Similar to me: Top surfaces
 # 3    changes: On surfaces
 #  translation: 在表面上
-# 4    changes: On top surfaces
-#  translation: 所有顶面
 # 4    changes: Min surface
 #  translation: 最小表面
+# 4    changes: On top surfaces
+#  translation: 所有顶面
 msgid "Top surfaces"
 msgstr ""
 

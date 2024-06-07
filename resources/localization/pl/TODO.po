@@ -524,10 +524,10 @@ msgstr ""
 #Similar to me: after last perimeter
 # 6    changes: External perimeter
 #  translation: Obrys zewnętrzny
-# 7    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 7    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 7    changes: external perimeters
+#  translation: obrysów zewnętrznych
 msgid "after last perimeter"
 msgstr ""
 
@@ -674,10 +674,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 9    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 9    changes: external perimeters
+#  translation: obrysów zewnętrznych
 # 9    changes: Small perimeters
 #  translation: Małe obrysy
 msgid "Also for all perimeters"
@@ -912,10 +912,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: Wysokość warstwy
 # 5    changes: First layer height
 #  translation: Wysokość pierwszej warstwy
+# 5    changes: Layer height
+#  translation: Wysokość warstwy
 msgid "Base Layer height"
 msgstr ""
 
@@ -1250,6 +1250,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Maksymalna szerokość
 msgid "Cap with"
 msgstr ""
 
@@ -2129,6 +2132,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Kierunek
+# 4    changes: Version:
+#  translation: Wersja:
 msgid "Dimension:"
 msgstr ""
 
@@ -3182,10 +3187,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1709
 #Similar to me: First layer extruder
-# 7    changes: First layer speed
-#  translation: Prędkość pierwszej warstwy
 # 7    changes: First layer expansion
 #  translation: Rozciągnięcie pierwszej warstwy
+# 7    changes: First layer speed
+#  translation: Prędkość pierwszej warstwy
 # 8    changes: First layer density
 #  translation: Gęstość pierwszej warstwy
 msgid "First layer extruder"
@@ -3239,12 +3244,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: Prędkość pierwszej warstwy
 # 5    changes: First layer height
 #  translation: Wysokość pierwszej warstwy
-# 6    changes: First layer
-#  translation: Pierwsza warstwa
+# 5    changes: First layer speed
+#  translation: Prędkość pierwszej warstwy
+# 6    changes: Display width
+#  translation: Orientacja wyświetlacza
 msgid "First layer width"
 msgstr ""
 
@@ -3327,10 +3332,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Warstwy i obrysy
-# 8    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 8    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 8    changes: external perimeters
+#  translation: obrysów zewnętrznych
 msgid "for round perimeters"
 msgstr ""
 
@@ -3368,10 +3373,10 @@ msgstr ""
 #Similar to me: From filament
 # 4    changes: Used filament
 #  translation: Użyty filament
-# 5    changes: Filament
-#  translation: Filament
 # 5    changes: filament
 #  translation: filament
+# 5    changes: Filament
+#  translation: Filament
 msgid "From filament"
 msgstr ""
 
@@ -4091,10 +4096,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: Wypełnienie
 # 2    changes: &File
 #  translation: &Plik
+# 2    changes: Infill
+#  translation: Wypełnienie
 # 2    changes: File
 #  translation: Plik
 msgid "IFill"
@@ -4409,10 +4414,10 @@ msgstr ""
 #Similar to me: Internal perimeter
 # 2    changes: External perimeter
 #  translation: Obrys zewnętrzny
-# 3    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 3    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 3    changes: external perimeters
+#  translation: obrysów zewnętrznych
 msgid "Internal perimeter"
 msgstr ""
 
@@ -4432,10 +4437,10 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 2    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 2    changes: external perimeters
+#  translation: obrysów zewnętrznych
 # 3    changes: External perimeter
 #  translation: Obrys zewnętrzny
 msgid "Internal perimeters"
@@ -4446,10 +4451,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Najpierw obrysy zewnętrzne
-# 8    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 8    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 8    changes: external perimeters
+#  translation: obrysów zewnętrznych
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -5043,10 +5048,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: Wysokość warstwy
 # 5    changes: First layer height
 #  translation: Wysokość pierwszej warstwy
+# 5    changes: Layer height
+#  translation: Wysokość warstwy
 # 5    changes: Max print height
 #  translation: Maksymalna wysokość wydruku
 msgid "Max layer height"
@@ -5065,6 +5070,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: Maksymalna wysokość
+# 4    changes: Max width
+#  translation: Maksymalna szerokość
 # 4    changes: Max height:
 #  translation: Maksymalna wysokość:
 msgid "Max length"
@@ -5437,10 +5446,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: Wysokość pierwszej warstwy
-# 5    changes: Layer height
-#  translation: Wysokość warstwy
 # 5    changes: Display height
 #  translation: Wysokość wyświetlacza
+# 5    changes: Layer height
+#  translation: Wysokość warstwy
 msgid "Min layer height"
 msgstr ""
 
@@ -5457,6 +5466,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: Minimalna wysokość
 # 4    changes: Min width
 #  translation: Min szerokość
 # 4    changes: Min height:
@@ -6912,10 +6923,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: Wysokość pierwszej warstwy
-# 6    changes: Layer height
-#  translation: Wysokość warstwy
 # 6    changes: Initial layer height
 #  translation: Wysokość pierwszej warstwy
+# 6    changes: Layer height
+#  translation: Wysokość warstwy
 msgid "Raft layer height"
 msgstr ""
 
@@ -7049,12 +7060,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: Warstwy i obrysy
-# 9    changes: external perimeters
-#  translation: obrysów zewnętrznych
 # 9    changes: External perimeters
 #  translation: Obrysy zewnętrzne
+# 9    changes: external perimeters
+#  translation: obrysów zewnętrznych
+# 9    changes: Layers and perimeters
+#  translation: Warstwy i obrysy
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -8168,10 +8179,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Blokada podpór
+# 6    changes: Support Enforcer
+#  translation: Wymuszenie podpór
 # 6    changes: Support head
 #  translation: Łącznik podpory
-# 6    changes: Support pillar
-#  translation: Słupek podpory
 msgid "Support & Other"
 msgstr ""
 
@@ -8240,10 +8251,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: warstwa łącząca podpory z modelem
-# 6    changes: Support material
-#  translation: Materiał podporowy
 # 6    changes: Support Enforcer
 #  translation: Wymuszenie podpór
+# 6    changes: Support material
+#  translation: Materiał podporowy
 msgid "Support interfaces"
 msgstr ""
 
@@ -8334,8 +8345,8 @@ msgstr ""
 #  translation: Materiał podporowy
 # 5    changes: Support pillar
 #  translation: Słupek podpory
-# 6    changes: Support head
-#  translation: Łącznik podpory
+# 6    changes: Support Blocker
+#  translation: Blokada podpór
 msgid "Support pattern"
 msgstr ""
 
@@ -8354,10 +8365,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Łącznik podpory
-# 5    changes: Supports
-#  translation: Podpory
 # 5    changes: Support Cubic
 #  translation: Sześcienny podpierający
+# 5    changes: Supports
+#  translation: Podpory
 msgid "Support speed"
 msgstr ""
 
@@ -8478,10 +8489,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: Przechylanie
 # 2    changes: &File
 #  translation: &Plik
+# 2    changes: Tilt
+#  translation: Przechylanie
 # 2    changes: File
 #  translation: Plik
 msgid "TFill"
@@ -10235,8 +10246,8 @@ msgstr ""
 #  translation: Wypełnienie szpar
 # 4    changes: infill
 #  translation: wypełnienia
-# 4    changes: solid infill
-#  translation: zwarte wypełnienie
+# 4    changes: Solid infill
+#  translation: Zwarte wypełnienie
 msgid "top infill"
 msgstr ""
 
@@ -10254,12 +10265,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: Zwarte warstwy
 # 4    changes: Add Layers
 #  translation: Dodaj Warstwy
 # 4    changes: layers
 #  translation: warstwy
+# 4    changes: Raft layers
+#  translation: Warstwy tratwy
 msgid "Top layers"
 msgstr ""
 
@@ -10819,12 +10830,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: Wieża czyszcząca
 # 4    changes: Fan speed
 #  translation: Prędkość wentylatora
 # 4    changes: Print speed
 #  translation: Prędkość druku
+# 4    changes: Wipe Tower
+#  translation: Wieża czyszcząca
 msgid "Wipe speed"
 msgstr ""
 

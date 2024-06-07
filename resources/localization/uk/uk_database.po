@@ -1,333 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "Контроль прискорення (розширений)"
-
-msgid "Activate"
-msgstr "Активувати"
-
-msgid "Advanced"
-msgstr "Додатково"
-
-msgid "After layer change G-code"
-msgstr "G-код після зміни шару"
-
-msgid "Aligned"
-msgstr "Вирівняно"
-
-msgid "Automatic generation"
-msgstr "Автоматичне згенерування"
-
-msgid "Autospeed (advanced)"
-msgstr "Автоматична швидкість (розширена)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Уникати перетинання периметрів"
-
-msgid "Bed"
-msgstr "Стіл"
-
-msgid "Before layer change G-code"
-msgstr "G-код перед зміною шару"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "G-код між об'єктами (для послідовного друку)"
-
-msgid "Bottom"
-msgstr "Внизу"
-
-msgid "Bridge"
-msgstr "Міст"
-
-msgid "Bridges"
-msgstr "Мости"
-
-msgid "Bridges fan speed"
-msgstr "Швидкість вентилятора для мостів"
-
-msgid "Brim"
-msgstr "Край"
-
-msgid "Capabilities"
-msgstr "Можливості"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "З'єднання опорних стовпів і стиків"
-
-msgid "Cooling"
-msgstr "Охолодження"
-
-msgid "Corrections"
-msgstr "Поправки"
-
-msgid "Custom G-code"
-msgstr "Користувацький G-код"
-
-msgid "Default"
-msgstr "типовий"
-
-msgid "default"
-msgstr "типовий"
-
-msgid "Density"
-msgstr "Щільність"
-
-msgid "Dependencies"
-msgstr "Залежності"
-
-msgid "Disable fan for the first"
-msgstr "Вимкнути вентилятор для першого(их)"
-
-msgid "Display"
-msgstr "Дисплей"
-
-msgid "End G-code"
-msgstr "Закінчення G-коду"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Забезпечення товщини вертикальної оболонки"
-
-msgid "Exposure"
-msgstr "Експозиція"
-
-msgid "Extruder"
-msgstr "Екструдер"
-
-msgid "Extruders"
-msgstr "Екструдери"
-
-msgid "Extrusion width"
-msgstr "Ширина екструзії"
-
-msgid "Filament"
-msgstr "Філамент"
-
-msgid "Filament properties"
-msgstr "Властивості філаменту"
-
-msgid "Firmware"
-msgstr "Прошивка"
-
-msgid "First layer"
-msgstr "Перший шар"
-
-msgid "First layer speed"
-msgstr "Швидкість першого шару"
-
-msgid "Flow"
-msgstr "Потік"
-
-msgid "Gap fill"
-msgstr "Заповнення розриву"
-
-msgid "General"
-msgstr "Загальне"
-
-msgid "Hollowing"
-msgstr "Випорожнення"
-
-msgid "Horizontal shells"
-msgstr "Горизонтальні оболонки"
-
-msgid "Infill"
-msgstr "Заповнення"
-
-msgid "infill"
-msgstr "наповнення"
-
-msgid "Layer height"
-msgstr "Висота шару"
-
-msgid "Layer height limits"
-msgstr "Межі висоти шару"
-
-msgid "Layers"
-msgstr "Шари"
-
-msgid "Layers and perimeters"
-msgstr "Шари та периметри"
-
-msgid "Length"
-msgstr "Довжина"
-
-msgid "Material"
-msgstr "Матеріал"
-
-msgid "Minimum shell thickness"
-msgstr "Мінімальна товщина оболонки"
-
-msgid "mm"
-msgstr "мм"
-
-msgid "Modifiers"
-msgstr "Модифікатори"
-
-msgid "Notes"
-msgstr "Примітки"
-
-msgid "Number of pixels in"
-msgstr "Кількість пікселів за віссю"
-
-msgid "Only lift Z"
-msgstr "Межі підняття Z"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Перервати тільки у разі перетину периметрів"
-
-msgid "Ooze prevention"
-msgstr "Запобігання просочування"
-
-msgid "Options"
-msgstr "Параметри"
-
-msgid "Options for support material and raft"
-msgstr "Варіанти для опорного матеріалу та плоту"
-
-msgid "Other"
-msgstr "Інше"
-
-msgid "Output file"
-msgstr "Вихідний файл"
-
-msgid "Output options"
-msgstr "Параметри виводу"
-
-msgid "Overlap"
-msgstr "Перекриття"
-
-msgid "Pad"
-msgstr "Подушка"
-
-msgid "Pattern"
-msgstr "Шаблон"
-
-msgid "Pause Print G-code"
-msgstr "G-код для паузи друку"
-
-msgid "Plater"
-msgstr "Платер"
-
-msgid "Preview"
-msgstr "Попередній перегляд"
-
-msgid "Print Host upload"
-msgstr "Завантаження хоста друку"
-
-msgid "Print speed override"
-msgstr "Перевизначення швидкості друку"
-
-msgid "Printer scaling correction"
-msgstr "Корекція масштабування принтера"
-
-msgid "Profile dependencies"
-msgstr "Залежності профілю"
-
-msgid "Quality"
-msgstr "Якість"
-
-msgid "Raft"
-msgstr "Пліт"
-
-msgid "Reducing printing time"
-msgstr "Зниження часу друку"
-
-msgid "Retraction"
-msgstr "Переривання"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Переривання при відключенні інструмента (додаткові налаштування для "
-"налагодження мульти-екструдерів)"
-
-msgid "Sequential printing"
-msgstr "Послідовне друкування"
-
-msgid "Size"
-msgstr "Розмір"
-
-msgid "Size and coordinates"
-msgstr "Розмір і координати"
-
-msgid "Skirt"
-msgstr "Плінтус"
-
-msgid "Slicing"
-msgstr "Нарізання"
-
-msgid "Solid"
-msgstr "Суцільна"
-
-msgid "solid infill"
-msgstr "суцільне наповнення"
-
-msgid "Solid layers"
-msgstr "Суцільні шари"
-
-msgid "Spacing"
-msgstr "Проміжки"
-
-msgid "Speed"
-msgstr "Швидкість"
-
-msgid "Speed for non-print moves"
-msgstr "Швидкість недрукарських рухів"
-
-msgid "Speed for print moves"
-msgstr "Швидкість друкарських рухів"
-
-msgid "Start G-code"
-msgstr "Початок G-коду"
-
-msgid "Support head"
-msgstr "Головка підтримки"
-
-msgid "Support material"
-msgstr "Підтримка"
-
-msgid "Support pillar"
-msgstr "Стовп підтримки"
-
-msgid "Supports"
-msgstr "Підтримки"
-
-msgid "Template Custom G-code"
-msgstr "Шаблон власного G-коду"
-
-msgid "Tilt"
-msgstr "Нахил"
-
-msgid "Tilt time"
-msgstr "Час нахилу"
-
-msgid "Tool change G-code"
-msgstr "G-код зміни інструменту"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "Параметри зміни інструменту в одно-екструдерному ММ-принтері"
-
-msgid "Top"
-msgstr "Вгорі"
-
-msgid "Travel"
-msgstr "Пересування"
-
-msgid "Type"
-msgstr "Тип"
-
-msgid "Vertical shells"
-msgstr "Вертикальні оболонки"
-
-msgid "Wipe tower"
-msgstr "Вежа витирання"
-
-msgid "Wipe tower parameters"
-msgstr "Параметри вежі витирання"
-
-msgid "Retraction Speed"
-msgstr "Швидкість переривання"
-
-msgid "Seam position"
-msgstr "Позиція шва"
-
 msgid "%1% Preset"
 msgstr "%1% пресет"
 
@@ -357,15 +28,6 @@ msgstr "%s Родина"
 
 msgid "%s has encountered an error"
 msgstr "%s виявив помилку"
-
-msgid ""
-"%s has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
-msgstr ""
-"%s виявив помилку. Ймовірно, це було пов’язано з закінченням пам’яті. Якщо "
-"ви впевнені, що у вашій системі достатньо оперативної пам'яті, це також може "
-"бути помилкою, і ми будемо раді, якщо ви нам про це повідомите."
 
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
@@ -620,6 +282,9 @@ msgstr "вище"
 msgid "Above Z"
 msgstr "Вище Z"
 
+msgid "Acceleration control (advanced)"
+msgstr "Контроль прискорення (розширений)"
+
 msgid "Accuracy"
 msgstr "Точність"
 
@@ -628,6 +293,9 @@ msgstr "Точний"
 
 msgid "Action"
 msgstr "Дія"
+
+msgid "Activate"
+msgstr "Активувати"
 
 msgid "Active"
 msgstr "Активний"
@@ -794,8 +462,8 @@ msgstr ""
 msgid "Address"
 msgstr "Адреса"
 
-msgid "Advanced mode"
-msgstr "Розширений режим"
+msgid "Advanced"
+msgstr "Додатково"
 
 msgid "Advanced: Output log"
 msgstr "Розширений: журнал виводу"
@@ -813,11 +481,17 @@ msgstr ""
 "очищувальної вежі, Slic3r завжди продавлює цю кількість матеріалу до "
 "очищувальної вежі, щоб отримати послідовне заповнення."
 
+msgid "After layer change G-code"
+msgstr "G-код після зміни шару"
+
 msgid "Align the model to the given point."
 msgstr "Вирівняйте модель за заданою точкою."
 
 msgid "Align XY"
 msgstr "Вирівняти XY"
+
+msgid "Aligned"
+msgstr "Вирівняно"
 
 msgid "All"
 msgstr "Всі"
@@ -987,11 +661,20 @@ msgstr "Автогенерувати точки підтримки"
 msgid "Autogeneration will erase all manually edited points."
 msgstr "Автогенерація видалить всі відредаговані вручну точки."
 
+msgid "Automatic generation"
+msgstr "Автоматичне згенерування"
+
 msgid "Automatic updates"
 msgstr "Автоматичні оновлення"
 
 msgid "Automatically repair an STL file"
 msgstr "Автоматично відновити як STL-файл"
+
+msgid "Autospeed (advanced)"
+msgstr "Автоматична швидкість (розширена)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Уникати перетинання периметрів"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Уникати перетинання периметрів - Макс. довжина обходу"
@@ -1025,6 +708,9 @@ msgstr "Фонова обробка"
 msgid "Balanced"
 msgstr "Збалансований"
 
+msgid "Bed"
+msgstr "Стіл"
+
 msgid "Bed custom model"
 msgstr "Власна модель столу"
 
@@ -1046,6 +732,9 @@ msgstr "Температура столу"
 msgid "Bed Temperature:"
 msgstr "Температура столу:"
 
+msgid "Before layer change G-code"
+msgstr "G-код перед зміною шару"
+
 msgid "Before roll back"
 msgstr "Перед відкатом"
 
@@ -1054,6 +743,9 @@ msgstr "Нижче Z"
 
 msgid "Between objects G-code"
 msgstr "G-код між об'єктами"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "G-код між об'єктами (для послідовного друку)"
 
 msgid "Block seam"
 msgstr "Блокувати шов"
@@ -1070,6 +762,9 @@ msgstr "Об’єм пляшки"
 msgid "Bottle weight"
 msgstr "Вага пляшки"
 
+msgid "Bottom"
+msgstr "Внизу"
+
 msgid "Bottom fill pattern"
 msgstr "Нижній шаблон наповнення"
 
@@ -1085,11 +780,20 @@ msgstr "Нижні суцільні шари"
 msgid "Bottom View"
 msgstr "Вид знизу"
 
+msgid "Bridge"
+msgstr "Міст"
+
 msgid "Bridge flow ratio"
 msgstr "Співвідношення мостового потоку"
 
 msgid "Bridge infill"
 msgstr "Мостове наповнення"
+
+msgid "Bridges"
+msgstr "Мости"
+
+msgid "Bridges fan speed"
+msgstr "Швидкість вентилятора для мостів"
 
 msgid "Bridging angle"
 msgstr "Кут моста"
@@ -1105,6 +809,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Об'єм мостів"
+
+msgid "Brim"
+msgstr "Край"
 
 msgid "Brim width"
 msgstr "Ширина краю"
@@ -1190,15 +897,15 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "Неможливо замінити системний профіль."
 
-msgid "Cannot overwrite an external profile."
-msgstr "Неможливо замінити сторонній профіль."
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
 msgstr ""
 "Не можливо продовжувати без точок підтримки! Додайте точки підтримки або "
 "вимкніть генерацію підтримки."
+
+msgid "Capabilities"
+msgstr "Можливості"
 
 msgid "Capture a configuration snapshot"
 msgstr "Зробіть знімок конфігурації"
@@ -1272,8 +979,8 @@ msgstr "Виберіть один файл (3MF/AMF):"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Виберіть один файл (GCODE/.GCO/.G/.ngc/NGC):"
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Виберіть один чи кілька файлів (STL/OBJ/AMF/PRUSA):"
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Виберіть один чи кілька файлів (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 
 msgid "Choose SLA archive:"
 msgstr "Виберіть SLA-архів:"
@@ -1392,9 +1099,6 @@ msgstr "Концентричний"
 msgid "Configuration &Assistant"
 msgstr "Асистент конфігурації"
 
-msgid "Configuration &Wizard"
-msgstr "Майстер конфігурації"
-
 msgid "Configuration Assistant"
 msgstr "Асистент конфігурації"
 
@@ -1416,11 +1120,11 @@ msgstr "Доступне оновлення конфігурації."
 msgid "Configuration updates"
 msgstr "Оновлення конфігурацій"
 
-msgid "Configuration Wizard"
-msgstr "Майстер конфігурації"
-
 msgid "Confirmation"
 msgstr "Підтвердження"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "З'єднання опорних стовпів і стиків"
 
 msgid ""
 "Controls the bridge type between two neighboring pillars. Can be zig-zag, "
@@ -1433,6 +1137,9 @@ msgstr ""
 
 msgid "Convert from imperial units"
 msgstr "Конвертувати з імперських одиниць"
+
+msgid "Cooling"
+msgstr "Охолодження"
 
 msgid "Cooling tube length"
 msgstr "Довжина охолоджувальної трубки"
@@ -1499,6 +1206,9 @@ msgstr "Копірайт"
 msgid "Correction for expansion"
 msgstr "Поправка на розширення"
 
+msgid "Corrections"
+msgstr "Поправки"
+
 msgid "Cost"
 msgstr "Вартість"
 
@@ -1554,6 +1264,9 @@ msgstr "Ctrl + Колесо миші"
 msgid "Cubic"
 msgstr "Кубічний"
 
+msgid "Current mode is %s"
+msgstr "Поточний режим - %s"
+
 msgid "Current preset is inherited from"
 msgstr "Поточний пресет успадковується від"
 
@@ -1574,6 +1287,9 @@ msgstr ""
 "Настроюваний файл сертифіката CA можна вказати для з'єднань HTTPS OctoPrint "
 "у форматі crt/pem. Якщо залишити це поле порожнім, буде використано типове "
 "сховище сертифікатів OS CA."
+
+msgid "Custom G-code"
+msgstr "Користувацький G-код"
 
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "Користувацький G-код на поточному шарі (%1% мм)."
@@ -1616,6 +1332,12 @@ msgstr "не вдалося розпакувати або архів пошко�
 
 msgid "Decrease Instances"
 msgstr "Зменшити кількість копій"
+
+msgid "default"
+msgstr "типовий"
+
+msgid "Default"
+msgstr "типовий"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1769,8 +1491,11 @@ msgstr "Видалити всі об'єкти"
 msgid "Deletes the current selection"
 msgstr "Видаляє поточний вибір"
 
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "Щільність внутрішнього заповнення, виражена в діапазоні 0% - 100%."
+msgid "Density"
+msgstr "Щільність"
+
+msgid "Dependencies"
+msgstr "Залежності"
 
 msgid "Deretraction Speed"
 msgstr "Швидкість після-переривання"
@@ -1834,6 +1559,9 @@ msgstr ""
 msgid "Direction"
 msgstr "Напрямок"
 
+msgid "Disable fan for the first"
+msgstr "Вимкнути вентилятор для першого(их)"
+
 msgid "Discard"
 msgstr "Відхилити"
 
@@ -1842,6 +1570,9 @@ msgstr "Відхилити всі користувацькі зміни"
 
 msgid "Discard changes"
 msgstr "Відхилити зміни"
+
+msgid "Display"
+msgstr "Дисплей"
 
 msgid "Display height"
 msgstr "Висота дисплея"
@@ -2084,6 +1815,9 @@ msgstr "Увімкнути функцію шарів змінної висоти
 msgid "Enable vertical mirroring of output images"
 msgstr "Увімкнути вертикальне віддзеркалення вихідних зображень"
 
+msgid "End G-code"
+msgstr "Закінчення G-коду"
+
 msgid "Enforce"
 msgstr "Забезпечити"
 
@@ -2101,6 +1835,9 @@ msgstr "Забезпечити підтримки"
 
 msgid "Enqueued"
 msgstr "У черзі"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Забезпечення товщини вертикальної оболонки"
 
 msgid "Enter a search term"
 msgstr "Введіть пошуковий термін"
@@ -2240,8 +1977,8 @@ msgstr ""
 "Експериментальний варіант для запобігання утворенню допоміжного матеріалу в "
 "областях під мостами."
 
-msgid "Expert mode"
-msgstr "Експертний режим"
+msgid "Expert"
+msgstr "Експерт"
 
 msgid "Export"
 msgstr "Експорт"
@@ -2288,12 +2025,6 @@ msgstr "Експорт поточної пластини як G-код"
 msgid "Export current plate as G-code to SD card / Flash drive"
 msgstr "Експорт поточного столу як G-код на SD-карту / Флешку"
 
-msgid "Export current plate as STL"
-msgstr "Експорт поточної пластини як STL"
-
-msgid "Export current plate as STL including supports"
-msgstr "Експорт поточного столу як STL, включаючи підтримку"
-
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
 msgstr ""
@@ -2316,12 +2047,6 @@ msgstr "Експорт OBJ-файлу:"
 
 msgid "Export of a temporary 3mf file failed"
 msgstr "Не вдалося експортувати тимчасовий 3MF-файл"
-
-msgid "Export Plate as &STL"
-msgstr "Експорт столу як STL"
-
-msgid "Export Plate as STL &Including Supports"
-msgstr "Експорт столу як STL, включаючи підтримку"
 
 msgid "Export SLA"
 msgstr "Експорт SLA"
@@ -2368,17 +2093,20 @@ msgstr "Експортування вихідної моделі"
 msgid "Exposition time is out of printer profile bounds."
 msgstr "Час експозиції виходить за межі профілю принтера."
 
+msgid "Exposure"
+msgstr "Експозиція"
+
 msgid "Exposure time"
 msgstr "Час експозиції"
 
 msgid "External perimeter"
 msgstr "Зовнішній периметр"
 
-msgid "external perimeters"
-msgstr "зовнішні периметри"
-
 msgid "External perimeters"
 msgstr "Зовнішні периметри"
+
+msgid "external perimeters"
+msgstr "зовнішні периметри"
 
 msgid "External perimeters first"
 msgstr "Спочатку зовнішні периметри"
@@ -2388,6 +2116,9 @@ msgstr "Додаткова довжина при перезапуску"
 
 msgid "Extra loading distance"
 msgstr "Додаткова відстань заведення"
+
+msgid "Extruder"
+msgstr "Екструдер"
 
 msgid "Extruder %d"
 msgstr "Екструдер %d"
@@ -2404,6 +2135,9 @@ msgstr "Колір екструдера"
 msgid "Extruder offset"
 msgstr "Зміщення екструдеру"
 
+msgid "Extruders"
+msgstr "Екструдери"
+
 msgid "Extruders count"
 msgstr "Кількість екструдерів"
 
@@ -2418,6 +2152,9 @@ msgstr "Коефіцієнт екструзії"
 
 msgid "Extrusion Temperature:"
 msgstr "Температура екструзії:"
+
+msgid "Extrusion width"
+msgstr "Ширина екструзії"
 
 msgid "Facets"
 msgstr "Грані"
@@ -2443,19 +2180,6 @@ msgstr "Швидкість вентилятора"
 msgid "Fan Speed (%)"
 msgstr "Швидкість вентилятора (%)"
 
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
-msgstr ""
-"Швидкість вентилятора буде збільшена лінійно з нуля на шарі "
-"\"disable_fan_first_layers\" до максимальної на шарі \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" буде проігноровано, якщо нижче "
-"\"disable_fan_first_layers\", і в цьому випадку вентилятор буде працювати з "
-"максимально дозволеною швидкістю на рівні \"disable_fan_first_layers\" + 1."
-
 msgid "Fast"
 msgstr "Швидкий"
 
@@ -2476,6 +2200,9 @@ msgstr "Типи ознак"
 
 msgid "filament"
 msgstr "філамент"
+
+msgid "Filament"
+msgstr "Філамент"
 
 msgid "Filament and Nozzle Diameters"
 msgstr "Діаметри філатенту та сопла"
@@ -2507,6 +2234,9 @@ msgstr "Позиція паркування філаменту"
 
 msgid "Filament Profiles Selection"
 msgstr "Вибір профілів філаменту"
+
+msgid "Filament properties"
+msgstr "Властивості філаменту"
 
 msgid "Filament Settings"
 msgstr "Параметри філаменту"
@@ -2580,6 +2310,9 @@ msgstr "Знайти"
 msgid "Finished"
 msgstr "Завершено"
 
+msgid "Firmware"
+msgstr "Прошивка"
+
 msgid "Firmware flasher"
 msgstr "Пепепрошивка"
 
@@ -2595,6 +2328,9 @@ msgstr "Тип прошивки"
 msgid "first"
 msgstr "перший"
 
+msgid "First layer"
+msgstr "Перший шар"
+
 msgid "First layer bed temperature"
 msgstr "Температура столу на першому шарі"
 
@@ -2603,6 +2339,9 @@ msgstr "Висота першого шару"
 
 msgid "First layer nozzle temperature"
 msgstr "Температура сопла на першому шарі"
+
+msgid "First layer speed"
+msgstr "Швидкість першого шару"
 
 msgid "First layer volumetric"
 msgstr "Об'єм першого шару"
@@ -2631,8 +2370,14 @@ msgstr "Триває прошивка. Будь ласка, не від'єдну
 msgid "Flashing succeeded!"
 msgstr "Прошивка вдалася!"
 
+msgid "Flow"
+msgstr "Потік"
+
 msgid "Flow rate"
 msgstr "Швидкість потоку"
+
+msgid "Font size"
+msgstr "Розмір шрифту"
 
 msgid ""
 "for the left button: indicates a non-system (or non-default) preset,\n"
@@ -2724,6 +2469,12 @@ msgstr "г/см³"
 
 msgid "g/ml"
 msgstr "г/мл"
+
+msgid "Gap fill"
+msgstr "Заповнення розриву"
+
+msgid "General"
+msgstr "Загальне"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -2950,6 +2701,9 @@ msgstr "Випорожнити модель, щоб мати порожній і
 msgid "Hollow this object"
 msgstr "Випорожнити цей об'єкт"
 
+msgid "Hollowing"
+msgstr "Випорожнення"
+
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -2970,6 +2724,9 @@ msgstr "Зміна параметру порожнистості"
 
 msgid "Honeycomb"
 msgstr "Стільниковий"
+
+msgid "Horizontal shells"
+msgstr "Горизонтальні оболонки"
 
 msgid "Horizontal Slider"
 msgstr "Горизонтальний повзунок"
@@ -3210,19 +2967,6 @@ msgstr ""
 "буде обмежене на перших шарах."
 
 msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"Якщо ви хочете обробляти вихідний G-код через власні сценарії, просто "
-"перелічіть тут їх абсолютні шляхи. Кілька скриптів відокремте крапкою з "
-"комою. Сценарії буде передано абсолютним шляхам до файлу G-коду як перший "
-"аргумент, і вони можуть отримати доступ до параметрів конфігурації Slic3r, "
-"прочитавши змінні середовища."
-
-msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
 "code to take it into account. This option lets you specify the displacement "
 "of each extruder with respect to the first one. It expects positive "
@@ -3291,8 +3035,8 @@ msgstr "Імпорт SLА-архіву"
 msgid "Import STL (Imperial Units)"
 msgstr "Імпорт SТL (в імперських одиницях)"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "Імпорт STL/OBJ/AMF/3MF"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Імпорт STL/3MF/STEP/OBJ/AMF"
 
 msgid "Importing canceled."
 msgstr "Імпорт скасовано."
@@ -3355,6 +3099,12 @@ msgstr ""
 "збереженому пресету для поточної групи параметрів.\n"
 "Клацніть, щоб скинути всі параметри для поточної групи параметрів до "
 "останнього збереженого пресету."
+
+msgid "Infill"
+msgstr "Заповнення"
+
+msgid "infill"
+msgstr "наповнення"
 
 msgid "Infill before perimeters"
 msgstr "Заповнення перед периметрами"
@@ -3562,11 +3312,23 @@ msgstr "Не можна видалити останній екземпляр з 
 msgid "Layer"
 msgstr "\"Шар\""
 
+msgid "Layer height"
+msgstr "Висота шару"
+
+msgid "Layer height limits"
+msgstr "Межі висоти шару"
+
 msgid "Layer range Settings to modify"
 msgstr "Пакет налаштувань для діапазону висот"
 
 msgid "layers"
 msgstr "шару(ів)"
+
+msgid "Layers"
+msgstr "Шари"
+
+msgid "Layers and perimeters"
+msgstr "Шари та периметри"
 
 msgid "Left"
 msgstr "Ліворуч"
@@ -3585,6 +3347,9 @@ msgstr "Вид з лівого боку"
 
 msgid "Legend/Estimated printing time"
 msgstr "Легенда / Приблизний час друку"
+
+msgid "Length"
+msgstr "Довжина"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -3732,6 +3497,9 @@ msgstr "Файл SLA експортовано до %1%"
 msgid "Mate&rial Settings Tab"
 msgstr "Вкладка параметрів матеріалу"
 
+msgid "Material"
+msgstr "Матеріал"
+
 msgid "Material Settings"
 msgstr "Параметри матеріалу"
 
@@ -3747,6 +3515,9 @@ msgstr "Максимальна довжина мосту"
 msgid "Max bridges on a pillar"
 msgstr "Макс. мостів на стовпі"
 
+msgid "Max height"
+msgstr "Макс. висота"
+
 msgid "Max merge distance"
 msgstr "Макс. відстань об'єднання"
 
@@ -3756,9 +3527,6 @@ msgstr "Макс. відстань між стовпами"
 msgid "Max print height"
 msgstr "Максимальна висота друку"
 
-msgid "Max print speed"
-msgstr "Максимальна швидкість друку"
-
 msgid "Max volumetric slope negative"
 msgstr "Максимальний об'ємний схил негативний"
 
@@ -3767,6 +3535,9 @@ msgstr "Максимальний об'ємний нахил позитивний
 
 msgid "Max volumetric speed"
 msgstr "Максимальна об'ємна швидкість"
+
+msgid "Max width"
+msgstr "Макс. ширина"
 
 msgid "Maximal bridging distance"
 msgstr "Максимальна мостова відстань"
@@ -3895,6 +3666,9 @@ msgstr "Повідомлення для паузи друку на поточн�
 msgid "Min"
 msgstr "Мінімально"
 
+msgid "Min height"
+msgstr "Мін. висота"
+
 msgid "Min print speed"
 msgstr "Мінімальна швидкість друку"
 
@@ -3934,6 +3708,9 @@ msgstr "Мінімальна швидкість подачі"
 msgid "Minimum initial exposure time"
 msgstr "Мінімальний час початкової експозиції"
 
+msgid "Minimum shell thickness"
+msgstr "Мінімальна товщина оболонки"
+
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Мінімальна товщина верхньої / нижньої оболонки"
 
@@ -3972,6 +3749,9 @@ msgstr "Змішаний"
 
 msgid "ml"
 msgstr "мл"
+
+msgid "mm"
+msgstr "мм"
 
 msgid "mm (zero to disable)"
 msgstr "мм (0, щоб вимкнути)"
@@ -4026,6 +3806,9 @@ msgstr "модифікований"
 
 msgid "Modifier"
 msgstr "Модифікатор"
+
+msgid "Modifiers"
+msgstr "Модифікатори"
 
 msgid "money/bottle"
 msgstr "грошових одиниць/пляшку"
@@ -4239,6 +4022,9 @@ msgstr "Примітка: деякі скорочення працюють ли�
 msgid "Note: This preset will be replaced after saving"
 msgstr "Примітка: Цей пресет буде замінено після збереження"
 
+msgid "Notes"
+msgstr "Примітки"
+
 msgid "Notice"
 msgstr "Зауваження"
 
@@ -4269,6 +4055,9 @@ msgid ""
 msgstr ""
 "Кількість шарів інтерфейсу для вставки між об'єктом(ами) та підтримуючим "
 "матеріалом."
+
+msgid "Number of pixels in"
+msgstr "Кількість пікселів за віссю"
 
 msgid "Number of pixels in X"
 msgstr "Кількість пікселів за віссю X"
@@ -4394,11 +4183,20 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "Заповнити тільки там, де потрібно"
 
+msgid "Only lift Z"
+msgstr "Межі підняття Z"
+
 msgid "Only lift Z above"
 msgstr "Тільки піднімати Z"
 
 msgid "Only lift Z below"
 msgstr "Тільки опускати Z"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Перервати тільки у разі перетину периметрів"
+
+msgid "Ooze prevention"
+msgstr "Запобігання просочування"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -4453,6 +4251,12 @@ msgstr ""
 "основному це корисно для екструдерів Bowden, які страждають від протікання. "
 "Ця функція уповільнює як друк, так і генерацію G-коду."
 
+msgid "Options"
+msgstr "Параметри"
+
+msgid "Options for support material and raft"
+msgstr "Варіанти для опорного матеріалу та плоту"
+
 msgid "Options:"
 msgstr "Параметри:"
 
@@ -4468,6 +4272,9 @@ msgstr "Пошук орієнтації скасовано."
 msgid "Origin"
 msgstr "Початок координат"
 
+msgid "Other"
+msgstr "Інше"
+
 msgid "Other layers"
 msgstr "Інші шари"
 
@@ -4477,11 +4284,17 @@ msgstr "Інші постачальники"
 msgid "Output File"
 msgstr "Вихідний файл"
 
+msgid "Output file"
+msgstr "Вихідний файл"
+
 msgid "Output filename format"
 msgstr "Формат вихідного файлу"
 
 msgid "Output Model Info"
 msgstr "Інформація про вихідну модель"
+
+msgid "Output options"
+msgstr "Параметри виводу"
 
 msgid "Overhang perimeter"
 msgstr "Нависаючий периметр"
@@ -4489,8 +4302,14 @@ msgstr "Нависаючий периметр"
 msgid "Overhang threshold"
 msgstr "Порог нависання"
 
+msgid "Overlap"
+msgstr "Перекриття"
+
 msgid "P&rint Settings Tab"
 msgstr "Вкладка параметрів друку"
+
+msgid "Pad"
+msgstr "Подушка"
 
 msgid "Pad around object"
 msgstr "Подушка навколо об’єкта"
@@ -4567,6 +4386,9 @@ msgstr "Вставити з буферу обміну"
 msgid "Paste From Clipboard"
 msgstr "Вставити з буферу обміну"
 
+msgid "Pattern"
+msgstr "Шаблон"
+
 msgid "Pattern angle"
 msgstr "Кут шаблону"
 
@@ -4581,6 +4403,9 @@ msgstr "Пауза"
 
 msgid "Pause print (\"%1%\")"
 msgstr "Пауза друку (\"%1%\")"
+
+msgid "Pause Print G-code"
+msgstr "G-код для паузи друку"
 
 msgid "Percentage"
 msgstr "Процент"
@@ -4639,6 +4464,9 @@ msgstr "Розмістіть необхідні деталі в гніздах �
 
 msgid "Place on face"
 msgstr "Поверхнею на стіл"
+
+msgid "Plater"
+msgstr "Платер"
 
 msgid "Please check your object list before preset changing."
 msgstr ""
@@ -4725,6 +4553,9 @@ msgstr ""
 "Натисніть, щоб мати 5-кратне прискорення під час руху повзунка\n"
 "за допомогою клавіш зі стрілками або колеса миші"
 
+msgid "Preview"
+msgstr "Попередній перегляд"
+
 msgid "Preview hollowed and drilled model"
 msgstr "Попередній перегляд порожнистої та просвердленої моделі"
 
@@ -4753,6 +4584,9 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "Діаметри друку"
 
+msgid "Print Host upload"
+msgstr "Завантаження хоста друку"
+
 msgid "Print host upload queue"
 msgstr "Черга завантаження хоста друку"
 
@@ -4770,6 +4604,9 @@ msgstr "Параметри друку"
 
 msgid "Print Settings Tab"
 msgstr "Вкладка параметрів друку"
+
+msgid "Print speed override"
+msgstr "Перевизначення швидкості друку"
 
 msgid "Print&er Settings Tab"
 msgstr "Вкладка параметрів принтеру"
@@ -4791,6 +4628,9 @@ msgstr "модель принтеру"
 
 msgid "Printer notes"
 msgstr "Примітки принтера"
+
+msgid "Printer scaling correction"
+msgstr "Корекція масштабування принтера"
 
 msgid "Printer Settings"
 msgstr "Параметри принтеру"
@@ -4830,6 +4670,9 @@ msgstr ""
 msgid "Processing %s"
 msgstr "Обробка %s"
 
+msgid "Profile dependencies"
+msgstr "Залежності профілю"
+
 msgid "Profile:"
 msgstr "Профіль:"
 
@@ -4851,6 +4694,9 @@ msgstr "Таблиця обсягів очищення"
 msgid "Purpose of Machine Limits"
 msgstr "Призначення механічних обмежень"
 
+msgid "Quality"
+msgstr "Якість"
+
 msgid "Quality / Speed"
 msgstr "Якість / Швидкість"
 
@@ -4871,6 +4717,9 @@ msgstr "Вийти, я зараз перенесу свої дані"
 
 msgid "Radius"
 msgstr "Радіус"
+
+msgid "Raft"
+msgstr "Пліт"
 
 msgid "Raft layers"
 msgstr "Плоскі шари"
@@ -4968,6 +4817,9 @@ msgstr[2] "Повторити %1$d дій"
 
 msgid "Redo History"
 msgstr "Повторити історію"
+
+msgid "Reducing printing time"
+msgstr "Зниження часу друку"
 
 msgid "Refresh Printers"
 msgstr "Оновити принтери"
@@ -5161,6 +5013,9 @@ msgstr "Кількість переривань перед чищенням"
 msgid "Retract on layer change"
 msgstr "Переривання на зміну шарів"
 
+msgid "Retraction"
+msgstr "Переривання"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr "Переривання не спрацьовує, коли переміщення коротше за цю довжину."
@@ -5170,6 +5025,14 @@ msgstr "Довжина переривання"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Довжина переривання (зміна інструмента)"
+
+msgid "Retraction Speed"
+msgstr "Швидкість переривання"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Переривання при відключенні інструмента (додаткові налаштування для "
+"налагодження мульти-екструдерів)"
 
 msgid "Retractions"
 msgstr "Переривання"
@@ -5341,6 +5204,9 @@ msgstr ""
 msgid "Seam painting"
 msgstr "Малювання шва"
 
+msgid "Seam position"
+msgstr "Позиція шва"
+
 msgid "Seam preferred direction"
 msgstr "Бажаний напрямок шва"
 
@@ -5486,6 +5352,9 @@ msgstr "Надіслати на принтер"
 
 msgid "Seq."
 msgstr "Послід."
+
+msgid "Sequential printing"
+msgstr "Послідовне друкування"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "Послідовний повзунок застосовується лише до верхнього шару"
@@ -5735,8 +5604,8 @@ msgstr "Показати / Сховати легенду та приблизни
 msgid "Show/Hide object/instance labels"
 msgstr "Показати/сховати мітки об’єктів/екземплярів"
 
-msgid "Simple mode"
-msgstr "Простий режим"
+msgid "Simple"
+msgstr "Простий"
 
 msgid "Single extruder MM setup"
 msgstr "Налаштування MM екструдера"
@@ -5761,8 +5630,20 @@ msgstr "Параметри екструдеру в багато-екструде
 msgid "Single instance mode"
 msgstr "Режим одного екземпляру PrusaSlicer"
 
+msgid "Size"
+msgstr "Розмір"
+
+msgid "Size and coordinates"
+msgstr "Розмір і координати"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Розмір прямокутної подложки за X та Y."
+
+msgid "Size:"
+msgstr "Розмір:"
+
+msgid "Skirt"
+msgstr "Плінтус"
 
 msgid "Skirt and brim"
 msgstr "Плінтус та край"
@@ -5802,13 +5683,6 @@ msgstr "Точки SLA-підтримки"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Виявлено SLA-підтримки за межами області друку."
-
-msgid ""
-"Slic3r can upload G-code files to a printer host. This field must contain "
-"the kind of the host."
-msgstr ""
-"Slic3r може завантажувати файли G-коду на хост принтера. Це поле повинно "
-"містити тип хоста."
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -5861,6 +5735,9 @@ msgstr ""
 msgid "Sliced Info"
 msgstr "Інформація з нарізання"
 
+msgid "Slicing"
+msgstr "Нарізання"
+
 msgid "Slicing complete"
 msgstr "Нарізання завершено"
 
@@ -5906,11 +5783,17 @@ msgstr "Згладжування"
 msgid "Snapshot name"
 msgstr "Назва знімку"
 
+msgid "Solid"
+msgstr "Суцільна"
+
 msgid "Solid "
 msgstr "Суцільна "
 
 msgid "Solid infill"
 msgstr "Суцільне наповнення"
+
+msgid "solid infill"
+msgstr "суцільне наповнення"
 
 msgid "Solid infill every"
 msgstr "Суцільне наповнення кожні"
@@ -5920,6 +5803,9 @@ msgstr "Екструдер суцільних наповнень"
 
 msgid "Solid infill threshold area"
 msgstr "Порогова площа суцільного наповнення"
+
+msgid "Solid layers"
+msgstr "Суцільні шари"
 
 msgid "Soluble material"
 msgstr "Розчинний матеріал"
@@ -5959,6 +5845,9 @@ msgstr ""
 "Деякі принтери або налаштування принтера можуть мати труднощі з друкуванням "
 "шарів змінної висоти. Увімкнено за умовчанням."
 
+msgid "Spacing"
+msgstr "Проміжки"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Відстань між інтерфейсними лініями. Встановити 0, щоб отримати надійний "
@@ -5967,8 +5856,17 @@ msgstr ""
 msgid "Spacing between support material lines."
 msgstr "Відстань між лініями підтримуючого матеріалу."
 
+msgid "Speed"
+msgstr "Швидкість"
+
 msgid "Speed (mm/s)"
 msgstr "Швидкість (мм/с)"
+
+msgid "Speed for non-print moves"
+msgstr "Швидкість недрукарських рухів"
+
+msgid "Speed for print moves"
+msgstr "Швидкість друкарських рухів"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "Швидкість рухів пересування (стрибки між далекими точками екструзії)."
@@ -6035,6 +5933,9 @@ msgstr "Почати новий проект"
 
 msgid "Start at height"
 msgstr "Початкова висота"
+
+msgid "Start G-code"
+msgstr "Початок G-коду"
 
 msgid "Start new slicing process"
 msgstr "Почати новий процес нарізання"
@@ -6131,8 +6032,14 @@ msgstr "Примусова підтримка"
 msgid "Support Generator"
 msgstr "Створення підтримки"
 
+msgid "Support head"
+msgstr "Головка підтримки"
+
 msgid "support interface"
 msgstr "інтерфейс підтримки"
+
+msgid "Support material"
+msgstr "Підтримка"
 
 msgid "Support material interface"
 msgstr "Інтерфейс підтримуючого матеріалу"
@@ -6146,11 +6053,17 @@ msgstr "Підтримки тільки на столі"
 msgid "Support parameter change"
 msgstr "Зміна параметрів підтримки"
 
+msgid "Support pillar"
+msgstr "Стовп підтримки"
+
 msgid "Support points density"
 msgstr "Щільність точок підтримки"
 
 msgid "Support points edit"
 msgstr "Редагування точок підтримки"
+
+msgid "Supports"
+msgstr "Підтримки"
 
 msgid "supports and pad"
 msgstr "підтримки та подушка"
@@ -6194,6 +6107,9 @@ msgstr "Перейти в режим редагування"
 
 msgid "Switch to Settings"
 msgstr "Перейдіть до налаштувань"
+
+msgid "Switch to the %s mode"
+msgstr "Перейти до режиму %s"
 
 msgid "Switching Presets: Unsaved Changes"
 msgstr "Перемикання пресетів: незбережені зміни"
@@ -6251,6 +6167,9 @@ msgstr "Варіація температури"
 
 msgid "Temperatures"
 msgstr "Температури"
+
+msgid "Template Custom G-code"
+msgstr "Шаблон власного G-коду"
 
 msgid "Test"
 msgstr "Перевірити"
@@ -6666,18 +6585,6 @@ msgid "This %s version: %s"
 msgstr "%s версії %s"
 
 msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-"Цей експериментальний параметр використовується для обмеження швидкості "
-"зміни швидкості екструзії. Значення 1,8 мм³/с² гарантує, що зміна швидкості "
-"екструзії 1,8 мм³/с (ширина екструзії 0,45 мм, висота екструзії 0,2 мм, "
-"швидкість подачі 20 мм/с) до 5,4 мм³/с (подача 60 мм/с) займе принаймні 2 "
-"секунди."
-
-msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
 "handle the retraction. This is only supported in recent Marlin."
 msgstr ""
@@ -6695,20 +6602,6 @@ msgstr ""
 "визначити ширину однієї стіни. Звичайні значення - від 0,9 до 1,1. Якщо ви "
 "вважаєте, що його потрібно більше змінити, перевірте діаметр філаменту та E "
 "кроки прошивки ."
-
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires a single perimeter, "
-"no infill, no top solid layers and no support material. You can still set "
-"any number of bottom solid layers as well as skirt/brim loops. It won't work "
-"when printing more than one single object."
-msgstr ""
-"Ця функція буде поступово підвищувати Z протягом друку одного-стінного "
-"об'єкта для уникнення будь-якого видимого шву. Цей параметр вимагає "
-"одношарового периметру, відсутнє наповнення, відсутність верхніх суцільних "
-"шарів і відсутність матеріалу підтримки. Ви все ще можете встановити будь-"
-"яку кількість нижніх твердих шарів, а також спідниці краю. Це не спрацює при "
-"друку більше, ніж одного об'єкта."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -6738,12 +6631,6 @@ msgid ""
 msgstr ""
 "Цей прапорець дозволяє автоматичну логіку охолодження, яка регулює швидкість "
 "друку та швидкість вентиляції відповідно до часу друку шару."
-
-msgid "This G-code will be used as a code for the color change"
-msgstr "Цей G-код буде використовуватися як код для зміни кольору"
-
-msgid "This G-code will be used as a code for the pause print"
-msgstr "Цей G-код буде використовуватися як код для паузи друку"
 
 msgid "This G-code will be used as a custom code"
 msgstr "Цей G-код буде використовуватися як власний код"
@@ -6783,17 +6670,6 @@ msgid ""
 msgstr ""
 "Ця операція незворотна.\n"
 "Ви хочете продовжити?"
-
-msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"Ця опція визначає кількість периметрів для кожного шару. Зверніть увагу, що "
-"Slic3r може автоматично збільшувати це число, коли виявляє похилі поверхні, "
-"які отримують вигоду від більшої кількості периметрів, якщо опція «Додаткові "
-"периметри» увімкнена."
 
 msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
@@ -6882,6 +6758,12 @@ msgstr ""
 "Нитки використовуються для паралелізації довготривалих завдань. Оптимальна "
 "кількість ниток трохи перевищує кількість доступних ядер / процесорів."
 
+msgid "Tilt"
+msgstr "Нахил"
+
+msgid "Tilt time"
+msgstr "Час нахилу"
+
 msgid "Time"
 msgstr "Час"
 
@@ -6950,6 +6832,9 @@ msgstr "Інструмент"
 msgid "Tool #"
 msgstr "Інструмент №"
 
+msgid "Tool change G-code"
+msgstr "G-код зміни інструменту"
+
 msgid "Tool changes"
 msgstr "Зміна інструменту"
 
@@ -6958,6 +6843,12 @@ msgstr "Маркер інструменту"
 
 msgid "Tool position"
 msgstr "Позиція інструменту"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "Параметри зміни інструменту в одно-екструдерному ММ-принтері"
+
+msgid "Top"
+msgstr "Вгорі"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -7014,6 +6905,9 @@ msgstr "Перемістити"
 msgid "Translation"
 msgstr "Переміщення"
 
+msgid "Travel"
+msgstr "Пересування"
+
 msgid "Triangles"
 msgstr "Трикутники"
 
@@ -7024,6 +6918,9 @@ msgstr ""
 "Спробуйте відновити будь-які нерізноманітні сітки (ця опція неявно додається "
 "кожного разу, коли нам потрібно нарізати модель для виконання запитуваної "
 "дії)."
+
+msgid "Type"
+msgstr "Тип"
 
 msgid "Type here the name of your printer device"
 msgstr "Введіть тут назву вашого принтера"
@@ -7297,6 +7194,12 @@ msgstr "Версія"
 msgid "version"
 msgstr "версія"
 
+msgid "Version:"
+msgstr "Версія:"
+
+msgid "Vertical shells"
+msgstr "Вертикальні оболонки"
+
 msgid "Vertical Slider"
 msgstr "Вертикальний повзунок"
 
@@ -7363,9 +7266,6 @@ msgstr "Ласкаво просимо"
 
 msgid "Welcome to the %s Configuration Assistant"
 msgstr "Ласкаво просимо до Асистента конфігурації %s"
-
-msgid "Welcome to the %s Configuration Wizard"
-msgstr "Ласкаво просимо до Майстру конфігурації %s"
 
 msgid "What would you like to do with \"%1%\" preset after saving?"
 msgstr "Що ви хочете зробити із пресетом \"%1%\" після збереження?"
@@ -7489,11 +7389,17 @@ msgstr "Витирати до наповнення цього об'єкту"
 msgid "Wipe Tower"
 msgstr "Вежа витирання"
 
+msgid "Wipe tower"
+msgstr "Вежа витирання"
+
 msgid "wipe tower"
 msgstr "вежа витирання"
 
 msgid "Wipe tower - Purging volume adjustment"
 msgstr "Вежа витирання - Регулювання об'єму продувки"
+
+msgid "Wipe tower parameters"
+msgstr "Параметри вежі витирання"
 
 msgid "Wipe tower rotation angle"
 msgstr "Кут повороту вежі витирання"
@@ -7680,6 +7586,136 @@ msgstr ""
 
 msgid "°C"
 msgstr "°C"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"%s виявив помилку. Ймовірно, це було пов’язано з закінченням пам’яті. Якщо "
+"ви впевнені, що у вашій системі достатньо оперативної пам'яті, це також може "
+"бути помилкою, і ми будемо раді, якщо ви нам про це повідомите."
+
+msgid "Advanced mode"
+msgstr "Розширений режим"
+
+msgid "Cannot overwrite an external profile."
+msgstr "Неможливо замінити сторонній профіль."
+
+msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "Виберіть один чи кілька файлів (STL/OBJ/AMF/PRUSA):"
+
+msgid "Configuration &Wizard"
+msgstr "Майстер конфігурації"
+
+msgid "Configuration Wizard"
+msgstr "Майстер конфігурації"
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr "Щільність внутрішнього заповнення, виражена в діапазоні 0% - 100%."
+
+msgid "Expert mode"
+msgstr "Експертний режим"
+
+msgid "Export current plate as STL"
+msgstr "Експорт поточної пластини як STL"
+
+msgid "Export current plate as STL including supports"
+msgstr "Експорт поточного столу як STL, включаючи підтримку"
+
+msgid "Export Plate as &STL"
+msgstr "Експорт столу як STL"
+
+msgid "Export Plate as STL &Including Supports"
+msgstr "Експорт столу як STL, включаючи підтримку"
+
+msgid ""
+"Fan speed will be ramped up linearly from zero at layer "
+"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" will be ignored if lower than "
+"\"disable_fan_first_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
+msgstr ""
+"Швидкість вентилятора буде збільшена лінійно з нуля на шарі "
+"\"disable_fan_first_layers\" до максимальної на шарі \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" буде проігноровано, якщо нижче "
+"\"disable_fan_first_layers\", і в цьому випадку вентилятор буде працювати з "
+"максимально дозволеною швидкістю на рівні \"disable_fan_first_layers\" + 1."
+
+msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
+msgstr ""
+"Якщо ви хочете обробляти вихідний G-код через власні сценарії, просто "
+"перелічіть тут їх абсолютні шляхи. Кілька скриптів відокремте крапкою з "
+"комою. Сценарії буде передано абсолютним шляхам до файлу G-коду як перший "
+"аргумент, і вони можуть отримати доступ до параметрів конфігурації Slic3r, "
+"прочитавши змінні середовища."
+
+msgid "Import STL/OBJ/AM&F/3MF"
+msgstr "Імпорт STL/OBJ/AMF/3MF"
+
+msgid "Max print speed"
+msgstr "Максимальна швидкість друку"
+
+msgid "Simple mode"
+msgstr "Простий режим"
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
+msgstr ""
+"Slic3r може завантажувати файли G-коду на хост принтера. Це поле повинно "
+"містити тип хоста."
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
+"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
+"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"Цей експериментальний параметр використовується для обмеження швидкості "
+"зміни швидкості екструзії. Значення 1,8 мм³/с² гарантує, що зміна швидкості "
+"екструзії 1,8 мм³/с (ширина екструзії 0,45 мм, висота екструзії 0,2 мм, "
+"швидкість подачі 20 мм/с) до 5,4 мм³/с (подача 60 мм/с) займе принаймні 2 "
+"секунди."
+
+msgid ""
+"This feature will raise Z gradually while printing a single-walled object in "
+"order to remove any visible seam. This option requires a single perimeter, "
+"no infill, no top solid layers and no support material. You can still set "
+"any number of bottom solid layers as well as skirt/brim loops. It won't work "
+"when printing more than one single object."
+msgstr ""
+"Ця функція буде поступово підвищувати Z протягом друку одного-стінного "
+"об'єкта для уникнення будь-якого видимого шву. Цей параметр вимагає "
+"одношарового периметру, відсутнє наповнення, відсутність верхніх суцільних "
+"шарів і відсутність матеріалу підтримки. Ви все ще можете встановити будь-"
+"яку кількість нижніх твердих шарів, а також спідниці краю. Це не спрацює при "
+"друку більше, ніж одного об'єкта."
+
+msgid "This G-code will be used as a code for the color change"
+msgstr "Цей G-код буде використовуватися як код для зміни кольору"
+
+msgid "This G-code will be used as a code for the pause print"
+msgstr "Цей G-код буде використовуватися як код для паузи друку"
+
+msgid ""
+"This option sets the number of perimeters to generate for each layer. Note "
+"that Slic3r may increase this number automatically when it detects sloping "
+"surfaces which benefit from a higher number of perimeters if the Extra "
+"Perimeters option is enabled."
+msgstr ""
+"Ця опція визначає кількість периметрів для кожного шару. Зверніть увагу, що "
+"Slic3r може автоматично збільшувати це число, коли виявляє похилі поверхні, "
+"які отримують вигоду від більшої кількості периметрів, якщо опція «Додаткові "
+"периметри» увімкнена."
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Ласкаво просимо до Майстру конфігурації %s"
 
 msgid "Fill pattern"
 msgstr "Шаблон заповнення"
@@ -11580,9 +11616,6 @@ msgstr "Проста чорно-біла тема"
 msgid "Single"
 msgstr "Одинарний"
 
-msgid "Size:"
-msgstr "Розмір:"
-
 msgid "Skip"
 msgstr "Пропустити"
 
@@ -13183,17 +13216,11 @@ msgstr ""
 "параметрах принтера.\n"
 "Ці параметри будуть доступні у налаштуваннях фізичних принтерів."
 
-msgid "Simple"
-msgstr "Простий"
-
 msgid "Simple View Mode"
 msgstr "Простий режим перегляду"
 
 msgid "Advanced View Mode"
 msgstr "Розширений режим перегляду"
-
-msgid "Expert"
-msgstr "Експерт"
 
 msgid "Expert View Mode"
 msgstr "Режим перегляду Експерт"
@@ -13632,12 +13659,6 @@ msgstr "PrusaSlicer запам'ятає ваші дії."
 
 msgid "For more information please visit our wiki page:"
 msgstr "Для отримання додаткової інформації відвідайте нашу wiki-сторінку:"
-
-msgid "Switch to the %s mode"
-msgstr "Перейти до режиму %s"
-
-msgid "Current mode is %s"
-msgstr "Поточний режим - %s"
 
 msgid "Connection to AstroBox works correctly."
 msgstr "Підключення до OctoPrint працює правильно."
@@ -14691,14 +14712,8 @@ msgstr ""
 "вікно PrusaSlicer. Замінює значення конфігурації \"single_instance\" у "
 "налаштуваннях програми."
 
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Виберіть один чи кілька файлів (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
 msgid "Open project AMF/3MF with config, clear plater"
 msgstr "Відкрити проект AMF / 3MF з конфігурацією, очистити стіл"
 
 msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
 msgstr "Імпорт STL/3MF/STEP/OBJ/AMF без конфігурації зі збереженням платеру"
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "Імпорт STL/3MF/STEP/OBJ/AMF"

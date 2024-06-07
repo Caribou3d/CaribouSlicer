@@ -530,12 +530,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2800
 #Similar to me: after last perimeter
-# 6    changes: external perimeter
-#  translation: Perímetro externo
 # 6    changes: External perimeter
 #  translation: Perímetro externo
-# 7    changes: external perimeters
-#  translation: perímetros externos
+# 6    changes: external perimeter
+#  translation: Perímetro externo
+# 7    changes: External perimeters
+#  translation: Perímetros externos
 msgid "after last perimeter"
 msgstr ""
 
@@ -682,10 +682,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: perímetros externos
 # 9    changes: External perimeters
 #  translation: Perímetros externos
+# 9    changes: external perimeters
+#  translation: perímetros externos
 # 9    changes: Small perimeters
 #  translation: Perímetro pequeno
 msgid "Also for all perimeters"
@@ -925,10 +925,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: Altura da camada
 # 5    changes: First layer height
 #  translation: Altura da primeira camada
+# 5    changes: Layer height
+#  translation: Altura da camada
 msgid "Base Layer height"
 msgstr ""
 
@@ -1268,6 +1268,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: Largura máx
 msgid "Cap with"
 msgstr ""
 
@@ -1712,8 +1715,8 @@ msgstr ""
 #  translation: A conexão com o Duet funciona corretamente.
 # 7    changes: Connection to AstroBox works correctly.
 #  translation: A conexão com o AstroBox funciona corretamente.
-# 8    changes: Connection to Prusa SL1 works correctly.
-#  translation: A conexão com o Prusa SL1 funciona corretamente.
+# 8    changes: Connection to PrusaLink works correctly.
+#  translation: A conexão com o PrusaLink funciona corretamente.
 msgid "Connection to %s works correctly."
 msgstr ""
 
@@ -2175,6 +2178,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Direção
+# 4    changes: Version:
+#  translation: Versão:
 msgid "Dimension:"
 msgstr ""
 
@@ -3200,12 +3205,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1709
 #Similar to me: First layer extruder
-# 7    changes: First layer speed
-#  translation: Velocidade da primeira camada
 # 7    changes: First layer expansion
 #  translation: Expansão da primeira camada
-# 8    changes: First layer height
-#  translation: Altura da primeira camada
+# 7    changes: First layer speed
+#  translation: Velocidade da primeira camada
+# 8    changes: First layer density
+#  translation: Densidade da primeira camada
 msgid "First layer extruder"
 msgstr ""
 
@@ -3257,12 +3262,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: Velocidade da primeira camada
 # 5    changes: First layer height
 #  translation: Altura da primeira camada
-# 6    changes: First layer
-#  translation: Primeira camada
+# 5    changes: First layer speed
+#  translation: Velocidade da primeira camada
+# 6    changes: Display width
+#  translation: Largura do display
 msgid "First layer width"
 msgstr ""
 
@@ -3362,10 +3367,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Camadas e perímetros
-# 8    changes: external perimeters
-#  translation: perímetros externos
 # 8    changes: External perimeters
 #  translation: Perímetros externos
+# 8    changes: external perimeters
+#  translation: perímetros externos
 msgid "for round perimeters"
 msgstr ""
 
@@ -3403,10 +3408,10 @@ msgstr ""
 #Similar to me: From filament
 # 4    changes: Used filament
 #  translation: Filamento utilizado
-# 5    changes: Filament
-#  translation: Filamento
 # 5    changes: filament
 #  translation: filamento
+# 5    changes: Filament
+#  translation: Filamento
 msgid "From filament"
 msgstr ""
 
@@ -4091,10 +4096,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: Preenchimento
 # 2    changes: &File
 #  translation: &Arquivo
+# 2    changes: Infill
+#  translation: Preenchimento
 # 2    changes: File
 #  translation: Arquivo
 msgid "IFill"
@@ -4409,12 +4414,12 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Preview.cpp:275 src/libslic3r/ExtrusionEntity.cpp:327
 #: src/libslic3r/ExtrusionEntity.cpp:355
 #Similar to me: Internal perimeter
-# 2    changes: external perimeter
-#  translation: Perímetro externo
 # 2    changes: External perimeter
 #  translation: Perímetro externo
-# 3    changes: external perimeters
-#  translation: perímetros externos
+# 2    changes: external perimeter
+#  translation: Perímetro externo
+# 3    changes: External perimeters
+#  translation: Perímetros externos
 msgid "Internal perimeter"
 msgstr ""
 
@@ -4434,11 +4439,11 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: perímetros externos
 # 2    changes: External perimeters
 #  translation: Perímetros externos
-# 3    changes: external perimeter
+# 2    changes: external perimeters
+#  translation: perímetros externos
+# 3    changes: External perimeter
 #  translation: Perímetro externo
 msgid "Internal perimeters"
 msgstr ""
@@ -4448,10 +4453,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Perímetros externos primeiro
-# 8    changes: external perimeters
-#  translation: perímetros externos
 # 8    changes: External perimeters
 #  translation: Perímetros externos
+# 8    changes: external perimeters
+#  translation: perímetros externos
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -5037,10 +5042,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: Altura da camada
 # 5    changes: First layer height
 #  translation: Altura da primeira camada
+# 5    changes: Layer height
+#  translation: Altura da camada
 # 5    changes: Max print height
 #  translation: Altura máxima de impressão
 msgid "Max layer height"
@@ -5059,6 +5064,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: Altura máx
+# 4    changes: Max width
+#  translation: Largura máx
 # 4    changes: Max height:
 #  translation: Altura máx:
 msgid "Max length"
@@ -5431,10 +5440,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: Altura da primeira camada
-# 5    changes: Layer height
-#  translation: Altura da camada
 # 5    changes: Display height
 #  translation: Altura do display
+# 5    changes: Layer height
+#  translation: Altura da camada
 msgid "Min layer height"
 msgstr ""
 
@@ -5451,6 +5460,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: Altura mín
 # 4    changes: Min width
 #  translation: Largura mín
 # 4    changes: Min height:
@@ -6950,10 +6961,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: Altura da primeira camada
-# 6    changes: Layer height
-#  translation: Altura da camada
 # 6    changes: Initial layer height
 #  translation: Altura da camada inicial
+# 6    changes: Layer height
+#  translation: Altura da camada
 msgid "Raft layer height"
 msgstr ""
 
@@ -7079,12 +7090,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: Camadas e perímetros
-# 9    changes: external perimeters
-#  translation: perímetros externos
 # 9    changes: External perimeters
 #  translation: Perímetros externos
+# 9    changes: external perimeters
+#  translation: perímetros externos
+# 9    changes: Layers and perimeters
+#  translation: Camadas e perímetros
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -7932,10 +7943,10 @@ msgstr ""
 #Similar to me: Sparse infill
 # 5    changes: Bridge infill
 #  translation: Preenchimento de pontes
-# 5    changes: Solid infill
-#  translation: Preenchimento sólido
 # 5    changes: Smart fill
 #  translation: Preenchimento inteligente
+# 5    changes: Solid infill
+#  translation: Preenchimento sólido
 msgid "Sparse infill"
 msgstr ""
 
@@ -8182,10 +8193,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Bloqueador de suporte
+# 6    changes: Support Enforcer
+#  translation: Reforçador de suporte
 # 6    changes: Support head
 #  translation: Cabeça de suporte
-# 6    changes: Support pillar
-#  translation: Pilar de suporte
 msgid "Support & Other"
 msgstr ""
 
@@ -8231,8 +8242,8 @@ msgstr ""
 #  translation: interface de suporte
 # 9    changes: Interface pattern
 #  translation: Padrão de interface
-# 10   changes: Top interface layers
-#  translation: Camadas de interface superiores
+# 10   changes: Bottom interface layers
+#  translation: Camadas de interface inferiores
 msgid "Support interface pattern"
 msgstr ""
 
@@ -8254,10 +8265,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: interface de suporte
-# 6    changes: Support material
-#  translation: Material de suporte
 # 6    changes: Support Enforcer
 #  translation: Reforçador de suporte
+# 6    changes: Support material
+#  translation: Material de suporte
 msgid "Support interfaces"
 msgstr ""
 
@@ -8291,8 +8302,8 @@ msgstr ""
 #  translation: Interface do material de suporte
 # 9    changes: Support material
 #  translation: Material de suporte
-# 10   changes: support material
-#  translation: Material de suporte
+# 10   changes: Support base diameter
+#  translation: Diâmetro base do suporte
 msgid "Support material extruder"
 msgstr ""
 
@@ -8341,8 +8352,8 @@ msgstr ""
 #  translation: Material de suporte
 # 5    changes: Support pillar
 #  translation: Pilar de suporte
-# 6    changes: Support head
-#  translation: Cabeça de suporte
+# 6    changes: Support Blocker
+#  translation: Bloqueador de suporte
 msgid "Support pattern"
 msgstr ""
 
@@ -8363,10 +8374,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: Cabeça de suporte
-# 5    changes: Supports
-#  translation: Suportes
 # 5    changes: Support Cubic
 #  translation: Pilar de suporte
+# 5    changes: Supports
+#  translation: Suportes
 msgid "Support speed"
 msgstr ""
 
@@ -8487,10 +8498,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: Inclinar
 # 2    changes: &File
 #  translation: &Arquivo
+# 2    changes: Tilt
+#  translation: Inclinar
 # 2    changes: File
 #  translation: Arquivo
 msgid "TFill"
@@ -10268,8 +10279,8 @@ msgstr ""
 #  translation: Preenchimento de vão
 # 4    changes: infill
 #  translation: preenchimento
-# 4    changes: solid infill
-#  translation: preenchimento sólido
+# 4    changes: Solid infill
+#  translation: Preenchimento sólido
 msgid "top infill"
 msgstr ""
 
@@ -10287,12 +10298,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: Camadas sólidas
 # 4    changes: Add Layers
 #  translation: Adicionar camadas
 # 4    changes: layers
 #  translation: camadas
+# 4    changes: Raft layers
+#  translation: Camadas da estrado
 msgid "Top layers"
 msgstr ""
 
@@ -10848,10 +10859,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: Torre de limpeza
 # 4    changes: Fan speed
 #  translation: Velocidade do ventoinha
+# 4    changes: Print speed
+#  translation: Velocidade de impressão
 # 4    changes: Wipe Tower
 #  translation: Torre de limpeza
 msgid "Wipe speed"

@@ -524,9 +524,9 @@ msgstr ""
 #Similar to me: after last perimeter
 # 6    changes: External perimeter
 #  translation: 最外周
-# 7    changes: external perimeters
-#  translation: 最外周
 # 7    changes: External perimeters
+#  translation: 最外周
+# 7    changes: external perimeters
 #  translation: 最外周
 msgid "after last perimeter"
 msgstr ""
@@ -674,9 +674,9 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: 最外周
 # 9    changes: External perimeters
+#  translation: 最外周
+# 9    changes: external perimeters
 #  translation: 最外周
 # 9    changes: Small perimeters
 #  translation: 短い外周
@@ -914,10 +914,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: 積層ピッチ
 # 5    changes: First layer height
 #  translation: 最初のレイヤー高さ
+# 5    changes: Layer height
+#  translation: 積層ピッチ
 msgid "Base Layer height"
 msgstr ""
 
@@ -1252,6 +1252,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: 置換先
 msgid "Cap with"
 msgstr ""
 
@@ -2131,6 +2134,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: 方向
+# 4    changes: Version:
+#  translation: バージョン:
 msgid "Dimension:"
 msgstr ""
 
@@ -3184,10 +3189,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1709
 #Similar to me: First layer extruder
-# 7    changes: First layer speed
-#  translation: 最初のレイヤーの速度
 # 7    changes: First layer expansion
 #  translation: 第1層の拡張
+# 7    changes: First layer speed
+#  translation: 最初のレイヤーの速度
 # 8    changes: First layer density
 #  translation: ファーストレイヤーの密度
 msgid "First layer extruder"
@@ -3241,12 +3246,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: 最初のレイヤーの速度
 # 5    changes: First layer height
 #  translation: 最初のレイヤー高さ
-# 6    changes: First layer
-#  translation: 1番目のレイヤー
+# 5    changes: First layer speed
+#  translation: 最初のレイヤーの速度
+# 6    changes: Display width
+#  translation: 画面の幅
 msgid "First layer width"
 msgstr ""
 
@@ -3329,9 +3334,9 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: レイヤーと外周
-# 8    changes: external perimeters
-#  translation: 最外周
 # 8    changes: External perimeters
+#  translation: 最外周
+# 8    changes: external perimeters
 #  translation: 最外周
 msgid "for round perimeters"
 msgstr ""
@@ -3367,9 +3372,9 @@ msgstr ""
 #Similar to me: From filament
 # 4    changes: Used filament
 #  translation: 使用済みフィラメント
-# 5    changes: Filament
-#  translation: フィラメント
 # 5    changes: filament
+#  translation: フィラメント
+# 5    changes: Filament
 #  translation: フィラメント
 msgid "From filament"
 msgstr ""
@@ -4090,10 +4095,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: インフィル
 # 2    changes: &File
 #  translation: ファイル(&F)
+# 2    changes: Infill
+#  translation: インフィル
 # 2    changes: File
 #  translation: ファイル
 msgid "IFill"
@@ -4408,9 +4413,9 @@ msgstr ""
 #Similar to me: Internal perimeter
 # 2    changes: External perimeter
 #  translation: 最外周
-# 3    changes: external perimeters
-#  translation: 最外周
 # 3    changes: External perimeters
+#  translation: 最外周
+# 3    changes: external perimeters
 #  translation: 最外周
 msgid "Internal perimeter"
 msgstr ""
@@ -4431,9 +4436,9 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: 最外周
 # 2    changes: External perimeters
+#  translation: 最外周
+# 2    changes: external perimeters
 #  translation: 最外周
 # 3    changes: External perimeter
 #  translation: 最外周
@@ -4445,9 +4450,9 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: 最外周を先にプリント
-# 8    changes: external perimeters
-#  translation: 最外周
 # 8    changes: External perimeters
+#  translation: 最外周
+# 8    changes: external perimeters
 #  translation: 最外周
 msgid "Internal perimeters speed"
 msgstr ""
@@ -5040,10 +5045,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: 積層ピッチ
 # 5    changes: First layer height
 #  translation: 最初のレイヤー高さ
+# 5    changes: Layer height
+#  translation: 積層ピッチ
 # 5    changes: Max print height
 #  translation: 最大のプリント高さ
 msgid "Max layer height"
@@ -5062,6 +5067,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: ウエイト (&W)
+# 4    changes: Max width
+#  translation: 置換先
 # 4    changes: Max height:
 #  translation: ウエイト (&W):
 msgid "Max length"
@@ -5434,10 +5443,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: 最初のレイヤー高さ
-# 5    changes: Layer height
-#  translation: 積層ピッチ
 # 5    changes: Display height
 #  translation: ディスプレイの高さ
+# 5    changes: Layer height
+#  translation: 積層ピッチ
 msgid "Min layer height"
 msgstr ""
 
@@ -5454,6 +5463,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: フォントのウエイト(&W)
 # 4    changes: Min height:
 #  translation: フォントのウエイト(&W):
 msgid "Min length"
@@ -5475,6 +5486,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2841 src/libslic3r/PrintConfig.cpp:5845
 #Similar to me: Min width
+# 2    changes: Max width
+#  translation: 置換先
 # 3    changes: Brim width
 #  translation: ブリム幅
 # 3    changes: Max width:
@@ -5663,10 +5676,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2050 src/libslic3r/PrintConfig.cpp:2059
 #Similar to me: mm/sec
-# 2    changes: mm/s²
-#  translation: mm/s²
 # 2    changes: mm/s
 #  translation: mm/s
+# 2    changes: mm/s²
+#  translation: mm/s²
 msgid "mm/sec"
 msgstr ""
 
@@ -5693,10 +5706,10 @@ msgstr ""
 #Similar to me: mm3
 # 1    changes: mm
 #  translation: mm
-# 1    changes: mm³
-#  translation: mm³
 # 1    changes: mm²
 #  translation: mm²
+# 1    changes: mm³
+#  translation: mm³
 msgid "mm3"
 msgstr ""
 
@@ -6908,10 +6921,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: 最初のレイヤー高さ
-# 6    changes: Layer height
-#  translation: 積層ピッチ
 # 6    changes: Initial layer height
 #  translation: 初期レイヤー高さ
+# 6    changes: Layer height
+#  translation: 積層ピッチ
 msgid "Raft layer height"
 msgstr ""
 
@@ -7045,12 +7058,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: レイヤーと外周
-# 9    changes: external perimeters
-#  translation: 最外周
 # 9    changes: External perimeters
 #  translation: 最外周
+# 9    changes: external perimeters
+#  translation: 最外周
+# 9    changes: Layers and perimeters
+#  translation: レイヤーと外周
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -8160,10 +8173,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: サポート禁止
+# 6    changes: Support Enforcer
+#  translation: サポート強制
 # 6    changes: Support head
 #  translation: サポート先端
-# 6    changes: Support pillar
-#  translation: サポートピラー
 msgid "Support & Other"
 msgstr ""
 
@@ -8232,10 +8245,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: サポートの接触部
-# 6    changes: Support material
-#  translation: サポート材
 # 6    changes: Support Enforcer
 #  translation: サポート強制
+# 6    changes: Support material
+#  translation: サポート材
 msgid "Support interfaces"
 msgstr ""
 
@@ -8326,8 +8339,8 @@ msgstr ""
 #  translation: サポート材
 # 5    changes: Support pillar
 #  translation: サポートピラー
-# 6    changes: Support head
-#  translation: サポート先端
+# 6    changes: Support Blocker
+#  translation: サポート禁止
 msgid "Support pattern"
 msgstr ""
 
@@ -8346,10 +8359,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: サポート先端
-# 5    changes: Supports
-#  translation: サポート
 # 5    changes: Support Cubic
 #  translation: サポートキュービック
+# 5    changes: Supports
+#  translation: サポート
 msgid "Support speed"
 msgstr ""
 
@@ -8470,10 +8483,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: チルト
 # 2    changes: &File
 #  translation: ファイル(&F)
+# 2    changes: Tilt
+#  translation: チルト
 # 2    changes: File
 #  translation: ファイル
 msgid "TFill"
@@ -10227,7 +10240,7 @@ msgstr ""
 #  translation: ギャップフィル
 # 4    changes: infill
 #  translation: インフィル
-# 4    changes: solid infill
+# 4    changes: Solid infill
 #  translation: ソリッドインフィル
 msgid "top infill"
 msgstr ""
@@ -10246,12 +10259,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: ソリッドレイヤー
 # 4    changes: Add Layers
 #  translation: レイヤー追加
 # 4    changes: layers
 #  translation: レイヤー
+# 4    changes: Raft layers
+#  translation: ラフトレイヤー
 msgid "Top layers"
 msgstr ""
 
@@ -10811,12 +10824,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: ワイプタワー
 # 4    changes: Fan speed
 #  translation: ファンスピード
 # 4    changes: Print speed
 #  translation: プリントスピード
+# 4    changes: Wipe Tower
+#  translation: ワイプタワー
 msgid "Wipe speed"
 msgstr ""
 

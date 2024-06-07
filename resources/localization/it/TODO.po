@@ -122,8 +122,8 @@ msgstr ""
 #  translation: Primo strato
 # 4    changes: Solid first layer
 #  translation: Primo strato solido
-# 5    changes: first layer
-#  translation: primo layer
+# 5    changes: But on first layer
+#  translation: Però sul primo strato
 msgid "Brim first layer"
 msgstr ""
 
@@ -303,8 +303,8 @@ msgstr ""
 #  translation: Calibrazione primo strato
 # 7    changes: First layer acceleration
 #  translation: Accelerazione del primo strato
-# 11   changes: First layer flow ratio
-#  translation: Rapporto di flusso del primo strato
+# 7    changes: First layer calibration.
+#  translation: Calibrazione primo strato.
 msgid "First layer patch calibration"
 msgstr ""
 
@@ -313,10 +313,10 @@ msgstr ""
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Calibrazione primo strato
+# 10   changes: First layer calibration.
+#  translation: Calibrazione primo strato.
 # 11   changes: First layer acceleration
 #  translation: Accelerazione del primo strato
-# 11   changes: Ironing pattern calibration
-#  translation: Taratura del modello dell'ironing
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -595,8 +595,8 @@ msgstr ""
 #  translation: Anche per tutti i perimetri
 # 8    changes: Overlapping all perimeters
 #  translation: Sovrapposizione di tutti i perimetri
-# 9    changes: Layers and perimeters
-#  translation: Strati e perimetri
+# 9    changes: External perimeters
+#  translation: Perimetri esterni
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -650,10 +650,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui
 #Similar to me: Solid infill ovelrap
-# 4    changes: Solid fill overlap
-#  translation: Sovrapposizione riempimento solido
 # 4    changes: Solid infill every
 #  translation: Riempimento solido ogni
+# 4    changes: Solid fill overlap
+#  translation: Sovrapposizione riempimento solido
 # 6    changes: Solid infill speed
 #  translation: Velocità di riempimento solido
 msgid "Solid infill ovelrap"

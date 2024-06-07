@@ -826,10 +826,10 @@ msgstr ""
 #Similar to me: after last perimeter
 # 6    changes: External perimeter
 #  translation: 외부 가장자리
-# 7    changes: external perimeters
-#  translation: 외부 둘레
 # 7    changes: External perimeters
 #  translation: 외측 둘레
+# 7    changes: external perimeters
+#  translation: 외부 둘레
 msgid "after last perimeter"
 msgstr ""
 
@@ -1008,10 +1008,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: 외부 둘레
 # 9    changes: External perimeters
 #  translation: 외측 둘레
+# 9    changes: external perimeters
+#  translation: 외부 둘레
 # 9    changes: Small perimeters
 #  translation: 작은 둘레
 msgid "Also for all perimeters"
@@ -1334,10 +1334,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: 레이어 높이
 # 5    changes: First layer height
 #  translation: 첫 레이어 높이
+# 5    changes: Layer height
+#  translation: 레이어 높이
 msgid "Base Layer height"
 msgstr ""
 
@@ -1696,6 +1696,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: 다음으로 바꾸기
 msgid "Cap with"
 msgstr ""
 
@@ -2932,6 +2935,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: 방향
+# 4    changes: Version:
+#  translation: 버전:
 msgid "Dimension:"
 msgstr ""
 
@@ -3073,6 +3078,8 @@ msgstr ""
 #Similar to me: Don't save
 # 1    changes: Don't Save
 #  translation: 저장 하지 않음
+# 4    changes: Font size
+#  translation: 글꼴 크기
 # 4    changes: font size
 #  translation: 글꼴 크기
 msgid "Don't save"
@@ -4288,12 +4295,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: 첫 레이어 속도
 # 5    changes: First layer height
 #  translation: 첫 레이어 높이
-# 6    changes: First layer
-#  translation: 첫 레이어
+# 5    changes: First layer speed
+#  translation: 첫 레이어 속도
+# 6    changes: Display width
+#  translation: 표시 폭
 msgid "First layer width"
 msgstr ""
 
@@ -4448,10 +4455,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: 레이어 및 둘레
-# 8    changes: external perimeters
-#  translation: 외부 둘레
 # 8    changes: External perimeters
 #  translation: 외측 둘레
+# 8    changes: external perimeters
+#  translation: 외부 둘레
 msgid "for round perimeters"
 msgstr ""
 
@@ -4515,9 +4522,9 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5422
 #Similar to me: From filament
-# 5    changes: Filament
-#  translation: 필라멘트 설정을 선택
 # 5    changes: filament
+#  translation: 필라멘트 설정을 선택
+# 5    changes: Filament
 #  translation: 필라멘트 설정을 선택
 msgid "From filament"
 msgstr ""
@@ -5346,10 +5353,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: 채움(infill)
 # 2    changes: &File
 #  translation: &파일
+# 2    changes: Infill
+#  translation: 채움(infill)
 # 2    changes: File
 #  translation: 파일
 msgid "IFill"
@@ -5731,10 +5738,10 @@ msgstr ""
 #Similar to me: Internal perimeter
 # 2    changes: External perimeter
 #  translation: 외부 가장자리
-# 3    changes: external perimeters
-#  translation: 외부 둘레
 # 3    changes: External perimeters
 #  translation: 외측 둘레
+# 3    changes: external perimeters
+#  translation: 외부 둘레
 msgid "Internal perimeter"
 msgstr ""
 
@@ -5754,10 +5761,10 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: 외부 둘레
 # 2    changes: External perimeters
 #  translation: 외측 둘레
+# 2    changes: external perimeters
+#  translation: 외부 둘레
 # 3    changes: External perimeter
 #  translation: 외부 가장자리
 msgid "Internal perimeters"
@@ -5768,10 +5775,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: 외부 경계선 먼저
-# 8    changes: external perimeters
-#  translation: 외부 둘레
 # 8    changes: External perimeters
 #  translation: 외측 둘레
+# 8    changes: external perimeters
+#  translation: 외부 둘레
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -6507,10 +6514,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: 레이어 높이
 # 5    changes: First layer height
 #  translation: 첫 레이어 높이
+# 5    changes: Layer height
+#  translation: 레이어 높이
 # 5    changes: Max print height
 #  translation: 최대 프린트 높이
 msgid "Max layer height"
@@ -6529,6 +6536,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: 두께(&W)
+# 4    changes: Max width
+#  translation: 다음으로 바꾸기
 # 4    changes: Max height:
 #  translation: 두께(&W):
 msgid "Max length"
@@ -6948,10 +6959,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: 첫 레이어 높이
-# 5    changes: Layer height
-#  translation: 레이어 높이
 # 5    changes: Display height
 #  translation: 표시 높이
+# 5    changes: Layer height
+#  translation: 레이어 높이
 msgid "Min layer height"
 msgstr ""
 
@@ -6968,6 +6979,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: 글꼴 굵기(&W)
 # 4    changes: Min height:
 #  translation: 글꼴 굵기(&W):
 msgid "Min length"
@@ -6986,6 +6999,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2841 src/libslic3r/PrintConfig.cpp:5845
 #Similar to me: Min width
+# 2    changes: Max width
+#  translation: 다음으로 바꾸기
 # 3    changes: Brim width
 #  translation: 브림 폭
 # 3    changes: Max width:
@@ -8876,10 +8891,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: 첫 레이어 높이
-# 6    changes: Layer height
-#  translation: 레이어 높이
 # 6    changes: Initial layer height
 #  translation: 초기 레이어 높이
+# 6    changes: Layer height
+#  translation: 레이어 높이
 msgid "Raft layer height"
 msgstr ""
 
@@ -9139,12 +9154,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: 레이어 및 둘레
-# 9    changes: external perimeters
-#  translation: 외부 둘레
 # 9    changes: External perimeters
 #  translation: 외측 둘레
+# 9    changes: external perimeters
+#  translation: 외부 둘레
+# 9    changes: Layers and perimeters
+#  translation: 레이어 및 둘레
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -10567,10 +10582,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: 서포트 금지영역
+# 6    changes: Support Enforcer
+#  translation: 서포트 지원영역
 # 6    changes: Support head
 #  translation: 서포트 헤드
-# 6    changes: Support pillar
-#  translation: 서포트 기둥
 msgid "Support & Other"
 msgstr ""
 
@@ -10635,10 +10650,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: 서포트 인터페이스
-# 6    changes: Support material
-#  translation: 서포트 재료 / 라프트 / 스커트 익스트루더
 # 6    changes: Support Enforcer
 #  translation: 서포트 지원영역
+# 6    changes: Support material
+#  translation: 서포트 재료 / 라프트 / 스커트 익스트루더
 msgid "Support interfaces"
 msgstr ""
 
@@ -10729,8 +10744,8 @@ msgstr ""
 #  translation: 서포트 재료 / 라프트 / 스커트 익스트루더
 # 5    changes: Support pillar
 #  translation: 서포트 기둥
-# 6    changes: Support head
-#  translation: 서포트 헤드
+# 6    changes: Support Blocker
+#  translation: 서포트 금지영역
 msgid "Support pattern"
 msgstr ""
 
@@ -10749,10 +10764,10 @@ msgstr ""
 #Similar to me: Support speed
 # 3    changes: Support head
 #  translation: 서포트 헤드
-# 5    changes: Supports
-#  translation: 서포트
 # 5    changes: Support Cubic
 #  translation: 지원 입방
+# 5    changes: Supports
+#  translation: 서포트
 msgid "Support speed"
 msgstr ""
 
@@ -10916,10 +10931,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: 기울이기
 # 2    changes: &File
 #  translation: &파일
+# 2    changes: Tilt
+#  translation: 기울이기
 # 2    changes: File
 #  translation: 파일
 msgid "TFill"
@@ -12857,8 +12872,8 @@ msgstr ""
 #  translation: 공백 채움
 # 4    changes: infill
 #  translation: 채움(infill)
-# 4    changes: solid infill
-#  translation: 외부(solid)부분 채움
+# 4    changes: Solid infill
+#  translation: 솔리드 인필
 msgid "top infill"
 msgstr ""
 
@@ -12881,12 +12896,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: 탑 솔리드 레이어
 # 4    changes: Add Layers
 #  translation: 레이어 추가
 # 4    changes: layers
 #  translation: 레이어
+# 4    changes: Raft layers
+#  translation: 라프트(Raft) 레이어
 msgid "Top layers"
 msgstr ""
 
@@ -13075,10 +13090,10 @@ msgstr ""
 
 #: src/slic3r/Utils/PresetUpdater.cpp:888
 #Similar to me: Updating
-# 3    changes: Spacing
-#  translation: 간격
 # 3    changes: Editing
 #  translation: 편집
+# 3    changes: Spacing
+#  translation: 간격
 # 3    changes: Updates
 #  translation: 업데이트
 msgid "Updating"
@@ -13595,11 +13610,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: 와이프 타워 - 버려진 필라멘트 조절
 # 4    changes: Fan speed
 #  translation: 팬 속도
 # 4    changes: Wipe Tower
+#  translation: 와이프 타워 - 버려진 필라멘트 조절
+# 4    changes: Wipe tower
 #  translation: 와이프 타워 - 버려진 필라멘트 조절
 msgid "Wipe speed"
 msgstr ""

@@ -952,10 +952,10 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2284
 #Similar to me: Add Layers
-# 4    changes: Layers
-#  translation: Katmanlar
 # 4    changes: Faded layers
 #  translation: Soluk katmanlar
+# 4    changes: Layers
+#  translation: Katmanlar
 # 4    changes: Add part
 #  translation: Bölüm ekle
 msgid "Add Layers"
@@ -1164,12 +1164,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2800
 #Similar to me: after last perimeter
-# 6    changes: external perimeter
-#  translation: Dış duvar
 # 6    changes: External perimeter
 #  translation: Dış duvar
-# 7    changes: external perimeters
-#  translation: dış duvar
+# 6    changes: external perimeter
+#  translation: Dış duvar
+# 7    changes: External perimeters
+#  translation: Dış duvar
 msgid "after last perimeter"
 msgstr ""
 
@@ -1364,10 +1364,10 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l42
 #Similar to me: Also for all perimeters
-# 9    changes: external perimeters
-#  translation: dış duvar
 # 9    changes: External perimeters
 #  translation: Dış duvar
+# 9    changes: external perimeters
+#  translation: dış duvar
 # 9    changes: Small perimeters
 #  translation: Küçük duvarlar
 msgid "Also for all perimeters"
@@ -1790,10 +1790,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:439
 #Similar to me: Base Layer height
-# 5    changes: Layer height
-#  translation: Katman yüksekliği
 # 5    changes: First layer height
 #  translation: İlk katman yüksekliği
+# 5    changes: Layer height
+#  translation: Katman yüksekliği
 msgid "Base Layer height"
 msgstr ""
 
@@ -2265,6 +2265,9 @@ msgid "Cannot overwrite an external profile. Please choose another name."
 msgstr ""
 
 #: ../../ui_layout/default/print.ui : l354
+#Similar to me: Cap with
+# 3    changes: Max width
+#  translation: En fazla genişlik
 msgid "Cap with"
 msgstr ""
 
@@ -4028,6 +4031,8 @@ msgstr ""
 #Similar to me: Dimension:
 # 4    changes: Direction
 #  translation: Yön
+# 4    changes: Version:
+#  translation: Sürüm:
 msgid "Dimension:"
 msgstr ""
 
@@ -4231,6 +4236,8 @@ msgstr ""
 #Similar to me: Don't save
 # 1    changes: Don't Save
 #  translation: Kaydedilmesin
+# 4    changes: Font size
+#  translation: Yazı boyutu
 # 4    changes: font size
 #  translation: yazı türü boyutu
 msgid "Don't save"
@@ -4304,8 +4311,8 @@ msgstr ""
 #  translation: Dışa Aktar
 # 2    changes: &Export
 #  translation: &Dışa Aktar
-# 2    changes: Export.
-#  translation: Dışa Aktar.
+# 2    changes: Expert
+#  translation: Uzman
 msgid "E&xport"
 msgstr ""
 
@@ -5380,10 +5387,10 @@ msgstr ""
 #Similar to me: Extruders count
 # 5    changes: Extruder Color
 #  translation: Ekstrüder Rengi
-# 6    changes: Extruders
-#  translation: Ekstrüder sayısı
 # 6    changes: Extruder %d
 #  translation: Ekstrüder %d
+# 6    changes: Extruder offset
+#  translation: Ekstrüder ofset
 msgid "Extruders count"
 msgstr ""
 
@@ -5843,12 +5850,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2569
 #Similar to me: First layer width
-# 5    changes: First layer speed
-#  translation: İlk katman hızı
 # 5    changes: First layer height
 #  translation: İlk katman yüksekliği
-# 6    changes: First layer
-#  translation: İlk katman
+# 5    changes: First layer speed
+#  translation: İlk katman hızı
+# 6    changes: Display width
+#  translation: Ekran genişliği
 msgid "First layer width"
 msgstr ""
 
@@ -6014,10 +6021,10 @@ msgstr ""
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: Katmanlar ve duvarlar
-# 8    changes: external perimeters
-#  translation: dış duvar
 # 8    changes: External perimeters
 #  translation: Dış duvar
+# 8    changes: external perimeters
+#  translation: dış duvar
 msgid "for round perimeters"
 msgstr ""
 
@@ -6104,10 +6111,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5422
 #Similar to me: From filament
-# 5    changes: Filament
-#  translation: Filament
 # 5    changes: filament
 #  translation: filaman
+# 5    changes: Filament
+#  translation: Filament
 msgid "From filament"
 msgstr ""
 
@@ -7233,10 +7240,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:403
 #Similar to me: IFill
-# 2    changes: Infill
-#  translation: Dolgu
 # 2    changes: &File
 #  translation: &Dosya
+# 2    changes: Infill
+#  translation: Dolgu
 # 2    changes: File
 #  translation: Dosya
 msgid "IFill"
@@ -7790,12 +7797,12 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Preview.cpp:275 src/libslic3r/ExtrusionEntity.cpp:327
 #: src/libslic3r/ExtrusionEntity.cpp:355
 #Similar to me: Internal perimeter
-# 2    changes: external perimeter
-#  translation: Dış duvar
 # 2    changes: External perimeter
 #  translation: Dış duvar
-# 3    changes: external perimeters
-#  translation: dış duvar
+# 2    changes: external perimeter
+#  translation: Dış duvar
+# 3    changes: External perimeters
+#  translation: Dış duvar
 msgid "Internal perimeter"
 msgstr ""
 
@@ -7815,11 +7822,11 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:131
 #Similar to me: Internal perimeters
-# 2    changes: external perimeters
-#  translation: dış duvar
 # 2    changes: External perimeters
 #  translation: Dış duvar
-# 3    changes: external perimeter
+# 2    changes: external perimeters
+#  translation: dış duvar
+# 3    changes: External perimeter
 #  translation: Dış duvar
 msgid "Internal perimeters"
 msgstr ""
@@ -7829,10 +7836,10 @@ msgstr ""
 #Similar to me: Internal perimeters speed
 # 7    changes: External perimeters first
 #  translation: Önce dış duvarlar
-# 8    changes: external perimeters
-#  translation: dış duvar
 # 8    changes: External perimeters
 #  translation: Dış duvar
+# 8    changes: external perimeters
+#  translation: dış duvar
 msgid "Internal perimeters speed"
 msgstr ""
 
@@ -8762,10 +8769,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3681
 #Similar to me: Max layer height
-# 5    changes: Layer height
-#  translation: Katman yüksekliği
 # 5    changes: First layer height
 #  translation: İlk katman yüksekliği
+# 5    changes: Layer height
+#  translation: Katman yüksekliği
 # 5    changes: Max print height
 #  translation: En fazla baskı yüksekliği
 msgid "Max layer height"
@@ -8784,6 +8791,10 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5025
 #Similar to me: Max length
+# 4    changes: Max height
+#  translation: En fazla yükseklik
+# 4    changes: Max width
+#  translation: En fazla genişlik
 # 4    changes: Max height:
 #  translation: En fazla yükseklik:
 msgid "Max length"
@@ -9243,10 +9254,10 @@ msgstr ""
 #Similar to me: Min layer height
 # 4    changes: First layer height
 #  translation: İlk katman yüksekliği
-# 5    changes: Layer height
-#  translation: Katman yüksekliği
 # 5    changes: Display height
 #  translation: Ekran yüksekliği
+# 5    changes: Layer height
+#  translation: Katman yüksekliği
 msgid "Min layer height"
 msgstr ""
 
@@ -9263,6 +9274,8 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2830 src/libslic3r/PrintConfig.cpp:5011
 #Similar to me: Min length
+# 4    changes: Min height
+#  translation: En az yükseklik
 # 4    changes: Min width
 #  translation: En az genişlik
 # 4    changes: Min height:
@@ -9991,10 +10004,10 @@ msgstr ""
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1592
 #Similar to me: Note
-# 1    changes: Notes
-#  translation: Notlar
 # 1    changes: None
 #  translation: Hiçbiri
+# 1    changes: Notes
+#  translation: Notlar
 msgid "Note"
 msgstr ""
 
@@ -11854,10 +11867,10 @@ msgstr ""
 #Similar to me: Raft layer height
 # 4    changes: First layer height
 #  translation: İlk katman yüksekliği
-# 6    changes: Layer height
-#  translation: Katman yüksekliği
 # 6    changes: Initial layer height
 #  translation: İlk katman yüksekliği
+# 6    changes: Layer height
+#  translation: Katman yüksekliği
 msgid "Raft layer height"
 msgstr ""
 
@@ -12333,12 +12346,12 @@ msgstr ""
 
 #: ../../ui_layout/default/print.ui : l134
 #Similar to me: Reverse on all perimeters
-# 9    changes: Layers and perimeters
-#  translation: Katmanlar ve duvarlar
-# 9    changes: external perimeters
-#  translation: dış duvar
 # 9    changes: External perimeters
 #  translation: Dış duvar
+# 9    changes: external perimeters
+#  translation: dış duvar
+# 9    changes: Layers and perimeters
+#  translation: Katmanlar ve duvarlar
 msgid "Reverse on all perimeters"
 msgstr ""
 
@@ -14350,10 +14363,10 @@ msgstr ""
 #Similar to me: Support & Other
 # 5    changes: Support Blocker
 #  translation: Destek Engelleyici
+# 6    changes: Support Enforcer
+#  translation: Destek Uygulayıcı
 # 6    changes: Support head
 #  translation: Destek kafa
-# 6    changes: Support pillar
-#  translation: Destek ayağı
 msgid "Support & Other"
 msgstr ""
 
@@ -14431,10 +14444,10 @@ msgstr ""
 #Similar to me: Support interfaces
 # 2    changes: support interface
 #  translation: destek bağlantısı
-# 6    changes: Support material
-#  translation: Destek
 # 6    changes: Support Enforcer
 #  translation: Destek Uygulayıcı
+# 6    changes: Support material
+#  translation: Destek
 msgid "Support interfaces"
 msgstr ""
 
@@ -14468,8 +14481,8 @@ msgstr ""
 #  translation: Destek ara bağlantısı
 # 9    changes: Support material
 #  translation: Destek
-# 10   changes: support material
-#  translation: Destek
+# 10   changes: Support base diameter
+#  translation: Destek taban çapı
 msgid "Support material extruder"
 msgstr ""
 
@@ -14523,8 +14536,8 @@ msgstr ""
 #  translation: Destek
 # 5    changes: Support pillar
 #  translation: Destek ayağı
-# 6    changes: Support head
-#  translation: Destek kafa
+# 6    changes: Support Blocker
+#  translation: Destek Engelleyici
 msgid "Support pattern"
 msgstr ""
 
@@ -14768,10 +14781,10 @@ msgstr ""
 
 #: src/libslic3r/ExtrusionEntity.cpp:405
 #Similar to me: TFill
-# 2    changes: Tilt
-#  translation: Eğim
 # 2    changes: &File
 #  translation: &Dosya
+# 2    changes: Tilt
+#  translation: Eğim
 # 2    changes: File
 #  translation: Dosya
 msgid "TFill"
@@ -16987,8 +17000,8 @@ msgstr ""
 #  translation: Boşluk doldurma
 # 4    changes: infill
 #  translation: dolgu
-# 4    changes: solid infill
-#  translation: katı dolgu
+# 4    changes: Solid infill
+#  translation: Katı dolgu
 msgid "top infill"
 msgstr ""
 
@@ -17019,12 +17032,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6069
 #Similar to me: Top layers
-# 4    changes: Solid layers
-#  translation: Katı katmanlar
 # 4    changes: layers
 #  translation: katman
 # 4    changes: Raft layers
 #  translation: Alt destek katman sayısı
+# 4    changes: Solid layers
+#  translation: Katı katmanlar
 msgid "Top layers"
 msgstr ""
 
@@ -18052,12 +18065,12 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6220
 #Similar to me: Wipe speed
-# 4    changes: Wipe tower
-#  translation: Temizleme kulesi
 # 4    changes: Fan speed
 #  translation: Fan hızı
 # 4    changes: Wipe Tower
 #  translation: Kule Sil
+# 4    changes: Wipe tower
+#  translation: Temizleme kulesi
 msgid "Wipe speed"
 msgstr ""
 

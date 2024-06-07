@@ -1,339 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "Acceleraties (geavanceerd)"
-
-msgid "Activate"
-msgstr "Activeer"
-
-msgid "Advanced"
-msgstr "Geavanceerd"
-
-msgid "After layer change G-code"
-msgstr "G-code die komt na de laagwisseling"
-
-msgid "Aligned"
-msgstr "Uitgelijnd"
-
-msgid "Automatic generation"
-msgstr "Automatisch genereren"
-
-msgid "Autospeed (advanced)"
-msgstr "Automatische snelheid (geavanceerd)"
-
-msgid "Avoid crossing perimeters"
-msgstr "Vermijd kruisende perimeters"
-
-msgid "Bed"
-msgstr "Bed"
-
-msgid "Before layer change G-code"
-msgstr "G-code die komt vóór de laagwisseling"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "G-code die komt tussen objecten (bij achtereenvolgens printen)"
-
-msgid "Bottom"
-msgstr "Onderkant"
-
-msgid "Bridge"
-msgstr "Brug"
-
-msgid "Bridges"
-msgstr "Bruggen"
-
-msgid "Bridges fan speed"
-msgstr "Ventilatorsnelheid voor bruggen"
-
-msgid "Brim"
-msgstr "Brim"
-
-msgid "Capabilities"
-msgstr "Mogelijkheden"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "Verbindingen van de supporttakken en kruisingen"
-
-msgid "Cooling"
-msgstr "Koeling"
-
-msgid "Corrections"
-msgstr "Correcties"
-
-msgid "Custom G-code"
-msgstr "Custom G-code"
-
-msgid "Default"
-msgstr "Standaard"
-
-msgid "default"
-msgstr "standaard"
-
-msgid "Density"
-msgstr "Dichtheid"
-
-msgid "Dependencies"
-msgstr "Afhankelijkheden"
-
-msgid "Disable fan for the first"
-msgstr "Zet ventilator uit voor de eerste"
-
-msgid "Display"
-msgstr "Scherm"
-
-msgid "End G-code"
-msgstr "Eind G-code"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Garandeer verticale shelldikte"
-
-msgid "Exposure"
-msgstr "Belichtingstijd"
-
-msgid "Extruder"
-msgstr "Extruder"
-
-msgid "Extruders"
-msgstr "Extruders"
-
-msgid "Extrusion width"
-msgstr "Extrusiebreedte"
-
-msgid "Filament"
-msgstr "Filament"
-
-msgid "Filament properties"
-msgstr "Filamenteigenschappen"
-
-msgid "Firmware"
-msgstr "Firmware"
-
-msgid "First layer"
-msgstr "Eerste laag"
-
-msgid "First layer speed"
-msgstr "Snelheid eerste laag"
-
-msgid "Flow"
-msgstr "Stroom"
-
-msgid "Fuzzy skin (experimental)"
-msgstr "Oneffen oppervlak (experimenteel)"
-
-msgid "Gap fill"
-msgstr "Gatenvulling"
-
-msgid "General"
-msgstr "Algemeen"
-
-msgid "Hollowing"
-msgstr "Uithollen"
-
-msgid "Horizontal shells"
-msgstr "Horizontale shells"
-
-msgid "Infill"
-msgstr "Vulling"
-
-msgid "infill"
-msgstr "vulling"
-
-msgid "Layer height"
-msgstr "Laagdikte"
-
-msgid "Layer height limits"
-msgstr "Laagdiktelimieten"
-
-msgid "Layers"
-msgstr "Lagen"
-
-msgid "Layers and perimeters"
-msgstr "Lagen en perimeters"
-
-msgid "Length"
-msgstr "Lengte"
-
-msgid "Material"
-msgstr "Materiaal"
-
-msgid "Material printing profile"
-msgstr "Materiaal-printprofiel"
-
-msgid "Minimum shell thickness"
-msgstr "Minimale shelldikte"
-
-msgid "mm"
-msgstr "mm"
-
-msgid "Modifiers"
-msgstr "Modificators"
-
-msgid "Notes"
-msgstr "Opmerkingen"
-
-msgid "Number of pixels in"
-msgstr "Aantal pixels"
-
-msgid "Only lift Z"
-msgstr "Beweeg alleen Z omhoog"
-
-msgid "Only retract when crossing perimeters"
-msgstr "Alleen retracten bij kruisende perimeters"
-
-msgid "Ooze prevention"
-msgstr "Druippreventie"
-
-msgid "Options"
-msgstr "Opties"
-
-msgid "Options for support material and raft"
-msgstr "Opties voor support en raft"
-
-msgid "Other"
-msgstr "Overige"
-
-msgid "Output file"
-msgstr "Outputbestand"
-
-msgid "Output options"
-msgstr "Output-opties"
-
-msgid "Overlap"
-msgstr "Overlapping"
-
-msgid "Pad"
-msgstr "Basisplaat"
-
-msgid "Pattern"
-msgstr "Patroon"
-
-msgid "Pause Print G-code"
-msgstr "Pauzeer print G-code"
-
-msgid "Plater"
-msgstr "Modelweergave"
-
-msgid "Preview"
-msgstr "Sliceweergave"
-
-msgid "Print Host upload"
-msgstr "Printhost-upload"
-
-msgid "Print speed override"
-msgstr "Printsnelheid overschrijven"
-
-msgid "Printer scaling correction"
-msgstr "Verschalingscorrectie voor printer"
-
-msgid "Profile dependencies"
-msgstr "Profielafhankelijkheden"
-
-msgid "Quality"
-msgstr "Kwaliteit"
-
-msgid "Raft"
-msgstr "Raft"
-
-msgid "Reducing printing time"
-msgstr "Printtijd verkorten"
-
-msgid "Retraction"
-msgstr "Retractie"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr ""
-"Retractie als de tool uit staat (geavanceerde instelling voor multi-"
-"extrudersetups)"
-
-msgid "Sequential printing"
-msgstr "Achtereenvolgens printen"
-
-msgid "Size"
-msgstr "Grootte"
-
-msgid "Size and coordinates"
-msgstr "Grootte en coördinaten"
-
-msgid "Skirt"
-msgstr "Skirt"
-
-msgid "Slicing"
-msgstr "Slicen"
-
-msgid "Solid"
-msgstr "Solide"
-
-msgid "solid infill"
-msgstr "dichte vulling"
-
-msgid "Solid layers"
-msgstr "Dichte lagen"
-
-msgid "Spacing"
-msgstr "Tussenruimte"
-
-msgid "Speed"
-msgstr "Snelheid"
-
-msgid "Speed for non-print moves"
-msgstr "Snelheid voor niet-print bewegingen"
-
-msgid "Speed for print moves"
-msgstr "Snelheid voor printbewegingen"
-
-msgid "Start G-code"
-msgstr "Start G-code"
-
-msgid "Support head"
-msgstr "Supportkop"
-
-msgid "Support material"
-msgstr "Support"
-
-msgid "Support pillar"
-msgstr "Supportpijler"
-
-msgid "Supports"
-msgstr "Support"
-
-msgid "Template Custom G-code"
-msgstr "Template custom G-code"
-
-msgid "Tilt"
-msgstr "Draaiing"
-
-msgid "Tilt time"
-msgstr "Draaitijd"
-
-msgid "Tool change G-code"
-msgstr "Toolwisseling G-code"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "Toolwisselparameter voor multi-materialprinters met één extruder"
-
-msgid "Top"
-msgstr "Bovenkant"
-
-msgid "Travel"
-msgstr "Beweging"
-
-msgid "Type"
-msgstr "Type"
-
-msgid "Vertical shells"
-msgstr "Verticale shells"
-
-msgid "Wipe tower"
-msgstr "Afveegblok"
-
-msgid "Wipe tower parameters"
-msgstr "Afveegblokparameters"
-
-msgid "Retraction Speed"
-msgstr "Retractiesnelheid"
-
-msgid "Seam position"
-msgstr "Naadpositie"
-
 msgid "%1$d backward edge"
 msgid_plural "%1$d backward edges"
 msgstr[0] "%1$d lijn achterstevoren"
@@ -436,15 +101,6 @@ msgstr "%s heeft een waarschuwing"
 
 msgid "%s has encountered an error"
 msgstr "%s heeft een fout veroorzaakt"
-
-msgid ""
-"%s has encountered an error. It was likely caused by running out of memory. "
-"If you are sure you have enough RAM on your system, this may also be a bug "
-"and we would be glad if you reported it."
-msgstr ""
-"Fout in %s. Mogelijk komt dit door een tekort aan RAM geheugen. Als u er "
-"zeker van bent genoeg RAM geheugen te hebben, kan dit een andere oorzaak "
-"hebben. We stellen het op prijs als u het aan ons rapporteert."
 
 msgid ""
 "%s has encountered an error. It was likely caused by running out of memory. "
@@ -754,8 +410,8 @@ msgstr "boven"
 msgid "Above Z"
 msgstr "Boven Z"
 
-msgid "Access violation"
-msgstr "Toegangsschending"
+msgid "Acceleration control (advanced)"
+msgstr "Acceleraties (geavanceerd)"
 
 msgid "Accuracy"
 msgstr "Nauwkeurigheid"
@@ -765,6 +421,9 @@ msgstr "Nauwkeurig"
 
 msgid "Action"
 msgstr "Commando"
+
+msgid "Activate"
+msgstr "Activeer"
 
 msgid "Active"
 msgstr "Actief"
@@ -855,6 +514,9 @@ msgstr "Voeg laagbereik toe"
 msgid "Add Layers"
 msgstr "Voeg lagen toe"
 
+msgid "Add one or more custom shapes"
+msgstr "Voeg een of meer aangepaste vormen toe"
+
 msgid "Add pause print"
 msgstr "Voeg printpauze toe"
 
@@ -869,6 +531,9 @@ msgstr "Voeg punt toe aan selectie"
 
 msgid "Add preset for this printer device"
 msgstr "Voeg preset toe voor deze printer"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Voeg geselecteerd(e) object(en) toe aan bed"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Voeg instellingen voor hoogtebereik toe"
@@ -906,6 +571,9 @@ msgstr "Voeg supports toe"
 msgid "Add supports by angle"
 msgstr "Voeg supports to op basis van hoek"
 
+msgid "Add to bed"
+msgstr "Voeg toe aan bed"
+
 msgid "Add..."
 msgstr "Voeg toe..."
 
@@ -937,8 +605,8 @@ msgstr ""
 msgid "Address"
 msgstr "Adres"
 
-msgid "Advanced mode"
-msgstr "Geavanceerde modus"
+msgid "Advanced"
+msgstr "Geavanceerd"
 
 msgid "Advanced: Output log"
 msgstr "Geavanceerd: Output logboek"
@@ -956,11 +624,17 @@ msgstr ""
 "afvegen aan het afveegblok om vervolgens de vulling of overige objecten goed "
 "te kunnen printen."
 
+msgid "After layer change G-code"
+msgstr "G-code die komt na de laagwisseling"
+
 msgid "Align the model to the given point."
 msgstr "Lijn de modellen uit op het gegeven punt."
 
 msgid "Align XY"
 msgstr "XY uitlijnen"
+
+msgid "Aligned"
+msgstr "Uitgelijnd"
 
 msgid "All"
 msgstr "Alles"
@@ -997,9 +671,6 @@ msgstr "Alle bovenvlakken"
 
 msgid "All user presets will be deleted."
 msgstr "Alle presets van de gebruiker worden verwijderd."
-
-msgid "All walls"
-msgstr "Alle wanden"
 
 msgid "allocation failed"
 msgstr "toewijzing mislukt"
@@ -1189,11 +860,20 @@ msgid "Autogeneration will erase all manually edited points."
 msgstr ""
 "Automatisch genereren zal alle handmatig aangepaste punten verwijderen."
 
+msgid "Automatic generation"
+msgstr "Automatisch genereren"
+
 msgid "Automatic updates"
 msgstr "Automatische updates"
 
 msgid "Automatically repair an STL file"
 msgstr "Automatisch een STL-bestand repareren"
+
+msgid "Autospeed (advanced)"
+msgstr "Automatische snelheid (geavanceerd)"
+
+msgid "Avoid crossing perimeters"
+msgstr "Vermijd kruisende perimeters"
 
 msgid "Avoid crossing perimeters - Max detour length"
 msgstr "Vermijd kruisende perimeters - maximale omleidingslengte"
@@ -1231,6 +911,9 @@ msgstr "Sla onbekende configuratiewaarden over"
 msgid "Balanced"
 msgstr "Gebalanceerd"
 
+msgid "Bed"
+msgstr "Bed"
+
 msgid "Bed custom model"
 msgstr "Custom bedmodel"
 
@@ -1252,6 +935,9 @@ msgstr "Bedtemperatuur"
 msgid "Bed Temperature:"
 msgstr "Bedtemperatuur:"
 
+msgid "Before layer change G-code"
+msgstr "G-code die komt vóór de laagwisseling"
+
 msgid "Before roll back"
 msgstr "Voor terugrollen"
 
@@ -1260,6 +946,9 @@ msgstr "Onder Z"
 
 msgid "Between objects G-code"
 msgstr "G-code die komt tussen objecten"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "G-code die komt tussen objecten (bij achtereenvolgens printen)"
 
 msgid "Block seam"
 msgstr "Blokkeer naad"
@@ -1275,6 +964,9 @@ msgstr "Flesinhoud (volume)"
 
 msgid "Bottle weight"
 msgstr "Flesinhoud (gewicht)"
+
+msgid "Bottom"
+msgstr "Onderkant"
 
 msgid "Bottom fill pattern"
 msgstr "Vulpatroon voor onderzijde"
@@ -1294,11 +986,20 @@ msgstr "Dichte bodemlagen"
 msgid "Bottom View"
 msgstr "Onderaanzicht"
 
+msgid "Bridge"
+msgstr "Brug"
+
 msgid "Bridge flow ratio"
 msgstr "Brugextrusieverhouding"
 
 msgid "Bridge infill"
 msgstr "Brugvulling"
+
+msgid "Bridges"
+msgstr "Bruggen"
+
+msgid "Bridges fan speed"
+msgstr "Ventilatorsnelheid voor bruggen"
 
 msgid "Bridging angle"
 msgstr "Brughoek"
@@ -1314,6 +1015,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "Volumetrische bruggen"
+
+msgid "Brim"
+msgstr "Brim"
 
 msgid "Brim separation gap"
 msgstr "Brim-scheidingsgat"
@@ -1414,15 +1118,15 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "Een systeemprofiel kan niet overschreven worden."
 
-msgid "Cannot overwrite an external profile."
-msgstr "Een extern profiel kan niet overschreven worden."
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
 msgstr ""
 "Kan niet doorgaan zonder supportpunten! Voeg supportpunten toe of schakel "
 "supportgeneratie uit."
+
+msgid "Capabilities"
+msgstr "Mogelijkheden"
 
 msgid "Capture a configuration snapshot"
 msgstr "Neem een configuratiesnapshot op"
@@ -1472,11 +1176,21 @@ msgstr "Wijzig onderdeeltype"
 msgid "Change point head diameter"
 msgstr "Wijzig puntkopdiameter"
 
+msgid "Change thumbnail"
+msgstr "Verander miniatuur"
+
 msgid "Changes for the critical options"
 msgstr "Aanpassingen voor de kritische opties"
 
 msgid "Changing of an application language"
 msgstr "Veranderen van de taal van het programma"
+
+msgid ""
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the plater."
+msgstr ""
+"Sommige opties aanpassen kan een herstart veroorzaken.\n"
+"U kunt de inhoud van het bed kwijtraken."
 
 msgid "Check for application updates"
 msgstr "Controleer op programma-updates"
@@ -1505,8 +1219,14 @@ msgstr "Kies een 3MF- of AMF-bestand:"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Kies een bestand (gcode/.GCO/.G/.ngc/NGC):"
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Kies één of meer STL-, OBJ-, AMF-, 3MF-, of PRUSA-bestanden:"
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Kies een of meer bestanden (STL, OBJ):"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "Kies één of meer STL-, 3MF-, STEP-, OBJ-, AMF- of PRUSA- bestanden:"
+
+msgid "Choose one PNG file:"
+msgstr "Kies een PNG-bestand:"
 
 msgid "Choose SLA archive:"
 msgstr "Kies SLA-archief:"
@@ -1655,9 +1375,6 @@ msgstr "Concentrisch"
 msgid "Configuration &Assistant"
 msgstr "Configuratie-&assistent"
 
-msgid "Configuration &Wizard"
-msgstr "Configuratie-&assistent"
-
 msgid "Configuration Assistant"
 msgstr "Configuratie-assistent"
 
@@ -1706,11 +1423,11 @@ msgstr ""
 "Configuratie-updates veroorzaken een verlies van preset-aanpassingen.\n"
 "Check daarom niet-opgeslagen aanpassingen en sla op indien nodig."
 
-msgid "Configuration Wizard"
-msgstr "Configuratie-assistent"
-
 msgid "Confirmation"
 msgstr "Bevestiging"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "Verbindingen van de supporttakken en kruisingen"
 
 msgid "Connection to PrusaLink works correctly."
 msgstr "Verbinding met PrusaLink werkt naar behoren."
@@ -1738,6 +1455,9 @@ msgstr "Converteer naar Engelse eenheden"
 
 msgid "Convert from meters"
 msgstr "Converteer vanaf meters"
+
+msgid "Cooling"
+msgstr "Koeling"
 
 msgid "Cooling tube length"
 msgstr "Koelbuislengte"
@@ -1816,6 +1536,9 @@ msgstr "Uitzettingscorrectie over de Y-as"
 msgid "Correction for expansion in Z axis"
 msgstr "Uitzettingscorrectie over de Z-as"
 
+msgid "Corrections"
+msgstr "Correcties"
+
 msgid "Cost"
 msgstr "Kosten"
 
@@ -1882,6 +1605,9 @@ msgstr "Ctrl + scrollwieltje"
 msgid "Cubic"
 msgstr "Kubisch"
 
+msgid "Current mode is %s"
+msgstr "Huidige modus is: %s"
+
 msgid "Current preset is inherited from"
 msgstr "Huidige preset is afgeleid van"
 
@@ -1902,6 +1628,9 @@ msgstr ""
 "Aangepast CA-certificaatbestand kan gespecificeerd worden voor HTTPS-"
 "OctoPrint verbindingen in CRT/PEM-formaat. Als er niets wordt ingevuld, "
 "wordt de standaard OS-CA-certificaatopslaglocatie gebruikt."
+
+msgid "Custom G-code"
+msgstr "Custom G-code"
 
 msgid "Custom G-code on current layer (%1% mm)."
 msgstr "Custom G-code voor huidige laag (%1% mm)."
@@ -1957,6 +1686,12 @@ msgstr "decompressie mislukt of archief is beschadigd"
 
 msgid "Decrease Instances"
 msgstr "Verlaag aantal instanties"
+
+msgid "default"
+msgstr "standaard"
+
+msgid "Default"
+msgstr "Standaard"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -2062,6 +1797,11 @@ msgstr "Verwijder instantie"
 msgid "Delete Object"
 msgstr "Verwijder object"
 
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr ""
+"Verwijder een of meer aangepaste vormen. U kunt geen standaardvormen "
+"verwijderen"
+
 msgid "Delete Option %s"
 msgstr "Verwijder optie %s"
 
@@ -2113,12 +1853,14 @@ msgstr "Verwijdert alle objecten"
 msgid "Deletes the current selection"
 msgstr "Verwijdert huidige selectie"
 
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr ""
-"Dichtheid van inwendige vulling, uitgedrukt in een percentage (0 - 100%)"
+msgid "Density"
+msgstr "Dichtheid"
 
 msgid "Density of the first raft or support layer."
 msgstr "Dichtheid van de eerste raft- of supportlaag."
+
+msgid "Dependencies"
+msgstr "Afhankelijkheden"
 
 msgid "Deretraction Speed"
 msgstr "Deretractiesnelheid"
@@ -2194,6 +1936,9 @@ msgstr "verschilt ten opzichte van het originele bestand"
 msgid "Direction"
 msgstr "Richting"
 
+msgid "Disable fan for the first"
+msgstr "Zet ventilator uit voor de eerste"
+
 msgid "Disabled"
 msgstr "Uit"
 
@@ -2205,6 +1950,9 @@ msgstr "Verwijder alle wijzigingen"
 
 msgid "Discard changes"
 msgstr "Wijzigingen afwijzen"
+
+msgid "Display"
+msgstr "Scherm"
 
 msgid "Display height"
 msgstr "Schermhoogte"
@@ -2495,6 +2243,9 @@ msgstr "Verticaal spiegelen"
 msgid "Enabled"
 msgstr "Aan"
 
+msgid "End G-code"
+msgstr "Eind G-code"
+
 msgid "Enforce"
 msgstr "Forceer"
 
@@ -2515,6 +2266,9 @@ msgstr "In de wachtrij geplaatst"
 
 msgid "Ensure on bed"
 msgstr "Plaats op bed"
+
+msgid "Ensure vertical shell thickness"
+msgstr "Garandeer verticale shelldikte"
 
 msgid "Enter a search term"
 msgstr "Voer een zoekterm in"
@@ -2685,8 +2439,8 @@ msgid ""
 "under bridged areas."
 msgstr "Experimentele optie om support onder brugvlakken te vermijden."
 
-msgid "Expert mode"
-msgstr "Expertmodus"
+msgid "Expert"
+msgstr "Expert"
 
 msgid "Export"
 msgstr "Exporteer"
@@ -2733,12 +2487,6 @@ msgstr "Exporteer modellen als gcode-bestand"
 msgid "Export current plate as G-code to SD card / Flash drive"
 msgstr "Exporteer modellen als G-code naar SD-kaart/USB-stick"
 
-msgid "Export current plate as STL"
-msgstr "Exporteer modellen als STL-bestand"
-
-msgid "Export current plate as STL including supports"
-msgstr "Exporteer modellen met support als STL-bestand"
-
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
 msgstr ""
@@ -2761,12 +2509,6 @@ msgstr "Exporteer OBJ-bestand:"
 
 msgid "Export of a temporary 3mf file failed"
 msgstr "Exporteren van tijdelijk 3MF-bestand mislukt"
-
-msgid "Export Plate as &STL"
-msgstr "Exporteer modellen als STL"
-
-msgid "Export Plate as STL &Including Supports"
-msgstr "Exporteer modellen inclusief supports als STL"
 
 msgid "Export SLA"
 msgstr "Exporteer SLA"
@@ -2819,17 +2561,20 @@ msgstr "Exporteren."
 msgid "Exposition time is out of printer profile bounds."
 msgstr "De belichtingstijd valt buiten de grenzen van het printerprofiel."
 
+msgid "Exposure"
+msgstr "Belichtingstijd"
+
 msgid "Exposure time"
 msgstr "Belichtingstijd"
 
 msgid "External perimeter"
 msgstr "Buitenste perimeter"
 
-msgid "external perimeters"
-msgstr "buitenperimeters"
-
 msgid "External perimeters"
 msgstr "Buitenste perimeters"
+
+msgid "external perimeters"
+msgstr "buitenperimeters"
 
 msgid "External perimeters first"
 msgstr "Buitenste perimeters eerst"
@@ -2839,6 +2584,9 @@ msgstr "Extra lengte bij herstart"
 
 msgid "Extra loading distance"
 msgstr "Extra laadafstand"
+
+msgid "Extruder"
+msgstr "Extruder"
 
 msgid "Extruder %d"
 msgstr "Extruder %d"
@@ -2855,6 +2603,9 @@ msgstr "Extruderkleur"
 msgid "Extruder offset"
 msgstr "Extruder-offset"
 
+msgid "Extruders"
+msgstr "Extruders"
+
 msgid "Extruders count"
 msgstr "Aantal extruders"
 
@@ -2869,6 +2620,9 @@ msgstr "Extrusie vermenigvuldigingsfactor"
 
 msgid "Extrusion Temperature:"
 msgstr "Extrusietemperatuur:"
+
+msgid "Extrusion width"
+msgstr "Extrusiebreedte"
 
 msgid "Facets"
 msgstr "Vlakken"
@@ -2900,19 +2654,6 @@ msgstr "Ventilatorsnelheid"
 msgid "Fan Speed (%)"
 msgstr "Ventilatorsnelheid (%)"
 
-msgid ""
-"Fan speed will be ramped up linearly from zero at layer "
-"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
-"\"full_fan_speed_layer\" will be ignored if lower than "
-"\"disable_fan_first_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
-msgstr ""
-"De ventilatorsnelheid wordt geleidelijk opgebouwd van 0 op laag "
-"\"disable_fan_first_layers\" naar het maximale op laag \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" wordt genegeerd als die lager is dan "
-"\"disable_fan_first_layers\" in welk geval de ventilator zal draaien op de "
-"maximaal toegestane snelheid op laag \"disable_fan_first_layers\" + 1."
-
 msgid "Fast"
 msgstr "Snel"
 
@@ -2933,6 +2674,9 @@ msgstr "Type opties"
 
 msgid "filament"
 msgstr "filament"
+
+msgid "Filament"
+msgstr "Filament"
 
 msgid "Filament and Nozzle Diameters"
 msgstr "Filament en nozzle diameters"
@@ -2967,6 +2711,9 @@ msgstr "Filament parkeerpositie"
 
 msgid "Filament Profiles Selection"
 msgstr "Filament profielselectie"
+
+msgid "Filament properties"
+msgstr "Filamenteigenschappen"
 
 msgid "Filament Settings"
 msgstr "Filamentinstellingen"
@@ -3046,6 +2793,9 @@ msgstr "Zoeken"
 msgid "Finished"
 msgstr "Klaar"
 
+msgid "Firmware"
+msgstr "Firmware"
+
 msgid "Firmware flasher"
 msgstr "Firmwareflasher"
 
@@ -3060,6 +2810,9 @@ msgstr "Firmwaretype"
 
 msgid "first"
 msgstr "eerste"
+
+msgid "First layer"
+msgstr "Eerste laag"
 
 msgid "First layer bed temperature"
 msgstr "Bedtemperatuur eerste laag"
@@ -3084,6 +2837,9 @@ msgstr ""
 
 msgid "First layer nozzle temperature"
 msgstr "Nozzletemperatuur eerste laag"
+
+msgid "First layer speed"
+msgstr "Snelheid eerste laag"
 
 msgid "First layer volumetric"
 msgstr "Eerste laag volumetrisch"
@@ -3121,6 +2877,9 @@ msgstr "Flashen succesvol!"
 msgid "Floating reserved operand"
 msgstr "Fout: floating reserved operand"
 
+msgid "Flow"
+msgstr "Stroom"
+
 msgid "Flow rate"
 msgstr "Debiet"
 
@@ -3155,6 +2914,9 @@ msgid "Folowing model repair failed"
 msgid_plural "Folowing models repair failed"
 msgstr[0] "Volgende model repareren mislukt"
 msgstr[1] "Volgende modellen repareren mislukt"
+
+msgid "Font size"
+msgstr "Lettertype-grootte"
 
 msgid ""
 "For a multipart object, this value isn't accurate.\n"
@@ -3250,14 +3012,14 @@ msgstr "Volledig scherm"
 msgid "Fuzzy Skin"
 msgstr "Oneffen oppervlak"
 
+msgid "Fuzzy skin (experimental)"
+msgstr "Oneffen oppervlak (experimenteel)"
+
 msgid "Fuzzy skin point distance"
 msgstr "Puntafstand van oneffen oppervlak"
 
 msgid "Fuzzy skin thickness"
 msgstr "Dikte van oneffen oppervlak"
-
-msgid "Fuzzy skin type."
-msgstr "Type oneffen oppervlak."
 
 msgid "G-code"
 msgstr "G-code"
@@ -3290,6 +3052,12 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
+
+msgid "Gap fill"
+msgstr "Gatenvulling"
+
+msgid "General"
+msgstr "Algemeen"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -3526,6 +3294,9 @@ msgstr "Hol een model uit voor een leeg binnenste"
 msgid "Hollow this object"
 msgstr "Dit object uithollen"
 
+msgid "Hollowing"
+msgstr "Uithollen"
+
 msgid ""
 "Hollowing is done in two steps: first, an imaginary interior is calculated "
 "deeper (offset plus the closing distance) in the object and then it's "
@@ -3547,6 +3318,9 @@ msgstr "Wijziging van uitholparameter"
 
 msgid "Honeycomb"
 msgstr "Honingraat"
+
+msgid "Horizontal shells"
+msgstr "Horizontale shells"
 
 msgid "Horizontal Slider"
 msgstr "Horizontale schuif"
@@ -3843,18 +3617,6 @@ msgstr ""
 "ingestelde waarde omhoog bewegen bij het retracten."
 
 msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"Als u de output-G-code via custom scripts wilt verwerken, hoeft u alleen de "
-"paden hier te plaatsen. Scheid meerdere scripts met een puntkomma. Scripts "
-"krijgen als eerste argument het pad naar het gcode-bestand. Ze hebben ook "
-"toegang tot de configuratie-instellingen door het lezen van variabelen."
-
-msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
 "code to take it into account. This option lets you specify the displacement "
 "of each extruder with respect to the first one. It expects positive "
@@ -3945,8 +3707,8 @@ msgstr "Importeer SLA-archief"
 msgid "Import STL (Imperial Units)"
 msgstr "Importeer STL (Engelse eenheden)"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "Importeer STL-, OBJ-, AMF- of 3MF-bestanden"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden"
 
 msgid "Importing canceled."
 msgstr "Importeren geannuleerd."
@@ -4012,6 +3774,12 @@ msgstr ""
 "laatst opgeslagen preset voor de huidige optiegroep.\n"
 "Klik op het pijltje-terug-pictogram om alle instellingen te resetten naar de "
 "laatst opgeslagen preset voor de huidige optiegroep."
+
+msgid "Infill"
+msgstr "Vulling"
+
+msgid "infill"
+msgstr "vulling"
 
 msgid "Infill before perimeters"
 msgstr "Vulling vóór perimeters"
@@ -4138,6 +3906,14 @@ msgid "It can't be deleted or modified."
 msgstr "Kan niet verwijderd of aangepast worden."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Het lijkt erop dat de geselecteerde %1%-bestand een error geeft of is "
+"vernietigd.\n"
+"Het bestand kan niet geladen worden"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -4235,6 +4011,9 @@ msgstr "Laatste instantie van een object kan niet verwijderd worden."
 msgid "Layer"
 msgstr "Laag"
 
+msgid "Layer height"
+msgstr "Laagdikte"
+
 msgid ""
 "Layer height is not valid.\n"
 "\n"
@@ -4244,11 +4023,20 @@ msgstr ""
 "\n"
 "De laagdikte wordt ingesteld op 0,01."
 
+msgid "Layer height limits"
+msgstr "Laagdiktelimieten"
+
 msgid "Layer range Settings to modify"
 msgstr "Laagbereikinstellingen om te bewerken"
 
 msgid "layers"
 msgstr "lagen"
+
+msgid "Layers"
+msgstr "Lagen"
+
+msgid "Layers and perimeters"
+msgstr "Lagen en perimeters"
 
 msgid "Left"
 msgstr "Links"
@@ -4270,6 +4058,9 @@ msgstr "Linkerzijaanzicht"
 
 msgid "Legend/Estimated printing time"
 msgstr "Legenda / Geschatte printtijd"
+
+msgid "Length"
+msgstr "Lengte"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
@@ -4396,6 +4187,9 @@ msgstr "Laden van de weergavemodus"
 msgid "Loading of current presets"
 msgstr "Laden van huidige presets"
 
+msgid "Loading of the \"%1%\""
+msgstr "Laden van de \"%1%\""
+
 msgid "Loading repaired model"
 msgstr "Gerepareerd model aan het laden"
 
@@ -4454,6 +4248,12 @@ msgstr "Gemaskeerd SLA bestand geëxporteerd naar %1%"
 msgid "Mate&rial Settings Tab"
 msgstr "Materiaalinstellingentab"
 
+msgid "Material"
+msgstr "Materiaal"
+
+msgid "Material printing profile"
+msgstr "Materiaal-printprofiel"
+
 msgid "Material Settings"
 msgstr "Materiaalinstellingen"
 
@@ -4469,6 +4269,9 @@ msgstr "Maximale bruglengte"
 msgid "Max bridges on a pillar"
 msgstr "Maximaal aantal bruggen op een pijler"
 
+msgid "Max height"
+msgstr "Maximale hoogte"
+
 msgid "Max merge distance"
 msgstr "Maximale combineerafstand"
 
@@ -4478,9 +4281,6 @@ msgstr "Maximale pijler-verbindafstand"
 msgid "Max print height"
 msgstr "Maximale printhoogte"
 
-msgid "Max print speed"
-msgstr "Maximale printsnelheid"
-
 msgid "Max volumetric slope negative"
 msgstr "Maximale volumetrische daling"
 
@@ -4489,6 +4289,9 @@ msgstr "Maximale volumetrische stijging"
 
 msgid "Max volumetric speed"
 msgstr "Maximale volumetrische snelheid"
+
+msgid "Max width"
+msgstr "Maximale breedte"
 
 msgid "Maximal bridging distance"
 msgstr "Maximale brugafstand"
@@ -4663,6 +4466,9 @@ msgstr "Kort bericht voor printpauze bij huidige laag (%1% mm)."
 msgid "Min"
 msgstr "Min"
 
+msgid "Min height"
+msgstr "Minimale hoogte"
+
 msgid "Min print speed"
 msgstr "Minimale printsnelheid"
 
@@ -4705,6 +4511,9 @@ msgstr "Minimale snelheden"
 msgid "Minimum initial exposure time"
 msgstr "Minimale initiële belichtingstijd"
 
+msgid "Minimum shell thickness"
+msgstr "Minimale shelldikte"
+
 msgid "Minimum thickness of a top / bottom shell"
 msgstr "Minimale dikte van top-/bodemshell"
 
@@ -4743,6 +4552,9 @@ msgstr "Gemengd"
 
 msgid "ml"
 msgstr "ml"
+
+msgid "mm"
+msgstr "mm"
 
 msgid "mm (zero to disable)"
 msgstr "mm (stel in op 0 om uit te schakelen)"
@@ -4797,6 +4609,9 @@ msgstr "aangepast"
 
 msgid "Modifier"
 msgstr "Modificator"
+
+msgid "Modifiers"
+msgstr "Modificators"
 
 msgid "money/bottle"
 msgstr "€/fles"
@@ -5066,6 +4881,9 @@ msgstr "Let op: sommige sneltoetsen werken alleen in bewerkmodus."
 msgid "Note: This preset will be replaced after saving"
 msgstr "Let op: deze preset wordt vervangen na het opslaan"
 
+msgid "Notes"
+msgstr "Opmerkingen"
+
 msgid "Notice"
 msgstr "Let op"
 
@@ -5104,6 +4922,9 @@ msgid ""
 msgstr ""
 "Het aantal interfacelagen tussen de objecten en het supportmateriaal. Stel "
 "in op -1 om evenveel lagen als op bovenkant te gebruiken"
+
+msgid "Number of pixels in"
+msgstr "Aantal pixels"
 
 msgid "Number of pixels in X"
 msgstr "Aantal pixels in de breedte"
@@ -5259,11 +5080,17 @@ msgstr ""
 msgid "Only infill where needed"
 msgstr "Alleen vulling waar nodig"
 
+msgid "Only lift Z"
+msgstr "Beweeg alleen Z omhoog"
+
 msgid "Only lift Z above"
 msgstr "Beweeg Z alleen omhoog boven"
 
 msgid "Only lift Z below"
 msgstr "Beweeg Z alleen omhoog onder"
+
+msgid "Only retract when crossing perimeters"
+msgstr "Alleen retracten bij kruisende perimeters"
 
 msgid ""
 "Only the following installed printers are compatible with the selected "
@@ -5278,6 +5105,9 @@ msgid ""
 msgstr ""
 "Alleen de volgende geïnstalleerde printers zijn compatibel met de "
 "geselecteerde SLA materialen"
+
+msgid "Ooze prevention"
+msgstr "Druippreventie"
 
 msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
@@ -5297,6 +5127,9 @@ msgstr "Open een CA-certificaatbestand"
 
 msgid "Open changelog page"
 msgstr "Open wijzigingslogboekpagina"
+
+msgid "Open Documentation in web browser."
+msgstr "Open documentatie in de webbrowser."
 
 msgid "Open download page"
 msgstr "Open downloadpagina"
@@ -5322,11 +5155,11 @@ msgstr "Open nieuw venster"
 msgid "Open New Instance"
 msgstr "Open nieuwe instantie"
 
+msgid "Open Preferences."
+msgstr "Open voorkeuren."
+
 msgid "Open the dialog to modify shape gallery"
 msgstr "Open het venster voor bewerken van de vormengalerij"
-
-msgid "Opening Configuration Wizard"
-msgstr "Configuratiewizard openen"
 
 msgid "Opening new project while some presets are unsaved."
 msgstr "Openen van nieuw project terwijl sommige presets niet opgeslagen zijn."
@@ -5353,6 +5186,12 @@ msgstr ""
 "handig bij bowden-extruders die gevoelig zijn voor druipen. Deze aanpassing "
 "vertraagd zowel de print als de G-code-generatie."
 
+msgid "Options"
+msgstr "Opties"
+
+msgid "Options for support material and raft"
+msgstr "Opties voor support en raft"
+
 msgid "Options:"
 msgstr "Opties:"
 
@@ -5371,6 +5210,9 @@ msgstr "Oriëntatie zoeken geannuleerd."
 msgid "Origin"
 msgstr "Nulpunt"
 
+msgid "Other"
+msgstr "Overige"
+
 msgid "Other layers"
 msgstr "Overige lagen"
 
@@ -5386,11 +5228,17 @@ msgstr "Alleen buitenste brim"
 msgid "Output File"
 msgstr "Outputbestand"
 
+msgid "Output file"
+msgstr "Outputbestand"
+
 msgid "Output filename format"
 msgstr "Formaat van bestandsnaam"
 
 msgid "Output Model Info"
 msgstr "Output model-info"
+
+msgid "Output options"
+msgstr "Output-opties"
 
 msgid "Outside walls"
 msgstr "Alleen buitenwanden"
@@ -5404,8 +5252,14 @@ msgstr "Overhangende perimeter"
 msgid "Overhang threshold"
 msgstr "Maximale overhanghoek"
 
+msgid "Overlap"
+msgstr "Overlapping"
+
 msgid "P&rint Settings Tab"
 msgstr "Tabblad printinstellingen"
+
+msgid "Pad"
+msgstr "Basisplaat"
 
 msgid "Pad around object"
 msgstr "Basisplaat rondom object"
@@ -5506,6 +5360,9 @@ msgstr "Plak van klembord"
 msgid "Paste From Clipboard"
 msgstr "Plak van klembord"
 
+msgid "Pattern"
+msgstr "Patroon"
+
 msgid "Pattern angle"
 msgstr "Patroonhoek"
 
@@ -5520,6 +5377,9 @@ msgstr "Pauzeer"
 
 msgid "Pause print (\"%1%\")"
 msgstr "Pauzeer print (%1%)"
+
+msgid "Pause Print G-code"
+msgstr "Pauzeer print G-code"
 
 msgid "Percentage"
 msgstr "Percentage"
@@ -5593,15 +5453,11 @@ msgstr "Plaats lagers in gleuven en ga door met printen"
 msgid "Place on face"
 msgstr "Plaats op vlak"
 
+msgid "Plater"
+msgstr "Modelweergave"
+
 msgid "Please check your object list before preset changing."
 msgstr "Controleer de objectenlijst voor het wijzigen van de preset."
-
-msgid ""
-"Please save your project and restart PrusaSlicer. We would be glad if you "
-"reported the issue."
-msgstr ""
-"Sla het project op en herstart PrusaSlicer. We zouden het waarderen als u "
-"deze fout rapporteert."
 
 msgid "Please select the file to reload"
 msgstr "Selecteer het bestand om te herladen"
@@ -5708,6 +5564,9 @@ msgstr ""
 "Druk om 5x zo snel te gaan bij het verplaatsen van de markering\n"
 "met pijltjestoetsen of het scrollwieltje"
 
+msgid "Preview"
+msgstr "Sliceweergave"
+
 msgid "Preview hollowed and drilled model"
 msgstr "Toon voorbeeld van uitgehold model met gat"
 
@@ -5735,6 +5594,9 @@ msgstr ""
 msgid "Print Diameters"
 msgstr "Printdiameter"
 
+msgid "Print Host upload"
+msgstr "Printhost-upload"
+
 msgid "Print host upload queue"
 msgstr "Printhost-uploadwachtrij"
 
@@ -5755,6 +5617,9 @@ msgstr "Printinstellingentab"
 
 msgid "Print speed"
 msgstr "Printsnelheid"
+
+msgid "Print speed override"
+msgstr "Printsnelheid overschrijven"
 
 msgid "Print&er Settings Tab"
 msgstr "Tabblad printerinstellingen"
@@ -5779,6 +5644,9 @@ msgstr "Printeropmerkingen"
 
 msgid "Printer preset names"
 msgstr "Printerpresetnamen"
+
+msgid "Printer scaling correction"
+msgstr "Verschalingscorrectie voor printer"
 
 msgid "Printer scaling correction in X axis"
 msgstr "Verschalingscorrectie over de X-as"
@@ -5836,6 +5704,9 @@ msgstr ""
 msgid "Processing %s"
 msgstr "%s verwerken"
 
+msgid "Profile dependencies"
+msgstr "Profielafhankelijkheden"
+
 msgid "Profile:"
 msgstr "Profiel:"
 
@@ -5847,9 +5718,6 @@ msgstr "Voortgang:"
 
 msgid "Project is loading"
 msgstr "Project is aan het laden"
-
-msgid "PrusaSlicer: Open hyperlink"
-msgstr "PrusaSlicer: Open hyperlink"
 
 msgid ""
 "Purging after toolchange will be done inside this object's infills. This "
@@ -5872,6 +5740,9 @@ msgstr "Afveegvolume - matrix"
 msgid "Purpose of Machine Limits"
 msgstr "Doel van de machinelimieten"
 
+msgid "Quality"
+msgstr "Kwaliteit"
+
 msgid "Quality / Speed"
 msgstr "Kwaliteit / Snelheid"
 
@@ -5892,6 +5763,9 @@ msgstr "Afsluiten, ik zal mijn data nu verplaatsen"
 
 msgid "Radius"
 msgstr "Radius"
+
+msgid "Raft"
+msgstr "Raft"
 
 msgid "Raft contact Z distance"
 msgstr "Z-afstand voor raft"
@@ -5997,6 +5871,9 @@ msgstr[1] "Doe %1$d acties opnieuw"
 
 msgid "Redo History"
 msgstr "Geschiedenis opnieuw doen"
+
+msgid "Reducing printing time"
+msgstr "Printtijd verkorten"
 
 msgid "Refresh Printers"
 msgstr "Ververs printers"
@@ -6165,6 +6042,9 @@ msgstr "Vervang met STL"
 msgid "Replace?"
 msgstr "Vervangen?"
 
+msgid "Replacing of the PNG"
+msgstr "Herplaats de PNG"
+
 msgid "Report an I&ssue"
 msgstr "Rapporteer een fout"
 
@@ -6222,6 +6102,9 @@ msgstr "Retracthoeveelheid voor het afvegen"
 msgid "Retract on layer change"
 msgstr "Retracten bij laagwisselingen"
 
+msgid "Retraction"
+msgstr "Retractie"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr ""
@@ -6233,6 +6116,14 @@ msgstr "Retractielengte"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "Retractielengte (toolwissel)"
+
+msgid "Retraction Speed"
+msgstr "Retractiesnelheid"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr ""
+"Retractie als de tool uit staat (geavanceerde instelling voor multi-"
+"extrudersetups)"
 
 msgid "Retractions"
 msgstr "Retracties"
@@ -6425,6 +6316,9 @@ msgstr ""
 msgid "Seam painting"
 msgstr "Naad kleuren"
 
+msgid "Seam position"
+msgstr "Naadpositie"
+
 msgid "Seam preferred direction"
 msgstr "Richtingsvoorkeur voor de naad"
 
@@ -6493,6 +6387,9 @@ msgstr "Selecteer printinstellingentab"
 
 msgid "Select Printer Settings Tab"
 msgstr "Selecteer printerinstellingentab"
+
+msgid "Select shape from the gallery"
+msgstr "Selecteer vorm uit de galerij"
 
 msgid "Select the language"
 msgstr "Taalselectie"
@@ -6577,6 +6474,9 @@ msgstr "Stuur naar printer"
 
 msgid "Seq."
 msgstr "Volg."
+
+msgid "Sequential printing"
+msgstr "Achtereenvolgens printen"
 
 msgid "Sequential slider applied only to top layer"
 msgstr "Opeenvolgende schuif alleen toegepast op toplaag"
@@ -6865,8 +6765,8 @@ msgstr "Toon/verberg legenda en geschatte printtijd"
 msgid "Show/Hide object/instance labels"
 msgstr "Toon/verberg objecten- of instantielabels"
 
-msgid "Simple mode"
-msgstr "Eenvoudige modus"
+msgid "Simple"
+msgstr "Eenvoudig"
 
 msgid "Single extruder MM setup"
 msgstr "Multi-materialsetup met één extruder"
@@ -6894,8 +6794,20 @@ msgstr "Enkele instantiemodus"
 msgid "Sinking"
 msgstr "Verzakken"
 
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Size and coordinates"
+msgstr "Grootte en coördinaten"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Afmeting in X en Y van het rechthoekig platform."
+
+msgid "Size:"
+msgstr "Grootte:"
+
+msgid "Skirt"
+msgstr "Skirt"
 
 msgid "Skirt and brim"
 msgstr "Skirt en brim"
@@ -6941,13 +6853,6 @@ msgstr "SLA-supportpunten"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Er zijn SLA-supports buiten het printbereik gedetecteerd."
-
-msgid ""
-"Slic3r can upload G-code files to a printer host. This field must contain "
-"the kind of the host."
-msgstr ""
-"PrusaSlicer kan gcode-bestanden uploaden naar een printerhost. Dit veld moet "
-"het type host bevatten."
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7006,6 +6911,9 @@ msgstr "Slice-info"
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "Gesliced object \"%1%\" lijkt op een logo of bord"
 
+msgid "Slicing"
+msgstr "Slicen"
+
 msgid "Slicing complete"
 msgstr "Slicen gelukt"
 
@@ -7062,11 +6970,17 @@ msgstr "Snapshotnaam"
 msgid "Snug"
 msgstr "Handvast"
 
+msgid "Solid"
+msgstr "Solide"
+
 msgid "Solid "
 msgstr "Solide "
 
 msgid "Solid infill"
 msgstr "Dichte vulling"
+
+msgid "solid infill"
+msgstr "dichte vulling"
 
 msgid "Solid infill every"
 msgstr "Dichte vulling elke"
@@ -7076,6 +6990,9 @@ msgstr "Extruder voor dichte vulling"
 
 msgid "Solid infill threshold area"
 msgstr "Dichte vulling bij oppervlak"
+
+msgid "Solid layers"
+msgstr "Dichte lagen"
 
 msgid "Soluble material"
 msgstr "Oplosbaar materiaal"
@@ -7142,6 +7059,9 @@ msgstr "Sommige printers zijn verwijderd."
 msgid "Some SLA materials were uninstalled."
 msgstr "Sommige SLA-materialen zijn verwijderd."
 
+msgid "Spacing"
+msgstr "Tussenruimte"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr ""
 "Ruimte tussen lijnen van supportinterface. Als dit ingesteld is op 0, wordt "
@@ -7149,6 +7069,9 @@ msgstr ""
 
 msgid "Spacing between support material lines."
 msgstr "Afstand tussen supportlijnen."
+
+msgid "Speed"
+msgstr "Snelheid"
 
 msgid "Speed (mm/s)"
 msgstr "Snelheid (mm/s)"
@@ -7161,6 +7084,12 @@ msgstr ""
 "Snelheid voor bewegingen van de Z-as.\n"
 "Als dit ingesteld is op 0, zal de waarde worden genegeerd en "
 "standaardwaarden worden gebruikt."
+
+msgid "Speed for non-print moves"
+msgstr "Snelheid voor niet-print bewegingen"
+
+msgid "Speed for print moves"
+msgstr "Snelheid voor printbewegingen"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "Bewegingssnelheid als niet geëxtrudeerd wordt."
@@ -7237,6 +7166,9 @@ msgstr "Start nieuw project"
 
 msgid "Start at height"
 msgstr "Start op hoogte"
+
+msgid "Start G-code"
+msgstr "Start G-code"
 
 msgid "Start new slicing process"
 msgstr "Start nieuw sliceproces"
@@ -7344,8 +7276,14 @@ msgstr "Supportforcering"
 msgid "Support Generator"
 msgstr "Supportgenerator"
 
+msgid "Support head"
+msgstr "Supportkop"
+
 msgid "support interface"
 msgstr "supportinterface"
+
+msgid "Support material"
+msgstr "Support"
 
 msgid "Support material interface"
 msgstr "Supportinterface"
@@ -7359,11 +7297,17 @@ msgstr "Support alleen op het bed"
 msgid "Support parameter change"
 msgstr "Wijzig supportparameter"
 
+msgid "Support pillar"
+msgstr "Supportpijler"
+
 msgid "Support points density"
 msgstr "Dichtheid van supportpunten"
 
 msgid "Support points edit"
 msgstr "Bewerk supportpunten"
+
+msgid "Supports"
+msgstr "Support"
 
 msgid "supports and pad"
 msgstr "support en basisplaat"
@@ -7407,6 +7351,9 @@ msgstr "Schakel over naar bewerkmodus"
 
 msgid "Switch to Settings"
 msgstr "Schakel over naar instellingen"
+
+msgid "Switch to the %s mode"
+msgstr "Schakel over naar de %s modus"
 
 msgid "Switching Presets: Unsaved Changes"
 msgstr "Wisselen van presets: niet-opgeslagen wijzigingen"
@@ -7478,6 +7425,9 @@ msgstr "Temperatuurverschil"
 
 msgid "Temperatures"
 msgstr "Temperaturen"
+
+msgid "Template Custom G-code"
+msgstr "Template custom G-code"
 
 msgid "Test"
 msgstr "Test"
@@ -7792,19 +7742,6 @@ msgid ""
 msgstr ""
 "De plaatsen waar de brim wordt geprint rond elk object op de eerste laag."
 
-msgid ""
-"The preset below was temporarily installed on the active instance of "
-"PrusaSlicer"
-msgid_plural ""
-"The presets below were temporarily installed on the active instance of "
-"PrusaSlicer"
-msgstr[0] ""
-"De vorige preset is tijdelijk geïnstalleerd op de actieve instantie van "
-"PrusaSlicer"
-msgstr[1] ""
-"De vorige presets zijn tijdelijk geïnstalleerd op de actieve instantie van "
-"PrusaSlicer"
-
 msgid "The preset modifications are successfully saved"
 msgid_plural "The presets modifications are successfully saved"
 msgstr[0] "De preset-aanpassing is succesvol opgeslagen"
@@ -7818,27 +7755,6 @@ msgstr "De gegeven naam is niet geldig."
 
 msgid "The provided name is not valid;"
 msgstr "De gegeven naam is niet geldig;"
-
-msgid ""
-"The selected 3MF contains FDM supports painted object using a newer version "
-"of PrusaSlicer and is not compatible."
-msgstr ""
-"De geselecteerde 3MF bevat een FDM-supports geschilderd object van een "
-"nieuwere versie van PrusaSlicer en is niet compatibel."
-
-msgid ""
-"The selected 3MF contains multi-material painted object using a newer "
-"version of PrusaSlicer and is not compatible."
-msgstr ""
-"De geselecteerde 3MF bevat een multi-material geschilderd object van een "
-"nieuwere versie van PrusaSlicer en is niet compatibel."
-
-msgid ""
-"The selected 3MF contains seam painted object using a newer version of "
-"PrusaSlicer and is not compatible."
-msgstr ""
-"De geselecteerde 3MF bevat een naadschildering object van een nieuwere "
-"versie van PrusaSlicer en is niet compatibel."
 
 msgid "The selected file"
 msgstr "Het geselecteerde bestand"
@@ -7934,12 +7850,6 @@ msgstr "Dikte van de basisplaat en optionele wanden."
 
 msgid "The uploads are still ongoing"
 msgstr "De uploads zijn nog bezig"
-
-msgid ""
-"The vertical distance between object and raft. Ignored for soluble interface."
-msgstr ""
-"De verticale afstand tussen object en raft. Wordt genegeerd bij oplosbare "
-"interface."
 
 msgid ""
 "The Wipe option is not available when using the Firmware Retraction mode.\n"
@@ -8086,17 +7996,6 @@ msgstr ""
 "slider."
 
 msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-"Deze experimentele instelling wordt gebruikt om de snelheidsveranderingen te "
-"limiteren. Een waarde van 1.8mm³/s² zorgt voor een extrusieratio van 1.8mm³/"
-"s (0,45mm extrusiebreedte, 0,2mm laagdikte, 20mm/s snelheid) tot 5.4mm³/s "
-"(60mm/s snelheid). Dit duurt ten minste 2sec."
-
-msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
 "handle the retraction. This is only supported in recent Marlin."
 msgstr ""
@@ -8114,20 +8013,6 @@ msgstr ""
 "een mooi oppervlak en dunne wanden te krijgen. Waarden liggen normaal tussen "
 "0.9 en 1.1. Check eventueel de filamentdiameter en de extruderstappen (uit "
 "de firmware) als u denkt dat dit aangepast moet worden."
-
-msgid ""
-"This feature will raise Z gradually while printing a single-walled object in "
-"order to remove any visible seam. This option requires a single perimeter, "
-"no infill, no top solid layers and no support material. You can still set "
-"any number of bottom solid layers as well as skirt/brim loops. It won't work "
-"when printing more than one single object."
-msgstr ""
-"Deze optie verhoogt de Z-as geleidelijk tijdens het printen van een "
-"enkelwandig object om zichtbare naden te voorkomen. Deze optie vereist een "
-"enkele perimeter, geen vulling, geen dichte bovenlagen en geen "
-"supportmateriaal. U kunt nog wel een aantal bodemlagen instellen, net als "
-"skirt- en brimrondgangen. Het werkt niet bij het printen van meer dan één "
-"object."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -8167,12 +8052,6 @@ msgid ""
 msgstr ""
 "Dit vinkje zorgt dat automatisch gekoeld wordt; de print- en "
 "ventilatorsnelheid worden aangepast op basis van de laagprinttijd."
-
-msgid "This G-code will be used as a code for the color change"
-msgstr "Deze G-code wordt gebruikt voor een kleurwisseling"
-
-msgid "This G-code will be used as a code for the pause print"
-msgstr "Deze G-code wordt gebruikt bij het pauzeren van de print"
 
 msgid "This G-code will be used as a custom code"
 msgstr "Deze G-code wordt gebruikt als custom G-code"
@@ -8222,17 +8101,6 @@ msgid ""
 msgstr ""
 "Deze bewerking werkt onomkeerbaar.\n"
 "Weet u zeker dat u wilt doorgaan?"
-
-msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"Instelling voor het te genereren aantal perimeters per laag. PrusaSlicer kan "
-"dit aantal verhogen als het schuine vlakken detecteert die gebruik maken van "
-"een hoger aantal perimeters als de optie voor extra perimeters is "
-"ingeschakeld."
 
 msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
@@ -8324,6 +8192,12 @@ msgstr ""
 "draaien. Het optimaal aantal processen is vlak boven het aanwezige aantal "
 "kernen/processoren."
 
+msgid "Tilt"
+msgstr "Draaiing"
+
+msgid "Tilt time"
+msgstr "Draaitijd"
+
 msgid "Time"
 msgstr "Tijd"
 
@@ -8393,6 +8267,9 @@ msgstr "Tool"
 msgid "Tool #"
 msgstr "Tool #"
 
+msgid "Tool change G-code"
+msgstr "Toolwisseling G-code"
+
 msgid "Tool changes"
 msgstr "Toolwisselingen"
 
@@ -8404,6 +8281,12 @@ msgstr "Toolpositie"
 
 msgid "Tool type"
 msgstr "Tooltype"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "Toolwisselparameter voor multi-materialprinters met één extruder"
+
+msgid "Top"
+msgstr "Bovenkant"
 
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
@@ -8466,6 +8349,9 @@ msgstr "Verplaats"
 msgid "Translation"
 msgstr "Verplaatsing"
 
+msgid "Travel"
+msgstr "Beweging"
+
 msgid "Triangles"
 msgstr "Facetten"
 
@@ -8475,6 +8361,9 @@ msgid ""
 msgstr ""
 "Probeer alle niet-gesloten meshes te repareren (deze optie is impliciet "
 "toegevoegd om, wanneer dat nodig is, onmogelijke modellen toch te slicen)."
+
+msgid "Type"
+msgstr "Type"
 
 msgid "Type here the name of your printer device"
 msgstr "Type hier de naam van je printer"
@@ -8806,6 +8695,12 @@ msgstr "Versie"
 msgid "version"
 msgstr "versie"
 
+msgid "Version:"
+msgstr "Versie:"
+
+msgid "Vertical shells"
+msgstr "Verticale shells"
+
 msgid "Vertical Slider"
 msgstr "Verticale schuif"
 
@@ -8878,9 +8773,6 @@ msgid "Welcome"
 msgstr "Welkom"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr "Welkom bij de %s configuratie-assistent"
-
-msgid "Welcome to the %s Configuration Wizard"
 msgstr "Welkom bij de %s configuratie-assistent"
 
 msgid "What would you like to do with \"%1%\" preset after saving?"
@@ -9008,6 +8900,9 @@ msgstr "Afvegen in de vulling van het object"
 msgid "Wipe Tower"
 msgstr "Afveegblok"
 
+msgid "Wipe tower"
+msgstr "Afveegblok"
+
 msgid "wipe tower"
 msgstr "afveegblok"
 
@@ -9016,6 +8911,9 @@ msgstr "Afveegblok - afveegvolume aanpassen"
 
 msgid "Wipe tower brim width"
 msgstr "Brimbreedte van het afveegblok"
+
+msgid "Wipe tower parameters"
+msgstr "Afveegblokparameters"
 
 msgid "Wipe tower rotation angle"
 msgstr "Rotatie van het afveegblok"
@@ -9185,9 +9083,6 @@ msgstr "U moet mogelijk uw grafische kaart updaten."
 msgid "You must install a configuration update."
 msgstr "U moet een configuratie-update installeren."
 
-msgid "You should change the name of your printer device."
-msgstr "U moet de naam van de printer wijzigen."
-
 msgid "You started your selection with %s Item."
 msgstr "De selectie is gestart met item %s."
 
@@ -9251,6 +9146,200 @@ msgstr ""
 
 msgid "°C"
 msgstr "°C"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"Fout in %s. Mogelijk komt dit door een tekort aan RAM geheugen. Als u er "
+"zeker van bent genoeg RAM geheugen te hebben, kan dit een andere oorzaak "
+"hebben. We stellen het op prijs als u het aan ons rapporteert."
+
+msgid "Access violation"
+msgstr "Toegangsschending"
+
+msgid "Advanced mode"
+msgstr "Geavanceerde modus"
+
+msgid "All walls"
+msgstr "Alle wanden"
+
+msgid "Cannot overwrite an external profile."
+msgstr "Een extern profiel kan niet overschreven worden."
+
+msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "Kies één of meer STL-, OBJ-, AMF-, 3MF-, of PRUSA-bestanden:"
+
+msgid "Configuration &Wizard"
+msgstr "Configuratie-&assistent"
+
+msgid "Configuration Wizard"
+msgstr "Configuratie-assistent"
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr ""
+"Dichtheid van inwendige vulling, uitgedrukt in een percentage (0 - 100%)"
+
+msgid "Expert mode"
+msgstr "Expertmodus"
+
+msgid "Export current plate as STL"
+msgstr "Exporteer modellen als STL-bestand"
+
+msgid "Export current plate as STL including supports"
+msgstr "Exporteer modellen met support als STL-bestand"
+
+msgid "Export Plate as &STL"
+msgstr "Exporteer modellen als STL"
+
+msgid "Export Plate as STL &Including Supports"
+msgstr "Exporteer modellen inclusief supports als STL"
+
+msgid ""
+"Fan speed will be ramped up linearly from zero at layer "
+"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" will be ignored if lower than "
+"\"disable_fan_first_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
+msgstr ""
+"De ventilatorsnelheid wordt geleidelijk opgebouwd van 0 op laag "
+"\"disable_fan_first_layers\" naar het maximale op laag \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" wordt genegeerd als die lager is dan "
+"\"disable_fan_first_layers\" in welk geval de ventilator zal draaien op de "
+"maximaal toegestane snelheid op laag \"disable_fan_first_layers\" + 1."
+
+msgid "Fuzzy skin type."
+msgstr "Type oneffen oppervlak."
+
+msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
+msgstr ""
+"Als u de output-G-code via custom scripts wilt verwerken, hoeft u alleen de "
+"paden hier te plaatsen. Scheid meerdere scripts met een puntkomma. Scripts "
+"krijgen als eerste argument het pad naar het gcode-bestand. Ze hebben ook "
+"toegang tot de configuratie-instellingen door het lezen van variabelen."
+
+msgid "Import STL/OBJ/AM&F/3MF"
+msgstr "Importeer STL-, OBJ-, AMF- of 3MF-bestanden"
+
+msgid "Max print speed"
+msgstr "Maximale printsnelheid"
+
+msgid "Opening Configuration Wizard"
+msgstr "Configuratiewizard openen"
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr ""
+"Sla het project op en herstart PrusaSlicer. We zouden het waarderen als u "
+"deze fout rapporteert."
+
+msgid "PrusaSlicer: Open hyperlink"
+msgstr "PrusaSlicer: Open hyperlink"
+
+msgid "Simple mode"
+msgstr "Eenvoudige modus"
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
+msgstr ""
+"PrusaSlicer kan gcode-bestanden uploaden naar een printerhost. Dit veld moet "
+"het type host bevatten."
+
+msgid ""
+"The preset below was temporarily installed on the active instance of "
+"PrusaSlicer"
+msgid_plural ""
+"The presets below were temporarily installed on the active instance of "
+"PrusaSlicer"
+msgstr[0] ""
+"De vorige preset is tijdelijk geïnstalleerd op de actieve instantie van "
+"PrusaSlicer"
+msgstr[1] ""
+"De vorige presets zijn tijdelijk geïnstalleerd op de actieve instantie van "
+"PrusaSlicer"
+
+msgid ""
+"The selected 3MF contains FDM supports painted object using a newer version "
+"of PrusaSlicer and is not compatible."
+msgstr ""
+"De geselecteerde 3MF bevat een FDM-supports geschilderd object van een "
+"nieuwere versie van PrusaSlicer en is niet compatibel."
+
+msgid ""
+"The selected 3MF contains multi-material painted object using a newer "
+"version of PrusaSlicer and is not compatible."
+msgstr ""
+"De geselecteerde 3MF bevat een multi-material geschilderd object van een "
+"nieuwere versie van PrusaSlicer en is niet compatibel."
+
+msgid ""
+"The selected 3MF contains seam painted object using a newer version of "
+"PrusaSlicer and is not compatible."
+msgstr ""
+"De geselecteerde 3MF bevat een naadschildering object van een nieuwere "
+"versie van PrusaSlicer en is niet compatibel."
+
+msgid ""
+"The vertical distance between object and raft. Ignored for soluble interface."
+msgstr ""
+"De verticale afstand tussen object en raft. Wordt genegeerd bij oplosbare "
+"interface."
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
+"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
+"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"Deze experimentele instelling wordt gebruikt om de snelheidsveranderingen te "
+"limiteren. Een waarde van 1.8mm³/s² zorgt voor een extrusieratio van 1.8mm³/"
+"s (0,45mm extrusiebreedte, 0,2mm laagdikte, 20mm/s snelheid) tot 5.4mm³/s "
+"(60mm/s snelheid). Dit duurt ten minste 2sec."
+
+msgid ""
+"This feature will raise Z gradually while printing a single-walled object in "
+"order to remove any visible seam. This option requires a single perimeter, "
+"no infill, no top solid layers and no support material. You can still set "
+"any number of bottom solid layers as well as skirt/brim loops. It won't work "
+"when printing more than one single object."
+msgstr ""
+"Deze optie verhoogt de Z-as geleidelijk tijdens het printen van een "
+"enkelwandig object om zichtbare naden te voorkomen. Deze optie vereist een "
+"enkele perimeter, geen vulling, geen dichte bovenlagen en geen "
+"supportmateriaal. U kunt nog wel een aantal bodemlagen instellen, net als "
+"skirt- en brimrondgangen. Het werkt niet bij het printen van meer dan één "
+"object."
+
+msgid "This G-code will be used as a code for the color change"
+msgstr "Deze G-code wordt gebruikt voor een kleurwisseling"
+
+msgid "This G-code will be used as a code for the pause print"
+msgstr "Deze G-code wordt gebruikt bij het pauzeren van de print"
+
+msgid ""
+"This option sets the number of perimeters to generate for each layer. Note "
+"that Slic3r may increase this number automatically when it detects sloping "
+"surfaces which benefit from a higher number of perimeters if the Extra "
+"Perimeters option is enabled."
+msgstr ""
+"Instelling voor het te genereren aantal perimeters per laag. PrusaSlicer kan "
+"dit aantal verhogen als het schuine vlakken detecteert die gebruik maken van "
+"een hoger aantal perimeters als de optie voor extra perimeters is "
+"ingeschakeld."
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Welkom bij de %s configuratie-assistent"
+
+msgid "You should change the name of your printer device."
+msgstr "U moet de naam van de printer wijzigen."
 
 msgid "Fill pattern"
 msgstr "Vullingspatroon"
@@ -9374,46 +9463,6 @@ msgstr ""
 
 msgid "Perform"
 msgstr "Uitvoeren"
-
-msgid "Select shape from the gallery"
-msgstr "Selecteer vorm uit de galerij"
-
-msgid "Add to bed"
-msgstr "Voeg toe aan bed"
-
-msgid "Add selected shape(s) to the bed"
-msgstr "Voeg geselecteerd(e) object(en) toe aan bed"
-
-msgid "Add one or more custom shapes"
-msgstr "Voeg een of meer aangepaste vormen toe"
-
-msgid "Delete one or more custom shape. You can't delete system shapes"
-msgstr ""
-"Verwijder een of meer aangepaste vormen. U kunt geen standaardvormen "
-"verwijderen"
-
-msgid "Choose one or more files (STL, OBJ):"
-msgstr "Kies een of meer bestanden (STL, OBJ):"
-
-msgid ""
-"It looks like selected %1%-file has an error or is destructed.\n"
-"We can't load this file"
-msgstr ""
-"Het lijkt erop dat de geselecteerde %1%-bestand een error geeft of is "
-"vernietigd.\n"
-"Het bestand kan niet geladen worden"
-
-msgid "Choose one PNG file:"
-msgstr "Kies een PNG-bestand:"
-
-msgid "Replacing of the PNG"
-msgstr "Herplaats de PNG"
-
-msgid "Change thumbnail"
-msgstr "Verander miniatuur"
-
-msgid "Loading of the \"%1%\""
-msgstr "Laden van de \"%1%\""
 
 msgid ""
 "Your printer has more extruders than the multi-material painting gizmo "
@@ -9587,17 +9636,11 @@ msgstr ""
 "getoond in de printerinstellingen.\n"
 "Instellingen zijn beschikbaar in de fysieke printerinstellingen."
 
-msgid "Simple"
-msgstr "Eenvoudig"
-
 msgid "Simple View Mode"
 msgstr "Eenvoudige weergave"
 
 msgid "Advanced View Mode"
 msgstr "Geavanceerde weergave"
-
-msgid "Expert"
-msgstr "Expert"
 
 msgid "Expert View Mode"
 msgstr "Expertweergave"
@@ -9771,12 +9814,6 @@ msgstr ""
 
 msgid "Generic"
 msgstr "Algemeen"
-
-msgid "Open Preferences."
-msgstr "Open voorkeuren."
-
-msgid "Open Documentation in web browser."
-msgstr "Open documentatie in de webbrowser."
 
 msgid "Filling bed"
 msgstr "Vul bed"
@@ -9984,13 +10021,6 @@ msgid ""
 msgstr ""
 "Als dit aanstaat wordt PrusaSlicer G-code Viewer als standaardprogramma "
 "ingesteld om .gcode-bestanden te openen."
-
-msgid ""
-"Changing some options will trigger application restart.\n"
-"You will lose the content of the plater."
-msgstr ""
-"Sommige opties aanpassen kan een herstart veroorzaken.\n"
-"U kunt de inhoud van het bed kwijtraken."
 
 msgid "Old regular layout with the tab bar"
 msgstr "Oude standaardlayout met de tabbladen"
@@ -10225,12 +10255,6 @@ msgstr ""
 
 msgid "For more information please visit our wiki page:"
 msgstr "Voor meer informatie kunt u naar onze wiki-pagina gaan:"
-
-msgid "Switch to the %s mode"
-msgstr "Schakel over naar de %s modus"
-
-msgid "Current mode is %s"
-msgstr "Huidige modus is: %s"
 
 msgid "Connection to AstroBox works correctly."
 msgstr "Verbinding met AstroBox werkt naar behoren."
@@ -15535,9 +15559,6 @@ msgstr "Eenvoudig monochroom thema"
 msgid "Single"
 msgstr "Enkel"
 
-msgid "Size:"
-msgstr "Grootte:"
-
 msgid "Sizing"
 msgstr "Dimensionering"
 
@@ -17072,9 +17093,6 @@ msgstr "zlib-fout %d"
 msgid "Artwork model by Leslie Ing"
 msgstr "Kunstwerkmodel door Leslie Ing"
 
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Kies één of meer STL-, 3MF-, STEP-, OBJ-, AMF- of PRUSA- bestanden:"
-
 msgid "Open project AMF/3MF with config, clear plater"
 msgstr "Open AMF- of 3MF-project met configuratie, verwijder huidige modellen"
 
@@ -17082,6 +17100,3 @@ msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
 msgstr ""
 "Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden zonder configuratie en "
 "behoud modellen"
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden"
