@@ -434,7 +434,7 @@ public:
 	void		update_undo_buttons();
 
 	void		on_roll_back_value(const bool to_sys = false);
-
+	
 	int             get_icon_id(const wxString& title, const std::string &icon);
 	virtual PageShp create_options_page(const wxString &title, const std::string &icon);
 	static wxString translate_category(const wxString& title, Preset::Type preset_type);

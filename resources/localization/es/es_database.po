@@ -530,6 +530,9 @@ msgstr "Añadir rango de capas"
 msgid "Add Layers"
 msgstr "Añadir Capas"
 
+msgid "Add one or more custom shapes"
+msgstr "Añadir una o más formas personalizadas"
+
 msgid "Add pause print"
 msgstr "Añadir pausa de impresión"
 
@@ -544,6 +547,9 @@ msgstr "Añadir punto a selección"
 
 msgid "Add preset for this printer device"
 msgstr "Añadir ajuste preestablecido para este dispositivo de impresión"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Añadir la(s) forma(s) seleccionada(s) a la base"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Añadir Conjunto de Ajustes para Rango de Alturas"
@@ -580,6 +586,9 @@ msgstr "Añadir soportes"
 
 msgid "Add supports by angle"
 msgstr "Añadir soportes según ángulo"
+
+msgid "Add to bed"
+msgstr "Añadir a la cama"
 
 msgid "Add..."
 msgstr "Añadir..."
@@ -1233,6 +1242,9 @@ msgstr "Cambiar Tipo de Pieza"
 msgid "Change point head diameter"
 msgstr "Cambiar diámetro de la cabeza de punta"
 
+msgid "Change thumbnail"
+msgstr "Cambiar la miniatura"
+
 msgid "Changelog & Download"
 msgstr "Registro de cambios & Descargar"
 
@@ -1277,8 +1289,14 @@ msgstr "Selecciona un archivo (3MF/AMF):"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Elige un archivo (GCODE/.GCO/.G/.ngc/NGC):"
 
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Elije uno o varios archivos (STL, OBJ):"
+
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 msgstr "Escoje uno o más archivos (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose one PNG file:"
+msgstr "Elije un archivo PNG:"
 
 msgid "Choose SLA archive:"
 msgstr "Elegir archivo SLA:"
@@ -1876,6 +1894,11 @@ msgstr "Eliminar Instancia"
 
 msgid "Delete Object"
 msgstr "Eliminar Objeto"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr ""
+"Eliminar una o varias formas personalizadas. No se pueden eliminar las "
+"formas del sistema"
 
 msgid "Delete Option %s"
 msgstr "Eliminar Opción %s"
@@ -4048,6 +4071,13 @@ msgid "It can't be deleted or modified."
 msgstr "No puede ser borrado o modificado."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Parece que el archivo %1% seleccionado tiene un error o está destruido.\n"
+"No podemos cargar este archivo"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -4325,6 +4355,9 @@ msgstr "Carga de modo de vista"
 
 msgid "Loading of current presets"
 msgstr "Cargando los ajustes actuales"
+
+msgid "Loading of the \"%1%\""
+msgstr "Cargando de la  \"%1%\""
 
 msgid "Loading repaired model"
 msgstr "Cargando modelo reparado"
@@ -6271,6 +6304,9 @@ msgstr "Sustituir con STL"
 msgid "Replace?"
 msgstr "¿Reemplazar?"
 
+msgid "Replacing of the PNG"
+msgstr "Sustitución del PNG"
+
 msgid "Report an I&ssue"
 msgstr "Informar de un &problema"
 
@@ -6632,6 +6668,9 @@ msgstr "Seleccione la pestaña Configuración de impresión"
 
 msgid "Select Printer Settings Tab"
 msgstr "Selecciona pestaña de ajustes de impresora"
+
+msgid "Select shape from the gallery"
+msgstr "Seleccionar la forma en la galería"
 
 msgid "Select the language"
 msgstr "Seleccione el idioma"
@@ -15517,14 +15556,8 @@ msgstr "Añadir volumen negativo"
 msgid "Add one more instance of the selected object"
 msgstr "Añadir una instancia más del objeto seleccionado"
 
-msgid "Add one or more custom shapes"
-msgstr "Añadir una o más formas personalizadas"
-
 msgid "Add part"
 msgstr "Añadir pieza"
-
-msgid "Add selected shape(s) to the bed"
-msgstr "Añadir la(s) forma(s) seleccionada(s) a la base"
 
 msgid "Add settings"
 msgstr "Añadir ajustes"
@@ -15541,9 +15574,6 @@ msgstr "Añadir bloqueo soportes"
 
 msgid "Add support enforcer"
 msgstr "Añadir forzado de soportes"
-
-msgid "Add to bed"
-msgstr "Añadir a la cama"
 
 msgid "Allow just a single PrusaSlicer instance"
 msgstr "Permitir una sola instancia de PrusaSlicer"
@@ -15667,17 +15697,8 @@ msgstr "No se puede aplicar cuando la vista previa del proceso."
 msgid "Change the number of instances of the selected object"
 msgstr "Cambiar número de instancias al objeto seleccionado"
 
-msgid "Change thumbnail"
-msgstr "Cambiar la miniatura"
-
 msgid "Change type"
 msgstr "Cambiar tipo"
-
-msgid "Choose one or more files (STL, OBJ):"
-msgstr "Elije uno o varios archivos (STL, OBJ):"
-
-msgid "Choose one PNG file:"
-msgstr "Elije un archivo PNG:"
 
 msgid "Clear all"
 msgstr "Borrar todo"
@@ -15854,11 +15875,6 @@ msgstr ""
 "algunas resinas pueden producir un efecto de succión extremo dentro de la "
 "cavidad, lo que dificulta el despegado de la impresión de la lámina de la "
 "cuba."
-
-msgid "Delete one or more custom shape. You can't delete system shapes"
-msgstr ""
-"Eliminar una o varias formas personalizadas. No se pueden eliminar las "
-"formas del sistema"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -16341,13 +16357,6 @@ msgstr "está basado en Slic3r de Alessandro Ranellucci y la comunidad RepRap."
 msgid "Is it safe?"
 msgstr "¿Es seguro?"
 
-msgid ""
-"It looks like selected %1%-file has an error or is destructed.\n"
-"We can't load this file"
-msgstr ""
-"Parece que el archivo %1% seleccionado tiene un error o está destruido.\n"
-"No podemos cargar este archivo"
-
 msgid "Layer height can't be greater than nozzle diameter"
 msgstr "La altura de la capa no puede ser mayor que diámetro de la boquilla"
 
@@ -16366,9 +16375,6 @@ msgstr ""
 "de impresión, filamento e impresora desde un archivo G-code existente? Del "
 "mismo modo, puedes utilizar Archivo-Importar-Importar archivo SL1 / SL1S, "
 "que también te permite reconstruir modelos 3D a partir de los datos de voxel."
-
-msgid "Loading of the \"%1%\""
-msgstr "Cargando de la  \"%1%\""
 
 msgid "Low"
 msgstr "Bajo"
@@ -16933,9 +16939,6 @@ msgstr "Renombrar"
 msgid "Replace the selected volume with new STL"
 msgstr "Sustituir el volumen seleccionado por un nuevo STL"
 
-msgid "Replacing of the PNG"
-msgstr "Sustitución del PNG"
-
 msgid "Scale the selected object to fit the print volume"
 msgstr ""
 "Escala los objetos seleccionados para ajustarse al volumen de impresión"
@@ -16961,9 +16964,6 @@ msgstr "Selecciona todas las impresoras estándar"
 
 msgid "Select Plater Tab"
 msgstr "Seleccionar pestaña de la Base de impresión"
-
-msgid "Select shape from the gallery"
-msgstr "Seleccionar la forma en la galería"
 
 msgid "Select showing settings"
 msgstr "Seleccionar los ajustes mostrados"

@@ -805,7 +805,7 @@ msgid "Extrusion multipler"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1978
+#: src/slic3r/GUI/MainFrame.cpp:1984
 msgid "Extrusion Multiplier calibration"
 msgstr ""
 
@@ -874,7 +874,7 @@ msgid "Fill pattern for bridges and internal bridge infill."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1974
+#: src/slic3r/GUI/MainFrame.cpp:1980
 #Similar to me: First layer patch calibration
 # 6    changes: First layer calibration
 #  translation: Első réteg kalibrálása
@@ -886,7 +886,7 @@ msgid "First layer patch calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1972
+#: src/slic3r/GUI/MainFrame.cpp:1978
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Első réteg kalibrálása
@@ -1202,7 +1202,7 @@ msgid "IFill"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1712
+#: src/slic3r/GUI/MainFrame.cpp:1718
 msgid "Import STL/3MF/STEP/OBJ/AM&F"
 msgstr ""
 
@@ -1884,7 +1884,7 @@ msgid "Over %1% it will be off."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1992
+#: src/slic3r/GUI/MainFrame.cpp:1998
 #Similar to me: Over-Bridge flow calibration
 # 5    changes: Bridge flow calibration
 #  translation: Híd áramlási kalibráció

@@ -549,6 +549,9 @@ msgstr "Afegir rang de capes"
 msgid "Add Layers"
 msgstr "Afegeix Capes"
 
+msgid "Add one or more custom shapes"
+msgstr "Afegir una o més formes personalitzades"
+
 msgid "Add pause print"
 msgstr "Afegir pausa d'impressió"
 
@@ -563,6 +566,9 @@ msgstr "Afegeix un punt a la selecció"
 
 msgid "Add preset for this printer device"
 msgstr "Afegir ajustament preestablert per a aquest dispositiu d'impressió"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Afegir la(es) forma(es) seleccionada(es) a la base"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Afegir Conjunt d'Ajustos per a Rang d'Altures"
@@ -599,6 +605,9 @@ msgstr "Afegir suports"
 
 msgid "Add supports by angle"
 msgstr "Afegir suports segons angle"
+
+msgid "Add to bed"
+msgstr "Afegir a la base"
 
 msgid "Add..."
 msgstr "Afegir..."
@@ -1248,6 +1257,9 @@ msgstr "Canvia el tipus de peça"
 msgid "Change point head diameter"
 msgstr "Canviar diàmetre del cap de punta"
 
+msgid "Change thumbnail"
+msgstr "Canviar la miniatura"
+
 msgid "Changelog & Download"
 msgstr "Registre de canvis & Descarregar"
 
@@ -1292,8 +1304,14 @@ msgstr "Trieu un fitxer (3MF/AMF):"
 msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
 msgstr "Trieu un fitxer (GCODE/. GCO/. G/.ngc/NGC):"
 
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Trieu un o més fitxers (STL, OBJ):"
+
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 msgstr "Trieu un o més fitxers (STL / 3MF / STEP / OBJ / AMF / PRUSA):"
+
+msgid "Choose one PNG file:"
+msgstr "Trieu un fitxer PNG:"
 
 msgid "Choose SLA archive:"
 msgstr "Escollir fitxer SLA:"
@@ -1892,6 +1910,11 @@ msgstr "Suprimeix la instància"
 
 msgid "Delete Object"
 msgstr "Suprimeix l'objecte"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr ""
+"Eliminar una o diverses formes personalitzades. No es poden eliminar les "
+"formes del sistema"
 
 msgid "Delete Option %s"
 msgstr "Suprimeix l'opció %s"
@@ -4045,6 +4068,13 @@ msgid "It can't be deleted or modified."
 msgstr "No es pot suprimir ni modificar."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Sembla que el fitxer %1% seleccionat té un error o està destruït.\n"
+"No podem carregar aquest fitxer"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -4323,6 +4353,9 @@ msgstr "S'està carregant mode visualització"
 
 msgid "Loading of current presets"
 msgstr "Carregant els paràmetres actuals"
+
+msgid "Loading of the \"%1%\""
+msgstr "Carregant de la \"%1%\""
 
 msgid "Loading repaired model"
 msgstr "S'està carregant el model reparat"
@@ -6257,6 +6290,9 @@ msgstr "Substitueix per STL"
 msgid "Replace?"
 msgstr "Reemplaçar?"
 
+msgid "Replacing of the PNG"
+msgstr "Substitució del PNG"
+
 msgid "Report an I&ssue"
 msgstr "Informar d'un &problema"
 
@@ -6620,6 +6656,9 @@ msgstr "Selecciona la pestanya Configuració d'impressió"
 
 msgid "Select Printer Settings Tab"
 msgstr "Selecciona la pestanya Configuració de la impressora"
+
+msgid "Select shape from the gallery"
+msgstr "Seleccionar la forma a la galeria"
 
 msgid "Select the language"
 msgstr "Seleccioneu l'idioma"

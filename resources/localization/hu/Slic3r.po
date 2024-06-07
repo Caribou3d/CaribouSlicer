@@ -781,6 +781,9 @@ msgstr ""
 "Ha sikerül elindítani a beállítás mögötti algoritmust, kérjük, küldjön üzenetet. "
 "Személy szerint szerintem felesleges."
 
+msgid "Add one or more custom shapes"
+msgstr "Egy vagy több egyedi alakzat hozzáadása"
+
 msgid "Add pause print"
 msgstr "Nyomtatási szünet hozzáadása"
 
@@ -795,6 +798,9 @@ msgstr "Pont hozzáadása a kijelöléshez"
 
 msgid "Add preset for this printer device"
 msgstr "Előbeállítás hozzáadása ehhez a nyomtatóeszközhöz"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Kijelölt alakzat(ok) hozzáadása a tárgyasztalhoz"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Beállítási csomag hozzáadása a magassági tartományhoz"
@@ -851,6 +857,9 @@ msgstr ""
 "művészethez, vagy ahhoz, hogy biztosan eltalálja minden objektum jellemzőjét, még "
 "nagyon alacsony kitöltés esetén is. Még kísérleti, mondd el, mitől lesz hasznos, "
 "vagy milyen problémák merülnek fel a használatával."
+
+msgid "Add to bed"
+msgstr "Hozzáadás a tárgyasztalhoz"
 
 msgid "Add..."
 msgstr "Hozzáad..."
@@ -1869,6 +1878,9 @@ msgstr ""
 "Ha az érték túl alacsony, a program visszaállítja a szélességeket a mentett értékre.\n"
 "Ha az érték 0-ra van beállítva, akkor 0-t fog mutatni."
 
+msgid "Change thumbnail"
+msgstr "Bélyegkép módosítása"
+
 msgid "Changelog & Download"
 msgstr "Változáslista & Letöltés"
 
@@ -1929,6 +1941,12 @@ msgstr "Válasszon ki egy fájlt (GCODE/.GCO/.G/.ngc/NGC):"
 
 msgid "Choose one file (py):"
 msgstr "Válassz egy fájlt (py):"
+
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Egy vagy több fájl kiválasztása (STL, OBJ):"
+
+msgid "Choose one PNG file:"
+msgstr "Válasszon egy PNG-fájlt:"
 
 msgid "Choose SLA archive:"
 msgstr "SLA archívum választása:"
@@ -2810,6 +2828,9 @@ msgstr "Példány törlése"
 
 msgid "Delete Object"
 msgstr "Objektum törlése"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr "Egy vagy több egyedi alakzat törlése. Rendszer alakzatokat nem tud törölni"
 
 msgid "Delete Option %s"
 msgstr "Opció törlése %s"
@@ -6078,6 +6099,13 @@ msgid "It can't be deleted or modified."
 msgstr "Nem lehet törölni vagy módosítani."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Úgy tűnik, hogy a kiválasztott %1%-fájl hibás vagy megsemmisült.\n"
+"Nem tudjuk betölteni ezt a fájlt"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -6504,6 +6532,9 @@ msgstr "Mód nézet betöltése"
 
 msgid "Loading of current presets"
 msgstr "Aktuális előbeállítások betöltése"
+
+msgid "Loading of the \"%1%\""
+msgstr "\"%1%\" betöltése"
 
 msgid "Loading repaired model"
 msgstr "Javított modell betöltése"
@@ -9346,6 +9377,9 @@ msgstr "Helyettesítés STL-lel"
 msgid "Replace?"
 msgstr "Csere?"
 
+msgid "Replacing of the PNG"
+msgstr "A PNG cseréje"
+
 msgid "Report an I&ssue"
 msgstr "Probléma &jelentése"
 
@@ -9788,6 +9822,9 @@ msgstr "Válassza a Nyomtatási beállítások lapot"
 
 msgid "Select Printer Settings Tab"
 msgstr "Válassza ki a Nyomtató beállításai lapot"
+
+msgid "Select shape from the gallery"
+msgstr "Alakzat választása a galériából"
 
 msgid "Select the language"
 msgstr "Nyelv kiválasztása"

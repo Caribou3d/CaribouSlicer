@@ -776,6 +776,9 @@ msgstr ""
 "Fügen Sie bei Bedarf weitere Perimeter hinzu, um Lücken in schrägen Wänden zu vermeiden. Slic3r fügt so lange Umfänge hinzu, bis mehr als 70% of der Schleife direkt darüber unterstützt werden.\n"
 "Wenn es Ihnen gelingt, den Algorithmus hinter dieser Einstellung auszulösen, schicken Sie mir bitte eine Nachricht. Ich persönlich halte sie für nutzlos."
 
+msgid "Add one or more custom shapes"
+msgstr "Eine oder mehrere benutzerdefinierte Formen hinzufügen"
+
 msgid ""
 "Add one perimeter every even layer (and not on odd layers like the first "
 "one). With this, infill is taken into the sandwich and you may be able to "
@@ -796,6 +799,9 @@ msgstr "Punkt zur Auswahl hinzufügen"
 
 msgid "Add preset for this printer device"
 msgstr "Voreinstellung für diesen Drucker hinzufügen"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Ausgewählte Form(en) zum Bett hinzufügen"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Höhenbreich Einstellungsbündel hinzufügen"
@@ -862,6 +868,9 @@ msgid ""
 "Still experimental, tell me what makes it useful, or the problems that arise "
 "using it."
 msgstr "Addieren Sie diesen Winkel für jede Ebene zum Basiswinkel für Infill. Dies kann für Kunstwerke nützlich sein oder um sicher zu gehen, dass jedes Objekt auch bei sehr geringem Infill getroffen wird. Noch experimentell, sagen Sie mir, was es nützlich macht oder welche Probleme bei der Verwendung auftreten."
+
+msgid "Add to bed"
+msgstr "Zum Bett hinzufügen"
 
 msgid "Add..."
 msgstr "Hinzufügen..."
@@ -1935,6 +1944,9 @@ msgstr ""
 "Wenn der Wert zu niedrig ist, werden die Breiten auf den gespeicherten Wert zurückgesetzt.\n"
 "Wenn der Wert auf 0 gesetzt ist, wird 0 angezeigt."
 
+msgid "Change thumbnail"
+msgstr "Vorschaubild ändern"
+
 msgid ""
 "Change width on every even layer (and not on odd layers like the first one) "
 "for better overlap with adjacent layers and getting stringer shells. Try "
@@ -2031,8 +2043,14 @@ msgstr "Datei auswählen (GCODE/.GCO/.G/.ngc/NGC):"
 msgid "Choose one file (py):"
 msgstr "Wähle eine Datei (py):"
 
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Wählen Sie eine oder mehrere Dateien (STL, OBJ):"
+
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 msgstr "Wähle eine oder mehrere Dateien (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose one PNG file:"
+msgstr "Choose one PNG file:"
 
 msgid "Choose SLA archive:"
 msgstr "SLA Archiv wählen:"
@@ -2163,7 +2181,7 @@ msgid "Closing %1% while some presets are modified."
 msgstr "Schließen Sie %1%, während einige Voreinstellungen geändert werden."
 
 msgid "Closing %1%. Current project is modified."
-msgstr "Schließen %1%. Das aktuelle Projekt wird geändert."
+msgstr "Schließe %1%. Das aktuelle Projekt wurde geändert."
 
 msgid "Closing distance"
 msgstr "Schliessabstand"
@@ -2931,6 +2949,9 @@ msgstr "Kopie löschen"
 
 msgid "Delete Object"
 msgstr "Objekt löschen"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr "Löschen Sie eine oder mehrere benutzerdefinierte Formen. Sie können keine Systemformen löschen"
 
 msgid "Delete Option %s"
 msgstr "Lösche Option %s"
@@ -6323,6 +6344,13 @@ msgid "It can't be deleted or modified."
 msgstr "Es ist keine Löschung oder Änderung möglich."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Es sieht so aus, als ob die ausgewählte %1%-Datei einen Fehler hat oder zerstört wurde.\n"
+"Diese Datei kann nicht geladen werden."
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -6760,6 +6788,9 @@ msgstr "Lade Anzeigemodus"
 
 msgid "Loading of current presets"
 msgstr "Laden der aktuellen Voreinstellungen"
+
+msgid "Loading of the \"%1%\""
+msgstr "Laden der \"%1%\""
 
 msgid "Loading repaired model"
 msgstr "Lade repariertes Modell"
@@ -9740,6 +9771,9 @@ msgstr "Ersetzen durch STL"
 msgid "Replace?"
 msgstr "Ersetzen?"
 
+msgid "Replacing of the PNG"
+msgstr "Ersetzen der PNG-Datei"
+
 msgid "Report an I&ssue"
 msgstr "Ein &Problem melden"
 
@@ -10206,6 +10240,9 @@ msgstr "Wählt Druckeinstellungsreiter"
 
 msgid "Select Printer Settings Tab"
 msgstr "Wählt Druckereinstellungsreiter"
+
+msgid "Select shape from the gallery"
+msgstr "Form aus der Galerie auswählen"
 
 msgid "Select the higher temperature."
 msgstr "Wählen Sie die höhere Temperatur."
@@ -15941,17 +15978,11 @@ msgstr "Negatives Volumen hinzufügen"
 msgid "Add one more instance of the selected object"
 msgstr "Eine weitere Kopie des gewählten Objekts hinzufügen"
 
-msgid "Add one or more custom shapes"
-msgstr "Eine oder mehrere benutzerdefinierte Formen hinzufügen"
-
 msgid "Add part"
 msgstr "Teil hinzufügen"
 
 msgid "Add selected placeholder to G-code"
 msgstr "Gewählten Platzhalter zu G-Code hinzufügen"
-
-msgid "Add selected shape(s) to the bed"
-msgstr "Ausgewählte Form(en) zum Bett hinzufügen"
 
 msgid "Add settings"
 msgstr "Einstellungen hinzufügen"
@@ -15976,9 +16007,6 @@ msgstr "Text hinzufügen"
 
 msgid "Add text modifier"
 msgstr "Textmodifikator hinzufügen"
-
-msgid "Add to bed"
-msgstr "Zum Bett hinzufügen"
 
 msgid "Adjusts the density of the support structure used to generate the tips of the branches. A higher value results in better overhangs but the supports are harder to remove, thus it is recommended to enable top support interfaces instead of a high branch density value if dense interfaces are needed."
 msgstr "Passt die Dichte der Stützstruktur an, mit der die Spitzen der Zweige erzeugt werden. Ein höherer Wert führt zu besseren Überhängen, aber die Stützen sind schwieriger zu entfernen. Daher empfiehlt es sich, anstelle eines hohen Wertes für die Zweigdichte die oberen Stützschnittstellen zu aktivieren, wenn dichte Kontaktflächen benötigt werden."
@@ -16332,9 +16360,6 @@ msgstr "Anzahl der Kopien des gewählten Objektes ändern"
 msgid "Change the number of instances of the selected objects"
 msgstr "Anzahl der Kopien der gewählten Objekte ändern"
 
-msgid "Change thumbnail"
-msgstr "Vorschaubild ändern"
-
 msgid "Change to another .svg file"
 msgstr "Mit einer anderen .svg-Datei wechseln"
 
@@ -16370,12 +16395,6 @@ msgstr "Datei auswählen (GCODE/GCO/G/BGCODE/BGC/NGC):"
 
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
 msgstr "Wählen Sie eine oder mehrere Dateien (STL/3MF/STEP/OBJ/AMF/SVG):"
-
-msgid "Choose one or more files (STL, OBJ):"
-msgstr "Wählen Sie eine oder mehrere Dateien (STL, OBJ):"
-
-msgid "Choose one PNG file:"
-msgstr "Choose one PNG file:"
 
 msgid "Choose SLA archive"
 msgstr "SLA-Archiv wählen"
@@ -16707,9 +16726,6 @@ msgstr "Objekt löschen"
 
 msgid "Delete object which is a part of cut object"
 msgstr "Objekt löschen, das ein Teil eines Schnittobjekts ist"
-
-msgid "Delete one or more custom shape. You can't delete system shapes"
-msgstr "Löschen Sie eine oder mehrere benutzerdefinierte Formen. Sie können keine Systemformen löschen"
 
 msgid "Delete preset"
 msgstr "Voreinstellugen löschen"
@@ -17598,13 +17614,6 @@ msgstr "KURSIV"
 msgid "Italic strength ratio"
 msgstr "Kursivstärke-Verhältnis"
 
-msgid ""
-"It looks like selected %1%-file has an error or is destructed.\n"
-"We can't load this file"
-msgstr ""
-"Es sieht so aus, als ob die ausgewählte %1%-Datei einen Fehler hat oder zerstört wurde.\n"
-"Diese Datei kann nicht geladen werden."
-
 msgid "It's impossible to print object(s) which contains parameter modifiers with SLA technology."
 msgstr "Es ist unmöglich, mit der SLA-Technologie Objekte zu drucken, die Parametermodifikatoren enthalten."
 
@@ -17697,9 +17706,6 @@ msgstr "ZIP-Archiv laden"
 
 msgid "Loading of a ZIP archive on path %1% has failed."
 msgstr "Das Laden eines ZIP-Archivs auf dem Pfad %1% ist fehlgeschlagen."
-
-msgid "Loading of the \"%1%\""
-msgstr "Laden der \"%1%\""
 
 msgid "Load project file"
 msgstr "Projektdatei laden"
@@ -18598,9 +18604,6 @@ msgstr "Reparatur Vorgang beendet"
 msgid "Replace the selected volume with new STL"
 msgstr "Das ausgewählte Volumen durch eine neue STL ersetzen"
 
-msgid "Replacing of the PNG"
-msgstr "Ersetzen der PNG-Datei"
-
 msgid "Reset cut"
 msgstr "Schnitt zurücksetzen"
 
@@ -18799,9 +18802,6 @@ msgstr "Wählt Druckplattenreiter"
 
 msgid "Select point"
 msgstr "Punkt wählen"
-
-msgid "Select shape from the gallery"
-msgstr "Form aus der Galerie auswählen"
 
 msgid "Select showing settings"
 msgstr "Wähle Anzeigeeinstellungen"

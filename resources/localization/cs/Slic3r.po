@@ -717,6 +717,9 @@ msgstr ""
 "Pokud se vám podaří spustit algoritmus za tímto nastavením, pošlete prosím Mně "
 "zprávu. Osobně si myslím, že je to zbytečné."
 
+msgid "Add one or more custom shapes"
+msgstr "Přidání jednoho nebo více vlastních tvarů"
+
 msgid "Add pause print"
 msgstr "Přidat pozastavení tisku"
 
@@ -731,6 +734,9 @@ msgstr "Přidat bod k výběru"
 
 msgid "Add preset for this printer device"
 msgstr "Přidat přednastavení pro tuto tiskárnu"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Přidat vybraný tvar(y) na podložku"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Přidání Skupiny nastavení pro Výškový rozsah"
@@ -787,6 +793,9 @@ msgstr ""
 "umění, nebo abyste měli jistotu, že zasáhnete rysy každého objektu i s velmi nízkou "
 "výplní.Stále experimentální, řekněte mi, v čem je užitečný nebo jaké problémy se "
 "objevujípoužívat to."
+
+msgid "Add to bed"
+msgstr "Přidat na podložku"
 
 msgid "Add..."
 msgstr "Přidat..."
@@ -1672,6 +1681,9 @@ msgstr "Změna typu části"
 msgid "Change point head diameter"
 msgstr "Změna průměru hrotu"
 
+msgid "Change thumbnail"
+msgstr "Změnit náhled"
+
 msgid "Changelog & Download"
 msgstr "Changelog & Stažení"
 
@@ -1729,8 +1741,14 @@ msgstr "Vyberte jeden soubor (GCODE/.GCO/.G/.ngc/NGC):"
 msgid "Choose one file (py):"
 msgstr "Vyberte jeden soubor (py):"
 
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Vyberte jeden nebo více souborů (STL, OBJ):"
+
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 msgstr "Vyberte jeden nebo více souborů (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose one PNG file:"
+msgstr "Vyberte jeden PNG soubor:"
 
 msgid "Choose SLA archive:"
 msgstr "Vyberte SLA archiv:"
@@ -2582,6 +2600,10 @@ msgstr "Smazání Instance"
 
 msgid "Delete Object"
 msgstr "Smazat Objekt"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr ""
+"Odstranění jednoho nebo více vlastních tvarů. Systémové tvary nelze odstranit"
 
 msgid "Delete Option %s"
 msgstr "Odebrání parametru %s"
@@ -5639,6 +5661,13 @@ msgid "It can't be deleted or modified."
 msgstr "Nelze smazat nebo upravit."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Vypadá to, že vybraný %1%-soubor obsahuje chybu nebo je zničený.\n"
+"Tento není možné načíst"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -6048,6 +6077,9 @@ msgstr "Načítání režimu zobrazení"
 
 msgid "Loading of current presets"
 msgstr "Načítání aktuálních předvoleb"
+
+msgid "Loading of the \"%1%\""
+msgstr "Načítání \"%1%\""
 
 msgid "Loading repaired model"
 msgstr "Načítaní opraveného modelu"
@@ -8799,6 +8831,9 @@ msgstr "Nahradit STL souborem"
 msgid "Replace?"
 msgstr "Nahradit?"
 
+msgid "Replacing of the PNG"
+msgstr "Výměna PNG"
+
 msgid "Report an I&ssue"
 msgstr "Nahlá&sit chybu"
 
@@ -9227,6 +9262,9 @@ msgstr "Zobrazit panel Nastavení tisku"
 
 msgid "Select Printer Settings Tab"
 msgstr "Zobrazit panel Nastavení tiskárny"
+
+msgid "Select shape from the gallery"
+msgstr "Vyberte tvar z galerie"
 
 msgid "Select the language"
 msgstr "Výběr jazyka"

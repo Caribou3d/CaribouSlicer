@@ -195,7 +195,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1565
+#: src/slic3r/GUI/MainFrame.cpp:1571
 #, possible-c-format, possible-boost-format
 msgid "%s Releases"
 msgstr ""
@@ -300,7 +300,7 @@ msgid "2x10°"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1893
+#: src/slic3r/GUI/MainFrame.cpp:1899
 #Similar to me: 3D &Platter Tab
 # 4    changes: &Plater Tab
 #  translation: &Pestanya Base d'impressió
@@ -1013,7 +1013,7 @@ msgid "Bridge flow baseline"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1990
+#: src/slic3r/GUI/MainFrame.cpp:1996
 #Similar to me: Bridge flow calibration
 # 6    changes: Bridge flow ratio
 #  translation: Relació de flux del pont
@@ -1213,13 +1213,13 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:2026
+#: src/slic3r/GUI/MainFrame.cpp:2032
 msgid "C&alibration"
 msgstr ""
 
 
 #: src/slic3r/GUI/CalibrationCubeDialog.cpp:61
-#: src/slic3r/GUI/MainFrame.cpp:1995
+#: src/slic3r/GUI/MainFrame.cpp:2001
 msgid "Calibration cube"
 msgstr ""
 
@@ -1857,31 +1857,31 @@ msgid "Create a new project?"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1990
+#: src/slic3r/GUI/MainFrame.cpp:1996
 msgid "Create a test print to help you to set your bridge flow ratio."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1974 src/slic3r/GUI/MainFrame.cpp:1978
-#: src/slic3r/GUI/MainFrame.cpp:1980
+#: src/slic3r/GUI/MainFrame.cpp:1980 src/slic3r/GUI/MainFrame.cpp:1984
+#: src/slic3r/GUI/MainFrame.cpp:1986
 msgid ""
 "Create a test print to help you to set your filament extrusion multiplier."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1985
+#: src/slic3r/GUI/MainFrame.cpp:1991
 msgid "Create a test print to help you to set your filament temperature."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1992
+#: src/slic3r/GUI/MainFrame.cpp:1998
 msgid ""
 "Create a test print to help you to set your over-bridge flow ratio and "
 "ironing pattern."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1987
+#: src/slic3r/GUI/MainFrame.cpp:1993
 msgid "Create a test print to help you to set your retraction length."
 msgstr ""
 
@@ -2568,7 +2568,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1756
+#: src/slic3r/GUI/MainFrame.cpp:1762
 #Similar to me: Export &Plate
 # 5    changes: Export &G-code
 #  translation: Exportar el codi &G
@@ -2578,14 +2578,14 @@ msgid "Export &Plate"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1782
+#: src/slic3r/GUI/MainFrame.cpp:1788
 msgid ""
 "Export current configuration to file, with only settings compatible with "
 "PrusaSlicer"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1756
+#: src/slic3r/GUI/MainFrame.cpp:1762
 msgid "Export current plate (options available in the dialog)"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgid "Export Platter:"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1782
+#: src/slic3r/GUI/MainFrame.cpp:1788
 #Similar to me: Export to &Prusa Config
 # 9    changes: Export &Config
 #  translation: Exportar &Configuració
@@ -2882,7 +2882,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1987
+#: src/slic3r/GUI/MainFrame.cpp:1993
 msgid "Extruder retraction calibration"
 msgstr ""
 
@@ -2912,7 +2912,7 @@ msgid "Extrusion multipler"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1978
+#: src/slic3r/GUI/MainFrame.cpp:1984
 msgid "Extrusion Multiplier calibration"
 msgstr ""
 
@@ -3050,7 +3050,7 @@ msgid "Filament end G-code"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1980
+#: src/slic3r/GUI/MainFrame.cpp:1986
 msgid "Filament Flow calibration"
 msgstr ""
 
@@ -3065,7 +3065,7 @@ msgid "Filament start G-code"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1985
+#: src/slic3r/GUI/MainFrame.cpp:1991
 msgid "Filament temperature calibration"
 msgstr ""
 
@@ -3177,7 +3177,7 @@ msgid "First layer calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1972
+#: src/slic3r/GUI/MainFrame.cpp:1978
 #Similar to me: First layer calibration.
 # 9    changes: First layer expansion
 #  translation: Expansió de la primera capa
@@ -3220,12 +3220,12 @@ msgid "First layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1974
+#: src/slic3r/GUI/MainFrame.cpp:1980
 msgid "First layer patch calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1972
+#: src/slic3r/GUI/MainFrame.cpp:1978
 msgid "First layer patttern calibration"
 msgstr ""
 
@@ -3505,7 +3505,7 @@ msgid "Gcode done"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1899
+#: src/slic3r/GUI/MainFrame.cpp:1905
 msgid "GCode Pre&view Tab"
 msgstr ""
 
@@ -3761,7 +3761,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1968
+#: src/slic3r/GUI/MainFrame.cpp:1974
 msgid "How to use this menu and calibrations."
 msgstr ""
 
@@ -4116,7 +4116,7 @@ msgid "Illegal characters for filename"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1728
+#: src/slic3r/GUI/MainFrame.cpp:1734
 #Similar to me: Import Prusa Config
 # 6    changes: Import &Config
 #  translation: Importar &Configuració
@@ -4124,7 +4124,7 @@ msgid "Import Prusa Config"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1738
+#: src/slic3r/GUI/MainFrame.cpp:1744
 #Similar to me: Import Prusa Config Bundle
 # 7    changes: Import Config &Bundle
 #  translation: Importar &Conjunt de Configuració
@@ -4473,7 +4473,7 @@ msgid "Internal resolution"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1968
+#: src/slic3r/GUI/MainFrame.cpp:1974
 msgid "Introduction"
 msgstr ""
 
@@ -4681,7 +4681,7 @@ msgid "Layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1896
+#: src/slic3r/GUI/MainFrame.cpp:1902
 msgid "Layer previe&w Tab"
 msgstr ""
 
@@ -4835,12 +4835,12 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1728
+#: src/slic3r/GUI/MainFrame.cpp:1734
 msgid "Load configuration file exported from PrusaSlicer"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1738
+#: src/slic3r/GUI/MainFrame.cpp:1744
 #Similar to me: Load presets from a PrusaSlicer bundle
 # 12   changes: Load presets from a bundle
 #  translation: Carregar ajustaments d'un paquet
@@ -5924,7 +5924,7 @@ msgid "Number of steps:"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:2101
+#: src/slic3r/GUI/MainFrame.cpp:2107
 #, possible-c-format, possible-boost-format
 msgid "O&pen %s"
 msgstr ""
@@ -6146,14 +6146,14 @@ msgid "Only when GCode is ready"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:92 src/slic3r/GUI/MainFrame.cpp:2101
+#: src/slic3r/GUI/MainFrame.cpp:92 src/slic3r/GUI/MainFrame.cpp:2107
 #, possible-c-format, possible-boost-format
 msgid "Open %s"
 msgstr ""
 
 
 #: src/slic3r/GUI/MainFrame.cpp:78 src/slic3r/GUI/MainFrame.cpp:92
-#: src/slic3r/GUI/MainFrame.cpp:1933
+#: src/slic3r/GUI/MainFrame.cpp:1939
 #, possible-c-format, possible-boost-format
 #Similar to me: Open a new %s instance
 # 5    changes: Open new instance
@@ -6182,7 +6182,7 @@ msgid "Open project AMF/3MF with config, clear platter"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1565
+#: src/slic3r/GUI/MainFrame.cpp:1571
 #, possible-c-format, possible-boost-format
 #Similar to me: Open the %s releases page in your browser
 # 8    changes: Open the software releases page in your browser
@@ -6371,7 +6371,7 @@ msgid "Over raft"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1992
+#: src/slic3r/GUI/MainFrame.cpp:1998
 #Similar to me: Over-Bridge flow calibration
 # 11   changes: Bridge flow ratio
 #  translation: Relació de flux del pont
@@ -6795,7 +6795,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1995
+#: src/slic3r/GUI/MainFrame.cpp:2001
 msgid "Print a calibration cube, for various calibration goals."
 msgstr ""
 
@@ -6992,8 +6992,8 @@ msgid "Reload platter from disk"
 msgstr ""
 
 
-#: src/slic3r/GUI/KBShortcutsDialog.cpp:208 src/slic3r/GUI/MainFrame.cpp:1875
-#: src/slic3r/GUI/MainFrame.cpp:2090
+#: src/slic3r/GUI/KBShortcutsDialog.cpp:208 src/slic3r/GUI/MainFrame.cpp:1881
+#: src/slic3r/GUI/MainFrame.cpp:2096
 #Similar to me: Reload the platter from disk
 # 1    changes: Reload the plater from disk
 #  translation: Carregar la base des del disc
@@ -7558,17 +7558,17 @@ msgid "Show the bed texture on the thumbnail picture."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1893
+#: src/slic3r/GUI/MainFrame.cpp:1899
 msgid "Show the editor of the input models"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1896
+#: src/slic3r/GUI/MainFrame.cpp:1902
 msgid "Show the layers from the slicing process"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1899
+#: src/slic3r/GUI/MainFrame.cpp:1905
 #Similar to me: Show the preview of the gcode output
 # 14   changes: Shows a preview of the font.
 #  translation: Mostra una previsualització del tipus de lletra.

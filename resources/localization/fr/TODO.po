@@ -782,7 +782,7 @@ msgid "Except for the first layer where the fan is disabled"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1756
+#: src/slic3r/GUI/MainFrame.cpp:1762
 #Similar to me: Export &Plate
 # 5    changes: Export &G-code
 #  translation: Exporter le &G-Code
@@ -792,7 +792,7 @@ msgid "Export &Plate"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1756
+#: src/slic3r/GUI/MainFrame.cpp:1762
 msgid "Export current plate (options available in the dialog)"
 msgstr ""
 
@@ -869,7 +869,7 @@ msgid "Extrusion multipler"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1978
+#: src/slic3r/GUI/MainFrame.cpp:1984
 msgid "Extrusion Multiplier calibration"
 msgstr ""
 
@@ -938,7 +938,7 @@ msgid "Fill pattern for bridges and internal bridge infill."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1974
+#: src/slic3r/GUI/MainFrame.cpp:1980
 #Similar to me: First layer patch calibration
 # 6    changes: First layer calibration
 #  translation: Calibration de la première couche
@@ -950,7 +950,7 @@ msgid "First layer patch calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1972
+#: src/slic3r/GUI/MainFrame.cpp:1978
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Calibration de la première couche
@@ -1970,7 +1970,7 @@ msgid "Over %1% it will be off."
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1992
+#: src/slic3r/GUI/MainFrame.cpp:1998
 #Similar to me: Over-Bridge flow calibration
 # 5    changes: Bridge flow calibration
 #  translation: Calibration du débit du pont

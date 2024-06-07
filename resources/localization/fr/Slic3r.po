@@ -792,6 +792,9 @@ msgstr ""
 "Si vous réussissez à déclencher l'algorithme derrière ce paramètre, veuillez "
 "m'envoyer un message. Personnellement, je pense que c'est inutile."
 
+msgid "Add one or more custom shapes"
+msgstr "Ajouter une ou plusieurs formes personnalisées"
+
 msgid "Add pause print"
 msgstr "Ajouter une pause d'impression"
 
@@ -806,6 +809,9 @@ msgstr "Ajouter un point à la sélection"
 
 msgid "Add preset for this printer device"
 msgstr "Ajouter un préréglage pour cette imprimante"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "Ajouter la ou les formes sélectionnées au plateau"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Ajouter une Combinaison de Réglages pour la plage de Hauteur"
@@ -864,6 +870,9 @@ msgstr ""
 "caractéristique de l'objet même avec un remplissage très faible. Encore "
 "expérimental, dites-moi ce qui le rend utile, ou les problèmes qui se posent "
 "en l'utilisant."
+
+msgid "Add to bed"
+msgstr "Ajouter au plateau"
 
 msgid "Add..."
 msgstr "Ajouter..."
@@ -1891,6 +1900,9 @@ msgstr ""
 "seront forcé à leur valeur calculée.\n"
 "Désélectionner ce paramètre pour les modifier à nouveau."
 
+msgid "Change thumbnail"
+msgstr "Changer la miniature"
+
 msgid "Changelog & Download"
 msgstr "Téléchargement du Journal des Modifications"
 
@@ -1955,8 +1967,14 @@ msgstr "Choisir un fichier (GCODE/.GCO/.G/.ngc/NGC) :"
 msgid "Choose one file (py):"
 msgstr "Choisissez un fichier (py) :"
 
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "Choisissez un ou plusieurs fichiers (STL, OBJ) :"
+
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 msgstr "Choisir un ou plusieurs fichiers (STL/3MF/STEP/OBJ/AMF/PRUSA) :"
+
+msgid "Choose one PNG file:"
+msgstr "Choisissez un fichier PNG :"
 
 msgid "Choose SLA archive:"
 msgstr "Choisir l'archive SLA :"
@@ -2877,6 +2895,11 @@ msgstr "Supprimer l'Instance"
 
 msgid "Delete Object"
 msgstr "Supprimer l'Objet"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr ""
+"Supprimez une ou plusieurs formes personnalisées. Vous ne pouvez pas "
+"supprimer les formes système"
 
 msgid "Delete Option %s"
 msgstr "Supprimer l'Option %s"
@@ -6254,6 +6277,14 @@ msgid "It can't be deleted or modified."
 msgstr "Il ne peut être supprimé ou modifié."
 
 msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"Il semble que le fichier %1% sélectionné comporte une erreur ou soit "
+"détruit.\n"
+"Nous ne pouvons pas charger ce fichier"
+
+msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
@@ -6697,6 +6728,9 @@ msgstr "Chargement d'un mode de vue"
 
 msgid "Loading of current presets"
 msgstr "Chargement de préréglages actuels"
+
+msgid "Loading of the \"%1%\""
+msgstr "Chargement du \"%1%\""
 
 msgid "Loading repaired model"
 msgstr "Chargement du modèle réparé"
@@ -9668,6 +9702,9 @@ msgstr "Remplacer par un STL"
 msgid "Replace?"
 msgstr "Remplacer ?"
 
+msgid "Replacing of the PNG"
+msgstr "Remplacement du PNG"
+
 msgid "Report an I&ssue"
 msgstr "S&ignaler un Problème"
 
@@ -10120,6 +10157,9 @@ msgstr "Sélectionner l'Onglet des Réglages de l'Impression"
 
 msgid "Select Printer Settings Tab"
 msgstr "Sélectionner l'Onglet des Réglages de l'Imprimante"
+
+msgid "Select shape from the gallery"
+msgstr "Sélectionner la forme dans la galerie"
 
 msgid "Select the language"
 msgstr "Sélectionner la langue"

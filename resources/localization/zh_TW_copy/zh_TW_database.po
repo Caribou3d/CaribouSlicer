@@ -1,343 +1,4 @@
 
-msgid "Acceleration control (advanced)"
-msgstr "加速控制 (高級)"
-
-msgid "Activate"
-msgstr "啟用"
-
-msgid "Advanced"
-msgstr "進階"
-
-msgid "After layer change G-code"
-msgstr "層變化後G代碼"
-
-msgid "Aligned"
-msgstr "對齊"
-
-msgid "Automatic generation"
-msgstr "自動生成"
-
-msgid "Autospeed (advanced)"
-msgstr "自動調速 (高級)"
-
-msgid "Avoid crossing perimeters"
-msgstr "避免跨越輪廓"
-
-msgid "Bed"
-msgstr "牀"
-
-msgid "Before layer change G-code"
-msgstr "層改變前的G代碼"
-
-msgid "Between objects G-code (for sequential printing)"
-msgstr "模型對象之間的 G-code  (用於順序列印)"
-
-msgid "Bottom"
-msgstr "底部"
-
-msgid "Bridge"
-msgstr "橋"
-
-msgid "Bridges"
-msgstr "橋接處"
-
-msgid "Bridges fan speed"
-msgstr "橋風扇速度"
-
-msgid "Brim"
-msgstr "側裙"
-
-msgid "Capabilities"
-msgstr "權限"
-
-msgid "Connection of the support sticks and junctions"
-msgstr "支撐杆和連接點的連接"
-
-msgid "Cooling"
-msgstr "冷卻"
-
-msgid "Corrections"
-msgstr "修正"
-
-msgid "Custom G-code"
-msgstr "自定義 G-code"
-
-msgid "Default"
-msgstr "默認"
-
-msgid "default"
-msgstr "默認"
-
-msgid "Density"
-msgstr "密度"
-
-msgid "Dependencies"
-msgstr "依賴"
-
-msgid "Disable fan for the first"
-msgstr "前幾層禁用風扇"
-
-msgid "Display"
-msgstr "顯示"
-
-msgid "End G-code"
-msgstr "結尾G代碼"
-
-msgid "Ensure vertical shell thickness"
-msgstr "確保垂直外殼厚度"
-
-msgid "Exposure"
-msgstr "曝光"
-
-msgid "external perimeter"
-msgstr "外部輪廓"
-
-msgid "Extruder"
-msgstr "擠出頭"
-
-msgid "Extruder clearance (mm)"
-msgstr "擠出機間隙 (毫米)"
-
-msgid "Extruders"
-msgstr "擠出頭"
-
-msgid "Extrusion width"
-msgstr "擠出寬度"
-
-msgid "Filament"
-msgstr "線材"
-
-msgid "Filament properties"
-msgstr "耗材絲特性"
-
-msgid "Filtering"
-msgstr "篩選"
-
-msgid "Firmware"
-msgstr "固件"
-
-msgid "First layer"
-msgstr "首層"
-
-msgid "first layer"
-msgstr "首層"
-
-msgid "First layer speed"
-msgstr "首層速度"
-
-msgid "Flow"
-msgstr "流量"
-
-msgid "G-Code"
-msgstr "G-code"
-
-msgid "Gap fill"
-msgstr "間隙填充"
-
-msgid "Gap Fill"
-msgstr "間隙填充"
-
-msgid "General"
-msgstr "常規"
-
-msgid "Horizontal shells"
-msgstr "水平外殼"
-
-msgid "Infill"
-msgstr "填充"
-
-msgid "infill"
-msgstr "填充"
-
-msgid "Layer height"
-msgstr "層高"
-
-msgid "Layer height limits"
-msgstr "層高度限制"
-
-msgid "Layers"
-msgstr "圖層"
-
-msgid "Layers and perimeters"
-msgstr "層和輪廓"
-
-msgid "Length"
-msgstr "長度"
-
-msgid "Material"
-msgstr "材料"
-
-msgid "mm"
-msgstr "毫米"
-
-msgid "Modifiers"
-msgstr "武器性能修改"
-
-msgid "Notes"
-msgstr "備註"
-
-msgid "Number of pixels in"
-msgstr "像素點的數量"
-
-msgid "Only lift Z"
-msgstr "僅提升 Z"
-
-msgid "Only retract when crossing perimeters"
-msgstr "僅在越過輪廓時回縮"
-
-msgid "Ooze prevention"
-msgstr "Ooze 預防"
-
-msgid "Options"
-msgstr "選項"
-
-msgid "Options for support material and raft"
-msgstr "支撐材料和基座的選項"
-
-msgid "Other"
-msgstr "其他"
-
-msgid "Output file"
-msgstr "輸出文件"
-
-msgid "Output options"
-msgstr "輸出選項"
-
-msgid "Overlap"
-msgstr "交疊"
-
-msgid "Pad"
-msgstr "墊"
-
-msgid "Pattern"
-msgstr "樣式"
-
-msgid "perimeter"
-msgstr "周長"
-
-msgid "Plater"
-msgstr "佈局器"
-
-msgid "Preview"
-msgstr "預覽"
-
-msgid "Print Host upload"
-msgstr "列印主機上傳隊列"
-
-msgid "Print speed override"
-msgstr "列印速度覆蓋"
-
-msgid "Printer scaling correction"
-msgstr "印表機縮放校正"
-
-msgid "Profile dependencies"
-msgstr "配置文件依賴"
-
-msgid "Raft"
-msgstr "基座"
-
-msgid "Reducing printing time"
-msgstr "縮短列印時間"
-
-msgid "Retraction"
-msgstr "回縮"
-
-msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
-msgstr "禁用工具時的回縮 (多擠出機設置的高級設置)"
-
-msgid "Sequential printing"
-msgstr "順序列印"
-
-msgid "Size"
-msgstr "尺寸"
-
-msgid "Size and coordinates"
-msgstr "尺寸和座標"
-
-msgid "Skirt"
-msgstr "裙邊"
-
-msgid "skirt"
-msgstr "裙邊"
-
-msgid "Slicing"
-msgstr "切片"
-
-msgid "Solid"
-msgstr "單色"
-
-msgid "solid infill"
-msgstr "實心填充"
-
-msgid "Solid layers"
-msgstr "可靠層數"
-
-msgid "Spacing"
-msgstr "間距"
-
-msgid "Speed"
-msgstr "速度"
-
-msgid "Speed for non-print moves"
-msgstr "非列印移動的速度"
-
-msgid "Speed for print moves"
-msgstr "列印移動的速度"
-
-msgid "Start G-code"
-msgstr "起始G代碼"
-
-msgid "Support head"
-msgstr "支撐頭部寬度"
-
-msgid "Support material"
-msgstr "支撐材料"
-
-msgid "support material"
-msgstr "支撐材料"
-
-msgid "Support pillar"
-msgstr "支撐支柱"
-
-msgid "Supports"
-msgstr "支撐"
-
-msgid "Tilt"
-msgstr "傾斜"
-
-msgid "Tilt time"
-msgstr "傾斜時間"
-
-msgid "Tool change G-code"
-msgstr "切換工具G代碼"
-
-msgid "Toolchange parameters with single extruder MM printers"
-msgstr "單擠出機 MM 印表機的工具更換參數"
-
-msgid "Top"
-msgstr "頂部"
-
-msgid "Travel"
-msgstr "空程"
-
-msgid "Type"
-msgstr "類型"
-
-msgid "Vertical shells"
-msgstr "垂直外殼"
-
-msgid "width"
-msgstr "寬度"
-
-msgid "Wipe tower"
-msgstr "擦料塔"
-
-msgid "Retraction Speed"
-msgstr "回抽速度"
-
-msgid "Seam position"
-msgstr "接合位置"
-
 msgid "%d presets successfully imported."
 msgstr "%d 預設已成功導入。"
 
@@ -458,6 +119,12 @@ msgstr "關於 %s"
 msgid "Above Z"
 msgstr "在Z上方"
 
+msgid "Acceleration control (advanced)"
+msgstr "加速控制 (高級)"
+
+msgid "Activate"
+msgstr "啟用"
+
 msgid "Active"
 msgstr "啓動"
 
@@ -496,6 +163,9 @@ msgstr "此外, 在應用更新之前, 將創建整個配置的備份快照。"
 msgid "Address"
 msgstr "地址"
 
+msgid "Advanced"
+msgstr "進階"
+
 msgid "Advanced: Output log"
 msgstr "高級: 輸出log日誌"
 
@@ -510,11 +180,17 @@ msgstr ""
 "穩定。在將列印頭清洗成填充物或填充對象之前, Slic3r 將始終將這些數量的材料放入"
 "擦拭塔中, 以可靠地產生連續的填充物或填充對象。"
 
+msgid "After layer change G-code"
+msgstr "層變化後G代碼"
+
 msgid "Align the model to the given point."
 msgstr "將模型對齊到給定點。"
 
 msgid "Align XY"
 msgstr "對齊 XY"
+
+msgid "Aligned"
+msgstr "對齊"
 
 msgid "All"
 msgstr "所有"
@@ -611,11 +287,20 @@ msgstr "自動居中部件"
 msgid "Autodetected"
 msgstr "自動檢測"
 
+msgid "Automatic generation"
+msgstr "自動生成"
+
 msgid "Automatic updates"
 msgstr "自動更新"
 
 msgid "Automatically repair an STL file"
 msgstr "自動修復 STL 文件"
+
+msgid "Autospeed (advanced)"
+msgstr "自動調速 (高級)"
+
+msgid "Avoid crossing perimeters"
+msgstr "避免跨越輪廓"
 
 msgid ""
 "BACK ARROW icon indicates that the settings were changed and are not equal "
@@ -637,6 +322,9 @@ msgstr ""
 msgid "Background processing"
 msgstr "後臺處理"
 
+msgid "Bed"
+msgstr "牀"
+
 msgid "Bed Shape"
 msgstr "熱牀形狀"
 
@@ -652,6 +340,9 @@ msgstr "機牀溫度"
 msgid "Bed Temperature:"
 msgstr "熱牀溫度:"
 
+msgid "Before layer change G-code"
+msgstr "層改變前的G代碼"
+
 msgid "Before roll back"
 msgstr "回滾之前"
 
@@ -660,6 +351,12 @@ msgstr "Z下方"
 
 msgid "Between objects G-code"
 msgstr "對象之間的 G-code"
+
+msgid "Between objects G-code (for sequential printing)"
+msgstr "模型對象之間的 G-code  (用於順序列印)"
+
+msgid "Bottom"
+msgstr "底部"
 
 msgid "Bottom fill pattern"
 msgstr "底部填充圖案"
@@ -670,11 +367,20 @@ msgstr "底部可靠層"
 msgid "Bottom View"
 msgstr "底部視圖"
 
+msgid "Bridge"
+msgstr "橋"
+
 msgid "Bridge flow ratio"
 msgstr "橋流量比"
 
 msgid "Bridge infill"
 msgstr "搭橋填充"
+
+msgid "Bridges"
+msgstr "橋接處"
+
+msgid "Bridges fan speed"
+msgstr "橋風扇速度"
 
 msgid "Bridging angle"
 msgstr "橋接角度"
@@ -689,6 +395,9 @@ msgstr ""
 
 msgid "Bridging volumetric"
 msgstr "橋接流量"
+
+msgid "Brim"
+msgstr "側裙"
 
 msgid "Brim width"
 msgstr "裙邊寬度"
@@ -723,13 +432,13 @@ msgstr "正在取消...."
 msgid "Cannot overwrite a system profile."
 msgstr "無法覆蓋系統配置文件。"
 
-msgid "Cannot overwrite an external profile."
-msgstr "無法覆蓋外部配置文件。"
-
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
 msgstr "沒有支持點就無法繼續!添加支持點或禁用支持生成。"
+
+msgid "Capabilities"
+msgstr "權限"
 
 msgid "Capture a configuration snapshot"
 msgstr "擷取配置快照"
@@ -758,8 +467,8 @@ msgstr "檢查應用程序更新"
 msgid "Choose a file to slice (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "選擇要切片的文件(STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "選擇一個或多個文件  (STL/OBJ/AMF/3MF/PRUSA):"
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+msgstr "選擇一個或多個文件  (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 
 msgid "Choose the type of firmware used by your printer."
 msgstr "選擇印表機使用的固件類型。"
@@ -818,9 +527,6 @@ msgstr "同軸式"
 msgid "Configuration &Assistant"
 msgstr "配置 &助手"
 
-msgid "Configuration &Wizard"
-msgstr "配置 &嚮導"
-
 msgid "Configuration Assistant"
 msgstr "配置助手"
 
@@ -839,11 +545,14 @@ msgstr "配置更新可用"
 msgid "Configuration update is available."
 msgstr "配置更新可用."
 
-msgid "Configuration Wizard"
-msgstr "配置嚮導"
-
 msgid "Confirmation"
 msgstr "確認"
+
+msgid "Connection of the support sticks and junctions"
+msgstr "支撐杆和連接點的連接"
+
+msgid "Cooling"
+msgstr "冷卻"
 
 msgid "Cooling tube length"
 msgstr "冷卻管長度"
@@ -856,6 +565,9 @@ msgstr "複製"
 
 msgid "Correction for expansion"
 msgstr "擴展的更正"
+
+msgid "Corrections"
+msgstr "修正"
 
 msgid "Cost"
 msgstr "單價"
@@ -896,6 +608,9 @@ msgstr "交叉"
 msgid "Cubic"
 msgstr "立方體"
 
+msgid "Current mode is %s"
+msgstr "當前模式爲 %s"
+
 msgid "Current preset is inherited from"
 msgstr "當前預設繼承自"
 
@@ -904,6 +619,9 @@ msgstr "當前版本:"
 
 msgid "Custom"
 msgstr "自定義"
+
+msgid "Custom G-code"
+msgstr "自定義 G-code"
 
 msgid "Custom Printer"
 msgstr "自定義印表機"
@@ -925,6 +643,12 @@ msgstr "數據目錄"
 
 msgid "decompression failed or archive is corrupted"
 msgstr "解壓縮失敗或存檔已損壞"
+
+msgid "default"
+msgstr "默認"
+
+msgid "Default"
+msgstr "默認"
 
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to "
@@ -1010,8 +734,11 @@ msgstr "刪除所有對象"
 msgid "Deletes the current selection"
 msgstr "刪除當前所選內容"
 
-msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr "內部填充的密度，以0% - 100% 表示。"
+msgid "Density"
+msgstr "密度"
+
+msgid "Dependencies"
+msgstr "依賴"
 
 msgid "Deretraction Speed"
 msgstr "減速速度"
@@ -1044,8 +771,14 @@ msgstr "列印牀的直徑。假定原點 (0, 0) 位於中心。"
 msgid "Direction"
 msgstr "方向"
 
+msgid "Disable fan for the first"
+msgstr "前幾層禁用風扇"
+
 msgid "Discard changes"
 msgstr "放棄更改"
+
+msgid "Display"
+msgstr "顯示"
 
 msgid "Display height"
 msgstr "顯示高度"
@@ -1125,6 +858,9 @@ msgstr "啓用支撐材料生成功能。"
 msgid "Enable variable layer height feature"
 msgstr "啓用可變圖層高度功能"
 
+msgid "End G-code"
+msgstr "結尾G代碼"
+
 msgid "Enforce support for the first"
 msgstr "前幾層增強支撐"
 
@@ -1133,6 +869,9 @@ msgstr "強制支撐前 n 層"
 
 msgid "Enqueued"
 msgstr "加入隊列"
+
+msgid "Ensure vertical shell thickness"
+msgstr "確保垂直外殼厚度"
 
 msgid "Enter new name"
 msgstr "輸入新名稱"
@@ -1199,6 +938,9 @@ msgid ""
 "under bridged areas."
 msgstr "試驗項，在橋接處禁止生成支撐材料。"
 
+msgid "Expert"
+msgstr "專家"
+
 msgid "Export"
 msgstr "導出"
 
@@ -1228,9 +970,6 @@ msgstr "將當前配置導出到文件"
 
 msgid "Export current plate as G-code"
 msgstr "將當佈局板導出爲 G-code"
-
-msgid "Export current plate as STL"
-msgstr "將當前佈局板導出爲 STL"
 
 msgid "Export G-code"
 msgstr "導出 G-code"
@@ -1265,16 +1004,22 @@ msgstr "導出."
 msgid "Exporting source model"
 msgstr "導出源模型"
 
+msgid "Exposure"
+msgstr "曝光"
+
 msgid "Exposure time"
 msgstr "曝光時間"
 
 msgid "External perimeter"
 msgstr "外部輪廓"
 
-msgid "external perimeters"
-msgstr "外圍輪廓"
+msgid "external perimeter"
+msgstr "外部輪廓"
 
 msgid "External perimeters"
+msgstr "外圍輪廓"
+
+msgid "external perimeters"
 msgstr "外圍輪廓"
 
 msgid "External perimeters first"
@@ -1286,17 +1031,26 @@ msgstr "重啓時額外長度"
 msgid "Extra loading distance"
 msgstr "額外的裝載長度"
 
+msgid "Extruder"
+msgstr "擠出頭"
+
 msgid "Extruder %d"
 msgstr "擠出頭 %d"
 
 msgid "Extruder changed to"
 msgstr "擠出機更改爲"
 
+msgid "Extruder clearance (mm)"
+msgstr "擠出機間隙 (毫米)"
+
 msgid "Extruder Color"
 msgstr "擠出頭顏色"
 
 msgid "Extruder offset"
 msgstr "擠出頭偏置"
+
+msgid "Extruders"
+msgstr "擠出頭"
 
 msgid "Extrusion axis"
 msgstr "擠出軸"
@@ -1306,6 +1060,9 @@ msgstr "擠出倍數"
 
 msgid "Extrusion Temperature:"
 msgstr "擠出溫度:"
+
+msgid "Extrusion width"
+msgstr "擠出寬度"
 
 msgid "Facets"
 msgstr "平面"
@@ -1343,6 +1100,9 @@ msgstr "功能類型"
 msgid "filament"
 msgstr "耗材"
 
+msgid "Filament"
+msgstr "線材"
+
 msgid "Filament and Nozzle Diameters"
 msgstr "耗材絲和噴嘴直徑"
 
@@ -1362,6 +1122,9 @@ msgstr "絲料備註"
 
 msgid "Filament parking position"
 msgstr "耗材絲停車位"
+
+msgid "Filament properties"
+msgstr "耗材絲特性"
 
 msgid "Filament Settings"
 msgstr "耗材絲設置"
@@ -1417,11 +1180,17 @@ msgstr "填充角度"
 msgid "Fill density"
 msgstr "填充密度"
 
+msgid "Filtering"
+msgstr "篩選"
+
 msgid "Find"
 msgstr "尋找"
 
 msgid "Finished"
 msgstr "已完成"
+
+msgid "Firmware"
+msgstr "固件"
 
 msgid "Firmware flasher"
 msgstr "固件燒錄器"
@@ -1438,8 +1207,17 @@ msgstr "固件類型"
 msgid "first"
 msgstr "第一"
 
+msgid "First layer"
+msgstr "首層"
+
+msgid "first layer"
+msgstr "首層"
+
 msgid "First layer height"
 msgstr "首層高度"
+
+msgid "First layer speed"
+msgstr "首層速度"
 
 msgid "First layer volumetric"
 msgstr "首層流量"
@@ -1461,6 +1239,12 @@ msgstr "燒錄正在進行中。請不要斷開印表機的連接!"
 
 msgid "Flashing succeeded!"
 msgstr "燒錄成功!"
+
+msgid "Flow"
+msgstr "流量"
+
+msgid "Font size"
+msgstr "字型大小："
 
 msgid ""
 "For the Wipe Tower to work with the soluble supports, the support layers "
@@ -1495,11 +1279,23 @@ msgstr "正視圖"
 msgid "G-code"
 msgstr "G-code"
 
+msgid "G-Code"
+msgstr "G-code"
+
 msgid "G-code flavor"
 msgstr "G代碼風格"
 
 msgid "g/cm³"
 msgstr "g/cm³"
+
+msgid "Gap fill"
+msgstr "間隙填充"
+
+msgid "Gap Fill"
+msgstr "間隙填充"
+
+msgid "General"
+msgstr "常規"
 
 msgid ""
 "Generate no less than the number of skirt loops required to consume the "
@@ -1621,6 +1417,9 @@ msgstr "按住Shift鍵來切片 並 導出G-code"
 msgid "Honeycomb"
 msgstr "蜂窩"
 
+msgid "Horizontal shells"
+msgstr "水平外殼"
+
 msgid "Host Type"
 msgstr "主機類型"
 
@@ -1718,17 +1517,6 @@ msgstr ""
 "幾層時。"
 
 msgid ""
-"If you want to process the output G-code through custom scripts, just list "
-"their absolute paths here. Separate multiple scripts with a semicolon. "
-"Scripts will be passed the absolute path to the G-code file as the first "
-"argument, and they can access the Slic3r config settings by reading "
-"environment variables."
-msgstr ""
-"如果要通過自定義腳本處理輸出 G-code , 只需在此處列出它們的絕對路徑即可。用分"
-"號分隔多個腳本。腳本將作爲第一個參數傳遞到 G-code 文件的絕對路徑, 並且它們可"
-"以通過讀取環境變量訪問 Slic3r 配置設置。"
-
-msgid ""
 "If your firmware doesn't handle the extruder displacement you need the G-"
 "code to take it into account. This option lets you specify the displacement "
 "of each extruder with respect to the first one. It expects positive "
@@ -1755,14 +1543,20 @@ msgstr "導入配置&組"
 msgid "Import of the repaired 3mf file failed"
 msgstr "導入修復的 3mf 文件失敗"
 
-msgid "Import STL/OBJ/AM&F/3MF"
-msgstr "導入 STL/OBJ/AM&F/3MF"
+msgid "Import STL/3MF/STEP/OBJ/AM&F"
+msgstr "導入 STL/3MF/STEP/OBJ/AM&F"
 
 msgid "In this mode you can select only other %s Items%s"
 msgstr "在此模式下, 您只能選擇其他 %s 項目 %s"
 
 msgid "Incompatible bundles:"
 msgstr "不兼容的包:"
+
+msgid "Infill"
+msgstr "填充"
+
+msgid "infill"
+msgstr "填充"
 
 msgid "Infill before perimeters"
 msgstr "先填充後列印輪廓"
@@ -1874,14 +1668,29 @@ msgstr "景觀"
 msgid "Language"
 msgstr "語言"
 
+msgid "Layer height"
+msgstr "層高"
+
+msgid "Layer height limits"
+msgstr "層高度限制"
+
 msgid "layers"
 msgstr "層"
+
+msgid "Layers"
+msgstr "圖層"
+
+msgid "Layers and perimeters"
+msgstr "層和輪廓"
 
 msgid "Left"
 msgstr "左"
 
 msgid "Left View"
 msgstr "左視圖"
+
+msgid "Length"
+msgstr "長度"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr "冷卻管的長度, 以限制冷卻內的移動空間."
@@ -1962,6 +1771,9 @@ msgstr "機器限制"
 msgid "Machine Limits"
 msgstr "機器限制"
 
+msgid "Material"
+msgstr "材料"
+
 msgid "Material Settings"
 msgstr "材料設置"
 
@@ -1970,6 +1782,9 @@ msgstr "最大值"
 
 msgid "Max bridge length"
 msgstr "最大橋長"
+
+msgid "Max height"
+msgstr "最大高度："
 
 msgid "Max merge distance"
 msgstr "最大合併距離"
@@ -1980,9 +1795,6 @@ msgstr "最大柱連接距離"
 msgid "Max print height"
 msgstr "最大列印高度"
 
-msgid "Max print speed"
-msgstr "最大列印速度"
-
 msgid "Max volumetric slope negative"
 msgstr "最大流量減少率"
 
@@ -1991,6 +1803,9 @@ msgstr "最大流量增加率"
 
 msgid "Max volumetric speed"
 msgstr "最大體積速度"
+
+msgid "Max width"
+msgstr "最大寬度："
 
 msgid "Maximal bridging distance"
 msgstr "最大橋接距離"
@@ -2021,6 +1836,9 @@ msgstr "網格修復失敗。"
 
 msgid "Min"
 msgstr "最小值"
+
+msgid "Min height"
+msgstr "最小高度："
 
 msgid "Min print speed"
 msgstr "最小列印速度"
@@ -2057,6 +1875,9 @@ msgstr "列印主機類型不匹配: %s"
 
 msgid "Mixed"
 msgstr "混合"
+
+msgid "mm"
+msgstr "毫米"
 
 msgid "mm (zero to disable)"
 msgstr "mm (0禁用)"
@@ -2102,6 +1923,9 @@ msgstr "模型修復完成"
 
 msgid "modified"
 msgstr "修改"
+
+msgid "Modifiers"
+msgstr "武器性能修改"
 
 msgid "money/kg"
 msgstr "¥/kg"
@@ -2182,6 +2006,9 @@ msgstr "而不是 ZIP 存檔"
 msgid "Note: OctoPrint version at least 1.1.0 is required."
 msgstr "注意: 至少需要1.1.0 版本的 OctoPrint."
 
+msgid "Notes"
+msgstr "備註"
+
 msgid "Notice"
 msgstr "通知"
 
@@ -2204,6 +2031,9 @@ msgid ""
 "Number of interface layers to insert between the object(s) and support "
 "material."
 msgstr "在物體和支撐材料中間插入的表面層數。"
+
+msgid "Number of pixels in"
+msgstr "像素點的數量"
 
 msgid "Number of pixels in X"
 msgstr "X 中的像素數"
@@ -2283,23 +2113,26 @@ msgstr "僅在熱牀上生成支撐，不在列印出來的物體上生成。"
 msgid "Only infill where needed"
 msgstr "僅在需要時填充"
 
+msgid "Only lift Z"
+msgstr "僅提升 Z"
+
 msgid "Only lift Z above"
 msgstr "僅提升 Z 高於"
 
 msgid "Only lift Z below"
 msgstr "僅提升 Z 低於"
 
+msgid "Only retract when crossing perimeters"
+msgstr "僅在越過輪廓時回縮"
+
+msgid "Ooze prevention"
+msgstr "Ooze 預防"
+
 msgid "Open a project file"
 msgstr "打開項目文件"
 
 msgid "Open CA certificate file"
 msgstr "打開 CA 證書文件"
-
-msgid "Open the Slic3r Manual in your browser"
-msgstr "在瀏覽器中打開 Slic3r 手冊"
-
-msgid "Open the Slic3r website in your browser"
-msgstr "在瀏覽器中打開 Slic3r 網站"
 
 msgid "Optimize orientation"
 msgstr "優化方向"
@@ -2311,6 +2144,12 @@ msgid ""
 msgstr ""
 "爲了儘量減少跨越輪廓，優化空程的移動方式。這非常適用於受滲漏問題影響的鮑登擠"
 "出頭。此功能會減慢列印速度和 G 代碼生成速度。"
+
+msgid "Options"
+msgstr "選項"
+
+msgid "Options for support material and raft"
+msgstr "支撐材料和基座的選項"
 
 msgid "Options:"
 msgstr "選項:"
@@ -2324,6 +2163,9 @@ msgstr "方向搜索已取消."
 msgid "Origin"
 msgstr "原點"
 
+msgid "Other"
+msgstr "其他"
+
 msgid "Other layers"
 msgstr "其它層"
 
@@ -2333,11 +2175,17 @@ msgstr "其他供應商"
 msgid "Output File"
 msgstr "輸出文件"
 
+msgid "Output file"
+msgstr "輸出文件"
+
 msgid "Output filename format"
 msgstr "輸出文件名稱格式"
 
 msgid "Output Model Info"
 msgstr "輸出模型信息"
+
+msgid "Output options"
+msgstr "輸出選項"
 
 msgid "Overhang perimeter"
 msgstr "懸空輪廓"
@@ -2345,8 +2193,14 @@ msgstr "懸空輪廓"
 msgid "Overhang threshold"
 msgstr "懸空閾值"
 
+msgid "Overlap"
+msgstr "交疊"
+
 msgid "P&rint Settings Tab"
 msgstr "&列印設置選項卡"
+
+msgid "Pad"
+msgstr "墊"
 
 msgid "Pad wall height"
 msgstr "墊壁高度"
@@ -2381,6 +2235,9 @@ msgstr "要修改的零件設置"
 msgid "Paste"
 msgstr "貼上"
 
+msgid "Pattern"
+msgstr "樣式"
+
 msgid "Pattern angle"
 msgstr "樣式角度"
 
@@ -2399,6 +2256,9 @@ msgstr "執行切割"
 msgid "Perimeter"
 msgstr "周長"
 
+msgid "perimeter"
+msgstr "周長"
+
 msgid "Perimeter extruder"
 msgstr "輪廓擠出頭"
 
@@ -2413,6 +2273,9 @@ msgstr "支柱加寬係數"
 
 msgid "Pinhead diameter should be smaller than the pillar diameter."
 msgstr "針頭直徑應小於柱直徑。"
+
+msgid "Plater"
+msgstr "佈局器"
 
 msgid "Please check your object list before preset changing."
 msgstr "在預設更改之前, 請檢查對象列表。"
@@ -2438,6 +2301,9 @@ msgstr "接縫的首選方向"
 msgid "Preferred direction of the seam - jitter"
 msgstr "接縫抖動的首選方向"
 
+msgid "Preview"
+msgstr "預覽"
+
 msgid "Previously sliced file ("
 msgstr "預切片文件 ("
 
@@ -2461,6 +2327,9 @@ msgstr "從最外圍輪廓向最內部的輪廓列印，而不是反方向。"
 msgid "Print Diameters"
 msgstr "列印直徑"
 
+msgid "Print Host upload"
+msgstr "列印主機上傳隊列"
+
 msgid "Print host upload queue"
 msgstr "列印主機上傳隊列"
 
@@ -2469,6 +2338,9 @@ msgstr "列印設置"
 
 msgid "Print Settings"
 msgstr "列印設置"
+
+msgid "Print speed override"
+msgstr "列印速度覆蓋"
 
 msgid "Print&er Settings Tab"
 msgstr "&印表機設置選項卡"
@@ -2490,6 +2362,9 @@ msgstr "印表機型號"
 
 msgid "Printer notes"
 msgstr "印表機備註"
+
+msgid "Printer scaling correction"
+msgstr "印表機縮放校正"
 
 msgid "Printer Settings"
 msgstr "印表機設置"
@@ -2519,6 +2394,9 @@ msgstr ""
 "(support_material_extruder == 0 或 support_material_interface_extruder == 0)"
 "列印支撐物, 則所有噴嘴的直徑必須相同。"
 
+msgid "Profile dependencies"
+msgstr "配置文件依賴"
+
 msgid "Progress"
 msgstr "進度"
 
@@ -2545,6 +2423,9 @@ msgstr "結束 %s"
 
 msgid "Radius"
 msgstr "半徑"
+
+msgid "Raft"
+msgstr "基座"
 
 msgid "Raft layers"
 msgstr "筏板層"
@@ -2614,6 +2495,9 @@ msgstr "直線網格"
 
 msgid "Redo"
 msgstr "重做"
+
+msgid "Reducing printing time"
+msgstr "縮短列印時間"
 
 msgid "Regular"
 msgstr "一般"
@@ -2690,6 +2574,9 @@ msgstr "擦拭前的回縮量"
 msgid "Retract on layer change"
 msgstr "層變化時回縮"
 
+msgid "Retraction"
+msgstr "回縮"
+
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
 msgstr "當空程短於此長度時不會觸發回縮。"
@@ -2702,6 +2589,12 @@ msgstr "回縮長度"
 
 msgid "Retraction Length (Toolchange)"
 msgstr "回縮長度 (工具更換)"
+
+msgid "Retraction Speed"
+msgstr "回抽速度"
+
+msgid "Retraction when tool is disabled (advanced settings for multi-extruder setups)"
+msgstr "禁用工具時的回縮 (多擠出機設置的高級設置)"
 
 msgid "Retractions"
 msgstr "回抽"
@@ -2808,6 +2701,9 @@ msgstr "縮放到適合於給定體積。"
 msgid "Scaling factor or percentage."
 msgstr "縮放因子或百分比。"
 
+msgid "Seam position"
+msgstr "接合位置"
+
 msgid "Seam preferred direction"
 msgstr "接縫首選方向"
 
@@ -2864,6 +2760,9 @@ msgstr "向印表機主機發送 G-Code"
 
 msgid "Send to printer"
 msgstr "發送到印表機"
+
+msgid "Sequential printing"
+msgstr "順序列印"
 
 msgid "Serial port:"
 msgstr "串行端口："
@@ -2959,6 +2858,9 @@ msgstr "顯示此幫助。"
 msgid "Show user configuration folder (datadir)"
 msgstr "顯示用戶配置文件夾 (datadir)"
 
+msgid "Simple"
+msgstr "簡單"
+
 msgid "Single extruder MM setup"
 msgstr "單擠出機 MM 設置"
 
@@ -2968,8 +2870,23 @@ msgstr "單擠出機多材料"
 msgid "Single extruder multimaterial parameters"
 msgstr "單擠出機多材料參數"
 
+msgid "Size"
+msgstr "尺寸"
+
+msgid "Size and coordinates"
+msgstr "尺寸和座標"
+
 msgid "Size in X and Y of the rectangular plate."
 msgstr "矩形框在X和Y方向的尺寸。"
+
+msgid "Size:"
+msgstr "大小："
+
+msgid "Skirt"
+msgstr "裙邊"
+
+msgid "skirt"
+msgstr "裙邊"
 
 msgid "Skirt and brim"
 msgstr "環邊和裙邊"
@@ -2988,11 +2905,6 @@ msgstr "SLA 列印"
 
 msgid "SLA print material notes"
 msgstr "SLA 列印材料註釋"
-
-msgid ""
-"Slic3r can upload G-code files to a printer host. This field must contain "
-"the kind of the host."
-msgstr "Slic3r 可以將 G-code 文件上載到印表機主機。此字段必須包含主機的類型。"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -3030,6 +2942,9 @@ msgstr "根據印表機技術配置值將模型切片爲 FFF 或 SLA。"
 msgid "Sliced Info"
 msgstr "切片信息"
 
+msgid "Slicing"
+msgstr "切片"
+
 msgid "Slicing done"
 msgstr "切片完成"
 
@@ -3054,10 +2969,16 @@ msgstr "緩慢傾斜"
 msgid "Snapshot name"
 msgstr "快照名稱"
 
+msgid "Solid"
+msgstr "單色"
+
 msgid "Solid "
 msgstr "單色 "
 
 msgid "Solid infill"
+msgstr "實心填充"
+
+msgid "solid infill"
 msgstr "實心填充"
 
 msgid "Solid infill every"
@@ -3068,6 +2989,9 @@ msgstr "可靠填充擠出頭"
 
 msgid "Solid infill threshold area"
 msgstr "可靠填充閾值區域"
+
+msgid "Solid layers"
+msgstr "可靠層數"
 
 msgid "Soluble material"
 msgstr "可溶性材料"
@@ -3105,14 +3029,26 @@ msgid ""
 msgstr ""
 "某些印表機或印表機設置可能難以使用可變圖層高度進行列印。默認情況下啓用。"
 
+msgid "Spacing"
+msgstr "間距"
+
 msgid "Spacing between interface lines. Set zero to get a solid interface."
 msgstr "表面直線間的間隔。設爲0獲得可靠表面。"
 
 msgid "Spacing between support material lines."
 msgstr "支撐材料直線間的間隙。"
 
+msgid "Speed"
+msgstr "速度"
+
 msgid "Speed (mm/s)"
 msgstr "回退速度(mm/s)"
+
+msgid "Speed for non-print moves"
+msgstr "非列印移動的速度"
+
+msgid "Speed for print moves"
+msgstr "列印移動的速度"
 
 msgid "Speed for travel moves (jumps between distant extrusion points)."
 msgstr "空程移動的速度（從一個擠出點結束調到另一個擠出點開始）。"
@@ -3165,6 +3101,9 @@ msgstr "標準"
 msgid "Stars"
 msgstr "星級"
 
+msgid "Start G-code"
+msgstr "起始G代碼"
+
 msgid "Start new slicing process"
 msgstr "開始新的切片流程"
 
@@ -3192,8 +3131,17 @@ msgstr "支撐基座高度"
 msgid "Support Generator"
 msgstr "支撐生成器"
 
+msgid "Support head"
+msgstr "支撐頭部寬度"
+
 msgid "support interface"
 msgstr "支撐面"
+
+msgid "Support material"
+msgstr "支撐材料"
+
+msgid "support material"
+msgstr "支撐材料"
 
 msgid "Support material interface"
 msgstr "支持材料端口"
@@ -3204,8 +3152,14 @@ msgstr "支撐材料/筏表面擠出頭"
 msgid "Support on build plate only"
 msgstr "僅在熱牀上生成支撐"
 
+msgid "Support pillar"
+msgstr "支撐支柱"
+
 msgid "Support points density"
 msgstr "支撐點密度"
+
+msgid "Supports"
+msgstr "支撐"
 
 msgid "supports and pad"
 msgstr "支撐和墊"
@@ -3225,6 +3179,9 @@ msgstr ""
 
 msgid "SVG"
 msgstr "SVG"
+
+msgid "Switch to the %s mode"
+msgstr "切換到 %s 模式"
 
 msgid ""
 "Switching to simple settings will discard changes done in the advanced "
@@ -3441,16 +3398,6 @@ msgid ""
 msgstr "該部分將插入到輸出文件的結尾。注意可對所有的Slic3r參數使用佔位符變量。"
 
 msgid ""
-"This experimental setting is used to limit the speed of change in extrusion "
-"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
-"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
-"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
-msgstr ""
-"該實驗設置用於限制擠出速率的變化速度。1.8 mm/sm²的值確保從1.8 毫米/(0.45 mm "
-"擠出寬度, 0.2 mm 擠出高度, 進給率 20 m) 到 5.4 mm/(進給率 60 m) 的擠出速率變"
-"化至少需要2秒。"
-
-msgid ""
 "This experimental setting uses G10 and G11 commands to have the firmware "
 "handle the retraction. This is only supported in recent Marlin."
 msgstr ""
@@ -3504,15 +3451,6 @@ msgstr ""
 "單位). "
 
 msgid ""
-"This option sets the number of perimeters to generate for each layer. Note "
-"that Slic3r may increase this number automatically when it detects sloping "
-"surfaces which benefit from a higher number of perimeters if the Extra "
-"Perimeters option is enabled."
-msgstr ""
-"該選項設置每一層生成的輪廓個數。注意，如果”額外輪廓“選項被啓動，Slic3r在偵測"
-"到斜坡表面時可能會自動增加該數值，因爲較多的輪廓有利於斜坡表面的列印。"
-
-msgid ""
 "This option will drop the temperature of the inactive extruders to prevent "
 "oozing. It will enable a tall skirt automatically and move extruders outside "
 "such skirt when changing temperatures."
@@ -3562,6 +3500,12 @@ msgid ""
 "Threads are used to parallelize long-running tasks. Optimal threads number "
 "is slightly above the number of available cores/processors."
 msgstr "線程用於並行處理長時間任務。最優的線程數應比可用核/處理器的數目略多。"
+
+msgid "Tilt"
+msgstr "傾斜"
+
+msgid "Tilt time"
+msgstr "傾斜時間"
 
 msgid "Time"
 msgstr "時間"
@@ -3616,6 +3560,15 @@ msgstr "工具"
 msgid "Tool #"
 msgstr "工具 #"
 
+msgid "Tool change G-code"
+msgstr "切換工具G代碼"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "單擠出機 MM 印表機的工具更換參數"
+
+msgid "Top"
+msgstr "頂部"
+
 msgid "Top solid infill"
 msgstr "頂部實心填充"
 
@@ -3642,6 +3595,9 @@ msgstr "總衝擊時間"
 msgid "Translate"
 msgstr "翻譯"
 
+msgid "Travel"
+msgstr "空程"
+
 msgid "Triangles"
 msgstr "三角形"
 
@@ -3651,6 +3607,9 @@ msgid ""
 msgstr ""
 "嘗試修復任何非流形網格 (每當我們需要對模型進行切片以執行請求的操作時, 都會隱"
 "式添加此選項)。"
+
+msgid "Type"
+msgstr "類型"
 
 msgid "Type of the printer."
 msgstr "印表機的類型."
@@ -3802,6 +3761,12 @@ msgstr "版本"
 msgid "version"
 msgstr "版本"
 
+msgid "Version:"
+msgstr "版本:"
+
+msgid "Vertical shells"
+msgstr "垂直外殼"
+
 msgid "View"
 msgstr "查看"
 
@@ -3893,6 +3858,9 @@ msgstr "整個字"
 msgid "Width"
 msgstr "寬度"
 
+msgid "width"
+msgstr "寬度"
+
 msgid "Width (mm)"
 msgstr "寬度 (mm)"
 
@@ -3917,6 +3885,9 @@ msgid "Wipe into this object's infill"
 msgstr "擦入此物體的填充"
 
 msgid "Wipe Tower"
+msgstr "擦料塔"
+
+msgid "Wipe tower"
 msgstr "擦料塔"
 
 msgid "wipe tower"
@@ -4034,6 +4005,71 @@ msgstr "縮放至熱牀"
 msgid "°C"
 msgstr "°C"
 
+msgid "Cannot overwrite an external profile."
+msgstr "無法覆蓋外部配置文件。"
+
+msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
+msgstr "選擇一個或多個文件  (STL/OBJ/AMF/3MF/PRUSA):"
+
+msgid "Configuration &Wizard"
+msgstr "配置 &嚮導"
+
+msgid "Configuration Wizard"
+msgstr "配置嚮導"
+
+msgid "Density of internal infill, expressed in the range 0% - 100%."
+msgstr "內部填充的密度，以0% - 100% 表示。"
+
+msgid "Export current plate as STL"
+msgstr "將當前佈局板導出爲 STL"
+
+msgid ""
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
+msgstr ""
+"如果要通過自定義腳本處理輸出 G-code , 只需在此處列出它們的絕對路徑即可。用分"
+"號分隔多個腳本。腳本將作爲第一個參數傳遞到 G-code 文件的絕對路徑, 並且它們可"
+"以通過讀取環境變量訪問 Slic3r 配置設置。"
+
+msgid "Import STL/OBJ/AM&F/3MF"
+msgstr "導入 STL/OBJ/AM&F/3MF"
+
+msgid "Max print speed"
+msgstr "最大列印速度"
+
+msgid "Open the Slic3r Manual in your browser"
+msgstr "在瀏覽器中打開 Slic3r 手冊"
+
+msgid "Open the Slic3r website in your browser"
+msgstr "在瀏覽器中打開 Slic3r 網站"
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
+msgstr "Slic3r 可以將 G-code 文件上載到印表機主機。此字段必須包含主機的類型。"
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate "
+"of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/"
+"s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"該實驗設置用於限制擠出速率的變化速度。1.8 mm/sm²的值確保從1.8 毫米/(0.45 mm "
+"擠出寬度, 0.2 mm 擠出高度, 進給率 20 m) 到 5.4 mm/(進給率 60 m) 的擠出速率變"
+"化至少需要2秒。"
+
+msgid ""
+"This option sets the number of perimeters to generate for each layer. Note "
+"that Slic3r may increase this number automatically when it detects sloping "
+"surfaces which benefit from a higher number of perimeters if the Extra "
+"Perimeters option is enabled."
+msgstr ""
+"該選項設置每一層生成的輪廓個數。注意，如果”額外輪廓“選項被啓動，Slic3r在偵測"
+"到斜坡表面時可能會自動增加該數值，因爲較多的輪廓有利於斜坡表面的列印。"
+
 msgid "Fill pattern"
 msgstr "填充樣式"
 
@@ -4052,17 +4088,11 @@ msgstr "Prusa MSLA 技術印表機"
 msgid "Save changes?"
 msgstr "保存更改嗎？"
 
-msgid "Simple"
-msgstr "簡單"
-
 msgid "Simple View Mode"
 msgstr "簡單介面模式"
 
 msgid "Advanced View Mode"
 msgstr "高級介面模式"
-
-msgid "Expert"
-msgstr "專家"
 
 msgid "Expert View Mode"
 msgstr "專家介面模式"
@@ -4312,12 +4342,6 @@ msgstr "用流量速率"
 
 msgid "Start printing after upload"
 msgstr "上傳後開始列印"
-
-msgid "Switch to the %s mode"
-msgstr "切換到 %s 模式"
-
-msgid "Current mode is %s"
-msgstr "當前模式爲 %s"
 
 msgid "Connection to Duet works correctly."
 msgstr "與 Duet 的連接工作正常。"
@@ -8827,9 +8851,6 @@ msgstr "簡單的單色佈景主題"
 msgid "Single"
 msgstr "單一"
 
-msgid "Size:"
-msgstr "大小："
-
 msgid "Sizing"
 msgstr "縮放"
 
@@ -10736,9 +10757,3 @@ msgid ""
 "tuning hole sizes."
 msgstr ""
 "該物體將以指定值（負=往內，正=往外）變大/收縮。對於精確調節孔洞尺寸可能有用。"
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "選擇一個或多個文件  (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
-msgid "Import STL/3MF/STEP/OBJ/AM&F"
-msgstr "導入 STL/3MF/STEP/OBJ/AM&F"
