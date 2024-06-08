@@ -9645,7 +9645,7 @@ msgid "Remaining time"
 msgstr "Restzeit"
 
 msgid "Remember my choice"
-msgstr "Auswahl merken"
+msgstr "Auswahl speichern"
 
 msgid "Remember output directory"
 msgstr "Ausgabeverzeichnis merken"

@@ -9783,7 +9783,7 @@ msgstr "Restzeit"
 #: src/slic3r/GUI/GUI_App.cpp:1135 src/slic3r/GUI/GUI_App.cpp:3100
 #: src/slic3r/GUI/Plater.cpp:1726 src/slic3r/GUI/UnsavedChangesDialog.cpp:889
 msgid "Remember my choice"
-msgstr "Auswahl merken"
+msgstr "Auswahl speichern"
 
 #: src/slic3r/GUI/Preferences.cpp:121
 msgid "Remember output directory"
