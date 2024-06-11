@@ -9159,7 +9159,7 @@ msgid "Polyhole twist"
 msgstr "Polyhole twist"
 
 msgid "Portions copyright"
-msgstr "Teile des Urheberrechts"
+msgstr "Urheberrecht für Bestandteile"
 
 msgid "Portrait"
 msgstr "Hochformat"

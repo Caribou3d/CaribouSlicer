@@ -8894,7 +8894,7 @@ msgstr "Bitte wählen Sie die neu zu ladende Datei aus"
 
 #: src/slic3r/GUI/AboutDialog.cpp:45 src/slic3r/GUI/AboutDialog.cpp:305
 msgid "Portions copyright"
-msgstr "Teile des Urheberrechts"
+msgstr "Urheberrecht für Bestandteile"
 
 #: src/libslic3r/PrintConfig.cpp:3257
 msgid "Portrait"
