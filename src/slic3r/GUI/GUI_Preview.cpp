@@ -773,6 +773,9 @@ void Preview::update_layers_slider(const std::vector<double>& layers_z, bool sho
                 assert(areas.size() == m_gcode_result->print_statistics.modes.front().layers_times.size());
             }
         }
+    } else {
+        m_layers_slider->SetLayersTimes({}, 0);
+        m_layers_slider->SetLayersAreas({});
     }
 
     // Suggest the auto color change, if model looks like sign
