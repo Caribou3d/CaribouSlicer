@@ -1394,11 +1394,8 @@ void GCode::_do_export(Print& print_mod, GCodeOutputStream &file, ThumbnailsGene
 
     const Print &print = print_mod;
     Print::StatusMonitor status_monitor{print_mod};
-<<<<<<< HEAD
     ToolOrdering tool_ordering;
 
-=======
->>>>>>> 1ea97b31d685f93c91ea8e34480b009443e8ae95
     LockMonitor monitor_soft_lock(status_monitor.stats());
     this->m_throw_if_canceled =
         [&print]() { print.throw_if_canceled(); };
@@ -1649,7 +1646,6 @@ void GCode::_do_export(Print& print_mod, GCodeOutputStream &file, ThumbnailsGene
 
     // Get optimal tool ordering to minimize tool switches of a multi-exruder print.
     // For a print by objects, find the 1st printing object.
-    ToolOrdering tool_ordering;
     uint16_t initial_extruder_id     = (uint16_t)-1;
     uint16_t final_extruder_id       = (uint16_t)-1;
     bool         has_wipe_tower      = false;
@@ -1772,16 +1768,12 @@ void GCode::_do_export(Print& print_mod, GCodeOutputStream &file, ThumbnailsGene
         m_placeholder_parser.set("first_layer_print_min",  new ConfigOptionFloats({ bbox.min.x(), bbox.min.y() }));
         m_placeholder_parser.set("first_layer_print_max",  new ConfigOptionFloats({ bbox.max.x(), bbox.max.y() }));
         m_placeholder_parser.set("first_layer_print_size", new ConfigOptionFloats({ bbox.size().x(), bbox.size().y() }));
-<<<<<<< HEAD
             this->placeholder_parser().set("num_extruders", int(print.config().nozzle_diameter.values.size()));
         std::vector<unsigned char> is_extruder_used(std::max(size_t(255), print.config().nozzle_diameter.size()), 0);
         for (unsigned int extruder_id : tool_ordering.all_extruders())
             is_extruder_used[extruder_id] = true;
         this->placeholder_parser().set("is_extruder_used", new ConfigOptionBools(is_extruder_used));
     } else {
-=======
-} else {
->>>>>>> 1ea97b31d685f93c91ea8e34480b009443e8ae95
         //have to compute it ourself :-/
         class BoundingBoxVisitor : public ExtrusionVisitorRecursiveConst {
         public:

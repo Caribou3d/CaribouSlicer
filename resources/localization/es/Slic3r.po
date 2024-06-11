@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -545,8 +545,20 @@ msgstr "Añadir rango de capas"
 msgid "Add Layers"
 msgstr "Añadir Capas"
 
+msgid "Add modifier"
+msgstr "Añadir modificador"
+
+msgid "Add negative volume"
+msgstr "Añadir volumen negativo"
+
+msgid "Add one more instance of the selected object"
+msgstr "Añadir una instancia más del objeto seleccionado"
+
 msgid "Add one or more custom shapes"
 msgstr "Añadir una o más formas personalizadas"
+
+msgid "Add part"
+msgstr "Añadir pieza"
 
 msgid "Add pause print"
 msgstr "Añadir pausa de impresión"
@@ -565,6 +577,9 @@ msgstr "Añadir ajuste preestablecido para este dispositivo de impresión"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Añadir la(s) forma(s) seleccionada(s) a la base"
+
+msgid "Add settings"
+msgstr "Añadir ajustes"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Añadir Conjunto de Ajustes para Rango de Alturas"
@@ -592,6 +607,12 @@ msgstr "Añadir Forma desde la Galería"
 
 msgid "Add Shapes from Gallery"
 msgstr "Añadir Formas desde la Galería"
+
+msgid "Add support blocker"
+msgstr "Añadir bloqueo soportes"
+
+msgid "Add support enforcer"
+msgstr "Añadir forzado de soportes"
 
 msgid "Add support point"
 msgstr "Añadir punto de soporte"
@@ -715,6 +736,15 @@ msgstr "Permitir la siguiente repetición del color"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Permite pintar sólo en las facetas seleccionadas por: \"%1%\""
+
+msgid "Along X axis"
+msgstr "A lo largo del eje X"
+
+msgid "Along Y axis"
+msgstr "A lo largo del eje Y"
+
+msgid "Along Z axis"
+msgstr "A lo largo del eje Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + Rueda del ratón"
@@ -1061,6 +1091,9 @@ msgstr "Capas sólidas inferiores"
 msgid "Bottom View"
 msgstr "Vista inferior"
 
+msgid "Box"
+msgstr "Caja"
+
 msgid "Bridge"
 msgstr "Puente"
 
@@ -1257,8 +1290,14 @@ msgstr "Cambiar Tipo de Pieza"
 msgid "Change point head diameter"
 msgstr "Cambiar diámetro de la cabeza de punta"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Cambiar número de instancias al objeto seleccionado"
+
 msgid "Change thumbnail"
 msgstr "Cambiar la miniatura"
+
+msgid "Change type"
+msgstr "Cambiar tipo"
 
 msgid "Changelog & Download"
 msgstr "Registro de cambios & Descargar"
@@ -1338,6 +1377,9 @@ msgstr ""
 "extrusión constante y para las zonas muy finas se utiliza gap-fill. El motor "
 "de Arachne produce perímetros con un ancho de extrusión variable. Este "
 "ajuste también afecta al relleno Concéntrico."
+
+msgid "Clear"
+msgstr "Limpiar"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Borrar la pila de Deshacer / Rehacer en el nuevo proyecto"
@@ -2600,6 +2642,9 @@ msgstr "Exportar AMF"
 msgid "Export AMF file:"
 msgstr "Exportar archivo AMF:"
 
+msgid "Export as STL"
+msgstr "Exportar como STL"
+
 msgid "Export config"
 msgstr "Exportar configuración"
 
@@ -2918,8 +2963,15 @@ msgstr "Ángulo de relleno"
 msgid "Fill bed"
 msgstr "Rellenar la base"
 
+msgid "Fill bed with instances"
+msgstr "Rellenar la base con copias"
+
 msgid "Fill density"
 msgstr "Densidad de relleno"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr ""
+"Rellenar el área restante de la base con copias del objeto seleccionado"
 
 msgid "Find"
 msgstr "Buscar"
@@ -2986,6 +3038,9 @@ msgstr "Primera capa de objetos sobre la interfaz de la balsa"
 
 msgid "Fix through NetFabb"
 msgstr "Reparar mediante NetFabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Reparar mediante Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Reparando a través de NetFabb"
@@ -3209,6 +3264,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galería"
+
 msgid "Gap fill"
 msgstr "Relleno del hueco"
 
@@ -3389,6 +3447,9 @@ msgstr "Altura (mm)"
 
 msgid "Height of the display"
 msgstr "Altura de la pantalla"
+
+msgid "Height range Modifier"
+msgstr "Modificador Rango de Alturas"
 
 msgid "Height ranges"
 msgstr "Rango de alturas"
@@ -4638,6 +4699,9 @@ msgstr "Combinar"
 msgid "Merge all parts to the one single object"
 msgstr "Juntar todas las piezas en un único objeto"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Juntar objeto en un objeto multipieza"
+
 msgid "Merged"
 msgstr "Juntar"
 
@@ -4747,11 +4811,26 @@ msgstr "Velocidad mínima sin extrusión (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Mínimo de espesor de la pared de un modelo vaciado."
 
+msgid "Mirror"
+msgstr "Reflejar"
+
 msgid "Mirror horizontally"
 msgstr "Reflejar horizontalmente"
 
 msgid "Mirror Object"
 msgstr "Reflejar objeto"
+
+msgid "Mirror the selected object"
+msgstr "Duplicar el objeto seleccionado"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje Z"
 
 msgid "Mirror vertically"
 msgstr "Reflejar verticalmente"
@@ -5385,6 +5464,9 @@ msgstr "Abrir Preferencias."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Abre el diálogo para modificar la galería de formas"
 
+msgid "Opening Configuration Wizard"
+msgstr "Abriendo Asistente de Configuración"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Abre un nuevo proyecto mientras algunos ajustes están sin guardar."
 
@@ -5892,6 +5974,9 @@ msgstr "Anular la velocidad de impresión"
 msgid "Print&er Settings Tab"
 msgstr "Configuración de Impr&esión"
 
+msgid "Printable"
+msgstr "Imprimible"
+
 msgid "printer"
 msgstr "impresora"
 
@@ -6017,6 +6102,9 @@ msgstr "Calidad / Velocidad"
 
 msgid "Quick"
 msgstr "Rápido"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Añadir ajustes rápidos (%s)"
 
 msgid "Quick Slice"
 msgstr "Laminado rápido"
@@ -6172,6 +6260,9 @@ msgstr "Recargar desde:"
 msgid "Reload the plater from disk"
 msgstr "Cargar la base del disco"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Vuelve a cargar los volúmenes seleccionados desde el disco"
+
 msgid "Remaining errors"
 msgstr "Errores restantes"
 
@@ -6217,6 +6308,9 @@ msgstr "Retirar rango de capas"
 msgid "Remove Multi Material painting"
 msgstr "Eliminar el pintado Multi Material"
 
+msgid "Remove one instance of the selected object"
+msgstr "Eliminar una instancia del objeto seleccionado"
+
 msgid "Remove paint-on seam"
 msgstr "Eliminar pintado de costuras"
 
@@ -6241,11 +6335,17 @@ msgstr "Eliminar puntos seleccionados"
 msgid "Remove selection"
 msgstr "Eliminar selección"
 
+msgid "Remove the selected object"
+msgstr "Eliminar el objeto seleccionado"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Eliminar perfiles de usuario (se tomará una instantánea de antemano)"
 
 msgid "Remove variable layer height"
 msgstr "Eliminar altura de capa variable"
+
+msgid "Rename"
+msgstr "Renombrar"
 
 msgid "Rename Object"
 msgstr "Renombrar Objeto"
@@ -6309,6 +6409,9 @@ msgstr "Repetir el último laminado rápido"
 
 msgid "Replace from:"
 msgstr "Reemplazar de:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Sustituir el volumen seleccionado por un nuevo STL"
 
 msgid "Replace with"
 msgstr "Reemplazar con"
@@ -6585,6 +6688,10 @@ msgstr "Escalar"
 msgid "Scale factors"
 msgstr "Factores de escala"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr ""
+"Escala los objetos seleccionados para ajustarse al volumen de impresión"
+
 msgid "Scale To Fit"
 msgstr "Escalar para Adaptarse"
 
@@ -6593,6 +6700,9 @@ msgstr "Escalar para Adaptarse"
 
 msgid "Scale to fit the given volume."
 msgstr "Escalar para ajustarse al volumen dado."
+
+msgid "Scale to print volume"
+msgstr "Escalar al volumen de impresión"
 
 msgid "Scaling factor or percentage."
 msgstr "Factor de escalado o porcentaje."
@@ -6686,6 +6796,9 @@ msgstr "Selecciona pestaña de ajustes de impresora"
 
 msgid "Select shape from the gallery"
 msgstr "Seleccionar la forma en la galería"
+
+msgid "Select showing settings"
+msgstr "Seleccionar los ajustes mostrados"
 
 msgid "Select the language"
 msgstr "Seleccione el idioma"
@@ -6789,6 +6902,12 @@ msgstr "Nombre del servicio"
 msgid "Set"
 msgstr "Ajuste"
 
+msgid "Set as a Separated Object"
+msgstr "Establecer como Objeto Separado"
+
+msgid "Set as a Separated Objects"
+msgstr "Establecer como Objetos Separados"
+
 msgid "Set auto color changes"
 msgstr "Establecer cambios de color automáticos"
 
@@ -6797,6 +6916,9 @@ msgstr "Establecer el extrusor por defecto para los elementos seleccionados"
 
 msgid "Set extruder change for every"
 msgstr "Establecer cambio de extrusor para cada"
+
+msgid "Set extruder for selected items"
+msgstr "Establecer el extrusor para elementos seleccionados"
 
 msgid "Set extruder number for the selected items"
 msgstr "Establecer el número de extrusor para los elementos seleccionados"
@@ -6818,6 +6940,9 @@ msgstr "Establecer el pulgar inferior como activo"
 
 msgid "Set Mirror"
 msgstr "Establecer Reflejo"
+
+msgid "Set number of instances"
+msgstr "Establecer número de instancias"
 
 msgid "Set numbers of copies to %d"
 msgstr "Establecer el número de copias a %d"
@@ -7069,6 +7194,9 @@ msgstr "Muestra/Oculta etiquetas de pieza/repetición"
 msgid "Simple"
 msgstr "Sencillo"
 
+msgid "Simplify model"
+msgstr "Simplificar el modelo"
+
 msgid "Single extruder MM setup"
 msgstr "Ajuste para MM con un solo extrusor"
 
@@ -7154,6 +7282,9 @@ msgstr "Puntos de soporte SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Se detectaron soportes SLA fuera del área de impresión."
+
+msgid "Slab"
+msgstr "Losa"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7438,6 +7569,15 @@ msgstr "Modo vaso"
 
 msgid "Split"
 msgstr "Dividir"
+
+msgid "Split the selected object"
+msgstr "Dividir el objeto seleccionado"
+
+msgid "Split the selected object into individual objects"
+msgstr "Dividir el objeto seleccionado en objetos individuales"
+
+msgid "Split the selected object into individual parts"
+msgstr "Divide el objeto seleccionado en partes individuales"
 
 msgid "Split to objects"
 msgstr "Partir en varias piezas"
@@ -8606,6 +8746,12 @@ msgstr "a"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Para hacerlo por favor especifique un nuevo nombre para esos ajustes."
+
+msgid "To objects"
+msgstr "A los objetos"
+
+msgid "To parts"
+msgstr "A las piezas"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

@@ -1,6 +1,6 @@
 
 
-#: src/slic3r/GUI/Plater.cpp:5910
+#: src/slic3r/GUI/Plater.cpp:5911
 #, possible-boost-format
 msgid " resin '%1%'"
 msgstr ""
@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5924
+#: src/libslic3r/PrintConfig.cpp:5921
 msgid "$ per hour"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgid "%1% will remember your action."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3433 src/slic3r/GUI/Plater.cpp:1787
+#: src/slic3r/GUI/GUI_App.cpp:3434 src/slic3r/GUI/Plater.cpp:1788
 #, possible-boost-format
 #Similar to me: %1% will remember your choice.
 # 2    changes: %s will remember your choice.
@@ -103,7 +103,7 @@ msgid "%1% will remember your choice."
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3437 src/slic3r/GUI/Plater.cpp:1793
+#: src/slic3r/GUI/GUI_App.cpp:3438 src/slic3r/GUI/Plater.cpp:1794
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:913
 #, possible-boost-format
 #Similar to me: %1%: Don't ask me again
@@ -113,7 +113,7 @@ msgid "%1%: Don't ask me again"
 msgstr ""
 
 
-#: src/slic3r/GUI/GUI_App.cpp:3426 src/slic3r/GUI/GUI_App.cpp:3449
+#: src/slic3r/GUI/GUI_App.cpp:3427 src/slic3r/GUI/GUI_App.cpp:3450
 #, possible-boost-format
 #Similar to me: %1%: Open hyperlink
 # 3    changes: : Open hyperlink
@@ -139,20 +139,6 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/UpdateDialogs.cpp:95
-#, possible-c-format, possible-boost-format
-#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed. 
-# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed. 
-#  translation: %s 没有使用可用的最新配置。\n配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 
-# 19   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
-#  translation: PrusaSlicer未使用可用的最新配置。\n配置向导可能不提供要安装的最新打印机、耗材和SLA材料。
-msgid ""
-"%s is not using the newest configuration available.\n"
-"Configuration Assistent may not offer the latest printers, filaments and SLA "
-"materials to be installed. "
-msgstr ""
-
-
 #: src/slic3r/GUI/OpenGLManager.cpp:259
 #Similar to me: %s requires OpenGL 2.0 capable graphics driver to run correctly, \nwhile OpenGL version %1%, render %2%, vendor %3% was detected.
 # 6    changes: %s requires OpenGL 2.0 capable graphics driver to run correctly, \nwhile OpenGL version %s, render %s, vendor %s was detected.
@@ -165,7 +151,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5907
+#: src/slic3r/GUI/Plater.cpp:5908
 #, possible-boost-format
 msgid "'%1%' of type %2%"
 msgstr ""
@@ -208,7 +194,7 @@ msgid "2x10°"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1899
+#: src/slic3r/GUI/MainFrame.cpp:1886
 #Similar to me: 3D &Platter Tab
 # 1    changes: 3D &Plater Tab
 #  translation: 3D 视图
@@ -249,7 +235,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2791
+#: src/libslic3r/PrintConfig.cpp:2788
 msgid ""
 "A percentage of the perimeter flow (mm3/s) is used as a limit for the gap "
 "fill flow, and so the gapfill may reduce its speed when the gap fill "
@@ -260,7 +246,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6094
+#: src/libslic3r/PrintConfig.cpp:6091
 #, possible-c-format, possible-boost-format
 msgid ""
 "Acceleration for travel moves (jumps between distant extrusion points).\n"
@@ -282,7 +268,7 @@ msgid "Access violation (misalignement)"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1558
+#: src/libslic3r/PrintConfig.cpp:1557
 #, possible-c-format, possible-boost-format
 #Similar to me: Activate this option to modify the flow to acknowledge that the nozzle is round and the corners will have a round shape, and so change the flow to realize that and avoid over-extrusion. 100% is activated, 0% is deactivated and 50% is half-activated.\nNote: At 100% this changes the flow by ~5% over a very small distance (~nozzle diameter), so it shouldn't be noticeable unless you have a very big nozzle and a very precise printer.
 # 106  changes: Activate this option to modify the flow to acknowledge that the nozzle is round and the corners will have a round shape, and so change the flow to realize that and avoid over-extrusion. 100% is activated, 0% is deactivated and 50% is half-activated.\nNote: At 100% this changes the flow by ~5% over a very small distance (~nozzle diameter), so it shouldn't be noticeable unless you have a very big nozzle and a very precise printer.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -298,7 +284,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1683
+#: src/libslic3r/PrintConfig.cpp:1682
 #Similar to me: Add one perimeter every even layer (and not on odd layers like the first one). With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
 # 44   changes: Add one perimeter every odd layer. With this, infill is taken into the sandwich and you may be able to reduce drastically the infill/perimeter overlap setting. 
 #  translation: 每奇数层添加一个周长。 有了这个，填充物被带入了三明治，你可以大大减少填充物/周边重叠设置。 
@@ -330,12 +316,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2310
+#: src/libslic3r/PrintConfig.cpp:2309
 msgid "Align sparse infill in z"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2711
+#: src/libslic3r/PrintConfig.cpp:2708
 #Similar to me: All perimeters
 # 3    changes: Small perimeters
 #  translation: 小边界
@@ -347,7 +333,7 @@ msgid "All perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4693
+#: src/libslic3r/PrintConfig.cpp:4690
 #Similar to me: All surfaces
 # 3    changes: On surfaces
 #  translation: 在表面上
@@ -367,7 +353,7 @@ msgid "All tags"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5825
+#: src/libslic3r/PrintConfig.cpp:5822
 msgid ""
 "Allow all perimeters to overlap, instead of just external ones.\n"
 "100% means that perimeters can overlap completly on top of each other.\n"
@@ -377,7 +363,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5812
+#: src/libslic3r/PrintConfig.cpp:5809
 msgid ""
 "Allow outermost perimeter to overlap itself to avoid the use of thin walls. "
 "Note that flow isn't adjusted and so this will result in over-extruding and "
@@ -409,7 +395,7 @@ msgid "Also, the fan speed over %1% won't be touched by this feature."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2334
+#: src/libslic3r/PrintConfig.cpp:2333
 msgid "Alternate Fill Angle"
 msgstr ""
 
@@ -514,7 +500,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6183
+#: src/libslic3r/PrintConfig.cpp:6180
 msgid ""
 "Before extruding an external perimeter, this flag will place the nozzle a "
 "bit inward and in advance of the seam position before unretracting. It will "
@@ -546,7 +532,7 @@ msgid "Bridge flow baseline"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4021
+#: src/libslic3r/PrintConfig.cpp:4018
 msgid "Bridge max length"
 msgstr ""
 
@@ -570,7 +556,7 @@ msgid "Bridge type"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1452
+#: src/libslic3r/PrintConfig.cpp:1451
 #Similar to me: Bridging fill pattern
 # 7    changes: Bottom fill pattern
 #  translation: 底部填充模式
@@ -625,7 +611,7 @@ msgid "build volume"
 msgstr ""
 
 
-#: src/slic3r/GUI/AboutDialog.cpp:256
+#: src/slic3r/GUI/AboutDialog.cpp:258
 msgid "Build:"
 msgstr ""
 
@@ -636,7 +622,7 @@ msgid "but for %1% where the speed-up phase is skipped."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1474
+#: src/libslic3r/PrintConfig.cpp:1473
 #Similar to me: But on first layer
 # 2    changes: Not on first layer
 #  translation: 第一层校准
@@ -653,7 +639,7 @@ msgid "By default, there won't be any fan speed command."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6203
+#: src/libslic3r/PrintConfig.cpp:6200
 #, possible-c-format, possible-boost-format
 msgid ""
 "By how much the 'wipe inside' can dive inside the object (if possible)?\n"
@@ -683,7 +669,7 @@ msgid "Cap with"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2788
+#: src/libslic3r/PrintConfig.cpp:2785
 msgid "Cap with perimeter flow"
 msgstr ""
 
@@ -696,7 +682,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/AboutDialog.cpp:285
+#: src/slic3r/GUI/AboutDialog.cpp:287
 msgid ""
 "CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by "
 "Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap "
@@ -704,7 +690,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7045
+#: src/libslic3r/PrintConfig.cpp:7042
 msgid "Casting"
 msgstr ""
 
@@ -717,7 +703,7 @@ msgid "Change the perimeter extrusion widths to ensure that there is an exact nu
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1545 src/libslic3r/PrintConfig.cpp:4241
+#: src/libslic3r/PrintConfig.cpp:1544 src/libslic3r/PrintConfig.cpp:4238
 #, possible-c-format, possible-boost-format
 msgid ""
 "Change width on every even layer (and not on odd layers like the first one) "
@@ -730,7 +716,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3205 src/libslic3r/PrintConfig.cpp:5101
+#: src/libslic3r/PrintConfig.cpp:3202 src/libslic3r/PrintConfig.cpp:5098
 #, possible-c-format, possible-boost-format
 msgid ""
 "Change width on every even layer (and not on odd layers like the first one) "
@@ -742,7 +728,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4879
+#: src/libslic3r/PrintConfig.cpp:4876
 msgid ""
 "Check and penalize seams that are the most visible. launch rays to check "
 "from how many direction a point is visible.\n"
@@ -755,7 +741,7 @@ msgid "Check for problematic dynamic libraries"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5914
+#: src/slic3r/GUI/Plater.cpp:5915
 msgid "Checking your material"
 msgstr ""
 
@@ -878,7 +864,7 @@ msgid "Compress png textures"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3110
+#: src/libslic3r/PrintConfig.cpp:3107
 #Similar to me: Connection of bridged infill lines
 # 6    changes: Connection of bottom infill lines
 #  translation: 底部填充线的连接
@@ -890,12 +876,12 @@ msgid "Connection of bridged infill lines"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4032
+#: src/libslic3r/PrintConfig.cpp:4029
 msgid "Consider upper bridges"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4766
+#: src/libslic3r/PrintConfig.cpp:4763
 #Similar to me: Contiguous
 # 4    changes: Continue
 #  translation: 持续
@@ -905,7 +891,7 @@ msgid "Contiguous"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4775
+#: src/libslic3r/PrintConfig.cpp:4772
 #, possible-c-format, possible-boost-format
 #Similar to me: Cost of placing the seam at a bad angle. The worst angle (max penalty) is when it's flat.\n100% is the default penalty
 # 29   changes: Cost of placing the seam at a bad angle. The worst angle (max penalty) is when it's flat.
@@ -949,7 +935,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5682
+#: src/slic3r/GUI/Plater.cpp:5683
 #Similar to me: Create a new project?
 # 4    changes: Creating a new project
 #  translation: 创建新项目
@@ -964,7 +950,7 @@ msgid "Creating arcs"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6105
+#: src/libslic3r/PrintConfig.cpp:6102
 msgid "Decelerate with target acceleration"
 msgstr ""
 
@@ -974,7 +960,7 @@ msgid "Decimals for gcode viewer colors"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1267
+#: src/libslic3r/PrintConfig.cpp:1266
 #Similar to me: Default speed
 # 4    changes: Default fan speed
 #  translation: 默认风扇速度
@@ -997,7 +983,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2374
+#: src/libslic3r/PrintConfig.cpp:2373
 msgid ""
 "Density of internal infill, expressed in the range 0% - 100%.\n"
 "Set 0 to remove any sparse infill.\n"
@@ -1007,7 +993,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7046
+#: src/libslic3r/PrintConfig.cpp:7043
 msgid "Dental"
 msgstr ""
 
@@ -1024,7 +1010,7 @@ msgid "Discrete Values"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4919
+#: src/libslic3r/PrintConfig.cpp:4916
 msgid ""
 "Distance between skirt and object(s) ; or from the brim if using draft "
 "shield or you set 'skirt_distance_from_brim'."
@@ -1035,12 +1021,12 @@ msgid "Distance Margin"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1475
+#: src/libslic3r/PrintConfig.cpp:1474
 msgid "Don't check crossings for retraction on first layer"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4034
+#: src/libslic3r/PrintConfig.cpp:4031
 msgid ""
 "Don't put overhangs if the area will filled in next layer by bridges.\n"
 "Set to -1 to accept all upper layers.\n"
@@ -1048,7 +1034,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6214
+#: src/libslic3r/PrintConfig.cpp:6211
 #Similar to me: Don't wipe when you don't cross a perimeter. Need 'avoid_crossing_perimeters' and 'wipe' enabled.
 # 17   changes: Don't wipe when you don't cross a perimeter. Need 'only_retract_when_crossing_perimeters'and 'wipe' enabled.
 #  translation: 不越过边界时不要擦拭。需要启用“仅在越界时缩回”和“擦拭”。
@@ -1058,7 +1044,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5534
+#: src/libslic3r/PrintConfig.cpp:5531
 msgid ""
 "Each layer, add this angle to the interface pattern angle. 0 to keep the "
 "same angle, 90 to cross."
@@ -1089,7 +1075,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4056 src/libslic3r/PrintConfig.cpp:4057
+#: src/libslic3r/PrintConfig.cpp:4053 src/libslic3r/PrintConfig.cpp:4054
 #Similar to me: Enforce overhangs speed
 # 9    changes: Overhangs speed
 #  translation: 悬垂速度
@@ -1097,7 +1083,7 @@ msgid "Enforce overhangs speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5215
+#: src/libslic3r/PrintConfig.cpp:5212
 msgid ""
 "Ensure that the slicer won't add heating, fan, extruder... commands before "
 "or just after your start-gcode.\n"
@@ -1116,7 +1102,7 @@ msgid "EPeri"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5674
+#: src/slic3r/GUI/Plater.cpp:5675
 #Similar to me: Erase all objects
 # 6    changes: Deletes all objects
 #  translation: 删除所有对象
@@ -1128,21 +1114,21 @@ msgid "Erase all objects"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4320
+#: src/libslic3r/GCode.cpp:4326
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: seam notch."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4822
+#: src/libslic3r/GCode.cpp:4828
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: wipe."
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:4728
+#: src/libslic3r/GCode.cpp:4734
 msgid ""
 "Error while writing gcode: two points are at the same position. Please send "
 "the .3mf project to the dev team for debugging. Extrude loop: "
@@ -1182,7 +1168,7 @@ msgid "Except for the first layer where the fan is disabled"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1762
+#: src/slic3r/GUI/MainFrame.cpp:1749
 #Similar to me: Export &Plate
 # 5    changes: Export &G-code
 #  translation: 导出 &G-code
@@ -1192,7 +1178,7 @@ msgid "Export &Plate"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1762
+#: src/slic3r/GUI/MainFrame.cpp:1749
 msgid "Export current plate (options available in the dialog)"
 msgstr ""
 
@@ -1202,7 +1188,7 @@ msgid "Export headers with date and time"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6078
+#: src/slic3r/GUI/Plater.cpp:6079
 #Similar to me: Export Platter:
 # 6    changes: Exact pattern
 #  translation: 精确模式
@@ -1212,7 +1198,7 @@ msgid "Export Platter:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2762
+#: src/libslic3r/PrintConfig.cpp:2759
 #Similar to me: Extension
 # 2    changes: Extrusion
 #  translation: 挤压
@@ -1220,7 +1206,7 @@ msgid "Extension"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1594
+#: src/libslic3r/PrintConfig.cpp:1593
 #Similar to me: External Perimeter acceleration
 # 9    changes: Perimeter acceleration
 #  translation: 圆周加速度
@@ -1232,7 +1218,7 @@ msgid "External Perimeter acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1630
+#: src/libslic3r/PrintConfig.cpp:1629
 #Similar to me: External perimeters in vase mode
 # 3    changes: ExternalPerimeter in vase mode
 #  translation: 花瓶模式下的外部周长
@@ -1244,17 +1230,17 @@ msgid "External perimeters in vase mode"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1543
+#: src/libslic3r/PrintConfig.cpp:1542
 msgid "External perimeters spacing change on even layers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2710
+#: src/libslic3r/PrintConfig.cpp:2707
 msgid "External walls"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1681
+#: src/libslic3r/PrintConfig.cpp:1680
 #Similar to me: Extra perimeter on even layers
 # 4    changes: Extra perimeter on odd layers
 #  translation: 奇数层上的额外周长
@@ -1266,7 +1252,7 @@ msgid "Extra perimeter on even layers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4100
+#: src/libslic3r/PrintConfig.cpp:4097
 #Similar to me: Extrude perimeters that have an overhanging part in the reverse direction on even layers (not on odd layers like the first one). This alternating pattern can significantly improve steep overhangs.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
 # 63   changes: Extrude perimeters that have a part over an overhang in the reverse direction on odd layers. This alternating pattern can drastically improve steep overhang.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
 #  translation: 在奇数层上以相反的方向挤出有一部分超出悬垂部分的周长。 这种交替模式可以大大改善陡峭的悬垂。\n!! 这是一个非常慢的算法（它使用与 extra_perimeters_overhangs 相同的结果）！！
@@ -1279,7 +1265,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1762
+#: src/libslic3r/PrintConfig.cpp:1761
 #Similar to me: Extrusion multipler
 # 1    changes: Extrusion multiplier
 #  translation: 挤出乘数
@@ -1287,7 +1273,7 @@ msgid "Extrusion multipler"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1984
+#: src/slic3r/GUI/MainFrame.cpp:1971
 msgid "Extrusion Multiplier calibration"
 msgstr ""
 
@@ -1315,7 +1301,7 @@ msgid "Extrusion type change G-code"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3482
+#: src/libslic3r/PrintConfig.cpp:3479
 #Similar to me: Fan delay only for overhangs
 # 11   changes: Only for overhangs
 #  translation: 仅用于悬垂
@@ -1323,7 +1309,7 @@ msgid "Fan delay only for overhangs"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2684
+#: src/libslic3r/PrintConfig.cpp:2681
 #Similar to me: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if equal or lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.\nset 0 to disable
 # 27   changes: Fan speed will be ramped up linearly from zero at layer \"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower than \"disable_fan_first_layers\", in which case the fan will be running at maximum allowed speed at layer \"disable_fan_first_layers\" + 1.
 #  translation: 风扇速度将从“disable_fan_first_layers”层的零线性增加到“full_fan_speed_layer”层的最大值。 如果低于“disable_fan_first_layers”，“full_fan_speed_layer”将被忽略，在这种情况下，风扇将在“disable_fan_first_layers”+1层以允许的最大速度运行。
@@ -1356,12 +1342,12 @@ msgid "Fan will run at %1%%% by default."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2354 src/libslic3r/PrintConfig.cpp:2355
+#: src/libslic3r/PrintConfig.cpp:2353 src/libslic3r/PrintConfig.cpp:2354
 msgid "Fill angle template"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1396
+#: src/libslic3r/PrintConfig.cpp:1395
 msgid ""
 "Fill pattern for bottom infill. This only affects the bottom visible layer, "
 "and not its adjacent solid shells.\n"
@@ -1370,12 +1356,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1454
+#: src/libslic3r/PrintConfig.cpp:1453
 msgid "Fill pattern for bridges and internal bridge infill."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2414
+#: src/libslic3r/PrintConfig.cpp:2411
 msgid ""
 "Fill pattern for general low-density infill.\n"
 "If you want an 'aligned' pattern, set 90° to the fill angle increment "
@@ -1383,7 +1369,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1424
+#: src/libslic3r/PrintConfig.cpp:1423
 #Similar to me: Fill pattern for solid (internal) infill. This only affects the solid not-visible layers. You should use rectilinear in most cases. You can try ironing for translucent material. Rectilinear (filled) replaces zig-zag patterns by a single big line & is more efficient for filling little spaces.\nIf you want an 'aligned' pattern, set 90° to the fill angle increment setting.
 # 80   changes: Fill pattern for solid (internal) infill. This only affects the solid not-visible layers. You should use rectilinear in most cases. You can try ironing for translucent material. Rectilinear (filled) replaces zig-zag patterns by a single big line & is more efficient for filling little spaces.
 #  translation: 实心（内部）填充的填充图案。 这仅影响实体不可见层。 在大多数情况下，您应该使用直线。 您可以尝试熨烫半透明材料。 直线（填充）用一条大线代替锯齿形图案，并且在填充小空间时更有效。
@@ -1398,7 +1384,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1365
+#: src/libslic3r/PrintConfig.cpp:1364
 msgid ""
 "Fill pattern for top infill. This only affects the top visible layer, and "
 "not its adjacent solid shells.\n"
@@ -1420,7 +1406,7 @@ msgid "First layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1980
+#: src/slic3r/GUI/MainFrame.cpp:1967
 #Similar to me: First layer patch calibration
 # 6    changes: First layer calibration
 #  translation: 第一层校准
@@ -1432,7 +1418,7 @@ msgid "First layer patch calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1978
+#: src/slic3r/GUI/MainFrame.cpp:1965
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: 第一层校准
@@ -1454,7 +1440,7 @@ msgid "Flat time compensation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7044
+#: src/libslic3r/PrintConfig.cpp:7041
 msgid "Flexible"
 msgstr ""
 
@@ -1477,7 +1463,7 @@ msgid "Focusing platter on mouse over"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4809
+#: src/libslic3r/PrintConfig.cpp:4806
 msgid "for everything"
 msgstr ""
 
@@ -1493,12 +1479,12 @@ msgid "for external perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4835
+#: src/libslic3r/PrintConfig.cpp:4832
 msgid "for round holes"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4850
+#: src/libslic3r/PrintConfig.cpp:4847
 #Similar to me: for round perimeters
 # 7    changes: Layers and perimeters
 #  translation: 层和轮廓
@@ -1516,12 +1502,8 @@ msgstr ""
 msgid "Formatting"
 msgstr ""
 
-#: ../../ui_layout/default/print.ui : l226
-msgid "From region"
-msgstr ""
 
-
-#: src/libslic3r/PrintConfig.cpp:2698
+#: src/libslic3r/PrintConfig.cpp:2695
 msgid ""
 "Fuzzy skin type.\n"
 "None: setting disabled.\n"
@@ -1537,7 +1519,7 @@ msgid "G2/G3 generation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2749
+#: src/libslic3r/PrintConfig.cpp:2746
 #Similar to me: Gap fill acceleration
 # 4    changes: Infill acceleration
 #  translation: 填充加速度
@@ -1549,7 +1531,7 @@ msgid "Gap fill acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2774
+#: src/libslic3r/PrintConfig.cpp:2771
 #Similar to me: Gap fill fan speed
 # 4    changes: Gap fill speed
 #  translation: 间隙填充速度
@@ -1568,7 +1550,7 @@ msgid "Gap Fill threshold"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2763
+#: src/libslic3r/PrintConfig.cpp:2760
 msgid "Gap fill: extra extension"
 msgstr ""
 
@@ -1585,7 +1567,7 @@ msgid "Gap fills"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2801
+#: src/libslic3r/PrintConfig.cpp:2798
 #Similar to me: Gapfill: after last perimeter
 # 1    changes: Gapfill after last perimeter
 #  translation: 最后一圈后的间隙填充
@@ -1595,27 +1577,27 @@ msgid "Gapfill: after last perimeter"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2789
+#: src/libslic3r/PrintConfig.cpp:2786
 msgid "Gapfill: cap speed with perimeter flow"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2809
+#: src/libslic3r/PrintConfig.cpp:2806
 msgid "Gapfill: Max width"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2831
+#: src/libslic3r/PrintConfig.cpp:2828
 msgid "Gapfill: Min length"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2820
+#: src/libslic3r/PrintConfig.cpp:2817
 msgid "Gapfill: Min surface"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2842
+#: src/libslic3r/PrintConfig.cpp:2839
 msgid "Gapfill: Min width"
 msgstr ""
 
@@ -1636,7 +1618,7 @@ msgid "GFill"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3112
+#: src/libslic3r/PrintConfig.cpp:3109
 msgid ""
 "Give to the bridge infill algorithm if the infill needs to be connected, and "
 "on which perimeters. Can be useful to disconnect to reduce a little bit the "
@@ -1666,7 +1648,7 @@ msgid "Gui Colors"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7047
+#: src/libslic3r/PrintConfig.cpp:7044
 msgid "Heat-resistant"
 msgstr ""
 
@@ -1708,7 +1690,7 @@ msgid "idx"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3814
+#: src/libslic3r/PrintConfig.cpp:3811
 #, possible-c-format, possible-boost-format
 #Similar to me: If a top surface has to be printed and it's partially covered by another layer, it won't be considered at a top layer where its width is below this value. This can be useful to not let the 'one perimeter on top' trigger on surface that should be covered only by perimeters. This value can be a mm or a % of the perimeter extrusion width.\nWarning: If enabled, artifacts can be created is you have some thin features on the next layer, like letters. Set this setting to 0 to remove these artifacts.
 # 160  changes: If a top surface has to be printed and it's partially covered by another layer, it won't be considered at a top layer where its width is below this value. This can be useful to not let the 'one perimeter on top' trigger on surface that should be covered only by perimeters. This value can be a mm or a % of the perimeter extrusion width.
@@ -1761,7 +1743,7 @@ msgid "If estimated layer time is below ~%1%s"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2647
+#: src/libslic3r/PrintConfig.cpp:2644
 #, possible-c-format, possible-boost-format
 #Similar to me: If expressed as absolute value in mm/s, this speed will be applied as a maximum for all infill print moves of the first layer.\nIf expressed as a percentage it will scale the current infill speed.\nSet it at 100% to remove any infill first layer speed modification.\nSet zero to disable (using first_layer_speed instead).
 # 56   changes: If expressed as absolute value in mm/s, this speed will be applied as a maximum for all infill print moves of the first layer.\nIf expressed as a percentage it will scale the current infill speed.\nSet it at 100% to remove any infill first layer speed modification.
@@ -1777,7 +1759,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2633
+#: src/libslic3r/PrintConfig.cpp:2630
 #Similar to me: If expressed as absolute value in mm/s, this speed will be usedf as a max over all the print moves of the first object layer above raft interface, regardless of their type.\nIf expressed as a percentage it will scale the current speed (max 100%).\nSet it at 100% to remove this speed modification.
 # 92   changes: If expressed as absolute value in mm/s, this speed will be applied to all the print moves of the first object layer above raft interface, regardless of their type. If expressed as a percentage (for example: 40%) it will scale the default speeds.
 #  translation: 如果以毫米/秒的绝对值表示，该速度将应用于raft界面上方第一个对象层的所有打印移动，无论其类型如何。如果以百分比（例如：40%）表示，它将缩放默认速度。
@@ -1794,14 +1776,25 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6108
+#: src/slic3r/GUI/Preferences.cpp:442
+msgid ""
+"If it point to a valid freecad instance, you can use the built-in python "
+"script to quickly generate geometry.\n"
+"Put here the freecad directory from which you can access its 'lib' "
+"directory.\n"
+"Freecad will use its own python (from the bin directoyr) on windows and will "
+"use the system python3 on linux & macos"
+msgstr ""
+
+
+#: src/libslic3r/PrintConfig.cpp:6105
 msgid ""
 "If selected, the deceleration of a travel will use the acceleration value of "
 "the extrusion that will be printed after it (if any) "
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4826
+#: src/libslic3r/PrintConfig.cpp:4823
 msgid ""
 "If the (external) angle at the seam is higher than this value, then no notch "
 "will be set. If the angle is too high, there isn't enough room for the "
@@ -1848,7 +1841,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4366
+#: src/libslic3r/PrintConfig.cpp:4363
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
 "their absolute paths here.\n"
@@ -1893,7 +1886,7 @@ msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep platter"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4838
+#: src/libslic3r/PrintConfig.cpp:4835
 #, possible-c-format, possible-boost-format
 msgid ""
 "In convex holes (circular/oval), it's sometimes very problematic to have a "
@@ -1905,7 +1898,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4853
+#: src/libslic3r/PrintConfig.cpp:4850
 #, possible-c-format, possible-boost-format
 msgid ""
 "In convex perimeters (circular/oval), it's sometimes very problematic to "
@@ -1917,12 +1910,12 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6028
+#: src/slic3r/GUI/Plater.cpp:6029
 msgid "Include modifiers"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6029
+#: src/slic3r/GUI/Plater.cpp:6030
 #Similar to me: Include presets
 # 6    changes: Compare presets
 #  translation: 比较预设
@@ -1930,7 +1923,7 @@ msgid "Include presets"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6026
+#: src/slic3r/GUI/Plater.cpp:6027
 #Similar to me: Include supports
 # 5    changes: Enforce supports
 #  translation: 强制支撑
@@ -1942,7 +1935,7 @@ msgid "Include supports"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2765
+#: src/libslic3r/PrintConfig.cpp:2762
 #, possible-c-format, possible-boost-format
 msgid ""
 "Increase the length of all gapfills by this amount (may overextrude a little "
@@ -1965,7 +1958,7 @@ msgid "Infill angle"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2645
+#: src/libslic3r/PrintConfig.cpp:2642
 #Similar to me: Infill max first layer speed
 # 4    changes: Infill first layer speed
 #  translation: 填充第一层速度
@@ -1977,7 +1970,7 @@ msgid "Infill max first layer speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3203
+#: src/libslic3r/PrintConfig.cpp:3200
 msgid "Infill spacing change on even layers"
 msgstr ""
 
@@ -2027,7 +2020,7 @@ msgid "Internal bridges acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3231
+#: src/libslic3r/PrintConfig.cpp:3228
 #Similar to me: Internal Infill fan speed
 # 9    changes: Internal bridge speed
 #  translation: 内部桥接速度
@@ -2039,7 +2032,7 @@ msgid "Internal Infill fan speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4161
+#: src/libslic3r/PrintConfig.cpp:4158
 #Similar to me: Internal Perimeter acceleration
 # 9    changes: Perimeter acceleration
 #  translation: 圆周加速度
@@ -2049,7 +2042,7 @@ msgid "Internal Perimeter acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4251
+#: src/libslic3r/PrintConfig.cpp:4248
 #Similar to me: Internal Perimeter fan speed
 # 3    changes: External perimeter fan speed
 #  translation: 外围风扇转速
@@ -2073,7 +2066,7 @@ msgid "Internal perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4311
+#: src/libslic3r/PrintConfig.cpp:4308
 #Similar to me: Internal perimeters will go around sharp corners by turning around instead of making the same sharp corner. This can help when there are visible holes in sharp corners on internal perimeters.\nCan incur some more processing time, and corners are a bit less sharp.
 # 50   changes: Internal perimeters will go around sharp corners by turning around instead of making the same sharp corner. This can help when there are visible holes in sharp corners on perimeters. It also help to print the letters on the benchy stern.\nCan incur some more processing time, and corners are a bit less sharp.
 #  translation: 内部周边将通过转身而不是制作相同的尖角来绕过尖角。当周边的尖角有可见孔时，这会有所帮助。它还有助于在船尾打印字母。\n可能需要更多的处理时间，并且拐角不那么锐利。
@@ -2125,7 +2118,7 @@ msgid "Iron"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3330
+#: src/libslic3r/PrintConfig.cpp:3327
 #Similar to me: Ironing acceleration
 # 5    changes: Bridge acceleration
 #  translation: 桥接加速度
@@ -2137,7 +2130,7 @@ msgid "Ironing acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3345
+#: src/libslic3r/PrintConfig.cpp:3342
 msgid ""
 "Ironing post-process angle.\n"
 "If positive, the ironing will use this angle.\n"
@@ -2146,7 +2139,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3392
+#: src/libslic3r/PrintConfig.cpp:3389
 #Similar to me: Ironing speed. Used for the ironing pass of the ironing infill pattern, and the post-process infill.\nThis can be expressed as a percentage (for example: 80%) over the Top Solid Infill speed.\nIroning extrusions are ignored from the automatic volumetric speed computation.
 # 44   changes: Ironing speed. Used for the ironing pass of the ironing infill pattern, and the post-process infill. Can be defined as mm.s, or a % of the top solid infill speed.\nIroning extrusions are ignored from the automatic volumetric speed computation.
 #  translation: 熨烫速度。 用于熨烫填充图案的熨烫通道，以及后处理填充。 可以定义为 mm.s，或最高固体填充速度的百分比。\n自动体积速度计算会忽略熨烫挤压。
@@ -2182,14 +2175,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2336
+#: src/libslic3r/PrintConfig.cpp:2335
 msgid ""
 "It's better for some infill like rectilinear to rotate 90° each layer. If "
 "this setting is deactivated, they won't do that anymore."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4812
+#: src/libslic3r/PrintConfig.cpp:4809
 #, possible-c-format, possible-boost-format
 msgid ""
 "It's sometimes very problematic to have a little buldge from the seam. This "
@@ -2223,7 +2216,7 @@ msgid "Layer height can't be lower than %s"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1477
+#: src/libslic3r/PrintConfig.cpp:1476
 msgid ""
 "let the retraction happens on the first layer even if the travel path does "
 "not exceed the upper layer's perimeters."
@@ -2253,7 +2246,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2767
+#: src/slic3r/GUI/Plater.cpp:2768
 msgid "Load these files as a single object with multiple parts?\n"
 msgstr ""
 
@@ -2273,7 +2266,7 @@ msgid "Lower temp:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3459
+#: src/libslic3r/PrintConfig.cpp:3456
 msgid "M73 & M117"
 msgstr ""
 
@@ -2307,7 +2300,7 @@ msgid "max"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4823
+#: src/libslic3r/PrintConfig.cpp:4820
 #Similar to me: max angle
 # 1    changes: Max angle
 #  translation: 最大角度
@@ -2315,7 +2308,7 @@ msgid "max angle"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3697
+#: src/libslic3r/PrintConfig.cpp:3694
 #Similar to me: Max auto-speed
 # 5    changes: Max fan speed
 #  translation: 最大风扇转速
@@ -2325,7 +2318,7 @@ msgid "Max auto-speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2644
+#: src/libslic3r/PrintConfig.cpp:2641
 #Similar to me: Max infill
 # 3    changes: top infill
 #  translation: 顶部实心填充
@@ -2337,12 +2330,12 @@ msgid "Max infill"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4349
+#: src/libslic3r/PrintConfig.cpp:4346
 msgid "Max perimeter count for holes"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3698
+#: src/libslic3r/PrintConfig.cpp:3695
 #Similar to me: Max print speed for Autospeed
 # 9    changes: Volumetric speed for Autospeed
 #  translation: 流量速度
@@ -2350,7 +2343,7 @@ msgid "Max print speed for Autospeed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2631
+#: src/libslic3r/PrintConfig.cpp:2628
 #Similar to me: Max speed of object first layer over raft interface
 # 5    changes: Speed of object first layer over raft interface
 #  translation: 第一层物体在筏板界面上的速度
@@ -2360,7 +2353,7 @@ msgid "Max speed of object first layer over raft interface"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6200
+#: src/libslic3r/PrintConfig.cpp:6197
 msgid "Max Wipe deviation"
 msgstr ""
 
@@ -2376,7 +2369,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6462
+#: src/libslic3r/PrintConfig.cpp:6459
 #, possible-c-format, possible-boost-format
 #Similar to me: Maximum deflection of a point to the estimated radius of the circle.\nAs cylinders are often exported as triangles of varying size, points may not be on the circle circumference. This setting allows you some leeway to broaden the detection.\nIn mm or in % of the radius.
 # 2    changes: Maximum defection of a point to the estimated radius of the circle.\nAs cylinders are often exported as triangles of varying size, points may not be on the circle circumference. This setting allows you some leway to broaden the detection.\nIn mm or in % of the radius.
@@ -2390,7 +2383,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4023
+#: src/libslic3r/PrintConfig.cpp:4020
 msgid ""
 "Maximum distance for bridges. If the distance is over that, it will be "
 "considered as overhangs for 'overhangs_max_slope'.\n"
@@ -2404,7 +2397,7 @@ msgid "Maximum flow"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4519
+#: src/libslic3r/PrintConfig.cpp:4516
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum layer height for the raft interface.\n"
@@ -2413,7 +2406,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4507
+#: src/libslic3r/PrintConfig.cpp:4504
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum layer height for the raft, after the first layer that uses the first "
@@ -2423,7 +2416,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5619
+#: src/libslic3r/PrintConfig.cpp:5616
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum layer height for the support interface.\n"
@@ -2432,7 +2425,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5694
+#: src/libslic3r/PrintConfig.cpp:5691
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum layer height for the support, after the first layer that uses the "
@@ -2447,7 +2440,7 @@ msgid "Maximum layer height. Limit for better quality/layer adhesion."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4010
+#: src/libslic3r/PrintConfig.cpp:4007
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum slope for overhangs. if at each layer, the overhangs hangs by more "
@@ -2467,7 +2460,7 @@ msgid "Maximum speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3726
+#: src/libslic3r/PrintConfig.cpp:3723
 #Similar to me: Maximum Volumetric print speed for Autospeed
 # 14   changes: Volumetric speed for Autospeed
 #  translation: 流量速度
@@ -2475,7 +2468,7 @@ msgid "Maximum Volumetric print speed for Autospeed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6201
+#: src/libslic3r/PrintConfig.cpp:6198
 msgid "Maximum Wipe deviation to the inside"
 msgstr ""
 
@@ -2516,7 +2509,7 @@ msgid "Min feature"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4399 src/libslic3r/PrintConfig.cpp:4400
+#: src/libslic3r/PrintConfig.cpp:4396 src/libslic3r/PrintConfig.cpp:4397
 #Similar to me: Minimum fan speed
 # 6    changes: Max fan speed
 #  translation: 最大风扇转速
@@ -2538,12 +2531,12 @@ msgid "Minimum movement"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7604
+#: src/libslic3r/PrintConfig.cpp:7601
 msgid "Minimum resolution in nanometers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4578
+#: src/libslic3r/PrintConfig.cpp:4575
 #Similar to me: Minimum travel after z lift
 # 9    changes: Minimum travel after retraction
 #  translation: 回抽最小行程
@@ -2553,7 +2546,7 @@ msgid "Minimum travel after z lift"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4073
+#: src/libslic3r/PrintConfig.cpp:4070
 #, possible-c-format, possible-boost-format
 #Similar to me: Minimum unsupported width for an extrusion to apply the bridge fan & overhang speed to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate overhangs.
 # 10   changes: Minimum unsupported width for an extrusion to apply the bridge fan & overhang speed to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate.
@@ -2567,7 +2560,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4086
+#: src/libslic3r/PrintConfig.cpp:4083
 #, possible-c-format, possible-boost-format
 #Similar to me: Minimum unsupported width for an extrusion to apply the bridge flow to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate bridge flow for overhangs.
 # 26   changes: Minimum unsupported width for an extrusion to apply the bridge flow to this overhang. Can be in mm or in a % of the nozzle diameter. Set to 0 to deactivate.
@@ -2581,12 +2574,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1272
+#: src/libslic3r/PrintConfig.cpp:1271
 msgid "mm/s for %-based speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2824
+#: src/libslic3r/PrintConfig.cpp:2821
 #Similar to me: mm² or %
 # 1    changes: mm or %
 #  translation: mm 或 %
@@ -2619,7 +2612,7 @@ msgid "No compensation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4694
+#: src/libslic3r/PrintConfig.cpp:4691
 msgid "Not on top"
 msgstr ""
 
@@ -2649,7 +2642,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1680
+#: src/libslic3r/PrintConfig.cpp:1679
 #Similar to me: On even layers
 # 4    changes: On odd layers
 #  translation: 在奇数层
@@ -2659,7 +2652,7 @@ msgid "On even layers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4302
+#: src/libslic3r/PrintConfig.cpp:4299
 msgid ""
 "On even layers, all perimeter loops are reversed (it disables the overhang "
 "reversal, so it doesn't double-reverse).That setting will likely create "
@@ -2675,7 +2668,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2879
+#: src/libslic3r/PrintConfig.cpp:2876
 msgid "Only ascii characters in gcode"
 msgstr ""
 
@@ -2687,12 +2680,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4695
+#: src/libslic3r/PrintConfig.cpp:4692
 msgid "Only on top"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6027
+#: src/slic3r/GUI/Plater.cpp:6028
 #Similar to me: Only selected objects
 # 7    changes: Delete Selected Objects
 #  translation: 删除选定对象
@@ -2717,18 +2710,6 @@ msgstr ""
 # 9    changes: Open project STL/OBJ/AMF/3MF with config, clear plater
 #  translation: 使用配置打开项目STL/OBJ/AMF/3MF，清除模板
 msgid "Open project AMF/3MF with config, clear platter"
-msgstr ""
-
-
-#: src/slic3r/GUI/UpdateDialogs.cpp:94
-#Similar to me: Opening Configuration Assistent
-# 8    changes: Opening Configuration Wizard
-#  translation: 打开配置向导
-# 9    changes: Configuration Assistant
-#  translation: 配置助手
-# 10   changes: Configuration &Assistant
-#  translation: 配置助手(&A)
-msgid "Opening Configuration Assistent"
 msgstr ""
 
 
@@ -2864,7 +2845,7 @@ msgid "Over raft"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1998
+#: src/slic3r/GUI/MainFrame.cpp:1985
 #Similar to me: Over-Bridge flow calibration
 # 5    changes: Bridge flow calibration
 #  translation: 桥接流量校准
@@ -2876,7 +2857,7 @@ msgid "Over-Bridge flow calibration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3980
+#: src/libslic3r/PrintConfig.cpp:3977
 #Similar to me: Overhang acceleration
 # 7    changes: Bridge acceleration
 #  translation: 桥接加速度
@@ -2888,7 +2869,7 @@ msgid "Overhang acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4098
+#: src/libslic3r/PrintConfig.cpp:4095
 #Similar to me: Overhang reversal on even layers
 # 12   changes: Overhang reversal threshold
 #  translation: 悬垂反转阈值
@@ -2905,12 +2886,12 @@ msgid "Overhangs cut"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4007 src/libslic3r/PrintConfig.cpp:4008
+#: src/libslic3r/PrintConfig.cpp:4004 src/libslic3r/PrintConfig.cpp:4005
 msgid "Overhangs max slope"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3993
+#: src/libslic3r/PrintConfig.cpp:3990
 #Similar to me: Overhangs Perimeter fan speed
 # 8    changes: External perimeter fan speed
 #  translation: 外围风扇转速
@@ -2918,7 +2899,7 @@ msgid "Overhangs Perimeter fan speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5795
+#: src/libslic3r/PrintConfig.cpp:5792
 #Similar to me: Override the temperature of the extruder (for the first layer). Avoid making too many changes, it won't stop for cooling/heating. 0 to disable (using print_temperature if defined). May only work on Height range modifiers.
 # 59   changes: Override the temperature of the extruder. Avoid making too many changes, it won't stop for cooling/heating. 0 to disable. May only work on Height range modifiers.
 #  translation: 覆盖挤出机的温度。 避免进行太多更改，它不会停止冷却/加热。 0 禁用。 可能仅适用于高度范围修饰符。
@@ -2948,12 +2929,12 @@ msgid "Pattern Angle"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5395
+#: src/libslic3r/PrintConfig.cpp:5392
 msgid "Pattern angle swap height"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5669
+#: src/libslic3r/PrintConfig.cpp:5666
 #, possible-c-format, possible-boost-format
 msgid ""
 "Pattern for interface layers.\n"
@@ -2985,17 +2966,17 @@ msgid "Perimeter overhangs"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4300
+#: src/libslic3r/PrintConfig.cpp:4297
 msgid "Perimeter reversal on even layers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4239
+#: src/libslic3r/PrintConfig.cpp:4236
 msgid "Perimeters spacing change on even layers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2729
+#: src/libslic3r/PrintConfig.cpp:2726
 #, possible-c-format, possible-boost-format
 #Similar to me: Perimeters will be split into multiple segments by inserting Fuzzy skin points. Lowering the Fuzzy skin point distance will increase the number of randomly offset points on the perimeter wall.\nCan be a % of the nozzle diameter.
 # 36   changes: Perimeters will be split into multiple segments by inserting Fuzzy skin points. Lowering the Fuzzy skin point distance will increase the number of randomly offset points on the perimeter wall.
@@ -3024,7 +3005,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4746
+#: src/libslic3r/PrintConfig.cpp:4743
 msgid ""
 "Position of perimeters' starting points.\n"
 "Cost-based option let you choose the angle and travel cost. A high angle "
@@ -3042,7 +3023,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6504
+#: src/libslic3r/PrintConfig.cpp:6501
 #Similar to me: Preferred orientation
 # 8    changes: Optimize orientation
 #  translation: 优化方向
@@ -3050,7 +3031,7 @@ msgid "Preferred orientation"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6544
+#: src/libslic3r/PrintConfig.cpp:6541
 #Similar to me: Prevent transitioning back and forth between one extra perimeter and one less. This margin extends the range of extrusion widths which follow to [Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. Increasing this margin reduces the number of transitions, which reduces the number of extrusion starts/stops and travel time. However, large extrusion width variation can lead to under- or overextrusion problems.If expressed as percentage (for example 25%), it will be computed over nozzle diameter.
 # 14   changes: Prevent transitioning back and forth between one extra perimeter and one less. This margin extends the range of extrusion widths which follow to [Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. Increasing this margin reduces the number of transitions, which reduces the number of extrusion starts/stops and travel time. However, large extrusion width variation can lead to under- or overextrusion problems. If expressed as a percentage (for example 25%), it will be computed based on the nozzle diameter.
 #  translation: 防止在多一个轮廓和少一个轮廓之间来回过渡。这个余量将挤压宽度的范围扩大到 [最小轮廓宽度-余量, 2*最小轮廓宽度+余量]。增加这个余量可以减少转换的次数，从而减少挤压开始/停止的次数和移动时间。然而，大的挤出宽度变化会导致挤出不足或过度挤出的问题。如果用百分比表示（例如25%），将根据喷嘴直径计算。
@@ -3065,7 +3046,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6240
+#: src/libslic3r/PrintConfig.cpp:6237
 msgid ""
 "Printing speed of the wipe tower. Capped by filament_max_volumetric_speed "
 "(if set).\n"
@@ -3081,7 +3062,7 @@ msgid "Quantity:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4475
+#: src/libslic3r/PrintConfig.cpp:4472
 #Similar to me: Raft first layer density
 # 6    changes: First layer density
 #  translation: 第一层密度
@@ -3089,7 +3070,7 @@ msgid "Raft first layer density"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4486
+#: src/libslic3r/PrintConfig.cpp:4483
 #Similar to me: Raft first layer expansion
 # 6    changes: First layer expansion
 #  translation: 第一层扩展
@@ -3097,12 +3078,12 @@ msgid "Raft first layer expansion"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4517
+#: src/libslic3r/PrintConfig.cpp:4514
 msgid "Raft interface layer height"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4505
+#: src/libslic3r/PrintConfig.cpp:4502
 #Similar to me: Raft layer height
 # 3    changes: Max layer height
 #  translation: 最大层高
@@ -3130,7 +3111,7 @@ msgid "Reverse on all perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4097
+#: src/libslic3r/PrintConfig.cpp:4094
 #Similar to me: Reverse on even
 # 4    changes: Reverse on odd
 #  translation: 奇数反转
@@ -3138,7 +3119,7 @@ msgid "Reverse on even"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6506
+#: src/libslic3r/PrintConfig.cpp:6503
 msgid "Rotate stl around z axes while adding them to the bed."
 msgstr ""
 
@@ -3149,12 +3130,12 @@ msgid "Save current %s as new preset"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4763
+#: src/libslic3r/PrintConfig.cpp:4760
 msgid "Scattered"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4796
+#: src/libslic3r/PrintConfig.cpp:4793
 #Similar to me: Seam gap for external perimeters
 # 8    changes: Extra Wipe for external perimeters
 #  translation: 外部周边的额外擦拭
@@ -3166,27 +3147,27 @@ msgid "Seam gap for external perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4810
+#: src/libslic3r/PrintConfig.cpp:4807
 msgid "Seam notch"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4836
+#: src/libslic3r/PrintConfig.cpp:4833
 msgid "Seam notch for round holes"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4851
+#: src/libslic3r/PrintConfig.cpp:4848
 msgid "Seam notch for round perimeters"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4824
+#: src/libslic3r/PrintConfig.cpp:4821
 msgid "Seam notch maximum angle"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4877
+#: src/libslic3r/PrintConfig.cpp:4874
 msgid "Seam visibility check"
 msgstr ""
 
@@ -3223,7 +3204,7 @@ msgid "Select the step in celcius between two tests."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4059
+#: src/libslic3r/PrintConfig.cpp:4056
 msgid ""
 "Set the speed of the full perimeters to the overhang speed, and also the "
 "next one(s) if any.\n"
@@ -3303,12 +3284,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7603
+#: src/libslic3r/PrintConfig.cpp:7600
 msgid "SLA output precision"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3882
+#: src/libslic3r/PrintConfig.cpp:3879
 #Similar to me: Slic3r can upload G-code files to a printer host. This field must contain the kind of the host.\nPrusaLink is only available for prusa printer.
 # 48   changes: Slic3r can upload G-code files to a printer host. This field must contain the kind of the host.
 #  translation: Slic3r 可以将 G-code 文件上传到打印机主机。此字段必须包含主机的类型。
@@ -3387,7 +3368,7 @@ msgid "Sold Infill"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5295
+#: src/libslic3r/PrintConfig.cpp:5292
 #Similar to me: Solid acceleration
 # 5    changes: Bridge acceleration
 #  translation: 桥接加速度
@@ -3399,7 +3380,7 @@ msgid "Solid acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1422
+#: src/libslic3r/PrintConfig.cpp:1421
 #Similar to me: Solid fill pattern
 # 4    changes: Top fill pattern
 #  translation: 顶部填充模式
@@ -3411,18 +3392,11 @@ msgid "Solid fill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5127
+#: src/libslic3r/PrintConfig.cpp:5124
 #Similar to me: Solid Infill fan speed
 # 5    changes: Solid infill speed
 #  translation: 固体填充速度
 msgid "Solid Infill fan speed"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
-#Similar to me: Solid infill is area below
-# 10   changes: Solid infill speed
-#  translation: 固体填充速度
-msgid "Solid infill is area below"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
@@ -3437,7 +3411,7 @@ msgid "Solid infill ovelrap"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5048
+#: src/libslic3r/PrintConfig.cpp:5045
 #Similar to me: Solid infill overlap
 # 4    changes: Solid infill every
 #  translation: 固体填充每个
@@ -3449,7 +3423,7 @@ msgid "Solid infill overlap"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5099
+#: src/libslic3r/PrintConfig.cpp:5096
 msgid "Solid infill spacing change on even layers"
 msgstr ""
 
@@ -3474,7 +3448,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2412
+#: src/libslic3r/PrintConfig.cpp:2409
 #Similar to me: Sparse fill pattern
 # 6    changes: Bottom fill pattern
 #  translation: 底部填充模式
@@ -3507,7 +3481,7 @@ msgid "Sparse infill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2868
+#: src/libslic3r/PrintConfig.cpp:2865
 #Similar to me: Speed for filling small gaps using short zigzag moves. Keep this reasonably low to avoid too much shaking and resonance issues.\nGap fill extrusions are ignored from the automatic volumetric speed computation, unless you set it to 0.\nThis can be expressed as a percentage (for example: 80%) over the Internal Perimeter speed.
 # 93   changes: Speed for filling small gaps using short zigzag moves. Keep this reasonably low to avoid too much shaking and resonance issues.\nGap fill extrusions are ignored from the automatic volumetric speed computation, unless you set it to 0.
 #  translation: 使用短的锯齿形移动填充小间隙的速度。 将此值保持在合理的低位，以避免过多的晃动和共振问题。\n自动体积速度计算会忽略间隙填充拉伸，除非您将其设置为 0。
@@ -3521,7 +3495,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4321
+#: src/libslic3r/PrintConfig.cpp:4318
 msgid ""
 "Speed for perimeters (contours, aka vertical shells).\n"
 "This can be expressed as a percentage (for example: 80%) over the Default "
@@ -3539,7 +3513,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4046
+#: src/libslic3r/PrintConfig.cpp:4043
 #, possible-c-format, possible-boost-format
 msgid ""
 "Speed for printing overhangs.\n"
@@ -3548,7 +3522,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5144
+#: src/libslic3r/PrintConfig.cpp:5141
 #Similar to me: Speed for printing solid regions (top/bottom/internal horizontal shells). \nThis can be expressed as a percentage (for example: 80%) over the Default speed.\nSet zero to use autospeed for this feature.
 # 39   changes: Speed for printing solid regions (top/bottom/internal horizontal shells). This can be expressed as a percentage (for example: 80%) over the default infill speed. Set zero for auto.
 #  translation: 打印实体区域（顶部/底部/内部水平壳）的速度。 这可以表示为默认填充速度的百分比（例如：80%）。 自动设置为零。
@@ -3562,7 +3536,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5641
+#: src/libslic3r/PrintConfig.cpp:5638
 #Similar to me: Speed for printing support material interface layers.\nIf expressed as percentage (for example 50%) it will be calculated over support material speed.\nSet zero to use autospeed for this feature.
 # 47   changes: Speed for printing support material interface layers. If expressed as percentage (for example 50%) it will be calculated over support material speed.
 #  translation: 打印支撑材料接触面图层的速度。如果以百分比表示（例如 50%）它将在支撑材料速度上计算。
@@ -3574,7 +3548,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5716
+#: src/libslic3r/PrintConfig.cpp:5713
 msgid ""
 "Speed for printing support material.\n"
 "This can be expressed as a percentage (for example: 80%) over the Default "
@@ -3583,7 +3557,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3278
+#: src/libslic3r/PrintConfig.cpp:3275
 msgid ""
 "Speed for printing the internal fill.\n"
 "This can be expressed as a percentage (for example: 80%) over the Solid "
@@ -3592,7 +3566,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6055
+#: src/libslic3r/PrintConfig.cpp:6052
 #Similar to me: Speed for printing top solid layers (it only applies to the uppermost external layers and not to their internal solid layers). You may want to slow down this to get a nicer surface finish.\nThis can be expressed as a percentage (for example: 80%) over the Solid Infill speed.\nSet zero to use autospeed for this feature.
 # 34   changes: Speed for printing top solid layers (it only applies to the uppermost external layers and not to their internal solid layers). You may want to slow down this to get a nicer surface finish. This can be expressed as a percentage (for example: 80%) over the solid infill speed above. Set to zero for auto.
 #  translation: 打印顶部实体图层的速度（它仅适用于最上面的外部图层，不适用于其内部实心图层）。您可能需要减慢速度，以获得更好的表面光洁度。这可以表示为百分比（例如：80%）超过上面的固体填充速度。为自动设置为零。
@@ -3608,7 +3582,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5897
+#: src/libslic3r/PrintConfig.cpp:5894
 msgid ""
 "Speed for thin walls (external extrusions that are alone because the obect "
 "is too thin at these places).\n"
@@ -3618,7 +3592,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6249
+#: src/libslic3r/PrintConfig.cpp:6246
 #, possible-c-format, possible-boost-format
 msgid ""
 "Start of the wiping speed ramp up (for wipe tower).\n"
@@ -3658,7 +3632,7 @@ msgid "Support & Other"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5336
+#: src/libslic3r/PrintConfig.cpp:5333
 #Similar to me: Support acceleration
 # 6    changes: Default acceleration
 #  translation: 默认加速度
@@ -3670,7 +3644,7 @@ msgid "Support acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5358
+#: src/libslic3r/PrintConfig.cpp:5355
 #Similar to me: Support interface acceleration
 # 9    changes: Support interface pattern
 #  translation: 支撑界面模式
@@ -3680,7 +3654,7 @@ msgid "Support interface acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5532
+#: src/libslic3r/PrintConfig.cpp:5529
 #Similar to me: Support interface angle increment
 # 12   changes: Support interface pattern
 #  translation: 支撑界面模式
@@ -3690,7 +3664,7 @@ msgid "Support interface angle increment"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5542
+#: src/libslic3r/PrintConfig.cpp:5539
 #Similar to me: Support interface fan speed
 # 4    changes: Support interface speed
 #  translation: 支撑接口速度
@@ -3700,7 +3674,7 @@ msgid "Support interface fan speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5617
+#: src/libslic3r/PrintConfig.cpp:5614
 #Similar to me: Support interface layer height
 # 10   changes: Support interface pattern
 #  translation: 支撑界面模式
@@ -3710,7 +3684,7 @@ msgid "Support interface layer height"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5522
+#: src/libslic3r/PrintConfig.cpp:5519
 #Similar to me: Support interface pattern angle
 # 6    changes: Support interface pattern
 #  translation: 支撑界面模式
@@ -3734,7 +3708,7 @@ msgid "Support interfaces"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5692
+#: src/libslic3r/PrintConfig.cpp:5689
 #Similar to me: Support layer height
 # 3    changes: Support base height
 #  translation: 支撑基座高度
@@ -3757,7 +3731,7 @@ msgid "Support Material"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5507
+#: src/libslic3r/PrintConfig.cpp:5504
 #Similar to me: Support Material fan speed
 # 8    changes: Support interface speed
 #  translation: 支撑接口速度
@@ -3769,7 +3743,7 @@ msgid "Support Material fan speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5727
+#: src/libslic3r/PrintConfig.cpp:5724
 msgid "Support tower style"
 msgstr ""
 
@@ -3812,7 +3786,7 @@ msgid "TFill"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6429
+#: src/libslic3r/PrintConfig.cpp:6426
 #Similar to me: The convex holes will be grown / shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area, should be negative as the holes are always a bit smaller irl). This might be useful for fine-tuning hole sizes.\nThis setting behaves the same as 'Inner XY size compensation' but only for convex shapes. It's added to 'Inner XY size compensation', it does not replace it. 
 # 25   changes: The convex holes will be grown / shrunk in the XY plane by the configured value (negative = inwards, positive = outwards, should be negative as the holes are always a bit smaller irl). This might be useful for fine-tuning hole sizes.\nThis setting behaves the same as 'Inner XY size compensation' but only for convex shapes. It's added to 'Inner XY size compensation', it does not replace it. 
 #  translation: 凸孔将按配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外，应为负，因为孔总是小一点 irl）。 这对于微调孔尺寸可能很有用。\n此设置的行为与“内部 XY 尺寸补偿”相同，但仅适用于凸面形状。 它被添加到“内部 XY 尺寸补偿”中，它不会取代它 
@@ -3827,7 +3801,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2691
+#: src/slic3r/GUI/Plater.cpp:2692
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in inches.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -3849,7 +3823,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2669
+#: src/slic3r/GUI/Plater.cpp:2670
 #, possible-boost-format
 #Similar to me: The dimensions of the object from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of the object?"
 msgid_plural "The dimensions of some objects from file %1% seem to be defined in meters.\nThe internal unit of %2% is a millimeter. Do you want to recalculate the dimensions of these objects?
@@ -3871,7 +3845,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2482
+#: src/libslic3r/PrintConfig.cpp:2479
 #Similar to me: The first layer will be grown / shrunk in the XY plane by the configured value to compensate for the 1st layer squish aka an Elephant Foot effect. (should be negative = inwards = remove area)
 # 14   changes: The first layer will be grown / shrunk in the XY plane by the configured value to compensate for the 1st layer squish aka an Elephant Foot effect. (should be negative = inwards)
 #  translation: 第一层将通过配置的值在 XY 平面中生长/收缩，以补偿第一层挤压，即象脚效应。 （应为负 = 向内）
@@ -3892,7 +3866,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2718
+#: src/libslic3r/PrintConfig.cpp:2715
 #, possible-c-format, possible-boost-format
 #Similar to me: The maximum distance that each skin point can be offset (both ways), measured perpendicular to the perimeter wall.\nCan be a % of the nozzle diameter.
 # 36   changes: The maximum distance that each skin point can be offset (both ways), measured perpendicular to the perimeter wall.
@@ -3910,7 +3884,7 @@ msgid "The minimum speed is %1%%%."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6406
+#: src/libslic3r/PrintConfig.cpp:6403
 #Similar to me: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area). This might be useful for fine-tuning sizes.\nThis one only applies to the 'exterior' shell of the object.\n !!! it's recommended you put the same value into the 'Inner XY size compensation', unless you are sure you don't have horizontal holes. !!! 
 # 25   changes: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards, positive = outwards). This might be useful for fine-tuning sizes.\nThis one only applies to the 'exterior' shell of the object.\n !!! it's recommended you put the same value into the 'Inner XY size compensation', unless you are sure you don't have horizontal holes. !!! 
 #  translation: 对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大小可能很有用。\n这仅适用于对象的“外部”外壳。\n  ！！！ 建议您将相同的值放入“内部 XY 尺寸补偿”中，除非您确定没有水平孔。 
@@ -3926,7 +3900,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6418
+#: src/libslic3r/PrintConfig.cpp:6415
 #Similar to me: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area). This might be useful for fine-tuning sizes.\nThis one only applies to the 'inner' shell of the object (!!! horizontal holes break the shell !!!)
 # 25   changes: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards, positive = outwards). This might be useful for fine-tuning sizes.\nThis one only applies to the 'inner' shell of the object (!!! horizontal holes break the shell !!!)
 #  translation: 对象将根据配置值在 XY 平面中生长/收缩（负 = 向内，正 = 向外）。 这对于微调大小可能很有用。\n这个只适用于物体的“内”壳（！！！水平孔破壳！！！）
@@ -3946,7 +3920,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:6359
+#: src/slic3r/GUI/Plater.cpp:6360
 #Similar to me: The platter is empty.\nDo you want to save the project?
 # 1    changes: The plater is empty.\nDo you want to save the project?
 #  translation: 盘子是空的。\n你想保存这个项目吗？
@@ -3956,7 +3930,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2598
+#: src/slic3r/GUI/Plater.cpp:2599
 #, possible-boost-format
 #Similar to me: The preset below was temporarily installed on the active instance of %1%"
 msgid_plural "The presets below were temporarily installed on the active instance of %1%
@@ -4029,14 +4003,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4458
+#: src/libslic3r/PrintConfig.cpp:4455
 msgid ""
 "The vertical distance between object and raft. Ignored for soluble "
 "interface. It uses the same type as the support z-offset type."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5449
+#: src/libslic3r/PrintConfig.cpp:5446
 #, possible-c-format, possible-boost-format
 #Similar to me: The vertical distance between object and support material interface(when the support is printed on top of the object). Can be a % of the nozzle diameter.\nIf set to zero, support_material_contact_distance will be used for both top and bottom contact Z distances.
 # 91   changes: The vertical distance between the object top surface and the support material interface. If set to zero, support_material_contact_distance will be used for both top and bottom contact Z distances.
@@ -4052,7 +4026,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5432
+#: src/libslic3r/PrintConfig.cpp:5429
 #, possible-c-format, possible-boost-format
 #Similar to me: The vertical distance between support material interface and the object(when the object is printed on top of the support). Setting this to 0 will also prevent Slic3r from using bridge flow and speed for the first object layer. Can be a % of the nozzle diameter.
 # 37   changes: The vertical distance between support material interface and the object(when the object is printed on top of the support). Setting this to 0 will also prevent Slic3r from using bridge flow and speed for the first object layer. Can be a % of the extruding width used for the interface layers.
@@ -4065,7 +4039,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2312
+#: src/libslic3r/PrintConfig.cpp:2311
 msgid ""
 "The voids of the pattern of sparse infill grows with the extrusion width, to "
 "keep the same percentage of fill. With this setting set to true, the "
@@ -4087,7 +4061,7 @@ msgid "These tooltip may be bothersome. You can hide them with this option."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5880
+#: src/libslic3r/PrintConfig.cpp:5877
 #Similar to me: Thin Walls
 # 1    changes: Thin walls
 #  translation: 薄壁
@@ -4097,7 +4071,7 @@ msgid "Thin Walls"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5881
+#: src/libslic3r/PrintConfig.cpp:5878
 #Similar to me: Thin walls acceleration
 # 7    changes: Infill acceleration
 #  translation: 填充加速度
@@ -4114,7 +4088,7 @@ msgid "ThinW"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5958
+#: src/libslic3r/PrintConfig.cpp:5955
 #Similar to me: This custom code is inserted at every extruder change. If you don't leave this empty, you are expected to take care of the toolchange yourself - Slic3r will not output any other G-code to change the filament. You can use placeholder variables for all Slic3r settings as well as {toolchange_z}, {layer_z}, {layer_num}, {max_layer_z}, {previous_extruder} and {next_extruder}, so e.g. the standard toolchange command can be scripted as T{next_extruder}.!! Warning !!: if any character is written here, Slic3r won't output any toochange command by itself.
 # 55   changes: This custom code is inserted at every extruder change. If you don't leave this empty, you are expected to take care of the toolchange yourself - Slic3r will not output any other G-code to change the filament. You can use placeholder variables for all Slic3r settings as well as {previous_extruder} and {next_extruder}, so e.g. the standard toolchange command can be scripted as T{next_extruder}.!! Warning !!: if any character is written here, Slic3r won't output any toochange command by itself.
 #  translation: 每次更换挤出机时都会插入此自定义代码。 如果您不将其留空，则您需要自己处理工具更换 - Slic3r 不会输出任何其他 G 代码来更换灯丝。 您可以为所有 Slic3r 设置以及 {previous_extruder} 和 {next_extruder} 使用占位符变量，例如 标准工具更换命令可以编写为 T{next_extruder}.!! 警告！！：如果这里写了任何字符，Slic3r 不会自己输出任何toochange 命令。
@@ -4130,7 +4104,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2357
+#: src/libslic3r/PrintConfig.cpp:2356
 msgid ""
 "This define the succetion of infill angle. When defined, it replaces the "
 "fill_angle, and there won't be any extra 90° for each layer added, but the "
@@ -4141,7 +4115,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3739
+#: src/libslic3r/PrintConfig.cpp:3736
 #Similar to me: This experimental setting is used to limit the speed of change in extrusion rate for a transition from lower speed to higher speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45mm extrusion width, 0.2mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds.
 # 2    changes: This experimental setting is used to limit the speed of change in extrusion rate for a transition from lower speed to higher speed. A value of 1.8 mm³/s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s (feedrate 60 mm/s) will take at least 2 seconds.
 #  translation: 该实验设置用于限制挤出速率的变化速度，以便从较低速度过渡到较高速度。1.8 mm³/s² 的值可确保挤出速率从 1.8 mm³/s（挤出宽度 0.45 mm，挤出高度 0.2 mm，进给速率 20 mm/s）变为 5.4 mm³/s（进给速率 60 mm/s） 至少需要 2 秒。
@@ -4172,7 +4146,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2776
+#: src/libslic3r/PrintConfig.cpp:2773
 msgid ""
 "This fan speed is enforced during all gap fill Perimeter moves\n"
 "Set to 1 to disable fan.\n"
@@ -4197,7 +4171,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3233
+#: src/libslic3r/PrintConfig.cpp:3230
 msgid ""
 "This fan speed is enforced during all Internal Infill moves\n"
 "Set to 1 to disable fan.\n"
@@ -4208,7 +4182,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3995
+#: src/libslic3r/PrintConfig.cpp:3992
 msgid ""
 "This fan speed is enforced during all Overhang Perimeter moves\n"
 "Set to 1 to disable fan.\n"
@@ -4218,7 +4192,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4253
+#: src/libslic3r/PrintConfig.cpp:4250
 msgid ""
 "This fan speed is enforced during all Perimeter moves\n"
 "Set to 1 to disable fan.\n"
@@ -4229,7 +4203,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5129
+#: src/libslic3r/PrintConfig.cpp:5126
 msgid ""
 "This fan speed is enforced during all Solid Infill moves\n"
 "Set to 1 to disable fan.\n"
@@ -4240,7 +4214,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5544
+#: src/libslic3r/PrintConfig.cpp:5541
 #Similar to me: This fan speed is enforced during all support interfaces, to be able to weaken their bonding with a high fan speed.\nSet to 0 to disable the fan.\nSet to -1 to disable this override (Support Interface will use Support).\nCan only be overriden by disable_fan_first_layers.
 # 107  changes: This fan speed is enforced during all infill bridges. It won't slow down the fan if it's currently running at a higher speed.\nSet to 1 to follow default speed.\nSet to -1 to disable this override (internal bridges will use Bridges fan speed).\nCan only be overriden by disable_fan_first_layers.
 #  translation: 在所有填充桥期间强制执行此风扇速度。如果它当前以更高的速度运行，它不会减慢风扇的速度。\n设置为 1 以遵循默认速度。\n设置为 -1 以禁用此覆盖（内部网桥将使用网桥风扇速度）。\n只能被 disable_fan_first_layers 覆盖。
@@ -4253,7 +4227,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5509
+#: src/libslic3r/PrintConfig.cpp:5506
 msgid ""
 "This fan speed is enforced during all support moves\n"
 "Set to 0 to disable fan.\n"
@@ -4263,7 +4237,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5980
+#: src/libslic3r/PrintConfig.cpp:5977
 msgid ""
 "This fan speed is enforced during all top fills (including ironing).\n"
 "Set to 1 to disable the fan.\n"
@@ -4286,7 +4260,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5176
+#: src/libslic3r/PrintConfig.cpp:5173
 #Similar to me: This feature will raise Z gradually while printing a single-walled object in order to remove any visible seam. This option requires no infill, no top solid layers and no support material. You can still set any number of bottom solid layers as well as skirt/brim loops. After the bottom solid layers, the number of perimeters is enforce to 1.It won't work when printing more than one single object.
 # 92   changes: This feature will raise Z gradually while printing a single-walled object in order to remove any visible seam. This option requires a single perimeter, no infill, no top solid layers and no support material. You can still set any number of bottom solid layers as well as skirt/brim loops. It won't work when printing more than one single object.
 #  translation: 此功能将在打印单壁对象时逐渐升高 Z，以去除任何可见的接缝。 此选项需要单个周边、无填充、无顶部固体层和无支撑材料。 您仍然可以设置任意数量的底部实体层以及裙边/边缘环。 当打印一个以上的对象时，它不起作用。
@@ -4300,7 +4274,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6192
+#: src/libslic3r/PrintConfig.cpp:6189
 msgid ""
 "This flag will wipe the nozzle a bit inward after extruding an external "
 "perimeter. The wipe_extra_perimeter is executed first, then this move inward "
@@ -4310,7 +4284,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5243
+#: src/libslic3r/PrintConfig.cpp:5240
 msgid ""
 "This G-code will be used as a code for the color change If empty, the "
 "default color change print command for the selected G-code flavor will be "
@@ -4318,7 +4292,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5253
+#: src/libslic3r/PrintConfig.cpp:5250
 msgid ""
 "This G-code will be used as a code for the pause print. If empty, the "
 "default pause print command for the selected G-code flavor will be used (if "
@@ -4373,7 +4347,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1596
+#: src/libslic3r/PrintConfig.cpp:1595
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for external perimeters. \nCan be a % of the internal perimeter acceleration\nSet zero to use internal perimeter acceleration for external perimeters.
 # 54   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -4389,7 +4363,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2546
+#: src/libslic3r/PrintConfig.cpp:2543
 #Similar to me: This is the acceleration your printer will use for first layer of object above raft interface.\nIf set to %, all accelerations will be reduced by that ratio.\nSet zero to disable acceleration control for first layer of object above raft interface.
 # 64   changes: This is the acceleration your printer will use for first layer of object above raft interface. Set zero to disable acceleration control for first layer of object above raft interface.
 #  translation: 这是打印机将用于raft界面上方第一层对象的加速度。设置为零可禁用筏接口上方第一层物体的加速度控制。
@@ -4402,7 +4376,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2751
+#: src/libslic3r/PrintConfig.cpp:2748
 #Similar to me: This is the acceleration your printer will use for gap fills. \nThis can be expressed as a percentage over the perimeter acceleration.\nSet zero to use perimeter acceleration for gap fills.
 # 69   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
 #  translation: 这是您的打印机将用于填充的加速度。\n可以是默认加速度的 %\n设置为零以禁用填充的加速控制。
@@ -4429,7 +4403,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4163
+#: src/libslic3r/PrintConfig.cpp:4160
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for internal perimeters. \nCan be a % of the default acceleration\nSet zero to use default acceleration for internal perimeters.
 # 28   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -4445,7 +4419,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3332
+#: src/libslic3r/PrintConfig.cpp:3329
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for ironing. \nCan be a % of the top solid infill acceleration\nSet zero to use top solid infill acceleration for ironing.
 # 49   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4461,7 +4435,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3982
+#: src/libslic3r/PrintConfig.cpp:3979
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for overhangs.\nCan be a % of the bridge acceleration\nSet zero to to use bridge acceleration for overhangs.
 # 40   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4477,7 +4451,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5297
+#: src/libslic3r/PrintConfig.cpp:5294
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for solid infills. \nCan be a % of the default acceleration\nSet zero to use default acceleration for solid infills.
 # 25   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4493,7 +4467,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2985
+#: src/libslic3r/PrintConfig.cpp:2982
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for Sparse infill.\nCan be a % of the solid infill acceleration\nSet zero to use solid infill acceleration for infill.
 # 38   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4509,7 +4483,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5360
+#: src/libslic3r/PrintConfig.cpp:5357
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for support material interfaces. \nCan be a % of the support material acceleration\nSet zero to use support acceleration for support material interfaces.
 # 65   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -4526,7 +4500,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5338
+#: src/libslic3r/PrintConfig.cpp:5335
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for support material. \nCan be a % of the default acceleration\nSet zero to use default acceleration for support material.
 # 34   changes: This is the acceleration your printer will use for perimeters. \nCan be a % of the default acceleration\nSet zero to disable acceleration control for perimeters.
@@ -4542,7 +4516,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5883
+#: src/libslic3r/PrintConfig.cpp:5880
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for thin walls. \nCan be a % of the external perimeter acceleration\nSet zero to use external perimeter acceleration for thin walls.
 # 55   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4558,7 +4532,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6028
+#: src/libslic3r/PrintConfig.cpp:6025
 #, possible-c-format, possible-boost-format
 #Similar to me: This is the acceleration your printer will use for top solid infills. \nCan be a % of the solid infill acceleration\nSet zero to use solid infill acceleration for top solid infills.
 # 45   changes: This is the acceleration your printer will use for infill.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for infill.
@@ -4574,7 +4548,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1839
+#: src/libslic3r/PrintConfig.cpp:1838
 #Similar to me: This is the DEFAULT extrusion width. It's ONLY used to REPLACE 0-width fields. It's useless when all other width fields have a value.\nSet this to a non-zero value to allow a manual extrusion width. If left to zero, Slic3r derives extrusion widths from the nozzle diameter (see the tooltips for perimeter extrusion width, infill extrusion width etc). If expressed as percentage (for example: 105%), it will be computed over nozzle diameter.\nYou can set either 'Spacing', or 'Width'; the other will be calculated, using the perimeter 'Overlap' percentages and default layer height.
 # 2    changes: This is the DEFAULT extrusion width. It's ONLY used to REPLACE 0-width fields. It's useless when all other width fields have a value.Set this to a non-zero value to allow a manual extrusion width. If left to zero, Slic3r derives extrusion widths from the nozzle diameter (see the tooltips for perimeter extrusion width, infill extrusion width etc). If expressed as percentage (for example: 105%), it will be computed over nozzle diameter.\nYou can set either 'Spacing', or 'Width'; the other will be calculated, using the perimeter 'Overlap' percentages and default layer height.
 #  translation: 这是默认的拉伸宽度。它仅用于替换 0 宽度字段。当所有其他宽度字段都有值时，它是无用的。将其设置为非零值以允许手动挤压宽度。如果保留为零，Slic3r 从喷嘴直径导出挤出宽度（请参阅周边挤出宽度、填充挤出宽度等的工具提示）。如果以百分比表示（例如：105%），它将在喷嘴直径上计算。\n您可以设置“间距”或“宽度”；另一个将使用周长“重叠”百分比和默认层高进行计算。
@@ -4591,7 +4565,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2533
+#: src/libslic3r/PrintConfig.cpp:2530
 #Similar to me: This is the maximum acceleration your printer will use for first layer.\nIf set to %, all accelerations will be reduced by that ratio.\nSet zero to disable acceleration control for first layer.
 # 52   changes: This is the acceleration your printer will use for first layer.\nCan be a % of the default acceleration\nSet zero to disable acceleration control for first layer.
 #  translation: 这是您的打印机将用于第一层的加速度。\n可以是默认加速度的 %\n设置为零以禁用第一层的加速控制。
@@ -4615,7 +4589,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1268
+#: src/libslic3r/PrintConfig.cpp:1267
 msgid ""
 "This is the reference speed that other 'main' speed can reference to by a "
 "%.\n"
@@ -4627,7 +4601,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4335
+#: src/libslic3r/PrintConfig.cpp:4332
 msgid ""
 "This option sets the number of perimeters to generate for each layer.\n"
 "If perimeters_hole is activated, then this number is only for contour "
@@ -4639,7 +4613,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4351
+#: src/libslic3r/PrintConfig.cpp:4348
 msgid ""
 "This option sets the number of perimeters to have over holes. Note that if a "
 "hole-perimeter fuse with the contour, then it will go around like a contour "
@@ -4668,7 +4642,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1610
+#: src/libslic3r/PrintConfig.cpp:1609
 #Similar to me: This separate setting will affect the speed of external perimeters (the visible ones). \nIf expressed as percentage (for example: 80%) it will be calculated over the Internal Perimeters speed setting.\nSet zero to use autospeed for this feature.
 # 45   changes: This separate setting will affect the speed of external perimeters (the visible ones). If expressed as percentage (for example: 80%) it will be calculated on the perimeters speed setting above. Set to zero for auto.
 #  translation: 此单独的设置将影响外部轮廓（可见轮廓）的速度。如果以百分比表示（例如：80%）它将在上述周界速度设置上计算。为自动设置为零。
@@ -4685,7 +4659,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5001
+#: src/libslic3r/PrintConfig.cpp:4998
 #Similar to me: This separate setting will affect the speed of perimeters having radius <= 6.5mm (usually holes).\nIf expressed as percentage (for example: 80%) it will be calculated on the Internal Perimeters speed setting above.\nSet zero to disable.
 # 22   changes: This separate setting will affect the speed of perimeters having radius <= 6.5mm (usually holes). If expressed as percentage (for example: 80%) it will be calculated on the perimeters speed setting above. Set zero for auto.
 #  translation: 此单独设置将影响半径为 < = 6.5 mm (通常为孔) 的边界的速度。如果以百分比表示 (例如: 80%), 则将根据上面的边界速度设置进行计算。自动设置为零。
@@ -4725,21 +4699,21 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5949
+#: src/libslic3r/PrintConfig.cpp:5946
 msgid ""
 "This setting allows you to modify the time estimation by a flat amount for "
 "each toolchange."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5940
+#: src/libslic3r/PrintConfig.cpp:5937
 msgid ""
 "This setting allows you to modify the time estimation by a flat amount to "
 "compensate for start script, the homing routine, and other things."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5050
+#: src/libslic3r/PrintConfig.cpp:5047
 #, possible-c-format, possible-boost-format
 msgid ""
 "This setting allows you to reduce the overlap between the lines of the solid "
@@ -4751,7 +4725,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6041
+#: src/libslic3r/PrintConfig.cpp:6038
 #, possible-c-format
 msgid ""
 "This setting allows you to reduce the overlap between the lines of the top "
@@ -4766,7 +4740,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1584
+#: src/libslic3r/PrintConfig.cpp:1583
 #, possible-c-format
 #Similar to me: This setting allows you to reduce the overlap between the perimeters and the external one, to reduce the impact of the perimeters' artifacts. 100% means that no gap is left, and 0% means that the external perimeter isn't contributing to the overlap with the 'inner' one.
 # 106  changes: This setting allows you to reduce the overlap between the perimeters and the external one, to reduce the impact of the perimeters' artifacts. 100% means that no gap is left, and 0% means that the external perimeter isn't contributing to the overlap with the 'inner' one.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -4779,7 +4753,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2855
+#: src/libslic3r/PrintConfig.cpp:2852
 #, possible-c-format
 #Similar to me: This setting allows you to reduce the overlap between the perimeters and the gap fill. 100% means that no gaps are left, and 0% means that the gap fill won't touch the perimeters.\nMay be useful if you can see the gapfill on the exterrnal surface, to reduce that artifact.
 # 79   changes: This setting allows you to reduce the overlap between the perimeters and the gap fill. 100% means that no gaps are left, and 0% means that the gap fill won't touch the perimeters.\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
@@ -4793,14 +4767,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5922
+#: src/libslic3r/PrintConfig.cpp:5919
 msgid ""
 "This setting allows you to set how much an hour of printing time is costing "
 "you in printer maintenance, loan, human albor, etc."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3728
+#: src/libslic3r/PrintConfig.cpp:3725
 #, possible-c-format, possible-boost-format
 msgid ""
 "This setting allows you to set the maximum flowrate for your print, and so "
@@ -4816,7 +4790,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4177
+#: src/libslic3r/PrintConfig.cpp:4174
 #Similar to me: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nNote: it needs the external and perimeter overlap to be at 100% and to print the external perimeter first.
 # 84   changes: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
 #  translation: 此设置可能会稍微降低外部周边的质量，以换取周边之间更好的粘合。如果周边粘合有很大困难，例如使用高温灯丝，请使用它。\n这个百分比是周长之间重叠的百分比，有点像perimeter_overlap 和external_perimeter_overlap，但反过来。 您必须将perimeter_overlap 和external_perimeter_overlap 设置为100%，否则此设置无效。 0：没有影响，50%：喷嘴的一半将在挤出一个新的时在已经挤出的周边上，除非它是外部的）。\n这是非常实验性的，请报告有用性。 如果没有用，它可能会被删除。
@@ -4836,7 +4810,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2811
+#: src/libslic3r/PrintConfig.cpp:2808
 #, possible-c-format, possible-boost-format
 #Similar to me: This setting represents the maximum width of a gapfill. Points wider than this threshold won't be created.\nCan be a % of the perimeter width\n0 to auto
 # 56   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
@@ -4849,7 +4823,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4402
+#: src/libslic3r/PrintConfig.cpp:4399
 #Similar to me: This setting represents the minimum fan speed (like minimum PWM) your fan needs to work.
 # 25   changes: This setting represents the minimum PWM your fan needs to work.
 #  translation: 此设置表示风扇工作所需的最小 PWM。
@@ -4859,7 +4833,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2833
+#: src/libslic3r/PrintConfig.cpp:2830
 #, possible-c-format, possible-boost-format
 #Similar to me: This setting represents the minimum mm for a gapfill extrusion to be extruded.\nCan be a % of the perimeter width\n0 to auto
 # 22   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
@@ -4872,7 +4846,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2844
+#: src/libslic3r/PrintConfig.cpp:2841
 #, possible-c-format, possible-boost-format
 #Similar to me: This setting represents the minimum width of a gapfill. Points thinner than this threshold won't be created.\nCan be a % of the perimeter width\n0 to auto
 # 56   changes: This setting represents the minimum mm² for a gapfill extrusion to be created.\nCan be a % of (perimeter width)²
@@ -4885,7 +4859,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2214
+#: src/libslic3r/PrintConfig.cpp:2213
 #Similar to me: This setting will ensure that all 'overlap' are not higher than this value. This is useful for filaments that are too viscous, as the line can't flow under the previous one.\nNote: top solid infill lines are excluded, to prevent visual defects.
 # 71   changes: This setting will ensure that all 'overlap' are not higher than this value. This is useful for filaments that are too viscous, as the line can't flow under the previous one.
 #  translation: 此设置将确保所有“重叠”不高于此值。这对于太粘的细丝很有用，因为线不能在前一条下面流动。
@@ -4897,7 +4871,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1763
+#: src/libslic3r/PrintConfig.cpp:1762
 msgid ""
 "This string is edited by a Dialog and contains extusion multiplier for "
 "different speeds."
@@ -4909,7 +4883,7 @@ msgid "This template will be used for drawing button text on hover."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:9818
+#: src/libslic3r/PrintConfig.cpp:9815
 #Similar to me: This version of Slic3r may not understand configurations produced by the newest Slic3r versions. For example, newer Slic3r may extend the list of supported firmware flavors. One may decide to bail out or to substitute an unknown value with a default silently or verbosely.
 # 4    changes: This version of Slic3r may not understand configurations produced by newest Slic3r versions. For example, newer Slic3r may extend the list of supported firmware flavors. One may decide to bail out or to substitute an unknown value with a default silently or verbosely.
 #  translation: 此版本的 Slic3r 可能无法理解最新 Slic3r 版本生成的配置。 例如，较新的 Slic3r 可能会扩展支持的固件版本列表。 人们可能会决定退出或用默认值悄悄或详细地替换未知值。
@@ -4923,22 +4897,22 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5920
+#: src/libslic3r/PrintConfig.cpp:5917
 msgid "Time cost"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5938
+#: src/libslic3r/PrintConfig.cpp:5935
 msgid "Time for start custom gcode"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5947
+#: src/libslic3r/PrintConfig.cpp:5944
 msgid "Time for toolchange"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4798
+#: src/libslic3r/PrintConfig.cpp:4795
 #, possible-c-format, possible-boost-format
 msgid ""
 "To avoid visible seam, the extrusion can be stoppped a bit before the end of "
@@ -4968,7 +4942,7 @@ msgid "Top Fill flow calibration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1363
+#: src/libslic3r/PrintConfig.cpp:1362
 #Similar to me: Top fill Pattern
 # 1    changes: Top fill pattern
 #  translation: 顶部填充模式
@@ -4991,7 +4965,7 @@ msgid "Top infill pattern"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6026
+#: src/libslic3r/PrintConfig.cpp:6023
 #Similar to me: Top solid acceleration
 # 7    changes: Travel acceleration
 #  translation: 行驶加速度
@@ -5003,7 +4977,7 @@ msgid "Top solid acceleration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5978
+#: src/libslic3r/PrintConfig.cpp:5975
 #Similar to me: Top Solid fan speed
 # 5    changes: Top solid speed
 #  translation: 顶固速度
@@ -5013,7 +4987,7 @@ msgid "Top Solid fan speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6039
+#: src/libslic3r/PrintConfig.cpp:6036
 #Similar to me: Top solid infill overlap
 # 5    changes: No solid infill over
 #  translation: 没有固体填充物
@@ -5037,7 +5011,7 @@ msgid "Top surfaces"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:7043
+#: src/libslic3r/PrintConfig.cpp:7040
 msgid "Tough"
 msgstr ""
 
@@ -5069,7 +5043,7 @@ msgid "Use log scale"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6106
+#: src/libslic3r/PrintConfig.cpp:6103
 msgid "Use target acceleration for travel deceleration"
 msgstr ""
 
@@ -5079,7 +5053,7 @@ msgid "Use this option to enable 2-way ssl authentication with you printer."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5397
+#: src/libslic3r/PrintConfig.cpp:5394
 #Similar to me: Use this setting to rotate the support material pattern by 90° at this height (in mm). Set 0 to disable.
 # 37   changes: Use this setting to rotate the support material pattern on the horizontal plane.
 #  translation: 使用此设置可旋转水平平面上的支撑材料模式。
@@ -5089,7 +5063,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5524
+#: src/libslic3r/PrintConfig.cpp:5521
 #Similar to me: Use this setting to rotate the support material pattern on the horizontal plane.\n0 to use the support_material_angle.
 # 38   changes: Use this setting to rotate the support material pattern on the horizontal plane.
 #  translation: 使用此设置可旋转水平平面上的支撑材料模式。
@@ -5100,12 +5074,12 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4876
+#: src/libslic3r/PrintConfig.cpp:4873
 msgid "use visibility check"
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2904
+#: src/libslic3r/GCode.cpp:2910
 msgid ""
 "Using a color change gcode, but there isn't one for this printer.\n"
 "The printer won't stop for the filament change, unless you set it manually "
@@ -5113,7 +5087,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/GCode.cpp:2923
+#: src/libslic3r/GCode.cpp:2929
 msgid ""
 "Using a pause gcode, but there isn't one for this printer.\n"
 "The printer won't pause, unless you set it manually in the custom gcode "
@@ -5127,7 +5101,7 @@ msgid "value: %1%"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3725
+#: src/libslic3r/PrintConfig.cpp:3722
 #Similar to me: Volumetric auto-speed
 # 5    changes: Volumetric speed
 #  translation: 流量速度
@@ -5179,14 +5153,14 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2881
+#: src/libslic3r/PrintConfig.cpp:2878
 msgid ""
 "When printing the gcode file, replace any non-ascii character by a '_'. Can "
 "be useful if the firmware or a software in a workflow doesn't support uft-8."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1567
+#: src/libslic3r/PrintConfig.cpp:1566
 #Similar to me: When set to a non-zero value this fan speed is used only for external perimeters (visible ones) and thin walls.\nSet to 1 to disable the fan.\nSet to -1 to use the normal fan speed on external perimeters.External perimeters can benefit from higher fan speed to improve surface finish, while internal perimeters, infill, etc. benefit from lower fan speed to improve layer adhesion.\nCan be disabled by disable_fan_first_layers, slowed down by full_fan_speed_layer and increased by low layer time.
 # 130  changes: When set to a non-zero value this fan speed is used only for external perimeters (visible ones). \nSet to 1 to disable the fan.\nSet to -1 to use the normal fan speed on external perimeters.External perimeters can benefit from higher fan speed to improve surface finish, while internal perimeters, infill, etc. benefit from lower fan speed to improve layer adhesion.
 #  translation: 当设置为非零值时，此风扇速度仅用于外部边界（可见边界）。\n设置为 1 以禁用风扇。\n设置为 -1 以在外周使用正常风扇速度。外周可受益于较高的风扇速度以改善表面光洁度，而内周、填充等可受益于较低的风扇速度以改善层粘附。
@@ -5203,7 +5177,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3700
+#: src/libslic3r/PrintConfig.cpp:3697
 #Similar to me: When setting other speed settings to 0, Slic3r will autocalculate the optimal speed in order to keep constant extruder pressure. This experimental setting is used to set the highest print speed you want to allow.\nThis can be expressed as a percentage (for example: 100%) over the machine Max Feedrate for X axis.
 # 101  changes: When setting other speed settings to 0, Slic3r will autocalculate the optimal speed in order to keep constant extruder pressure. This experimental setting is used to set the highest print speed you want to allow.
 #  translation: 当将其他速度设置设为 0 时，Slic3r 将自动计算最佳速度以保持恒定的挤出机压力。 此实验设置用于设置您希望允许的最高打印速度。
@@ -5218,7 +5192,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6533
+#: src/libslic3r/PrintConfig.cpp:6530
 #Similar to me: When transitioning between different numbers of perimeters as the part becomesthinner, a certain amount of space is allotted to split or join the perimeter segments. If expressed as a percentage (for example 100%), it will be computed based on the nozzle diameter.
 # 1    changes: When transitioning between different numbers of perimeters as the part becomes thinner, a certain amount of space is allotted to split or join the perimeter segments. If expressed as a percentage (for example 100%), it will be computed based on the nozzle diameter.
 #  translation: 当随着零件变薄而在不同数量的轮廓之间过渡时，会分配出一定的空间来分割或连接轮廓段。如果用百分比表示（例如 100%），它将根据喷嘴直径计算出来。
@@ -5263,7 +5237,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6593
+#: src/libslic3r/PrintConfig.cpp:6590
 #Similar to me: Width of the perimeter that will replace thin features (according to the Minimum feature size) of the model. If the Minimum perimeter width is thinner than the thickness of the feature, the perimeter will become as thick as the feature itself. If expressed as percentage (for example 85%), it will be computed over nozzle diameter.
 # 13   changes: Width of the perimeter that will replace thin features (according to the Minimum feature size) of the model. If the Minimum perimeter width is thinner than the thickness of the feature, the perimeter will become as thick as the feature itself. If expressed as a percentage (for example 85%), it will be computed based on the nozzle diameter.
 #  translation: 将替换模型的细特征（根据最小特征尺寸）的轮廓宽度。 如果最小轮廓宽度小于特征的厚度，则轮廓将变得与特征本身一样厚。 如果以百分比表示（例如 85%），它将根据喷嘴直径计算。
@@ -5280,12 +5254,12 @@ msgid "Wipe inside"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6190
+#: src/libslic3r/PrintConfig.cpp:6187
 msgid "Wipe inside at end"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6181
+#: src/libslic3r/PrintConfig.cpp:6178
 msgid "Wipe inside at start"
 msgstr ""
 
@@ -5294,7 +5268,7 @@ msgid "Wipe starting speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6238
+#: src/libslic3r/PrintConfig.cpp:6235
 #Similar to me: Wipe Tower Speed
 # 6    changes: Wipe Tower
 #  translation: 擦料塔
@@ -5306,7 +5280,7 @@ msgid "Wipe Tower Speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6247
+#: src/libslic3r/PrintConfig.cpp:6244
 msgid "Wipe tower wipe starting speed"
 msgstr ""
 
@@ -5343,7 +5317,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3914 src/libslic3r/PrintConfig.cpp:4383
+#: src/libslic3r/PrintConfig.cpp:3911 src/libslic3r/PrintConfig.cpp:4380
 #Similar to me: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. the variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
 # 218  changes: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. the variabel name should only have [a-zA-Z] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese varibles will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert evrything to strings.
 #  translation: 您可以添加自定义 gcode 宏可访问的数据。\n每行可以定义一个变量。\n格式为“变量名称=值”。变量名称只能包含 [a-zA-Z] 字符或“_”。\n可以解析为 int 或 float 的值将可用作数值。\n用双引号括起来的值将作为字符串提供（不带引号）\n仅将值作为“真”或“假”的值将是布尔值）\n每个其他值都将按原样解析为字符串。\n这些变量将在自定义 gcode 中作为数组提供（每个挤出机一个项目），不要忘记将它们与 {current_extruder} 索引一起使用以获取当前值。如果灯丝在改变其类型的变量上有拼写错误，则解析器会将所有内容转换为字符串。
@@ -5367,7 +5341,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1910
+#: src/libslic3r/PrintConfig.cpp:1909
 #Similar to me: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. The variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese variables will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert everything to strings.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
 # 233  changes: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. the variabel name should only have [a-zA-Z] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese varibles will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert evrything to strings.
 #  translation: 您可以添加自定义 gcode 宏可访问的数据。\n每行可以定义一个变量。\n格式为“变量名称=值”。变量名称只能包含 [a-zA-Z] 字符或“_”。\n可以解析为 int 或 float 的值将可用作数值。\n用双引号括起来的值将作为字符串提供（不带引号）\n仅将值作为“真”或“假”的值将是布尔值）\n每个其他值都将按原样解析为字符串。\n这些变量将在自定义 gcode 中作为数组提供（每个挤出机一个项目），不要忘记将它们与 {current_extruder} 索引一起使用以获取当前值。如果灯丝在改变其类型的变量上有拼写错误，则解析器会将所有内容转换为字符串。
@@ -5424,7 +5398,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2471
+#: src/libslic3r/PrintConfig.cpp:2468
 #Similar to me: You can increase this to over-extrude on the first layer if there is not enough plastic because your bed isn't levelled.\nNote: DON'T USE THIS if your only problem is bed leveling, LEVEL YOUR BED! Use this setting only as last resort after all calibrations failed.
 # 1    changes: You can increase this to over-extrude on the first layer if there is not enough plastic because your bed isn't levelled.\nNote: DON'T USE THIS if your only problem is bed levelling, LEVEL YOUR BED! Use this setting only as last resort after all calibrations failed.
 #  translation: 如果由于您的床没有平整而没有足够的塑料，您可以增加它以在第一层过度挤出。\n注意：如果您唯一的问题是床铺平整，请不要使用它，请调平您的床铺！ 仅在所有校准失败后才将此设置用作最后的手段。
@@ -5436,13 +5410,13 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:5913
+#: src/slic3r/GUI/Plater.cpp:5914
 #, possible-boost-format
 msgid "You will export the file with the material profile(s): %1%"
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:1788
+#: src/slic3r/GUI/Plater.cpp:1789
 #, possible-boost-format
 #Similar to me: You will not be asked about it again, when: \n- Closing %1%,\n- Loading or creating a new project
 # 11   changes: You will not be asked about it again, when: \n- Closing PrusaSlicer,\n- Loading or creating a new project
@@ -5492,7 +5466,7 @@ msgid "Z"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4580
+#: src/libslic3r/PrintConfig.cpp:4577
 #Similar to me: Z lift is not triggered when travel moves are shorter than this length.
 # 9    changes: Retraction is not triggered when travel moves are shorter than this length.
 #  translation: 当打印移动短于此长度时，不会触发回抽。

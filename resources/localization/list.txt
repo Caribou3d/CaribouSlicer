@@ -22,6 +22,7 @@ src/slic3r/GUI/DoubleSlider.cpp
 src/slic3r/GUI/ExtraRenderers.cpp
 src/slic3r/GUI/ExtruderSequenceDialog.cpp
 src/slic3r/GUI/Field.cpp
+src/slic3r/GUI/GUI_Factories.cpp
 src/slic3r/GUI/FirmwareDialog.cpp
 src/slic3r/GUI/FreeCADDialog.cpp
 src/slic3r/GUI/GalleryDialog.cpp

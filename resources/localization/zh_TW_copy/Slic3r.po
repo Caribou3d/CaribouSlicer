@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -161,6 +161,21 @@ msgstr ""
 msgid "Add color change marker for current layer"
 msgstr "添加當前圖層的顏色更改標記"
 
+msgid "Add modifier"
+msgstr "添加修飾器"
+
+msgid "Add part"
+msgstr "添加部件"
+
+msgid "Add settings"
+msgstr "添加設置"
+
+msgid "Add support blocker"
+msgstr "添加支撐屏蔽"
+
+msgid "Add support enforcer"
+msgstr "添加支撐執行者"
+
 msgid "Add..."
 msgstr "加入..."
 
@@ -218,6 +233,15 @@ msgstr "所有標準"
 
 msgid "allocation failed"
 msgstr "燒錄失敗"
+
+msgid "Along X axis"
+msgstr "沿 X 軸"
+
+msgid "Along Y axis"
+msgstr "沿 Y 軸"
+
+msgid "Along Z axis"
+msgstr "沿 Z 軸"
 
 msgid "Alternate nozzles:"
 msgstr "備用噴嘴:"
@@ -382,6 +406,9 @@ msgstr "底部可靠層"
 msgid "Bottom View"
 msgstr "底部視圖"
 
+msgid "Box"
+msgstr "盒子"
+
 msgid "Bridge"
 msgstr "橋"
 
@@ -473,6 +500,9 @@ msgstr "更換擠出機"
 msgid "Change Extruder"
 msgstr "更換擠出機"
 
+msgid "Change type"
+msgstr "更改類型"
+
 msgid "Changing of an application language"
 msgstr "更改應用程序語言"
 
@@ -490,6 +520,9 @@ msgstr "選擇印表機使用的固件類型。"
 
 msgid "Circular"
 msgstr "圓形"
+
+msgid "Clear"
+msgstr "清除"
 
 msgid "Click to edit preset"
 msgstr "點擊編輯預設"
@@ -977,6 +1010,9 @@ msgstr "導出 AMF"
 msgid "Export AMF file:"
 msgstr "導出 AMF 文件:"
 
+msgid "Export as STL"
+msgstr "導出爲 STL"
+
 msgid "Export Config &Bundle"
 msgstr "導出配置&包"
 
@@ -1236,6 +1272,9 @@ msgstr "首層速度"
 
 msgid "First layer volumetric"
 msgstr "首層流量"
+
+msgid "Fix through the Netfabb"
+msgstr "通過 Netfabb 修復"
 
 msgid "Flash!"
 msgstr "燒錄！"
@@ -1885,6 +1924,21 @@ msgstr "回縮後最小空程"
 msgid "Minimum travel feedrate"
 msgstr "最小移動進給率"
 
+msgid "Mirror"
+msgstr "鏡像"
+
+msgid "Mirror the selected object"
+msgstr "鏡像所選對象"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "沿 X 軸鏡像所選對象"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "沿 Y 軸鏡像所選對象"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "沿 Z 軸鏡像所選對象"
+
 msgid "Mismatched type of print host: %s"
 msgstr "列印主機類型不匹配: %s"
 
@@ -2427,6 +2481,9 @@ msgstr "清除量-加載/卸載卷"
 msgid "Purging volumes - matrix"
 msgstr "清除量-矩陣"
 
+msgid "Quick Add Settings (%s)"
+msgstr "快速添加設置 (%s)"
+
 msgid "Quick Slice"
 msgstr "快速切片"
 
@@ -2537,6 +2594,12 @@ msgstr "刪除所有點"
 
 msgid "Remove selected points"
 msgstr "刪除選定的點"
+
+msgid "Remove the selected object"
+msgstr "刪除選定的對象"
+
+msgid "Rename"
+msgstr "重命名"
 
 msgid "Renaming"
 msgstr "重命名"
@@ -2749,6 +2812,9 @@ msgstr "選擇 \"列印設置\" 選項卡"
 msgid "Select Printer Settings Tab"
 msgstr "選擇 \"印表機設置\" 選項卡"
 
+msgid "Select showing settings"
+msgstr "選擇顯示的設置"
+
 msgid "Select the language"
 msgstr "選擇語言"
 
@@ -2787,6 +2853,15 @@ msgstr "服務名稱"
 
 msgid "Set"
 msgstr "設置"
+
+msgid "Set as a Separated Object"
+msgstr "設置爲分隔的對象"
+
+msgid "Set as a Separated Objects"
+msgstr "設置爲分隔的對象"
+
+msgid "Set extruder for selected items"
+msgstr "爲所選項目設置擠出機"
 
 msgid ""
 "Set the actual LCD display orientation inside the SLA printer. Portrait mode "
@@ -2920,6 +2995,9 @@ msgstr "SLA 列印"
 
 msgid "SLA print material notes"
 msgstr "SLA 列印材料註釋"
+
+msgid "Slab"
+msgstr "板坯"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -3103,6 +3181,12 @@ msgstr "螺旋式容器"
 
 msgid "Split"
 msgstr "拆分"
+
+msgid "Split the selected object"
+msgstr "拆分所選對象"
+
+msgid "Split the selected object into individual objects"
+msgstr "將所選對象拆分爲單個對象"
 
 msgid "Split to parts"
 msgstr "拆分到零件"
@@ -3560,6 +3644,12 @@ msgstr ""
 
 msgid "To do that please specify a new name for the preset."
 msgstr "爲此, 請爲預設指定新名稱。"
+
+msgid "To objects"
+msgstr "拆分到對象"
+
+msgid "To parts"
+msgstr "到零件"
 
 msgid ""
 "To use a custom CA file, please import your CA file into Certificate Store / "

@@ -1,19 +1,5 @@
 
 
-#: src/slic3r/GUI/UpdateDialogs.cpp:95
-#, possible-c-format, possible-boost-format
-#Similar to me: %s is not using the newest configuration available.\nConfiguration Assistent may not offer the latest printers, filaments and SLA materials to be installed. 
-# 8    changes: %s is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed. 
-#  translation: %s non utilizza la configurazione più recente disponibile.\nLa configurazione guidata potrebbe non offrire le stampanti, i filamenti e i materiali SLA più recenti da installare. 
-# 19   changes: PrusaSlicer is not using the newest configuration available.\nConfiguration Wizard may not offer the latest printers, filaments and SLA materials to be installed.
-#  translation: PrusaSlicer non sta usando la configurazione più recente disponibile.\nLa configurazione guidata potrebbe non offrire la possibilità di installare le ultime stampanti, filamenti e materiali SLA.
-msgid ""
-"%s is not using the newest configuration available.\n"
-"Configuration Assistent may not offer the latest printers, filaments and SLA "
-"materials to be installed. "
-msgstr ""
-
-
 #: src/slic3r/GUI/CalibrationOverBridgeDialog.cpp:40
 #Similar to me: 'Above the Bridges flow calibration
 # 12   changes: Bridge flow calibration
@@ -94,7 +80,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2310
+#: src/libslic3r/PrintConfig.cpp:2309
 msgid "Align sparse infill in z"
 msgstr ""
 
@@ -104,7 +90,7 @@ msgid "Allow outliers"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4021
+#: src/libslic3r/PrintConfig.cpp:4018
 msgid "Bridge max length"
 msgstr ""
 
@@ -128,7 +114,7 @@ msgid "Brim first layer"
 msgstr ""
 
 
-#: src/slic3r/GUI/AboutDialog.cpp:256
+#: src/slic3r/GUI/AboutDialog.cpp:258
 msgid "Build:"
 msgstr ""
 
@@ -144,7 +130,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/AboutDialog.cpp:285
+#: src/slic3r/GUI/AboutDialog.cpp:287
 #Similar to me: CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 # 31   changes: SuperSlicer is a modified version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.
 #  translation: SuperSlicer è una versione skin di Slic3r, basata su PrusaSlicer di Prusa e l'originale Slic3r di Alessandro Ranellucci e la comunità RepRap.
@@ -207,7 +193,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4032
+#: src/libslic3r/PrintConfig.cpp:4029
 msgid "Consider upper bridges"
 msgstr ""
 
@@ -222,7 +208,7 @@ msgid "Discrete Values"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4034
+#: src/libslic3r/PrintConfig.cpp:4031
 msgid ""
 "Don't put overhangs if the area will filled in next layer by bridges.\n"
 "Set to -1 to accept all upper layers.\n"
@@ -230,7 +216,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6214
+#: src/libslic3r/PrintConfig.cpp:6211
 #Similar to me: Don't wipe when you don't cross a perimeter. Need 'avoid_crossing_perimeters' and 'wipe' enabled.
 # 17   changes: Don't wipe when you don't cross a perimeter. Need 'only_retract_when_crossing_perimeters'and 'wipe' enabled.
 #  translation: Non cancellare quando non attraversi un perimetro. Hai bisogno di 'solo_ritiro_quando_attraverso_perimetri' e 'pulizia' abilitati.
@@ -240,7 +226,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5215
+#: src/libslic3r/PrintConfig.cpp:5212
 msgid ""
 "Ensure that the slicer won't add heating, fan, extruder... commands before "
 "or just after your start-gcode.\n"
@@ -254,7 +240,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4100
+#: src/libslic3r/PrintConfig.cpp:4097
 #Similar to me: Extrude perimeters that have an overhanging part in the reverse direction on even layers (not on odd layers like the first one). This alternating pattern can significantly improve steep overhangs.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
 # 27   changes: Extrude perimeters that have a part over an overhang in the reverse direction on even layers (and not on odd layers like the first one). This alternating pattern can drastically improve steep overhang.\n!! this is a very slow algorithm (it uses the same results as extra_perimeters_overhangs) !!
 #  translation: Estrudi perimetri che hanno una parte sopra una sporgenza nella direzione opposta su strati pari (e non su strati dispari come il primo). Questa trama alternata può migliorare drasticamente la sporgenza ripida.\n!! questo è un algoritmo molto lento (usa gli stessi risultati di extra_perimeters_overhangs) !!
@@ -271,7 +257,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1762
+#: src/libslic3r/PrintConfig.cpp:1761
 #Similar to me: Extrusion multipler
 # 1    changes: Extrusion multiplier
 #  translation: Moltiplicatore di estrusione
@@ -279,7 +265,7 @@ msgid "Extrusion multipler"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1984
+#: src/slic3r/GUI/MainFrame.cpp:1971
 msgid "Extrusion Multiplier calibration"
 msgstr ""
 
@@ -297,7 +283,7 @@ msgid "Extrusion multiplier per speed"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1980
+#: src/slic3r/GUI/MainFrame.cpp:1967
 #Similar to me: First layer patch calibration
 # 6    changes: First layer calibration
 #  translation: Calibrazione primo strato
@@ -309,7 +295,7 @@ msgid "First layer patch calibration"
 msgstr ""
 
 
-#: src/slic3r/GUI/MainFrame.cpp:1978
+#: src/slic3r/GUI/MainFrame.cpp:1965
 #Similar to me: First layer patttern calibration
 # 9    changes: First layer calibration
 #  translation: Calibrazione primo strato
@@ -331,10 +317,6 @@ msgstr ""
 # 10   changes: Flow calibration
 #  translation: Calibrazione flusso
 msgid "Flow 2 percent calibration"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui : l226
-msgid "From region"
 msgstr ""
 
 
@@ -368,7 +350,7 @@ msgid "If enabled, %1% will not open hyperlinks in your browser."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4826
+#: src/libslic3r/PrintConfig.cpp:4823
 #Similar to me: If the (external) angle at the seam is higher than this value, then no notch will be set. If the angle is too high, there isn't enough room for the notch.\nCan't be lower than 180° or it filters everything. At 360, it allows everything.
 # 82   changes: If the (external) angle at the seam is higher than this value, then no notch will be set. If the angle is too high, there isn't enough room for the notch.
 #  translation: Se l'angolo (esterno) alla cucitura è superiore a questo valore, non verrà impostata alcuna tacca. Se l'angolo è troppo alto, non c'è abbastanza spazio per la tacca.
@@ -385,7 +367,7 @@ msgid "Inside"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3345
+#: src/libslic3r/PrintConfig.cpp:3342
 msgid ""
 "Ironing post-process angle.\n"
 "If positive, the ironing will use this angle.\n"
@@ -394,7 +376,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2767
+#: src/slic3r/GUI/Plater.cpp:2768
 msgid "Load these files as a single object with multiple parts?\n"
 msgstr ""
 
@@ -415,7 +397,7 @@ msgid "Main speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3697
+#: src/libslic3r/PrintConfig.cpp:3694
 #Similar to me: Max auto-speed
 # 5    changes: Max fan speed
 #  translation: Velocità massima ventola
@@ -425,12 +407,12 @@ msgid "Max auto-speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4349
+#: src/libslic3r/PrintConfig.cpp:4346
 msgid "Max perimeter count for holes"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4023
+#: src/libslic3r/PrintConfig.cpp:4020
 msgid ""
 "Maximum distance for bridges. If the distance is over that, it will be "
 "considered as overhangs for 'overhangs_max_slope'.\n"
@@ -444,7 +426,7 @@ msgid "Maximum flow"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4010
+#: src/libslic3r/PrintConfig.cpp:4007
 #, possible-c-format, possible-boost-format
 msgid ""
 "Maximum slope for overhangs. if at each layer, the overhangs hangs by more "
@@ -466,7 +448,7 @@ msgid "Maximum speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3726
+#: src/libslic3r/PrintConfig.cpp:3723
 #Similar to me: Maximum Volumetric print speed for Autospeed
 # 14   changes: Volumetric speed for Autospeed
 #  translation: Velocità volumetrica per Autospeed
@@ -494,7 +476,7 @@ msgid "Number of steps:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4302
+#: src/libslic3r/PrintConfig.cpp:4299
 msgid ""
 "On even layers, all perimeter loops are reversed (it disables the overhang "
 "reversal, so it doesn't double-reverse).That setting will likely create "
@@ -510,19 +492,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/UpdateDialogs.cpp:94
-#Similar to me: Opening Configuration Assistent
-# 8    changes: Opening Configuration Wizard
-#  translation: Apertura Configurazione Guidata
-# 9    changes: Configuration Assistant
-#  translation: Assistente di configurazione
-# 10   changes: Configuration &Assistant
-#  translation: Configurazione e assistenza
-msgid "Opening Configuration Assistent"
-msgstr ""
-
-
-#: src/slic3r/GUI/MainFrame.cpp:1998
+#: src/slic3r/GUI/MainFrame.cpp:1985
 #Similar to me: Over-Bridge flow calibration
 # 5    changes: Bridge flow calibration
 #  translation: Taratura flusso del ponte
@@ -534,7 +504,7 @@ msgid "Over-Bridge flow calibration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4098
+#: src/libslic3r/PrintConfig.cpp:4095
 #Similar to me: Overhang reversal on even layers
 # 12   changes: Overhang reversal threshold
 #  translation: Soglia di inversione dello sbalzo
@@ -551,12 +521,12 @@ msgid "Overhangs cut"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4007 src/libslic3r/PrintConfig.cpp:4008
+#: src/libslic3r/PrintConfig.cpp:4004 src/libslic3r/PrintConfig.cpp:4005
 msgid "Overhangs max slope"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5795
+#: src/libslic3r/PrintConfig.cpp:5792
 #Similar to me: Override the temperature of the extruder (for the first layer). Avoid making too many changes, it won't stop for cooling/heating. 0 to disable (using print_temperature if defined). May only work on Height range modifiers.
 # 59   changes: Override the temperature of the extruder. Avoid making too many changes, it won't stop for cooling/heating. 0 to disable. May only work on Height range modifiers.
 #  translation: Sovrascrivi la temperatura dell'estrusore. Evita di fare troppi cambi, non si fermerà per il raffreddamento/riscaldamento. 0 per disabilitare. May funziona solo sui modificatori di altezza.
@@ -569,7 +539,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4300
+#: src/libslic3r/PrintConfig.cpp:4297
 #Similar to me: Perimeter reversal on even layers
 # 13   changes: Extra perimeter on even layers
 #  translation: Perimetro extra su strati pari
@@ -642,13 +612,6 @@ msgid "Sold Infill"
 msgstr ""
 
 #: ../../ui_layout/default/print.ui
-#Similar to me: Solid infill is area below
-# 10   changes: Solid infill speed
-#  translation: Velocità di riempimento solido
-msgid "Solid infill is area below"
-msgstr ""
-
-#: ../../ui_layout/default/print.ui
 #Similar to me: Solid infill ovelrap
 # 4    changes: Solid infill every
 #  translation: Riempimento solido ogni
@@ -660,7 +623,7 @@ msgid "Solid infill ovelrap"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5048
+#: src/libslic3r/PrintConfig.cpp:5045
 #Similar to me: Solid infill overlap
 # 2    changes: Solid fill overlap
 #  translation: Sovrapposizione riempimento solido
@@ -672,7 +635,7 @@ msgid "Solid infill overlap"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6249
+#: src/libslic3r/PrintConfig.cpp:6246
 #, possible-c-format, possible-boost-format
 #Similar to me: Start of the wiping speed ramp up (for wipe tower).\nCan be a % of the 'Wipe tower main speed'.\nSet to 0 to disable.
 # 5    changes: Start of the wiping speed ramp up (for wipe tower).\nCan be a % of the 'Wipe tower speed'.\nSet to 0 to disable.
@@ -694,7 +657,7 @@ msgid "Step width:"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6429
+#: src/libslic3r/PrintConfig.cpp:6426
 #Similar to me: The convex holes will be grown / shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area, should be negative as the holes are always a bit smaller irl). This might be useful for fine-tuning hole sizes.\nThis setting behaves the same as 'Inner XY size compensation' but only for convex shapes. It's added to 'Inner XY size compensation', it does not replace it. 
 # 25   changes: The convex holes will be grown / shrunk in the XY plane by the configured value (negative = inwards, positive = outwards, should be negative as the holes are always a bit smaller irl). This might be useful for fine-tuning hole sizes.\nThis setting behaves the same as 'Inner XY size compensation' but only for convex shapes. It's added to 'Inner XY size compensation', it does not replace it. 
 #  translation: I fori convessi saranno cresciuti / rimpiccioliti nel piano XY del valore configurato (negativo = verso l'interno, positivo = verso l'esterno, dovrebbe essere negativo poiché i fori sono sempre un po' più piccoli irl). Questo potrebbe essere utile per mettere a punto le dimensioni dei fori.\nQuesta impostazione si comporta allo stesso modo di 'Inner XY size compensation' ma solo per le forme convesse. Si aggiunge alla 'Compensazione interna delle dimensioni XY', non la sostituisce. 
@@ -711,7 +674,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2482
+#: src/libslic3r/PrintConfig.cpp:2479
 #Similar to me: The first layer will be grown / shrunk in the XY plane by the configured value to compensate for the 1st layer squish aka an Elephant Foot effect. (should be negative = inwards = remove area)
 # 14   changes: The first layer will be grown / shrunk in the XY plane by the configured value to compensate for the 1st layer squish aka an Elephant Foot effect. (should be negative = inwards)
 #  translation: Il primo strato sarà cresciuto/restretto nel piano XY del valore configurato per compensare lo squish del primo strato, ovvero l'effetto Elephant Foot. (dovrebbe essere negativo = verso l'interno)
@@ -738,7 +701,7 @@ msgid "The minimum speed is %1%%%."
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6406
+#: src/libslic3r/PrintConfig.cpp:6403
 #Similar to me: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area). This might be useful for fine-tuning sizes.\nThis one only applies to the 'exterior' shell of the object.\n !!! it's recommended you put the same value into the 'Inner XY size compensation', unless you are sure you don't have horizontal holes. !!! 
 # 25   changes: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards, positive = outwards). This might be useful for fine-tuning sizes.\nThis one only applies to the 'exterior' shell of the object.\n !!! it's recommended you put the same value into the 'Inner XY size compensation', unless you are sure you don't have horizontal holes. !!! 
 #  translation: L'oggetto sarà cresciuto/stretto nel piano XY del valore configurato (negativo = verso l'interno, positivo = verso l'esterno). Questo potrebbe essere utile per mettere a punto le dimensioni.\nQuesto si applica solo al guscio \"esterno\" dell'oggetto.\n !!! si raccomanda di mettere lo stesso valore nella 'Compensazione dimensione XY interna', a meno che non siate sicuri di non avere fori orizzontali. !!! 
@@ -754,7 +717,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6418
+#: src/libslic3r/PrintConfig.cpp:6415
 #Similar to me: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards = remove area, positive = outwards = add area). This might be useful for fine-tuning sizes.\nThis one only applies to the 'inner' shell of the object (!!! horizontal holes break the shell !!!)
 # 25   changes: The object will be grown/shrunk in the XY plane by the configured value (negative = inwards, positive = outwards). This might be useful for fine-tuning sizes.\nThis one only applies to the 'inner' shell of the object (!!! horizontal holes break the shell !!!)
 #  translation: L'oggetto sarà cresciuto/stretto nel piano XY del valore configurato (negativo = verso l'interno, positivo = verso l'esterno). Questo potrebbe essere utile per mettere a punto le dimensioni.\nQuesto si applica solo al guscio \"interno\" dell'oggetto (!!! i fori orizzontali rompono il guscio!!!)
@@ -767,7 +730,7 @@ msgid ""
 msgstr ""
 
 
-#: src/slic3r/GUI/Plater.cpp:2598
+#: src/slic3r/GUI/Plater.cpp:2599
 #, possible-boost-format
 #Similar to me: The preset below was temporarily installed on the active instance of %1%"
 msgid_plural "The presets below were temporarily installed on the active instance of %1%
@@ -847,7 +810,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2312
+#: src/libslic3r/PrintConfig.cpp:2311
 msgid ""
 "The voids of the pattern of sparse infill grows with the extrusion width, to "
 "keep the same percentage of fill. With this setting set to true, the "
@@ -873,7 +836,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4335
+#: src/libslic3r/PrintConfig.cpp:4332
 msgid ""
 "This option sets the number of perimeters to generate for each layer.\n"
 "If perimeters_hole is activated, then this number is only for contour "
@@ -885,7 +848,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4351
+#: src/libslic3r/PrintConfig.cpp:4348
 msgid ""
 "This option sets the number of perimeters to have over holes. Note that if a "
 "hole-perimeter fuse with the contour, then it will go around like a contour "
@@ -898,7 +861,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:5050
+#: src/libslic3r/PrintConfig.cpp:5047
 #, possible-c-format, possible-boost-format
 #Similar to me: This setting allows you to reduce the overlap between the lines of the solid fill, to reduce the % filled if you see overextrusion signs on solid areas. Note that you should be sure that your flow (filament extrusion multiplier) is well calibrated and your filament max overlap is set before thinking to modify this.\nNote: top surfaces are still extruded with 100% overlap to prevent gaps.
 # 74   changes: This setting allows you to reduce the overlap between the lines of the solid fill, to reduce the % filled if you see overextrusion signs on solid areas. Note that you should be sure that your flow (filament extrusion multiplier) is well calibrated and your filament max overlap is set before thinking to modify this.
@@ -913,7 +876,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6041
+#: src/libslic3r/PrintConfig.cpp:6038
 #, possible-c-format
 #Similar to me: This setting allows you to reduce the overlap between the lines of the top solid fill, to reduce the % filled if you see overextrusion signs on solid areas.\nNote that you should be sure that your flow (filament extrusion multiplier) is well calibrated and your filament max overlap is set before thinking to modify this.\nAlso, lowering it below 100% may create visible gaps in the top surfaces\nSet overlap setting is the only one that can't be reduced by the filament's max overlap.
 # 170  changes: This setting allows you to reduce the overlap between the lines of the solid fill, to reduce the % filled if you see overextrusion signs on solid areas. Note that you should be sure that your flow (filament extrusion multiplier) is well calibrated and your filament max overlap is set before thinking to modify this.
@@ -931,7 +894,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:4177
+#: src/libslic3r/PrintConfig.cpp:4174
 #Similar to me: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nNote: it needs the external and perimeter overlap to be at 100% and to print the external perimeter first.
 # 84   changes: This setting may slightly degrade the quality of your external perimeter, in exchange for a better bonding between perimeters.Use it if you have great difficulties with perimeter bonding, for example with high temperature filaments.\nThis percentage is the % of overlap between perimeters, a bit like perimeter_overlap and external_perimeter_overlap, but in reverse. You have to set perimeter_overlap and external_perimeter_overlap to 100%, or this setting has no effect. 0: no effect, 50%: half of the nozzle will be over an already extruded perimeter while extruding a new one, unless it's an external one).\nIt's very experimental, please report about the usefulness. It may be removed if there is no use for it.
 #  translation: Questa impostazione può degradare un po' la qualità del tuo perimetro esterno, in cambio di un migliore incollaggio tra i perimetri; usala se hai grandi difficoltà con l'incollaggio dei perimetri, per esempio con filamenti ad alta temperatura.\nQuesta percentuale è la % di sovrapposizione tra i perimetri, un po' come perimeter_overlap e external_perimeter_overlap, ma al contrario. Dovete impostare perimeter_overlap e external_perimeter_overlap al 100%, o questa impostazione non avrà effetto. 0: nessun effetto, 50%: metà dell'ugello sarà sopra un perimetro già estruso mentre ne estrude uno nuovo, a meno che non sia un esterno).\nÈ molto sperimentale, si prega di segnalarne l'utilità. Può essere rimosso se non serve a niente.
@@ -953,7 +916,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:2214
+#: src/libslic3r/PrintConfig.cpp:2213
 #Similar to me: This setting will ensure that all 'overlap' are not higher than this value. This is useful for filaments that are too viscous, as the line can't flow under the previous one.\nNote: top solid infill lines are excluded, to prevent visual defects.
 # 71   changes: This setting will ensure that all 'overlap' are not higher than this value. This is useful for filaments that are too viscous, as the line can't flow under the previous one.
 #  translation: Questa impostazione assicurerà che tutte le 'sovrapposizioni' non siano superiori a questo valore. Questo è utile per filamenti troppo viscosi, poiché la linea non può scorrere sotto il precedente.
@@ -965,7 +928,7 @@ msgid ""
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1763
+#: src/libslic3r/PrintConfig.cpp:1762
 msgid ""
 "This string is edited by a Dialog and contains extusion multiplier for "
 "different speeds."
@@ -984,7 +947,7 @@ msgid "Top Fill flow calibration"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6039
+#: src/libslic3r/PrintConfig.cpp:6036
 #Similar to me: Top solid infill overlap
 # 5    changes: No solid infill over
 #  translation: Nessun riempimento solido sopra
@@ -1018,7 +981,7 @@ msgid "value: %1%"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:3725
+#: src/libslic3r/PrintConfig.cpp:3722
 #Similar to me: Volumetric auto-speed
 # 5    changes: Volumetric speed
 #  translation: Velocità volumetrica
@@ -1041,7 +1004,7 @@ msgid "Wipe starting speed"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:6247
+#: src/libslic3r/PrintConfig.cpp:6244
 #Similar to me: Wipe tower wipe starting speed
 # 5    changes: Wipe tower starting speed
 #  translation: Velocità iniziale torre pulizia
@@ -1057,7 +1020,7 @@ msgid "Y"
 msgstr ""
 
 
-#: src/libslic3r/PrintConfig.cpp:1910
+#: src/libslic3r/PrintConfig.cpp:1909
 #Similar to me: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. The variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese variables will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert everything to strings.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
 # 1    changes: You can add data accessible to custom-gcode macros.\nEach line can define one variable.\nThe format is 'variable_name=value'. The variable name should only have [a-zA-Z0-9] characters or '_'.\nA value that can be parsed as a int or float will be avaible as a numeric value.\nA value that is enclosed by double-quotes will be available as a string (without the quotes)\nA value that only takes values as 'true' or 'false' will be a boolean)\nEvery other value will be parsed as a string as-is.\nThese variables will be available as an array in the custom gcode (one item per extruder), don't forget to use them with the {current_extruder} index to get the current value. If a filament has a typo on the variable that change its type, then the parser will convert evrything to strings.\nAdvice: before using a variable, it's safer to use the function 'default_XXX(variable_name, default_value)' (enclosed in bracket as it's a script) in case it's not set. You can replace XXX by 'int' 'bool' 'double' 'string'.
 #  translation: Puoi aggiungere dati accessibili a macro gcode personalizzate.\nOgni riga può definire una variabile.\nIl formato è 'nome_variabile=valore'. Il nome della variabile deve contenere solo [a-zA-Z0-9] caratteri o '_'.\nUn valore che può essere analizzato come int o float sarà disponibile come valore numerico.\nUn valore racchiuso tra virgolette sarà disponibile come stringa (senza virgolette)\nUn valore che accetta solo valori come 'vero' o 'falso' sarà un valore booleano)\nOgni altro valore verrà analizzato come una stringa così com'è.\nQueste variabili saranno disponibili come array nel gcode personalizzato (un elemento per estrusore), non dimenticare di usarle con l'indice {current_extruder} per ottenere il valore corrente. Se un filamento ha un errore di battitura sulla variabile che cambia il suo tipo, quindi il parser convertirà tutto in stringhe.\nConsiglio: prima di utilizzare una variabile, è più sicuro utilizzare la funzione 'default_XXX(variable_name, default_value)' (racchiusa tra parentesi perché è uno script) nel caso non sia impostata. Puoi sostituire XXX con 'int' 'bool' 'double ' 'string'.

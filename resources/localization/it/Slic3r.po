@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -251,6 +251,15 @@ msgstr "Informazioni %s "
 
 msgid "%s information"
 msgstr "%s informazioni"
+
+msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s non utilizza la configurazione più recente disponibile.\n"
+"La configurazione guidata potrebbe non offrire le stampanti, i filamenti e i "
+"materiali SLA più recenti da installare. "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -837,6 +846,9 @@ msgstr "Aggiungi la gamma di livelli"
 msgid "Add Layers"
 msgstr "Aggiungi livelli"
 
+msgid "Add modifier"
+msgstr "Aggiungi modificatore"
+
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters until all overhangs are filled.\n"
@@ -863,6 +875,12 @@ msgstr ""
 "Se riuscite ad attivare l'algoritmo dietro questa impostazione, mandatemi un "
 "messaggio. Personalmente, penso che sia inutile."
 
+msgid "Add negative volume"
+msgstr "Aggiungi volume negativo"
+
+msgid "Add one more instance of the selected object"
+msgstr "Aggiungi un'altra istanza dell'oggetto selezionato"
+
 msgid "Add one or more custom shapes"
 msgstr "Aggiungere una o più forme personalizzate"
 
@@ -875,6 +893,9 @@ msgstr ""
 "il primo). In questo modo, il riempimento viene inserito nel sandwich e "
 "potresti essere in grado di ridurre drasticamente l'impostazione di "
 "sovrapposizione riempimento/perimetro. "
+
+msgid "Add part"
+msgstr "Aggiungi solido"
 
 msgid "Add pause print"
 msgstr "Aggiungi la stampa in pausa"
@@ -891,8 +912,14 @@ msgstr "Aggiungi un punto alla selezione"
 msgid "Add preset for this printer device"
 msgstr "Aggiungi il preset per questo dispositivo di stampa"
 
+msgid "Add seam position"
+msgstr "Aggiungi posizione di cucitura"
+
 msgid "Add selected shape(s) to the bed"
 msgstr "Aggiungi la forma (le forme) selezionate al piano"
+
+msgid "Add settings"
+msgstr "Aggiungi impostazioni"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Aggiungi il bundle delle impostazioni per l'intervallo di altezza"
@@ -929,6 +956,12 @@ msgstr ""
 "Aggiungi riempimento solido vicino a superfici inclinate per garantire lo "
 "spessore verticale del guscio (strati solidi superiore+inferiore).\n"
 "!! solid_over_perimeters potrebbe cancellare queste superfici !!"
+
+msgid "Add support blocker"
+msgstr "Aggiungi divieto di supporto"
+
+msgid "Add support enforcer"
+msgstr "Aggiungi struttura di supporto"
 
 msgid "Add support point"
 msgstr "Aggiungi un punto di appoggio"
@@ -1184,6 +1217,15 @@ msgstr ""
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Consentire la pittura solo sulle facet selezionate da: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Lungo l'asse X"
+
+msgid "Along Y axis"
+msgstr "Lungo l'asse Y"
+
+msgid "Along Z axis"
+msgstr "Lungo l'asse Z"
 
 msgid "Also emit limits to G-code"
 msgstr "Emetti anche limiti al G-code"
@@ -1730,6 +1772,9 @@ msgstr "Strati solidi inferiori"
 msgid "Bottom View"
 msgstr "Vista dal basso"
 
+msgid "Box"
+msgstr "Cubo"
+
 msgid "Bridge"
 msgstr "Ponte"
 
@@ -2092,6 +2137,9 @@ msgstr ""
 "Finché è selezionato, li modificherà.\n"
 "Deselezionalo per disattivare questa imposizione."
 
+msgid "Change the number of instances of the selected object"
+msgstr "Cambia il numero di istanze dell'oggetto selezionato"
+
 msgid "Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0."
 msgstr ""
 "Modificare le larghezze di estrusione perimetrale per garantire che ci sia "
@@ -2107,6 +2155,9 @@ msgstr ""
 
 msgid "Change thumbnail"
 msgstr "Cambia la miniatura"
+
+msgid "Change type"
+msgstr "Cambia tipo"
 
 msgid ""
 "Change width on every even layer (and not on odd layers like the first one) "
@@ -2273,6 +2324,9 @@ msgstr ""
 "estrusione costante e per aree molto sottili viene utilizzato il riempimento "
 "di spazi. Il motore Arachne produce perimetri con larghezza di estrusione "
 "variabile. Questa impostazione influisce anche sul riempimento concentrico."
+
+msgid "Clear"
+msgstr "Azzera"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Cancella la cronologia Annulla / Ripeti sul nuovo progetto"
@@ -4264,6 +4318,9 @@ msgstr "Esportazione AMF"
 msgid "Export AMF file:"
 msgstr "Esportazione del file AMF:"
 
+msgid "Export as STL"
+msgstr "Esporta come STL"
+
 msgid "Export config"
 msgstr "Esporta la configurazione"
 
@@ -4801,6 +4858,9 @@ msgstr "Modello angolo riempimento"
 msgid "Fill bed"
 msgstr "Riempi letto"
 
+msgid "Fill bed with instances"
+msgstr "Riempi  con istanze"
+
 msgid "Fill density"
 msgstr "Densità di riempimento"
 
@@ -4854,6 +4914,9 @@ msgstr ""
 "strato superiore visibile, e non i suoi gusci solidi adiacenti.\n"
 "Se si desidera una trama 'allineata', impostare 90° sull'impostazione "
 "dell'incremento dell'angolo di riempimento."
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Riempi l'area rimanente del letto con istanze dell'oggetto selezionato"
 
 msgid "Fill the voids with bridges"
 msgstr "Riempi i vuoti con  ponti"
@@ -4959,6 +5022,9 @@ msgstr "Primo layer dell'oggetto sopra l'interfaccia raft"
 
 msgid "Fix through NetFabb"
 msgstr "Correggi attraverso Netfabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Correggi attraverso il Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Correzione tramite NetFabb"
@@ -5162,6 +5228,9 @@ msgstr ""
 msgid "Found reserved keywords in"
 msgstr "Trovate parole chiave riservate in"
 
+msgid "FreeCAD path"
+msgstr "Percorso FreeCAD"
+
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD : script motore per FreeCAD"
 
@@ -5276,6 +5345,9 @@ msgstr "g/ml"
 
 msgid "G2/G3 generation"
 msgstr "Generazione G2/G3"
+
+msgid "Gallery"
+msgstr "Galleria"
 
 msgid "Gap fill"
 msgstr "Riempimento del vuoto"
@@ -5589,6 +5661,9 @@ msgstr ""
 
 msgid "Height of the display"
 msgstr "Altezza del display"
+
+msgid "Height range Modifier"
+msgstr "Modificatore di gamma di altezza"
 
 msgid "Height ranges"
 msgstr "Gamme di altezza"
@@ -6178,6 +6253,21 @@ msgstr ""
 "dell'oggetto sopra l'interfaccia Raft, indipendentemente dal tipo.\n"
 "Se espresso in percentuale scalerà la velocità attuale (max 100%).\n"
 "Imposta al 100% per rimuovere questa modifica della velocità."
+
+msgid ""
+"If it point to a valid freecad instance, you can use the built-in python "
+"script to quickly generate geometry.\n"
+"Put here the freecad directory from which you can access its 'lib' "
+"directory.\n"
+"Freecad will use its own python (from the bin directoyr) on windows and will "
+"use the system python3 on linux & macos"
+msgstr ""
+"Se punta a un'istanza valida di freecad, puoi usare lo script python "
+"integrato per generare rapidamente la geometria.\n"
+"Metti qui la directory di freecad da cui puoi accedere alla sua directory "
+"'lib'.\n"
+"Freecad utilizzerà il proprio python (dalla directory bin) su Windows e "
+"utilizzerà il sistema python3 su Linux e MacOS"
 
 msgid ""
 "If layer print time is estimated below this number of seconds, fan will be "
@@ -7988,6 +8078,9 @@ msgstr "Unisci"
 msgid "Merge all parts to the one single object"
 msgstr "Unisci tutte le parti in un unico oggetto"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Unisci gli oggetti in un unico oggetto multiparte"
+
 msgid "Merged"
 msgstr "Fuso"
 
@@ -8318,11 +8411,26 @@ msgstr ""
 "Larghezza minima delle caratteristiche da mantenere quando si fa la "
 "compensazione del primo strato."
 
+msgid "Mirror"
+msgstr "Specchia"
+
 msgid "Mirror horizontally"
 msgstr "Specchio orizzontale"
 
 msgid "Mirror Object"
 msgstr "Specchia oggetto"
+
+msgid "Mirror the selected object"
+msgstr "Specchia l'oggetto selezionato"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Specchia l'oggetto selezionato lungo l'asse X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Specchia l'oggetto selezionato lungo l'asse Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Specchia l'oggetto selezionato lungo l'asse Z"
 
 msgid "Mirror vertically"
 msgstr "Specchio in verticale"
@@ -9253,6 +9361,9 @@ msgstr "Apri la pagine di rilascio di %s nel tuo browser"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Aprire la finestra di dialogo per modificare la galleria delle forme"
 
+msgid "Opening Configuration Wizard"
+msgstr "Apertura Configurazione Guidata"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Apertura di un nuovo progetto mentre alcuni preset non sono salvati."
 
@@ -9610,6 +9721,9 @@ msgstr "Incolla dagli appunti"
 
 msgid "Paste From Clipboard"
 msgstr "Incolla dagli appunti"
+
+msgid "Paths"
+msgstr "Percorsi"
 
 msgid "Pattern"
 msgstr "Modello"
@@ -10135,6 +10249,9 @@ msgstr ""
 msgid "Print&er Settings Tab"
 msgstr "Scheda Impostazioni di stampa"
 
+msgid "Printable"
+msgstr "Stampabile"
+
 msgid "printer"
 msgstr "stampante"
 
@@ -10296,6 +10413,9 @@ msgstr "Qualità / Velocità"
 
 msgid "Quick"
 msgstr "Veloce"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Impostazioni di aggiunta rapida (%s)"
 
 msgid "Quick Save"
 msgstr "Salvataggio rapido"
@@ -10502,6 +10622,9 @@ msgstr "Ricarica la piastra dal disco"
 msgid "Reload the platter from disk"
 msgstr "Ricarica la piastra dal disco"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Ricarica i volumi selezionati dal disco"
+
 msgid "Remaining errors"
 msgstr "Errori rimanenti"
 
@@ -10550,6 +10673,9 @@ msgstr "Rimuovi la gamma di livelli"
 msgid "Remove Multi Material painting"
 msgstr "Rimuovi pittura Multi Material"
 
+msgid "Remove one instance of the selected object"
+msgstr "Rimuovi un'istanza dell'oggetto selezionato"
+
 msgid "Remove paint-on seam"
 msgstr "Rimuovi pittura giunzione"
 
@@ -10577,11 +10703,17 @@ msgstr "Rimuovi i punti selezionati"
 msgid "Remove selection"
 msgstr "Rimuovi la selezione"
 
+msgid "Remove the selected object"
+msgstr "Rimuovi l'oggetto selezionato"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Rimuovi i profili utente (un'istantanea sarà presa prima)"
 
 msgid "Remove variable layer height"
 msgstr "Rimuovi Altezza layer variabile"
+
+msgid "Rename"
+msgstr "Rinomina"
 
 msgid "Rename Object"
 msgstr "Rinomina l'oggetto"
@@ -10645,6 +10777,9 @@ msgstr "Ripeti l'ultima fetta veloce"
 
 msgid "Replace from:"
 msgstr "Sostituisci da:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Sostituisci il volume selezionato con un nuovo STL"
 
 msgid "Replace with"
 msgstr "Sostituisci con"
@@ -10969,6 +11104,9 @@ msgstr "Scala"
 msgid "Scale factors"
 msgstr "Fattori di scala"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Scala l'oggetto selezionato per adattarlo al volume di stampa"
+
 msgid "Scale To Fit"
 msgstr "Scala per adattarsi"
 
@@ -10977,6 +11115,9 @@ msgstr "Scala per adattarsi"
 
 msgid "Scale to fit the given volume."
 msgstr "Scala per adattarsi al volume dato."
+
+msgid "Scale to print volume"
+msgstr "Scala al volume di stampa"
 
 msgid "Scaling factor or percentage."
 msgstr "Fattore di scala o percentuale."
@@ -11142,6 +11283,9 @@ msgstr "Seleziona la scheda Impostazioni della stampante"
 msgid "Select shape from the gallery"
 msgstr "Seleziona la forma dalla galleria"
 
+msgid "Select showing settings"
+msgstr "Seleziona le impostazioni di visualizzazione"
+
 msgid "Select the language"
 msgstr "Seleziona la lingua"
 
@@ -11285,6 +11429,12 @@ msgstr "Nome del servizio"
 msgid "Set"
 msgstr "Imposta"
 
+msgid "Set as a Separated Object"
+msgstr "Imposta come oggetto separato"
+
+msgid "Set as a Separated Objects"
+msgstr "Imposta come oggetti separati"
+
 msgid "Set auto color changes"
 msgstr "Imposta cambi colore automatici "
 
@@ -11293,6 +11443,9 @@ msgstr "Imposta l'estrusore di default per gli elementi selezionati"
 
 msgid "Set extruder change for every"
 msgstr "Imposta il cambio dell'estrusore per ogni"
+
+msgid "Set extruder for selected items"
+msgstr "Imposta l'estrusore per gli elementi selezionati"
 
 msgid "Set extruder number for the selected items"
 msgstr "Impostare il numero dell'estrusore per gli elementi selezionati"
@@ -11314,6 +11467,9 @@ msgstr "Imposta il pollice inferiore al pollice del cursore corrente"
 
 msgid "Set Mirror"
 msgstr "Imposta specchio"
+
+msgid "Set number of instances"
+msgstr "Imposta il numero di istanze"
 
 msgid "Set numbers of copies to %d"
 msgstr "Imposta il numero di copie a %d"
@@ -11811,6 +11967,9 @@ msgstr ""
 "(utilizzando 55% e 75% per le due soglie)\n"
 "Usa la modalità esperto per ottenere widget più dettagliati"
 
+msgid "Simplify model"
+msgstr "Semplifica modello"
+
 msgid "Simplifying paths"
 msgstr "Semplificare percorsi"
 
@@ -11947,6 +12106,9 @@ msgstr "Punti di supporto SLA"
 msgid "SLA supports outside the print area were detected."
 msgstr "Sono stati rilevati supporti SLA al di fuori dell'area di stampa."
 
+msgid "Slab"
+msgstr "Lastra"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field must contain "
 "the kind of the host.\n"
@@ -12048,6 +12210,9 @@ msgstr "Informazioni sliced"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "L'oggetto processato \"%1%\" sembra un logo o un segno"
+
+msgid "Sliced preview"
+msgstr "Anteprima sezionamento"
 
 msgid "Slicing"
 msgstr "Sezionamento"
@@ -12509,6 +12674,15 @@ msgstr "Immagine schermata iniziale"
 
 msgid "Split"
 msgstr "Split"
+
+msgid "Split the selected object"
+msgstr "Dividi l'oggetto selezionato"
+
+msgid "Split the selected object into individual objects"
+msgstr "Dividi l'oggetto selezionato in oggetti individuali"
+
+msgid "Split the selected object into individual parts"
+msgstr "Dividi l'oggetto selezionato in parti individuali"
 
 msgid "Split to objects"
 msgstr "Dividi in oggetti"
@@ -15353,6 +15527,12 @@ msgid ""
 msgstr ""
 "Per ridurre ulteriormente l'incordatura, può essere utile impostare una "
 "temperatura più bassa appena prima di estrarre il filamento dall'hotend."
+
+msgid "To objects"
+msgstr "Agli oggetti"
+
+msgid "To parts"
+msgstr "Alle parti"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

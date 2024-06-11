@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -529,8 +529,20 @@ msgstr "Voeg laagbereik toe"
 msgid "Add Layers"
 msgstr "Voeg lagen toe"
 
+msgid "Add modifier"
+msgstr "Voeg modificator toe"
+
+msgid "Add negative volume"
+msgstr "Voeg negatief volume toe"
+
+msgid "Add one more instance of the selected object"
+msgstr "Voeg een instantie van het geselecteerde object toe"
+
 msgid "Add one or more custom shapes"
 msgstr "Voeg een of meer aangepaste vormen toe"
+
+msgid "Add part"
+msgstr "Voeg onderdeel toe"
 
 msgid "Add pause print"
 msgstr "Voeg printpauze toe"
@@ -549,6 +561,9 @@ msgstr "Voeg preset toe voor deze printer"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Voeg geselecteerd(e) object(en) toe aan bed"
+
+msgid "Add settings"
+msgstr "Voeg instellingen toe"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Voeg instellingen voor hoogtebereik toe"
@@ -576,6 +591,12 @@ msgstr "Voeg vorm uit galerij toe"
 
 msgid "Add Shapes from Gallery"
 msgstr "Voeg vormen uit galerij toe"
+
+msgid "Add support blocker"
+msgstr "Voeg supportblokkering toe"
+
+msgid "Add support enforcer"
+msgstr "Voeg supportforcering toe"
 
 msgid "Add support point"
 msgstr "Voeg supportpunt toe"
@@ -696,6 +717,15 @@ msgstr "Sta volgende kleur volgorde toe"
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr ""
 "Staat toe om alleen te schilderen op facetten geselecteerd door: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Over de X-as"
+
+msgid "Along Y axis"
+msgstr "Over de Y-as"
+
+msgid "Along Z axis"
+msgstr "Over de Z-as"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + scrollwieltje"
@@ -1001,6 +1031,9 @@ msgstr "Dichte bodemlagen"
 msgid "Bottom View"
 msgstr "Onderaanzicht"
 
+msgid "Box"
+msgstr "Blok"
+
 msgid "Bridge"
 msgstr "Brug"
 
@@ -1191,8 +1224,14 @@ msgstr "Wijzig onderdeeltype"
 msgid "Change point head diameter"
 msgstr "Wijzig puntkopdiameter"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Wijzig het aantal instanties van het geselecteerde object"
+
 msgid "Change thumbnail"
 msgstr "Verander miniatuur"
+
+msgid "Change type"
+msgstr "Wijzig type"
 
 msgid "Changes for the critical options"
 msgstr "Aanpassingen voor de kritische opties"
@@ -1254,6 +1293,9 @@ msgstr "Cirkel"
 
 msgid "Circular"
 msgstr "Rond"
+
+msgid "Clear"
+msgstr "Wissen"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Leeg lijst met ongedaan maken / opnieuw doen bij nieuwe projecten"
@@ -2484,6 +2526,9 @@ msgstr "Exporteer AMF"
 msgid "Export AMF file:"
 msgstr "Exporteer AMF-bestand:"
 
+msgid "Export as STL"
+msgstr "Exporteer als STL-bestand"
+
 msgid "Export config"
 msgstr "Exporteer configuratie"
 
@@ -2799,8 +2844,15 @@ msgstr "Vullingshoek"
 msgid "Fill bed"
 msgstr "Vul het bed"
 
+msgid "Fill bed with instances"
+msgstr "Vul het bed met instanties"
+
 msgid "Fill density"
 msgstr "Vullingsdichtheid"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr ""
+"Vul het overige deel van het bed met instanties van het geselecteerde object"
 
 msgid "Find"
 msgstr "Zoeken"
@@ -2863,6 +2915,9 @@ msgid "First object layer over raft interface"
 msgstr "Eerste laag van het object boven de raft-interface"
 
 msgid "Fix through NetFabb"
+msgstr "Repareer met NetFabb"
+
+msgid "Fix through the Netfabb"
 msgstr "Repareer met NetFabb"
 
 msgid "Fixing through NetFabb"
@@ -3068,6 +3123,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galerij"
+
 msgid "Gap fill"
 msgstr "Gatenvulling"
 
@@ -3244,6 +3302,9 @@ msgstr "Hoogte (mm)"
 
 msgid "Height of the display"
 msgstr "Hoogte van het scherm"
+
+msgid "Height range Modifier"
+msgstr "Modificator voor hoogtebereik"
 
 msgid "Height ranges"
 msgstr "Hoogtebereik"
@@ -4462,6 +4523,9 @@ msgstr "Samenvoegen"
 msgid "Merge all parts to the one single object"
 msgstr "Voeg alle delen samen tot een enkel object"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Voeg objecten samen tot één meerdelig object"
+
 msgid "Merged"
 msgstr "Samengevoegd"
 
@@ -4550,11 +4614,26 @@ msgstr "Minimale snelheid voor bewegingen (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Minimale wanddikte van een uitgehold model."
 
+msgid "Mirror"
+msgstr "Spiegelen"
+
 msgid "Mirror horizontally"
 msgstr "Spiegel horizontaal"
 
 msgid "Mirror Object"
 msgstr "Spiegel object"
+
+msgid "Mirror the selected object"
+msgstr "Spiegel het geselecteerde object"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Spiegel het geselecteerde object over de X-as"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Spiegel het geselecteerde object over de Y-as"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Spiegel het geselecteerde object over de Z-as"
 
 msgid "Mirror vertically"
 msgstr "Verticaal spiegelen"
@@ -5176,6 +5255,9 @@ msgstr "Open voorkeuren."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Open het venster voor bewerken van de vormengalerij"
 
+msgid "Opening Configuration Wizard"
+msgstr "Configuratiewizard openen"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Openen van nieuw project terwijl sommige presets niet opgeslagen zijn."
 
@@ -5639,6 +5721,9 @@ msgstr "Printsnelheid overschrijven"
 msgid "Print&er Settings Tab"
 msgstr "Tabblad printerinstellingen"
 
+msgid "Printable"
+msgstr "Printbaar"
+
 msgid "printer"
 msgstr "printer"
 
@@ -5763,6 +5848,9 @@ msgstr "Kwaliteit / Snelheid"
 
 msgid "Quick"
 msgstr "Snel"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Snel instellingen toevoegen (%s)"
 
 msgid "Quick Slice"
 msgstr "Snel slicen"
@@ -5911,6 +5999,9 @@ msgstr "Herladen van:"
 msgid "Reload the plater from disk"
 msgstr "Herlaad modellen van schijf"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Herlaad de geselecteerde volumes vanaf schijf"
+
 msgid "Remaining errors"
 msgstr "Resterende fouten"
 
@@ -5956,6 +6047,9 @@ msgstr "Verwijder laagbereik"
 msgid "Remove Multi Material painting"
 msgstr "Verwijder multi-materiaal inkleuring"
 
+msgid "Remove one instance of the selected object"
+msgstr "Verwijder een instantie van het geselecteerde object"
+
 msgid "Remove paint-on seam"
 msgstr "Verwijder inkleur-naad"
 
@@ -5980,11 +6074,17 @@ msgstr "Verwijder geselecteerde punten"
 msgid "Remove selection"
 msgstr "Verwijder selectie"
 
+msgid "Remove the selected object"
+msgstr "Verwijder het geselecteerde object"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Verwijder gebruikersprofielen (vooraf wordt een opname gemaakt)"
 
 msgid "Remove variable layer height"
 msgstr "Verwijder variable laagdikte"
+
+msgid "Rename"
+msgstr "Hernoem"
 
 msgid "Rename Object"
 msgstr "Hernoem object"
@@ -6047,6 +6147,9 @@ msgstr "Herhaal laatste snelle slice"
 
 msgid "Replace from:"
 msgstr "Vervangen door:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Vervang het geselecteerde volume met nieuwe STL"
 
 msgid "Replace with"
 msgstr "Vervangen met"
@@ -6312,6 +6415,9 @@ msgstr "Verschaal"
 msgid "Scale factors"
 msgstr "Verschalingsfactoren"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Verschaal het geselecteerde object tot deze in het printvolume past"
+
 msgid "Scale To Fit"
 msgstr "Verschaal tot het past"
 
@@ -6320,6 +6426,9 @@ msgstr "Verschaal naar passing"
 
 msgid "Scale to fit the given volume."
 msgstr "Verschaal naar passing in het gegeven volume."
+
+msgid "Scale to print volume"
+msgstr "Verschaal tot printvolume"
 
 msgid "Scaling factor or percentage."
 msgstr "Schalingsfactor of percentage."
@@ -6405,6 +6514,9 @@ msgstr "Selecteer printerinstellingentab"
 
 msgid "Select shape from the gallery"
 msgstr "Selecteer vorm uit de galerij"
+
+msgid "Select showing settings"
+msgstr "Selecteer getoonde instellingen"
 
 msgid "Select the language"
 msgstr "Taalselectie"
@@ -6505,6 +6617,12 @@ msgstr "Servicenaam"
 msgid "Set"
 msgstr "Stel in"
 
+msgid "Set as a Separated Object"
+msgstr "Stel in als apart object"
+
+msgid "Set as a Separated Objects"
+msgstr "Stel in als aparte objecten"
+
 msgid "Set auto color changes"
 msgstr "Stel automatische kleurwisseling in"
 
@@ -6513,6 +6631,9 @@ msgstr "Stel de standaardextruder in voor de geselecteerde items"
 
 msgid "Set extruder change for every"
 msgstr "Stel toolwissel in voor elke"
+
+msgid "Set extruder for selected items"
+msgstr "Stel extruder in voor de geselecteerde items"
 
 msgid "Set extruder number for the selected items"
 msgstr "Stel het extrudernummer in voor de geselecteerde items"
@@ -6534,6 +6655,9 @@ msgstr "Activeer onderste markering"
 
 msgid "Set Mirror"
 msgstr "Stel spiegeling in"
+
+msgid "Set number of instances"
+msgstr "Stel aantal instanties in"
 
 msgid "Set numbers of copies to %d"
 msgstr "Stel aantal kopieën in voor %d"
@@ -6783,6 +6907,9 @@ msgstr "Toon/verberg objecten- of instantielabels"
 msgid "Simple"
 msgstr "Eenvoudig"
 
+msgid "Simplify model"
+msgstr "Vereenvoudig model"
+
 msgid "Single extruder MM setup"
 msgstr "Multi-materialsetup met één extruder"
 
@@ -6868,6 +6995,9 @@ msgstr "SLA-supportpunten"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Er zijn SLA-supports buiten het printbereik gedetecteerd."
+
+msgid "Slab"
+msgstr "Plaat"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7144,6 +7274,15 @@ msgstr "Spiraalmodus"
 
 msgid "Split"
 msgstr "Splits"
+
+msgid "Split the selected object"
+msgstr "Verdeel het geselecteerde object"
+
+msgid "Split the selected object into individual objects"
+msgstr "Verdeel het geselecteerde object in individuele objecten"
+
+msgid "Split the selected object into individual parts"
+msgstr "Splits de geselecteerde objecten in individuele onderdelen"
 
 msgid "Split to objects"
 msgstr "Verdeel in objecten"
@@ -8251,6 +8390,12 @@ msgstr "naar"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Geef daarvoor een nieuwe naam aan de preset."
+
+msgid "To objects"
+msgstr "Aan objecten"
+
+msgid "To parts"
+msgstr "Aan onderdelen"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

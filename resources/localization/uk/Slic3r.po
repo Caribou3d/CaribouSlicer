@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -401,6 +401,15 @@ msgstr "Додати діапазон шарів"
 msgid "Add Layers"
 msgstr "Додати шари"
 
+msgid "Add modifier"
+msgstr "Додати модифікатор"
+
+msgid "Add one more instance of the selected object"
+msgstr "Додати ще один екземпляр вибраного об’єкта"
+
+msgid "Add part"
+msgstr "Додати частину"
+
 msgid "Add pause print"
 msgstr "Додати паузу друку"
 
@@ -415,6 +424,9 @@ msgstr "Додати точку до виділення"
 
 msgid "Add preset for this printer device"
 msgstr "Додати пресет для цього пристрою принтера"
+
+msgid "Add settings"
+msgstr "Додати налаштування"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Додати пакет налаштувань для діапазону висот"
@@ -436,6 +448,12 @@ msgstr "Додати налаштування для підоб'єкту"
 
 msgid "Add Shape"
 msgstr "Додати форму"
+
+msgid "Add support blocker"
+msgstr "Додати блокувальник підтримок"
+
+msgid "Add support enforcer"
+msgstr "Додати примусову підтримку"
 
 msgid "Add support point"
 msgstr "Додати точку підтримки"
@@ -535,6 +553,15 @@ msgstr "Всі верхні поверхні"
 
 msgid "allocation failed"
 msgstr "розміщення не вдався"
+
+msgid "Along X axis"
+msgstr "Уздовж осі X"
+
+msgid "Along Y axis"
+msgstr "Уздовж осі Y"
+
+msgid "Along Z axis"
+msgstr "Уздовж осі Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + Колесо миші"
@@ -795,6 +822,9 @@ msgstr "Нижні суцільні шари"
 msgid "Bottom View"
 msgstr "Вид знизу"
 
+msgid "Box"
+msgstr "Коробка"
+
 msgid "Bridge"
 msgstr "Міст"
 
@@ -967,6 +997,12 @@ msgstr "Змінити тип деталі"
 msgid "Change point head diameter"
 msgstr "Змінити діаметр головки"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Змінити кількість екземплярів виділеного об'єкта"
+
+msgid "Change type"
+msgstr "Змінити тип"
+
 msgid "Changing of an application language"
 msgstr "Зміна мови застосування"
 
@@ -1008,6 +1044,9 @@ msgstr "Коло"
 
 msgid "Circular"
 msgstr "Круговий"
+
+msgid "Clear"
+msgstr "Спорожнити"
 
 msgid "Click right mouse button to open/close History"
 msgstr "Клацніть правою кнопкою миші, щоб відкрити/закрити історію"
@@ -2022,6 +2061,9 @@ msgstr "Експортувати AMF"
 msgid "Export AMF file:"
 msgstr "Експортувати AMF-файл:"
 
+msgid "Export as STL"
+msgstr "Експортувати як STL"
+
 msgid "Export config"
 msgstr "Експорт конфігурації"
 
@@ -2316,8 +2358,14 @@ msgstr "Кут наповнення"
 msgid "Fill bed"
 msgstr "Заповнити стіл"
 
+msgid "Fill bed with instances"
+msgstr "Заповнити стіл екземплярами"
+
 msgid "Fill density"
 msgstr "Щільність заповнення"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Заповнити залишок столу екземплярами обраного об'єкта"
 
 msgid "Find"
 msgstr "Знайти"
@@ -2362,6 +2410,9 @@ msgid "First layer volumetric"
 msgstr "Об'єм першого шару"
 
 msgid "Fix through NetFabb"
+msgstr "Виправити за допомогою NetFabb"
+
+msgid "Fix through the Netfabb"
 msgstr "Виправити за допомогою NetFabb"
 
 msgid "Flash Printer &Firmware"
@@ -2653,6 +2704,9 @@ msgstr "Висота (мм)"
 
 msgid "Height of the display"
 msgstr "Висота дисплею"
+
+msgid "Height range Modifier"
+msgstr "Модифікатор діапазону висот"
 
 msgid "Height ranges"
 msgstr "Діапазони висот"
@@ -3666,6 +3720,9 @@ msgstr "Об’єднати"
 msgid "Merge all parts to the one single object"
 msgstr "Об’єднати всі частини в єдиний об’єкт"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Об'єднати об'єкти в один багаточастковий об'єкт"
+
 msgid "Merged"
 msgstr "Об’єднано"
 
@@ -3747,11 +3804,26 @@ msgstr "Мінімальна швидкість подачі (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Мінімальна товщина стінки порожнистої моделі."
 
+msgid "Mirror"
+msgstr "Віддзеркалити"
+
 msgid "Mirror horizontally"
 msgstr "Віддзеркалити горизонтально"
 
 msgid "Mirror Object"
 msgstr "Віддзеркалити об'єкт"
+
+msgid "Mirror the selected object"
+msgstr "Віддзеркалити виділений об'єкт"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Віддзеркалити виділений об'єкт уздовж осі Х"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Віддзеркалити виділений об'єкт уздовж осі Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Віддзеркалити виділений об'єкт уздовж осі Z"
 
 msgid "Mirror vertically"
 msgstr "Віддзеркалити вертикально"
@@ -4626,6 +4698,9 @@ msgstr "Перевизначення швидкості друку"
 msgid "Print&er Settings Tab"
 msgstr "Вкладка параметрів принтеру"
 
+msgid "Printable"
+msgstr "Для друку"
+
 msgid "printer"
 msgstr "принтер"
 
@@ -4717,6 +4792,9 @@ msgstr "Якість / Швидкість"
 
 msgid "Quick"
 msgstr "Швидко"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Швидке додання налаштувань (%s)"
 
 msgid "Quick Slice"
 msgstr "Швидке нарізання"
@@ -4854,6 +4932,9 @@ msgstr "Перезавантажити з:"
 msgid "Reload the plater from disk"
 msgstr "Перезавантажити стіл з диска"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Перезавантажити вибрані часті з диска"
+
 msgid "Remaining time"
 msgstr "Час, що залишився"
 
@@ -4893,6 +4974,9 @@ msgstr "Видалити екземпляр вибраного об’єкта"
 msgid "Remove layer range"
 msgstr "Видалити діапазон шарів"
 
+msgid "Remove one instance of the selected object"
+msgstr "Видалити один екземпляр вибраного об’єкта"
+
 msgid "Remove parameter"
 msgstr "Видалити параметр"
 
@@ -4911,8 +4995,14 @@ msgstr "Видалити вибрані точки"
 msgid "Remove selection"
 msgstr "Видалити виділене"
 
+msgid "Remove the selected object"
+msgstr "Видалити вибраний об'єкт"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Видалити профілі користувачів (знімок буде зроблено заздалегідь)"
+
+msgid "Rename"
+msgstr "Перейменувати"
 
 msgid "Rename Object"
 msgstr "Перейменувати об'єкт"
@@ -5199,6 +5289,9 @@ msgstr "Масштаб"
 msgid "Scale factors"
 msgstr "Масштаб"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Масштабуйте вибраний об'єкт відповідно до об'єму столу"
+
 msgid "Scale To Fit"
 msgstr "Масштабувати під область друку"
 
@@ -5207,6 +5300,9 @@ msgstr "Масштабувати під область друку"
 
 msgid "Scale to fit the given volume."
 msgstr "Масштабувати під задану область друку."
+
+msgid "Scale to print volume"
+msgstr "Масштабувати під область друку"
 
 msgid "Scaling factor or percentage."
 msgstr "Коефіцієнт масштабування або відсоток."
@@ -5284,6 +5380,9 @@ msgstr "Вибрати вкладку параметрів друку"
 
 msgid "Select Printer Settings Tab"
 msgstr "Вибрати вкладку параметрів принтеру"
+
+msgid "Select showing settings"
+msgstr "Виберіть налаштування для показу"
 
 msgid "Select the language"
 msgstr "Оберіть мову"
@@ -5383,8 +5482,17 @@ msgstr "Назва сервісу"
 msgid "Set"
 msgstr "Встановити"
 
+msgid "Set as a Separated Object"
+msgstr "Встановити як окремий об’єкт"
+
+msgid "Set as a Separated Objects"
+msgstr "Встановити як окремі об’єкти"
+
 msgid "Set extruder change for every"
 msgstr "Встановіть зміну екструдера для кожних"
+
+msgid "Set extruder for selected items"
+msgstr "Встановити екструдер для вибраних елементів"
 
 msgid "Set extruder sequence"
 msgstr "Встановити послідовність екструдерів"
@@ -5403,6 +5511,9 @@ msgstr "Встановити активним нижній повзунок"
 
 msgid "Set Mirror"
 msgstr "Встановити віддзеркалення"
+
+msgid "Set number of instances"
+msgstr "Встановити кількість екземплярів"
 
 msgid "Set numbers of copies to %d"
 msgstr "Встановити кількість копій на %d"
@@ -5699,6 +5810,9 @@ msgstr "Точки SLA-підтримки"
 msgid "SLA supports outside the print area were detected."
 msgstr "Виявлено SLA-підтримки за межами області друку."
 
+msgid "Slab"
+msgstr "Плита"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
@@ -5921,6 +6035,12 @@ msgstr "Спіральна ваза"
 
 msgid "Split"
 msgstr "Розділити"
+
+msgid "Split the selected object"
+msgstr "Розділити вибраний об'єкт"
+
+msgid "Split the selected object into individual objects"
+msgstr "Розділити вибраний об'єкт на окремі об'єкти"
 
 msgid "Split to objects"
 msgstr "Розділити на об'єкти"
@@ -6817,6 +6937,12 @@ msgstr "до"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Для цього вкажіть нову назву пресету."
+
+msgid "To objects"
+msgstr "На об'єкти"
+
+msgid "To parts"
+msgstr "На частини"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

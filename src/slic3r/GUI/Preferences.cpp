@@ -1017,11 +1017,7 @@ void PreferencesDialog::accept(wxEvent&)
 	}
 
 	for (const std::string key : {	"default_action_on_close_application", 
-<<<<<<< HEAD
-									"default_action_on_select_preset", 
-=======
 									"default_action_on_select_preset",
->>>>>>> 1ea97b31d685f93c91ea8e34480b009443e8ae95
 									"default_action_on_new_project" }) {
 	    auto it = m_values.find(key);
 		if (it != m_values.end() && it->second != "none" && app_config->get(key) != "none")

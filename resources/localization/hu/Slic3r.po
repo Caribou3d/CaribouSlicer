@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -205,6 +205,15 @@ msgstr "%s info"
 
 msgid "%s information"
 msgstr "%s információ"
+
+msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s nem a legújabb elérhető konfigurációt használja.\n"
+"A Konfigurációs varázsló nem biztos, hogy a legújabb nyomtatókat, szálakat és SLA "
+"anyagokat kínálja fel a telepítéshez. "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -755,6 +764,9 @@ msgstr "Rétegtartomány hozzáadása"
 msgid "Add Layers"
 msgstr "Rétegek hozzáadása"
 
+msgid "Add modifier"
+msgstr "Módosítás hozzáadása"
+
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters until all overhangs are filled.\n"
@@ -781,8 +793,17 @@ msgstr ""
 "Ha sikerül elindítani a beállítás mögötti algoritmust, kérjük, küldjön üzenetet. "
 "Személy szerint szerintem felesleges."
 
+msgid "Add negative volume"
+msgstr "Negatív térfogat hozzáadása"
+
+msgid "Add one more instance of the selected object"
+msgstr "A kiválasztott objektum egy újabb példányának hozzáadása"
+
 msgid "Add one or more custom shapes"
 msgstr "Egy vagy több egyedi alakzat hozzáadása"
+
+msgid "Add part"
+msgstr "Rész hozzáadása"
 
 msgid "Add pause print"
 msgstr "Nyomtatási szünet hozzáadása"
@@ -799,8 +820,14 @@ msgstr "Pont hozzáadása a kijelöléshez"
 msgid "Add preset for this printer device"
 msgstr "Előbeállítás hozzáadása ehhez a nyomtatóeszközhöz"
 
+msgid "Add seam position"
+msgstr "Varrat pozíció hozzáadása"
+
 msgid "Add selected shape(s) to the bed"
 msgstr "Kijelölt alakzat(ok) hozzáadása a tárgyasztalhoz"
+
+msgid "Add settings"
+msgstr "Beállítások hozzáadása"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Beállítási csomag hozzáadása a magassági tartományhoz"
@@ -837,6 +864,12 @@ msgstr ""
 "A lejtős felületek közelében szilárd kitöltés hozzáadása a függőleges héjvastagság "
 "garantálása érdekében (felső+alsó szilárd rétegek).\n"
 "!! solid_over_perimeters törölheti ezeket a felületeket !!"
+
+msgid "Add support blocker"
+msgstr "Támaszték blokkolás hozzáadása"
+
+msgid "Add support enforcer"
+msgstr "Támaszték végrehajtás hozzáadása"
 
 msgid "Add support point"
 msgstr "Támaszpont hozzáadása"
@@ -1041,6 +1074,15 @@ msgstr ""
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Csak a \"%1%\" által kiválasztott felületekre enged festeni."
+
+msgid "Along X axis"
+msgstr "X tengelyen"
+
+msgid "Along Y axis"
+msgstr "Y tengelyen"
+
+msgid "Along Z axis"
+msgstr "Z tengelyen"
 
 msgid "Also emit limits to G-code"
 msgstr "A G-kódra vonatkozó határértékek kibocsátása is"
@@ -1543,6 +1585,9 @@ msgstr "Alsó szilárd rétegek"
 msgid "Bottom View"
 msgstr "Alulnézet"
 
+msgid "Box"
+msgstr "Doboz"
+
 msgid "Bridge"
 msgstr "Híd"
 
@@ -1871,6 +1916,9 @@ msgstr ""
 "Amíg ki van választva, addig módosítja őket.\n"
 "Vegye le a kijelölést, hogy kikapcsolja ezt a végrehajtást."
 
+msgid "Change the number of instances of the selected object"
+msgstr "A kiválasztott objektum példányainak számának módosítása"
+
 msgid "Change the perimeter extrusion widths to ensure that there is an exact number of perimeters for this wall thickness value. It won't put the perimeter width below the nozzle diameter, and up to double.\nNote that the value displayed is just a view of the current perimeter thickness, like the info text below. The number of perimeters used to compute this value is one loop, or the custom variable 'wall_thickness_lines' (advanced mode) if defined.\nIf the value is too low, it will revert the widths to the saved value.\nIf the value is set to 0, it will show 0."
 msgstr ""
 "Módosítsa a kerület extrudálási szélességeket, hogy a falvastagság értékéhez pontosan annyi kerület legyen, ahányat kell. Nem fogja a peremszélességet a fúvóka átmérője alá helyezni, és legfeljebb a duplájára.\n"
@@ -1880,6 +1928,9 @@ msgstr ""
 
 msgid "Change thumbnail"
 msgstr "Bélyegkép módosítása"
+
+msgid "Change type"
+msgstr "Változás típusa"
 
 msgid "Changelog & Download"
 msgstr "Változáslista & Letöltés"
@@ -1985,6 +2036,9 @@ msgstr "Kör"
 
 msgid "Circular"
 msgstr "Körkörös"
+
+msgid "Clear"
+msgstr "&Törlés"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "A Visszavonás/Mégis előzmények törlése új projektnél"
@@ -3786,6 +3840,9 @@ msgstr "AMF exportálása"
 msgid "Export AMF file:"
 msgstr "AMF fájl exportálása:"
 
+msgid "Export as STL"
+msgstr "STL exportálása"
+
 msgid "Export config"
 msgstr "Konfiguráció exportálása"
 
@@ -4279,6 +4336,9 @@ msgstr "Kitöltési szög növekedése"
 msgid "Fill bed"
 msgstr "Ágy kitöltése"
 
+msgid "Fill bed with instances"
+msgstr "Töltse meg az ágyat példányokkal"
+
 msgid "Fill density"
 msgstr "Kitöltési sűrűség"
 
@@ -4319,6 +4379,9 @@ msgid ""
 msgstr ""
 "Töltse ki a felső kitöltés mintáját. Ez csak a felső látható réteget érinti, a szomszédos tömör héjakat nem.\n"
 "Ha \"igazított\" mintát szeretne, állítsa be a kitöltési szög növekményének 90°-os értékét."
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Töltse ki az ágy fennmaradó területét a kiválasztott objektum példányaival"
 
 msgid "Fill the voids with bridges"
 msgstr "Üres helyek kitöltése hidakkal"
@@ -4424,6 +4487,9 @@ msgstr "Első objektum réteg a tutaj felett"
 
 msgid "Fix through NetFabb"
 msgstr "Javítás a NetFabb-on keresztül"
+
+msgid "Fix through the Netfabb"
+msgstr "Javítás a Netfabb-on keresztül"
 
 msgid "Fixing through NetFabb"
 msgstr "Javítás a NetFabb segítségével"
@@ -4607,6 +4673,9 @@ msgstr ""
 msgid "Found reserved keywords in"
 msgstr "Fenntartott kulcsszavakat találtam az"
 
+msgid "FreeCAD path"
+msgstr "FreeCAD útvonal"
+
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD : szkript motor a FreeCAD-hez"
 
@@ -4697,6 +4766,9 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
+
+msgid "Gallery"
+msgstr "Galéria"
 
 msgid "Gap fill"
 msgstr "Hézag kitöltés"
@@ -4965,6 +5037,9 @@ msgstr ""
 
 msgid "Height of the display"
 msgstr "A kijelző magassága"
+
+msgid "Height range Modifier"
+msgstr "Magassági tartomány módosító"
 
 msgid "Height ranges"
 msgstr "Magassági tartományok"
@@ -6989,6 +7064,9 @@ msgstr "Egyesítés"
 msgid "Merge all parts to the one single object"
 msgstr "Összevonja az összes részt egyetlen objektummá"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Objektumok egyesítése egyetlen többrészes objektumba"
+
 msgid "Merged"
 msgstr "Összevont"
 
@@ -7269,11 +7347,26 @@ msgstr ""
 "A jellemzők minimális szélessége, amelyet az első rétegkompenzáció során meg kell "
 "tartani."
 
+msgid "Mirror"
+msgstr "Tükör"
+
 msgid "Mirror horizontally"
 msgstr "Vízszintes tükör"
 
 msgid "Mirror Object"
 msgstr "Tárgy tükrözése"
+
+msgid "Mirror the selected object"
+msgstr "A kiválasztott objektum tükrözése"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "A kijelölt objektum tükrözése az X tengely mentén"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "A kijelölt objektum tükrözése az Y tengely mentén"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "A kijelölt objektum tükrözése a Z tengely mentén"
 
 msgid "Mirror vertically"
 msgstr "Függőleges tükör"
@@ -8165,6 +8258,9 @@ msgstr "Nyissa meg a %s kiadványok oldalát a böngészőben"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Dialógusablak megnyitása az Alakzat Galéria szerkesztéséhez"
 
+msgid "Opening Configuration Wizard"
+msgstr "Konfigurációs varázsló megnyitása"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Új projekt megnyitása, miközben néhány előbeállítás nincs elmentve."
 
@@ -8453,6 +8549,9 @@ msgstr "Beillesztés vágólapról"
 
 msgid "Paste From Clipboard"
 msgstr "Beillesztés vágólapról"
+
+msgid "Paths"
+msgstr "Útvonalak"
 
 msgid "Pattern"
 msgstr "Mintázat"
@@ -8879,6 +8978,9 @@ msgstr ""
 msgid "Print&er Settings Tab"
 msgstr "Nyomtat&ási beállítások lap"
 
+msgid "Printable"
+msgstr "Nyomtatható"
+
 msgid "printer"
 msgstr "nyomtató"
 
@@ -9030,6 +9132,9 @@ msgstr "Minőség / sebesség"
 
 msgid "Quick"
 msgstr "Gyors"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Gyors hozzáadási beállítások (%s)"
 
 msgid "Quick Save"
 msgstr "Gyors mentés"
@@ -9225,6 +9330,9 @@ msgstr "A tálca újratöltése a lemezről"
 msgid "Reload the platter from disk"
 msgstr "Lemez újratöltése lemezről"
 
+msgid "Reload the selected volumes from disk"
+msgstr "A kiválasztott kötetek újratöltése a lemezről"
+
 msgid "Remaining errors"
 msgstr "Fennmaradó hibák"
 
@@ -9273,6 +9381,9 @@ msgstr "Rétegtartomány eltávolítása"
 msgid "Remove Multi Material painting"
 msgstr "Többanyagú festés eltávolítása"
 
+msgid "Remove one instance of the selected object"
+msgstr "A kijelölt objektum egy példányának eltávolítása"
+
 msgid "Remove paint-on seam"
 msgstr "Felfestett varratok eltávolítása"
 
@@ -9300,11 +9411,17 @@ msgstr "Kijelölt pontok eltávolítása"
 msgid "Remove selection"
 msgstr "Kijelölés eltávolítása"
 
+msgid "Remove the selected object"
+msgstr "A kijelölt objektum eltávolítása"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Felhasználói profilok eltávolítása (előzetesen pillanatkép készül)"
 
 msgid "Remove variable layer height"
 msgstr "Változó rétegmagasság eltávolítása"
+
+msgid "Rename"
+msgstr "Átnevezés"
 
 msgid "Rename Object"
 msgstr "Tárgy átnevezése"
@@ -9367,6 +9484,9 @@ msgstr "Ismételje meg az utolsó gyors szeletelést"
 
 msgid "Replace from:"
 msgstr "Helyettesítés innen:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "A kiválasztott térfogat cseréje új STL-lel"
 
 msgid "Replace with"
 msgstr "Csere erre"
@@ -9674,6 +9794,9 @@ msgstr "Skála"
 msgid "Scale factors"
 msgstr "Mérettényezők"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "A kiválasztott objektum méretezése a nyomtatási térfogat méretére"
+
 msgid "Scale To Fit"
 msgstr "Méretre igazítás"
 
@@ -9682,6 +9805,9 @@ msgstr "Méretre igazít"
 
 msgid "Scale to fit the given volume."
 msgstr "A megadott térfogatra való méretezés."
+
+msgid "Scale to print volume"
+msgstr "Nyomtatási mennyiség méretezése"
 
 msgid "Scaling factor or percentage."
 msgstr "Skálázási tényező vagy százalék."
@@ -9826,6 +9952,9 @@ msgstr "Válassza ki a Nyomtató beállításai lapot"
 msgid "Select shape from the gallery"
 msgstr "Alakzat választása a galériából"
 
+msgid "Select showing settings"
+msgstr "Válassza ki a beállítások megjelenítését"
+
 msgid "Select the language"
 msgstr "Nyelv kiválasztása"
 
@@ -9965,6 +10094,12 @@ msgstr "Szolgáltatás neve"
 msgid "Set"
 msgstr "Beállít"
 
+msgid "Set as a Separated Object"
+msgstr "Különálló objektumként beállítva"
+
+msgid "Set as a Separated Objects"
+msgstr "Különálló objektumokként beállítva"
+
 msgid "Set auto color changes"
 msgstr "Automatikus színváltás beállítása"
 
@@ -9973,6 +10108,9 @@ msgstr "Alapértelmezett extruder beállítása a kiválasztott elemekhez"
 
 msgid "Set extruder change for every"
 msgstr "Minden extruder váltás beállítása"
+
+msgid "Set extruder for selected items"
+msgstr "Extruder beállítása a kiválasztott elemekhez"
 
 msgid "Set extruder number for the selected items"
 msgstr "Extruder számának beállítása a kiválasztott elemekhez"
@@ -9994,6 +10132,9 @@ msgstr "Alsó hüvelykujj aktívként való beállítása"
 
 msgid "Set Mirror"
 msgstr "Tükrözés beállítása"
+
+msgid "Set number of instances"
+msgstr "Beállított példányok száma"
 
 msgid "Set numbers of copies to %d"
 msgstr "A másolatok számának beállítása %d-ra"
@@ -10444,6 +10585,9 @@ msgstr ""
 "Egyszerű widget a túlnyúlások érzékelésének engedélyezéséhez/letiltásához (55% és 75% a két küszöbérték)\n"
 "Használja a szakértői módot a részletesebb widgetek eléréséhez"
 
+msgid "Simplify model"
+msgstr "Modell Egyszerűsítése"
+
 msgid "Simulate Prusa 'no thick bridge'"
 msgstr "Prusa 'nincs vastag híd' szimulálása"
 
@@ -10573,6 +10717,9 @@ msgstr "SLA támaszpontok"
 msgid "SLA supports outside the print area were detected."
 msgstr "A nyomtatási területen kívüli SLA-támaszok észlelve."
 
+msgid "Slab"
+msgstr "Lap"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field must contain "
 "the kind of the host.\n"
@@ -10664,6 +10811,9 @@ msgstr "Szeletelt infó"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "A \"%1%\" szeletelt objektum úgy néz ki, mint egy logó vagy egy felirat"
+
+msgid "Sliced preview"
+msgstr "Szeletelt előnézet"
 
 msgid "Slicing"
 msgstr "Szeletelés"
@@ -11084,6 +11234,15 @@ msgstr "Kezdőképernyő kép"
 
 msgid "Split"
 msgstr "Osztott"
+
+msgid "Split the selected object"
+msgstr "A kiválasztott objektum felosztása"
+
+msgid "Split the selected object into individual objects"
+msgstr "A kijelölt objektum egyes objektumokra bontása"
+
+msgid "Split the selected object into individual parts"
+msgstr "A kijelölt objektum különálló alkatrészekre bontása"
 
 msgid "Split to objects"
 msgstr "Tárgyakra osztás"
@@ -13377,6 +13536,12 @@ msgid ""
 msgstr ""
 "A felfűzés további csökkentése érdekében hasznos lehet alacsonyabb hőmérsékletet "
 "beállítani közvetlenül a fűtőfejből való kivonás előtt."
+
+msgid "To objects"
+msgstr "Tárgyakhoz"
+
+msgid "To parts"
+msgstr "Alkatrészekhez"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

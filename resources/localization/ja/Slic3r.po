@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -525,8 +525,20 @@ msgstr "レイヤー範囲追加"
 msgid "Add Layers"
 msgstr "レイヤー追加"
 
+msgid "Add modifier"
+msgstr "個別条件領域の追加"
+
+msgid "Add negative volume"
+msgstr "切り取りボリュームを追加"
+
+msgid "Add one more instance of the selected object"
+msgstr "選択したオブジェクトの1つ以上のインスタンスを追加します"
+
 msgid "Add one or more custom shapes"
 msgstr "一つまたは複数のカスタムシェイプを追加"
+
+msgid "Add part"
+msgstr "パーツ追加"
 
 msgid "Add pause print"
 msgstr "プリントの一時停止を追加"
@@ -545,6 +557,9 @@ msgstr "このプリンタデバイスのプリセットを追加します"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "選択したシェイプをベッドに追加します"
+
+msgid "Add settings"
+msgstr "設定を追加"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "高さ範囲の設定バンドルを追加"
@@ -572,6 +587,12 @@ msgstr "ギャラリーからシェイプを追加"
 
 msgid "Add Shapes from Gallery"
 msgstr "ギャラリーからシェイプを追加"
+
+msgid "Add support blocker"
+msgstr "サポートブロッカーを追加"
+
+msgid "Add support enforcer"
+msgstr "強制サポートを追加する"
 
 msgid "Add support point"
 msgstr "サポートポイントの追加"
@@ -692,6 +713,15 @@ msgstr "次の色の繰り返しを許可する"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "\"%1%\"で選択されたファセットにのみペイントできます"
+
+msgid "Along X axis"
+msgstr "X軸に沿って"
+
+msgid "Along Y axis"
+msgstr "Y軸に沿って"
+
+msgid "Along Z axis"
+msgstr "Z軸に沿って"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + マウスホイール"
@@ -1029,6 +1059,9 @@ msgstr "底部ソリッドレイヤー"
 msgid "Bottom View"
 msgstr "下面表示"
 
+msgid "Box"
+msgstr "ボックス"
+
 msgid "Bridge"
 msgstr "ブリッジ"
 
@@ -1220,8 +1253,14 @@ msgstr "パーツタイプの変更"
 msgid "Change point head diameter"
 msgstr "ポイントヘッド径の変更"
 
+msgid "Change the number of instances of the selected object"
+msgstr "選択したオブジェクトのインスタンス数を変更します"
+
 msgid "Change thumbnail"
 msgstr "サムネイルを変更する"
+
+msgid "Change type"
+msgstr "タイプを変更"
 
 msgid "Changelog & Download"
 msgstr "変更ログ & ダウンロード"
@@ -1299,6 +1338,9 @@ msgstr ""
 "クラシックの境界線生成は、一定の押し出し幅の境界線を生成し、非常に薄い領域に"
 "はギャップフィルが使用されます。アラクネ・エンジンは、押し出し幅が変化する境"
 "界線を生成します。この設定は、Concentric infillにも影響します。"
+
+msgid "Clear"
+msgstr "消去 (&C)"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "新しいプロジェクトでアンドゥー/リドゥースタックをクリアする"
@@ -2529,6 +2571,9 @@ msgstr "AMFのエクスポート"
 msgid "Export AMF file:"
 msgstr "AMFファイルのエクスポート:"
 
+msgid "Export as STL"
+msgstr "STLとしてエクスポート"
+
 msgid "Export config"
 msgstr "構成のエクスポート"
 
@@ -2844,8 +2889,14 @@ msgstr "塗りつぶし角"
 msgid "Fill bed"
 msgstr "ベッドを埋める"
 
+msgid "Fill bed with instances"
+msgstr "ベッドをインスタンスで埋める"
+
 msgid "Fill density"
 msgstr "充填密度"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "ベッドの残りの領域を、選択したオブジェクトのインスタンスで埋めます"
 
 msgid "Find"
 msgstr "検索"
@@ -2912,6 +2963,9 @@ msgstr "ラフトインターフェース上の最初のオブジェクトレイ
 
 msgid "Fix through NetFabb"
 msgstr "NetFabbで修正"
+
+msgid "Fix through the Netfabb"
+msgstr "Netfabbで修正"
 
 msgid "Fixing through NetFabb"
 msgstr "NetFabbで修正"
@@ -3127,6 +3181,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "ギャラリー"
+
 msgid "Gap fill"
 msgstr "ギャップフィル"
 
@@ -3302,6 +3359,9 @@ msgstr "高さ（mm）"
 
 msgid "Height of the display"
 msgstr "ディスプレイの高さ"
+
+msgid "Height range Modifier"
+msgstr "個別条件領域の高さ範囲"
 
 msgid "Height ranges"
 msgstr "高さ範囲"
@@ -4517,6 +4577,9 @@ msgstr "マージ"
 msgid "Merge all parts to the one single object"
 msgstr "すべてのパーツを1つのオブジェクトにマージします"
 
+msgid "Merge objects to the one multipart object"
+msgstr "オブジェクトを1つのマルチパートオブジェクトにマージします"
+
 msgid "Merged"
 msgstr "マージ"
 
@@ -4619,11 +4682,26 @@ msgstr "最小移動速度 (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "くり抜きモデルの最小壁厚"
 
+msgid "Mirror"
+msgstr "ミラー"
+
 msgid "Mirror horizontally"
 msgstr "水平にミラーリング"
 
 msgid "Mirror Object"
 msgstr "オブジェクトのミラーリング"
+
+msgid "Mirror the selected object"
+msgstr "選択オブジェクトのミラーリング"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "選択したオブジェクトをX軸でミラーリングします"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "選択オブジェクトをY軸に沿ってミラーリング"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "選択したオブジェクトをZ軸に沿ってミラーリングします"
 
 msgid "Mirror vertically"
 msgstr "垂直にミラーリング"
@@ -5236,6 +5314,9 @@ msgstr "設定を開く。"
 msgid "Open the dialog to modify shape gallery"
 msgstr "シェイプギャラリーの編集ダイヤログを開く"
 
+msgid "Opening Configuration Wizard"
+msgstr "構成ウィザードを開く"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "一部のプリセットが保存されていないときに新しいプロジェクトを開きます。"
 
@@ -5727,6 +5808,9 @@ msgstr "プリント速度上書き"
 msgid "Print&er Settings Tab"
 msgstr "プリンター設定タブ(&e)"
 
+msgid "Printable"
+msgstr "プリント可"
+
 msgid "printer"
 msgstr "プリンター"
 
@@ -5851,6 +5935,9 @@ msgstr "品質/スピード"
 
 msgid "Quick"
 msgstr "クイック"
+
+msgid "Quick Add Settings (%s)"
+msgstr "クイック追加設定(%s)"
 
 msgid "Quick Slice"
 msgstr "高速スライス"
@@ -6005,6 +6092,9 @@ msgstr "リロード元："
 msgid "Reload the plater from disk"
 msgstr "プレートをリロードします"
 
+msgid "Reload the selected volumes from disk"
+msgstr "選択したオブジェクトをディスクからリロードする"
+
 msgid "Remaining errors"
 msgstr "残りのエラー"
 
@@ -6050,6 +6140,9 @@ msgstr "レイヤーの範囲を削除します"
 msgid "Remove Multi Material painting"
 msgstr "マルチマテリアルペイントを除去"
 
+msgid "Remove one instance of the selected object"
+msgstr "選択したオブジェクトのインスタンスを1つ削除します"
+
 msgid "Remove paint-on seam"
 msgstr "ペイントオンシームを除去"
 
@@ -6074,12 +6167,18 @@ msgstr "選択したポイントを削除"
 msgid "Remove selection"
 msgstr "選択を削除"
 
+msgid "Remove the selected object"
+msgstr "選択オブジェクトを削除"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr ""
 "ユーザープロファイルを削除します（スナップショットは事前に作成されます）"
 
 msgid "Remove variable layer height"
 msgstr "可変レイヤー高さを除去"
+
+msgid "Rename"
+msgstr "名前の変更"
 
 msgid "Rename Object"
 msgstr "オブジェクト名を変更"
@@ -6142,6 +6241,9 @@ msgstr "最後のクイックスライスを繰り返す"
 
 msgid "Replace from:"
 msgstr "置換元："
+
+msgid "Replace the selected volume with new STL"
+msgstr "選択したボリュームを新しいSTLに置き換えます"
 
 msgid "Replace with"
 msgstr "置換先"
@@ -6412,6 +6514,9 @@ msgstr "スケール"
 msgid "Scale factors"
 msgstr "寸法係数"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "選択したオブジェクトをプリントボリュームに合わせて拡大縮小します"
+
 msgid "Scale To Fit"
 msgstr "フィットするように縮尺"
 
@@ -6420,6 +6525,9 @@ msgstr "フィットするように縮尺"
 
 msgid "Scale to fit the given volume."
 msgstr "指定したプリントスペースに合わせてサイズを変更します。"
+
+msgid "Scale to print volume"
+msgstr "プリントエリアに合わせて縮尺する"
 
 msgid "Scaling factor or percentage."
 msgstr "スケーリング係数または割合。"
@@ -6512,6 +6620,9 @@ msgstr "プリンタ設定タブを選択"
 
 msgid "Select shape from the gallery"
 msgstr "ギャラリーからシェイプを選択"
+
+msgid "Select showing settings"
+msgstr "表示設定を選択"
 
 msgid "Select the language"
 msgstr "言語を選択"
@@ -6612,6 +6723,12 @@ msgstr "サービス名"
 msgid "Set"
 msgstr "設定"
 
+msgid "Set as a Separated Object"
+msgstr "分離オブジェクトとして設定"
+
+msgid "Set as a Separated Objects"
+msgstr "分離オブジェクトとして設定"
+
 msgid "Set auto color changes"
 msgstr "自動カラー変更を設定する"
 
@@ -6620,6 +6737,9 @@ msgstr "選択したアイテムのデフォルトエクストルーダーを設
 
 msgid "Set extruder change for every"
 msgstr "エクストルーダー変更のサイクルを設定する"
+
+msgid "Set extruder for selected items"
+msgstr "選択アイテムのエクストルーダーを設定"
 
 msgid "Set extruder number for the selected items"
 msgstr "選択したアイテムのエクストルーダー番号を設定します"
@@ -6641,6 +6761,9 @@ msgstr "下側の範囲をアクティブに設定"
 
 msgid "Set Mirror"
 msgstr "ミラーリング設定"
+
+msgid "Set number of instances"
+msgstr "インスタンス数の設定"
 
 msgid "Set numbers of copies to %d"
 msgstr "コピーの数を%dに設定"
@@ -6886,6 +7009,9 @@ msgstr "オブジェクト/インスタンスラベルの表示/非表示"
 msgid "Simple"
 msgstr "簡易"
 
+msgid "Simplify model"
+msgstr "簡略化モデル"
+
 msgid "Single extruder MM setup"
 msgstr "シングルエクストルーダーのMM設定"
 
@@ -6970,6 +7096,9 @@ msgstr "SLAサポートポイント"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "プリント領域外のSLAサポートが検出されました。"
+
+msgid "Slab"
+msgstr "平板"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7244,6 +7373,15 @@ msgstr "スパイラル花瓶"
 
 msgid "Split"
 msgstr "分割"
+
+msgid "Split the selected object"
+msgstr "選択したオブジェクトを分割します"
+
+msgid "Split the selected object into individual objects"
+msgstr "選択したオブジェクトを個々のオブジェクトに分割します"
+
+msgid "Split the selected object into individual parts"
+msgstr "選択したオブジェクトを個々の部分に分割します"
 
 msgid "Split to objects"
 msgstr "オブジェクトの分割"
@@ -8351,6 +8489,12 @@ msgstr "まで"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "これを行うには、プリセットの新しい名前を指定してください。"
+
+msgid "To objects"
+msgstr "オブジェクト"
+
+msgid "To parts"
+msgstr "パーツへ"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

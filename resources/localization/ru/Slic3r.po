@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -560,8 +560,20 @@ msgstr "Добавить диапазон слоев"
 msgid "Add Layers"
 msgstr "Добавить слои"
 
+msgid "Add modifier"
+msgstr "Добавить модификатор"
+
+msgid "Add negative volume"
+msgstr "Добавить объём для исключения"
+
+msgid "Add one more instance of the selected object"
+msgstr "Добавить ещё один экземпляр выбранного объекта"
+
 msgid "Add one or more custom shapes"
 msgstr "Добавьте одну или несколько пользовательских фигур"
+
+msgid "Add part"
+msgstr "Добавить элемент"
 
 msgid "Add pause print"
 msgstr "Добавить паузу печати"
@@ -580,6 +592,9 @@ msgstr "Добавить профиль для этого принтера"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Добавьте выбранную фигуру(-ы) на стол"
+
+msgid "Add settings"
+msgstr "Добавить настройки"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Добавление набора настроек для диапазона высот слоёв"
@@ -607,6 +622,12 @@ msgstr "Добавление фигуры из библиотеки"
 
 msgid "Add Shapes from Gallery"
 msgstr "Добавление фигур из библиотеки"
+
+msgid "Add support blocker"
+msgstr "Блокировщик поддержки"
+
+msgid "Add support enforcer"
+msgstr "Принудительная поддержка"
 
 msgid "Add support point"
 msgstr "Добавить точку поддержки"
@@ -729,6 +750,15 @@ msgstr "Разрешить повтор цвета"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Позволяет рисовать на выбранных гранях, используя: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Вдоль оси X"
+
+msgid "Along Y axis"
+msgstr "Вдоль оси Y"
+
+msgid "Along Z axis"
+msgstr "Вдоль оси Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + Колесо мыши"
@@ -1075,6 +1105,9 @@ msgstr "Нижних сплошных слоёв"
 msgid "Bottom View"
 msgstr "Вид снизу"
 
+msgid "Box"
+msgstr "Куб"
+
 msgid "Bridge"
 msgstr "Мост"
 
@@ -1269,8 +1302,14 @@ msgstr "Изменение типа элемента"
 msgid "Change point head diameter"
 msgstr "Изменение диаметра носика поддержки"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Изменить количество экземпляров выбранного объекта"
+
 msgid "Change thumbnail"
 msgstr "Изменить эскиз"
+
+msgid "Change type"
+msgstr "Изменить тип"
 
 msgid "Changelog & Download"
 msgstr "Журнал изменений и загрузка"
@@ -1338,6 +1377,9 @@ msgstr "Круглая"
 
 msgid "Classic"
 msgstr "Классический движок"
+
+msgid "Clear"
+msgstr "Очистить"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Очищать стек Отмены / Повтора при создании нового проекта"
@@ -2592,6 +2634,9 @@ msgstr "Экспорт в AMF"
 msgid "Export AMF file:"
 msgstr "Экспорт AMF-файла:"
 
+msgid "Export as STL"
+msgstr "Экспорт в STL"
+
 msgid "Export config"
 msgstr "Экспортировать настройки"
 
@@ -2916,8 +2961,14 @@ msgstr "Угол печати заполнения"
 msgid "Fill bed"
 msgstr "Заполнение всего стола копиями"
 
+msgid "Fill bed with instances"
+msgstr "Заполнить весь стол копиями"
+
 msgid "Fill density"
 msgstr "Плотность заполнения"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Заполнить оставшуюся область печатного стола копиями выбранной модели"
 
 msgid "Find"
 msgstr "Найти"
@@ -2987,6 +3038,9 @@ msgstr "Первый слой модели на подложке"
 
 msgid "Fix through NetFabb"
 msgstr "Ремонт модели службой Netfabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Починить в Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Ремонт модели службой Netfabb"
@@ -3215,6 +3269,9 @@ msgstr "г/см³"
 msgid "g/ml"
 msgstr "г/мл"
 
+msgid "Gallery"
+msgstr "Библиотека"
+
 msgid "Gap fill"
 msgstr "Заполнение пробелов"
 
@@ -3405,6 +3462,9 @@ msgstr ""
 
 msgid "Height of the display"
 msgstr "Высота дисплея."
+
+msgid "Height range Modifier"
+msgstr "Модификатор диапазона высоты слоёв"
 
 msgid "Height ranges"
 msgstr "Диапазоны высот"
@@ -4657,6 +4717,9 @@ msgstr "Объединить"
 msgid "Merge all parts to the one single object"
 msgstr "Объединить все части в одну единую модель"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Объединить модели в одну составную модель"
+
 msgid "Merged"
 msgstr "Объединённые"
 
@@ -4753,11 +4816,26 @@ msgstr "Скорость подачи при минимальных переме
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Минимальная толщина стенки полой модели."
 
+msgid "Mirror"
+msgstr "Отразить"
+
 msgid "Mirror horizontally"
 msgstr "Зеркалировать по горизонтали"
 
 msgid "Mirror Object"
 msgstr "Отразить обект"
+
+msgid "Mirror the selected object"
+msgstr "Отразить выбранный объект"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Отразить выбранный объект вдоль оси X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Отразить выбранный объект вдоль оси Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Отразить выбранный объект вдоль оси Z"
 
 msgid "Mirror vertically"
 msgstr "Зеркалировать по вертикали"
@@ -5381,6 +5459,9 @@ msgstr "Открыть настройки приложения."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Открытие диалогового окна для редактирования библиотеки фигур."
 
+msgid "Opening Configuration Wizard"
+msgstr "Открытие мастера настройки"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Открытие нового проекта при несохранении некоторых профилей."
 
@@ -5886,6 +5967,9 @@ msgstr "Ограничение скорости печати"
 msgid "Print&er Settings Tab"
 msgstr "Вкладка настройки принтера"
 
+msgid "Printable"
+msgstr "Для печати"
+
 msgid "printer"
 msgstr "принтер"
 
@@ -6010,6 +6094,9 @@ msgstr "Качество / Скорость"
 
 msgid "Quick"
 msgstr "Скорость"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Быстрое добавление настроек (%s)"
 
 msgid "Quick Slice"
 msgstr "Быстрая нарезка"
@@ -6166,6 +6253,9 @@ msgstr "Перезагрузить с:"
 msgid "Reload the plater from disk"
 msgstr "Перезагрузить компоновку с диска"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Перезагрузить выделенные объёмы с диска"
+
 msgid "Remaining errors"
 msgstr "Осталось ошибок"
 
@@ -6211,6 +6301,9 @@ msgstr "Удалить диапазон слоев"
 msgid "Remove Multi Material painting"
 msgstr "Удаление мультиматериальной покраски"
 
+msgid "Remove one instance of the selected object"
+msgstr "Удалить один экземпляр выбранного объекта"
+
 msgid "Remove paint-on seam"
 msgstr "Удаление нарисованных швов"
 
@@ -6235,11 +6328,17 @@ msgstr "Удалить выбранные точки"
 msgid "Remove selection"
 msgstr "Удалить выделенное"
 
+msgid "Remove the selected object"
+msgstr "Удалить выбранный объект"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Удалить профили пользователей (перед этим будет сделан снапшот)"
 
 msgid "Remove variable layer height"
 msgstr "Удаление переменной высоты слоёв"
+
+msgid "Rename"
+msgstr "Переименовать"
 
 msgid "Rename Object"
 msgstr "Переименовать объект"
@@ -6302,6 +6401,9 @@ msgstr "Повторить последнюю быструю нарезку"
 
 msgid "Replace from:"
 msgstr "Заменить из:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Заменить выбранный объём новым STL файлом"
 
 msgid "Replace with"
 msgstr "Заменить на"
@@ -6582,6 +6684,9 @@ msgstr "Масштабировать"
 msgid "Scale factors"
 msgstr "Масштаб"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Масштабировать выделенный объект до объёма принтера"
+
 msgid "Scale To Fit"
 msgstr "Масштабировать по размеру"
 
@@ -6590,6 +6695,9 @@ msgstr "Масштабировать по размеру"
 
 msgid "Scale to fit the given volume."
 msgstr "Масштабировать в соответствии с заданным объёмом."
+
+msgid "Scale to print volume"
+msgstr "Масштабировать к объёму принтера"
 
 msgid "Scaling factor or percentage."
 msgstr "Коэффициент масштабирования или процент."
@@ -6684,6 +6792,9 @@ msgstr "Вкладка настройки принтера"
 
 msgid "Select shape from the gallery"
 msgstr "Выберите фигуру из библиотеки"
+
+msgid "Select showing settings"
+msgstr "Выбор настроек отображения"
 
 msgid "Select the language"
 msgstr "Выбор языка"
@@ -6784,6 +6895,12 @@ msgstr "Имя службы"
 msgid "Set"
 msgstr "Выбор"
 
+msgid "Set as a Separated Object"
+msgstr "Превратить в отдельную модель"
+
+msgid "Set as a Separated Objects"
+msgstr "Превратить в отдельные модели"
+
 msgid "Set auto color changes"
 msgstr "Выполнить авторасстановку маркеров смены цвета"
 
@@ -6792,6 +6909,9 @@ msgstr "Задать экструдер по умолчанию для выбр�
 
 msgid "Set extruder change for every"
 msgstr "Установите смену экструдера для каждых"
+
+msgid "Set extruder for selected items"
+msgstr "Задать экструдер для выбранных частей"
 
 msgid "Set extruder number for the selected items"
 msgstr "Задать номер экструдера для выбранных частей"
@@ -6813,6 +6933,9 @@ msgstr "Переместить ползунок в нижнее положени
 
 msgid "Set Mirror"
 msgstr "Отражение"
+
+msgid "Set number of instances"
+msgstr "Задать количество экземпляров"
 
 msgid "Set numbers of copies to %d"
 msgstr "Задать количество копий равным %d"
@@ -7063,6 +7186,9 @@ msgstr "Показать/скрыть метки объекта/экземпля
 msgid "Simple"
 msgstr "Простой"
 
+msgid "Simplify model"
+msgstr "Упростить полигональную сетку"
+
 msgid "Single extruder MM setup"
 msgstr "Экструдер в ММ принтере"
 
@@ -7152,6 +7278,9 @@ msgstr "Точки поддержек SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Обнаружены SLA поддержки вне области печати."
+
+msgid "Slab"
+msgstr "Плита"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7431,6 +7560,15 @@ msgstr "Спиральная ваза"
 
 msgid "Split"
 msgstr "Разделить на части"
+
+msgid "Split the selected object"
+msgstr "Разделить выбранный объект"
+
+msgid "Split the selected object into individual objects"
+msgstr "Разделить выбранный объект на отдельные объекты"
+
+msgid "Split the selected object into individual parts"
+msgstr "Разделить выбранную модель на отдельные части"
 
 msgid "Split to objects"
 msgstr "Разбить на объекты"
@@ -8597,6 +8735,12 @@ msgstr "до"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Для этого укажите новое имя для профиля."
+
+msgid "To objects"
+msgstr "В объекты"
+
+msgid "To parts"
+msgstr "На части"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

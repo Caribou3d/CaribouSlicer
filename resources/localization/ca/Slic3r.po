@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -549,8 +549,20 @@ msgstr "Afegir rang de capes"
 msgid "Add Layers"
 msgstr "Afegeix Capes"
 
+msgid "Add modifier"
+msgstr "Afegeix modificador"
+
+msgid "Add negative volume"
+msgstr "Afegeix un volum negatiu"
+
+msgid "Add one more instance of the selected object"
+msgstr "Afegir una instància més de l'objecte seleccionat"
+
 msgid "Add one or more custom shapes"
 msgstr "Afegir una o més formes personalitzades"
+
+msgid "Add part"
+msgstr "Afegir peça"
 
 msgid "Add pause print"
 msgstr "Afegir pausa d'impressió"
@@ -569,6 +581,9 @@ msgstr "Afegir ajustament preestablert per a aquest dispositiu d'impressió"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Afegir la(es) forma(es) seleccionada(es) a la base"
+
+msgid "Add settings"
+msgstr "Afegeix una configuració"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Afegir Conjunt d'Ajustos per a Rang d'Altures"
@@ -596,6 +611,12 @@ msgstr "Afegeix una Forma des de la galeria"
 
 msgid "Add Shapes from Gallery"
 msgstr "Afegeix Formes des de la galeria"
+
+msgid "Add support blocker"
+msgstr "Afegir bloqueig de suports"
+
+msgid "Add support enforcer"
+msgstr "Afegir forçat de suports"
 
 msgid "Add support point"
 msgstr "Afegir punt de suport"
@@ -718,6 +739,15 @@ msgstr "Permet repetició del següent color"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Permet pintar només a les facetes seleccionades per: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Al llarg de l'eix X"
+
+msgid "Along Y axis"
+msgstr "Al llarg de l'eix Y"
+
+msgid "Along Z axis"
+msgstr "Al llarg de l'eix Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + Roda del ratolí"
@@ -1063,6 +1093,9 @@ msgstr "Capes sòlides inferiors"
 msgid "Bottom View"
 msgstr "Vista inferior"
 
+msgid "Box"
+msgstr "Caixa"
+
 msgid "Bridge"
 msgstr "Pont"
 
@@ -1257,8 +1290,14 @@ msgstr "Canvia el tipus de peça"
 msgid "Change point head diameter"
 msgstr "Canviar diàmetre del cap de punta"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Canvia el nombre d'instàncies de l'objecte seleccionat"
+
 msgid "Change thumbnail"
 msgstr "Canviar la miniatura"
+
+msgid "Change type"
+msgstr "Canvia el tipus"
 
 msgid "Changelog & Download"
 msgstr "Registre de canvis & Descarregar"
@@ -1340,6 +1379,9 @@ msgstr ""
 "constant i per a zones molt fines s'utilitza l'ompliment de buits. El motor "
 "aracne produeix perímetres amb una amplada d'extrusió variable. Aquesta "
 "configuració també afecta el farciment concèntric."
+
+msgid "Clear"
+msgstr "Neteja"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Esborrar la pila de Desfer / Refer al nou projecte"
@@ -2595,6 +2637,9 @@ msgstr "Exporta AMF"
 msgid "Export AMF file:"
 msgstr "Exporta el fitxer AMF:"
 
+msgid "Export as STL"
+msgstr "Exporta com a STL"
+
 msgid "Export config"
 msgstr "Exporta la configuració"
 
@@ -2912,8 +2957,14 @@ msgstr "Angle de farciment"
 msgid "Fill bed"
 msgstr "Omplir la base"
 
+msgid "Fill bed with instances"
+msgstr "Omplir el llit amb instàncies"
+
 msgid "Fill density"
 msgstr "Densitat de farciment"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Omple l'àrea restant del llit amb instàncies de l'objecte seleccionat"
 
 msgid "Find"
 msgstr "Cercar"
@@ -2979,6 +3030,9 @@ msgid "First object layer over raft interface"
 msgstr "Primera capa d'objectes sobre la interfície de la bassa"
 
 msgid "Fix through NetFabb"
+msgstr "Reparar mitjançant Netfabb"
+
+msgid "Fix through the Netfabb"
 msgstr "Reparar mitjançant Netfabb"
 
 msgid "Fixing through NetFabb"
@@ -3202,6 +3256,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galeria"
+
 msgid "Gap fill"
 msgstr "Farciment del buit"
 
@@ -3381,6 +3438,9 @@ msgstr "Alçada (mm)"
 
 msgid "Height of the display"
 msgstr "Alçada de la pantalla"
+
+msgid "Height range Modifier"
+msgstr "Modificador Rang d'Altures"
 
 msgid "Height ranges"
 msgstr "Intervals d'alçada"
@@ -4620,6 +4680,9 @@ msgstr "Combinar"
 msgid "Merge all parts to the one single object"
 msgstr "Fusiona totes les parts en un sol objecte"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Ajuntar objecte en un objecte multipeça"
+
 msgid "Merged"
 msgstr "Fusionat"
 
@@ -4728,11 +4791,26 @@ msgstr "Mínima velocitat de desplaçament (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Gruix mínim de paret d'un model buit."
 
+msgid "Mirror"
+msgstr "Reflectir"
+
 msgid "Mirror horizontally"
 msgstr "Reflectir horitzontalment"
 
 msgid "Mirror Object"
 msgstr "Reflectir objecte"
+
+msgid "Mirror the selected object"
+msgstr "Duplicar l'objecte seleccionat"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Duplicar l'objecte seleccionat al llarg de l'eix X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Duplicar l'objecte seleccionat al llarg de l'eix Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Duplicar lobjecte seleccionat al llarg de leix Z"
 
 msgid "Mirror vertically"
 msgstr "Reflectir verticalment"
@@ -5362,6 +5440,9 @@ msgstr "Obrir preferències."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Obre el diàleg per modificar la galeria de formes"
 
+msgid "Opening Configuration Wizard"
+msgstr "Obrint Assistent de Configuració"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Obre un nou projecte mentre alguns paràmetres estan sense desar."
 
@@ -5865,6 +5946,9 @@ msgstr "Substitució de velocitat d'impressió"
 msgid "Print&er Settings Tab"
 msgstr "Pestanya Configuració &Impressora"
 
+msgid "Printable"
+msgstr "Imprimible"
+
 msgid "printer"
 msgstr "impressora"
 
@@ -5989,6 +6073,9 @@ msgstr "Qualitat / Velocitat"
 
 msgid "Quick"
 msgstr "Ràpid"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Afegir paràmetres ràpids (%s)"
 
 msgid "Quick Slice"
 msgstr "Laminat ràpid"
@@ -6144,6 +6231,9 @@ msgstr "Torna a carregar des de:"
 msgid "Reload the plater from disk"
 msgstr "Carregar la base des del disc"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Torna a carregar els volums seleccionats des del disc"
+
 msgid "Remaining errors"
 msgstr "Errors restants"
 
@@ -6189,6 +6279,9 @@ msgstr "Retirar rang de capes"
 msgid "Remove Multi Material painting"
 msgstr "Eliminar el pintat Multimaterial"
 
+msgid "Remove one instance of the selected object"
+msgstr "Suprimeix una instància de l'objecte seleccionat"
+
 msgid "Remove paint-on seam"
 msgstr "Eliminar pintat de costures"
 
@@ -6213,11 +6306,17 @@ msgstr "Suprimeix els punts seleccionats"
 msgid "Remove selection"
 msgstr "Eliminar selecció"
 
+msgid "Remove the selected object"
+msgstr "Suprimeix l'objecte seleccionat"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Eliminar perfils d'usuari (es prendrà una instantània prèviament)"
 
 msgid "Remove variable layer height"
 msgstr "Elimina alçada de capa variable"
+
+msgid "Rename"
+msgstr "Renombrar"
 
 msgid "Rename Object"
 msgstr "Canvia el nom de l'objecte"
@@ -6280,6 +6379,9 @@ msgstr "Repetir el darrer laminat ràpid"
 
 msgid "Replace from:"
 msgstr "Reemplaçar des de:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Substitueix el volum seleccionat per un STL nou"
 
 msgid "Replace with"
 msgstr "Substitueix-ho per"
@@ -6557,6 +6659,9 @@ msgstr "Escala"
 msgid "Scale factors"
 msgstr "Factors d'escala"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Escala els objectes seleccionats per ajustar-se al volum d'impressió"
+
 msgid "Scale To Fit"
 msgstr "Escalar per Adaptar-se"
 
@@ -6565,6 +6670,9 @@ msgstr "Escalar per Adaptar-se"
 
 msgid "Scale to fit the given volume."
 msgstr "Escala per ajustar-se al volum donat."
+
+msgid "Scale to print volume"
+msgstr "Escalar al volum d'impressió"
 
 msgid "Scaling factor or percentage."
 msgstr "Factor d'escalat o percentatge."
@@ -6659,6 +6767,9 @@ msgstr "Selecciona la pestanya Configuració de la impressora"
 
 msgid "Select shape from the gallery"
 msgstr "Seleccionar la forma a la galeria"
+
+msgid "Select showing settings"
+msgstr "Seleccionar els paràmetres mostrats"
 
 msgid "Select the language"
 msgstr "Seleccioneu l'idioma"
@@ -6762,6 +6873,12 @@ msgstr "Nom del servei"
 msgid "Set"
 msgstr "Ajust"
 
+msgid "Set as a Separated Object"
+msgstr "Establir com a Objecte Separat"
+
+msgid "Set as a Separated Objects"
+msgstr "Establir com a Objectes Separats"
+
 msgid "Set auto color changes"
 msgstr "Establir canvis de color automàtics"
 
@@ -6770,6 +6887,9 @@ msgstr "Establir l'extrusor per defecte per als elements seleccionats"
 
 msgid "Set extruder change for every"
 msgstr "Establir canvi d'extrusor per a cada"
+
+msgid "Set extruder for selected items"
+msgstr "Estableix l'extrusora per als elements seleccionats"
 
 msgid "Set extruder number for the selected items"
 msgstr "Establir el número d'extrusor per als elements seleccionats"
@@ -6791,6 +6911,9 @@ msgstr "Establir el polze inferior com a actiu"
 
 msgid "Set Mirror"
 msgstr "Establir reflex"
+
+msgid "Set number of instances"
+msgstr "Estableix el nombre d'instàncies"
 
 msgid "Set numbers of copies to %d"
 msgstr "Estableix el nombre de còpies a %d"
@@ -7043,6 +7166,9 @@ msgstr "Mostra/Oculta etiquetes de peça/repetició"
 msgid "Simple"
 msgstr "Simple"
 
+msgid "Simplify model"
+msgstr "Simplificar el model"
+
 msgid "Single extruder MM setup"
 msgstr "Ajust per a MM amb un sol extrusor"
 
@@ -7128,6 +7254,9 @@ msgstr "Punts de suport SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "S'han detectat suports SLA fora de l'àrea d'impressió."
+
+msgid "Slab"
+msgstr "Llosa"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7409,6 +7538,15 @@ msgstr "Gerro espiral"
 
 msgid "Split"
 msgstr "Dividir"
+
+msgid "Split the selected object"
+msgstr "Dividir l'objecte seleccionat"
+
+msgid "Split the selected object into individual objects"
+msgstr "Dividir l'objecte seleccionat en objectes individuals"
+
+msgid "Split the selected object into individual parts"
+msgstr "Dividir l'objecte seleccionat en parts individuals"
 
 msgid "Split to objects"
 msgstr "Partir en diverses peces"
@@ -8566,6 +8704,12 @@ msgstr "a"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Per fer-ho, especifiqueu un nom nou per al predefinit."
+
+msgid "To objects"
+msgstr "Als objectes"
+
+msgid "To parts"
+msgstr "A les peces"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

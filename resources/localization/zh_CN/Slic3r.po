@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -149,6 +149,14 @@ msgstr "%s信息"
 
 msgid "%s information"
 msgstr "%s 信息"
+
+msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s 没有使用可用的最新配置。\n"
+"配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -616,6 +624,9 @@ msgstr "添加图层范围"
 msgid "Add Layers"
 msgstr "添加图层"
 
+msgid "Add modifier"
+msgstr "添加修改器"
+
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters until all overhangs are filled.\n"
@@ -638,8 +649,17 @@ msgstr ""
 "以上的循环。\n"
 "如果你成功触发了这个设置背后的算法，请给我留言。 个人觉得没啥用。"
 
+msgid "Add negative volume"
+msgstr "增加负体积"
+
+msgid "Add one more instance of the selected object"
+msgstr "再添加一个选定对象的实例"
+
 msgid "Add one or more custom shapes"
 msgstr "添加一个或多个自定义形状"
+
+msgid "Add part"
+msgstr "添加部件"
 
 msgid "Add pause print"
 msgstr "添加暂停打印"
@@ -656,8 +676,14 @@ msgstr "将点添加到选择"
 msgid "Add preset for this printer device"
 msgstr "为此打印机设备添加预设"
 
+msgid "Add seam position"
+msgstr "添加接缝位置"
+
 msgid "Add selected shape(s) to the bed"
 msgstr "将选定形状添加到床上"
+
+msgid "Add settings"
+msgstr "添加设置"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "为高度范围添加配置组"
@@ -693,6 +719,12 @@ msgid ""
 msgstr ""
 "在靠近倾斜表面附近添加实体填充，以保证垂直壳体厚度（顶部+底部实心层）。 \n"
 "!! solid_over_perimeters may erase these surfaces !!"
+
+msgid "Add support blocker"
+msgstr "添加支撑屏蔽"
+
+msgid "Add support enforcer"
+msgstr "添加支撑生成器"
 
 msgid "Add support point"
 msgstr "添加支撑点"
@@ -879,6 +911,15 @@ msgstr ""
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "仅允许在选择的面上绘制：\"%1%'"
+
+msgid "Along X axis"
+msgstr "沿 X 轴"
+
+msgid "Along Y axis"
+msgstr "沿 Y 轴"
+
+msgid "Along Z axis"
+msgstr "沿 Z 轴"
 
 msgid "Also emit limits to G-code"
 msgstr "还发出对 G 代码的限制"
@@ -1298,6 +1339,9 @@ msgstr "底部实心层"
 msgid "Bottom View"
 msgstr "底部视图"
 
+msgid "Box"
+msgstr "盒子"
+
 msgid "Bridge"
 msgstr "网桥"
 
@@ -1570,8 +1614,14 @@ msgstr "更改零件类型"
 msgid "Change point head diameter"
 msgstr "改变支撑点的头直径"
 
+msgid "Change the number of instances of the selected object"
+msgstr "更改所选对象的实例数"
+
 msgid "Change thumbnail"
 msgstr "更改缩略图"
+
+msgid "Change type"
+msgstr "更改类型"
 
 msgid "Changelog & Download"
 msgstr "更改日志&下载"
@@ -1678,6 +1728,9 @@ msgid ""
 msgstr ""
 "经典轮廓生成器产生具有恒定挤出宽度的轮廓，并且对于非常薄的区域使用间隙填充。 "
 "Arachne 引擎产生具有可变挤出宽度的轮廓。这个设置也会影响回环填充。"
+
+msgid "Clear"
+msgstr "清除"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "清除新项目上的撤消/重做堆栈"
@@ -3329,6 +3382,9 @@ msgstr "导出 AMF"
 msgid "Export AMF file:"
 msgstr "导出 AMF 文件："
 
+msgid "Export as STL"
+msgstr "导出为 STL"
+
 msgid "Export config"
 msgstr "导出配置"
 
@@ -3789,8 +3845,14 @@ msgstr "填充角度增量"
 msgid "Fill bed"
 msgstr "填充床"
 
+msgid "Fill bed with instances"
+msgstr "用实例填充床"
+
 msgid "Fill density"
 msgstr "填充密度"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "用选定对象的实例填充床的剩余区域"
 
 msgid "Fill the voids with bridges"
 msgstr "用桥梁填补空白"
@@ -3893,6 +3955,9 @@ msgstr "筏接口上的第一个对象层"
 
 msgid "Fix through NetFabb"
 msgstr "通过 NetFabb 修复"
+
+msgid "Fix through the Netfabb"
+msgstr "通过Netfabb修复"
 
 msgid "Fixing through NetFabb"
 msgstr "通过NetFabb进行修复"
@@ -4045,6 +4110,9 @@ msgstr "从配置文件和项目文件（3MF、AMF）加载配置时的前向兼
 msgid "Found reserved keywords in"
 msgstr "在中找到保留关键字"
 
+msgid "FreeCAD path"
+msgstr "FreeCAD 路径"
+
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD：FreeCAD 的脚本引擎"
 
@@ -4135,6 +4203,9 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "克/毫升"
+
+msgid "Gallery"
+msgstr "陈列室"
 
 msgid "Gap fill"
 msgstr "间隙填充"
@@ -4376,6 +4447,9 @@ msgstr "裙边的高度以层表示。设置一个高值，以使用裙边作为
 
 msgid "Height of the display"
 msgstr "显示高度"
+
+msgid "Height range Modifier"
+msgstr "高度范围修改器"
 
 msgid "Height ranges"
 msgstr "高度范围"
@@ -6109,6 +6183,9 @@ msgstr "合并"
 msgid "Merge all parts to the one single object"
 msgstr "将所有部分合并为一个对象"
 
+msgid "Merge objects to the one multipart object"
+msgstr "将对象合并到一个多部分对象"
+
 msgid "Merged"
 msgstr "合并"
 
@@ -6375,11 +6452,26 @@ msgid ""
 "compensation."
 msgstr "进行第一层补偿时要保持的最小特征宽度。"
 
+msgid "Mirror"
+msgstr "镜像"
+
 msgid "Mirror horizontally"
 msgstr "水平镜像"
 
 msgid "Mirror Object"
 msgstr "镜像物体  Mirror Object"
+
+msgid "Mirror the selected object"
+msgstr "镜像所选对象"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "沿 X 轴镜像所选对象"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "沿 Y 轴镜像所选对象"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "沿 Z 轴镜像所选对象"
 
 msgid "Mirror vertically"
 msgstr "垂直镜像"
@@ -7191,6 +7283,9 @@ msgstr "在浏览器中打开 %s 版本页面"
 msgid "Open the dialog to modify shape gallery"
 msgstr "打开对话框以修改形状库"
 
+msgid "Opening Configuration Wizard"
+msgstr "打开配置向导"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "在某些预设未保存时打开新项目。"
 
@@ -7447,6 +7542,9 @@ msgstr "從剪貼板粘貼"
 
 msgid "Paste From Clipboard"
 msgstr "从剪贴板粘贴"
+
+msgid "Paths"
+msgstr "路径"
 
 msgid "Pattern"
 msgstr "模式"
@@ -7840,6 +7938,9 @@ msgstr ""
 msgid "Print&er Settings Tab"
 msgstr "&打印机设置选项卡"
 
+msgid "Printable"
+msgstr "可打印的"
+
 msgid "printer"
 msgstr "打印机"
 
@@ -7987,6 +8088,9 @@ msgstr "质量/速度"
 
 msgid "Quick"
 msgstr "快速"
+
+msgid "Quick Add Settings (%s)"
+msgstr "快速添加设置 （%s）"
 
 msgid "Quick Save"
 msgstr "快速保存"
@@ -8165,6 +8269,9 @@ msgstr "从磁盘重新加载电镀机"
 msgid "Reload the platter from disk"
 msgstr "从磁盘重新加载"
 
+msgid "Reload the selected volumes from disk"
+msgstr "从磁盘重新加载选定的卷"
+
 msgid "Remaining errors"
 msgstr "剩余错误"
 
@@ -8213,6 +8320,9 @@ msgstr "移除图层范围"
 msgid "Remove Multi Material painting"
 msgstr "移除多材质绘画"
 
+msgid "Remove one instance of the selected object"
+msgstr "删除所选对象的一个实例"
+
 msgid "Remove paint-on seam"
 msgstr "除去绘制的接缝"
 
@@ -8240,11 +8350,17 @@ msgstr "删除所选点"
 msgid "Remove selection"
 msgstr "删除选择"
 
+msgid "Remove the selected object"
+msgstr "删除所选对象"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "删除用户配置文件（将预先拍摄快照）"
 
 msgid "Remove variable layer height"
 msgstr "删除可变层高度"
+
+msgid "Rename"
+msgstr "重命名"
 
 msgid "Rename Object"
 msgstr "重命名对象"
@@ -8307,6 +8423,9 @@ msgstr "重复最后一个快速切片"
 
 msgid "Replace from:"
 msgstr "替换自："
+
+msgid "Replace the selected volume with new STL"
+msgstr "用新的STL替换选定的卷"
 
 msgid "Replace with"
 msgstr "替换为"
@@ -8606,6 +8725,9 @@ msgstr "规模"
 msgid "Scale factors"
 msgstr "缩放比例因子"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "缩放所选对象以适合可打印体积"
+
 msgid "Scale To Fit"
 msgstr "缩放至合适"
 
@@ -8614,6 +8736,9 @@ msgstr "缩放至合适"
 
 msgid "Scale to fit the given volume."
 msgstr "缩放以适合给定的空间。"
+
+msgid "Scale to print volume"
+msgstr "缩放打印体积"
 
 msgid "Scaling factor or percentage."
 msgstr "缩放因子或百分比。"
@@ -8749,6 +8874,9 @@ msgstr "选择 打印机设置 选项卡"
 msgid "Select shape from the gallery"
 msgstr "从图库中选择形状"
 
+msgid "Select showing settings"
+msgstr "选择显示设置"
+
 msgid "Select the language"
 msgstr "选择语言"
 
@@ -8880,6 +9008,12 @@ msgstr "服务名称"
 msgid "Set"
 msgstr "设置"
 
+msgid "Set as a Separated Object"
+msgstr "设置为独立的对象"
+
+msgid "Set as a Separated Objects"
+msgstr "设置为独立的对象"
+
 msgid "Set auto color changes"
 msgstr "设置自动颜色更改"
 
@@ -8888,6 +9022,9 @@ msgstr "为所选项目设置默认挤出机"
 
 msgid "Set extruder change for every"
 msgstr "为每个设置挤出机更改"
+
+msgid "Set extruder for selected items"
+msgstr "为选定的项设置挤出机"
 
 msgid "Set extruder number for the selected items"
 msgstr "设置所选项目的挤出机编号"
@@ -8909,6 +9046,9 @@ msgstr "将下设置为当前滑块"
 
 msgid "Set Mirror"
 msgstr "设置镜像"
+
+msgid "Set number of instances"
+msgstr "设置实例数"
 
 msgid "Set numbers of copies to %d"
 msgstr "将副本数设置为 %d"
@@ -9315,6 +9455,9 @@ msgstr "收缩率"
 msgid "Simple"
 msgstr "简单"
 
+msgid "Simplify model"
+msgstr "简化模型"
+
 msgid "Single extruder MM setup"
 msgstr "单挤出机 MM 设置"
 
@@ -9426,6 +9569,9 @@ msgstr "SLA 支撑点"
 msgid "SLA supports outside the print area were detected."
 msgstr "检测到打印区域外的 SLA 支撑."
 
+msgid "Slab"
+msgstr "大板"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
@@ -9485,6 +9631,9 @@ msgstr "切片信息"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "切片对象\"%1%\"看起来像一个徽标或标志"
+
+msgid "Sliced preview"
+msgstr "切片预览"
 
 msgid "Slicing"
 msgstr "切片"
@@ -9765,6 +9914,15 @@ msgstr "启动画面图像"
 
 msgid "Split"
 msgstr "分裂"
+
+msgid "Split the selected object"
+msgstr "拆分所选对象"
+
+msgid "Split the selected object into individual objects"
+msgstr "将所选对象拆分为单个对象"
+
+msgid "Split the selected object into individual parts"
+msgstr "将选定对象拆分为各个部分"
 
 msgid "Split to objects"
 msgstr "拆分为对象"
@@ -11470,6 +11628,12 @@ msgid ""
 "To further reduce stringing, it can be helpful to set a lower temperature "
 "just prior to extracting filament from the hotend."
 msgstr "为了进一步减少拉丝，在从热端提取灯丝之前设置较低的温度可能会有所帮助。"
+
+msgid "To objects"
+msgstr "拆分到对象"
+
+msgid "To parts"
+msgstr "到零件"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

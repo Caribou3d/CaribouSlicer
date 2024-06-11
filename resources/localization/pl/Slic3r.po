@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -579,8 +579,20 @@ msgstr "Dodaj zakres warstw"
 msgid "Add Layers"
 msgstr "Dodaj Warstwy"
 
+msgid "Add modifier"
+msgstr "Dodaj modyfikator"
+
+msgid "Add negative volume"
+msgstr "Dodaj modyfikator odejmujący wybrany kształt"
+
+msgid "Add one more instance of the selected object"
+msgstr "Dodaj kolejną instancję wybranego modelu"
+
 msgid "Add one or more custom shapes"
 msgstr "Dodaj jeden lub więcej niestandardowych kształtów"
+
+msgid "Add part"
+msgstr "Dodaj część"
 
 msgid "Add pause print"
 msgstr "Dodaj pauzę"
@@ -599,6 +611,9 @@ msgstr "Dodaj zestaw ustawień do tej drukarki"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Dodaj wybrany kształt(y) do stołu"
+
+msgid "Add settings"
+msgstr "Dodaj ustawienia"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Dodaj paczkę ustawień dla zakresu wysokości"
@@ -626,6 +641,12 @@ msgstr "Dodaj Kształt z Galerii"
 
 msgid "Add Shapes from Gallery"
 msgstr "Dodaj Kształty z Galerii"
+
+msgid "Add support blocker"
+msgstr "Dodaj blokadę podpór"
+
+msgid "Add support enforcer"
+msgstr "Dodaj wymuszenie podpór"
 
 msgid "Add support point"
 msgstr "Dodaj punkt podpory"
@@ -746,6 +767,15 @@ msgstr "Pozwól na powtórzenie kolejnego koloru"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Umożliwia malowanie tylko na powierzchniach wybranych przez: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Wzdłuż osi X"
+
+msgid "Along Y axis"
+msgstr "Wzdłuż osi Y"
+
+msgid "Along Z axis"
+msgstr "Wzdłuż osi Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + kółko myszy"
@@ -1095,6 +1125,9 @@ msgstr "Zwarte warstwy dolne"
 msgid "Bottom View"
 msgstr "Widok od dołu"
 
+msgid "Box"
+msgstr "Sześcian"
+
 msgid "Bridge"
 msgstr "Most"
 
@@ -1286,8 +1319,14 @@ msgstr "Zmień Rodzaj Elementu"
 msgid "Change point head diameter"
 msgstr "Zmień średnicę łącznika"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Zmień liczbę instancji wybranego modelu"
+
 msgid "Change thumbnail"
 msgstr "Zmień miniaturkę"
+
+msgid "Change type"
+msgstr "Zmiana rodzaju"
 
 msgid "Changelog & Download"
 msgstr "Pobierz & Listę Zmian"
@@ -1366,6 +1405,9 @@ msgstr ""
 "dla bardzo cienkich obszarów stosuje wypełnienie szczelin. Silnik Arachne "
 "wytwarza obrysy o zmiennej szerokości wytłaczania. Ustawienie to ma wpływ "
 "również na wypełnienie koncentryczne."
+
+msgid "Clear"
+msgstr "Wyczyść"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Wyczyść stos akcji Cofnij / Ponów w nowym projekcie"
@@ -2605,6 +2647,9 @@ msgstr "Eksport AMF"
 msgid "Export AMF file:"
 msgstr "Eksport pliku AMF:"
 
+msgid "Export as STL"
+msgstr "Eksport jako STL"
+
 msgid "Export config"
 msgstr "Eksport konfiguracji"
 
@@ -2922,8 +2967,14 @@ msgstr "Kąt wypełnienia"
 msgid "Fill bed"
 msgstr "Wypełnij stół"
 
+msgid "Fill bed with instances"
+msgstr "Wypełnij stół instancjami"
+
 msgid "Fill density"
 msgstr "Gęstość wypełnienia"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Wypełnij pozostałą przestrzeń stołu instancjami wybranego modelu"
 
 msgid "Find"
 msgstr "Znajdź"
@@ -2990,6 +3041,9 @@ msgstr "Pierwsza warstwa modelu nad warstwą łączącą raft"
 
 msgid "Fix through NetFabb"
 msgstr "Naprawa przez NetFabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Napraw używając Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Naprawianie przez NetFabb"
@@ -3215,6 +3269,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galeria"
+
 msgid "Gap fill"
 msgstr "Wypełnienie szpar"
 
@@ -3392,6 +3449,9 @@ msgstr "Wysokość (mm)"
 
 msgid "Height of the display"
 msgstr "Wysokość wyświetlacza"
+
+msgid "Height range Modifier"
+msgstr "Modyfikator zakresu wysokości"
 
 msgid "Height ranges"
 msgstr "Zakres wysokości"
@@ -4623,6 +4683,9 @@ msgstr "Łączenie"
 msgid "Merge all parts to the one single object"
 msgstr "Scal wszystkie części w jeden model"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Scal modele w jeden model wieloczęściowy"
+
 msgid "Merged"
 msgstr "Scalono"
 
@@ -4732,11 +4795,26 @@ msgstr "Minimalna prędkość posuwu ruchu jałowego (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Minimalna grubość ścianki drążonego modelu."
 
+msgid "Mirror"
+msgstr "Lustrzane"
+
 msgid "Mirror horizontally"
 msgstr "Odbij w poziomie"
 
 msgid "Mirror Object"
 msgstr "Odbicie Lustrzane"
+
+msgid "Mirror the selected object"
+msgstr "Odbicie lustrzane wybranego modelu"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Odbicie lustrzane wybranego modelu w osi X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Odbicie lustrzane wybranego modelu w osi Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Odbicie lustrzane wybranego modelu w osi Z"
 
 msgid "Mirror vertically"
 msgstr "Odbij w pionie"
@@ -5379,6 +5457,9 @@ msgstr "Otwórz Preferencje."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Otwórz okno dialogowe, aby zmodyfikować galerię kształtów"
 
+msgid "Opening Configuration Wizard"
+msgstr "Otwieranie Asystenta Konfiguracji"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr ""
 "Otwieranie nowego projektu, gdy niektóre zestawy ustawień nie są zapisane."
@@ -5877,6 +5958,9 @@ msgstr "Nadpisanie prędkości druku"
 msgid "Print&er Settings Tab"
 msgstr "Ustawi&enia drukarki"
 
+msgid "Printable"
+msgstr "Do druku"
+
 msgid "printer"
 msgstr "drukarka"
 
@@ -6001,6 +6085,9 @@ msgstr "Jakość / Prędkość"
 
 msgid "Quick"
 msgstr "Szybka"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Szybkie dodanie ustawień (%s)"
 
 msgid "Quick Slice"
 msgstr "Szybkie Cięcie"
@@ -6158,6 +6245,9 @@ msgstr "Wczytaj z:"
 msgid "Reload the plater from disk"
 msgstr "Przeładuj wirtualny stół z dysku"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Wczytaj wybrane kształty ponownie z dysku"
+
 msgid "Remaining errors"
 msgstr "Pozostałe błędy"
 
@@ -6203,6 +6293,9 @@ msgstr "Usuń zakres warstw"
 msgid "Remove Multi Material painting"
 msgstr "Usuń malowanie Multi Material"
 
+msgid "Remove one instance of the selected object"
+msgstr "Usuń jedną instancję zaznaczonego modelu"
+
 msgid "Remove paint-on seam"
 msgstr "Usuń malowanie szwu"
 
@@ -6227,11 +6320,17 @@ msgstr "Usuń zaznaczone punkty"
 msgid "Remove selection"
 msgstr "Usuń zaznaczenie"
 
+msgid "Remove the selected object"
+msgstr "Usuń wybrany model"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Usuń profile użytkownika (zostanie wykonany zrzut)"
 
 msgid "Remove variable layer height"
 msgstr "Usuń zmienną wysokość warstwy"
+
+msgid "Rename"
+msgstr "Zmień nazwę"
 
 msgid "Rename Object"
 msgstr "Zmień Nazwę Modelu"
@@ -6294,6 +6393,9 @@ msgstr "Powtórz ostatnie szybkie cięcie"
 
 msgid "Replace from:"
 msgstr "Zamiana z:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Zamień wybrany kształt na nowy STL"
 
 msgid "Replace with"
 msgstr "Zamień na"
@@ -6568,6 +6670,9 @@ msgstr "Skaluj"
 msgid "Scale factors"
 msgstr "Współczynnik skalowania"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Skaluj wybrany model, aby zmieścił się w przestrzeni roboczej"
+
 msgid "Scale To Fit"
 msgstr "Skaluj, aby zmieścić"
 
@@ -6576,6 +6681,9 @@ msgstr "Skaluj, aby dopasować"
 
 msgid "Scale to fit the given volume."
 msgstr "Skaluj, aby wypełnić zadaną objętość."
+
+msgid "Scale to print volume"
+msgstr "Skaluj do obszaru roboczego"
 
 msgid "Scaling factor or percentage."
 msgstr "Współczynnik lub procent skalowania."
@@ -6668,6 +6776,9 @@ msgstr "Wybierz ustawienia drukarki"
 
 msgid "Select shape from the gallery"
 msgstr "Wybierz kształt z galerii"
+
+msgid "Select showing settings"
+msgstr "Wybierz widok ustawień"
 
 msgid "Select the language"
 msgstr "Wybierz język"
@@ -6768,6 +6879,12 @@ msgstr "Nazwa usługi"
 msgid "Set"
 msgstr "Ustaw"
 
+msgid "Set as a Separated Object"
+msgstr "Ustaw jako osobny model"
+
+msgid "Set as a Separated Objects"
+msgstr "Ustaw jako Osobne Modele"
+
 msgid "Set auto color changes"
 msgstr "Ustaw automatyczną zmianę kolorów"
 
@@ -6776,6 +6893,9 @@ msgstr "Ustaw domyślny ekstruder dla wybranych elementów"
 
 msgid "Set extruder change for every"
 msgstr "Ustaw zmianę ekstrudera dla każdej"
+
+msgid "Set extruder for selected items"
+msgstr "Ustaw ekstruder dla wybranych elementów"
 
 msgid "Set extruder number for the selected items"
 msgstr "Ustaw numer ekstrudera dla wybranych elementów"
@@ -6797,6 +6917,9 @@ msgstr "Ustaw dolny punkt jako aktywny"
 
 msgid "Set Mirror"
 msgstr "Ustaw Odbicie"
+
+msgid "Set number of instances"
+msgstr "Ustaw liczbę instancji"
 
 msgid "Set numbers of copies to %d"
 msgstr "Ustaw ilość instancji na %d"
@@ -7044,6 +7167,9 @@ msgstr "Ukryj/pokaż etykiety modelu/instancji"
 msgid "Simple"
 msgstr "Prosty"
 
+msgid "Simplify model"
+msgstr "Uprość model"
+
 msgid "Single extruder MM setup"
 msgstr "Ustawienia MM dla jednego ekstrudera"
 
@@ -7129,6 +7255,9 @@ msgstr "Punkty podpór SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Wykryto podpory SLA poza obszarem roboczym."
+
+msgid "Slab"
+msgstr "Tafla"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7404,6 +7533,15 @@ msgstr "Tryb wazy"
 
 msgid "Split"
 msgstr "Podziel"
+
+msgid "Split the selected object"
+msgstr "Podziel zaznaczony model"
+
+msgid "Split the selected object into individual objects"
+msgstr "Podziel wybrany model na osobne modele"
+
+msgid "Split the selected object into individual parts"
+msgstr "Podziel wybrany obiekt na osobne części"
 
 msgid "Split to objects"
 msgstr "Podziel na osobne modele"
@@ -8563,6 +8701,12 @@ msgstr "do"
 
 msgid "To do that please specify a new name for the preset."
 msgstr "Aby to zrobić, ustaw nową nazwę zestawu ustawień."
+
+msgid "To objects"
+msgstr "Do modeli"
+
+msgid "To parts"
+msgstr "Na części"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-07 00:00\n"
-"PO-Revision-Date: 2024-06-07 00:00\n"
+"POT-Creation-Date: 2024-06-11 00:00\n"
+"PO-Revision-Date: 2024-06-11 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -188,6 +188,15 @@ msgstr "%s info"
 
 msgid "%s information"
 msgstr "%s informace"
+
+msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s nepoužívá nejnovější dostupnou konfiguraci.\n"
+"Průvodce konfigurací nemusí nabízet nejnovější tiskárny, vlákna a SLA materiály k "
+"instalaci. "
 
 msgid ""
 "%s now uses an updated configuration structure.\n"
@@ -693,6 +702,9 @@ msgstr "Přidat rozsah vrstev"
 msgid "Add Layers"
 msgstr "Přidat Vrstvy"
 
+msgid "Add modifier"
+msgstr "Přidat modifikátor"
+
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters until all overhangs are filled.\n"
@@ -717,8 +729,17 @@ msgstr ""
 "Pokud se vám podaří spustit algoritmus za tímto nastavením, pošlete prosím Mně "
 "zprávu. Osobně si myslím, že je to zbytečné."
 
+msgid "Add negative volume"
+msgstr "Přidat negativní objem"
+
+msgid "Add one more instance of the selected object"
+msgstr "Přidejte jednu nebo více instancí vybraného objektu"
+
 msgid "Add one or more custom shapes"
 msgstr "Přidání jednoho nebo více vlastních tvarů"
+
+msgid "Add part"
+msgstr "Přidat díl"
 
 msgid "Add pause print"
 msgstr "Přidat pozastavení tisku"
@@ -735,8 +756,14 @@ msgstr "Přidat bod k výběru"
 msgid "Add preset for this printer device"
 msgstr "Přidat přednastavení pro tuto tiskárnu"
 
+msgid "Add seam position"
+msgstr "Přidat polohu švu"
+
 msgid "Add selected shape(s) to the bed"
 msgstr "Přidat vybraný tvar(y) na podložku"
+
+msgid "Add settings"
+msgstr "Přidat nastavení"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Přidání Skupiny nastavení pro Výškový rozsah"
@@ -773,6 +800,12 @@ msgstr ""
 "Přidejte plnou výplň blízko šikmých ploch, abyste zaručili vertikální "
 "skořepinutloušťka (horní + spodní plné vrstvy).\n"
 "!! solid_over_perimeters mohou tyto povrchy vymazat!!"
+
+msgid "Add support blocker"
+msgstr "Přidat blokátor podpěr"
+
+msgid "Add support enforcer"
+msgstr "Přidat vynucení podpěr"
 
 msgid "Add support point"
 msgstr "Přidání podpěrného bodu"
@@ -965,6 +998,15 @@ msgstr ""
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Umožňuje malovat pouze na fasety vybrané pomocí: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Podél osy X"
+
+msgid "Along Y axis"
+msgstr "Podél osy Y"
+
+msgid "Along Z axis"
+msgstr "Podél osy Z"
 
 msgid "Also emit limits to G-code"
 msgstr "Vysílat také limity pro G-kód"
@@ -1401,6 +1443,9 @@ msgstr "Plné spodní vrstvy"
 msgid "Bottom View"
 msgstr "Pohled zespod"
 
+msgid "Box"
+msgstr "Kostka"
+
 msgid "Bridge"
 msgstr "Mosty"
 
@@ -1681,8 +1726,14 @@ msgstr "Změna typu části"
 msgid "Change point head diameter"
 msgstr "Změna průměru hrotu"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Změní počet instancí vybraného objektu"
+
 msgid "Change thumbnail"
 msgstr "Změnit náhled"
+
+msgid "Change type"
+msgstr "Změnit typ"
 
 msgid "Changelog & Download"
 msgstr "Changelog & Stažení"
@@ -1794,6 +1845,9 @@ msgstr ""
 "vytlačovaného materiálu a pro velmi malé plochy se používá technika "
 "vyplňování mezer. Algoritmus Arachne vytváří perimetry s proměnnou šířkou "
 "vytlačovaného materiálu. Toto nastavení ovlivňuje také koncentrickou výplň."
+
+msgid "Clear"
+msgstr "Vymazat"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Vymazat historii operací Zpět / Vpřed"
@@ -3525,6 +3579,9 @@ msgstr "Exportovat AMF"
 msgid "Export AMF file:"
 msgstr "Exportovat AMF soubor:"
 
+msgid "Export as STL"
+msgstr "Exportovat jako STL"
+
 msgid "Export config"
 msgstr "Exportovat konfiguraci"
 
@@ -3994,8 +4051,14 @@ msgstr "Přírůstek úhlu výplně"
 msgid "Fill bed"
 msgstr "Vyplnit podložku"
 
+msgid "Fill bed with instances"
+msgstr "Vyplnit tiskovou plochu instancemi"
+
 msgid "Fill density"
 msgstr "Hustota výplně"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "Vyplní zbývající tiskovou plochu instancemi vybraného objektu"
 
 msgid "Fill the voids with bridges"
 msgstr "Vyplňte mezery mostů"
@@ -4098,6 +4161,9 @@ msgstr "První vrstva objektu nad raftem"
 
 msgid "Fix through NetFabb"
 msgstr "Opravit pomocí NetFabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Opravit pomocí služby Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Oprava prostřednictvím NetFabb"
@@ -4281,6 +4347,9 @@ msgstr ""
 msgid "Found reserved keywords in"
 msgstr "Nalezená vyhrazená klíčová slova v"
 
+msgid "FreeCAD path"
+msgstr "Cesta FreeCAD"
+
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD: skriptovací stroj pro FreeCAD"
 
@@ -4371,6 +4440,9 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "g/ml"
+
+msgid "Gallery"
+msgstr "Galerie"
 
 msgid "Gap fill"
 msgstr "Výplň mezery"
@@ -4626,6 +4698,9 @@ msgstr ""
 
 msgid "Height of the display"
 msgstr "Výška displeje"
+
+msgid "Height range Modifier"
+msgstr "Modifikátor Výškového rozsahu"
 
 msgid "Height ranges"
 msgstr "Výškové rozsahy"
@@ -6507,6 +6582,9 @@ msgstr "Sloučit"
 msgid "Merge all parts to the one single object"
 msgstr "Sloučit všechny části do jednoho jediného objektu"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Sloučit objekty do jednoho vícedílného objektu"
+
 msgid "Merged"
 msgstr "Sloučení"
 
@@ -6783,11 +6861,26 @@ msgid ""
 msgstr ""
 "Minimální šířka prvků, které je třeba zachovat při vytváření první vrstvykompenzace."
 
+msgid "Mirror"
+msgstr "Zrcadlit"
+
 msgid "Mirror horizontally"
 msgstr "Zrcadlit horizontálně"
 
 msgid "Mirror Object"
 msgstr "Zrcadlit Objekt"
+
+msgid "Mirror the selected object"
+msgstr "Zrcadlit vybraný objekt"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Zrcadlit rozměr vybraného objektu podél osy X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Zrcadlit rozměr vybraného objektu podél osy Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Zrcadlit rozměr vybraného objektu podél osy Z"
 
 msgid "Mirror vertically"
 msgstr "Zrcadlit vertikálně"
@@ -7655,6 +7748,9 @@ msgstr "Otevřete ve svém prohlížeči stránku vydání %s"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Otevřete dialogové okno pro úpravu galerie tvarů"
 
+msgid "Opening Configuration Wizard"
+msgstr "Otevírání průvodce nastavením"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Otevírání nového projektu. Některá přednastavení nejsou uložena."
 
@@ -7924,6 +8020,9 @@ msgstr "Vložit ze schránky"
 
 msgid "Paste From Clipboard"
 msgstr "Vložení ze schránky"
+
+msgid "Paths"
+msgstr "Cesty"
 
 msgid "Pattern"
 msgstr "Vzor"
@@ -8337,6 +8436,9 @@ msgstr ""
 msgid "Print&er Settings Tab"
 msgstr "Panel Nastav&ení Tiskárny"
 
+msgid "Printable"
+msgstr "Tisknout objekt"
+
 msgid "printer"
 msgstr "tiskárna"
 
@@ -8487,6 +8589,9 @@ msgstr "Kvalita / Rychlost"
 
 msgid "Quick"
 msgstr "Rychlé"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Rychlé přidání nastavení (%s)"
 
 msgid "Quick Save"
 msgstr "Rychlé Slicování a Uložit jako"
@@ -8679,6 +8784,9 @@ msgstr "Znovu načíst podložku z disku"
 msgid "Reload the platter from disk"
 msgstr "Vše znovu načíst z disku"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Znovu načíst vybrané objekty z disku"
+
 msgid "Remaining errors"
 msgstr "Zbylé chyby"
 
@@ -8727,6 +8835,9 @@ msgstr "Odstranit rozsah vrstev"
 msgid "Remove Multi Material painting"
 msgstr "Odstranění  Multimateriálového malování"
 
+msgid "Remove one instance of the selected object"
+msgstr "Odebere jednu instanci vybraného objektu"
+
 msgid "Remove paint-on seam"
 msgstr "Odstranění namalovaného švu"
 
@@ -8754,11 +8865,17 @@ msgstr "Odebrat označené body"
 msgid "Remove selection"
 msgstr "Odebrat výběr"
 
+msgid "Remove the selected object"
+msgstr "Odstranit vybraný objekt"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Odstranit uživatelské profily (předtím bude proveden snapshot)"
 
 msgid "Remove variable layer height"
 msgstr "Odstranění proměnné výšky vrstvy"
+
+msgid "Rename"
+msgstr "Přejmenovat"
 
 msgid "Rename Object"
 msgstr "Přejmenování objektu"
@@ -8821,6 +8938,9 @@ msgstr "Opakovat poslední rychlé slicování"
 
 msgid "Replace from:"
 msgstr "Nahradit z:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Nahradit vybraný objekt novým STL souborem"
 
 msgid "Replace with"
 msgstr "Nahradit"
@@ -9122,6 +9242,10 @@ msgstr "Měřítko"
 msgid "Scale factors"
 msgstr "Měřítka"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr ""
+"Přizpůsobit měřítko vybraného objektu, aby se objekt vešel do tiskového objemu"
+
 msgid "Scale To Fit"
 msgstr "Vyplnit tiskový objem"
 
@@ -9130,6 +9254,9 @@ msgstr "Vyplnit tiskový objem"
 
 msgid "Scale to fit the given volume."
 msgstr "Změnit velikost, aby se objekt vešel do zadaného tiskového prostoru."
+
+msgid "Scale to print volume"
+msgstr "Změnit velikost podle tiskového objemu"
 
 msgid "Scaling factor or percentage."
 msgstr "Procentuální měřítko."
@@ -9266,6 +9393,9 @@ msgstr "Zobrazit panel Nastavení tiskárny"
 msgid "Select shape from the gallery"
 msgstr "Vyberte tvar z galerie"
 
+msgid "Select showing settings"
+msgstr "Zvolte nastavení zobrazení"
+
 msgid "Select the language"
 msgstr "Výběr jazyka"
 
@@ -9399,6 +9529,12 @@ msgstr "Název služby"
 msgid "Set"
 msgstr "Nastavit"
 
+msgid "Set as a Separated Object"
+msgstr "Změnit na samostatný objekt"
+
+msgid "Set as a Separated Objects"
+msgstr "Převést na oddělené objekty"
+
 msgid "Set auto color changes"
 msgstr "Nastavení automatických změn barev"
 
@@ -9407,6 +9543,9 @@ msgstr "Nastavení výchozího extruderu pro vybrané položky"
 
 msgid "Set extruder change for every"
 msgstr "Nastavit změnu extruderu po každých"
+
+msgid "Set extruder for selected items"
+msgstr "Zvolte extruder pro vybrané položky"
 
 msgid "Set extruder number for the selected items"
 msgstr "Nastavení čísla extruderu pro vybrané položky"
@@ -9428,6 +9567,9 @@ msgstr "Nastavit spodní ukazatel jako aktivní"
 
 msgid "Set Mirror"
 msgstr "Zrcadlení"
+
+msgid "Set number of instances"
+msgstr "Zadat počet instancí"
 
 msgid "Set numbers of copies to %d"
 msgstr "Nastavení počtu kopií na %d"
@@ -9859,6 +10001,9 @@ msgstr "Smrštění"
 msgid "Simple"
 msgstr "Jednoduchý"
 
+msgid "Simplify model"
+msgstr "Zjednodušit model"
+
 msgid "Single extruder MM setup"
 msgstr "Nastavení jednoho extruderu MM"
 
@@ -9971,6 +10116,9 @@ msgstr "SLA Podpěrné Body"
 msgid "SLA supports outside the print area were detected."
 msgstr "Byly zjištěny SLA podpěry mimo tiskovou oblast."
 
+msgid "Slab"
+msgstr "Deska"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
@@ -10033,6 +10181,9 @@ msgstr "Informace o slicování"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "Slicovaný objekt \"%1%\" vypadá jako logo nebo nápis"
+
+msgid "Sliced preview"
+msgstr "Náhled na Slicování"
 
 msgid "Slicing"
 msgstr "Slicování"
@@ -10331,6 +10482,15 @@ msgstr "Obrázek úvodní obrazovky"
 
 msgid "Split"
 msgstr "Rozdělit"
+
+msgid "Split the selected object"
+msgstr "Rozdělit vybraný objekt"
+
+msgid "Split the selected object into individual objects"
+msgstr "Rozdělit vybraný objekt na jednotlivé objekty"
+
+msgid "Split the selected object into individual parts"
+msgstr "Rozdělit vybraný objekt na jednotlivé části"
 
 msgid "Split to objects"
 msgstr "Rozdělit na objekty"
@@ -12210,6 +12370,12 @@ msgid ""
 msgstr ""
 "Pro další snížení navlékání může být užitečné nastavit nižší teplotu těsně před "
 "vyjmutím vlákna z hotendu."
+
+msgid "To objects"
+msgstr "Na objekty"
+
+msgid "To parts"
+msgstr "Na části"
 
 msgid ""
 "To specify the system certificate store manually, please set the %1% "
