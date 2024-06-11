@@ -1684,9 +1684,9 @@ void Control::OnMotion(wxMouseEvent &event)
             m_moving_pos = wxDefaultPosition;
         }
 
-        // Set tooltips with information for each icon
+    // Set tooltips with information for each icon
         if (GUI::wxGetApp().is_editor()) {
-            this->SetToolTip(get_tooltip(tick));
+    this->SetToolTip(get_tooltip(tick));
         }
     }
     m_need_refresh_and_update = false;

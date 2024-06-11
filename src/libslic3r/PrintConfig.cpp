@@ -1249,7 +1249,6 @@ void PrintConfigDef::init_fff_params()
     def->min                = -1;
     def->max                = 100;
     def->is_vector_extruder = true;
-    def->sidetext = L("%");
     def->set_default_value(new ConfigOptionInts({-1}));
     def->aliases = { "min_fan_speed" }; // only if "fan_always_on"
 
@@ -2390,7 +2389,6 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("42");
     def->enum_values.push_back("55");
     def->enum_values.push_back("75");
-    def->enum_values.push_back("100");
     def->enum_labels.push_back("0");
     def->enum_labels.push_back("4");
     def->enum_labels.push_back("5.5");
@@ -2403,7 +2401,6 @@ void PrintConfigDef::init_fff_params()
     def->enum_labels.push_back("42");
     def->enum_labels.push_back("55");
     def->enum_labels.push_back("75");
-    def->enum_labels.push_back("100");
     def->mode = comSimpleAE | comPrusa;
     def->set_default_value(new ConfigOptionPercent(18));
 
@@ -4301,7 +4298,7 @@ void PrintConfigDef::init_fff_params()
     def->category = OptionCategory::perimeter;
     def->tooltip = L("On even layers, all perimeter loops are reversed (it disables the overhang reversal, so it doesn't double-reverse)."
                     "That setting will likely create defects on the perimeters, so it's only useful is for materials that have some direction-dependent properties (stress lines).");
-    def->mode = comAdvancedE | comExpert;
+    def->mode = comExpert | comSuSi;
     def->set_default_value(new ConfigOptionBool(false));
 
     def = this->add("perimeter_round_corners", coBool);

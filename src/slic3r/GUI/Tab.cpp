@@ -5748,8 +5748,6 @@ void TabSLAPrint::update()
 
     assert(m_config);
 
-    assert(m_config);
-
     m_update_cnt++;
 
     m_config_manipulation.update_print_sla_config(m_config, true);

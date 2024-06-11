@@ -158,8 +158,7 @@ uint32_t AppConfig::hex2int(const std::string& hex)
 {
     uint32_t int_color;
     if (hex.empty() || !(hex.size() == 6 || hex.size() == 7)) {
-        //int_color = 0x2172eb;
-        int_color = 0x107c18;
+        int_color = 0x2172eb;
     } else {
         std::stringstream ss;
         ss << std::hex << (hex[0] == '#' ? hex.substr(1) : hex);

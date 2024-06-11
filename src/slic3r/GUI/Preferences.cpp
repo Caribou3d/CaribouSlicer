@@ -427,29 +427,29 @@ void PreferencesDialog::build(size_t selected_tab)
 	m_optgroups_general.back()->append_single_option_line(option);
 #endif
 
-//     if (is_editor) {
-//         activate_options_tab(m_optgroups_general.back(), 3);
-//     }
+    if (is_editor) {
+        activate_options_tab(m_optgroups_general.back(), 3);
+    }
 
 
-	// if (is_editor) {
-	// 	m_optgroups_general.emplace_back(create_options_group(_L("Paths"), tabs, 0));
-	// 	m_optgroups_general.back()->title_width = 20;
-	// 	m_optgroups_general.back()->label_width = 20;
+	if (is_editor) {
+		m_optgroups_general.emplace_back(create_options_group(_L("Paths"), tabs, 0));
+		m_optgroups_general.back()->title_width = 20;
+		m_optgroups_general.back()->label_width = 20;
 
-	// 	def.label = L("FreeCAD path");
-	// 	def.type = coString;
-	// 	def.tooltip = L("If it point to a valid freecad instance, you can use the built-in python script to quickly generate geometry."
-    //         "\nPut here the freecad directory from which you can access its 'lib' directory."
-    //         "\nFreecad will use its own python (from the bin directoyr) on windows and will use the system python3 on linux & macos");
-	// 	def.set_default_value(new ConfigOptionString{ app_config->get("freecad_path") });
-	// 	option = Option(def, "freecad_path");
-	// 	//option.opt.full_width = true;
-	// 	option.opt.width = 50;
-	// 	m_optgroups_general.back()->append_single_option_line(option);
-	// }
+		def.label = L("FreeCAD path");
+		def.type = coString;
+		def.tooltip = L("If it point to a valid freecad instance, you can use the built-in python script to quickly generate geometry."
+            "\nPut here the freecad directory from which you can access its 'lib' directory."
+            "\nFreecad will use its own python (from the bin directoyr) on windows and will use the system python3 on linux & macos");
+		def.set_default_value(new ConfigOptionString{ app_config->get("freecad_path") });
+		option = Option(def, "freecad_path");
+		//option.opt.full_width = true;
+		option.opt.width = 50;
+		m_optgroups_general.back()->append_single_option_line(option);
+	}
 
-    activate_options_tab(m_optgroups_general.back(), m_optgroups_general.back()->parent()->GetSizer()->GetItemCount() > 1 ? 3 : 18);
+    activate_options_tab(m_optgroups_general.back(), m_optgroups_general.back()->parent()->GetSizer()->GetItemCount() > 1 ? 3 : 20);
 
 	// Add "Camera" tab
 	m_optgroup_camera = create_options_tab(_L("Camera"), tabs);
@@ -1017,7 +1017,11 @@ void PreferencesDialog::accept(wxEvent&)
 	}
 
 	for (const std::string key : {	"default_action_on_close_application", 
+<<<<<<< HEAD
 									"default_action_on_select_preset", 
+=======
+									"default_action_on_select_preset",
+>>>>>>> 1ea97b31d685f93c91ea8e34480b009443e8ae95
 									"default_action_on_new_project" }) {
 	    auto it = m_values.find(key);
 		if (it != m_values.end() && it->second != "none" && app_config->get(key) != "none")
