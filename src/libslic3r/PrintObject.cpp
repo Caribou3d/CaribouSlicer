@@ -162,7 +162,7 @@ namespace Slic3r {
                 [this, &region, region_id, &next_layer_idx](const tbb::blocked_range<size_t>& range) {
                 //TODO: find a better wya to just fire the threads.
                 //for (size_t layer_idx = range.begin(); layer_idx < range.end(); ++layer_idx) {
-                for (size_t layer_idx = next_layer_idx++; layer_idx < m_layers.size(); layer_idx = next_layer_idx++) {
+                for (size_t layer_idx = next_layer_idx++; layer_idx < m_layers.size() - 1; layer_idx = next_layer_idx++) {
                     m_print->throw_if_canceled();
                     LayerRegion &layerm                     = *m_layers[layer_idx]->get_region(region_id);
                     const LayerRegion &upper_layerm         = *m_layers[layer_idx+1]->get_region(region_id);
@@ -301,6 +301,9 @@ namespace Slic3r {
                 m_print->throw_if_canceled();
             }
         }
+
+        // solid_infill_below_area has just beeing applied at the end of prepare_fill_surfaces()
+        apply_solid_infill_below_layer_area();
 
         // this will detect bridges and reverse bridges
         // and rearrange top/bottom/internal surfaces
@@ -862,6 +865,8 @@ bool PrintObject::invalidate_state_by_config_options(
                 || opt_key == "infill_only_where_needed"
                 || opt_key == "ironing_type"
                 || opt_key == "solid_infill_below_area"
+                || opt_key == "solid_infill_below_layer_area"
+                || opt_key == "solid_infill_below_width"
                 || opt_key == "solid_infill_extruder"
                 || opt_key == "solid_infill_every_layers"
                 || opt_key == "solid_over_perimeters"
@@ -1667,6 +1672,44 @@ bool PrintObject::invalidate_state_by_config_options(
         m_typed_slices = true;
     }
     
+    void PrintObject::apply_solid_infill_below_layer_area()
+    {
+        // compute the total layer surface for the bed, for solid_infill_below_layer_area
+        for (auto *my_layer : this->m_layers) {
+            bool exists = false;
+            for (auto *region : my_layer->m_regions) {
+                exists |= region->region().config().solid_infill_below_layer_area.value > 0;
+            }
+            if (!exists)
+                return;
+            double total_area = 0;
+            if (this->print()->config().complete_objects.value) {
+                // sequential printing: only consider myself
+                for (const ExPolygon &slice : my_layer->lslices) { total_area += slice.area(); }
+            } else {
+                // parallel printing: get all objects
+                for (const PrintObject *object : this->print()->objects()) {
+                    for (auto *layer : object->m_layers) {
+                        if (std::abs(layer->print_z - my_layer->print_z) < EPSILON) {
+                            for (const ExPolygon &slice : layer->lslices) { total_area += slice.area(); }
+                        }
+                    }
+                }
+            }
+            // is it low enough to apply solid_infill_below_layer_area?
+            for (auto *region : my_layer->m_regions) {
+                if (!this->print()->config().spiral_vase.value && region->region().config().fill_density.value > 0) {
+                    double min_area = scale_d(scale_d(region->region().config().solid_infill_below_layer_area.value));
+                    for (Surfaces::iterator surface = region->fill_surfaces.surfaces.begin();
+                         surface != region->fill_surfaces.surfaces.end(); ++surface) {
+                        if (surface->has_fill_sparse() && surface->has_pos_internal() && total_area <= min_area)
+                            surface->surface_type = stPosInternal | stDensSolid;
+                    }
+                }
+            }
+        }
+    }
+
     void PrintObject::process_external_surfaces()
     {
         BOOST_LOG_TRIVIAL(info) << "Processing external surfaces..." << log_memory_info();
