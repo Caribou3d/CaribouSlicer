@@ -22,6 +22,7 @@
 
 project(Slic3r-deps)
 cmake_minimum_required(VERSION 3.2)
+cmake_policy(SET CMP0135 NEW)
 
 include(ExternalProject)
 include(ProcessorCount)

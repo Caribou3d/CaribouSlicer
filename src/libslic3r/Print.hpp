@@ -393,8 +393,10 @@ private:
     // Has any support (not counting the raft).
     ExPolygons _shrink_contour_holes(double contour_delta, double default_delta, double convex_delta, const ExPolygons& input) const;
     void _transform_hole_to_polyholes();
+    void _min_overhang_threshold();
     ExPolygons _smooth_curves(const ExPolygons &input, const PrintRegionConfig &conf) const;
     void detect_surfaces_type();
+    void apply_solid_infill_below_layer_area();
     void process_external_surfaces();
     void discover_vertical_shells();
     void bridge_over_infill();
@@ -482,8 +484,9 @@ private:
 struct PrintStatistics
 {
     PrintStatistics() { clear(); }
-    std::string                     estimated_normal_print_time;
-    std::string                     estimated_silent_print_time;
+    // PrintEstimatedStatistics::ETimeMode::Normal -> time
+    std::map<uint8_t, double>       estimated_print_time;
+    std::map<uint8_t, std::string>  estimated_print_time_str;
     double                          total_used_filament;
     std::vector<std::pair<size_t, double>> color_extruderid_to_used_filament; // id -> mm (length)
     double                          total_extruded_volume;

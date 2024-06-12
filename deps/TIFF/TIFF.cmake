@@ -1,4 +1,5 @@
 find_package(OpenGL QUIET REQUIRED)
+cmake_policy(SET CMP0135 NEW)
 
 if (APPLE)
     message(STATUS "Compiling TIFF for macos ${CMAKE_SYSTEM_VERSION}.")
