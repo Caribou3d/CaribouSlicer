@@ -461,6 +461,11 @@ bool Control::ensure_correctly_filled() const
         assert(false);
         //m_layers_times.clear();
     }
+    if (!m_layers_areas.empty() && m_layers_areas.size() != m_values.size() && m_layers_areas.size() != m_values.size() - 1) {
+        ok = false;
+        assert(false);
+        //m_layers_areas.clear();
+    }
     if (!m_layers_values.empty()) {
         ok = m_is_wipe_tower;
         assert(m_is_wipe_tower);
@@ -844,6 +849,17 @@ wxString Control::get_label(int tick, LabelType label_type/* = ltHeightWithLayer
                         double previous_time = (time_idx > 0 ? m_layers_times[time_idx - 1] : 0);
                         wxString layer_time_wstr = short_and_splitted_time(get_time_dhms(m_layers_times[time_idx] - previous_time));
                         str = str + comma + layer_time_wstr;
+                        comma = "\n";
+                    }
+                }
+            }
+            if (show_larea && !m_layers_areas.empty()) {
+                if (m_layers_areas.size() + 1 >= m_values.size()) {
+                    //assert(time_idx < m_layers_areas.size());
+                    assert(m_layers_areas.size() == m_layers_times.size() || m_layers_areas.size() == m_layers_times.size() - 1);
+                    if (time_idx < m_layers_areas.size()) {
+                        nb_lines++;
+                        str = str + comma + wxString::Format("%.*f", m_layers_areas[time_idx] < 1 ? 3 : m_layers_areas[time_idx] < 10 ? 2 : m_layers_areas[time_idx] < 100 ? 1 : 0, m_layers_areas[time_idx]);
                         comma = "\n";
                     }
                 }

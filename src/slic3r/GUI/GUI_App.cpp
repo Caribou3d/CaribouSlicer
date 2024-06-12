@@ -3408,8 +3408,7 @@ bool GUI_App::check_updates(const bool verbose)
 			MsgNoUpdates dlg;
 			dlg.ShowModal();
 		}
-	}
-	catch (const std::exception & ex) {
+	} catch (const std::exception &ex) {
 		show_error(nullptr, ex.what());
 	}
     // Applicaiton will continue.
