@@ -162,7 +162,11 @@ namespace Slic3r {
                 [this, &region, region_id, &next_layer_idx](const tbb::blocked_range<size_t>& range) {
                 //TODO: find a better wya to just fire the threads.
                 //for (size_t layer_idx = range.begin(); layer_idx < range.end(); ++layer_idx) {
+<<<<<<< HEAD
                 for (size_t layer_idx = next_layer_idx++; layer_idx < m_layers.size(); layer_idx = next_layer_idx++) {
+=======
+                for (size_t layer_idx = next_layer_idx++; layer_idx < m_layers.size() - 1; layer_idx = next_layer_idx++) {
+>>>>>>> upstream/nightly_dev
                     m_print->throw_if_canceled();
                     LayerRegion &layerm                     = *m_layers[layer_idx]->get_region(region_id);
                     const LayerRegion &upper_layerm         = *m_layers[layer_idx+1]->get_region(region_id);
@@ -301,6 +305,12 @@ namespace Slic3r {
                 m_print->throw_if_canceled();
             }
         }
+<<<<<<< HEAD
+=======
+
+        // solid_infill_below_area has just beeing applied at the end of prepare_fill_surfaces()
+        apply_solid_infill_below_layer_area();
+>>>>>>> upstream/nightly_dev
 
         // this will detect bridges and reverse bridges
         // and rearrange top/bottom/internal surfaces
