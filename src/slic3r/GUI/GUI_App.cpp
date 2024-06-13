@@ -68,6 +68,7 @@
 #include "CalibrationOverBridgeDialog.hpp"
 #include "CalibrationTempDialog.hpp"
 #include "CalibrationRetractionDialog.hpp"
+#include "CalibrationPressureAdvDialog.hpp"
 #include "ConfigSnapshotDialog.hpp"
 #include "CreateMMUTiledCanvas.hpp"
 #include "FreeCADDialog.hpp"
@@ -1990,6 +1991,10 @@ void GUI_App::calibration_extrusion_multiplier_dialog()
 void GUI_App::calibration_retraction_dialog()
 {
     change_calibration_dialog(nullptr, new CalibrationRetractionDialog(this, mainframe));
+}
+void GUI_App::calibration_pressureadv_dialog()
+{
+    change_calibration_dialog(nullptr, new CalibrationPressureAdvDialog(this, mainframe));
 }
 void GUI_App::freecad_script_dialog()
 {
