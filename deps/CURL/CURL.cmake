@@ -60,7 +60,7 @@ if (IS_CROSS_COMPILE AND APPLE)
 # TODO
 endif ()
 
-prusaslicer_add_cmake_project(CURL
+caribouslicer_add_cmake_project(CURL
   # GIT_REPOSITORY      https://github.com/curl/curl.git
   URL                   https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.zip
   URL_HASH              SHA256=a5850615a9f4a1fdf55dc6023cf9b10c8b320eb6cc17ed77dc7edb7603e06684

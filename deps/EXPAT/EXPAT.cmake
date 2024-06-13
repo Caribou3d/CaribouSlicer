@@ -1,4 +1,4 @@
-prusaslicer_add_cmake_project(EXPAT
+caribouslicer_add_cmake_project(EXPAT
   URL https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_2.zip
   URL_HASH SHA256=9cddaf9abdac4cb3308c24fea13219a7879c0ad9a8e6797240b9cf4770b337b4
   SOURCE_SUBDIR expat

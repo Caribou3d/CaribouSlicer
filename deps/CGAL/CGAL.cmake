@@ -1,4 +1,4 @@
-prusaslicer_add_cmake_project(
+caribouslicer_add_cmake_project(
     CGAL
     # GIT_REPOSITORY https://github.com/CGAL/cgal.git
 
