@@ -27,7 +27,7 @@ void ExtrusionVisitorConst::use(const ExtrusionMultiPath &multipath) { default_u
 void ExtrusionVisitorConst::use(const ExtrusionMultiPath3D &multipath3D) { default_use(multipath3D); }
 void ExtrusionVisitorConst::use(const ExtrusionLoop &loop) { default_use(loop); }
 void ExtrusionVisitorConst::use(const ExtrusionEntityCollection &collection) { default_use(collection); }
-    
+
 void
 ExtrusionPath::intersect_expolygons(const ExPolygonCollection &collection, ExtrusionEntityCollection* retval) const
 {
@@ -82,8 +82,8 @@ void ExtrusionPath::polygons_covered_by_spacing(Polygons &out, const float spaci
     bool bridge = is_bridge(this->role()) || (this->width * 4 < this->height);
     assert(! bridge || this->width == this->height);
     //TODO: check BRIDGE_FLOW here
-    auto flow = bridge 
-        ? Flow::bridging_flow(this->width, 0.f) 
+    auto flow = bridge
+        ? Flow::bridging_flow(this->width, 0.f)
         : Flow::new_from_width(this->width, 0.f, this->height, spacing_ratio);
     polygons_append(out, offset(this->polyline.as_polyline(), 0.5f * float(flow.scaled_spacing()) + scaled_epsilon));
 }
@@ -228,9 +228,9 @@ void ExtrusionLoop::split_at(const Point &point, bool prefer_non_overhang, const
 {
     if (this->paths.empty())
         return;
-    
+
     auto [path_idx, segment_idx, p] = get_closest_path_and_point(point, prefer_non_overhang);
-    
+
     // Snap p to start or end of segment_idx if closer than scaled_epsilon.
     {
         const Point *p1 = this->paths[path_idx].polyline.get_points().data() + segment_idx;
@@ -243,17 +243,17 @@ void ExtrusionLoop::split_at(const Point &point, bool prefer_non_overhang, const
             if (d2_1 < thr2)
                 p = *p1;
         } else {
-            if (d2_2 < thr2) 
+            if (d2_2 < thr2)
                 p = *p2;
         }
     }
-    
+
     // now split path_idx in two parts
     const ExtrusionPath &path = this->paths[path_idx];
     ExtrusionPath p1(path.role(), path.mm3_per_mm, path.width, path.height, can_reverse());
     ExtrusionPath p2(path.role(), path.mm3_per_mm, path.width, path.height, can_reverse());
     path.polyline.split_at(p, &p1.polyline, &p2.polyline);
-    
+
     if (this->paths.size() == 1) {
         if (!p1.polyline.is_valid()) {
             this->paths.front().polyline.swap(p2.polyline);
@@ -269,7 +269,7 @@ void ExtrusionLoop::split_at(const Point &point, bool prefer_non_overhang, const
         if (p2.polyline.is_valid() && p2.polyline.length() > 0) this->paths.insert(this->paths.begin() + path_idx, p2);
         if (p1.polyline.is_valid() && p1.polyline.length() > 0) this->paths.insert(this->paths.begin() + path_idx, p1);
     }
-    
+
     // split at the new vertex
     this->split_at_vertex(p, 0.);
 }
@@ -277,7 +277,7 @@ void ExtrusionLoop::split_at(const Point &point, bool prefer_non_overhang, const
 ExtrusionPaths clip_end(ExtrusionPaths& paths, coordf_t distance)
 {
     ExtrusionPaths removed;
-    
+
     while (distance > 0 && !paths.empty()) {
         ExtrusionPath& last = paths.back();
         removed.push_back(last);
@@ -349,7 +349,6 @@ std::string ExtrusionEntity::role_to_string(ExtrusionRole role)
     return "";
 }
 
-
 ExtrusionRole ExtrusionEntity::string_to_role(const std::string_view role)
 {
     if (role == L("Perimeter") || role == L("Internal perimeter"))
@@ -392,7 +391,6 @@ ExtrusionRole ExtrusionEntity::string_to_role(const std::string_view role)
         return erNone;
 }
 
-
 std::string role_to_code(ExtrusionRole role)
 {
     switch (role) {
@@ -422,7 +420,6 @@ std::string role_to_code(ExtrusionRole role)
     return "";
 }
 
-
 std::string looprole_to_code(ExtrusionLoopRole looprole)
 {
     std::string code;
@@ -442,9 +439,10 @@ std::string looprole_to_code(ExtrusionLoopRole looprole)
     return code;
 }
 
-void ExtrusionPrinter::use(const ExtrusionPath &path) { 
+void ExtrusionPrinter::use(const ExtrusionPath &path) {
     ss << (json?"\"":"") << "ExtrusionPath" << (path.can_reverse()?"":"Oriented") << (json?"_":":") << role_to_code(path.role()) << (json?"\":":"") << "[";
-    for (int i = 0; i < path.polyline.size(); i++) {
+    for (size_t i = 0; i < path.polyline.size(); ++i) {
+//    for (int i = 0; i < path.polyline.size(); i++) {
         if (i != 0) ss << ",";
         double x = (mult * (path.polyline.get_points()[i].x()));
         double y = (mult * (path.polyline.get_points()[i].y()));
@@ -454,7 +452,8 @@ void ExtrusionPrinter::use(const ExtrusionPath &path) {
 }
 void ExtrusionPrinter::use(const ExtrusionPath3D &path3D) {
     ss << (json?"\"":"") << "ExtrusionPath3D" << (path3D.can_reverse()?"":"Oriented") << (json?"_":":") << role_to_code(path3D.role()) << (json?"\":":"") << "[";
-    for (int i = 0; i < path3D.polyline.size();i++){
+    for (size_t i = 0; i < path3D.polyline.size(); ++i) {
+//    for (int i = 0; i < path3D.polyline.size();i++){
         if (i != 0) ss << ",";
         double x = (mult * (path3D.polyline.get_points()[i].x()));
         double y = (mult * (path3D.polyline.get_points()[i].y()));
@@ -465,7 +464,7 @@ void ExtrusionPrinter::use(const ExtrusionPath3D &path3D) {
 }
 void ExtrusionPrinter::use(const ExtrusionMultiPath &multipath) {
     ss << (json?"\"":"") << "ExtrusionMultiPath" << (multipath.can_reverse()?"":"Oriented") << (json?"_":":") << role_to_code(multipath.role()) << (json?"\":":"") << "{";
-    for (int i = 0; i < multipath.paths.size(); i++) {
+    for (size_t i = 0; i < multipath.paths.size(); i++) {
         if (i != 0) ss << ",";
         multipath.paths[i].visit(*this);
     }
@@ -473,16 +472,16 @@ void ExtrusionPrinter::use(const ExtrusionMultiPath &multipath) {
 }
 void ExtrusionPrinter::use(const ExtrusionMultiPath3D &multipath3D) {
     ss << (json?"\"":"") << "multipath3D" << (multipath3D.can_reverse()?"":"Oriented") << (json?"_":":") << role_to_code(multipath3D.role()) << (json?"\":":"") << "{";
-    for (int i = 0; i < multipath3D.paths.size(); i++) {
+    for (size_t i = 0; i < multipath3D.paths.size(); i++) {
         if (i != 0) ss << ",";
         multipath3D.paths[i].visit(*this);
     }
     ss << "}";
 }
-void ExtrusionPrinter::use(const ExtrusionLoop &loop) { 
+void ExtrusionPrinter::use(const ExtrusionLoop &loop) {
     ss << (json?"\"":"") << "ExtrusionLoop" << (json?"_":":") << role_to_code(loop.role())<<"_" << looprole_to_code(loop.loop_role()) << (json?"\":":"") << "{";
     if(!loop.can_reverse()) ss << (json?"\"":"") << "oriented" << (json?"\":":"=") << "true,";
-    for (int i = 0; i < loop.paths.size(); i++) {
+    for (size_t  i = 0; i < loop.paths.size(); i++) {
         if (i != 0) ss << ",";
         loop.paths[i].visit(*this);
     }
@@ -492,17 +491,16 @@ void ExtrusionPrinter::use(const ExtrusionEntityCollection &collection) {
     ss << (json?"\"":"") << "ExtrusionEntityCollection" << (json?"_":":") << role_to_code(collection.role()) << (json?"\":":"") << "{";
     if(!collection.can_sort()) ss << (json?"\"":"") << "no_sort" << (json?"\":":"=") << "true,";
     if(!collection.can_reverse()) ss << (json?"\"":"") << "oriented" << (json?"\":":"=") << "true,";
-    for (int i = 0; i < collection.entities().size(); i++) {
+    for (size_t i = 0; i < collection.entities().size(); i++) {
         if (i != 0) ss << ",";
         collection.entities()[i]->visit(*this);
     }
     ss << "}";
 }
 
-
 void ExtrusionLength::default_use(const ExtrusionEntity& entity) { dist += entity.length(); };
 void ExtrusionLength::use(const ExtrusionEntityCollection& collection) {
-    for (int i = 0; i < collection.entities().size(); i++) {
+    for (size_t  i = 0; i < collection.entities().size(); i++) {
         collection.entities()[i]->visit(*this);
     }
 }
@@ -599,25 +597,5 @@ void SimplifyVisitor::use(ExtrusionPath& path) {
 void SimplifyVisitor::use(ExtrusionPath3D& path3D) {
     path3D.simplify(m_scaled_resolution, m_use_arc_fitting, scale_d(m_arc_fitting_tolearance->get_abs_value(path3D.width)));
 }
-
-//class ExtrusionTreeVisitor : ExtrusionVisitor {
-//public:
-//    //virtual void use(ExtrusionEntity &entity) { assert(false); };
-//    virtual void use(ExtrusionPath &path) override { const ExtrusionPath &constpath = path;  use(constpath); };
-//    virtual void use(ExtrusionPath3D &path3D) override { const ExtrusionPath3D &constpath3D = path3D;  use(constpath3D); };
-//    virtual void use(ExtrusionMultiPath &multipath) override { const ExtrusionMultiPath &constmultipath = multipath;  use(constmultipath); };
-//    virtual void use(ExtrusionMultiPath3D &multipath3D) override { const ExtrusionMultiPath3D &constmultipath3D = multipath3D;  use(constmultipath3D); };
-//    virtual void use(ExtrusionLoop &loop) override { const ExtrusionLoop &constloop = loop;  use(constloop); };
-//    virtual void use(ExtrusionEntityCollection &collection) { const ExtrusionEntityCollection &constcollection = collection;  use(constcollection); };
-//    virtual void use(const ExtrusionPath &path) override { assert(false); };
-//    virtual void use(const ExtrusionPath3D &path3D) override { assert(false); };
-//    virtual void use(const ExtrusionMultiPath &multipath) override { assert(false); };
-//    virtual void use(const ExtrusionMultiPath3D &multipath3D) { assert(false); };
-//    virtual void use(const ExtrusionLoop &loop) override { assert(false); };
-//    virtual void use(const ExtrusionEntityCollection &collection) { assert(false); };
-//    virtual void use_default(ExtrusionEntity &entity) { const ExtrusionEntity &constentity = entity;  use_default(constentity); };
-//    virtual void use_default(const ExtrusionEntity &entity) {};
-//
-//};
 
 }

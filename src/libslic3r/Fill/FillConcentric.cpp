@@ -27,9 +27,7 @@ FillConcentric::_fill_surface_single(
     ExPolygon                        expolygon,
     Polylines                       &polylines_out) const
 {
-    // no rotation is supported for this infill pattern
-    BoundingBox bounding_box = expolygon.contour.bounding_box();
-    
+
     coord_t distance = _line_spacing_for_density(params);
     if (params.density > 0.9999f && !params.dont_adjust) {
         //it's == Slic3r::FillConcentric::_adjust_solid_spacing(bounding_box.size()(0), _line_spacing_for_density(params.density)) because of the init_spacing()
@@ -89,7 +87,7 @@ void append_loop_into_collection(ExtrusionEntityCollection& storage, ExtrusionRo
 
 void
 FillConcentricWGapFill::fill_surface_extrusion(
-    const Surface *surface, 
+    const Surface *surface,
     const FillParams &params,
     ExtrusionEntitiesPtr &out) const {
 
@@ -110,10 +108,10 @@ FillConcentricWGapFill::fill_surface_extrusion(
         //polylines_out);
         ExPolygon expolygon = expp[i];
 
-        coordf_t init_spacing = this->get_spacing();
+        this->get_spacing();
 
         // no rotation is supported for this infill pattern
-        BoundingBox bounding_box = expolygon.contour.bounding_box();
+        expolygon.contour.bounding_box();
 
         coord_t distance = _line_spacing_for_density(params);
         if (params.density > 0.9999f && !params.dont_adjust) {
@@ -215,7 +213,7 @@ FillConcentricWGapFill::fill_surface_extrusion(
                 ExtrusionEntityCollection* sortable;
             };
             // for each shell of this bunch
-            
+
             for (size_t idx_shell = 0; idx_shell < shells.size(); ++idx_shell) {
                 Polygons& islands = shells[idx_shell];
                 std::vector<Leaf> nb_childs(leafs.size(), Leaf{ 0, nullptr });
@@ -290,7 +288,7 @@ FillConcentricWGapFill::fill_surface_extrusion(
 
             //add gapfills
             if (idx_bunch < bunch_2_gaps.size() && !bunch_2_gaps[idx_bunch].empty() && params.density >= 1) {
-                // get parameters 
+                // get parameters
                 coordf_t min = 0.2 * distance * (1 - INSET_OVERLAP_TOLERANCE);
                 //be sure we don't gapfill where the perimeters are already touching each other (negative spacing).
                 min = std::max(min, double(Flow::new_from_spacing((float)EPSILON, (float)params.flow.nozzle_diameter(), (float)params.flow.height(), (float)params.flow.spacing_ratio(), false).scaled_width()));
@@ -307,7 +305,7 @@ FillConcentricWGapFill::fill_surface_extrusion(
                 }
                 const coord_t gapfill_extension = scale_t(params.config->get_abs_value("gap_fill_extension", params.flow.width()));
 
-                // collapse 
+                // collapse
                 ExPolygons gaps_ex = diff_ex(
                     offset2_ex(bunch_2_gaps[idx_bunch], -min / 2, +min / 2),
                     offset2_ex(bunch_2_gaps[idx_bunch], -max / 2, +max / 2),
@@ -351,9 +349,9 @@ FillConcentricWGapFill::fill_surface_extrusion(
                 //            //do gapfill locally
                 //            leafs[idx_leaf]->append(
                 //                Geometry::variable_width(
-                //                    poly, erGapFill, 
-                //                    params.flow, 
-                //                    scale_t(params.config->get_computed_value("resolution_internal")), 
+                //                    poly, erGapFill,
+                //                    params.flow,
+                //                    scale_t(params.config->get_computed_value("resolution_internal")),
                 //                    params.flow.scaled_width() / 10)
                 //            );
                 //            polylines.erase(polylines.begin() + idx_polyline);
@@ -416,8 +414,6 @@ FillConcentricWGapFill::fill_surface_extrusion(
         // check if not over-extruding
         if (!params.dont_adjust && params.full_infill() && !params.flow.bridge() && params.fill_exactly) {
             // compute the path of the nozzle -> extruded volume
-            double length_tot = 0;
-            int    nb_lines   = 0;
             ExtrusionVolume get_volume;
             for (ExtrusionEntity *ee : out_to_check) ee->visit(get_volume);
             // compute flow to remove spacing_ratio from the equation

@@ -28,7 +28,7 @@
 namespace Slic3r {
 
 // prusaslicer
-#if 0 
+#if 0
 static void append_and_translate(ExPolygons &dst, const ExPolygons &src, const PrintInstance &instance) {
     size_t dst_idx = dst.size();
     expolygons_append(dst, src);
@@ -379,7 +379,7 @@ static void optimize_polylines_by_reversing(Polylines *polylines)
             double dist_to_start = (next.first_point() - prev.last_point()).cast<double>().norm();
             double dist_to_end   = (next.last_point() - prev.last_point()).cast<double>().norm();
 
-            if (dist_to_end < dist_to_start) 
+            if (dist_to_end < dist_to_start)
                 next.reverse();
         }
     }
@@ -515,7 +515,7 @@ ExtrusionEntityCollection make_brim(const Print &print, PrintTryCancel try_cance
     for (size_t i = 0; i < num_loops; ++i) {
         try_cancel();
         islands = expand(islands, float(flow.scaled_spacing()), ClipperLib::jtSquare);
-        for (Polygon &poly : islands) 
+        for (Polygon &poly : islands)
             poly.douglas_peucker(scaled_resolution);
         polygons_append(loops, shrink(islands, 0.5f * float(flow.scaled_spacing())));
     }
@@ -810,7 +810,6 @@ void extrude_brim_from_tree(const Print& print, std::vector<std::vector<BrimLoop
     int nextIdx = 0;
     std::function<void(BrimLoop&, ExtrusionEntityCollection*)>* extrude_ptr;
     std::function<void(BrimLoop&, ExtrusionEntityCollection*) > extrude = [&mm3_per_mm, &width, &height, &extrude_ptr, &nextIdx](BrimLoop& to_cut, ExtrusionEntityCollection* parent) {
-        int idx = nextIdx++;
         //bool i_have_line = !to_cut.line.points.empty() && to_cut.line.is_valid();
         bool i_have_line = to_cut.lines.size() > 0 && to_cut.lines.front().size() > 0 && to_cut.lines.front().is_valid();
         if (!i_have_line && to_cut.children.empty()) {
@@ -1401,7 +1400,7 @@ void make_brim_interior(const Print& print, const Flow& flow, const PrintObjectP
             frontiers.push_back(big_contour);
             for (Polygon& hole : expoly.holes) {
                 frontiers.push_back(hole);
-                //don't reverse it! back! or it will be ignored by intersection_pl. 
+                //don't reverse it! back! or it will be ignored by intersection_pl.
                 //frontiers.back().reverse();
             }
         }
