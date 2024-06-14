@@ -718,7 +718,7 @@ namespace Slic3r {
         }
 
         // we then loop again the entries to read other files stored in the archive
-        bool print_config_parsed = false, model_config_parsed = false;
+        bool print_config_parsed = false;
         bool read_SLIC3R_LAYER_CONFIG_RANGES_FILE = false;
         for (mz_uint i = 0; i < num_entries; ++i) {
             if (mz_zip_reader_file_stat(&archive, i, &stat)) {

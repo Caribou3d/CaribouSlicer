@@ -1152,8 +1152,8 @@ namespace PrusaSimpleConnect {
         std::vector<ConnectionCost> connections_sorted;
         connections_sorted.reserve(infill_ordered.size() * 2 - 2);
         for (size_t idx_chain = 1; idx_chain < infill_ordered.size(); ++idx_chain) {
-            const Polyline& pl1 = infill_ordered[idx_chain - 1];
-            const Polyline& pl2 = infill_ordered[idx_chain];
+    //        const Polyline& pl1 = infill_ordered[idx_chain - 1];
+    //        const Polyline& pl2 = infill_ordered[idx_chain];
             const std::pair<size_t, size_t>* cp1 = &map_infill_end_point_to_boundary[(idx_chain - 1) * 2 + 1];
             const std::pair<size_t, size_t>* cp2 = &map_infill_end_point_to_boundary[idx_chain * 2];
             if (cp1->first != boundary_idx_unconnected && cp1->first == cp2->first) {
@@ -1193,7 +1193,6 @@ namespace PrusaSimpleConnect {
         }
         assert(boundary_data.size() == boundary_src.holes.size() + 1);
 
-        size_t idx_chain_last = 0;
         for (ConnectionCost& connection_cost : connections_sorted) {
             const std::pair<size_t, size_t>* cp1 = &map_infill_end_point_to_boundary[connection_cost.idx_first * 2 + 1];
             const std::pair<size_t, size_t>* cp1prev = cp1 - 1;

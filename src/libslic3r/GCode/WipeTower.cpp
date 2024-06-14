@@ -365,7 +365,9 @@ public:
         }
         //sprintf(all, "M109 S%d ;SKINNYDIP TOOLCHANGE WAIT FOR TEMP %s\n", tc_temp, fast ? "FAST MODE":"NORMAL MODE");
         //this->append(all);
-        set_extruder_temp(tc_temp, this->m_current_tool, true, ";SKINNYDIP TOOLCHANGE WAIT FOR TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        // set_extruder_temp(tc_temp, this->m_current_tool, true, ";SKINNYDIP TOOLCHANGE WAIT FOR TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        set_extruder_temp(tc_temp, this->m_current_tool, true, fast ? ";SKINNYDIP TOOLCHANGE WAIT FOR TEMP FAST MODE" : ";SKINNYDIP TOOLCHANGE WAIT FOR TEMP NORMAL MODE");
+
         if (fan_on == true){
             set_fan(m_last_fan_speed, " ;restore cooling");
         }
@@ -378,7 +380,9 @@ public:
         //char tdbuf[128];
         //sprintf(tdbuf, "M104 S%d  ;SKINNYDIP BEGIN TOOLCHANGE TEMP %s\n", tc_temp, fast ? "FAST MODE":"NORMAL MODE");
         //m_gcode += tdbuf;
-        set_extruder_temp(tc_temp, this->m_current_tool, false, ";SKINNYDIP BEGIN TOOLCHANGE TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        // set_extruder_temp(tc_temp, this->m_current_tool, false, ";SKINNYDIP BEGIN TOOLCHANGE TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        set_extruder_temp(tc_temp, this->m_current_tool, false, fast ? ";SKINNYDIP BEGIN TOOLCHANGE TEMP FAST MODE" : ";SKINNYDIP BEGIN TOOLCHANGE TEMP NORMAL MODE");
+
         return *this;
     }
 
@@ -388,7 +392,9 @@ public:
         //char tdbuf[128];
         //sprintf(tdbuf, "M104 S%d  ;RESTORE PRE-TOOLCHANGE TEMP %s\n", tc_temp, fast ? "FAST MODE":"NORMAL MODE");
         //m_gcode += tdbuf;
-        set_extruder_temp(tc_temp, this->m_current_tool , false, ";RESTORE PRE-TOOLCHANGE TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        // set_extruder_temp(tc_temp, this->m_current_tool , false, ";RESTORE PRE-TOOLCHANGE TEMP " + fast ? "FAST MODE" : "NORMAL MODE");
+        set_extruder_temp(tc_temp, this->m_current_tool, false, fast ? ";RESTORE PRE-TOOLCHANGE TEMP FAST MODE" : ";RESTORE PRE-TOOLCHANGE TEMP NORMAL MODE");
+
         return *this;
     }
 
@@ -423,7 +429,8 @@ public:
         }
         gcode << temperature;
         bool multiple_tools = false; // ?
-        if (this->m_current_tool != -1 && (multiple_tools || this->m_gcode_flavor == (gcfMakerWare) || this->m_gcode_flavor == (gcfSailfish))) {
+        // if (this->m_current_tool != -1 && (multiple_tools || this->m_gcode_flavor == (gcfMakerWare) || this->m_gcode_flavor == (gcfSailfish))) {
+        if (static_cast<int>(this->m_current_tool) != -1 && (multiple_tools || this->m_gcode_flavor == gcfMakerWare || this->m_gcode_flavor == gcfSailfish)) {            
             if (this->m_gcode_flavor != (gcfRepRap)) {
                 gcode << " T" << tool;
             }

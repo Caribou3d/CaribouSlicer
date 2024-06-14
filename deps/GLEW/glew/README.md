@@ -61,7 +61,7 @@ Variables:  `SYSTEM=linux-clang, GLEW_DEST=/usr/local, STRIP=`
 
 #### Using cmake
 
-*CMake 2.8.12 or higher is required.*
+*CMake 3.20.0 or higher is required.*
 
 ##### Install build tools
 

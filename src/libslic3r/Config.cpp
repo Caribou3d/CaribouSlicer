@@ -1027,7 +1027,6 @@ size_t ConfigBase::load_from_gcode_string_legacy(ConfigBase& config, const char*
     // Walk line by line in reverse until a non-configuration key appears.
     const char *data_start = str;
     // boost::nowide::ifstream seems to cook the text data somehow, so less then the 64k of characters may be retrieved.
-    const char *end = data_start + strlen(str);
     size_t num_key_value_pairs = 0;
     for (auto [key, value] : load_gcode_string_legacy(str)) {
         try {

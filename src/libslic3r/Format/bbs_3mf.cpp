@@ -1743,7 +1743,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         }
         else {
             _extract_xml_from_archive(archive, sub_rels, _handle_start_relationships_element, _handle_end_relationships_element);
-            int index = 0;
 
 #if 0
             for (auto path : m_sub_model_paths) {
@@ -2309,7 +2308,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
                     map_it++;
                     continue;
                 }
-                ModelInstance* inst =  obj->instances[inst_index];
+                obj->instances[inst_index];
                 //inst->loaded_id = map_it->second.second; //Susi_not_impl
                 map_it++;
             }
@@ -2347,7 +2346,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
 
     bool _BBS_3MF_Importer::_extract_from_archive(mz_zip_archive& archive, std::string const & path, std::function<bool (mz_zip_archive& archive, const mz_zip_archive_file_stat& stat)> extract, bool restore)
     {
-        mz_uint num_entries = mz_zip_reader_get_num_files(&archive);
+        // mz_uint num_entries = mz_zip_reader_get_num_files(&archive);
         mz_zip_archive_file_stat stat;
         std::string path2 = path;
         if (path2.front() == '/') path2 = path2.substr(1);
@@ -3130,8 +3129,8 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
                     }
                     if (code.first == "layer") {
                         pt::ptree tree = code.second;
-                        double print_z = tree.get<double>("<xmlattr>.top_z");
-                        int extruder = tree.get<int>("<xmlattr>.extruder");
+            //            double print_z = tree.get<double>("<xmlattr>.top_z");
+            //            int extruder = tree.get<int>("<xmlattr>.extruder");
                         std::string color = tree.get<std::string>("<xmlattr>.color");
 
                         CustomGCode::Type   type;
@@ -3463,9 +3462,9 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
                 // Adjust backup object/volume id
                 std::istringstream iss(m_curr_object->uuid);
                 int backup_id;
-                bool need_replace = false;
+            //    bool need_replace = false;
                 if (iss >> std::hex >> backup_id) {
-                    need_replace = (m_curr_object->id != backup_id);
+            //        need_replace = (m_curr_object->id != backup_id);
                     m_curr_object->id = backup_id;
                 }
                 if (!m_curr_object->components.empty())
@@ -3913,7 +3912,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
             add_error("Can not assign mesh to a valid volume");
             return false;
         }
-        ObjectMetadata::VolumeMetadata& volume = object->second.volumes.back();
+        // ObjectMetadata::VolumeMetadata& volume = object->second.volumes.back();
         //volume.text_configuration = TextConfigurationSerialization::read(attributes, num_attributes); //Susi_not_impl
         //if (!volume.text_configuration.has_value()) //Susi_not_impl
         //    return false;
@@ -3928,7 +3927,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
     }
 
     // Definition of read/write method for EmbossShape
-    static void to_xml(std::stringstream &stream, /*const EmbossShape &es, */const ModelVolume &volume, mz_zip_archive &archive);
+    // static void to_xml(std::stringstream &stream, /*const EmbossShape &es, */const ModelVolume &volume, mz_zip_archive &archive);
     //static std::optional<EmbossShape> read_emboss_shape(const char **attributes, unsigned int num_attributes); //Susi_not_impl
 
     bool _BBS_3MF_Importer::_handle_start_shape_configuration(const char **attributes, unsigned int num_attributes)
@@ -4488,14 +4487,14 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         }
         object_id = object_item->second;
 
-        Transform3d transform = bbs_get_transform_from_3mf_specs_string(bbs_get_attribute_value_string(attributes, num_attributes, TRANSFORM_ATTR));
-        Vec3d ofs2ass = bbs_get_offset_from_3mf_specs_string(bbs_get_attribute_value_string(attributes, num_attributes, OFFSET_ATTR));
-        if (object_id < m_model->objects.size()) {
-            if (instance_id < m_model->objects[object_id]->instances.size()) {
+        // Transform3d transform = bbs_get_transform_from_3mf_specs_string(bbs_get_attribute_value_string(attributes, num_attributes, TRANSFORM_ATTR));
+        // Vec3d ofs2ass = bbs_get_offset_from_3mf_specs_string(bbs_get_attribute_value_string(attributes, num_attributes, OFFSET_ATTR));
+        // if (object_id < m_model->objects.size()) {
+        //    if (instance_id < m_model->objects[object_id]->instances.size()) {
                 //m_model->objects[object_id]->instances[instance_id]->set_assemble_from_transform(transform); //Susi_not_impl
                 //m_model->objects[object_id]->instances[instance_id]->set_offset_to_assembly(ofs2ass); //Susi_not_impl
-            }
-        }
+        //    }
+        // }
         return true;
     }
 
@@ -4516,7 +4515,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
             return false;
         }
 
-        ObjectMetadata::VolumeMetadata &volume = object->second.volumes[m_curr_config.volume_id];
+        //ObjectMetadata::VolumeMetadata &volume = object->second.volumes[m_curr_config.volume_id];
 
         //if (volume.text_configuration.has_value()) {
         //    add_error("Both text_info and text_configuration found, ignore legacy text_info");
@@ -5141,9 +5140,9 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
             if (is_bbl_3mf && boost::ends_with(current_object->uuid, OBJECT_UUID_SUFFIX) && top_importer->m_load_restore) {
                 std::istringstream iss(current_object->uuid);
                 int backup_id;
-                bool need_replace = false;
+                // bool need_replace = false;
                 if (iss >> std::hex >> backup_id) {
-                    need_replace = (current_object->id != backup_id);
+                    // need_replace = (current_object->id != backup_id);
                     current_object->id = backup_id;
                 }
                 //if (need_replace)

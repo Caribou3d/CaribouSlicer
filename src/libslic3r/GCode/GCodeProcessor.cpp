@@ -672,7 +672,7 @@ void GCodeProcessor::TimeProcessor::post_process(const std::string& filename, st
     }
 
     std::error_code err_code;
-    if (err_code = rename_file(out_path, filename)) {
+    if ((err_code = rename_file(out_path, filename))) {
         std::string err_msg = (std::string("Failed to rename the output G-code file from ") + out_path + " to " + filename + '\n' +
             "Is " + out_path + " locked? (gcp)" + err_code.message() + '\n');
         if (copy_file(out_path, filename, err_msg, true) != SUCCESS)
@@ -1423,7 +1423,7 @@ void GCodeProcessor::process_file(const std::string& filename, std::function<voi
             apply_config_simplify3d(filename);
 //        else if (m_producer == EProducer::SuperSlicer) // for/from prusaslicer
 //            apply_config_superslicer(filename);
-        } catch (Exception ex) {
+        } catch (const Slic3r::Exception& ex) {
             m_producer = EProducer::Unknown;
         }
 
@@ -1634,7 +1634,6 @@ std::string get_klipper_param(std::string key, std::string line) {
 }
 
 void GCodeProcessor::process_klipper_ACTIVATE_EXTRUDER(const GCodeReader::GCodeLine& line) {
-    uint8_t extruder_id = 0;
     //check the config
     std::string raw_value = get_klipper_param(" EXTRUDER", line.raw());
     auto it = std::find(m_extruder_names.begin(), m_extruder_names.end(), raw_value);
@@ -1745,7 +1744,7 @@ void GCodeProcessor::apply_config_simplify3d(const std::string& filename)
 
 void GCodeProcessor::set_extruder_temp(float temp) {
     if (m_single_extruder_mmu) {
-        for (int i = 0; i < m_extruder_temps.size(); i++) {
+        for (std::vector<float>::size_type i = 0; i < m_extruder_temps.size(); i++) {
             m_extruder_temps[i] = temp;
         }
     }else

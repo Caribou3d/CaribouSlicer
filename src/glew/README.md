@@ -114,7 +114,7 @@ The cmake build is mostly contributer maintained.
 Due to the multitude of use cases this is maintained on a _best effort_ basis.
 Pull requests are welcome.
 
-*CMake 2.8.12 or higher is required.*
+*CMake 3.20.0 or higher is required.*
 
 ##### Install build tools
 

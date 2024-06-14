@@ -554,7 +554,8 @@ bool push_into_custom_variables(DynamicPrintConfig &            print_config,
 {
     if (auto it = key_custom_settings_translation_map.find(opt_key); it != key_custom_settings_translation_map.end()) {
         if ((it->second & bbstFFF_FILAMENT) != 0 || (it->second & bbstSLA_MATERIAL) != 0) {
-            for (int i = 0; i < opt_value.size(); ++i) {
+//            for (int i = 0; i < opt_value.size(); ++i) {
+            for (std::vector<std::string>::size_type i = 0; i < opt_value.size(); ++i) {
                 if (print_config.opt<ConfigOptionStrings>("filament_custom_variables") == nullptr)
                     print_config.set_deserialize("filament_custom_variables", "");
                 const std::string &val = print_config.opt<ConfigOptionStrings>("filament_custom_variables")->get_at(i);
@@ -619,7 +620,6 @@ bool read_json_file_bambu(const std_path &temp_file,
     std::string            new_support_style;
     std::string            is_infill_first;
     std::string            get_wall_sequence;
-    bool                   is_project_settings = false;
 
     CNumericLocalesSetter locales_setter;
 
@@ -641,8 +641,6 @@ bool read_json_file_bambu(const std_path &temp_file,
                 key_values.emplace(BBL_JSON_KEY_IS_CUSTOM, it.value());
             } else if (boost::iequals(it.key(), BBL_JSON_KEY_NAME)) {
                 key_values.emplace(BBL_JSON_KEY_NAME, it.value());
-                if (it.value() == "project_settings")
-                    is_project_settings = true;
             } else if (boost::iequals(it.key(), BBL_JSON_KEY_URL)) {
                 key_values.emplace(BBL_JSON_KEY_URL, it.value());
             } else if (boost::iequals(it.key(), BBL_JSON_KEY_TYPE)) {
