@@ -194,8 +194,8 @@ FillConcentricWGapFill::fill_surface_extrusion(
 
         assert(bunch_2_shell_2_loops.size() == bunch_2_gaps.size() || bunch_2_shell_2_loops.size() == bunch_2_gaps.size() + 1);
         //for each "shell" (loop to print before a gap)
-        for (int idx_bunch = 0; idx_bunch < bunch_2_shell_2_loops.size(); idx_bunch++) {
-
+        //for (int idx_bunch = 0; idx_bunch < bunch_2_shell_2_loops.size(); idx_bunch++) {
+        for (auto idx_bunch = 0; idx_bunch < bunch_2_shell_2_loops.size(); ++idx_bunch) {
             //we have some "starting loops". for each 'shell', we get each loop and find (by searching which one it fit inside) its island.
             // if there is none or multiple, then we have to start again from these new loops.
             std::vector<Polygons>& shells = bunch_2_shell_2_loops[idx_bunch];
@@ -287,7 +287,8 @@ FillConcentricWGapFill::fill_surface_extrusion(
             //TODO: move items that are alone in a collection to the upper collection.
 
             //add gapfills
-            if (idx_bunch < bunch_2_gaps.size() && !bunch_2_gaps[idx_bunch].empty() && params.density >= 1) {
+            //if (idx_bunch < bunch_2_gaps.size() && !bunch_2_gaps[idx_bunch].empty() && params.density >= 1) {
+            if (idx_bunch < static_cast<int>(bunch_2_gaps.size()) && !bunch_2_gaps[idx_bunch].empty() && params.density >= 1) {
                 // get parameters
                 coordf_t min = 0.2 * distance * (1 - INSET_OVERLAP_TOLERANCE);
                 //be sure we don't gapfill where the perimeters are already touching each other (negative spacing).
@@ -396,7 +397,7 @@ FillConcentricWGapFill::fill_surface_extrusion(
     if (gapfill_areas.size() > 0) {
         double minarea = double(params.flow.scaled_width()) * double(params.flow.scaled_width());
         if (params.config != nullptr) minarea = scale_d(params.config->gap_fill_min_area.get_abs_value(params.flow.width())) * double(params.flow.scaled_width());
-        for (int i = 0; i < gapfill_areas.size(); i++) {
+        for (auto i = 0; i < gapfill_areas.size(); ++i) {
             if (gapfill_areas[i].area() < minarea) {
                 gapfill_areas.erase(gapfill_areas.begin() + i);
                 i--;

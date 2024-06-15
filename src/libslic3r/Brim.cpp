@@ -761,7 +761,7 @@ void extrude_brim_from_tree(const Print& print, std::vector<std::vector<BrimLoop
             result = intersection_pl(to_cut.lines, frontiers);
         }
         //remove too small segments
-        for (int i = 0; i < result.size(); i++) {
+        for (size_t i = 0; i < result.size(); i++) {
             if (result[i].length() < flow.scaled_width() * 2) {
                 result.erase(result.begin() + i);
                 i--;
@@ -787,7 +787,8 @@ void extrude_brim_from_tree(const Print& print, std::vector<std::vector<BrimLoop
             cut_child_first.emplace_front(&loop, 0);
             //flat recurtion
             while (!cut_child_first.empty()) {
-                if (cut_child_first.front().first->children.size() <= cut_child_first.front().second) {
+//                if (cut_child_first.front().first->children.size() <= cut_child_first.front().second) {
+                if (cut_child_first.front().first->children.size() <= static_cast<size_t>(cut_child_first.front().second)) {
                     //if no child to cut, cut ourself and pop
                     cut_loop(*cut_child_first.front().first);
                     cut_child_first.pop_front();

@@ -159,7 +159,9 @@ bool ExtrusionLoop::split_at_vertex(const Point &point, const double scaled_epsi
                     p2.append(std::move(p1));
                     path->polyline.swap(p2); // swap points & fitting result
                 }
-            } else if (idx > 0 && idx < path->size() - 1) {
+            // } else if (idx > 0 && idx < path->size() - 1) {
+            } else if (static_cast<size_t>(idx) > 0 && static_cast<size_t>(idx) < path->size() - 1) {
+
                 // new paths list starts with the second half of current path
                 ExtrusionPaths new_paths;
                 PolylineOrArc p1, p2;
