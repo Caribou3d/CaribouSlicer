@@ -59,7 +59,8 @@ void CalibrationExtruderDialog::create_geometry() {
     //model is created for a 0.4 nozzle, scale xy with nozzle size.
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
     assert(nozzle_diameter_config->values.size() > 0);
-    float nozzle_diameter = nozzle_diameter_config->values[0];
+    //float nozzle_diameter = nozzle_diameter_config->values[0];
+    float nozzle_diameter = nozzle_diameter_config->get_at(0);
 
     int idx_scale = dimension->GetSelection();
     double xyScale = 1;

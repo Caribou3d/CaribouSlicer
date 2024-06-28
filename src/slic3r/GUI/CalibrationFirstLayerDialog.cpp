@@ -89,12 +89,15 @@ void CalibrationFirstLayerDialog::create_geometry() {
     bool isRect = (type == BuildVolume::Type::Rectangle);
     bool isCirc = (type == BuildVolume::Type::Circle);
 
-    Vec2d bed_size = BoundingBoxf(bed_shape->values).size();
-    Vec2d bed_min = BoundingBoxf(bed_shape->values).min;
+    //Vec2d bed_size = BoundingBoxf(bed_shape->m_values).size();
+    //Vec2d bed_min = BoundingBoxf(bed_shape->values).min;
 
     /// --- scale the squares according to bed quantities ---
-    float bed_dim_x = bed_size.x() - bed_min.x();
-    float bed_dim_y = bed_size.y() - bed_min.y();
+    //float bed_dim_x = bed_size.x() - bed_min.x();
+    //float bed_dim_y = bed_size.y() - bed_min.y();
+
+    float bed_dim_x = 205.0;
+    float bed_dim_y = 245.0;
 
     double radius = unscaled<double>(plat->build_volume().circle().radius);
 
@@ -117,7 +120,8 @@ void CalibrationFirstLayerDialog::create_geometry() {
     /// --- scale in z direction according to layer height and nozzle diameter ---
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
     assert(nozzle_diameter_config->values.size() > 0);
-    float nozzle_diameter = nozzle_diameter_config->values[0];
+    //float nozzle_diameter = nozzle_diameter_config->values[0];
+    float nozzle_diameter = nozzle_diameter_config->get_at(0);
 
     const ConfigOptionFloatOrPercent* first_layer_height_setting = printConfig->option<ConfigOptionFloatOrPercent>("first_layer_height");
     double first_layer_height = first_layer_height_setting->get_abs_value(nozzle_diameter);

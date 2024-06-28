@@ -79,7 +79,7 @@ public:
         m_right(float(/*print_config.wipe_tower_x.value +*/ print_config.wipe_tower_width.value)),
         m_wipe_tower_pos(float(print_config.wipe_tower_x.value), float(print_config.wipe_tower_y.value)),
         m_wipe_tower_rotation(float(print_config.wipe_tower_rotation_angle)),
-        m_extruder_offsets(print_config.extruder_offset.values),
+        m_extruder_offsets(print_config.extruder_offset.get_values()),
         m_priming(priming),
         m_tool_changes(tool_changes),
         m_final_purge(final_purge),
@@ -519,7 +519,7 @@ private:
 
     double compute_e_per_mm(double path_mm3_per_mm);
     std::string _extrude(const ExtrusionPath &path, const std::string &description, double speed = -1);
-    void _extrude_line(std::string& gcode_str, const Line& line, const double e_per_mm, const std::string& comment);
+    void _extrude_line(std::string& gcode_str, const Line& line, const double e_per_mm, const std::string& comment, ExtrusionRole role);
     void _extrude_line_cut_corner(std::string& gcode_str, const Line& line, const double e_per_mm, const std::string& comment, Point& last_pos, const double path_width);
     std::string _before_extrude(const ExtrusionPath &path, const std::string &description, double speed = -1);
     double_t    _compute_speed_mm_per_sec(const ExtrusionPath &path, double speed, std::string *comment);
