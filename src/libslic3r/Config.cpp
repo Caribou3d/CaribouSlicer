@@ -276,6 +276,48 @@ std::string escape_ampersand(const std::string& str)
     return std::string(out.data(), outptr - out.data());
 }
 
+bool GraphData::operator<(const GraphData &rhs) const
+{
+    if (this->data_size() == rhs.data_size()) {
+        const Pointfs my_data = this->data();
+        const Pointfs other_data = rhs.data();
+        assert(my_data.size() == other_data.size());
+        auto it_this = my_data.begin();
+        auto it_other = other_data.begin();
+        while (it_this != my_data.end()) {
+            if(it_this->x() != it_other->x())
+                return it_this->x() < it_other->x();
+            if(it_this->y() != it_other->y())
+                return it_this->y() < it_other->y();
+            ++it_this;
+            ++it_other;
+        }
+        return this->type < rhs.type;
+    }
+    return this->data_size() < rhs.data_size();
+}
+
+bool GraphData::operator>(const GraphData &rhs) const
+{
+    if (this->data_size() == rhs.data_size()) {
+        const Pointfs my_data = this->data();
+        const Pointfs other_data = rhs.data();
+        assert(my_data.size() == other_data.size());
+        auto it_this = my_data.begin();
+        auto it_other = other_data.begin();
+        while (it_this != my_data.end()) {
+            if(it_this->x() != it_other->x())
+                return it_this->x() > it_other->x();
+            if(it_this->y() != it_other->y())
+                return it_this->y() > it_other->y();
+            ++it_this;
+            ++it_other;
+        }
+        return this->type > rhs.type;
+    }
+    return this->data_size() > rhs.data_size();
+}
+
 Pointfs GraphData::data() const
 {
     assert(validate());

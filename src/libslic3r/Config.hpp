@@ -10,6 +10,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <tuple>
 #include <vector>
 #include "libslic3r.h"
 #include "clonable_ptr.hpp"
@@ -41,6 +42,7 @@ namespace Slic3r {
     inline bool operator==(const FloatOrPercent& l, const FloatOrPercent& r) throw() { return l.value == r.value && l.percent == r.percent; }
     inline bool operator!=(const FloatOrPercent& l, const FloatOrPercent& r) throw() { return !(l == r); }
     inline bool operator< (const FloatOrPercent& l, const FloatOrPercent& r) throw() { return l.value < r.value || (l.value == r.value && int(l.percent) < int(r.percent)); }
+    inline bool operator> (const FloatOrPercent& l, const FloatOrPercent& r) throw() { return l.value > r.value || (l.value == r.value && int(l.percent) > int(r.percent)); }
 
     struct GraphData
     {
@@ -62,48 +64,10 @@ namespace Slic3r {
         GraphData(size_t start_idx, size_t stop_idx, GraphType graph_type, Pointfs graph_data)
             : graph_points(graph_data), begin_idx(start_idx), end_idx(stop_idx), type(graph_type) {}
     
-        bool operator==(const GraphData &rhs) const throw() { return this->data_size() == rhs.data_size() && this->data() == rhs.data() && this->type == rhs.type; }
-        bool operator!=(const GraphData &rhs) const throw() { return this->data_size() != rhs.data_size() || this->data() != rhs.data() || this->type != rhs.type; }
-        bool operator<(const GraphData &rhs) const throw()
-        {
-            if (this->data_size() == rhs.data_size()) {
-                const Pointfs my_data = this->data();
-                const Pointfs other_data = rhs.data();
-                assert(my_data.size() == other_data.size());
-                auto it_this = my_data.begin();
-                auto it_other = other_data.begin();
-                while (it_this != my_data.end()) {
-                    if(it_this->x() != it_other->x())
-                        return it_this->x() < it_other->x();
-                    if(it_this->y() != it_other->y())
-                        return it_this->y() < it_other->y();
-                    ++it_this;
-                    ++it_other;
-                }
-                return this->type < rhs.type;
-            }
-            return this->data_size() < rhs.data_size();
-        }
-        bool operator>(const GraphData &rhs) const throw()
-        {
-            if (this->data_size() == rhs.data_size()) {
-                const Pointfs my_data = this->data();
-                const Pointfs other_data = rhs.data();
-                assert(my_data.size() == other_data.size());
-                auto it_this = my_data.begin();
-                auto it_other = other_data.begin();
-                while (it_this != my_data.end()) {
-                    if(it_this->x() != it_other->x())
-                        return it_this->x() > it_other->x();
-                    if(it_this->y() != it_other->y())
-                        return it_this->y() > it_other->y();
-                    ++it_this;
-                    ++it_other;
-                }
-                return this->type > rhs.type;
-            }
-            return this->data_size() > rhs.data_size();
-        }
+        bool operator==(const GraphData &rhs) const { return this->data_size() == rhs.data_size() && this->data() == rhs.data() && this->type == rhs.type; }
+        bool operator!=(const GraphData &rhs) const { return this->data_size() != rhs.data_size() || this->data() != rhs.data() || this->type != rhs.type; }
+        bool operator<(const GraphData &rhs) const;
+        bool operator>(const GraphData &rhs) const;
     
         // data is the useable part of the graph
         Pointfs data() const;
@@ -1029,7 +993,7 @@ public:
     double                  get_float(size_t idx = 0) const override { return this->value; }
     ConfigOption*           clone()     const override { return new ConfigOptionFloat(*this); }
     bool                    operator==(const ConfigOptionFloat &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionFloat &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                    operator<(const ConfigOptionFloat &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value < rhs.value); }
     
     std::string serialize() const override
     {
@@ -1084,7 +1048,7 @@ public:
     }
     bool operator<(const ConfigOptionFloatsTempl &rhs) const throw()
     {
-        return this->m_enabled < rhs.m_enabled && vectors_lower(this->m_values, rhs.m_values);
+        return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && vectors_lower(this->m_values, rhs.m_values));
     }
     bool 					operator==(const ConfigOption &rhs) const override {
         if (rhs.type() != this->type())
@@ -1247,7 +1211,7 @@ public:
     double                  get_float(size_t idx = 0) const override { return this->value; }
     ConfigOption*           clone()  const override { return new ConfigOptionInt(*this); }
     bool                    operator==(const ConfigOptionInt &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator<(const ConfigOptionInt &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value < rhs.value; }
+    bool                    operator<(const ConfigOptionInt &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value < rhs.value); }
     
     std::string serialize() const override 
     {
@@ -1298,7 +1262,7 @@ public:
     ConfigOption*           clone() const override { assert(this->m_values.size() == this->m_enabled.size()); return new ConfigOptionIntsTempl(*this); }
     ConfigOptionIntsTempl&  operator= (const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionIntsTempl &rhs) const throw() { return this->m_enabled == rhs.m_enabled && this->m_values == rhs.m_values; }
-    bool                    operator< (const ConfigOptionIntsTempl &rhs) const throw() { return this->m_enabled < rhs.m_enabled || this->m_values <  rhs.m_values; }
+    bool                    operator< (const ConfigOptionIntsTempl &rhs) const throw() { return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && this->m_values < rhs.m_values); }
     // Could a special "nil" value be stored inside the vector, indicating undefined value?
     bool                    nullable() const override { return NULLABLE; }
     // Special "nil" value to be stored into the vector if this->supports_nil().
@@ -1408,7 +1372,7 @@ public:
     ConfigOption*           clone() const override { return new ConfigOptionString(*this); }
     ConfigOptionString&     operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionString &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionString &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                    operator< (const ConfigOptionString &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value < rhs.value); }
     bool 					empty() const { return this->value.empty(); }
 
     std::string serialize() const override
@@ -1450,7 +1414,7 @@ public:
     ConfigOption*           clone() const override { assert(this->m_values.size() == this->m_enabled.size()); return new ConfigOptionStrings(*this); }
     ConfigOptionStrings&    operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionStrings &rhs) const throw() { return this->m_enabled == rhs.m_enabled && this->m_values == rhs.m_values; }
-    bool                    operator< (const ConfigOptionStrings &rhs) const throw() { return this->m_enabled < rhs.m_enabled || this->m_values <  rhs.m_values; }
+    bool                    operator< (const ConfigOptionStrings &rhs) const throw() { return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && this->m_values < rhs.m_values); }
     bool                    is_nil(int32_t idx = 0) const override { return false; }
 
     std::string serialize() const override
@@ -1499,7 +1463,7 @@ public:
     ConfigOption*           clone() const override { return new ConfigOptionPercent(*this); }
     ConfigOptionPercent&    operator= (const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionPercent &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionPercent &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                    operator< (const ConfigOptionPercent &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value < rhs.value); }
     
     double                  get_abs_value(double ratio_over) const { return ratio_over * this->value / 100.; }
     bool                    is_percent(size_t idx = 0) const override { return true; }
@@ -1555,7 +1519,7 @@ public:
     }
     bool operator<(const ConfigOptionPercentsTempl &rhs) const throw()
     {
-        return this->m_enabled < rhs.m_enabled || ConfigOptionFloatsTempl<NULLABLE>::vectors_lower(this->m_values, rhs.m_values);
+        return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && ConfigOptionFloatsTempl<NULLABLE>::vectors_lower(this->m_values, rhs.m_values));
     }
     double                  get_abs_value(size_t i, double ratio_over) const { return this->is_nil(i) ? 0 : ratio_over * this->get_at(i) / 100; }
     bool                    is_percent(size_t idx = 0) const override { return true; }
@@ -1621,8 +1585,11 @@ public:
         { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value && this->percent == rhs.percent; }
     size_t                      hash() const throw() override 
         { size_t seed = std::hash<double>{}(this->value); return this->percent ? seed ^ 0x9e3779b9 : seed; }
-    bool                        operator< (const ConfigOptionFloatOrPercent &rhs) const throw() 
-        { return this->is_enabled() == rhs.is_enabled() || this->value < rhs.value || (this->value == rhs.value && int(this->percent) < int(rhs.percent)); }
+    bool                        operator< (const ConfigOptionFloatOrPercent &rhs) const throw() {
+        bool this_enabled = this->is_enabled();
+        bool rhs_enabled = this->is_enabled();
+        return std::tie(this_enabled, this->value, this->percent) < std::tie(rhs_enabled, rhs.value, rhs.percent);
+    }
 
     double                      get_abs_value(double ratio_over) const 
         { return this->percent ? (ratio_over * this->value / 100) : this->value; }
@@ -1702,7 +1669,7 @@ public:
     }
     bool                    operator<(const ConfigOptionFloatsOrPercentsTempl &rhs) const throw()
     {
-        return this->m_enabled < rhs.m_enabled || vectors_lower(this->m_values, rhs.m_values);
+        return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && vectors_lower(this->m_values, rhs.m_values));
     }
 
     // Could a special "nil" value be stored inside the vector, indicating undefined value?
@@ -1872,7 +1839,7 @@ public:
     ConfigOption*           clone() const override { return new ConfigOptionPoint(*this); }
     ConfigOptionPoint&      operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionPoint &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionPoint &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                    operator< (const ConfigOptionPoint &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value <  rhs.value); }
 
     std::string serialize() const override
     {
@@ -1936,9 +1903,9 @@ public:
         return this->m_enabled == rhs.m_enabled && this->m_values == rhs.m_values;
     }
     bool                    operator< (const ConfigOptionPoints &rhs) const throw() 
-    { return this->m_enabled < rhs.m_enabled ||
+    { return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled &&
                std::lexicographical_compare(this->m_values.begin(), this->m_values.end(), rhs.m_values.begin(),
-                                            rhs.m_values.end(), [](const auto &l, const auto &r) { return l < r; });
+                                            rhs.m_values.end(), [](const auto &l, const auto &r) { return l < r; }));
     }
     bool                    is_nil(int32_t idx = 0) const override { return false; }
 
@@ -2028,7 +1995,11 @@ public:
     ConfigOptionPoint3&     operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionPoint3 &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
     bool                    operator< (const ConfigOptionPoint3 &rhs) const throw() 
-        { return this->is_enabled() < rhs.is_enabled() || this->value.x() < rhs.value.x() || (this->value.x() == rhs.value.x() && (this->value.y() < rhs.value.y() || (this->value.y() == rhs.value.y() && this->value.z() < rhs.value.z()))); }
+    {
+        bool this_enabled = this->is_enabled();
+        bool rhs_enabled  = this->is_enabled();
+        return std::tie(this_enabled, this->value.x(), this->value.y()) < std::tie(rhs_enabled, rhs.value.x(), rhs.value.y());
+    }
 
     std::string serialize() const override
     {
@@ -2075,7 +2046,7 @@ public:
     ConfigOption*           clone() const override { return new ConfigOptionGraph(*this); }
     ConfigOptionGraph&      operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionGraph &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionGraph &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                    operator< (const ConfigOptionGraph &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value <  rhs.value); }
     
     std::string serialize() const override
     {
@@ -2125,8 +2096,9 @@ public:
     bool                    operator==(const ConfigOptionGraphs &rhs) const throw() { return this->m_enabled == rhs.m_enabled && this->m_values == rhs.m_values; }
     bool operator<(const ConfigOptionGraphs &rhs) const throw()
     {
-        return this->m_enabled < rhs.m_enabled || std::lexicographical_compare(this->m_values.begin(), this->m_values.end(), rhs.m_values.begin(),
-                                            rhs.m_values.end(), [](const auto &l, const auto &r) { return l < r; });
+        return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && 
+            std::lexicographical_compare(this->m_values.begin(), this->m_values.end(), rhs.m_values.begin(),
+                                            rhs.m_values.end(), [](const auto &l, const auto &r) { return l < r; }));
     }
     bool                    is_nil(int32_t idx = 0) const override { return false; }
 
@@ -2221,7 +2193,7 @@ public:
     ConfigOption*           clone()     const override { return new ConfigOptionBool(*this); }
     ConfigOptionBool&       operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionBool &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() &&this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionBool &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || int(this->value) < int(rhs.value); }
+    bool                    operator< (const ConfigOptionBool &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && int(this->value) < int(rhs.value)); }
 
     std::string serialize() const override
     {
@@ -2283,7 +2255,7 @@ public:
     ConfigOption*           clone() const override { assert(this->m_values.size() == this->m_enabled.size()); return new ConfigOptionBoolsTempl(*this); }
     ConfigOptionBoolsTempl& operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionBoolsTempl &rhs) const throw() { return this->m_enabled == rhs.m_enabled && this->m_values == rhs.m_values; }
-    bool                    operator< (const ConfigOptionBoolsTempl &rhs) const throw() { return this->m_enabled < rhs.m_enabled || this->m_values <  rhs.m_values; }
+    bool                    operator< (const ConfigOptionBoolsTempl &rhs) const throw() { return this->m_enabled < rhs.m_enabled || (this->m_enabled == rhs.m_enabled && this->m_values <  rhs.m_values); }
     // Could a special "nil" value be stored inside the vector, indicating undefined value?
     bool 					nullable() const override { return NULLABLE; }
     // Special "nil" value to be stored into the vector if this->supports_nil().
@@ -2412,7 +2384,7 @@ public:
     ConfigOption*           clone() const override { return new ConfigOptionEnum<T>(*this); }
     ConfigOptionEnum<T>&    operator=(const ConfigOption *opt) { this->set(opt); return *this; }
     bool                    operator==(const ConfigOptionEnum<T> &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                    operator< (const ConfigOptionEnum<T> &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || int(this->value) < int(rhs.value); }
+    bool                    operator< (const ConfigOptionEnum<T> &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && int(this->value) < int(rhs.value)); }
     int32_t                 get_int(size_t idx = 0) const override { return int32_t(this->value); }
     void                    set_enum_int(int32_t val) override { this->value = T(val); }
     // special case for get/set any: use a int like for ConfigOptionEnumGeneric, to simplify
@@ -2493,7 +2465,7 @@ public:
     ConfigOption*               clone() const override { return new ConfigOptionEnumGeneric(*this); }
     ConfigOptionEnumGeneric&    operator= (const ConfigOption *opt) { this->set(opt); return *this; }
     bool                        operator==(const ConfigOptionEnumGeneric &rhs) const throw() { return this->is_enabled() == rhs.is_enabled() && this->value == rhs.value; }
-    bool                        operator< (const ConfigOptionEnumGeneric &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || this->value <  rhs.value; }
+    bool                        operator< (const ConfigOptionEnumGeneric &rhs) const throw() { return this->is_enabled() < rhs.is_enabled() || (this->is_enabled() == rhs.is_enabled() && this->value <  rhs.value); }
 
     bool operator==(const ConfigOption &rhs) const override
     {
