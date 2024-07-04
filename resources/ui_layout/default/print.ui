@@ -210,22 +210,23 @@ group:Reducing printing time
         setting:width$20:infill_dense_algo
     end_line
 group:sidetext_width$5:Infill angle
-    line:Angle
-        setting:label_width$8:width$5:fill_angle
-        setting:label_width$16:width$5:bridge_angle
-    end_line
-    line:Modifiers
-        setting:label_width$8:width$5:label$increment:fill_angle_increment
-        setting:label_width$16:width$5:fill_angle_cross
-    vector_line:fill_angle_template
-#    setting:fill_angle_template
-group:sidetext_width$7:Advanced
-    line:Sold Infill
-	    setting:label_width$12:solid_infill_every_layers
-    end_line
-#	line:Solid infill is area below
-#        setting:label_width$12:label$From region:solid_infill_below_area
-#	end_line
+	line:Angle
+		setting:label_width$8:width$5:fill_angle
+		setting:label_width$6:width$5:bridge_angle
+	end_line
+	line:Modifiers
+		setting:label_width$6:width$5:label$increment:fill_angle_increment
+		setting:width$5:fill_angle_cross
+		setting:width$5:fill_angle_follow_model
+	vector_line:fill_angle_template
+#	setting:fill_angle_template
+group:sidetext_width$5:Advanced
+	setting:solid_infill_every_layers
+	line:Solid infill if area below
+        setting:label$From region:solid_infill_below_area
+        setting:label$From the whole layer:solid_infill_below_layer_area
+	end_line
+    setting:solid_infill_below_width
 	line:Anchor solid infill by X mm
 		setting:label_width$12:width$8:external_infill_margin
 		setting:label_width$18:width$8:bridged_infill_margin
@@ -320,20 +321,21 @@ group:Options for support material and raft
     setting:dont_support_bridges
     setting:support_material_synchronize_layers
 group:Options for support material interface
-    setting:support_material_interface_layer_height
-    line:Pattern
-        setting:support_material_interface_pattern
-        setting:label$Interface spacing:support_material_interface_spacing
-    end_line
-    line:Pattern Angle
-        setting:label$_:support_material_interface_angle
-        setting:label$Increment:support_material_interface_angle_increment
-    end_line
-    line:Layer count
-        setting:support_material_interface_layers
-        setting:label_width$24:support_material_bottom_interface_layers
-    end_line
-    setting:support_material_interface_contact_loops
+	setting:support_material_interface_layer_height
+	line:Pattern
+		setting:label$Top:support_material_top_interface_pattern
+		setting:label$Bottom:support_material_bottom_interface_pattern
+		setting:label$Spacing:support_material_interface_spacing
+	end_line
+	line:Pattern Angle
+		setting:label$_:support_material_interface_angle
+		setting:label$Increment:support_material_interface_angle_increment
+	end_line
+	line:Layer count
+		setting:label$Top:support_material_interface_layers
+		setting:label$Bottom:support_material_bottom_interface_layers
+	end_line
+	setting:support_material_interface_contact_loops
 
 page:Speed:time
 group:Speed for print moves
@@ -387,34 +389,34 @@ group:Pressure equalizer (experimental)
     setting:max_volumetric_extrusion_rate_slope_positive
     setting:max_volumetric_extrusion_rate_slope_negative
 group:label_width$9:sidetext_width$8:Acceleration control (advanced)
-    line:Default acceleration
-        setting:width$4:default_acceleration
-    line:Perimeter acceleration
-        setting:width$4:perimeter_acceleration
-        setting:label_width$12:width$4:external_perimeter_acceleration
-    line:Infill acceleration
-        setting:width$4:solid_infill_acceleration
-        setting:label_width$12:width$4:infill_acceleration
-        setting:label_width$15:width$4:top_solid_infill_acceleration
-    line:Support acceleration
-        setting:width$4:support_material_acceleration
-        setting:label_width$12:width$4:support_material_interface_acceleration
-        setting:label_width$15:width$4:brim_acceleration
-    line:Bridge acceleration
-        setting:width$4:bridge_acceleration
-        setting:label_width$12:width$4:bridge_internal_acceleration
-        setting:label_width$15:width$4:overhangs_acceleration
-    line:Other extrusions acceleration
-        setting:width$4:gap_fill_acceleration
-        setting:label_width$12:width$4:thin_walls_acceleration
-        setting:label_width$15:width$4:ironing_acceleration
-    line:Travel acceleration
-        setting:width$4:travel_acceleration
-        setting:label_width$26:travel_deceleration_use_target
-    line:First layer acceleration
-        setting:width$4:first_layer_acceleration
-        setting:label_width$26:width$4:first_layer_acceleration_over_raft
-    end_line
+	line:Default acceleration
+		setting:width$4:default_acceleration
+	line:Perimeter acceleration
+		setting:width$4:perimeter_acceleration
+		setting:width$4:external_perimeter_acceleration
+	line:Infill acceleration
+		setting:width$4:solid_infill_acceleration
+		setting:width$4:infill_acceleration
+		setting:width$4:top_solid_infill_acceleration
+	line:Support acceleration
+		setting:width$4:support_material_acceleration
+		setting:width$4:support_material_interface_acceleration
+		setting:width$4:brim_acceleration
+	line:Bridge acceleration
+		setting:width$4:bridge_acceleration
+		setting:width$4:internal_bridge_acceleration
+		setting:width$4:overhangs_acceleration
+	line:Other extrusions acceleration
+		setting:width$4:gap_fill_acceleration
+		setting:width$4:thin_walls_acceleration
+		setting:width$4:ironing_acceleration
+	line:Travel acceleration
+		setting:width$4:travel_acceleration
+		setting:label_width$22:travel_deceleration_use_target
+	line:First layer acceleration
+		setting:width$4:first_layer_acceleration
+		setting:label_width$22:width$4:first_layer_acceleration_over_raft
+	end_line
 
 page:Width & Flow:width
 group:Extrusion width

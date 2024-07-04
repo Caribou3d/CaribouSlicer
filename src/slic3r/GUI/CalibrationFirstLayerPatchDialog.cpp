@@ -73,15 +73,12 @@ void CalibrationFirstLayerPatchDialog::create_geometry() {
 
     int idx_scale = dimension->GetSelection();
 
-//    Vec2d bed_size = BoundingBoxf(bed_shape->values).size();
-//    Vec2d bed_min = BoundingBoxf(bed_shape->values).min;
+    Vec2d bed_size = BoundingBoxf(bed_shape->get_values()).size();
+    Vec2d bed_min = BoundingBoxf(bed_shape->get_values()).min;
 
     /// --- scale the squares according to bed dimensions ---
-//    float bed_dim_x = bed_size.x() - bed_min.x() - 5.0;
-//    float bed_dim_y = bed_size.y() - bed_min.y() - 5.0 ;
-
-    float bed_dim_x = 205.0;
-    float bed_dim_y = 245.0;
+    float bed_dim_x = bed_size.x() - bed_min.x() - 5.0;
+    float bed_dim_y = bed_size.y() - bed_min.y() - 5.0 ;
 
     float xScale = (idx_scale + 2.0) / 10.0 * bed_dim_x / 20.0;
     float yScale = (idx_scale + 2.0) / 10.0 * bed_dim_y / 20.0;
@@ -95,8 +92,7 @@ void CalibrationFirstLayerPatchDialog::create_geometry() {
 
     /// --- scale in z direction according to layer height and nozzle diameter ---
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
-    assert(nozzle_diameter_config->values.size() > 0);
-    //float nozzle_diameter = nozzle_diameter_config->values[0];
+    assert(nozzle_diameter_config->get_at(0) > 0);
     float nozzle_diameter = nozzle_diameter_config->get_at(0);
 
     const ConfigOptionFloatOrPercent* first_layer_height_setting = printConfig->option<ConfigOptionFloatOrPercent>("first_layer_height");

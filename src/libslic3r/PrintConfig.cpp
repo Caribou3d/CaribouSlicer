@@ -1211,6 +1211,7 @@ void PrintConfigDef::init_fff_params()
     def->min                = -1;
     def->max                = 100;
     def->is_vector_extruder = true;
+    def->sidetext = L("%");
     def->set_default_value(new ConfigOptionInts({-1}));
     def->aliases = { "min_fan_speed" }; // only if "fan_always_on"
 
@@ -2376,6 +2377,7 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("42");
     def->enum_values.push_back("55");
     def->enum_values.push_back("75");
+    def->enum_values.push_back("100");
     def->enum_labels.push_back("0");
     def->enum_labels.push_back("4");
     def->enum_labels.push_back("5.5");
@@ -2388,6 +2390,7 @@ void PrintConfigDef::init_fff_params()
     def->enum_labels.push_back("42");
     def->enum_labels.push_back("55");
     def->enum_labels.push_back("75");
+    def->enum_labels.push_back("100");
     def->mode = comSimpleAE | comPrusa;
     def->set_default_value(new ConfigOptionPercent(18));
 
@@ -3749,7 +3752,7 @@ void PrintConfigDef::init_fff_params()
     def->sidetext = L("mm or %");
     def->ratio_over = "nozzle_diameter";
     def->min = 0;
-    def->max_literal = { 10, false };
+    def->max_literal = { 1, true };
     def->mode = comSimpleAE | comPrusa;
     def->is_vector_extruder = true;
     def->set_default_value(new ConfigOptionFloatsOrPercents{ FloatOrPercent{ 75, true} });
@@ -4374,7 +4377,7 @@ void PrintConfigDef::init_fff_params()
     def->category = OptionCategory::perimeter;
     def->tooltip = L("On even layers, all perimeter loops are reversed (it disables the overhang reversal, so it doesn't double-reverse)."
                     "That setting will likely create defects on the perimeters, so it's only useful is for materials that have some direction-dependent properties (stress lines).");
-    def->mode = comExpert | comSuSi;
+    def->mode = comAdvancedE | comExpert;
     def->set_default_value(new ConfigOptionBool(false));
 
     def = this->add("perimeter_round_corners", coBool);
@@ -5769,11 +5772,36 @@ void PrintConfigDef::init_fff_params()
     def->mode = comAdvancedE | comPrusa;
     def->set_default_value(new ConfigOptionEnum<SupportMaterialPattern>(smpRectilinear));
 
-    def = this->add("support_material_interface_pattern", coEnum);
-    def->label = L("Pattern");
-    def->full_label = L("Support interface pattern");
+    def = this->add("support_material_bottom_interface_pattern", coEnum);
+    def->label = L("Bottom Pattern");
+    def->full_label = L("Support bottom interface pattern");
     def->category = OptionCategory::support;
-    def->tooltip = L("Pattern for interface layers."
+    def->tooltip = L("Pattern for the bottom interface layers (the ones that start on the object)."
+        "\nDefault pattern is the same as the top interface, unless it's Hilbert Curve or Ironing."
+        "\nNote that 'Hilbert', 'Ironing' , '(filled)' patterns are really discouraged, and meant to be used with soluble supports and 100% fill interface layer.");
+    def->enum_keys_map = &ConfigOptionEnum<InfillPattern>::get_enum_values();
+    def->enum_values.push_back("auto");
+    def->enum_values.push_back("rectilinear");
+    def->enum_values.push_back("monotonic");
+    def->enum_values.push_back("concentric");
+    def->enum_values.push_back("hilbertcurve");
+    def->enum_values.push_back("concentricgapfill");
+    def->enum_values.push_back("smooth");
+    def->enum_labels.push_back(L("Default"));
+    def->enum_labels.push_back(L("Rectilinear"));
+    def->enum_labels.push_back(L("Monotonic"));
+    def->enum_labels.push_back(L("Concentric"));
+    def->enum_labels.push_back(L("Hilbert Curve"));
+    def->enum_labels.push_back(L("Concentric (filled)"));
+    def->enum_labels.push_back(L("Ironing"));
+    def->mode = comAdvancedE | comSuSi;
+    def->set_default_value(new ConfigOptionEnum<InfillPattern>(ipAuto));
+
+    def = this->add("support_material_top_interface_pattern", coEnum);
+    def->label = L("Top Pattern");
+    def->full_label = L("Support top interface pattern");
+    def->category = OptionCategory::support;
+    def->tooltip = L("Pattern for the top interface layers."
         "\nNote that 'Hilbert', 'Ironing' and '(filled)' patterns are meant to be used with soluble supports and 100% fill interface layer.");
     def->enum_keys_map = &ConfigOptionEnum<InfillPattern>::get_enum_values();
     def->enum_values.push_back("auto");
@@ -5794,6 +5822,7 @@ void PrintConfigDef::init_fff_params()
     def->enum_labels.push_back(L("Ironing"));
     def->mode = comAdvancedE | comPrusa;
     def->set_default_value(new ConfigOptionEnum<InfillPattern>(ipRectilinear));
+    def->aliases = {"support_material_interface_pattern"};
 
     def = this->add("support_material_layer_height", coFloatOrPercent);
     def->label = L("Support layer height");
@@ -5897,7 +5926,7 @@ void PrintConfigDef::init_fff_params()
     def->set_default_value(new ConfigOptionInt(0));
 
     def = this->add("print_first_layer_temperature", coInt);
-    def->label = L("Temperature");
+    def->label = L("First Layer Temperature");
     def->category = OptionCategory::filament;
     def->tooltip = L("Override the temperature of the extruder (for the first layer). Avoid making too many changes, it won't stop for cooling/heating. 0 to disable (using print_temperature if defined). May only work on Height range modifiers.");
     def->mode = comExpert | comSuSi;
@@ -7929,7 +7958,7 @@ void PrintConfigDef::handle_legacy(t_config_option_key &opt_key, std::string &va
     // some changes has occurs between rectilineargapfill and monotonicgapfill. Set them at the right value for each type
     if (value == "rectilineargapfill" && (opt_key == "top_fill_pattern" || opt_key == "bottom_fill_pattern") )
         value = "monotonicgapfill";
-    if (opt_key == "fill_pattern" || opt_key == "support_material_interface_pattern") {
+    if (opt_key == "fill_pattern" || opt_key == "support_material_interface_pattern" || opt_key == "support_material_top_interface_pattern" || opt_key == "support_material_bottom_interface_pattern") {
         if (value == "rectilineargapfill") {
             value = "rectilinear";
         } else if (value == "monotonicgapfill") {
@@ -8546,7 +8575,7 @@ std::unordered_set<std::string> prusa_export_to_remove_keys = {
 "support_material_interface_angle_increment",
 "support_material_interface_fan_speed",
 "support_material_interface_layer_height",
-"support_material_interface_pattern",
+"support_material_bottom_interface_pattern",
 "support_material_layer_height",
 "thin_perimeters_all",
 "thin_perimeters",
@@ -8628,9 +8657,16 @@ std::map<std::string, std::string> PrintConfigDef::to_prusa(t_config_option_key&
             && ("fill_pattern" == opt_key || "top_fill_pattern" == opt_key)) {
             value = "alignedrectilinear";
         }
+        if ("support_material_top_interface_pattern" == opt_key) {
+            opt_key = "support_material_interface_pattern";
+        }
     } else if ("seam_position" == opt_key) {
         if ("cost" == value) {
             value = "nearest";
+        }else if ("allrandom" == value) {
+            value = "random";
+        }else if ("contiguous" == value) {
+            value = "aligned";
         }
     } else if ("first_layer_size_compensation" == opt_key) {
         opt_key = "elefant_foot_compensation";
@@ -8643,13 +8679,14 @@ std::map<std::string, std::string> PrintConfigDef::to_prusa(t_config_option_key&
         }
     } else if ("elephant_foot_min_width" == opt_key) {
         opt_key = "elefant_foot_min_width";
-    } else if("first_layer_acceleration" == opt_key) {
+    } else if("first_layer_acceleration" == opt_key || "first_layer_acceleration_over_raft" == opt_key) {
         if (value.find("%") != std::string::npos) {
             // can't support %, so we uese the default accel a baseline for half-assed conversion
             value = std::to_string(all_conf.get_abs_value(opt_key, all_conf.get_computed_value("default_acceleration")));
         }
     } else if ("infill_acceleration" == opt_key || "bridge_acceleration" == opt_key || "default_acceleration" == opt_key || "perimeter_acceleration" == opt_key
-        || "overhangs_speed" == opt_key || "ironing_speed" == opt_key || "perimeter_speed" == opt_key || "infill_speed" == opt_key || "bridge_speed" == opt_key || "support_material_speed" == opt_key
+        || "overhangs_speed" == opt_key || "ironing_speed" == opt_key || "perimeter_speed" == opt_key 
+        || "infill_speed" == opt_key || "bridge_speed" == opt_key || "support_material_speed" == opt_key
         || "max_print_speed" == opt_key
         ) {
         // remove '%'
@@ -8770,6 +8807,20 @@ std::map<std::string, std::string> PrintConfigDef::to_prusa(t_config_option_key&
         }
     }
 
+    // compute max & min height from % to flat value
+    if ("min_layer_height" == opt_key || "max_layer_height" == opt_key) {
+        ConfigOptionFloats computed_opt;
+        const ConfigOptionFloatsOrPercents *current_opt = all_conf.option<ConfigOptionFloatsOrPercents>(opt_key);
+        const ConfigOptionFloats *nozzle_diameters = all_conf.option<ConfigOptionFloats>("nozzle_diameter");
+        assert(current_opt && nozzle_diameters);
+        assert(current_opt->size() == nozzle_diameters->size());
+        for (int i = 0; i < current_opt->size(); i++) {
+            computed_opt.set_at(current_opt->get_abs_value(i, nozzle_diameters->get_at(i)), i);
+        }
+        assert(computed_opt.size() == nozzle_diameters->size());
+        value = computed_opt.serialize();
+    }
+    
     if ("thumbnails" == opt_key) {
     // add format to thumbnails
         const ConfigOptionEnum<GCodeThumbnailsFormat> *format_opt = all_conf.option<ConfigOptionEnum<GCodeThumbnailsFormat>>("thumbnails_format");

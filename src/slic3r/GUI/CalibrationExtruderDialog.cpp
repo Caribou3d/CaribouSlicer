@@ -58,8 +58,7 @@ void CalibrationExtruderDialog::create_geometry() {
     /// --- scale ---
     //model is created for a 0.4 nozzle, scale xy with nozzle size.
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
-    assert(nozzle_diameter_config->values.size() > 0);
-    //float nozzle_diameter = nozzle_diameter_config->values[0];
+    assert(nozzle_diameter_config->get_at(0) > 0);
     float nozzle_diameter = nozzle_diameter_config->get_at(0);
 
     int idx_scale = dimension->GetSelection();
@@ -79,8 +78,6 @@ void CalibrationExtruderDialog::create_geometry() {
 
     model.objects[objs_idx[0]]->config.set_key_value("perimeter_reverse", new ConfigOptionBool(false));
     model.objects[objs_idx[0]]->config.set_key_value("top_solid_layers", new ConfigOptionInt(0));
-    model.objects[objs_idx[0]]->config.set_key_value("perimeters", new ConfigOptionInt(1));
-    model.objects[objs_idx[0]]->config.set_key_value("bottom_solid_layers", new ConfigOptionInt(0));
     model.objects[objs_idx[0]]->config.set_key_value("fill_density", new ConfigOptionPercent(0));
     model.objects[objs_idx[0]]->config.set_key_value("perimeter_generator", new ConfigOptionEnum<PerimeterGeneratorType>(PerimeterGeneratorType::Classic));
     model.objects[objs_idx[0]]->config.set_key_value("support_material", new ConfigOptionBool(false));

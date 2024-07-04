@@ -35,8 +35,8 @@ void CalibrationRetractionDialog::create_buttons(wxStdDialogButtonSizer* buttons
     nb_steps = new wxComboBox(this, wxID_ANY, wxString{ "15" }, wxDefaultPosition, wxDefaultSize, 8, choices_nb);
     nb_steps->SetToolTip(_L("Select the number milimeters for the tower."));
     nb_steps->SetSelection(5);
-    wxString choices_start[] = {"160","170","180","190","200","210","220","230","240","250","260","270","280" };
-    start_step = new wxComboBox(this, wxID_ANY, wxString{ "210" }, wxDefaultPosition, wxDefaultSize, 13, choices_start);
+    wxString choices_start[] = {"120","130","140","150","160","170","180","190","200","210","220","230","240","250","260","270","280" };
+    start_step = new wxComboBox(this, wxID_ANY, wxString{ "140" }, wxDefaultPosition, wxDefaultSize, 17, choices_start);
     start_step->SetToolTip(_(L("Select the highest temperature to test for.")));
 //    start_step->SetSelection(0);
     const DynamicPrintConfig* filament_config = this->gui_app->get_tab(Preset::TYPE_FFF_FILAMENT)->get_config();
@@ -83,9 +83,9 @@ void CalibrationRetractionDialog::remove_slowdown(wxCommandEvent& event_args) {
 
     const ConfigOptionFloats *fil_conf = filament_config->option<ConfigOptionFloats>("slowdown_below_layer_time");
     ConfigOptionFloats *new_fil_conf = new ConfigOptionFloats(5);
-    new_fil_conf->set(fil_conf);
-    new_fil_conf->set_at(0, 0);
-    new_filament_config.set_key_value("slowdown_below_layer_time", new_fil_conf); 
+    new_fil_conf->get_at(0) = fil_conf->get_at(0);
+    new_fil_conf->get_at(0) = 0;
+    new_filament_config.set_key_value("slowdown_below_layer_time", new_fil_conf);
 
     fil_conf = filament_config->option<ConfigOptionFloats>("fan_below_layer_time");
     new_fil_conf = new ConfigOptionFloats(60);
@@ -181,7 +181,7 @@ void CalibrationRetractionDialog::create_geometry(wxCommandEvent& event_args) {
     std::vector<std::string> filament_temp_item_name;
     for (size_t id_item = 0; id_item < nb_items; id_item++) {
         int mytemp = temp - temp_decr * id_item;
-        if (mytemp <= 285 && mytemp >= 120 && mytemp % 5 == 0) {
+        if (mytemp <= 285 && mytemp >= 90 && mytemp % 5 == 0) {
             filament_temp_item_name.push_back("t" + std::to_string(mytemp) + ".amf");
             assert(model.objects[objs_idx[id_item]]->volumes.size() == 1);
             add_part(model.objects[objs_idx[id_item]], (boost::filesystem::path(Slic3r::resources_dir()) / "calibration" / "retraction" / filament_temp_item_name.back()).string(),

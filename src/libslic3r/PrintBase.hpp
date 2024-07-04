@@ -100,7 +100,7 @@ public:
         return this->state_with_timestamp(step, mtx).state == DONE;
     }
 
-    StateWithTimeStamp state_with_timestamp_unguarded(StepType step) const { 
+    StateWithTimeStamp state_with_timestamp_unguarded(StepType step) const {
         return m_state[step];
     }
 
@@ -270,7 +270,7 @@ public:
         assert(state.state == STARTED);
         std::pair<StepType, bool> retval(static_cast<StepType>(m_step_active), true);
         // Does a warning of the same level and message or message_id exist already?
-		auto it = (message_id == 0) ? 
+		auto it = (message_id == 0) ?
             std::find_if(state.warnings.begin(), state.warnings.end(), [&message](const auto &w) { return w.message_id == 0 && w.message == message; }) :
             std::find_if(state.warnings.begin(), state.warnings.end(), [message_id](const auto& w) { return w.message_id == message_id; });
     	if (it == state.warnings.end())
@@ -399,11 +399,11 @@ public:
 
     struct SlicingStatus {
         SlicingStatus(int percent, const std::string& text, unsigned int flags = 0) : percent(percent), main_text(text), flags(flags) {}
-        SlicingStatus(int percent, const std::string& text, const std::vector<std::string>& args, unsigned int flags = 0) 
+        SlicingStatus(int percent, const std::string& text, const std::vector<std::string>& args, unsigned int flags = 0)
             : percent(percent), main_text(text), args(args), flags(flags) {}
-        SlicingStatus(const PrintBase &print, int warning_step) : 
+        SlicingStatus(const PrintBase &print, int warning_step) :
             flags(UPDATE_PRINT_STEP_WARNINGS), warning_object_id(print.id()), warning_step(warning_step) {}
-        SlicingStatus(const PrintObjectBase &print_object, int warning_step) : 
+        SlicingStatus(const PrintObjectBase &print_object, int warning_step) :
             flags(UPDATE_PRINT_OBJECT_STEP_WARNINGS), warning_object_id(print_object.id()), warning_step(warning_step) {}
         int                         percent { -1 };
         std::string                 main_text;
@@ -444,19 +444,25 @@ public:
     }
     void                    set_status(int percent, const std::string& message, const std::vector<std::string>& args, unsigned int flags = SlicingStatus::DEFAULT) const {
         //check if it need an update. Avoid doing a gui update each ms.
-        if ((flags & SlicingStatus::FORCE_SHOW) == 0 && (flags & SlicingStatus::SECONDARY_STATE) != 0 && message != m_last_status_message) {
-            std::chrono::time_point<std::chrono::system_clock> current_time = std::chrono::system_clock::now();
-            if ((static_cast<std::chrono::duration<double>>(current_time - PrintBase::m_last_status_update)).count() > 0.002 && PrintBase::m_last_status_percent != percent) {
-                PrintBase::m_last_status_update = current_time;
-                PrintBase::m_last_status_percent = percent;
+        {
+            std::lock_guard<std::mutex> lock(m_last_status_mutex);
+            if ((flags & SlicingStatus::FORCE_SHOW) == 0 && (flags & SlicingStatus::SECONDARY_STATE) != 0 &&
+                message != m_last_status_message) {
+                std::chrono::time_point<std::chrono::system_clock> current_time = std::chrono::system_clock::now();
+                if ((static_cast<std::chrono::duration<double>>(current_time - PrintBase::m_last_status_update))
+                            .count() > 0.002 &&
+                    PrintBase::m_last_status_percent != percent) {
+                    PrintBase::m_last_status_update  = current_time;
+                    PrintBase::m_last_status_percent = percent;
+                } else {
+                    // don't update if it's for the secondary and already done in less than 200ms
+                    return;
+                }
             } else {
-                //don't update if it's for the secondary and already done in less than 200ms
-                return;
+                PrintBase::m_last_status_percent = -1;
             }
-        } else {
-            PrintBase::m_last_status_percent = -1;
+            m_last_status_message = message;
         }
-        m_last_status_message = message;
         if ((flags & SlicingStatus::FlagBits::MAIN_STATE) == 0 && (flags & SlicingStatus::FlagBits::SECONDARY_STATE) == 0)
             flags = flags | SlicingStatus::FlagBits::MAIN_STATE;
         if (m_status_callback) {
@@ -550,6 +556,7 @@ protected:
                                             m_last_status_update = {};
     inline static int                       m_last_status_percent = -1;
     inline static std::string               m_last_status_message = "";
+    inline static std::mutex                m_last_status_mutex;
 
 private:
     std::atomic<CancelStatus>               m_cancel_status;
@@ -575,7 +582,7 @@ public:
 
 protected:
     bool            set_started(PrintStepEnum step) { return m_state.set_started(step, this->state_mutex(), [this](){ this->throw_if_canceled(); }); }
-	PrintStateBase::TimeStamp set_done(PrintStepEnum step) { 
+	PrintStateBase::TimeStamp set_done(PrintStepEnum step) {
 		std::pair<PrintStateBase::TimeStamp, bool> status = m_state.set_done(step, this->state_mutex(), [this](){ this->throw_if_canceled(); });
         if (status.second)
             this->status_update_warnings(static_cast<int>(step), PrintStateBase::WarningLevel::NON_CRITICAL, std::string());
@@ -584,11 +591,11 @@ protected:
     bool            invalidate_step(PrintStepEnum step)
 		{ return m_state.invalidate(step, this->cancel_callback()); }
     template<typename StepTypeIterator>
-    bool            invalidate_steps(StepTypeIterator step_begin, StepTypeIterator step_end) 
+    bool            invalidate_steps(StepTypeIterator step_begin, StepTypeIterator step_end)
         { return m_state.invalidate_multiple(step_begin, step_end, this->cancel_callback()); }
-    bool            invalidate_steps(std::initializer_list<PrintStepEnum> il) 
+    bool            invalidate_steps(std::initializer_list<PrintStepEnum> il)
         { return m_state.invalidate_multiple(il.begin(), il.end(), this->cancel_callback()); }
-    bool            invalidate_all_steps() 
+    bool            invalidate_all_steps()
         { return m_state.invalidate_all(this->cancel_callback()); }
 
 	bool            is_step_started_unguarded(PrintStepEnum step) const { return m_state.is_started_unguarded(step); }
@@ -622,9 +629,9 @@ public:
 protected:
 	PrintObjectBaseWithState(PrintType *print, ModelObject *model_object) : PrintObjectBase(model_object), m_print(print) {}
 
-    bool            set_started(PrintObjectStepEnum step) 
+    bool            set_started(PrintObjectStepEnum step)
         { return m_state.set_started(step, PrintObjectBase::state_mutex(m_print), [this](){ this->throw_if_canceled(); }); }
-	PrintStateBase::TimeStamp set_done(PrintObjectStepEnum step) { 
+	PrintStateBase::TimeStamp set_done(PrintObjectStepEnum step) {
 		std::pair<PrintStateBase::TimeStamp, bool> status = m_state.set_done(step, PrintObjectBase::state_mutex(m_print), [this](){ this->throw_if_canceled(); });
         if (status.second)
             this->status_update_warnings(m_print, static_cast<int>(step), PrintStateBase::WarningLevel::NON_CRITICAL, std::string());
@@ -634,11 +641,11 @@ protected:
     bool            invalidate_step(PrintObjectStepEnum step)
         { return m_state.invalidate(step, PrintObjectBase::cancel_callback(m_print)); }
     template<typename StepTypeIterator>
-    bool            invalidate_steps(StepTypeIterator step_begin, StepTypeIterator step_end) 
+    bool            invalidate_steps(StepTypeIterator step_begin, StepTypeIterator step_end)
         { return m_state.invalidate_multiple(step_begin, step_end, PrintObjectBase::cancel_callback(m_print)); }
-    bool            invalidate_steps(std::initializer_list<PrintObjectStepEnum> il) 
+    bool            invalidate_steps(std::initializer_list<PrintObjectStepEnum> il)
         { return m_state.invalidate_multiple(il.begin(), il.end(), PrintObjectBase::cancel_callback(m_print)); }
-    bool            invalidate_all_steps() 
+    bool            invalidate_all_steps()
         { return m_state.invalidate_all(PrintObjectBase::cancel_callback(m_print)); }
 
     bool            is_step_started_unguarded(PrintObjectStepEnum step) const { return m_state.is_started_unguarded(step); }

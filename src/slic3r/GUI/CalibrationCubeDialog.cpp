@@ -36,7 +36,7 @@ void CalibrationCubeDialog::create_buttons(wxStdDialogButtonSizer* buttons){
     calibrate->SetSelection(0);
     calibrate->SetEditable(false);
 
-    buttons->Add(new wxStaticText(this, wxID_ANY, _L("Dimension:")));
+    buttons->Add(new wxStaticText(this, wxID_ANY, _(L("Dimension:"))));
     buttons->Add(scale);
     buttons->Add(new wxStaticText(this, wxID_ANY, _L("mm")));
     buttons->AddSpacer(40);
@@ -69,14 +69,14 @@ void CalibrationCubeDialog::create_geometry(std::string calibration_path) {
     const DynamicPrintConfig* printConfig = this->gui_app->get_tab(Preset::TYPE_FFF_PRINT)->get_config();
     const DynamicPrintConfig* filamentConfig = this->gui_app->get_tab(Preset::TYPE_FFF_FILAMENT)->get_config();
     const DynamicPrintConfig* printerConfig = this->gui_app->get_tab(Preset::TYPE_PRINTER)->get_config();
-    
+
     /// --- scale ---
     //model is created for a 0.4 nozzle, scale xy with nozzle size.
     const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
     assert(nozzle_diameter_config->size() > 0);
     float nozzle_diameter = nozzle_diameter_config->get_at(0);
     float cube_size = 30;
-    if (calibration_path == "xyzCalibration_cube.amf")
+    if (calibration_path == "xyz-cube.amf")
         cube_size = 20;
     int idx_scale = scale->GetSelection();
     double xyzScale = 20;
