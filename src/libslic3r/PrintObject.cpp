@@ -843,7 +843,6 @@ FillLightning::GeneratorPtr PrintObject::prepare_lightning_infill_data()
                 || opt_key == "support_material_interface_angle_increment"
                 || opt_key == "support_material_interface_contact_loops"
                 || opt_key == "support_material_interface_extruder"
-                || opt_key == "support_material_interface_pattern"
                 || opt_key == "support_material_interface_spacing"
                 || opt_key == "support_material_pattern"
                 || opt_key == "support_material_style"

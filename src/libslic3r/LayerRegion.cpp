@@ -575,7 +575,6 @@ void LayerRegion::prepare_fill_surfaces()
 #endif /* SLIC3R_DEBUG_SLICE_PROCESSING */
 }
 
-
 double LayerRegion::infill_area_threshold() const
 {
     double ss = this->flow(frSolidInfill).scaled_spacing();

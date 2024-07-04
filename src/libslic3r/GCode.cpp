@@ -3811,7 +3811,6 @@ LayerResult GCode::process_layer(
     result.gcode = std::move(gcode);
     result.cooling_buffer_flush = object_layer || raft_layer || last_layer;
     return result;
-
 }
 
 void GCode::apply_print_configs(const Print&print)
@@ -6723,7 +6722,6 @@ bool GCode::can_cross_perimeter(const Polyline& travel, bool offset)
                         m_layer_slices_offseted.slices_offsetted.emplace_back(std::move(ex_simpl), std::move(bb));
                     }
                 }
-
             }
         //{
         //    static int aodfjiaqsdz = 0;
