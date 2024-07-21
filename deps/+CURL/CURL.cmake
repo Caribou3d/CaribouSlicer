@@ -66,15 +66,8 @@ add_cmake_project(CURL
   PATCH_COMMAND       "${_patch_command}"
   CMAKE_ARGS
     -DBUILD_TESTING:BOOL=OFF
-    -DBUILD_CURL_EXE:BOOL=OFF
     -DCMAKE_POSITION_INDEPENDENT_CODE=ON
-    -DCURL_STATICLIB=${_curl_static}
     ${_curl_platform_flags}
-
-#  CMAKE_ARGS
-#    -DBUILD_TESTING:BOOL=OFF
-#    -DCMAKE_POSITION_INDEPENDENT_CODE=ON
-#    ${_curl_platform_flags}
 )
 
 set(DEP_CURL_DEPENDS ZLIB)
