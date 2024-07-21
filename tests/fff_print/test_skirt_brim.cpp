@@ -32,13 +32,14 @@ static int get_brim_tool(const std::string &gcode)
 TEST_CASE("Skirt height is honored", "[Skirt]") {
     DynamicPrintConfig config = Slic3r::DynamicPrintConfig::full_print_config();
     config.set_deserialize_strict({
-        { "skirts",                    1 },
-        { "skirt_height",             5 },
-        { "perimeters",             0 },
-        { "support_material_speed", 99 },
+    	{ "skirts",					1 },
+    	{ "skirt_height", 			5 },
+    	{ "perimeters", 			0 },
+    	{ "support_material_speed", 99 },
+		// avoid altering speeds unexpectedly
+    	{ "cooling", 				false },
         // avoid altering speeds unexpectedly
-        { "cooling",                 false },
-        { "first_layer_speed",         "100%" }
+    	{ "first_layer_speed", 		"100%" }
     });
 
     std::string gcode;

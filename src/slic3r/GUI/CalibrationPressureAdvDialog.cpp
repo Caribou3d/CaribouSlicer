@@ -776,10 +776,10 @@ struct ExtrusionSettings {// think a struct is better instead of all the maps ?
         if (plat->printer_technology() == ptFFF)
             plat->fff_print().apply(plat->model(), *plat->config());
         std::shared_ptr<ProgressIndicatorStub> fake_statusbar = std::make_shared<ProgressIndicatorStub>();
-        ArrangeJob arranger(std::dynamic_pointer_cast<ProgressIndicator>(fake_statusbar), plat);
-        arranger.prepare_all();
-        arranger.process();
-        arranger.finalize();
+//        ArrangeJob arranger(std::dynamic_pointer_cast<ProgressIndicator>(fake_statusbar), plat);
+//ConfigOptionVector        arranger.prepare_all();
+//        arranger.process();
+//        arranger.finalize();
     }
 
 

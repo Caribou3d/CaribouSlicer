@@ -12,13 +12,14 @@ xs/MANIFEST.bak
 xs/assertlib*
 .init_bundle.ini
 .vs/*
-local-lib
 /src/TAGS
 /.vscode/
-build/*
-Build.log
+build*
+build-linux/*
 deps/build*
+deps/build-linux/*
+**/.DS_Store
+**/.idea/
+.pkg_cache
 cmake/CPackConfig.cmake
-
-# MacOS Ignores
-.DS_Store
+CMakeUserPresets.json

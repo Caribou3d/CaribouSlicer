@@ -8,13 +8,15 @@ set(SLIC3R_APP_NAME "${SLIC3R_APP}Slicer")
 set(SLIC3R_APP_KEY "${SLIC3R_APP}Slicer")
 # exe name of the slicer
 set(SLIC3R_APP_CMD "${SLIC3R_APP}Slicer")
+# id for windows registry
+set(SLIC3R_APP_PROG_ID "Caribou")
 # versions
-set(SLIC3R_VERSION "2.5.60")
-set(SLIC3R_VERSION_FULL "2.5.60.0-dev")
+set(SLIC3R_VERSION "2.7.61")
+set(SLIC3R_VERSION_FULL "2.7.61.0-dev")
 set(SLIC3R_GITBUILD_NR "21171")
 set(SLIC3R_BUILD_ID "${SLIC3R_APP_KEY}_${SLIC3R_VERSION_FULL}_${SLIC3R_GITBUILD_NR}")
 set(SLIC3R_RC_VERSION "2,5,60,0")
-set(SLIC3R_RC_VERSION_DOTS "2.5.60.0")
+set(SLIC3R_RC_VERSION_DOTS "2.7.61.0")
 
 # Same as the slicer name but for gcodeviewer
 set(GCODEVIEWER_APP_NAME "${SLIC3R_APP} gcode Viewer")

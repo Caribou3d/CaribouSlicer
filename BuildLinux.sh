@@ -234,9 +234,9 @@ then
     pushd destdir/usr/local/lib  > /dev/null
     if [[ -z "$FOUND_GTK3_DEV" ]]
     then
-        cp libwxscintilla-3.1.a libwx_gtk2u_scintilla-3.1.a
+        cp libwxscintilla-3.2.a libwx_gtk2u_scintilla-3.2.a
     else
-        cp libwxscintilla-3.1.a libwx_gtk3u_scintilla-3.1.a
+        cp libwxscintilla-3.2.a libwx_gtk3u_scintilla-3.2.a
     fi
     popd > /dev/null
     popd > /dev/null

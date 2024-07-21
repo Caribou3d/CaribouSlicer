@@ -1,3 +1,9 @@
+///|/ Copyright (c) Prusa Research 2016 - 2021 Vojtěch Bubník @bubnikv
+///|/ Copyright (c) Slic3r 2014 - 2016 Alessandro Ranellucci @alranel
+///|/ Copyright (c) 2015 Maksim Derbasov @ntfshard
+///|/
+///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
+///|/
 #include "BridgeDetector.hpp"
 #include "ClipperUtils.hpp"
 #include "Geometry.hpp"
@@ -221,7 +227,7 @@ bool BridgeDetector::detect_angle(double bridge_direction_override)
                                     if (!poly.contains(middle_point_right) || !poly.contains(middle_point_left)) {
                                         fake_bridge = false;
                                         goto stop_fake_bridge_test;
-                                        }
+                                    }
                                 }
                             }
                             // if still bad, the line is long enough to warrant two more test point? (1/2000 on a benchy)
@@ -244,9 +250,9 @@ bool BridgeDetector::detect_angle(double bridge_direction_override)
                                                                   // boundingbox and only then the other
                                             fake_bridge = false;
                                             goto stop_fake_bridge_test;
+                                        }
                                 }
                             }
-                        }
                             // If the line is still bad and is a long one, use the more costly intersection_ln. This
                             // case is rare enough to swallow the cost. (1/10000 on a benchy)
                             if (fake_bridge && len > this->spacing * 40) {
@@ -529,7 +535,7 @@ void get_lines(const ExPolygon& expoly, std::vector<Line> &lines, coord_t spacin
 {
 
     // get all points of this ExPolygon
-    Points pp = expoly;
+    Points pp = to_points(expoly);
 
     if (pp.empty()) return;
 
@@ -582,7 +588,7 @@ Polygons BridgeDetector::coverage(double angle) const
             // are inside the anchors and not on their contours leading to false negatives.
             ExPolygons unsupported_bigger = offset_ex(unsupported, 0.5f * float(this->spacing));
             assert(unsupported_bigger.size() == 1); // growing don't split
-            ExPolygons small_anchors = intersection_ex(unsupported_bigger.front(), anchors);
+            ExPolygons small_anchors = intersection_ex({unsupported_bigger.front()}, anchors);
             unsupported_bigger       = small_anchors;
             unsupported_bigger.push_back(unsupported);
             unsupported_bigger = union_safety_offset_ex(unsupported_bigger);
@@ -599,9 +605,9 @@ Polygons BridgeDetector::coverage(double angle) const
                         ++it;
                     } else {
                         it = unsupported_bigger.erase(it);
+                    }
                 }
             }
-                        }
             assert(unsupported_bigger.size() == 1);
             {
                 std::vector<Line> support_lines;

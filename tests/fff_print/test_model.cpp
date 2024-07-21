@@ -43,14 +43,18 @@ SCENARIO("Model construction", "[Model]") {
             }
             model_object->add_instance();
             print.apply(model, config); // apply config for arrange_objects
-            arrange_objects(model, InfiniteBed{ scaled(Vec2d(100, 100)) }, ArrangeParams{ scaled(print.config().min_object_distance()) });
-            model_object->ensure_on_bed();
-            print.auto_assign_extruders(model_object);
-            THEN("Print works?") {
-                print.set_status_silent();
-                print.apply(model, config);
-                print.process();
-                boost::filesystem::path temp = boost::filesystem::unique_path();
+            arrange_objects(model,
+                            arr2::to_arrange_bed(get_bed_shape(config)),
+                            arr2::ArrangeSettings{}.set_distance_from_objects(
+                                min_object_distance(config)));
+
+			model_object->ensure_on_bed();
+			print.auto_assign_extruders(model_object);
+			THEN("Print works?") {
+				print.set_status_silent();
+				print.apply(model, config);
+				print.process();
+				boost::filesystem::path temp = boost::filesystem::unique_path();
                 print.export_gcode(temp.string(), nullptr, nullptr);
                 REQUIRE(boost::filesystem::exists(temp));
                 REQUIRE(boost::filesystem::is_regular_file(temp));

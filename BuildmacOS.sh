@@ -176,7 +176,7 @@ then
 
     # rename wxscintilla
     pushd destdir/usr/local/lib > /dev/null
-    cp libwxscintilla-3.1.a libwx_osx_cocoau_scintilla-3.1.a
+    cp libwxscintilla-3.2.a libwx_osx_cocoau_scintilla-3.2.a
 
     popd > /dev/null
     popd > /dev/null

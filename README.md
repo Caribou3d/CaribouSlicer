@@ -96,7 +96,12 @@ Sure! You can do the following to find things that are available to help with:
 Before sending patches and pull requests contact me (preferably through opening a GitHub issue or commenting on an existing, related, issue) to discuss your proposed
 changes. This way we can ensure that nobody wastes their time and no conflicts arise in development.
 
-## License and attribution
+* `package/`: the scripts used for packaging the executables
+* `src/`: the C++ source of the `slic3r` executable and the CMake definition file for compiling it
+* `src/slic3r/GUI`: The C++ GUI.
+* `tests`: Test suite for Slic3r. Implemented with [Catch2](https://github.com/catchorg/Catch2)
+* `utils/`: various useful scripts
+* `src/libslic3r/`: C++ sources for libslic3r
 
 SuperSlicer is licensed under the _GNU Affero General Public License, version 3_.
 SuperSlicer is based on PrusaSlicer by PrusaResearch.
