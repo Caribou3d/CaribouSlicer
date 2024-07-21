@@ -1828,10 +1828,10 @@ msgid ""
 "were not recognized."
 msgstr "已加载配置文件“%1%”，但无法识别某些配置值。"
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "在ConfigWizard中编辑配置"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "正在从ConfigWizard编辑配置"
 
 msgid "Configuration notes"
@@ -12732,10 +12732,10 @@ msgstr "无法覆盖外部配置文件。"
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "选择一个或多个文件  (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "配置&向导"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "配置向导"
 
 msgid ""
@@ -12937,7 +12937,7 @@ msgstr "在浏览器中打开 Slic3r 手册"
 msgid "Open the Slic3r website in your browser"
 msgstr "在浏览器中打开 Slic3r 网站"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "打开配置向导"
 
 msgid "Over-Bridge calibration"
@@ -13207,7 +13207,7 @@ msgstr "顶流校准"
 msgid "Volumetric speed for Autospeed"
 msgstr "流量速度"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "欢迎访问 %s 配置向导"
 
 msgid ""

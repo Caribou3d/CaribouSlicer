@@ -1478,11 +1478,11 @@ msgstr ""
 "El fitxer de configuració \"%1%\" s'ha carregat, però no s'han reconegut "
 "alguns valors de configuració."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "La configuració s'edita a ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "La configuració s'edita a ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configuració s'edita des de ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configuració s'edita des de ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Notes de configuració"
@@ -9598,10 +9598,10 @@ msgstr "No es pot sobreescriure un perfil extern."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Trieu un o més fitxers (STL / OBJ / AMF / 3MF / PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "&Ajudant de configuració"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Ajudant de configuració"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9651,7 +9651,7 @@ msgstr ""
 msgid "Import STL/OBJ/AM&F/3MF"
 msgstr "Importar STL/OBJ/AM&F/3MF"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Obrint Assistent de Configuració"
 
 msgid ""
@@ -9712,7 +9712,7 @@ msgstr "Aquest codi G s'utilitzarà com a codi per al canvi de color"
 msgid "This G-code will be used as a code for the pause print"
 msgstr "Aquest codi G s'utilitzarà com a codi per a la pausa d'impressió"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Benvingut al %s Ajudant de Configuració"
 
 msgid "You should change the name of your printer device."

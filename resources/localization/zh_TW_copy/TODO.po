@@ -289,7 +289,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:488
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
 #  translation: 流量已經最大化
 msgid "%s flow rate is maximized "
@@ -3090,12 +3090,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -3334,21 +3334,21 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2155
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
-# 3    changes: Cooling moves are gradually accelerating towards this speed. 
-#  translation: 冷卻動作會逐漸加速到這個速度. 
-# 15   changes: Cooling moves are gradually accelerating beginning at this speed. 
-#  translation: 冷卻動作正以這樣的速度逐漸開始加速. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
+# 3    changes: Cooling moves are gradually accelerating towards this speed.
+#  translation: 冷卻動作會逐漸加速到這個速度.
+# 15   changes: Cooling moves are gradually accelerating beginning at this speed.
+#  translation: 冷卻動作正以這樣的速度逐漸開始加速.
 msgid "Cooling moves are gradually accelerated towards this speed. "
 msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2134
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
-# 9    changes: Cooling moves are gradually accelerating beginning at this speed. 
-#  translation: 冷卻動作正以這樣的速度逐漸開始加速. 
-# 13   changes: Cooling moves are gradually accelerating towards this speed. 
-#  translation: 冷卻動作會逐漸加速到這個速度. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
+# 9    changes: Cooling moves are gradually accelerating beginning at this speed.
+#  translation: 冷卻動作正以這樣的速度逐漸開始加速.
+# 13   changes: Cooling moves are gradually accelerating towards this speed.
+#  translation: 冷卻動作會逐漸加速到這個速度.
 msgid "Cooling moves are gradually accelerated, starting at this speed. "
 msgstr ""
 
@@ -8943,7 +8943,7 @@ msgstr ""
 #  translation: 載入 %s 檔案
 # 4    changes: Loading speed
 #  translation: 加載速度
-# 4    changes: Loading : 
+# 4    changes: Loading :
 #  translation: 載入中：
 msgid "Loading file"
 msgstr ""
@@ -11337,7 +11337,7 @@ msgstr ""
 #  translation: 配置嚮導
 # 9    changes: Configuration &Wizard
 #  translation: 配置 &嚮導
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 

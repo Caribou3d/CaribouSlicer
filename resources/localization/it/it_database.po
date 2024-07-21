@@ -2459,11 +2459,11 @@ msgstr ""
 "Il file di configurazione \"%1%\" è stato caricato, ma alcuni valori di "
 "configurazione non sono stati riconosciuti."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "Configurazione modificata in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "Configurazione modificata in ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configurazione viene modificata da ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configurazione viene modificata da ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Note di configurazione"
@@ -17024,10 +17024,10 @@ msgstr "Modalità avanzata"
 msgid "Bed/Extruder leveling"
 msgstr "Livellamento letto/estrusore"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Configurazione e procedura guidata"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Configurazione guidata"
 
 msgid "Create a test print to help you to level your printer bed."
@@ -17162,7 +17162,7 @@ msgstr "Apri il sito web di Slic3r nel tuo browser"
 msgid "Open the Slic3r website in your browser"
 msgstr "Apri il sito web di Slic3r nel tuo browser"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Apertura Configurazione Guidata"
 
 msgid "Over-Bridge calibration"
@@ -17414,7 +17414,7 @@ msgstr ""
 msgid "Top flow calibration"
 msgstr "Taratura flusso del ponte"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Benvenuti alla procedura guidata di configurazione %s"
 
 msgid "Wipe tower starting speed"

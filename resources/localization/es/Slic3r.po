@@ -1533,11 +1533,11 @@ msgstr ""
 "Se cargó el archivo de configuración \"%1%\", sin embargo, no se "
 "reconocieron algunos valores de configuración."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "La configuración se edita en ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "La configuración se edita en ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configuración se editada desde ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configuración se editada desde ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Notas de configuración"
@@ -5464,7 +5464,7 @@ msgstr "Abrir Preferencias."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Abre el diálogo para modificar la galería de formas"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Abriendo Asistente de Configuración"
 
 msgid "Opening new project while some presets are unsaved."

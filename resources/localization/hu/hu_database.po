@@ -2157,10 +2157,10 @@ msgstr ""
 "A \"%1%\" konfigurációs fájl betöltődött, azonban néhány konfigurációs értéket nem "
 "ismert fel."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "A konfiguráció szerkesztése a ConfigWizardban történik_"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfiguráció szerkesztése a ConfigWizardból_"
 
 msgid "Configuration notes"
@@ -15025,10 +15025,10 @@ msgstr "Nem lehet külső profilt felülírni."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Válasszon ki egy vagy több fájlt (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Konfiguráció & Varázsló"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Konfigurációs varázsló"
 
 msgid ""
@@ -15189,7 +15189,7 @@ msgstr "A Slic3r kézikönyv megnyitása a böngészőben"
 msgid "Open the Slic3r website in your browser"
 msgstr "Nyissa meg a Slic3r weboldalát a böngészőben"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Konfigurációs varázsló megnyitása"
 
 msgid "Overhang reversal"
@@ -15348,7 +15348,7 @@ msgstr ""
 msgid "Top fan speed"
 msgstr "Max ventilátor sebesség"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Üdvözöljük a %s konfigurációs varázslóban"
 
 msgid ""

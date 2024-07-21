@@ -2018,10 +2018,10 @@ msgstr ""
 "Byl načten konfigurační soubor \"%1%\", ale některé konfigurační hodnoty nebyly "
 "rozpoznány."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Nastavení se upravuje v Průvodci konfigurace"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfigurace se upravuje z nástroje Průvodce nastavením"
 
 msgid "Configuration notes"
@@ -7748,7 +7748,7 @@ msgstr "Otevřete ve svém prohlížeči stránku vydání %s"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Otevřete dialogové okno pro úpravu galerie tvarů"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Otevírání průvodce nastavením"
 
 msgid "Opening new project while some presets are unsaved."

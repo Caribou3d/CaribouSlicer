@@ -1392,10 +1392,10 @@ msgstr ""
 "Configuratiebestand \"%1%\" is geladen, hoewel sommige configuratiewaarden "
 "niet herkend werden."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "Configuratie is gewijzigd in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "Configuratie is gewijzigd in ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Configuratie is aangepast van de configuratiewizard"
 
 msgid "Configuration notes"
@@ -9171,10 +9171,10 @@ msgstr "Een extern profiel kan niet overschreven worden."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Kies één of meer STL-, OBJ-, AMF-, 3MF-, of PRUSA-bestanden:"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Configuratie-&assistent"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Configuratie-assistent"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9230,7 +9230,7 @@ msgstr "Importeer STL-, OBJ-, AMF- of 3MF-bestanden"
 msgid "Max print speed"
 msgstr "Maximale printsnelheid"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Configuratiewizard openen"
 
 msgid ""
@@ -9335,7 +9335,7 @@ msgstr ""
 "een hoger aantal perimeters als de optie voor extra perimeters is "
 "ingeschakeld."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Welkom bij de %s configuratie-assistent"
 
 msgid "You should change the name of your printer device."

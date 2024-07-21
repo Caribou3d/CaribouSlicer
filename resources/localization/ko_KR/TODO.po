@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:488
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
 #  translation: 유속(flow)이 최대화된다
 msgid "%s flow rate is maximized "
@@ -2183,12 +2183,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -2425,7 +2425,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2155
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
 # 4    changes: Cooling moves are gradually accelerating towards this speed.
 #  translation: 냉각 이동은 이 속도로 점차 가속화되고 있습니다.
 # 16   changes: Cooling moves are gradually accelerating beginning at this speed.
@@ -2435,7 +2435,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2134
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
 # 10   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: 냉각 속도가 서서히 빨라지고 있습니다.
 # 14   changes: Cooling moves are gradually accelerating towards this speed.
@@ -5450,7 +5450,7 @@ msgstr ""
 # 7    changes: Import Config &Bundle
 #  translation: 가져오기 구성 및 번들 가져오기
 # 9    changes: Export Config &Bundle
-#  translation: 구성 및 번들 내보내기 
+#  translation: 구성 및 번들 내보내기
 msgid "Import Prusa Config Bundle"
 msgstr ""
 
@@ -7968,7 +7968,7 @@ msgstr ""
 #  translation: 구성 마법사
 # 9    changes: Configuration &Wizard
 #  translation: 구성 및 마법사
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 
@@ -8949,7 +8949,7 @@ msgstr ""
 # 2    changes: Reload from disk
 #  translation: 디스크에서 재장전
 # 6    changes: Reload all from disk
-#  translation: 디스크에서 모두 다시 로드 
+#  translation: 디스크에서 모두 다시 로드
 # 6    changes: Reload from:
 #  translation: 다음에서 다시 로드됩니다.
 msgid "Re&load from Disk"
@@ -9027,7 +9027,7 @@ msgstr ""
 # 5    changes: Reload the plater from disk
 #  translation: 디스크에서 플래터 다시 로드
 # 6    changes: Reload all from disk
-#  translation: 디스크에서 모두 다시 로드 
+#  translation: 디스크에서 모두 다시 로드
 msgid "Reload platter from disk"
 msgstr ""
 
@@ -9040,7 +9040,7 @@ msgstr ""
 # 5    changes: Reload plater from disk
 #  translation: 디스크에서 플래터 재로드
 # 10   changes: Reload all from disk
-#  translation: 디스크에서 모두 다시 로드 
+#  translation: 디스크에서 모두 다시 로드
 msgid "Reload the platter from disk"
 msgstr ""
 
@@ -9169,7 +9169,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Preview.cpp:1194
 #Similar to me: Retr.
 # 2    changes: Rear
-#  translation: 뒷면 
+#  translation: 뒷면
 msgid "Retr."
 msgstr ""
 
@@ -9245,7 +9245,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1126
 #Similar to me: Right panel
 # 4    changes: Right View
-#  translation: 오른쪽 보기 
+#  translation: 오른쪽 보기
 msgid "Right panel"
 msgstr ""
 
@@ -12908,7 +12908,7 @@ msgstr ""
 # 2    changes: Gap fill
 #  translation: 공백 채움
 # 3    changes: Top View
-#  translation: 위에서 보기 
+#  translation: 위에서 보기
 msgid "Top fill"
 msgstr ""
 

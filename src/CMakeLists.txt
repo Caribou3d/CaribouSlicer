@@ -105,7 +105,7 @@ if (SLIC3R_GUI)
     # wrong libs for opengl in the link line and it does not link to it by himself.
     # libslic3r_gui will link to opengl anyway, so lets override wx
     list(FILTER wxWidgets_LIBRARIES EXCLUDE REGEX OpenGL)
-    
+
     if (UNIX AND NOT APPLE)
         list(APPEND wxWidgets_LIBRARIES X11 wayland-client wayland-egl EGL)
     endif ()
@@ -227,7 +227,7 @@ if (WIN32)
     set_target_properties(Slic3r_app_console PROPERTIES OUTPUT_NAME "${SLIC3R_APP_CMD}_console")
     target_link_libraries(Slic3r_app_console PRIVATE boost_headeronly)
 
-    add_executable(PrusaSlicer_app_gcodeviewer WIN32 PrusaSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h)
+    add_executable(PrusaSlicer_app_gcodeviewer WIN32 CaribouSlicer_app_msvc.cpp ${CMAKE_CURRENT_BINARY_DIR}/${SLIC3R_APP_KEY}-gcodeviewer.rc ${CMAKE_CURRENT_BINARY_DIR}/libslic3r_version.h)
     target_include_directories(PrusaSlicer_app_gcodeviewer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
     # Generate debug symbols even in release mode.
     if (MSVC)
@@ -317,4 +317,3 @@ else ()
     # Install the symlink for gcodeviewer
     install(CODE "execute_process(COMMAND ${CMAKE_COMMAND} -E create_symlink ${SLIC3R_APP_CMD} ${GCODEVIEWER_APP_CMD} WORKING_DIRECTORY \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BINDIR})")
 endif ()
-

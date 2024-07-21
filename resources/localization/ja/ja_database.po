@@ -1436,10 +1436,10 @@ msgstr ""
 "構成ファイル \"%1%\"がロードされましたが、一部の構成値が認識されませんでし"
 "た。"
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "構成は構成ウィザードで編集されます"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "構成は構成ウィザードから編集中です"
 
 msgid "Configuration notes"
@@ -9294,10 +9294,10 @@ msgstr "外部プロファイルを上書きできません。"
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "1つ以上のファイルの選択(STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "構成ウィザード(&W)"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "構成ウィザード"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9352,7 +9352,7 @@ msgstr "STL/OBJ/AMF/3MFのインポート(&F)"
 msgid "Max print speed"
 msgstr "最大プリント速度"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "構成ウィザードを開く"
 
 msgid ""
@@ -9451,7 +9451,7 @@ msgstr ""
 "ションが有効になっている場合、Slic3rは、この外周数ではカバーできない傾斜面を"
 "検出すると、自動的にこの数よりも多くの外周が生成されます。"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "%s構成ウィザードへようこそ"
 
 msgid "You should change the name of your printer device."

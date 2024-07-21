@@ -3612,12 +3612,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -13196,7 +13196,7 @@ msgstr ""
 
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:94
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 

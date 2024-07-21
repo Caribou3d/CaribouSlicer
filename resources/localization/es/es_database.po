@@ -1476,11 +1476,11 @@ msgstr ""
 "Se cargó el archivo de configuración \"%1%\", sin embargo, no se "
 "reconocieron algunos valores de configuración."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "La configuración se edita en ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "La configuración se edita en ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configuración se editada desde ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configuración se editada desde ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Notas de configuración"
@@ -9637,10 +9637,10 @@ msgstr "No puedo sobre-escribir un valor externo."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Escoje uno o más archivos (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Ayudante de co&nfiguración"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Asistente de configuración"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9690,7 +9690,7 @@ msgstr ""
 msgid "Import STL/OBJ/AM&F/3MF"
 msgstr "Importar STL/OBJ/AM&F/3MF"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Abriendo Asistente de Configuración"
 
 msgid ""
@@ -9751,7 +9751,7 @@ msgstr "Este código G se utilizará como código para el cambio de color"
 msgid "This G-code will be used as a code for the pause print"
 msgstr "Este código G se utilizará como código para la pausa de impresión"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Bienvenido al %s Ayudante de Configuración"
 
 msgid "You should change the name of your printer device."

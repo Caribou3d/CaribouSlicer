@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:488
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
 #  translation: швидкість потоку максимізується
 msgid "%s flow rate is maximized "
@@ -2128,12 +2128,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -2370,7 +2370,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2155
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
 # 4    changes: Cooling moves are gradually accelerating towards this speed.
 #  translation: Охолоджувальні рухи поступово прискорюються до цієї швидкості.
 # 16   changes: Cooling moves are gradually accelerating beginning at this speed.
@@ -2380,7 +2380,7 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2134
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
 # 10   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: Охолоджувальні рухи поступово прискорюються, починаючи з цієї швидкості.
 # 14   changes: Cooling moves are gradually accelerating towards this speed.
@@ -7839,7 +7839,7 @@ msgstr ""
 #  translation: Майстер конфігурації
 # 9    changes: Configuration &Wizard
 #  translation: Майстер конфігурації
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 

@@ -273,9 +273,9 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:488
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
-#  translation: 의 유속(flow)이 최대화된다. 
+#  translation: 의 유속(flow)이 최대화된다.
 msgid "%s flow rate is maximized "
 msgstr ""
 
@@ -2610,12 +2610,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -2839,9 +2839,9 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2155
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
 # 4    changes: Cooling moves are gradually accelerating towards this speed.
-#  translation: 냉각은 이 속도쪽으로 점차 가속화되고 있습니다. 
+#  translation: 냉각은 이 속도쪽으로 점차 가속화되고 있습니다.
 # 16   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: 냉각 속도가 서서히 빨라지고 있습니다.
 msgid "Cooling moves are gradually accelerated towards this speed. "
@@ -2849,11 +2849,11 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2134
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
 # 10   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: 냉각 속도가 서서히 빨라지고 있습니다.
 # 14   changes: Cooling moves are gradually accelerating towards this speed.
-#  translation: 냉각은 이 속도쪽으로 점차 가속화되고 있습니다. 
+#  translation: 냉각은 이 속도쪽으로 점차 가속화되고 있습니다.
 msgid "Cooling moves are gradually accelerated, starting at this speed. "
 msgstr ""
 
@@ -7370,7 +7370,7 @@ msgstr ""
 #: ../../ui_layout/default/extruder.ui : l31
 #Similar to me: Lift
 # 1    changes: Left
-#  translation: 왼쪽 
+#  translation: 왼쪽
 msgid "Lift"
 msgstr ""
 
@@ -9488,7 +9488,7 @@ msgstr ""
 #  translation: 구성 마법사
 # 9    changes: Configuration &Wizard
 #  translation: 구성 & 마법사
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 
@@ -10744,7 +10744,7 @@ msgstr ""
 #, possible-c-format, possible-boost-format
 #Similar to me: Recommended object min (thick) wall thickness for layer height %.2f and
 # 8    changes: Recommended object thin wall thickness for layer height %.2f and
-#  translation: 객체(object) 레이어 높이 %.2f 에 권장하는 두깨는 
+#  translation: 객체(object) 레이어 높이 %.2f 에 권장하는 두깨는
 msgid "Recommended object min (thick) wall thickness for layer height %.2f and"
 msgstr ""
 
@@ -11017,7 +11017,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Preview.cpp:1194
 #Similar to me: Retr.
 # 2    changes: Rear
-#  translation: 뒷면 
+#  translation: 뒷면
 msgid "Retr."
 msgstr ""
 

@@ -7627,7 +7627,7 @@ msgstr "Üdvözli a %s Konfigurációs Asszisztens"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Üdvözöli a %s Konfigurációs Varázsló"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:576
@@ -8107,7 +8107,7 @@ msgid "Do you want to select default SLA materials for these printer models?"
 msgstr "Kiválasztja az alapértelmezett anyagokat ezekhez az SLA nyomtatókhoz?"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2969
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "A konfiguráció szerkesztése a ConfigWizardban történik_"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3022
@@ -8218,11 +8218,11 @@ msgid "Configuration &Assistant"
 msgstr "Konfigurációs Segéd"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3524
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Konfigurációs Varázsló"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3525
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Konfigurációs Varázsló"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:237
@@ -12147,7 +12147,7 @@ msgid "Please check your object list before preset changing."
 msgstr "Ellenőrizze az objektumlistát, előbeállítás váltás előtt."
 
 #: src/slic3r/GUI/GUI_App.cpp:3154
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfiguráció szerkesztése a ConfigWizardból_"
 
 #: src/slic3r/GUI/GUI_App.cpp:3172
@@ -18421,7 +18421,7 @@ msgid "Download path is %1%. Do you wish to continue?"
 msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Konfigurációs Varázsló Megnyitása"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456

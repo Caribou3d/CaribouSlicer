@@ -1504,10 +1504,10 @@ msgstr ""
 "Wczytano plik konfiguracyjny \"%1%\", jednak niektóre wartości konfiguracji "
 "nie zostały rozpoznane."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Konfiguracja jest edytowana w Asystencie konfiguracji"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfiguracja jest edytowana z Asystenta konfiguracji"
 
 msgid "Configuration notes"
@@ -9520,10 +9520,10 @@ msgstr "Nie można nadpisać profilu zewnętrznego."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Wybierz jeden lub więcej plików (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Asystent Ko&nfiguracji"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Asystent Konfiguracji"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9586,7 +9586,7 @@ msgstr "Import STL/OBJ/AM&F/3MF"
 msgid "Max print speed"
 msgstr "Maksymalna prędkość druku"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Otwieranie Asystenta Konfiguracji"
 
 msgid ""
@@ -9700,7 +9700,7 @@ msgstr ""
 "wykryje zwisy, w których wydruku pomoże dodatkowa ilość obrysów przy "
 "jednocześnie włączonej opcji \"Dodatkowe obrysy jeśli potrzebne\"."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Witamy w Asystencie Konfiguracji %s"
 
 msgid "You should change the name of your printer device."

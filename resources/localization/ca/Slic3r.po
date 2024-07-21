@@ -1535,11 +1535,11 @@ msgstr ""
 "El fitxer de configuració \"%1%\" s'ha carregat, però no s'han reconegut "
 "alguns valors de configuració."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "La configuració s'edita a ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "La configuració s'edita a ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configuració s'edita des de ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configuració s'edita des de ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Notes de configuració"
@@ -5440,7 +5440,7 @@ msgstr "Obrir preferències."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Obre el diàleg per modificar la galeria de formes"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Obrint Assistent de Configuració"
 
 msgid "Opening new project while some presets are unsaved."

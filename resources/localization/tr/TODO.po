@@ -268,7 +268,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:488
 #, possible-c-format, possible-boost-format
-#Similar to me: %s flow rate is maximized 
+#Similar to me: %s flow rate is maximized
 # 4    changes: flow rate is maximized
 #  translation: akış hızı en üst seviyeye ayarlandı
 msgid "%s flow rate is maximized "
@@ -2955,12 +2955,12 @@ msgstr ""
 
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2586
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr ""
 
 
 #: src/slic3r/GUI/GUI_App.cpp:3228
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr ""
 
 
@@ -3198,25 +3198,25 @@ msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2155
-#Similar to me: Cooling moves are gradually accelerated towards this speed. 
-# 3    changes: Cooling moves are gradually accelerating towards this speed. 
-#  translation: Soğutma hızı yavaş yavaş bu hıza doğru artacaktır. 
+#Similar to me: Cooling moves are gradually accelerated towards this speed.
+# 3    changes: Cooling moves are gradually accelerating towards this speed.
+#  translation: Soğutma hızı yavaş yavaş bu hıza doğru artacaktır.
 # 4    changes: Cooling moves are gradually accelerating towards this speed.
 #  translation: Soğutma hızı yavaş yavaş bu hıza doğru artacaktır.
-# 15   changes: Cooling moves are gradually accelerating beginning at this speed. 
-#  translation: Soğutma hızı bu seviyeden başlayarak kademeli olarak artacaktır. 
+# 15   changes: Cooling moves are gradually accelerating beginning at this speed.
+#  translation: Soğutma hızı bu seviyeden başlayarak kademeli olarak artacaktır.
 msgid "Cooling moves are gradually accelerated towards this speed. "
 msgstr ""
 
 
 #: src/libslic3r/PrintConfig.cpp:2134
-#Similar to me: Cooling moves are gradually accelerated, starting at this speed. 
-# 9    changes: Cooling moves are gradually accelerating beginning at this speed. 
-#  translation: Soğutma hızı bu seviyeden başlayarak kademeli olarak artacaktır. 
+#Similar to me: Cooling moves are gradually accelerated, starting at this speed.
+# 9    changes: Cooling moves are gradually accelerating beginning at this speed.
+#  translation: Soğutma hızı bu seviyeden başlayarak kademeli olarak artacaktır.
 # 10   changes: Cooling moves are gradually accelerating beginning at this speed.
 #  translation: Soğutma hızı bu seviyeden başlayarak kademeli olarak artacaktır.
-# 13   changes: Cooling moves are gradually accelerating towards this speed. 
-#  translation: Soğutma hızı yavaş yavaş bu hıza doğru artacaktır. 
+# 13   changes: Cooling moves are gradually accelerating towards this speed.
+#  translation: Soğutma hızı yavaş yavaş bu hıza doğru artacaktır.
 msgid "Cooling moves are gradually accelerated, starting at this speed. "
 msgstr ""
 
@@ -8558,8 +8558,8 @@ msgstr ""
 #  translation: %s dosyasını yükle
 # 4    changes: Loading speed
 #  translation: Yükleme hızı
-# 4    changes: Loading : 
-#  translation: Yükleniyor : 
+# 4    changes: Loading :
+#  translation: Yükleniyor :
 msgid "Loading file"
 msgstr ""
 
@@ -10670,7 +10670,7 @@ msgstr ""
 #  translation: Yapılandırma Sihirbazını
 # 9    changes: Configuration &Wizard
 #  translation: Yapılandırma Sihirbazı
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr ""
 
 

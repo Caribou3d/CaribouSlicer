@@ -7951,7 +7951,7 @@ msgstr "Benvingut al %s Assistent de Configuració"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Benvingut al %s Ajudant de Configuració"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:576
@@ -8453,8 +8453,8 @@ msgstr ""
 "d'impressora?"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2974
-msgid "Configuration is edited in ConfigWizard"
-msgstr "La configuració s'edita a ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "La configuració s'edita a ConfigAssistent"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3027
 msgid "All user presets will be deleted."
@@ -8564,11 +8564,11 @@ msgid "Configuration &Assistant"
 msgstr "&Assistent de configuració"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3529
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Ajudant de configuració"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3530
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "&Ajudant de configuració"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:237
@@ -12589,8 +12589,8 @@ msgstr ""
 "Comproveu la llista d'objectes abans de canviar els paràmetres inicials."
 
 #: src/slic3r/GUI/GUI_App.cpp:3150
-msgid "Configuration is editing from ConfigWizard"
-msgstr "La configuració s'edita des de ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "La configuració s'edita des de ConfigAssistent"
 
 #: src/slic3r/GUI/GUI_App.cpp:3168
 #, boost-format
@@ -18975,7 +18975,7 @@ msgid "Download path is %1%. Do you wish to continue?"
 msgstr "La ruta de descàrrega és %1%. Vols continuar?"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Obrint Assistent de Configuració"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456

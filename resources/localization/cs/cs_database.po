@@ -1949,10 +1949,10 @@ msgstr ""
 "Byl načten konfigurační soubor \"%1%\", ale některé konfigurační hodnoty nebyly "
 "rozpoznány."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Nastavení se upravuje v Průvodci konfigurace"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfigurace se upravuje z nástroje Průvodce nastavením"
 
 msgid "Configuration notes"
@@ -13743,10 +13743,10 @@ msgstr "Nelze přepsat externí profil."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Vyberte jeden nebo více souborů (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Průvodce &nastavením"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Průvodce nastavením"
 
 msgid ""
@@ -13910,7 +13910,7 @@ msgstr "Otevřete ve svém prohlížeči příručku Slic3r"
 msgid "Open the Slic3r website in your browser"
 msgstr "Otevřete webovou stránku Slic3r ve svém prohlížeči"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Otevírání průvodce nastavením"
 
 msgid "Overhang reversal"
@@ -14078,7 +14078,7 @@ msgstr "Nejvyšší rychlost ventilátoru"
 msgid "Volumetric speed for Autospeed"
 msgstr "Objemová rychlost pro Automatickou rychlost"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Vítejte v %s Konfiguračním průvodci"
 
 msgid ""

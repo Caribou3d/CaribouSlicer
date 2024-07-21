@@ -2226,10 +2226,10 @@ msgstr ""
 "A \"%1%\" konfigurációs fájl betöltődött, azonban néhány konfigurációs értéket nem "
 "ismert fel."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "A konfiguráció szerkesztése a ConfigWizardban történik_"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfiguráció szerkesztése a ConfigWizardból_"
 
 msgid "Configuration notes"
@@ -8258,7 +8258,7 @@ msgstr "Nyissa meg a %s kiadványok oldalát a böngészőben"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Dialógusablak megnyitása az Alakzat Galéria szerkesztéséhez"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Konfigurációs varázsló megnyitása"
 
 msgid "Opening new project while some presets are unsaved."

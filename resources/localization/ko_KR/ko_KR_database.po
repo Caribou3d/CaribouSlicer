@@ -7373,10 +7373,10 @@ msgstr "외부 프로필을 덮어 쓸 수 없습니다."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "파일을 선택하세요 (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "구성 및 마법사"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "구성 마법사"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -7471,7 +7471,7 @@ msgstr ""
 "사용하면 더 큰 주변 수를 사용하는 경사면을 감지 할 때 Slic3r이이 수를 자동으"
 "로 증가시킬 수 있습니다."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "%s 구성 마법사에 오신 것을 환영 합니다"
 
 msgid "You should change the name of your printer device."

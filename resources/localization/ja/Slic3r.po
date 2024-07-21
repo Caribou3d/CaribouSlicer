@@ -1493,10 +1493,10 @@ msgstr ""
 "構成ファイル \"%1%\"がロードされましたが、一部の構成値が認識されませんでし"
 "た。"
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "構成は構成ウィザードで編集されます"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "構成は構成ウィザードから編集中です"
 
 msgid "Configuration notes"
@@ -5314,7 +5314,7 @@ msgstr "設定を開く。"
 msgid "Open the dialog to modify shape gallery"
 msgstr "シェイプギャラリーの編集ダイヤログを開く"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "構成ウィザードを開く"
 
 msgid "Opening new project while some presets are unsaved."

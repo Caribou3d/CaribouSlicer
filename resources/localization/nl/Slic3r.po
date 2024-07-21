@@ -1449,10 +1449,10 @@ msgstr ""
 "Configuratiebestand \"%1%\" is geladen, hoewel sommige configuratiewaarden "
 "niet herkend werden."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "Configuratie is gewijzigd in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "Configuratie is gewijzigd in ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Configuratie is aangepast van de configuratiewizard"
 
 msgid "Configuration notes"
@@ -5255,7 +5255,7 @@ msgstr "Open voorkeuren."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Open het venster voor bewerken van de vormengalerij"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Configuratiewizard openen"
 
 msgid "Opening new project while some presets are unsaved."

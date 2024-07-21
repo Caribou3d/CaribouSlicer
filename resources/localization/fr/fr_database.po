@@ -2206,10 +2206,10 @@ msgstr ""
 "Le fichier de configuration \"%1%\" a été chargé, mais certaines valeurs de "
 "configuration n'ont pas été reconnues."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "La configuration est modifié via l'assistant de configuration."
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "La configuration se modifie via l'assistant de configuration."
 
 msgid "Configuration notes"
@@ -15777,10 +15777,10 @@ msgstr ""
 msgid "Colors and Dark mode"
 msgstr "Couleurs et mode Sombre"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "&Assistant de Configuration"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Assistant de Configuration"
 
 msgid ""
@@ -15984,7 +15984,7 @@ msgstr "Ouvrez le manuel du Slic3r dans votre navigateur."
 msgid "Open the Slic3r website in your browser"
 msgstr "Ouvrir le site web de Slic3r dans votre navigateur"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Ouverture de l'assistant de configuration"
 
 msgid "Overhang reversal"
@@ -16240,7 +16240,7 @@ msgstr "Vitesse du ventilateur pour le dessus"
 msgid "Volumetric speed for Autospeed"
 msgstr "Vitesse volumétrique maximale"
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Bienvenue dans l'Assistant de Configuration de %s"
 
 msgid ""

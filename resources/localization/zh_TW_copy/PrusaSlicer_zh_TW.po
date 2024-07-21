@@ -7257,7 +7257,7 @@ msgstr "歡迎使用 %s 設定助手"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "歡迎使用 %s 設定嚮導"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:576
@@ -7708,7 +7708,7 @@ msgid "Do you want to select default SLA materials for these printer models?"
 msgstr "您是否要為這些SLA打印機模式選擇預設的打印材料？"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2974
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "在設定嚮導中編輯設定"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3027
@@ -7816,11 +7816,11 @@ msgid "Configuration &Assistant"
 msgstr "設定助手(&A)"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3529
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "設定嚮導"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3530
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "設定嚮導(&W)"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:237
@@ -11698,7 +11698,7 @@ msgid "Please check your object list before preset changing."
 msgstr "請在變更預設之前檢查您的模型列表。"
 
 #: src/slic3r/GUI/GUI_App.cpp:3150
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "設定正在 ConfigWizard 編輯中"
 
 #: src/slic3r/GUI/GUI_App.cpp:3168
@@ -17692,7 +17692,7 @@ msgid "Download path is %1%. Do you wish to continue?"
 msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "打開設定嚮導"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456

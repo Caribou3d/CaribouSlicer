@@ -1561,10 +1561,10 @@ msgstr ""
 "Wczytano plik konfiguracyjny \"%1%\", jednak niektóre wartości konfiguracji "
 "nie zostały rozpoznane."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Konfiguracja jest edytowana w Asystencie konfiguracji"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Konfiguracja jest edytowana z Asystenta konfiguracji"
 
 msgid "Configuration notes"
@@ -5457,7 +5457,7 @@ msgstr "Otwórz Preferencje."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Otwórz okno dialogowe, aby zmodyfikować galerię kształtów"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Otwieranie Asystenta Konfiguracji"
 
 msgid "Opening new project while some presets are unsaved."

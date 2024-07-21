@@ -1534,10 +1534,10 @@ msgstr ""
 "Файл конфигурации \"%1%\" был загружен, однако некоторые значения "
 "конфигурации не были распознаны."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
 msgid "Configuration notes"
@@ -5459,7 +5459,7 @@ msgstr "Открыть настройки приложения."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Открытие диалогового окна для редактирования библиотеки фигур."
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Открытие мастера настройки"
 
 msgid "Opening new project while some presets are unsaved."

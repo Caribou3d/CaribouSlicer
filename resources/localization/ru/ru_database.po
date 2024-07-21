@@ -1477,10 +1477,10 @@ msgstr ""
 "Файл конфигурации \"%1%\" был загружен, однако некоторые значения "
 "конфигурации не были распознаны."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
 msgid "Configuration notes"
@@ -9570,10 +9570,10 @@ msgstr "Невозможно перезаписать внешний профи�
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Выберите один или несколько файлов (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Мастер настройки"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Мастер настройки"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9632,7 +9632,7 @@ msgstr "Импортировать STL/OBJ/AM&F/3MF"
 msgid "Max print speed"
 msgstr "Максимальная скорость печати"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Открытие мастера настройки"
 
 msgid ""
@@ -9743,7 +9743,7 @@ msgstr ""
 "\"Дополнительные периметры при необходимости\", Slic3r может автоматически "
 "увеличить это значение, если обнаружит наклонные поверхности."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Мастер настройки %s"
 
 msgid "You should change the name of your printer device."

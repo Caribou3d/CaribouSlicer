@@ -1896,10 +1896,10 @@ msgid ""
 "were not recognized."
 msgstr "已加载配置文件“%1%”，但无法识别某些配置值。"
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "在ConfigWizard中编辑配置"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "正在从ConfigWizard编辑配置"
 
 msgid "Configuration notes"
@@ -7283,7 +7283,7 @@ msgstr "在浏览器中打开 %s 版本页面"
 msgid "Open the dialog to modify shape gallery"
 msgstr "打开对话框以修改形状库"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "打开配置向导"
 
 msgid "Opening new project while some presets are unsaved."

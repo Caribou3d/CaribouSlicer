@@ -1453,11 +1453,11 @@ msgstr ""
 "Arquivo de configuração \"%1%\" foi carregado, porém alguns valores de "
 "configuração não foram reconhecidos."
 
-msgid "Configuration is edited in ConfigWizard"
-msgstr "A configuração é editada no ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
+msgstr "A configuração é editada no ConfigAssistent"
 
-msgid "Configuration is editing from ConfigWizard"
-msgstr "A configuração está editando do ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
+msgstr "A configuração está editando do ConfigAssistent"
 
 msgid "Configuration notes"
 msgstr "Notas de config"
@@ -9423,10 +9423,10 @@ msgstr "Não é possível substituir um perfil externo."
 msgid "Choose one or more files (STL/OBJ/AMF/3MF/PRUSA):"
 msgstr "Escolha um ou mais arquivos (STL/OBJ/AMF/3MF/PRUSA):"
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "Assistente &de config"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Assistente de config"
 
 msgid "Density of internal infill, expressed in the range 0% - 100%."
@@ -9526,7 +9526,7 @@ msgstr ""
 "superfícies inclinadas que se beneficiam de um número maior de perímetros se "
 "a opção extra perímetros estiver habilitada."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Bem-vindo ao  %s Assistente de config"
 
 msgid "Fill pattern"
@@ -17724,7 +17724,7 @@ msgstr ""
 "- Fechando o PrusaSlicer enquanto algumas predefinições são modificadas,\n"
 "- Carregando um novo projeto enquanto alguns predefinições são modificados"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Abrindo o Assistente de Configuração"
 
 msgid ""

@@ -2358,10 +2358,10 @@ msgid ""
 "were not recognized."
 msgstr "Konfigurationsdatei \"%1%\" wurde geladen, jedoch wurden einige Konfigurationswerte nicht erkannt."
 
-msgid "Configuration is edited in ConfigWizard"
+msgid "Configuration is edited in ConfigAssistent"
 msgstr "Die Konfiguration wird im ConfigWizard bearbeitet"
 
-msgid "Configuration is editing from ConfigWizard"
+msgid "Configuration is editing from ConfigAssistent"
 msgstr "Die Konfiguration wird vom ConfigWizard aus bearbeitet"
 
 msgid "Configuration notes"
@@ -8564,7 +8564,7 @@ msgstr "Öffnen Sie die Seite %s releases in Ihrem Browser"
 msgid "Open the dialog to modify shape gallery"
 msgstr "Öffnen Sie den Dialog zum Ändern der Formengalerie"
 
-msgid "Opening Configuration Wizard"
+msgid "Opening Configuration Assistent"
 msgstr "Öffne Konfigurationsassistent"
 
 msgid "Opening new project while some presets are unsaved."
@@ -16610,10 +16610,10 @@ msgstr ""
 "Durch die Aktualisierung der Konfiguration gehen die Änderungen der Voreinstellungen verloren.\n"
 "Überprüfen Sie daher nicht gespeicherte Änderungen und speichern Sie sie gegebenenfalls vorher."
 
-msgid "Configuration &Wizard"
+msgid "Configuration &Assistent"
 msgstr "&Konfigurations-Assistent"
 
-msgid "Configuration Wizard"
+msgid "Configuration Assistent"
 msgstr "Konfigurations-Assistent"
 
 msgid "Confirm connectors"
@@ -19973,7 +19973,7 @@ msgstr "Gewicht pro Extruder, das während des gesamten Drucks extrudiert wird. 
 msgid "Welcome to %1% version %2%."
 msgstr "Willkommen zum %1% Version %2%."
 
-msgid "Welcome to the %s Configuration Wizard"
+msgid "Welcome to the %s Configuration Assistent"
 msgstr "Willkommen zum %s Konfigurations-Assistent"
 
 msgid "When checked, whenever dragging and dropping a project file on the application or open it from a browser, shows a dialog asking to select the action to take on the file to load."
