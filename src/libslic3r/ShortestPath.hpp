@@ -36,7 +36,7 @@ template<typename ExtrusionEntityConstOrNot>
 void reorder_extrusion_entities(std::vector<ExtrusionEntityConstOrNot*> &entities, const std::vector<std::pair<size_t, bool>> &chain)
 {
     assert(entities.size() == chain.size());
-	std::vector<const ExtrusionEntity*> out;
+    std::vector<ExtrusionEntity*> out;  // Change to non-const pointer
     out.reserve(entities.size());
     for (const std::pair<size_t, bool> &idx : chain) {
         assert(entities[idx.first] != nullptr);
