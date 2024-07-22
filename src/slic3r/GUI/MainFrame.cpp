@@ -2068,20 +2068,20 @@ void MainFrame::init_menubar_as_editor()
             [this](wxCommandEvent&) { wxGetApp().calibration_cube_dialog(); });
     }
 
-    // objects menu
-    wxMenu* generationMenu = nullptr;
-    if (wxGetApp().is_editor())
-    {
-        generationMenu  = new wxMenu();
-        append_menu_item(generationMenu, wxID_ANY, _(L("FreeCad python script")), _(L("Create an object by writing little easy script.")),
-            [this](wxCommandEvent&) { wxGetApp().freecad_script_dialog(); });
-        append_menu_item(generationMenu, wxID_ANY, _(L("Script help page")), _(L("How to use the FreeCad python script window.")),
-            [this](wxCommandEvent&) { wxLaunchDefaultBrowser("https://github.com/supermerill/SuperSlicer/wiki/FreePySCAD-script-window"); });
-        generationMenu->AppendSeparator();
-        append_menu_item(generationMenu, wxID_ANY, _(L("Mosaic from picture")), _(L("Create an mosaic-like tile with filament changes.")),
-            [this](wxCommandEvent&) { wxGetApp().tiled_canvas_dialog(); });
+    // // objects menu
+    // wxMenu* generationMenu = nullptr;
+    // if (wxGetApp().is_editor())
+    // {
+    //     generationMenu  = new wxMenu();
+    //     append_menu_item(generationMenu, wxID_ANY, _(L("FreeCad python script")), _(L("Create an object by writing little easy script.")),
+    //         [this](wxCommandEvent&) { wxGetApp().freecad_script_dialog(); });
+    //     append_menu_item(generationMenu, wxID_ANY, _(L("Script help page")), _(L("How to use the FreeCad python script window.")),
+    //         [this](wxCommandEvent&) { wxLaunchDefaultBrowser("https://github.com/supermerill/SuperSlicer/wiki/FreePySCAD-script-window"); });
+    //     generationMenu->AppendSeparator();
+    //     append_menu_item(generationMenu, wxID_ANY, _(L("Mosaic from picture")), _(L("Create an mosaic-like tile with filament changes.")),
+    //         [this](wxCommandEvent&) { wxGetApp().tiled_canvas_dialog(); });
 
-    }
+    // }
 
     // Help menu
     auto helpMenu = generate_help_menu();
@@ -2096,7 +2096,7 @@ void MainFrame::init_menubar_as_editor()
     m_menubar->Append(windowMenu, _L("&Window"));
     if (viewMenu) m_menubar->Append(viewMenu, _L("&View"));
     if (m_calibration_menu) m_menubar->Append(m_calibration_menu, _L("C&alibration"));
-    if (generationMenu) m_menubar->Append(generationMenu, _L("&Generate"));
+    // if (generationMenu) m_menubar->Append(generationMenu, _L("&Generate"));
     // Add additional menus from C++
     wxGetApp().add_config_menu(m_menubar);
     m_menubar->Append(helpMenu, _L("&Help"));

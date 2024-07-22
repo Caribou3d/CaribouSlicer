@@ -11,13 +11,12 @@
 #include <ostream>
 #include <utility>
 #include <stdexcept>
+#include <boost/format.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
-#include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/log/trivial.hpp>
-#include <curl/curl.h>
 #include <curl/curl.h>
 
 #include <wx/app.h>
@@ -254,7 +253,7 @@ bool PresetUpdater::priv::get_file(const std::string &url, const fs::path &targe
 			fs::fstream file(tmp_path, std::ios::out | std::ios::binary | std::ios::trunc);
 			file.write(body.c_str(), body.size());
 			file.close();
-			fs::rename(tmp_path, target_path);
+			fs::rename(tmp_path	, target_path);
 			res = true;
 		})
 		.perform_sync();
@@ -277,8 +276,8 @@ void PresetUpdater::priv::get_missing_resource(const std::string& vendor, const 
 	if (filename.empty() || vendor.empty())
 		return;
 
-	if (!boost::starts_with(url, "http://files.prusa3d.com/wp-content/uploads/repository/") &&
-		!boost::starts_with(url, "https://files.prusa3d.com/wp-content/uploads/repository/"))
+	if (!boost::starts_with(url, "http://caribou3d.com/CaribouSuperSlicer/repository/") &&
+		!boost::starts_with(url, "https://caribou3d.com/CaribouSuperSlicer/repository/"))
 	{
 		throw Slic3r::CriticalException(GUI::format("URL outside prusa3d.com network: %1%", url));
 	}
@@ -989,7 +988,7 @@ Updates PresetUpdater::priv::get_config_updates(const Semver &old_slic3r_version
 					found = true;
 				} else {
 					BOOST_LOG_TRIVIAL(warning) << format("The recommended config version for vendor `%1%` in resources does not match the recommended\n"
-			                                             " config version for this version of `%2%`. Corrupted installation?", idx.vendor(), SLIC3R_APP_NAME);
+			                                             " config version for this version of PrusaSlicer. Corrupted installation?", idx.vendor());
 				}
 			}
 		}
