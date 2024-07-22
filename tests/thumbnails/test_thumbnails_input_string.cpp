@@ -66,7 +66,7 @@ static std::string invalid_val_thumbnail4()
 
 
 TEST_CASE("Empty Thumbnails", "[Thumbnails]") {
-    auto [thumbnails, errors] = make_and_check_thumbnail_list(empty_thumbnails());
+    auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(empty_thumbnails());
     REQUIRE(errors == enum_bitmask<ThumbnailError>());
     REQUIRE(thumbnails.empty());
 }
@@ -74,13 +74,13 @@ TEST_CASE("Empty Thumbnails", "[Thumbnails]") {
 TEST_CASE("Valid Thumbnails", "[Thumbnails]") {
 
     SECTION("Test 1") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(valid_thumbnails());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(valid_thumbnails());
         REQUIRE(errors == enum_bitmask<ThumbnailError>());
         REQUIRE(thumbnails.size() == 3);
     }
 
     SECTION("Test 2") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(valid_thumbnails2());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(valid_thumbnails2());
         REQUIRE(errors == enum_bitmask<ThumbnailError>());
         REQUIRE(thumbnails.size() == 4);
     }
@@ -89,14 +89,14 @@ TEST_CASE("Valid Thumbnails", "[Thumbnails]") {
 TEST_CASE("Out of range Thumbnails", "[Thumbnails]") {
 
     SECTION("Test 1") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(out_of_range_thumbnail());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(out_of_range_thumbnail());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::OutOfRange));
         REQUIRE(thumbnails.size() == 3);
     }
 
     SECTION("Test 2") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(out_of_range_thumbnail2());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(out_of_range_thumbnail2());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::OutOfRange));
         REQUIRE(thumbnails.size() == 3);
@@ -106,14 +106,14 @@ TEST_CASE("Out of range Thumbnails", "[Thumbnails]") {
 TEST_CASE("Invalid extention Thumbnails", "[Thumbnails]") {
 
     SECTION("Test 1") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_ext_thumbnail());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_ext_thumbnail());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidExt));
         REQUIRE(thumbnails.size() == 4);
     }
 
     SECTION("Test 2") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_ext_thumbnail2());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_ext_thumbnail2());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidExt));
         REQUIRE(thumbnails.size() == 4);
@@ -123,28 +123,28 @@ TEST_CASE("Invalid extention Thumbnails", "[Thumbnails]") {
 TEST_CASE("Invalid value Thumbnails", "[Thumbnails]") {
 
     SECTION("Test 1") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_val_thumbnail());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_val_thumbnail());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidVal));
         REQUIRE(thumbnails.size() == 3);
     }
 
     SECTION("Test 2") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_val_thumbnail2());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_val_thumbnail2());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidVal));
         REQUIRE(thumbnails.size() == 3);
     }
 
     SECTION("Test 3") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_val_thumbnail3());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_val_thumbnail3());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidVal));
         REQUIRE(thumbnails.size() == 3);
     }
 
     SECTION("Test 4") {
-        auto [thumbnails, errors] = make_and_check_thumbnail_list(invalid_val_thumbnail4());
+        auto [thumbnails, errors] = make_and_check_thumbnail_list_from_prusa(invalid_val_thumbnail4());
         REQUIRE(errors != enum_bitmask<ThumbnailError>());
         REQUIRE(errors.has(ThumbnailError::InvalidVal));
         REQUIRE(thumbnails.size() == 2);
