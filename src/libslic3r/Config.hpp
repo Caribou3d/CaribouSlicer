@@ -658,19 +658,18 @@ public:
         this->flags = rhs->flags;
     }
 
-    bool operator==(const ConfigOption &rhs) const override {
-        if (rhs.type() != this->type()) {
+    bool operator==(const ConfigOption &rhs) const override
+    {
+        if (rhs.type() != this->type())
             throw ConfigurationError("ConfigOptionSingle: Comparing incompatible types");
-        }
-
         assert(dynamic_cast<const ConfigOptionSingle<T>*>(&rhs));
-
         return (this->value == static_cast<const ConfigOptionSingle<T>*>(&rhs)->value 
-                || (this->is_nil() && rhs.is_nil()))
+                || this->is_nil() && rhs.is_nil())
             && this->is_enabled() == rhs.is_enabled()
             && this->is_phony() == rhs.is_phony();
         // should compare all flags?
     }
+
     bool operator==(const T &rhs) const throw() { return this->value == rhs; }
     bool operator!=(const T &rhs) const throw() { return this->value != rhs; }
     bool operator< (const T &rhs) const throw() { return this->value < rhs; }
@@ -1143,21 +1142,18 @@ public:
     std::string serialize() const override
     {
         std::ostringstream ss;
-        double v = this->value;
         if (!this->is_enabled())
             ss << "!";
-        ss << this->value;
         if (is_nil())
             if (NULLABLE)
                 ss << "nil";
             else
                 throw ConfigurationError("Serializing NaN");
-        else if (std::isfinite(v)) {
-            ss << v;
+        else if (std::isfinite(this->value)) {
+            ss << this->value;
 
-        } else if(std::isnan(v))
+        } else if(std::isnan(this->value))
             throw ConfigurationError("Serializing invalid number");
-
         return ss.str();
     }
     
@@ -3235,7 +3231,7 @@ protected:
     // Called after a config is loaded as a whole.
     // Perform composite conversions, for example merging multiple keys into one key.
     // For conversion of single options, the handle_legacy() method above is called.
-    virtual void                    handle_legacy_composite() {}
+    virtual void                    handle_legacy_composite(std::vector<std::pair<t_config_option_key, std::string>> &opt_deleted) {}
 
 public:
 	using ConfigOptionResolver::option;
