@@ -487,7 +487,7 @@ bool static check_old_linux_datadir(const wxString& app_name) {
 static bool run_updater_win()
 {
     // find updater exe
-    boost::filesystem::path path_updater = boost::dll::program_location().parent_path() / "prusaslicer-updater.exe";
+    boost::filesystem::path path_updater = boost::dll::program_location().parent_path() / "caribouslicer-updater.exe";
     // run updater. Original args: /silent -restartapp prusa-slicer.exe -startappfirst
     std::string msg;
     bool res = create_process(path_updater, L"/silent", msg);
@@ -891,7 +891,7 @@ GUI_App::GUI_App(EAppMode mode)
 	, m_other_instance_message_handler(std::make_unique<OtherInstanceMessageHandler>())
     , m_downloader(std::make_unique<Downloader>())
 {
-	//app config initializes early becasuse it is used in instance checking in PrusaSlicer.cpp
+	//app config initializes early becasuse it is used in instance checking in CaribouSlicer.cpp
 	this->init_app_config();
     //ImGuiWrapper need the app config to get the colors
     m_imgui.reset(new ImGuiWrapper{});
@@ -953,14 +953,14 @@ bool GUI_App::init_opengl()
     return initialized;
 }
 
-// gets path to PrusaSlicer.ini, returns semver from first line comment
+// gets path to CaribouSlicer.ini, returns semver from first line comment
 static boost::optional<Semver> parse_semver_from_ini(std::string path)
 {
     boost::nowide::ifstream stream(path);
     std::stringstream buffer;
     buffer << stream.rdbuf();
     std::string body = buffer.str();
-    size_t start = body.find("PrusaSlicer ");
+    size_t start = body.find("CaribouSlicer ");
     if (start == std::string::npos)
         return boost::none;
     body = body.substr(start + 12);
@@ -973,8 +973,11 @@ static boost::optional<Semver> parse_semver_from_ini(std::string path)
 void GUI_App::init_app_config()
 {
     #ifdef SLIC3R_ALPHA
-        // Profiles for the alpha are stored into the PrusaSlicer-alpha directory to not mix with the current release.
-        SetAppName(SLIC3R_APP_KEY "-alpha");
+        // Profiles for the alpha are stored into the CaribouSlicer-alpha directory to not mix with the current release.
+        SetAppName(SLIC3R_APP_KEY "V2-alpha");
+    #elif SLIC3R_BETA
+        // Profiles for the beta are stored into the CaribouSlicer-beta directory to not mix with the current release.
+        SetAppName(SLIC3R_APP_KEY "V2-beta");        
     #else
         SetAppName(SLIC3R_APP_KEY);
     #endif
@@ -2575,7 +2578,7 @@ bool GUI_App::load_language(wxString language, bool initial)
     if (initial) {
     	// There is a static list of lookup path prefixes in wxWidgets. Add ours.
 	    wxFileTranslationsLoader::AddCatalogLookupPathPrefix(from_u8(localization_dir()));
-    	// Get the active language from PrusaSlicer.ini, or empty string if the key does not exist.
+    	// Get the active language from CaribouSlicer.ini, or empty string if the key does not exist.
         language = app_config->get("translation_language");
         if (! language.empty())
             BOOST_LOG_TRIVIAL(trace) << boost::format("translation_language provided by " SLIC3R_APP_NAME ".ini: %1%") % language;
@@ -2594,7 +2597,7 @@ bool GUI_App::load_language(wxString language, bool initial)
 #ifdef __WXOSX__
             // ysFIXME - temporary workaround till it isn't fixed in wxWidgets:
             // Use English as an initial language, because of under OSX it try to load "inappropriate" language for wxLANGUAGE_DEFAULT.
-            // For example in our case it's trying to load "en_CZ" and as a result PrusaSlicer catch warning message.
+            // For example in our case it's trying to load "en_CZ" and as a result CaribouSlicer catch warning message.
             // But wxWidgets guys work on it.
             temp_locale.Init(wxLANGUAGE_ENGLISH);
 #else
@@ -2602,7 +2605,7 @@ bool GUI_App::load_language(wxString language, bool initial)
 #endif // __WXOSX__
 	    	// Set the current translation's language to default, otherwise GetBestTranslation() may not work (see the wxWidgets source code).
 	    	wxTranslations::Get()->SetLanguage(wxLANGUAGE_DEFAULT);
-	    	// Let the wxFileTranslationsLoader enumerate all translation dictionaries for PrusaSlicer
+	    	// Let the wxFileTranslationsLoader enumerate all translation dictionaries for CaribouSlicer
 	    	// and try to match them with the system specific "preferred languages".
 	    	// There seems to be a support for that on Windows and OSX, while on Linuxes the code just returns wxLocale::GetSystemLanguage().
 	    	// The last parameter gets added to the list of detected dictionaries. This is a workaround
@@ -2636,7 +2639,7 @@ bool GUI_App::load_language(wxString language, bool initial)
     }
 
     if (language_info == nullptr) {
-        // PrusaSlicer does not support the Right to Left languages yet.
+        // CaribouSlicer does not support the Right to Left languages yet.
         if (m_language_info_system != nullptr && m_language_info_system->LayoutDirection != wxLayout_RightToLeft)
             language_info = m_language_info_system;
         if (m_language_info_best != nullptr && m_language_info_best->LayoutDirection != wxLayout_RightToLeft)
@@ -3292,7 +3295,7 @@ void GUI_App::OSXStoreOpenFiles(const wxArrayString &fileNames)
         if (is_gcode_file(into_u8(filename)))
             ++ num_gcodes;
     if (fileNames.size() == num_gcodes) {
-        // Opening PrusaSlicer by drag & dropping a G-Code onto PrusaSlicer icon in Finder,
+        // Opening CaribouSlicer by drag & dropping a G-Code onto CaribouSlicer icon in Finder,
         // just G-codes were passed. Switch to G-code viewer mode.
         m_app_mode = EAppMode::GCodeViewer;
         unlock_lockfile(get_instance_hash_string() + ".lock", data_dir() + "/cache/");

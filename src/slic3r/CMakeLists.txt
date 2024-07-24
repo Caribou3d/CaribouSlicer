@@ -402,7 +402,10 @@ if (MSVC)
 endif ()
 
 add_library(libslic3r_gui STATIC ${SLIC3R_GUI_SOURCES})
-target_compile_definitions(libslic3r_gui PRIVATE $<$<BOOL:${SLIC3R_ALPHA}>:SLIC3R_ALPHA>)
+target_compile_definitions(libslic3r_gui PRIVATE 
+    $<$<BOOL:${SLIC3R_ALPHA}>:SLIC3R_ALPHA>
+    $<$<BOOL:${SLIC3R_BETA}>:SLIC3R_BETA>
+)
 
 foreach(_source IN ITEMS ${SLIC3R_GUI_SOURCES})
     get_filename_component(_source_path "${_source}" PATH)

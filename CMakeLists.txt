@@ -110,6 +110,9 @@ foreach (_cache_var ${_cache_vars})
     endif ()
 endforeach()
 
+message(STATUS "SLIC3R_ALPHA: ${SLIC3R_ALPHA}")
+message(STATUS "SLIC3R_BETA: ${SLIC3R_BETA}")
+
 if (SLIC3R_GUI)
     add_definitions(-DSLIC3R_GUI)
 endif ()
