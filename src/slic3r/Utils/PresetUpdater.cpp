@@ -276,8 +276,8 @@ void PresetUpdater::priv::get_missing_resource(const std::string& vendor, const 
 	if (filename.empty() || vendor.empty())
 		return;
 
-	if (!boost::starts_with(url, "http://caribou3d.com/CaribouSuperSlicer/repository/") &&
-		!boost::starts_with(url, "https://caribou3d.com/CaribouSuperSlicer/repository/"))
+	if (!boost::starts_with(url, "http://caribou3d.com/CaribouSlicerV2/repository/") &&
+		!boost::starts_with(url, "https://caribou3d.com/CaribouSlicerV2/repository/"))
 	{
 		throw Slic3r::CriticalException(GUI::format("URL outside prusa3d.com network: %1%", url));
 	}

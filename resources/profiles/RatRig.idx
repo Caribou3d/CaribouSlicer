@@ -1,5 +1,5 @@
 min_slic3r_version = 2.7.0
-2.0.0 Updated for CaribouSuperSlicer 2.7.0
+2.0.0 Updated for CaribouSlicerV2 2.7.0
 min_slic3r_version = 2.4.1-alpha0
 1.1.0 Added V-Core 4 and Punkfil line
 1.0.3 Removed G_Code_Offset in filament profiles as they are all 0 anyway

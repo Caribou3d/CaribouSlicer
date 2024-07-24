@@ -45,11 +45,11 @@ namespace Slic3r {
 static const std::string VENDOR_PREFIX = "vendor:";
 static const std::string MODEL_PREFIX = "model:";
 //The file contains data for AppUpdater.cpp
-static const std::string VERSION_CHECK_URL = "https://caribou3d.com/CaribouSuperSlicer/CaribouSlicer.version";
+static const std::string VERSION_CHECK_URL = "https://caribou3d.com/CaribouSlicerV2/CaribouSlicer.version";
 // Url to index archive zip that contains latest indicies
-static const std::string INDEX_ARCHIVE_URL= "https://caribou3d.com/CaribouSuperSlicer/repository/vendor_indices.zip";
+static const std::string INDEX_ARCHIVE_URL= "https://caribou3d.com/CaribouSlicerV2/repository/vendor_indices.zip";
 // Url to folder with vendor profile files. Used when downloading new profiles that are not in resources folder.
-static const std::string PROFILE_FOLDER_URL = "https://caribou3d.com/CaribouSuperSlicer/repository/vendors/";
+static const std::string PROFILE_FOLDER_URL = "https://caribou3d.com/CaribouSlicerV2/repository/vendors/";
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
 const std::string AppConfig::SECTION_MATERIALS = "sla_materials";
