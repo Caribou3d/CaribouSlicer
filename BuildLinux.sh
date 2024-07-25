@@ -334,7 +334,7 @@ then
 #    make -j$NCORES libslic3r_tests
 #    make -j$NCORES sla_print_tests
 #    make -j$NCORES slic3rutils_tests
-    make -j$NCORES thumbnails_tests
+#    make -j$NCORES thumbnails_tests
     popd  > /dev/null
     echo -e "\n   To run the tests:"
     echo -e "          'cd build'"

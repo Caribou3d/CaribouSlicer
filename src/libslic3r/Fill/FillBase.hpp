@@ -23,6 +23,7 @@
 #include "../BoundingBox.hpp"
 #include "../Exception.hpp"
 #include "../PrintConfig.hpp"
+#include "../Surface.hpp"
 #include "../Exception.hpp"
 #include "../Utils.hpp"
 
