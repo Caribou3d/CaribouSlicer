@@ -502,7 +502,8 @@ uint32_t hex2int(const std::string& hex)
 {
     uint32_t int_color;
     if (hex.empty() || !(hex.size() == 6 || hex.size() == 7)) {
-        int_color = 0x2172eb;
+        // int_color = 0x2172eb;
+		int_color = 0x107d18;
     } else {
         std::stringstream ss;
         ss << std::hex << (hex[0] == '#' ? hex.substr(1) : hex);

@@ -49,7 +49,6 @@ src/slic3r/GUI/ExtruderSequenceDialog.cpp
 src/slic3r/GUI/Field.cpp
 src/slic3r/GUI/FileArchiveDialog.cpp
 src/slic3r/GUI/FirmwareDialog.cpp
-src/slic3r/GUI/FreeCADDialog.cpp
 src/slic3r/GUI/GalleryDialog.cpp
 src/slic3r/GUI/GCodeViewer.cpp
 src/slic3r/GUI/Gizmos/GLGizmoCut.cpp

@@ -664,25 +664,10 @@ void PreferencesDialog::build()
 
 	if (is_editor) {
         activate_options_tab(m_tabid_2_optgroups.back().back(), 3);
-		m_tabid_2_optgroups.back().emplace_back(create_options_group(_L("Paths"), tabs, 0));
+		m_tabid_2_optgroups.back().emplace_back(create_options_group(_L("Printables"), tabs, 0));
 		m_tabid_2_optgroups.back().back()->title_width = 20;
 		m_tabid_2_optgroups.back().back()->label_width = 20;
-
-		m_optkey_to_optgroup["freecad_path"] = m_tabid_2_optgroups.back().back();
-		ConfigOptionDef def = {"freecad_path", coString};
-		def.label = L("FreeCAD path");
-		def.tooltip = L("If it point to a valid freecad instance, you can use the built-in python script to quickly generate geometry."
-            "\nPut here the freecad directory from which you can access its 'lib' directory."
-            "\nFreecad will use its own python (from the bin directoyr) on windows and will use the system python3 on linux & macos");
-		def.set_default_value(new ConfigOptionString{ app_config->get("freecad_path") });
-		Option option(def, "freecad_path");
-		//option.opt.full_width = true;
-		option.opt.width = 50;
-		m_tabid_2_optgroups.back().back()->append_single_option_line(option);
-		m_optkey_to_optgroup["freecad_path"] = m_tabid_2_optgroups.back().back();
-		wxGetApp().sidebar().get_searcher().add_key("freecad_path", Preset::TYPE_PREFERENCES, m_tabid_2_optgroups.back().back()->config_category(), L("Preferences"), def);
 		
-
 		append_bool_option(m_tabid_2_optgroups.back().back(), "downloader_url_registered",
 			L("Allow downloads from Printables.com"),
 			L("If enabled, Slic3r will be allowed to download from Printables.com"),

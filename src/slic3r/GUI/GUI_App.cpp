@@ -90,7 +90,7 @@
 #include "CalibrationPressureAdvDialog.hpp"
 #include "ConfigSnapshotDialog.hpp"
 #include "CreateMMUTiledCanvas.hpp"
-#include "FreeCADDialog.hpp"
+//#include "FreeCADDialog.hpp"
 #include "FirmwareDialog.hpp"
 #include "Preferences.hpp"
 #include "Tab.hpp"
@@ -2238,14 +2238,14 @@ void GUI_App::calibration_pressureadv_dialog()
 {
     change_calibration_dialog(nullptr, new CalibrationPressureAdvDialog(this, mainframe));
 }
-void GUI_App::freecad_script_dialog()
-{
-    change_calibration_dialog(nullptr, new FreeCADDialog(this, mainframe));
-}
-void GUI_App::tiled_canvas_dialog()
-{
-    change_calibration_dialog(nullptr, new CreateMMUTiledCanvas(this, mainframe));
-}
+// void GUI_App::freecad_script_dialog()
+// {
+//     change_calibration_dialog(nullptr, new FreeCADDialog(this, mainframe));
+// }
+// void GUI_App::tiled_canvas_dialog()
+// {
+//     change_calibration_dialog(nullptr, new CreateMMUTiledCanvas(this, mainframe));
+// }
 
 // static method accepting a wxWindow object as first parameter
 bool GUI_App::catch_error(std::function<void()> cb,

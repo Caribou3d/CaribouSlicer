@@ -323,10 +323,11 @@ AboutDialog::AboutDialog()
             "<html>"
             "<body bgcolor= %1% link= %2%>"
             "<font color=%3%>"
-            " &copy; 2018-2023 Durand Rémi. <br />"
-            "%5% &copy; 2016-2023 Prusa Research. <br />"
-            "%5% &copy; 2011-2018 Alessandro Ranellucci. <br />"
-            "<a href=\"http://slic3r.org/\">Slic3r</a> %6% "
+            " &copy; 2023-2024 Caribou Research & Development. <br />"
+            " &copy; 2018-2024 Durand Rémi. <br />"
+            " &copy; 2016-2024 Prusa Research. <br />"
+            " &copy; 2011-2018 Alessandro Ranellucci. <br /><br />"
+            "<a href=\"https://github.com/Caribou3d/CaribouSlicer\">CaribouSlicer</a> %6% "
             "<a href=\"http://www.gnu.org/licenses/agpl-3.0.html\">%7%</a>."
             "<br /><br />"
             "%8%"
@@ -336,14 +337,6 @@ AboutDialog::AboutDialog()
             "%11%"
             "</font>"
             "</body>"
-            // "</html>") % bgr_clr_str % text_clr_str % text_clr_str
-            // % copyright_str % copyright_str
-            // % is_licensed_str
-            // % license_str
-            // % based_on_str
-            // % contributors_str
-            // % manual_str
-            // % icon_str).str());
             "</html>" , bgr_clr_str , text_clr_str , text_clr_str
             , copyright_str , copyright_str
             , is_licensed_str
