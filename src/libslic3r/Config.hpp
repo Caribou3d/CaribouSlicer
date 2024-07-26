@@ -844,12 +844,13 @@ private:
             default_value = m_values.front();
     }
 
-protected:
+//protected:
+public:
     // this default is used to fill this vector when resized. It's not the default of a setting, for it please use the
     // ConfigOptionDef. It's not even serialized or put in the undo/redo.
     T default_value;
     std::vector<T> m_values;
-public:
+//public:
 
     ConfigOptionVector() {}
     explicit ConfigOptionVector(T default_val) : default_value(default_val) { assert (m_enabled.size() == size()); }

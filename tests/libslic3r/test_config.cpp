@@ -2,9 +2,10 @@
 
 #include "libslic3r/Config.hpp"
 #include "libslic3r/PrintConfig.hpp"
-#include "libslic3r/LocalesUtils.hpp"#include "libslic3r/Model.hpp"
+#include "libslic3r/LocalesUtils.hpp"
+#include "libslic3r/Model.hpp"
 #include "libslic3r/Print.hpp"
-#include <test_data.hpp>
+#include "test_data.hpp"
 
 #include <cereal/types/polymorphic.hpp>
 #include <cereal/types/string.hpp>
@@ -281,13 +282,13 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
         WHEN("A boolean option is set to a boolean value") {
             REQUIRE_NOTHROW(config.set("gcode_comments", true));
             THEN("The underlying value is set correctly.") {
-                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->getBool() == true);
+                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->get_bool() == true);
             }
         }
         WHEN("A boolean option is set to a string value representing a 0 or 1") {
             CHECK_NOTHROW(config.set_deserialize_strict("gcode_comments", "1"));
             THEN("The underlying value is set correctly.") {
-                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->getBool() == true);
+                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->get_bool() == true);
             }
         }
         WHEN("A boolean option is set to a string value representing something other than 0 or 1") {
@@ -295,7 +296,7 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
                 REQUIRE_THROWS_AS(config.set("gcode_comments", "Z"), BadOptionTypeException);
             }
             AND_THEN("Value is unchanged.") {
-                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->getBool() == false);
+                REQUIRE(config.opt<ConfigOptionBool>("gcode_comments")->get_bool() == false);
             }
         }
         WHEN("A boolean option is set to an int value") {
@@ -321,13 +322,13 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
         WHEN("An floating-point option is set through the integer interface") {
             config.set("perimeter_speed", 10);
             THEN("The underlying value is set correctly.") {
-                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->getFloat() == 10.0);
+                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->get_float() == 10.0);
             }
         }
         WHEN("A floating-point option is set through the double interface") {
             config.set("perimeter_speed", 5.5);
             THEN("The underlying value is set correctly.") {
-                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->getFloat() == 5.5);
+                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->get_float() == 5.5);
             }
         }
         WHEN("An integer-based option is set through the double interface") {
@@ -340,7 +341,7 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
                 REQUIRE_THROWS_AS(config.set_deserialize_strict("perimeter_speed", "zzzz"), BadOptionValueException);
             }
             THEN("The value does not change.") {
-                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->getFloat() == 60.0);
+                REQUIRE(config.opt<ConfigOptionFloat>("perimeter_speed")->get_float() == 60.0);
             }
         }
         WHEN("A string option is set through the string interface") {
@@ -427,7 +428,7 @@ SCENARIO("Config accessor functions perform as expected.", "[Config]") {
             }
         }
 
-        WHEN("getFloat called on an option that has been set.") {
+        WHEN("get_float called on an option that has been set.") {
             config.set("layer_height", 0.5);
             THEN("The set value is returned.") {
                 REQUIRE(config.opt_float("layer_height") == 0.5);
@@ -450,8 +451,11 @@ SCENARIO("Config ini load/save interface", "[Config]") {
         std::string path = std::string(TEST_DATA_DIR) + "/test_config/new_from_ini.ini";
         config.load_from_ini(path, ForwardCompatibilitySubstitutionRule::Disable);
         THEN("Config object contains ini file options.") {
-            REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.size() == 1);
-            REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->values.front() == "#ABCD");
+            REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->size() == 1);
+            // REQUIRE(config.option_throw<ConfigOptionStrings>("filament_colour", false)->front() == "#ABCD");
+            auto values = config.option_throw<ConfigOptionStrings>("filament_colour")->get_values();
+            REQUIRE(values.size() == 1);
+            REQUIRE(values[0] == "#ABCD");              
         }
     }
 }

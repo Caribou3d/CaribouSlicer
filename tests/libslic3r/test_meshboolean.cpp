@@ -3,8 +3,21 @@
 
 #include <libslic3r/TriangleMesh.hpp>
 #include <libslic3r/MeshBoolean.hpp>
+#include <Eigen/Dense>
 
 using namespace Slic3r;
+using namespace Eigen;
+
+Vec3d calc_normal(const Vec3i32 &triangle, const std::vector<Vec3f> &vertices)
+{
+    Vec3d v0 = vertices[triangle[0]].cast<double>();
+    Vec3d v1 = vertices[triangle[1]].cast<double>();
+    Vec3d v2 = vertices[triangle[2]].cast<double>();
+    // n = triangle normal
+    Vec3d n = (v1 - v0).cross(v2 - v0);
+    n.normalize();
+    return n;
+}
 
 TEST_CASE("CGAL and TriangleMesh conversions", "[MeshBoolean]") {
     TriangleMesh sphere = make_sphere(1.);
@@ -24,19 +37,7 @@ TEST_CASE("CGAL and TriangleMesh conversions", "[MeshBoolean]") {
     REQUIRE(! MeshBoolean::cgal::does_self_intersect(M));
 }
 
-Vec3d calc_normal(const Vec3i &triangle, const std::vector<Vec3f> &vertices)
-{
-    Vec3d v0 = vertices[triangle[0]].cast<double>();
-    Vec3d v1 = vertices[triangle[1]].cast<double>();
-    Vec3d v2 = vertices[triangle[2]].cast<double>();
-    // n = triangle normal
-    Vec3d n = (v1 - v0).cross(v2 - v0);
-    n.normalize();
-    return n;
-}
-
-TEST_CASE("Add TriangleMeshes", "[MeshBoolean]")
-{
+TEST_CASE("Add TriangleMeshes", "[MeshBoolean]") {
     TriangleMesh tm1 = make_sphere(1.6, 1.6);
     size_t init_size = tm1.its.indices.size();
     Vec3f move(5, -3, 7);

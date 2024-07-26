@@ -13,19 +13,27 @@
 
 using namespace Slic3r;
 
+
+
 std::unique_ptr<CoolingBuffer> make_cooling_buffer(
     GCodeGenerator                  &gcode,
     const DynamicPrintConfig        &config         = DynamicPrintConfig{}, 
     const std::vector<unsigned int> &extruder_ids   = { 0 })
 {
-    PrintConfig print_config;
-    print_config.apply(config, true); // ignore_nonexistent
-    gcode.apply_print_config(print_config);
+    // Create a Print object and apply the dynamic configuration to it
+    Print print;
+    print.config.apply(config, true); // ignore_nonexistent
+
+    // Apply the print configuration to the GCodeGenerator
+    gcode.apply_print_configs(print);
+
     gcode.set_layer_count(10);
     gcode.writer().set_extruders(extruder_ids);
     gcode.writer().set_extruder(0);
+
     return std::make_unique<CoolingBuffer>(gcode);
 }
+
 
 SCENARIO("Cooling unit tests", "[Cooling]") {
     const std::string   gcode1        = "G1 X100 E1 F3000\n";

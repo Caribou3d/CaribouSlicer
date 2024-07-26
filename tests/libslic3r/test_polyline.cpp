@@ -5,6 +5,7 @@
 
 #include "libslic3r/Point.hpp"
 #include "libslic3r/Polyline.hpp"
+#include "libslic3r/Line.hpp"
 
 using namespace Slic3r;
 

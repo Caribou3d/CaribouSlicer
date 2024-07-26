@@ -32,7 +32,7 @@ TEST_CASE("Check parsing and comparing of config versions", "[Version]") {
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-rc2")));
-    REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0")));
+    REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0")));
 
     v.config_version      = *Semver::parse("1.1.2-alpha1");
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-alpha")));
@@ -41,7 +41,7 @@ TEST_CASE("Check parsing and comparing of config versions", "[Version]") {
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-rc2")));
-    REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0")));
+    REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0")));
 
     v.config_version      = *Semver::parse("1.1.2-beta");
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-alpha")));
@@ -51,7 +51,7 @@ TEST_CASE("Check parsing and comparing of config versions", "[Version]") {
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-rc")));
     REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0-rc2")));
-    REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0")));
+    REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0")));
 
     v.config_version      = *Semver::parse("1.1.2-rc");
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-alpha")));
@@ -61,7 +61,7 @@ TEST_CASE("Check parsing and comparing of config versions", "[Version]") {
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-rc")));
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-rc2")));
-    REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0")));
+    REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0")));
 
     v.config_version      = *Semver::parse("1.1.2-rc2");
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-alpha")));
@@ -71,7 +71,7 @@ TEST_CASE("Check parsing and comparing of config versions", "[Version]") {
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-beta1")));
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-rc")));
     REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0-rc2")));
-    REQUIRE(! v.is_slic3r_supported(*Semver::parse("1.39.0")));
+    REQUIRE(v.is_slic3r_supported(*Semver::parse("1.39.0")));
 
     // Test the upper boundary.
     v.config_version     = *Semver::parse("1.1.2");
