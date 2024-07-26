@@ -663,10 +663,10 @@ public:
         if (rhs.type() != this->type())
             throw ConfigurationError("ConfigOptionSingle: Comparing incompatible types");
         assert(dynamic_cast<const ConfigOptionSingle<T>*>(&rhs));
-        return (this->value == static_cast<const ConfigOptionSingle<T>*>(&rhs)->value 
-                || this->is_nil() && rhs.is_nil())
-            && this->is_enabled() == rhs.is_enabled()
-            && this->is_phony() == rhs.is_phony();
+        return ((this->value == static_cast<const ConfigOptionSingle<T>*>(&rhs)->value)
+                || (this->is_nil() && rhs.is_nil()))
+            && (this->is_enabled() == rhs.is_enabled())
+            && (this->is_phony() == rhs.is_phony());
         // should compare all flags?
     }
 
