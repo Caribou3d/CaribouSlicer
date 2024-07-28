@@ -51,19 +51,16 @@ endif ()
 set(_patch_command "")
 if (UNIX AND NOT APPLE)
   # On non-apple UNIX platforms, finding the location of OpenSSL certificates is necessary at runtime, as there is no standard location usable across platforms.
-  # The OPENSSL_CERT_OVERRIDE flag is understood by PrusaSlicer and will trigger the search of certificates at initial application launch.
+  # The OPENSSL_CERT_OVERRIDE flag is understood by CaribouSlicer and will trigger the search of certificates at initial application launch.
   # Then ask the user for consent about the correctness of the found location.
   set (_patch_command echo set_target_properties(CURL::libcurl PROPERTIES INTERFACE_COMPILE_DEFINITIONS OPENSSL_CERT_OVERRIDE) >> CMake/curl-config.cmake.in)
 endif ()
 
 add_cmake_project(CURL
-  # GIT_REPOSITORY      https://github.com/curl/curl.git
-  # GIT_TAG             curl-7_75_0
-  URL                 https://github.com/curl/curl/archive/refs/tags/curl-7_75_0.zip
-  URL_HASH            SHA256=a63ae025bb0a14f119e73250f2c923f4bf89aa93b8d4fafa4a9f5353a96a765a
-  # PATCH_COMMAND       ${GIT_EXECUTABLE} checkout -f -- . && git clean -df && 
-  #                     ${GIT_EXECUTABLE} apply --whitespace=fix ${CMAKE_CURRENT_LIST_DIR}/curl-mods.patch
-  PATCH_COMMAND       "${_patch_command}"
+ URL       https://github.com/curl/curl/releases/download/curl-8_9_0/curl-8.9.0.zip  
+ URL_HASH  SHA256=b84268c1ef28214cc847006e61e238e588f06cb4307dee39e6a0a0a9457ed39c
+ PATCH_COMMAND COMMAND cd CMake && ${PATCH_CMD} < ${CMAKE_CURRENT_LIST_DIR}/CURL.patch
+
   CMAKE_ARGS
     -DBUILD_TESTING:BOOL=OFF
     -DCMAKE_POSITION_INDEPENDENT_CODE=ON

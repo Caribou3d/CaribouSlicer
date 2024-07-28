@@ -1,0 +1,11 @@
+--- curl-config.cmake.in.orig	2024-07-28 21:20:51.050553029 +0200
++++ curl-config.cmake.in	2024-07-28 21:22:29.099515902 +0200
+@@ -42,3 +42,8 @@
+ # For compatibility with CMake's FindCURL.cmake
+ set(CURL_LIBRARIES @PROJECT_NAME@::libcurl)
+ set_and_check(CURL_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
++
++# Set properties on the actual target, not the alias
++if(TARGET @PROJECT_NAME@::@LIB_SELECTED@)
++  set_target_properties(@PROJECT_NAME@::@LIB_SELECTED@ PROPERTIES INTERFACE_COMPILE_DEFINITIONS OPENSSL_CERT_OVERRIDE)
++endif()
