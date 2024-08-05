@@ -26,6 +26,33 @@
 cmake_minimum_required(VERSION 3.12)
 project(Slic3r-deps)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Enable CMake policies
+
+if (POLICY CMP0068)
+    # RPATH settings do not affect install_name on macOS since CMake 3.9
+    cmake_policy(SET CMP0068 NEW)
+endif()
+
+if (POLICY CMP0091)
+    # The NEW behavior for this policy is to not place MSVC runtime library flags in the default
+    # CMAKE_<LANG>_FLAGS_<CONFIG> cache entries and use CMAKE_MSVC_RUNTIME_LIBRARY abstraction instead.
+    cmake_policy(SET CMP0091 NEW)
+elseif (DEFINED CMAKE_MSVC_RUNTIME_LIBRARY)
+    message(FATAL_ERROR "CMAKE_MSVC_RUNTIME_LIBRARY was defined while policy CMP0091 is not available. Use CMake 3.15 or newer.")
+endif()
+
+if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.21)
+    cmake_policy(SET CMP0127 NEW)
+endif ()
+
+if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.24)
+    cmake_policy(SET CMP0135 NEW)
+endif ()
+
 # Redefine BUILD_SHARED_LIBS with default being OFF
 option(BUILD_SHARED_LIBS "Build shared libraries instead of static (experimental)" OFF)
 
@@ -45,20 +72,8 @@ endif ()
 # Slightly controversial
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../cmake/modules)
 
-if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.21)
-    cmake_policy(SET CMP0127 NEW)
-endif ()
-
-if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.24)
-    cmake_policy(SET CMP0135 NEW)
-endif ()
-
 if (MSVC)
   option(DEP_DEBUG "Build in debug version of packages automatically" ON)
-endif ()
-
-if (CMAKE_VERSION VERSION_GREATER_EQUAL 3.24)
-    cmake_policy(SET CMP0135 NEW)
 endif ()
 
 include(${PROJECT_SOURCE_DIR}/../cmake/modules/AddCMakeProject.cmake)

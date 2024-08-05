@@ -1,3 +1,7 @@
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 if(BUILD_SHARED_LIBS)
     set(_build_shared ON)
     set(_build_static OFF)
@@ -15,8 +19,9 @@ endif ()
 
 add_cmake_project(OpenVDB
     # 8.2 patched
-    URL https://github.com/prusa3d/openvdb/archive/a68fd58d0e2b85f01adeb8b13d7555183ab10aa5.zip
-    URL_HASH SHA256=f353e7b99bd0cbfc27ac9082de51acf32a8bc0b3e21ff9661ecca6f205ec1d81
+#    URL https://github.com/prusa3d/openvdb/archive/a68fd58d0e2b85f01adeb8b13d7555183ab10aa5.zip
+#    URL_HASH SHA256=f353e7b99bd0cbfc27ac9082de51acf32a8bc0b3e21ff9661ecca6f205ec1d81
+    URL https://github.com/AcademySoftwareFoundation/openvdb/archive/refs/tags/v11.0.0.zip
     CMAKE_ARGS
         -DCMAKE_POSITION_INDEPENDENT_CODE=ON
         -DOPENVDB_BUILD_PYTHON_MODULE=OFF
@@ -24,7 +29,6 @@ add_cmake_project(OpenVDB
         -DOPENVDB_CORE_SHARED=${_build_shared}
         -DOPENVDB_CORE_STATIC=${_build_static}
         -DOPENVDB_ENABLE_RPATH:BOOL=OFF
-        -DTBB_STATIC=${_build_static}
         -DOPENVDB_BUILD_VDB_PRINT=${_openvdb_vdbprint}
         -DDISABLE_DEPENDENCY_VERSION_CHECKS=ON # Centos6 has old zlib
 )
