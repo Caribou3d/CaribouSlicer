@@ -23,6 +23,7 @@ REQUIRED_DEV_PACKAGES=(
     m4
     texinfo
     wget
+    nasm
 )
 
 if [[ -n "$FORCE_GTK2" ]]

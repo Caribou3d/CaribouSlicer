@@ -19,7 +19,7 @@ endif ()
 
 ExternalProject_Add(dep_OpenSSL
     EXCLUDE_FROM_ALL ON
-    URL "https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.1.zip"
+    URL https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.1.zip
     URL_HASH SHA256=307284f39bfb7061229c57e263e707655aa80aa9950bf6def28ed63fec91a726
     DOWNLOAD_DIR ${${PROJECT_NAME}_DEP_DOWNLOAD_DIR}/OpenSSL
     BUILD_IN_SOURCE ON

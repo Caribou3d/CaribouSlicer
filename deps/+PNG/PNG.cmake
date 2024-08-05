@@ -31,6 +31,8 @@ else ()
     add_cmake_project(PNG 
         URL https://github.com/glennrp/libpng/archive/refs/tags/v1.6.35.zip
         URL_HASH SHA256=3d22d46c566b1761a0e15ea397589b3a5f36ac09b7c785382e6470156c04247f
+     #   URL https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.43.tar.gz
+     #   URL_HASH SHA256=fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
         PATCH_COMMAND "${_patch_cmd}"
         CMAKE_ARGS
             -DPNG_SHARED=OFF
