@@ -1,7 +1,7 @@
 add_cmake_project(EXPAT
-  URL https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_3.zip
-  URL_HASH SHA256=8851e199d763dc785277d6d414ed3e70ff683915158b51b8d8781df0e3af950a
-  SOURCE_SUBDIR expat
+  URL https://github.com/libexpat/libexpat/releases/download/R_2_6_2/expat-2.6.2.tar.gz
+  URL_HASH SHA256=d4cf38d26e21a56654ffe4acd9cd5481164619626802328506a2869afab29ab3
+  #SOURCE_SUBDIR expat
   CMAKE_ARGS
     -DEXPAT_BUILD_TOOLS:BOOL=OFF
     -DEXPAT_BUILD_EXAMPLES:BOOL=OFF

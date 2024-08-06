@@ -4,6 +4,6 @@
 # AMD Radeon graphics cards
 
 add_cmake_project(NanoSVG
-    URL https://github.com/fltk/nanosvg/archive/abcd277ea45e9098bed752cf9c6875b533c0892f.zip
-    URL_HASH SHA256=e859938fbaee4b351bd8a8b3d3c7a75b40c36885ce00b73faa1ce0b98aa0ad34
+    URL https://github.com/fltk/nanosvg/archive/refs/tags/fltk_2023-12-02.tar.gz
+    URL_HASH SHA256=7f3d654c91169499466bdd43b914175c58811bb7e41a55f98c90902250e7ef8e
 )
