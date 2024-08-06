@@ -599,7 +599,6 @@ endif ()
 
 find_package(OpenVDB 5.0 COMPONENTS openvdb)
 if(OpenVDB_FOUND)
-    slic3r_remap_configs(IlmBase::Half RelWithDebInfo Release)
     slic3r_remap_configs(Blosc::blosc RelWithDebInfo Release)
 else ()
     message(FATAL_ERROR "OpenVDB could not be found with the bundled find module. "

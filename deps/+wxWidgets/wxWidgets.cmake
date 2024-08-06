@@ -41,4 +41,4 @@ add_cmake_project(wxWidgets
         -DwxUSE_WEBREQUEST=OFF
 )
 
-set(DEP_wxWidgets_DEPENDS ZLIB PNG EXPAT TIFF JPEG NanoSVG)
+set(DEP_wxWidgets_DEPENDS ZLIB PNG EXPAT JPEG NanoSVG)
