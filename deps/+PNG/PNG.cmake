@@ -6,20 +6,20 @@ else ()
 endif ()
 
 set(_patch_cmd PATCH_COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt.patched CMakeLists.txt)
+
 if(APPLE AND IS_CROSS_COMPILE)
 # TODO: check if it doesn't create problem when compiling from arm to x86_64
-    caribouslicer_add_cmake_project(PNG
-        GIT_REPOSITORY https://github.com/glennrp/libpng.git
-        GIT_TAG v1.6.35
+    add_cmake_project(PNG
+        URL https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.43.tar.gz
+        URL_HASH SHA256=fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
         DEPENDS ${ZLIB_PKG}
-        PATCH_COMMAND       ${GIT_EXECUTABLE} checkout -f -- . && git clean -df &&
-                            ${GIT_EXECUTABLE} apply --whitespace=fix ${CMAKE_CURRENT_LIST_DIR}/macos-arm64.patch
         CMAKE_ARGS
             -DPNG_SHARED=OFF
             -DPNG_STATIC=ON
-            -DPNG_PREFIX=prusaslicer_
+            -DPNG_PREFIX=
             -DPNG_TESTS=OFF
             -DDISABLE_DEPENDENCY_TRACKING=OFF
+            -DPNG_TOOLS=OFF            
             ${_disable_neon_extension}
     )
 else ()
@@ -29,17 +29,14 @@ else ()
     endif ()
 
     add_cmake_project(PNG 
-        URL https://github.com/glennrp/libpng/archive/refs/tags/v1.6.35.zip
-        URL_HASH SHA256=3d22d46c566b1761a0e15ea397589b3a5f36ac09b7c785382e6470156c04247f
-     #   URL https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.43.tar.gz
-     #   URL_HASH SHA256=fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
-        PATCH_COMMAND "${_patch_cmd}"
+        URL https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.43.tar.gz
+        URL_HASH SHA256=fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
         CMAKE_ARGS
             -DPNG_SHARED=OFF
             -DPNG_STATIC=ON
-            -DPNG_PREFIX=prusaslicer_
+            -DPNG_PREFIX=
             -DPNG_TESTS=OFF
-            -DPNG_EXECUTABLES=OFF
+            -DPNG_TOOLS=OFF
             ${_disable_neon_extension}
 )
 endif()
