@@ -1,99 +1,105 @@
+// Copyright (c) 2012 Artyom Beilis (Tonkikh)
+// Copyright (c) 2020-2021 Alexander Grund
 //
-//  Copyright (c) 2012 Artyom Beilis (Tonkikh)
-//
-//  Distributed under the Boost Software License, Version 1.0. (See
-//  accompanying file LICENSE_1_0.txt or copy at
-//  http://www.boost.org/LICENSE_1_0.txt)
-//
+// Distributed under the Boost Software License, Version 1.0.
+// https://www.boost.org/LICENSE_1_0.txt
+
 #ifndef BOOST_NOWIDE_IOSTREAM_HPP_INCLUDED
 #define BOOST_NOWIDE_IOSTREAM_HPP_INCLUDED
 
 #include <boost/nowide/config.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <iostream>
-#include <ostream>
+#ifdef BOOST_WINDOWS
 #include <istream>
+#include <memory>
+#include <ostream>
 
-#ifdef BOOST_MSVC
-#  pragma warning(push)
-#  pragma warning(disable : 4251)
+#include <boost/config/abi_prefix.hpp> // must be the last #include
+#else
+#include <iostream>
 #endif
 
+#ifdef BOOST_MSVC
+#pragma warning(push)
+#pragma warning(disable : 4251)
+#endif
 
 namespace boost {
 namespace nowide {
-    #if !defined(BOOST_WINDOWS) && !defined(BOOST_NOWIDE_DOXYGEN)
+#if !defined(BOOST_WINDOWS) && !defined(BOOST_NOWIDE_DOXYGEN)
     using std::cout;
     using std::cerr;
     using std::cin;
     using std::clog;
-    #else
-    
-    /// \cond INTERNAL 
-    namespace details {
+#else
+
+    /// \cond INTERNAL
+    namespace detail {
         class console_output_buffer;
         class console_input_buffer;
-        
-        class BOOST_NOWIDE_DECL winconsole_ostream : public std::ostream {
-            winconsole_ostream(winconsole_ostream const &);
-            void operator=(winconsole_ostream const &);
+
+        class BOOST_NOWIDE_DECL winconsole_ostream : public std::ostream
+        {
         public:
-            winconsole_ostream(int fd);
+            winconsole_ostream(bool isBuffered, winconsole_ostream* tieStream);
             ~winconsole_ostream();
+
         private:
-            boost::scoped_ptr<console_output_buffer> d;
+            std::unique_ptr<console_output_buffer> d;
+            // Ensure the std streams are initialized and alive during the lifetime of this instance
+            std::ios_base::Init init_;
         };
 
-        class BOOST_NOWIDE_DECL winconsole_istream : public std::istream {
-            winconsole_istream(winconsole_istream const &);
-            void operator=(winconsole_istream const &);
+        class BOOST_NOWIDE_DECL winconsole_istream : public std::istream
+        {
         public:
-            
-            winconsole_istream();
+            explicit winconsole_istream(winconsole_ostream* tieStream);
             ~winconsole_istream();
+
         private:
-            struct data;
-            boost::scoped_ptr<console_input_buffer> d;
+            std::unique_ptr<console_input_buffer> d;
+            // Ensure the std streams are initialized and alive during the lifetime of this instance
+            std::ios_base::Init init_;
         };
-    } // details 
-    
+    } // namespace detail
+
     /// \endcond
 
     ///
     /// \brief Same as std::cin, but uses UTF-8
     ///
     /// Note, the stream is not synchronized with stdio and not affected by std::ios::sync_with_stdio
-    /// 
-    extern BOOST_NOWIDE_DECL details::winconsole_istream cin;
+    ///
+    extern BOOST_NOWIDE_DECL detail::winconsole_istream cin;
     ///
     /// \brief Same as std::cout, but uses UTF-8
     ///
     /// Note, the stream is not synchronized with stdio and not affected by std::ios::sync_with_stdio
-    /// 
-    extern BOOST_NOWIDE_DECL details::winconsole_ostream cout;
+    ///
+    extern BOOST_NOWIDE_DECL detail::winconsole_ostream cout;
     ///
     /// \brief Same as std::cerr, but uses UTF-8
     ///
     /// Note, the stream is not synchronized with stdio and not affected by std::ios::sync_with_stdio
-    /// 
-    extern BOOST_NOWIDE_DECL details::winconsole_ostream cerr;
+    ///
+    extern BOOST_NOWIDE_DECL detail::winconsole_ostream cerr;
     ///
     /// \brief Same as std::clog, but uses UTF-8
     ///
     /// Note, the stream is not synchronized with stdio and not affected by std::ios::sync_with_stdio
-    /// 
-    extern BOOST_NOWIDE_DECL details::winconsole_ostream clog;
+    ///
+    extern BOOST_NOWIDE_DECL detail::winconsole_ostream clog;
 
-    #endif
+#endif
 
-} // nowide
+} // namespace nowide
 } // namespace boost
 
 #ifdef BOOST_MSVC
-#  pragma warning(pop)
+#pragma warning(pop)
 #endif
 
+#ifdef BOOST_WINDOWS
+#include <boost/config/abi_suffix.hpp> // pops abi_prefix.hpp pragmas
+#endif
 
 #endif
-///
-// vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4

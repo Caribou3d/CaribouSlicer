@@ -13,7 +13,8 @@
 #include <boost/log/trivial.hpp>
 #include <boost/format.hpp>
 #include <boost/nowide/convert.hpp>
-#include <boost/nowide/cenv.hpp>
+#include <boost/nowide/cstdlib.hpp>
+
 #include <boost/nowide/fstream.hpp>
 
 #include <cstdlib>   // getenv()
