@@ -218,7 +218,7 @@ BundleMap BundleMap::load()
                     res.emplace(std::move(id), std::move(bundle));
             }
         }
-      }catch (std::exception e) {
+      }catch (std::exception&  e) {
           MessageDialog msg(nullptr, format_wxstr(_L("Can't open directory '%1%'. Config bundles from here can't be loaded.\nError: %2%"), vendor_dir.string(), e.what()), _L("Error"), wxOK);
           msg.ShowModal();
       }

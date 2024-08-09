@@ -293,7 +293,7 @@ then
     echo -e "\n[6/10] Building CaribouSlicer ...\n"
     make -j$NCORES Slic3r
     # make OCCTWrapper.so
-    make OCCTWrapper
+#    make OCCTWrapper
     echo -e "\n ... done"
 
     echo -e "\n[7/10] Generating language files ...\n"

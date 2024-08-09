@@ -354,7 +354,7 @@ void MainFrame::update_icon() {
     try {
         icon_size = atoi(wxGetApp().app_config->get("tab_icon_size").c_str());
     }
-    catch (std::exception e) {}
+    catch (std::exception& e) {}
     switch (m_layout)
     {
     case ESettingsLayout::Unknown:
@@ -1081,7 +1081,7 @@ void MainFrame::init_tabpanel()
     try {
         icon_size = atoi(wxGetApp().app_config->get("tab_icon_size").c_str());
     }
-    catch (std::exception e) {}
+    catch (std::exception& e) {}
     // icons for m_tabpanel tabs
     wxImageList* img_list = nullptr;
     if (icon_size >= 8) {

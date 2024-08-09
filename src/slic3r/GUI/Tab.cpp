@@ -4216,7 +4216,7 @@ void Tab::load_current_preset()
                         try {
                             icon_size = atoi(wxGetApp().app_config->get("tab_icon_size").c_str());
                         }
-                        catch (std::exception e) {}
+                        catch (std::exception  e) {}
                         if (icon_size > 0) {
                             Notebook* notebook = dynamic_cast<Notebook*>(wxGetApp().tab_panel());
                             notebook->SetPageImage(notebook->FindFirstBtPage(tab), tab->icon_name(icon_size, printer_technology), icon_size);
