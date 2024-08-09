@@ -39,6 +39,8 @@
 #ifndef ANGELSCRIPT_H
 #define ANGELSCRIPT_H
 
+#define AS_USE_NAMESPACE
+
 #include <stddef.h>
 #ifndef _MSC_VER
 #include <stdint.h>
