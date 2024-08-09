@@ -1,6 +1,6 @@
 /*
    AngelCode Scripting Library
-   Copyright (c) 2003-2019 Andreas Jonsson
+   Copyright (c) 2003-2024 Andreas Jonsson
 
    This software is provided 'as-is', without any express or implied
    warranty. In no event will the authors be held liable for any
@@ -101,8 +101,8 @@ enum eTokenType
 	ttListSeparator,       // ,
 	ttStartStatementBlock, // {
 	ttEndStatementBlock,   // }
-	ttOpenParanthesis,     // (
-	ttCloseParanthesis,    // )
+	ttOpenParenthesis,     // (
+	ttCloseParenthesis,    // )
 	ttOpenBracket,         // [
 	ttCloseBracket,        // ]
 	ttAmp,                 // &
@@ -231,8 +231,8 @@ sTokenWord const tokenWords[] =
 	asTokenDef(","         , ttListSeparator),
 	asTokenDef("{"         , ttStartStatementBlock),
 	asTokenDef("}"         , ttEndStatementBlock),
-	asTokenDef("("         , ttOpenParanthesis),
-	asTokenDef(")"         , ttCloseParanthesis),
+	asTokenDef("("         , ttOpenParenthesis),
+	asTokenDef(")"         , ttCloseParenthesis),
 	asTokenDef("["         , ttOpenBracket),
 	asTokenDef("]"         , ttCloseBracket),
 	asTokenDef("?"         , ttQuestion),
@@ -320,6 +320,7 @@ const char * const IF_HANDLE_TOKEN = "if_handle_then_const";
 const char * const EXTERNAL_TOKEN  = "external";
 const char * const EXPLICIT_TOKEN  = "explicit";
 const char * const PROPERTY_TOKEN  = "property";
+const char * const DELETE_TOKEN    = "delete";
 
 END_AS_NAMESPACE
 
