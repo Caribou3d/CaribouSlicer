@@ -7,6 +7,7 @@ add_library(nowide STATIC
     nowide/convert.hpp
     nowide/cstdio.hpp
     nowide/cstdlib.hpp
+    nowide/cstdlib.cpp    
     nowide/detail
     nowide/filebuf.hpp
     nowide/filesystem.hpp

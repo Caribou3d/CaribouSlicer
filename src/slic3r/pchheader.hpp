@@ -80,6 +80,7 @@
 
 #include <boost/nowide/convert.hpp>
 #include <boost/nowide/cstdio.hpp>
+#include <boost/nowide/cstdlib.hpp>
 #include <boost/nowide/fstream.hpp>
 #include <boost/optional.hpp>
 
