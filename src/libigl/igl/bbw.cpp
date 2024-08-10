@@ -118,6 +118,7 @@ IGL_INLINE bool igl::bbw(
     }
     W.col(i) = Wi;
   };
+
   parallel_for(m,optimize_weight,2);
   if(error)
   {

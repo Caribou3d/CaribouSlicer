@@ -49,7 +49,13 @@
 #define gluEndPolygon mgluEndPolygon
 
 #define GLAPI extern
+#ifndef GLAPIENTRY
+#if defined(_MSC_VER) || defined(__MINGW32__)
+#define GLAPIENTRY __stdcall
+#else
 #define GLAPIENTRY
+#endif
+#endif
 typedef unsigned int GLenum;
 typedef unsigned char GLboolean;
 typedef unsigned int GLbitfield;
@@ -92,7 +98,14 @@ static_assert(false, "glu-libtess.h: glu.h must not be included!")
 static_assert(false, "glu-libtess.h: gl.h must not be included!")
 #endif
 
-/*************************************************************/
+/* Boolean */
+#define GLU_FALSE                          0
+#define GLU_TRUE                           1
+
+/* Version */
+#define GLU_VERSION_1_1                    1
+#define GLU_VERSION_1_2                    1
+#define GLU_VERSION_1_3                    1
 
 /* StringName */
 #define GLU_VERSION                        100800

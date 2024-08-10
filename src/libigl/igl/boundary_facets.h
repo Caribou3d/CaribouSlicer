@@ -15,34 +15,48 @@
 
 namespace igl
 {
-  // BOUNDARY_FACETS Determine boundary faces (edges) of tetrahedra (triangles)
-  // stored in T (analogous to qptoolbox's `outline` and `boundary_faces`).
-  //
-  // Templates:
-  //   IntegerT  integer-value: e.g. int
-  //   IntegerF  integer-value: e.g. int
-  // Input:
-  //  T  tetrahedron (triangle) index list, m by 4 (3), where m is the number of tetrahedra
-  // Output:
-  //  F  list of boundary faces, n by 3 (2), where n is the number of boundary faces
-  //
-  //
+  /// Determine boundary faces (edges) of tetrahedra (triangles) stored in T
+  /// (analogous to qptoolbox's `outline` and `boundary_faces`).
+  ///
+  /// @param[in] T  tetrahedron (triangle) index list, m by 4 (3), where m is the number of tetrahedra
+  /// @param[out] F  list of boundary faces, n by 3 (2), where n is the number of boundary faces
+  /// @param[out] J  list of indices into T, n by 1
+  /// @param[out] K  list of indices revealing across from which vertex is this facet
+  ///
+  template <
+    typename DerivedT, 
+    typename DerivedF,
+    typename DerivedJ,
+    typename DerivedK>
+  IGL_INLINE void boundary_facets(
+    const Eigen::MatrixBase<DerivedT>& T,
+    Eigen::PlainObjectBase<DerivedF>& F,
+    Eigen::PlainObjectBase<DerivedJ>& J,
+    Eigen::PlainObjectBase<DerivedK>& K);
+  /// Determine boundary faces (edges) of tetrahedra (triangles) stored in T.
+  ///
+  /// @param[in] T  tetrahedron (triangle) index list, m by 4 (3), where m is the number of tetrahedra
+  /// @param[out] F  list of boundary faces, n by 3 (2), where n is the number of boundary faces
+  template <typename DerivedT, typename DerivedF>
+  IGL_INLINE void boundary_facets(
+    const Eigen::MatrixBase<DerivedT>& T,
+    Eigen::PlainObjectBase<DerivedF>& F);
+  /// Determine boundary faces (edges) of tetrahedra (triangles) stored in T.
+  ///
+  /// @param[in] T  tetrahedron (triangle) index list, m by 4 (3), where m is the number of tetrahedra
+  /// @return list of boundary faces, n by 3 (2), where n is the number of boundary faces
+  template <typename DerivedT, typename Ret>
+  Ret boundary_facets(
+    const Eigen::MatrixBase<DerivedT>& T);
+  /// Determine boundary faces (edges) of tetrahedra (triangles) stored in T;
+  /// inputs and outputs lists.
+  ///
+  /// @param[in] T  tetrahedron (triangle) index list, m by 4 (3), where m is the number of tetrahedra
+  /// @param[out] F  list of boundary faces, n by 3 (2), where n is the number of boundary faces
   template <typename IntegerT, typename IntegerF>
   IGL_INLINE void boundary_facets(
     const std::vector<std::vector<IntegerT> > & T,
     std::vector<std::vector<IntegerF> > & F);
-
-  // Templates:
-  //   DerivedT  integer-value: i.e. from MatrixXi
-  //   DerivedF  integer-value: i.e. from MatrixXi
-  template <typename DerivedT, typename DerivedF>
-  IGL_INLINE void boundary_facets(
-    const Eigen::PlainObjectBase<DerivedT>& T,
-    Eigen::PlainObjectBase<DerivedF>& F);
-  // Same as above but returns F
-  template <typename DerivedT, typename Ret>
-  Ret boundary_facets(
-    const Eigen::PlainObjectBase<DerivedT>& T);
 }
 
 #ifndef IGL_STATIC_LIBRARY

@@ -14,10 +14,9 @@
 
 namespace igl
 {
-  // Space partitioning tree for computing winding number hierarchically.
-  //
-  // Templates:
-  //   Point  type for points in space, e.g. Eigen::Vector3d
+  /// Space partitioning tree for computing winding number hierarchically.
+  ///
+  /// @tparam Point  type for points in space, e.g. Eigen::Vector3d
   template <
     typename Point,
     typename DerivedV, 
@@ -143,8 +142,8 @@ namespace igl
 #include "triangle_fan.h"
 #include "exterior_edges.h"
 
-#include <igl/PI.h>
-#include <igl/remove_duplicate_vertices.h>
+#include "PI.h"
+#include "remove_duplicate_vertices.h"
 
 #include <iostream>
 #include <limits>
@@ -164,7 +163,6 @@ inline igl::WindingNumberTree<Point,DerivedV,DerivedF>::WindingNumberTree():
   V(dummyV),
   SV(),
   F(),
-  //boundary(igl::boundary_facets<Eigen::MatrixXi,Eigen::MatrixXi>(F))
   cap(),
   radius(std::numeric_limits<typename DerivedV::Scalar>::infinity()),
   center(0,0,0)
@@ -180,7 +178,6 @@ inline igl::WindingNumberTree<Point,DerivedV,DerivedF>::WindingNumberTree(
   V(dummyV),
   SV(),
   F(),
-  //boundary(igl::boundary_facets<Eigen::MatrixXi,Eigen::MatrixXi>(F))
   cap(),
   radius(std::numeric_limits<typename DerivedV::Scalar>::infinity()),
   center(0,0,0)
@@ -197,7 +194,7 @@ inline void igl::WindingNumberTree<Point,DerivedV,DerivedF>::set_mesh(
   // Remove any exactly duplicate vertices
   // Q: Can this ever increase the complexity of the boundary?
   // Q: Would we gain even more by remove almost exactly duplicate vertices?
-  MatrixXF SF,SVI,SVJ;
+  Eigen::Matrix<typename MatrixXF::Scalar,Eigen::Dynamic,1> SVI,SVJ;
   igl::remove_duplicate_vertices(_V,_F,0.0,SV,SVI,SVJ,F);
   triangle_fan(igl::exterior_edges(F),cap);
   V = SV;
@@ -217,7 +214,7 @@ inline igl::WindingNumberTree<Point,DerivedV,DerivedF>::WindingNumberTree(
 }
 
 template <typename Point, typename DerivedV, typename DerivedF>
-inline igl::WindingNumberTree<Point,DerivedV,DerivedF>::~WindingNumberTree()
+inline igl::WindingNumberTree<Point,DerivedV,DerivedF>::~WindingNumberTree<Point,DerivedV,DerivedF>()
 {
   delete_children();
 }
