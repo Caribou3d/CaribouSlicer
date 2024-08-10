@@ -3368,7 +3368,7 @@ void GUI_App::MacOpenURL(const wxString& url)
         BOOST_LOG_TRIVIAL(error) << "Recieved command to open URL, but it is not allowed in app configuration. URL: " << url;
         return;
     }
-    start_download(boost::nowide::narrow(url));
+    start_download(boost::nowide::narrow(url.ToStdWstring()));
 }
 
 #endif /* __APPLE */
