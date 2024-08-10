@@ -206,8 +206,10 @@ public:
 
     static wxBitmap MakeBitmap(wxBitmap bmp)
     {
-        if (!bmp.IsOk())
+        if (!bmp.IsOk()) {
             return wxNullBitmap;
+        }
+
 
         // create dark grey background for the splashscreen
         // It will be 5/3 of the weight of the bitmap
@@ -233,9 +235,9 @@ public:
 
     void Decorate()
     {
-        if (!m_main_bitmap.IsOk())
+        if (!m_main_bitmap.IsOk()){
             return;
-
+        }
         // draw text to the box at the left of the splashscreen.
         // this box will be 2/5 of the weight of the bitmap, and be at the left.
         int width = lround(m_main_bitmap.GetWidth() * 0.4);
@@ -245,8 +247,9 @@ public:
         //BitmapCache bmp_cache;
         //wxBitmap* logo_bmp_ptr = bmp_cache.load_svg(wxGetApp().logo_name(), logo_size, logo_size);
         wxBitmapBundle *logo_bmp_ptr = get_bmp_bundle(wxGetApp().logo_name(), logo_size, logo_size);
-        if (logo_bmp_ptr == nullptr)
+        if (logo_bmp_ptr == nullptr){
             return;
+        }
 
 #ifdef __APPLE__
         wxBitmap logo_bmp = logo_bmp_ptr->GetBitmap(logo_bmp_ptr->GetDefaultSize() * mac_max_scaling_factor());
@@ -281,8 +284,9 @@ public:
 
         memDc.SetFont(m_constant_text.credits_font);
         wxString credit_and_author = m_constant_text.credits;
-        if (!m_author.empty())
+        if (!m_author.empty()){
             credit_and_author += "\n\n" + m_author;
+        }
         int credits_height = memDc.GetMultiLineTextExtent(credit_and_author).GetY();
         //print from bottom
         memDc.DrawLabel(credit_and_author, banner_rect, wxALIGN_BOTTOM | wxALIGN_LEFT);
@@ -362,13 +366,13 @@ private:
 
     void scale_bitmap(wxBitmap& bmp, float scale)
     {
-        if (scale == 1.0)
+        if (scale == 1.0){
             return;
-
+        }
         wxImage image = bmp.ConvertToImage();
-        if (!image.IsOk() || image.GetWidth() == 0 || image.GetHeight() == 0)
+        if (!image.IsOk() || image.GetWidth() == 0 || image.GetHeight() == 0){
             return;
-
+        }
         int width   = int(scale * image.GetWidth());
         int height  = int(scale * image.GetHeight());
         image.Rescale(width, height, wxIMAGE_QUALITY_BILINEAR);
@@ -410,8 +414,9 @@ private:
         for (size_t i = 0; i < input.Len(); i++)
         {
             cur_len++;
-            if (input[i] == ' ')
+            if (input[i] == ' '){
                 idx = i;
+            }
             if (input[i] == '\n')
             {
                 get_longest_sub_string(longest_sub_string, cur_len, i);
@@ -445,8 +450,9 @@ bool static check_old_linux_datadir(const wxString& app_name) {
     std::string new_path = Slic3r::data_dir();
 
     wxString dir;
-    if (! wxGetEnv(wxS("XDG_CONFIG_HOME"), &dir) || dir.empty() )
+    if (! wxGetEnv(wxS("XDG_CONFIG_HOME"), &dir) || dir.empty() ){
         dir = wxFileName::GetHomeDir() + wxS("/.config");
+    }
     std::string default_path = (dir + "/" + app_name).ToUTF8().data();
 
     if (new_path != default_path) {
@@ -456,9 +462,9 @@ bool static check_old_linux_datadir(const wxString& app_name) {
     }
 
     fs::path data_dir = fs::path(new_path);
-    if (! fs::is_directory(data_dir))
+    if (! fs::is_directory(data_dir)){
         return true; // This should not happen.
-
+    }
     int file_count = std::distance(fs::directory_iterator(data_dir), fs::directory_iterator());
 
     if (file_count <= 1) { // just cache dir with an instance lock
@@ -569,7 +575,7 @@ static wxString file_wildcards(const FileWildcards &wildcards, const std::string
         }
     }
 
-    for (const std::string_view &ext : wildcards.file_extensions)
+    for (const std::string_view& ext : wildcards.file_extensions) {
         // Only add an extension if it was not added first as the custom extension.
         if (ext != custom_ext_lower) {
             if (title.empty()) {
@@ -586,6 +592,7 @@ static wxString file_wildcards(const FileWildcards &wildcards, const std::string
             mask += boost::to_upper_copy(std::string(ext));
             add_single(wildcards.title, ext);
         }
+    }
 
     return GUI::format_wxstr("%s (%s)|%s", wildcards.title, title, mask) + out_one_by_one;
 }
@@ -618,9 +625,9 @@ wxString sla_wildcards(OutputFormat formatid, const std::string& custom_extensio
         ret = file_wildcards(wc, custom_extension);
     }
 
-    if (ret.empty())
+    if (ret.empty()){
         ret = file_wildcards(FT_SL1, custom_extension);
-
+    }
     return ret;
 }
 
@@ -768,8 +775,8 @@ static void generic_exception_handle()
         // bad_alloc in main thread is most likely fatal. Report immediately to the user (wxLogError would be delayed)
         // and terminate the app so it is at least certain to happen now.
         wxString errmsg = wxString::Format(_L("%s has encountered an error. It was likely caused by running out of memory. "
-                              "If you are sure you have enough RAM on your system, this may also be a bug and we would "
-                              "be glad if you reported it.\n\nThe application will now terminate."), SLIC3R_APP_NAME);
+                            "If you are sure you have enough RAM on your system, this may also be a bug and we would "
+                            "be glad if you reported it.\n\nThe application will now terminate."), SLIC3R_APP_NAME);
         wxMessageBox(errmsg + "\n\n" + wxString(ex.what()), _L("Fatal error"), wxOK | wxICON_ERROR);
         BOOST_LOG_TRIVIAL(error) << boost::format("std::bad_alloc exception: %1%") % ex.what();
         std::terminate();
