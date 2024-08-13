@@ -8,7 +8,6 @@
 #define slic3r_SlicingAdaptive_hpp_
 
 #include "Slicing.hpp"
-#include "admesh/stl.h"
 
 namespace Slic3r
 {

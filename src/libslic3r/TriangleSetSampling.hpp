@@ -5,7 +5,6 @@
 #ifndef SRC_LIBSLIC3R_TRIANGLESETSAMPLING_HPP_
 #define SRC_LIBSLIC3R_TRIANGLESETSAMPLING_HPP_
 
-#include <admesh/stl.h>
 #include "libslic3r/Point.hpp"
 
 namespace Slic3r {

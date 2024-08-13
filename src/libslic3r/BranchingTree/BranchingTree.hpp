@@ -5,9 +5,6 @@
 #ifndef SUPPORTTREEBRANCHING_HPP
 #define SUPPORTTREEBRANCHING_HPP
 
-// For indexed_triangle_set
-#include <admesh/stl.h>
-
 #include "libslic3r/ExPolygon.hpp"
 
 namespace Slic3r { namespace branchingtree {

@@ -11,7 +11,6 @@
 #include "libslic3r/AABBMesh.hpp"
 #include "libslic3r/CSGMesh/TriangleMeshAdapter.hpp"
 #include "libslic3r/CSGMesh/CSGMeshCopy.hpp"
-#include "admesh/stl.h"
 
 #include "slic3r/GUI/GLModel.hpp"
 

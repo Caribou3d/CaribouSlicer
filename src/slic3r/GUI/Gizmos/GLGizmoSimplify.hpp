@@ -8,7 +8,6 @@
 #include "GLGizmoBase.hpp"
 #include "slic3r/GUI/3DScene.hpp"
 #include "slic3r/GUI/I18N.hpp"
-#include "admesh/stl.h" // indexed_triangle_set
 #include <mutex>
 #include <thread>
 
