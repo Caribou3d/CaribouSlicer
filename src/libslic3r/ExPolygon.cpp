@@ -183,46 +183,181 @@ bool ExPolygon::overlaps(const ExPolygon &other) const
            other.contains(this->contour.points.front());
 }
 
+// @Deprecated. please don't use it. a simplification can cut a thin isma.
+void ExPolygon::douglas_peucker(coord_t tolerance) {
+    assert(false); //deprecated
+    bool need_union = false;
+    assert(this->contour.size() < 3 || this->contour.is_counter_clockwise());
+    for(auto &hole :this->holes) assert(hole.is_clockwise());
+    this->contour.douglas_peucker(tolerance);
+    for(auto &hole :this->holes) assert(hole.is_clockwise());
+    if (this->contour.size() < 3) {
+        this->clear();
+    } else {
+        if (!this->contour.is_counter_clockwise()) {
+            this->contour.reverse();
+            need_union = true;
+        }
+        for(auto &hole :this->holes) assert(hole.is_clockwise());
+        for (size_t i_hole = 0; i_hole < this->holes.size(); ++i_hole) {
+            assert(this->holes[i_hole].size() < 3 || this->holes[i_hole].is_clockwise());
+            this->holes[i_hole].douglas_peucker(tolerance);
+            if (this->holes[i_hole].size() < 3) {
+                this->holes.erase(this->holes.begin() + i_hole);
+                --i_hole;
+            } else {
+                if (!this->holes[i_hole].is_clockwise()) {
+                    this->holes[i_hole].reverse();
+                    need_union = true;
+                }
+            }
+        }
+    }
+    // do we need to do an union_ex() here? -> it's possible that the new holes cut into the new perimeter, so yes... even if unlikely
+    
+    assert_valid();
+    if (need_union) {
+        ExPolygons expolygons = union_ex(expolygons);
+        assert(expolygons.size() == 1);
+        if (expolygons.size() > 0) {
+            //TODO choose biggest
+            *this = expolygons.front();
+            this->douglas_peucker(tolerance);
+        } else {
+            clear();
+        }
+
+    }
+    assert_valid();
+}
+
 void
-ExPolygon::simplify_p(double tolerance, Polygons* polygons) const
+ExPolygon::simplify_p(coord_t tolerance, Polygons &polygons) const
 {
     Polygons pp = this->simplify_p(tolerance);
-    polygons->insert(polygons->end(), pp.begin(), pp.end());
+    polygons.insert(polygons.end(), pp.begin(), pp.end());
 }
 
 Polygons
-ExPolygon::simplify_p(double tolerance) const
+ExPolygon::simplify_p(coord_t tolerance) const
 {
+    //Polygons pp;
+    //pp.reserve(this->holes.size() + 1);
+    //// contour
+    //{
+    //    Polygon p = this->contour;
+    //    p.points.push_back(p.points.front());
+    //    p.points = MultiPoint::douglas_peucker(p.points, tolerance);
+    //    p.points.pop_back();
+    //    pp.emplace_back(std::move(p));
+    //}
+    //// holes
+    //for (Polygon p : this->holes) {
+    //    p.points.push_back(p.points.front());
+    //    p.points = MultiPoint::douglas_peucker(p.points, tolerance);
+    //    p.points.pop_back();
+    //    pp.emplace_back(std::move(p));
+    //}
+    //return simplify_polygons(pp);
     Polygons pp;
     pp.reserve(this->holes.size() + 1);
     // contour
     {
         Polygon p = this->contour;
-        p.points.push_back(p.points.front());
-        p.points = MultiPoint::douglas_peucker(p.points, tolerance);
-        p.points.pop_back();
-        pp.emplace_back(std::move(p));
+        assert(p.is_counter_clockwise());
+        p.douglas_peucker(tolerance);
+        if (!p.is_counter_clockwise()) {
+            p.reverse();
+        }
+        if (p.size() >= 2) {
+            pp.push_back(std::move(p));
+        }
     }
+    if(pp.empty()) return pp;
     // holes
-    for (Polygon p : this->holes) {
-        p.points.push_back(p.points.front());
-        p.points = MultiPoint::douglas_peucker(p.points, tolerance);
-        p.points.pop_back();
-        pp.emplace_back(std::move(p));
+    for (Polygon polygon : this->holes) {
+        Polygon oldp = polygon;
+        assert(oldp.is_clockwise());
+        polygon.douglas_peucker(tolerance);
+        if (polygon.size() > 2 && polygon.is_counter_clockwise()) {
+            static int aodfjiaqsdz = 0;
+            std::stringstream stri;
+            stri <<  "_hourglass_" << (aodfjiaqsdz++) << ".svg";
+            SVG svg(stri.str());
+            oldp.scale(1000,1000);
+            polygon.scale(1000,1000);
+            svg.draw(oldp, "grey");
+            svg.draw(oldp.split_at_first_point(), "orange", scale_t(0.05));
+            svg.draw(polygon, "black");
+            svg.draw(polygon.split_at_first_point(), "red", scale_t(0.04));
+            Polygons polys = union_(Polygons{oldp});
+            svg.draw(to_polylines(polys), "cyan", scale_t(0.032));
+            polys = union_(Polygons{polygon});
+            svg.draw(to_polylines(polys), "blue", scale_t(0.025));
+            svg.Close();
+            assert(false);
+        }
+        // if polygon began to be counnter-clockwise, then it means that the fucked up part of the
+        //   hourglass is the only part / dominant part left
+        if (polygon.size() > 2 && polygon.is_clockwise()) {
+            // size == 2 => triangle
+            pp.push_back(std::move(polygon));
+        }
     }
+    // union
     return simplify_polygons(pp);
 }
 
 ExPolygons
-ExPolygon::simplify(double tolerance) const
+ExPolygon::simplify(coord_t tolerance) const
 {
-    return union_ex(this->simplify_p(tolerance));
+    //return union_ex(this->simplify_p(tolerance));
+    ExPolygons expolys;
+    this->simplify(tolerance, expolys);
+    return expolys;
 }
 
 void
-ExPolygon::simplify(double tolerance, ExPolygons* expolygons) const
+ExPolygon::simplify(coord_t tolerance, ExPolygons &expolygons) const
 {
-    append(*expolygons, this->simplify(tolerance));
+    //append(*expolygons, this->simplify(tolerance));
+    
+    bool need_union = false;
+    assert(this->contour.size() < 3 || this->contour.is_counter_clockwise());
+    for(auto &hole :this->holes) assert(hole.is_clockwise());
+    expolygons.push_back(*this);
+    expolygons.back().contour.douglas_peucker(tolerance);
+    for(auto &hole :expolygons.back().holes) assert(hole.is_clockwise());
+    if (expolygons.back().contour.size() < 3) {
+        expolygons.pop_back();
+    } else {
+        if (!expolygons.back().contour.is_counter_clockwise()) {
+            expolygons.back().contour.reverse();
+            need_union = true;
+        }
+        for(auto &hole :expolygons.back().holes) assert(hole.is_clockwise());
+        for (size_t i_hole = 0; i_hole < expolygons.back().holes.size(); ++i_hole) {
+            assert(expolygons.back().holes[i_hole].size() < 3 || expolygons.back().holes[i_hole].is_clockwise());
+            expolygons.back().holes[i_hole].douglas_peucker(tolerance);
+            if (expolygons.back().holes[i_hole].size() < 3) {
+                expolygons.back().holes.erase(expolygons.back().holes.begin() + i_hole);
+                --i_hole;
+            } else {
+                if (!expolygons.back().holes[i_hole].is_clockwise()) {
+                    expolygons.back().holes[i_hole].reverse();
+                    need_union = true;
+                }
+            }
+        }
+    }
+    // do we need to do an union_ex() here? -> it's possible that the new holes cut into the new perimeter, so yes... even if unlikely
+    
+    Slic3r::assert_valid(expolygons);
+    if (need_union) {
+        expolygons = union_ex(expolygons);
+        ensure_valid(expolygons, tolerance);
+    }
+    Slic3r::assert_valid(expolygons);
 }
 
 /// remove point that are at SCALED_EPSILON * 2 distance.
@@ -275,6 +410,28 @@ Lines ExPolygon::lines() const
     }
     return lines;
 }
+
+#ifdef _DEBUG
+// to create a cpp multipoint to create test units.
+std::string ExPolygon::to_debug_string()
+{
+    std::string ret("ExPolygon expoly(");
+    ret += contour.to_debug_string();
+    if (!holes.empty() && !holes.front().empty()) {
+        ret += std::string(",");
+        ret += holes.front().to_debug_string();
+    } else {
+        ret += std::string(",{}");
+    }
+    ret += std::string(");\n");
+    for (size_t i = 1; i < holes.size(); ++i) {
+        ret += std::string("expoly.holes.push_back(Polygon");
+        ret += holes.front().to_debug_string();
+        ret += std::string(")\n");
+    }
+    return ret;
+}
+#endif
 
 // Do expolygons match? If they match, they must have the same topology,
 // however their contours may be rotated.
@@ -401,6 +558,70 @@ bool has_duplicate_points(const ExPolygons &expolys)
     return false;
 #endif
 }
+
+void ensure_valid(ExPolygons &expolygons, coord_t resolution /*= SCALED_EPSILON*/) {
+    expolygons_simplify(expolygons, resolution);
+}
+
+void expolygons_simplify(ExPolygons &expolygons, coord_t resolution)
+{
+    for (ExPolygon &poly : expolygons) for(auto &hole :poly.holes) assert(hole.is_clockwise());
+    bool need_union = false;
+    for (size_t i = 0; i < expolygons.size(); ++i) {
+        assert(expolygons[i].contour.size() < 3 || expolygons[i].contour.is_counter_clockwise());
+        for(auto &hole :expolygons[i].holes) assert(hole.is_clockwise());
+        expolygons[i].contour.douglas_peucker(resolution);
+        for(auto &hole :expolygons[i].holes) assert(hole.is_clockwise());
+        if (expolygons[i].contour.size() < 3) {
+            expolygons.erase(expolygons.begin() + i);   
+            --i;
+        } else {
+            if (!expolygons[i].contour.is_counter_clockwise()) {
+                expolygons[i].contour.reverse();
+                need_union = true;
+            }
+            for(auto &hole :expolygons[i].holes) assert(hole.is_clockwise());
+            for (size_t i_hole = 0; i_hole < expolygons[i].holes.size(); ++i_hole) {
+                assert(expolygons[i].holes[i_hole].size() < 3 || expolygons[i].holes[i_hole].is_clockwise());
+                expolygons[i].holes[i_hole].douglas_peucker(resolution);
+                if (expolygons[i].holes[i_hole].size() < 3) {
+                    expolygons[i].holes.erase(expolygons[i].holes.begin() + i_hole);
+                    --i_hole;
+                } else {
+                    if (!expolygons[i].holes[i_hole].is_clockwise()) {
+                        expolygons[i].holes[i_hole].reverse();
+                        need_union = true;
+                    }
+                }
+            }
+        }
+        // do we need to do an union_ex() here? -> it's possible that the new holes cut into the new perimeter, so yes... even if unlikely
+    }
+    assert_valid(expolygons);
+    if (need_union) {
+        expolygons = union_ex(expolygons);
+        ensure_valid(expolygons, resolution);
+    }
+    assert_valid(expolygons);
+}
+
+ExPolygons ensure_valid(ExPolygons &&expolygons, coord_t resolution /*= SCALED_EPSILON*/)
+{
+    ensure_valid(expolygons, resolution);
+    return std::move(expolygons);
+}
+
+ExPolygons ensure_valid(coord_t resolution, ExPolygons &&expolygons) {
+    return ensure_valid(std::move(expolygons), resolution);
+}
+
+#ifdef _DEBUGINFO
+void assert_valid(const ExPolygons &expolygons) {
+    for (const ExPolygon &expolygon : expolygons) {
+        expolygon.assert_valid();
+    }
+}
+#endif
 
 bool remove_same_neighbor(ExPolygons &expolygons)
 {

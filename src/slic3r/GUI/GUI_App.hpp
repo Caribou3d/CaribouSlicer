@@ -100,8 +100,8 @@ enum ConfigMenuIDs {
     ConfigMenuPreferences,
     ConfigMenuLanguage,
     ConfigMenuFlashFirmware,
+    ConfigMenuWifiConfigFile,
     ConfigMenuCnt,
-    ConfigMenuWifiConfigFile
     //ConfigMenuModeSimple,
     //ConfigMenuModeAdvanced,
     //ConfigMenuModeExpert,
@@ -140,8 +140,11 @@ private:
     wxColour        m_color_label_sys;
     wxColour        m_color_label_default;
     wxColour        m_color_label_phony;
+    wxColour        m_color_dark_mode_label_modified;
+    wxColour        m_color_dark_mode_label_sys;
+    wxColour        m_color_dark_mode_label_default;
+    wxColour        m_color_dark_mode_label_phony;
     wxColour        m_color_window_default;
-#ifdef _WIN32
     wxColour        m_color_highlight_label_default;
     wxColour        m_color_hovered_btn_label;
     wxColour        m_color_hovered_btn;
@@ -149,7 +152,6 @@ private:
     wxColour        m_color_highlight_default;
     wxColour        m_color_selected_btn_bg;
     bool            m_force_colors_update { false };
-#endif
     //std::vector<std::string>     m_mode_palette; //replaced by Slic3r::GUI::get_app_config()->tags()
 
     wxFont		    m_small_font;
@@ -208,10 +210,10 @@ public:
 
     static unsigned get_colour_approx_luma(const wxColour &colour);
     static bool     dark_mode();
-    const wxColour  get_label_default_clr_system();
-    const wxColour  get_label_default_clr_modified();
-    const wxColour  get_label_default_clr_default();
-    const wxColour  get_label_default_clr_phony();
+    const wxColour  get_label_default_clr_system(bool is_dark_mode);
+    const wxColour  get_label_default_clr_modified(bool is_dark_mode);
+    const wxColour  get_label_default_clr_default(bool is_dark_mode);
+    const wxColour  get_label_default_clr_phony(bool is_dark_mode);
     const std::vector<std::string> get_mode_default_palette();
     void            init_ui_colours();
     void            update_ui_colours_from_appconfig();
@@ -232,11 +234,11 @@ public:
     void            set_label_clr_default(const wxColour& clr);
     void            set_label_clr_phony(const wxColour& clr);
 
-    const wxColour& get_label_clr_modified(){ return m_color_label_modified; }
-    const wxColour& get_label_clr_sys()     { return m_color_label_sys; }
-    const wxColour& get_label_clr_default() { return m_color_label_default; }
-    const wxColour& get_label_clr_phony()   { return m_color_label_phony; }
-    const wxColour& get_window_default_clr(){ return m_color_window_default; }
+    const wxColour &get_label_clr_modified();
+    const wxColour &get_label_clr_sys();
+    const wxColour &get_label_clr_default();
+    const wxColour &get_label_clr_phony();
+    const wxColour &get_window_default_clr() { return m_color_window_default; }
 
     const std::string       get_html_bg_color(wxWindow* html_parent);
 
@@ -247,17 +249,16 @@ public:
     void                    set_mode_palette(const std::vector<wxColour> &palette);
 #endif
 
-#ifdef _WIN32
     const wxColour& get_label_highlight_clr()   { return m_color_highlight_label_default; }
     const wxColour& get_highlight_default_clr() { return m_color_highlight_default; }
     const wxColour& get_color_hovered_btn_label() { return m_color_hovered_btn_label; }
+    const wxColour& get_color_default_btn_label() { return m_color_default_btn_label; }
     const wxColour& get_color_hovered_btn() { return m_color_hovered_btn; }
     const wxColour& get_color_selected_btn_bg() { return m_color_selected_btn_bg; }
     void            force_colors_update();
 #ifdef _MSW_DARK_MODE
     void            force_menu_update();
 #endif //_MSW_DARK_MODE
-#endif
 
     const wxFont&   small_font()            { return m_small_font; }
     const wxFont&   bold_font()             { return m_bold_font; }
@@ -280,18 +281,15 @@ public:
     void            html_dialog();
     void            bed_leveling_dialog();
     void            flow_ratio_dialog();
+    void            flow_speed_dialog();
     void            filament_temperature_dialog();
     void            bridge_tuning_dialog();
     void            over_bridge_dialog();
     void            calibration_cube_dialog();
 	void            calibration_retraction_dialog();
-    void            calibration_flower_dialog();
-    void            calibration_first_layer_dialog();
-    void            calibration_first_layer_patch_dialog();
-    void            calibration_extrusion_multiplier_dialog();        
     void            calibration_pressureadv_dialog();
-//    void            freecad_script_dialog();
-//    void            tiled_canvas_dialog();
+    void            freecad_script_dialog();
+    void            tiled_canvas_dialog();
     //void            support_tuning(); //have to do multiple, in a submenu
     void            load_project(wxWindow *parent, wxString& input_file) const;
     void            import_model(wxWindow *parent, wxArrayString& input_files) const;
@@ -336,7 +334,7 @@ public:
     virtual bool OnExceptionInMainLoop() override;
     // Calls wxLaunchDefaultBrowser if user confirms in dialog.
     // Add "Rememeber my choice" checkbox to question dialog, when it is forced or a "suppress_hyperlinks" option has empty value
-    bool            open_browser_with_warning_dialog(const wxString& url, wxWindow* parent = nullptr, bool force_remember_choice = true, int flags = 0);
+    bool            open_browser_with_warning_dialog(const wxString& url, wxWindow* parent = nullptr, bool allow_remember_choice = true, int flags = 0);
 #ifdef __APPLE__
     void            OSXStoreOpenFiles(const wxArrayString &files) override;
     // wxWidgets override to get an event on open files.
@@ -360,7 +358,9 @@ public:
     GUI_InitParams* init_params { nullptr };
 
     std::unique_ptr<AppConfig> app_config;
+
     std::unique_ptr<PresetBundle> preset_bundle;
+
     std::unique_ptr<PresetUpdater> preset_updater;
     MainFrame*      mainframe{ nullptr };
     Plater*         plater_{ nullptr };
@@ -368,6 +368,7 @@ public:
     wxDialog*       not_modal_dialog = nullptr;
 
 	PresetUpdater*  get_preset_updater() { return preset_updater.get(); }
+    PrinterTechnology get_current_printer_technology() const;
 
     wxBookCtrlBase* tab_panel() const ;
     int             extruders_cnt() const;

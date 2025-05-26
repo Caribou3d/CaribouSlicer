@@ -470,47 +470,48 @@ def outputDatabase(file_path_out):
         print(error);
 
 def parse_ui_file(file_path):
-    read_data_lines = list();
-    # try:
-    file_in_stream = open(file_path, mode="r", encoding="utf-8")
-    lines = file_in_stream.read().splitlines();
-    lines.append("");
-    line_idx = 0;
-    nb = 0;
-    while line_idx < len(lines):
-        items = lines[line_idx].strip().split(":");
-        if len(items) > 1:
-            if items[0]=="page":
-                current_line = TranslationLine();
-                current_line.header_comment = "\n#: "+file_path;#+":"+str(line_idx);
-                current_line.raw_msgid = "msgid \""+items[1].strip()+"\"";
-                current_line.msgid = items[1].strip();
-                current_line.raw_msgstr = "msgstr \"\"";
-                current_line.msgstr = "";
-                read_data_lines.append(current_line);
-            if items[0]=="group" or items[0]=="line":
-                current_line = TranslationLine();
-                current_line.header_comment = "\n#: "+file_path;#+":"+str(line_idx);
-                current_line.raw_msgid = "msgid \""+items[-1].strip()+"\"";
-                current_line.msgid = items[-1].strip();
-                current_line.raw_msgstr = "msgstr \"\"";
-                current_line.msgstr = "";
-                read_data_lines.append(current_line);
-            if items[0]=="setting":
-                for item in items:
-                    if item.startswith("label$") or item.startswith("full_label$") or item.startswith("sidetext$") or item.startswith("tooltip$"):
-                        if item.split("$")[-1] != '_' and len(item.split("$")[-1]) > 0 :
-                            current_line = TranslationLine();
-                            current_line.header_comment = "\n#: "+file_path+" : l"+str(line_idx);
-                            current_line.msgid = item.split("$")[-1].strip();
-                            current_line.raw_msgid = "msgid \""+current_line.msgid+"\"";
-                            current_line.raw_msgstr = "msgstr \"\"";
-                            current_line.msgstr = "";
-                            read_data_lines.append(current_line);
-        line_idx+=1;
+	read_data_lines = list();
+	# try:
+	file_in_stream = open(file_path, mode="r", encoding="utf-8")
+	lines = file_in_stream.read().splitlines();
+	lines.append("");
+	line_idx = 0;
+	nb = 0;
+	while line_idx < len(lines):
+		items = lines[line_idx].strip().split(":");
+		if len(items) > 1:
+			if items[0]=="page":
+				current_line = TranslationLine();
+				current_line.header_comment = "\n#: "+file_path;#+":"+str(line_idx);
+				current_line.raw_msgid = "msgid \""+items[1].strip()+"\"";
+				current_line.msgid = items[1].strip();
+				current_line.raw_msgstr = "msgstr \"\"";
+				current_line.msgstr = "";
+				read_data_lines.append(current_line);
+			if items[0]=="group" or items[0]=="line":
+				current_line = TranslationLine();
+				current_line.header_comment = "\n#: "+file_path;#+":"+str(line_idx);
+				current_line.raw_msgid = "msgid \""+items[-1].strip()+"\"";
+				current_line.msgid = items[-1].strip();
+				current_line.raw_msgstr = "msgstr \"\"";
+				current_line.msgstr = "";
+				read_data_lines.append(current_line);
+			if items[0]=="setting":
+				for item in items:
+					if item.startswith("label$") or item.startswith("full_label$") or item.startswith("sidetext$") or item.startswith("tooltip$"):
+						if item.split("$")[-1] != '_' and len(item.split("$")[-1]) > 0 :
+							current_line = TranslationLine();
+							current_line.header_comment = "\n#: "+file_path+" : l"+str(line_idx);
+							current_line.msgid = item.split("$")[-1].strip();
+							if current_line.msgid.endswith('_'):
+								current_line.msgid = current_line.msgid[:-1]
+							current_line.raw_msgid = "msgid \""+current_line.msgid+"\"";
+							current_line.raw_msgstr = "msgstr \"\"";
+							current_line.msgstr = "";
+							read_data_lines.append(current_line);
+		line_idx+=1;
 
-    return read_data_lines;
-
+	return read_data_lines;
 
 
 

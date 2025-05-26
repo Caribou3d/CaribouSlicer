@@ -46,7 +46,6 @@ std::pair<GCodeThumbnailDefinitionsList, ThumbnailErrors> make_and_check_thumbna
 std::pair<GCodeThumbnailDefinitionsList, ThumbnailErrors> make_and_check_thumbnail_list(const std::vector<Vec2d>& thumbnails, GCodeThumbnailsFormat format);
 std::pair<GCodeThumbnailDefinitionsList, ThumbnailErrors> make_and_check_thumbnail_list(const ConfigBase &config);
 
-
 std::string get_error_string(const ThumbnailErrors& errors);
 
 template<typename WriteToOutput, typename ThrowIfCanceledCallback>

@@ -104,6 +104,46 @@ enum PrintObjectStep : uint8_t {
     posCount,
 };
 
+/**
+* order:
+*            m_objects[idx]->make_perimeters();
+*                   -> slice()
+*                   -> make_perimeters()
+*            m_objects[idx]->infill();
+*            m_objects[idx]->ironing();
+*            obj->generate_support_spots();
+*            psAlertWhenSupportsNeeded
+*            obj.generate_support_material();
+*            obj.estimate_curled_extrusions();
+*            obj.calculate_overhanging_perimeters();
+*            _make_wipe_tower();
+*            _make_skirt();
+*            make_brim();
+*            simplify_extrusion_path();
+* 
+*           then export_gcode();
+* */
+
+// step % for starting this step
+inline std::map<PrintObjectStep, int> objectstep_2_percent = {{PrintObjectStep::posSlice, 0},
+                                                       {PrintObjectStep::posPerimeters, 10},
+                                                       {PrintObjectStep::posPrepareInfill, 20},
+                                                       {PrintObjectStep::posInfill, 30},
+                                                       {PrintObjectStep::posIroning, 40},
+                                                       {PrintObjectStep::posSupportSpotsSearch, 45},
+                                                       {PrintObjectStep::posSupportMaterial, 50},
+                                                       {PrintObjectStep::posEstimateCurledExtrusions, 60},
+                                                       {PrintObjectStep::posCalculateOverhangingPerimeters, 65},
+                                                       {PrintObjectStep::posSimplifyPath, 80},
+                                                       {PrintObjectStep::posCount, 85}};
+
+inline std::map<PrintStep, int> printstep_2_percent = {
+    {PrintStep::psAlertWhenSupportsNeeded, 45},
+    {PrintStep::psSkirtBrim, 70},
+    {PrintStep::psWipeTower, 75},
+    {PrintStep::psGCodeExport, 85},
+    {PrintStep::psCount, 100},
+};
 // A PrintRegion object represents a group of volumes to print
 // sharing the same config (including the same assigned extruder(s))
 class PrintRegion
@@ -299,10 +339,8 @@ public:
     // Centering offset of the sliced mesh from the scaled and rotated mesh of the model.
     const Point& 			     center_offset() const  { return m_center_offset; }
 
-    bool                         has_brim() const       {
-        return (this->config().brim_width.value > 0 && this->config().brim_width_interior.value > 0)
-            && ! this->has_raft();
-    }
+    bool                         has_brim() const;
+    Polygons                     get_brim_patch(ModelVolumeType brim_type, const PrintInstance *instance = nullptr) const;
 
     // This is the *total* layer count (including support layers)
     // this value is not supposed to be compared with Layer::id
@@ -364,12 +402,12 @@ public:
     void slice();
 
     // Helpers to slice support enforcer / blocker meshes by the support generator.
-    std::vector<Polygons>       slice_support_volumes(const ModelVolumeType model_volume_type) const;
-    std::vector<Polygons>       slice_support_blockers() const { return this->slice_support_volumes(ModelVolumeType::SUPPORT_BLOCKER); }
-    std::vector<Polygons>       slice_support_enforcers() const { return this->slice_support_volumes(ModelVolumeType::SUPPORT_ENFORCER); }
+    std::vector<ExPolygons>     slice_support_volumes(const ModelVolumeType model_volume_type) const;
+    std::vector<ExPolygons>     slice_support_blockers() const { return this->slice_support_volumes(ModelVolumeType::SUPPORT_BLOCKER); }
+    std::vector<ExPolygons>     slice_support_enforcers() const { return this->slice_support_volumes(ModelVolumeType::SUPPORT_ENFORCER); }
 
     // Helpers to project custom facets on slices
-    void project_and_append_custom_facets(bool seam, EnforcerBlockerType type, std::vector<Polygons>& expolys) const;
+    std::vector<Polygons> project_and_append_custom_facets(bool seam, EnforcerBlockerType type) const;
 
     /// skirts if done per copy and not per platter
     const std::optional<ExtrusionEntityCollection>& skirt_first_layer() const { return m_skirt_first_layer; }
@@ -424,11 +462,11 @@ private:
     // Has any support (not counting the raft).
     ExPolygons _shrink_contour_holes(double contour_delta, double default_delta, double convex_delta, const ExPolygons& input) const;
     void _transform_hole_to_polyholes();
-    void _min_overhang_threshold();
+    void _max_overhang_threshold();
     ExPolygons _smooth_curves(const ExPolygons &input, const PrintRegionConfig &conf) const;
     void detect_surfaces_type();
     void apply_solid_infill_below_layer_area();
-    void process_external_surfaces();
+    void process_external_surfaces(bool old);
     void discover_vertical_shells();
     void bridge_over_infill();
     void replaceSurfaceType(SurfaceType st_to_replace, SurfaceType st_replacement, SurfaceType st_under_it);
@@ -613,26 +651,13 @@ struct ConflictResult
     ConflictResult(const std::string& objName1, const std::string& objName2, double height, const void* obj1, const void* obj2)
         : _objName1(objName1), _objName2(objName2), _height(height), _obj1(obj1), _obj2(obj2)
     {}
+    ConflictResult(const std::string& objName1, const std::string& objName2, double height, const void* obj1, const void* obj2, int layer_id)
+        : _objName1(objName1), _objName2(objName2), _height(height), _obj1(obj1), _obj2(obj2), layer(layer_id)
+    {}
     ConflictResult() = default;
 };
 
 using ConflictResultOpt = std::optional<ConflictResult>;
-
-class BrimLoop {
-public:
-    BrimLoop(const Polygon& p) : lines(Polylines{ p.split_at_first_point() }), is_loop(true) {}
-    BrimLoop(const Polyline& l) : lines(Polylines{l}), is_loop(false) {}
-    Polylines lines;
-    std::vector<BrimLoop> children;
-    bool is_loop; // has only one polyline stored and front == back
-    Polygon polygon() const{
-        assert(is_loop);
-        Polygon poly = Polygon(lines.front().points);
-        if (poly.points.front() == poly.points.back())
-            poly.points.resize(poly.points.size() - 1);
-        return poly;
-    }
-};
 
 using PrintObjectPtrs          = std::vector<PrintObject*>;
 using ConstPrintObjectPtrs     = std::vector<const PrintObject*>;
@@ -692,15 +717,16 @@ public:
     std::pair<PrintValidationError, std::string> validate(std::vector<std::string>* warnings = nullptr) const override;
     Flow                brim_flow(size_t extruder_id, const PrintObjectConfig &brim_config) const;
     Flow                skirt_flow(size_t extruder_id, bool first_layer=false) const;
-    double              get_first_layer_height() const;
+    double              get_min_first_layer_height() const;
     double              get_object_first_layer_height(const PrintObject& object) const;
 
     // get the extruders of these obejcts
-    std::set<uint16_t>  object_extruders(const PrintObjectPtrs &objects) const;
+    std::set<uint16_t>  object_extruders(const PrintObjectPtrs &objects, float z = -1) const;
     // get all extruders from the list of objects in this print ( same as print.object_extruders(print.objects()) )
-    std::set<uint16_t>  object_extruders() const;
-    std::set<uint16_t>  support_material_extruders() const;
-    std::set<uint16_t>  extruders() const;
+    std::set<uint16_t>  object_extruders(float z = -1) const;
+    std::set<uint16_t>  support_material_extruders(float z = -1) const;
+    // all extruder to print layers that extrude at this z.
+    std::set<uint16_t>  extruders(float z = -1) const;
     double              max_allowed_layer_height() const;
     bool                has_support_material() const;
     // Make sure the background processing has no access to this model_object during this call!
@@ -745,8 +771,8 @@ public:
 
     // Wipe tower support.
     bool                        has_wipe_tower() const;
-    const WipeTowerData&        wipe_tower_data(size_t extruders_cnt, double nozzle_diameter) const;
-    const WipeTowerData&        wipe_tower_data() const { return wipe_tower_data(0,0); }
+    const WipeTowerData&        wipe_tower_data(const ConfigBase* config, double nozzle_diameter) const;
+    const WipeTowerData&        wipe_tower_data() const { return wipe_tower_data(&this->m_config,0); }
     const ToolOrdering& 		tool_ordering() const { return m_tool_ordering; }
 
 	std::string                 output_filename(const std::string &filename_base = std::string()) const override;
@@ -790,6 +816,7 @@ public:
 protected:
 private:
 
+    void                _make_skirt_brim();
     void                _make_skirt(const PrintObjectPtrs &objects, ExtrusionEntityCollection &out, std::optional<ExtrusionEntityCollection> &out_first_layer);
     void                _make_wipe_tower();
     void                finalize_first_layer_convex_hull();

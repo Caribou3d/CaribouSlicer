@@ -68,10 +68,11 @@ struct Parameters
 
     // cached parameters
     Polygons lower_slices_bridge;
-    Polygons lower_slices_bridge_flow_small;
-    Polygons lower_slices_bridge_flow_big;
+    Polygons lower_slices_bridge_dynamic;
     Polygons lower_slices_bridge_speed_small;
     Polygons lower_slices_bridge_speed_big;
+    Polygons lower_slices_bridge_flow_small;
+    Polygons lower_slices_bridge_flow_big;
 
     Parameters(Layer                   *layer,
                Flow                     perimeter_flow,
@@ -233,6 +234,16 @@ private:
     // the bbox is here to accelerate the diffs, loop_polygons is inside it.
     ExtrusionPaths create_overhangs_arachne(const Parameters &params,
         const ClipperLib_Z::Path& loop_polygons, const BoundingBox& bbox, ExtrusionRole role, bool is_external) const;
+    struct Params_sort_overhangs
+    {
+        bool is_external;
+        bool is_loop;
+        size_t layer_height_count;
+        Point first_point;
+        Point last_point;
+    };
+    void _sort_overhangs(const Parameters &params,
+        ExtrusionPaths &paths, const ExtrusionRole role, const Params_sort_overhangs is_external) const;
 
     // transform loops into ExtrusionEntityCollection, adding also thin walls into it.
     ExtrusionEntityCollection _traverse_loops_classic(const Parameters &params,

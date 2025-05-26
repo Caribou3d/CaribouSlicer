@@ -137,6 +137,7 @@ public:
 	double area() 		 const { return this->expolygon.area(); }
     bool empty() const { return expolygon.empty(); }
     void clear() { expolygon.clear(); }
+    bool has(SurfaceType type) const;
     bool has_fill_solid() const;
     bool has_fill_sparse() const;
     bool has_fill_void() const;
@@ -300,8 +301,10 @@ inline void surfaces_append(Surfaces &dst, const Surfaces &src)
 inline void surfaces_append(Surfaces &dst, ExPolygons &&src, SurfaceType surfaceType) 
 { 
     dst.reserve(dst.size() + src.size());
-    for (ExPolygon &expoly : src)
+    for (ExPolygon &expoly : src) {
+        expoly.assert_valid();
         dst.emplace_back(Surface(surfaceType, std::move(expoly)));
+    }
     src.clear();
 }
 
@@ -336,9 +339,13 @@ inline bool surfaces_could_merge(const Surface &s1, const Surface &s2)
         s1.bridge_angle      == s2.bridge_angle;
 }
 
+// remove any point that are at epsilon  (or resolution) 'distance' (douglas_peuckere algo for now) and all polygons that are too small to be valid
+void ensure_valid(Surfaces &surfaces, coord_t resolution = SCALED_EPSILON);
+
+
 class SVG;
 
-extern const char* surface_type_to_color_name(const SurfaceType surface_type);
+extern const std::string surface_type_to_color_name(const SurfaceType surface_type, float saturation = 1);
 extern void export_surface_type_legend_to_svg(SVG &svg, const Point &pos);
 extern Point export_surface_type_legend_to_svg_box_size();
 extern bool export_to_svg(const char *path, const Surfaces &surfaces, const float transparency = 1.f);

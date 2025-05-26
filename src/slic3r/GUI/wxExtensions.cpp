@@ -456,18 +456,23 @@ wxBitmapBundle* get_bmp_bundle(const std::string& bmp_name_in, int width/* = 16*
         try {
             uint32_t color_int = Slic3r::GUI::wxGetApp().app_config->create_color(0.86f, 0.93f);
             changes.add("#ED6B21", color_int);
+            changes.add("#ed6b21", color_int);
+            changes.add("#ED8D21", Slic3r::GUI::wxGetApp().app_config->create_color(0.5f, 0.93f));
             changes.add("#2172eb", color_int);
         }
         catch (std::exception /*e*/) {
         }
     } else {
         changes.add("#ED6B21", new_color.size() == 7 ? new_color : (std::string("#") + new_color));
+        changes.add("#ed6b21", new_color.size() == 7 ? new_color : (std::string("#") + new_color));
+        //changes.add("#ED8D21", new_color.size() == 7 ? new_color : (std::string("#") + new_color));
         changes.add("#2172eb", new_color.size() == 7 ? new_color : (std::string("#") + new_color));
     }
     
-    if (Slic3r::GUI::wxGetApp().dark_mode()) {
-        changes.add("#808080", "#FFFFFF");
-    }
+    // already added in get_bmp_bundle(bmp_name_in, width, height, changes);
+    //if (Slic3r::GUI::wxGetApp().dark_mode()) {
+    //    changes.add("#808080", "#FFFFFF");
+    //}
 
     return get_bmp_bundle(bmp_name_in, width, height, changes);
 }
@@ -490,8 +495,10 @@ wxBitmapBundle *get_bmp_bundle(const std::string &bmp_name_in, int width, int he
     if (height < 0)
         height = width;
 
-    if (Slic3r::GUI::wxGetApp().dark_mode())
+    if (Slic3r::GUI::wxGetApp().dark_mode()) {
         new_colors_rgb.add("#808080", "#FFFFFF");
+        new_colors_rgb.add("#000000", "#A0A0A0");
+    }
 
     //wxBitmap *bmp = cache.load_svg(bmp_name, width, height, grayscale, dark_mode, color);
     wxBitmapBundle* bmp = cache.from_svg(bmp_name, width, height, new_colors_rgb);

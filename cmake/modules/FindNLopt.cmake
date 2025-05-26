@@ -28,16 +28,20 @@ if(NOT NLopt_DIR)
 
     set(NLopt_FOUND TRUE)
 
-    set(_NLopt_LIB_NAMES "nlopt")
-    find_library(NLopt_LIBS
-        NAMES ${_NLopt_LIB_NAMES})
-    if(NOT NLopt_LIBS)
-        set(NLopt_FOUND FALSE)
-        set(NLopt_ERROR_REASON "${NLopt_ERROR_REASON} Cannot find NLopt library '${_NLopt_LIB_NAMES}'.")
-    else()
-        get_filename_component(NLopt_DIR ${NLopt_LIBS} PATH)
-    endif()
-    unset(_NLopt_LIB_NAMES)
+	if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+		set(_NLopt_LIB_NAMES "nlopt" "nloptd")
+	else()
+		set(_NLopt_LIB_NAMES "nlopt")
+	endif()
+	find_library(NLopt_LIBS
+		NAMES ${_NLopt_LIB_NAMES})
+	if(NOT NLopt_LIBS)
+		set(NLopt_FOUND FALSE)
+		set(NLopt_ERROR_REASON "${NLopt_ERROR_REASON} Cannot find NLopt library '${_NLopt_LIB_NAMES}'.")
+	else()
+		get_filename_component(NLopt_DIR ${NLopt_LIBS} PATH)
+	endif()
+	unset(_NLopt_LIB_NAMES)
 
     set(_NLopt_HEADER_FILE_NAME "nlopt.hpp")
     find_file(_NLopt_HEADER_FILE

@@ -7,6 +7,7 @@
 
 #include <cstdint>
 #include <memory>
+#include <optional>
 #include <string>
 #include <set>
 #include <unordered_map>
@@ -14,7 +15,6 @@
 
 #include <boost/asio.hpp>
 #include <boost/asio/ip/address.hpp>
-#include <boost/optional.hpp>
 #include <boost/system/error_code.hpp>
 #include <boost/shared_ptr.hpp>
 
@@ -102,9 +102,9 @@ struct BonjourRequest
 
 	std::vector<char> m_data;
 
-	static boost::optional<BonjourRequest> make_PTR(const std::string& service, const std::string& protocol);
-	static boost::optional<BonjourRequest> make_A(const std::string& hostname);
-	static boost::optional<BonjourRequest> make_AAAA(const std::string& hostname);
+	static std::optional<BonjourRequest> make_PTR(const std::string& service, const std::string& protocol);
+	static std::optional<BonjourRequest> make_A(const std::string& hostname);
+	static std::optional<BonjourRequest> make_AAAA(const std::string& hostname);
 private:
 	BonjourRequest(std::vector<char>&& data) : m_data(std::move(data)) {}
 };
@@ -155,11 +155,11 @@ public:
 	UdpSocket(Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
 		, const boost::asio::ip::address& interface_address
-		, std::shared_ptr< boost::asio::io_service > io_service);
+		, std::shared_ptr< boost::asio::io_context > io_context);
 
 	UdpSocket(Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
-		, std::shared_ptr< boost::asio::io_service > io_service);
+		, std::shared_ptr< boost::asio::io_context > io_context);
 
 	void send();
 	void async_receive();
@@ -172,7 +172,7 @@ protected:
 	boost::asio::ip::address					    multicast_address;
 	boost::asio::ip::udp::socket					socket;
 	boost::asio::ip::udp::endpoint					mcast_endpoint;
-	std::shared_ptr< boost::asio::io_service >	io_service;
+	std::shared_ptr< boost::asio::io_context >	io_context;
 	std::vector<BonjourRequest>						requests;
 };
 
@@ -186,8 +186,8 @@ public:
 		, Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
 		, const boost::asio::ip::address& interface_address
-		, std::shared_ptr< boost::asio::io_service > io_service)
-		: UdpSocket(replyfn, multicast_address, interface_address, io_service)
+		, std::shared_ptr< boost::asio::io_context > io_context)
+		: UdpSocket(replyfn, multicast_address, interface_address, io_context)
 		, txt_keys(txt_keys)
 		, service(service)
 		, service_dn(service_dn)
@@ -203,8 +203,8 @@ public:
 		, std::string protocol
 		, Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
-		, std::shared_ptr< boost::asio::io_service > io_service)
-		: UdpSocket(replyfn, multicast_address, io_service)
+		, std::shared_ptr< boost::asio::io_context > io_context)
+		: UdpSocket(replyfn, multicast_address, io_context)
 		, txt_keys(txt_keys)
 		, service(service)
 		, service_dn(service_dn)
@@ -224,10 +224,11 @@ protected:
 	{
 		requests.clear();
 		// create PTR request
-		if (auto rqst = BonjourRequest::make_PTR(service, protocol); rqst)
-			requests.push_back(std::move(rqst.get()));
+        if (std::optional<BonjourRequest> rqst = BonjourRequest::make_PTR(service, protocol); rqst) {
+            requests.push_back(std::move(*rqst));
+        }
 	}
-	boost::optional<BonjourRequest> request;
+	std::optional<BonjourRequest>   request;
 	Bonjour::TxtKeys				txt_keys;
 	std::string						service;
 	std::string						service_dn;
@@ -241,8 +242,8 @@ public:
 		, Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
 		, const boost::asio::ip::address& interface_address
-		, std::shared_ptr< boost::asio::io_service > io_service)
-		: UdpSocket(replyfn, multicast_address, interface_address, io_service)
+		, std::shared_ptr< boost::asio::io_context > io_context)
+		: UdpSocket(replyfn, multicast_address, interface_address, io_context)
 		, hostname(hostname)
 
 	{
@@ -253,8 +254,8 @@ public:
 	ResolveSocket(const std::string& hostname
 		, Bonjour::ReplyFn replyfn
 		, const boost::asio::ip::address& multicast_address
-		, std::shared_ptr< boost::asio::io_service > io_service)
-		: UdpSocket(replyfn, multicast_address, io_service)
+		, std::shared_ptr< boost::asio::io_context > io_context)
+		: UdpSocket(replyfn, multicast_address, io_context)
 		, hostname(hostname)
 
 	{
@@ -274,13 +275,13 @@ protected:
 		if (size_t dot_pos = trimmed_hostname.find_first_of('.'); dot_pos != std::string::npos)
 			trimmed_hostname = trimmed_hostname.substr(0, dot_pos);
 		if (auto rqst = BonjourRequest::make_A(trimmed_hostname); rqst)
-			requests.push_back(std::move(rqst.get()));
+			requests.push_back(std::move(*rqst));
 
 		trimmed_hostname = hostname;
 		if (size_t dot_pos = trimmed_hostname.find_first_of('.'); dot_pos != std::string::npos)
 			trimmed_hostname = trimmed_hostname.substr(0, dot_pos);
 		if (auto rqst = BonjourRequest::make_AAAA(trimmed_hostname); rqst)
-			requests.push_back(std::move(rqst.get()));
+			requests.push_back(std::move(*rqst));
 	}
 
 	std::string hostname;

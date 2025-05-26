@@ -12,22 +12,17 @@
 	#include <Windows.h>
 #endif
 
-#include <float.h>
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
 #include <algorithm>
 #include <array>
 #include <atomic>
 #include <cassert>
+#include <cfloat>
 #include <chrono>
 #include <condition_variable>
 #include <cstdarg>
 #include <cstddef>
 #include <cstdint>
+#include <cstdio>
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
@@ -45,6 +40,7 @@
 #include <memory>
 #include <mutex>
 #include <numeric>
+#include <optional>
 #include <ostream>
 #include <random>
 #include <regex>
@@ -81,7 +77,6 @@
 #include <boost/nowide/convert.hpp>
 #include <boost/nowide/cstdio.hpp>
 #include <boost/nowide/fstream.hpp>
-#include <boost/optional.hpp>
 
 // boost/property_tree/json_parser/detail/parser.hpp includes boost/bind.hpp, which is deprecated.
 // Suppress the following boost message:
@@ -95,8 +90,8 @@
 
 #include <boost/system/error_code.hpp>
 
-#include <tbb/parallel_for.h>
-#include <tbb/spin_mutex.h>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/spin_mutex.h>
 
 #ifdef _MSC_VER
 	// avoid some "macro redefinition" warnings

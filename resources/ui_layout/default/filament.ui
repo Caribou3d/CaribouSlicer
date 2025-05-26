@@ -3,27 +3,30 @@ page:Filament:spool
 group:filament_spool_weight_event:Filament
 	setting:id$0:filament_colour
 	setting:id$0:filament_diameter
-	setting:id$0:extrusion_multiplier
 	setting:id$0:filament_density
 	setting:id$0:filament_cost
 	setting:id$0:filament_spool_weight
+group:Flow
+	setting:id$0:extrusion_multiplier
+	setting:id$0:filament_fill_top_flow_ratio
+	setting:id$0:filament_first_layer_flow_ratio
 group:Temperature °C
 	line:Extruder
 		setting:id$0:first_layer_temperature
 		setting:id$0:temperature
 	end_line
-	line:toggle$idle_temperature:toggle_default$30:Idle temperature
-		setting:id$0:idle_temperature
 	line:Bed
 		setting:id$0:first_layer_bed_temperature
-		setting:id$0:label:Other layers:bed_temperature
+		setting:id$0:label$Other layers:bed_temperature
 	end_line
 	setting:id$0:chamber_temperature
+	setting:id$0:label$Idle:idle_temperature
 group:Filament properties
 	setting:id$0:width$7:filament_type
 	setting:id$0:filament_soluble
 	setting:id$0:filament_shrink
 	setting:id$0:filament_max_overlap
+	setting:id$0:filament_pressure_advance
 group:Print speed override
 	setting:id$0:filament_max_speed
 	setting:id$0:filament_max_volumetric_speed
@@ -43,25 +46,17 @@ group:Fan speed - default
 	line:Support Material fan speed
 		setting:id$0:label_width$12:label$Default:support_material_fan_speed
 		setting:id$0:label_width$12:label$Interface:support_material_interface_fan_speed
-	line:Bridges fan speed
-		setting:id$0:label_width$12:label$Bridges:bridge_fan_speed
-		setting:id$0:label_width$12:label$Internal bridges:internal_bridge_fan_speed
-	line:Overhangs Perimeter fan speed
+	line:Bridge Infill fan speed
+		setting:id$0:label_width$12:label$External:bridge_fan_speed
+		setting:id$0:label_width$12:label$Internal:internal_bridge_fan_speed
+	line:Overhang Perimeter fan speed
 		setting:id$0:label_width$12:label$Overhangs:overhangs_fan_speed
+        setting:id$0:overhangs_dynamic_fan_speed
 	line:Gap fill fan speed
 		setting:id$0:label_width$12:label$Gap fill:gap_fill_fan_speed
 	line:Disable fan for the first
 		setting:id$0:width$5:label$_:sidetext_width$7:disable_fan_first_layers
 		setting:id$0:width$5:label_width$18:full_fan_speed_layer
-	end_line
-		
-group:Dynamic Overhangs fan speeds
-	line:Enable fan speed for a % overlap
-		setting:id$0:label$_:enable_dynamic_fan_speeds
-		setting:id$0:label$0% (bridge):overhang_fan_speed_0
-		setting:id$0:label$25%:overhang_fan_speed_1
-		setting:id$0:label$50%:overhang_fan_speed_2
-		setting:id$0:label$75%:overhang_fan_speed_3
 	end_line
 group:Short layer time - began to increase base fan speed
 	setting:id$0:fan_below_layer_time

@@ -77,10 +77,11 @@ public:
     // at a horizontal boundary are NOT considered overlapping.
     bool overlaps(const ExPolygon &other) const;
 
-    void simplify_p(double tolerance, Polygons* polygons) const;
-    Polygons simplify_p(double tolerance) const;
-    ExPolygons simplify(double tolerance) const;
-    void simplify(double tolerance, ExPolygons* expolygons) const;
+    void douglas_peucker(coord_t tolerance);
+    void simplify_p(coord_t tolerance, Polygons &polygons) const;
+    Polygons simplify_p(coord_t tolerance) const;
+    ExPolygons simplify(coord_t tolerance) const;
+    void simplify(coord_t tolerance, ExPolygons &expolygons) const;
     void remove_point_too_near(const coord_t tolerance);
     void medial_axis(double max_width, double min_width, ThickPolylines &polylines) const;
     void medial_axis(double max_width, double min_width, Polylines &polylines) const;
@@ -90,6 +91,21 @@ public:
     size_t   		num_contours() const { return this->holes.size() + 1; }
     Polygon& 		contour_or_hole(size_t idx) 		{ return (idx == 0) ? this->contour : this->holes[idx - 1]; }
     const Polygon& 	contour_or_hole(size_t idx) const 	{ return (idx == 0) ? this->contour : this->holes[idx - 1]; }
+
+#ifdef _DEBUGINFO
+    void assert_valid() const {
+        contour.assert_valid();
+        assert(contour.is_counter_clockwise());
+        for (const Polygon &hole : holes) {
+            hole.assert_valid();
+            assert(hole.is_clockwise());
+        }
+    }
+    // to create a cpp multipoint to create test units.
+    std::string to_debug_string();
+#else
+    void assert_valid() const {}
+#endif
 };
 
 inline bool operator==(const ExPolygon &lhs, const ExPolygon &rhs) { return lhs.contour == rhs.contour && lhs.holes == rhs.holes; }
@@ -505,14 +521,8 @@ inline bool expolygons_contain(const ExPolygons &expolys, const Point &pt, bool 
     return false;
 }
 
-inline ExPolygons expolygons_simplify(const ExPolygons &expolys, double tolerance)
-{
-	ExPolygons out;
-	out.reserve(expolys.size());
-	for (const ExPolygon &exp : expolys)
-		exp.simplify(tolerance, &out);
-	return out;
-}
+// expolygons_simplify will simplify the geometry via douglaspeuker.
+void expolygons_simplify(ExPolygons &expolys, coord_t tolerance);
 
 // Do expolygons match? If they match, they must have the same topology,
 // however their contours may be rotated.
@@ -527,6 +537,17 @@ std::vector<BoundingBox> get_extents_vector(const ExPolygons &polygons);
 // Test for duplicate points. The points are copied, sorted and checked for duplicates globally.
 bool has_duplicate_points(const ExPolygon &expoly);
 bool has_duplicate_points(const ExPolygons &expolys);
+
+// remove any point that are at epsilon  (or resolution) 'distance' (douglas_peuckere algo for now) and all polygons that are too small to be valid
+// note: in the future, it may limited to removing points that just to close to other ones. If you want to simplify the geomtry, use expolygons_simplify.
+void ensure_valid(ExPolygons &expolygons, coord_t resolution = SCALED_EPSILON);
+ExPolygons ensure_valid(ExPolygons &&expolygons, coord_t resolution = SCALED_EPSILON);
+ExPolygons ensure_valid(coord_t resolution, ExPolygons &&expolygons);
+#ifdef _DEBUGINFO
+void assert_valid(const ExPolygons &expolygons);
+#else
+inline void assert_valid(const ExPolygons &expolygons) {}
+#endif
 
 // Return True when erase some otherwise False.
 bool remove_same_neighbor(ExPolygons &expolys);
@@ -579,6 +600,7 @@ namespace boost { namespace polygon {
         static inline Slic3r::ExPolygon& set_points(Slic3r::ExPolygon& expolygon, iT input_begin, iT input_end) {
             expolygon.contour.points.assign(input_begin, input_end);
             // skip last point since Boost will set last point = first point
+            assert(expolygon.contour.points.front() == expolygon.contour.points.back());
             expolygon.contour.points.pop_back();
             return expolygon;
         }

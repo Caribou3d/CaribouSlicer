@@ -12,6 +12,18 @@
 
 APPIMAGETOOLURL="https://github.com/AppImage/AppImageKit/releases/latest/download/appimagetool-x86_64.AppImage"
 
+#
+# This script build the SuperSlicer appimage.
+#
+# Original script from SuperSlicer by supermerill https://github.com/supermerill/SuperSlicer
+#
+# Change log:
+#
+# 20 Nov 2023, wschadow, minor changes
+#
+
+#old fuse2 tool APPIMAGETOOLURL="https://github.com/AppImage/AppImageKit/releases/latest/download/appimagetool-x86_64.AppImage"
+APPIMAGETOOLURL="https://github.com/AppImage/appimagetool/releases/download/1.9.0/appimagetool-x86_64.AppImage"
 
 APP_IMAGE="@SLIC3R_APP_KEY@_ubu64.AppImage"
 
@@ -34,7 +46,6 @@ Type=Application
 Categories=Utility;
 MimeType=model/stl;application/vnd.ms-3mfdocument;application/prs.wavefront-obj;application/x-amf;
 EOF
-
 
 ../appimagetool.AppImage .
 mv @SLIC3R_APP_KEY@-x86_64.AppImage ${APP_IMAGE}

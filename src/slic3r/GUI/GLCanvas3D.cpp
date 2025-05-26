@@ -68,16 +68,16 @@
 
 #include "wxExtensions.hpp"
 
-#include <tbb/parallel_for.h>
-#include <tbb/spin_mutex.h>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/spin_mutex.h>
 
 #include <boost/log/trivial.hpp>
 #include <boost/algorithm/string/predicate.hpp>
 
-#include <iostream>
-#include <float.h>
 #include <algorithm>
+#include <cfloat>
 #include <cmath>
+#include <iostream>
 #include <set>
 #include "DoubleSlider.hpp"
 
@@ -123,7 +123,7 @@ GLCanvas3D::LayersEditing::~LayersEditing()
     //m_slicing_parameters.reset();
 }
 
-const float GLCanvas3D::LayersEditing::THICKNESS_BAR_WIDTH = 70.0f;
+const float GLCanvas3D::LayersEditing::THICKNESS_BAR_WIDTH = 140.0f;
 
 void GLCanvas3D::LayersEditing::init()
 {
@@ -186,6 +186,26 @@ void GLCanvas3D::LayersEditing::set_enabled(bool enabled)
 
 float GLCanvas3D::LayersEditing::s_overlay_window_width;
 
+std::tuple<float, float, float> get_min_max_step_layer_height(const DynamicPrintConfig &config) {
+    float min_height = 0.f;
+    float max_height = 1000.f;
+    float z_step = config.opt_float("z_step");
+    const ConfigOptionFloatsOrPercents* extruders_min_height = dynamic_cast<const ConfigOptionFloatsOrPercents*>(config.option("min_layer_height"));
+    const ConfigOptionFloatsOrPercents* extruders_max_height = dynamic_cast<const ConfigOptionFloatsOrPercents*>(config.option("max_layer_height"));
+    const ConfigOptionFloats* nozzle_diameter = dynamic_cast<const ConfigOptionFloats*>(config.option("nozzle_diameter"));
+    min_height = std::numeric_limits<float>::max();
+    max_height = 0.f;
+    assert(extruders_min_height->size() == extruders_max_height->size());
+    assert(extruders_min_height->size() == nozzle_diameter->size());
+    for (size_t idx_extruder = 0; idx_extruder < extruders_min_height->size(); ++idx_extruder) {
+        min_height = (float)std::min((double)min_height, (extruders_min_height->get_abs_value(idx_extruder, nozzle_diameter->get_float(idx_extruder))));
+        max_height = (float)std::max((double)max_height, (extruders_max_height->get_abs_value(idx_extruder, nozzle_diameter->get_float(idx_extruder))));
+    }
+    min_height = (float)check_z_step(min_height, z_step);
+    max_height = (float)check_z_step(max_height, z_step);
+    return { min_height, max_height, z_step };
+} 
+
 void GLCanvas3D::LayersEditing::render_overlay(const GLCanvas3D& canvas)
 {
     if (!m_enabled)
@@ -217,59 +237,34 @@ void GLCanvas3D::LayersEditing::render_overlay(const GLCanvas3D& canvas)
 
     imgui.text_colored(ImGuiWrapper::get_COL_LIGHT(), _L("Mouse wheel:"));
     ImGui::SameLine();
+    float text_align = ImGui::GetCursorPosX();
     imgui.text(_L("Increase/decrease edit area"));
     
-    ImGui::Separator();
-    if (imgui.button(_L("Adaptive")))
-        wxPostEvent((wxEvtHandler*)canvas.get_wxglcanvas(), HeightProfileAdaptiveEvent(EVT_GLCANVAS_ADAPTIVE_LAYER_HEIGHT_PROFILE, m_adaptive_params));
-
-    ImGui::SameLine();
-    float text_align = ImGui::GetCursorPosX();
-    ImGui::AlignTextToFramePadding();
-    imgui.text(_L("Quality / Speed"));
-    if (ImGui::IsItemHovered()) {
-        ImGui::BeginTooltip();
-        ImGui::TextUnformatted(_L("Higher print quality versus higher print speed.").ToUTF8());
-        ImGui::EndTooltip();
-    }
-
-    ImGui::SameLine();
-    float widget_align = ImGui::GetCursorPosX();
-    ImGui::PushItemWidth(imgui.get_style_scaling() * 120.0f);
-    m_adaptive_params.adaptive_quality = std::clamp(m_adaptive_params.adaptive_quality, 0.0f, 1.f);
-    imgui.slider_float("##adaptive_quality", &m_adaptive_params.adaptive_quality, 0.0f, 1.f, "%.2f");
-
     //min/max height for Adaptive min/max height
     float min_height = 0.f;
     float max_height = 1000.f;
-    PrinterTechnology printer_technology = canvas.current_printer_technology();
     float z_step = 0;
+    PrinterTechnology printer_technology = canvas.current_printer_technology();
     if ((printer_technology & ptFFF) == 1) {
-        z_step = m_config->opt_float("z_step");
-        const ConfigOptionFloatsOrPercents* extruders_min_height = dynamic_cast<const ConfigOptionFloatsOrPercents*>(m_config->option("min_layer_height"));
-        const ConfigOptionFloatsOrPercents* extruders_max_height = dynamic_cast<const ConfigOptionFloatsOrPercents*>(m_config->option("max_layer_height"));
-        const ConfigOptionFloats* nozzle_diameter = dynamic_cast<const ConfigOptionFloats*>(m_config->option("nozzle_diameter"));
-        min_height = std::numeric_limits<float>::max();
-        max_height = 0.f;
-        assert(extruders_min_height->size() == extruders_max_height->size());
-        assert(extruders_min_height->size() == nozzle_diameter->size());
-        for (size_t idx_extruder = 0; idx_extruder < extruders_min_height->size(); ++idx_extruder) {
-            min_height = std::min(min_height, float(extruders_min_height->get_abs_value(idx_extruder, nozzle_diameter->get_float(idx_extruder))));
-            max_height = std::max(max_height, float(extruders_max_height->get_abs_value(idx_extruder, nozzle_diameter->get_float(idx_extruder))));
-        }
-        min_height = check_z_step(min_height, z_step);
-        max_height = check_z_step(max_height, z_step);
-        if (m_adaptive_params.min_adaptive_layer_height < 0) {
-            m_adaptive_params.min_adaptive_layer_height = min_height;
-            m_adaptive_params.max_adaptive_layer_height = max_height;
+        assert(m_config);
+        std::tie(min_height, max_height, z_step) = get_min_max_step_layer_height(*m_config);
+        if (this->m_first_launch) {
+            this->m_min_layer_height = min_height;
+            this->m_max_layer_height = max_height;
+            m_adaptive_params.min_adaptive_layer_height = this->m_min_layer_height;
+            m_adaptive_params.max_adaptive_layer_height = this->m_max_layer_height;
+            this->m_first_launch = false;
         }
     } else {
         const ConfigOptionFloat* layer_height_ptr = dynamic_cast<const ConfigOptionFloat*>(m_config->option("layer_height"));
         double layer_height = layer_height_ptr ? layer_height_ptr->value : 0.2;
-        max_height = layer_height * 10;
-        if (m_adaptive_params.min_adaptive_layer_height < 0) {
-            m_adaptive_params.min_adaptive_layer_height = layer_height / 4;
-            m_adaptive_params.max_adaptive_layer_height = layer_height * 4;
+        float max_height = (float)layer_height * 10;
+        if (this->m_first_launch) {
+            this->m_min_layer_height = layer_height / 4;
+            this->m_max_layer_height = layer_height * 4;
+            m_adaptive_params.min_adaptive_layer_height = this->m_min_layer_height;
+            m_adaptive_params.max_adaptive_layer_height = this->m_max_layer_height;
+            this->m_first_launch = false;
         }
     }
 
@@ -283,18 +278,30 @@ void GLCanvas3D::LayersEditing::render_overlay(const GLCanvas3D& canvas)
     }
 
     ImGui::SameLine();
-    ImGui::SetCursorPosX(widget_align);
+    float widget_align = ImGui::GetCursorPosX();
     ImGui::PushItemWidth(imgui.get_style_scaling() * 120.0f);
-    if (imgui.slider_float("##min_adaptive_layer_height", &m_adaptive_params.min_adaptive_layer_height, min_height, max_height, "%.4f")) {
+    if (imgui.slider_float("##min_layer_height", &this->m_min_layer_height, min_height, max_height, "%.4f")) {
         if (z_step) {
-            m_adaptive_params.min_adaptive_layer_height = check_z_step(m_adaptive_params.min_adaptive_layer_height, z_step);
-            m_adaptive_params.min_adaptive_layer_height = std::clamp(m_adaptive_params.min_adaptive_layer_height, min_height, max_height);
+            this->m_min_layer_height = (float)check_z_step(this->m_min_layer_height, z_step);
+            this->m_min_layer_height = (float)std::clamp(this->m_min_layer_height, min_height, max_height);
         } else {
-            m_adaptive_params.min_adaptive_layer_height = std::max(m_adaptive_params.min_adaptive_layer_height, min_height);
+            this->m_min_layer_height = (float)std::max(this->m_min_layer_height, min_height);
         }
-        m_adaptive_params.max_adaptive_layer_height = std::max(m_adaptive_params.max_adaptive_layer_height, m_adaptive_params.min_adaptive_layer_height);
+        this->m_max_layer_height = std::max(this->m_max_layer_height, this->m_min_layer_height);
+        m_adaptive_params.min_adaptive_layer_height = this->m_min_layer_height;
+        m_adaptive_params.max_adaptive_layer_height = this->m_max_layer_height;
+        if (this->m_slicing_parameters && (
+            this->m_slicing_parameters->min_user_layer_height != this->m_min_layer_height ||
+            this->m_slicing_parameters->max_user_layer_height != this->m_max_layer_height )) {
+            this->m_slicing_parameters->min_user_layer_height = this->m_min_layer_height;
+            this->m_slicing_parameters->max_user_layer_height = this->m_max_layer_height;
+            this->last_action = LAYER_HEIGHT_NO_EDIT_ACTION;
+            this->adjust_layer_height_profile();
+            this->m_layer_height_limit_modified = true;
+        }
     }
 
+    ImGui::SetCursorPosX(text_align);
     ImGui::SetCursorPosX(text_align);
     ImGui::AlignTextToFramePadding();
     imgui.text(_L("Max height"));
@@ -307,13 +314,44 @@ void GLCanvas3D::LayersEditing::render_overlay(const GLCanvas3D& canvas)
     ImGui::SameLine();
     ImGui::SetCursorPosX(widget_align);
     ImGui::PushItemWidth(imgui.get_style_scaling() * 120.0f);
-    if (imgui.slider_float("##max_adaptive_layer_height", &m_adaptive_params.max_adaptive_layer_height, min_height, max_height, "%.4f")) {
+    if (imgui.slider_float("##max_layer_height", &this->m_max_layer_height, min_height, max_height, "%.4f")) {
         if (z_step) {
-            m_adaptive_params.max_adaptive_layer_height = check_z_step(m_adaptive_params.max_adaptive_layer_height, z_step);
-            m_adaptive_params.max_adaptive_layer_height = std::clamp(m_adaptive_params.max_adaptive_layer_height, min_height, max_height);
+            this->m_max_layer_height = (float)check_z_step(this->m_max_layer_height, z_step);
+            this->m_max_layer_height = (float)std::clamp(this->m_max_layer_height, min_height, max_height);
         }
-        m_adaptive_params.min_adaptive_layer_height = std::min(m_adaptive_params.max_adaptive_layer_height, m_adaptive_params.min_adaptive_layer_height);
+        this->m_min_layer_height = std::min(this->m_max_layer_height, this->m_min_layer_height);
+        m_adaptive_params.min_adaptive_layer_height = this->m_min_layer_height;
+        m_adaptive_params.max_adaptive_layer_height = this->m_max_layer_height;
+        if (this->m_slicing_parameters && (
+            this->m_slicing_parameters->min_user_layer_height != this->m_min_layer_height ||
+            this->m_slicing_parameters->max_user_layer_height != this->m_max_layer_height )) {
+            this->m_slicing_parameters->min_user_layer_height = this->m_min_layer_height;
+            this->m_slicing_parameters->max_user_layer_height = this->m_max_layer_height;
+            this->last_action = LAYER_HEIGHT_NO_EDIT_ACTION;
+            this->adjust_layer_height_profile();
+            this->m_layer_height_limit_modified = true;
+        }
     }
+
+    ImGui::Separator();
+    if (imgui.button(_L("Adaptive")))
+        wxPostEvent((wxEvtHandler*)canvas.get_wxglcanvas(), HeightProfileAdaptiveEvent(EVT_GLCANVAS_ADAPTIVE_LAYER_HEIGHT_PROFILE, m_adaptive_params));
+
+    ImGui::SameLine();
+    text_align = ImGui::GetCursorPosX();
+    ImGui::AlignTextToFramePadding();
+    imgui.text(_L("Quality / Speed"));
+    if (ImGui::IsItemHovered()) {
+        ImGui::BeginTooltip();
+        ImGui::TextUnformatted(_L("Higher print quality versus higher print speed.").ToUTF8());
+        ImGui::EndTooltip();
+    }
+
+    ImGui::SameLine();
+    widget_align = ImGui::GetCursorPosX();
+    ImGui::PushItemWidth(imgui.get_style_scaling() * 120.0f);
+    m_adaptive_params.adaptive_quality = std::clamp(m_adaptive_params.adaptive_quality, 0.0f, 1.f);
+    imgui.slider_float("##adaptive_quality", &m_adaptive_params.adaptive_quality, 0.0f, 1.f, "%.2f");
 
     ImGui::Separator();
     if (imgui.button(_L("Smooth")))
@@ -505,36 +543,78 @@ void GLCanvas3D::LayersEditing::render_profile(const GLCanvas3D& canvas)
         return;
 
     // Make the vertical bar a bit wider so the layer height curve does not touch the edge of the bar region.
+    assert(m_config);
     const float scale_x = THICKNESS_BAR_WIDTH / float(1.12 * m_slicing_parameters->max_layer_height);
+    //const float scale_x = THICKNESS_BAR_WIDTH / float(1.12 * m_slicing_parameters->max_layer_height);
+    //const float scale_x = THICKNESS_BAR_WIDTH / float(1.12 * this->m_max_layer_height);
     const float scale_y = cnv_height / m_object_max_z;
 
     const float cnv_inv_width  = 1.0f / cnv_width;
     const float cnv_inv_height = 1.0f / cnv_height;
     const float left = 1.0f - 2.0f * THICKNESS_BAR_WIDTH * cnv_inv_width;
+    
+    // Baseline: vertical line: print setting's layer height
+    if (!m_profile.baseline.is_initialized() || m_profile.old_layer_height_profile != m_layer_height_profile ||
+        m_profile.old_canvas_width.baseline != cnv_width || this->m_layer_height_limit_modified) {
 
-    // Baseline
-    if (!m_profile.baseline.is_initialized() || m_profile.old_layer_height_profile != m_layer_height_profile || m_profile.old_canvas_width.baseline != cnv_width) {
         m_profile.old_canvas_width.baseline = cnv_width;
         m_profile.baseline.reset();
 
         GLModel::Geometry init_data;
         init_data.format = { GLModel::Geometry::EPrimitiveType::Lines, GLModel::Geometry::EVertexLayout::P2 };
         init_data.color = ColorRGBA::BLACK();
-        init_data.reserve_vertices(2);
-        init_data.reserve_indices(2);
+        init_data.reserve_vertices(6);
+        init_data.reserve_indices(6);
 
         // vertices
-        const float axis_x = left + 2.0f * float(m_slicing_parameters->layer_height) * scale_x * cnv_inv_width;
+        float axis_x = left + 2.0f * float(m_slicing_parameters->layer_height) * scale_x * cnv_inv_width;
+        init_data.add_vertex(Vec2f(axis_x, -1.0f));
+        init_data.add_vertex(Vec2f(axis_x, 1.0f));
+        axis_x = left + 2.0f * float(m_slicing_parameters->max_layer_height) * scale_x * cnv_inv_width;
+        init_data.add_vertex(Vec2f(axis_x, -1.0f));
+        init_data.add_vertex(Vec2f(axis_x, 1.0f));
+        axis_x = left + 2.0f * float(m_slicing_parameters->min_layer_height) * scale_x * cnv_inv_width;
         init_data.add_vertex(Vec2f(axis_x, -1.0f));
         init_data.add_vertex(Vec2f(axis_x, 1.0f));
 
         // indices
         init_data.add_line(0, 1);
+        init_data.add_line(2, 3);
+        init_data.add_line(4, 5);
 
         m_profile.baseline.init_from(std::move(init_data));
     }
+    // Baseline: vertical line: print setting's layer height
+    if (!m_profile.baseline2.is_initialized() || m_profile.old_layer_height_profile != m_layer_height_profile ||
+        m_profile.old_canvas_width.baseline2 != cnv_width || this->m_layer_height_limit_modified) {
 
-    if (!m_profile.profile.is_initialized() || m_profile.old_layer_height_profile != m_layer_height_profile || m_profile.old_canvas_width.profile != cnv_width) {
+        m_profile.old_canvas_width.baseline2 = cnv_width;
+        m_profile.baseline2.reset();
+
+        GLModel::Geometry init_data;
+        init_data.format = { GLModel::Geometry::EPrimitiveType::Lines, GLModel::Geometry::EVertexLayout::P2 };
+        init_data.color = ColorRGBA::ORANGE();
+        init_data.reserve_vertices(4);
+        init_data.reserve_indices(4);
+
+        // vertices
+        float axis_x = left + 2.0f * float(m_slicing_parameters->min_user_layer_height) * scale_x * cnv_inv_width;
+        init_data.add_vertex(Vec2f(axis_x, -1.0f));
+        init_data.add_vertex(Vec2f(axis_x, 1.0f));
+        axis_x = left + 2.0f * float(m_slicing_parameters->max_user_layer_height) * scale_x * cnv_inv_width;
+        init_data.add_vertex(Vec2f(axis_x, -1.0f));
+        init_data.add_vertex(Vec2f(axis_x, 1.0f));
+
+        // indices
+        init_data.add_line(0, 1);
+        init_data.add_line(2, 3);
+
+        m_profile.baseline2.init_from(std::move(init_data));
+    }
+
+    if (!m_profile.profile.is_initialized() || m_profile.old_layer_height_profile != m_layer_height_profile ||
+        m_profile.old_canvas_width.profile != cnv_width || this->m_layer_height_limit_modified) {
+
         m_profile.old_canvas_width.profile = cnv_width;
         m_profile.old_layer_height_profile = m_layer_height_profile;
         m_profile.profile.reset();
@@ -554,6 +634,7 @@ void GLCanvas3D::LayersEditing::render_profile(const GLCanvas3D& canvas)
 
         m_profile.profile.init_from(std::move(init_data));
     }
+    this->m_layer_height_limit_modified = false;
 
 #if ENABLE_GL_CORE_PROFILE
     GLShaderProgram* shader = OpenGLManager::get_gl_info().is_core_profile() ? wxGetApp().get_shader("dashed_thick_lines") : wxGetApp().get_shader("flat");
@@ -571,6 +652,7 @@ void GLCanvas3D::LayersEditing::render_profile(const GLCanvas3D& canvas)
         shader->set_uniform("gap_size", 0.0f);
 #endif // ENABLE_GL_CORE_PROFILE
         m_profile.baseline.render();
+        m_profile.baseline2.render();
         m_profile.profile.render();
         shader->stop_using();
     }
@@ -721,7 +803,9 @@ void GLCanvas3D::LayersEditing::accept_changes(GLCanvas3D& canvas)
 void GLCanvas3D::LayersEditing::update_slicing_parameters()
 {
     if (!m_slicing_parameters) {
-        m_slicing_parameters = PrintObject::slicing_parameters(*m_config, *m_model_object, m_object_max_z);
+        this->m_slicing_parameters = PrintObject::slicing_parameters(*m_config, *m_model_object, m_object_max_z);
+        this->m_slicing_parameters->min_user_layer_height = this->m_min_layer_height;
+        this->m_slicing_parameters->max_user_layer_height = this->m_max_layer_height;
     }
 }
 
@@ -1748,9 +1832,9 @@ void GLCanvas3D::set_config(const DynamicPrintConfig* config)
 
         m_arrange_settings_db.set_active_slot(slot);
 
-        double objdst = min_object_distance(config, 1);
+        double objdst = min_object_distance(config, 0);
         double min_obj_dst = slot == ArrangeSettingsDb_AppCfg::slotFFFSeqPrint ? objdst : 0.;
-        m_arrange_settings_db.set_distance_from_obj_range(slot, min_obj_dst, 100.);
+        m_arrange_settings_db.set_distance_from_obj_range(slot, min_obj_dst, std::max(100., min_obj_dst*2));
         
         if (std::abs(m_arrange_settings_db.get_defaults(slot).d_obj - objdst) > EPSILON) {
             m_arrange_settings_db.get_defaults(slot).d_obj = objdst;
@@ -2648,20 +2732,22 @@ void GLCanvas3D::reload_scene(bool refresh_immediately, bool force_full_scene_re
         const bool co = dynamic_cast<const ConfigOptionBool*>(m_config->option("complete_objects"))->value;
 
         if (extruders_count > 1 && wt && !co) {
-
+            // can't get these one from wipe_tower_data, as these use the platter's config, not the print one.
             const float x = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_x"))->value;
             const float y = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_y"))->value;
             const float w = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_width"))->value;
             const float a = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_rotation_angle"))->value;
-            const float bw = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_brim_width"))->value;
             const float ca = dynamic_cast<const ConfigOptionFloat*>(m_config->option("wipe_tower_cone_angle"))->value;
 
             const Print *print = m_process->fff_print();
-            //FIXME use real nozzle diameter
+            //FIXME use real nozzle diameter, or the biggest
             const double first_nozzle_diameter = m_config->option<ConfigOptionFloats>("nozzle_diameter")->get_at(0);
-            const float depth = print->wipe_tower_data(extruders_count, first_nozzle_diameter).depth;
-            const std::vector<std::pair<float, float>> z_and_depth_pairs = print->wipe_tower_data(extruders_count, first_nozzle_diameter).z_and_depth_pairs;
-            const float height_real = print->wipe_tower_data(extruders_count, first_nozzle_diameter).height; // -1.f = unknown
+            const WipeTowerData& wipe_tower_data = print->wipe_tower_data(m_config, first_nozzle_diameter);
+            const float depth = wipe_tower_data.depth;
+            const float bw = wipe_tower_data.brim_width;
+            const std::vector<std::pair<float, float>> z_and_depth_pairs = wipe_tower_data.z_and_depth_pairs;
+            const float height_real = wipe_tower_data.height; // -1.f = unknown
+            
 
             // Height of a print (Show at least a slab).
             const double height = height_real < 0.f ? std::max(m_model->max_z(), 10.0) : height_real;
@@ -2817,10 +2903,10 @@ void GLCanvas3D::load_gcode_preview(const GCodeProcessorResult     &gcode_result
     if (wxGetApp().is_editor()) {
         _set_warning_notification_if_needed(EWarning::ToolpathOutside);
         _set_warning_notification_if_needed(EWarning::GCodeConflict);
-        m_gcode_viewer.refresh(gcode_result, str_tool_colors);
-        set_as_dirty();
-        request_extra_frame();
     }
+    m_gcode_viewer.refresh(gcode_result, str_tool_colors);
+    set_as_dirty();
+    request_extra_frame();
 }
 
 void GLCanvas3D::refresh_gcode_preview_render_paths(bool keep_sequential_current_first, bool keep_sequential_current_last)
@@ -4761,7 +4847,8 @@ void GLCanvas3D::update_sequential_clearance(bool force_contours_generation)
     if (force_contours_generation || m_sequential_print_clearance_first_displacement) {
         m_sequential_print_clearance.m_evaluating = false;
         m_sequential_print_clearance.m_hulls_2d_cache.clear();
-        const float shrink_factor = static_cast<float>(scale_(0.5 * fff_print()->config().extruder_clearance_radius.value - EPSILON));
+        const double clearance_dist = min_object_distance(&fff_print()->default_region_config(), 0);
+        const float shrink_factor = static_cast<float>(scale_(0.5 * clearance_dist - EPSILON));
         const double mitter_limit = scale_(0.1);
         m_sequential_print_clearance.m_hulls_2d_cache.reserve(m_model->objects.size());
         for (size_t i = 0; i < m_model->objects.size(); ++i) {
@@ -5070,19 +5157,25 @@ void GLCanvas3D::_render_thumbnail_internal(ThumbnailData& thumbnail_data, const
     const Transform3d& projection_matrix = camera.get_projection_matrix();
 
     //parse custom color from config, if we need to set a special color to objects for thumbnail.
-    ColorRGBA custom_color = { -1.0f, 0.0f, 0.0f, 1.0f };
-    if(Tab* tab = wxGetApp().get_tab(Preset::TYPE_PRINTER))
-        if(const DynamicPrintConfig* printer_config = tab->get_config())
-            if(const ConfigOptionBool *conf_ok = printer_config->option<ConfigOptionBool>("thumbnails_custom_color"))
-                if(conf_ok->value)
-                    if (const ConfigOptionString* conf_color = printer_config->option<ConfigOptionString>("thumbnails_color"))
-                        if(conf_color->value.length() > 6)
-                        {
+    ColorRGBA custom_color = { 0.0f, 0.0f, 1.0f, 1.0f };
+    bool use_custom_color = false;
+    if (Tab *tab = wxGetApp().get_tab(Preset::TYPE_PRINTER)) {
+        if (const DynamicPrintConfig *printer_config = tab->get_config()) {
+            if (const ConfigOptionBool *conf_ok = printer_config->option<ConfigOptionBool>("thumbnails_custom_color")) {
+                if (conf_ok->value) {
+                    if (const ConfigOptionString *conf_color = printer_config->option<ConfigOptionString>("thumbnails_color")) {
+                        if (conf_color->value.length() > 6) {
                             wxColour clr(conf_color->value);
                             custom_color.r(clr.Red() / 255.f);
                             custom_color.g(clr.Green() / 255.f);
                             custom_color.b(clr.Blue() / 255.f);
+                            use_custom_color = true;
                         }
+                    }
+                }
+            }
+        }
+    }
 
     const int extruders_count = wxGetApp().extruders_edited_cnt();
     for (GLVolume *vol : visible_volumes) {
@@ -5106,7 +5199,7 @@ void GLCanvas3D::_render_thumbnail_internal(ThumbnailData& thumbnail_data, const
         else {
             shader->set_uniform("emission_factor", 0.0f);
             vol->model.set_color((vol->printable && !vol->is_outside) 
-                ? (custom_color.r() < 0 ? vol->color : custom_color)
+                ? (use_custom_color ? custom_color : vol->color)
                 : ColorRGBA::GRAY());
         }
 
@@ -5125,7 +5218,7 @@ void GLCanvas3D::_render_thumbnail_internal(ThumbnailData& thumbnail_data, const
         if (render_as_painted) {
             const ModelVolume& model_volume = *model_objects[obj_idx]->volumes[vol_idx];
             const size_t extruder_idx = get_extruder_color_idx(model_volume, extruders_count);
-            TriangleSelectorMmGui ts(model_volume.mesh(), extruders_colors, extruders_colors[extruder_idx]);
+            TriangleSelectorMmGui ts(model_volume.mesh(), extruders_colors, use_custom_color ? custom_color : extruders_colors[extruder_idx]);
             ts.deserialize(model_volume.mm_segmentation_facets.get_data(), true);
             ts.request_update_render_data();
 
@@ -7770,7 +7863,9 @@ void GLCanvas3D::_set_warning_notification(EWarning warning, bool state)
                     const unsigned int obj_idx = std::distance(objects.begin(), iter);
                     wxGetApp().CallAfter([obj_idx, layer_id]() {
                         wxGetApp().plater()->set_preview_layers_slider_values_range(0, layer_id - 1);
-                        wxGetApp().plater()->select_view_3D("3D");
+                        // select_tab also set the notebook, it's better.
+                        //wxGetApp().plater()->select_view_3D("3D");
+                        wxGetApp().mainframe->select_tab(MainFrame::ETabType::Plater3D);
                         wxGetApp().plater()->canvas3D()->reset_all_gizmos();
                         wxGetApp().plater()->canvas3D()->get_selection().add_object(obj_idx, true);
                         wxGetApp().obj_list()->update_selections();

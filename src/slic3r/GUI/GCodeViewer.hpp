@@ -12,8 +12,8 @@
 #include "libslic3r/GCode/GCodeProcessor.hpp"
 #include "GLModel.hpp"
 
+#include <cfloat>
 #include <cstdint>
-#include <float.h>
 #include <set>
 #include <unordered_set>
 
@@ -207,6 +207,7 @@ class GCodeViewer
         Tool,
         Filament,
         ColorPrint,
+        Object,
         Count
     };
     private:
@@ -453,6 +454,7 @@ class GCodeViewer
         float volumetric_flow{ 0.0f };
         unsigned char extruder_id{ 0 };
         unsigned char cp_color_id{ 0 };
+        uint16_t object_id {0};
         std::vector<Sub_Path> sub_paths;
         float elapsed_time{ 0.0f };
 
@@ -896,6 +898,8 @@ private:
     std::vector<GCodeExtrusionRole> m_roles;
     size_t m_extruders_count;
     std::vector<unsigned char> m_extruder_ids;
+    size_t m_objects_count;
+    std::vector<std::string> m_objects_ids;
     std::vector<float> m_filament_diameters;
     std::vector<float> m_filament_densities;
     Extrusions m_extrusions;
@@ -913,6 +917,7 @@ private:
         void reset() { dirty = true; }
     };
     LegendResizer m_legend_resizer;
+    uint8_t decimal_precision = 2;
     PrintEstimatedStatistics m_print_statistics;
     PrintEstimatedStatistics::ETimeMode m_time_estimate_mode{ PrintEstimatedStatistics::ETimeMode::Normal };
 #if ENABLE_GCODE_VIEWER_STATISTICS

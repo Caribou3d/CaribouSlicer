@@ -1653,14 +1653,27 @@ static TriangleMesh create_mesh(const std::string& type_name, const BoundingBoxf
     if (type_name == "Box")
         // Sitting on the print bed, left front front corner at (0, 0).
         mesh = its_make_cube(side, side, side);
+    else if (type_name == "Square")
+        // Centered around 0, sitting on the print bed.
+        mesh = its_make_cube(side, side, 0.1);
     else if (type_name == "Cylinder")
         // Centered around 0, sitting on the print bed.
         // The cylinder has the same volume as the box above.
         mesh = its_make_cylinder(0.564 * side, bb.size().z()>0 ? bb.size().z() : side);
+    else if (type_name == "SmallCylinder")
+        // Centered around 0, sitting on the print bed.
+        // The cylinder has the same volume as the box above.
+        mesh = its_make_cylinder(0.1 * side, bb.size().z()>0 ? bb.size().z() : side);
+    else if (type_name == "Circle")
+        // Centered around 0, sitting on the print bed.
+        mesh = its_make_cylinder(5, 0.1);
     else if (type_name == "Sphere")
         // Centered around 0, half the sphere below the print bed, half above.
         // The sphere has the same volume as the box above.
         mesh = its_make_sphere(0.62 * side, PI / 18);
+    else if (type_name == "SmallSphere")
+        // Centered around 0, half the sphere below the print bed, half above.
+        mesh = its_make_sphere(0.1 * side, PI / 18);
     else if (type_name == "Slab")
         // Sitting on the print bed, left front front corner at (0, 0).
         mesh = its_make_cube(bb.size().x() * 1.5, bb.size().y() * 1.5, bb.size().z() * 0.5);
@@ -1720,10 +1733,11 @@ void ObjectList::load_generic_subobject(const std::string& type_name, const Mode
     new_volume->set_offset(v->get_instance_transformation().get_matrix_no_offset().inverse() * offset);
 
     std::string base_name = "Generic";
-    if (type == ModelVolumeType::SEAM_POSITION) base_name = "Seam";
+    if (new_volume->is_seam_position()) base_name = "Seam";
+    if (new_volume->is_brim())          base_name = "Brim";
     if (type == ModelVolumeType::SUPPORT_ENFORCER) base_name = "Support";
     if (type == ModelVolumeType::SUPPORT_BLOCKER) base_name = "Blocker";
-    const wxString name = _(L(base_name)) + "-" + _(type_name);
+    const wxString name = _L(base_name) + "-" + (boost::starts_with(type_name, "Small") ? _(type_name.substr(5)): _(type_name));
     new_volume->name = into_u8(name);
     // set a default extruder value, since user can't add it manually
     new_volume->config.set_key_value("extruder", new ConfigOptionInt(0));
@@ -1746,7 +1760,7 @@ void ObjectList::load_generic_subobject(const std::string& type_name, const Mode
         update_info_items(obj_idx);
 
     selection_changed();
-    if (type == ModelVolumeType::SEAM_POSITION)
+    if (new_volume->is_seam_position())
         this->update_after_undo_redo();
 }
 
@@ -2370,6 +2384,38 @@ void ObjectList::layers_editing()
     wxGetApp().plater()->canvas3D()->handle_sidebar_focus_event("", false);
 
     // select LayerRoor item and expand
+    select_item(layers_item);
+    Expand(layers_item);
+}
+
+void ObjectList::layers_editing(int obj_idx)
+{
+    wxDataViewItem item = m_objects_model->GetItemById(obj_idx);
+
+    if (!item)
+        return;
+
+    const wxDataViewItem obj_item = m_objects_model->GetTopParent(item);
+    wxDataViewItem layers_item = m_objects_model->GetLayerRootItem(obj_item);
+
+    if (!layers_item.IsOk())
+    {
+        t_layer_config_ranges& ranges = object(obj_idx)->layer_config_ranges;
+
+        if (ranges.empty()) {
+            take_snapshot(_(L("Add Layers")));
+            ranges[{ 0.0f, 2.0f }].assign_config(get_default_layer_config(obj_idx));
+        }
+
+        layers_item = add_layer_root_item(obj_item);
+    }
+
+    if (!layers_item.IsOk())
+        return;
+
+    wxGetApp().obj_layers()->reset_selection();
+    wxGetApp().plater()->canvas3D()->handle_sidebar_focus_event("", false);
+
     select_item(layers_item);
     Expand(layers_item);
 }
@@ -3358,8 +3404,9 @@ static double get_max_layer_height(const int extruder_idx)
     double max_layer_height = config.get_computed_value("max_layer_height", extruder_idx_zero_based);
 
     // In case max_layer_height is set to zero, it should default to 75 % of nozzle diameter:
-    if (max_layer_height < EPSILON)
+    if (max_layer_height < EPSILON || config.is_enabled("max_layer_height")) {
         max_layer_height = 0.75 * config.opt_float("nozzle_diameter", extruder_idx_zero_based);
+    }
 
     return max_layer_height;
 }
@@ -3536,6 +3583,13 @@ bool ObjectList::edit_layer_range(const t_layer_height_range& range, coordf_t la
         config->set_key_value("layer_height", new ConfigOptionFloat(layer_height));
         changed_object(obj_idx);
         return true;
+    } else {
+        const wxString msg_text = format_wxstr(
+            _L("The layer height need to be btween the minimum and maximum layer height, which are %1% and %2%."),
+            Slic3r::to_string_nozero(get_min_layer_height(extruder_idx), 6),
+            Slic3r::to_string_nozero(get_max_layer_height(extruder_idx), 6));
+        MessageDialog dialog(GUI::wxGetApp().plater(), msg_text, _(L("Maximum and minimum layer height")), wxICON_WARNING | wxOK);
+        dialog.ShowModal();
     }
 
     return false;
@@ -4295,8 +4349,18 @@ void ObjectList::change_part_type()
     }
 
     if (printer_technology() != ptSLA) {
-        names.Add(_L("Seam Position"));
-        types.emplace_back(ModelVolumeType::SEAM_POSITION);
+        names.Add(_L("Seam Position (nearest)"));
+        types.emplace_back(ModelVolumeType::SEAM_POSITION_CENTER);
+        names.Add(_L("Seam Position (nearest, between min & max z)"));
+        types.emplace_back(ModelVolumeType::SEAM_POSITION_CENTER_Z);
+        //names.Add(_L("Seam Position (inside)"));
+        //types.emplace_back(ModelVolumeType::SEAM_POSITION_INSIDE_CENTER);
+        //names.Add(_L("Seam Position (inside shape)"));
+        //types.emplace_back(ModelVolumeType::SEAM_POSITION_INSIDE);
+        names.Add(_L("Brim Patch"));
+        types.emplace_back(ModelVolumeType::BRIM_PATCH);
+        names.Add(_L("Brim Blocker"));
+        types.emplace_back(ModelVolumeType::BRIM_NEGATIVE);
     }
     int selection = 0;
     if (auto it = std::find(types.begin(), types.end(), type); it != types.end())

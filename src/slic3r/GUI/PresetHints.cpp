@@ -97,25 +97,34 @@ void format_double_fan_min_speed(wxString& out, int min_speed, int default_speed
     }
 }
 
+int get_fan_speed(const Preset &preset_fil, const std::string &opt_key) {
+    const ConfigOption* option = preset_fil.config.option(opt_key);
+    // only consider the first idx, as it's the current one.
+    if (option->is_enabled(0)) {
+        return option->get_int(0);
+    }
+    return -1;
+}
+
 #define MIN_BUF_LENGTH  4096
 std::string PresetHints::cooling_description(const Preset &preset_fil, const Preset& preset_printer)
 {
     wxString out;
     // -1 is disable, 0 or 1 is "no fan". (and 1 will be "low fan" in the future)
     const int    min_fan_speed             = preset_printer.config.get_int("fan_printer_min_speed");
-    const int    default_fan_speed         = preset_fil.config.get_int("default_fan_speed");
+    const int    default_fan_speed         = get_fan_speed(preset_fil, "default_fan_speed");
     const int    max_fan_speed             = preset_fil.config.opt_int("max_fan_speed", 0);
-    const int    peri_fan_speed            = preset_fil.config.opt_int("perimeter_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("perimeter_fan_speed");
-    const int    ext_peri_fan_speed        = preset_fil.config.opt_int("external_perimeter_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("external_perimeter_fan_speed");
-    const int    infill_fan_speed          = preset_fil.config.opt_int("infill_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("infill_fan_speed");
-    const int    solid_fan_speed           = preset_fil.config.opt_int("solid_infill_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("solid_infill_fan_speed");
-    const int    top_fan_speed             = preset_fil.config.opt_int("top_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("top_fan_speed");
-    const int    support_fan_speed         = preset_fil.config.opt_int("support_material_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("support_material_fan_speed");
-    const int    supp_inter_fan_speed      = preset_fil.config.opt_int("support_material_interface_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("support_material_interface_fan_speed");
-    const int    bridge_fan_speed          = preset_fil.config.opt_int("bridge_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("bridge_fan_speed");
-    const int    internal_bridge_fan_speed = preset_fil.config.opt_int("internal_bridge_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("internal_bridge_fan_speed");
-    const int    overhangs_fan_speed       = preset_fil.config.opt_int("overhangs_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("overhangs_fan_speed");
-    const int    gap_fill_fan_speed        = preset_fil.config.opt_int("gap_fill_fan_speed", 0) == 1 ? 0 : preset_fil.config.get_int("gap_fill_fan_speed");
+    const int    peri_fan_speed            = get_fan_speed(preset_fil, "perimeter_fan_speed");
+    const int    ext_peri_fan_speed        = get_fan_speed(preset_fil, "external_perimeter_fan_speed");
+    const int    infill_fan_speed          = get_fan_speed(preset_fil, "infill_fan_speed");
+    const int    solid_fan_speed           = get_fan_speed(preset_fil, "solid_infill_fan_speed");
+    const int    top_fan_speed             = get_fan_speed(preset_fil, "top_fan_speed");
+    const int    support_fan_speed         = get_fan_speed(preset_fil, "support_material_fan_speed");
+    const int    supp_inter_fan_speed      = get_fan_speed(preset_fil, "support_material_interface_fan_speed");
+    const int    bridge_fan_speed          = get_fan_speed(preset_fil, "bridge_fan_speed");
+    const int    internal_bridge_fan_speed = get_fan_speed(preset_fil, "internal_bridge_fan_speed");
+    const int    overhangs_fan_speed       = get_fan_speed(preset_fil, "overhangs_fan_speed");
+    const int    gap_fill_fan_speed        = get_fan_speed(preset_fil, "gap_fill_fan_speed");
     const int    disable_fan_first_layers  = preset_fil.config.opt_int("disable_fan_first_layers", 0);
     const int    full_fan_speed_layer      = preset_fil.config.opt_int("full_fan_speed_layer", 0);
     const float  slowdown_below_layer_time = preset_fil.config.opt_float("slowdown_below_layer_time", 0);
@@ -310,6 +319,8 @@ std::string PresetHints::maximum_volumetric_flow_description(const PresetBundle 
     const auto &external_perimeter_extrusion_spacing= *print_config.option<ConfigOptionFloatOrPercent>("external_perimeter_extrusion_spacing");
     const auto &first_layer_extrusion_width         = *print_config.option<ConfigOptionFloatOrPercent>("first_layer_extrusion_width");
     const auto &first_layer_extrusion_spacing       = *print_config.option<ConfigOptionFloatOrPercent>("first_layer_extrusion_spacing");
+    const auto &first_layer_infill_extrusion_width  = *print_config.option<ConfigOptionFloatOrPercent>("first_layer_infill_extrusion_width");
+    const auto &first_layer_infill_extrusion_spacing= *print_config.option<ConfigOptionFloatOrPercent>("first_layer_infill_extrusion_spacing");
     const auto &infill_extrusion_width              = *print_config.option<ConfigOptionFloatOrPercent>("infill_extrusion_width");
     const auto &infill_extrusion_spacing            = *print_config.option<ConfigOptionFloatOrPercent>("infill_extrusion_spacing");
     const auto &perimeter_extrusion_width           = *print_config.option<ConfigOptionFloatOrPercent>("perimeter_extrusion_width");
@@ -346,9 +357,9 @@ std::string PresetHints::maximum_volumetric_flow_description(const PresetBundle 
         // First test the maximum volumetric extrusion speed for non-bridging extrusions.
         bool first_layer = idx_type == 0;
         bool bridging    = idx_type == 2;
-        const ConfigOptionFloatOrPercent* first_layer_extrusion_width_ptr = (first_layer && first_layer_extrusion_width.value > 0) ?
+        const ConfigOptionFloatOrPercent* first_layer_extrusion_width_ptr = (first_layer && first_layer_extrusion_width.is_enabled()) ?
             &first_layer_extrusion_width : nullptr;
-        const ConfigOptionFloatOrPercent* first_layer_extrusion_spacing_ptr = (first_layer && first_layer_extrusion_spacing.value > 0) ?
+        const ConfigOptionFloatOrPercent* first_layer_extrusion_spacing_ptr = (first_layer && first_layer_extrusion_width.is_enabled()) ?
             &first_layer_extrusion_spacing : nullptr;
         const float                       lh  = float(first_layer ? first_layer_height : layer_height);
         const float                       bfr = bridging ? bridge_flow_ratio : 0.f;
@@ -614,8 +625,8 @@ std::string PresetHints::top_bottom_shell_thickness_explanation(const PresetBund
 
     int     top_solid_layers                = print_config.option("top_solid_layers")->get_int();
     int     bottom_solid_layers             = print_config.option("bottom_solid_layers")->get_int();
-    bool    has_top_layers 					= top_solid_layers > 0;
-    bool    has_bottom_layers 				= bottom_solid_layers > 0;
+    bool    has_top_layers 					= top_solid_layers > 0 || (print_config.option("solid_infill_every_layers")->get_int() == 1 && print_config.option("fill_density")->get_float() > 0);
+    bool    has_bottom_layers 				= bottom_solid_layers > 0 || (print_config.option("solid_infill_every_layers")->get_int() == 1 && print_config.option("fill_density")->get_float() > 0);
     double  top_solid_min_thickness        	= print_config.opt_float("top_solid_min_thickness");
     double  bottom_solid_min_thickness  	= print_config.opt_float("bottom_solid_min_thickness");
     double  layer_height                    = print_config.opt_float("layer_height");

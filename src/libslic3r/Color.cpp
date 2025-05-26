@@ -362,25 +362,48 @@ bool decode_color(const std::string& color_in, ColorRGBA& color_out)
 	return true;
 }
 
-bool decode_colors(const std::vector<std::string>& colors_in, std::vector<ColorRGB>& colors_out)
-{
-	colors_out = std::vector<ColorRGB>(colors_in.size(), ColorRGB::BLACK());
-	for (size_t i = 0; i < colors_in.size(); ++i) {
-		if (!decode_color(colors_in[i], colors_out[i]))
-			return false;
-	}
-	return true;
+bool decode_colors(const std::vector<std::string> &colors_in, std::vector<ColorRGB> &colors_out) {
+    bool all_success = true;
+    colors_out.resize(colors_in.size(), ColorRGB::BLACK());
+    for (size_t i = 0; i < colors_in.size(); ++i) {
+        if (!decode_color(colors_in[i], colors_out[i])) {
+            // continue, please.
+            // return false;
+            all_success = false;
+        }
+    }
+    return all_success;
 }
 
 bool decode_colors(const std::vector<std::string>& colors_in, std::vector<ColorRGBA>& colors_out)
 {
-	colors_out = std::vector<ColorRGBA>(colors_in.size(), ColorRGBA::BLACK());
-	for (size_t i = 0; i < colors_in.size(); ++i) {
-		if (!decode_color(colors_in[i], colors_out[i]))
-			return false;
-	}
-	return true;
+    bool all_success = true;
+    colors_out.resize(colors_in.size(), ColorRGBA::BLACK());
+    for (size_t i = 0; i < colors_in.size(); ++i) {
+        if (!decode_color(colors_in[i], colors_out[i])) {
+            // continue, please.
+            // return false;
+            all_success = false;
+        }
+    }
+    return all_success;
 }
+
+static const std::array<ColorRGBA, 12> COLOR_ROTATION = {{
+	ColorRGBA::GREEN(),
+	ColorRGBA::RED(),
+	ColorRGBA::BLUE(),
+	ColorRGBA::YELLOW(),
+	ColorRGBA::MAGENTA(),
+	ColorRGBA::CYAN(),
+	ColorRGBA::ORANGE(),
+	ColorRGBA::GREENISH(),
+	ColorRGBA(1.0f, 0.f, 0.5f, 1.0f),//PINK(),
+	ColorRGBA::LIGHT_GRAY(),
+	ColorRGBA::BLUEISH(),
+	ColorRGBA::REDISH(),
+}};
+ColorRGBA get_a_color(size_t idx){ return COLOR_ROTATION[idx % 12]; }
 
 std::string encode_color(const ColorRGB& color)
 {
@@ -502,8 +525,7 @@ uint32_t hex2int(const std::string& hex)
 {
     uint32_t int_color;
     if (hex.empty() || !(hex.size() == 6 || hex.size() == 7)) {
-        // int_color = 0x2172eb;
-		int_color = 0x107d18;
+        int_color = 0x2172eb;
     } else {
         std::stringstream ss;
         ss << std::hex << (hex[0] == '#' ? hex.substr(1) : hex);
@@ -540,6 +562,14 @@ uint32_t rgb2int(const ColorRGB& rgb_color)
     int_color |= std::min(255, int(rgb_color.g() * 255)) << 8;
     int_color |= std::min(255, int(rgb_color.b() * 255)) << 16;
     return int_color;
+}
+uint32_t change_endian_int24(uint32_t int_color)
+{
+    uint32_t out_int = 0;
+    out_int |= (int_color & 0xFF) << 16;
+    out_int |= ((int_color & 0xFF00) >> 8) << 8;
+    out_int |= ((int_color & 0xFF0000) >> 16);
+    return out_int;
 }
 
 void ColorReplaces::add(const std::string &sold, const std::string &snew) {

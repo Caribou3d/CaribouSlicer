@@ -161,6 +161,8 @@ bool decode_color(const std::string& color_in, ColorRGBA& color_out);
 
 bool decode_colors(const std::vector<std::string>& colors_in, std::vector<ColorRGB>& colors_out);
 bool decode_colors(const std::vector<std::string>& colors_in, std::vector<ColorRGBA>& colors_out);
+    
+ColorRGBA get_a_color(size_t idx);
 
 std::string encode_color(const ColorRGB& color);
 std::string encode_color(const ColorRGBA& color);
@@ -192,6 +194,7 @@ uint32_t    hex2int(const std::string &hex);
 std::string int2hex(uint32_t int_color);
 ColorRGB    int2rgb(uint32_t int_color);
 uint32_t    rgb2int(const ColorRGB &rgb_color);
+uint32_t	change_endian_int24(uint32_t int_color);
 
 // Color mapping of a value into RGB false colors.
 inline Vec3i32 value_to_rgbi(float minimum, float maximum, float value)

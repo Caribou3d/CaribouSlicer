@@ -17,23 +17,22 @@
 #include "libslic3r_version.h"
 
 // this needs to be included early for MSVC (listing it in Build.PL is not enough)
-#include <memory>
 #include <array>
 #include <algorithm>
-#include <ostream>
-#include <iostream>
-#include <math.h>
-#include <queue>
-#include <sstream>
-#include <cstdio>
-#include <stdint.h>
-#include <stdarg.h>
-#include <vector>
-#include <set>
 #include <cassert>
 #include <cmath>
-#include <type_traits>
+#include <cstdarg>
+#include <cstdint>
+#include <cstdio>
+#include <ostream>
+#include <iostream>
+#include <memory>
 #include <optional>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <type_traits>
+#include <vector>
 
 #ifdef _WIN32
 // On MSVC, std::deque degenerates to a list of pointers, which defeats its purpose of reducing allocator load and memory fragmentation.
@@ -58,12 +57,14 @@ using Coord2 = double;
 #endif
 
 
-inline std::uint16_t operator "" _u(unsigned long long value)
+inline uint16_t operator "" _u(unsigned long long value)
 {
-    return static_cast<std::uint16_t>(value);
+    return static_cast<uint16_t>(value);
 }
 
 using coordf_t = double;
+using distf_t = double;
+using distsqrf_t = double;
 
 // Scaling factor for a conversion from coord_t to coordf_t: 10e-6
 // This scaling generates a following fixed point representation with for a 32bit integer:
@@ -121,6 +122,8 @@ constexpr double   unscaled(coord_t v) { return double(v) * SCALING_FACTOR; }
 constexpr double   unscaled(coordf_t v) { return v * SCALING_FACTOR; }
 constexpr coord_t  scale_t(double v) { return coord_t(v * UNSCALING_FACTOR); }
 constexpr coordf_t scale_d(double v) { return coordf_t(v * UNSCALING_FACTOR); }
+
+inline coordf_t coord_sqr(coord_t length) { return coordf_t(length) * coordf_t(length); }
 
 enum Axis { 
 	X=0,
@@ -535,8 +538,31 @@ public:
 enum class ArcFittingType {
     Disabled,
     Bambu,
-    EmitCenter // arcwelder
+    ArcWelder
 };
+
+#ifdef _DEBUG
+#define _DEBUGINFO
+    #define release_assert(X) assert(X)
+#else
+#ifdef _RELWITHDEBINFO
+#define _DEBUGINFO
+inline void release_assert(bool valid) {
+    // superslicer variant -> don't hard crash on assert (nightly). For debug, use the slic3r variant (dev branch).
+    // if (!valid)
+        // throw new std::exception();
+}
+#endif
+//error if release, as it's purely a debug thingy that need to be cleaned
+#endif
+
+#ifdef _DEBUGINFO
+#ifdef WIN32
+#define UNOPTIMIZE __pragma(optimize("", off))
+#else
+//#define UNOPTIMIZE _Pragma("optimize(\"\", off)")
+#endif
+#endif
 
 } // namespace Slic3r
 

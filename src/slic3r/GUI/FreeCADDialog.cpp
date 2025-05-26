@@ -8,19 +8,18 @@
 #include "GUI.hpp"
 #include "GUI_Utils.hpp"
 #include "GUI_ObjectList.hpp"
-#include "../Utils/Http.hpp"
-#include "Plater.hpp"
 #include "slic3r/Utils/Http.hpp"
+#include "slic3r/Utils/MacDarkMode.hpp"
+#include "Plater.hpp"
 #include "Tab.hpp"
-#include "../Utils/MacDarkMode.hpp"
 
 #include "MainFrame.hpp"
 #include "wxExtensions.hpp"
 
 #include <iostream>
 #include <ctime>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdlib>
+#include <cstdio>
 
 #include <wx/wx.h>
 #include <wx/scrolwin.h>
@@ -65,7 +64,7 @@ namespace GUI {
     class ExecVar {
     public:
         boost::process::opstream pyin;
-        boost::asio::io_service ios;
+        boost::asio::io_context ios;
         std::future<std::string> data_out;
         std::future<std::string> data_err;
         std::unique_ptr<boost::process::child> process;

@@ -57,7 +57,11 @@ if (SLIC3R_GUI)
     if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
         set (wxWidgets_CONFIG_OPTIONS "--toolkit=gtk${SLIC3R_GTK}")
             endif ()
-    find_package(wxWidgets 3.2 MODULE REQUIRED COMPONENTS base core adv html gl stc scintilla)
+    if(WIN32)
+        find_package(wxWidgets 3.2 MODULE REQUIRED COMPONENTS base core adv html gl stc scintilla)
+    else()
+        find_package(wxWidgets 3.2 MODULE REQUIRED COMPONENTS base core adv html gl stc)
+    endif()
 
     include(${wxWidgets_USE_FILE})
 
@@ -68,19 +72,12 @@ if (SLIC3R_GUI)
     endif()
 
     find_package(JPEG MODULE QUIET)
-    find_package(TIFF MODULE QUIET) # Tiff exported config is broken for static build
     find_package(NanoSVG REQUIRED)
 
     string(REGEX MATCH "wxpng" WX_PNG_BUILTIN ${wxWidgets_LIBRARIES})
     if (PNG_FOUND AND NOT WX_PNG_BUILTIN)
         list(FILTER wxWidgets_LIBRARIES EXCLUDE REGEX png)
         list(APPEND wxWidgets_LIBRARIES ${PNG_LIBRARIES})
-    endif ()
-
-    string(REGEX MATCH "wxtiff" WX_TIFF_BUILTIN ${wxWidgets_LIBRARIES})
-    if (TIFF_FOUND AND NOT WX_TIFF_BUILTIN)
-        list(FILTER wxWidgets_LIBRARIES EXCLUDE REGEX tiff)
-        list(APPEND wxWidgets_LIBRARIES ${TIFF_LIBRARIES})
     endif ()
 
     string(REGEX MATCH "wxjpeg" WX_JPEG_BUILTIN ${wxWidgets_LIBRARIES})
@@ -148,6 +145,8 @@ endif (MINGW)
 if (NOT WIN32)
     # Binary name on unix like systems (Linux, Unix)
     set_target_properties(Slic3r PROPERTIES OUTPUT_NAME "${SLIC3R_APP_CMD}")
+    # move the exe so it won't collide with a dir (like Slic3r)
+    set_target_properties(Slic3r PROPERTIES RUNTIME_OUTPUT_DIRECTORY  "${CMAKE_BINARY_DIR}/bin")
 endif ()
 
 target_link_libraries(Slic3r libslic3r libcereal)

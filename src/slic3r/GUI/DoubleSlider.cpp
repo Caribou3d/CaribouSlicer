@@ -795,15 +795,18 @@ wxString Control::get_label(int tick, LabelType label_type/* = ltHeightWithLayer
         return str;
 
     // get the layer num (gcode can have 0, but not preview)
-    bool is_preview_not_gcode = m_layers_times.size()  == m_values.size();
+    bool is_preview_not_gcode = (m_layers_times.size() == 0) ? true : (m_layers_times.size() == m_values.size());
+    //m_layers_times.size() = 0 if we're on sliced preview tab
+
     if (m_is_wipe_tower) {
         is_preview_not_gcode = (m_layers_values.size() != m_values.size());
     } else {
         //assert(m_layers_times.size() == m_values.size() - 1 || m_layers_times.size()  == m_values.size() || m_layers_times.empty());
         //assert(m_layers_values.empty());
     }
+    //is_preview_not_gcode = true then we're on sliced preview tab
     const size_t layer_number = is_preview_not_gcode ? value + 1 : value;
-    const size_t time_idx = is_preview_not_gcode ? value : value - 1;
+    const size_t time_idx = is_preview_not_gcode ? value : value;
 
     // When "Print Settings -> Multiple Extruders -> No sparse layer" is enabled, then "Smart" Wipe Tower is used for wiping.
     // As a result, each layer with tool changes is splited for min 3 parts: first tool, wiping, second tool ...
@@ -2243,12 +2246,12 @@ void Control::show_cog_icon_context_menu()
 
 bool check_color_change(const PrintObject* object, size_t frst_layer_id, size_t layers_cnt, bool check_overhangs, std::function<bool(const Layer*)> break_condition)
 {
-    double prev_area = area(object->get_layer(frst_layer_id)->lslices);
+    double prev_area = area(object->get_layer(frst_layer_id)->lslices());
 
     bool detected = false;
     for (size_t i = frst_layer_id+1; i < layers_cnt; i++) {
         const Layer* layer = object->get_layer(i);
-        double cur_area = area(layer->lslices);
+        double cur_area = area(layer->lslices());
 
         // check for overhangs
         if (check_overhangs && cur_area > prev_area && !equivalent_areas(prev_area, cur_area))

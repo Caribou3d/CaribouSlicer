@@ -37,7 +37,8 @@ namespace Slic3r {
             // For support modifiers, the type may have been switched from blocker to enforcer and vice versa.
             assert((model_volume_dst->is_support_modifier() && model_volume_src->is_support_modifier()) || model_volume_dst->type() == model_volume_src->type());
             model_object_dst.volumes.emplace_back(model_volume_dst);
-            if (model_volume_dst->is_support_modifier() || model_volume_dst->is_seam_position()) {
+            if (model_volume_dst->is_support_modifier() || model_volume_dst->is_seam_position() ||
+                model_volume_dst->is_brim()) {
                 // For support modifiers, the type may have been switched from blocker to enforcer and vice versa.
                 model_volume_dst->set_type(model_volume_src->type());
                 model_volume_dst->set_transformation(model_volume_src->get_transformation());
@@ -45,7 +46,8 @@ namespace Slic3r {
             assert(model_volume_dst->get_matrix().isApprox(model_volume_src->get_matrix()));
         } else {
             // The volume was not found in the old list. Create a new copy.
-            assert(model_volume_src->is_support_modifier() || model_volume_src->is_seam_position());
+            assert(model_volume_src->is_support_modifier() || model_volume_src->is_seam_position() ||
+                   model_volume_src->is_brim());
             model_object_dst.volumes.emplace_back(new ModelVolume(*model_volume_src));
             model_object_dst.volumes.back()->set_model_object(&model_object_dst);
         }
@@ -221,12 +223,11 @@ static t_config_option_keys print_config_diffs(
             //FIXME This may happen when executing some test cases.
             continue;
         const ConfigOption *opt_new_filament = std::binary_search(extruder_retract_keys.begin(), extruder_retract_keys.end(), opt_key) ? new_full_config.option(filament_prefix + opt_key) : nullptr;
-        if (opt_new_filament != nullptr && ! opt_new_filament->is_nil()) {
+        if (opt_new_filament != nullptr) {
             // An extruder retract override is available at some of the filament presets.
-            bool overriden = opt_new->overriden_by(opt_new_filament);
-            if (overriden || *opt_old != *opt_new) {
+            if (*opt_old != *opt_new || opt_new->overriden_by(opt_new_filament)) {
                 auto opt_copy = opt_new->clone();
-                opt_copy->apply_override(opt_new_filament);
+                bool overriden = opt_copy->apply_override(opt_new_filament);
                 bool changed = *opt_old != *opt_copy;
                 if (changed)
                     print_diff.emplace_back(opt_key);
@@ -980,6 +981,9 @@ Print::ApplyStatus Print::apply(const Model &model, DynamicPrintConfig new_full_
 	new_full_config.option("filament_settings_id",         true);
 	new_full_config.option("printer_settings_id",          true);
     new_full_config.option("physical_printer_settings_id", true);
+    new_full_config.option("print_settings_modified",      true);
+    new_full_config.option("filament_settings_modified",   true);
+    new_full_config.option("printer_settings_modified",    true);
     new_full_config.normalize_fdm();
 
     // Find modified keys of the various configs. Resolve overrides extruder retract values by filament profiles.
@@ -1175,7 +1179,12 @@ Print::ApplyStatus Print::apply(const Model &model, DynamicPrintConfig new_full_
         bool layer_height_ranges_differ = ! layer_height_ranges_equal(model_object.layer_config_ranges, model_object_new.layer_config_ranges, model_object_new.layer_height_profile.empty());
         bool model_origin_translation_differ = model_object.origin_translation != model_object_new.origin_translation;
         auto print_objects_range        = print_object_status_db.get_range(model_object);
-        bool seam_position_differ       = model_volume_list_changed(model_object, model_object_new, ModelVolumeType::SEAM_POSITION);
+        bool seam_position_differ       = model_volume_list_changed(model_object, model_object_new, ModelVolumeType::SEAM_POSITION_CENTER)
+            || model_volume_list_changed(model_object, model_object_new, ModelVolumeType::SEAM_POSITION_CENTER_Z)
+            || model_volume_list_changed(model_object, model_object_new, ModelVolumeType::SEAM_POSITION_INSIDE_CENTER)
+            || model_volume_list_changed(model_object, model_object_new, ModelVolumeType::SEAM_POSITION_INSIDE);
+        bool brim_patch_differ          = model_volume_list_changed(model_object, model_object_new, ModelVolumeType::BRIM_PATCH) ||
+                                          model_volume_list_changed(model_object, model_object_new, ModelVolumeType::BRIM_NEGATIVE);
         // The list actually can be empty if all instances are out of the print bed.
         //assert(print_objects_range.begin() != print_objects_range.end());
         // All PrintObjects in print_objects_range shall point to the same prints_objects_regions
@@ -1205,7 +1214,7 @@ Print::ApplyStatus Print::apply(const Model &model, DynamicPrintConfig new_full_
             model_object.assign_copy(model_object_new);
         } else {
             model_object_status.print_object_regions_status = ModelObjectStatus::PrintObjectRegionsStatus::Valid;
-            if (supports_differ || seam_position_differ || model_custom_supports_data_changed(model_object, model_object_new)) {
+            if (supports_differ || seam_position_differ || brim_patch_differ || model_custom_supports_data_changed(model_object, model_object_new)) {
                 // First stop background processing before shuffling or deleting the ModelVolumes in the ModelObject's list.
                 if (supports_differ) {
                     this->call_cancel_callback();
@@ -1224,6 +1233,13 @@ Print::ApplyStatus Print::apply(const Model &model, DynamicPrintConfig new_full_
                     update_apply_status(false);
                     // Invalidate just the gcode step.
                     invalidate_step(psGCodeExport);
+                    // Copy just the seam volumes.
+                    model_volume_list_update_supports_seams(model_object, model_object_new);
+                } else if (brim_patch_differ) {
+                    this->call_cancel_callback();
+                    update_apply_status(false);
+                    // Invalidate just the gcode step.
+                    invalidate_step(psSkirtBrim);
                     // Copy just the seam volumes.
                     model_volume_list_update_supports_seams(model_object, model_object_new);
                 }

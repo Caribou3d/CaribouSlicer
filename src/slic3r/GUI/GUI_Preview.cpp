@@ -34,6 +34,7 @@
 #include <wx/combobox.h>
 #include <wx/checkbox.h>
 #include <wx/display.h>
+#include <wx/wupdlock.h>
 
 #include <boost/locale.hpp>
 #include <boost/locale/generator.hpp>
@@ -453,7 +454,7 @@ wxBoxSizer* Preview::create_layers_slider_sizer()
     m_layers_slider = new DoubleSlider::Control(this, wxID_ANY, 0, 0, 0, 100);
     std::lock_guard lock(m_layers_slider->lock_render());
 
-    m_layers_slider->SetDrawMode(wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology() == ptSLA,
+    m_layers_slider->SetDrawMode(wxGetApp().get_current_printer_technology() == ptSLA,
         wxGetApp().preset_bundle->fff_prints.get_edited_preset().config.opt_bool("complete_objects"));
     m_layers_slider->enable_action_icon(wxGetApp().is_editor());
 
@@ -551,6 +552,20 @@ void Preview::update_layers_slider(const std::vector<double>& layers_z, bool sho
     bool   snap_to_min = force_sliders_full_range || m_layers_slider->is_lower_at_min();
     bool   snap_to_max = force_sliders_full_range || m_layers_slider->is_higher_at_max();
 
+    int current_lower_tick = m_layers_slider->GetLowerValue();
+    int current_higher_tick = m_layers_slider->GetHigherValue();
+    if (layers_z.size() == m_layers_slider->GetMaxValue() + 2) {
+        // new array is bigger by one
+        if (current_lower_tick == current_higher_tick || !snap_to_min) {
+            current_lower_tick++;
+        }
+        current_higher_tick++;
+    } else if (layers_z.size() == m_layers_slider->GetMaxValue()) {
+        // new array is smaller by one
+        current_lower_tick = std::max(current_lower_tick - 1, 0);
+        current_higher_tick =  std::max(current_higher_tick - 1, 0);
+    }
+
     // Detect and set manipulation mode for double slider
     update_layers_slider_mode();
     
@@ -571,15 +586,15 @@ void Preview::update_layers_slider(const std::vector<double>& layers_z, bool sho
     assert(m_layers_slider->GetMinValue() == 0);
     m_layers_slider->SetMaxValue(layers_z.empty() ? 0 : layers_z.size() - 1);
 
-    int idx_low = 0;
-    int idx_high = m_layers_slider->GetMaxValue();
+    int idx_low = std::max(current_lower_tick, 0);
+    int idx_high = snap_to_max ? m_layers_slider->GetMaxValue() : std::min(current_higher_tick, m_layers_slider->GetMaxValue());
     if (!layers_z.empty()) {
-        if (!snap_to_min) {
+        if (!snap_to_min && !is_approx(layers_z[idx_low], z_low, 0.0000001)) {
             int idx_new = find_close_layer_idx(layers_z, z_low, DoubleSlider::epsilon()/*1e-6*/);
             if (idx_new != -1)
                 idx_low = idx_new;
         }
-        if (!snap_to_max) {
+        if (!snap_to_max && !is_approx(layers_z[idx_high], z_high, 0.0000001)) {
             int idx_new = find_close_layer_idx(layers_z, z_high, DoubleSlider::epsilon()/*1e-6*/);
             if (idx_new != -1)
                 idx_high = idx_new;
@@ -650,13 +665,13 @@ void Preview::update_layers_slider(const std::vector<double>& layers_z, bool sho
             if (height / longer_side > 0.3 || num_layers < 2)
                 continue;
 
-            const ExPolygons& bottom = object->get_layer(0)->lslices;
+            const ExPolygons& bottom = object->get_layer(0)->lslices();
             double bottom_area = area(bottom);
 
             // at least 25% of object's height have to be a solid 
             int  i, min_solid_height = int(0.25 * num_layers);
             for (i = 1; i <= min_solid_height; ++ i) {
-                double cur_area = area(object->get_layer(i)->lslices);
+                double cur_area = area(object->get_layer(i)->lslices());
                 if (!DoubleSlider::equivalent_areas(bottom_area, cur_area)) {
                     // but due to the elephant foot compensation, the first layer may be slightly smaller than the others
                     if (i == 1 && fabs(cur_area - bottom_area) / bottom_area < 0.1) {
@@ -802,7 +817,7 @@ void Preview::update_moves_slider()
     alternate_values.reserve(view.endpoints.last - view.endpoints.first + 1);
     unsigned int last_gcode_id = view.gcode_ids[view.endpoints.first];
     for (unsigned int i = view.endpoints.first; i <= view.endpoints.last; ++i) {
-        assert(view.gcode_ids.size() > i);
+        //assert(view.gcode_ids.size() > i); //can happen in 0th layer (before first layer)
         if (view.gcode_ids.size() > i) {
             if (i > view.endpoints.first) {
                 // skip consecutive moves with same gcode id (resulting from processing G2 and G3 lines)

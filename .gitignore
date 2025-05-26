@@ -18,8 +18,11 @@ build*
 build-linux/*
 deps/build*
 deps/build-linux/*
-**/.DS_Store
 **/.idea/
 .pkg_cache
 cmake/CPackConfig.cmake
 CMakeUserPresets.json
+**/bad_*
+# MacOS Ignores
+.DS_Store
+

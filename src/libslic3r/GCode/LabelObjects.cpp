@@ -1,12 +1,12 @@
 #include "LabelObjects.hpp"
 
-#include "ClipperUtils.hpp"
-#include "Geometry/ConvexHull.hpp"
-#include "Model.hpp"
-#include "Print.hpp"
-#include "TriangleMeshSlicer.hpp"
+#include "libslic3r/ClipperUtils.hpp"
+#include "libslic3r/Geometry/ConvexHull.hpp"
+#include "libslic3r/Model.hpp"
+#include "libslic3r/Print.hpp"
+#include "libslic3r/TriangleMeshSlicer.hpp"
 
-#include <boost/regex.hpp>
+#include <regex>
 
 namespace Slic3r::GCode {
 
@@ -159,6 +159,8 @@ std::string LabelObjects::all_objects_header(BoundingBoxf3 &global_bounding_box,
         out.append(",\"boundingbox_center\":[").append(buffer).append("]");
         std::snprintf(buffer, sizeof(buffer) - 1, "%.3f,%.3f,%.3f", bounding_box.size().x(), bounding_box.size().y(), bounding_box.size().z());
         out.append(",\"boundingbox_size\":[").append(buffer).append("]");
+        std::snprintf(buffer, sizeof(buffer) - 1, "%.3f,%.3f,%.3f", print_instance->model_instance->get_scaling_factor(Axis::X), print_instance->model_instance->get_scaling_factor(Axis::Y), print_instance->model_instance->get_scaling_factor(Axis::Z));
+        out.append(",\"scale\":[").append(buffer).append("]");
         out.append(",\"outline\":[");
         for (const Point& point : outline) {
             std::snprintf(buffer, sizeof(buffer) - 1, "[%.3f,%.3f],", unscale<float>(point[0]), unscale<float>(point[1]));

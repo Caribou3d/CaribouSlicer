@@ -44,12 +44,14 @@ namespace Slic3r {
 
 static const std::string VENDOR_PREFIX = "vendor:";
 static const std::string MODEL_PREFIX = "model:";
-//The file contains data for AppUpdater.cpp
-static const std::string VERSION_CHECK_URL = "https://caribou3d.com/CaribouSlicerV2/CaribouSlicer.version";
+static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/" SLIC3R_GITHUB "/releases";
 // Url to index archive zip that contains latest indicies
-static const std::string INDEX_ARCHIVE_URL= "https://caribou3d.com/CaribouSlicerV2/repository/vendor_indices.zip";
+static const std::string INDEX_ARCHIVE_URL= "https://api.github.com/repos/" SLIC3R_GITHUB "-profiles/releases";
+//to get the slic3r idx: look at the json from INDEX_ARCHIVE_URL, and request the assets_url
+// then, in t8he json look for an entry with name == "vendor_indices.zip"
+
 // Url to folder with vendor profile files. Used when downloading new profiles that are not in resources folder.
-static const std::string PROFILE_FOLDER_URL = "https://caribou3d.com/CaribouSlicerV2/repository/vendors/";
+static const std::string PROFILE_FOLDER_URL = "https://raw.githubusercontent.com/" SLIC3R_GITHUB "-profiles/main/";
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
 const std::string AppConfig::SECTION_MATERIALS = "sla_materials";
@@ -111,9 +113,9 @@ void AppConfig::set_defaults()
         // Disable background processing by default as it is not stable.
         if (get("background_processing").empty())
             set("background_processing", "0");
-        // Enable support issues alerts by default
+        // Disable support issues alerts by default
         if (get("alert_when_supports_needed").empty())
-            set("alert_when_supports_needed", "1");
+            set("alert_when_supports_needed", "0");
         // If set, the "Controller" tab for the control of the printer over serial line and the serial port settings are hidden.
         // By default, Prusa has the controller hidden.
         if (get("no_controller").empty())
@@ -132,39 +134,39 @@ void AppConfig::set_defaults()
         if (get("drop_project_action").empty())
             set("drop_project_action", "1");
 
-//         if (get("freecad_path").empty() || get("freecad_path") == ".") {
-//             set("freecad_path", ".");
-//             //try to find it
-// #ifdef _WIN32
-//             //windows
-//             boost::filesystem::path prg_files = "C:/Program Files";
-//             boost::filesystem::path freecad_path;
-//             if (boost::filesystem::exists(prg_files)) {
-//                 for (boost::filesystem::directory_entry& prg_dir : boost::filesystem::directory_iterator(prg_files)) {
-//                     if (prg_dir.status().type() == boost::filesystem::file_type::directory_file
-//                          && boost::starts_with(prg_dir.path().filename().string(), "FreeCAD")
-//                          && (freecad_path.empty() || freecad_path.filename().string() < prg_dir.path().filename().string())) {
-//                         freecad_path = prg_dir.path();
-//                     }
-//                 }
-//             }
-//             if (!freecad_path.empty())
-//                 set("freecad_path", freecad_path.string());
-// #else
-// #ifdef __APPLE__
-//             //apple
-//             if (boost::filesystem::exists("/Applications/FreeCAD.app/Contents/Frameworks/FreeCAD/lib"))
-//                 set("freecad_path", "/Applications/FreeCAD.app/Contents/Frameworks/FreeCAD");
+        if (get("freecad_path").empty() || get("freecad_path") == ".") {
+            set("freecad_path", ".");
+            //try to find it
+#ifdef _WIN32
+            //windows
+            boost::filesystem::path prg_files = "C:/Program Files";
+            boost::filesystem::path freecad_path;
+            if (boost::filesystem::exists(prg_files)) {
+                for (boost::filesystem::directory_entry& prg_dir : boost::filesystem::directory_iterator(prg_files)) {
+                    if (prg_dir.status().type() == boost::filesystem::file_type::directory_file
+                         && boost::starts_with(prg_dir.path().filename().string(), "FreeCAD")
+                         && (freecad_path.empty() || freecad_path.filename().string() < prg_dir.path().filename().string())) {
+                        freecad_path = prg_dir.path();
+                    }
+                }
+            }
+            if (!freecad_path.empty())
+                set("freecad_path", freecad_path.string());
+#else
+#ifdef __APPLE__
+            //apple
+            if (boost::filesystem::exists("/Applications/FreeCAD.app/Contents/Frameworks/FreeCAD/lib"))
+                set("freecad_path", "/Applications/FreeCAD.app/Contents/Frameworks/FreeCAD");
 
-// #else
-//             // linux
-//             if (boost::filesystem::exists("/usr/lib/freecad/lib"))
-//                 set("freecad_path", "/usr/lib/freecad");
-//             else if (boost::filesystem::exists("/usr/local/bin/FreeCAD/lib"))
-//                 set("freecad_path", "/usr/local/bin/FreeCAD");
-// #endif
-// #endif
-//         }
+#else
+            // linux
+            if (boost::filesystem::exists("/usr/lib/freecad/lib"))
+                set("freecad_path", "/usr/lib/freecad");
+            else if (boost::filesystem::exists("/usr/local/bin/FreeCAD/lib"))
+                set("freecad_path", "/usr/local/bin/FreeCAD");
+#endif
+#endif
+        }
 
         if (get("show_overwrite_dialog").empty())
             set("show_overwrite_dialog", "1");
@@ -174,6 +176,9 @@ void AppConfig::set_defaults()
 
         if (get("font_size").empty())
             set("font_size", "0");
+
+        if (get("side_panel_width").empty())
+            set("side_panel_width", "42");
 
         if (get("gcodeviewer_decimals").empty())
             set("gcodeviewer_decimals", "2");
@@ -284,7 +289,7 @@ void AppConfig::set_defaults()
             set("show_collapse_button", "1");
 
         if (get("suppress_hyperlinks").empty())
-            set("suppress_hyperlinks", "1");
+            set("suppress_hyperlinks", "confirm");
 
         if (get("focus_platter_on_mouse").empty())
             set("focus_platter_on_mouse", "1");
@@ -305,7 +310,7 @@ void AppConfig::set_defaults()
            set("notify_release", "all"); // or "none" or "release"
 
         if (get("auto_switch_preview").empty())
-            set("auto_switch_preview", "2");
+            set("auto_switch_preview", "platter");
 
 #if ENABLE_ENVIRONMENT_MAP
         if (get("use_environment_map").empty())
@@ -546,7 +551,8 @@ void AppConfig::init_ui_layout() {
                         ifs.open(version_path.string());
                         boost::property_tree::read_ini(ifs, tree_ini);
                         std::string name = tree_ini.get<std::string>("name");
-                        Semver version = Semver::parse(tree_ini.get<std::string>("version")).get();
+                        assert(Semver::parse(tree_ini.get<std::string>("version")));
+                        Semver version = *Semver::parse(tree_ini.get<std::string>("version"));
                         std::string description = tree_ini.get<std::string>("description");
                         name_2_version_description_path[name] = LayoutEntry(name, description, entry.path(), version);
                     }
@@ -598,7 +604,7 @@ void AppConfig::init_ui_layout() {
 
     //set ui_layout to a default if not set
     if (current_name.empty() || !find_current) {
-        auto default_layout = datadir_map.find("Standard");
+         auto default_layout = datadir_map.find("Standard");
         if (default_layout == datadir_map.end()) {
             default_layout = datadir_map.find("Default");
         }
@@ -767,8 +773,8 @@ std::string AppConfig::load(const std::string &path)
     if (ini_ver) {
         m_orig_version = *ini_ver;
         // Make 1.40.0 alphas compare well
-        ini_ver->set_metadata(boost::none);
-        ini_ver->set_prerelease(boost::none);
+        ini_ver->set_metadata(std::nullopt);
+        ini_ver->set_prerelease(std::nullopt);
         m_legacy_datadir = ini_ver < Semver(1, 40, 0, 0);
     }
 

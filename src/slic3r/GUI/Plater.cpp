@@ -24,13 +24,13 @@
 #include <algorithm>
 #include <chrono>
 #include <numeric>
+#include <optional>
 #include <vector>
 #include <string>
 #include <regex>
 #include <future>
 #include <boost/algorithm/string.hpp>
 #include <boost/nowide/cstdio.hpp>
-#include <boost/optional.hpp>
 #include <boost/filesystem/fstream.hpp>
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem/operations.hpp>
@@ -59,52 +59,65 @@
 
 #include <LibBGCode/convert/convert.hpp>
 
+#include "libslic3r/ClipperUtils.hpp"
+#include "libslic3r/CustomGCode.hpp"
 #include "libslic3r/libslic3r.h"
 #include "libslic3r/Format/STL.hpp"
 #include "libslic3r/Format/AMF.hpp"
 #include "libslic3r/Format/3mf.hpp"
+#include "libslic3r/Format/bbs_3mf.hpp"
 #include "libslic3r/Format/OBJ.hpp"
 #include "libslic3r/GCode/ThumbnailData.hpp"
 #include "libslic3r/Model.hpp"
-#include "libslic3r/SLA/Hollowing.hpp"
-#include "libslic3r/SLA/SupportPoint.hpp"
-#include "libslic3r/SLA/ReprojectPointsOnMesh.hpp"
+#include "libslic3r/miniz_extension.hpp"
+#include "libslic3r/Platform.hpp"
 #include "libslic3r/Polygon.hpp"
+#include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/Print.hpp"
 #include "libslic3r/PrintConfig.hpp"
 #include "libslic3r/SLAPrint.hpp"
+#include "libslic3r/SLA/Hollowing.hpp"
+#include "libslic3r/SLA/SupportPoint.hpp"
+#include "libslic3r/SLA/ReprojectPointsOnMesh.hpp"
 #include "libslic3r/Utils.hpp"
-#include "libslic3r/PresetBundle.hpp"
-#include "libslic3r/ClipperUtils.hpp"
-#include "libslic3r/miniz_extension.hpp"
 
 // For stl export
 #include "libslic3r/CSGMesh/ModelToCSGMesh.hpp"
 #include "libslic3r/CSGMesh/PerformCSGMeshBooleans.hpp"
 
+#include "3DBed.hpp"
+#include "3DScene.hpp"
+#include "BackgroundSlicingProcess.hpp"
+#include "Camera.hpp"
+#include "ConfigWizard.hpp"
+#include "FileArchiveDialog.hpp"
+#include "GLCanvas3D.hpp"
+#include "GLToolbar.hpp"
 #include "GUI.hpp"
 #include "GUI_App.hpp"
+#include "GUI_Factories.hpp"
+#include "GUI_Geometry.hpp"
 #include "GUI_ObjectList.hpp"
 #include "GUI_ObjectManipulation.hpp"
 #include "GUI_ObjectLayers.hpp"
-#include "GUI_Utils.hpp"
-#include "GUI_Geometry.hpp"
-#include "GUI_Factories.hpp"
-#include "wxExtensions.hpp"
-#include "MainFrame.hpp"
-#include "format.hpp"
-#include "3DScene.hpp"
-#include "GLCanvas3D.hpp"
-#include "Selection.hpp"
-#include "GLToolbar.hpp"
 #include "GUI_Preview.hpp"
-#include "3DBed.hpp"
-#include "Camera.hpp"
+#include "GUI_Utils.hpp"
+#include "InstanceCheck.hpp"
+#include "MainFrame.hpp"
 #include "Mouse3DController.hpp"
+#include "MsgDialog.hpp"
+#include "NotificationManager.hpp"
+#include "PresetComboBoxes.hpp"
+#include "PrintHostDialogs.hpp"
+#include "RemovableDriveManager.hpp"
+#include "Selection.hpp"
 #include "Tab.hpp"
+#include "WipeTowerDialog.hpp"
+#include "format.hpp"
+#include "wxExtensions.hpp"
+
 //#include "Jobs/ArrangeJob.hpp"
 #include "Jobs/ArrangeJob2.hpp"
-
 //#include "Jobs/FillBedJob.hpp"
 #include "Jobs/RotoptimizeJob.hpp"
 #include "Jobs/SLAImportJob.hpp"
@@ -112,38 +125,26 @@
 #include "Jobs/NotificationProgressIndicator.hpp"
 #include "Jobs/PlaterWorker.hpp"
 #include "Jobs/BoostThreadWorker.hpp"
-#include "BackgroundSlicingProcess.hpp"
-#include "PrintHostDialogs.hpp"
-#include "ConfigWizard.hpp"
 #include "../Utils/ASCIIFolding.hpp"
 #include "../Utils/PrintHost.hpp"
 #include "../Utils/FixModelByWin10.hpp"
 #include "../Utils/UndoRedo.hpp"
 #include "../Utils/PresetUpdater.hpp"
 #include "../Utils/Process.hpp"
-#include "RemovableDriveManager.hpp"
-#include "InstanceCheck.hpp"
-#include "NotificationManager.hpp"
-#include "PresetComboBoxes.hpp"
-#include "MsgDialog.hpp"
 #include "Gizmos/GLGizmoSimplify.hpp" // create suggestion notification
 #include "Gizmos/GLGizmoSVG.hpp" // Drop SVG file
 #include "Gizmos/GLGizmoCut.hpp"
-#include "FileArchiveDialog.hpp"
+#include "Widgets/CheckBox.hpp"
 
 #ifdef __APPLE__
 #include "Gizmos/GLGizmosManager.hpp"
 #endif // __APPLE__
 
 #include <wx/glcanvas.h>    // Needs to be last because reasons :-/
-#include "WipeTowerDialog.hpp"
 
-#include "libslic3r/CustomGCode.hpp"
-#include "libslic3r/Platform.hpp"
 
-#include "Widgets/CheckBox.hpp"
 
-using boost::optional;
+using std::optional;
 namespace fs = boost::filesystem;
 using Slic3r::_3DScene;
 using Slic3r::Preset;
@@ -394,8 +395,9 @@ void FreqChangedParams::sys_color_changed()
 
     for (auto btn: m_empty_buttons)
         btn->sys_color_changed();
-
-    wxGetApp().UpdateDarkUI(m_wiping_dialog_button, true);
+    if (m_wiping_dialog_button) {
+        wxGetApp().UpdateDarkUI(m_wiping_dialog_button, true);
+    }
 }
 
 FreqChangedParams::FreqChangedParams(wxWindow* parent) :
@@ -433,14 +435,15 @@ void FreqChangedParams::init()
             m_og = (tab_freq_fff->get_page(0)->m_optgroups[0]);
             m_og->set_config(config);
             m_og->hide_labels();
-            m_og->m_on_change =
-                Tab::set_or_add(m_og->m_on_change, [tab_freq_fff, this](t_config_option_key opt_key, boost::any value)
+            m_og->m_on_change = Tab::set_or_add(m_og->m_on_change,
+                                [tab_freq_fff, this](const OptionKeyIdx &opt_key_idx, bool enabled, const boost::any &value)
                                 {
-                                    const Option *opt_def = this->m_og->get_option_def(opt_key);
+                                    assert(enabled); //TODO fix & test
+                                    const Option *opt_def = this->m_og->get_option_def(opt_key_idx);
                                     if (opt_def && !opt_def->opt.is_script) {
                                         tab_freq_fff->update_dirty();
                                         tab_freq_fff->reload_config();
-                                        static_cast<TabFrequent *>(tab_freq_fff)->update_changed_setting(opt_key);
+                                        static_cast<TabFrequent *>(tab_freq_fff)->update_changed_setting(opt_key_idx.key);
                                     }
                                 });
             assert(tab_freq_fff->get_page_count() == 1);
@@ -528,14 +531,16 @@ void FreqChangedParams::init()
                 (tab_freq_sla->get_page(0)->m_optgroups[0]);
             m_og_sla->set_config(config);
             m_og_sla->hide_labels();
-            m_og_sla->m_on_change = Tab::set_or_add(m_og_sla->m_on_change, [tab_freq_sla,
-                                                                            this](t_config_option_key opt_key,
-                                                                                  boost::any          value) {
-                Option opt = this->m_og_other[ptSLA]->create_option_from_def(opt_key);
+            m_og_sla->m_on_change =
+                Tab::set_or_add(m_og_sla->m_on_change,
+                                [tab_freq_sla, this](const OptionKeyIdx &opt_key_idx, bool enabled,
+                                                     const boost::any &value) {
+                assert(enabled);
+                Option opt = this->m_og_other[ptSLA]->create_option_from_def(opt_key_idx.key, opt_key_idx.idx);
                 if (!opt.opt.is_script) {
                     tab_freq_sla->update_dirty();
                     tab_freq_sla->reload_config();
-                    static_cast<TabFrequent *>(tab_freq_sla)->update_changed_setting(opt_key);
+                    static_cast<TabFrequent *>(tab_freq_sla)->update_changed_setting(opt_key_idx.key);
                 }
             });
             assert(tab_freq_sla->get_page_count() == 1);
@@ -657,7 +662,7 @@ Sidebar::priv::~priv()
 
 void Sidebar::priv::show_preset_comboboxes()
 {
-    PrinterTechnology tech = wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology();
+    PrinterTechnology tech = wxGetApp().get_current_printer_technology();
 
     for (size_t i = 0; i < 2; ++i)
         sizer_presets->Show(i, tech == ptFFF);
@@ -746,7 +751,7 @@ void Sidebar::priv::hide_rich_tip(wxButton* btn)
 // Sidebar / public
 
 Sidebar::Sidebar(Plater *parent)
-    : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxSize(42 * wxGetApp().em_unit(), -1)), p(new priv(parent))
+    : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxSize(std::max(20, get_app_config()->get_int("side_panel_width")) * wxGetApp().em_unit(), -1)), p(new priv(parent))
 {
     SetFont(wxGetApp().normal_font());
     p->scrolled = new wxScrolledWindow(this);
@@ -794,7 +799,7 @@ Sidebar::Sidebar(Plater *parent)
 
     const int margin_5 = int(0.5 * wxGetApp().em_unit());// 5;
 
-    auto init_combo = [this, margin_5](PlaterPresetComboBox **combo, wxString label, Preset::Type preset_type, bool filament) {
+    auto init_combo = [this, margin_5](PlaterPresetComboBox **combo, wxString label, Preset::Type preset_type) {
         // do not print these labels. if you re-enabled these, don't forget to *2 the size in show_preset_comboboxes()
         //auto *text = new wxStaticText(p->presets_panel, wxID_ANY, label + " :");
         //text->SetFont(wxGetApp().small_font());
@@ -807,11 +812,10 @@ Sidebar::Sidebar(Plater *parent)
                                     int(0.3*wxGetApp().em_unit()));
 
         auto *sizer_presets = this->p->sizer_presets;
-        auto *sizer_filaments = this->p->sizer_filaments;
         // Hide controls, which will be shown/hidden in respect to the printer technology
         //text->Show(preset_type == Preset::TYPE_PRINTER);
         //sizer_presets->Add(text, 0, wxALIGN_LEFT | wxEXPAND | wxRIGHT, 4);
-        if (! filament) {
+        {
             combo_and_btn_sizer->ShowItems(preset_type == Preset::TYPE_PRINTER);
             sizer_presets->Add(combo_and_btn_sizer, 0, wxEXPAND | 
 #ifdef __WXGTK3__
@@ -820,25 +824,20 @@ Sidebar::Sidebar(Plater *parent)
                 wxBOTTOM, 1);
                 (void)margin_5; // supress unused capture warning
 #endif // __WXGTK3__
-        } else {
-            sizer_filaments->Add(combo_and_btn_sizer, 0, wxEXPAND |
-#ifdef __WXGTK3__
-                wxRIGHT, margin_5);
-#else
-                wxBOTTOM, 1);
-#endif // __WXGTK3__
-            (*combo)->set_extruder_idx(0);
-            sizer_filaments->ShowItems(false);
-            sizer_presets->Add(sizer_filaments, 1, wxEXPAND);
         }
     };
 
-    p->combos_filament.push_back(nullptr);
-    init_combo(&p->combo_print,         _L("Print settings"),     Preset::TYPE_FFF_PRINT,         false);
-    init_combo(&p->combos_filament[0],  _L("Filament"),           Preset::TYPE_FFF_FILAMENT,      true);
-    init_combo(&p->combo_sla_print,     _L("SLA print settings"), Preset::TYPE_SLA_PRINT,     false);
-    init_combo(&p->combo_sla_material,  _L("SLA material"),       Preset::TYPE_SLA_MATERIAL,  false);
-    init_combo(&p->combo_printer,       _L("Printer"),            Preset::TYPE_PRINTER,       false);
+    init_combo(&p->combo_print,         _L("Print settings"),     Preset::TYPE_FFF_PRINT);
+    //init_combo(&p->combos_filament[0],  _L("Filament"),           Preset::TYPE_FFF_FILAMENT,      true);
+    {
+        p->combos_filament.push_back(nullptr);
+        this->init_filament_combo(&p->combos_filament[0], 0);
+        this->p->sizer_filaments->ShowItems(false);
+        this->p->sizer_presets->Add(this->p->sizer_filaments, 1, wxEXPAND);
+    }
+    init_combo(&p->combo_sla_print,     _L("SLA print settings"), Preset::TYPE_SLA_PRINT);
+    init_combo(&p->combo_sla_material,  _L("SLA material"),       Preset::TYPE_SLA_MATERIAL);
+    init_combo(&p->combo_printer,       _L("Printer"),            Preset::TYPE_PRINTER);
 
     p->sizer_params = new wxBoxSizer(wxVERTICAL);
 
@@ -1001,7 +1000,26 @@ void Sidebar::init_filament_combo(PlaterPresetComboBox** combo, const int extr_i
     (*combo)->set_extruder_idx(extr_idx);
 
     auto combo_and_btn_sizer = new wxBoxSizer(wxHORIZONTAL);
+    {   // tool name
+        auto opt = wxGetApp().preset_bundle->printers.get_edited_preset().config.option<ConfigOptionStrings>("tool_name");
+        //assert(opt); // sla don't have tool_name
+        std::string tool_name = opt ? opt->get_at(extr_idx) : "";
+        int size_panel = get_app_config()->get_int("side_panel_width");
+        size_t max_letters  = size_t(std::max(4, size_panel/4));
+        if (tool_name.size() > max_letters) {
+            if (max_letters > 6) {
+                tool_name = tool_name.substr(0, max_letters-3) + std::string("... ");
+            } else {
+                tool_name = tool_name.substr(0, max_letters);
+            }
+        }
+        (*combo)->label = new wxStaticText(p->presets_panel, wxID_ANY, tool_name.empty() ? "" : ( tool_name + std::string(": ")));
+        (*combo)->label->SetFont(wxGetApp().small_font());
+        (*combo)->label->SetToolTip(tool_name); //doesn't work in msw because static text doesn't get mouse event
+        combo_and_btn_sizer->Add((*combo)->label, 0, wxALIGN_LEFT | wxEXPAND | wxRIGHT, 4);
+    }
     combo_and_btn_sizer->Add(*combo, 1, wxEXPAND);
+    assert((*combo)->edit_btn);
     combo_and_btn_sizer->Add((*combo)->edit_btn, 0, wxALIGN_CENTER_VERTICAL | wxLEFT | wxRIGHT,
                             int(0.3*wxGetApp().em_unit()));
 
@@ -1011,6 +1029,7 @@ void Sidebar::init_filament_combo(PlaterPresetComboBox** combo, const int extr_i
 #else
         wxBOTTOM, 1);
 #endif // __WXGTK3__
+
 }
 
 void Sidebar::remove_unused_filament_combos(const size_t current_extruder_count)
@@ -1043,8 +1062,20 @@ void Sidebar::update_all_preset_comboboxes()
     // Update the filament choosers to only contain the compatible presets, update the color preview,
     // update the dirty flags.
     if (print_tech == ptFFF) {
-        for (PlaterPresetComboBox* cb : p->combos_filament)
+        for (size_t extr_idx = 0; extr_idx < p->combos_filament.size(); ++extr_idx) {
+            PlaterPresetComboBox *cb  = p->combos_filament[extr_idx];
             cb->update();
+            // update tool name
+            auto opt = preset_bundle.printers.get_edited_preset().config.option<ConfigOptionStrings>("tool_name");
+            assert(opt);
+            if (opt && cb->label) {
+                std::string tool_name = opt ? opt->get_at(extr_idx) : nullptr;
+                if (tool_name.size() > 10) {
+                    tool_name = tool_name.substr(0, 7) + std::string("... ");
+                }
+                cb->label->SetLabel(tool_name.empty() ? "" : (tool_name + std::string(": ")));
+            }
+        }
     }
 }
 
@@ -1212,8 +1243,13 @@ void Sidebar::search()
 void Sidebar::jump_to_option(const std::string& composite_key)
 {
     const auto        separator_pos = composite_key.find(";");
-    const std::string opt_key       = composite_key.substr(0, separator_pos);
+    std::string       opt_key       = composite_key.substr(0, separator_pos);
     const std::string tab_name      = composite_key.substr(separator_pos + 1, composite_key.length());
+    int32_t           opt_idx       = -1;
+    if (size_t hpos = opt_key.find("#"); hpos != std::string::npos) {
+        opt_idx = std::atoi(opt_key.substr(hpos + 1).c_str());
+        opt_key = opt_key.substr(0, hpos);
+    }
 
     for (Tab* tab : wxGetApp().tabs_list) {
         if (tab->name() == tab_name) {
@@ -1223,8 +1259,8 @@ void Sidebar::jump_to_option(const std::string& composite_key)
             // so resort searcher before get an option
             // p->searcher.sort_options_by_key();
             assert(p->searcher.is_sorted());
-            const Search::Option& opt = p->searcher.get_option(opt_key, tab->type());
-            tab->activate_option(opt_key, boost::nowide::narrow(opt.category));
+            const Slic3r::Search::SearchOption& opt = p->searcher.get_option(opt_key, opt_idx, tab->type());
+            tab->activate_option({opt_key, opt_idx}, boost::nowide::narrow(opt.category));
 
             // Revert sort of searcher back
             //p->searcher.sort_options_by_label();
@@ -1236,12 +1272,13 @@ void Sidebar::jump_to_option(const std::string& composite_key)
 void Sidebar::jump_to_option(const std::string& opt_key, Preset::Type type, const std::wstring& category)
 {
     //const Search::Option& opt = p->searcher.get_option(opt_key, type);
-    wxGetApp().get_tab(type)->activate_option(opt_key, category);
+    // note: not avaialble for indexed-options
+    wxGetApp().get_tab(type)->activate_option(OptionKeyIdx::scalar(opt_key), category);
 }
 
 void Sidebar::jump_to_option(size_t selected)
 {
-    const Search::Option& opt = p->searcher.get_option(selected);
+    const Slic3r::Search::SearchOption& opt = p->searcher.get_option(selected);
     if (opt.type == Preset::TYPE_PREFERENCES)
         wxGetApp().open_preferences(opt.opt_key(), boost::nowide::narrow(opt.group));
     else {
@@ -1270,7 +1307,7 @@ void Sidebar::jump_to_option(size_t selected)
             }
         }
 
-        wxGetApp().get_tab(opt.type, false)->activate_option(opt.opt_key_with_idx(), boost::nowide::narrow(opt.category));
+        wxGetApp().get_tab(opt.type, false)->activate_option({opt.opt_key(), opt.idx}, boost::nowide::narrow(opt.category));
     }
 
 }
@@ -2207,6 +2244,7 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
         "draft_shield",
         "extruder_clearance_radius",
         "first_layer_extrusion_width",
+        "first_layer_infill_extrusion_width",
         "init_z_rotate", 
         "max_print_height",
         "perimeter_extrusion_width",
@@ -2216,6 +2254,7 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
         "variable_layer_height", "nozzle_diameter", "single_extruder_multi_material",
         "wipe_tower", "wipe_tower_brim_width", "wipe_tower_rotation_angle", "wipe_tower_width", "wipe_tower_x", "wipe_tower_y",
         "wipe_tower_cone_angle", "wipe_tower_extra_spacing", "wipe_tower_extruder",
+        "filament_minimal_purge_on_wipe_tower", "wiping_volumes_matrix", // for wipe_tower_data
         "extruder_colour", "filament_colour", "material_colour",
         "printer_model", "printer_notes", "printer_technology",
         // These values are necessary to construct SlicingParameters by the Canvas3D variable layer height editor.
@@ -2716,6 +2755,9 @@ std::vector<size_t> Plater::priv::load_files(const std::vector<fs::path>& input_
                     ConfigSubstitutionContext config_substitutions{ ForwardCompatibilitySubstitutionRule::Enable };
                     model = Slic3r::Model::read_from_archive(path.string(), &config_loaded, &config_substitutions, only_if(load_config, Model::LoadAttribute::CheckVersion));
                     if (load_config && !config_loaded.empty()) {
+                        // loaded: allow to ask again for support_material_overhangs
+                        wxGetApp().get_tab(Preset::TYPE_FFF_PRINT)->get_config_manipulation().initialize_support_material_overhangs_queried(false);
+
                         // Based on the printer technology field found in the loaded config, select the base for the config,
                         loaded_printer_technology = Preset::printer_technology(config_loaded);
 
@@ -2735,8 +2777,8 @@ std::vector<size_t> Plater::priv::load_files(const std::vector<fs::path>& input_
                         config.apply(loaded_printer_technology == ptFFF ?
                             static_cast<const ConfigBase&>(FullPrintConfig::defaults()) :
                             static_cast<const ConfigBase&>(SLAFullPrintConfig::defaults()));
-                        // Set all the nullable values in defaults to nils.
-                        config.null_nullables();
+                        // Disable all the optional values in defaults.
+                        config.disable_optionals();
                         // and place the loaded config over the base.
                         config += std::move(config_loaded);
                     }
@@ -3468,8 +3510,8 @@ void Plater::priv::process_validation_warning(const std::vector<std::string>& wa
                 DynamicPrintConfig& config = wxGetApp().preset_bundle->fff_prints.get_edited_preset().config;
                 config.set_key_value("support_material", new ConfigOptionBool(true));
                 config.set_key_value("support_material_auto", new ConfigOptionBool(false));
-                print_tab->on_value_change("support_material", config.opt_bool("support_material"));
-                print_tab->on_value_change("support_material_auto", config.opt_bool("support_material_auto"));
+                print_tab->on_value_change(OptionKeyIdx::scalar("support_material"), config.opt_bool("support_material"));
+                print_tab->on_value_change(OptionKeyIdx::scalar("support_material_auto"), config.opt_bool("support_material_auto"));
                 return true;
             };
         }
@@ -3648,18 +3690,18 @@ unsigned int Plater::priv::update_background_process(bool force_validation, bool
     }
 
     //update tab if needed
-    // auto_switch_preview == 0 means "no force tab change"
-    if (wxGetApp().is_editor() && invalidated != Print::ApplyStatus::APPLY_STATUS_UNCHANGED && get_app_config()->get("auto_switch_preview") != "0")
+    // auto_switch_preview == "never" means "no force tab change"
+    if (wxGetApp().is_editor() && invalidated != Print::ApplyStatus::APPLY_STATUS_UNCHANGED && get_app_config()->get("auto_switch_preview") != "never")
     {
-        // auto_switch_preview == 3 means "force tab change only if for gcode"
-        if (get_app_config()->get("auto_switch_preview") == "3") {
+        // auto_switch_preview == "gcode" means "force tab change only if for gcode"
+        if (get_app_config()->get("auto_switch_preview") == "gcode") {
             if (this->preview->can_display_gcode())
                 main_frame->select_tab(MainFrame::ETabType::PlaterGcode, true);
-            // auto_switch_preview == 1 means "force tab change"
-        } else if (get_app_config()->get("auto_switch_preview") == "1") {
+            // auto_switch_preview == "always" means "force tab change"
+        } else if (get_app_config()->get("auto_switch_preview") == "always") {
             main_frame->select_tab(MainFrame::ETabType::Plater3D, true);
-            // auto_switch_preview == 2 means "force tab change only if already on a platter one"
-        } else if (get_app_config()->get("auto_switch_preview") == "2" || main_frame->selected_tab() < MainFrame::ETabType::LastPlater) {
+            // auto_switch_preview == "platter" means "force tab change only if already on a platter one"
+        } else if (get_app_config()->get("auto_switch_preview") == "platter" || main_frame->selected_tab() < MainFrame::ETabType::LastPlater) {
             if (this->preview->can_display_gcode())
                 main_frame->select_tab(MainFrame::ETabType::PlaterGcode, true);
             else if (this->preview->can_display_volume() && background_process.running()) // don't switch to plater3D if you modify a gcode settign and you don't have background processing
@@ -4465,7 +4507,7 @@ void Plater::priv::on_slicing_update(SlicingStatusEvent &evt)
 
 void Plater::priv::on_slicing_completed(wxCommandEvent & evt)
 {
-    if( ( get_app_config()->get("auto_switch_preview") == "1" || (get_app_config()->get("auto_switch_preview") == "2"
+    if( ( get_app_config()->get("auto_switch_preview") == "gcode" || (get_app_config()->get("auto_switch_preview") == "platter"
           && main_frame->selected_tab() < MainFrame::ETabType::LastPlater) )
         && !this->preview->can_display_gcode())
         main_frame->select_tab(MainFrame::ETabType::PlaterPreview);
@@ -4565,13 +4607,13 @@ void Plater::priv::on_process_completed(SlicingProcessCompletedEvent &evt)
 //    this->statusbar()->reset_cancel_callback();
 //    this->statusbar()->stop_busy();
     notification_manager->set_slicing_progress_export_possible();
-    // auto_switch_preview == 0 means "no force tab change"
-    // auto_switch_preview == 1 means "force tab change"
-    // auto_switch_preview == 2 means "force tab change only if already on a plater one"
-    // auto_switch_preview == 3 means "force tab change only if for gcode"
-    if (get_app_config()->get("auto_switch_preview") == "1" 
-        || (get_app_config()->get("auto_switch_preview") == "2" && main_frame->selected_tab() < MainFrame::ETabType::LastPlater) 
-        || get_app_config()->get("auto_switch_preview") == "3")
+    // auto_switch_preview == "never" means "no force tab change"
+    // auto_switch_preview == "always" means "force tab change"
+    // auto_switch_preview == "platter" means "force tab change only if already on a plater one"
+    // auto_switch_preview == "gcode" means "force tab change only if for gcode"
+    if (get_app_config()->get("auto_switch_preview") == "always" 
+        || (get_app_config()->get("auto_switch_preview") == "platter" && main_frame->selected_tab() < MainFrame::ETabType::LastPlater) 
+        || get_app_config()->get("auto_switch_preview") == "gcode")
         main_frame->select_tab(MainFrame::ETabType::PlaterGcode);
 
     // Reset the "export G-code path" name, so that the automatic background processing will be enabled again.
@@ -6040,7 +6082,7 @@ LoadProjectsDialog::LoadProjectsDialog(const std::vector<fs::path>& paths)
     id++;
     // all new window
     if (instances_allowed) {
-        btn = new wxRadioButton(this, wxID_ANY, _L("Start a new instance of PrusaSlicer"), wxDefaultPosition, wxDefaultSize, id == 0 ? wxRB_GROUP : 0);
+        btn = new wxRadioButton(this, wxID_ANY, format_wxstr(_L("Start a new instance of %1%"), SLIC3R_APP_NAME), wxDefaultPosition, wxDefaultSize, id == 0 ? wxRB_GROUP : 0);
         btn->SetValue(id == m_action);
         btn->Bind(wxEVT_RADIOBUTTON, [this, id, contains_projects](wxCommandEvent&) {
             m_action = id;
@@ -6193,7 +6235,7 @@ bool Plater::preview_zip_archive(const boost::filesystem::path& archive_path)
                                 break;
                             }
                             // if 3mf - read archive headers to find project file
-                            if ((boost::algorithm::iends_with(filename, ".3mf") && !is_project_3mf(final_path.string())) ||
+                            if ((boost::algorithm::iends_with(filename, ".3mf") && !(is_project_3mf(final_path.string()) || is_project_bambu_3mf(final_path.string()))) ||
                                 (boost::algorithm::iends_with(filename, ".amf") && !boost::algorithm::iends_with(filename, ".zip.amf"))) {
                                 non_project_paths.emplace_back(final_path);
                                 break;
@@ -6395,7 +6437,7 @@ ProjectDropDialog::ProjectDropDialog(const std::string& filename)
     choices.Add(_L("Import 3D models only"));
     choices.Add(_L("Import config only"));
     if (!single_instance_only)
-        choices.Add(_L("Start new PrusaSlicer instance"));
+        choices.Add(format_wxstr(_L("Start new %1% instance"), SLIC3R_APP_NAME));
 
     main_sizer->Add(new wxStaticText(this, wxID_ANY,
         get_wraped_wxString(_L("Select an action to apply to the file") + ": " + from_u8(filename))), 0, wxEXPAND | wxALL, 10);
@@ -6490,14 +6532,14 @@ bool Plater::load_files(const wxArrayString& filenames, bool delete_after_load/*
         std::string filename = (*it).filename().string();
 
         bool handle_as_project = (boost::algorithm::iends_with(filename, ".3mf") || boost::algorithm::iends_with(filename, ".amf"));
-        if (boost::algorithm::iends_with(filename, ".zip") && is_project_3mf(it->string())) {
+        if (boost::algorithm::iends_with(filename, ".zip") && (is_project_3mf(it->string()) || is_project_bambu_3mf(it->string()))) {
             BOOST_LOG_TRIVIAL(warning) << "File with .zip extension is 3mf project, opening as it would have .3mf extension: " << *it;
             handle_as_project = true;
         }
         if (handle_as_project) {
             ProjectDropDialog::LoadType load_type = ProjectDropDialog::LoadType::Unknown;
             {
-                if ((boost::algorithm::iends_with(filename, ".3mf") && !is_project_3mf(it->string())) ||
+                if ((boost::algorithm::iends_with(filename, ".3mf") && !(is_project_3mf(it->string()) || is_project_bambu_3mf(it->string()))) ||
                     (boost::algorithm::iends_with(filename, ".amf") && !boost::algorithm::iends_with(filename, ".zip.amf")))
                     load_type = ProjectDropDialog::LoadType::LoadGeometry;
                 else {
@@ -7840,7 +7882,7 @@ void Plater::send_gcode()
                                        wxGetApp().app_config->get_bool("use_binary_gcode_when_supported");
             const wxString error_str = check_binary_vs_ascii_gcode_extension(printer_technology(), ext, binary_output);
             if (! error_str.IsEmpty()) {
-                ErrorDialog(this, error_str, t_kill_focus([](const std::string& key) -> void { wxGetApp().sidebar().jump_to_option(key); })).ShowModal();
+                ErrorDialog(this, error_str, std::function<void(const std::string&)>([](const std::string& key) -> void { wxGetApp().sidebar().jump_to_option(key); })).ShowModal();
                 return;
             }
 
@@ -8694,7 +8736,7 @@ bool Plater::can_paste_from_clipboard() const
     if (clipboard.is_empty() && p->sidebar->obj_list()->clipboard_is_empty())
         return false;
 
-    if ((wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology() == ptSLA) && !clipboard.is_sla_compliant())
+    if ((wxGetApp().get_current_printer_technology() == ptSLA) && !clipboard.is_sla_compliant())
         return false;
 
     Selection::EMode mode = clipboard.get_mode();
@@ -8713,7 +8755,7 @@ bool Plater::can_copy_to_clipboard() const
         return false;
 
     const Selection& selection = p->view3D->get_canvas3d()->get_selection();
-    if ((wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology() == ptSLA) && !selection.is_sla_compliant())
+    if ((wxGetApp().get_current_printer_technology() == ptSLA) && !selection.is_sla_compliant())
         return false;
 
     return true;

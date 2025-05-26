@@ -6,6 +6,7 @@
 #include "AppUpdater.hpp"
 
 #include <atomic>
+#include <regex>
 #include <thread>
 #include <string>
 
@@ -14,6 +15,8 @@
 #include <boost/nowide/fstream.hpp>
 #include <boost/nowide/convert.hpp>
 #include <boost/property_tree/ini_parser.hpp>
+#include <boost/property_tree/json_parser.hpp>
+#include <boost/property_tree/ptree.hpp> 
 #include <curl/curl.h>
 
 #include "slic3r/GUI/format.hpp"
@@ -23,7 +26,7 @@
 #include "slic3r/GUI/GLCanvas3D.hpp"
 #include "slic3r/Utils/Http.hpp"
 
-#include "../../libslic3r/Utils.hpp"
+#include "libslic3r/Utils.hpp"
 
 #ifdef _WIN32
 #include <shellapi.h>
@@ -348,6 +351,80 @@ void AppUpdater::priv::version_check(const std::string& version_check_url)
 	}
 }
 
+#define VERSION_FROM_GITHUB 1
+// #define VERSION_FROM_PRUSA 1
+
+// Parses version string obtained in sync_version() and sends events to UI thread.
+// Version string must contain release version on first line. Follows non-mandatory alpha / beta releases on following lines (alpha=2.0.0-alpha1).
+// github verison
+#if VERSION_FROM_GITHUB
+//parse the string, if it doesn't contain a valid version string, return invalid version.
+Semver get_version(const std::string &str, const std::regex &regexp) {
+	std::smatch match;
+	if (std::regex_match(str, match, regexp)) {
+		std::string version_cleaned = match[0];
+		const std::optional<Semver> version = Semver::parse(version_cleaned);
+		if (version.has_value()) {
+			return *version;
+		}
+	}
+	return Semver::invalid();
+}
+
+void AppUpdater::priv::parse_version_string(const std::string& constbody)
+{
+	boost::property_tree::ptree root;
+	std::stringstream json_stream(constbody);
+	boost::property_tree::read_json(json_stream, root);
+	bool i_am_pre = false;
+	//at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
+	std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
+
+	Semver current_version(SLIC3R_VERSION_FULL);
+	Semver best_pre(1,0,0,0);
+	Semver best_release(1, 0, 0, 0);
+	std::string best_pre_url;
+	std::string best_release_url;
+	const std::regex reg_num("([0-9]+)");
+	for (auto json_version : root) {
+		std::string tag = json_version.second.get<std::string>("tag_name");
+		for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num); it != std::sregex_iterator(); ++it) {
+
+		}
+		Semver tag_version = get_version(tag, matcher);
+		if (current_version == tag_version)
+			i_am_pre = json_version.second.get<bool>("prerelease");
+		if (json_version.second.get<bool>("prerelease")) {
+			if (best_pre < tag_version) {
+				best_pre = tag_version;
+				best_pre_url = json_version.second.get<std::string>("html_url");
+			}
+		} else {
+			if (best_release < tag_version) {
+				best_release = tag_version;
+				best_release_url = json_version.second.get<std::string>("html_url");
+			}
+		}
+	}
+
+	//if release is more recent than beta, use release anyway
+	if (best_pre < best_release) {
+		best_pre = best_release;
+		best_pre_url = best_release_url;
+	}
+	//if we're the most recent, don't do anything
+	if ((i_am_pre ? best_pre : best_release) <= current_version)
+		return;
+
+	BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre? best_pre:best_release);
+
+	wxCommandEvent* evt = new wxCommandEvent(EVT_SLIC3R_VERSION_ONLINE);
+	evt->SetString((i_am_pre ? best_pre : best_release).to_string());
+	GUI::wxGetApp().QueueEvent(evt);
+}
+#endif
+// PRUSASLICER version
+#if VERSION_FROM_PRUSA
 void AppUpdater::priv::parse_version_string(const std::string& body)
 {
 	size_t start = body.find('[');
@@ -413,7 +490,7 @@ void AppUpdater::priv::parse_version_string(const std::string& body)
 				// release version - save and send to UI layer
 				if (data.first == "release") {
 					std::string version = data.second.data();
-					boost::optional<Semver> release_version = Semver::parse(version);
+					std::optional<Semver> release_version = Semver::parse(version);
 					if (!release_version) {
 						BOOST_LOG_TRIVIAL(error) << format("Received invalid contents from version file: Not a correct semver: `%1%`", version);
 						return;
@@ -436,10 +513,10 @@ void AppUpdater::priv::parse_version_string(const std::string& body)
 				}
 			}
 			// find recent version that is newer than last full release.
-			boost::optional<Semver> recent_version;
+			std::optional<Semver> recent_version;
 			std::string				version_string;
 			for (const std::string& ver_string : prerelease_versions) {
-				boost::optional<Semver> ver = Semver::parse(ver_string);
+				std::optional<Semver> ver = Semver::parse(ver_string);
 				if (ver && *new_data.version < *ver && ((recent_version && *recent_version < *ver) || !recent_version)) {
 					recent_version = ver;
 					version_string = ver_string;
@@ -465,7 +542,7 @@ void AppUpdater::priv::parse_version_string(const std::string& body)
 	evt->SetString(GUI::from_u8(version));
 	GUI::wxGetApp().QueueEvent(evt);
 }
-
+#endif
 
 #if 0 //lm:is this meant to be ressurected? //dk: it is code that parses PrusaSlicer.version2 in 2.4.0, It was deleted from PresetUpdater.cpp and I would keep it here for possible reference.
 void AppUpdater::priv::parse_version_string_old(const std::string& body) const
@@ -478,7 +555,7 @@ void AppUpdater::priv::parse_version_string_old(const std::string& body) const
 		version = body.substr(0, first_nl_pos);
 	else
 		version = body;
-	boost::optional<Semver> release_version = Semver::parse(version);
+	std::optional<Semver> release_version = Semver::parse(version);
 	if (!release_version) {
 		BOOST_LOG_TRIVIAL(error) << format("Received invalid contents from `%1%`: Not a correct semver: `%2%`", SLIC3R_APP_NAME, version);
 		return;
@@ -520,9 +597,9 @@ void AppUpdater::priv::parse_version_string_old(const std::string& body) const
 		}
 	}
 	// find recent version that is newer than last full release.
-	boost::optional<Semver> recent_version;
+	std::optional<Semver> recent_version;
 	for (const std::string& ver_string : prerelease_versions) {
-		boost::optional<Semver> ver = Semver::parse(ver_string);
+		std::optional<Semver> ver = Semver::parse(ver_string);
 		if (ver && *release_version < *ver && ((recent_version && *recent_version < *ver) || !recent_version)) {
 			recent_version = ver;
 			version = ver_string;

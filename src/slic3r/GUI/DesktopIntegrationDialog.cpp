@@ -620,8 +620,7 @@ void DesktopIntegrationDialog::perform_downloader_desktop_integration()
 }
 void DesktopIntegrationDialog::undo_downloader_registration()
 {
-    //const AppConfig *app_config = wxGetApp().app_config;
-    AppConfig* app_config = wxGetApp().app_config.get();
+    const AppConfig *app_config = wxGetApp().app_config.get();
     std::string path = std::string(app_config->get("desktop_integration_URL_path"));
     if (!path.empty()) {
         BOOST_LOG_TRIVIAL(debug) << "removing " << path;

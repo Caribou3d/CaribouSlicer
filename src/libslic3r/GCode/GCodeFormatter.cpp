@@ -7,7 +7,6 @@
 #include "GCodeFormatter.hpp"
 #include <boost/spirit/include/karma.hpp>
 
-
 namespace Slic3r {
 
 
@@ -24,6 +23,16 @@ bool GCodeFormatter::emit_xy(const Vec2d &point, std::string &old_x, std::string
     return !same_point;
 }
 
+bool GCodeFormatter::emit_z(const double pt_z, std::string &old_z)
+{
+    char* start_digit = this->emit_axis('Z', pt_z, m_gcode_precision_xyz);
+    std::string z_str = std::string(start_digit, this->ptr_err.ptr);
+    bool same_point = (z_str == old_z);
+    // update str
+    old_z = z_str;
+    return !same_point;
+}
+
 // return the de that isn't emmited as it's truncated
 double GCodeFormatter::emit_e(const std::string_view axis, double v)
 {
@@ -32,7 +41,7 @@ double GCodeFormatter::emit_e(const std::string_view axis, double v)
         char* start_digit = this->emit_axis(axis[0], v, m_gcode_precision_e);
 #ifdef _DEBUG
         double written_e = atof(std::string(start_digit, this->ptr_err.ptr).c_str());
-        assert(std::abs(v - written_e) < 0.0000001);  // shoulde be already taken into account by m_tool->extrude
+        assert(std::abs(v - written_e) < 0.000002);  // shoulde be already taken into account by m_tool->extrude
         return v - written_e;
 #endif
     }

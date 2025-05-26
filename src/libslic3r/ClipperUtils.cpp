@@ -77,7 +77,7 @@ namespace ClipperUtils {
     // Useful as an optimization for expensive ClipperLib operations, for example when clipping source polygons one by one
     // with a set of polygons covering the whole layer below.
     template<typename PointsType>
-    inline void clip_clipper_polygon_with_subject_bbox_templ(const PointsType &src, const BoundingBox &bbox, PointsType &out)
+    inline void clip_clipper_polyline_with_subject_bbox_templ(const PointsType &src, const BoundingBox &bbox, PointsType &out)
     {
         using PointType = typename PointsType::value_type;
 
@@ -120,43 +120,49 @@ namespace ClipperUtils {
         }
 
         // Never produce just a single point output polygon.
-        if (! out.empty())
+        if (!out.empty()) {
             if (int sides_next = sides(out.front());
                 // The last point is inside. Take it.
                 sides_this == 0 ||
                 // Either this point is outside and previous or next is inside, or
                 // the edge possibly cuts corner of the bounding box.
-                (sides_prev & sides_this & sides_next) == 0)
+                (sides_prev & sides_this & sides_next) == 0) {
                 out.emplace_back(src.back());
+            }
+        }
+        // hack bugfix https://github.com/prusa3d/PrusaSlicer/issues/13356
+        if(out.size() < 3)
+            out.clear();
+        assert(out.size() > 2 || out.empty());
     }
 
-    void clip_clipper_polygon_with_subject_bbox(const Points &src, const BoundingBox &bbox, Points &out)
-        { clip_clipper_polygon_with_subject_bbox_templ(src, bbox, out); }
-    void clip_clipper_polygon_with_subject_bbox(const ZPoints &src, const BoundingBox &bbox, ZPoints &out)
-        { clip_clipper_polygon_with_subject_bbox_templ(src, bbox, out); }
+    void clip_clipper_polyline_with_subject_bbox(const Points &src, const BoundingBox &bbox, Points &out)
+        { clip_clipper_polyline_with_subject_bbox_templ(src, bbox, out); }
+    void clip_clipper_polyline_with_subject_bbox(const ZPoints &src, const BoundingBox &bbox, ZPoints &out)
+        { clip_clipper_polyline_with_subject_bbox_templ(src, bbox, out); }
 
     template<typename PointsType>
-    [[nodiscard]] PointsType clip_clipper_polygon_with_subject_bbox_templ(const PointsType &src, const BoundingBox &bbox)
+    [[nodiscard]] PointsType clip_clipper_polyline_with_subject_bbox_templ(const PointsType &src, const BoundingBox &bbox)
     {
         PointsType out;
-        clip_clipper_polygon_with_subject_bbox(src, bbox, out);
+        clip_clipper_polyline_with_subject_bbox(src, bbox, out);
         return out;
     }
 
-    [[nodiscard]] Points clip_clipper_polygon_with_subject_bbox(const Points &src, const BoundingBox &bbox)
-        { return clip_clipper_polygon_with_subject_bbox_templ(src, bbox); }
-    [[nodiscard]] ZPoints clip_clipper_polygon_with_subject_bbox(const ZPoints &src, const BoundingBox &bbox)
-        { return clip_clipper_polygon_with_subject_bbox_templ(src, bbox); }
+    [[nodiscard]] Points clip_clipper_polyline_with_subject_bbox(const Points &src, const BoundingBox &bbox)
+        { return clip_clipper_polyline_with_subject_bbox_templ(src, bbox); }
+    [[nodiscard]] ZPoints clip_clipper_polyline_with_subject_bbox(const ZPoints &src, const BoundingBox &bbox)
+        { return clip_clipper_polyline_with_subject_bbox_templ(src, bbox); }
 
     void clip_clipper_polygon_with_subject_bbox(const Polygon &src, const BoundingBox &bbox, Polygon &out)
     {
-        clip_clipper_polygon_with_subject_bbox(src.points, bbox, out.points);
+        clip_clipper_polyline_with_subject_bbox_templ(src.points, bbox, out.points);
     }
 
     [[nodiscard]] Polygon clip_clipper_polygon_with_subject_bbox(const Polygon &src, const BoundingBox &bbox)
     {
         Polygon out;
-        clip_clipper_polygon_with_subject_bbox(src.points, bbox, out.points);
+        clip_clipper_polyline_with_subject_bbox_templ(src.points, bbox, out.points);
         return out;
     }
 
@@ -196,6 +202,50 @@ namespace ClipperUtils {
                   out.end());
         return out;
     }
+
+    [[nodiscard]] ExPolygons clip_clipper_expolygons_with_subject_bbox(const ExPolygons &src, const BoundingBox &bbox)
+    {
+        ExPolygons out;
+        Polygons temp;
+        out.reserve(number_polygons(src));
+        for (const ExPolygon &exp : src) {
+            temp.clear();
+            temp.emplace_back();
+            clip_clipper_polygon_with_subject_bbox(exp.contour, bbox, temp.back());
+            if (temp.back().empty()) {
+                // contour out of bounds, nothing is left.
+                continue;
+            } else if (temp.back().size() == exp.contour.size()) {
+                //no modification
+                out.push_back(exp);
+                continue;
+            }
+            bool need_union = false;
+            for (const Polygon &hole : exp.holes) {
+                temp.emplace_back();
+                clip_clipper_polygon_with_subject_bbox(hole, bbox, temp.back());
+                if (temp.back().empty() ) {
+                    // hole out of bounds, nothing is left.
+                    temp.pop_back();
+                } else if (temp.back().size() == exp.contour.size()) {
+                    //no modification
+                } else {
+                    need_union = true;
+                }
+            }
+            if (need_union) {
+                append(out, union_ex(temp));
+            } else {
+                out.emplace_back();
+                out.back().contour = temp.front();
+                if (temp.size() > 1) {
+                    out.back().holes.assign(temp.begin() + 1, temp.end());
+                }
+            }
+        }
+        return out;
+    }
+
 }
 
 
@@ -207,9 +257,19 @@ static ExPolygons PolyTreeToExPolygons(ClipperLib::PolyTree &&polytree)
             size_t cnt = expolygons->size();
             expolygons->resize(cnt + 1);
             (*expolygons)[cnt].contour.points = std::move(polynode.Contour);
+            double area = std::abs((*expolygons)[cnt].contour.area());
+            // I saw a clockwise artifact with 4 points
+            if ((*expolygons)[cnt].contour.size() < 5 && !(*expolygons)[cnt].contour.is_counter_clockwise()) {
+                assert( std::abs((*expolygons)[cnt].contour.area()) < SCALED_EPSILON * SCALED_EPSILON * SCALED_EPSILON);
+                // error, delete.
+                (*expolygons).pop_back();
+                return;
+            }
+            assert((*expolygons)[cnt].contour.is_counter_clockwise());
             (*expolygons)[cnt].holes.resize(polynode.ChildCount());
             for (int i = 0; i < polynode.ChildCount(); ++ i) {
                 (*expolygons)[cnt].holes[i].points = std::move(polynode.Childs[i]->Contour);
+                assert((*expolygons)[cnt].holes[i].is_clockwise());
                 // Add outer polygons contained by (nested within) holes.
                 for (int j = 0; j < polynode.Childs[i]->ChildCount(); ++ j)
                     PolyTreeToExPolygonsRecursive(std::move(*polynode.Childs[i]->Childs[j]), expolygons);
@@ -665,18 +725,25 @@ Slic3r::ExPolygons opening_ex(const Slic3r::Polygons& polygons, const double del
 
 bool test_path(const ClipperLib::Path &path) {
 
-    double area = std::abs(ClipperLib::Area(path));
+    double area = ClipperLib::Area(path);
     // get highest dist, but as it's n² in complexity, i use 2*dist to center wich is 2n in complexity
-    ClipperLib::cInt max_dist_sqrd = 0;
+    ClipperLib::cInt max_dist_sqr= 0;
+    // Centroid need the signed area.
     ClipperLib::IntPoint centroid = ClipperLib::Centroid(path, area);
+    area = std::abs(area);
     for (const ClipperLib::IntPoint& pt : path) {
         // &0x3FFFFFFF to let  (dx * dx + dy * dy) be storable into a int64
         ClipperLib::cInt dx = std::abs(pt.x() - centroid.x()) & 0x3FFFFFFF;
         ClipperLib::cInt dy = std::abs(pt.y() - centroid.y()) & 0x3FFFFFFF;
-        ClipperLib::cInt dist_sqrd = (dx * dx + dy * dy);
-        max_dist_sqrd = std::max(max_dist_sqrd, dist_sqrd);
+        ClipperLib::cInt dist_sqr = (dx * dx + dy * dy);
+        // store a bit more than the max (up to x2), but good enough as it avoid a branch.
+        max_dist_sqr = max_dist_sqr | dist_sqr; //std::max(max_dist_sqrd, dist_sqrd);
     }
-    return (area < (SCALED_EPSILON + SCALED_EPSILON) * std::sqrt(max_dist_sqrd));
+    // max_dist is the "biggest radius"
+    // area is < 2*max_dist * 2*max_dist
+    // here we create the min area posible: a cube with the radius x 2*Epsilon
+    // if it's lower than that, it means that the polygon is too small or too narrow.
+    return (area < (2 * SCALED_EPSILON) * std::sqrt(max_dist_sqr));
 }
 
 void remove_small_areas(ClipperLib::Paths& paths) {
@@ -943,15 +1010,42 @@ Polylines _clipper_pl_open(ClipperLib::ClipType clipType, PathsProvider1 &&subje
     scaleClipperPolygons(input_subject);
     scaleClipperPolygons(input_clip);
 
-    //perform y safing : if a line is on the same Y, clipper may not pick the good point.
-    //note: if not enough, next time, add some of the X coordinate (modulo it so it's contained in the scaling part)
+    //perform xy safing : if a line is on the same Y, clipper may not pick the good point.
     for (ClipperLib::Paths* input : { &input_subject, &input_clip }) {
         for (ClipperLib::Path& path : *input) {
+            coord_t lastx = 0;
             coord_t lasty = 0;
             for (ClipperLib::IntPoint& pt : path) {
-                if (lasty == pt.y()) {
-                    pt.y() += 2048;// well below CLIPPER_OFFSET_POWER_OF_2, need also to be high enough that it won't be reduce to 0 if cut near an end
+                {
+                    //add something from the x() to allow points to be equal even if in different collection
+                    ClipperLib::cInt dy = pt.x() & 0xFFFF;
+                    dy ^= ((pt.x()>>16) & 0xFFFF);
+#ifndef CLIPPERLIB_INT32
+                    dy ^= ((pt.x()>>32) & 0xFFFF);
+                    dy ^= ((pt.x()>>48) & 0xFFFF);
+#endif
+                    assert(dy >= 0 && dy <= 0xFFFF);
+                    ClipperLib::cInt dx = pt.y() & 0xFFFF;
+                    dx ^= ((pt.y()>>16) & 0xFFFF);
+#ifndef CLIPPERLIB_INT32
+                    dx ^= ((pt.y()>>32) & 0xFFFF);
+                    dx ^= ((pt.y()>>48) & 0xFFFF);
+#endif
+                    assert(dx >= 0 && dx <= 0xFFFF);
+                    pt.x() += dx;
+                    pt.y() += dy;
                 }
+                //just to be sure
+                if (lastx == pt.x()) {
+                    // this can create artifacts, as two identical point aren't identical anymore.
+                    // But it's better to have a little point returned instead of a wierd result.
+                    // note: it also trigger when x==y, but it's okay
+                    pt.x() += 2048;// well below CLIPPER_OFFSET_POWER_OF_2, need also to be high enough that it won't be reduce to 0 if cut near an end
+                }
+                if (lasty == pt.y()) {
+                    pt.y() += 2048;
+                }
+                lastx = pt.x();
                 lasty = pt.y();
             }
         }
@@ -1060,20 +1154,60 @@ ClipperLib_Z::Paths clip_extrusion(const ClipperLib_Z::Paths& subjects, const Cl
     //scale to have some more precision to do some Y-bugfix
     scaleClipperPolygons(input_subject);
     scaleClipperPolygons(input_clip);
-
-    //perform y safing : if a line is on the same Y, clipper may not pick the good point.
-    //note: if not enough, next time, add some of the X coordinate (modulo it so it's contained in the scaling part)
+    
+    //perform xy safing : if a line is on the same Y, clipper may not pick the good point.
     for (ClipperLib_Z::Paths* input : { &input_subject, &input_clip }) {
         for (ClipperLib_Z::Path& path : *input) {
+            coord_t lastx = 0;
             coord_t lasty = 0;
             for (ClipperLib_Z::IntPoint& pt : path) {
-                if (lasty == pt.y()) {
-                    pt.y() += 2048;// well below CLIPPER_OFFSET_POWER_OF_2, need also to be high enough that it won't be reduce to 0 if cut near an end
+                {
+                    //add something from the x() to allow points to be equal even if in different collection
+                    ClipperLib::cInt dy = pt.x() & 0xFFFF;
+                    dy ^= ((pt.x()>>16) & 0xFFFF);
+#ifndef CLIPPERLIB_INT32
+                    dy ^= ((pt.x()>>32) & 0xFFFF);
+                    dy ^= ((pt.x()>>48) & 0xFFFF);
+#endif
+                    assert(dy >= 0 && dy <= 0xFFFF);
+                    ClipperLib::cInt dx = pt.y() & 0xFFFF;
+                    dx ^= ((pt.y()>>16) & 0xFFFF);
+#ifndef CLIPPERLIB_INT32
+                    dx ^= ((pt.y()>>32) & 0xFFFF);
+                    dx ^= ((pt.y()>>48) & 0xFFFF);
+#endif
+                    assert(dx >= 0 && dx <= 0xFFFF);
+                    pt.x() += dx;
+                    pt.y() += dy;
                 }
+                //just to be sure
+                if (lastx == pt.x()) {
+                    // this can create artifacts, as two identical point aren't identical anymore.
+                    // But it's better to have a little point returned instead of a wierd result.
+                    // note: it also trigger when x==y, but it's okay
+                    pt.x() += 2048;// well below CLIPPER_OFFSET_POWER_OF_2, need also to be high enough that it won't be reduce to 0 if cut near an end
+                }
+                if (lasty == pt.y()) {
+                    pt.y() += 2048;
+                }
+                lastx = pt.x();
                 lasty = pt.y();
             }
         }
     }
+    ////perform y safing : if a line is on the same Y, clipper may not pick the good point.
+    ////note: if not enough, next time, add some of the X coordinate (modulo it so it's contained in the scaling part)
+    //for (ClipperLib_Z::Paths* input : { &input_subject, &input_clip }) {
+    //    for (ClipperLib_Z::Path& path : *input) {
+    //        coord_t lasty = 0;
+    //        for (ClipperLib_Z::IntPoint& pt : path) {
+    //            if (lasty == pt.y()) {
+    //                pt.y() += 2048;// well below CLIPPER_OFFSET_POWER_OF_2, need also to be high enough that it won't be reduce to 0 if cut near an end
+    //            }
+    //            lasty = pt.y();
+    //        }
+    //    }
+    //}
 
     // now it's scaled, do the clip
     clipper.AddPaths(input_subject, ClipperLib_Z::ptSubject, false);
@@ -1119,12 +1253,13 @@ ClipperLib_Z::Paths clip_extrusion(const ClipperLib_Z::Paths& subjects, const Cl
         ClipperLib_Z::PolyTreeToPaths(clipped_polytree, clipped_paths);
     }
 
-    // cleaning: can contain 0-length segments
-    for (ClipperLib_Z::Path& path : clipped_paths) {
-        for (size_t i = 1; i < path.size(); i++) {
-            if ((path[i - 1] - path[i]).squaredNorm() < SCALED_EPSILON) {
-                path.erase(path.begin() + i);
-                i--;
+    // cleaning
+    for (size_t i_path = 0; i_path < clipped_paths.size(); ++i_path) {
+        ClipperLib_Z::Path &path = clipped_paths[i_path];
+        for (size_t i_pt = 1; i_pt < path.size() - 1; i_pt++) {
+            if ((path[i_pt - 1] - path[i_pt]).squaredNorm() < SCALED_EPSILON) {
+                path.erase(path.begin() + i_pt);
+                i_pt--;
             }
         }
     }

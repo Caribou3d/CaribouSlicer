@@ -582,7 +582,13 @@ bool Selection::is_single_text() const
     if (!is_single_volume_or_modifier())
       return false;
 
-    const GLVolume* gl_volume = (m_volumes->volumes)[*m_list.begin()].get();
+
+    const GLVolume* gl_volume = this->get_first_volume();
+    if (gl_volume == nullptr || m_model->objects.size() <= gl_volume->object_idx() ||
+        m_model->objects[gl_volume->object_idx()]->volumes.size() <= gl_volume->volume_idx()) {
+        assert(false); // shouldn't happen
+        return false;
+    }
     const ModelVolume* model_volume = m_model->objects[gl_volume->object_idx()]->volumes[gl_volume->volume_idx()];
     
     return model_volume && model_volume->text_configuration.has_value();
@@ -2751,7 +2757,7 @@ void Selection::synchronize_unselected_instances(SyncRotationType sync_rotation_
             }
             else if (sync_rotation_type != SyncRotationType::NONE || mirrored)
                 new_inst_trafo_j.linear() = (old_inst_trafo_j.linear() * old_inst_trafo_i.linear().inverse()) * curr_inst_trafo_i.linear();
-            if (wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology() != ptSLA)
+            if (wxGetApp().get_current_printer_technology() != ptSLA)
                 new_inst_trafo_j.translation().z() = curr_inst_trafo_i.translation().z();
             assert(is_rotation_xy_synchronized(curr_inst_trafo_i, new_inst_trafo_j));
             volume_j->set_instance_transformation(new_inst_trafo_j);

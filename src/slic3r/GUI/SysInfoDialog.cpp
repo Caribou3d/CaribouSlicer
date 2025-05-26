@@ -52,7 +52,7 @@ std::string get_main_info(bool format_as_html)
     std::string build_id = SLIC3R_BUILD_ID;
     if (! wxGetApp().is_editor())
         boost::replace_first(build_id, SLIC3R_APP_NAME, GCODEVIEWER_APP_NAME);
-    out << b_start << "Build:     " << b_end << SLIC3R_GITBUILD_NR << line_end;
+    out << b_start << "Build:     " << b_end << build_id << line_end;
 
     out << line_end;
     out << b_start << "Operating System:    "   << b_end << wxPlatformInfo::Get().GetOperatingSystemFamilyName() << line_end;

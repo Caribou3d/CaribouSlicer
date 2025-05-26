@@ -23,8 +23,8 @@
 
 #include <iostream>
 #include <ctime>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
 #include <wx/wx.h>
 #include <wx/brush.h>
@@ -575,8 +575,7 @@ void CreateMMUTiledCanvas::save_config()
 {
     std::string config_str;
     for (const std::string& key : m_config.keys())
-        if (!m_config.option(key)->is_nil())
-            config_str += key + " = " + m_config.opt_serialize(key) + "\n";
+        config_str += key + " = " + m_config.opt_serialize(key) + "\n";
 
     boost::filesystem::path path_dir = Slic3r::data_dir();
     path_dir = path_dir / "generator";
@@ -1103,7 +1102,8 @@ void CreateMMUTiledCanvas::create_main_tab(wxPanel* tab)
 
 
     group_size = std::make_shared<ConfigOptionsGroup>(tab, "Options", &m_config);
-    group_size->m_on_change = [this](t_config_option_key opt_key, boost::any value) {
+    group_size->m_on_change = [this](const OptionKeyIdx &opt_key_idx, bool enabled, const boost::any &value) {
+        assert(enabled);
         m_dirty = true;
         this->get_canvas()->Refresh();// paintNow();
         this->save_config();
@@ -1111,7 +1111,7 @@ void CreateMMUTiledCanvas::create_main_tab(wxPanel* tab)
     group_size->title_width = 15;
 
     ConfigOptionDef def;
-    Option option(def, "");
+    Option option(def);
     Line line = { "", "" };
 
     //group_size->append_single_option_line(option);
@@ -1150,8 +1150,9 @@ void CreateMMUTiledCanvas::create_main_tab(wxPanel* tab)
 
 
     group_colors = std::make_shared<ConfigOptionsGroup>(tab, "Colors", &m_config);
-    group_colors->m_on_change = [this](t_config_option_key opt_key, boost::any value) {
-        if ("extruders" == opt_key) {
+    group_colors->m_on_change = [this](const OptionKeyIdx &opt_key_idx, bool enabled, const boost::any &value) {
+        assert(enabled);
+        if ("extruders" == opt_key_idx.key) {
             dynamic_cast<TabPrinter*>(this->m_gui_app->get_tab(Preset::TYPE_PRINTER))->extruders_count_changed(boost::any_cast<int>(value));
         }
         m_dirty = true;

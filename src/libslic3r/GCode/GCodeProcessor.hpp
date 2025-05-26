@@ -25,7 +25,6 @@
 #include <optional>
 
 namespace Slic3r {
-
     //class StatusMonitor;
 
     enum class EMoveType : unsigned char
@@ -78,6 +77,7 @@ namespace Slic3r {
 
         std::vector<double>                                     volumes_per_color_change;
         std::map<size_t, double>                                volumes_per_extruder;
+        std::map<size_t, std::map<size_t, std::map<GCodeExtrusionRole, double>>> volumes_per_role_per_extruder_per_object;
         std::map<GCodeExtrusionRole, std::pair<double, double>> used_filaments_per_role;
         std::map<size_t, double>                                cost_per_extruder;
 
@@ -92,6 +92,7 @@ namespace Slic3r {
             volumes_per_color_change.clear();
             volumes_per_color_change.shrink_to_fit();
             volumes_per_extruder.clear();
+            volumes_per_role_per_extruder_per_object.clear();
             used_filaments_per_role.clear();
             cost_per_extruder.clear();
         }
@@ -116,11 +117,11 @@ namespace Slic3r {
         {
             MoveVertex() {}
             MoveVertex(uint32_t gcode_id, EMoveType type, GCodeExtrusionRole extrusion_role, uint8_t extruder_id,
-                uint8_t cp_color_id, Vec3f position, float delta_extruder, float feedrate, float width, float height,
+                uint8_t cp_color_id, uint16_t object_id, Vec3f position, float delta_extruder, float feedrate, float width, float height,
                 float mm3_per_mm, float fan_speed, float temperature, float time, uint16_t layer_id,
                 bool internal_only) :
                 gcode_id(gcode_id), type(type), extrusion_role(extrusion_role), extruder_id(extruder_id), 
-                cp_color_id(cp_color_id), position(position), delta_extruder(delta_extruder), feedrate(feedrate), 
+                cp_color_id(cp_color_id), object_id(object_id), position(position), delta_extruder(delta_extruder), feedrate(feedrate), 
                 width(width), height(height), mm3_per_mm(mm3_per_mm), fan_speed(fan_speed), 
                 temperature(temperature), move_time(time), layer_id(layer_id),
                 internal_only(internal_only) {
@@ -131,6 +132,7 @@ namespace Slic3r {
             GCodeExtrusionRole extrusion_role{ GCodeExtrusionRole::None };
             uint8_t extruder_id{ 0 };
             uint8_t cp_color_id{ 0 };
+            uint16_t object_id{ 0 };
             Vec3f position{ Vec3f::Zero() }; // mm
             float delta_extruder{ 0.0f }; // mm
             float feedrate{ 0.0f }; // mm/s
@@ -162,6 +164,7 @@ namespace Slic3r {
         bool backtrace_enabled;
         std::vector<std::string> extruder_colors;
         std::vector<std::string> filament_colors;
+        std::vector<std::string> object_names;
         std::vector<float> filament_diameters;
         std::vector<float> filament_densities;
         std::vector<float> filament_cost;
@@ -193,6 +196,7 @@ namespace Slic3r {
             Wipe_End,
             Height,
             Width,
+            Seam,
             Layer_Change,
             Layer_Change_Travel,
             Layer_Change_Retraction_Start,
@@ -202,7 +206,9 @@ namespace Slic3r {
             Custom_Code,
             First_Line_M73_Placeholder,
             Last_Line_M73_Placeholder,
-            Estimated_Printing_Time_Placeholder
+            Estimated_Printing_Time_Placeholder,
+            Object_Start_Octoprint,
+            Object_End_Octoprint,
         };
 
         static const std::string& reserved_tag(ETags tag) { return Reserved_Tags[static_cast<unsigned char>(tag)]; }
@@ -292,6 +298,8 @@ namespace Slic3r {
             Flags flags;
             FeedrateProfile feedrate_profile;
             Trapezoid trapezoid;
+            // idx of moves to update when time is recomputed.
+            std::vector<size_t> moves;
 
             // Calculates this block's trapezoid
             void calculate_trapezoid();
@@ -362,8 +370,8 @@ namespace Slic3r {
             void reset();
 
             // Simulates firmware st_synchronize() call
-            void simulate_st_synchronize(float additional_time = 0.0f);
-            void calculate_time(size_t keep_last_n_blocks = 0, float additional_time = 0.0f);
+            void simulate_st_synchronize_call(std::vector<GCodeProcessorResult::MoveVertex> &moves, float additional_time = 0.0f);
+            void calculate_time(std::vector<GCodeProcessorResult::MoveVertex> &moves, size_t keep_last_n_blocks = 0, float additional_time = 0.0f);
         };
 
         struct TimeProcessor
@@ -410,9 +418,11 @@ namespace Slic3r {
         {
             double color_change_cache;
             std::vector<double> volumes_per_color_change;
-
+            
             double tool_change_cache;
             std::map<size_t, double> volumes_per_extruder;
+            double object_change_cache;
+            std::map<size_t, std::map<size_t, std::map<GCodeExtrusionRole, double>>> volumes_per_role_per_extruder_per_object;
 
             double role_cache;
             std::map<GCodeExtrusionRole, std::pair<double, double>> filaments_per_role; // ExtrusionRole -> (m, g)
@@ -422,7 +432,8 @@ namespace Slic3r {
             void increase_caches(double extruded_volume, uint16_t extruder_id, double parking_volume, double extra_loading_volume);
 
             void process_color_change_cache();
-            void process_extruder_cache(uint16_t extruder_id);
+            void process_extruder_cache(uint16_t extruder_id, size_t object_id, GCodeExtrusionRole role);
+            void process_object_cache(uint16_t extruder_id, size_t object_id, GCodeExtrusionRole role);
             void process_role_cache(const GCodeProcessor* processor);
             void process_caches(const GCodeProcessor* processor);
        private:
@@ -558,7 +569,7 @@ namespace Slic3r {
 #endif // ENABLE_GCODE_VIEWER_DATA_CHECKING
 
         static bgcode::binarize::BinarizerConfig& get_binarizer_config() { return s_binarizer_config; }
-
+        
     private:
         GCodeReader m_parser;
         bgcode::binarize::Binarizer m_binarizer;
@@ -604,6 +615,8 @@ namespace Slic3r {
         float m_z_offset; // mm
         GCodeExtrusionRole m_extrusion_role;
         uint16_t m_extruder_id;
+        size_t m_current_object_id;
+        std::map<std::string, size_t> m_all_objects;
         ExtruderColors m_extruder_colors;
         ExtruderTemps m_extruder_temps;
         ExtruderTemps m_extruder_temps_config;
@@ -620,6 +633,7 @@ namespace Slic3r {
         float m_temperature;
         bool m_use_volumetric_e;
         SeamsDetector m_seams_detector;
+        std::optional<AxisCoords> m_seam;
         OptionsZCorrector m_options_z_corrector;
         size_t m_last_default_color_id;
         bool m_spiral_vase_active;
@@ -841,6 +855,9 @@ namespace Slic3r {
         // Repetier: Go to stored position
         void process_M402(const GCodeReader::GCodeLine& line);
 
+        // Marlin/reparp: object change
+        void process_M486(const GCodeReader::GCodeLine& line);
+
         // Set allowable instantaneous speed change
         void process_M566(const GCodeReader::GCodeLine& line);
 
@@ -850,7 +867,7 @@ namespace Slic3r {
         // Processes T line (Select Tool)
         void process_T(const GCodeReader::GCodeLine& line);
         void process_T(const std::string_view command);
-        void process_T(uint16_t command_id);
+        void process_toolchange(uint16_t command_id);
         void process_klipper_ACTIVATE_EXTRUDER(const GCodeReader::GCodeLine& line);
 
         // post process the file with the given filename to:
@@ -876,6 +893,7 @@ namespace Slic3r {
         float get_filament_load_time(size_t extruder_id);
         float get_filament_unload_time(size_t extruder_id);
         void  set_extruder_temp(float new_temp, size_t extruder_id);
+        void  move_next_layer_id();
 
         void process_custom_gcode_time(CustomGCode::Type code);
         void process_filaments(CustomGCode::Type code);

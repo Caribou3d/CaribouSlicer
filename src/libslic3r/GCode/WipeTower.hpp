@@ -13,6 +13,7 @@
 #include <utility>
 
 #include "libslic3r/Point.hpp"
+#include "libslic3r/Config.hpp"
 
 namespace Slic3r
 {
@@ -30,7 +31,7 @@ class WipeTower
 public:
     static const std::string never_skip_tag() { return "_GCODE_WIPE_TOWER_NEVER_SKIP_TAG"; }
 	static std::pair<double, double> get_wipe_tower_cone_base(double width, double height, double depth, double angle_deg);
-	static std::vector<std::vector<float>> extract_wipe_volumes(const PrintConfig& config);
+	static std::vector<std::vector<float>> extract_wipe_volumes(const ConfigBase& config);
 
     struct Extrusion
     {
@@ -274,7 +275,7 @@ private:
 		SHAPE_REVERSED = -1
 	};
 
-    const float Width_To_Nozzle_Ratio = 1.25f; // desired line width (oval) in multiples of nozzle diameter - may not be actually neccessary to adjust
+
     const float WT_EPSILON            = 1e-3f;
     float filament_area() const {
         return m_filpar[0].filament_area; // all extruders are assumed to have the same filament diameter at this point
@@ -325,7 +326,7 @@ private:
     Vec2f m_bed_bottom_left; // bottom-left corner coordinates (for rectangular beds)
 
     float m_nozzle_diameter = 0.4f;
-    float m_perimeter_width = 0.4f * Width_To_Nozzle_Ratio; // Width of an extrusion line, also a perimeter spacing for 100% infill.
+    float m_perimeter_width = 0.5f; // Width of an extrusion line, also a perimeter spacing for 100% infill.
     float m_extrusion_flow = 0.038f; //0.029f;// Extrusion flow is derived from m_perimeter_width, layer height and filament diameter.
 
 	// Extruder specific parameters.

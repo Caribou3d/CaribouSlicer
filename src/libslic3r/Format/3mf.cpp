@@ -506,7 +506,7 @@ namespace Slic3r {
         bool m_trying_read_prusa = false;
 
         // Semantic version of PrusaSlicer, that generated this 3MF.
-        boost::optional<Semver> m_prusaslicer_generator_version;
+        std::optional<Semver> m_prusaslicer_generator_version;
         unsigned int m_fdm_supports_painting_version = 0;
         unsigned int m_seam_painting_version         = 0;
         unsigned int m_mm_painting_version           = 0;
@@ -541,7 +541,7 @@ namespace Slic3r {
 
         bool load_model_from_file(const std::string& filename, Model& model, DynamicPrintConfig& config, ConfigSubstitutionContext& config_substitutions, bool check_version);
         unsigned int version() const { return m_version; }
-        boost::optional<Semver> prusaslicer_generator_version() const { return m_prusaslicer_generator_version; }
+        std::optional<Semver> prusaslicer_generator_version() const { return m_prusaslicer_generator_version; }
 
     private:
         void _destroy_xml_parser();
@@ -793,9 +793,37 @@ namespace Slic3r {
             }
         }
         if (!found_model) {
-            close_zip_reader(&archive);
-            add_error("Not valid 3mf. There is missing .model file.");
-            return false;
+            // fix: load an empty model, it was a bug from 2.3.55->2.7.61
+            // read .rels and check that there should be a (missing) MODEL_FILE in it
+            // check also that there is superslicer config in METADATA
+            bool has_superslicer_metadata = false;
+            bool has_MODEL_in_rels = false;
+            for (mz_uint i = 0; i < num_entries; ++i) {
+                if (mz_zip_reader_file_stat(&archive, i, &stat)) {
+                    std::string name(stat.m_filename);
+                    std::replace(name.begin(), name.end(), '\\', '/');
+                    if (name == "_rels/.rels") {
+                        // open
+                        std::string buffer((size_t) stat.m_uncomp_size, 0);
+                        mz_bool res = mz_zip_reader_extract_to_mem(&archive, stat.m_file_index,
+                                                                   (void *) buffer.data(),
+                                                                   (size_t) stat.m_uncomp_size, 0);
+                        if (res != 0) {
+                            has_MODEL_in_rels = buffer.find(MODEL_FILE) != std::string::npos;
+                        }
+                    } else if (name == "Metadata/SuperSlicer.config") {
+                        has_superslicer_metadata = true;
+                    }
+                }
+            }
+            if (has_superslicer_metadata && has_MODEL_in_rels) {
+                // unit: already in milimeter
+                // metadata : it's only used to verify the version, so it's all good.
+            } else {
+                close_zip_reader(&archive);
+                add_error("Not valid 3mf. There is missing .model file.");
+                return false;
+            }
         }
 
         // we then loop again the entries to read other files stored in the archive
@@ -2721,13 +2749,11 @@ namespace Slic3r {
         // Adds model file ("3D/3dmodel.model").
         // This is the one and only file that contains all the geometry (vertices and triangles) of all ModelVolumes.
         IdToObjectDataMap objects_data;
-        if(!model.objects.empty())
-            if (!_add_model_file_to_archive(filename, archive, model, objects_data))
-            {
-                close_zip_writer(&archive);
-                boost::filesystem::remove(filename);
-                return false;
-            }
+        if (!_add_model_file_to_archive(filename, archive, model, objects_data)) {
+            close_zip_writer(&archive);
+            boost::filesystem::remove(filename);
+            return false;
+        }
 
         // Adds file with information for object cut ("Metadata/Slic3r_PE_cut_information.txt").
         // All information for object cut of all ModelObjects are stored here, indexed by 1 based index of the ModelObject in Model.
@@ -3898,7 +3924,7 @@ bool _3MF_Exporter::_add_custom_gcode_per_print_z_file_to_archive( mz_zip_archiv
 }
 
 // Perform conversions based on the config values available.
-static void handle_legacy_project_loaded(unsigned int version_project_file, DynamicPrintConfig& config, const boost::optional<Semver>& prusaslicer_generator_version)
+static void handle_legacy_project_loaded(unsigned int version_project_file, DynamicPrintConfig& config, const std::optional<Semver>& prusaslicer_generator_version)
 {
     // SuSi: don't do that. It's hidden behavior.
     //if (! config.has("brim_separation")) {

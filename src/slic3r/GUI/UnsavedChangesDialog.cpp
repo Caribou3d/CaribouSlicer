@@ -7,13 +7,14 @@
 #include "UnsavedChangesDialog.hpp"
 
 #include <cstddef>
+#include <optional>
 #include <string>
 #include <vector>
 #include <boost/algorithm/string.hpp>
-#include <boost/optional.hpp>
 
 #include <wx/tokenzr.h>
 
+#include "libslic3r/Config.hpp"
 #include "libslic3r/PrintConfig.hpp"
 #include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/Color.hpp"
@@ -29,7 +30,7 @@
 
 #include "PresetComboBoxes.hpp"
 
-using boost::optional;
+using std::optional;
 
 #ifdef __linux__
 #define wxLinux true
@@ -593,15 +594,6 @@ void DiffModel::Clear()
         Delete(wxDataViewItem(m_preset_nodes.back().get()));
 }
 
-
-static std::string get_pure_opt_key(std::string opt_key)
-{
-    const int pos = opt_key.find("#");
-    if (pos > 0)
-        boost::erase_tail(opt_key, opt_key.size() - pos);
-    return opt_key;
-}    
-
 // ----------------------------------------------------------------------------
 //                  DiffViewCtrl
 // ----------------------------------------------------------------------------
@@ -662,11 +654,16 @@ void DiffViewCtrl::Rescale(int em /*= 0*/)
 }
 
 
-void DiffViewCtrl::Append(  const std::string& opt_key, Preset::Type type, 
-                            wxString category_name, wxString group_name, wxString option_name,
-                            wxString old_value, wxString mod_value, wxString new_value, const std::string category_icon_name)
-{
-    ItemData item_data = { opt_key, option_name, old_value, mod_value, new_value, type };
+void DiffViewCtrl::Append(const OptionKeyIdx &opt_key_idx,
+                          Preset::Type type,
+                          wxString category_name,
+                          wxString group_name,
+                          wxString option_name,
+                          wxString old_value,
+                          wxString mod_value,
+                          wxString new_value,
+                          const std::string category_icon_name) {
+    ItemData item_data = { opt_key_idx, option_name, old_value, mod_value, new_value, type };
 
     wxString old_val = get_short_string(item_data.old_val);
     wxString mod_val = get_short_string(item_data.mod_val);
@@ -769,7 +766,7 @@ std::vector<std::string> DiffViewCtrl::options(Preset::Type type, bool selected)
 
     for (auto item : m_items_map) {
         if (item.second.type == type && model->IsEnabledItem(item.first) == selected)
-            ret.emplace_back(get_pure_opt_key(item.second.opt_key));
+            ret.emplace_back(item.second.opt_key_idx.key);
     }
 
     return ret;
@@ -781,7 +778,7 @@ std::vector<std::string> DiffViewCtrl::selected_options()
 
     for (auto item : m_items_map)
         if (model->IsEnabledItem(item.first))
-            ret.emplace_back(get_pure_opt_key(item.second.opt_key));
+            ret.emplace_back(item.second.opt_key_idx.key);
 
     return ret;
 }
@@ -1038,7 +1035,7 @@ bool UnsavedChangesDialog::save(PresetCollection* dependent_presets, bool show_s
     {
         std::vector<Preset::Type> types_for_save;
 
-        PrinterTechnology printer_technology = wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology();
+        PrinterTechnology printer_technology = wxGetApp().get_current_printer_technology();
 
         for (Tab* tab : wxGetApp().tabs_list)
             if (tab->supports_printer_technology(printer_technology) && tab->completed() && tab->current_preset_is_dirty()) {
@@ -1067,27 +1064,6 @@ bool UnsavedChangesDialog::save(PresetCollection* dependent_presets, bool show_s
     return true;
 }
 
-static size_t get_id_from_opt_key(std::string opt_key)
-{
-    int pos = opt_key.find("#");
-    if (pos > 0) {
-        boost::erase_head(opt_key, pos + 1);
-        return static_cast<size_t>(atoi(opt_key.c_str()));
-    }
-    return size_t(-1);
-}
-
-static wxString get_full_label(std::string opt_key, const DynamicPrintConfig& config)
-{
-    opt_key = get_pure_opt_key(opt_key);
-
-    if (config.option(opt_key)->is_nil())
-        return _L("N/A");
-
-    const ConfigOptionDef* opt = config.def()->get(opt_key);
-    return opt->full_label.empty() ? opt->label : opt->full_label;
-}
-
 wxString graph_to_string(const GraphData &graph)
 {
     wxString str = "";
@@ -1095,191 +1071,208 @@ wxString graph_to_string(const GraphData &graph)
     case GraphData::GraphType::SQUARE: str = _L("Square") + ":"; break;
     case GraphData::GraphType::LINEAR: str = _L("Linear") + ":"; break;
     case GraphData::GraphType::SPLINE: str = _L("Spline") + ":"; break;
+    default: assert(false);
     }
     for (const Vec2d &pt : graph.data()) { str += format_wxstr(" %1%,%2%", pt.x(), pt.y()); }
     return str;
 }
 
-static wxString get_string_value(std::string opt_key, const DynamicPrintConfig& config)
+static wxString get_string_value(const OptionKeyIdx &opt_key_id, const DynamicPrintConfig& config)
 {
-    size_t opt_idx = get_id_from_opt_key(opt_key);
-    opt_key = get_pure_opt_key(opt_key);
+    int32_t opt_idx = opt_key_id.idx;
+    const std::string &opt_key = opt_key_id.key;
 
-    if (config.option(opt_key)->is_nil())
-        return _L("N/A");
+    wxString serialized_str = _L("Undef");
 
-    wxString out;
-
-    const ConfigOptionDef* opt = config.def()->get(opt_key);
-    bool is_nullable = opt->nullable;
-
-    switch (opt->type) {
+    const ConfigOptionDef* opt_def = config.def()->get(opt_key);
+    bool is_optional = opt_def->is_optional;
+    bool can_be_disable = opt_def->can_be_disabled;
+    
+    
+    const ConfigOption* option = config.option(opt_key);
+    bool full_serialize = option->size() > 1 && (opt_idx < 0 || opt_idx >= int32_t(option->size()));
+    if (!full_serialize && !option->is_scalar()) {
+        opt_idx = 0;
+    }
+    switch (opt_def->type) {
     case coInt:
-        return from_u8((boost::format("%1%") % config.option(opt_key)->get_int()).str());
+        serialized_str = from_u8(option->serialize());
+        serialized_str.Replace("!", "Disabled:");
+        break;
     case coInts: {
-        if (is_nullable) {
-            auto values = config.opt<ConfigOptionIntsNullable>(opt_key);
-            if (opt_idx < values->size())
-                return from_u8((boost::format("%1%") % values->get_at(opt_idx)).str());
-            else
-                return from_u8(values->serialize());
+        if (!full_serialize) {
+            serialized_str = from_u8(config.option<ConfigOptionInts>(opt_key)->serialize_at(opt_idx));
+        } else {
+            serialized_str = from_u8(option->serialize());
         }
-        else {
-            auto values = config.opt<ConfigOptionInts>(opt_key);
-            if (opt_idx < values->size())
-                return from_u8((boost::format("%1%") % values->get_at(opt_idx)).str());
-            else
-                return from_u8(values->serialize());
-        }
-        return _L("Undef");
+        serialized_str.Replace("!", "Disabled:");
+        break;
     }
     case coBool:
-        return config.opt_bool(opt_key) ? "true" : "false";
+        serialized_str = from_u8(option->serialize());
+        serialized_str.Replace("0", "false");
+        serialized_str.Replace("1", "true");
+        serialized_str.Replace("!", "Disabled:");
+        break;
     case coBools: {
-        if (is_nullable) {
-            auto values = config.opt<ConfigOptionBoolsNullable>(opt_key);
-            if (opt_idx < values->size())
-                return values->get_at(opt_idx) ? "true" : "false";
-            else
-                return from_u8(values->serialize());
+        if (!full_serialize) {
+            serialized_str = from_u8(config.option<ConfigOptionBools>(opt_key)->serialize_at(opt_idx));
+        } else {
+            serialized_str = from_u8(option->serialize());
         }
-        else {
-            auto values = config.opt<ConfigOptionBools>(opt_key);
-            if (opt_idx < values->size())
-                return values->get_at(opt_idx) ? "true" : "false";
-            else
-                return from_u8(values->serialize());
-        }
-        return _L("Undef");
+        serialized_str.Replace("0", "false");
+        serialized_str.Replace("1", "true");
+        serialized_str.Replace("!", "Disabled:");
+        break;
     }
     case coPercent:
-        return from_u8((boost::format("%1%%%") % int(config.optptr(opt_key)->get_float())).str());
     case coPercents: {
-        if (is_nullable) {
-            auto values = config.opt<ConfigOptionPercentsNullable>(opt_key);
-            if (opt_idx < values->size())
-                return from_u8((boost::format("%1%%%") % values->get_at(opt_idx)).str());
-            else
-                return from_u8(values->serialize());
-        }
-        else {
-            auto values = config.opt<ConfigOptionPercents>(opt_key);
-            if (opt_idx < values->size())
-                return from_u8((boost::format("%1%%%") % values->get_at(opt_idx)).str());
-            else
-                return from_u8(values->serialize());
-        }
-        return _L("Undef");
-    }
-    case coFloat:
-        return double_to_string(config.option(opt_key)->get_float(), opt->precision);
-    case coFloats: {
-        if (is_nullable) {
-            auto values = config.opt<ConfigOptionFloatsNullable>(opt_key);
-            if (opt_idx < values->size())
-                return double_to_string(values->get_at(opt_idx), opt->precision);
-            else
-                return from_u8(values->serialize());
-        }
-        else {
-            auto values = config.opt<ConfigOptionFloats>(opt_key);
-            if (opt_idx < values->size())
-                return double_to_string(values->get_at(opt_idx), opt->precision);
-            else
-                return from_u8(values->serialize());
-        }
-        return _L("Undef");
-    }
-    case coString: {
-        //character '<' '>' create strange problems for wxWidget, so remove them (only for the display)
-        std::string str = config.opt_string(opt_key);
-        boost::erase_all(str, "<");
-        boost::erase_all(str, ">");
-        return from_u8(str);
-    }
-
-    case coStrings: {
-        const ConfigOptionStrings* strings = config.opt<ConfigOptionStrings>(opt_key);
-        if (strings) {
-            if (opt_key == "compatible_printers" || opt_key == "compatible_prints") {
-                if (strings->empty())
-                    return _L("All"); 
-                for (size_t id = 0; id < strings->size(); id++)
-                    out += from_u8(strings->get_at(id)) + "\n";
-                out.RemoveLast(1);
-                return out;
-            }
-            if (opt_key == "gcode_substitutions") {
-                if (!strings->empty())
-                    for (size_t id = 0; id < strings->size(); id += 4)
-                        out +=  from_u8(strings->get_at(id))     + ";\t" + 
-                                from_u8(strings->get_at(id + 1)) + ";\t" + 
-                                from_u8(strings->get_at(id + 2)) + ";\t" +
-                                from_u8(strings->get_at(id + 3)) + ";\n";
-                return out;
-            }
-            if (!strings->empty())
-                if (opt_idx < strings->size())
-                    return from_u8(strings->get_at(opt_idx));
-                else
-                    return from_u8(strings->serialize());
+        if (!full_serialize) {
+            serialized_str = option->is_enabled(opt_idx) ? "" : "Disabled:";
+            serialized_str += from_u8((boost::format("%1%%%") % int(option->get_float(opt_idx))).str());
+        } else {
+            serialized_str = from_u8(option->serialize());
+            serialized_str.Replace("!", "Disabled:");
         }
         break;
-        }
-    case coFloatOrPercent: {
-        const ConfigOptionFloatOrPercent* float_percent = config.opt<ConfigOptionFloatOrPercent>(opt_key);
-        if (float_percent)
-            out = double_to_string(float_percent->value, opt->precision) + (float_percent->percent ? "%" : "");
-        return out;
     }
-    case coFloatsOrPercents: {
-        const ConfigOptionFloatsOrPercents* floats_or_percents = config.opt<ConfigOptionFloatsOrPercents>(opt_key);
-        if (floats_or_percents) {
-            if (opt_idx < floats_or_percents->size()) {
-                const FloatOrPercent f_o_p = floats_or_percents->get_at(opt_idx);
-                out = double_to_string(f_o_p.value, opt->precision) + (f_o_p.percent ? "%" : "");
+    case coFloat:
+    case coFloats: {
+        if (!full_serialize) {
+            serialized_str = option->is_enabled(opt_idx) ? "" : "Disabled:";
+            serialized_str += double_to_string(option->get_float(opt_idx), opt_def->precision);
+        } else {
+            serialized_str = from_u8(option->serialize());
+            serialized_str.Replace("!", "Disabled:");
+        }
+        break;
+    }
+    case coString: {
+        const ConfigOptionString* option_str = config.option<ConfigOptionString>(opt_key);
+        assert(option_str);
+        //character '<' '>' create strange problems for wxWidget, so remove them (only for the display)
+        std::string str = option->is_enabled() ? "" : "Disabled:";
+        str += option_str->value;
+        boost::erase_all(str, "<");
+        boost::erase_all(str, ">");
+        serialized_str = from_u8(str);
+        break;
+    }
+    case coStrings: {
+        const ConfigOptionStrings* strings = config.option<ConfigOptionStrings>(opt_key);
+        assert(strings);
+        if (opt_key == "compatible_printers" || opt_key == "compatible_prints") {
+            if (strings->empty()) {
+                serialized_str = _L("All");
+                break;
+            }
+            for (size_t id = 0; id < strings->size(); id++) {
+                serialized_str += from_u8(strings->get_at(id)) + "\n";
+            }
+            serialized_str.RemoveLast(1);
+            break;
+        }
+        if (opt_key == "gcode_substitutions") {
+            if (!strings->empty()) {
+                for (size_t id = 0; id < strings->size(); id += 4) {
+                    serialized_str +=   from_u8(strings->get_at(id))     + ";\t" + 
+                                        from_u8(strings->get_at(id + 1)) + ";\t" + 
+                                        from_u8(strings->get_at(id + 2)) + ";\t" +
+                                        from_u8(strings->get_at(id + 3)) + ";\n";
+                }
+            }
+            break;
+        }
+        if (!strings->empty()) {
+            if (opt_idx < int32_t(strings->size())) {
+                serialized_str = option->is_enabled(opt_idx) ? "" : "Disabled:";
+                serialized_str += from_u8(strings->get_at(opt_idx));
             } else {
-                return from_u8(floats_or_percents->serialize());
+                serialized_str = "";
+                for (size_t i = 0; i < option->size(); ++i) {
+                    serialized_str += i==0 ? "\"" : "\",\"";
+                    serialized_str += option->is_enabled(i) ? "" : "Disabled:";
+                    serialized_str += from_u8(strings->get_at(i));
+                }
+                serialized_str += "\"";
             }
         }
-        return out;
+        break;
+    }
+    case coFloatOrPercent: {
+        const ConfigOptionFloatOrPercent* float_percent = config.option<ConfigOptionFloatOrPercent>(opt_key);
+        assert(float_percent);
+        serialized_str = (float_percent->is_enabled() ? "" : "Disabled:");
+        serialized_str += double_to_string(float_percent->value, opt_def->precision);
+        serialized_str += (float_percent->percent ? "%" : "");
+        break;
+    }
+    case coFloatsOrPercents: {
+        const ConfigOptionFloatsOrPercents* floats_or_percents = config.option<ConfigOptionFloatsOrPercents>(opt_key);
+        assert(floats_or_percents);
+        if (!full_serialize) {
+            const FloatOrPercent f_o_p = floats_or_percents->get_at(opt_idx);
+            serialized_str = (floats_or_percents->is_enabled(opt_idx) ? "" : "Disabled:");
+            serialized_str += double_to_string(f_o_p.value, opt_def->precision);
+            serialized_str += (f_o_p.percent ? "%" : "");
+        } else {
+            serialized_str = from_u8(floats_or_percents->serialize());
+            serialized_str.Replace("!", "Disabled:");
+        }
+        break;
     }
     case coEnum: {
-        auto opt = config.option_def(opt_key)->enum_def->enum_to_label(config.option(opt_key)->get_int());
-        return opt.has_value() ? _(from_u8(*opt)) : _L("Undef");
+        auto optional_str = config.option_def(opt_key)->enum_def->enum_to_label(config.option(opt_key)->get_int());
+        serialized_str = (option->is_enabled() ? "" : "Disabled:");
+        serialized_str += optional_str.has_value() ? _(from_u8(*optional_str)) : _L("Undef");
+        break;
     }
     case coPoint: {
         Vec2d pointd = config.opt<ConfigOptionPoint>(opt_key)->value;
-        return from_u8((boost::format("[%1%]") % ConfigOptionPoint(pointd).serialize()).str());
+        serialized_str = (option->is_enabled() ? "" : "Disabled:");
+        serialized_str += from_u8((boost::format("[%1%]") % ConfigOptionPoint(pointd).serialize()).str());
+        break;
     }
     case coPoints: {
-        if (opt_key == "bed_shape") {
-            BedShape shape(*config.option<ConfigOptionPoints>(opt_key));
-            return shape.get_full_name_with_params();
-        }
-        
         const ConfigOptionPoints* opt_pts = config.opt<ConfigOptionPoints>(opt_key);
-        if (!opt_pts->empty())
-            if (opt_idx < opt_pts->size())
-                return from_u8((boost::format("[%1%]") % ConfigOptionPoint(opt_pts->get_at(opt_idx)).serialize()).str());
-            else
-                return from_u8(opt_pts->serialize());
+        if (opt_key == "bed_shape") {
+            BedShape shape(*opt_pts);
+            serialized_str = shape.get_full_name_with_params();
+            break;
+        }
+        if (!opt_pts->empty()) {
+            if (!full_serialize) {
+                serialized_str = (option->is_enabled(opt_idx) ? "" : "Disabled:");
+                serialized_str += from_u8((boost::format("[%1%]") % opt_pts->serialize_at(opt_idx)).str());
+            } else {
+                serialized_str = from_u8(opt_pts->serialize());
+                serialized_str.Replace("!", "Disabled:");
+            }
+        }
+        break;
     }
     case coGraph: {
-        return graph_to_string(config.option<ConfigOptionGraph>(opt_key)->value);
+        serialized_str = (option->is_enabled() ? "" : "Disabled:");
+        serialized_str += graph_to_string(config.option<ConfigOptionGraph>(opt_key)->value);
+        break;
     }
     case coGraphs: {
         const ConfigOptionGraphs* opt_graphs = config.opt<ConfigOptionGraphs>(opt_key);
-        if (!opt_graphs->empty())
-            if (opt_idx < opt_graphs->size())
-                return graph_to_string(opt_graphs->get_at(opt_idx));
-            else
-                return from_u8(opt_graphs->serialize());
+        if (!opt_graphs->empty()) {
+            if (!full_serialize) {
+                serialized_str = (option->is_enabled(opt_idx) ? "" : "Disabled:");
+                serialized_str += graph_to_string(opt_graphs->get_at(opt_idx));
+            } else {
+                serialized_str = from_u8(opt_graphs->serialize());
+                serialized_str.Replace("!", "Disabled:");
+            }
+        }
+        break;
     }
     default:
         break;
     }
-    return out;
+    return serialized_str;
 }
 
 void UnsavedChangesDialog::update(Preset::Type type, PresetCollection* dependent_presets, const std::string& new_selected_preset, const wxString& header)
@@ -1297,7 +1290,7 @@ void UnsavedChangesDialog::update(Preset::Type type, PresetCollection* dependent
         m_discard_btn ->Bind(wxEVT_ENTER_WINDOW, [this]                                    (wxMouseEvent& e) { show_info_line(Action::Discard); e.Skip(); });
 
     if (type == Preset::TYPE_INVALID || !dependent_presets) {
-        PrinterTechnology printer_technology = wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology();
+        PrinterTechnology printer_technology = wxGetApp().get_current_printer_technology();
         int presets_cnt = 0;
         for (Tab* tab : wxGetApp().tabs_list)
             if (tab->supports_printer_technology(printer_technology) && tab->completed() && tab->current_preset_is_dirty())
@@ -1334,7 +1327,7 @@ void UnsavedChangesDialog::update_tree(Preset::Type type, PresetCollection* pres
     std::vector<PresetCollection*> presets_list;
     if (type == Preset::TYPE_INVALID)
     {
-        PrinterTechnology printer_technology = wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology();
+        PrinterTechnology printer_technology = wxGetApp().get_current_printer_technology();
 
         for (Tab* tab : wxGetApp().tabs_list)
             if (tab->supports_printer_technology(printer_technology) && tab->completed() && tab->current_preset_is_dirty())
@@ -1357,8 +1350,7 @@ void UnsavedChangesDialog::update_tree(Preset::Type type, PresetCollection* pres
         m_tree->model->AddPreset(type, from_u8(presets->get_edited_preset().name), old_pt, from_u8(new_selected_preset));
 
         // Collect dirty options.
-        const bool deep_compare = type != Preset::TYPE_FFF_FILAMENT && type != Preset::TYPE_SLA_MATERIAL;
-        auto dirty_options = presets->current_dirty_options(deep_compare);
+        std::map<OptionKeyIdx, uint16_t> dirty_options = presets->dirty_options(&presets->get_edited_preset(), &presets->get_selected_preset());
 
         // process changes of extruders count
         if (type == Preset::TYPE_PRINTER && old_pt == ptFFF &&
@@ -1370,33 +1362,33 @@ void UnsavedChangesDialog::update_tree(Preset::Type type, PresetCollection* pres
 
             assert(category_icon_map.find(wxGetApp().get_tab(type)->get_page(0)->title()) != category_icon_map.end());
             if(wxGetApp().get_tab(type)->get_page_count() > 0)
-                m_tree->Append("extruders_count", type, wxGetApp().get_tab(type)->get_page(0)->title()/*_L("General")*/, _L("Capabilities"), local_label, old_val, mod_val, new_val, 
+                m_tree->Append(OptionKeyIdx::scalar("extruders_count"), type, wxGetApp().get_tab(type)->get_page(0)->title()/*_L("General")*/, _L("Capabilities"), local_label, old_val, mod_val, new_val, 
                     category_icon_map.find(wxGetApp().get_tab(type)->get_page(0)->title()) != category_icon_map.end() ? category_icon_map.at(wxGetApp().get_tab(type)->get_page(0)->title()) : "wrench"/*category_icon_map.at("General")*/);
         }
         //TODO same for milling head?
 
-        for (const std::string& opt_key : dirty_options) {
-            const Search::Option& option = searcher.get_option(opt_key, type); //FIXME serach for current mode.
-            if (option.opt_key_with_idx() != opt_key) {
+        for (auto &[opt_key_id, flag] : dirty_options) {
+            const Search::SearchOption& option = searcher.get_option(opt_key_id.key, opt_key_id.idx, type); //FIXME serach for current mode.
+            if (option.opt_key() != opt_key_id.key || option.idx != opt_key_id.idx) {
                 // When founded option isn't the correct one.
                 // It can be for dirty_options: "default_print_profile", "printer_model", "printer_settings_id",
                 // because of they don't exist in searcher
                 if ((std::set<std::string>{"default_print_profile", "printer_model", "printer_settings_id",
-                                           "filament_settings_id", "print_settings_id", "inherits"})
-                        .count(opt_key) > 0)
+                                           "filament_settings_id", "print_settings_id", "inherits", "print_version"})
+                        .count(opt_key_id.key) > 0)
                 continue;
 
                 // may be a setting that isn't in the gui, but is still in the system (like seam_position when we use s_seam_position instead of it)
                 // TODO find a way to show the script widget. maybe the script widget must register itself for all dependencies (for the mode).
-                m_tree->Append(opt_key, type, "hidden", "hidden", opt_key,
-                    get_string_value(opt_key, old_config), get_string_value(opt_key, mod_config), get_string_value(opt_key, new_config), "wrench");
+                m_tree->Append(opt_key_id, type, "hidden", "hidden", opt_key_id.key,
+                    get_string_value(opt_key_id, old_config), get_string_value(opt_key_id, mod_config), get_string_value(opt_key_id, new_config), "wrench");
                 continue;
 
             }
 
-            m_tree->Append(opt_key, type, option.category_local, option.group_local, option.label_local,
-                get_string_value(opt_key, old_config), get_string_value(opt_key, mod_config),
-                     m_tree->has_new_value_column() ? get_string_value(opt_key, new_config) : "",
+            m_tree->Append(opt_key_id, type, option.category_local, option.group_local, option.label_local,
+                get_string_value(opt_key_id, old_config), get_string_value(opt_key_id, mod_config),
+                     m_tree->has_new_value_column() ? get_string_value(opt_key_id, new_config) : "",
                      category_icon_map.find(option.category) != category_icon_map.end() ? category_icon_map.at(option.category) : "wrench");
         }
     }
@@ -1426,7 +1418,8 @@ void UnsavedChangesDialog::on_dpi_changed(const wxRect& suggested_rect)
 void UnsavedChangesDialog::on_sys_color_changed()
 {
     for (auto btn : { m_save_btn, m_transfer_btn, m_discard_btn } )
-        btn->sys_color_changed();
+        if (btn) // m_transfer_btn can benullptr
+            btn->sys_color_changed();
     // msw_rescale updates just icons, so use it
     m_tree->Rescale();
 
@@ -1747,7 +1740,7 @@ void DiffPresetDialog::complete_dialog_creation()
 
 DiffPresetDialog::DiffPresetDialog(MainFrame* mainframe)
     : DPIDialog(mainframe, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER, "diff_presets_dialog", mainframe->normal_font().GetPointSize()),
-    m_pr_technology(wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology())
+    m_pr_technology(wxGetApp().get_current_printer_technology())
 {    
     // Init bundles
 
@@ -1929,23 +1922,23 @@ void DiffPresetDialog::update_tree()
             wxString left_val = from_u8((boost::format("%1%") % left_config.opt<ConfigOptionStrings>("extruder_colour")->size()).str());
             wxString right_val = from_u8((boost::format("%1%") % right_congig.opt<ConfigOptionStrings>("extruder_colour")->size()).str());
 
-            m_tree->Append("extruders_count", type, _L("General"), _L("Capabilities"), local_label, left_val, right_val, "", category_icon_map.at("General"));
+            m_tree->Append(OptionKeyIdx::scalar("extruders_count"), type, _L("General"), _L("Capabilities"), local_label, left_val, right_val, "", category_icon_map.at("General"));
         }
 
-        for (const std::string& opt_key : dirty_options) {
-            wxString left_val = get_string_value(opt_key, left_config);
-            wxString right_val = get_string_value(opt_key, right_congig);
+        for (auto &[opt_key_id, flag] : dirty_options) {
+            wxString left_val = get_string_value(opt_key_id, left_config);
+            wxString right_val = get_string_value(opt_key_id, right_congig);
 
-            Search::Option option = searcher.get_option_names(opt_key/*, get_full_label(opt_key, left_config)*/, type);
-            if (option.opt_key_with_idx() != opt_key) {
+            Search::SearchOption option = searcher.get_option_names(opt_key_id.key, opt_key_id.idx, type);
+            if (option.opt_key() != opt_key_id.key || option.idx != opt_key_id.idx) {
                 // temporary solution, just for testing
-                m_tree->Append(opt_key, type, _L("Undef category"), _L("Undef group"), opt_key, left_val, right_val, "", "question");
+                m_tree->Append(opt_key_id, type, _L("Undef category"), _L("Undef group"), opt_key_id.key, left_val, right_val, "", "question");
                 // When founded option isn't the correct one.
                 // It can be for dirty_options: "default_print_profile", "printer_model", "printer_settings_id",
                 // because of they don't exist in searcher
                 continue;
             }
-            m_tree->Append(opt_key, type, option.category_local, option.group_local, option.label_local,
+            m_tree->Append(opt_key_id, type, option.category_local, option.group_local, option.label_local,
                 left_val, right_val, "", category_icon_map.at(option.category));
         }
     }
@@ -2010,7 +2003,8 @@ void DiffPresetDialog::on_sys_color_changed()
     }
 
     for (ScalableButton* btn : { m_transfer_btn, m_save_btn, m_cancel_btn })
-        btn->sys_color_changed();
+        if(btn)
+            btn->sys_color_changed();
 
     // msw_rescale updates just icons, so use it
     m_tree->Rescale();
@@ -2149,14 +2143,22 @@ void DiffPresetDialog::button_event(Action act)
 
 std::string DiffPresetDialog::get_left_preset_name(Preset::Type type)
 {
-    PresetComboBox* cb = m_preset_combos[int(type - Preset::TYPE_FFF_PRINT)].presets_left;
-    return Preset::remove_suffix_modified(get_selection(cb));
+    for (auto preset_combos : m_preset_combos) {
+        if (preset_combos.presets_left->get_type() == type) {
+            return Preset::remove_suffix_modified(get_selection(preset_combos.presets_left));
+        }
+    }
+    return "";
 }
 
 std::string DiffPresetDialog::get_right_preset_name(Preset::Type type)
 {
-    PresetComboBox* cb = m_preset_combos[int(type - Preset::TYPE_FFF_PRINT)].presets_right;
-    return Preset::remove_suffix_modified(get_selection(cb));
+    for (auto preset_combos : m_preset_combos) {
+        if (preset_combos.presets_right->get_type() == type) {
+            return Preset::remove_suffix_modified(get_selection(preset_combos.presets_right));
+        }
+    }
+    return "";
 }
 
 }

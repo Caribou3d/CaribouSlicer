@@ -27,8 +27,8 @@
 
 #include <boost/log/trivial.hpp>
 
-#include <tbb/parallel_for.h>
-#include <tbb/task_group.h>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/task_group.h>
 
 namespace Slic3r::FFFTreeSupport
 {
@@ -115,7 +115,7 @@ TreeModelVolumes::TreeModelVolumes(
         tbb::parallel_for(tbb::blocked_range<size_t>(num_raft_layers, num_layers, std::min<size_t>(1, std::max<size_t>(16, num_layers / (8 * tbb::this_task_arena::max_concurrency())))),
             [&](const tbb::blocked_range<size_t> &range) {
             for (size_t layer_idx = range.begin(); layer_idx < range.end(); ++ layer_idx)
-                outlines[layer_idx] = polygons_simplify(to_polygons(print_object.get_layer(layer_idx - num_raft_layers)->lslices), mesh_settings.resolution, polygons_strictly_simple);
+                outlines[layer_idx] = polygons_simplify(to_polygons(print_object.get_layer(layer_idx - num_raft_layers)->lslices()), mesh_settings.resolution, polygons_strictly_simple);
         });
     }
 #endif
@@ -144,13 +144,13 @@ TreeModelVolumes::TreeModelVolumes(
             [&](const tbb::blocked_range<size_t> &range) {
             for (size_t layer_idx = range.begin(); layer_idx < range.end(); ++ layer_idx) {
                 if (layer_idx < coord_t(additional_excluded_areas.size()))
-                    append(m_anti_overhang[layer_idx], additional_excluded_areas[layer_idx]);
+                    append(m_anti_overhang[layer_idx], union_ex(additional_excluded_areas[layer_idx]));
     //          if (SUPPORT_TREE_AVOID_SUPPORT_BLOCKER)
     //              append(m_anti_overhang[layer_idx], storage.support.supportLayers[layer_idx].anti_overhang);
     //FIXME block wipe tower
     //          if (storage.primeTower.enabled)
     //              append(m_anti_overhang[layer_idx], layer_idx == 0 ? storage.primeTower.outer_poly_first_layer : storage.primeTower.outer_poly);
-                m_anti_overhang[layer_idx] = union_(m_anti_overhang[layer_idx]);
+                m_anti_overhang[layer_idx] = union_ex(m_anti_overhang[layer_idx]);
             }
         });
     }
@@ -194,6 +194,9 @@ void TreeModelVolumes::precalculate(const PrintObject& print_object, const coord
     for (LayerIndex distance_to_top = 0; distance_to_top <= max_layer; ++ distance_to_top) {
         const LayerIndex current_layer = max_layer - distance_to_top;
         auto update_radius_until_layer = [&radius_until_layer, current_layer](coord_t r) {
+            // supermerill: quick fix for radius ==0 that creates crashes
+            if (r <= 0)
+                return;
             auto it = radius_until_layer.find(r);
             if (it == radius_until_layer.end())
                 radius_until_layer.emplace_hint(it, r, current_layer);
@@ -519,7 +522,7 @@ void TreeModelVolumes::calculateCollision(const coord_t radius, const LayerIndex
                                 append(collisions, offset(union_ex(collision_areas_original), radius + required_range_x, ClipperLib::jtMiter, 1.2));
                             }
                         collisions = processing_last_mesh && layer_idx < int(anti_overhang.size()) ? 
-                                union_(collisions, offset(union_ex(anti_overhang[layer_idx]), radius, ClipperLib::jtMiter, 1.2)) : 
+                                union_(collisions, offset(anti_overhang[layer_idx], radius, ClipperLib::jtMiter, 1.2)) : 
                                 union_(collisions);
                         auto &dst = data[layer_idx];
                         if (processing_last_mesh) {
@@ -547,7 +550,7 @@ void TreeModelVolumes::calculateCollision(const coord_t radius, const LayerIndex
                         Polygons placable = diff(
                             // Inflate the surface to sit on by the separation distance to increase chance of a support being placed on a sloped surface.
                             offset(below, xy_distance), 
-                            layer_idx_below < int(anti_overhang.size()) ? union_(current, anti_overhang[layer_idx_below]) : current);
+                            layer_idx_below < int(anti_overhang.size()) ? union_(current, to_polygons(anti_overhang[layer_idx_below])) : current);
                         auto &dst     = data_placeable[layer_idx];
                         if (processing_last_mesh) {
                             if (! dst.empty())

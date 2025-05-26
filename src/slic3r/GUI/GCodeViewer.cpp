@@ -198,7 +198,7 @@ void GCodeViewer::TBuffer::add_path(const GCodeProcessorResult::MoveVertex& move
     paths.push_back({ move.type, move.extrusion_role, move.delta_extruder,
         move.height, move.width,
         move.feedrate, move.fan_speed, move.temperature,
-        move.volumetric_rate(), move.mm3_per_mm, move.extruder_id, move.cp_color_id, { { endpoint, endpoint } }, move.move_time });
+        move.volumetric_rate(), move.mm3_per_mm, move.extruder_id, move.cp_color_id, move.object_id, { { endpoint, endpoint } }, move.move_time });
 }
 
 void GCodeViewer::COG::render()
@@ -384,8 +384,8 @@ void GCodeViewer::Extrusions::Range::reset()
     m_full_precision_min = FLT_MAX;
     m_full_precision_max = -FLT_MAX;
     m_values_2_counts.clear();
-    m_user_min = 0;
-    m_user_max = 0;
+    //m_user_min = 0; //keep it, as a saved thing for the session
+    //m_user_max = 0;
     total_count = 0;
     for (size_t idx = 0; idx < 20; idx++) {
         counts[idx] = 0;
@@ -794,6 +794,7 @@ float GCodeViewer::Path::get_value(EViewType type) const
     case EViewType::VolumetricFlow: { return this->volumetric_flow; }
     case EViewType::Tool:           { return float(this->extruder_id); }
     case EViewType::Filament:       { return float(this->extruder_id); }
+    case EViewType::Object:         { return float(this->object_id); }
     default: return 0.f;
     }
 }
@@ -1416,6 +1417,9 @@ void GCodeViewer::load(const GCodeProcessorResult& gcode_result, const Print& pr
         m_print = print;
     assert(&m_print->get() == &print);
 
+    // update decimal_precision, in case the gcodeviewer_decimals changed (it shouldn't)
+    this->decimal_precision = uint8_t(std::max(0, std::min(6, atoi(Slic3r::GUI::get_app_config()->get("gcodeviewer_decimals").c_str()))));
+
     // avoid processing if called with the same gcode_result
     // unless you changed the path merge mode
     if (m_last_result_id == gcode_result.id && (m_current_mode == m_last_mode))
@@ -1518,12 +1522,16 @@ void GCodeViewer::refresh(const GCodeProcessorResult& gcode_result, const std::v
 
     wxBusyCursor busy;
 
-    if (m_view_type == EViewType::Tool && !gcode_result.extruder_colors.empty())
-        // update tool colors from config stored in the gcode
-        decode_colors(gcode_result.extruder_colors, m_tool_colors);
-    else
+    if (m_view_type == EViewType::Tool && !gcode_result.extruder_colors.empty()) {
+        assert(str_tool_colors.size() == gcode_result.extruder_colors.size());
         // update tool colors
         decode_colors(str_tool_colors, m_tool_colors);
+        // update (override) tool colors from config stored in the gcode where it's defined.
+        decode_colors(gcode_result.extruder_colors, m_tool_colors);
+    } else {
+        // update tool colors
+        decode_colors(str_tool_colors, m_tool_colors);
+    }
 
     ColorRGBA default_color;
     decode_color("#FF8000", default_color);
@@ -1532,12 +1540,16 @@ void GCodeViewer::refresh(const GCodeProcessorResult& gcode_result, const std::v
     while (m_tool_colors.size() < std::max(size_t(1), gcode_result.extruders_count))
         m_tool_colors.push_back(default_color);
 
-    if (!gcode_result.filament_colors.empty())
-        // update tool colors from config stored in the gcode
+    if (!gcode_result.filament_colors.empty()) {
+        assert(str_tool_colors.size() == gcode_result.filament_colors.size());
+        // update filament colors
+        decode_colors(str_tool_colors, m_filament_colors);
+        // update(override) filament colors from config stored in the gcode
         decode_colors(gcode_result.filament_colors, m_filament_colors);
-    else
+    } else {
         // use tool colors
         decode_colors(str_tool_colors, m_filament_colors);
+    }
 
     // ensure there are enough colors defined
     while (m_filament_colors.size() < std::max(size_t(1), gcode_result.extruders_count)) {
@@ -2282,6 +2294,8 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
         return;
 
     m_extruders_count = gcode_result.extruders_count;
+    m_objects_count = gcode_result.object_names.size();
+    m_objects_ids = gcode_result.object_names;
 
     unsigned int progress_count = 0;
     static const unsigned int progress_threshold = 1000;
@@ -3059,8 +3073,7 @@ void GCodeViewer::load_wipetower_shell(const Print& print)
         const PrintConfig& config = print.config();
         const size_t extruders_count = config.nozzle_diameter.size();
         if (extruders_count > 1 && config.wipe_tower && !config.complete_objects) {
-            //FIXME using first nozzle diameter instead of the "right" one.
-            const WipeTowerData& wipe_tower_data = print.wipe_tower_data(extruders_count, config.nozzle_diameter.get_at(0));
+            const WipeTowerData& wipe_tower_data = print.wipe_tower_data();
             const float depth = wipe_tower_data.depth;
             const std::vector<std::pair<float, float>> z_and_depth_pairs = wipe_tower_data.z_and_depth_pairs;
             const float brim_width = wipe_tower_data.brim_width;
@@ -3121,6 +3134,7 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
         case EViewType::VolumetricFlow: { color = m_extrusions.ranges.volumetric_flow.get_color_at(path.volumetric_flow); break; }
         case EViewType::Tool:           { color = m_tool_colors[path.extruder_id]; break; }
         case EViewType::Filament:       { color = m_filament_colors[path.extruder_id]; break; }
+        case EViewType::Object:         { color = path.object_id == 0 ? ColorRGBA::DARK_GRAY() : get_a_color(path.object_id); break; }
         case EViewType::ColorPrint:     {
             if (path.cp_color_id >= static_cast<unsigned char>(m_tool_colors.size()))
                 color = ColorRGBA::GRAY();
@@ -3271,7 +3285,7 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
     //fix error (all paths in m_buffers may be out of the m_layers_z_range)
     //FIXME better than this dumb stop-gap
     if (global_endpoints.first > global_endpoints.last) {
-        global_endpoints = { 0, m_moves_count };
+        global_endpoints = { 0, 0 };//m_moves_count };
         top_layer_endpoints = global_endpoints;
     }
 
@@ -3884,6 +3898,9 @@ void GCodeViewer::render_toolpaths()
             const int normal_id   = shader->get_attrib_location("v_normal");
             const int uniform_color = shader->get_uniform_location("uniform_color");
 
+            if (buffer.render_paths.empty()) {
+                continue;
+            }
             auto it_path = buffer.render_paths.begin();
             for (unsigned int ibuffer_id = 0; ibuffer_id < static_cast<unsigned int>(buffer.indices.size()); ++ibuffer_id) {
                 const IBuffer& i_buffer = buffer.indices[ibuffer_id];
@@ -4092,7 +4109,7 @@ void GCodeViewer::render_legend(float& legend_height)
 
     bool imperial_units = wxGetApp().app_config->get_bool("use_inches");
 
-    auto append_item = [icon_size, percent_bar_size, &imgui, imperial_units](EItemType type, const ColorRGBA& color, const std::string& label,
+    auto append_item = [icon_size, percent_bar_size, &imgui, imperial_units, decimal_preci = this->decimal_precision](EItemType type, const ColorRGBA& color, const std::string& label,
         bool visible = true, const std::string& time = "", float percent = 0.0f, float max_percent = 0.0f, const std::array<float, 4>& offsets = { 0.0f, 0.0f, 0.0f, 0.0f },
         double used_filament_m = 0.0, double used_filament_g = 0.0,
         std::function<void()> callback = nullptr) {
@@ -4167,9 +4184,11 @@ void GCodeViewer::render_legend(float& legend_height)
                 ::sprintf(buf, "%.1f%%", 100.0f * percent);
                 ImGui::TextUnformatted((percent > 0.0f) ? buf : "");
                 ImGui::SameLine(offsets[2]);
-                imgui.text(format("%1$.2f %2%", used_filament_m, (imperial_units ? inches : metres)));
+                std::string str_dist_m = Slic3r::to_string_nozero(used_filament_m, decimal_preci);
+                imgui.text(str_dist_m + " " + (imperial_units ? inches : metres));
                 ImGui::SameLine(offsets[3]);
-                imgui.text(format("%1$.2f %2%", used_filament_g, grams));
+                std::string str_weight_g = Slic3r::to_string_nozero(used_filament_g, decimal_preci);
+                imgui.text(str_weight_g + " " + grams);
             }
         }
         else {
@@ -4190,9 +4209,11 @@ void GCodeViewer::render_legend(float& legend_height)
             }
             else if (used_filament_m > 0.0) {
                 ImGui::SameLine(offsets[0]);
-                imgui.text(format("%1$.2f %2%", used_filament_m, (imperial_units ? inches : metres)));
+                std::string str_dist_m = Slic3r::to_string_nozero(used_filament_m, decimal_preci);
+                imgui.text(str_dist_m + " " + (imperial_units ? inches : metres));
                 ImGui::SameLine(offsets[1]);
-                imgui.text(format("%1$.2f %2%", used_filament_g, grams));
+                std::string str_weight_g = Slic3r::to_string_nozero(used_filament_g, decimal_preci);
+                imgui.text(str_weight_g + " " + grams);
             }
         }
 
@@ -4363,13 +4384,57 @@ void GCodeViewer::render_legend(float& legend_height)
 
         std::string longest_used_filament_string;
         for (double item : used_filaments_m) {
-            char buffer[64];
-            ::sprintf(buffer, imperial_units ? "%.2f in" : "%.2f m", item);
-            if (::strlen(buffer) > longest_used_filament_string.length())
-                longest_used_filament_string = buffer;
+            std::string str = Slic3r::to_string_nozero(item, this->decimal_precision);
+            if (str.size() + (imperial_units ? 3 : 2) > longest_used_filament_string.size()) {
+                longest_used_filament_string = str + (imperial_units ? " in" : " m");
+            }
         }
 
         offsets = calculate_offsets(labels, times, { "Extruder NNN", longest_used_filament_string }, icon_size);
+    }
+
+    if (m_view_type == EViewType::Object) {
+        // calculate used filaments data
+        used_filaments_m = std::vector<double>(m_objects_count, 0.0);
+        used_filaments_g = std::vector<double>(m_objects_count, 0.0);
+        std::string longest_name = "";
+        if (m_gcode_result) {
+            for (const std::string &name : m_objects_ids) {
+                if (longest_name.size() < name.size()) {
+                    longest_name = name;
+                }
+            }
+        }
+        assert(m_objects_count == m_print_statistics.volumes_per_role_per_extruder_per_object.size());
+        for (auto [object_idx, volumes_per_role_per_extruder] : m_print_statistics.volumes_per_role_per_extruder_per_object) {
+            assert(object_idx < m_objects_count);
+            for (size_t extruder_id : m_extruder_ids) {
+                if (volumes_per_role_per_extruder.find(extruder_id) == volumes_per_role_per_extruder.end()) {
+                    continue;
+                }
+                const std::map<GCodeExtrusionRole, double> &volume_per_role = volumes_per_role_per_extruder.at(extruder_id);
+                // only use roles selected in the feature legend (and so shown in the preview)
+                for (GCodeExtrusionRole role : m_roles) {
+                    if (role >= GCodeExtrusionRole::Count || !is_visible(role) || volume_per_role.find(role) == volume_per_role.end())
+                        continue;
+                    double volume = volume_per_role.at(role);
+                    auto [used_filament_m, used_filament_g] = get_used_filament_from_volume(volume, extruder_id);
+                    used_filaments_m[object_idx] += used_filament_m;
+                    used_filaments_g[object_idx] += used_filament_g;
+                }
+            }
+        }
+        std::string longest_used_filament_string;
+        for (double item : used_filaments_m) {
+            std::string str = Slic3r::to_string_nozero(item, this->decimal_precision);
+            if (str.size() + (imperial_units ? 3 : 2) > longest_used_filament_string.size()) {
+                longest_used_filament_string = str + (imperial_units ? " in" : " m");
+            }
+        }
+        //i don't know why but it's too small without it
+        longest_name += std::string("eee");
+
+        offsets = calculate_offsets(labels, times, { longest_name, longest_used_filament_string }, icon_size);
     }
 
     // selection section
@@ -4396,8 +4461,9 @@ void GCodeViewer::render_legend(float& legend_height)
                          _u8L("Chronology"),
                          _u8L("Tool"),
                          _u8L("Filament"),
-                         _u8L("Color Print") };
-        view_options_id = { 0, 1, 2, 3, 4, 5, 8, 9, 6, 7, 10, 11, 12 };
+                         _u8L("Color Print"),
+                         _u8L("Object") };
+        view_options_id = { 0, 1, 2, 3, 4, 5, 8, 9, 6, 7, 10, 11, 12, 13 };
         assert(view_options_id.size() == size_t(EViewType::Count));
         assert(view_options_id.back() < size_t(EViewType::Count));
     }
@@ -4412,8 +4478,9 @@ void GCodeViewer::render_legend(float& legend_height)
                          _u8L("Extrusion section (mm³/mm)"),
                          _u8L("Tool"),
                          _u8L("Filament"),
-                         _u8L("Color Print") };
-        view_options_id = { 0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12 };
+                         _u8L("Color Print"),
+                         _u8L("Object") };
+        view_options_id = { 0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13 };
         assert(view_options_id.size() == size_t(EViewType::Count) - 2);
         assert(view_options_id.back() < size_t(EViewType::Count));
         if (view_type == EViewType::LayerTime || view_type == EViewType::Chronology )
@@ -4531,6 +4598,22 @@ void GCodeViewer::render_legend(float& legend_height)
             }
             break;
         }
+        case EViewType::Object:
+        {
+            size_t i = 0;
+            if (m_gcode_result) {
+                for (size_t object_id = 0; object_id < m_objects_ids.size(); ++object_id) {
+                    // shows only Object actually used
+                    if (used_filaments_m[object_id] > 0) {
+                        append_item(EItemType::Rect,
+                                    (object_id == 0 ? ColorRGBA::DARK_GRAY() : get_a_color(object_id)),
+                                    m_objects_ids[object_id], true, "", 0.0f, 0.0f, offsets,
+                                    used_filaments_m[object_id], used_filaments_g[object_id]);
+                    }
+                }
+            }
+            break;
+        }
         case EViewType::ColorPrint:
         {
             const std::vector<CustomGCode::Item>& custom_gcode_per_print_z = wxGetApp().is_editor() ? wxGetApp().plater()->model().custom_gcode_per_print_z.gcodes : m_custom_gcode_per_print_z;
@@ -4558,7 +4641,9 @@ void GCodeViewer::render_legend(float& legend_height)
                         }
                         else if (i == items_cnt) {
                             append_item(EItemType::Rect, cp_values[i - 1].first, above_label(cp_values[i - 1].second.second));
+                            continue;
                         }
+                        assert(i < items_cnt);
                         append_item(EItemType::Rect, cp_values[i - 1].first, fromto_label(cp_values[i - 1].second.second, cp_values[i].second.first));
                     }
                 }
@@ -4586,7 +4671,7 @@ void GCodeViewer::render_legend(float& legend_height)
                                 append_item(EItemType::Rect, cp_values[j - 1].first, label);
                                 continue;
                             }
-
+                            assert(j < items_cnt);
                             label += " " + fromto_label(cp_values[j - 1].second.second, cp_values[j].second.first);
                             append_item(EItemType::Rect, cp_values[j - 1].first, label);
                         }

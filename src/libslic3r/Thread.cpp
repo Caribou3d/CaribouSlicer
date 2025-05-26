@@ -16,9 +16,12 @@
 #include <atomic>
 #include <condition_variable>
 #include <mutex>
+#include <random>
 #include <thread>
-#include <tbb/parallel_for.h>
-#include <tbb/task_arena.h>
+#include <time.h>
+#include <chrono>
+#include <oneapi/tbb/parallel_for.h>
+#include <oneapi/tbb/task_arena.h>
 
 #include "Thread.hpp"
 #include "Utils.hpp"
@@ -215,10 +218,46 @@ bool is_main_thread_active()
 	return get_main_thread_id() == boost::this_thread::get_id();
 }
 
+#ifdef _DEBUGINFO
+void parallel_for(size_t begin, size_t size, std::function<void(size_t)> process_one_item) {
+    // TODO: sort the idx by difficulty (difficult first) (number of points, region, surfaces, .. ?)
+
+    //For now, this is just use in debug mode, to be able toswitch from // to sequential withotu recompiling evrything.
+
+    // normal step
+    tbb::parallel_for(begin, size, [&process_one_item](size_t item_idx) { process_one_item(item_idx); });
+    // if you need to debug without // stuff
+    //for (size_t idx = begin; idx < size; ++idx) {
+    //    process_one_item(idx);
+    //}
+}
+void not_parallel_for(size_t begin, size_t size, std::function<void(size_t)> process_one_item) {
+    for (size_t idx = begin; idx < size; ++idx) {
+        process_one_item(idx);
+    }
+}
+#endif
+
 static thread_local ThreadData s_thread_data;
 ThreadData& thread_data()
 {
 	return s_thread_data;
+}
+
+std::mt19937&   ThreadData::random_generator() {
+    if (! m_random_generator_initialized) {
+        std::random_device rd;
+        m_random_generator.seed(rd()); //can also be initialized by clock() + std::this_thread::get_id().hash()
+        m_random_generator_initialized = true;
+    }
+    return m_random_generator;
+}
+
+// Thread-safe function that returns a random number between 0 and max (inclusive, like rand()).
+int safe_rand(int max) {
+    std::mt19937 &generator = thread_data().random_generator();
+    std::uniform_int_distribution<int> distribution(0, max);
+    return distribution(generator);
 }
 
 // Spawn (n - 1) worker threads on Intel TBB thread pool and name them by an index and a system thread ID.

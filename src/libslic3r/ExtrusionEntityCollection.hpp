@@ -49,8 +49,8 @@ public:
     ExtrusionEntitiesPtr& set_entities() { return m_entities; }
     ExtrusionEntityCollection() : m_no_sort(false), ExtrusionEntity(true) {}
     ExtrusionEntityCollection(bool can_sort, bool can_reverse) : m_no_sort(!can_sort), ExtrusionEntity(can_reverse) {}
-    ExtrusionEntityCollection(const ExtrusionEntityCollection &other) : m_no_sort(other.m_no_sort), ExtrusionEntity(other.m_can_reverse) { this->append(other.entities()); }
-    ExtrusionEntityCollection(ExtrusionEntityCollection &&other) : m_entities(std::move(other.m_entities)), m_no_sort(other.m_no_sort), ExtrusionEntity(other.m_can_reverse) {}
+    ExtrusionEntityCollection(const ExtrusionEntityCollection &other) : m_no_sort(other.m_no_sort), ExtrusionEntity(other.m_id, other.m_can_reverse) { this->append(other.entities()); }
+    ExtrusionEntityCollection(ExtrusionEntityCollection &&other) : m_entities(std::move(other.m_entities)), m_no_sort(other.m_no_sort), ExtrusionEntity(other.m_id, other.m_can_reverse) {}
     explicit ExtrusionEntityCollection(const ExtrusionPaths &paths);
     ExtrusionEntityCollection& operator=(const ExtrusionEntityCollection &other);
     ExtrusionEntityCollection& operator=(ExtrusionEntityCollection &&other) {
@@ -58,6 +58,7 @@ public:
         this->m_entities = std::move(other.m_entities);
         this->m_no_sort  = other.m_no_sort;
         this->m_can_reverse = other.m_can_reverse;
+        this->m_id = other.m_id;
         return *this;
     }
     ~ExtrusionEntityCollection() override { clear(); }
@@ -97,6 +98,7 @@ public:
     void swap (ExtrusionEntityCollection &c);
     void append(const ExtrusionEntity &entity) { this->m_entities.emplace_back(entity.clone()); }
     void append(ExtrusionEntity &&entity) { this->m_entities.emplace_back(entity.clone_move()); }
+    void append_at(ExtrusionEntity &&entity, size_t position) { assert(position <= m_entities.size()); this->m_entities.insert(this->m_entities.begin() + position, entity.clone_move()); }
     void append(const ExtrusionEntitiesPtr &entities) { 
         this->m_entities.reserve(this->m_entities.size() + entities.size());
         for (const ExtrusionEntity *ptr : entities)
@@ -151,7 +153,7 @@ public:
     /// Returns a flattened copy of this ExtrusionEntityCollection. That is, all of the items in its entities() vector are not collections.
     /// You should be iterating over flatten().entities() if you are interested in the underlying ExtrusionEntities (and don't care about hierarchy).
     /// \param preserve_ordering Flag to method that will flatten if and only if the underlying collection is sortable when True (default: False).
-    ExtrusionEntityCollection flatten(bool preserve_ordering = false) const;
+    ExtrusionEntityCollection flatten(bool preserve_ordering) const;
     void flatten(bool preserve_ordering, ExtrusionEntityCollection& out) const;
     double total_volume() const override { double volume=0.; for (const auto& ent : entities()) volume+=ent->total_volume(); return volume; }
 
@@ -171,7 +173,7 @@ public:
             extrusion_entity->collect_points(dst);
     }
 
-    double length() const override {
+    coordf_t length() const override {
         throw Slic3r::RuntimeError("Calling length() on a ExtrusionEntityCollection");
         return 0.;        
     }
@@ -181,10 +183,9 @@ public:
                 return false;
         return true;
     }
+    using ExtrusionEntity::visit;
     virtual void visit(ExtrusionVisitor &visitor) override { visitor.use(*this); };
     virtual void visit(ExtrusionVisitorConst &visitor) const override{ visitor.use(*this); };
-    void start_visit(ExtrusionVisitor &&visitor) { visitor.use(*this); };
-    void start_visit(ExtrusionVisitorConst &&visitor) const{ visitor.use(*this); };
 };
 
 //// visitors /////
@@ -201,6 +202,7 @@ class FlatenEntities : public ExtrusionVisitorConst {
     ExtrusionEntityCollection to_fill;
     bool preserve_ordering;
 public:
+    using ExtrusionVisitorConst::use;
     FlatenEntities(bool preserve_ordering) : preserve_ordering(preserve_ordering) {}
     FlatenEntities(ExtrusionEntityCollection pattern, bool preserve_ordering) : preserve_ordering(preserve_ordering) {
         to_fill.set_can_sort_reverse(pattern.can_sort(), pattern.can_reverse());
@@ -212,8 +214,8 @@ public:
         return to_fill;
     };
     ExtrusionEntityCollection&& flatten(const ExtrusionEntityCollection &to_flatten) &&;
-    virtual void default_use(const ExtrusionEntity &entity) override { to_fill.append(entity); }
-    virtual void use(const ExtrusionEntityCollection &coll) override;
+    void default_use(const ExtrusionEntity &entity) override { to_fill.append(entity); }
+    void use(const ExtrusionEntityCollection &coll) override;
 };
 
 inline void extrusion_entities_append_paths(ExtrusionEntityCollection &dst, Polylines &polylines, ExtrusionRole role, double mm3_per_mm, float width, float height, bool can_reverse = true)

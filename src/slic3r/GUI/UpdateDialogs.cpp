@@ -115,9 +115,9 @@ AppUpdateAvailableDialog::AppUpdateAvailableDialog(const Semver& ver_current, co
 		content_sizer->Add(cbox);
 	}
 	content_sizer->AddSpacer(VERT_SPACING);
-
+	
 	AUAD_size = content_sizer->GetSize();
-
+	
 
 	add_button(wxID_CANCEL);
 
@@ -159,7 +159,7 @@ AppUpdateDownloadDialog::AppUpdateDownloadDialog( const Semver& ver_online, boos
 	filename = GUI::format_wxstr(path.filename().string());
 	content_sizer->Add(txtctrl_path, 1, wxEXPAND);
 	content_sizer->AddSpacer(VERT_SPACING);
-
+	
 	wxButton* btn = new wxButton(this, wxID_ANY, _L("Select directory"));
 	content_sizer->Add(btn/*, 1, wxEXPAND*/);
 
@@ -272,9 +272,9 @@ boost::filesystem::path AppUpdateDownloadDialog::get_download_path() const
 // MsgUpdateConfig
 
 MsgUpdateConfig::MsgUpdateConfig(const std::vector<Update> &updates, bool force_before_wizard/* = false*/) :
-	MsgDialog(nullptr, force_before_wizard ? _L("Opening Configuration Assistent") : _L("Configuration update"),
+	MsgDialog(nullptr, force_before_wizard ? _L("Opening Configuration Wizard") : _L("Configuration update"), 
 					   force_before_wizard ? wxString::Format(_L("%s is not using the newest configuration available.\n"
-												"Configuration Wizard may not offer the latest printers, filaments and SLA materials to be installed. "), SLIC3R_APP_NAME) :
+												"Configuration Wizard may not offer the latest printers, filaments and SLA materials to be installed. "), SLIC3R_APP_NAME) : 
 											 _L("Configuration update is available"), wxICON_ERROR)
 {
 	auto *text = new wxStaticText(this, wxID_ANY, _(L(
@@ -345,12 +345,12 @@ MsgUpdateForced::MsgUpdateForced(const std::vector<Update>& updates) :
     MsgDialog(nullptr, wxString::Format(_(L("%s incompatibility")), SLIC3R_APP_NAME), _(L("You must install a configuration update.")) + " ", wxOK | wxICON_ERROR)
 {
 	auto* text = new wxStaticText(this, wxID_ANY, wxString::Format(_(L(
-		"%s will now start updates. Otherwise it won't be able to start.\n\n"
+		"%s will now start updates. Otherwise these profiles may have some settings modified after loading, and they may not work as expected.\n\n"
 		"Note that a full configuration snapshot will be created first. It can then be restored at any time "
 		"should there be a problem with the new version.\n\n"
 		"Updated configuration bundles:"
 	)), SLIC3R_APP_NAME));
-
+	
 
 	text->Wrap(CONTENT_WIDTH * wxGetApp().em_unit());
 	content_sizer->Add(text);
@@ -392,11 +392,20 @@ MsgUpdateForced::MsgUpdateForced(const std::vector<Update>& updates) :
 	content_sizer->Add(versions);
 	content_sizer->AddSpacer(2 * VERT_SPACING);
 
-	add_button(wxID_EXIT, false, wxString::Format(_L("Exit %s"), SLIC3R_APP_NAME));
-	for (auto ID : { wxID_EXIT, wxID_OK })
-		get_button(ID)->Bind(wxEVT_BUTTON, [this](const wxCommandEvent& evt) { this->EndModal(evt.GetId()); });
+    if (updates.size() > 1) {
+        add_button(wxID_EDIT , false, _L("Choose which one to install"));
+    }
+    add_button(wxID_NO, false, wxString::Format(_L("Don't install")));
+    add_button(wxID_EXIT, false, wxString::Format(_L("Exit %s"), SLIC3R_APP_NAME));
 
-	finalize();
+    get_button(wxID_EXIT)->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &evt) { this->EndModal(evt.GetId()); });
+    get_button(wxID_NO)->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &evt) { this->EndModal(evt.GetId()); });
+    if (updates.size() > 1) {
+        get_button(wxID_EDIT)->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &evt) { this->EndModal(evt.GetId()); });
+    }
+    get_button(wxID_OK)->Bind(wxEVT_BUTTON, [this](const wxCommandEvent &evt) { this->EndModal(evt.GetId()); });
+
+    finalize();
 }
 
 MsgUpdateForced::~MsgUpdateForced() {}
@@ -404,7 +413,7 @@ MsgUpdateForced::~MsgUpdateForced() {}
 // MsgDataIncompatible
 
 MsgDataIncompatible::MsgDataIncompatible(const std::unordered_map<std::string, wxString> &incompats) :
-    MsgDialog(nullptr, wxString::Format(_(L("%s incompatibility")), SLIC3R_APP_NAME),
+    MsgDialog(nullptr, wxString::Format(_(L("%s incompatibility")), SLIC3R_APP_NAME), 
                        wxString::Format(_(L("%s configuration is incompatible")), SLIC3R_APP_NAME), wxICON_ERROR)
 {
 	auto *text = new wxStaticText(this, wxID_ANY, wxString::Format(_(L(
@@ -412,7 +421,7 @@ MsgDataIncompatible::MsgDataIncompatible(const std::unordered_map<std::string, w
 		"This probably happened as a result of running an older %s after using a newer one.\n\n"
 
 		"You may either exit %s and try again with a newer version, or you may re-run the initial configuration. "
-		"Doing so will create a backup snapshot of the existing configuration before installing files compatible with this %s.")) + "\n",
+		"Doing so will create a backup snapshot of the existing configuration before installing files compatible with this %s.")) + "\n", 
 		SLIC3R_APP_NAME, SLIC3R_APP_NAME, SLIC3R_APP_NAME, SLIC3R_APP_NAME));
 	text->Wrap(CONTENT_WIDTH * wxGetApp().em_unit());
 	content_sizer->Add(text);

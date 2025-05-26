@@ -149,7 +149,11 @@ public:
     // (this collection contains only ExtrusionEntityCollection objects)
     [[nodiscard]] const ExtrusionEntityCollection&  fills() const { return m_fills; }
     [[nodiscard]] const ExtrusionEntityCollection&  ironings() const { return m_ironings; }
-    
+    // only for Layer & PrintObject
+    [[nodiscard]] ExtrusionEntityCollection& set_fills() { return m_fills; }
+    [[nodiscard]] ExtrusionEntityCollection& set_ironings() { return m_ironings; }
+    void                                     clear();
+
     Flow     flow(FlowRole role) const;
     Flow     flow(FlowRole role, double layer_height) const;
     coordf_t bridging_height_avg() const;
@@ -171,6 +175,7 @@ public:
         std::vector<ExPolygonRange>                            &fill_expolygons_ranges);
     void    make_milling_post_process(const SurfaceCollection& slices);
     void    process_external_surfaces(const Layer *lower_layer, const Polygons *lower_layer_covered);
+    void    process_external_surfaces_old(const Layer *lower_layer, const Polygons *lower_layer_covered);
     double  infill_area_threshold() const;
     // Trim surfaces by trimming polygons. Used by the elephant foot compensation at the 1st layer.
     void    trim_surfaces(const Polygons &trimming_polygons);
@@ -189,11 +194,19 @@ public:
                                      || !this->ironings().empty() || !this->thin_fills().empty(); }
 
     void    simplify_extrusion_entity();
+
+    const ExPolygons &get_cached_slices() const { return m_raw_slices; }
+
 protected:
     friend class Layer;
     friend class PrintObject;
 
-    LayerRegion(Layer *layer, const PrintRegion *region) : m_layer(layer), m_region(region) {}
+    LayerRegion(Layer *layer, const PrintRegion *region) : m_layer(layer), m_region(region) {
+        //these are sorted in the island by idx, so they shoul never change.
+        m_perimeters.set_can_sort_reverse(false, false);
+        m_fills.set_can_sort_reverse(false, false);
+        m_ironings.set_can_sort_reverse(false, false);
+    }
     ~LayerRegion() = default;
 
 private:
@@ -208,6 +221,7 @@ private:
     // Backed up slices before they are split into top/bottom/internal.
     // Only backed up for multi-region layers or layers with elephant foot compensation.
     //FIXME Review whether not to simplify the code by keeping the raw_slices all the time.
+    // superslicer -> layer_needs_raw_backup is now true, so evryone has their cache here.
     ExPolygons                  m_raw_slices;
 
 //FIXME make m_slices public for unit tests
@@ -298,9 +312,9 @@ public:
     }
     void                  add_ironing_range(const LayerExtrusionRange &new_ironing_range) {
         // Compress ranges.
-        if (!this->ironings.empty() && this->fills.back().region() == new_ironing_range.region() &&
-            *this->fills.back().end() == *new_ironing_range.begin())
-            this->ironings.back() = {new_ironing_range.region(), {*this->fills.back().begin(), *new_ironing_range.end()}};
+        if (!this->ironings.empty() && this->ironings.back().region() == new_ironing_range.region() &&
+            *this->ironings.back().end() == *new_ironing_range.begin())
+            this->ironings.back() = {new_ironing_range.region(), {*this->ironings.back().begin(), *new_ironing_range.end()}};
         else
             this->ironings.push_back(new_ironing_range);
     }
@@ -375,7 +389,11 @@ public:
     // order will be applied by the G-code generator to the extrusions fitting into these lslices.
     // These lslices are also used to detect overhangs and overlaps between successive layers, therefore it is important
     // that the 1st lslice is not compensated by the Elephant foot compensation algorithm.
-    ExPolygons 				lslices;
+protected:
+    ExPolygons 				m_lslices;
+public:
+    const ExPolygons &      lslices() const { return m_lslices; }
+    ExPolygons &            set_lslices() { return m_lslices; }
     std::vector<size_t>     lslice_indices_sorted_by_print_order;
     LayerSlices             lslices_ex;
 
@@ -396,7 +414,7 @@ public:
     // To improve robustness of detect_surfaces_type() when reslicing (working with typed slices), see GH issue #7442.
     void                    restore_untyped_slices_no_extra_perimeters();
     // Slices merged into islands, to be used by the elephant foot compensation to trim the individual surfaces with the shrunk merged slices.
-    ExPolygons              merged(float offset) const;
+    ExPolygons              merged(coordf_t offset_scaled = 0) const;
     void                    make_perimeters();
     void                    make_milling_post_process();
     void                    make_fills(FillAdaptive::Octree     *adaptive_fill_octree,

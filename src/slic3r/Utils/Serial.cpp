@@ -7,6 +7,7 @@
 #include "libslic3r/Exception.hpp"
 
 #include <algorithm>
+#include <optional>
 #include <string>
 #include <vector>
 #include <chrono>
@@ -18,7 +19,6 @@
 #include <boost/algorithm/string/predicate.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/format.hpp>
-#include <boost/optional.hpp>
 #include <boost/nowide/fstream.hpp>
 
 #if _WIN32
@@ -61,7 +61,7 @@
 	#include <asm-generic/ioctls.h>
 #endif
 
-using boost::optional;
+using std::optional;
 
 
 namespace Slic3r {
@@ -96,16 +96,16 @@ optional<std::string> sysfs_tty_prop(const std::string &tty_dev, const std::stri
 
 	std::getline(file, res);
 	if (file.good()) { return res; }
-	else { return boost::none; }
+	else { return std::nullopt; }
 }
 
 optional<unsigned long> sysfs_tty_prop_hex(const std::string &tty_dev, const std::string &name)
 {
 	auto prop = sysfs_tty_prop(tty_dev, name);
-	if (!prop) { return boost::none; }
+	if (!prop) { return std::nullopt; }
 
 	try { return std::stoul(*prop, 0, 16); }
-	catch (const std::exception&) { return boost::none; }
+	catch (const std::exception&) { return std::nullopt; }
 }
 #endif
 
@@ -283,12 +283,12 @@ std::vector<std::string> scan_serial_ports()
 namespace asio = boost::asio;
 using boost::system::error_code;
 
-Serial::Serial(asio::io_service& io_service) :
-	asio::serial_port(io_service)
+Serial::Serial(asio::io_context &io_context) :
+	asio::serial_port(io_context)
 {}
 
-Serial::Serial(asio::io_service& io_service, const std::string &name, unsigned baud_rate) :
-	asio::serial_port(io_service, name)
+Serial::Serial(asio::io_context &io_context, const std::string &name, unsigned baud_rate) :
+	asio::serial_port(io_context, name)
 {
 	set_baud_rate(baud_rate);
 }
@@ -391,19 +391,19 @@ void Serial::reset_line_num()
 
 bool Serial::read_line(unsigned timeout, std::string &line, error_code &ec)
 {
-	auto& io_service =
+	auto& io_context =
 #if BOOST_VERSION >= 107000
 		//FIXME this is most certainly wrong!
 		(boost::asio::io_context&)this->get_executor().context();
  #else
 		this->get_io_service();
 #endif
-	asio::deadline_timer timer(io_service);
+	asio::deadline_timer timer(io_context);
 	char c = 0;
 	bool fail = false;
 
 	while (true) {
-		io_service.reset();
+		io_context.reset();
 
 		asio::async_read(*this, boost::asio::buffer(&c, 1), [&](const error_code &read_ec, size_t size) {
 			if (ec || size == 0) {
@@ -424,7 +424,7 @@ bool Serial::read_line(unsigned timeout, std::string &line, error_code &ec)
 			});
 		}
 
-		io_service.run();
+		io_context.run();
 
 		if (fail) {
 			return false;

@@ -10,10 +10,10 @@
 #ifndef slic3r_FillBase_hpp_
 #define slic3r_FillBase_hpp_
 
-#include <assert.h>
-#include <memory.h>
-#include <float.h>
-#include <stdint.h>
+#include <cassert>
+#include <cfloat>
+#include <cstdint>
+#include <memory>
 #include <stdexcept>
 
 #include <type_traits>
@@ -58,7 +58,7 @@ struct FillParams
     // bridge offset from the centerline. (scaled)
     coord_t       bridge_offset = -1;
 
-    // Fill extruding flow multiplier, fraction in <0, 1>. Used by "over bridge compensation"
+    // Fill extruding flow multiplier, fraction in <0, 1>. Used by various flow ratio (top, bot, over-bridges), this is applied after the fill_exactly's flow compensation.
     float       flow_mult   { 1.0f };
 
     // Don't connect the fill lines around the inner perimeter.
@@ -69,8 +69,8 @@ struct FillParams
     float       anchor_length   { 1000.f };
     float       anchor_length_max   { 1000.f };
 
-    // G-code resolution.
-    coordf_t    resolution          { 0.0125 };
+    // internal resolution.
+    coord_t    fill_resolution          { scale_t(0.0125) };
 
     // Don't adjust spacing to fill the space evenly.
     bool        dont_adjust { true };
@@ -134,6 +134,8 @@ public:
     coord_t     loop_clipping;
     // In scaled coordinates. Bounding box of the 2D projection of the object.
     BoundingBox bounding_box;
+    // true if it's possibel to call fill_surface instead of fill_surface_extrusion
+    float       can_fill_surface_single = false;
 
     // Octree builds on mesh for usage in the adaptive cubic infill
     FillAdaptive::Octree* adapt_fill_octree = nullptr;
@@ -221,16 +223,7 @@ protected:
 
     double compute_unscaled_volume_to_fill(const Surface* surface, const FillParams& params) const;
 
-    ExtrusionRole getRoleFromSurfaceType(const FillParams &params, const Surface *surface) const {
-        if (params.role == ExtrusionRole::None) {
-            return params.flow.bridge() ?
-                       (surface->has_pos_bottom() ? ExtrusionRole::BridgeInfill : ExtrusionRole::InternalBridgeInfill) :
-                                          (surface->has_fill_solid() ?
-                                               ((surface->has_pos_top()) ? ExtrusionRole::TopSolidInfill : ExtrusionRole::SolidInfill) :
-                                               ExtrusionRole::InternalInfill);
-        }
-        return params.role;
-    }
+    ExtrusionRole getRoleFromSurfaceType(const FillParams &params, const Surface *surface) const;
 
 public:
     static void connect_infill(Polylines&& infill_ordered, const ExPolygon& boundary, Polylines& polylines_out, const coord_t spacing, const FillParams& params);
