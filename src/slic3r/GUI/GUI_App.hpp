@@ -279,13 +279,15 @@ public:
     void            keyboard_shortcuts();
     void            change_calibration_dialog(const wxDialog* have_to_destroy = nullptr, wxDialog* new_one = nullptr);
     void            html_dialog();
-    void            bed_leveling_dialog();
     void            flow_ratio_dialog();
     void            flow_speed_dialog();
     void            filament_temperature_dialog();
     void            bridge_tuning_dialog();
     void            over_bridge_dialog();
     void            calibration_cube_dialog();
+    void            calibration_first_layer_dialog();
+    void            calibration_first_layer_patch_dialog();
+    void            calibration_extrusion_multiplier_dialog();
 	void            calibration_retraction_dialog();
     void            calibration_pressureadv_dialog();
     void            freecad_script_dialog();
@@ -432,7 +434,7 @@ private:
     bool            select_language();
 
     bool            config_wizard_startup();
-    // Returns true if the configuration is fine. 
+    // Returns true if the configuration is fine.
     // Returns true if the configuration is not compatible and the user decided to rather close the slicer instead of reconfiguring.
 	bool            check_updates(const bool verbose);
     void            on_version_read(wxCommandEvent& evt);
@@ -441,7 +443,7 @@ private:
     // inititate read of version file online in separate thread
     void            app_version_check(bool from_user);
 
-    bool                    m_datadir_redefined { false }; 
+    bool                    m_datadir_redefined { false };
     bool                    m_wifi_config_dialog_shown { false };
 };
 

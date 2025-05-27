@@ -34,7 +34,7 @@
 	#include <psapi.h>
 #endif /* _WIN32 */
 
-namespace Slic3r { 
+namespace Slic3r {
 namespace GUI {
 
 std::string get_main_info(bool format_as_html)
@@ -48,16 +48,16 @@ std::string get_main_info(bool format_as_html)
     if (!format_as_html)
         out << b_start << (wxGetApp().is_editor() ? SLIC3R_APP_NAME : GCODEVIEWER_APP_NAME) << b_end << line_end;
     out << b_start << "Version:   "             << b_end << SLIC3R_VERSION_FULL << line_end;
-    
+
     std::string build_id = SLIC3R_BUILD_ID;
     if (! wxGetApp().is_editor())
         boost::replace_first(build_id, SLIC3R_APP_NAME, GCODEVIEWER_APP_NAME);
-    out << b_start << "Build:     " << b_end << build_id << line_end;
+    out << b_start << "Build:     " << b_end << SLIC3R_GITBUILD_NR << line_end;
 
     out << line_end;
     out << b_start << "Operating System:    "   << b_end << wxPlatformInfo::Get().GetOperatingSystemFamilyName() << line_end;
     out << b_start << "System Architecture: "   << b_end << wxPlatformInfo::Get().GetBitnessName() << line_end;
-    out << b_start << 
+    out << b_start <<
 #if defined _WIN32
         "Windows Version:     "
 #else
@@ -113,7 +113,7 @@ SysInfoDialog::SysInfoDialog()
     m_logo = new wxStaticBitmap(this, wxID_ANY, *get_bmp_bundle(wxGetApp().logo_name(), 192));
 
 	hsizer->Add(m_logo, 0, wxALIGN_CENTER_VERTICAL);
-    
+
     wxBoxSizer* vsizer = new wxBoxSizer(wxVERTICAL);
     hsizer->Add(vsizer, 1, wxEXPAND|wxLEFT, 20);
 
@@ -194,7 +194,7 @@ SysInfoDialog::SysInfoDialog()
     main_sizer->Add(buttons, 0, wxEXPAND | wxRIGHT | wxBOTTOM, 3);
 
     wxGetApp().UpdateDlgDarkUI(this, true);
-    
+
 //     this->Bind(wxEVT_LEFT_DOWN, &SysInfoDialog::onCloseDialog, this);
 //     logo->Bind(wxEVT_LEFT_DOWN, &SysInfoDialog::onCloseDialog, this);
 

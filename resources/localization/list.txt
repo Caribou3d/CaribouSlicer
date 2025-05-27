@@ -33,6 +33,7 @@ src/slic3r/GUI/CalibrationFirstLayerDialog.cpp
 src/slic3r/GUI/CalibrationFirstLayerPatchDialog.cpp
 src/slic3r/GUI/CalibrationExtruderDialog.cpp
 src/slic3r/GUI/CalibrationFlowDialog.cpp
+src/slic3r/GUI/CalibrationFlowSpeedDialog.cpp
 src/slic3r/GUI/CalibrationOverBridgeDialog.cpp
 src/slic3r/GUI/CalibrationRetractionDialog.cpp
 src/slic3r/GUI/CalibrationPressureAdvDialog.cpp

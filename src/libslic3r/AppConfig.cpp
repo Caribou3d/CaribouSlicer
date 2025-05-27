@@ -44,14 +44,20 @@ namespace Slic3r {
 
 static const std::string VENDOR_PREFIX = "vendor:";
 static const std::string MODEL_PREFIX = "model:";
+//static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/" SLIC3R_GITHUB "/releases";
 static const std::string VERSION_CHECK_URL = "https://caribou3d.com/CaribouSlicerV2/CaribouSlicer.version";
+
 // Url to index archive zip that contains latest indicies
+// static const std::string INDEX_ARCHIVE_URL= "https://api.github.com/repos/" SLIC3R_GITHUB "-profiles/releases";
 static const std::string INDEX_ARCHIVE_URL= "https://caribou3d.com/CaribouSlicerV2/repository/vendor_indices.zip";
+
 //to get the slic3r idx: look at the json from INDEX_ARCHIVE_URL, and request the assets_url
 // then, in t8he json look for an entry with name == "vendor_indices.zip"
 
 // Url to folder with vendor profile files. Used when downloading new profiles that are not in resources folder.
+// static const std::string PROFILE_FOLDER_URL = "https://raw.githubusercontent.com/" SLIC3R_GITHUB "-profiles/main/";
 static const std::string PROFILE_FOLDER_URL = "https://caribou3d.com/CaribouSlicerV2/repository/vendors/";
+
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
 const std::string AppConfig::SECTION_MATERIALS = "sla_materials";

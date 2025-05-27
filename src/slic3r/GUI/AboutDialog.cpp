@@ -20,7 +20,7 @@
 
 #include <wx/clipbrd.h>
 
-namespace Slic3r { 
+namespace Slic3r {
 namespace GUI {
 
 AboutDialogLogo::AboutDialogLogo(wxWindow* parent)
@@ -29,7 +29,7 @@ AboutDialogLogo::AboutDialogLogo(wxWindow* parent)
     this->SetBackgroundColour(*wxWHITE);
     this->logo = wxBitmap(from_u8(Slic3r::var(SLIC3R_APP_KEY"_192px.png")), wxBITMAP_TYPE_PNG);
     this->SetMinSize(this->logo.GetSize());
-    
+
     this->Bind(wxEVT_PAINT, &AboutDialogLogo::onRepaint, this);
 }
 
@@ -64,10 +64,10 @@ CopyrightsDialog::CopyrightsDialog()
 #endif
 
 	auto sizer = new wxBoxSizer(wxVERTICAL);
-    
+
     fill_entries();
 
-    m_html = new wxHtmlWindow(this, wxID_ANY, wxDefaultPosition, 
+    m_html = new wxHtmlWindow(this, wxID_ANY, wxDefaultPosition,
                               wxSize(40 * em_unit(), 20 * em_unit()), wxHW_SCROLLBAR_AUTO);
 
     wxFont font = this->GetFont();// get_default_font(this);
@@ -91,7 +91,7 @@ CopyrightsDialog::CopyrightsDialog()
 
     SetSizer(sizer);
     sizer->SetSizeHints(this);
-    
+
 }
 
 void CopyrightsDialog::fill_entries()
@@ -113,7 +113,7 @@ void CopyrightsDialog::fill_entries()
         { "Boost"           , "1998-2005 Beman Dawes, David Abrahams; "
                               "2004 - 2007 Rene Rivera"                     , "https://www.boost.org/" },
         { "Clipper"         , "2010-2015 Angus Johnson "                    , "http://www.angusj.com " },
-        { "GLEW (The OpenGL Extension Wrangler Library)", 
+        { "GLEW (The OpenGL Extension Wrangler Library)",
                               "2002 - 2007, Milan Ikits; "
                               "2002 - 2007, Marcelo E.Magallon; "
                               "2002, Lev Povalahev"                         , "http://glew.sourceforge.net/" },
@@ -128,7 +128,7 @@ void CopyrightsDialog::fill_entries()
         { "Expat"           , "1998-2000 Thai Open Source Software Center Ltd and Clark Cooper"
                               "2001-2016 Expat maintainers"                 , "http://www.libexpat.org/" },
         { "AVRDUDE"         , "2018  Free Software Foundation, Inc."        , "http://savannah.nongnu.org/projects/avrdude" },
-        { "Real-Time DXT1/DXT5 C compression library"   
+        { "Real-Time DXT1/DXT5 C compression library"
                                     , "Based on original by fabian \"ryg\" giesen v1.04. "
                               "Custom version, modified by Yann Collet"     , "https://github.com/Cyan4973/RygsDXTc" },
         { "Icons for STL and GCODE files."
@@ -249,8 +249,8 @@ AboutDialog::AboutDialog()
     // logo
     m_logo = new wxStaticBitmap(this, wxID_ANY, *get_bmp_bundle(wxGetApp().logo_name(), 192));
 	hsizer->Add(m_logo, 1, wxALIGN_CENTER_VERTICAL);
-    
-    wxBoxSizer* vsizer = new wxBoxSizer(wxVERTICAL); 	
+
+    wxBoxSizer* vsizer = new wxBoxSizer(wxVERTICAL);
     hsizer->Add(vsizer, 2, wxEXPAND|wxLEFT, 20);
 
     // title
@@ -262,10 +262,11 @@ AboutDialog::AboutDialog()
         title->SetFont(title_font);
         vsizer->Add(title, 0, wxALIGN_LEFT | wxTOP, 10);
     }
-    
+
     // version
     {
-        auto version_string = _L("Version")+ " " + std::string(SLIC3R_VERSION_FULL);
+        auto version_string = _L("Version:")+ " " + std::string(SLIC3R_VERSION_FULL)
+          + "  " + _L("Build:")+ " " + std::string(SLIC3R_GITBUILD_NR);
         wxStaticText* version = new wxStaticText(this, wxID_ANY, version_string.c_str(), wxDefaultPosition, wxDefaultSize);
         wxFont version_font = GetFont();
         #ifdef __WXMSW__
@@ -276,7 +277,7 @@ AboutDialog::AboutDialog()
         version->SetFont(version_font);
         vsizer->Add(version, 0, wxALIGN_LEFT | wxBOTTOM, 10);
     }
-    
+
     // text
     m_html = new wxHtmlWindow(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxHW_SCROLLBAR_AUTO/*NEVER*/);
     {
@@ -290,11 +291,31 @@ AboutDialog::AboutDialog()
         std::array<int, 7> size = {fs,fs,fs,fs,fs,fs,fs};
         m_html->SetFonts(font.GetFaceName(), font.GetFaceName(), size.data());
         m_html->SetBorders(2);
+
+        // const std::string copyright_str = _utf8(L("Copyright"));
+        // // TRN "Slic3r _is licensed under the_ License"
+        // const std::string is_licensed_str = _utf8(L("is licensed under the"));
+        // const std::string license_str = _utf8(L("GNU Affero General Public License, version 3"));
+        // const std::string based_on_str = _utf8(L("CaribouSlicer is based on SuperSlicer, which is based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community."));
+        // const std::string contributors_str = _utf8(L("Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik, Durand Rémi and numerous others."));
+        // const std::string manual_str = _utf8(L("Manual by Gary Hodgson. Inspired by the RepRap community."));
+        // const std::string icon_str = _utf8(L("Slic3r logo designed by Corey Daniels."));
+        // const auto text = from_u8(
+        //     (boost::format(
+        //     "<html>"
+        //     "<body bgcolor= %1% link= %2%>"
+        //     "<font color=%3%>"
+        //     " &copy; 2023-2024 Caribou Research & Development. <br />"
+        //     " &copy; 2018-2024 Durand Rémi. <br />"
+        //     " &copy; 2016-2022 Prusa Research. <br />"
+        //     " &copy; 2011-2018 Alessandro Ranellucci. <br /><br />"
+        //     "<a href=\"https://github.com/Caribou3d/CaribouSlicer\">CaribouSlicer</a> %6% "
+
         const wxString copyright_str    = _L("Copyright");
         // TRN AboutDialog: "Slic3r %1% GNU Affero General Public License"
-        const wxString is_lecensed_str  = _L("is licensed under the");
+        const wxString is_licensed_str  = _L("is licensed under the");
         const wxString license_str      = _L("GNU Affero General Public License, version 3");
-        const wxString based_on_str     = _L("SuperSlicer is a skinned version of Slic3r, based on PrusaSlicer by Prusa and the original Slic3r by Alessandro Ranellucci & the RepRap community.");
+        const wxString based_on_str     = _L("PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap community.");
         const wxString contributors_str = _L("Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik, Durand Rémi and numerous others.");
         const wxString manual_str       = _L("Manual by Gary Hodgson. Inspired by the RepRap community.");
         const wxString icon_str         = _L("Slic3r logo designed by Corey Daniels.");
@@ -302,10 +323,11 @@ AboutDialog::AboutDialog()
             "<html>"
             "<body bgcolor= %1% link= %2%>"
             "<font color=%3%>"
-            " &copy; 2018-2023 Durand Rémi. <br />"
-            "%5% &copy; 2016-2023 Prusa Research. <br />"
-            "%5% &copy; 2011-2018 Alessandro Ranellucci. <br />"
-            "<a href=\"http://slic3r.org/\">Slic3r</a> %6% "
+            " &copy; 2023-2025 Caribou Research & Development. <br />"
+            " &copy; 2018-2025 Durand Rémi. <br />"
+            " &copy; 2016-2025 Prusa Research. <br />"
+            " &copy; 2011-2018 Alessandro Ranellucci. <br /><br />"
+            "<a href=\"https://github.com/Caribou3d/CaribouSlicer\">CaribouSlicer</a> %6% "
             "<a href=\"http://www.gnu.org/licenses/agpl-3.0.html\">%7%</a>."
             "<br /><br />"
             "%8%"
@@ -317,7 +339,7 @@ AboutDialog::AboutDialog()
             "</body>"
             "</html>" , bgr_clr_str , text_clr_str , text_clr_str
             , copyright_str , copyright_str
-            , is_lecensed_str
+            , is_licensed_str
             , license_str
             , based_on_str
             , contributors_str
@@ -345,7 +367,7 @@ AboutDialog::AboutDialog()
     wxGetApp().SetWindowVariantForButton(copy_version_btn);
 
     wxGetApp().UpdateDlgDarkUI(this, true);
-    
+
     this->SetEscapeId(wxID_CLOSE);
     this->Bind(wxEVT_BUTTON, &AboutDialog::onCloseDialog, this, wxID_CLOSE);
     vsizer->Add(buttons, 0, wxEXPAND | wxRIGHT | wxBOTTOM, 3);
