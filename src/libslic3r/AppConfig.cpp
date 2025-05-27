@@ -1,6 +1,6 @@
 ///|/ Copyright (c) Prusa Research 2017 - 2023 Oleksandra Iushchenko @YuSanka, Vojtěch Bubník @bubnikv, Pavel Mikuš @Godrak, David Kocík @kocikdav, Lukáš Matěna @lukasmatena, Enrico Turri @enricoturri1966, Lukáš Hejl @hejllukas, Filip Sykala @Jony01, Vojtěch Král @vojtechkral
 ///|/ Copyright (c) SuperSlicer 2023 Remi Durand @supermerill
-///|/ 
+///|/
 ///|/ SuperSlicer and PrusaSlicer are released under the terms of the AGPLv3 or higher
 ///|/
 #include "libslic3r/libslic3r.h"
@@ -44,14 +44,14 @@ namespace Slic3r {
 
 static const std::string VENDOR_PREFIX = "vendor:";
 static const std::string MODEL_PREFIX = "model:";
-static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/" SLIC3R_GITHUB "/releases";
+static const std::string VERSION_CHECK_URL = "https://caribou3d.com/CaribouSlicerV2/CaribouSlicer.version";
 // Url to index archive zip that contains latest indicies
-static const std::string INDEX_ARCHIVE_URL= "https://api.github.com/repos/" SLIC3R_GITHUB "-profiles/releases";
+static const std::string INDEX_ARCHIVE_URL= "https://caribou3d.com/CaribouSlicerV2/repository/vendor_indices.zip";
 //to get the slic3r idx: look at the json from INDEX_ARCHIVE_URL, and request the assets_url
 // then, in t8he json look for an entry with name == "vendor_indices.zip"
 
 // Url to folder with vendor profile files. Used when downloading new profiles that are not in resources folder.
-static const std::string PROFILE_FOLDER_URL = "https://raw.githubusercontent.com/" SLIC3R_GITHUB "-profiles/main/";
+static const std::string PROFILE_FOLDER_URL = "https://caribou3d.com/CaribouSlicerV2/repository/vendors/";
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
 const std::string AppConfig::SECTION_MATERIALS = "sla_materials";
@@ -94,7 +94,7 @@ uint32_t AppConfig::create_color(float saturation, float value, EAppColorType co
     hsv_color.v = std::min(1., hsv_color.v * 1.25 * value);
 
     rgb_color = hsv2rgb(hsv_color);
-    
+
     //use the other endian style
     return rgb2int(rgb_color);
 }
@@ -258,7 +258,7 @@ void AppConfig::set_defaults()
 #endif
 
         if (get("single_instance").empty())
-            set("single_instance", 
+            set("single_instance",
 #ifdef __APPLE__
                 "1"
 #else // __APPLE__
@@ -305,7 +305,7 @@ void AppConfig::set_defaults()
 
         if (get("use_binary_gcode_when_supported").empty())
             set("use_binary_gcode_when_supported", "1");
- 
+
        if (get("notify_release").empty())
            set("notify_release", "all"); // or "none" or "release"
 
@@ -321,10 +321,10 @@ void AppConfig::set_defaults()
             set("use_inches", "0");
 
         if (get("default_action_on_close_application").empty())
-            set("default_action_on_close_application", "none"); // , "discard" or "save" 
+            set("default_action_on_close_application", "none"); // , "discard" or "save"
 
         if (get("default_action_on_select_preset").empty())
-            set("default_action_on_select_preset", "none");     // , "transfer", "discard" or "save" 
+            set("default_action_on_select_preset", "none");     // , "transfer", "discard" or "save"
 
         if (get("default_action_on_new_project").empty())
             set("default_action_on_new_project", "none");       // , "none" or 0
@@ -732,7 +732,7 @@ std::string AppConfig::load(const std::string &path)
         if (! recovered) {
             // Report the initial error of parsing PrusaSlicer.ini.
             // Error while parsing config file. We'll customize the error message and rethrow to be displayed.
-            // ! But to avoid the use of _utf8 (related to use of wxWidgets) 
+            // ! But to avoid the use of _utf8 (related to use of wxWidgets)
             // we will rethrow this exception from the place of load() call, if returned value wouldn't be empty
             return ex.what();
         }
@@ -861,7 +861,7 @@ void AppConfig::save()
     c << appconfig_md5_hash_line(config_str);
 #endif
     c.close();
-    
+
 #ifdef WIN32
     // Make a backup of the configuration file before copying it to the final destination.
     std::string error_message;
@@ -882,7 +882,7 @@ void AppConfig::save()
 }
 
 bool AppConfig::erase(const std::string &section, const std::string &key)
-{       
+{
     if (auto it_storage = m_storage.find(section); it_storage != m_storage.end()) {
         auto &section = it_storage->second;
         auto it = section.find(key);
@@ -896,7 +896,7 @@ bool AppConfig::erase(const std::string &section, const std::string &key)
 }
 
 bool AppConfig::set_section(const std::string &section, std::map<std::string, std::string> data)
-{ 
+{
     auto it_section = m_storage.find(section);
     if (it_section == m_storage.end()) {
         if (data.empty())
@@ -912,7 +912,7 @@ bool AppConfig::set_section(const std::string &section, std::map<std::string, st
 }
 
 bool AppConfig::clear_section(const std::string &section)
-{ 
+{
     if (auto it_section = m_storage.find(section); it_section != m_storage.end() && ! it_section->second.empty()) {
         it_section->second.clear();
         m_dirty = true;
@@ -1152,7 +1152,7 @@ std::string AppConfig::splashscreen(bool is_editor) {
     if (file_name == "icon") {
         file_name = "";
     }
-    
+
     if (file_name == "random") {
         std::vector<std::string> names;
         //get all images in the spashscreen dir
@@ -1173,8 +1173,8 @@ std::string AppConfig::version_check_url() const
 
 std::string AppConfig::index_archive_url() const
 {
-#if 0  
-    // this code is for debug & testing purposes only - changed url wont get trough inner checks anyway. 
+#if 0
+    // this code is for debug & testing purposes only - changed url wont get trough inner checks anyway.
     auto from_settings = get("index_archive_url");
     return from_settings.empty() ? INDEX_ARCHIVE_URL : from_settings;
 #endif
@@ -1183,8 +1183,8 @@ std::string AppConfig::index_archive_url() const
 
 std::string AppConfig::profile_folder_url() const
 {
-#if 0   
-    // this code is for debug & testing purposes only - changed url wont get trough inner checks anyway. 
+#if 0
+    // this code is for debug & testing purposes only - changed url wont get trough inner checks anyway.
     auto from_settings = get("profile_folder_url");
     return from_settings.empty() ? PROFILE_FOLDER_URL : from_settings;
 #endif
