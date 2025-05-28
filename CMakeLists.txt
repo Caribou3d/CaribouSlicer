@@ -11,12 +11,8 @@
 cmake_minimum_required(VERSION 3.13)
 project(Slic3r)
 
-if (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/version.date.inc")
-	include("version.date.inc")
-else()
-	message(STATUS "Warning: cannot find file 'version.date.inc', using template 'version.inc' instead.")
-	include("version.inc")
-endif()
+include("version.inc")
+
 include(GNUInstallDirs)
 include(CMakeDependentOption)
 
@@ -646,14 +642,14 @@ function(prusaslicer_copy_dlls target)
     else ()
         set (_out_dir "$<TARGET_PROPERTY:${target},BINARY_DIR>")
     endif ()
-    
-    # This has to be a separate target due to the windows command line lenght limits    
-    add_custom_command(TARGET ${target} POST_BUILD 
+
+    # This has to be a separate target due to the windows command line lenght limits
+    add_custom_command(TARGET ${target} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy ${TOP_LEVEL_PROJECT_DIR}/deps/+GMP/gmp/lib/win${_bits}/libgmp-10.dll ${_out_dir}
         COMMENT "Copy gmp runtime to build tree"
         VERBATIM)
-    
-    add_custom_command(TARGET ${target} POST_BUILD 
+
+    add_custom_command(TARGET ${target} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy ${TOP_LEVEL_PROJECT_DIR}/deps/+MPFR/mpfr/lib/win${_bits}/libmpfr-4.dll ${_out_dir}
         COMMENT "Copy mpfr runtime to build tree"
         VERBATIM)

@@ -22,7 +22,7 @@ while getopts ":ihag" opt; do
     g )
         export FORCE_GTK2="1"
         ;;
-    h ) echo "Usage: ./BuildLinuxImage.sh [-g][-i][-a][-h]"
+    h ) echo "Usage: ./BuildmacOSImage.sh [-g][-i][-a][-h]"
         echo "   -g: force gtk2 build"
         echo "   -i: generate Appimage (optional)"
 	    echo "   -a: generate tgz (optional)"
