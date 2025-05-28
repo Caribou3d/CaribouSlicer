@@ -2515,7 +2515,7 @@ std::vector<Slic3r::GUI::PageShp> Tab::create_pages(std::string setting_type_nam
                                        option.opt.type == coPercent || option.opt.type == coPercents) {
                             option.opt.set_enum_values(ConfigOptionDef::GUIType::f_enum_open, values_2_labels);
                         } else {
-                            if (logs) Slic3r::slic3r_log->info("settings gui") << "Error: hints can only apply to int, int, flaot, flaot, percent, percents ("<< option.opt.opt_key <<")";
+                            if (logs) Slic3r::slic3r_log->info("settings gui") << "Error: hints can only apply to int, int, float, percent, percents ("<< option.opt.opt_key <<")";
                         }
                         //defautl already/will be set by the type
                     } else if (boost::starts_with(params[i], "depends")) {

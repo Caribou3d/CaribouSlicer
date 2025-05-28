@@ -60,8 +60,11 @@ void CalibrationFirstLayerDialog::create_buttons(wxStdDialogButtonSizer* buttons
 void CalibrationFirstLayerDialog::create_geometry() {
     Plater* plat = this->main_frame->plater();
     Model& model = plat->model();
-    if (!plat->new_project(L("First layer calibration")))
+    if (!plat->new_project(L("First layer pattern calibration")))
         return;
+    // wait for slicing end if needed
+    wxGetApp().Yield();
+
 
     //GLCanvas3D::set_warning_freeze(true);
     bool autocenter = gui_app->app_config->get("autocenter") == "1";
