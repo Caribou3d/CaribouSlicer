@@ -510,8 +510,20 @@ msgstr "レイヤー範囲追加"
 msgid "Add Layers"
 msgstr "レイヤー追加"
 
+msgid "Add modifier"
+msgstr "個別条件領域の追加"
+
+msgid "Add negative volume"
+msgstr "切り取りボリュームを追加"
+
+msgid "Add one more instance of the selected object"
+msgstr "選択したオブジェクトの1つ以上のインスタンスを追加します"
+
 msgid "Add one or more custom shapes"
 msgstr "一つまたは複数のカスタムシェイプを追加"
+
+msgid "Add part"
+msgstr "パーツ追加"
 
 msgid "Add pause print"
 msgstr "プリントの一時停止を追加"
@@ -530,6 +542,9 @@ msgstr "このプリンタデバイスのプリセットを追加します"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "選択したシェイプをベッドに追加します"
+
+msgid "Add settings"
+msgstr "設定を追加"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "高さ範囲の設定バンドルを追加"
@@ -557,6 +572,12 @@ msgstr "ギャラリーからシェイプを追加"
 
 msgid "Add Shapes from Gallery"
 msgstr "ギャラリーからシェイプを追加"
+
+msgid "Add support blocker"
+msgstr "サポートブロッカーを追加"
+
+msgid "Add support enforcer"
+msgstr "強制サポートを追加する"
 
 msgid "Add support point"
 msgstr "サポートポイントの追加"
@@ -677,6 +698,15 @@ msgstr "次の色の繰り返しを許可する"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "\"%1%\"で選択されたファセットにのみペイントできます"
+
+msgid "Along X axis"
+msgstr "X軸に沿って"
+
+msgid "Along Y axis"
+msgstr "Y軸に沿って"
+
+msgid "Along Z axis"
+msgstr "Z軸に沿って"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + マウスホイール"
@@ -1014,6 +1044,9 @@ msgstr "底部ソリッドレイヤー"
 msgid "Bottom View"
 msgstr "下面表示"
 
+msgid "Box"
+msgstr "ボックス"
+
 msgid "Bridge"
 msgstr "ブリッジ"
 
@@ -1205,8 +1238,14 @@ msgstr "パーツタイプの変更"
 msgid "Change point head diameter"
 msgstr "ポイントヘッド径の変更"
 
+msgid "Change the number of instances of the selected object"
+msgstr "選択したオブジェクトのインスタンス数を変更します"
+
 msgid "Change thumbnail"
 msgstr "サムネイルを変更する"
+
+msgid "Change type"
+msgstr "タイプを変更"
 
 msgid "Changelog & Download"
 msgstr "変更ログ & ダウンロード"
@@ -1284,6 +1323,9 @@ msgstr ""
 "クラシックの境界線生成は、一定の押し出し幅の境界線を生成し、非常に薄い領域に"
 "はギャップフィルが使用されます。アラクネ・エンジンは、押し出し幅が変化する境"
 "界線を生成します。この設定は、Concentric infillにも影響します。"
+
+msgid "Clear"
+msgstr "消去 (&C)"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "新しいプロジェクトでアンドゥー/リドゥースタックをクリアする"
@@ -2514,6 +2556,9 @@ msgstr "AMFのエクスポート"
 msgid "Export AMF file:"
 msgstr "AMFファイルのエクスポート:"
 
+msgid "Export as STL"
+msgstr "STLとしてエクスポート"
+
 msgid "Export config"
 msgstr "構成のエクスポート"
 
@@ -2829,8 +2874,14 @@ msgstr "塗りつぶし角"
 msgid "Fill bed"
 msgstr "ベッドを埋める"
 
+msgid "Fill bed with instances"
+msgstr "ベッドをインスタンスで埋める"
+
 msgid "Fill density"
 msgstr "充填密度"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "ベッドの残りの領域を、選択したオブジェクトのインスタンスで埋めます"
 
 msgid "Find"
 msgstr "検索"
@@ -2897,6 +2948,9 @@ msgstr "ラフトインターフェース上の最初のオブジェクトレイ
 
 msgid "Fix through NetFabb"
 msgstr "NetFabbで修正"
+
+msgid "Fix through the Netfabb"
+msgstr "Netfabbで修正"
 
 msgid "Fixing through NetFabb"
 msgstr "NetFabbで修正"
@@ -3112,6 +3166,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "ギャラリー"
+
 msgid "Gap fill"
 msgstr "ギャップフィル"
 
@@ -3287,6 +3344,9 @@ msgstr "高さ（mm）"
 
 msgid "Height of the display"
 msgstr "ディスプレイの高さ"
+
+msgid "Height range Modifier"
+msgstr "個別条件領域の高さ範囲"
 
 msgid "Height ranges"
 msgstr "高さ範囲"
@@ -4502,6 +4562,9 @@ msgstr "マージ"
 msgid "Merge all parts to the one single object"
 msgstr "すべてのパーツを1つのオブジェクトにマージします"
 
+msgid "Merge objects to the one multipart object"
+msgstr "オブジェクトを1つのマルチパートオブジェクトにマージします"
+
 msgid "Merged"
 msgstr "マージ"
 
@@ -4604,11 +4667,26 @@ msgstr "最小移動速度 (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "くり抜きモデルの最小壁厚"
 
+msgid "Mirror"
+msgstr "ミラー"
+
 msgid "Mirror horizontally"
 msgstr "水平にミラーリング"
 
 msgid "Mirror Object"
 msgstr "オブジェクトのミラーリング"
+
+msgid "Mirror the selected object"
+msgstr "選択オブジェクトのミラーリング"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "選択したオブジェクトをX軸でミラーリングします"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "選択オブジェクトをY軸に沿ってミラーリング"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "選択したオブジェクトをZ軸に沿ってミラーリングします"
 
 msgid "Mirror vertically"
 msgstr "垂直にミラーリング"
@@ -5221,6 +5299,9 @@ msgstr "設定を開く。"
 msgid "Open the dialog to modify shape gallery"
 msgstr "シェイプギャラリーの編集ダイヤログを開く"
 
+msgid "Opening Configuration Assistent"
+msgstr "構成ウィザードを開く"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "一部のプリセットが保存されていないときに新しいプロジェクトを開きます。"
 
@@ -5712,6 +5793,9 @@ msgstr "プリント速度上書き"
 msgid "Print&er Settings Tab"
 msgstr "プリンター設定タブ(&e)"
 
+msgid "Printable"
+msgstr "プリント可"
+
 msgid "printer"
 msgstr "プリンター"
 
@@ -5836,6 +5920,9 @@ msgstr "品質/スピード"
 
 msgid "Quick"
 msgstr "クイック"
+
+msgid "Quick Add Settings (%s)"
+msgstr "クイック追加設定(%s)"
 
 msgid "Quick Slice"
 msgstr "高速スライス"
@@ -5990,6 +6077,9 @@ msgstr "リロード元："
 msgid "Reload the plater from disk"
 msgstr "プレートをリロードします"
 
+msgid "Reload the selected volumes from disk"
+msgstr "選択したオブジェクトをディスクからリロードする"
+
 msgid "Remaining errors"
 msgstr "残りのエラー"
 
@@ -6035,6 +6125,9 @@ msgstr "レイヤーの範囲を削除します"
 msgid "Remove Multi Material painting"
 msgstr "マルチマテリアルペイントを除去"
 
+msgid "Remove one instance of the selected object"
+msgstr "選択したオブジェクトのインスタンスを1つ削除します"
+
 msgid "Remove paint-on seam"
 msgstr "ペイントオンシームを除去"
 
@@ -6059,12 +6152,18 @@ msgstr "選択したポイントを削除"
 msgid "Remove selection"
 msgstr "選択を削除"
 
+msgid "Remove the selected object"
+msgstr "選択オブジェクトを削除"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr ""
 "ユーザープロファイルを削除します（スナップショットは事前に作成されます）"
 
 msgid "Remove variable layer height"
 msgstr "可変レイヤー高さを除去"
+
+msgid "Rename"
+msgstr "名前の変更"
 
 msgid "Rename Object"
 msgstr "オブジェクト名を変更"
@@ -6127,6 +6226,9 @@ msgstr "最後のクイックスライスを繰り返す"
 
 msgid "Replace from:"
 msgstr "置換元："
+
+msgid "Replace the selected volume with new STL"
+msgstr "選択したボリュームを新しいSTLに置き換えます"
 
 msgid "Replace with"
 msgstr "置換先"
@@ -6397,6 +6499,9 @@ msgstr "スケール"
 msgid "Scale factors"
 msgstr "寸法係数"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "選択したオブジェクトをプリントボリュームに合わせて拡大縮小します"
+
 msgid "Scale To Fit"
 msgstr "フィットするように縮尺"
 
@@ -6405,6 +6510,9 @@ msgstr "フィットするように縮尺"
 
 msgid "Scale to fit the given volume."
 msgstr "指定したプリントスペースに合わせてサイズを変更します。"
+
+msgid "Scale to print volume"
+msgstr "プリントエリアに合わせて縮尺する"
 
 msgid "Scaling factor or percentage."
 msgstr "スケーリング係数または割合。"
@@ -6497,6 +6605,9 @@ msgstr "プリンタ設定タブを選択"
 
 msgid "Select shape from the gallery"
 msgstr "ギャラリーからシェイプを選択"
+
+msgid "Select showing settings"
+msgstr "表示設定を選択"
 
 msgid "Select the language"
 msgstr "言語を選択"
@@ -6597,6 +6708,12 @@ msgstr "サービス名"
 msgid "Set"
 msgstr "設定"
 
+msgid "Set as a Separated Object"
+msgstr "分離オブジェクトとして設定"
+
+msgid "Set as a Separated Objects"
+msgstr "分離オブジェクトとして設定"
+
 msgid "Set auto color changes"
 msgstr "自動カラー変更を設定する"
 
@@ -6605,6 +6722,9 @@ msgstr "選択したアイテムのデフォルトエクストルーダーを設
 
 msgid "Set extruder change for every"
 msgstr "エクストルーダー変更のサイクルを設定する"
+
+msgid "Set extruder for selected items"
+msgstr "選択アイテムのエクストルーダーを設定"
 
 msgid "Set extruder number for the selected items"
 msgstr "選択したアイテムのエクストルーダー番号を設定します"
@@ -6626,6 +6746,9 @@ msgstr "下側の範囲をアクティブに設定"
 
 msgid "Set Mirror"
 msgstr "ミラーリング設定"
+
+msgid "Set number of instances"
+msgstr "インスタンス数の設定"
 
 msgid "Set numbers of copies to %d"
 msgstr "コピーの数を%dに設定"
@@ -6871,6 +6994,9 @@ msgstr "オブジェクト/インスタンスラベルの表示/非表示"
 msgid "Simple"
 msgstr "簡易"
 
+msgid "Simplify model"
+msgstr "簡略化モデル"
+
 msgid "Single extruder MM setup"
 msgstr "シングルエクストルーダーのMM設定"
 
@@ -6955,6 +7081,9 @@ msgstr "SLAサポートポイント"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "プリント領域外のSLAサポートが検出されました。"
+
+msgid "Slab"
+msgstr "平板"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7229,6 +7358,15 @@ msgstr "スパイラル花瓶"
 
 msgid "Split"
 msgstr "分割"
+
+msgid "Split the selected object"
+msgstr "選択したオブジェクトを分割します"
+
+msgid "Split the selected object into individual objects"
+msgstr "選択したオブジェクトを個々のオブジェクトに分割します"
+
+msgid "Split the selected object into individual parts"
+msgstr "選択したオブジェクトを個々の部分に分割します"
 
 msgid "Split to objects"
 msgstr "オブジェクトの分割"
@@ -8337,6 +8475,12 @@ msgstr "まで"
 msgid "To do that please specify a new name for the preset."
 msgstr "これを行うには、プリセットの新しい名前を指定してください。"
 
+msgid "To objects"
+msgstr "オブジェクト"
+
+msgid "To parts"
+msgstr "パーツへ"
+
 msgid ""
 "To specify the system certificate store manually, please set the %1% "
 "environment variable to the correct CA bundle and restart the application."
@@ -9352,9 +9496,6 @@ msgstr "STL/OBJ/AMF/3MFのインポート(&F)"
 msgid "Max print speed"
 msgstr "最大プリント速度"
 
-msgid "Opening Configuration Assistent"
-msgstr "構成ウィザードを開く"
-
 msgid ""
 "Please save your project and restart PrusaSlicer. We would be glad if you "
 "reported the issue."
@@ -9519,9 +9660,6 @@ msgstr ""
 "て、プリント時間を短縮し、フィラメントの消費量を減らすことができることをご存"
 "知ですか？ 詳細については、ドキュメントをご覧ください。"
 
-msgid "Add modifier"
-msgstr "個別条件領域の追加"
-
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters, until more than 70% of the loop immediately above "
@@ -9530,30 +9668,12 @@ msgstr ""
 "傾斜したモデルに隙間ができるのを避けるために、必要に応じて外周を追加します。 "
 "Slic3rは、すぐ上のループの70％以上がカバーされるまで、外周を追加します。"
 
-msgid "Add negative volume"
-msgstr "切り取りボリュームを追加"
-
-msgid "Add one more instance of the selected object"
-msgstr "選択したオブジェクトの1つ以上のインスタンスを追加します"
-
-msgid "Add part"
-msgstr "パーツ追加"
-
-msgid "Add settings"
-msgstr "設定を追加"
-
 msgid ""
 "Add solid infill near sloping surfaces to guarantee the vertical shell "
 "thickness (top+bottom solid layers)."
 msgstr ""
 "傾斜面付近でソリッドインフィル(塗りつぶし)を追加して、垂直方向の厚みを保証し"
 "ます（トップ+ボトムソリッドレイヤー）。"
-
-msgid "Add support blocker"
-msgstr "サポートブロッカーを追加"
-
-msgid "Add support enforcer"
-msgstr "強制サポートを追加する"
 
 msgid "Advanced View Mode"
 msgstr "高度なビューモード"
@@ -9563,15 +9683,6 @@ msgstr "整列された直線"
 
 msgid "Allow just a single PrusaSlicer instance"
 msgstr "PrusaSlicerインスタンスを1つだけ許可する"
-
-msgid "Along X axis"
-msgstr "X軸に沿って"
-
-msgid "Along Y axis"
-msgstr "Y軸に沿って"
-
-msgid "Along Z axis"
-msgstr "Z軸に沿って"
 
 msgid "Always ask for unsaved changes when creating new project"
 msgstr "新しいプロジェクトを作成するときは、常に未保存の変更を要求してください"
@@ -9669,9 +9780,6 @@ msgstr ""
 msgid "Bottom contact Z distance"
 msgstr "ボトムコンタクトZ距離"
 
-msgid "Box"
-msgstr "ボックス"
-
 msgid ""
 "Box selection\n"
 "Did you know that you can do a box selection with Shift+Mouse drag? You can "
@@ -9708,12 +9816,6 @@ msgstr ""
 
 msgid "Can't apply when proccess preview."
 msgstr "プロセスプレビュー時に適用できません。"
-
-msgid "Change the number of instances of the selected object"
-msgstr "選択したオブジェクトのインスタンス数を変更します"
-
-msgid "Change type"
-msgstr "タイプを変更"
 
 msgid "Clear all"
 msgstr "全てクリア"
@@ -10030,9 +10132,6 @@ msgstr ""
 msgid "Expert View Mode"
 msgstr "エキスパートビューモード"
 
-msgid "Export as STL"
-msgstr "STLとしてエクスポート"
-
 msgid "Extra high"
 msgstr "とても高い"
 
@@ -10064,9 +10163,6 @@ msgstr "ファンがオフになります。"
 msgid "FFF Technology Printers"
 msgstr "FFF型プリンター"
 
-msgid "Fill bed with instances"
-msgstr "ベッドをインスタンスで埋める"
-
 msgid "Fill gaps"
 msgstr "ギャップを埋める"
 
@@ -10087,9 +10183,6 @@ msgstr ""
 "トップレイヤーのインフィル(塗りつぶし)パターン。 これは最上層レイヤーにのみに"
 "適用され、それ以外のソリッドシェル(塗りつぶし)には影響しません。"
 
-msgid "Fill the remaining area of bed with instances of the selected object"
-msgstr "ベッドの残りの領域を、選択したオブジェクトのインスタンスで埋めます"
-
 msgid "Filling bed"
 msgstr "ベッドフィリング"
 
@@ -10098,9 +10191,6 @@ msgstr "最初のカラー"
 
 msgid "First layer height can't be greater than nozzle diameter"
 msgstr "最初のレイヤー高は、ノズルの直径より大きくすることはできません"
-
-msgid "Fix through the Netfabb"
-msgstr "Netfabbで修正"
 
 msgid "flow rate is maximized"
 msgstr "最大送り量になります"
@@ -10134,9 +10224,6 @@ msgstr ""
 msgid "G-code thumbnails"
 msgstr "Gコードのサムネイル"
 
-msgid "Gallery"
-msgstr "ギャラリー"
-
 msgid "Generic"
 msgstr "一般"
 
@@ -10149,9 +10236,6 @@ msgstr ""
 
 msgid "Height of skirt expressed in layers."
 msgstr "スカートの高さをレイヤーで表現。"
-
-msgid "Height range Modifier"
-msgstr "個別条件領域の高さ範囲"
 
 msgid "Heights at which a filament change is to occur."
 msgstr "フィラメントを切り替える高さ。"
@@ -10428,9 +10512,6 @@ msgstr ""
 msgid "Medium"
 msgstr "中間"
 
-msgid "Merge objects to the one multipart object"
-msgstr "オブジェクトを1つのマルチパートオブジェクトにマージします"
-
 msgid ""
 "Merging bridges or pillars into another pillars can increase the radius. "
 "Zero means no increase, one means full increase."
@@ -10478,21 +10559,6 @@ msgstr ""
 "ミラー\n"
 "選択したモデルをミラーリングして、その逆バージョンを作成できることをご存知で"
 "すか？ モデルを右クリックし、[ミラー]を選択して、ミラー軸を選択します。"
-
-msgid "Mirror"
-msgstr "ミラー"
-
-msgid "Mirror the selected object"
-msgstr "選択オブジェクトのミラーリング"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "選択したオブジェクトをX軸でミラーリングします"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "選択オブジェクトをY軸に沿ってミラーリング"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "選択したオブジェクトをZ軸に沿ってミラーリングします"
 
 msgid ""
 "Most likely the configuration was produced by a newer version of PrusaSlicer "
@@ -10744,9 +10810,6 @@ msgstr ""
 msgid "Pre&view"
 msgstr "プレビュー(&v)"
 
-msgid "Printable"
-msgstr "プリント可"
-
 msgid ""
 "Printable toggle\n"
 "Did you know that you can disable the G-code generation for the selected "
@@ -10851,9 +10914,6 @@ msgstr "PrusaSlicer：次から尋ねない"
 msgid "Quality (slower slicing)"
 msgstr "高品質(スライスが遅くなります)"
 
-msgid "Quick Add Settings (%s)"
-msgstr "クイック追加設定(%s)"
-
 msgid "Recommended object thin wall thickness for layer height %.2f and"
 msgstr "レイヤー高さ%.2fでの推奨オブジェクトの薄壁厚と"
 
@@ -10878,29 +10938,8 @@ msgstr ""
 msgid "Reload plater from disk"
 msgstr "ディスクからプレートをリロードします"
 
-msgid "Reload the selected volumes from disk"
-msgstr "選択したオブジェクトをディスクからリロードする"
-
-msgid "Remove one instance of the selected object"
-msgstr "選択したオブジェクトのインスタンスを1つ削除します"
-
 msgid "Remove painted color"
 msgstr "カラーペイントを除去"
-
-msgid "Remove the selected object"
-msgstr "選択オブジェクトを削除"
-
-msgid "Rename"
-msgstr "名前の変更"
-
-msgid "Replace the selected volume with new STL"
-msgstr "選択したボリュームを新しいSTLに置き換えます"
-
-msgid "Scale the selected object to fit the print volume"
-msgstr "選択したオブジェクトをプリントボリュームに合わせて拡大縮小します"
-
-msgid "Scale to print volume"
-msgstr "プリントエリアに合わせて縮尺する"
 
 msgid ""
 "Search functionality\n"
@@ -10920,9 +10959,6 @@ msgstr "すべての標準プリンターを選択"
 msgid "Select Plater Tab"
 msgstr "プレートタブを選択"
 
-msgid "Select showing settings"
-msgstr "表示設定を選択"
-
 msgid "Select what kind of pad do you need"
 msgstr "必要なパッドの種類を選択してください"
 
@@ -10941,15 +10977,6 @@ msgstr "システム情報の送信がキャンセルされました。"
 msgid "Sending system info..."
 msgstr "システム情報を送信しています..."
 
-msgid "Set as a Separated Object"
-msgstr "分離オブジェクトとして設定"
-
-msgid "Set as a Separated Objects"
-msgstr "分離オブジェクトとして設定"
-
-msgid "Set extruder for selected items"
-msgstr "選択アイテムのエクストルーダーを設定"
-
 msgid ""
 "Set number of instances\n"
 "Did you know that you can right-click a model and set an exact number of "
@@ -10958,9 +10985,6 @@ msgstr ""
 "インスタンス数を設定する\n"
 "モデルを数回コピーして貼り付ける代わりに、モデルを右クリックしてインスタンス"
 "の正確な数を設定できることをご存知ですか？"
-
-msgid "Set number of instances"
-msgstr "インスタンス数の設定"
 
 msgid ""
 "Set this to a non-zero value to allow a manual extrusion width. If left to "
@@ -11128,14 +11152,8 @@ msgstr ""
 "とをご存知ですか？ モデルを右クリックして、[モデルの簡略化]を選択します。 詳"
 "細については、ドキュメントをご覧ください。"
 
-msgid "Simplify model"
-msgstr "簡略化モデル"
-
 msgid "SLA Technology Printers"
 msgstr "SLA型プリンター"
-
-msgid "Slab"
-msgstr "平板"
 
 msgid "Slic3r will not scale speed down below this speed."
 msgstr "Slic3rはこの速度以下にしません。"
@@ -11247,15 +11265,6 @@ msgid "Split bigger facets into smaller ones while the object is painted."
 msgstr ""
 "オブジェクトがペイントされている間、大きなファセットを小さなファセットに分割"
 "します。"
-
-msgid "Split the selected object"
-msgstr "選択したオブジェクトを分割します"
-
-msgid "Split the selected object into individual objects"
-msgstr "選択したオブジェクトを個々のオブジェクトに分割します"
-
-msgid "Split the selected object into individual parts"
-msgstr "選択したオブジェクトを個々の部分に分割します"
 
 msgid ""
 "Support material will not be generated for overhangs whose slope angle (90° "
@@ -11774,12 +11783,6 @@ msgstr ""
 "フィラメントがアンロードされた後に停止する時間。 軟らかい材料などで元の寸法に"
 "縮小するのに時間を必要とすると考えられる場合で、信頼性の高いツール交換を行う"
 "のに役立ちます。"
-
-msgid "To objects"
-msgstr "オブジェクト"
-
-msgid "To parts"
-msgstr "パーツへ"
 
 msgid "Top contact Z distance"
 msgstr "トップコンタクトZ距離"
@@ -13198,9 +13201,6 @@ msgstr "閉じる(&O)"
 
 msgid "Class not registered."
 msgstr "スレッドを作成できません"
-
-msgid "Clear"
-msgstr "消去 (&C)"
 
 msgid "Clear the log contents"
 msgstr "ログの内容を消去します"
@@ -17204,3 +17204,3481 @@ msgstr ""
 "保存されていないプリセットの変更については、次回から質問されなくなります：\n"
 "- プリセットを変更したままPrusaSlicerを終了する。\n"
 "- プリセットを変更した状態で新しいプロジェクトをロードする。"
+
+msgid "%1$d connector is out of cut contour"
+msgid_plural "%1$d connectors are out of cut contour"
+msgstr[0] "%1$dコネクタがカット輪郭から外れている"
+msgstr[1] ""
+msgstr[2] "%1$dコネクタがカット輪郭から外れている"
+
+msgid "%1$d connector is out of object"
+msgid_plural "%1$d connectors are out of object"
+msgstr[0] "%1$d コネクタがオブジェクトから外れています"
+msgstr[1] ""
+msgstr[2] "%1$d コネクタがオブジェクトから外れています"
+
+msgid "%1$d object was loaded as a part of cut object."
+msgid_plural "%1$d objects were loaded as parts of cut object"
+msgstr[0] ""
+"%1$dのオブジェクトがカットオブジェクトの一部としてロードされました。"
+msgstr[1] ""
+msgstr[2] ""
+"%1$dのオブジェクトがカットオブジェクトの一部としてロードされました。"
+
+msgid "%1%, %2%"
+msgstr "%1%, %2%"
+
+msgid ""
+"%1% already exists. Do you want to rewrite it?\n"
+"(Other items than Wi-Fi credentials will stay unchanged)"
+msgstr ""
+"%1% がすでに存在しています。書き換えますか？\n"
+"(Wi-Fi認証情報以外の項目は変更しません）"
+
+msgid "%1%d"
+msgstr "%1%d"
+
+msgid "%1%h"
+msgstr "%1%h"
+
+msgid "%1%m"
+msgstr "%1%m"
+
+msgid "%1% - Multiple projects file"
+msgstr "%1% - 複数のプロジェクトファイル"
+
+msgid "%1% : no free space"
+msgstr "%1% : 十分な空きがありません"
+
+msgid "%1% : read only"
+msgstr "%1% : 読込のみ"
+
+msgid "%1%s"
+msgstr "%1%s"
+
+msgid ""
+"%1% visible for <b>(\"Template\")</b> printer are universal profiles "
+"available for all printers. These might not be compatible with your printer."
+msgstr ""
+"<b>(\"テンプレート\")</b>プリンターに表示される %1%は、すべてのプリンターで使"
+"用可能なユニバーサルプロファイルです。お使いのプリンターと互換性がない場合が"
+"あります。"
+
+msgid "Ability to change text, font, size, ..."
+msgstr "テキスト、フォント、サイズ、...を変更することが可能"
+
+msgid "Absolute E position"
+msgstr "絶対Eポジション"
+
+msgid ""
+"Activate OpenGL debug output on graphic cards which support it (OpenGL 4.3 "
+"or higher)"
+msgstr ""
+"OpenGLデバッグ出力をサポートするグラフィックカード（OpenGL 4.3以上）で有効に"
+"する。"
+
+msgid "Add connector"
+msgstr "コネクター追加"
+
+msgid "Add connectors"
+msgstr "コネクター追加"
+
+msgid "Add connector to selection"
+msgstr "コネクターを選択に追加"
+
+msgid "Add Emboss text object"
+msgstr "エンボステキストオブジェクトを追加"
+
+msgid "Add Emboss text Volume"
+msgstr "エンボステキストボリュームを追加"
+
+msgid "Add negative SVG"
+msgstr "切取りSVGの追加"
+
+msgid "Add negative text"
+msgstr "切取りテキストの追加"
+
+msgid "Add selected placeholder to G-code"
+msgstr "選択したプレースホルダーをGコードに追加する"
+
+msgid "Add style to my list."
+msgstr "マイリストにスタイルを追加。"
+
+msgid "Add SVG modifier"
+msgstr "SVGモディファイアの追加"
+
+msgid "Add SVG part"
+msgstr "SVGパーツ追加"
+
+msgid "Add text"
+msgstr "テキストの追加"
+
+msgid "Add text modifier"
+msgstr "テキストモディファイアの追加"
+
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
+"枝の先端を生成するために使用されるサポート構造の密度を調整します。高い値を設"
+"定するとオーバーハングが良くなりますが、サポートの除去が困難になるため、密度"
+"の高いインターフェースが必要な場合は、枝密度を高めるのではなく、トップサポー"
+"トのインターフェースを有効にすることをお勧めします。"
+
+msgid ""
+"Advanced options cannot be changed for the selected font.\n"
+"Select another font."
+msgstr ""
+"選択されているフォントでは、高度なオプションを変更することはできません。\n"
+"他のフォントを選択してください。"
+
+msgid "Alert if supports needed"
+msgstr "サポートが必要な場合の警告"
+
+msgid "Alert when supports needed"
+msgstr "サポートが必要な場合の警告"
+
+msgid "Middle"
+msgstr "ミドル"
+
+msgid "Allow automatically color change"
+msgstr "自動でカラーチェンジが可能"
+
+msgid "Allow built-in downloader"
+msgstr "内蔵のダウンローダーを使用できるようにする"
+
+msgid "Allow downloads from Printables.com"
+msgstr "Printables.comからのダウンロードを許可"
+
+msgid "Also consider enabling brim."
+msgstr "また、ブリムの有効も検討してください。"
+
+msgid ""
+"A multipart object can be simplified using only a Level of detail. If you "
+"want to enter a Decimate ratio, do the simplification separately."
+msgstr ""
+"マルチパートオブジェクトは、詳細レベルのみを使用して簡略化することができま"
+"す。分解比率を入力したい場合は、別途簡略化を行います。"
+
+msgid "Angle"
+msgstr "角度"
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr ""
+"ワイプタワーを安定させるために使用される円錐の頂点の角度。角度が大きいと底面"
+"が広くなります。"
+
+msgid ""
+"An object has enabled XY Size compensation which will not be used because it "
+"is also multi-material painted.\n"
+"XY Size compensation cannot be combined with multi-material painting."
+msgstr ""
+"オブジェクトでXYサイズ補正が有効になっているが、マルチマテリアルペイントもさ"
+"れているため、使用されない。\n"
+"XYサイズ補正は、マルチマテリアルペイントと組み合わせることはできません。"
+
+msgid "Application font size"
+msgstr "アプリケーションのフォントサイズ"
+
+msgid "Apply below setting to other extruders"
+msgstr "以下の設定を他のエクストルーダーにも適用する"
+
+msgid "Apply to all objects being loaded."
+msgstr "ロードされるすべてのオブジェクトに適用されます。"
+
+msgid "App update"
+msgstr "アプリアップデート"
+
+msgid "App Update available"
+msgstr "アプリアップデート可能"
+
+msgid "App Update download"
+msgstr "アプリの更新ダウンロード"
+
+msgid "Arc fitting"
+msgstr "アークフィッティング"
+
+msgid "Archive preview"
+msgstr "アーカイブプレビュー"
+
+msgid "Are the extra multi-material priming regions used in this print?"
+msgstr ""
+"このプリントでは追加のマルチマテリアルプライミング領域が使用されていますか?"
+
+msgid "Are you sure you want to permanently remove the \"%1%\" style?"
+msgstr "本当に\"%1%\"スタイルを永久に削除しますか？"
+
+msgid ""
+"Are you sure you want to store original SVGs with their local paths into the "
+"3MF file?\n"
+"If you hit 'NO', all SVGs in the project will not be editable any more."
+msgstr ""
+"オリジナルの SVG をローカル パスとともに 3MF ファイルに保存してもよろしいです"
+"か?\n"
+"「いいえ」を押すと、プロジェクト内のすべての SVG は編集できなくなります。"
+
+msgid "Assembling model from parts"
+msgstr "パーツからモデルを組み立てる"
+
+msgid "Associate .bgcode files to PrusaSlicer G-code Viewer"
+msgstr ".bgcodeファイルをPrusaSlicerのGコードビューアに関連付けます"
+
+msgid "Auto"
+msgstr "オート"
+
+msgid "Automatic painting"
+msgstr "自動ペインティング"
+
+msgid "Automatic painting requires printable object."
+msgstr "自動ペインティングにはプリント可能なオブジェクトが必要です。"
+
+msgid "Automatic painting requires valid print setup."
+msgstr "自動ペインティングには、有効なプリント設定が必要です。"
+
+msgid "Automatic painting support points"
+msgstr "自動ペインティングサポートポイント"
+
+msgid "Automatic painting will erase all currently painted areas."
+msgstr "自動ペインティングは、現在ペイントしている部分を全て消去します。"
+
+msgid "Avoid crossing curled overhangs (Experimental)"
+msgstr "カールしたオーバーハングの横断を避ける（実験的）"
+
+msgid ""
+"Avoid crossing perimeters option and avoid crossing curled overhangs option "
+"cannot be both enabled together."
+msgstr ""
+"\"外周部を横断しない\"オプションと\"カールしたオーバーハングを横断しない\"オ"
+"プションは、同時に有効にすることはできません。"
+
+msgid "Bake"
+msgstr "焼付け"
+
+msgid "Bake into model as uneditable part"
+msgstr "編集不可パーツとしてモデルに焼付けする"
+
+msgid "Bed Temperature"
+msgstr "ベッドの温度"
+
+msgid "Bed temperatures for the used filaments differ significantly."
+msgstr "使用するフィラメントのベッド温度は大きく異なります。"
+
+msgid "Boldness"
+msgstr "ボールドネス"
+
+msgid "Bottom-left corner of first layer bounding box"
+msgstr "最初のレイヤーの境界ボックスの左下隅"
+
+msgid "Bottom-left corner of print bed bounding box"
+msgstr "プリント ベッド境界ボックスの左下隅"
+
+msgid "Branch Density"
+msgstr "枝の密度"
+
+msgid "Branch Diameter"
+msgstr "枝径"
+
+msgid "Branch Diameter Angle"
+msgstr "枝径アングル"
+
+msgid "Branch Diameter with double walls"
+msgstr "二重ウォール枝径"
+
+msgid "Branch Distance"
+msgstr "枝間の距離"
+
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
+"この直径の円の面積よりも大きな面積を持つ枝は、安定性向上のためために二重"
+"ウォールでプリントされます。 二重ウォールにしないときは、この値をゼロに設定し"
+"ます。"
+
+msgid "Branching"
+msgstr "枝サポート"
+
+msgid "Branching (experimental)"
+msgstr "枝サポート（実験）"
+
+msgid "Branch tip diameter for organic supports."
+msgstr "オーガニックサポート時の枝先径。"
+
+msgid "Build Volume"
+msgstr "ビルドボリューム"
+
+msgid "Built-in placeholders (Double click item to add to G-code)"
+msgstr "組込みプレースホルダー (アイテムをダブルクリックして G コードに追加)"
+
+msgid "Bulge"
+msgstr "バルジ"
+
+msgid "Bulge proportion related to radius"
+msgstr "バルジの比率と半径の関係"
+
+msgid "Calculating overhanging perimeters"
+msgstr "オーバーハング外周部の計算"
+
+msgid ""
+"Cannot save ASCII G-code with %1% extension.\n"
+"\n"
+"Use a different extension or enable <a href=%2%>binary G-code export</a> in "
+"Printer Settings."
+msgstr ""
+"拡張子 %1% の アスキーGコードを保存できません。\n"
+"\n"
+"別の拡張子を使用するか、プリンタの設定で<a href=%2%>バイナリーGコードのエクス"
+"ポート</a>を有効にしてください。"
+
+msgid ""
+"Cannot save binary G-code with %1% extension.\n"
+"\n"
+"Use a different extension or disable <a href=%2%>binary G-code export</a> in "
+"Printer Settings."
+msgstr ""
+"バイナリーGコードを %1% 拡張子で保存できません。\n"
+"\n"
+"別の拡張子を使用するか、プリンター設定で<a href=%2%>バイナリ G コードのエクス"
+"ポート</a>を無効にしてください。"
+
+msgid "Can't create file at %1%"
+msgstr "%1%にファイルを作成できない"
+
+msgid "Can't delete \"%1%\". It is last style."
+msgstr "\"%1%\"を削除できません。直前に使用していたスタイルです。"
+
+msgid "Can't delete temporary style \"%1%\"."
+msgstr "テンポラリスタイル\"%1%\"を削除できません。"
+
+msgid ""
+"Can't load exactly same font(\"%1%\"). Aplication selected a similar "
+"one(\"%2%\"). You have to specify font for enable edit text."
+msgstr ""
+"全く同じフォント(\"%1%\")を読み込むことができません。アプリケーションは似たよ"
+"うなもの(\"%2%\")を選択しました。編集テキストを有効にするには、フォントを指定"
+"する必要があります。"
+
+msgid "Can't remove the last existing style."
+msgstr "最後に存在したスタイルを削除できません。"
+
+msgid "Can't rename temporary style."
+msgstr "テンポラリスタイルの名前を変更できません。"
+
+msgid "Center of circle"
+msgstr "円の中心"
+
+msgid "Center of edge"
+msgstr "エッジの中心"
+
+msgid "Center of gravity"
+msgstr "重心"
+
+msgid "Change application mode"
+msgstr "アプリケーションモード変更"
+
+msgid "Change cut mode"
+msgstr "カットモード変更"
+
+msgid "Change file"
+msgstr "ファイル変更"
+
+msgid "Change SVG source file, projection, size, ..."
+msgstr "SVG ソース ファイル、プロジェクション、サイズなどを変更します。"
+
+msgid "Change SVG Type"
+msgstr "SVGタイプ変更"
+
+msgid "Change Text Type"
+msgstr "テキストタイプ変更"
+
+msgid "Change the number of instances of the selected objects"
+msgstr "選択したオブジェクトのインスタンス数を変更"
+
+msgid "Change to another .svg file"
+msgstr "別の .svg ファイルに変更します"
+
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"スタイルを\"%1%\"に変更すると、現在のスタイル変更は破棄されます。\n"
+"\n"
+"それでもこのまま続けますか？"
+
+msgid "Char gap"
+msgstr "文字間ギャップ"
+
+msgid "Check for application update has failed."
+msgstr "アプリケーションの更新チェックに失敗しました。"
+
+msgid "Check for Application Updates"
+msgstr "最新バージョンをチェック"
+
+msgid "Check for new version of application"
+msgstr "アプリケーションの新バージョンをチェック"
+
+msgid "Choose folder"
+msgstr "フォルダーの選択"
+
+msgid "Choose one file (GCODE/GCO/G/BGCODE/BGC/NGC):"
+msgstr "1つのファイルを選択します (GCODE/GCO/G/BGCODE/BGC/NGC):"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
+msgstr "1 つ以上のファイルを選択します (STL/3MF/STEP/OBJ/AMF/SVG) ："
+
+msgid "Choose SLA archive"
+msgstr "SLAアーカイブを選択"
+
+msgid "Choose SVG file for emboss:"
+msgstr "エンボス用の SVG ファイルを選択します："
+
+msgid "Choose ZIP file"
+msgstr "ZIPファイルの選択"
+
+msgid "Chosen directory for downloads does not exist."
+msgstr "選択したダウンロード用ディレクトリが存在しません。"
+
+msgid "clicking this icon opens a dialog allowing to edit this value."
+msgstr ""
+"このアイコンをクリックすると、この値を編集するためのダイアログが開きます。"
+
+msgid "Click to change part type into modifier."
+msgstr "クリックすると、パーツタイプをモディファイアに変更します。"
+
+msgid "Click to change part type into negative volume."
+msgstr "クリックすると、パーツタイプをマイナスボリュームに変更します。"
+
+msgid "Click to change text into object part."
+msgstr "クリックすると、テキストをオブジェクトパーツに変更します。"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane"
+msgstr ""
+"クリックでカット面を反転\n"
+"ドラッグでカット面を移動"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane\n"
+"Right-click a part to assign it to the other side"
+msgstr ""
+"クリックでカット面を反転させる\n"
+"ドラッグしてカット面を移動する\n"
+"パーツを右クリックすると、他方のパーツに割り当てます"
+
+msgid "Collapsing overhang"
+msgstr "オーバハングの崩れ"
+
+msgid "Collection"
+msgstr "コレクション"
+
+msgid "Color change extruder"
+msgstr "エクストルーダーのカラーチェンジ"
+
+msgid "Color gradient (%1%)"
+msgstr "カラーグラデーション (%1%)"
+
+msgid "Comma-separated list of all filament types used during the print."
+msgstr ""
+"プリント中に使用されるすべてのフィラメント タイプのカンマ区切りのリスト。"
+
+msgid "Compare preset with another"
+msgstr "別のプリセットと比較"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "構成は構成ウィザードで編集されます"
+
+msgid "Configuration is editing from ConfigWizard"
+msgstr "構成は構成ウィザードから編集中です"
+
+msgid ""
+"Configuration update is available. Update contains new printer releases."
+msgstr ""
+"構成のアップデートが利用可能です。 アップデートには新しいプリンターのリリース"
+"が含まれています。"
+
+msgid ""
+"Configuration Update will cause the preset modification to be lost.\n"
+"So, check unsaved changes and save them if necessary."
+msgstr ""
+"構成のアップデートを行うと、プリセットからの変更内容が失われます。\n"
+"そのため、保存されていない変更点を確認し、必要に応じて保存してください。"
+
+msgid "Configuration &Wizard"
+msgstr "構成ウィザード(&W)"
+
+msgid "Configuration Wizard"
+msgstr "構成ウィザード"
+
+msgid "Confirm connectors"
+msgstr "コネクタの確認"
+
+msgid ""
+"Conflicts in G-code paths have been detected at layer %1%, z=%2$.2f mm. "
+"Please reposition the conflicting objects (%3% <-> %4%) further apart."
+msgstr ""
+"レイヤー%1%, z=%2$.2f mmでGコードパスの競合が検出されました。競合するオブジェ"
+"クト (%3%<-> %4%) をさらに離して再配置してください。"
+
+msgid "Connection to MKS works correctly."
+msgstr "MKSに接続しました。"
+
+msgid "Connection to Moonraker works correctly."
+msgstr "Moonrakerに正常に接続しています。"
+
+msgid "Connection to Prusa Connect works correctly."
+msgstr "Prusa コネクトに接続しました。"
+
+msgid "Connector"
+msgstr "コネクター"
+
+msgid "Connectors"
+msgstr "コネクター"
+
+msgid "Connectors information"
+msgstr "コネクター情報"
+
+msgid "Consider enabling supports."
+msgstr "サポート有効を検討してください。"
+
+msgid ""
+"Contains a string with the information about what scaling was applied to the "
+"individual objects. Indexing of the objects is zero-based (first object has "
+"index 0).\n"
+"Example: 'x:100% y:50% z:100%'."
+msgstr ""
+"個々のオブジェクトに適用されたスケーリングに関する情報を含む文字列が含まれま"
+"す。 オブジェクトのインデックス付けはゼロベースです (最初のオブジェクトのイン"
+"デックスは 0)。\n"
+"例: 'x:100% y:50% z:100%'。"
+
+msgid "Contains z-hop present at the beginning of the custom G-code block."
+msgstr "カスタムGコードブロックの先頭に存在するz-hopを含む。"
+
+msgid "Convert a G-code file from ASCII to binary format"
+msgstr "GコードファイルをASCII形式からバイナリ形式に変換"
+
+msgid "Convert a G-code file from binary to ASCII format"
+msgstr "Gコードファイルをバイナリ形式からASCII形式に変換"
+
+msgid "Convert ASCII G-code to &binary"
+msgstr "ASCII Gコードからバイナリへの変換"
+
+msgid "Convert binary G-code to &ASCII"
+msgstr "バイナリGコードからASCIIへの変換"
+
+msgid "Convert G-code file to ASCII format"
+msgstr "GコードファイルをASCIIフォーマットに変換"
+
+msgid "Convert G-code file to binary format"
+msgstr "Gコードファイルをバイナリ形式に変換"
+
+msgid "Could not connect to MKS"
+msgstr "MKSに接続できませんでした"
+
+msgid "Could not connect to Moonraker"
+msgstr "Moonrakerに接続できませんでした"
+
+msgid "Could not connect to Prusa Connect"
+msgstr "Prusaコネクトに接続できませんでした"
+
+msgid ""
+"Could not start URL download. Destination folder is not set. Please choose "
+"destination folder in Configuration Wizard."
+msgstr ""
+"URLのダウンロードを開始できませんでした。保存先フォルダが設定されていません。"
+"設定ウィザードで保存先フォルダーを選択してください。"
+
+msgid ""
+"Couldn't load index file for vendor %1% when performing updates. The profile "
+"will not be installed. Reason: Corrupted index file %2%."
+msgstr ""
+"アップデートの実行時に、ベンダー %1% のインデックス・ファイルを読み込めません"
+"でした。プロファイルはインストールされません。状況： インデックス・ファイル "
+"%2% が破損しています。"
+
+msgid ""
+"Couldn't locate index file for vendor %1% when performing updates. The "
+"profile will not be installed."
+msgstr ""
+"アップデートの実行時に、ベンダー %1% のインデックス・ファイルを見つけられませ"
+"んでした。プロファイルはインストールされません。"
+
+msgid ""
+"Couldn't open profile file for vendor %1% when performing updates. The "
+"profile will not be installed. This installation might be corrupted."
+msgstr ""
+"アップデートの実行時に、ベンダー %1% のプロファイル・ファイルを開くことができ"
+"ませんでした。プロファイルはインストールされません。このインストールは破損し"
+"ている可能性があります。"
+
+msgid "Current"
+msgstr "現在"
+
+msgid "Current extruder"
+msgstr "現在のエクストルーダー"
+
+msgid "Current extruder index"
+msgstr "現在使用中のエクストルーダーインデックス"
+
+msgid "Currently planned extra extruder priming after deretraction."
+msgstr ""
+"現在、リトラクションからの復帰時のエクストルーダーの追加プライミングが計画さ"
+"れています。"
+
+msgid "Current object index"
+msgstr "現在のオブジェクトインデックス"
+
+msgid ""
+"Current position of the extruder axis. Only used with absolute extruder "
+"addressing."
+msgstr ""
+"エクストルーダー軸の現在のポジション。 絶対エクストルーダーアドレス指定でのみ"
+"使用されます。"
+
+msgid "Current style is \"%1%\""
+msgstr "現在のスタイルは\"%1%\""
+
+msgid "Current z-hop"
+msgstr "現在のz-hop"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"simplifying the mesh."
+msgstr ""
+"カスタムサポート、シーム、マルチマテリアルペイントはメッシュを簡略化した後、"
+"削除しました。"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"splitting the object."
+msgstr ""
+"カスタムサポート、シーム、マルチマテリアルペイントは、オブジェクトを分割した"
+"後に削除されました。"
+
+msgid "Cut by line"
+msgstr "ラインでカット"
+
+msgid "Cut gizmo editing"
+msgstr "カットギズモ編集"
+
+msgid "Cut into"
+msgstr "にカットする"
+
+msgid "Cut plane is placed out of object"
+msgstr "カット面はオブジェクトの外に配置される"
+
+msgid "Cut plane with groove is invalid"
+msgstr "溝のあるカット面は無効"
+
+msgid "Cut position"
+msgstr "カットポジション"
+
+msgid "Cut result"
+msgstr "カット結果"
+
+msgid ""
+"Cut tool\n"
+"Did you know that you can cut a model at any angle and even create aligning "
+"pins with the updated <a>Cut tool</a>? Learn more in the documentation."
+msgstr ""
+"カットツール\n"
+"アップデートされた<a>カットツール</a>で、モデルを任意の角度でカットしたり、位"
+"置合わせ用のピンを作成したりできることをご存知でしょうか？詳しくは、ドキュメ"
+"ントでご確認ください。"
+
+msgid "Dark mode"
+msgstr "ダークモード"
+
+msgid "Day"
+msgstr "日"
+
+msgid "Default palette for mode markers"
+msgstr "モードマーカ用デフォルトパレット"
+
+msgid "Delete \"%1%\" style."
+msgstr "\"%1%\"スタイル削除"
+
+msgid "Delete all connectors"
+msgstr "全てのコネクターを削除"
+
+msgid "Delete connector"
+msgstr "コネクター削除"
+
+msgid "Delete connector from object which is a part of cut"
+msgstr "カットの一部であるオブジェクトからコネクタを削除"
+
+msgid "Delete files after loading"
+msgstr "読み込み後にファイルを削除する。"
+
+msgid "Delete files after loading."
+msgstr "読み込み後にファイルを削除する。"
+
+msgid "Delete negative volume from object which is a part of cut"
+msgstr "カットの一部であるオブジェクトから負のボリュームを削除"
+
+msgid "Delete object"
+msgstr "オブジェクト削除"
+
+msgid "Delete object which is a part of cut object"
+msgstr "カットオブジェクトの一部であるオブジェクトを削除"
+
+msgid "Delete preset"
+msgstr "プリセットの削除"
+
+msgid "Delete solid part from object which is a part of cut"
+msgstr "カットの一部であるオブジェクトからソリッドパーツを削除"
+
+msgid "Depth"
+msgstr "深さ"
+
+msgid "Deretraction extra length"
+msgstr "追加長さからのリトラクション戻し"
+
+msgid "Destination path is empty."
+msgstr "宛先パスが空です。"
+
+msgid ""
+"Detected print stability issues:\n"
+"%1%"
+msgstr ""
+"検出したプリント安定性の問題：\n"
+"%1%"
+
+msgid ""
+"Detect overhang areas where bridges cannot be anchored, and fill them with "
+"extra perimeter paths. These paths are anchored to the nearby non-overhang "
+"area when possible."
+msgstr ""
+"ブリッジのアンカーが打てないオーバーハング部分を検出し、拡張外周パスで埋めま"
+"す。これらのパスは、可能な限り近くの非オーバーハング領域にアンカーを形成しま"
+"す。"
+
+msgid "Dimensions"
+msgstr "寸法"
+
+msgid "Direct distance"
+msgstr "直線距離"
+
+msgid "Directory %1% doesn't exists. Do you wish to create it?"
+msgstr "ディレクトリ%1% は存在しません。作成しますか？"
+
+msgid "Directory path is empty."
+msgstr "ディレクトリパスが空です。"
+
+msgid "Directory path is incorrect."
+msgstr "ディレクトリのパスが正しくありません。"
+
+msgid "Distance"
+msgstr "距離"
+
+msgid "Distance between characters"
+msgstr "文字の間隔"
+
+msgid "Distance between lines"
+msgstr "ライン間距離"
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr "SVG の中心からモデル表面までの距離。"
+
+msgid "Distance of the center of the text to the model surface."
+msgstr "テキストの中心からモデル表面までの距離。"
+
+msgid "Distance XYZ"
+msgstr "XYZ距離"
+
+msgid ""
+"Do NOT save local path to 3MF file.\n"
+"Also disables 'reload from disk' option."
+msgstr ""
+"ローカルパスを3MFファイルに保存しない。\n"
+"また、'reload from disk' オプションも無効にする。"
+
+msgid "Dovetail"
+msgstr "V字継ぎ手"
+
+msgid "Dowel"
+msgstr "だぼ"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Downloaded file has wrong size. Expected size: %1% Downloaded size: %2%"
+msgstr ""
+"ダウンロードしたファイルのサイズが間違っています。期待されるサイズ：%1% ダウ"
+"ンロードされたサイズ：%2%です。"
+
+msgid "Download from %1% couldn't start:"
+msgstr "%1%からのダウンロードは開始できませんでした："
+
+msgid "Downloading %1%"
+msgstr "ダウンロード中 %1%"
+
+msgid ""
+"Downloading new %1% has failed:\n"
+"%2%"
+msgstr ""
+"新しい %1% のダウンロードに失敗:\n"
+"%2%"
+
+msgid "Downloading of the new version is in progress. Do you want to continue?"
+msgstr "新バージョンのダウンロードが進行中です。続行しますか？"
+
+msgid "Downloading resources for %1%."
+msgstr "%1%用のリソースをダウンロードしています。"
+
+msgid "Download path"
+msgstr "ダウンロードパス"
+
+msgid "Download path is %1%. Do you wish to continue?"
+msgstr "ダウンロードパスは%1%です。続行しますか？"
+
+msgid "Downloads"
+msgstr "ダウンロード"
+
+msgid "Downloads from URL"
+msgstr "URLからのダウンロード"
+
+msgid ""
+"Download won't start. Download URL doesn't point to https://printables.com : "
+"%1%"
+msgstr ""
+"ダウンロードが開始されません。ダウンロードURLが https://printables.com : %1%"
+"を指していません。"
+
+msgid ""
+"Do you mean %1%%% instead of %1% %2%?\n"
+"Select YES if you want to change this value to %1%%%, \n"
+"or NO if you are sure that %1% %2% is a correct value."
+msgstr ""
+"%1% %2%ではなく、%1%%%の意味ですか？\n"
+"この値を%1%%%に変更したい場合は、YESを、 \n"
+"%1% %2%が正しい値であることを確認している場合はNOを選択してください。"
+
+msgid ""
+"Do you wish to register downloads from <b>Printables.com</b>\n"
+"for this <b>%1% %2%</b> executable?\n"
+"\n"
+"Downloads can be registered for only 1 executable at time."
+msgstr ""
+"この実行形式<b>%1% %2%</b>に対して<b>Printables.com</b>\n"
+"からのダウンロードを登録しますか？\n"
+"\n"
+"ダウンロードは1回につき1つの実行可能形式に対してのみ登録できます。"
+
+msgid "Drive"
+msgstr "ドライブ"
+
+msgid "Drive field is empty."
+msgstr "ドライブフィールドが空です。"
+
+msgid "Dynamic fan speeds"
+msgstr "ダイナミックファンスピード"
+
+msgid "Dynamic overhang speed"
+msgstr "ダイナミックオーバハングスピード"
+
+msgid "Edge"
+msgstr "エッジ"
+
+msgid "Edit connectors"
+msgstr "コネクター編集"
+
+msgid "Edit Custom G-code"
+msgstr "カスタムG-コードの編集"
+
+msgid "Edit Custom G-code (%1%)"
+msgstr "カスタムG-コードの編集(%1%)"
+
+msgid "Edited"
+msgstr "編集済み"
+
+msgid "Edit SVG"
+msgstr "SVG編集"
+
+msgid "Edit text"
+msgstr "テキスト編集"
+
+msgid "Edit to scale"
+msgstr "スケールに合わせて編集"
+
+msgid "EDIT VALUE"
+msgstr "値を編集する"
+
+msgid "Ejecting."
+msgstr "イジェクトします。"
+
+msgid "Emboss"
+msgstr "エンボス"
+
+msgid "Emboss attribute change"
+msgstr "エンボス属性の変更"
+
+msgid "Embossed text"
+msgstr "エンボステキスト"
+
+msgid "Embossed text cannot contain only white spaces."
+msgstr "エンボス加工されたテキストは、空白部分のみを含むことはできません。"
+
+msgid "Embossing actions"
+msgstr "エンボス加工"
+
+msgid "Emit temperature commands automatically"
+msgstr "温度コマンドを自動で出力"
+
+msgid ""
+"Emitting machine limits to G-code is not supported with Klipper G-code "
+"flavor.\n"
+"The option was switched to \"Use for time estimate\"."
+msgstr ""
+"Gコードへのマシンリミットの出力は、Klipper Gコードフレーバーではサポートされ"
+"ていません。\n"
+"オプションは\"時間の見積もりに使用する\"に変更されました。"
+
+msgid "Enable dynamic fan speeds"
+msgstr "ダイナミックファンスピードを有効化"
+
+msgid "Enable dynamic overhang speeds"
+msgstr "ダイナミックオーバーハングスピードを有効にする"
+
+msgid ""
+"Enable, if the firmware supports binary G-code format (bgcode). To generate ."
+"bgcode files, make sure you have binary G-code enabled in Configuration-"
+">Preferences->Other."
+msgstr ""
+"ファームウェアがバイナリ G コード形式 (bgcode) をサポートしている場合は有効に"
+"します。 .bgcode ファイルを生成するには、[構成] -> [環境設定] -> [その他] で"
+"バイナリ G コードが有効になっていることを確認してください。"
+
+msgid "Enable OpenGL compatibility profile"
+msgstr "OpenGL 互換プロファイルを有効にする。"
+
+msgid "Enable point selection"
+msgstr "ポイント選択を有効にする"
+
+msgid "Enable ramming for multitool setups"
+msgstr "マルチツールのセットアップでラミングを有効にする"
+
+msgid ""
+"Enable to get a G-code file which has G2 and G3 moves. G-code resolution "
+"will be used as the fitting tolerance."
+msgstr ""
+"G2およびG3の動きを含むGコードファイルを取得できるようにします。 G コードの解"
+"像度がフィッティング許容差として使用されます。"
+
+msgid "Enter emboss gizmo"
+msgstr "エンボスギズモに入る"
+
+msgid "Entering Cut gizmo"
+msgstr "カットギズモに入る"
+
+msgid "Entering Measure gizmo"
+msgstr "ギズモ計測に入る"
+
+msgid "Entering Multimaterial painting"
+msgstr "マルチマテリアルペインティングモードに入る"
+
+msgid "Entering Paint-on supports"
+msgstr "ペイントオンサポートに入る"
+
+msgid "Entering Seam painting"
+msgstr "シーム・ペインティングモードにする"
+
+msgid "Entering SLA support points"
+msgstr "SLAサポートポイントに入る"
+
+msgid "Enter SVG gizmo"
+msgstr "SVGギズモに入る"
+
+msgid "Error converting G-code file"
+msgstr "Gコードファイルの変換エラー"
+
+msgid "Errors detected after cut operation"
+msgstr "カット動作後に検出されるエラー"
+
+msgid "Error uploading to print host"
+msgstr "プリントホストへのアップロードに失敗"
+
+msgid "Error with ZIP archive"
+msgstr "ZIP圧縮ファイルのエラー"
+
+msgid ""
+"Estimated print time when printed in normal mode (i.e. not in silent mode). "
+"Same as normal_print_time."
+msgstr ""
+"通常モード (静音モードではない) でプリントしたときの推定プリント時間。 ノーマ"
+"ルプリント時間と同じです。"
+
+msgid ""
+"Estimated print time when printed in normal mode (i.e. not in silent mode). "
+"Same as print_time."
+msgstr ""
+"通常モード (静音モードではない) でプリントした場合の推定プリント時間。 プリン"
+"ト時間と同じです。"
+
+msgid "Estimated print time when printed in silent mode."
+msgstr "静音モードでプリントしたときのプリント時間の目安です。"
+
+msgid "Estimating curled extrusions"
+msgstr "カールしたエクストルージョンの推定"
+
+msgid "E&xit"
+msgstr "イグジット&x"
+
+msgid "Export as STL/OBJ"
+msgstr "STL/OBJでエクスポート"
+
+msgid "Export current plate as STL/OBJ"
+msgstr "現在のプレートをSTL/OBJでエクスポート"
+
+msgid "Export current plate as STL/OBJ including supports"
+msgstr "現在のプレートを、サポートを含むSTL/OBJとしてエクスポート"
+
+msgid "Export Plate as &STL/OBJ"
+msgstr "現在のプレートを&STL/OBJでエクスポート"
+
+msgid "Export Plate as STL/OBJ &Including Supports"
+msgstr "現在のプレートを、サポートを含むSTL/OBJとしてエクスポート&I"
+
+msgid "Extra deretraction"
+msgstr "追加リトラクションからの復帰"
+
+msgid "Extra perimeters on overhangs (Experimental)"
+msgstr "オーバーハングの外周部の追加（実験的）"
+
+msgid "Face the camera"
+msgstr "カメラに向ける"
+
+msgid "Failed to create directory."
+msgstr "ディレクトリの作成に失敗しました。"
+
+msgid "Failed to find unzipped file at %1%. Unzipping of file has failed."
+msgstr ""
+"%1%で解凍されたファイルが見つかりません。ファイルの解凍に失敗しました。"
+
+msgid "Failed to open file for writing."
+msgstr "書き込み用にファイルを開けませんでした。"
+
+msgid "Failed to parse a Connect reply"
+msgstr "接続応答の解析に失敗しました"
+
+msgid "Failed to scan wireless networks. Please fill SSID manually."
+msgstr ""
+"ワイヤレスネットワークのスキャンに失敗しました。SSIDを手動で入力してくださ"
+"い。"
+
+msgid "Failed to unzip file to %1%: %2%"
+msgstr "ファイルを %1%に解凍できませんでした: %2%"
+
+msgid ""
+"Failed to write to file or to move %1% to %2%:\n"
+"%3%"
+msgstr ""
+"書込みもしくは%1%から%2%への移動が失敗:\n"
+"%3%"
+
+msgid "Fan speed (%)"
+msgstr "ファンスピード(%)"
+
+msgid "Filament Diameter"
+msgstr "フィラメント径"
+
+msgid "Filament preset name"
+msgstr "フィラメントのプリセット名"
+
+msgid "Filament settings"
+msgstr "フィラメント設定"
+
+msgid "File %1% already exists. Do you wish to overwrite it?"
+msgstr "ファイル %1% はすでに存在しています。上書きしますか？"
+
+msgid "File does NOT exist (%1%)."
+msgstr "ファイルが存在しません (%1%)。"
+
+msgid "Filename has to end with \".svg\" but you selected %1%"
+msgstr "ファイル名は\".svg\" で終わる必要がありますが、%1%を選択しました"
+
+msgid "Fill of shape (%1%) contains unsupported: %2%."
+msgstr ""
+"形状の塗りつぶし(%1%) にはサポートされていないものが含まれています: %2%"
+
+msgid ""
+"Final shape constains selfintersection or multiple points with same "
+"coordinate."
+msgstr "最終的な形状には、同じ座標を持つ複数の点の自己交差が含まれています。"
+
+msgid "Firmware-specific"
+msgstr "ファームウェア固有"
+
+msgid "First Add style to list."
+msgstr "まず、スタイルをリストに追加"
+
+msgid "First font"
+msgstr "最初のフォント"
+
+msgid "First layer convex hull"
+msgstr "第 1 層の凸包(convex hull)"
+
+msgid "Fix by Windows repair algorithm"
+msgstr "Windows修復アルゴリズムによる修正"
+
+msgid "Fixing by Windows repair algorithm"
+msgstr "Windows修復アルゴリズムによる修復"
+
+msgid "Flap Angle"
+msgstr "フラップ角度"
+
+msgid "Flip cut plane"
+msgstr "カット面の反転"
+
+msgid "Flip upside down"
+msgstr "上下反転"
+
+msgid "Floating bridge anchors"
+msgstr "浮いたブリッジアンカー"
+
+msgid "Floating object part"
+msgstr "フローティングオブジェクトパーツ"
+
+msgid "Flow used for ramming the filament before the toolchange."
+msgstr "ツールチェンジ前のフィラメントのラミングに使うフロー。"
+
+msgid "Font \"%1%\" can't be selected."
+msgstr "フォント\"%1%\"は選択できません。"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "与えられたテキストに対して、フォントのシェイプがない。"
+
+msgid "Forget the file path"
+msgstr "ファイルパスを忘れる"
+
+msgid "Format of the output SLA archive"
+msgstr "出力されるSLAアーカイブのフォーマット"
+
+msgid "For more information about placeholders and its use visit our %1%."
+msgstr ""
+"プレースホルダーとその詳細な使用方法につきましては、%1%をご参照ください。"
+
+msgid "From surface"
+msgstr "表面から"
+
+msgid "Front left"
+msgstr "左前方"
+
+msgid "Front right"
+msgstr "右前方"
+
+msgid "Frustum"
+msgstr "錐台"
+
+msgid "G-code flavor is switched"
+msgstr "Gコードフレーバーが切り替わる"
+
+msgid ""
+"Generate a file to be loaded by a Prusa printer to configure its Wi-Fi "
+"connection."
+msgstr "Wi-Fi接続を設定するためにPrusaプリンタで読み込むファイルを生成します。"
+
+msgid ""
+"Generates a ramping lift instead of lifting the extruder directly upwards. "
+"The travel is split into two phases: the ramp and the standard horizontal "
+"travel. This option helps reduce stringing."
+msgstr ""
+"直接エクストルーダーを上に持ち上げるのではなく、傾斜しながらリフトを発生させ"
+"ます。移動はランプ移動と、標準的な水平移動の2段階に分けられます。このオプショ"
+"ンは、ストリンギングを低減するのに役立ちます。"
+
+msgid "Geometry handling"
+msgstr "ジオメトリの処理"
+
+msgid "Gizmo Text emboss / engrave"
+msgstr "ギズモ・テキストのエンボス/エングレーブ"
+
+msgid "[Global] Slicing state"
+msgstr "[グローバル] スライスの状態"
+
+msgid "Groove"
+msgstr "溝継ぎ手"
+
+msgid "Groove Angle"
+msgstr "溝の角度"
+
+msgid "Groove change"
+msgstr "溝変更"
+
+msgid "Has single extruder MM priming"
+msgstr "シングルエクストルーダーのMMプライミングあり"
+
+msgid "Has wipe tower"
+msgstr "ワイプタワーあり"
+
+msgid ""
+"Height above the print bed when the toolchange takes place. Usually the same "
+"as layer_z, but can be different."
+msgstr ""
+"ツール交換が行われるときのプリントベッドからの高さ。通常はlayer_zと同じです"
+"が、異なる場合もあります。"
+
+msgid "Height of SVG."
+msgstr "SVGの高さ"
+
+msgid ""
+"Height of the current layer above the print bed, measured to the top of the "
+"layer."
+msgstr "プリント ベッド上の現在のレイヤーの高さ (レイヤーの最上部までの計測)。"
+
+msgid "Height of the last layer above the print bed."
+msgstr "プリントベッド上の最後のレイヤーの高さ。"
+
+msgid "help page"
+msgstr "ヘルプページ"
+
+msgid "here."
+msgstr "ここ。"
+
+msgid "Hexagon"
+msgstr "六角形"
+
+msgid "Hide Custom G-code"
+msgstr "カスタムGコードを隠す"
+
+msgid "Hold SHIFT key to draw a cut line"
+msgstr "SHIFTキーを押しながらカットラインを描く"
+
+msgid "Hour"
+msgstr "時"
+
+msgid ""
+"How far apart the branches need to be when they touch the model. Making this "
+"distance small will cause the tree support to touch the model at more "
+"points, causing better overhang but making support harder to remove."
+msgstr ""
+"モデルとの接点の枝の間隔をどのくらいにするか。この距離を小さくすると、ツリー"
+"サポートがモデルに接触する箇所が多くなり、オーバーハングが良くなりますが、サ"
+"ポートの取り外しが難しくなります。"
+
+msgid "Idle temperature"
+msgstr "アイドリング温度"
+
+msgid ""
+"If checked, this dialog can be used for transferring selected values from "
+"the preset on the left to the preset on the right."
+msgstr ""
+"チェックした場合、このダイアログは、左側のプリセットから右側のプリセットに選"
+"択した値を転送するために使用できます。"
+
+msgid ""
+"If enabled, application will use the standard Windows system menu,\n"
+"but on some combination of display scales it can look ugly. If disabled, old "
+"UI will be used."
+msgstr ""
+"有効な場合、アプリケーションはWindows標準のシステムメニューを使用します、\n"
+"しかし、ディスプレイ解像度の組み合わせによっては、醜く見えることがあります。"
+"無効にすると、古いUIが使用されます。"
+
+msgid ""
+"If enabled, PrusaSlicer detects obstacles along the travel path and makes "
+"the slope steeper in case an obstacle might be hit during the initial phase "
+"of the travel."
+msgstr ""
+"有効にすると、PrusaSlicerは移動経路に沿った障害物を検出し、移動の初期段階で障"
+"害物にぶつかる可能性がある場合に備えて傾斜リフトの角度を急にします。"
+
+msgid "If enabled, PrusaSlicer will be allowed to download from Printables.com"
+msgstr ""
+"有効にすると、PrusaSlicerはPrintables.comからのダウンロードを許可されます。"
+
+msgid "If enabled, PrusaSlicer will not open a hyperlinks in your browser."
+msgstr "有効な場合、PrusaSlicerはブラウザでハイパーリンクを開きません。"
+
+msgid ""
+"If enabled, related notification will be shown, when sliced object looks "
+"like a logo or a sign."
+msgstr ""
+"有効にすると、スライスしたオブジェクトがロゴやサインのように見えるときに、関"
+"連する通知が表示されます。"
+
+msgid ""
+"If enabled, sets PrusaSlicer G-code Viewer as default application to open ."
+"bgcode files."
+msgstr ""
+"有効にすると、.bgcodeファイルを開くデフォルトのアプリケーション設定が"
+"PrusaSlicer Gコードビュワーになります。"
+
+msgid "If enabled, shows non-manifold edges."
+msgstr "有効な場合、非マニホールドエッジを表示します。"
+
+msgid ""
+"If enabled, you will be able to open models from the %1% online database "
+"with a single click (using a %2% logo button)."
+msgstr ""
+"有効にすると、%1%オンライン・データベースからモデルをワンクリックで開くことが"
+"できます（%2%ロゴ・ボタンを使用）。"
+
+msgid ""
+"If the 'Supports binary G-code' option is enabled in Printer Settings, "
+"checking this option will result in the export of G-code in binary format."
+msgstr ""
+"プリンタ設定]で[バイナリGコードをサポート]オプションが有効になっている場合、"
+"このオプションをチェックすると、バイナリ形式でGコードがエクスポートされます。"
+
+msgid ""
+"If this is enabled, Slic3r will raise alerts when it detects issues in the "
+"sliced object, that can be resolved with supports (and brim). Examples of "
+"such issues are floating object parts, unsupported extrusions and low bed "
+"adhesion."
+msgstr ""
+"これが有効な場合、Slic3rは、サポート（およびブリム）で解決できるスライスされ"
+"たオブジェクトの問題を検出したときにアラートを発生します。このような問題の例"
+"としては、フローティングオブジェクト、サポートされていないエクストルージョ"
+"ン、ベッドの密着度が低いなどが挙げられます。"
+
+msgid "Import 3D models"
+msgstr "3Dモデルをインポート"
+
+msgid "Import 3D models only"
+msgstr "3Dモデルのみインポートする"
+
+msgid "Import is unavailable for this archive format."
+msgstr "このアーカイブフォーマットでは、インポートできません。"
+
+msgid "Import SLA Archive"
+msgstr "SLAアーカイブをインポート"
+
+msgid "Import ZIP Archive"
+msgstr "ZIPアーカイブのインポート"
+
+msgid ""
+"Index of the extruder for which color change will be performed. The index is "
+"zero based (first extruder has index 0)."
+msgstr ""
+"カラーチェンジを行うエクストルーダーのインデックスです。インデックスはゼロ"
+"ベースです(最初のエクストルーダーのインデックスは0)。"
+
+msgid ""
+"Index of the extruder that is being loaded. The index is zero based (first "
+"extruder has index 0)."
+msgstr ""
+"ロードされるエクストルーダーのインデックスです。インデックスはゼロベースです"
+"（最初のエクストルーダーのインデックスは0）。"
+
+msgid ""
+"Index of the extruder that is being unloaded. The index is zero based (first "
+"extruder has index 0)."
+msgstr ""
+"アンロードされるエクストルーダーのインデックス。 インデックスはゼロからカウン"
+"トします (最初のエクストルーダーのインデックスは 0)。"
+
+msgid "Initial extruder"
+msgstr "イニシャルエクストルーダー"
+
+msgid "Initial filament type"
+msgstr "イニシャルフィラメントタイプ"
+
+msgid "Initial tool"
+msgstr "イニシャルツール"
+
+msgid "Input filename without extension"
+msgstr "拡張子を除いたファイル名を入力。"
+
+msgid "In queue"
+msgstr "キュー内"
+
+msgid "Installing profiles"
+msgstr "プロファイルのインストール"
+
+msgid "Instance cannot be deleted from cut object."
+msgstr "カットオブジェクトからインスタンスは削除できません。"
+
+msgid "Interlocking depth of a segmented region"
+msgstr "分割された領域の連動深さ"
+
+msgid ""
+"Interlocking depth of a segmented region. It will be ignored if "
+"\"mmu_segmented_region_max_width\" is zero or if "
+"\"mmu_segmented_region_interlocking_depth\"is bigger then "
+"\"mmu_segmented_region_max_width\". Zero disables this feature."
+msgstr ""
+"セグメント化された領域の連動深さ。mmu_segmented_region_max_width \"が0"
+"か、\"mmu_segmented_region_interlocking_depth \"が "
+"\"mmu_segmented_region_max_width \"より大きい場合は無視される。ゼロはこの機能"
+"を無効にする。"
+
+msgid "Internal download error for url %1%:"
+msgstr "url %1%の内部ダウンロードエラーです："
+
+msgid "Invalidate cut info"
+msgstr "カット情報の無効化"
+
+msgid "Invalid connectors detected"
+msgstr "無効なコネクターを検出"
+
+msgid ""
+"Invalid Head penetration\n"
+"Head penetration should not be greater than the Head width.\n"
+"Please check value of Head penetration in Print Settings or Material "
+"Overrides."
+msgstr ""
+"無効なヘッドペネトレーション\n"
+"ヘッド幅よりもヘッドペネトレーションの方が大きくなってはいけません。\n"
+"[プリント設定]または[フィラメントの上書き]でヘッドペネトレーションを確認して"
+"ください。"
+
+msgid "Invalid object part index"
+msgstr "オブジェクトパーツインデックスが無効"
+
+msgid ""
+"Invalid pinhead diameter\n"
+"Pinhead front diameter should be smaller than the Pillar diameter.\n"
+"Please check value of Pinhead front diameter in Print Settings or Material "
+"Overrides."
+msgstr ""
+"無効なピンヘッド直径\n"
+"ピンヘッドの直径はピラーの直径より小さくなければなりません。\n"
+"[印刷設定]または[フィラメントの上書き]でピンヘッド前面直径の値を確認してくだ"
+"さい。"
+
+msgid "Invalid value provided for parameter %1%: %2%"
+msgstr "パラメータ %1% に無効な値が指定されました: %2%"
+
+msgid "Is extruder used?"
+msgstr "エクストルーダーは使用されましたか？"
+
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+"プリンター準備はできていますか？プリントシートの上は空で、きれいな状態で装着"
+"されていますか？"
+
+msgid "ITALIC"
+msgstr "イタリック"
+
+msgid "Italic strength ratio"
+msgstr "イタリック体の強度比"
+
+msgid ""
+"It's impossible to print object(s) which contains parameter modifiers with "
+"SLA technology."
+msgstr ""
+"SLAプリンターでは、モディファイアパラメータを含んだオブジェクトのプリントはで"
+"きません。"
+
+msgid "Join"
+msgstr "結合"
+
+msgid "Keep orientation"
+msgstr "方向をキープ"
+
+msgid "Keep up"
+msgstr "続ける"
+
+msgid "Layer number"
+msgstr "レイヤーナンバー"
+
+msgid "Layer time (linear)"
+msgstr "レイヤー時間（リニア）"
+
+msgid "Layer time (logarithmic)"
+msgstr "レイヤー時間（対数）"
+
+msgid "Layer Z"
+msgstr "レイヤーZ"
+
+msgid "Leave emboss gizmo"
+msgstr "エンボスギズモを退出"
+
+msgid "Leave SVG gizmo"
+msgstr "SVGギズモから出る"
+
+msgid "Leaving Cut gizmo"
+msgstr "カットギズモから出る"
+
+msgid "Leaving Measure gizmo"
+msgstr "ギズモ計測から抜ける"
+
+msgid "Leaving Multimaterial painting"
+msgstr "マルチマテリアルペインティングから出る"
+
+msgid "Leaving Paint-on supports"
+msgstr "ペイントオンサポートを退出"
+
+msgid "Leaving Seam painting"
+msgstr "シームペインティングを退出"
+
+msgid "Leaving SLA support points"
+msgstr "SLAサポートポイントを退出"
+
+msgid "Left handed"
+msgstr "左利き"
+
+msgid "Level of detail"
+msgstr "詳細レベル"
+
+msgid "Library wlanapi.dll was not loaded."
+msgstr "ライブラリ wlanapi.dll がロードされませんでした。"
+
+msgid "Licensed under GNU AGPLv3."
+msgstr "GNU AGPLv3 に基づいてライセンスされています。"
+
+msgid "Lift height"
+msgstr "リフト高さ"
+
+msgid "Lift height applied before travel."
+msgstr "移動前のリフト高さ"
+
+msgid "Linear gradient"
+msgstr "線形グラデーション"
+
+msgid "Line gap"
+msgstr "ラインギャップ"
+
+msgid "Load an SLA archive"
+msgstr "SLAアーカイブの読込み"
+
+msgid "Load a ZIP archive"
+msgstr "ZIPアーカイブの読込み"
+
+msgid "Loading of a ZIP archive on path %1% has failed."
+msgstr "パス %1% の ZIP ファイルの読み込みに失敗しました。"
+
+msgid "Load project file"
+msgstr "プロジェクトファイルの読込み"
+
+msgid "Lock the text's rotation when moving text along the object's surface."
+msgstr ""
+"オブジェクトの表面に沿ってテキストを移動させる時に、テキストの回転をロックす"
+"る。"
+
+msgid "Lock/unlock rotation angle when dragging above the surface."
+msgstr "表面上をドラッグするときの回転角度のロック/アンロック。"
+
+msgid "Lock/unlock the aspect ratio of the SVG."
+msgstr "SVG のアスペクト比をロック/アンロックします。"
+
+msgid "Long bridging extrusions"
+msgstr "長いブリッジ構造"
+
+msgid "Loose extrusions"
+msgstr "ルーズな射出"
+
+msgid "Low bed adhesion"
+msgstr "ベッド密着性が低い"
+
+msgid ""
+"Machine limits cannot be emitted to G-Code when Klipper firmware flavor is "
+"used. Change the value of machine_limits_usage."
+msgstr ""
+"Klipperファームウェアのフレーバーが使用されている場合、マシン制限がGコードに"
+"出力されません。machine_limits_usageの値を変更します。"
+
+msgid "Making infill"
+msgstr "インフィルの作成"
+
+msgid "Manual"
+msgstr "マニュアル"
+
+msgid "Material Overrides"
+msgstr "材料の上書き"
+
+msgid "Maximal layer Z"
+msgstr "最大のZレイヤー"
+
+msgid "Maximum acceleration for travel moves."
+msgstr "ヘッド移動時の最大加速度"
+
+msgid ""
+"Maximum acceleration when retracting.\n"
+"\n"
+"Not used for RepRapFirmware, which does not support it."
+msgstr ""
+"リトラクト時の最大加速度。\n"
+"\n"
+"RepRapFirmwareは対応していないため、使用できません。"
+
+msgid "Maximum Branch Angle"
+msgstr "最大枝アングル"
+
+msgid ""
+"Maximum lift height of the ramping lift. It may not be reached if the next "
+"position is close to the old one."
+msgstr ""
+"傾斜リフトの最大リフト高さ。次のポジションが以前のポジションに近い場合、指定"
+"の数字に到達しない可能性があります。"
+
+msgid "Maximum number of threads"
+msgstr "スレッドの最大数"
+
+msgid "Maximum ramping lift"
+msgstr "最大傾斜リフト"
+
+msgid ""
+"Maximum weight of sub-trees that terminate on the model instead of the print "
+"bed. The weight is the sum of the lenghts of all branches emanating from the "
+"endpoint."
+msgstr ""
+"プリントベッドではなくモデル上を起点とするサブツリーの最大重量。この重量は、"
+"モデルから伸びるすべての枝の長さの合計です。"
+
+msgid "Max weight on model"
+msgstr "モデル上の最大重量"
+
+msgid "Measure"
+msgstr "計測"
+
+msgid "Measure gizmo editing"
+msgstr "ギズモ計測編集"
+
+msgid ""
+"Measurement tool\n"
+"Did you know that you can <a>measure</a> the distances between points, edges "
+"and planes, the radius of a hole or the angle between edges or planes? Learn "
+"more in the documentation."
+msgstr ""
+"測定ツール\n"
+"点、辺、面間の距離、穴の半径、辺や面間の角度を<a>測定</a>できることをご存知で"
+"しょうか？詳しくは、ドキュメントをご覧ください。"
+
+msgid ""
+"Merging bridges or pillars into another pillars can increase the radius. "
+"Zero means no increase, one means full increase. The exact amount of "
+"increase is unspecified and can change in the future."
+msgstr ""
+"ブリッジや ピラーを別のピラーに合体させると、半径を大きくすることができます。"
+"ゼロは増加なし、1は完全に増加することを意味します。正確な増加量は規定されてお"
+"らず、将来的に変更される可能性があります。"
+
+msgid "Minimum resolution in nanometers"
+msgstr "最小分解能(ナノメートル)"
+
+msgid "Minute"
+msgstr "分"
+
+msgid "Mirror along %1% axis"
+msgstr "%1%軸に沿ったミラー"
+
+msgid "Model simplification has been canceled"
+msgstr "モデルの簡素化はキャンセルされた"
+
+msgid "Mode markers"
+msgstr "モードマーカー"
+
+msgid "MODERN"
+msgstr "モダン"
+
+msgid "Modified style \"%1%\""
+msgstr "変更したスタイル\"%1%\""
+
+msgid "Modified value"
+msgstr "変更した値"
+
+msgid "Monotonic Lines"
+msgstr "モノトニックライン"
+
+msgid "Month"
+msgstr "月"
+
+msgid "More info at"
+msgstr "詳しくはこちらで"
+
+msgid "Move connector"
+msgstr "コネクターの移動"
+
+msgid "Move cut plane"
+msgstr "カット面の移動"
+
+msgid "Move over surface"
+msgstr "表面上を移動"
+
+msgid "Multimaterial painting editing"
+msgstr "マルチマテリアルペインティング編集"
+
+msgid "Multiple resolved IP addresses"
+msgstr "IPアドレスの複数割当て"
+
+msgid "Multitool ramming flow"
+msgstr "マルチツールラミングフロー"
+
+msgid "Multitool ramming volume"
+msgstr "マルチツールラミング量"
+
+msgid "Name can't be empty."
+msgstr "名前を空にすることはできません。"
+
+msgid "Name has to be unique."
+msgstr "名前は一意でなければなりません。"
+
+msgid "Name of the physical printer used for slicing."
+msgstr "スライスに使用される物理プリンターの名前。"
+
+msgid "Name of the printer preset used for slicing."
+msgstr "スライスに使用されるプリンタ プリセットの名前。"
+
+msgid "Name of the print preset used for slicing."
+msgstr "スライスに使用されるプリントプリセットの名前。"
+
+msgid ""
+"Names of the filament presets used for slicing. The variable is a vector "
+"containing one name for each extruder."
+msgstr ""
+"スライスに使用されるフィラメント プリセットの名前。 変数は、各エクストルー"
+"ダーの 1 つの名前を含むベクトルです。"
+
+msgid "Nano SVG parser can't load from file (%1%)."
+msgstr "Nano SVG パーサーはファイル(%1%)からロードできません。"
+
+msgid "New name of style"
+msgstr "スタイルの新しい名前"
+
+msgid "New printer"
+msgid_plural "New printers"
+msgstr[0] "新しいプリンター"
+msgstr[1] ""
+msgstr[2] "新しいプリンター"
+
+msgid "New value"
+msgstr "新しい値"
+
+msgid "New version"
+msgstr "新バージョン"
+
+msgid "New version of %1% is available."
+msgstr "新しいバージョンの%1%が利用可能です。"
+
+msgid ""
+"New version of %s is available.\n"
+"Do you wish to download it?"
+msgstr ""
+"新しいバージョンの%sが利用可能です。\n"
+"ダウンロードしますか？"
+
+msgid "Next"
+msgstr "次"
+
+msgid "Next extruder"
+msgstr "次のエクストルダー"
+
+msgid "No changes to save."
+msgstr "保存する変更点はありません。"
+
+msgid ""
+"No object could be retrieved from the archive. The slices might be corrupted "
+"or missing."
+msgstr ""
+"アーカイブからオブジェクトを取り出せません。スライスが破損しているか、欠落し"
+"ているかもしれません。"
+
+msgid "No password in the keychain for given SSID."
+msgstr "指定された SSID のキーチェーンにパスワードがありません。"
+
+msgid "NORMAL"
+msgstr "ノーマル"
+
+msgid "No symbol"
+msgstr "シンボルなし"
+
+msgid "Note, that the selected preset will be renamed in this printer too."
+msgid_plural ""
+"Note, that the selected preset will be renamed in these printers too."
+msgstr[0] ""
+"なお、これらのプリンターでは、選択したプリセットの名前も変更されます。"
+msgstr[1] ""
+msgstr[2] "なお、このプリンターでは、選択したプリセットの名前も変更されます。"
+
+msgid "Note: This file will contain the SSID and password in plain text."
+msgstr ""
+"注：このファイルにはSSIDとパスワードがプレーンテキストで含まれています。"
+
+msgid "Not valid style."
+msgstr "有効なスタイルではありません。"
+
+msgid "Nozzle Diameter"
+msgstr "ノズル径"
+
+msgid ""
+"Nozzle temperature when the tool is currently not used in multi-tool setups."
+"This is only used when 'Ooze prevention' is active in Print Settings."
+msgstr ""
+"ノズル温度は、マルチツール設定においてツールが現在使用されていない場合に使用"
+"されます。プリント設定で「樹脂ダレ防止」が有効な場合のみ使用されます。"
+
+msgid "Number of extruders"
+msgstr "エクストルーダー数"
+
+msgid "Number of extruders used during the print."
+msgstr "プリント中に使用されるエクストルーダーの数。"
+
+msgid "Number of instances"
+msgstr "インスタンス数"
+
+msgid "Number of layers in the entire print."
+msgstr "全てのプリントのレイヤー数"
+
+msgid "Number of objects"
+msgstr "オブジェクト数"
+
+msgid "Number of printing extruders"
+msgstr "プリントするエクストルーダーの数"
+
+msgid "Number of toolchanges during the print."
+msgstr "プリント中のツール交換の数。"
+
+msgid "Object"
+msgstr "オブジェクト"
+
+msgid "Object coordinates"
+msgstr "オブジェクト座標"
+
+msgid "Objects"
+msgstr "オブジェクト"
+
+msgid "Objects info"
+msgstr "オブジェクトの情報"
+
+msgid "OctoPrint comments"
+msgstr "OctoPrintのコメント"
+
+msgid ""
+"On Linux systems the process of registration also creates desktop "
+"integration files for this version of application."
+msgstr ""
+"Linuxシステムでは、登録の過程で、このバージョンのアプリケーション用のデスク"
+"トップ統合ファイルも作成されます。"
+
+msgid "Only create support if it lies in a support enforcer."
+msgstr "強制サポートに設定されているところのみサポートを作成する。"
+
+msgid "Only lift"
+msgstr "リフトのみ"
+
+msgid "Only valid font can be added to style."
+msgstr "スタイルに追加できるのは、有効なフォントだけです。"
+
+msgid "On some versions of MacOS, this only loads SSID of connected network."
+msgstr ""
+"MacOS の一部のバージョンでは、接続されたネットワークの SSID のみが読み込まれ"
+"ます。"
+
+msgid ""
+"Ooze prevention is only supported with the wipe tower when "
+"'single_extruder_multi_material' is off."
+msgstr ""
+"樹脂ダレ防止は、「single_extruder_multi_material」がオフの場合、ワイプタワー"
+"でのみサポートされます。"
+
+msgid "Opacity (%1%)"
+msgstr "不透明度 (%1%)"
+
+msgid "Open"
+msgstr "オープン"
+
+msgid ""
+"Open edges or errors were detected after the cut.\n"
+"Do you want to fix them by Windows repair algorithm?"
+msgstr ""
+"カット後にオープンエッジやエラーが検出されました。\n"
+"Windows修復アルゴリズムで修正しますか？"
+
+msgid "Open filled path"
+msgstr "塗りつぶしパスを開く"
+
+msgid "OpenGL compatibility profile"
+msgstr "OpenGL 互換プロファイル"
+
+msgid "OpenGL debug output"
+msgstr "OpenGLデバッグ出力"
+
+msgid "OpenGL version"
+msgstr "OpenGLバージョン"
+
+msgid "Opening Configuration Wizard"
+msgstr "構成ウィザードを開く"
+
+msgid "Open the physical printer URL"
+msgstr "物理プリンターのURLを開く"
+
+msgid "Operation"
+msgstr "オペレーション"
+
+msgid "Organic"
+msgstr "オーガニック"
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+"有機サポート枝の直径は、サポート材の押し出し幅の2倍よりも小さくする必要があり"
+"ます。"
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+"有機サポートの枝の直径は、サポートの幹の先端直径よりも小さい値である必要があ"
+"ります。"
+
+msgid "Organic supports"
+msgstr "オーガニックサポート"
+
+msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+"有機サポート枝の先端の直径は、サポート材の押し出し幅よりも小さくする必要があ"
+"ります。"
+
+msgid "Orient the text towards the camera."
+msgstr "テキストの向きをカメラ側にする。"
+
+msgid "Original"
+msgstr "オリジナル"
+
+msgid "Original value"
+msgstr "オリジナルの値"
+
+msgid "Output"
+msgstr "出力"
+
+msgid ""
+"Overhang size is expressed as a percentage of overlap of the extrusion with "
+"the previous layer: 100% would be full overlap (no overhang), while 0% "
+"represents full overhang (floating extrusion, bridge). Fan speeds for "
+"overhang sizes in between are calculated via linear interpolation."
+msgstr ""
+"オーバーハングの大きさは、射出幅が前のレイヤーと重なる割合で表されます： 100%"
+"は完全なオーバーラップ（オーバーハングなし）、0%は完全なオーバーハング（フ"
+"ローティングエクストルージョン、ブリッジ）を意味します。この間のオーバーハン"
+"グ・サイズのファン速度は、線形補間によって計算されます。"
+
+msgid ""
+"Overhang size is expressed as a percentage of overlap of the extrusion with "
+"the previous layer: 100% would be full overlap (no overhang), while 0% "
+"represents full overhang (floating extrusion, bridge). Speeds for overhang "
+"sizes in between are calculated via linear interpolation. If set as "
+"percentage, the speed is calculated over the external perimeter speed. Note "
+"that the speeds generated to gcode will never exceed the max volumetric "
+"speed value."
+msgstr ""
+"オーバーハングの大きさは、射出幅が前のレイヤーとの重なる割合で表されます： "
+"100%は完全なオーバーラップ（オーバーハングなし）、0%は完全なオーバーハング"
+"（フローティング・エクストルージョン、ブリッジ）を表します。その間のオーバー"
+"ハング・サイズの速度は、線形補間によって計算されます。パーセンテージとして設"
+"定された場合、速度は外周速度に対して計算されます。gcodeに生成される速度は、最"
+"大体積速度値を決して超えないことに注意してください。"
+
+msgid "painting"
+msgstr "ペインティング"
+
+msgid "Paint-on seam editing"
+msgstr "ペイントオンシーム編集"
+
+msgid "Paint-on supports editing"
+msgstr "ペイントオンサポート編集"
+
+msgid "Palette 1 (default)"
+msgstr "パレット1 (デフォルト)"
+
+msgid "Palette 2"
+msgstr "パレット2"
+
+msgid "Palette 3"
+msgstr "パレット3"
+
+msgid "Palette 4"
+msgstr "パレット4"
+
+msgid "Palette 5"
+msgstr "パレット5"
+
+msgid "Palette 6"
+msgstr "パレット6"
+
+msgid "Palette 7"
+msgstr "パレット7"
+
+msgid "Palette 8"
+msgstr "パレット8"
+
+msgid "Part coordinates"
+msgstr "パーツ座標"
+
+msgid "Parts"
+msgstr "パーツ"
+
+msgid "Path can't be healed from selfintersection and multiple points."
+msgstr "自己交差および複数のポイントからパスを修復できません。"
+
+msgid ""
+"Performing downloader desktop integration failed because the application "
+"directory was not found."
+msgstr ""
+"アプリケーションディレクトリが見つからないため、ダウンローダーのデスクトップ"
+"統合の実行に失敗しました。"
+
+msgid ""
+"Performing downloader desktop integration failed - boost::filesystem::"
+"canonical did not return appimage path."
+msgstr ""
+"ダウンローダーのデスクトップ統合に失敗しました - boost::filesystem::canonical"
+"がアプリイメージのパスを返しませんでした。"
+
+msgid ""
+"Performing downloader desktop integration failed - Could not find executable."
+msgstr ""
+"ダウンローダーのデスクトップ統合の実行に失敗しました - 実行ファイルが見つかり"
+"ませんでした。"
+
+msgid ""
+"Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
+"Multimaterial' in Printer Settings is unchecked). When checked, a small "
+"amount of filament is rapidly extruded on the wipe tower just before the "
+"toolchange. This option is only used when the wipe tower is enabled."
+msgstr ""
+"マルチツールプリンターを使用しているとき（つまり、プリンター設定の「シングル"
+"エクストルーダーマルチマテリアル」のチェックが外れているとき）に、ラミングを"
+"実行します。チェックすると、ツール交換の直前に少量のフィラメントがワイプタ"
+"ワー上で急速に押し出されます。このオプションは、ワイプタワーが有効な場合にの"
+"み使用されます。"
+
+msgid "Per glyph"
+msgstr "文字あたり"
+
+msgid "Perpendicular distance"
+msgstr "垂直距離"
+
+msgid "Physical printer name"
+msgstr "物理プリンター名"
+
+msgid ""
+"Picture sizes to be stored into a .gcode / .bgcode and .sl1 / .sl1s files, "
+"in the following format: \"XxY/EXT, XxY/EXT, ...\"\n"
+"Currently supported extensions are PNG, QOI and JPG."
+msgstr ""
+".gcode / .bgcode および .sl1 / .sl1s ファイルに保存される画像サイズのフォー"
+"マット： \"XxY/EXT、XxY/EXT、...\"\n"
+"現在サポートされている拡張子は、PNG、QOI、およびJPGです。"
+
+msgid "Place on cut"
+msgstr "カット上に置く"
+
+msgid "Planar"
+msgstr "平面"
+
+msgid "Plane"
+msgstr "面"
+
+msgid ""
+"Plan travel moves such that the extruder avoids areas where the filament may "
+"be curled up. This is mostly happening on steeper rounded overhangs and may "
+"cause a crash with the nozzle. This feature slows down both the print and "
+"the G-code generation."
+msgstr ""
+"フィラメントがカールする可能性のある場所を避けるように、ヘッドの移動を計画し"
+"ます。この現象は、主に急な丸みを帯びたオーバーハング部で発生しやすく、発生す"
+"るとノズルとの衝突を引き起こす可能性があります。この機能により、プリントとG"
+"コード生成の両方が遅くなります。"
+
+msgid "Please check your object list before mode changing."
+msgstr "モード変更の前に、オブジェクトリストをご確認ください。"
+
+msgid ""
+"Please note that template presets are not customized for specific printer "
+"and should only be used as a starting point for creating your own user "
+"presets."
+msgstr ""
+"なお、テンプレートプリセットは、特定のプリンター用にカスタマイズされたもので"
+"はなく、独自のユーザープリセットを作成するための出発点としてのみ使用されるべ"
+"きです。"
+
+msgid "Plug"
+msgstr "プラグ"
+
+msgid "Point on circle"
+msgstr "円上の点"
+
+msgid "Point on edge"
+msgstr "エッジ上の点"
+
+msgid "Point on plane"
+msgstr "面上の点"
+
+msgid "points"
+msgstr "ポイント"
+
+msgid ""
+"Position of the extruder at the beginning of the custom G-code block. If the "
+"custom G-code travels somewhere else, it should write to this variable so "
+"PrusaSlicer knows where it travels from when it gets control back."
+msgstr ""
+"カスタム G コード ブロックの先頭のエクストルーダーのモーターの位置。 カスタ"
+"ム G コードで動かしたとき、PrusaSlicer が制御を取り戻したときにどこから移動し"
+"たかを認識できるように、この変数に書き込む必要があります。"
+
+msgid "Preferred Branch Angle"
+msgstr "優先の枝アングル"
+
+msgid "Presets"
+msgstr "プリセット"
+
+msgid "Previous extruder"
+msgstr "以前のエクストルーダー"
+
+msgid ""
+"Printables.com integration\n"
+"Did you know that when you are browsing Printables.com, you can send 3D "
+"model files to PrusaSlicer with a single click? Learn more in the "
+"documentation."
+msgstr ""
+"Printables.comの統合\n"
+"Printables.comを閲覧しているときに、ワンクリックで3Dモデルファイルを"
+"PrusaSlicerに送信できることをご存知でしょうか？詳しくはドキュメントをご覧くだ"
+"さい。"
+
+msgid "Printer configuration file detected on removable media."
+msgstr "リムーバブルメディアでプリンタ設定ファイルが検出されました。"
+
+msgid "Printer preset name"
+msgstr "プリンタのプリセット名"
+
+msgid "Printer settings"
+msgstr "プリンター設定"
+
+msgid "Print preset name"
+msgstr "プリセット名をプリント"
+
+msgid "Print statistics"
+msgstr "プリンタの統計情報"
+
+msgid "Print time (normal mode)"
+msgstr "プリント時間（ノーマルモード）"
+
+msgid "Print time (silent mode)"
+msgstr "プリント時間（静音モード）"
+
+msgid "Prism"
+msgstr "プリズム"
+
+msgid "Private protection"
+msgstr "プライベートプロテクション"
+
+msgid ""
+"Processing model \"%1%\" with more than 1M triangles could be slow. It is "
+"highly recommended to reduce amount of triangles."
+msgstr ""
+"モデル\"%1%\"は、100万ポリゴン以上あるので処理が遅くなる可能性があります。ポ"
+"リゴンの数を減らすことを強くお勧めします。"
+
+msgid "Processing triangulated mesh"
+msgstr "三角形メッシュを処理する"
+
+msgid ""
+"PrusaSlicer recieved a download request from Printables.com, but it's not "
+"allowed. You can allow it"
+msgstr ""
+"PrusaSlicerはPrintables.comからダウンロード要求を受け取りましたが、許可されて"
+"いません。許可することができます"
+
+msgid ""
+"PrusaSlicer requires OpenGL 3.2 capable graphics driver to run correctly,\n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicerを正しく実行するには、OpenGL 3.2対応グラフィックドライバが必要で"
+"す、\n"
+"OpenGL バージョン %s、レンダー %s、ベンダー %s が検出されました。"
+
+msgid ""
+"PrusaSlicer requires OpenGL ES 2.0 capable graphics driver to run "
+"correctly, \n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicerを正しく実行するには、OpenGL ES 2.0 対応グラフィックドライバが必要"
+"です。\n"
+"OpenGLバージョン%s、レンダー%s、ベンダ%sが検出されました。"
+
+msgid "&Quick Start"
+msgstr "&クイックスタート"
+
+msgid "Radial gradient"
+msgstr "放射状グラデーション"
+
+msgid "Ramping slope angle"
+msgstr "斜面の傾斜角度"
+
+msgid "Read only"
+msgstr "読込みのみ"
+
+msgid "Read write"
+msgstr "読み書き"
+
+msgid "Rear left"
+msgstr "左後方"
+
+msgid "Rear right"
+msgstr "右後方"
+
+msgid "Reload SVG file from disk."
+msgstr "ディスクからSVGファイルを再読込みします。"
+
+msgid "Remove connector"
+msgstr "コネクターの削除"
+
+msgid "Remove connector from selection"
+msgstr "選択したコネクターを削除"
+
+msgid "Remove connectors"
+msgstr "コネクターの削除"
+
+msgid "Remove style"
+msgstr "スタイル削除"
+
+msgid "Rename current style."
+msgstr "源左のスタイルの名前を変更"
+
+msgid "Rename preset"
+msgstr "プリセット名の変更"
+
+msgid "Rename style"
+msgstr "スタイルの名前を変更"
+
+msgid "Rename style(%1%) for embossing text"
+msgstr "エンボステキスト用のスタイル(%1%) をリネームする"
+
+msgid "Repairing model by Windows repair algorithm"
+msgstr "Windows修復アルゴリズムによるモデルの修復"
+
+msgid "Repairing object %1%"
+msgstr "オブジェクト %1% を修復しています。"
+
+msgid "Repairing objects:"
+msgstr "オブジェクトの修復："
+
+msgid "Repair operation finished"
+msgstr "修復作業の完了"
+
+msgid "Reset cut"
+msgstr "カットをリセット"
+
+msgid "Reset cutting plane"
+msgstr "カット面をリセット"
+
+msgid "Reset cutting plane and remove connectors"
+msgstr "カット面をリセットし、コネクターを削除"
+
+msgid "Reset defaults"
+msgstr "デフォルトのリセット"
+
+msgid "Reset distance"
+msgstr "距離をリセット"
+
+msgid "Reset skew"
+msgstr "スキューをリセット"
+
+msgid "RESOLVING ADDRESS"
+msgstr "アドレス解決中"
+
+msgid "Restart selection"
+msgstr "選択のリスタート"
+
+msgid "Retraction length"
+msgstr "リトラクトの長さ"
+
+msgid ""
+"Retraction state at the beginning of the custom G-code block. If the custom "
+"G-code moves the extruder axis, it should write to this variable so "
+"PrusaSlicer deretracts correctly when it gets control back."
+msgstr ""
+"カスタム G コード ブロックの先頭のリトラクション状態。 カスタム G コードがエ"
+"クストルーダー軸を動かすとき、PrusaSlicer が制御を取り戻したときに正しく撤回"
+"できるように、この変数に書き込む必要があります。"
+
+msgid "Retrieve"
+msgstr "回復する"
+
+msgid "Revert alignment."
+msgstr "アライメントを戻す。"
+
+msgid "Revert color"
+msgstr "カラーを元に戻す"
+
+msgid "Revert embossed depth."
+msgstr "エンボス深さを元に戻す"
+
+msgid "Revert font changes."
+msgstr "フォント変更を元に戻す"
+
+msgid "Revert font to default"
+msgstr "フォントをデフォルトに戻す"
+
+msgid "Revert gap between characters"
+msgstr "文字間のズレを戻す"
+
+msgid "Revert gap between lines"
+msgstr "ライン間のズレを戻す"
+
+msgid "Revert text size."
+msgstr "テキストサイズを元に戻す"
+
+msgid "Revert Transformation per glyph."
+msgstr "文字ごとに変換を戻す。"
+
+msgid "Revert using of model surface."
+msgstr "モデル面の使用を元に戻す。"
+
+msgid "Right button click the icon to fix STL by Windows repair algorithm"
+msgstr "アイコンを右クリックすると、Windows修復アルゴリズムでSTLを修復します"
+
+msgid "Rotate cut plane"
+msgstr "カット面の回転"
+
+msgid "Rotate (relative)"
+msgstr "回転 (相対)"
+
+msgid "Rotate text Clock-wise."
+msgstr "テキストを時計回りに回転。"
+
+msgid "Run installer after download. (Otherwise file explorer will be opened)"
+msgstr ""
+"ダウンロード後、インストーラーを実行します。(それ以外の場合はファイルエクスプ"
+"ローラーが開きます）"
+
+msgid ""
+"Running downloaded instaler of %1% has failed:\n"
+"%2%"
+msgstr ""
+"ダウンロードした %1% のインストーラの実行は失敗しました：\n"
+"%2%"
+
+msgid "%s 1.40 configuration update"
+msgstr "%s 1.40 構成のアップデート"
+
+msgid "Sample &G-codes and Models"
+msgstr "サンプル &G コードとモデル"
+
+msgid "Save %1% style"
+msgstr "%1% スタイル保存"
+
+msgid "Save as new style"
+msgstr "新しいスタイルとして保存します。"
+
+msgid "Save as new style."
+msgstr "新しいスタイルとして保存します。"
+
+msgid "Save as profile derived from current printer only."
+msgstr "現在のプリンターから派生したプロファイルとして保存する。"
+
+msgid "Save as '.svg' file"
+msgstr "'.svg' ファイルとして保存"
+
+msgid "Save filament settings as"
+msgstr "フィラメント設定を別名で保存する"
+
+msgid "Save material settings as"
+msgstr "材料設定を別名で保存する"
+
+msgid "Save preset modifications to existing user profile"
+msgstr "プリセットの変更を既存のユーザープロファイルに保存する"
+
+msgid "Save presets"
+msgstr "プリセット保存"
+
+msgid "Save printer settings as"
+msgstr "プリンター設定を別名で保存する"
+
+msgid "Save print settings as"
+msgstr "プリント設定を別名で保存する"
+
+msgid "Save SVG file"
+msgstr "SVGファイルの保存"
+
+msgid "Save the selected options from left preset to the right."
+msgstr "左のプリセットから選択したオプションを右へ保存します。"
+
+msgid "Scale also changes amount of curve samples (%1%)"
+msgstr "スケールによりカーブ サンプル量も変更されます(%1%)"
+
+msgid "Scale per object"
+msgstr "オブジェクトごとのスケール"
+
+msgid "Searching support spots"
+msgstr "サポートスポットを探す"
+
+msgid "Second"
+msgstr "秒"
+
+msgid "Select all connectors"
+msgstr "全てのコネクターを選択"
+
+msgid "Select an action to apply to all files."
+msgstr "すべてのファイルに適用するアクションを選択します。"
+
+msgid "Select a specific version of OpenGL"
+msgstr "OpenGLの特定のバージョンを選択する"
+
+msgid "Select at least one object to keep after cutting."
+msgstr "カットした後に残すものを1つ以上選んでください。"
+
+msgid "Select center"
+msgstr "中心を選択"
+
+msgid "Select directory"
+msgstr "ディレクトリー選択"
+
+msgid "Selected path is not on removable media."
+msgstr "選択したパスはリムーバブル メディア上にありません。"
+
+msgid "Select feature"
+msgstr "機能の選択"
+
+msgid "Select from True Type Collection."
+msgstr "True Type コレクションから選択。"
+
+msgid "Select one to load as project"
+msgstr "プロジェクトとして読み込むものを選択"
+
+msgid "Select only one file to load the configuration."
+msgstr "設定を読み込むファイルを1つだけ選択します。"
+
+msgid "Select placeholder"
+msgstr "プレースホルダーを選択"
+
+msgid "Select point"
+msgstr "ポイント選択"
+
+msgid ""
+"Selects whether labels should be exported at object boundaries and in what "
+"format.\n"
+"OctoPrint = comments to be consumed by OctoPrint CancelObject plugin.\n"
+"Firmware = firmware specific G-code (it will be chosen based on firmware "
+"flavor and it can end up to be empty).\n"
+"\n"
+"This settings is NOT compatible with Single Extruder Multi Material setup "
+"and Wipe into Object / Wipe into Infill."
+msgstr ""
+"ラベルをオブジェクト境界でエクスポートするかどうか、およびどの形式でエクス"
+"ポートするかを選択します。\n"
+"  OctoPrint = OctoPrint CancelObject プラグインによって消費されるコメント。\n"
+"  ファームウェア = ファームウェア固有の G コード (ファームウェアのフレーバー"
+"に基づいて選択され、最終的に空になる可能性があります)。\n"
+"\n"
+"この設定は、単一エクストルーダーのマルチマテリアル設定およびオブジェクトへの"
+"ワイプ/インフィルへのワイプとは互換性がありません。"
+
+msgid "Set bold"
+msgstr "ボールド設定"
+
+msgid "Set global orientation for whole text."
+msgstr "テキスト全体のグローバルな方向を設定する。"
+
+msgid "Set italic"
+msgstr "イタリック設定"
+
+msgid "Set position and orientation per glyph."
+msgstr "文字ごとに位置と方向を設定する。"
+
+msgid "Set settings tabs as menu items"
+msgstr "設定タブをメニュー項目として設定"
+
+msgid "Set Size"
+msgstr "サイズ設定"
+
+msgid ""
+"Sets the maximum number of threads the slicing process will use. If not "
+"defined, it will be decided automatically."
+msgstr ""
+"スライス処理が使用するスレッドの最大数を設定します。定義されていない場合は自"
+"動的に決定されます。"
+
+msgid "Set text to face camera"
+msgstr "テキストをカメラに向ける"
+
+msgid "Set the printer height."
+msgstr "プリンターの高さを設定する。"
+
+msgid "%s files"
+msgstr "%s ファイル"
+
+msgid "Shape is marked as invisible (%1%)."
+msgstr "図形は非表示としてマークされています (%1%)"
+
+msgid "Show as original"
+msgstr "オリジナルを表示する"
+
+msgid "Show as processed"
+msgstr "加工されたものを表示する"
+
+msgid "Show Custom G-code"
+msgstr "カスタムGコード表示"
+
+msgid "Show/Hide legend"
+msgstr "凡例の表示／非表示"
+
+msgid "Show/Hide template presets"
+msgstr "テンプレートプリセットの表示／非表示"
+
+msgid "Show legend"
+msgstr "凡例表示"
+
+msgid "Show Legen&d"
+msgstr "凡例表示&d"
+
+msgid "Show legend in preview"
+msgstr "プレビューで凡例表示"
+
+msgid "Show load project dialog"
+msgstr "プロジェクト読込ダイヤログ表示"
+
+msgid "Show non-manifold edges"
+msgstr "非マニホールドエッジの表示"
+
+msgid ""
+"Simple mode supports manipulation with single-part object(s)\n"
+"or object(s) with support modifiers only."
+msgstr ""
+"シンプルモードでは、単一部品で構成されたオブジェクトや、\n"
+"サポートモディファイアのみを持つオブジェクトの操作に対応します。"
+
+msgid "Size in emboss direction."
+msgstr "エンボス方向のサイズです。"
+
+msgid "Size of the first layer bounding box"
+msgstr "最初のレイヤーの境界ボックスのサイズ"
+
+msgid "Size of the print bed bounding box"
+msgstr "プリントベッド境界ボックスのサイズ"
+
+msgid "Size [World]"
+msgstr "サイズ [ワールド]"
+
+msgid "Skew ratio"
+msgstr "傾斜比"
+
+msgid "Skew [World]"
+msgstr "スキュー[ワールド］"
+
+msgid "SLA Materials settings"
+msgstr "SLAマテリアル設定"
+
+msgid "SLA output precision"
+msgstr "SLA出力精度"
+
+msgid "SLA view"
+msgstr "SLA表示"
+
+msgid "Slicing Cancelled."
+msgstr "スライスをキャンセルしました。"
+
+msgid "Slicing state"
+msgstr "スライスの状態"
+
+msgid "Slope of the ramp in the initial phase of the travel."
+msgstr "移動初期における斜面の傾斜"
+
+msgid "SMALL"
+msgstr "スモール"
+
+msgid "Snap"
+msgstr "スナップ継ぎ手"
+
+msgid "Some connectors are overlapped"
+msgstr "一部のコネクターが重なっています"
+
+msgid "Some extension in the input is invalid"
+msgstr "入力の一部の拡張子が無効"
+
+msgid ""
+"Some parts of the print will be previewed with approximated meshes. This "
+"does not affect the quality of slices or the physical print in any way."
+msgstr ""
+"プリントの一部のパーツは、近似したメッシュでプレビューされます。これは、スラ"
+"イスや 実際のプリントの品質に何ら影響を与えるものではありません。"
+
+msgid "Source filename of the first object, without extension."
+msgstr "最初のオブジェクトのソース ファイル名（拡張子を除く）。"
+
+msgid "Space proportion related to radius"
+msgstr "半径に関係する空間の割合"
+
+msgid "Spacing from bed"
+msgstr "ベッドとの間隔"
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr "ワイプタワーのパージラインの間隔。"
+
+msgid "Specific for %1%"
+msgstr "%1%に固有"
+
+msgid ""
+"Specific for sequential printing. Zero-based index of currently printed "
+"object."
+msgstr ""
+"順次プリントに特化したものです。 現在プリントされているオブジェクトの 0 から"
+"始まるインデックス。"
+
+msgid "speed for 0% overlap (bridge)"
+msgstr "0%オーバラップ時の速度 (ブリッジ)"
+
+msgid "speed for 25% overlap"
+msgstr "25%オーバーラップ時の速度"
+
+msgid "speed for 50% overlap"
+msgstr "50%オーバーラップ時の速度"
+
+msgid "speed for 75% overlap"
+msgstr "75%オーバーラップ時の速度"
+
+msgid "Square"
+msgstr "四角形"
+
+msgid "SSID"
+msgstr "SSID"
+
+msgid "SSID field is empty."
+msgstr "SSIDフィールドが空です。"
+
+msgid "Stabilization cone apex angle"
+msgstr "スタビライザーコーンの頂角"
+
+msgid "Staggered inner seams"
+msgstr "ジグザグ状のインナーシーム"
+
+msgid "Start a new instance of PrusaSlicer"
+msgstr "PrusaSlicerの新しいインスタンスを開始します"
+
+msgid "Start G-Code options"
+msgstr "スタートGコードオプション"
+
+msgid "Start new PrusaSlicer instance"
+msgstr "新しいPrusaSlicerのインスタンスを開始"
+
+msgid "Steeper ramp before obstacles"
+msgstr "障害物手前の急な傾斜"
+
+msgid "Storages found"
+msgstr "ストレージが見つかりました"
+
+msgid "String containing current time in yyyyMMdd-hhmmss format."
+msgstr "yyyyMMdd-hhmmss形式の現在時刻を表す文字列。"
+
+msgid "String containing filament type of the first used extruder."
+msgstr "最初に使用されたエクストルーダーのフィラメント タイプを含む文字列。"
+
+msgid "Stroke of shape (%1%) contains unsupported: %2%."
+msgstr ""
+"形状 (%1%) のストロークにサポートされていないものが含まれています： %2%."
+
+msgid "Stroke of shape (%1%) is too thin (minimal width is %2% mm)."
+msgstr "形状のストローク (%1%) が細すぎます (最小幅は %2% mm)。"
+
+msgid "Style \"%1%\" can't be used and will be removed from a list."
+msgstr "スタイル\"%1%\"は使用できないので、リストから削除されます。"
+
+msgid "Successfully created G-code ASCII file"
+msgstr "GコードASCIIファイルの作成に成功"
+
+msgid "Successfully created G-code binary file"
+msgstr "Gコードバイナリーファイルの作成に成功"
+
+msgid "Support only in enforced regions"
+msgstr "強制領域のみサポートを生成"
+
+msgid "Supports binary G-code"
+msgstr "バイナリーGコードのサポート"
+
+msgid "Support tree building strategy"
+msgstr "ツリービルディング型サポート"
+
+msgid "Support tree type"
+msgstr "ツリー型サポートタイプ"
+
+msgid "Suppress \" Template \" filament presets"
+msgstr "\"テンプレート\"フィラメントプリセットの抑制"
+
+msgid ""
+"Suppress \" Template \" filament presets in configuration wizard and sidebar "
+"visibility."
+msgstr ""
+"設定ウィザードとサイドバーの表示で、\"テンプレート\" フィラメントプリセットが"
+"表示されないようにしました。"
+
+msgid "SVG actions"
+msgstr "SVGアクション"
+
+msgid "SVG file does NOT contain a single path to be embossed (%1%)."
+msgstr "SVG ファイルには、エンボスされる単一のパス(%1%)が含まれていません。"
+
+msgid "SVG file path is \"%1%\""
+msgstr "SVGファイルパス： \"%1%\""
+
+msgid "SVG move"
+msgstr "SVGの移動"
+
+msgid "SVG rotate"
+msgstr "SVGの回転"
+
+msgid "SWISS"
+msgstr "スイス"
+
+msgid ""
+"Synchronize support layers with the object print layers. This is useful with "
+"multi-material printers, where the extruder switch is expensive. This option "
+"is only available when top contact Z distance is set to zero."
+msgstr ""
+"サポートレイヤーとオブジェクトプリントレイヤーを同期させる。これは、エクスト"
+"ルーダースイッチが高価なマルチマテリアルプリンタで有用です。このオプション"
+"は、トップコンタクトのZ距離がゼロに設定されている場合にのみ利用可能です。"
+
+msgid "Target directory"
+msgstr "ターゲットディレクトリー"
+
+msgid ""
+"Temperature difference to be applied when an extruder is not active. The "
+"value is not used when 'idle_temperature' in filament settings is defined."
+msgstr ""
+"エクストルーダーがアクティブでないときに適用される温度差。フィラメント設定"
+"の'idle_temperature'が定義されている場合、この値は使用されない。"
+
+msgid "Template presets"
+msgstr "テンプレートプリセット"
+
+msgid "(Templates)"
+msgstr "(テンプレート)"
+
+msgid "Text"
+msgstr "テキスト"
+
+msgid "Text contains character glyph (represented by '?') unknown by font."
+msgstr "テキストにフォントで不明な文字記号（ '?'で表される）が含まれている。"
+
+msgid "Text doesn't show current horizontal alignment."
+msgstr "テキストが現在の水平アライメントを示さない。"
+
+msgid "Text input doesn't show font boldness."
+msgstr "文字入力でボールドフォントが表示されない。"
+
+msgid "Text input doesn't show font skew."
+msgstr "テキスト入力でイタリック体が表示されない。"
+
+msgid "Text input doesn't show gap between lines."
+msgstr "テキスト入力で、行間が表示されない。"
+
+msgid "Text move"
+msgstr "テキストの移動"
+
+msgid "Text rotate"
+msgstr "テキストの回転"
+
+msgid ""
+"Text tool\n"
+"Did you know that you can add custom text labels to your models or even use "
+"the text as a modifier? Learn more in the documentation."
+msgstr ""
+"テキストツール\n"
+"モデルにカスタムテキストラベルを追加したり、テキストをモディファイアとして使"
+"用することができることをご存知でしょうか？詳しくは、ドキュメントをご覧くださ"
+"い。"
+
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+"枝の直径が、下に向かって徐々に太くなっていくときの角度です。角度が0だと、枝の"
+"太さが一定になります。少し角度をつけると、オーガニックサポートの安定性が増し"
+"ます。"
+
+msgid ""
+"The currently manipulated object is tilted or contains tilted parts "
+"(rotation angles are not multiples of 90°). Non-uniform scaling of tilted "
+"objects is only possible in non-local coordinate systems, once the rotation "
+"is embedded into the object coordinates."
+msgstr ""
+"現在操作しているオブジェクトが傾いているか、傾いた部分を含んでいます（回転角"
+"度が90°の倍数でない）。傾いたオブジェクトの不均一なスケーリングは、回転がオブ"
+"ジェクト座標に組み込まれた後、非ローカル座標系でのみ可能となります。"
+
+msgid ""
+"The diameter of the thinnest branches of organic support. Thicker branches "
+"are more sturdy. Branches towards the base will be thicker than this."
+msgstr ""
+"オーガニックサポートの一番細い枝の直径です。太い枝の方が丈夫です。ベースに向"
+"かう枝はこれより太くなります。"
+
+msgid "The download has failed"
+msgstr "ダウンロードに失敗しました"
+
+msgid ""
+"The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
+"use the one that is available (non-soluble would be preferred)."
+msgstr ""
+"ワイプタワーの外周を印刷する際に使用するエクストルーダーです。0に設定すると、"
+"使用可能なものを使用します（非水溶性であることが望ましい）。"
+
+msgid "The following characters are not allowed in the name"
+msgstr "名前には次の文字は使用できません"
+
+msgid "The following suffix is not allowed in the name"
+msgstr "名前に次のようなサフィックスをつけることはできません。"
+
+msgid ""
+"The maximum angle of the branches, when the branches have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle to be able to have more reach."
+msgstr ""
+"枝の最大角度は、枝がモデルを避けなければならないときに より垂直に、より安定さ"
+"せるために、低い角度を使用します。よりリーチがあるようにするには、より高い角"
+"度を使用します。"
+
+msgid "The name is too long."
+msgstr "名前が長すぎます。"
+
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr "オブジェクト %1% がビルドボリュームの最大高さを超えています。"
+
+msgid ""
+"The physical printer below is based on the preset, you are going to rename."
+msgid_plural ""
+"The physical printers below are based on the preset, you are going to rename."
+msgstr[0] ""
+"以下の物理プリンターは、プリセットに基づき、名前を変更するものです。"
+msgstr[1] ""
+msgstr[2] ""
+"下の物理プリンタは、プリセットを元に、名前を変更することになります。"
+
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+"枝の好ましい角度、モデルを避ける必要がない場合。低い角度を使用すると、より垂"
+"直になり、より安定します。枝が早く合流するようにするには、角度を高くします。"
+
+msgid ""
+"The profile in the imported archive is corrupted and will not be loaded."
+msgstr "インポートアーカイブのプロファイルが破損しているため、読込めません。"
+
+msgid ""
+"There are no new released versions online. The latest release version is %1%."
+msgstr ""
+"オンラインに新しいリリースバージョンはありません。最新のリリース・バージョン"
+"は %1% です。"
+
+msgid "There are several files being loaded."
+msgstr "複数のファイルが読み込まれている。"
+
+msgid "There are several files being loaded, including Project files."
+msgstr "プロジェクトファイルを含む、複数のファイルが読み込まれています。"
+
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+"ホスト名%1%には、いくつかのIPアドレスがあります。\n"
+"使用するIPアドレスを1つ選んでください。"
+
+msgid "There is no valid surface for text projection."
+msgstr "テキスト投影に有効な面がありません。"
+
+msgid ""
+"The selected %1% file contains a post-processing script.\n"
+"Please review the script carefully before exporting G-code."
+msgstr ""
+"選択した %1% ファイルには後処理スクリプトが含まれています。\n"
+"G コードをエクスポートする前に、スクリプトを注意深く確認してください。"
+
+msgid ""
+"The selected config file contains a post-processing script.\n"
+"Please review the script carefully before exporting G-code."
+msgstr ""
+"選択した構成ファイルには後処理スクリプトが含まれています。\n"
+"G コードをエクスポートする前に、スクリプトを注意深く確認してください。"
+
+msgid "The selected file is already in ASCII format."
+msgstr "選択したファイルはすでに ASCII 形式です。"
+
+msgid "The selected file is already in binary format."
+msgstr "選択したファイルはすでにバイナリ形式です。"
+
+msgid ""
+"The selected G-code flavor does not support the machine limitation for "
+"Stealth mode.\n"
+"Stealth mode will not be applied and will be disabled."
+msgstr ""
+"選択されたGコードフレーバーは、ステルスモードのマシン制限に対応していませ"
+"ん。\n"
+"ステルスモードは適用されず、無効となります。"
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"スパイラル花瓶(ベイス)モードの条件：\n"
+"- 外周1回\n"
+"- トップソリッドレイヤーなし\n"
+"- 充填密度0％\n"
+"- サポートなし\n"
+"- 薄壁検知は無効"
+
+msgid ""
+"The text cannot be written using the selected font. Please try choosing a "
+"different font."
+msgstr ""
+"選択されているフォントでは、文字が書けません。別のフォントを選択してみてくだ"
+"さい。"
+
+msgid ""
+"The vector has two elements: x and y coordinate of the point. Values in mm."
+msgstr ""
+"ベクトルには、点の x 座標と y 座標という 2 つの要素があります。 値は mm 単位"
+"です。"
+
+msgid ""
+"The vector has two elements: x and y dimension of the bounding box. Values "
+"in mm."
+msgstr ""
+"ベクトルには、境界ボックスの x 次元と y 次元という 2 つの要素があります。 値"
+"は mm 単位です。"
+
+msgid "The volume to be rammed before the toolchange."
+msgstr "ツールチェンジ前にラミングで使用する量"
+
+msgid ""
+"The Wipe Tower is currently only supported for the Marlin, Klipper, RepRap/"
+"Sprinter, RepRapFirmware and Repetier G-code flavors."
+msgstr ""
+"ワイプタワーは現在、Marlin、Klipper、RepRap/Sprinter、RepRapFirmware、および"
+"RepetierのGコードフレーバーで対応しています。"
+
+msgid "Thin fragile part"
+msgstr "薄くて壊れやすいパーツ"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency"
+msgstr ""
+"この操作により、カット情報が壊れます。\n"
+"その後、PrusaSlicerはモデルの一貫性を保証できなくなります"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency."
+msgstr ""
+"この操作により、カット情報が壊れます。\n"
+"その後、PrusaSlicerはモデルの整合性を保証できなくなります。"
+
+msgid ""
+"This is the acceleration your printer will use for external perimeters. Set "
+"zero to use the value for perimeters."
+msgstr ""
+"これは、プリンターが最外周パスに使用する加速度です。外周と同じ値を使用する場"
+"合は、0を設定します。"
+
+msgid ""
+"This is the acceleration your printer will use for solid infill. Set zero to "
+"use the value for infill."
+msgstr ""
+"これは、プリンターが塗りつぶしに使用する加速度です。インフィルと同じ値にする"
+"場合は0を設定します。"
+
+msgid ""
+"This is the acceleration your printer will use for top solid infill. Set "
+"zero to use the value for solid infill."
+msgstr ""
+"これは、プリンターがトップの塗りつぶし時に使用する加速度です。塗りつぶしと同"
+"じ値にする場合は、0を設定します。"
+
+msgid ""
+"This is the acceleration your printer will use for travel moves. Set zero to "
+"disable acceleration control for travel."
+msgstr ""
+"プリンターヘッドの移動時に使用する加速度です。ゼロを設定すると、移動時の加速"
+"度制御は無効になります。"
+
+msgid "This name is reserved, use another."
+msgstr "この名前は予約済みなので、別のものを使ってください。"
+
+msgid "This name is used for an external profile name, use another."
+msgstr ""
+"この名前は、外部プロファイル名に使用されますので、別のものを使用してくださ"
+"い。"
+
+msgid "This name is used for a system profile name, use another."
+msgstr ""
+"この名前は、システムプロファイル名に使用されているので、別のものを使用してく"
+"ださい。"
+
+msgid "This operation is irreversible."
+msgstr "この操作は元に戻せません。"
+
+msgid ""
+"This option causes the inner seams to be shifted backwards based on their "
+"depth, forming a zigzag pattern."
+msgstr ""
+"このオプションは、内側のシーム部を深さに応じて後方にずらし、ジグザグ模様を形"
+"成するものです。"
+
+msgid ""
+"This option will drop the temperature of the inactive extruders to prevent "
+"oozing."
+msgstr ""
+"このオプションは、非アクティブなエクストルーダーの温度を下げて、樹脂ダレを防"
+"止するものです。"
+
+msgid "This setting enables dynamic fan speed control on overhangs."
+msgstr ""
+"オーバーハング時にファン回転数をダイナミックにコントロールできる設定です。"
+
+msgid "This setting enables dynamic speed control on overhangs."
+msgstr "オーバーハング時のダイナミックな速度制御を可能にする設定です。"
+
+msgid ""
+"This setting uses G10 and G11 commands to have the firmware handle the "
+"retraction. Note that this has to be supported by firmware."
+msgstr ""
+"この設定では、G10 および G11 コマンドを使用して、ファームウェアでリトラクショ"
+"ンさせます。 これはファームウェアでサポートされている必要があることに注意して"
+"ください。"
+
+msgid ""
+"This start procedure is inserted at the beginning, possibly prepended by "
+"temperature-changing commands. See 'autoemit_temperature_commands'."
+msgstr ""
+"この開始手順は、先頭に挿入され、場合によっては温度変更コマンドで前置きされま"
+"す。autoemit_temperature_commands'を参照してください。"
+
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+msgid "Timestamps"
+msgstr "タイムスタンプ"
+
+msgid "Tiny / Wide glyphs"
+msgstr "小さい/広いグリフ"
+
+msgid "Tip Diameter"
+msgstr "先端径"
+
+msgid "Tolerance"
+msgstr "公差"
+
+msgid ""
+"To manipulate with solid parts or negative volumes you have to invalidate "
+"cut information first."
+msgstr ""
+"ソリッドパーツやネガティブボリュームを操作するには、まずカット情報を無効化す"
+"る必要があります。"
+
+msgid "Toolchange parameters with multi extruder MM printers"
+msgstr "マルチエクストルーダーMMプリンターのツールチェンジパラメータ"
+
+msgid "Toolchange Z"
+msgstr "ツールチェンジ Z"
+
+msgid "Too small, enlarged font height inside text input."
+msgstr "小さすぎます、テキスト入力時のフォント高さを大きくしました。"
+
+msgid "Too tall, diminished font height inside text input."
+msgstr "高すぎます、テキスト入力の文字高を小さくしました。"
+
+msgid "Top-right corner of first layer bounding box"
+msgstr "最初のレイヤーの境界ボックスの右上隅"
+
+msgid "Top-right corner of print bed bounding box"
+msgstr "プリント ベッド境界ボックスの右上隅"
+
+msgid ""
+"To save cut information you can delete all connectors from all related "
+"objects."
+msgstr ""
+"カットされた情報を保存するために、すべての関連するオブジェクトからすべてのコ"
+"ネクタを削除することができます。"
+
+msgid "Total cost"
+msgstr "トータルコスト"
+
+msgid ""
+"Total cost of all material used in the print. Calculated from cost in "
+"Filament Settings."
+msgstr ""
+"プリントに使用したすべての材料の合計コスト。 フィラメント設定のコストから計算"
+"されます。"
+
+msgid ""
+"Total cost of the material wasted on the wipe tower. Calculated from cost in "
+"Filament Settings."
+msgstr ""
+"ワイプタワーで無駄になった材料の総コスト。 フィラメント設定のコストから計算さ"
+"れます。"
+
+msgid "Total filament volume extruded on the wipe tower."
+msgstr "ワイプタワー上で押し出されたフィラメントの総体積。"
+
+msgid "Total filament volume extruded per extruder during the entire print."
+msgstr "プリント全体でエクストルーダーごとに押し出されたフィラメントの総量。"
+
+msgid "Total layer count"
+msgstr "トータルレイヤー数"
+
+msgid "Total length of filament used in the print."
+msgstr "プリントに使用されるフィラメントの全長。"
+
+msgid ""
+"Total number of extruders, regardless of whether they are used in the "
+"current print."
+msgstr ""
+"現在のプリントで使用されているかどうかに関係ない、エクストルーダーの合計数。"
+
+msgid "Total number of object instances in the print, summed over all objects."
+msgstr ""
+"すべてのオブジェクトを合計した、プリント内のオブジェクト インスタンスの総数。"
+
+msgid "Total number of objects in the print."
+msgstr "プリント中のオブジェクトの総数"
+
+msgid "Total number of toolchanges"
+msgstr "トータルのツールチェンジ回数"
+
+msgid "Total volume"
+msgstr "トータル体積"
+
+msgid "Total volume of filament used during the entire print."
+msgstr "プリント全体で使用されるフィラメントの総量。"
+
+msgid "Total weight"
+msgstr "トータル重量"
+
+msgid ""
+"Total weight of the print. Calculated from density in Filament Settings."
+msgstr "プリントの総重量。 フィラメント設定の密度から計算されます。"
+
+msgid "Total wipe tower cost"
+msgstr "ワイプタワーのトータルコスト"
+
+msgid ""
+"Transfer the selected options from left preset to the right.\n"
+"Note: New modified presets will be selected in settings tabs after close "
+"this dialog."
+msgstr ""
+"選択したオプションを左のプリセットから右に転送します。\n"
+"注意：このダイアログを閉じた後、新しいプリセットが設定タブで選択されます。"
+
+msgid "Transfer values from left to right"
+msgstr "左から右へ値を移す"
+
+msgid "Translate (relative) [World]"
+msgstr "移動 (相対) [ワールド]"
+
+msgid "Travel lift"
+msgstr "移動リフト"
+
+msgid "Triangle"
+msgstr "三角形"
+
+msgid "Unable to open output file."
+msgstr "出力ファイルを開くことができません。"
+
+msgid "Unable to open the selected file."
+msgstr "選択したファイルが開けません。"
+
+msgid ""
+"Unable to perform boolean operation on model meshes. Only positive parts "
+"will be exported."
+msgstr ""
+"モデルメッシュに対してブーリアン演算を行うことができません。正の部分のみエク"
+"スポートされます。"
+
+msgid "Unable to save file"
+msgstr "ファイルの保存ができない"
+
+msgid "Unavailable for this method."
+msgstr "このメソッドでは使用できません。"
+
+msgid "Undefined fill type"
+msgstr "未定義のフィルタイプ"
+
+msgid "Undefined stroke type"
+msgstr "未定義のストロークタイプ"
+
+msgid "Undo boldness"
+msgstr "ボールドネス取り消し"
+
+msgid "Undo letter's skew"
+msgstr "文字の傾きを取り消す"
+
+msgid "Undo rotation"
+msgstr "回転を取り消す"
+
+msgid "Undo translation"
+msgstr "移動を取り消す"
+
+msgid "Unexpected character"
+msgstr "意外な人物像"
+
+msgid "Unknown archive format: %s"
+msgstr "不明なアーカイブ形式: %s"
+
+msgid "Unknown filename"
+msgstr "不明なファイル名"
+
+msgid "Unlock the text's rotation when moving text along the object's surface."
+msgstr ""
+"オブジェクトの表面に沿ってテキストを移動させる時に、テキストの回転ロックを解"
+"除する。"
+
+msgid "Unselect"
+msgstr "選択解除"
+
+msgid "Unselect center"
+msgstr "中心の選択解除"
+
+msgid "Unselect feature"
+msgstr "機能の選択解除"
+
+msgid "Unselect point"
+msgstr "ポイントの選択解除"
+
+msgid "Unset bold"
+msgstr "ボールド設定解除"
+
+msgid "Unset italic"
+msgstr "イタリック設定を解除"
+
+msgid "Upload has failed. There is no suitable storage found at %1%."
+msgstr ""
+"アップロードに失敗しました。%1%に適切なストレージが見つかりませんでした。"
+
+msgid "Upload to Queue"
+msgstr "キューにアップロード"
+
+msgid "Upload to storage"
+msgstr "ストレージへのアップロード"
+
+msgid ""
+"URL of PrusaConnect is different from https://connect.prusa3d.com. Do you "
+"want to continue?"
+msgstr ""
+"PrusaConnectのURLはhttps://connect.prusa3d.comとは異なります。 続けますか？"
+
+msgid "Use binary G-code when the printer supports it"
+msgstr "プリンタが対応している場合は、バイナリGコードを使用します。"
+
+msgid "Used filament types"
+msgstr "使用したフィラメントタイプ"
+
+msgid "Use ramping lift"
+msgstr "傾斜リフトを使う"
+
+msgid "Use surface"
+msgstr "サーフェースを使用"
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr "オーガニックサポートでは、可変レイヤー高さは使用できません。"
+
+msgid ""
+"Vector of booleans stating whether a given extruder is used in the print."
+msgstr ""
+"指定されたエクストルーダーがプリントで使用されるかどうかを示すブール値のベク"
+"トル。"
+
+msgid ""
+"Vector of points of the first layer convex hull. Each element has the "
+"following format: '[x, y]' (x and y are floating-point numbers in mm)."
+msgstr ""
+"第 1 層の凸包(convex hull)の点のベクトル。 各要素の形式は次のとおりです: "
+"'[x, y]' (x と y は mm の浮動小数点です)。"
+
+msgid "Vertex"
+msgstr "頂点"
+
+msgid "Volume per extruder"
+msgstr "エクストルーダーあたりの体積"
+
+msgid "Weight per extruder"
+msgstr "エクストルーダーあたりの重量"
+
+msgid ""
+"Weight per extruder extruded during the entire print. Calculated from "
+"density in Filament Settings."
+msgstr ""
+"プリント全体で押し出されるエクストルーダーあたりの重量。 フィラメント設定の密"
+"度から計算されます。"
+
+msgid "Welcome to %1% version %2%."
+msgstr "ようこそ %1% バージョン %2%。"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "%s構成ウィザードへようこそ"
+
+msgid ""
+"When checked, whenever dragging and dropping a project file on the "
+"application or open it from a browser, shows a dialog asking to select the "
+"action to take on the file to load."
+msgstr ""
+"チェックすると、プロジェクトファイルをアプリケーションにドラッグ＆ドロップし"
+"たり、ブラウザから開いたりするたびに、ファイルを読み込む時の動作を選択するダ"
+"イアログが表示されます。"
+
+msgid ""
+"When enabled, PrusaSlicer will check whether your Custom Start G-Code "
+"contains M104 or M190. If so, the temperatures will not be emitted "
+"automatically so you're free to customize the order of heating commands and "
+"other custom actions. Note that you can use placeholder variables for all "
+"PrusaSlicer settings, so you can put a \"M109 S[first_layer_temperature]\" "
+"command wherever you want.\n"
+"If your Custom Start G-Code does NOT contain M104 or M190, PrusaSlicer will "
+"execute the Start G-Code after bed reached its target temperature and "
+"extruder just started heating.\n"
+"\n"
+"When disabled, PrusaSlicer will NOT emit commands to heat up extruder and "
+"bed, leaving both to Custom Start G-Code."
+msgstr ""
+"有効にすると、PrusaSlicerはカスタムスタートGコードにM104またはM190が含まれて"
+"いるかどうかをチェックします。含まれていた場合、温度は自動的に出力されず、加"
+"熱コマンドやその他のカスタムアクションの順序を自由にカスタマイズできます。"
+"PrusaSlicerのすべての設定にプレースホルダー変数を使用できるので、好きな場所に"
+"\"M109 S[first_layer_temperature]\"コマンドを置くことができることに注意してく"
+"ださい。\n"
+"カスタムスタートGコードにM104またはM190が含まれていない場合、PrusaSlicerは"
+"ベッドが目標温度に達し、エクストルーダーが加熱を開始した後にスタートGコードを"
+"実行します。\n"
+"\n"
+"無効の場合、PrusaSlicerはエクストルーダーとベッドを加熱するコマンドを発行せ"
+"ず、両方をカスタムスタートGコードに任せます。"
+
+msgid "Whether or not wipe tower is being generated in the print."
+msgstr "プリント時にワイプタワーが生成されているかどうか。"
+
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+"オブジェクト %1% 自体はビルドボリュームに適合していますが、その最後のレイヤー"
+"はビルドボリュームの最大高さを超えてしまいます。"
+
+msgid "Width of SVG."
+msgstr "SVGの幅"
+
+msgid "Wi-Fi Configuration File"
+msgstr "Wi-Fi 設定ファイル"
+
+msgid "Wi-Fi Configuration File Generator"
+msgstr "Wi-Fi設定ファイルジェネレーター"
+
+msgid "Wipe tower extruder"
+msgstr "ワイプタワーエクストルーダー"
+
+msgid "Wipe tower purge lines spacing"
+msgstr "ワイプタワーのパージラインの間隔"
+
+msgid "Wipe tower volume"
+msgstr "ワイプタワー体積"
+
+msgid "Write"
+msgstr "書込み"
+
+msgid "Write this file on the USB flash drive. Its name will be %1%."
+msgstr ""
+"このファイルをUSBフラッシュ・ドライブに書き込む。ファイル名は%1%になります。"
+
+msgid "Write Wi-Fi credentials."
+msgstr "Wi-Fi 認証情報を書き込みます。"
+
+msgid "Year"
+msgstr "年"
+
+msgid "You are currently running the latest released version %1%."
+msgstr "現在、最新のリリースバージョン %1%を実行しています"
+
+msgid ""
+"You are exporting binary G-code for a Prusa printer. Binary G-code enables "
+"significantly faster uploads. Ensure that your printer is running firmware "
+"version 5.1.0 or newer, as older versions do not support binary G-codes.\n"
+"\n"
+"To learn more about binary G-code, visit <a href=%1%>%1%</a>."
+msgstr ""
+"Prusaプリンタ用のバイナリーGコードをエクスポートしています。バイナリーGコード"
+"を使用することで、高速なデータアップロードが可能になります。プリンタがファー"
+"ムウェアバージョン5.1.0以降であることを確認してください。\n"
+"\n"
+"バイナリーGコードについては、こちらをご覧ください。 <a href=%1%>%1%</a>."
+
+msgid "You are using template filament preset."
+msgid_plural "You are using template filament presets."
+msgstr[0] "テンプレート フィラメント プリセットを使用しています。"
+msgstr[1] "テンプレート フィラメント プリセットを使用しています。"
+
+msgid ""
+"You can use all configuration options as variables inside this template. For "
+"example: [layer_height], [fill_density] etc. You can also use [timestamp], "
+"[year], [month], [day], [hour], [minute], [second], [version], "
+"[input_filename_base], [default_output_extension]."
+msgstr ""
+"すべての構成オプションをこのテンプレート内の変数として使用できます。 例: [レ"
+"イヤー高さ]、[充填密度] など。その他、[タイムスタンプ]、[年]、[月]、[日]、"
+"[時]、[分]、[秒]、[バージョン]、[入力ファイルベース] 、[デフォルト出力拡張子]"
+"も使用できます。"
+
+msgid ""
+"You have selected template filament. Please note that these filaments are "
+"available for all printers but are NOT certain to be compatible with your "
+"printer. Do you still wish to have this filament selected?\n"
+"(This message won't be displayed again.)"
+msgstr ""
+"テンプレートフィラメントを選択しました。これらのフィラメントはすべてのプリン"
+"ターで使用できますが、お使いのプリンターと互換性があるとは限りません。それで"
+"もこのフィラメントを選択したままにしますか? \n"
+"(このメッセージは再表示されません。)"
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+"モデルのサイズを小さくするか、現在のプリント設定を変更してリトライしてくださ"
+"い。"
+
+msgid "Your %1% is up to date."
+msgstr "ご使用中の%1%は最新のものです。"
+
+msgid "Your Prusa printer should load this file automatically."
+msgstr "Prusa プリンタはこのファイルを自動的にロードします。"
+
+msgid "You try to delete an object which is a part of a cut object."
+msgstr "カットされたオブジェクトの一部であるオブジェクトを削除しようとした。"
+
+msgid "Zero-based index of currently used extruder."
+msgstr "現在使用されているエクストルーダーの 0 から始まるインデックス。"
+
+msgid ""
+"Zero-based index of currently used extruder (i.e. first extruder has index "
+"0)."
+msgstr ""
+"現在使用されているエクストルーダーのゼロベースのインデックス (つまり、最初の"
+"エクストルーダーのインデックスは 0)。"
+
+msgid "Zero-based index of the current layer (i.e. first layer is number 0)."
+msgstr ""
+"現在のレイヤーの 0 から始まるインデックス (つまり、最初のレイヤーは番号 0)。"
+
+msgid ""
+"Zero-based index of the first extruder used in the print. Same as "
+"initial_extruder."
+msgstr ""
+"プリントで使用される最初のエクストルーダーの 0 から始まるインデックス。 "
+"Initial_extruder と同じです。"
+
+msgid ""
+"Zero-based index of the first extruder used in the print. Same as "
+"initial_tool."
+msgstr ""
+"プリントで使用される最初のエクストルーダーの 0 から始まるインデックス。  "
+"initial_toolと同じ。"

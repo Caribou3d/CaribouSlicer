@@ -2787,11 +2787,11 @@ msgstr ""
 "nebyly rozpoznány."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2974
-msgid "Configuration is edited in ConfigAssistent"
+msgid "Configuration is edited in ConfigWizard"
 msgstr "Nastavení se upravuje v Průvodci konfigurace"
 
 #: src/slic3r/GUI/GUI_App.cpp:3150
-msgid "Configuration is editing from ConfigAssistent"
+msgid "Configuration is editing from ConfigWizard"
 msgstr "Konfigurace se upravuje z nástroje Průvodce nastavením"
 
 #: src/libslic3r/PrintConfig.cpp:2031
@@ -2850,11 +2850,11 @@ msgstr ""
 "Zkontrolujte tedy neuložené změny a případně je uložte."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3530
-msgid "Configuration &Assistent"
+msgid "Configuration &Wizard"
 msgstr "Průvodce &nastavením"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3529
-msgid "Configuration Assistent"
+msgid "Configuration Wizard"
 msgstr "Průvodce nastavením"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:924
@@ -10801,7 +10801,7 @@ msgid "Open hyperlink in default browser?"
 msgstr "Otevřít hypertextový odkaz ve výchozím prohlížeči?"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Assistent"
+msgid "Opening Configuration Wizard"
 msgstr "Otevírání průvodce nastavením"
 
 #: src/slic3r/GUI/GUI_App.cpp:2852
@@ -19246,7 +19246,7 @@ msgstr "Vítejte v  %s Konfiguračním Asistentu"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Assistent"
+msgid "Welcome to the %s Configuration Wizard"
 msgstr "Vítejte v %s Konfiguračním průvodci"
 
 #: src/slic3r/GUI/SavePresetDialog.cpp:448

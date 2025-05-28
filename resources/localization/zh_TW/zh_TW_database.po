@@ -146,6 +146,21 @@ msgstr ""
 msgid "Add color change marker for current layer"
 msgstr "添加當前圖層的顏色更改標記"
 
+msgid "Add modifier"
+msgstr "添加修飾器"
+
+msgid "Add part"
+msgstr "添加部件"
+
+msgid "Add settings"
+msgstr "添加設置"
+
+msgid "Add support blocker"
+msgstr "添加支撐屏蔽"
+
+msgid "Add support enforcer"
+msgstr "添加支撐執行者"
+
 msgid "Add..."
 msgstr "加入..."
 
@@ -203,6 +218,15 @@ msgstr "所有標準"
 
 msgid "allocation failed"
 msgstr "燒錄失敗"
+
+msgid "Along X axis"
+msgstr "沿 X 軸"
+
+msgid "Along Y axis"
+msgstr "沿 Y 軸"
+
+msgid "Along Z axis"
+msgstr "沿 Z 軸"
 
 msgid "Alternate nozzles:"
 msgstr "備用噴嘴:"
@@ -367,6 +391,9 @@ msgstr "底部可靠層"
 msgid "Bottom View"
 msgstr "底部視圖"
 
+msgid "Box"
+msgstr "盒子"
+
 msgid "Bridge"
 msgstr "橋"
 
@@ -458,6 +485,9 @@ msgstr "更換擠出機"
 msgid "Change Extruder"
 msgstr "更換擠出機"
 
+msgid "Change type"
+msgstr "更改類型"
+
 msgid "Changing of an application language"
 msgstr "更改應用程序語言"
 
@@ -475,6 +505,9 @@ msgstr "選擇印表機使用的固件類型。"
 
 msgid "Circular"
 msgstr "圓形"
+
+msgid "Clear"
+msgstr "清除"
 
 msgid "Click to edit preset"
 msgstr "點擊編輯預設"
@@ -962,6 +995,9 @@ msgstr "導出 AMF"
 msgid "Export AMF file:"
 msgstr "導出 AMF 文件:"
 
+msgid "Export as STL"
+msgstr "導出爲 STL"
+
 msgid "Export Config &Bundle"
 msgstr "導出配置&包"
 
@@ -1221,6 +1257,9 @@ msgstr "首層速度"
 
 msgid "First layer volumetric"
 msgstr "首層流量"
+
+msgid "Fix through the Netfabb"
+msgstr "通過 Netfabb 修復"
 
 msgid "Flash!"
 msgstr "燒錄！"
@@ -1870,6 +1909,21 @@ msgstr "回縮後最小空程"
 msgid "Minimum travel feedrate"
 msgstr "最小移動進給率"
 
+msgid "Mirror"
+msgstr "鏡像"
+
+msgid "Mirror the selected object"
+msgstr "鏡像所選對象"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "沿 X 軸鏡像所選對象"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "沿 Y 軸鏡像所選對象"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "沿 Z 軸鏡像所選對象"
+
 msgid "Mismatched type of print host: %s"
 msgstr "列印主機類型不匹配: %s"
 
@@ -2412,6 +2466,9 @@ msgstr "清除量-加載/卸載卷"
 msgid "Purging volumes - matrix"
 msgstr "清除量-矩陣"
 
+msgid "Quick Add Settings (%s)"
+msgstr "快速添加設置 (%s)"
+
 msgid "Quick Slice"
 msgstr "快速切片"
 
@@ -2522,6 +2579,12 @@ msgstr "刪除所有點"
 
 msgid "Remove selected points"
 msgstr "刪除選定的點"
+
+msgid "Remove the selected object"
+msgstr "刪除選定的對象"
+
+msgid "Rename"
+msgstr "重命名"
 
 msgid "Renaming"
 msgstr "重命名"
@@ -2734,6 +2797,9 @@ msgstr "選擇 \"列印設置\" 選項卡"
 msgid "Select Printer Settings Tab"
 msgstr "選擇 \"印表機設置\" 選項卡"
 
+msgid "Select showing settings"
+msgstr "選擇顯示的設置"
+
 msgid "Select the language"
 msgstr "選擇語言"
 
@@ -2772,6 +2838,15 @@ msgstr "服務名稱"
 
 msgid "Set"
 msgstr "設置"
+
+msgid "Set as a Separated Object"
+msgstr "設置爲分隔的對象"
+
+msgid "Set as a Separated Objects"
+msgstr "設置爲分隔的對象"
+
+msgid "Set extruder for selected items"
+msgstr "爲所選項目設置擠出機"
 
 msgid ""
 "Set the actual LCD display orientation inside the SLA printer. Portrait mode "
@@ -2905,6 +2980,9 @@ msgstr "SLA 列印"
 
 msgid "SLA print material notes"
 msgstr "SLA 列印材料註釋"
+
+msgid "Slab"
+msgstr "板坯"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -3088,6 +3166,12 @@ msgstr "螺旋式容器"
 
 msgid "Split"
 msgstr "拆分"
+
+msgid "Split the selected object"
+msgstr "拆分所選對象"
+
+msgid "Split the selected object into individual objects"
+msgstr "將所選對象拆分爲單個對象"
 
 msgid "Split to parts"
 msgstr "拆分到零件"
@@ -3545,6 +3629,12 @@ msgstr ""
 
 msgid "To do that please specify a new name for the preset."
 msgstr "爲此, 請爲預設指定新名稱。"
+
+msgid "To objects"
+msgstr "拆分到對象"
+
+msgid "To parts"
+msgstr "到零件"
 
 msgid ""
 "To use a custom CA file, please import your CA file into Certificate Store / "
@@ -4106,18 +4196,6 @@ msgstr "創建配置快照"
 msgid "Please check and fix your object list."
 msgstr "請檢查並修復您的對象列表。"
 
-msgid "Add part"
-msgstr "添加部件"
-
-msgid "Add modifier"
-msgstr "添加修飾器"
-
-msgid "Add support enforcer"
-msgstr "添加支撐執行者"
-
-msgid "Add support blocker"
-msgstr "添加支撐屏蔽"
-
 msgid "Auto-repaired (%d errors):"
 msgstr "自動修復 (%d 錯誤)::"
 
@@ -4138,39 +4216,6 @@ msgstr "已反轉平面"
 
 msgid "backwards edges"
 msgstr "反向邊緣"
-
-msgid "Quick Add Settings (%s)"
-msgstr "快速添加設置 (%s)"
-
-msgid "Select showing settings"
-msgstr "選擇顯示的設置"
-
-msgid "Box"
-msgstr "盒子"
-
-msgid "Add settings"
-msgstr "添加設置"
-
-msgid "Change type"
-msgstr "更改類型"
-
-msgid "Set as a Separated Object"
-msgstr "設置爲分隔的對象"
-
-msgid "Set as a Separated Objects"
-msgstr "設置爲分隔的對象"
-
-msgid "Rename"
-msgstr "重命名"
-
-msgid "Fix through the Netfabb"
-msgstr "通過 Netfabb 修復"
-
-msgid "Export as STL"
-msgstr "導出爲 STL"
-
-msgid "Set extruder for selected items"
-msgstr "爲所選項目設置擠出機"
 
 msgid "Select extruder number:"
 msgstr "選擇擠出機編號:"
@@ -4262,50 +4307,11 @@ msgstr "無法拆分所選對象, 因爲它包含多個容量/材質。"
 msgid "Ready to slice"
 msgstr "準備切片"
 
-msgid "Remove the selected object"
-msgstr "刪除選定的對象"
-
 msgid "Export the selected object as STL file"
 msgstr "將所選對象導出爲 STL 文件"
 
-msgid "Along X axis"
-msgstr "沿 X 軸"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "沿 X 軸鏡像所選對象"
-
-msgid "Along Y axis"
-msgstr "沿 Y 軸"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "沿 Y 軸鏡像所選對象"
-
-msgid "Along Z axis"
-msgstr "沿 Z 軸"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "沿 Z 軸鏡像所選對象"
-
-msgid "Mirror"
-msgstr "鏡像"
-
-msgid "Mirror the selected object"
-msgstr "鏡像所選對象"
-
-msgid "To objects"
-msgstr "拆分到對象"
-
-msgid "Split the selected object into individual objects"
-msgstr "將所選對象拆分爲單個對象"
-
-msgid "To parts"
-msgstr "到零件"
-
 msgid "Split the selected object into individual sub-parts"
 msgstr "將所選對象拆分爲各個子部件"
-
-msgid "Split the selected object"
-msgstr "拆分所選對象"
 
 msgid "Optimize the rotation of the object for better print results."
 msgstr "優化對象的旋轉, 以獲得更好的列印效果。"
@@ -6039,9 +6045,6 @@ msgstr "關閉(&O)"
 
 msgid "Class not registered."
 msgstr "類別未註冊。"
-
-msgid "Clear"
-msgstr "清除"
 
 msgid "Clear the log contents"
 msgstr "清除日誌內容"
@@ -10434,9 +10437,6 @@ msgstr "擠出寬度"
 msgid "Cylinder"
 msgstr "圓柱體"
 
-msgid "Slab"
-msgstr "板坯"
-
 msgid "Generic"
 msgstr "通用"
 
@@ -10757,3 +10757,6334 @@ msgid ""
 "tuning hole sizes."
 msgstr ""
 "該物體將以指定值（負=往內，正=往外）變大/收縮。對於精確調節孔洞尺寸可能有用。"
+
+msgid "Ironing"
+msgstr "熨平表面"
+
+msgid ""
+"Cannot calculate extrusion width for %1%: Variable \"%2%\" not accessible."
+msgstr "無法計算 %1% 的擠出寬度：無法存取變數 \"%2%\"。"
+
+msgid ""
+"The selected 3mf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "所選 3mf 檔案已使用較新版本的 %1% 保存，並且不相容。"
+
+msgid ""
+"The selected 3MF contains FDM supports painted object using a newer version "
+"of PrusaSlicer and is not compatible."
+msgstr ""
+"所選 3MF 包含 FDM 支援使用較新版本的 PrusaSlicer 繪製的模型並且不相容。"
+
+msgid ""
+"The selected 3MF contains seam painted object using a newer version of "
+"PrusaSlicer and is not compatible."
+msgstr "所選 3MF 包含使用較新版本 PrusaSlicer 的接縫繪製模型，並且不相容。"
+
+msgid ""
+"The selected 3MF contains multi-material painted object using a newer "
+"version of PrusaSlicer and is not compatible."
+msgstr "所選 3MF 包含使用更新版本的 PrusaSlicer 的多材料繪製模型，並且不相容。"
+
+msgid ""
+"The selected amf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "所選的 amf 檔案已使用較新版本的 %1% 保存並且不相容。"
+
+msgid ""
+"Post-processing script %1% failed.\n"
+"\n"
+"The post-processing script is expected to change the G-code file %2% in "
+"place, but the G-code file was deleted and likely saved under a new name.\n"
+"Please adjust the post-processing script to change the G-code in place and "
+"consult the manual on how to optionally rename the post-processed G-code "
+"file.\n"
+msgstr ""
+"後處理腳本 %1% 失敗。\n"
+"\n"
+"後處理腳本預計會更改 G-code檔案 %2%，但 G-code檔案已被刪除並可能以新名稱保"
+"存。\n"
+"請調整後處理腳本以更改 G-code，並查閱手冊以了解如何有選擇地重命名後處理的 G-"
+"code檔案。\n"
+
+msgid "There is an object with no extrusions in the first layer."
+msgstr "第一層有一個沒有擠出的模型。"
+
+msgid "Empty layer between %1% and %2%."
+msgstr "%1% 和 %2% 之間的空層。"
+
+msgid "(Some lines not shown)"
+msgstr "（部分的線未顯示）"
+
+msgid "Object name: %1%"
+msgstr "模型名稱：%1%"
+
+msgid ""
+"Make sure the object is printable. This is usually caused by negligibly "
+"small extrusions or by a faulty model. Try to repair the model or change its "
+"orientation on the bed."
+msgstr ""
+"請確保模型是可打印的。這通常是由容易忽略的小擠壓或錯誤之所模型引起的。請嘗試"
+"修復模型或改變其在載台上的方向。"
+
+msgid "Color Change G-code"
+msgstr "顏色變化 G-code"
+
+msgid "Pause Print G-code"
+msgstr "暫停打印 G-code"
+
+msgid "Template Custom G-code"
+msgstr "自定義範本 G-code"
+
+msgid "Filament Start G-code"
+msgstr "線材的啟動 G-code"
+
+msgid "Filament End G-code"
+msgstr "線材的結束 G-code"
+
+msgid "In the custom G-code were found reserved keywords:"
+msgstr "在自定義 G-code中發現了保留關鍵字："
+
+msgid ""
+"This may cause problems in g-code visualization and printing time estimation."
+msgstr "這可能會導致 G-code 可視化和打印時間的估計出現問題。"
+
+msgid "No extrusions were generated for objects."
+msgstr "沒有為模型產生擠壓。"
+
+msgid ""
+"Your print is very close to the priming regions. Make sure there is no "
+"collision."
+msgstr "您的打印件非常接近打底的區域。請確保沒有碰到。"
+
+msgid ""
+"Only a single object may be printed at a time in Spiral Vase mode. Either "
+"remove all but the last object, or enable sequential mode by "
+"\"complete_objects\"."
+msgstr ""
+"在螺旋花瓶模式下一次只能打印一個模型。除非刪除除最後一個模型之外的所有模型，"
+"或者經由“complete_objects”啟用順序模式。"
+
+msgid ""
+"The wipe tower is only supported if all extruders have the same nozzle "
+"diameter and use filaments of the same diameter."
+msgstr ""
+"只有在所有擠出機具有相同的噴嘴直徑並使用相同直徑的打印材料時，才支援擦拭塔。"
+
+msgid ""
+"The Wipe Tower currently does not support volumetric E (use_volumetric_e=0)."
+msgstr "擦拭塔目前不支援容積率 E (use_volumetric_e=0)。"
+
+msgid ""
+"The Wipe Tower is currently not supported for multimaterial sequential "
+"prints."
+msgstr "多材料順序打印目前不支援擦拭塔。"
+
+msgid ""
+"The Wipe Tower is only supported for multiple objects if they have equal "
+"layer heights"
+msgstr "只有在多個模型具有相同的層高時才支援擦拭塔"
+
+msgid ""
+"The Wipe tower is only supported if all objects have the same variable layer "
+"height"
+msgstr "只有在所有模型具有相同的可變層高度時才支援擦拭塔"
+
+msgid "%1%=%2% mm is too low to be printable at a layer height %3% mm"
+msgstr "%1%=%2% mm太低，無法在層高 %3% mm 處打印"
+
+msgid "Excessive %1%=%2% mm to be printable with a nozzle diameter %3% mm"
+msgstr "過大的 %1%=%2% mm 可打印噴嘴直徑為 %3% mm"
+
+msgid ""
+"Relative extruder addressing requires resetting the extruder position at "
+"each layer to prevent loss of floating point accuracy. Add \"G92 E0\" to "
+"layer_gcode."
+msgstr ""
+"相對擠出機定址需要在每一層重置擠出機位置，以防止浮點精度損失。請將“G92 E0”添"
+"加到 layer_gcode。"
+
+msgid ""
+"\"G92 E0\" was found in before_layer_gcode, which is incompatible with "
+"absolute extruder addressing."
+msgstr "在 before_layer_gcode 中發現“G92 E0”，它與絕對擠出機定址不相容。"
+
+msgid ""
+"\"G92 E0\" was found in layer_gcode, which is incompatible with absolute "
+"extruder addressing."
+msgstr "在 layer_gcode 中發現“G92 E0”，它與絕對擠出機定址不相容。"
+
+msgid "Generating skirt and brim"
+msgstr "生成側裙和帽緣"
+
+msgid "Exporting G-code"
+msgstr "匯出 G-code"
+
+msgid "Generating G-code"
+msgstr "生成 G-code"
+
+msgid "Bed custom texture"
+msgstr "自定義載台紋理"
+
+msgid "Bed custom model"
+msgstr "自定義 G-code"
+
+msgid "G-code thumbnails"
+msgstr "G-code 縮圖"
+
+msgid "Format of G-code thumbnails"
+msgstr "G-code 縮圖的格式"
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr "G-code 縮圖的格式：PNG 品質最佳，JPG 檔案最小，QOI 最低記憶體韌體"
+
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field should contain "
+"the hostname, IP address or URL of the printer host instance. Print host "
+"behind HAProxy with basic auth enabled can be accessed by putting the user "
+"name and password into the URL in the following format: https://username:"
+"password@your-octopi-address/"
+msgstr ""
+"PrusaSlicer 可以將 G-code 檔案上傳到打印機主機。整個字串應包含打印機主機實際"
+"的主機名稱、IP 位址或 URL。啟用基本身份驗證的 HAProxy 背後的打印主機可以經由"
+"將使用者名稱和密碼按以下格式輸入 URL 來存取：https://username:password@your-"
+"octopi-address/"
+
+msgid "Name of the printer"
+msgstr "打印機名稱"
+
+msgid "HTTPS CA File"
+msgstr "HTTPS CA 檔案"
+
+msgid ""
+"Custom CA certificate file can be specified for HTTPS OctoPrint connections, "
+"in crt/pem format. If left blank, the default OS CA certificate repository "
+"is used."
+msgstr ""
+"可以為 HTTPS OctoPrint 連接指定自定義 CA 證書檔案，格式為 crt/pem。如果留白，"
+"則使用預設的 OS CA 證書儲存庫。"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Ignore HTTPS certificate revocation checks"
+msgstr "忽略 HTTPS 證書吊撤檢查"
+
+msgid ""
+"Ignore HTTPS certificate revocation checks in case of missing or offline "
+"distribution points. One may want to enable this option for self signed "
+"certificates if connection fails."
+msgstr ""
+"如果分送點遺失或離線，則忽略 HTTPS 證書撤銷檢查。若連接失敗，可能需要為自簽認"
+"證啟用此選項。"
+
+msgid "Printer preset names"
+msgstr "打印機預設名稱"
+
+msgid "Names of presets related to the physical printer"
+msgstr "與實體打印機相關的預設名稱"
+
+msgid "Authorization Type"
+msgstr "授權類型"
+
+msgid "API key"
+msgstr "API 金鑰"
+
+msgid "HTTP digest"
+msgstr "HTTP摘要"
+
+msgid "Avoid crossing perimeters - Max detour length"
+msgstr "避免越過邊緣 - 最遠的繞過長度"
+
+msgid ""
+"The maximum detour length for avoid crossing perimeters. If the detour is "
+"longer than this value, avoid crossing perimeters is not applied for this "
+"travel path. Detour length could be specified either as an absolute value or "
+"as percentage (for example 50%) of a direct travel path."
+msgstr ""
+"避免穿越邊緣的最遠繞過長度。如果繞過的距離超過此值，則避免穿越邊緣功能不適用"
+"於此路徑。繞行長度可以指定為絕對值或沒有列印時的移動之百分比（例如 50%）。"
+
+msgid "mm or % (zero to disable)"
+msgstr "mm或百分比(0為禁用)"
+
+msgid ""
+"The number of bottom solid layers is increased above bottom_solid_layers if "
+"necessary to satisfy minimum thickness of bottom shell."
+msgstr ""
+"如有必要，底部實體層的數量會增加到 bottom_solid_layers 以上，以滿足底殼的最小"
+"厚度。"
+
+msgid "Minimum bottom shell thickness"
+msgstr "最小底殼厚度"
+
+msgid ""
+"The horizontal width of the brim that will be printed around each object on "
+"the first layer. When raft is used, no brim is generated (use "
+"raft_first_layer_expansion)."
+msgstr ""
+"在第一層上的每個模型周圍打印的邊緣之水平寬度。使用棧板時，不會生成帽邊（使用 "
+"raft_first_layer_expansion）。"
+
+msgid "Brim type"
+msgstr "帽邊類型"
+
+msgid ""
+"The places where the brim will be printed around each object on the first "
+"layer."
+msgstr "將要在每個模型的第一層周圍打印帽邊的位置。"
+
+msgid "No brim"
+msgstr "沒有帽邊"
+
+msgid "Outer brim only"
+msgstr "僅限外側帽邊"
+
+msgid "Inner brim only"
+msgstr "僅限內側帽邊"
+
+msgid "Outer and inner brim"
+msgstr "外側與內側帽邊"
+
+msgid "Brim separation gap"
+msgstr "帽邊分隔間隙"
+
+msgid ""
+"Offset of brim from the printed object. The offset is applied after the "
+"elephant foot compensation."
+msgstr "打印模型的帽邊偏移量。在象腳補償之後使用偏移量。"
+
+msgid "Heights at which a filament change is to occur."
+msgstr "產生線材變化的高度。"
+
+msgid ""
+"This end procedure is inserted at the end of the output file. Note that you "
+"can use placeholder variables for all PrusaSlicer settings."
+msgstr ""
+"這個結束過程將會插入到輸出檔案的末端。請注意，您可以為所有 PrusaSlicer 設定使"
+"用佔位符號變數。"
+
+msgid ""
+"This end procedure is inserted at the end of the output file, before the "
+"printer end gcode (and before any toolchange from this filament in case of "
+"multimaterial printers). Note that you can use placeholder variables for all "
+"PrusaSlicer settings. If you have multiple extruders, the gcode is processed "
+"in extruder order."
+msgstr ""
+"這個結束過程會被插入到輸出檔案的末端，在打印機結束 gcode 之前（在多材料打印機"
+"的情況下，在從這個線材改變到任何工具之前）。請注意，您可以為所有 PrusaSlicer "
+"設定使用佔位符號變數。如果您有多個擠出機，則 gcode 將會按照擠出機順序處理。"
+
+msgid "Monotonic"
+msgstr "單調"
+
+msgid "Aligned Rectilinear"
+msgstr "對齊直線"
+
+msgid "Speed used for loading the filament on the wipe tower."
+msgstr "用於將線材上載到擦拭塔上的速度。"
+
+msgid "Speed used at the very beginning of loading phase."
+msgstr "上料階段開始時使用的速度。"
+
+msgid ""
+"Speed used for unloading the filament on the wipe tower (does not affect  "
+"initial part of unloading just after ramming)."
+msgstr ""
+"用於在擦拭塔上卸載線材的速度（這個不會影響剛衝壓擠出後卸載的最初部分）。"
+
+msgid ""
+"Speed used for unloading the tip of the filament immediately after ramming."
+msgstr "用於在衝壓擠出後立即卸載線材尖端的速度。"
+
+msgid ""
+"Time to wait after the filament is unloaded. May help to get reliable "
+"toolchanges with flexible materials that may need more time to shrink to "
+"original dimensions."
+msgstr ""
+"線材卸料後的等待時間。可能有助於在需要更多時間收縮到原始尺寸的柔性材料上以獲"
+"得可靠的工具替換。"
+
+msgid "Cooling moves are gradually accelerating beginning at this speed."
+msgstr "從這個速度開始，冷卻動作逐漸加速。"
+
+msgid "Cooling moves are gradually accelerating towards this speed."
+msgstr "降溫動作正逐漸朝著這個設定加速。"
+
+msgid "Spool weight"
+msgstr "整軸線的重量"
+
+msgid ""
+"Enter weight of the empty filament spool. One may weigh a partially consumed "
+"filament spool before printing and one may compare the measured weight with "
+"the calculated weight of the filament with the spool to find out whether the "
+"amount of filament on the spool is sufficient to finish the print."
+msgstr ""
+"輸入空線軸的重量。可以在打印前秤量已消耗一部份線材的線軸之重量，並且可以將所"
+"測量的重量與線軸的線材重量進行比對，以查明線軸上的線材餘量是否足以完成打印。"
+
+msgid "(Unknown)"
+msgstr "(未知)"
+
+msgid "Adaptive Cubic"
+msgstr "適應立方體"
+
+msgid "Support Cubic"
+msgstr "支撐立方體"
+
+msgid "Lightning"
+msgstr "閃電"
+
+msgid "First object layer over raft interface"
+msgstr "筏板介面上的第一個模型層"
+
+msgid ""
+"This is the acceleration your printer will use for first layer of object "
+"above raft interface. Set zero to disable acceleration control for first "
+"layer of object above raft interface."
+msgstr ""
+"這是您的打印機將用於筏板介面上方第一層模型的加速度。設定為零以禁用筏板介面上"
+"方第一層模型的加速度控制。"
+
+msgid "First layer bed temperature"
+msgstr "第一層時的載台溫度"
+
+msgid ""
+"When printing with very low layer heights, you might still want to print a "
+"thicker bottom layer to improve adhesion and tolerance for non perfect build "
+"plates."
+msgstr ""
+"當使用非常低的層高進行打印時，您可能仍希望打印較厚的底層以提高非完美底板的附"
+"著力和公差。"
+
+msgid "Speed of object first layer over raft interface"
+msgstr "模型第一層在筏板介面上的速度"
+
+msgid ""
+"If expressed as absolute value in mm/s, this speed will be applied to all "
+"the print moves of the first object layer above raft interface, regardless "
+"of their type. If expressed as a percentage (for example: 40%) it will scale "
+"the default speeds."
+msgstr ""
+"如果以 mm/s 的絕對值表示，則此速度將應用於筏板介面上方第一個模型層的所有打印"
+"移動，無論其打印類型如何。如果以百分比表示（例如：40%），它將縮放預設速度。"
+
+msgid "First layer nozzle temperature"
+msgstr "第一層噴嘴溫度"
+
+msgid ""
+"Nozzle temperature for the first layer. If you want to control temperature "
+"manually during print, set this to zero to disable temperature control "
+"commands in the output G-code."
+msgstr ""
+"第一層的噴嘴溫度。如果要在打印期間手動控制溫度，請將此設定為零以禁用輸出 G-"
+"code 中的溫度控制命令。"
+
+msgid "Full fan speed at layer"
+msgstr "風扇以全速使用在打印層上"
+
+msgid ""
+"Fan speed will be ramped up linearly from zero at layer "
+"\"disable_fan_first_layers\" to maximum at layer \"full_fan_speed_layer\". "
+"\"full_fan_speed_layer\" will be ignored if lower than "
+"\"disable_fan_first_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
+msgstr ""
+"風扇速度將從“disable_fan_first_layers”層的零然後線性上升"
+"到“full_fan_speed_layer”層的最高值。如果低"
+"於“disable_fan_first_layers”，“full_fan_speed_layer”將被忽略，在這種情況下，"
+"風扇將在“disable_fan_first_layers”+ 1 層以最高允許的速度運行。"
+
+msgid "Fuzzy Skin"
+msgstr "茸毛表面"
+
+msgid "Fuzzy skin type."
+msgstr "模糊表面的類型。"
+
+msgid "Outside walls"
+msgstr "外牆"
+
+msgid "All walls"
+msgstr "所有的牆"
+
+msgid "Fuzzy skin thickness"
+msgstr "模糊表面的厚度"
+
+msgid ""
+"The maximum distance that each skin point can be offset (both ways), "
+"measured perpendicular to the perimeter wall."
+msgstr "每個表面點可以偏移（雙向）的最大距離，這個是垂直於邊緣牆之測量值。"
+
+msgid "Fuzzy skin point distance"
+msgstr "模糊表面的點距"
+
+msgid ""
+"Perimeters will be split into multiple segments by inserting Fuzzy skin "
+"points. Lowering the Fuzzy skin point distance will increase the number of "
+"randomly offset points on the perimeter wall."
+msgstr ""
+"經由插入模糊表面點，邊緣將被分成多個部分。降低模糊表面點距離將增加邊緣牆上隨"
+"機偏移點的數量。"
+
+msgid ""
+"Enables filling of gaps between perimeters and between the inner most "
+"perimeters and infill."
+msgstr "能夠填充邊緣間和最內部邊緣與填充之間的小孔隙。"
+
+msgid ""
+"Some G/M-code commands, including temperature control and others, are not "
+"universal. Set this option to your printer's firmware to get a compatible "
+"output. The \"No extrusion\" flavor prevents PrusaSlicer from exporting any "
+"extrusion value at all."
+msgstr ""
+"有一些 G/M -code 的命令，包括溫度控制與其他命令之間並不能通用。您可以將此選項"
+"設定為打印機的韌體以獲得相容的輸出。 “無擠出”的形式將阻止 PrusaSlicer 匯出任"
+"何帶有線材擠出值的內容。"
+
+msgid "Label objects"
+msgstr "標籤模型"
+
+msgid "Disabled"
+msgstr "停用"
+
+msgid "G-code substitutions"
+msgstr "G-code 替換"
+
+msgid "Find / replace patterns in G-code lines and substitute them."
+msgstr "在 G-code 行中尋找/替換模式並替換它們。"
+
+msgid "Length of the infill anchor"
+msgstr "填充錨定的長度"
+
+msgid ""
+"Connect an infill line to an internal perimeter with a short segment of an "
+"additional perimeter. If expressed as percentage (example: 15%) it is "
+"calculated over infill extrusion width. PrusaSlicer tries to connect two "
+"close infill lines to a short perimeter segment. If no such perimeter "
+"segment shorter than infill_anchor_max is found, the infill line is "
+"connected to a perimeter segment at just one side and the length of the "
+"perimeter segment taken is limited to this parameter, but no longer than "
+"anchor_length_max. Set this parameter to zero to disable anchoring "
+"perimeters connected to a single infill line."
+msgstr ""
+"將填充線連接到內部邊緣並有額外邊緣的短打印段。如果以百分比表示（例如：15%）它"
+"是經由填充擠出寬度計算的。PrusaSlicer 嘗試將兩條緊密填充線連接到短邊緣段。如"
+"果找不到短於 infill_anchor_max 的此類邊緣段，則填充線僅在一側連接到邊緣段，所"
+"取得的邊緣段的長度僅限於此參數，但不超過anchor_length_max的設定值。您可以將此"
+"參數設定為零，以禁用連接到單個填充線的錨定邊緣。"
+
+msgid "0 (no open anchors)"
+msgstr "0（無開放錨定）"
+
+msgid "1 mm"
+msgstr "1 mm"
+
+msgid "2 mm"
+msgstr "2 mm"
+
+msgid "5 mm"
+msgstr "5 mm"
+
+msgid "10 mm"
+msgstr "10 mm"
+
+msgid "1000 (unlimited)"
+msgstr "1000 (unlimited)"
+
+msgid "Maximum length of the infill anchor"
+msgstr "填充錨定的最大長度"
+
+msgid ""
+"Connect an infill line to an internal perimeter with a short segment of an "
+"additional perimeter. If expressed as percentage (example: 15%) it is "
+"calculated over infill extrusion width. PrusaSlicer tries to connect two "
+"close infill lines to a short perimeter segment. If no such perimeter "
+"segment shorter than this parameter is found, the infill line is connected "
+"to a perimeter segment at just one side and the length of the perimeter "
+"segment taken is limited to infill_anchor, but no longer than this "
+"parameter. Set this parameter to zero to disable anchoring."
+msgstr ""
+"將填充線連接到內部邊緣，並附有額外邊緣的短段。如果以百分比表示（例如：15%）它"
+"是經由填充擠出寬度計算的。PrusaSlicer 嘗試將兩條緊密填充線連接到短邊緣段。如"
+"果找不到比此參數短的此類邊緣段，則填充線僅在一側連接到邊緣段，所拍攝的邊緣段"
+"的長度限制為infill_anchor，但不超過此參數。將此參數設定為零以禁用錨定。"
+
+msgid "0 (not anchored)"
+msgstr "0（無錨定）"
+
+msgid "Maximum width of a segmented region"
+msgstr "分隔區域的最大寬度"
+
+msgid "Maximum width of a segmented region. Zero disables this feature."
+msgstr "分隔區域的最大寬度。零表示禁用此功能。"
+
+msgid "Enable ironing"
+msgstr "啟用熨平模式"
+
+msgid ""
+"Enable ironing of the top layers with the hot print head for smooth surface"
+msgstr "使用加熱打印頭熨平頂層以獲得光滑的表面"
+
+msgid "Ironing Type"
+msgstr "熨平類型"
+
+msgid "All top surfaces"
+msgstr "所有頂面"
+
+msgid "Topmost surface only"
+msgstr "僅最頂層表面"
+
+msgid "All solid surfaces"
+msgstr "所有實體表面"
+
+msgid "Flow rate"
+msgstr "流量"
+
+msgid "Percent of a flow rate relative to object's normal layer height."
+msgstr "相對於模型之正常層高度的流速百分比。"
+
+msgid "Spacing between ironing passes"
+msgstr "熨平次數的間距"
+
+msgid "Distance between ironing lines"
+msgstr "熨平線與線間的距離"
+
+msgid "Supports stealth mode"
+msgstr "支援靜音模式"
+
+msgid "The firmware supports stealth mode"
+msgstr "韌體支援靜音模式"
+
+msgid "How to apply limits"
+msgstr "如何應用限制"
+
+msgid "Purpose of Machine Limits"
+msgstr "機器限制的目的"
+
+msgid "How to apply the Machine Limits"
+msgstr "如何應用機器限制"
+
+msgid "Emit to G-code"
+msgstr "傳送到 G-code"
+
+msgid "Use for time estimate"
+msgstr "用於時間估算"
+
+msgid "Ignore"
+msgstr "忽略"
+
+msgid "Maximum feedrate X"
+msgstr "最大進給率 X"
+
+msgid "Maximum feedrate Y"
+msgstr "最大進給率 Y"
+
+msgid "Maximum feedrate Z"
+msgstr "最大進給率 Z"
+
+msgid "Maximum feedrate E"
+msgstr "最大進給率 E"
+
+msgid "Maximum feedrate of the X axis"
+msgstr "X 軸最大進給速度"
+
+msgid "Maximum feedrate of the Y axis"
+msgstr "Y 軸最大進給速度"
+
+msgid "Maximum feedrate of the Z axis"
+msgstr "Z 軸最大進給速度"
+
+msgid "Maximum feedrate of the E axis"
+msgstr "E 軸最大進給速度"
+
+msgid "Maximum acceleration X"
+msgstr "最大加速度 X"
+
+msgid "Maximum acceleration Y"
+msgstr "最大加速度 Y"
+
+msgid "Maximum acceleration Z"
+msgstr "最大加速度 Z"
+
+msgid "Maximum acceleration E"
+msgstr "最大加速度 E"
+
+msgid "Maximum acceleration of the X axis"
+msgstr "X 軸最大加速度"
+
+msgid "Maximum acceleration of the Y axis"
+msgstr "Y 軸最大加速度"
+
+msgid "Maximum acceleration of the Z axis"
+msgstr "Z 軸最大加速度"
+
+msgid "Maximum acceleration of the E axis"
+msgstr "E 軸最大加速度"
+
+msgid "Maximum jerk X"
+msgstr "最大抖動 X"
+
+msgid "Maximum jerk Y"
+msgstr "最大抖動 Y"
+
+msgid "Maximum jerk Z"
+msgstr "最大抖動 Z"
+
+msgid "Maximum jerk E"
+msgstr "最大抖動 E"
+
+msgid "Maximum jerk of the X axis"
+msgstr "X 軸的最大抖動速度"
+
+msgid "Maximum jerk of the Y axis"
+msgstr "Y 軸的最大抖動速度"
+
+msgid "Maximum jerk of the Z axis"
+msgstr "Z 軸的最大抖動速度"
+
+msgid "Maximum jerk of the E axis"
+msgstr "E 軸的最大抖動速度"
+
+msgid "Minimum feedrate when extruding (M205 S)"
+msgstr "擠出時的最小進給率 (M205 S)"
+
+msgid "Minimum travel feedrate (M205 T)"
+msgstr "移動時的最小進給率 (M205 T)"
+
+msgid "Maximum acceleration for travel moves"
+msgstr "移動時的最大加速度"
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate for a transition from lower speed to higher speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s "
+"(feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"這個實驗設定用於限制擠出速率的變化速度，以實現從較低速度到較高速度的轉變。 "
+"1.8 mm³/s² 的值確保擠出速率從 1.8 mm³/s（0.45 mm 擠出寬度，0.2 mm 擠出高度，"
+"進給速度 20 mm/s）變為 5.4 mm³/s（進給速度 60 mm/s）至少需要 2 秒。"
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
+"(feedrate 20 mm/s) will take at least 2 seconds."
+msgstr ""
+"這個實驗設定用於限制擠出速率的變化速度，以實現從高速到低速的轉變。 1.8 mm³/"
+"s² 的值確保擠出速率從 5.4 mm³/s（0.45 mm 擠出寬度，0.2 mm 擠出高度，進給速度 "
+"60 mm/s）變為 1.8 mm³/s（進給速度 20 mm/s）至少需要 2 秒。"
+
+msgid ""
+"Distance of the extruder tip from the position where the filament is parked "
+"when unloaded. This should match the value in printer firmware."
+msgstr ""
+"擠出機尖端與卸載線材時停放位置的距離。這必須與打印機韌體中的設定值配合。"
+
+msgid ""
+"When set to zero, the distance the filament is moved from parking position "
+"during load is exactly the same as it was moved back during unload. When "
+"positive, it is loaded further,  if negative, the loading move is shorter "
+"than unloading."
+msgstr ""
+"當設定為零時，線材於匯入過程中從停留位置移出的距離與卸料期間移回的距離完全相"
+"同。當為正數時他會被進一步加載，若為負數則加載的移動量比卸載時短。"
+
+msgid ""
+"This is the acceleration your printer will use for perimeters. Set zero to "
+"disable acceleration control for perimeters."
+msgstr "這是打印機將用於邊緣打印的加速度。設定為零以禁用邊緣打印的加速度控制。"
+
+msgid "Raft contact Z distance"
+msgstr "筏板接觸Z軸的距離"
+
+msgid ""
+"The vertical distance between object and raft. Ignored for soluble interface."
+msgstr "模型和筏板之間的垂直距離。請忽略可溶性介面。"
+
+msgid "Raft expansion"
+msgstr "擴張筏板"
+
+msgid "Expansion of the raft in XY plane for better stability."
+msgstr "在 XY 平面中擴張筏板以獲得更好的穩定性。"
+
+msgid "First layer density"
+msgstr "第一層密度"
+
+msgid "Density of the first raft or support layer."
+msgstr "第一筏板或支撐層的密度。"
+
+msgid "First layer expansion"
+msgstr "第一層的擴張"
+
+msgid ""
+"Expansion of the first raft or support layer to improve adhesion to print "
+"bed."
+msgstr "擴張第一層或支撐層以提高對模型對載台的附著力。"
+
+msgid "Slice resolution"
+msgstr "切片解析度"
+
+msgid "G-code resolution"
+msgstr "G-code 解析度"
+
+msgid ""
+"Maximum deviation of exported G-code paths from their full resolution "
+"counterparts. Very high resolution G-code requires huge amount of RAM to "
+"slice and preview, also a 3D printer may stutter not being able to process a "
+"high resolution G-code in a timely manner. On the other hand, a low "
+"resolution G-code will produce a low poly effect and because the G-code "
+"reduction is performed at each layer independently, visible artifacts may be "
+"produced."
+msgstr ""
+"匯出的 G-code 路徑與其超高解析度對應路徑的最大偏差。非常高解析度的 G-code 需"
+"要大量的 RAM 來切片和預覽，而且 3D 打印機可能無法及時處理高解析度的 G-code 。"
+"另一方面，低解析度的 G-code 會產生低多邊形效果，並且由於 G-code 減少是在每一"
+"層獨立執行的，因此可能會產生可見的虛像。"
+
+msgid "Distance from brim/object"
+msgstr "與帽邊/模型的距離"
+
+msgid ""
+"Distance between skirt and brim (when draft shield is not used) or objects."
+msgstr "裙邊與帽邊（在沒有使用防風罩時）或模型之間的距離。"
+
+msgid "Height of skirt expressed in layers."
+msgstr "裙邊的高度以層數表示。"
+
+msgid "Draft shield"
+msgstr "防風罩"
+
+msgid ""
+"With draft shield active, the skirt will be printed skirt_distance from the "
+"object, possibly intersecting brim.\n"
+"Enabled = skirt is as tall as the highest printed object.\n"
+"Limited = skirt is as tall as specified by skirt_height.\n"
+"This is useful to protect an ABS or ASA print from warping and detaching "
+"from print bed due to wind draft."
+msgstr ""
+"在防風罩啟用的情況下，裙邊將被打印為距離模型 skirt_distance，這可能會與邊緣相"
+"交。\n"
+"啟用 = 裙邊與最高的打印模型一樣高。\n"
+"限制 = 裙邊與 skirt_height 指定的一樣高。\n"
+"這有助於防止 ABS 或 ASA 這類材質的打印件因風力的冷卻而翹曲和從載台上分開。"
+
+msgid "Limited"
+msgstr "有限"
+
+msgid "Enabled"
+msgstr "啟用"
+
+msgid "Minimum thickness of a top / bottom shell"
+msgstr "頂殼/底殼的最小厚度"
+
+msgid ""
+"This feature will raise Z gradually while printing a single-walled object in "
+"order to remove any visible seam. This option requires a single perimeter, "
+"no infill, no top solid layers and no support material. You can still set "
+"any number of bottom solid layers as well as skirt/brim loops. It won't work "
+"when printing more than one single object."
+msgstr ""
+"此功能是在打印單面薄壁模型時逐漸升高 Z 軸，這樣可以去除任何可見的接縫。此選項"
+"需要有單一邊緣、沒有填充、無頂部實體層和無支撐材料。您仍然可以設定任意數量的"
+"底部純色層以及裙邊/帽邊。當打印多個模型時，這個設定將沒有作用。"
+
+msgid ""
+"This start procedure is inserted at the beginning, after any printer start "
+"gcode (and after any toolchange to this filament in case of multi-material "
+"printers). This is used to override settings for a specific filament. If "
+"PrusaSlicer detects M104, M109, M140 or M190 in your custom codes, such "
+"commands will not be prepended automatically so you're free to customize the "
+"order of heating commands and other custom actions. Note that you can use "
+"placeholder variables for all PrusaSlicer settings, so you can put a \"M109 "
+"S[first_layer_temperature]\" command wherever you want. If you have multiple "
+"extruders, the gcode is processed in extruder order."
+msgstr ""
+"這個程序在開始啟動時插入，在任何打印機啟動 gcode 之後（在多材料打印機的情況"
+"下，在對該線材進行任何工具更改之後）。這用於覆寫特定線材的設定。如果 "
+"PrusaSlicer 在您的自定義代碼中檢測到 M104、M109、M140 或 M190，這些命令將不會"
+"自動添加到前面，因此您可以自由自定義加熱命令和其他自定義操作的順序。請注意，"
+"您可以為所有 PrusaSlicer 設定使用佔位符號變數，也因此您可以在任何需要的地方放"
+"置“M109 S[first_layer_temperature]”這個命令。若您有多個擠出機，則 gcode 按擠"
+"出機順序處理。"
+
+msgid "Color change G-code"
+msgstr "顏色變更 G-code"
+
+msgid "This G-code will be used as a code for the color change"
+msgstr "此 G-code將用作顏色更改的代碼"
+
+msgid "This G-code will be used as a code for the pause print"
+msgstr "此 G-code碼將用作暫停打印的代碼"
+
+msgid "This G-code will be used as a custom code"
+msgstr "此 G-code將用作自定義代碼"
+
+msgid "No sparse layers (EXPERIMENTAL)"
+msgstr "沒有稀疏層（實驗）"
+
+msgid ""
+"If enabled, the wipe tower will not be printed on layers with no "
+"toolchanges. On layers with a toolchange, extruder will travel downward to "
+"print the wipe tower. User is responsible for ensuring there is no collision "
+"with the print."
+msgstr ""
+"如果啟用此選項，則擦拭塔將不會打印在沒有工具變化的層上。而在更換工具的層上"
+"時，擠出機將向下移動以打印擦拭塔。使用者有責任確保噴嘴不與打印的模型發生碰"
+"撞。"
+
+msgid "Slicing Mode"
+msgstr "切片模式"
+
+msgid ""
+"Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
+"close all holes in the model."
+msgstr ""
+"對 3DLabPrint 飛機模型使用“奇數/偶數”。使用“封閉孔”以關閉模型中的所有孔。"
+
+msgid "Even-odd"
+msgstr "奇數-偶數"
+
+msgid "Close holes"
+msgstr "封閉孔"
+
+msgid "Top contact Z distance"
+msgstr "頂部接觸 Z 方向的距離"
+
+msgid "0 (soluble)"
+msgstr "0（可溶性材料）"
+
+msgid "0.1 (detachable)"
+msgstr "0.1（可拆除材料）"
+
+msgid "0.2 (detachable)"
+msgstr "0.2（可拆除材料）"
+
+msgid "Bottom contact Z distance"
+msgstr "底部接觸 Z 方向的距離"
+
+msgid ""
+"The vertical distance between the object top surface and the support "
+"material interface. If set to zero, support_material_contact_distance will "
+"be used for both top and bottom contact Z distances."
+msgstr ""
+"模型頂面與支撐材料介面之間的垂直距離。如果設定為零，"
+"support_material_contact_distance 將用於頂部和底部接觸的 Z 方向距離。"
+
+msgid "Same as top"
+msgstr "與頂部相同"
+
+msgid "Top interface layers"
+msgstr "頂層介面層"
+
+msgid "0 (off)"
+msgstr "0 (無)"
+
+msgid "1 (light)"
+msgstr "1 (輕薄)"
+
+msgid "2 (default)"
+msgstr "2 (預設)"
+
+msgid "3 (heavy)"
+msgstr "3 (厚重)"
+
+msgid "Bottom interface layers"
+msgstr "底部介面層"
+
+msgid ""
+"Number of interface layers to insert between the object(s) and support "
+"material. Set to -1 to use support_material_interface_layers"
+msgstr ""
+"在模型和支撐材料之間插入的介面層數。設定為 -1 以使用 "
+"support_material_interface_layers"
+
+msgid "Closing radius"
+msgstr "封閉半徑"
+
+msgid ""
+"For snug supports, the support regions will be merged using morphological "
+"closing operation. Gaps smaller than the closing radius will be filled in."
+msgstr ""
+"用於緊貼支撐，支撐區域將使用封閉的形態來進行合併。小於封閉半徑的間隙將會被填"
+"充。"
+
+msgid "Interface pattern"
+msgstr "介面花紋"
+
+msgid ""
+"Pattern used to generate support material interface. Default pattern for non-"
+"soluble support interface is Rectilinear, while default pattern for soluble "
+"support interface is Concentric."
+msgstr ""
+"用於生成支撐材料介面的花紋。不可溶支撐介面的預設模式是直線，而可溶支撐介面的"
+"預設模式是同心。"
+
+msgid ""
+"Style and shape of the support towers. Projecting the supports into a "
+"regular grid will create more stable supports, while snug support towers "
+"will save material and reduce object scarring."
+msgstr ""
+"支撐塔的樣式和形狀。將支撐投影成有規律的網格將會建立更穩定的支撐，而合適的支"
+"撐塔將節省材料並減少在模型上產生疤痕。"
+
+msgid "Snug"
+msgstr "合適的"
+
+msgid ""
+"Nozzle temperature for layers after the first one. Set this to zero to "
+"disable temperature control commands in the output G-code."
+msgstr ""
+"第一層之後的打印層之噴嘴溫度。將此設定為零以禁用輸出 G-code 中的溫度控制命"
+"令。"
+
+msgid "Nozzle temperature"
+msgstr "噴嘴溫度"
+
+msgid "Thick bridges"
+msgstr "橋接厚度"
+
+msgid ""
+"If enabled, bridges are more reliable, can bridge longer distances, but may "
+"look worse. If disabled, bridges look better but are reliable just for "
+"shorter bridged distances."
+msgstr ""
+"若啟用此選項，能讓橋接更可靠，可連接更遠的距離，但看起來可能更糟。禁用這個的"
+"話，網接看起來更好，但對較短的橋接距離效果比較好。"
+
+msgid ""
+"This custom code is inserted before every toolchange. Placeholder variables "
+"for all PrusaSlicer settings as well as {toolchange_z}, {previous_extruder} "
+"and {next_extruder} can be used. When a tool-changing command which changes "
+"to the correct extruder is included (such as T{next_extruder}), PrusaSlicer "
+"will emit no other such command. It is therefore possible to script custom "
+"behaviour both before and after the toolchange."
+msgstr ""
+"此自定義代碼在每次切換工具之前插入。可以使用所有 PrusaSlicer 設定的佔位符號變"
+"數以及 {toolchange_z}、{previous_extruder} 和 {next_extruder}。當包含更改為正"
+"確擠出機的更換工具命令（例如 T{next_extruder}）時，PrusaSlicer 將不會再發出此"
+"類命令。因此可以在工具更改之前和之後編寫自定義行為腳本。"
+
+msgid ""
+"The number of top solid layers is increased above top_solid_layers if "
+"necessary to satisfy minimum thickness of top shell. This is useful to "
+"prevent pillowing effect when printing with variable layer height."
+msgstr ""
+"如有必要的話，頂部實體層的數量會增加到 top_solid_layers 以上，以滿足頂部殼的"
+"最小厚度。這有助於在使用可變層高打印時防止出現枕頭效應。"
+
+msgid "Minimum top shell thickness"
+msgstr "最小頂殼厚度"
+
+msgid "Z travel"
+msgstr "Z 軸方向的移動"
+
+msgid ""
+"Speed for movements along the Z axis.\n"
+"When set to zero, the value is ignored and regular travel speed is used "
+"instead."
+msgstr ""
+"沿 Z 軸方向移動的速度。\n"
+"當設定為零時，其它的指定值將被忽略並使用正常的移動速度。"
+
+msgid ""
+"This vector saves required volumes to change from/to each tool used on the "
+"wipe tower. These values are used to simplify creation of the full purging "
+"volumes below."
+msgstr ""
+"該設計節省了從某處/到擦拭塔上使用的每個工具更改所需的體積。這些值用於簡化下面"
+"完整清潔量的建立。"
+
+msgid ""
+"This matrix describes volumes (in cubic milimetres) required to purge the "
+"new filament on the wipe tower for any given pair of tools."
+msgstr ""
+"這個矩陣描述了以任何指定的工具於新線材在擦拭塔上清潔時所需耗費的體積（以立方"
+"公釐為單位）。"
+
+msgid "Wipe tower brim width"
+msgstr "擦拭塔帽邊寬度"
+
+msgid "Wipe options"
+msgstr "擦拭選項"
+
+msgid ""
+"Purging after toolchange will be done inside this object's infills. This "
+"lowers the amount of waste but may result in longer print time  due to "
+"additional travel moves."
+msgstr ""
+"更換工具後的清潔將在此模型的填充內完成。這可減少線材浪費的長度，但也會因為額"
+"外的移動導致打印時間變得更長。"
+
+msgid "Maximal distance between supports on sparse infill sections."
+msgstr "稀疏填充支撐之間的最大距離。"
+
+msgid "Perimeter generator"
+msgstr "邊緣產生器類型"
+
+msgid ""
+"Classic perimeter generator produces perimeters with constant extrusion "
+"width and for very thin areas is used gap-fill. Arachne engine produces "
+"perimeters with variable extrusion width. This setting also affects the "
+"Concentric infill."
+msgstr ""
+"傳統模式的邊緣產生器在進行邊緣擠壓時使用恆定寬度的邊緣，並且在非常薄的區域會"
+"使用間隙填充。而蜘蛛模式邊緣產生器則會在擠出邊緣時生成具有可變擠出寬度的邊"
+"緣。此設定會影響同心方式的填充。"
+
+msgid "Classic"
+msgstr "傳統模式"
+
+msgid "Arachne"
+msgstr "蜘蛛模式"
+
+msgid "Perimeter transition length"
+msgstr "邊緣過渡的長度"
+
+msgid ""
+"When transitioning between different numbers of perimeters as the part "
+"becomes thinner, a certain amount of space is allotted to split or join the "
+"perimeter segments. If expressed as a percentage (for example 100%), it will "
+"be computed based on the nozzle diameter."
+msgstr ""
+"隨著零件變薄，在不同數量的邊緣之間過渡時，會分配一定量的空間來拆開或連成一"
+"段。如果以百分比表示（例如 100%），則將根據噴嘴直徑的百分比做計算。"
+
+msgid "Perimeter transitioning filter margin"
+msgstr "邊緣過渡過濾器的餘量"
+
+msgid ""
+"Prevent transitioning back and forth between one extra perimeter and one "
+"less. This margin extends the range of extrusion widths which follow to "
+"[Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. "
+"Increasing this margin reduces the number of transitions, which reduces the "
+"number of extrusion starts/stops and travel time. However, large extrusion "
+"width variation can lead to under- or overextrusion problems. If expressed "
+"as a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"防止在多一圈和少一圈之間來回轉換。這個邊距延展了擠壓寬度的範圍，該範圍依據 "
+"[最小邊緣寬度 - 邊距，2 * 最小邊緣寬度 + 邊距]。增加這個餘量可減少轉換的次"
+"數，從而減少擠出機開始/停止的次數和行進時間。然而較大的擠出寬度變化會導致擠出"
+"不足或過量擠出的問題。如果以百分比表示（例如 25%），則將根據噴嘴直徑之百分比"
+"計算。"
+
+msgid "Perimeter transitioning threshold angle"
+msgstr "邊緣過渡角度上限值"
+
+msgid ""
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
+msgstr ""
+"何時在偶數和奇數邊緣之間過渡建立。角度大於此設定的楔形不會有過渡，也不會在中"
+"心打印邊緣來填充剩餘空間。減少此設定會減少這些中心邊緣的數量和長度，但可能會"
+"留下間隙或過度的擠出。"
+
+msgid "Perimeter distribution count"
+msgstr "邊緣分佈計算"
+
+msgid ""
+"The number of perimeters, counted from the center, over which the variation "
+"needs to be spread. Lower values mean that the outer perimeters don't change "
+"in width."
+msgstr ""
+"邊緣的數量，從中心開始計算，需要在其上散佈變化。較低的值表示外邊緣的寬度不"
+"變。"
+
+msgid "Minimum feature size"
+msgstr "最小特徵尺寸"
+
+msgid ""
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum perimeter width. If expressed as "
+"a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"細薄特徵的最小厚度。設定後將不會打印比設定值更薄的模型特徵，而比最小特徵尺寸"
+"更厚的特徵將會被加寬到最小邊緣寬度。如果以百分比表示（例如 25%），則將根據噴"
+"嘴直徑的百分比計算。"
+
+msgid "Minimum perimeter width"
+msgstr "最小邊緣寬度"
+
+msgid ""
+"Width of the perimeter that will replace thin features (according to the "
+"Minimum feature size) of the model. If the Minimum perimeter width is "
+"thinner than the thickness of the feature, the perimeter will become as "
+"thick as the feature itself. If expressed as a percentage (for example 85%), "
+"it will be computed based on the nozzle diameter."
+msgstr ""
+"此設定將會更換模型的細薄特徵（根據最小特徵尺寸）的邊緣寬度。如果最小邊緣寬度"
+"小於特徵的厚度，則邊緣將變得與特徵本身一樣厚。如果以百分比表示（例如 85%），"
+"則將根據噴嘴直徑的百分比計算。"
+
+msgid "Pinhead front diameter"
+msgstr "釘頭前端的直徑"
+
+msgid "Head penetration"
+msgstr "釘頭部份穿透"
+
+msgid "Pinhead width"
+msgstr "釘頭寬度"
+
+msgid "Pillar diameter"
+msgstr "支撐柱直徑"
+
+msgid "Small pillar diameter percent"
+msgstr "小型支撐柱直徑百分比"
+
+msgid ""
+"The percentage of smaller pillars compared to the normal pillar diameter "
+"which are used in problematic areas where a normal pilla cannot fit."
+msgstr ""
+"與正常支撐柱直徑相比更小的支撐柱之百分比，用於普通支撐柱無法使用時有問題的區"
+"域。"
+
+msgid "Max bridges on a pillar"
+msgstr "支撐柱上的最大橋接"
+
+msgid ""
+"Maximum number of bridges that can be placed on a pillar. Bridges hold "
+"support point pinheads and connect to pillars as small branches."
+msgstr ""
+"一根支撐柱上可放置的最大橋接數。橋接支撐點釘頭互相連接以做為小分支的支柱。"
+
+msgid "Pillar connection mode"
+msgstr "支撐柱連接的方式"
+
+msgid ""
+"Controls the bridge type between two neighboring pillars. Can be zig-zag, "
+"cross (double zig-zag) or dynamic which will automatically switch between "
+"the first two depending on the distance of the two pillars."
+msgstr ""
+"控制兩個相鄰支撐柱之間的橋接類型。可以是鋸齒形、交叉（雙鋸齒形）或動態，若選"
+"用動態的話則是根據兩根柱子的距離在前述兩者之間自動切換。"
+
+msgid "Support base safety distance"
+msgstr "支撐柱底座安全距離"
+
+msgid ""
+"The minimum distance of the pillar base from the model in mm. Makes sense in "
+"zero elevation mode where a gap according to this parameter is inserted "
+"between the model and the pad."
+msgstr ""
+"支撐柱底座與模型的最小距離，以 mm 為單位。在零仰角模式下會有意義，他將會根據"
+"此設定參數在模型和底座之間插入間隙。"
+
+msgid ""
+"How much the supports should lift up the supported object. If \"Pad around "
+"object\" is enabled, this value is ignored."
+msgstr ""
+"支撐柱需將所支撐的模型抬起多少。若有啟用“圍繞模型填充”功能的話，則忽略此設定"
+"值。"
+
+msgid "Display horizontal mirroring"
+msgstr "顯示水平鏡像"
+
+msgid "Mirror horizontally"
+msgstr "水平鏡像"
+
+msgid "Enable horizontal mirroring of output images"
+msgstr "啟用水平鏡像圖片的輸出"
+
+msgid "Display vertical mirroring"
+msgstr "顯示垂直鏡像"
+
+msgid "Mirror vertically"
+msgstr "垂直鏡像"
+
+msgid "Enable vertical mirroring of output images"
+msgstr "啟用垂直鏡像圖片的輸出"
+
+msgid "High viscosity"
+msgstr "高黏度"
+
+msgid "Tilt for high viscosity resin"
+msgstr "高黏度樹脂的傾斜度"
+
+msgid "Time of the super slow tilt"
+msgstr "超慢的傾斜時間"
+
+msgid "Printer scaling correction in X axis"
+msgstr "打印機 X 軸方向的縮放校正"
+
+msgid "Printer scaling X axis correction"
+msgstr "打印機 X 軸方向的縮放校正"
+
+msgid "Printer scaling correction in Y axis"
+msgstr "打印機 Y 軸方向的縮放校正"
+
+msgid "Printer scaling Y axis correction"
+msgstr "打印機 Y 軸方向的縮放校正"
+
+msgid "Printer scaling correction in Z axis"
+msgstr "打印機 Z 軸方向的縮放校正"
+
+msgid "Printer scaling Z axis correction"
+msgstr "打印機 Z 軸方向的縮放校正"
+
+msgid "Elephant foot minimum width"
+msgstr "大象腳補償"
+
+msgid ""
+"Minimum width of features to maintain when doing elephant foot compensation."
+msgstr "進行大象腳補償時要保留的最小特徵寬度。"
+
+msgid ""
+"This will apply a gamma correction to the rasterized 2D polygons. A gamma "
+"value of zero means thresholding with the threshold in the middle. This "
+"behaviour eliminates antialiasing without losing holes in polygons."
+msgstr ""
+"這將對光柵化的 2D 多邊形使用伽瑪校正。伽馬值為零時表示其上限為中間值。此項設"
+"定是為了消除鋸齒而設計，但不會遺失多邊形中的孔洞。"
+
+msgid "SLA material type"
+msgstr "SLA 材料類型"
+
+msgid "Bottle volume"
+msgstr "樹脂瓶容量"
+
+msgid "ml"
+msgstr "ml"
+
+msgid "Bottle weight"
+msgstr "一瓶的重量"
+
+msgid "kg"
+msgstr "kg"
+
+msgid "g/ml"
+msgstr "g/ml"
+
+msgid "money/bottle"
+msgstr "價格/每瓶"
+
+msgid "Minimum exposure time"
+msgstr "最短曝光時間"
+
+msgid "Maximum exposure time"
+msgstr "最長曝光時間"
+
+msgid "Minimum initial exposure time"
+msgstr "最短的開始曝光時間"
+
+msgid "Maximum initial exposure time"
+msgstr "最長的開始曝光時間"
+
+msgid "Correction for expansion in X axis"
+msgstr "X 軸方向的膨脹校正"
+
+msgid "Correction for expansion in Y axis"
+msgstr "Y 軸方向的膨脹校正"
+
+msgid "Correction for expansion in Z axis"
+msgstr "Z 軸方向的膨脹校正"
+
+msgid ""
+"Defines the pad cavity depth. Set to zero to disable the cavity. Be careful "
+"when enabling this feature, as some resins may produce an extreme suction "
+"effect inside the cavity, which makes peeling the print off the vat foil "
+"difficult."
+msgstr ""
+"定義墊片中空深度。設定為零可以禁用中空。啟用此功能時要小心，因為某些樹脂可能"
+"會在模型中內產生極強的吸力效果，這可能使打印模型很難從離型膜上剝離而造成打印"
+"變形。"
+
+msgid "Pad brim size"
+msgstr "墊片的帽邊大小"
+
+msgid "How far should the pad extend around the contained geometry"
+msgstr "底座需圍繞幾何體延伸多遠"
+
+msgid "Pad around object"
+msgstr "在模型周圍填充"
+
+msgid "Create pad around object and ignore the support elevation"
+msgstr "在模型邊緣建立墊片並且忽略支撐的高度"
+
+msgid "Pad around object everywhere"
+msgstr "在模型周圍全部使用墊片"
+
+msgid "Force pad around object everywhere"
+msgstr "總是在模型周圍使用墊片"
+
+msgid "Pad object gap"
+msgstr "墊片模型的間隙"
+
+msgid ""
+"The gap between the object bottom and the generated pad in zero elevation "
+"mode."
+msgstr "在零仰角模式下，模型底部與墊片間之間隙。"
+
+msgid "Pad object connector stride"
+msgstr "墊片模型連接的跨度"
+
+msgid ""
+"Distance between two connector sticks which connect the object and the "
+"generated pad."
+msgstr "連接模型和其底座兩個連接桿之間的距離。"
+
+msgid "Pad object connector width"
+msgstr "墊片模型連接的寬度"
+
+msgid ""
+"Width of the connector sticks which connect the object and the generated pad."
+msgstr "連接模型和底座間連接桿之間的寬度。"
+
+msgid "Pad object connector penetration"
+msgstr "墊片模型連接的穿透度"
+
+msgid "How much should the tiny connectors penetrate into the model body."
+msgstr "微型連接需要滲透到模型主體中多少。"
+
+msgid "Enable hollowing"
+msgstr "啟用挖空"
+
+msgid "Hollowing"
+msgstr "鏤空"
+
+msgid "Hollow out a model to have an empty interior"
+msgstr "挖空模型以獲得中空的模型內部"
+
+msgid "Wall thickness"
+msgstr "模型壁厚"
+
+msgid "Minimum wall thickness of a hollowed model."
+msgstr "空心模型的最小壁厚。"
+
+msgid "Accuracy"
+msgstr "準確性"
+
+msgid ""
+"Performance vs accuracy of calculation. Lower values may produce unwanted "
+"artifacts."
+msgstr "計算的性能與計算準確性之間的取捨。較低的值可能會產生不需要的虛像。"
+
+msgid "Closing distance"
+msgstr "封閉距離"
+
+msgid ""
+"Hollowing is done in two steps: first, an imaginary interior is calculated "
+"deeper (offset plus the closing distance) in the object and then it's "
+"inflated back to the specified offset. A greater closing distance makes the "
+"interior more rounded. At zero, the interior will resemble the exterior the "
+"most."
+msgstr ""
+"模型的鏤空分成兩個步驟：首先在模型中計算更深之假設的內部（偏移量加上封閉距"
+"離），然後將其膨脹回指定的偏移量。更大的封閉距離會使內部更為圓潤。但設定為為"
+"零時，內部將與外部的樣子最相進。"
+
+msgid "Print speed"
+msgstr "打印速度"
+
+msgid ""
+"A slower printing profile might be necessary when using materials with "
+"higher viscosity or with some hollowed parts. It slows down the tilt "
+"movement and adds a delay before exposure."
+msgstr ""
+"當使用黏度較高的數脂或在打印某些中空模型時，可能需要較慢的打印設定檔。它降低"
+"了傾斜運動並且在曝光前增加了延遲時間。"
+
+msgid "Export OBJ"
+msgstr "匯出為 OBJ 檔"
+
+msgid "G-code viewer"
+msgstr "G-code查看器"
+
+msgid "Visualize an already sliced and saved G-code"
+msgstr "顯示已經切片並保存的 G-code 檔"
+
+msgid "Ensure on bed"
+msgstr "貼保放在載台上"
+
+msgid ""
+"Lift the object above the bed when it is partially below. Enabled by "
+"default, use --no-ensure-on-bed to disable."
+msgstr ""
+"當模型有一部分位於載台下方時，則將其抬高到載台上方。預設為啟用，使用 --no-"
+"ensure-on-bed 來禁用。"
+
+msgid ""
+"Forward-compatibility rule when loading configurations from config files and "
+"project files (3MF, AMF)."
+msgstr "從設定檔和項目檔案（3MF、AMF）匯入設定時向下相容的規則。"
+
+msgid ""
+"This version of PrusaSlicer may not understand configurations produced by "
+"the newest PrusaSlicer versions. For example, newer PrusaSlicer may extend "
+"the list of supported firmware flavors. One may decide to bail out or to "
+"substitute an unknown value with a default silently or verbosely."
+msgstr ""
+"此版本的 PrusaSlicer 可能無法理解最新 PrusaSlicer 版本產生的設定。例如較新的 "
+"PrusaSlicer 可能會延伸支援韌體版本的列表。一般可能會決定放棄或用預設值來取代"
+"未知的設定值，讓軟體默默進行工作。"
+
+msgid "Bail out on unknown configuration values"
+msgstr "擺脫未知的設定值"
+
+msgid ""
+"Enable reading unknown configuration values by verbosely substituting them "
+"with defaults."
+msgstr "經由用預設值並詳細告知更換它們來啟用所讀取到的未知設定值。"
+
+msgid ""
+"Enable reading unknown configuration values by silently substituting them "
+"with defaults."
+msgstr "經由用預設值默默更換它們來啟用所讀取的未知預設值。"
+
+msgid "Single instance mode"
+msgstr "單實例模式"
+
+msgid ""
+"If enabled, the command line arguments are sent to an existing instance of "
+"GUI PrusaSlicer, or an existing PrusaSlicer window is activated. Overrides "
+"the \"single_instance\" configuration value from application preferences."
+msgstr ""
+"如果啟用，命令列參數將發送到 GUI PrusaSlicer 的現有實例，或者啟動現有的 "
+"PrusaSlicer 許可證視窗。從應用首選項中覆蓋\"single_instance\"設定值。"
+
+msgid ""
+"Sets logging sensitivity. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
+"For example. loglevel=2 logs fatal, error and warning level messages."
+msgstr ""
+"設定日誌記錄敏感度。 0：致命，1：錯誤，2：警告，3：資訊，4：除錯，5：跟踪\n"
+"例如： loglevel=2 則是記錄致命的日誌、錯誤和警告級別的訊息。"
+
+msgid "Render with a software renderer"
+msgstr "使用軟體算繪器來算繪"
+
+msgid ""
+"Render with a software renderer. The bundled MESA software renderer is "
+"loaded instead of the default OpenGL driver."
+msgstr ""
+"使用軟體算繪器進行算繪。匯入內建的 MESA 軟體算繪器而不是預設的 OpenGL 驅動程"
+"式。"
+
+msgid "Used filament"
+msgstr "耗材"
+
+msgid "Generating perimeters"
+msgstr "產生邊緣"
+
+msgid "Preparing infill"
+msgstr "準備填充"
+
+msgid "Generating support material"
+msgstr "產生支撐材料"
+
+msgid "Pad brim size is too small for the current configuration."
+msgstr "墊片邊緣尺寸對於當前設定來說太小。"
+
+msgid ""
+"Elevation is too low for object. Use the \"Pad around object\" feature to "
+"print the object without elevation."
+msgstr "模型的高度太低。使用“圍繞模型的墊片”功能來打印沒有高標的模型。"
+
+msgid ""
+"The endings of the support pillars will be deployed on the gap between the "
+"object and the pad. 'Support base safety distance' has to be greater than "
+"the 'Pad object gap' parameter to avoid this."
+msgstr ""
+"支撐柱的末端將安排在模型和墊片之間的間隙上。 '支撐底座安全距離' 必須大於 '圍"
+"繞模型的墊片' 參數以避免這種情況。"
+
+msgid "Exposition time is out of printer profile bounds."
+msgstr "描述時間超出了打印機設定檔案範圍。"
+
+msgid "Initial exposition time is out of printer profile bounds."
+msgstr "最初描述時間超出打印機設定檔案範圍。"
+
+msgid "Hollowing model"
+msgstr "鏤空模型"
+
+msgid "Drilling holes into model."
+msgstr "在模型中鑽孔。"
+
+msgid ""
+"Mesh to be hollowed is not suitable for hollowing (does not bound a volume)."
+msgstr "要被挖空的網格不適合挖空（沒有綁定體積）。"
+
+msgid "Unable to drill the current configuration of holes into the model."
+msgstr "無法將當前設定的孔鑽到模型中。"
+
+msgid ""
+"Drilling holes into the mesh failed. This is usually caused by broken model. "
+"Try to fix it first."
+msgstr "在網格中鑽孔失敗。這通常是由損壞的模型引起的。請先嘗試修復它。"
+
+msgid "Failed to drill some holes into the model"
+msgstr "無法在模型中鑽一些孔"
+
+msgid "No pad can be generated for this model with the current configuration"
+msgstr "使用當前設定無法為該模型生成墊片"
+
+msgid ""
+"There are unprintable objects. Try to adjust support settings to make the "
+"objects printable."
+msgstr "有不可打印的模型。請嘗試調整支撐設定使模型可以打印。"
+
+msgid "Taking a configuration snapshot failed."
+msgstr "取得設定快照失敗。"
+
+msgid ""
+"PrusaSlicer has encountered an error while taking a configuration snapshot."
+msgstr "PrusaSlicer 在取得設定快照時遇到錯誤。"
+
+msgid "PrusaSlicer error"
+msgstr "PrusaSlicer 錯誤"
+
+msgid "Continue"
+msgstr "繼續"
+
+msgid "Portions copyright"
+msgstr "部分版權"
+
+msgid "Copyright"
+msgstr "版權"
+
+msgid ""
+"License agreements of all following programs (libraries) are part of "
+"application license agreement"
+msgstr "所有以下程式（程式庫）的許可協議是申請許可協議的一部分"
+
+msgid "is licensed under the"
+msgstr "是根據"
+
+msgid "GNU Affero General Public License, version 3"
+msgstr "GNU 通用公共許可證，版本 3"
+
+msgid ""
+"PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap "
+"community."
+msgstr "Prusaslicer軟體是基於Alessandro Ranellucci和Reprap 社區的Slic3R軟體。"
+
+msgid ""
+"Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, "
+"Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik and "
+"numerous others."
+msgstr ""
+"Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, "
+"Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik and "
+"numerous 等組織與個人單位。"
+
+msgid "Copy Version Info"
+msgstr "複製版本資訊"
+
+msgid "Arrange options"
+msgstr "佈局選項"
+
+msgid "Press %1%left mouse button to enter the exact value"
+msgstr "按%1%滑鼠左鍵輸入準確值"
+
+msgid "Enable rotations (slow)"
+msgstr "啟用迴轉（慢）"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"%s 遇到一個錯誤，這可能由於記憶體不足所引起。若您確定系統有足夠的記憶體，那麼"
+"也可能是一個軟體上的錯誤，我們非常歡迎您提出軟體錯誤報告讓我們做出修正。"
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "PrusaSlicer 遇到嚴重的錯誤 : \"%1%\""
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr "請儲存您的項目並重新啟動 PrusaSlicer，我們會很高興收到您回報這個錯誤。"
+
+msgid "Slicing complete"
+msgstr "切片完成"
+
+msgid "Masked SLA file exported to %1%"
+msgstr "Masked SLA 檔案已匯出至 %1%"
+
+msgid "Access violation"
+msgstr "存取違規"
+
+msgid "Illegal instruction"
+msgstr "無效的指令"
+
+msgid "Divide by zero"
+msgstr "除以零"
+
+msgid "Overflow"
+msgstr "溢出錯誤"
+
+msgid "Underflow"
+msgstr "下溢限位"
+
+msgid "Floating reserved operand"
+msgstr "浮動保留操作數"
+
+msgid "Stack overflow"
+msgstr "堆疊溢出"
+
+msgid "Running post-processing scripts"
+msgstr "執行後處理腳本"
+
+msgid "Unknown error occured during exporting G-code."
+msgstr "匯出 G-code 期間發生未知錯誤。"
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. Maybe the SD "
+"card is write locked?\n"
+"Error message: %1%"
+msgstr ""
+"將臨時的 G-code 複製到輸出的 G-code 失敗 ，也許 SD 卡寫入被鎖定？\n"
+"錯誤訊息：%1%"
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. There might be "
+"problem with target device, please try exporting again or using different "
+"device. The corrupted output G-code is at %1%.tmp."
+msgstr ""
+"將臨時 G-code 複製到輸出 G-code 時失敗。目標設備可能存在問題，請嘗試再次匯出"
+"或使用不同的設備。損壞的G-code 已輸出為%1%.tmp。"
+
+msgid ""
+"Renaming of the G-code after copying to the selected destination folder has "
+"failed. Current path is %1%.tmp. Please try exporting again."
+msgstr ""
+"複製到選取之目標檔案夾的 G-code 重命名失敗。當前路徑為%1%.tmp。請再試看看匯"
+"出。"
+
+msgid ""
+"Copying of the temporary G-code has finished but the original code at %1% "
+"couldn't be opened during copy check. The output G-code is at %2%.tmp."
+msgstr ""
+"臨時 G-code 的 複製已完成，但原始 G-code 因%1%在複製檢查期間無法打開。輸出 G-"
+"code 為%2%.tmp。"
+
+msgid ""
+"Copying of the temporary G-code has finished but the exported code couldn't "
+"be opened during copy check. The output G-code is at %1%.tmp."
+msgstr ""
+"臨時 G-code 的複制已完成，但匯出的 G-code 無法在復製檢查過程中打開。輸出 G-"
+"code 為%1%.tmp。"
+
+msgid "G-code file exported to %1%"
+msgstr "G-code 檔案已匯出為 %1%"
+
+msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
+msgstr "已安排上傳到 `%1%`，請參看 視窗 -> 打印主機上傳序列"
+
+msgid "Texture"
+msgstr "材質"
+
+msgid "Not found:"
+msgstr "找不到："
+
+msgid "Choose an STL file to import bed shape from:"
+msgstr "請選擇一個載台形狀的 STL 檔案以匯入："
+
+msgid "Invalid file format."
+msgstr "無效的檔案格式。"
+
+msgid "Error! Invalid model"
+msgstr "錯誤！無效的模型"
+
+msgid "Choose a file to import bed texture from (PNG/SVG):"
+msgstr "請選擇一個載台外觀的材質檔案（PNG/SVG）以匯入："
+
+msgid "Choose an STL file to import bed model from:"
+msgstr "請選擇一個載台形狀的 STL 檔案以匯入："
+
+msgid "Revert color to default"
+msgstr "將顏色恢復為預設值"
+
+msgid ""
+"Layer height is not valid.\n"
+"\n"
+"The layer height will be reset to 0.01."
+msgstr ""
+"無效的打印層高。\n"
+"\n"
+"已將打印層高重置為 0.01。"
+
+msgid ""
+"First layer height is not valid.\n"
+"\n"
+"The first layer height will be reset to 0.01."
+msgstr ""
+"無效的第一層打印層高。\n"
+"\n"
+"已將第一層打印層高重置為 0.01。"
+
+msgid "Shall I adjust those settings in order to enable Spiral Vase?"
+msgstr "我能為您調整這些設定用來實現螺旋花瓶打印模式嗎？"
+
+msgid ""
+"For the Wipe Tower to work with the soluble supports, the support layers\n"
+"need to be synchronized with the object layers."
+msgstr ""
+"若要與可溶性支撐一起使用擦拭塔，\n"
+"支撐層必須與目標層同步。"
+
+msgid "Shall I synchronize support layers in order to enable the Wipe Tower?"
+msgstr "我能為您設定同步支撐層以實現擦拭塔所需的條件嗎？"
+
+msgid "Shall I adjust those settings in order to enable the Wipe Tower?"
+msgstr "我能為您調整這些設定以實現擦拭塔所需的條件嗎？"
+
+msgid ""
+"Supports work better, if the following feature is enabled:\n"
+"- Detect bridging perimeters"
+msgstr ""
+"若啟用以下設定可讓支撐結果更好：\n"
+" - 檢測橋接邊緣"
+
+msgid "Shall I adjust those settings for supports?"
+msgstr "我能為您作出讓支撐結果更好的設定嗎？"
+
+msgid "The %1% infill pattern is not supposed to work at 100%% density."
+msgstr "這個 %1% 填充花紋無法使用在 100%% 的填充密度下工作。"
+
+msgid "Shall I switch to rectilinear fill pattern?"
+msgstr "我能為您切換到直線填充花紋嗎？"
+
+msgid "PrusaSlicer version"
+msgstr "PrusaSlicer 版本"
+
+msgid "min PrusaSlicer version"
+msgstr "最低 PrusaSlicer 版本"
+
+msgid "max PrusaSlicer version"
+msgstr "最高 PrusaSlicer 版本"
+
+msgid "Incompatible with this %s"
+msgstr "與這個 %s 不相容"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "歡迎使用 %s 設定助手"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "歡迎使用 %s 設定嚮導"
+
+msgid ""
+"Hello, welcome to %s! This %s helps you with the initial configuration; just "
+"a few settings and you will be ready to print."
+msgstr ""
+"您好，歡迎使用 %s！這個 %s 可以協助您進行初始設定；只需要做一些設定，您就可以"
+"開始打印了。"
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "移除使用者設定檔（將會事先建立一個快照備份）"
+
+msgid ""
+"Perform desktop integration (Sets this binary to be searchable by the "
+"system)."
+msgstr "進行桌面整合（將此二進製檔案設定為可讓系統搜尋）"
+
+msgid "Profile:"
+msgstr "設定檔："
+
+msgid "(All)"
+msgstr "（全部）"
+
+msgid "SLA materials"
+msgstr "SLA 材料"
+
+msgid ""
+"%1% marked with <b>*</b> are <b>not</b> compatible with some installed "
+"printers."
+msgstr "標記為 <b>*</b> 的 %1% 與某些已安裝的打印機<b>不</b>相容。"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "所有安裝的打印機都與所選%1% 相容。"
+
+msgid ""
+"Only the following installed printers are compatible with the selected "
+"filaments"
+msgstr "只有以下安裝的打印機與所選的線材相容"
+
+msgid ""
+"Only the following installed printers are compatible with the selected SLA "
+"materials"
+msgstr "只有以下安裝的打印機與所選的 SLA 材料相容"
+
+msgid ""
+"If enabled, %s checks for new application versions online. When a new "
+"version becomes available, a notification is displayed at the next "
+"application startup (never during program usage). This is only a "
+"notification mechanisms, no automatic installation is done."
+msgstr ""
+"啟用此功能時，%s 將會連線檢查新的套用程式版本。 當有新的版本可用時，下次套用"
+"程式啟動時會顯示通知（但不會在使用期間顯示）。 這只是一個通知機制，並不會自動"
+"安裝。"
+
+msgid ""
+"If enabled, %s downloads updates of built-in system presets in the "
+"background.These updates are downloaded into a separate temporary location."
+"When a new preset version becomes available it is offered at application "
+"startup."
+msgstr ""
+"如果啟用，%s 會在背景進行。這些更新被下載到一個單獨的臨時位置。當一個新的預設"
+"版本可用時，它會在套用程式啟動後提供使用。"
+
+msgid ""
+"Export full pathnames of models and parts sources into 3mf and amf files"
+msgstr "將模型與來源零件完整路徑一起匯出為3MF和AMF檔案"
+
+msgid ""
+"If enabled, allows the Reload from disk command to automatically find and "
+"load the files when invoked.\n"
+"If not enabled, the Reload from disk command will ask to select each file "
+"using an open file dialog."
+msgstr ""
+"如果啟用，則允許從磁碟機重新匯入命令在調用時自動檢查和匯入檔案。若未啟用，從"
+"磁碟機重新匯入時將會以檔案對話框的方式讓您選擇每個檔案。"
+
+msgid "Files association"
+msgstr "檔案關聯"
+
+msgid "Associate .3mf files to PrusaSlicer"
+msgstr "將 .3mf 檔案關聯至 PrusaSlicer"
+
+msgid "Associate .stl files to PrusaSlicer"
+msgstr "將 .stl 檔案關聯至 PrusaSlicer"
+
+msgid "View mode"
+msgstr "觀看模式"
+
+msgid ""
+"PrusaSlicer's user interfaces comes in three variants:\n"
+"Simple, Advanced, and Expert.\n"
+"The Simple mode shows only the most frequently used settings relevant for "
+"regular 3D printing. The other two offer progressively more sophisticated "
+"fine-tuning, they are suitable for advanced and expert users, respectively."
+msgstr ""
+"Prusaslicer的使用者介面有三個變體：\\ n簡單，高級和專家。\\ n簡單模式僅顯示與"
+"一般3D打印相關的最常用設定。 另外兩個提供了更複雜的微調，分別適合高級和專家使"
+"用者。"
+
+msgid "Simple mode"
+msgstr "簡單模式"
+
+msgid "Advanced mode"
+msgstr "高級模式"
+
+msgid "Expert mode"
+msgstr "專家模式"
+
+msgid "The size of the object can be specified in inches"
+msgstr "模型的大小也可以指定使用英吋單位"
+
+msgid "Use inches"
+msgstr "使用英吋單位"
+
+msgid "Pick another vendor supported by %s"
+msgstr "選擇另一個由 %s 支援的供應商"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "噴嘴與載台的溫度"
+
+msgid "SLA Materials"
+msgstr "SLA 材質"
+
+msgid "FFF Technology Printers"
+msgstr "FFF 技術打印機"
+
+msgid "SLA Technology Printers"
+msgstr "SLA 技術打印機"
+
+msgid ""
+"Following printer profiles has no default filament: %1%Please select one "
+"manually."
+msgstr "下列打印機設定檔沒有預設線材：%1%，請手動選擇一個。"
+
+msgid ""
+"Following printer profiles has no default material: %1%Please select one "
+"manually."
+msgstr "下列打印機設定檔沒有預設材料： %1%，請手動選擇一個。"
+
+msgid "The following FFF printer models have no filament selected:"
+msgstr "以下 FFF 打印機模式未選擇線材："
+
+msgid "Do you want to select default filaments for these FFF printer models?"
+msgstr "您是否要為這些FFF打印機模式選擇預設的線材？"
+
+msgid "The following SLA printer models have no materials selected:"
+msgstr "以下SLA打印機模式沒有選擇材料："
+
+msgid "Do you want to select default SLA materials for these printer models?"
+msgstr "您是否要為這些SLA打印機模式選擇預設的打印材料？"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "在設定嚮導中編輯設定"
+
+msgid "All user presets will be deleted."
+msgstr "所有使用者預設將被刪除。"
+
+msgid "A new vendor was installed and one of its printers will be activated"
+msgid_plural ""
+"New vendors were installed and one of theirs printers will be activated"
+msgstr[0] "安裝了一個新供應商，其中一台打印機將被啟用"
+
+msgid "Do you want to continue changing the configuration?"
+msgstr "您要繼續變更設定嗎？"
+
+msgid "A new Printer was installed and it will be activated."
+msgstr "已安裝新的打印機且已經啟用。"
+
+msgid "Some Printers were uninstalled."
+msgstr "一些打印機被移除。"
+
+msgid "A new filament was installed and it will be activated."
+msgstr "已安裝一個新的線材且已經啟用。"
+
+msgid "A new SLA material was installed and it will be activated."
+msgstr "已安裝一個新的打印材料且已經啟用。"
+
+msgid "Some filaments were uninstalled."
+msgstr "一些線材被移除。"
+
+msgid "Some SLA materials were uninstalled."
+msgstr "一些打 SLA 材料被移除。"
+
+msgid "Custom printer was installed and it will be activated."
+msgstr "已安裝了自定義打印機且已經啟用。"
+
+msgid "Filament Profiles Selection"
+msgstr "線材設定檔選擇"
+
+msgid "SLA Material Profiles Selection"
+msgstr "SLA 材料設定檔選擇"
+
+msgid "Configuration Wizard"
+msgstr "設定嚮導"
+
+msgid "Configuration &Wizard"
+msgstr "設定嚮導(&W)"
+
+msgid ""
+"Performing desktop integration failed - boost::filesystem::canonical did not "
+"return appimage path."
+msgstr "執行桌面整合失敗-boost :: filesystem :: Canonical 沒有返回附屬路徑。"
+
+msgid "Performing desktop integration failed - Could not find executable."
+msgstr "執行桌面整合失敗 - 找不到可執行檔。"
+
+msgid ""
+"Performing desktop integration failed because the application directory was "
+"not found."
+msgstr "由於找不到套用程式目錄，因此執行桌面整合失敗了。"
+
+msgid ""
+"Performing desktop integration failed - could not create Gcodeviewer desktop "
+"file. PrusaSlicer desktop file was probably created successfully."
+msgstr ""
+"執行桌面整合失敗 - 無法建立 GcodeViewer 桌面檔案。但 Prusaslicer 桌面檔案可能"
+"成功建立了。"
+
+msgid "Desktop Integration"
+msgstr "桌面整合"
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+"桌面整合已設定了二進位檔案，者二進位檔案可以由系統搜尋。\n"
+"\n"
+"請按 \"實行\" 來進行。"
+
+msgid "Perform"
+msgstr "實行"
+
+msgid "Place bearings in slots and resume printing"
+msgstr "將軸承放入插槽中並恢復打印"
+
+msgid "One layer mode"
+msgstr "單層模式"
+
+msgid "Discard all custom changes"
+msgstr "放棄所有的自定義變更"
+
+msgid "Jump to move"
+msgstr "跳轉"
+
+msgid ""
+"Jump to height %s\n"
+"Set ruler mode\n"
+"or Set extruder sequence for the entire print"
+msgstr ""
+"跳轉到高度 %s\n"
+"設定標尺模式\n"
+"或為整個打印設定擠出機順序"
+
+msgid ""
+"Jump to height %s\n"
+"or Set ruler mode"
+msgstr ""
+"跳轉到高度 %s\n"
+"或設定標尺模式"
+
+msgid "Edit current color - Right click the colored slider segment"
+msgstr "編輯當前顏色 - 右鍵單擊彩色滑塊"
+
+msgid "This is wipe tower layer"
+msgstr "這是擦拭塔的層"
+
+msgid ""
+"The sequential print is on.\n"
+"It's impossible to apply any custom G-code for objects printing sequentually."
+msgstr ""
+"已經開啟順序打印。\n"
+"接下來無法將任何自定義 G-code 套用於模型的打印。"
+
+msgid "Print mode"
+msgstr "打印模式"
+
+msgid "Add extruder change - Left click"
+msgstr "添加擠出機的變更-左鍵單擊"
+
+msgid ""
+"Add color change - Left click for predefined color or Shift + Left click for "
+"custom color selection"
+msgstr ""
+"添加顏色變更 - 滑鼠左鍵添加預設的顏色，或 Shift +滑鼠左鍵 選擇自定義顏色"
+
+msgid "Add color change - Left click"
+msgstr "添加顏色變更-滑鼠左鍵"
+
+msgid "or press \"+\" key"
+msgstr "或按 \"+\" 鍵"
+
+msgid "Add another code - Ctrl + Left click"
+msgstr "添加另一個代碼 - 按 Ctrl + 滑鼠左鍵"
+
+msgid "Add another code - Right click"
+msgstr "添加另一個代碼 - 按 滑鼠右鍵"
+
+msgid ""
+"The sequential print is on.\n"
+"It's impossible to apply any custom G-code for objects printing "
+"sequentually.\n"
+"This code won't be processed during G-code generation."
+msgstr ""
+"已經開啟順序打印。\n"
+"接下來無法將任何自定義 G-code 套用於模型的打印。\n"
+"那個代碼將不會在 G-code 產生的時候被處理。"
+
+msgid "continue"
+msgstr "繼續"
+
+msgid "Color change (\"%1%\")"
+msgstr "顏色變更 (\"%1%\")"
+
+msgid "Color change (\"%1%\") for Extruder %2%"
+msgstr "將顏色變更 (\"%1%\") 到擠出機 %2%"
+
+msgid "Pause print (\"%1%\")"
+msgstr "暫停打印 (\"%1%\")"
+
+msgid "Custom template (\"%1%\")"
+msgstr "自定義模板(\"%1%\")"
+
+msgid "Extruder (tool) is changed to Extruder \"%1%\""
+msgstr "將當前擠出機（工具）變更為擠出機 \"%1%\""
+
+msgid "Note"
+msgstr "備註"
+
+msgid ""
+"G-code associated to this tick mark is in a conflict with print mode.\n"
+"Editing it will cause changes of Slider data."
+msgstr ""
+"與此刻度線標記關聯的 G-code 與打印模式發生衝突。\n"
+"編輯它將會導致滑塊資訊變更。"
+
+msgid ""
+"There is a color change for extruder that won't be used till the end of "
+"print job.\n"
+"This code won't be processed during G-code generation."
+msgstr ""
+"擠出機有顏色變更，直到打印作業結束才會使用。\n"
+"在 G-code 產生期間不會處理此代碼。"
+
+msgid ""
+"There is an extruder change set to the same extruder.\n"
+"This code won't be processed during G-code generation."
+msgstr ""
+"擠出機變更設定為同一擠出機。\n"
+"在 G-code 產生期間不會處理此代碼。"
+
+msgid ""
+"There is a color change for extruder that has not been used before.\n"
+"Check your settings to avoid redundant color changes."
+msgstr ""
+"擠出機有一個以前沒有使用過的顏色變更。\n"
+"檢查您的設定以避免多餘的顏色變更。"
+
+msgid "Delete tick mark - Left click or press \"-\" key"
+msgstr "刪除刻度線標記 - 左鍵單擊或按 \"-\" 鍵"
+
+msgid "Edit tick mark - Ctrl + Left click"
+msgstr "編輯刻度線標記-按 Ctrl + 滑鼠左鍵"
+
+msgid "Edit tick mark - Right click"
+msgstr "編輯刻度線標記-按 滑鼠右鍵"
+
+msgid "Switch code to Change extruder"
+msgstr "切換代碼以變更擠出機"
+
+msgid "Change extruder (N/A)"
+msgstr "變更擠出機(N/A)"
+
+msgid "Use another extruder"
+msgstr "使用另一個擠出機"
+
+msgid "used"
+msgstr "用過的"
+
+msgid "Switch code to Color change (%1%) for:"
+msgstr "將代碼切換到顏色變更 (%1%)："
+
+msgid "Add color change (%1%) for:"
+msgstr "添加顏色變更到 (%1%) ："
+
+msgid "Add color change"
+msgstr "添加顏色變更"
+
+msgid "Add pause print"
+msgstr "添加暫停打印"
+
+msgid "Add custom template"
+msgstr "添加自定義模板"
+
+msgid "Add custom G-code"
+msgstr "添加自定義 G-code"
+
+msgid "Edit color"
+msgstr "編輯顏色"
+
+msgid "Edit pause print message"
+msgstr "編輯暫停打印訊息"
+
+msgid "Edit custom G-code"
+msgstr "編輯自定義 G-code"
+
+msgid "Delete color change"
+msgstr "刪除顏色變更"
+
+msgid "Delete tool change"
+msgstr "刪除工具變更"
+
+msgid "Delete pause print"
+msgstr "刪除暫停打印"
+
+msgid "Delete custom G-code"
+msgstr "刪除自定義 G-code"
+
+msgid "Jump to height"
+msgstr "跳至高度"
+
+msgid "Hide ruler"
+msgstr "隱藏刻度線"
+
+msgid "Show object height"
+msgstr "顯示模型高度"
+
+msgid "Show object height on the ruler"
+msgstr "在刻度線顯示模型高度"
+
+msgid "Show estimated print time"
+msgstr "顯示預計打印時間"
+
+msgid "Show estimated print time on the ruler"
+msgstr "在刻度線顯示預計打印時間"
+
+msgid "Ruler mode"
+msgstr "刻度線模式"
+
+msgid "Set ruler mode"
+msgstr "設定刻度模式"
+
+msgid "Set extruder sequence for the entire print"
+msgstr "為整個打印設定擠出機順序"
+
+msgid "Set auto color changes"
+msgstr "設定自動顏色變化"
+
+msgid "This action will cause deletion of all ticks on vertical slider."
+msgstr "此操作將導致刪除所有垂直滑塊上的所有刻度。"
+
+msgid ""
+"This action is not revertible.\n"
+"Do you want to proceed?"
+msgstr ""
+"進行此操作後將不可恢復。\n"
+"您確定要繼續嗎？"
+
+msgid "Enter custom G-code used on current layer"
+msgstr "輸入當前層上要使用的自定義 G-code"
+
+msgid "Custom G-code on current layer (%1% mm)."
+msgstr "輸入當前層(%1% mm)上要使用的自定義 G-code。"
+
+msgid "Enter short message shown on Printer display when a print is paused"
+msgstr "輸入暫停打印時打印機螢幕上顯示的訊息"
+
+msgid "Message for pause print on current layer (%1% mm)."
+msgstr "在當前層 (%1% mm) 上暫停打印的訊息。"
+
+msgid "Enter the move you want to jump to"
+msgstr "輸入您要跳轉的動作"
+
+msgid "Enter the height you want to jump to"
+msgstr "輸入你想跳到的高度"
+
+msgid "The last color change data was saved for a single extruder printing."
+msgstr "為單個擠出機之打印儲存最後一次的換色資料。"
+
+msgid "The last color change data was saved for a multi extruder printing."
+msgstr "為多台擠出機之打印儲存最後一次的換色資料。"
+
+msgid "Your current changes will delete all saved color changes."
+msgstr "您當前的變更將刪除所有已儲存的顏色變更。"
+
+msgid "Are you sure you want to continue?"
+msgstr "你確定你要繼續嗎？"
+
+msgid ""
+"Select YES if you want to delete all saved tool changes, \n"
+"NO if you want all tool changes switch to color changes, \n"
+"or CANCEL to leave it unchanged."
+msgstr ""
+"如果要刪除所有已儲存的工具變更，請選擇是，\n"
+"如果您希望所有工具變更都切換為顏色變更，請選擇否，\n"
+"或取消以保持不變。"
+
+msgid "Do you want to delete all saved tool changes?"
+msgstr "您要刪除所有已儲存的工具變更嗎？"
+
+msgid ""
+"The last color change data was saved for a multi extruder printing with tool "
+"changes for whole print."
+msgstr "最後的顏色變更資料將被儲存用於多擠出機打印，整個打印都需要取代工具。"
+
+msgid "Your current changes will delete all saved extruder (tool) changes."
+msgstr "您當前的變更將刪除所有已儲存的擠出機（工具）變更。"
+
+msgid "Set extruder sequence"
+msgstr "設定擠出機順序"
+
+msgid "Set extruder change for every"
+msgstr "設定每個擠出機變更"
+
+msgid "Random sequence"
+msgstr "隨機順序"
+
+msgid "If enabled, random sequence of the selected extruders will be used."
+msgstr "如果啟用，將以隨機的方式使用擠出機。"
+
+msgid "Allow next color repetition"
+msgstr "允許下一個可以顏色重複"
+
+msgid "If enabled, a repetition of the next random color will be allowed."
+msgstr "如果啟用，將允許下一個隨機的顏色重複。"
+
+msgid "Set extruder(tool) sequence"
+msgstr "設定擠出機（工具）順序"
+
+msgid "Remove extruder from sequence"
+msgstr "從序列中刪除擠出機"
+
+msgid "Add extruder to sequence"
+msgstr "將擠出機添加到序列"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid ""
+"Input value is out of range\n"
+"Are you sure that %s is a correct value and that you want to continue?"
+msgstr ""
+"輸入值超出範圍\n"
+"您確定 %s 的值正確並且要繼續嗎？"
+
+msgid ""
+"Invalid input format. Expected vector of dimensions in the following format: "
+"\"%1%\""
+msgstr "輸入格式無效。預期向量應使用以下格式：“%1%”"
+
+msgid "Select a file"
+msgstr "選擇一個檔案"
+
+msgid "Shape Gallery"
+msgstr "形狀圖庫"
+
+msgid "Select shape from the gallery"
+msgstr "從圖庫中選擇形狀"
+
+msgid "Add one or more custom shapes"
+msgstr "添加一個或多個自定義形狀"
+
+msgid "Delete one or more custom shape. You can't delete system shapes"
+msgstr "刪除一個或多個自定義形狀。不過您不能刪除系統內建的形狀"
+
+msgid "Add to bed"
+msgstr "添加到載台上"
+
+msgid "Add selected shape(s) to the bed"
+msgstr "將選定的形狀添加到載台上"
+
+msgid "Choose one or more files (STL, OBJ):"
+msgstr "選擇一個或多個檔案（STL、OBJ）："
+
+msgid ""
+"It looks like selected %1%-file has an error or is destructed.\n"
+"We can't load this file"
+msgstr ""
+"所選 %1% 檔案似乎有錯誤或已損壞。\n"
+"我們無法匯入此檔案"
+
+msgid "Choose one PNG file:"
+msgstr "選擇一個 PNG 檔案："
+
+msgid "Replacing of the PNG"
+msgstr "取代PNG"
+
+msgid "Change thumbnail"
+msgstr "變更縮圖"
+
+msgid "Loading of the \"%1%\""
+msgstr "匯入\"%1%\""
+
+msgid "Tool position"
+msgstr "工具位置"
+
+msgid "Generating toolpaths"
+msgstr "產生工具路徑"
+
+msgid "Generating vertex buffer"
+msgstr "產生頂點緩衝區"
+
+msgid "Generating index buffers"
+msgstr "產生索引緩衝區"
+
+msgid "in"
+msgstr "在"
+
+msgid "Click to hide"
+msgstr "點擊以隱藏"
+
+msgid "Click to show"
+msgstr "點擊以顯示"
+
+msgid "up to"
+msgstr "直到"
+
+msgid "above"
+msgstr "在"
+
+msgid "to"
+msgstr "到"
+
+msgid "Percentage"
+msgstr "百分比"
+
+msgid "Temperature (°C)"
+msgstr "溫度 (°C)"
+
+msgid "Volumetric flow rate (mm³/s)"
+msgstr "體積流量 (mm3/s)"
+
+msgid "Default color"
+msgstr "預設顏色"
+
+msgid "default color"
+msgstr "預設顏色"
+
+msgid "Color change"
+msgstr "顏色變更"
+
+msgid "Event"
+msgstr "事件"
+
+msgid "Duration"
+msgstr "持續時間"
+
+msgid "Estimated printing times"
+msgstr "預計打印時間"
+
+msgid "Stealth mode"
+msgstr "靜音模式"
+
+msgid "Total"
+msgstr "總計"
+
+msgid "Show stealth mode"
+msgstr "顯示靜音模式"
+
+msgid "Show normal mode"
+msgstr "顯示正常模式"
+
+msgid "Wipe"
+msgstr "擦拭"
+
+msgid "Deretractions"
+msgstr "退縮"
+
+msgid "Seams"
+msgstr "接縫"
+
+msgid "Tool changes"
+msgstr "取代工具"
+
+msgid "Color changes"
+msgstr "變更顏色"
+
+msgid "Print pauses"
+msgstr "暫停打印"
+
+msgid "Custom G-codes"
+msgstr "自定義 G-codes"
+
+msgid "Tool marker"
+msgstr "工具標記"
+
+msgid "Circle"
+msgstr "圓型"
+
+msgid "Left click"
+msgstr "滑鼠左鍵"
+
+msgid "Right click"
+msgstr "滑鼠右鍵"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Cut by Plane"
+msgstr "用平面分割"
+
+msgid "Set Mirror"
+msgstr "設定鏡像"
+
+msgid "Modifier"
+msgstr "修改器"
+
+msgid "Paint-on supports"
+msgstr "繪製支撐"
+
+msgid "Clipping of view"
+msgstr "視圖剪輯"
+
+msgid "Reset direction"
+msgstr "重置方向"
+
+msgid "Brush size"
+msgstr "筆刷大小"
+
+msgid "Brush shape"
+msgstr "筆刷形狀"
+
+msgid "Left mouse button"
+msgstr "滑鼠左鍵"
+
+msgid "Enforce supports"
+msgstr "強制支撐"
+
+msgid "Right mouse button"
+msgstr "滑鼠右鍵"
+
+msgid "Block supports"
+msgstr "阻斷支撐"
+
+msgid "Shift + Left mouse button"
+msgstr "Shift + 滑鼠左鍵"
+
+msgid "Remove selection"
+msgstr "移除選擇"
+
+msgid "Remove all selection"
+msgstr "移除全部選擇"
+
+msgid "Highlight overhang by angle"
+msgstr "依照角度強調顯示懸空的部分"
+
+msgid "Enforce"
+msgstr "強制"
+
+msgid "Tool type"
+msgstr "工具類型"
+
+msgid "Brush"
+msgstr "筆刷"
+
+msgid "Smart fill"
+msgstr "智慧型填充"
+
+msgid "Smart fill angle"
+msgstr "智慧型填充角度"
+
+msgid "Split triangles"
+msgstr "拆開三角形"
+
+msgid "On overhangs only"
+msgstr "僅在懸空部分"
+
+msgid ""
+"Preselects faces by overhang angle. It is possible to restrict paintable "
+"facets to only preselected faces when the option \"%1%\" is enabled."
+msgstr ""
+"依照懸空角度預先選取面。啟用選項“%1%”後，能將可繪製之範圍限制在預先選取的面。"
+
+msgid "Paints facets according to the chosen painting brush."
+msgstr "根據選取的筆刷繪製面。"
+
+msgid ""
+"Paints neighboring facets whose relative angle is less or equal to set angle."
+msgstr "繪製相對角度小於或等於設定角度的相鄰面。"
+
+msgid "Allows painting only on facets selected by: \"%1%\""
+msgstr "僅允許在由以下條件選取的面上進行繪製：“%1%”"
+
+msgid "Paints all facets inside, regardless of their orientation."
+msgstr "繪製內部的所有小平面，無論它們的方向如何。"
+
+msgid "Ignores facets facing away from the camera."
+msgstr "忽略背對相機的面。"
+
+msgid "Paints only one facet."
+msgstr "僅繪製一個面。"
+
+msgid "Alt + Mouse wheel"
+msgstr "Alt + 滑鼠輪"
+
+msgid "Splits bigger facets into smaller ones while the object is painted."
+msgstr "在繪製模型時將較大的面拆開為較小的面。"
+
+msgid "Ctrl + Mouse wheel"
+msgstr "Ctrl + 滑鼠輪"
+
+msgid "Reset selection"
+msgstr "重置選取"
+
+msgid "Block supports by angle"
+msgstr "按角度製作阻斷支撐"
+
+msgid "Add supports by angle"
+msgstr "按角度添加支撐"
+
+msgid "Are you sure you want to do it?"
+msgstr "你確定要這樣做嗎？"
+
+msgid "Add supports"
+msgstr "添加支撐"
+
+msgid "Gizmo-Place on Face"
+msgstr "Gizmo-放置在臉上"
+
+msgid "Place on face"
+msgstr "平貼在載台"
+
+msgid "Hollow this object"
+msgstr "鏤空這個模型"
+
+msgid "Preview hollowed and drilled model"
+msgstr "預覽鏤空和鑽孔的模型"
+
+msgid "Offset"
+msgstr "偏移量"
+
+msgid "Quality"
+msgstr "品質"
+
+msgid "Hole diameter"
+msgstr "孔徑"
+
+msgid "Hole depth"
+msgstr "孔深"
+
+msgid "Remove selected holes"
+msgstr "移除選取的孔"
+
+msgid "Remove all holes"
+msgstr "移除全部的孔"
+
+msgid "Show supports"
+msgstr "顯示支撐"
+
+msgid "Add drainage hole"
+msgstr "添加排水孔"
+
+msgid "Delete drainage hole"
+msgstr "移除排水孔"
+
+msgid "Hollowing parameter change"
+msgstr "鏤空參數變更"
+
+msgid "Change drainage hole diameter"
+msgstr "改變排水孔直徑"
+
+msgid "Hollow and drill"
+msgstr "鏤空和鑽孔"
+
+msgid "Move drainage hole"
+msgstr "移動排水孔"
+
+msgid "Copy to clipboard"
+msgstr "複製到剪貼簿"
+
+msgid ""
+"Your printer has more extruders than the multi-material painting gizmo "
+"supports. For this reason, only the first %1% extruders will be able to be "
+"used for painting."
+msgstr ""
+"您的打印機具有更多的擠出機，但因為不是多噴繪工具能支援的程度。因此只有前 %1% "
+"個擠出機目標能被用於繪製。"
+
+msgid "Multimaterial painting"
+msgstr "多種材料的繪製"
+
+msgid "First color"
+msgstr "第一種顏色"
+
+msgid "Second color"
+msgstr "第二種顏色"
+
+msgid "Remove painted color"
+msgstr "移除繪製的顏色"
+
+msgid "Clear all"
+msgstr "全部清除"
+
+msgid "Bucket fill"
+msgstr "油漆桶填充"
+
+msgid "Paints neighboring facets that have the same color."
+msgstr "繪製具有相同顏色的相鄰面。"
+
+msgid "Split bigger facets into smaller ones while the object is painted."
+msgstr "在繪製模型時將較大的面拆開成較小的面。"
+
+msgid "Painted using: Extruder %1%"
+msgstr "繪製使用：擠出機%1%"
+
+msgid "Move"
+msgstr "移動"
+
+msgid "Gizmo-Move"
+msgstr "Gizmo-移動"
+
+msgid "Gizmo-Rotate"
+msgstr "Gizmo-旋轉"
+
+msgid "Gizmo-Scale"
+msgstr "Gizmo 比例"
+
+msgid "Enforce seam"
+msgstr "強制接縫"
+
+msgid "Block seam"
+msgstr "阻斷接縫"
+
+msgid "Seam painting"
+msgstr "接縫繪製"
+
+msgid "Mesh name"
+msgstr "網格名稱"
+
+msgid "Decimate ratio"
+msgstr "抽取比率"
+
+msgid "Simplify model"
+msgstr "簡化模型"
+
+msgid "Simplify"
+msgstr "簡化"
+
+msgid "Simplification is currently only allowed when a single part is selected"
+msgstr "目前只允許在選擇單個零件時進行簡化"
+
+msgid "Extra high"
+msgstr "極高"
+
+msgid "High"
+msgstr "高"
+
+msgid "Medium"
+msgstr "中等"
+
+msgid "Low"
+msgstr "低"
+
+msgid "Extra low"
+msgstr "極低"
+
+msgid "%d triangles"
+msgstr "%d 個三角形"
+
+msgid "Show wireframe"
+msgstr "顯示線框"
+
+msgid "Operation already cancelling. Please wait few seconds."
+msgstr "已經取消了操作。請稍等一下。"
+
+msgid "Can't apply when proccess preview."
+msgstr "在預覽處理中無法套用。"
+
+msgid "Process %1% / 100"
+msgstr "目前處理到 %1% / 100"
+
+msgid "Simplify %1%"
+msgstr "簡化%1%"
+
+msgid "Auto-generate points"
+msgstr "自動產生點"
+
+msgid "Manual editing"
+msgstr "手動編輯"
+
+msgid "Add support point"
+msgstr "添加支撑點"
+
+msgid "Delete support point"
+msgstr "刪除支撐點"
+
+msgid "Change point head diameter"
+msgstr "改變點頭直徑"
+
+msgid "Support parameter change"
+msgstr "支撐參數變更"
+
+msgid "SLA Support Points"
+msgstr "SLA 支撐點"
+
+msgid "Do you want to save your manually edited support points?"
+msgstr "是否要儲存手動編輯的支撐點？"
+
+msgid "Save support points?"
+msgstr "儲存支撐點？"
+
+msgid "Move support point"
+msgstr "移動支撐點"
+
+msgid "Support points edit"
+msgstr "支撐點編輯"
+
+msgid "Autogeneration will erase all manually edited points."
+msgstr "自動產生將刪除所有手動編輯的點。"
+
+msgid "Autogenerate support points"
+msgstr "自動產生支撐點"
+
+msgid "SLA gizmo keyboard shortcuts"
+msgstr "SLA Gizmo 鍵盤快捷鍵"
+
+msgid "Note: some shortcuts work in (non)editing mode only."
+msgstr "注意：某些快捷方式僅在非編輯模式下有效。"
+
+msgid "Add point"
+msgstr "添加點"
+
+msgid "Remove point"
+msgstr "移除點"
+
+msgid "Move point"
+msgstr "移動點"
+
+msgid "Add point to selection"
+msgstr "將點添加到選取"
+
+msgid "Remove point from selection"
+msgstr "從選擇中移除點"
+
+msgid "Select by rectangle"
+msgstr "按矩形選擇"
+
+msgid "Deselect by rectangle"
+msgstr "按矩形取消選擇"
+
+msgid "Select all points"
+msgstr "選擇所有點"
+
+msgid "Mouse wheel"
+msgstr "滑鼠滾輪"
+
+msgid "Move clipping plane"
+msgstr "移動剪裁平面"
+
+msgid "Reset clipping plane"
+msgstr "重置裁剪平面"
+
+msgid "Switch to editing mode"
+msgstr "切換到編輯模式"
+
+msgid "Reset scale"
+msgstr "重置比例"
+
+msgid "Reset rotation"
+msgstr "重置旋轉"
+
+msgid ""
+"ERROR: Please close all manipulators available from the left toolbar first"
+msgstr "錯誤：請先關閉左側工具欄中所有可用的操作器"
+
+msgid ""
+"You are currently editing SLA support points. Please, apply or discard your "
+"changes first."
+msgstr "您當前正在編輯 SLA 支持點。請先套用或放棄您的變更。"
+
+msgid "Variable layer height"
+msgstr "可變層高"
+
+msgid "Left mouse button:"
+msgstr "滑鼠左鍵："
+
+msgid "Add detail"
+msgstr "添加細節"
+
+msgid "Right mouse button:"
+msgstr "滑鼠右鍵："
+
+msgid "Remove detail"
+msgstr "刪除細節"
+
+msgid "Shift + Left mouse button:"
+msgstr "Shift + 滑鼠左鍵："
+
+msgid "Reset to base"
+msgstr "重置到載台"
+
+msgid "Shift + Right mouse button:"
+msgstr "Shift + 滑鼠右鍵："
+
+msgid "Smoothing"
+msgstr "平滑化"
+
+msgid "Mouse wheel:"
+msgstr "滑鼠滾輪："
+
+msgid "Increase/decrease edit area"
+msgstr "增加/減少編輯區域"
+
+msgid "Adaptive"
+msgstr "自動調整"
+
+msgid "Quality / Speed"
+msgstr "品質/速度"
+
+msgid "Higher print quality versus higher print speed."
+msgstr "更高的打印件質與更高的打印速度。"
+
+msgid "Smooth"
+msgstr "光滑"
+
+msgid "Keep min"
+msgstr "保持最小"
+
+msgid "Variable layer height - Manual edit"
+msgstr "可變層高 - 手動編輯"
+
+msgid "Seq."
+msgstr "順序。"
+
+msgid "Variable layer height - Reset"
+msgstr "可變層高 - 重置"
+
+msgid "Variable layer height - Adaptive"
+msgstr "可變層高 - 自動調整"
+
+msgid "Variable layer height - Smooth all"
+msgstr "可變層高 - 全部平滑"
+
+msgid "Mirror Object"
+msgstr "鏡像模型"
+
+msgid "Move Object"
+msgstr "移動模型"
+
+msgid "Switch to Settings"
+msgstr "切換到設定"
+
+msgid "Print Settings Tab"
+msgstr "打印設定分頁"
+
+msgid "Filament Settings Tab"
+msgstr "線材設定分頁"
+
+msgid "Material Settings Tab"
+msgstr "材料設定分頁"
+
+msgid "Printer Settings Tab"
+msgstr "打印機設定分頁"
+
+msgid "Undo History"
+msgstr "取消歷史"
+
+msgid "Redo History"
+msgstr "重做歷史"
+
+msgid "Undo %1$d Action"
+msgid_plural "Undo %1$d Actions"
+msgstr[0] "取消 %1$d 操作"
+
+msgid "Redo %1$d Action"
+msgid_plural "Redo %1$d Actions"
+msgstr[0] "重做 %1$d 操作"
+
+msgid "Enter a search term"
+msgstr "請輸入搜尋字串"
+
+msgid "Arrange selection"
+msgstr "佈局選擇"
+
+msgid "Click right mouse button to show arrangement options"
+msgstr "單擊滑鼠右鍵以顯示佈局選項"
+
+msgid "Add instance"
+msgstr "添加實例"
+
+msgid "Remove instance"
+msgstr "刪除實例"
+
+msgid "Split to objects"
+msgstr "拆開為模型"
+
+msgid "Click right mouse button to open/close History"
+msgstr "點擊滑鼠右鍵打開/關閉歷史記錄"
+
+msgid "Next Undo action: %1%"
+msgstr "下一個取消操作：%1%"
+
+msgid "Next Redo action: %1%"
+msgstr "下一個重做操作：%1%"
+
+msgid "An object outside the print area was detected."
+msgstr "偵測到打印區域外的模型。"
+
+msgid "A toolpath outside the print area was detected."
+msgstr "偵測到打印區域外的工具路徑。"
+
+msgid "SLA supports outside the print area were detected."
+msgstr "偵測到打印區域外的 SLA 支撐材。"
+
+msgid "Some objects are not visible during editing."
+msgstr "某些模型在編輯區不可見。"
+
+msgid ""
+"An object outside the print area was detected.\n"
+"Resolve the current problem to continue slicing."
+msgstr ""
+"檢測到打印區域外的模型。\n"
+"請先解決當前問題再繼續切片。"
+
+msgid "ERROR:"
+msgstr "錯誤："
+
+msgid "Selection-Add from rectangle"
+msgstr "選擇 - 從矩形中添加"
+
+msgid "Selection-Remove from rectangle"
+msgstr "選擇 - 從矩形中刪除"
+
+msgid "Undefined"
+msgstr "未定義"
+
+msgid "%1% was substituted with %2%"
+msgstr "%1% 已取代為 %2%"
+
+msgid ""
+"Most likely the configuration was produced by a newer version of PrusaSlicer "
+"or by some PrusaSlicer fork."
+msgstr ""
+"那個設定很可能是由更新版本的 PrusaSlicer 或某些 PrusaSlicer 分支產生的。"
+
+msgid "The following values were substituted:"
+msgstr "取代了以下的設定值："
+
+msgid "Review the substitutions and adjust them if needed."
+msgstr "檢查取代並根據需要進行調整。"
+
+msgid "SLA print settings"
+msgstr "SLA 打印設定"
+
+msgid "Physical Printer"
+msgstr "實體打印機"
+
+msgid ""
+"Configuration bundle was loaded, however some configuration values were not "
+"recognized."
+msgstr "設定包已經匯入，但無法識別某些設定值。"
+
+msgid ""
+"Configuration file \"%1%\" was loaded, however some configuration values "
+"were not recognized."
+msgstr "設定檔“%1%”已匯入，但無法識別某些設定值。"
+
+msgid "is based on Slic3r by Alessandro Ranellucci and the RepRap community."
+msgstr "基於 Alessandro Ranellucci 和 RepRap 社區的 Slic3r。"
+
+msgid "Developed by Prusa Research."
+msgstr "由 Prusa Research 開發。"
+
+msgid ""
+"Starting with %1% 2.3, configuration directory on Linux has changed "
+"(according to XDG Base Directory Specification) to \n"
+"%2%.\n"
+"\n"
+"This directory did not exist yet (maybe you run the new version for the "
+"first time).\n"
+"However, an old %1% configuration directory was detected in \n"
+"%3%.\n"
+"\n"
+"Consider moving the contents of the old directory to the new location in "
+"order to access your profiles, etc.\n"
+"Note that if you decide to downgrade %1% in future, it will use the old "
+"location again.\n"
+"\n"
+"What do you want to do now?"
+msgstr ""
+"從 %1% 2.3 開始，Linux 上的設定目錄已經變更（根據 XDG 基本目錄規範）為\n"
+"%2%。\n"
+"\n"
+"這個目錄目前還不存在（可能你是第一次執行新的版本）。\n"
+"但是在 %1% 舊目錄中檢測到舊的設定\n"
+"%3%。\n"
+"\n"
+"可以考慮將舊目錄的內容移動到新位置，以便存取您的設定檔。\n"
+"不過請注意，若將來決定降版本 %1%，它將再次使用舊位置。\n"
+"\n"
+"你現在想要怎麼做？"
+
+msgid "%s - BREAKING CHANGE"
+msgstr "%s - 重大變更"
+
+msgid "Quit, I will move my data now"
+msgstr "退出，我現在要移動我的資料"
+
+msgid "Start the application"
+msgstr "啟動套用程式"
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it.\n"
+"\n"
+"The application will now terminate."
+msgstr ""
+"%s 遇到錯誤。這可能是由於記憶體不足所引起的。若您確定您的系統上有足夠的 RAM "
+"實體記憶體，那這也可能是一個軟體錯誤，如果您回報這個問題，我們將會很高興。\n"
+"\n"
+"套用程式現在將終止。"
+
+msgid "Fatal error"
+msgstr "發生嚴重錯誤"
+
+msgid ""
+"PrusaSlicer has encountered a localization error. Please report to "
+"PrusaSlicer team, what language was active and in which scenario this issue "
+"happened. Thank you.\n"
+"\n"
+"The application will now terminate."
+msgstr ""
+"PrusaSlicer 遇到了當地語系翻譯錯誤。請向PrusaSlicer 團隊報告，哪些語言是有效"
+"的，以及此問題發生在哪個狀況中。謝謝。\n"
+"\n"
+"現在套用程式將終止。"
+
+msgid "Critical error"
+msgstr "關鍵錯誤"
+
+msgid "Internal error: %1%"
+msgstr "內部錯誤：%1%"
+
+msgid "You are opening %1% version %2%."
+msgstr "您正在打開 %1% 版本 %2%。"
+
+msgid ""
+"The active configuration was created by <b>%1% %2%</b>,\n"
+"while a newer configuration was found in <b>%3%</b>\n"
+"created by <b>%1% %4%</b>.\n"
+"\n"
+"Shall the newer configuration be imported?\n"
+"If so, your active configuration will be backed up before importing the new "
+"configuration."
+msgstr ""
+"當前設定由<b>%1% %2%</b>建立，而在<b>%1% %4%</b>建立的<b>%3%</b>中發現了更新"
+"的設定。您希望匯入較新的設定嗎？如果是的話，您最好先備份當前設定之後再匯入新"
+"的設定。"
+
+msgid ""
+"An existing configuration was found in <b>%3%</b>\n"
+"created by <b>%1% %2%</b>.\n"
+"\n"
+"Shall this configuration be imported?"
+msgstr ""
+"在<b>%1% %2%</b>建立的<b>%3%</b>中找到已有的設定。請問要不要匯入這個設定？"
+
+msgid "Import"
+msgstr "匯入"
+
+msgid "Don't import"
+msgstr "不要匯入"
+
+msgid "Continue and import newer configuration?"
+msgstr "繼續並匯入更新的設定？"
+
+msgid ""
+"You are running a 32 bit build of PrusaSlicer on 64-bit Windows.\n"
+"32 bit build of PrusaSlicer will likely not be able to utilize all the RAM "
+"available in the system.\n"
+"Please download and install a 64 bit build of PrusaSlicer from https://www."
+"prusa3d.cz/prusaslicer/.\n"
+"Do you wish to continue?"
+msgstr ""
+"您正在 64 位 Windows 上運行 32 位版本的 PrusaSlicer。\n"
+"PrusaSlicer 的 32 位構建可能無法利用系統中所有可用的 RAM。\n"
+"請從 https://www.prusa3d.cz/prusaslicer/ 下載並安裝 64 位版本的 "
+"PrusaSlicer。\n"
+"你想繼續嗎？"
+
+msgid ""
+"%s\n"
+"Do you want to continue?"
+msgstr ""
+"%s\n"
+"你想繼續嗎？"
+
+msgid "Remember my choice"
+msgstr "記住我的選擇"
+
+msgid "Loading configuration"
+msgstr "匯入設定"
+
+msgid "New prerelease version %1% is available."
+msgstr "有新的預發佈版本 %1% 可用。"
+
+msgid "See Releases page."
+msgstr "請參閱發佈頁面。"
+
+msgid "Preparing settings tabs"
+msgstr "準備設定分頁"
+
+msgid "Restore window position on start"
+msgstr "啟動時恢復視窗位置"
+
+msgid "PrusaSlicer started after a crash"
+msgstr "PrusaSlicer 在當機後重新啟動"
+
+msgid ""
+"PrusaSlicer crashed last time when attempting to set window position.\n"
+"We are sorry for the inconvenience, it unfortunately happens with certain "
+"multiple-monitor setups.\n"
+"More precise reason for the crash: \"%1%\".\n"
+"For more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n"
+"\n"
+"To avoid this problem, consider disabling \"%4%\" in \"Preferences\". "
+"Otherwise, the application will most likely crash again next time."
+msgstr ""
+"上次嘗試設定視窗位置時，PrusaSlicer 當機了。\n"
+"對於給您帶來的不便，我們深表歉意。不幸的是在某些多顯示器設定下會發生這種情"
+"況。\n"
+"更詳細的當機原因是：“%1%”。\n"
+"有關詳細資訊，請參閱我們的 GitHub 問題追踪器：“%2%”和“%3%”\n"
+"\n"
+"為避免再次發生此問題，請考慮在“選項”中禁用“%4%”。否則下次套用程式很可能會再次"
+"當機。"
+
+msgid "Disable \"%1%\""
+msgstr "禁用“%1%”"
+
+msgid "Leave \"%1%\" enabled"
+msgstr "啟用“%1%”"
+
+msgid ""
+"You have the following presets with saved options for \"Print Host upload\""
+msgstr "您有以下預設，其中包含“打印主機上傳”的已儲存選項"
+
+msgid ""
+"But since this version of PrusaSlicer we don't show this information in "
+"Printer Settings anymore.\n"
+"Settings will be available in physical printers settings."
+msgstr ""
+"但由於此版本的PrusaSlicer 許可證，我們不再在打印機設定中顯示此資訊。\n"
+"這個設定將在實體打印機的設定中提供。"
+
+msgid ""
+"By default new Printer devices will be named as \"Printer N\" during its "
+"creation.\n"
+"Note: This name can be changed later from the physical printers settings"
+msgstr ""
+"預設情況下，新打印機設備在建立期間將被命名為“打印機 N”。\n"
+"注意：以後可以從實體打印機設定中變更此名稱"
+
+msgid "Information"
+msgstr "相關資訊"
+
+msgid "Loading of current presets"
+msgstr "匯入當前預設"
+
+msgid "Choose one file (3MF/AMF):"
+msgstr "選擇一個檔案（3MF/AMF）："
+
+msgid "Check for Configuration Updates"
+msgstr "檢查設定更新"
+
+msgid "Check for configuration updates"
+msgstr "檢查設定更新"
+
+msgid "%s View Mode"
+msgstr "%s 檢看模式"
+
+msgid "&Language"
+msgstr "語言(&L)"
+
+msgid "Flash Printer &Firmware"
+msgstr "燒錄打印機韌體(&F)"
+
+msgid "Taking a configuration snapshot"
+msgstr "取得設定快照"
+
+msgid ""
+"Some presets are modified and the unsaved changes will not be captured by "
+"the configuration snapshot."
+msgstr "一些預設值已被修改，未儲存的變更不會被設定快照擷取。"
+
+msgid "Loading a configuration snapshot"
+msgstr "匯入設定快照"
+
+msgid "Continue to activate a configuration snapshot %1%?"
+msgstr "要繼續啟動設定快照 %1% 嗎？"
+
+msgid "Failed to activate configuration snapshot."
+msgstr "無法啟動設定快照。"
+
+msgid "Language selection"
+msgstr "語言選擇"
+
+msgid ""
+"Switching the language will trigger application restart.\n"
+"You will lose content of the plater."
+msgstr ""
+"切換語言將觸發套用程式重啟。\n"
+"若您不先儲存的話將失去未儲存的內容。"
+
+msgid "Do you want to proceed?"
+msgstr "您想繼續嗎？"
+
+msgid "Restart application"
+msgstr "重新啟動套用程式"
+
+msgid "For new project all modifications will be reseted"
+msgstr "對於新項目，所有修改都將被重置"
+
+msgid "Loading a new project while the current project is modified."
+msgstr "在修改當前項目時匯入新項目。"
+
+msgid "Project is loading"
+msgstr "項目正在匯入"
+
+msgid "Opening new project while some presets are unsaved."
+msgstr "在不儲存某些預設的情況下打開新項目。"
+
+msgid "The uploads are still ongoing"
+msgstr "上傳仍在進行中"
+
+msgid "Stop them and continue anyway?"
+msgstr "您要停止它們並繼續嗎？"
+
+msgid "Ongoing uploads"
+msgstr "持續上傳"
+
+msgid "Configuration is editing from ConfigWizard"
+msgstr "設定正在 ConfigWizard 編輯中"
+
+msgid "Select a gcode file:"
+msgstr "請選擇一個 Gcode 檔案："
+
+msgid "Open hyperlink in default browser?"
+msgstr "在預設瀏覽器中打開超連結？"
+
+msgid "PrusaSlicer: Open hyperlink"
+msgstr "PrusaSlicer：打開超連結"
+
+msgid "Suppress to open hyperlink in browser"
+msgstr "禁止在瀏覽器中打開超連結"
+
+msgid "PrusaSlicer will remember your choice."
+msgstr "PrusaSlicer 會記住您的選擇。"
+
+msgid "You will not be asked about it again on hyperlinks hovering."
+msgstr "停留中的超連結將不會再次詢問您。"
+
+msgid ""
+"Visit \"Preferences\" and check \"%1%\"\n"
+"to changes your choice."
+msgstr ""
+"進入“選項”中並選取“%1%”\n"
+"以改變你的選擇。"
+
+msgid "PrusaSlicer: Don't ask me again"
+msgstr "PrusaSlicer：別再問我了"
+
+msgid "Add negative volume"
+msgstr "添加挖孔模型"
+
+msgid "The following model was repaired successfully"
+msgid_plural "The following models were repaired successfully"
+msgstr[0] "以下模型修復完成"
+
+msgid "Folowing model repair failed"
+msgid_plural "Folowing models repair failed"
+msgstr[0] "以下模型修復失敗"
+
+msgid "Repairing was canceled"
+msgstr "已取消修復"
+
+msgid "Gallery"
+msgstr "圖庫"
+
+msgid "Height range Modifier"
+msgstr "高度範圍修改器"
+
+msgid "Printable"
+msgstr "可打印"
+
+msgid "Reload the selected volumes from disk"
+msgstr "從磁碟機重新匯入選定的模型"
+
+msgid "Replace with STL"
+msgstr "取代為 STL"
+
+msgid "Replace the selected volume with new STL"
+msgstr "用新的 STL 取代選定的模型"
+
+msgid "Scale to print volume"
+msgstr "縮放至最大可打印尺寸"
+
+msgid "Scale the selected object to fit the print volume"
+msgstr "調整選取的模型以適合打印尺寸"
+
+msgid "Convert from imperial units"
+msgstr "從英制單位轉換"
+
+msgid "Revert conversion from imperial units"
+msgstr "恢復英制單位轉換"
+
+msgid "Convert from meters"
+msgstr "從美制單位轉換"
+
+msgid "Revert conversion from meters"
+msgstr "恢復美制單位轉換"
+
+msgid "Merge objects to the one multipart object"
+msgstr "將多個模型合併成為一個包含多部分的模型"
+
+msgid "Add Shape"
+msgstr "添加形狀"
+
+msgid "Split the selected object into individual parts"
+msgstr "將所選模型拆開為單獨的零件"
+
+msgid "Set number of instances"
+msgstr "設定實例數量"
+
+msgid "Add one more instance of the selected object"
+msgstr "添加所選模型的另一個實例"
+
+msgid "Remove one instance of the selected object"
+msgstr "刪除所選模型的一個實例"
+
+msgid "Change the number of instances of the selected object"
+msgstr "變更所選模型的實例數量"
+
+msgid "Fill bed with instances"
+msgstr "用實例填滿整個載台"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "用所選模型的實例填滿載台的剩餘區域"
+
+msgid "PrusaSlicer GUI initialization failed"
+msgstr "PrusaSlicer GUI 初始化失敗"
+
+msgid "Fatal error, exception catched: %1%"
+msgstr "致命錯誤，收到異常狀態：%1%"
+
+msgid "Start at height"
+msgstr "從高處開始"
+
+msgid "Stop at height"
+msgstr "停在高處"
+
+msgid "Remove layer range"
+msgstr "移除打印層範圍"
+
+msgid "Add layer range"
+msgstr "添加打印層範圍"
+
+msgid "Editing"
+msgstr "編輯"
+
+msgid "No errors detected"
+msgstr "未檢測到錯誤"
+
+msgid "Auto-repaired %1$d error"
+msgid_plural "Auto-repaired %1$d errors"
+msgstr[0] "自動修復 %1$d 錯誤"
+
+msgid "%1$d degenerate facet"
+msgid_plural "%1$d degenerate facets"
+msgstr[0] "%1$d 退化面"
+
+msgid "%1$d edge fixed"
+msgid_plural "%1$d edges fixed"
+msgstr[0] "%1$d 固定邊"
+
+msgid "%1$d facet removed"
+msgid_plural "%1$d facets removed"
+msgstr[0] "%1$d 面已移除"
+
+msgid "%1$d facet reversed"
+msgid_plural "%1$d facets reversed"
+msgstr[0] "%1$d 反轉面"
+
+msgid "%1$d backward edge"
+msgid_plural "%1$d backward edges"
+msgstr[0] "%1$d 邊緣後退"
+
+msgid "%1$d open edge"
+msgid_plural "%1$d open edges"
+msgstr[0] "%1$d 邊緣開放"
+
+msgid "Remaining errors"
+msgstr "剩餘的錯誤"
+
+msgid "Click the icon to change the object settings"
+msgstr "單擊圖示以變更模型設定"
+
+msgid "Right button click the icon to change the object printable property"
+msgstr "按滑鼠右鍵單擊圖示以變更模型的可打印屬性"
+
+msgid "Click the icon to change the object printable property"
+msgstr "單擊圖示可變更模型的可打印屬性"
+
+msgid "Rename Object"
+msgstr "重命名模型"
+
+msgid "Rename Sub-object"
+msgstr "重命名子模型"
+
+msgid "Instances to Separated Objects"
+msgstr "分離模型的實例"
+
+msgid "Volumes in Object reordered"
+msgstr "模型中的模型重新排序"
+
+msgid "Object reordered"
+msgstr "模型重新排序"
+
+msgid "Add Settings for Layers"
+msgstr "添加打印層設定"
+
+msgid "Add Settings for Sub-object"
+msgstr "為子模型添加設定"
+
+msgid "Add Settings for Object"
+msgstr "添加模型設定"
+
+msgid "Add Settings Bundle for Height range"
+msgstr "為高度範圍添加設定包"
+
+msgid "Add Settings Bundle for Sub-object"
+msgstr "為子模型添加設定包"
+
+msgid "Add Settings Bundle for Object"
+msgstr "為模型添加設定包"
+
+msgid "Load Part"
+msgstr "匯入零件"
+
+msgid "Load Modifier"
+msgstr "匯入修改器"
+
+msgid "Loading file"
+msgstr "匯入檔案中"
+
+msgid "Add Generic Subobject"
+msgstr "添加一般子模型"
+
+msgid "Add Shape from Gallery"
+msgstr "從圖庫中添加形狀"
+
+msgid "Add Shapes from Gallery"
+msgstr "從圖庫中添加形狀"
+
+msgid "Remove paint-on supports"
+msgstr "移除繪製的支撐"
+
+msgid "Remove paint-on seam"
+msgstr "移除繪製的接縫"
+
+msgid "Remove Multi Material painting"
+msgstr "移除繪製的多個材質"
+
+msgid "Shift objects to bed"
+msgstr "將模型轉移到載台上"
+
+msgid "Remove variable layer height"
+msgstr "移除可變層高"
+
+msgid "Delete Settings"
+msgstr "刪除設定"
+
+msgid "Delete All Instances from Object"
+msgstr "從模型中刪除所有實例"
+
+msgid "Delete Height Range"
+msgstr "刪除高度範圍"
+
+msgid "From Object List You can't delete the last solid part from object."
+msgstr "在模型列表裡您不能從模型中刪除最後一個實體部分。"
+
+msgid "Delete Subobject"
+msgstr "刪除子模型"
+
+msgid "Last instance of an object cannot be deleted."
+msgstr "無法刪除模型的最後一個實例。"
+
+msgid "Delete Instance"
+msgstr "刪除實例"
+
+msgid "Merged"
+msgstr "合併"
+
+msgid "Merge all parts to the one single object"
+msgstr "將所有零件合併為一個模型"
+
+msgid "Add Layers"
+msgstr "新增打印層"
+
+msgid "Layer range Settings to modify"
+msgstr "打印層範圍設定修改"
+
+msgid "Height ranges"
+msgstr "高度範圍"
+
+msgid "Settings for height range"
+msgstr "高度範圍設定"
+
+msgid "Add Height Range"
+msgstr "添加高度範圍"
+
+msgid ""
+"Cannot insert a new layer range after the current layer range.\n"
+"The next layer range is too thin to be split to two\n"
+"without violating the minimum layer height."
+msgstr ""
+"無法在當前打印層範圍後插入新的打印層範圍。\n"
+"下一層範圍太薄，不能一分為二\n"
+"因為不能違反最小層高。"
+
+msgid ""
+"Cannot insert a new layer range between the current and the next layer "
+"range.\n"
+"The gap between the current layer range and the next layer range\n"
+"is thinner than the minimum layer height allowed."
+msgstr ""
+"無法在當前打印層範圍和下一個打印層範圍之間插入新的打印層範圍。\n"
+"當前打印層範圍和下一個打印層範圍之間的差距\n"
+"因為比允許的最小層高更薄。"
+
+msgid ""
+"Cannot insert a new layer range after the current layer range.\n"
+"Current layer range overlaps with the next layer range."
+msgstr ""
+"無法在當前打印層範圍後插入新的打印層範圍。\n"
+"因為當前打印層範圍與下一個打印層範圍重疊。"
+
+msgid "Edit Height Range"
+msgstr "編輯高度範圍"
+
+msgid "Selection-Remove from list"
+msgstr "選擇-從列表中移除"
+
+msgid "Selection-Add from list"
+msgstr "選擇-從列表中添加"
+
+msgid "Layer"
+msgstr "層"
+
+msgid "Negative Volume"
+msgstr "挖孔模型"
+
+msgid "Support Blocker"
+msgstr "支撐阻斷器"
+
+msgid "Support Enforcer"
+msgstr "執行支撐"
+
+msgid "Change Part Type"
+msgstr "變更零件類型"
+
+msgid "Repairing model"
+msgstr "修復模型"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"repairing the mesh."
+msgstr "修復網格後，移除了自定義支撐、接縫和多材料繪製。"
+
+msgid "Change Extruders"
+msgstr "取代擠出機"
+
+msgid "Set Printable group"
+msgstr "設定可打印群組"
+
+msgid "Set Unprintable group"
+msgstr "設定不可打印群組"
+
+msgid "Set Printable"
+msgstr "設定為可打印"
+
+msgid "Set Unprintable"
+msgstr "設定為不可打印"
+
+msgid "Set Printable Instance"
+msgstr "設定為可打印實例"
+
+msgid "Set Unprintable Instance"
+msgstr "設定為不可打印實例"
+
+msgid "Select coordinate space, in which the transformation will be performed."
+msgstr "選擇座標空間，並在其中進行轉換。"
+
+msgid "Drop to bed"
+msgstr "下降至載台"
+
+msgid "Reset Rotation"
+msgstr "重置旋轉"
+
+msgid "Inches"
+msgstr "英吋"
+
+msgid "World coordinates"
+msgstr "世界坐標"
+
+msgid "Set Position"
+msgstr "設定位置"
+
+msgid "Set Orientation"
+msgstr "設定方向"
+
+msgid "Set Scale"
+msgstr "設定比例"
+
+msgid "Remove parameter"
+msgstr "移除參數"
+
+msgid "Delete Option %s"
+msgstr "刪除選項 %s"
+
+msgid "Change Option %s"
+msgstr "變更選項 %s"
+
+msgid "NOTE:"
+msgstr "備註："
+
+msgid "Sliced object \"%1%\" looks like a logo or a sign"
+msgstr "切片模型“%1%”看起來像徽標或標誌"
+
+msgid "Apply color change automatically"
+msgstr "自動套用顏色變化"
+
+msgid "More"
+msgstr "更多"
+
+msgid "Open Preferences."
+msgstr "打開選項。"
+
+msgid "Open Documentation in web browser."
+msgstr "在 Web 瀏覽器中打開文檔。"
+
+msgid "Use for search"
+msgstr "用於搜尋"
+
+msgid "Category"
+msgstr "類別"
+
+msgid "Search in English"
+msgstr "用英文搜尋"
+
+msgid ""
+"Arrangement ignored the following objects which can't fit into a single "
+"bed:\n"
+"%s"
+msgstr ""
+"佈局忽略了無法放入整個載台的以下模型：\n"
+"%s"
+
+msgid "Filling bed"
+msgstr "填滿載台"
+
+msgid "Bed filling canceled."
+msgstr "取消填滿載台。"
+
+msgid "Bed filling done."
+msgstr "填滿載台完畢。"
+
+msgid "Best surface quality"
+msgstr "最佳表面品質"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "最佳化模型旋轉以獲得最佳表面質量。"
+
+msgid "Reduced overhang slopes"
+msgstr "減少懸空斜坡"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support "
+"structures.\n"
+"Note that this method will try to find the best surface of the object for "
+"touching the print bed if no elevation is set."
+msgstr ""
+"最佳化模型旋轉，使需要支撐結構的懸空量最少。\n"
+"請注意，如果未設定標高，此方法將嘗試找到接觸打印載台的模型之最佳表面。"
+
+msgid "Lowest Z height"
+msgstr "最低 Z 高度"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "旋轉模型以獲得最低的 z 高度以加快打印時間。"
+
+msgid "Importing SLA archive"
+msgstr "匯入 SLA 存檔"
+
+msgid ""
+"The SLA archive doesn't contain any presets. Please activate some SLA "
+"printer preset first before importing that SLA archive."
+msgstr ""
+"SLA 存檔不包含任何預設。在匯入該 SLA 存檔之前，請先啟動一些 SLA 打印機預設"
+"值。"
+
+msgid "Importing canceled."
+msgstr "取消匯入。"
+
+msgid "Importing done."
+msgstr "匯入完成。"
+
+msgid "The file does not exist."
+msgstr "該檔案不存在。"
+
+msgid ""
+"The imported SLA archive did not contain any presets. The current SLA "
+"presets were used as fallback."
+msgstr "匯入的 SLA 存檔不包含任何預設。以當前的 SLA 預設作為後備使用。"
+
+msgid "You cannot load SLA project with a multi-part object on the bed"
+msgstr "您不能在載台上匯入包含多個零件模型的 SLA 項目"
+
+msgid "New project, clear plater"
+msgstr "新項目,清除載台"
+
+msgid "Open project AMF/3MF with config, clear plater"
+msgstr "使用設定打開 AMF/3MF 項目，清除載台"
+
+msgid "Save project as (3mf)"
+msgstr "將項目另存為 (3mf)"
+
+msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
+msgstr "無需設定匯入STL/3MF/STEP/OBJ/AMF，保留載台"
+
+msgid "Import Config from ini/amf/3mf/gcode"
+msgstr "從 ini/amf/3mf/gcode 匯入設定"
+
+msgid "Load Config from ini/amf/3mf/gcode and merge"
+msgstr "從 ini/amf/3mf/gcode 匯入設定並合併"
+
+msgid "Export config"
+msgstr "匯出設定"
+
+msgid "Export to SD card / Flash drive"
+msgstr "匯出到 SD 卡 / USB隨身碟"
+
+msgid "Eject SD card / Flash drive"
+msgstr "退出 SD 卡 / USB隨身碟"
+
+msgid "Deselect all"
+msgstr "取消全選"
+
+msgid "Paste from clipboard"
+msgstr "從剪貼簿貼上"
+
+msgid "Reload plater from disk"
+msgstr "從磁碟重新匯入載台"
+
+msgid "Open new instance"
+msgstr "打開新實例"
+
+msgid "Show/Hide object/instance labels"
+msgstr "顯示/隱藏模型/實例標籤"
+
+msgid "Commands"
+msgstr "命令"
+
+msgid "Add Instance of the selected object"
+msgstr "添加所選模型的實例"
+
+msgid "Remove Instance of the selected object"
+msgstr "移除所選模型的實例"
+
+msgid ""
+"Press to select multiple objects\n"
+"or move multiple objects with mouse"
+msgstr ""
+"按下以選擇多個模型\n"
+"或用滑鼠移動多個模型"
+
+msgid "Press to activate selection rectangle"
+msgstr "按下以啟動矩形選擇"
+
+msgid "Press to activate deselection rectangle"
+msgstr "按下以取消矩形選擇"
+
+msgid "Move selection 10 mm in positive Y direction"
+msgstr "在正 Y 方向移動選擇 10 mm"
+
+msgid "Move selection 10 mm in negative Y direction"
+msgstr "將選區沿負 Y 方向移動 10 mm"
+
+msgid "Move selection 10 mm in negative X direction"
+msgstr "將選區沿負 X 方向移動 10 mm"
+
+msgid "Move selection 10 mm in positive X direction"
+msgstr "將選區沿正 X 方向移動 10 mm"
+
+msgid "Any arrow"
+msgstr "任何箭頭"
+
+msgid "Movement step set to 1 mm"
+msgstr "移動步長設定為 1 mm"
+
+msgid "Movement in camera space"
+msgstr "相機空間中的運動"
+
+msgid "Rotate selection 45 degrees CCW"
+msgstr "逆時針旋轉選擇 45 度"
+
+msgid "Rotate selection 45 degrees CW"
+msgstr "順時針旋轉選擇 45 度"
+
+msgid "Gizmo SLA hollow"
+msgstr "SLA Gizmo 空心"
+
+msgid "Gizmo FDM paint-on supports"
+msgstr "Gizmo FDM 繪製支撐"
+
+msgid "Gizmo FDM paint-on seam"
+msgstr "Gizmo FDM 繪製接縫"
+
+msgid "Gizmo Multi Material painting"
+msgstr "Gizmo 多材質繪製"
+
+msgid "Unselect gizmo or clear selection"
+msgstr "取消選擇 Gizmo 或清除選擇"
+
+msgid "Change camera type (perspective, orthographic)"
+msgstr "變更相機類型（透視、正交）"
+
+msgid ""
+"Zoom to selected object\n"
+"or all objects in scene, if none selected"
+msgstr ""
+"縮放到所選模型\n"
+"或場景中的所有模型（如果未選擇）"
+
+msgid "Switch between Editor/Preview"
+msgstr "在編輯器/預覽之間切換"
+
+msgid "Collapse/Expand the sidebar"
+msgstr "折疊/展開側邊欄"
+
+msgid "Show/Hide 3Dconnexion devices settings dialog, if enabled"
+msgstr "顯示/隱藏 3Dconnexion 設備設定對話框（如果有啟用）"
+
+msgid "Show/Hide 3Dconnexion devices settings dialog"
+msgstr "顯示/隱藏 3Dconnexion 設備設定對話框"
+
+msgid "Minimize application"
+msgstr "最小化應用程式"
+
+msgid "All gizmos: Rotate - left mouse button; Pan - right mouse button"
+msgstr "全部 Gizmos：旋轉 - 左滑鼠按鈕;平移 - 右滑鼠按鈕"
+
+msgid "Gizmo move: Press to snap by 1mm"
+msgstr "Gizmo 移動： 按 1 mm捕捉"
+
+msgid "Gizmo scale: Press to snap by 5%"
+msgstr "Gizmo 縮放：按 5% 捕捉"
+
+msgid "Gizmo scale: Scale selection to fit print volume"
+msgstr "Gizmo 縮放：比例選擇以符合打印體積"
+
+msgid "Gizmo scale: Press to activate one direction scaling"
+msgstr "Gizmo 縮放：按下以激活一個方向縮放"
+
+msgid "Gizmo scale: Press to scale selected objects around their own center"
+msgstr "Gizmo 縮放：按下以圍繞其自身中心縮放選定的模型"
+
+msgid "Gizmo rotate: Press to rotate selected objects around their own center"
+msgstr "Gizmo 旋轉：按下以圍繞其自身中心旋轉所選的模型"
+
+msgid "Gizmos"
+msgstr "Gizmos"
+
+msgid ""
+"The following shortcuts are applicable when the specified gizmo is active"
+msgstr "當指定的Gizmo處於啟用狀態時，以下快捷方式適用"
+
+msgid "Set selected items as Printable/Unprintable"
+msgstr "將所選項目設定為可打印/不可打印"
+
+msgid "Set default extruder for the selected items"
+msgstr "為所選項目設定預設擠出機"
+
+msgid "Set extruder number for the selected items"
+msgstr "為所選項目設定擠出機編號"
+
+msgid "Objects List"
+msgstr "模型列表"
+
+msgid "Open a G-code file"
+msgstr "打開 G-code 檔案"
+
+msgid "Reload the plater from disk"
+msgstr "從磁碟機重新匯入載台"
+
+msgid "Vertical slider - Move active thumb Up"
+msgstr "垂直滑塊 - 向上移動滑塊"
+
+msgid "Vertical slider - Move active thumb Down"
+msgstr "垂直滑塊 - 向下移動滑塊"
+
+msgid "Horizontal slider - Move active thumb Left"
+msgstr "水平滑塊 - 向左移動滑塊"
+
+msgid "Horizontal slider - Move active thumb Right"
+msgstr "水平滑塊 - 向右移動滑塊"
+
+msgid "On/Off one layer mode of the vertical slider"
+msgstr "打開/關閉垂直滑塊的一層模式"
+
+msgid "Show/Hide G-code window"
+msgstr "顯示/隱藏 G-code 視窗"
+
+msgid "Move active thumb Up"
+msgstr "向上移動滑塊"
+
+msgid "Move active thumb Down"
+msgstr "向下移動滑塊"
+
+msgid "Set upper thumb as active"
+msgstr "將上滑塊設定為啟用"
+
+msgid "Set lower thumb as active"
+msgstr "將下滑塊設定為啟用"
+
+msgid ""
+"Press to speed up 5 times while moving thumb\n"
+"with arrow keys or mouse wheel"
+msgstr ""
+"移動滑塊時按加速 5 次\n"
+"帶箭頭鍵或滑鼠輪"
+
+msgid "Vertical Slider"
+msgstr "垂直滑塊"
+
+msgid ""
+"The following shortcuts are applicable in G-code preview when the vertical "
+"slider is active"
+msgstr "當垂直滑塊處於啟用狀態時，以下快捷方式適用於 G-code預覽"
+
+msgid "Move active thumb Left"
+msgstr "向左移動滑塊"
+
+msgid "Move active thumb Right"
+msgstr "向右移動滑塊"
+
+msgid "Set left thumb as active"
+msgstr "將左滑塊設定為啟用"
+
+msgid "Set right thumb as active"
+msgstr "將右滑塊設定為啟用"
+
+msgid "Horizontal Slider"
+msgstr "水平滑塊"
+
+msgid ""
+"The following shortcuts are applicable in G-code preview when the horizontal "
+"slider is active"
+msgstr "當水平滑塊處於啟用狀態時，以下快捷方式適用於G-code預覽"
+
+msgid "Open a new PrusaSlicer instance"
+msgstr "打開一個新的PrusaSlicer實例"
+
+msgid "G-code preview"
+msgstr "G-code預覽"
+
+msgid "Open G-code viewer"
+msgstr "打開 G-code查看器"
+
+msgid "Open PrusaSlicer"
+msgstr "打開PrusaSlicer"
+
+msgid "Open new G-code viewer"
+msgstr "打開新的 G-code查看器"
+
+msgid "Closing PrusaSlicer. Current project is modified."
+msgstr "關閉 PrusaSlicer。當前項目已修改。"
+
+msgid "PrusaSlicer is closing"
+msgstr "PrusaSlicer 正在關閉"
+
+msgid "Closing PrusaSlicer while some presets are modified."
+msgstr "在修改某些預設時關閉 PrusaSlicer。"
+
+msgid "Untitled"
+msgstr "無標題"
+
+msgid "based on Slic3r"
+msgstr "基於 Slic3r"
+
+msgid "&About %s"
+msgstr "關於(&A) %s"
+
+msgid "%s &Website"
+msgstr "%s 網站(&W)"
+
+msgid "Open the %s website in your browser"
+msgstr "在瀏覽器中打開 %s 網站"
+
+msgid "Software &Releases"
+msgstr "軟體與發佈"
+
+msgid "Open the software releases page in your browser"
+msgstr "在瀏覽器中打開軟體發佈頁面"
+
+msgid "Report an issue on %s"
+msgstr "在 %s 回報問題"
+
+msgid "Show Tip of the Day"
+msgstr "顯示每日提示"
+
+msgid ""
+"Opens Tip of the day notification in bottom right corner or shows another "
+"tip if already opened."
+msgstr "打開右下角的每日提示通知或顯示另一個提示（如果已打開的話）。"
+
+msgid "&New Project"
+msgstr "新項目(&N)"
+
+msgid "Start a new project"
+msgstr "開新的項目"
+
+msgid "Recent projects"
+msgstr "最近的項目"
+
+msgid ""
+"The selected project is no longer available.\n"
+"Do you want to remove it from the recent projects list?"
+msgstr ""
+"所選項目不再可用。\n"
+"您要將其從最近的項目列表中刪除嗎？"
+
+msgid "Import STL (Imperial Units)"
+msgstr "匯入 STL（英制單位）"
+
+msgid "Load an model saved with imperial units"
+msgstr "匯入儲存英制單位的模型"
+
+msgid "Import Config from &Project"
+msgstr "從項目匯入設定(&P)"
+
+msgid "S&end G-code"
+msgstr "傳送 G-code(&S)"
+
+msgid "Send to print current plate as G-code"
+msgstr "以 G-code 形式傳送打印到當前載台"
+
+msgid "Export G-code to SD Card / Flash Drive"
+msgstr "將 G-code 匯出到 SD 卡/USB隨身碟"
+
+msgid "Export current plate as G-code to SD card / Flash drive"
+msgstr "將 G-code 當前載台上的內容匯出到 SD 卡/USB隨身碟"
+
+msgid "Export &Toolpaths as OBJ"
+msgstr "將模型匯出爲 OBJ(&T)"
+
+msgid "Export toolpaths as OBJ"
+msgstr "將模型匯出爲 OBJ"
+
+msgid "Export Config Bundle With Physical Printers"
+msgstr "匯出打印機設定包"
+
+msgid "Export all presets including physical printers to file"
+msgstr "匯出所有預設，包括要歸檔的打表機"
+
+msgid "Ejec&t SD Card / Flash Drive"
+msgstr "退出 SD 卡 / USB隨身碟(&t)"
+
+msgid "Eject SD card / Flash drive after the G-code was exported to it."
+msgstr "匯出 G-code 後退出 SD 卡/USB隨身碟。"
+
+msgid "(Re)Slice No&w"
+msgstr "重新切片(&w)"
+
+msgid "&G-code Preview"
+msgstr "G-code預覽(&G)"
+
+msgid "Exit %s"
+msgstr "退出%s"
+
+msgid "&Select All"
+msgstr "全選(&S)"
+
+msgid "D&eselect All"
+msgstr "取消全選(&e)"
+
+msgid "Deselects all objects"
+msgstr "取消選取全部模型"
+
+msgid "&Delete Selected"
+msgstr "刪除所選項目(&D)"
+
+msgid "Delete &All"
+msgstr "全部刪除(&A)"
+
+msgid "Copy selection to clipboard"
+msgstr "複製到剪貼簿"
+
+msgid "Paste clipboard"
+msgstr "從剪貼簿貼上"
+
+msgid "Re&load from Disk"
+msgstr "從磁碟機中重新匯入(&l)"
+
+msgid "Searc&h"
+msgstr "搜尋(&h)"
+
+msgid "Search in settings"
+msgstr "搜尋設定"
+
+msgid "Open the dialog to modify shape gallery"
+msgstr "打開對話框修改形狀圖庫"
+
+msgid "Open New Instance"
+msgstr "打開新實例"
+
+msgid "Compare Presets"
+msgstr "比對預設值"
+
+msgid "Compare presets"
+msgstr "比對預設值"
+
+msgid "Show &Labels"
+msgstr "顯示標籤(&L)"
+
+msgid "Show object/instance labels in 3D scene"
+msgstr "在 3D 場景中顯示模型/實例標籤"
+
+msgid "&Collapse Sidebar"
+msgstr "折疊側邊欄(&C)"
+
+msgid "Collapse sidebar"
+msgstr "折疊側邊欄"
+
+msgid "&Fullscreen"
+msgstr "全螢幕(&F)"
+
+msgid "Fullscreen"
+msgstr "全螢幕"
+
+msgid "&Open G-code"
+msgstr "打開G-code碼(&O)"
+
+msgid "Open &PrusaSlicer"
+msgstr "打開PrusaSlicer(&P)"
+
+msgid "E&xport"
+msgstr "匯出(&x)"
+
+msgid "S&end to print"
+msgstr "傳送到打印機(&E)"
+
+msgid "Mate&rial Settings Tab"
+msgstr "線材設定頁(&r)"
+
+msgid "Loading of a configuration file"
+msgstr "匯入設定檔"
+
+msgid "Exporting configuration bundle"
+msgstr "匯出設定包"
+
+msgid ""
+"Some presets are modified and the unsaved changes will not be exported into "
+"configuration bundle."
+msgstr "修改了一些預設，未儲存的變更不會匯出到設定包中。"
+
+msgid "Loading of a configuration bundle"
+msgstr "匯入設定包"
+
+msgid "3Dconnexion settings"
+msgstr "3Dconnexion 設定"
+
+msgid "Device:"
+msgstr "裝置："
+
+msgid "Translation"
+msgstr "翻譯"
+
+msgid "Zoom"
+msgstr "縮放"
+
+msgid "Deadzone:"
+msgstr "無作用區："
+
+msgid "Swap Y/Z axes"
+msgstr "交換 Y/Z 軸"
+
+msgid "%s error"
+msgstr "%s 錯誤"
+
+msgid "%s has encountered an error"
+msgstr "%s 遇到錯誤"
+
+msgid "%s warning"
+msgstr "%s 警告"
+
+msgid "%s has a warning"
+msgstr "%s 有警告"
+
+msgid "%s info"
+msgstr "%s 資訊"
+
+msgid "%s information"
+msgstr "%s 相關資訊"
+
+msgid "3D Mouse disconnected."
+msgstr "3D 滑鼠已斷開連接。"
+
+msgid "See more."
+msgstr "查看更多。"
+
+msgid ""
+"You have just added a G-code for color change, but its value is empty.\n"
+"To export the G-code correctly, check the \"Color Change G-code\" in "
+"\"Printer Settings > Custom G-code\""
+msgstr ""
+"您剛剛添加了一個用於顏色變更的 G-code ，但它是空的值。\n"
+"要正確匯出 G-code ，請在“打印機設定 > 自定義 G-code ”中選中“顏色變更 G-code ”"
+
+msgid ""
+"No color change event was added to the print. The print does not look like a "
+"sign."
+msgstr "沒有顏色變化事件被添加到打印件中。打印件看起來不像是一個標誌。"
+
+msgid "Desktop integration was successful."
+msgstr "桌面整合成功。"
+
+msgid "Desktop integration failed."
+msgstr "桌面整合失敗。"
+
+msgid "Undo desktop integration was successful."
+msgstr "取消桌面整合成功。"
+
+msgid "Undo desktop integration failed."
+msgstr "取消桌面整合失敗。"
+
+msgid "Exporting."
+msgstr "匯出。"
+
+msgid "Open Folder."
+msgstr "打開資料夾。"
+
+msgid "Eject drive"
+msgstr "退出隨身碟"
+
+msgid "ERROR"
+msgstr "錯誤"
+
+msgid "COMPLETED"
+msgstr "已完成"
+
+msgid "CANCELED"
+msgstr "取消"
+
+msgid "Cancel upload"
+msgstr "取消上傳"
+
+msgid "%1$d object was loaded with custom supports."
+msgid_plural "%1$d objects were loaded with custom supports."
+msgstr[0] "%1$d 模型匯入了自定義支撐。"
+
+msgid "%1$d object was loaded with custom seam."
+msgid_plural "%1$d objects were loaded with custom seam."
+msgstr[0] "%1$d 模型匯入了自定義接縫。"
+
+msgid "%1$d object was loaded with multimaterial painting."
+msgid_plural "%1$d objects were loaded with multimaterial painting."
+msgstr[0] "%1$d 模型匯入了多材料繪製。"
+
+msgid "%1$d object was loaded with variable layer height."
+msgid_plural "%1$d objects were loaded with variable layer height."
+msgstr[0] "%1$d 模型以可變層高的方式匯入。"
+
+msgid "%1$d object was loaded with partial sinking."
+msgid_plural "%1$d objects were loaded with partial sinking."
+msgstr[0] "%1$d 模型匯入時部分沉到載台以下。"
+
+msgid "Slicing finished."
+msgstr "切片完成。"
+
+msgid "Export G-Code."
+msgstr "匯出G-code。"
+
+msgid "WARNING:"
+msgstr "警告："
+
+msgid "Exporting finished."
+msgstr "匯出完成。"
+
+msgid "Paint-on seam"
+msgstr "繪製接縫"
+
+msgid "Sinking"
+msgstr "下沉"
+
+msgid "Instances"
+msgstr "實例"
+
+msgid "Instance %d"
+msgstr "實例 %d"
+
+msgid "Range"
+msgstr "範圍"
+
+msgid ""
+"PrusaSlicer requires OpenGL 2.0 capable graphics driver to run correctly, \n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicer 需要支援 OpenGL 2.0 的圖形驅動程式才能正常運作，\n"
+"檢測到 OpenGL 版本 %s、算繪 %s、供應商 %s。"
+
+msgid "You may need to update your graphics card driver."
+msgstr "您可能需要更新顯示卡驅動程式。"
+
+msgid ""
+"As a workaround, you may run PrusaSlicer with a software rendered 3D "
+"graphics by running prusa-slicer.exe with the --sw-renderer parameter."
+msgstr ""
+"解決方式是經由命令列視窗執行 prusa-slicer.exe --sw-renderer 來啟動帶有軟體渲"
+"染 3D 圖形功能的 PrusaSlicer。"
+
+msgid "Unsupported OpenGL version"
+msgstr "不支援的 OpenGL 版本"
+
+msgid ""
+"Unable to load the following shaders:\n"
+"%s"
+msgstr ""
+"無法匯入以下著色器：\n"
+"%s"
+
+msgid "Error loading shaders"
+msgstr "匯入著色器時出錯"
+
+msgid "Delete this preset from this printer device"
+msgstr "從此打印機設備中刪除此預設"
+
+msgid "This printer will be shown in the presets list as"
+msgstr "該打印機將在預設列表中顯示為"
+
+msgid "Type here the name of your printer device"
+msgstr "在此處鍵入您的打印機設備的名稱"
+
+msgid "Descriptive name for the printer"
+msgstr "打印機的描述性名稱"
+
+msgid "Add preset for this printer device"
+msgstr "為此打印機設備添加預設"
+
+msgid "Connection to printers connected via the print host failed."
+msgstr "經由打印主機連接的打印機連接失敗。"
+
+msgid "Refresh Printers"
+msgstr "重新匯入打印機"
+
+msgid "You have to enter a printer name."
+msgstr "您必須輸入打印機名稱。"
+
+msgid "Printer with name \"%1%\" already exists."
+msgstr "命名為 \"%1%\" 的打印機已存在。"
+
+msgid "Replace?"
+msgstr "要取代嗎？"
+
+msgid ""
+"Following printer preset is duplicated:%1%The above preset for printer \"%2%"
+"\" will be used just once."
+msgid_plural ""
+"Following printer presets are duplicated:%1%The above presets for printer "
+"\"%2%\" will be used just once."
+msgstr[0] "以下打印機預設已複製：%1% 打印機 \"%2%\" 的上述預設將僅使用一次。"
+
+msgid "It's not possible to delete the last related preset for the printer."
+msgstr "無法刪除打印機最後一個相關預設。"
+
+msgid "The provided name is not valid;"
+msgstr "所提供的名稱無效;"
+
+msgid ""
+"For a multipart object, this value isn't accurate.\n"
+"It doesn't take account of intersections and negative volumes."
+msgstr ""
+"對於多部分模型，此設定值不準確。\n"
+"因為它不考慮交叉點和挖空模型。"
+
+msgid "Cost (money)"
+msgstr "費用（金額）"
+
+msgid "For support enforcers only"
+msgstr "只適用於支撐材"
+
+msgid "Select what kind of pad do you need"
+msgstr "選擇你需要什麼樣的墊片"
+
+msgid "Below object"
+msgstr "下面的模型"
+
+msgid "Around object"
+msgstr "圍繞模型"
+
+msgid "%1% (%2$d shell)"
+msgid_plural "%1% (%2$d shells)"
+msgstr[0] "%1%（%2$d 外殼）"
+
+msgid "object"
+msgid_plural "objects"
+msgstr[0] "模型"
+
+msgid "Used Filament (in)"
+msgstr "消耗線材 (in)"
+
+msgid "Used Filament (in³)"
+msgstr "消耗線材 (in³)"
+
+msgid "Filament at extruder %1%"
+msgstr "擠出機 %1% 的線材"
+
+msgid "(including spool)"
+msgstr "（包括線軸）"
+
+msgid "stealth mode"
+msgstr "靜音模式"
+
+msgid "Do you want to save the changes to \"%1%\"?"
+msgstr "您要將變更儲存到 \"%1%\" 嗎？"
+
+msgid "Discard"
+msgstr "捨棄"
+
+msgid "Ask for unsaved changes in project"
+msgstr "是否詢問項目中未儲存的變更"
+
+msgid ""
+"You will not be asked about it again, when: \n"
+"- Closing PrusaSlicer,\n"
+"- Loading or creating a new project"
+msgstr ""
+"在以下情況下，您不會再被問到：\n"
+"- 關閉 PrusaSlicer，\n"
+"- 匯入或建立新項目"
+
+msgid ""
+"Successfully unmounted. The device %s(%s) can now be safely removed from the "
+"computer."
+msgstr "退出成功。現在您可以從電腦中安全的移除設備 %s(%s)。"
+
+msgid "Ejecting of device %s(%s) has failed."
+msgstr "退出設備 %s(%s) 時失敗。"
+
+msgid "New Project"
+msgstr "新項目"
+
+msgid "Expand sidebar"
+msgstr "展開側邊欄"
+
+msgid ""
+"The preset below was temporarily installed on the active instance of "
+"PrusaSlicer"
+msgid_plural ""
+"The presets below were temporarily installed on the active instance of "
+"PrusaSlicer"
+msgstr[0] "下面的預設是臨時安裝在 PrusaSlicer 的啟用實例上"
+
+msgid "Failed loading file \"%1%\" due to an invalid configuration."
+msgstr "由於設定無效，匯入檔案“%1%”失敗。"
+
+msgid ""
+"Object size from file %s appears to be zero.\n"
+"This object has been removed from the model"
+msgid_plural ""
+"Objects size from file %s appears to be zero.\n"
+"These objects have been removed from the model"
+msgstr[0] ""
+"檔案 %s 中的模型大小似乎為零。\n"
+"該模型已從模型中移除"
+
+msgid "The size of the object is zero"
+msgstr "模型的大小為零"
+
+msgid ""
+"The dimensions of the object from file %s seem to be defined in meters.\n"
+"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
+"the dimensions of the object?"
+msgid_plural ""
+"The dimensions of some objects from file %s seem to be defined in meters.\n"
+"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
+"the dimensions of these objects?"
+msgstr[0] ""
+"檔案 %s 中模型的尺寸似乎是以公尺(Metre)為單位定義的。\n"
+"PrusaSlicer 的內部單位是公釐(mm)。是否要重新計算模型的尺寸？"
+
+msgid "The object is too small"
+msgstr "模型太小"
+
+msgid "Apply to all the remaining small objects being loaded."
+msgstr "應用於其他的正在匯入的小模型。"
+
+msgid ""
+"The dimensions of the object from file %s seem to be defined in inches.\n"
+"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
+"the dimensions of the object?"
+msgid_plural ""
+"The dimensions of some objects from file %s seem to be defined in inches.\n"
+"The internal unit of PrusaSlicer is a millimeter. Do you want to recalculate "
+"the dimensions of these objects?"
+msgstr[0] ""
+"檔案 %s 中模型的尺寸似乎是以英寸(inches)為單位定義的。\n"
+"PrusaSlicer 的內部單位是公釐(mm)。是否要重新計算模型的尺寸？"
+
+msgid ""
+"This file contains several objects positioned at multiple heights.\n"
+"Instead of considering them as multiple objects, should \n"
+"the file be loaded as a single object having multiple parts?"
+msgstr ""
+"該檔案包含多個多種高度的模型。\n"
+"與其將它們視為多個模型，\n"
+"不如將檔案作為具有多個部分的單個模型匯入？"
+
+msgid ""
+"This file cannot be loaded in a simple mode. Do you want to switch to an "
+"advanced mode?"
+msgstr "該檔案無法在簡單模式下匯入。你想切換到高級模式嗎？"
+
+msgid ""
+"Multiple objects were loaded for a multi-material printer.\n"
+"Instead of considering them as multiple objects, should I consider\n"
+"these files to represent a single object having multiple parts?"
+msgstr ""
+"為多材料打印機匯入了多個模型。\n"
+"我應該將這些檔案視為代表具有多個部分的單個模型，\n"
+"而不是將它們視為多個模型嗎？"
+
+msgid "Export OBJ file:"
+msgstr "匯出為 OBJ 檔："
+
+msgid "Delete Object"
+msgstr "刪除模型"
+
+msgid "Delete All Objects"
+msgstr "刪除全部模型"
+
+msgid "Reset Project"
+msgstr "重置項目"
+
+msgid ""
+"The selected object couldn't be split because it contains only one solid "
+"part."
+msgstr "所選模型無法拆開，因為它只包含一個實體部分。"
+
+msgid "All non-solid parts (modifiers) were deleted"
+msgstr "刪除了所有非實體部分（修改器）"
+
+msgid "Split to Objects"
+msgstr "拆開為模型"
+
+msgid ""
+"An object has custom support enforcers which will not be used because "
+"supports are disabled."
+msgstr "模型具有自定義支撐執行器，由於支撐被禁用，因此不會使用這些執行器。"
+
+msgid "Enable supports for enforcers only"
+msgstr "僅啟用執行器的支撐"
+
+msgid "Replace from:"
+msgstr "取代自："
+
+msgid "Unable to replace with more than one volume"
+msgstr "無法取代超過一個體積"
+
+msgid "Error during replace"
+msgstr "取代時出錯"
+
+msgid "Select the new file"
+msgstr "選擇新檔案"
+
+msgid "File for the replace wasn't selected"
+msgstr "未選擇取代檔案"
+
+msgid "Please select the file to reload"
+msgstr "請選擇要重新匯入的檔案"
+
+msgid "The selected file"
+msgstr "所選檔案"
+
+msgid "differs from the original file"
+msgstr "與原始檔案不同"
+
+msgid "Do you want to replace it"
+msgstr "你想取代它嗎"
+
+msgid "Reload from:"
+msgstr "重新匯入自："
+
+msgid "Unable to reload:"
+msgstr "無法重新匯入："
+
+msgid "Error during reload"
+msgstr "重新匯入時出錯"
+
+msgid "Reload all from disk"
+msgstr "從磁碟機中重新匯入全部"
+
+msgid "There are active warnings concerning sliced models:"
+msgstr "有關於切片模型的啟動警告："
+
+msgid "generated warnings"
+msgstr "產生的警告"
+
+msgid "3D editor view"
+msgstr "3D 編輯器檢視"
+
+msgid "Undo / Redo is processing"
+msgstr "取消/重做正在處理"
+
+msgid ""
+"Switching the printer technology from %1% to %2%.\n"
+"Some %1% presets were modified, which will be lost after switching the "
+"printer technology."
+msgstr ""
+"將打印機技術從 %1% 切換到 %2%。\n"
+"修改了一些 %1% 預設，這些預設將在切換打印機技術後遺失。"
+
+msgid "Creating a new project while the current project is modified."
+msgstr "在修改當前項目的同時建立新項目。"
+
+msgid "Creating a new project while some presets are modified."
+msgstr "在修改某些預設的同時建立新項目。"
+
+msgid "You can keep presets modifications to the new project or discard them"
+msgstr "您可以保留對新項目的預設修改或丟掉它們"
+
+msgid ""
+"You can keep presets modifications to the new project, discard them or save "
+"changes as new presets.\n"
+"Note, if changes will be saved then new project wouldn't keep them"
+msgstr ""
+"您可以保留對新項目的預設修改、放棄它們或者將變更儲存為新的預設。\n"
+"請注意，如果變更被儲存，那麼在新項目中就不會保留它們"
+
+msgid "Creating a new project"
+msgstr "建立一個新項目"
+
+msgid "Load Project"
+msgstr "匯入項目"
+
+msgid "Import Object"
+msgstr "匯入模型"
+
+msgid "Import Objects"
+msgstr "匯入模型"
+
+msgid "Import SLA archive"
+msgstr "匯入 SLA 存檔"
+
+msgid "does not contain valid gcode."
+msgstr "不包含有效的 gcode。"
+
+msgid "Error while loading .gcode file"
+msgstr "匯入 .gcode 檔案時出錯"
+
+msgid "Action"
+msgstr "動作"
+
+msgid "Open as project"
+msgstr "作為項目打開"
+
+msgid "Import config only"
+msgstr "僅匯入設定"
+
+msgid "Select an action to apply to the file"
+msgstr "選擇要應用於檔案的操作"
+
+msgid "Don't show again"
+msgstr "不要再顯示"
+
+msgid "You can open only one .gcode file at a time."
+msgstr "您一次只能打開一個 .gcode 檔案。"
+
+msgid "Drag and drop G-code file"
+msgstr "拖放 G-code檔案"
+
+msgid "Load File"
+msgstr "匯入檔案"
+
+msgid "Load Files"
+msgstr "匯入檔案"
+
+msgid "All objects will be removed, continue?"
+msgstr "將移除所有模型，繼續嗎？"
+
+msgid "Delete Selected Objects"
+msgstr "刪除選定模型"
+
+msgid "Increase Instances"
+msgstr "增加實例"
+
+msgid "Decrease Instances"
+msgstr "減少實例"
+
+msgid "Enter the number of copies:"
+msgstr "輸入副本數量："
+
+msgid "Copies of the selected object"
+msgstr "所選模型的副本"
+
+msgid "Set numbers of copies to %d"
+msgstr "將副本數量設定為 %d"
+
+msgid "Fill bed"
+msgstr "填滿載台"
+
+msgid "Save SL1 / SL1S file as:"
+msgstr "將 SL1 / SL1S 檔案另存為："
+
+msgid "The provided file name is not valid."
+msgstr "所提供的檔案名稱無效。"
+
+msgid "The following characters are not allowed by a FAT file system:"
+msgstr "FAT 檔案系統不允許使用以下字元："
+
+msgid ""
+"The plater is empty.\n"
+"Do you want to save the project?"
+msgstr ""
+"載台是空的。\n"
+"您要儲存項目嗎？"
+
+msgid "Save project"
+msgstr "儲存項目"
+
+msgid "Upload and Print"
+msgstr "上傳和打印"
+
+msgid "Paste From Clipboard"
+msgstr "從剪貼簿貼上"
+
+msgid "Export sources full pathnames to 3mf and amf"
+msgstr "將來源完整路徑名稱匯出到 3mf 和 amf"
+
+msgid ""
+"If enabled, allows the Reload from disk command to automatically find and "
+"load the files when invoked."
+msgstr "如果啟用這個，則允許從磁碟機重新匯入命令在調用時自動查詢並匯入檔案。"
+
+msgid "If enabled, sets PrusaSlicer as default application to open .3mf files."
+msgstr "如果啟用，PrusaSlicer 將成為打開.3mf檔的預設應用程式。"
+
+msgid "If enabled, sets PrusaSlicer as default application to open .stl files."
+msgstr "如果啟用，PrusaSlicer 將成為打開stl檔的預設應用程式。"
+
+msgid "Allow just a single PrusaSlicer instance"
+msgstr "只允許一個 PrusaSlicer 執行實例"
+
+msgid ""
+"On OSX there is always only one instance of app running by default. However "
+"it is allowed to run multiple instances of same app from the command line. "
+"In such case this settings will allow only one instance."
+msgstr ""
+"在 OSX 上，預設情況下總是只有一個應用程式實例在運行。但是卻允許從命令視窗執行"
+"同一應用程式的多個實例。當您設定了這個設定後將只允許一個實例執行。"
+
+msgid ""
+"If this is enabled, when starting PrusaSlicer and another instance of the "
+"same PrusaSlicer is already running, that instance will be reactivated "
+"instead."
+msgstr ""
+"如果啟用了此功能，則當啟動了 PrusaSlicer 且同一 PrusaSlicer 的另一個實例已在"
+"執行時，該實例將被重新啟動。"
+
+msgid ""
+"Always ask for unsaved changes in project, when: \n"
+"- Closing PrusaSlicer,\n"
+"- Loading or creating a new project"
+msgstr ""
+"在以下情況下，總是詢問項目中未儲存的變更：\n"
+"- 關閉 PrusaSlicer，\n"
+"- 匯入或建立新項目"
+
+msgid ""
+"Ask to save unsaved changes in presets when closing the application or when "
+"loading a new project"
+msgstr "關閉應用程式或匯入新項目時要求儲存未儲存的預設變更"
+
+msgid ""
+"Always ask for unsaved changes in presets, when: \n"
+"- Closing PrusaSlicer while some presets are modified,\n"
+"- Loading a new project while some presets are modified"
+msgstr ""
+"在以下情況下，始終要求對預設進行未儲存的變更：\n"
+"- 在修改某些預設時關閉 PrusaSlicer，\n"
+"- 在修改某些預設時匯入新項目"
+
+msgid "Ask for unsaved changes in presets when selecting new preset"
+msgstr "選擇新預設時詢問預設中未儲存的變更"
+
+msgid ""
+"Always ask for unsaved changes in presets when selecting new preset or "
+"resetting a preset"
+msgstr "選擇新預設或重置預設時，始終詢問未儲存的預設變更"
+
+msgid "Ask for unsaved changes in presets when creating new project"
+msgstr "建立新項目時詢問預設中未儲存的變更"
+
+msgid "Always ask for unsaved changes in presets when creating new project"
+msgstr "建立新項目時始終詢問未儲存的預設變更"
+
+msgid "Associate .gcode files to PrusaSlicer G-code Viewer"
+msgstr "將 .gcode 檔案關聯到 PrusaSlicer 的 G-code 檢視器"
+
+msgid ""
+"If enabled, sets PrusaSlicer G-code Viewer as default application to open ."
+"gcode files."
+msgstr ""
+"如果啟用，將以 PrusaSlicer 的 G-code 檢視器設定為打開 .gcode 檔案的預設應用程"
+"式。"
+
+msgid "Show splash screen"
+msgstr "顯示啟動畫面"
+
+msgid "If enabled, PrusaSlicer will be open at the position it was closed"
+msgstr "如果啟用，PrusaSlicer 將在上一次關閉時的位置打開"
+
+msgid "Clear Undo / Redo stack on new project"
+msgstr "清除新項目上的取消/重做堆疊"
+
+msgid ""
+"Clear Undo / Redo stack on new project or when an existing project is loaded."
+msgstr "清除新項目或匯入現有項目時的取消/重做堆疊。"
+
+msgid "Enable support for legacy 3DConnexion devices"
+msgstr "啟用傳統 3DConnexion 設備的支援"
+
+msgid ""
+"If enabled, the legacy 3DConnexion devices settings dialog is available by "
+"pressing CTRL+M"
+msgstr "如果啟用這個，則按下 CTRL+M 可以打開舊版 3DConnexion 設備的設定對話框"
+
+msgid "Camera"
+msgstr "相機"
+
+msgid "Use perspective camera"
+msgstr "使用透視相機"
+
+msgid ""
+"If enabled, use perspective camera. If not enabled, use orthographic camera."
+msgstr "如果啟用，則使用透視相機。若未啟用，則使用正交相機。"
+
+msgid "Use free camera"
+msgstr "使用自由相機"
+
+msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr "如果啟用，則使用自由相機。若未啟用，則使用受限相機。"
+
+msgid "Reverse direction of zoom with mouse wheel"
+msgstr "使用滑鼠滾輪反向縮放"
+
+msgid "If enabled, reverses the direction of zoom with mouse wheel"
+msgstr "如果啟用，則滑鼠滾輪反向縮放"
+
+msgid "GUI"
+msgstr "GUI"
+
+msgid "Sequential slider applied only to top layer"
+msgstr "順序滑塊僅應用於頂層"
+
+msgid ""
+"If enabled, changes made using the sequential slider, in preview, apply only "
+"to gcode top layer. If disabled, changes made using the sequential slider, "
+"in preview, apply to the whole gcode."
+msgstr ""
+"如果啟用，在預覽中使用順序滑塊所做的變更僅適用於 gcode 頂層。如果禁用，在預覽"
+"中使用順序滑塊所做的變更將應用於整個 gcode。"
+
+msgid "Show sidebar collapse/expand button"
+msgstr "顯示側邊欄折疊/展開按鈕"
+
+msgid ""
+"If enabled, the button for the collapse sidebar will be appeared in top "
+"right corner of the 3D Scene"
+msgstr "如果啟用，折疊側邊欄的按鈕將出現在 3D 場景的右上角"
+
+msgid "Use colors for axes values in Manipulation panel"
+msgstr "在操作面板中使用顏色於軸值欄位"
+
+msgid ""
+"If enabled, the axes names and axes values will be colorized according to "
+"the axes colors. If disabled, old UI will be used."
+msgstr ""
+"如果啟用這個，軸值的欄位將根據軸顏色進行上色。如果禁用，將使用舊的 UI。"
+
+msgid "Order object volumes by types"
+msgstr "按類型排列模型體積"
+
+msgid ""
+"If enabled, volumes will be always ordered inside the object. Correct order "
+"is Model Part, Negative Volume, Modifier, Support Blocker and Support "
+"Enforcer. If disabled, you can reorder Model Parts, Negative Volumes and "
+"Modifiers. But one of the model parts have to be on the first place."
+msgstr ""
+"如果啟用這個，模型內總是以體積的大小排序。正確的順序是模型零件、挖空模型、修"
+"改器、支撐阻斷器和支撐執行器。如果禁用，您可以重新排列模型零件、挖空模型和修"
+"改器。但是其中一個模型零件必須放在第一位。"
+
+msgid "Set settings tabs as menu items"
+msgstr "將設定分頁設定為選單項目"
+
+msgid ""
+"If enabled, Settings Tabs will be placed as menu items. If disabled, old UI "
+"will be used."
+msgstr ""
+"如果啟用此選項，設定分頁將作成選單項目放在選單旁邊。如果禁用，將使用舊的 UI。"
+
+msgid "Show \"Tip of the day\" notification after start"
+msgstr "啟動後顯示“每日提示”的通知畫面"
+
+msgid "If enabled, useful hints are displayed at startup."
+msgstr "如果啟用，對於軟體使用會有幫助的提示將在啟動時顯示。"
+
+msgid "Notify about new releases"
+msgstr "通知新的版本發佈"
+
+msgid ""
+"You will be notified about new release after startup acordingly: All = "
+"Regular release and alpha / beta releases. Release only = regular release."
+msgstr ""
+"啟用此選項後，您將在啟動後收到有關新版本的通知：全部 = 定期發佈版本和 "
+"alpha / beta 版本。僅發佈版 = 定期發佈。"
+
+msgid "Release only"
+msgstr "僅發佈版"
+
+msgid "Use custom size for toolbar icons"
+msgstr "讓工具欄圖示使用自定義大小"
+
+msgid "If enabled, you can change size of toolbar icons manually."
+msgstr "如果啟用，您可以手動變更工具欄圖示的大小。"
+
+msgid "Render"
+msgstr "算繪"
+
+msgid "Use environment map"
+msgstr "使用環境貼圖"
+
+msgid "If enabled, renders object using the environment map."
+msgstr "如果啟用，則使用環境貼圖算繪模型。"
+
+msgid "Dark mode"
+msgstr "深色模式"
+
+msgid "Enable dark mode"
+msgstr "啟用深色模式"
+
+msgid ""
+"If enabled, UI will use Dark mode colors. If disabled, old UI will be used."
+msgstr "如果啟用，UI 將使用深色模式顏色。如果禁用，將使用舊的 UI。"
+
+msgid "Use system menu for application"
+msgstr "以系統選單的模式來使用"
+
+msgid "Changes for the critical options"
+msgstr "關鍵選項的變更"
+
+msgid ""
+"Changing some options will trigger application restart.\n"
+"You will lose the content of the plater."
+msgstr ""
+"變更某些選項將觸發應用程式重啟。\n"
+"您將遺失載台上面的內容。"
+
+msgid "Icon size in a respect to the default size"
+msgstr "相對於預設大小的圖示大小"
+
+msgid "Select toolbar icon size in respect to the default one."
+msgstr "選擇相對於預設圖示的工具欄圖示大小。"
+
+msgid "Layout Options"
+msgstr "佈局選項"
+
+msgid "Old regular layout with the tab bar"
+msgstr "帶標籤欄的舊款佈局"
+
+msgid "New layout, access via settings button in the top menu"
+msgstr "新式佈局，經由視窗頂部選單中的設定按鈕存取"
+
+msgid "Settings in non-modal window"
+msgstr "非模態視窗中的設定"
+
+msgid "Text colors"
+msgstr "文字顏色"
+
+msgid "Incompatible presets"
+msgstr "不相容的預設"
+
+msgid "Are you sure you want to delete \"%1%\" printer?"
+msgstr "您確定要刪除“%1%”打印機嗎？"
+
+msgid "Delete Physical Printer"
+msgstr "刪除打印機"
+
+msgid "Add/Remove presets"
+msgstr "添加/移除預設"
+
+msgid "Add physical printer"
+msgstr "添加打印機"
+
+msgid "Edit preset"
+msgstr "編輯預設"
+
+msgid "Change extruder color"
+msgstr "變更擠出機顏色"
+
+msgid "Edit physical printer"
+msgstr "編輯打印機"
+
+msgid "Delete physical printer"
+msgstr "刪除打印機"
+
+msgid "Physical printers"
+msgstr "打印機"
+
+msgid "Add/Remove filaments"
+msgstr "添加/移除線材"
+
+msgid "Add/Remove materials"
+msgstr "添加/移除材料"
+
+msgid "Add/Remove printers"
+msgstr "添加/移除打印機"
+
+msgid ""
+"If estimated layer time is below ~%1%s, fan will run at %2%%% and print "
+"speed will be reduced so that no less than %3%s are spent on that layer "
+"(however, speed will never be reduced below %4%mm/s)."
+msgstr ""
+"如果估計單層時間低於 ~%1%s 的話，則風扇將以 %2%%% 的速度執行，打印速度會降"
+"低，因此該圖層上的耗時應不低於 %3%s(但速度永遠不會降到 %4%mm/s 以下)。"
+
+msgid ""
+"If estimated layer time is greater, but still below ~%1%s, fan will run at a "
+"proportionally decreasing speed between %2%%% and %3%%%."
+msgstr ""
+"如果估計的單層時間更長，但仍低於 ~%1% 秒的話，則風扇將在 %2%%% 和 %3%%% 之間"
+"以按比例降低的速度運作。"
+
+msgid ""
+"If estimated layer time is greater, but still below ~%1%s, fan will run at "
+"%2%%%"
+msgstr "如果估計單層時間更長，但仍低於 ~%1% 秒的話，風扇將以 %2%%% 運做"
+
+msgid "Fan speed will be ramped from zero at layer %1% to %2%%% at layer %3%."
+msgstr "風扇速度將從層 %1% 的零增加到層 %3% 的 %2%%%。"
+
+msgid "During the other layers, fan will always run at %1%%%"
+msgstr "在其他層中，風扇將總是以 %1%%% 運作"
+
+msgid "Fan will always run at %1%%%"
+msgstr "風扇將總是以 %1%%% 運作"
+
+msgid "except for the first %1% layers."
+msgstr "除了前 %1% 層。"
+
+msgid "except for the first layer."
+msgstr "除了第一層。"
+
+msgid "During the other layers, fan will be turned off."
+msgstr "在其他層中，風扇將被關閉。"
+
+msgid "Fan will be turned off."
+msgstr "風扇將被關閉。"
+
+msgid "%3.2f mm³/s at filament speed %3.2f mm/s."
+msgstr "%3.2f mm³/s，線材速度 %3.2f mm/s。"
+
+msgid "Recommended object thin wall thickness for layer height %.2f and"
+msgstr "推薦模型薄壁厚度,用於打印層高度 %.2f 和"
+
+msgid "%d lines: %.2f mm"
+msgstr "%d 線: %.2f mm"
+
+msgid ""
+"Recommended object thin wall thickness: Not available due to excessively "
+"small extrusion width."
+msgstr "推薦的模型薄壁厚度：由於擠出寬度過小而無法提供。"
+
+msgid ""
+"Top / bottom shell thickness hint: Not available due to invalid layer height."
+msgstr "頂部/底部外殼厚度提示：由於層高無效，因此不可用。"
+
+msgid "Top shell is %1% mm thick for layer height %2% mm."
+msgstr "對於層高 %2% mm，頂殼的厚度為 %1% mm。"
+
+msgid "Minimum top shell thickness is %1% mm."
+msgstr "最小頂殼厚度為 %1% mm。"
+
+msgid "Top is open."
+msgstr "頂部是開放的。"
+
+msgid "Bottom shell is %1% mm thick for layer height %2% mm."
+msgstr "對於層高 %2% mm，底殼厚度為 %1% mm。"
+
+msgid "Minimum bottom shell thickness is %1% mm."
+msgstr "最小底殼厚度為 %1% mm。"
+
+msgid "Bottom is open."
+msgstr "底部是開放的。"
+
+msgid "Group"
+msgstr "群組"
+
+msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
+msgstr "上傳檔案名稱不可以“%s”結尾。你想繼續嗎？"
+
+msgid "Upload"
+msgstr "上傳"
+
+msgid "Upload and Simulate"
+msgstr "上傳和模擬"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Host"
+msgstr "主機"
+
+msgid "Filename"
+msgstr "檔案名稱"
+
+msgid "Preset with name \"%1%\" already exists."
+msgstr "名稱為“%1%”的預設已存在。"
+
+msgid ""
+"Preset with name \"%1%\" already exists and is incompatible with selected "
+"printer."
+msgstr "名稱為“%1%”的預設已存在並且與所選打印機不相容。"
+
+msgid "Note: This preset will be replaced after saving"
+msgstr "注意：此預設將在儲存後被取代"
+
+msgid "The name cannot be empty."
+msgstr "名稱不能是空的。"
+
+msgid "The name cannot start with space character."
+msgstr "名稱不能以空格字元開頭。"
+
+msgid "The name cannot end with space character."
+msgstr "名稱不能以空格字元結尾。"
+
+msgid "The name cannot be the same as a preset alias name."
+msgstr "名稱不能與預設別名相同。"
+
+msgid ""
+"You have selected physical printer \"%1%\" \n"
+"with related printer preset \"%2%\""
+msgstr ""
+"您選擇的實體打印機“%1%”\n"
+"它有相關打印機預設“%2%”"
+
+msgid "What would you like to do with \"%1%\" preset after saving?"
+msgstr "儲存後您想對“%1%”預設做什麼？"
+
+msgid "Change \"%1%\" to \"%2%\" for this physical printer \"%3%\""
+msgstr "將此打印機\"%3%\"的\"%1%\"變更為\"%2%\""
+
+msgid "Add \"%1%\" as a next preset for the the physical printer \"%2%\""
+msgstr "添加“%1%”作為實體打印機“%2%”的下一個預設"
+
+msgid "Just switch to \"%1%\" preset"
+msgstr "只需切換到“%1%”預設"
+
+msgid "Stealth"
+msgstr "隱秘"
+
+msgid "Selection-Add"
+msgstr "選擇-添加"
+
+msgid "Selection-Remove"
+msgstr "選擇-移除"
+
+msgid "Selection-Add Object"
+msgstr "選擇-添加模型"
+
+msgid "Selection-Remove Object"
+msgstr "選擇-移除模型"
+
+msgid "Selection-Add Instance"
+msgstr "選擇-添加實例"
+
+msgid "Selection-Remove Instance"
+msgstr "選擇-移除實例"
+
+msgid "Selection-Add All"
+msgstr "選擇-全部添加"
+
+msgid "Selection-Remove All"
+msgstr "選擇-全部移除"
+
+msgid "Data to send"
+msgstr "要傳送的數據"
+
+msgid "Send system info"
+msgstr "傳送系統資訊"
+
+msgid ""
+"This is the first time you are running %1%. We would like to ask you to send "
+"some of your system information to us. This will only happen once and we "
+"will not ask you to do this again (only after you upgrade to the next "
+"version)."
+msgstr ""
+"這是您第一次運行 %1%。我們想請您將一些系統資訊傳送給我們參考。這件事只會發生"
+"一次，我們不會要求您再次這樣做（僅在您升級到下一個版本後）。"
+
+msgid ""
+"If we know your hardware, operating system, etc., it will greatly help us in "
+"development and prioritization, because we will be able to focus our effort "
+"more efficiently and spend time on features that are needed the most."
+msgstr ""
+"如果我們了解您的硬體、作業系統等，這將有助於幫助我們進行開發和確定優先級，因"
+"為我們將能夠更有效地集中精力並將時間花在最需要的功能上。"
+
+msgid "Is it safe?"
+msgstr "這是安全的嗎？"
+
+msgid ""
+"We do not send any personal information nor anything that would allow us to "
+"identify you later. To detect duplicate entries, a unique number derived "
+"from your system is sent, but the source information cannot be "
+"reconstructed. Apart from that, only general data about your OS, hardware "
+"and OpenGL installation are sent. PrusaSlicer is open source, if you want to "
+"inspect the code actually performing the communication, see %1%."
+msgstr ""
+"我們不會對外發送與接收任何個人資訊，也不會發送和接收任何可以讓我們日後識別您"
+"身份的資訊。為了檢測重複的條目，系統會發送一個從您系統產生的唯一編號，但這個"
+"將無法重建來源資訊。除此之外，只會發送有關您的作業系統、硬體和 OpenGL 安裝的"
+"一般資料。 PrusaSlicer 是開源的，如果您想檢查實際執行通信的編碼，請參閱 %1%。"
+
+msgid "Show verbatim data that will be sent"
+msgstr "顯示將要發送的逐字資料"
+
+msgid "Ask me next time"
+msgstr "下次再問我"
+
+msgid "Do not send anything"
+msgstr "不要傳送任何東西"
+
+msgid "System info sent successfully. Thank you."
+msgstr "系統資訊傳送成功。謝謝你。"
+
+msgid "Sending system info failed!"
+msgstr "傳送系統資訊失敗！"
+
+msgid "Sending system info was cancelled."
+msgstr "已取消系統資訊傳送。"
+
+msgid "Sending system info..."
+msgstr "傳送系統資訊..."
+
+msgid "System Information"
+msgstr "系統資訊"
+
+msgid "Blacklisted libraries loaded into PrusaSlicer process:"
+msgstr "匯入到 PrusaSlicer 處理程式中的黑名單："
+
+msgid "Eigen vectorization supported:"
+msgstr "支援特徵向量化："
+
+msgid "Copy to Clipboard"
+msgstr "複製到剪貼簿"
+
+msgid "Search in settings [%1%]"
+msgstr "在設定 [%1%] 中搜尋"
+
+msgid "Detach from system preset"
+msgstr "從系統預設中分離"
+
+msgid ""
+"A copy of the current system preset will be created, which will be detached "
+"from the system preset."
+msgstr "將建立當前系統預設的副本，它將與系統預設分離。"
+
+msgid ""
+"The current custom preset will be detached from the parent system preset."
+msgstr "當前的自定義預設將從父系統預設中分離出來。"
+
+msgid "Modifications to the current profile will be saved."
+msgstr "將儲存對當前設定檔的修改。"
+
+msgid "Detach preset"
+msgstr "分離預設"
+
+msgid "This is a default preset."
+msgstr "這是預設的設定。"
+
+msgid "This is a system preset."
+msgstr "這是系統預設。"
+
+msgid "Current preset is inherited from the default preset."
+msgstr "當前預設繼承自預設的設定。"
+
+msgid "full profile name"
+msgstr "完整設定檔名稱"
+
+msgid "symbolic profile name"
+msgstr "象徵性設定檔名稱"
+
+msgid "Minimum shell thickness"
+msgstr "最小外殼厚度"
+
+msgid "Fuzzy skin (experimental)"
+msgstr "模糊的表面（實驗性）"
+
+msgid "Pressure equalizer (experimental)"
+msgstr "壓力均衡器（實驗性）"
+
+msgid "Arachne perimeter generator"
+msgstr "蜘蛛模式邊緣產生器"
+
+msgid "Extruder clearance"
+msgstr "擠出機間隙"
+
+msgid "Post processing scripts shall modify G-code file in place."
+msgstr "後處理腳本應立刻修改 G-code檔案。"
+
+msgid ""
+"The following line %s contains reserved keywords.\n"
+"Please remove it, as it may cause problems in G-code visualization and "
+"printing time estimation."
+msgid_plural ""
+"The following lines %s contain reserved keywords.\n"
+"Please remove them, as they may cause problems in G-code visualization and "
+"printing time estimation."
+msgstr[0] ""
+"下面的 %s 行包含保留關鍵字。\n"
+"請刪除它，因為它可能會導致 G-code 可視化和預估打印時間方面出現問題。"
+
+msgid "Found reserved keywords in"
+msgstr "在其中找到保留關鍵字"
+
+msgid "Filament Overrides"
+msgstr "耗材覆蓋"
+
+msgid "Nozzle"
+msgstr "噴嘴"
+
+msgid "Wipe tower parameters"
+msgstr "擦拭塔參數"
+
+msgid "Volumetric flow hints not available"
+msgstr "體積流量提示不可用"
+
+msgid ""
+"Note: All parameters from this group are moved to the Physical Printer "
+"settings (see changelog).\n"
+"\n"
+"A new Physical Printer profile is created by clicking on the \"cog\" icon "
+"right of the Printer profiles combo box, by selecting the \"Add physical "
+"printer\" item in the Printer combo box. The Physical Printer profile editor "
+"opens also when clicking on the \"cog\" icon in the Printer settings tab. "
+"The Physical Printer profiles are being stored into PrusaSlicer/"
+"physical_printer directory."
+msgstr ""
+"注意：此組所有的參數都移動到實體打印機設定（參見變更日誌）。\n"
+"\n"
+"按一下打印機設定檔組合框的「cog」圖示右側，經由選擇打印機組合框中的「添加實體"
+"打印機」項目建立新的實體打印機設定檔。按一下打印機設定選項卡中的「cog」圖示"
+"時，實體打印機設定檔編輯器也會打開。實體打印機設定檔存儲到PrusaSlicer /"
+"physical_printer目錄中。"
+
+msgid ""
+"Single Extruder Multi Material is selected, \n"
+"and all extruders must have the same diameter.\n"
+"Do you want to change the diameter for all extruders to first extruder "
+"nozzle diameter value?"
+msgstr ""
+"選擇單擠出機多材料，\n"
+"所有擠出機必須具有相同的直徑設定。\n"
+"您想把所有擠出機的直徑變更為第一個擠出機噴嘴孔徑的設定值嗎？"
+
+msgid "Values in this column are for Normal mode"
+msgstr "此列中的值適用於正常模式"
+
+msgid "Values in this column are for Stealth mode"
+msgstr "這裡的數值用於「靜音」模式"
+
+msgid ""
+"This is a single extruder multimaterial printer, diameters of all extruders "
+"will be set to the new value. Do you want to proceed?"
+msgstr ""
+"這是一台單擠出機多材料打印機，所有擠出機的直徑都將設定為新值。你想繼續嗎？"
+
+msgid "Reset to Filament Color"
+msgstr "重置耗材線的顏色"
+
+msgid "New printer preset selected"
+msgstr "選擇了新的打印機預設"
+
+msgid "Detached"
+msgstr "分離的"
+
+msgid "It's a last preset for this physical printer."
+msgstr "這是此打印機的最後預設。"
+
+msgid ""
+"Are you sure you want to delete \"%1%\" preset from the physical printer "
+"\"%2%\"?"
+msgstr "您確定要從實體打印機“%2%”中刪除“%1%”預設嗎？"
+
+msgid ""
+"The physical printer below is based on the preset, you are going to delete."
+msgid_plural ""
+"The physical printers below are based on the preset, you are going to delete."
+msgstr[0] "下面的實體打印機是根據預設的，你要刪除。"
+
+msgid "Note, that the selected preset will be deleted from this printer too."
+msgid_plural ""
+"Note, that the selected preset will be deleted from these printers too."
+msgstr[0] "請注意，所選預設也將從該打印機中刪除。"
+
+msgid ""
+"The physical printer below is based only on the preset, you are going to "
+"delete."
+msgid_plural ""
+"The physical printers below are based only on the preset, you are going to "
+"delete."
+msgstr[0] "下面的實體打印機只是基於預設的，你要刪除。"
+
+msgid ""
+"Note, that this printer will be deleted after deleting the selected preset."
+msgid_plural ""
+"Note, that these printers will be deleted after deleting the selected preset."
+msgstr[0] "請注意，刪除所選預設後，此打印機將被刪除。"
+
+msgid "Are you sure you want to %1% the selected preset?"
+msgstr "您確定要%1%選定的預設嗎？"
+
+msgid "%1% Preset"
+msgstr "%1% 預設"
+
+msgid "Regular expression"
+msgstr "規則運算式"
+
+msgid "Case insensitive"
+msgstr "不區分大小寫"
+
+msgid "Match single line"
+msgstr "符合單行"
+
+msgid "Are you sure you want to delete all substitutions?"
+msgstr "您確定要刪除所有替換嗎？"
+
+msgid ""
+"Machine limits will be emitted to G-code and used to estimate print time."
+msgstr "機器限制將傳送到 G-code 並用於估計打印時間。"
+
+msgid ""
+"Machine limits will NOT be emitted to G-code, however they will be used to "
+"estimate print time, which may therefore not be accurate as the printer may "
+"apply a different set of machine limits."
+msgstr ""
+"機器限制不會傳送到 G-code ，但它們將用於估計打印時間，不過也許不準確，因為打"
+"印機可能會應用一組不同的機器限制。"
+
+msgid ""
+"Machine limits are not set, therefore the print time estimate may not be "
+"accurate."
+msgstr "未設定機器限制，因此打印時間估計可能不準確。"
+
+msgid "LOCKED LOCK"
+msgstr "鎖定"
+
+msgid ""
+"indicates that the settings are the same as the system (or default) values "
+"for the current option group"
+msgstr "指示設定與當前選項組的系統（或預設）值相同"
+
+msgid "UNLOCKED LOCK"
+msgstr "解除鎖定"
+
+msgid ""
+"indicates that some settings were changed and are not equal to the system "
+"(or default) values for the current option group.\n"
+"Click the UNLOCKED LOCK icon to reset all settings for current option group "
+"to the system (or default) values."
+msgstr ""
+"表示某些設定已變更並且不等於當前選項組的系統（或預設）值。\n"
+"單擊 UNLOCKED LOCK 圖示可將當前選項組的所有設定重置為系統（或預設）值。"
+
+msgid "WHITE BULLET"
+msgstr "白色項目符號"
+
+msgid ""
+"for the left button: indicates a non-system (or non-default) preset,\n"
+"for the right button: indicates that the settings hasn't been modified."
+msgstr ""
+"對於左按鈕：表示非系統（或非預設）預設，\n"
+"右側按鈕：表示設定未修改。"
+
+msgid "BACK ARROW"
+msgstr "後退箭頭"
+
+msgid ""
+"indicates that the settings were changed and are not equal to the last saved "
+"preset for the current option group.\n"
+"Click the BACK ARROW icon to reset all settings for the current option group "
+"to the last saved preset."
+msgstr ""
+"表示設定已變更且不等於當前選項組最後儲存的預設。\n"
+"單擊後退箭頭圖示可將當前選項組的所有設定重置為上次儲存的預設。"
+
+msgid ""
+"LOCKED LOCK icon indicates that the settings are the same as the system (or "
+"default) values for the current option group"
+msgstr "解除鎖定圖示表示設定與當前選項組的系統（或預設）值相同"
+
+msgid ""
+"UNLOCKED LOCK icon indicates that some settings were changed and are not "
+"equal to the system (or default) values for the current option group.\n"
+"Click to reset all settings for current option group to the system (or "
+"default) values."
+msgstr ""
+"解除鎖定圖示表示某些設定已變更且不等於當前選項組的系統（或預設）值。\n"
+"單擊可將當前選項組的所有設定重置為系統（或預設）值。"
+
+msgid "WHITE BULLET icon indicates a non system (or non default) preset."
+msgstr "白色項目符號圖示表示非系統（或非預設）預設。"
+
+msgid ""
+"LOCKED LOCK icon indicates that the value is the same as the system (or "
+"default) value."
+msgstr "鎖定圖示表示該值與系統（或預設）值相同。"
+
+msgid ""
+"UNLOCKED LOCK icon indicates that the value was changed and is not equal to "
+"the system (or default) value.\n"
+"Click to reset current value to the system (or default) value."
+msgstr ""
+"解除鎖定圖示表示該值已變更且不等於系統（或預設）值。\n"
+"單擊可將當前值重置為系統（或預設）值。"
+
+msgid "Material printing profile"
+msgstr "材質打印設定檔"
+
+msgid ""
+"\"%1%\" is disabled because \"%2%\" is on in \"%3%\" category.\n"
+"To enable \"%1%\", please switch off \"%2%\""
+msgstr ""
+"“%1%”被禁用，因為“%2%”在“%3%”類別中已打開。\n"
+"要啟用“%1%”，請關閉“%2%”"
+
+msgid "Undef"
+msgstr "未定義"
+
+msgid "Switching Presets: Unsaved Changes"
+msgstr "切換預設：未儲存的變更"
+
+msgid "Keep"
+msgstr "保留"
+
+msgid "Transfer"
+msgstr "轉移"
+
+msgid "Don't save"
+msgstr "不要儲存"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time you "
+"create new project"
+msgstr "下次建立新項目時，不會詢問您預設中未儲存的變更"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time you "
+"switch a preset"
+msgstr "下次切換預設時，不會詢問您預設中未儲存的變更"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time "
+"you: \n"
+"- Closing PrusaSlicer while some presets are modified,\n"
+"- Loading a new project while some presets are modified"
+msgstr ""
+"下次您不會詢問有關預設中未儲存變更的資訊：\n"
+"- 在修改某些預設時關閉 PrusaSlicer，\n"
+"- 在修改某些預設時匯入新項目"
+
+msgid "PrusaSlicer will remember your action."
+msgstr "PrusaSlicer 會記住你的行動。"
+
+msgid ""
+"Visit \"Preferences\" and check \"%1%\"\n"
+"to be asked about unsaved changes again."
+msgstr ""
+"進入“選項”並選中“%1%”\n"
+"再次詢問未儲存的變更。"
+
+msgid ""
+"Some fields are too long to fit. Right mouse click reveals the full text."
+msgstr "有些字段太長不適合。單擊鼠標右鍵顯示全文。"
+
+msgid "All settings changes will not be saved"
+msgstr "不會儲存所有設定的變更"
+
+msgid "All settings changes will be discarded."
+msgstr "所有設定變更都將被丟棄。"
+
+msgid "Save the selected options."
+msgstr "儲存選擇的選項。"
+
+msgid "Keep the selected settings."
+msgstr "保留所選設定。"
+
+msgid "Transfer the selected settings to the newly selected preset."
+msgstr "將所選設定傳輸到新選擇的預設。"
+
+msgid "Save the selected options to preset \"%1%\"."
+msgstr "將所選選項儲存到預設“%1%”。"
+
+msgid "Transfer the selected options to the newly selected preset \"%1%\"."
+msgstr "將所選選項傳輸到新選擇的預設“%1%”。"
+
+msgid "The following preset was modified"
+msgid_plural "The following presets were modified"
+msgstr[0] "修改了以下預設"
+
+msgid "Preset \"%1%\" has the following unsaved changes:"
+msgstr "預設“%1%”具有以下未儲存的變更："
+
+msgid ""
+"Preset \"%1%\" is not compatible with the new printer profile and it has the "
+"following unsaved changes:"
+msgstr "預設“%1%”與新的打印機設定檔不相容，它有以下未儲存的變更："
+
+msgid ""
+"Preset \"%1%\" is not compatible with the new print profile and it has the "
+"following unsaved changes:"
+msgstr "預設“%1%”與新的打印設定檔不相容，它有以下未儲存的變更："
+
+msgid "Extruders count"
+msgstr "擠出機數量"
+
+msgid "The preset modifications are successfully saved"
+msgid_plural "The presets modifications are successfully saved"
+msgstr[0] "預設值已修改並完成儲存"
+
+msgid "Show all presets (including incompatible)"
+msgstr "顯示所有預設（包括不相容的）"
+
+msgid "Select presets to compare"
+msgstr "選擇要比較的預設"
+
+msgid "Left Preset Value"
+msgstr "左預設值"
+
+msgid "Right Preset Value"
+msgstr "右預設值"
+
+msgid "One of the presets doesn't found"
+msgstr "找不到其中一個預設"
+
+msgid "Compared presets has different printer technology"
+msgstr "比較預設具有不同的打印機技術"
+
+msgid "Presets are the same"
+msgstr "預設是一樣的"
+
+msgid ""
+"Presets are different.\n"
+"Click this button to select the same preset for the right and left preset."
+msgstr ""
+"預設不同。\n"
+"單擊此按鈕可為左右預設選擇相同的預設。"
+
+msgid "Undef category"
+msgstr "未定義類別"
+
+msgid "Undef group"
+msgstr "未定義群組"
+
+msgid "New version of %s is available"
+msgstr "有新的發行版本 %s 可用"
+
+msgid "Changelog & Download"
+msgstr "更新日誌與下載"
+
+msgid "Open changelog page"
+msgstr "打開更新日誌頁面"
+
+msgid "Open download page"
+msgstr "打開下載頁面"
+
+msgid "Opening Configuration Wizard"
+msgstr "打開設定嚮導"
+
+msgid ""
+"PrusaSlicer is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed."
+msgstr ""
+"PrusaSlicer 沒有可用的最新設定。\n"
+"設定嚮導可能不提供要安裝的最新打印機、線材和 SLA 材料。"
+
+msgid "Comment:"
+msgstr "註解:"
+
+msgid "Install"
+msgstr "安裝"
+
+msgid "Don't install"
+msgstr "不要安裝"
+
+msgid "%s incompatibility"
+msgstr "%s 不相容"
+
+msgid "You must install a configuration update."
+msgstr "設定更新。"
+
+msgid ""
+"%s will now start updates. Otherwise it won't be able to start.\n"
+"\n"
+"Note that a full configuration snapshot will be created first. It can then "
+"be restored at any time should there be a problem with the new version.\n"
+"\n"
+"Updated configuration bundles:"
+msgstr ""
+"%s 現在將開始更新。否則將無法啟動。\n"
+"\n"
+"請注意，將首先建立一個完整的設定快照。如果新版本出現問題，可以隨時恢復它。\n"
+"\n"
+"更新的設定包："
+
+msgid "%s configuration is incompatible"
+msgstr "%s 設定不相容"
+
+msgid ""
+"This version of %s is not compatible with currently installed configuration "
+"bundles.\n"
+"This probably happened as a result of running an older %s after using a "
+"newer one.\n"
+"\n"
+"You may either exit %s and try again with a newer version, or you may re-run "
+"the initial configuration. Doing so will create a backup snapshot of the "
+"existing configuration before installing files compatible with this %s."
+msgstr ""
+"此版本的 %s 與當前安裝的設定包不相容。\n"
+"這可能是由於在使用較新的%s 後運行了較舊的版本造成的。\n"
+"\n"
+"您可以退出 %s 並使用較新的版本重試, 也可以重新運行初始設定。這樣做將在安裝與"
+"此%s 相容的檔案之前建立現有設定的備份快照。"
+
+msgid "This %s version: %s"
+msgstr "此 %s 版本：%s"
+
+msgid ""
+"%s now uses an updated configuration structure.\n"
+"\n"
+"So called 'System presets' have been introduced, which hold the built-in "
+"default settings for various printers. These System presets cannot be "
+"modified, instead, users now may create their own presets inheriting "
+"settings from one of the System presets.\n"
+"An inheriting preset may either inherit a particular value from its parent "
+"or override it with a customized value.\n"
+"\n"
+"Please proceed with the %s that follows to set up the new presets and to "
+"choose whether to enable automatic preset updates."
+msgstr ""
+"%s 現在使用更新的設定結構。\n"
+"\n"
+"引入了所謂的“系統預設”，其中包含各種打印機的內建預設設定。這些系統預設無法修"
+"改，相反的，使用者現在可以建立自己的預設，繼承其中一個系統預設的設定。\n"
+"繼承預設可以從其父級繼承特定值或使用自定義值覆蓋它。\n"
+"\n"
+"請繼續執行隨後的 %s 以設定新預設並選擇是否啟用自動預設更新。"
+
+msgid "Configuration updates"
+msgstr "設定更新"
+
+msgid "No updates available"
+msgstr "沒有可用的更新"
+
+msgid "%s has no configuration updates available."
+msgstr "%s 沒有可用的設定更新。"
+
+msgid "Connection to AstroBox works correctly."
+msgstr "與 AstroBox 的連接工作正常。"
+
+msgid "Could not connect to AstroBox"
+msgstr "無法連接到 AstroBox"
+
+msgid "Note: AstroBox version at least 1.1.0 is required."
+msgstr "注意：AstroBox 版本至少需要 1.1.0。"
+
+msgid "Upload not enabled on FlashAir card."
+msgstr "FlashAir 卡上未啟用上傳。"
+
+msgid "Connection to FlashAir works correctly and upload is enabled."
+msgstr "與 FlashAir 的連接工作正常並啟用上傳。"
+
+msgid "Could not connect to FlashAir"
+msgstr "無法連接到 FlashAir"
+
+msgid ""
+"Note: FlashAir with firmware 2.00.02 or newer and activated upload function "
+"is required."
+msgstr "注意：FlashAir 需要韌體為 2.00.02 或更新版本並啟動上傳功能。"
+
+msgid ""
+"Could not detect system SSL certificate store. PrusaSlicer will be unable to "
+"establish secure network connections."
+msgstr "無法檢測系統 SSL 憑證儲存。PrusaSlicer 將無法建立安全的網路連結。"
+
+msgid "PrusaSlicer detected system SSL certificate store in: %1%"
+msgstr "PrusaSlicer 檢測系統 SSL 憑證儲存在： %1%"
+
+msgid ""
+"To specify the system certificate store manually, please set the %1% "
+"environment variable to the correct CA bundle and restart the application."
+msgstr ""
+"要手動指定系統證書存儲，請將 %1% 環境變數設定為正確的 CA 捆綁包並重新啟動應用"
+"程序。"
+
+msgid ""
+"CURL init has failed. PrusaSlicer will be unable to establish network "
+"connections. See logs for additional details."
+msgstr ""
+"CURL 已經失敗了。PrusaSlicer 將無法建立網路連結。有關其他詳細資訊，請參閱日"
+"誌。"
+
+msgid "Connection to Prusa SL1 / SL1S works correctly."
+msgstr "與 Prusa SL1 / SL1S 的連接工作正常。"
+
+msgid "Connection to PrusaLink works correctly."
+msgstr "與 PrusaLink 的連接工作正常。"
+
+msgid "Could not connect to PrusaLink"
+msgstr "無法連接到 PrusaLink"
+
+msgid "Copying of file %1% to %2% failed: %3%"
+msgstr "將檔案 %1% 複製到 %2% 失敗：%3%"
+
+msgid "Continue and install configuration updates?"
+msgstr "繼續並安裝設定更新？"
+
+msgid "Updating"
+msgstr "正在更新請稍候"
+
+msgid "Open G-code file:"
+msgstr "打開 G-code檔案："
+
+msgid "Connection to Repetier works correctly."
+msgstr "與 Repetier 的連接工作正常。"
+
+msgid "Could not connect to Repetier"
+msgstr "無法連接到 Repetier"
+
+msgid "Note: Repetier version at least 0.90.0 is required."
+msgstr "注意：Repetier 版本至少需要 0.90.0。"
+
+msgid ""
+"HTTP status: %1%\n"
+"Message body: \"%2%\""
+msgstr ""
+"HTTP 狀態：%1%\n"
+"訊息內容：“%2%”"
+
+msgid ""
+"Parsing of host response failed.\n"
+"Message body: \"%1%\"\n"
+"Error: \"%2%\""
+msgstr ""
+"主機溝通解析失敗。\n"
+"訊息內容：“%1%”\n"
+"錯誤碼：“%2%”"
+
+msgid ""
+"Enumeration of host printers failed.\n"
+"Message body: \"%1%\"\n"
+"Error: \"%2%\""
+msgstr ""
+"主機打印機例舉失敗。\n"
+"訊息內容：“%1%”\n"
+"錯誤碼：“%2%”"
+
+msgid ""
+"Fuzzy skin\n"
+"Did you know that you can create rough fibre-like texture on the sides of "
+"your models using the<a>Fuzzy skin</a>feature? You can also use modifiers to "
+"apply fuzzy-skin only to a portion of your model."
+msgstr ""
+"模糊表面\n"
+"您是否知道可以使用<a>模糊表面</a>功能在模型的側面建立粗糙的纖維狀紋理？您還可"
+"以使用修改器將模糊表面僅應用在模型的一部分。"
+
+msgid ""
+"Shapes gallery\n"
+"Did you know that PrusaSlicer has a Shapes Gallery? You can use the included "
+"models as modifiers, negative volumes or as printable objects. Right-click "
+"the platter and select<a>Add Shape - Gallery</a>."
+msgstr ""
+"形狀庫圖\n"
+"您知道 PrusaSlicer 有一個形狀圖庫嗎？您可以使用其中所包含的模型作為修改器、挖"
+"空模型或直接當作打印模型。右鍵單擊花紋並選取<a>添加形狀 - 圖庫</a>。"
+
+msgid ""
+"Arrange settings\n"
+"Did you know that you can right-click the<a>Arrange icon</a>to adjust the "
+"size of the gap between objects and to allow automatic rotations?"
+msgstr ""
+"排列設定\n"
+"您是否知道您可以右鍵單擊<a>排列圖形</a>來調整模型之間的間隙大小並允許自動旋"
+"轉？"
+
+msgid ""
+"Negative volume\n"
+"Did you know that you can subtract one mesh from another using the Negative "
+"volume modifier? That way you can, for example, create easily resizable "
+"holes directly in PrusaSlicer. Read more in the documentation. (Requires "
+"Advanced or Expert mode.)"
+msgstr ""
+"挖空模型\n"
+"您是否知道可以使用挖空模型修改器從一個網格中減去另一個網格？例如，這樣您就可"
+"以直接在 PrusaSlicer 中建立易於調整大小的孔。在說明檔中可閱讀到更多內容。 "
+"（此功能需要高級或專家模式。）"
+
+msgid ""
+"Simplify mesh\n"
+"Did you know that you can reduce the number of triangles in a mesh using the "
+"Simplify mesh feature? Right-click the model and select Simplify model. Read "
+"more in the documentation."
+msgstr ""
+"簡化網格\n"
+"您是否知道可以使用“簡化網格”功能減少網格中的三角形數量？右鍵單擊模型並選擇簡"
+"化模型。在說明檔中可閱讀更多內容。"
+
+msgid ""
+"Reload from disk\n"
+"Did you know that if you created a newer version of your model, you can "
+"simply reload it in PrusaSlicer? Right-click the model in the 3D view and "
+"choose Reload from disk. Read more in the documentation."
+msgstr ""
+"從磁碟機重新匯入\n"
+"您知道嗎，如果您建立了模型的更新版本，您可以很簡單的在 PrusaSlicer 中重新匯入"
+"它？在 3D 檢視裡面按滑鼠右鍵單擊模型並選擇從磁碟機重新匯入。在說明檔中可閱讀"
+"更多資訊。"
+
+msgid ""
+"Hiding sidebar\n"
+"Did you know that you can hide the right sidebar using the shortcut <b>Shift"
+"+Tab</b>? You can also enable the icon for this from the<a>Preferences</a>."
+msgstr ""
+"隱藏側邊欄\n"
+"您知道可以使用快捷鍵<b>Shift+Tab</b>隱藏右側邊欄嗎？您還可以從<a>選項</a>為此"
+"功能啟用圖示。"
+
+msgid ""
+"Perspective camera\n"
+"Did you know that you can use the <b>K</b> key to quickly switch between an "
+"orthographic and perspective camera?"
+msgstr ""
+"透視相機\n"
+"您是否知道可以使用<b>K</b>鍵在正交相機和透視相機之間快速切換？"
+
+msgid ""
+"Camera Views\n"
+"Did you know that you can use the number keys <b>0-6</b> to quickly switch "
+"between predefined camera angles?"
+msgstr ""
+"攝影機檢視\n"
+"您是否知道可以使用數字鍵<b>0-6</b>在預定義的攝影機不同角度之間快速切換？"
+
+msgid ""
+"Place on face\n"
+"Did you know that you can quickly orient a model so that one of its faces "
+"sits on the print bed? Select the<a>Place on face</a>function or press the "
+"<b>F</b> key."
+msgstr ""
+"平貼在載台\n"
+"您是否知道可以快速調整模型的方向，使其其中一個面放置於載台上？選擇<a>平貼在載"
+"台</a>功能或按<b>F</b>鍵。"
+
+msgid ""
+"Set number of instances\n"
+"Did you know that you can right-click a model and set an exact number of "
+"instances instead of copy-pasting it several times?"
+msgstr ""
+"設定實例數\n"
+"您知道嗎，您可以右鍵單擊模型並設定準確的實例數量來打印，而不是使用多次的復製"
+"貼上？"
+
+msgid ""
+"Combine infill\n"
+"Did you know that you can print the infill with a higher layer height "
+"compared to perimeters to save print time using the setting<a>Combine infill "
+"every</a>."
+msgstr ""
+"組合填充\n"
+"您知道嗎，您可以打印具有比邊緣更高的層高之填充，您可以使用設定<a>組合填充間隔"
+"</a>來節省打印時間。"
+
+msgid ""
+"Variable layer height\n"
+"Did you know that you can print different regions of your model with a "
+"different layer height and smooth the transitions between them? Try "
+"the<a>Variable layer height tool</a>. (Not available for SLA printers.)"
+msgstr ""
+"可變層高\n"
+"您是否知道可以使用不同的層高來打印模型的不同區域並平滑它們之間的過渡？試試<a>"
+"可變層高工具</a>。 （不適用於 SLA 打印機。）"
+
+msgid ""
+"Undo/redo history\n"
+"Did you know that you can right-click the<a>undo/redo arrows</a>to see the "
+"history of changes and to undo or redo several actions at once?"
+msgstr ""
+"取消/重做歷史\n"
+"您是否知道您可以右鍵單擊<a>取消/重做歷史</a>來查看更改的歷史並一次取消或重做"
+"多個操作？"
+
+msgid ""
+"Different layer height for each model\n"
+"Did you know that you can print each model on the plater with a different "
+"layer height? Right-click the model in the 3D view, choose Layers and "
+"Perimeters and adjust the values in the right panel. Read more in the "
+"documentation."
+msgstr ""
+"每個模型不同的層高\n"
+"您知道您可以在載台上以不同的層高打印每個模型嗎？在 3D 視圖中右鍵單擊模型，選"
+"擇打印層和邊緣並在右側面板中調整設定值。在說明檔中可閱讀更多內容。"
+
+msgid ""
+"Solid infill threshold area\n"
+"Did you know that you can make parts of your model with a small cross-"
+"section be filled with solid infill automatically? Set the<a>Solid infill "
+"threshold area</a>. (Expert mode only.)"
+msgstr ""
+"實體填充上限區域\n"
+"您是否知道可以使模型的小橫截面部分自動填充實體填充？您可以設定<a>實體填充上限"
+"區域</a>。 （僅限專家模式。）"
+
+msgid ""
+"Search functionality\n"
+"Did you know that you use the<a>Search</a>tool to quickly find a specific "
+"PrusaSlicer setting? Or use the familiar shortcut <b>Ctrl+F</b>."
+msgstr ""
+"搜尋功能\n"
+"您知道您可以使用<a>搜尋</a>工具快速找到特定的 PrusaSlicer 設定嗎？或者您也可"
+"以使用比較熟悉的快捷方式<b>Ctrl+F</b> 。"
+
+msgid ""
+"Box selection\n"
+"Did you know that you can do a box selection with Shift+Mouse drag? You can "
+"also box-deselect objects with <b>Alt+Mouse drag</b>."
+msgstr ""
+"框選\n"
+"您知道可以使用 Shift+滑鼠的拖動來進行模型的框選嗎？您還可以使用<b>Alt+滑鼠拖"
+"動</b>來取消框選模型。"
+
+msgid ""
+"Zoom on selected objects or on all objects if none selected\n"
+"Did you know that you can zoom in on selected objects by pressing the <b>Z</"
+"b> key? If none are selected, the camera will zoom on all objects in the "
+"scene."
+msgstr ""
+"放大選取模型或所有模型\n"
+"您是否知道可以通過按<b>Z</b>鍵放大選取模型？如果沒有選取，相機將放大場景中的"
+"所有模型。"
+
+msgid ""
+"Printable toggle\n"
+"Did you know that you can disable the G-code generation for the selected "
+"model without having to move or delete it? Toggle the Printable property of "
+"a model from the Right-click context menu."
+msgstr ""
+"可打印切換\n"
+"您是否知道您可以禁用所選模型 G-code 的產生而不需移動或刪除它？選取模型後按滑"
+"鼠右鍵選單中的可打印項目。"
+
+msgid ""
+"Mirror\n"
+"Did you know that you can mirror the selected model to create a reversed "
+"version of it? Right-click the model, select Mirror and pick the mirror axis."
+msgstr ""
+"鏡像\n"
+"您知道您可以鏡像所選模型以建立它的反向版本嗎？請右鍵單擊模型叫出右鍵選單，選"
+"取鏡像的選項然再選取您要的鏡像軸。"
+
+msgid ""
+"PageUp / PageDown quick rotation by 45 degrees\n"
+"Did you know that you can quickly rotate selected models by 45 degrees "
+"around the Z-axis clockwise or counter-clockwise by pressing <b>Page Up</b> "
+"or <b>Page Down</b> respectively?"
+msgstr ""
+"按 PageUp/PageDown 快速旋轉 45 度\n"
+"您知道嗎，您可以通過分別按<b>Page Up</b>或<b>Page Down</b>快速將所選模型繞 Z "
+"軸順時針或逆時針旋轉 45 度？"
+
+msgid ""
+"Load config from G-code\n"
+"Did you know that you can use File-Import-Import Config to load print, "
+"filament and printer profiles from an existing G-code file? Similarly, you "
+"can use File-Import-Import SL1 / SL1S archive, which also lets you "
+"reconstruct 3D models from the voxel data."
+msgstr ""
+"從 G-code 匯入設定\n"
+"您是否知道可以使用檔案-匯入-匯入設定從現有 G-code 檔案匯入打印、線材和打印機"
+"設定檔？同樣的您也可以使用 File-Import-Import SL1 / SL1S 存檔，這能讓您從體素"
+"資料重建 3D 模型。"
+
+msgid ""
+"Ironing\n"
+"Did you know that you can smooth top surfaces of prints using Ironing? The "
+"nozzle will run a special second infill phase at the same layer to fill in "
+"holes and flatten any lifted plastic. Read more in the documentation. "
+"(Requires Advanced or Expert mode.)"
+msgstr ""
+"熨平模式\n"
+"您知道嗎，您可以使用熨平功能來平滑打印件的頂面？此功能使用時噴嘴將在同一層執"
+"行特殊的第二次填充過程，以填充孔洞並壓平任何抬起的塑料。在說明檔中可閱讀更多"
+"內容。 （需要高級或專家模式。）"
+
+msgid ""
+"Paint-on supports\n"
+"Did you know that you can paint directly on the object and select areas, "
+"where supports should be enforced or blocked? Try the<a>Paint-on supports</"
+"a>feature. (Requires Advanced or Expert mode.)"
+msgstr ""
+"繪製支撐\n"
+"您是否知道可以直接在模型上繪製並選取需要強制或阻止支稱的區域？請試試<a>繪製支"
+"撐</a>的功能。 （需要高級或專家模式。）"
+
+msgid ""
+"Paint-on seam\n"
+"Did you know that you can paint directly on the object and select where to "
+"place the start/endpoint of each perimeter loop? Try the<a>Seam painting</"
+"a>feature. (Requires Advanced or Expert mode.)"
+msgstr ""
+"在接縫上繪製\n"
+"您知道可以直接在模型上繪製並選擇放置每個邊緣環的起點/終點的位置嗎？請試試<a>"
+"接縫繪製</a>功能。 （需要高級或專家模式。）"
+
+msgid ""
+"Insert Pause\n"
+"Did you know that you can schedule the print to pause at a specific layer? "
+"Right-click the layer slider in the Preview and select Add pause print "
+"(M601). This can be used to insert magnets, weights or nuts into your "
+"prints. Read more in the documentation."
+msgstr ""
+"插入暫停\n"
+"您知道您可以安排打印件在特定層時暫停嗎？右鍵單擊預覽中的打印層滑塊，然後選擇"
+"添加暫停打印 (M601)。這可用於將磁鐵、加重物或螺母插入打印件中。在說明檔中可閱"
+"讀更多內容。"
+
+msgid ""
+"Insert Custom G-code\n"
+"Did you know that you can insert a custom G-code at a specific layer? Left-"
+"click the layer in the Preview, Right-click the plus icon and select Add "
+"custom G-code. With this function you can, for example, create a temperature "
+"tower. Read more in the documentation."
+msgstr ""
+"插入自定義 G-code\n"
+"您知道可以在特定層插入自定義 G-code嗎？左鍵單擊預覽中的打印層，右鍵單擊加號圖"
+"示並選取添加自定義 G-code。例如，您可以使用此功能建立一個冷卻塔。在說明檔中可"
+"閱讀更多內容。"
+
+msgid ""
+"Configuration snapshots\n"
+"Did you know that you can roll back to a complete backup of all system and "
+"user profiles? You can view and move back and forth between snapshots using "
+"the Configuration - <a>Configuration snapshots menu</a>."
+msgstr ""
+"設定快照\n"
+"您是否知道可以返回到所有系統和使用者設定檔的完整備份？您可以使用 設定- <a>設"
+"定檔快照選單</a>查看快照並在快照之間來回切換。"
+
+msgid ""
+"Minimum shell thickness\n"
+"Did you know that instead of the number of top and bottom layers, you can "
+"define the<a>Minimum shell thickness</a>in millimeters? This feature is "
+"especially useful when using the variable layer height function."
+msgstr ""
+"最小殼厚度\n"
+"您知道嗎，您可以定義以mm為單位的<a>最小殼厚度</a>，而不是頂層和底層的數量？此"
+"功能在使用可變層高功能時特別有用。"
+
+msgid ""
+"Settings in non-modal window\n"
+"Did you know that you can open the Settings in a new non-modal window? This "
+"means you can have settings open on one screen and the G-code Preview on the "
+"other. Go to the<a>Preferences</a>and select Settings in non-modal window."
+msgstr ""
+"非模態視窗中的設定\n"
+"您知道可以在新的非態式視窗中打開設定嗎？這表示您可以在一個螢幕上打開設定，而"
+"在另一個螢幕上打開 G-code預覽。轉到<a>選項</a>並選取非模態視窗中的設定。"
+
+msgid ""
+"Adaptive infills\n"
+"Did you know that you can use the Adaptive cubic and Support cubic infills "
+"to decrease the print time and lower the filament consumption? Read more in "
+"the documentation."
+msgstr ""
+"自適應填充\n"
+"您知道嗎，您可以使用自適應立方體和支撐立方體的填充來縮短打印時間並降低線材的"
+"消耗量？在說明檔中可閱讀更多內容。"
+
+msgid ""
+"Lightning infill\n"
+"Did you know that you can use the Lightning infill to support only the top "
+"surfaces, save a lot of the filament, and decrease the print time? Read more "
+"in the documentation."
+msgstr ""
+"閃電填充\n"
+"您知道嗎，您可以使用閃電填充來打印以支撐頂面，從而節省大量耗材並縮短打印時"
+"間？在說明檔中可閱讀更多內容。"
+
+msgid ""
+"Fullscreen mode\n"
+"Did you know that you can switch PrusaSlicer to fullscreen mode? Use the "
+"<b>F11</b> hotkey."
+msgstr ""
+"全螢幕模式 你知道你可以將 PrusaSlicer 切換到全螢幕模式嗎？使用<b>F11</b>熱"
+"鍵。"

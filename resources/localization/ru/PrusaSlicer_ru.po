@@ -7997,7 +7997,7 @@ msgstr "Приветствуем вас в мастере настройки %s"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Assistent"
+msgid "Welcome to the %s Configuration Wizard"
 msgstr "Приветствуем вас в мастере настройки %s"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:576
@@ -8487,7 +8487,7 @@ msgstr ""
 "Выбрать фотополимерный смолы по умолчанию для этих моделей SLA принтеров?"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2974
-msgid "Configuration is edited in ConfigAssistent"
+msgid "Configuration is edited in ConfigWizard"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3027
@@ -8602,11 +8602,11 @@ msgid "Configuration &Assistant"
 msgstr "Помощник по &настройке"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3529
-msgid "Configuration Assistent"
+msgid "Configuration Wizard"
 msgstr "Мастер настройки"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3530
-msgid "Configuration &Assistent"
+msgid "Configuration &Wizard"
 msgstr "&Мастер настройки"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:237
@@ -12628,7 +12628,7 @@ msgid "Please check your object list before preset changing."
 msgstr "Пожалуйста, проверьте список моделей перед изменением профиля."
 
 #: src/slic3r/GUI/GUI_App.cpp:3150
-msgid "Configuration is editing from ConfigAssistent"
+msgid "Configuration is editing from ConfigWizard"
 msgstr "Редактирование конфигурации с помощью мастера настроек"
 
 #: src/slic3r/GUI/GUI_App.cpp:3168
@@ -19066,7 +19066,7 @@ msgid "Download path is %1%. Do you wish to continue?"
 msgstr "Путь загрузки: %1%. Продолжить?"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Assistent"
+msgid "Opening Configuration Wizard"
 msgstr "Открытие мастера настройки"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456

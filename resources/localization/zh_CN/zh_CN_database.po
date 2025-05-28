@@ -136,6 +136,14 @@ msgid "%s information"
 msgstr "%s 信息"
 
 msgid ""
+"%s is not using the newest configuration available.\n"
+"Configuration Wizard may not offer the latest printers, filaments and SLA "
+"materials to be installed. "
+msgstr ""
+"%s 没有使用可用的最新配置。\n"
+"配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 "
+
+msgid ""
 "%s now uses an updated configuration structure.\n"
 "\n"
 "So called 'System presets' have been introduced, which hold the built-in "
@@ -601,6 +609,9 @@ msgstr "添加图层范围"
 msgid "Add Layers"
 msgstr "添加图层"
 
+msgid "Add modifier"
+msgstr "添加修改器"
+
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters until all overhangs are filled.\n"
@@ -623,8 +634,17 @@ msgstr ""
 "以上的循环。\n"
 "如果你成功触发了这个设置背后的算法，请给我留言。 个人觉得没啥用。"
 
+msgid "Add negative volume"
+msgstr "增加负体积"
+
+msgid "Add one more instance of the selected object"
+msgstr "再添加一个选定对象的实例"
+
 msgid "Add one or more custom shapes"
 msgstr "添加一个或多个自定义形状"
+
+msgid "Add part"
+msgstr "添加部件"
 
 msgid "Add pause print"
 msgstr "添加暂停打印"
@@ -641,8 +661,14 @@ msgstr "将点添加到选择"
 msgid "Add preset for this printer device"
 msgstr "为此打印机设备添加预设"
 
+msgid "Add seam position"
+msgstr "添加接缝位置"
+
 msgid "Add selected shape(s) to the bed"
 msgstr "将选定形状添加到床上"
+
+msgid "Add settings"
+msgstr "添加设置"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "为高度范围添加配置组"
@@ -678,6 +704,12 @@ msgid ""
 msgstr ""
 "在靠近倾斜表面附近添加实体填充，以保证垂直壳体厚度（顶部+底部实心层）。 \n"
 "!! solid_over_perimeters may erase these surfaces !!"
+
+msgid "Add support blocker"
+msgstr "添加支撑屏蔽"
+
+msgid "Add support enforcer"
+msgstr "添加支撑生成器"
 
 msgid "Add support point"
 msgstr "添加支撑点"
@@ -864,6 +896,15 @@ msgstr ""
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "仅允许在选择的面上绘制：\"%1%'"
+
+msgid "Along X axis"
+msgstr "沿 X 轴"
+
+msgid "Along Y axis"
+msgstr "沿 Y 轴"
+
+msgid "Along Z axis"
+msgstr "沿 Z 轴"
 
 msgid "Also emit limits to G-code"
 msgstr "还发出对 G 代码的限制"
@@ -1283,6 +1324,9 @@ msgstr "底部实心层"
 msgid "Bottom View"
 msgstr "底部视图"
 
+msgid "Box"
+msgstr "盒子"
+
 msgid "Bridge"
 msgstr "网桥"
 
@@ -1555,8 +1599,14 @@ msgstr "更改零件类型"
 msgid "Change point head diameter"
 msgstr "改变支撑点的头直径"
 
+msgid "Change the number of instances of the selected object"
+msgstr "更改所选对象的实例数"
+
 msgid "Change thumbnail"
 msgstr "更改缩略图"
+
+msgid "Change type"
+msgstr "更改类型"
 
 msgid "Changelog & Download"
 msgstr "更改日志&下载"
@@ -1663,6 +1713,9 @@ msgid ""
 msgstr ""
 "经典轮廓生成器产生具有恒定挤出宽度的轮廓，并且对于非常薄的区域使用间隙填充。 "
 "Arachne 引擎产生具有可变挤出宽度的轮廓。这个设置也会影响回环填充。"
+
+msgid "Clear"
+msgstr "清除"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "清除新项目上的撤消/重做堆栈"
@@ -3314,6 +3367,9 @@ msgstr "导出 AMF"
 msgid "Export AMF file:"
 msgstr "导出 AMF 文件："
 
+msgid "Export as STL"
+msgstr "导出为 STL"
+
 msgid "Export config"
 msgstr "导出配置"
 
@@ -3774,8 +3830,14 @@ msgstr "填充角度增量"
 msgid "Fill bed"
 msgstr "填充床"
 
+msgid "Fill bed with instances"
+msgstr "用实例填充床"
+
 msgid "Fill density"
 msgstr "填充密度"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr "用选定对象的实例填充床的剩余区域"
 
 msgid "Fill the voids with bridges"
 msgstr "用桥梁填补空白"
@@ -3878,6 +3940,9 @@ msgstr "筏接口上的第一个对象层"
 
 msgid "Fix through NetFabb"
 msgstr "通过 NetFabb 修复"
+
+msgid "Fix through the Netfabb"
+msgstr "通过Netfabb修复"
 
 msgid "Fixing through NetFabb"
 msgstr "通过NetFabb进行修复"
@@ -4030,6 +4095,9 @@ msgstr "从配置文件和项目文件（3MF、AMF）加载配置时的前向兼
 msgid "Found reserved keywords in"
 msgstr "在中找到保留关键字"
 
+msgid "FreeCAD path"
+msgstr "FreeCAD 路径"
+
 msgid "FreePySCAD : script engine for FreeCAD"
 msgstr "FreePySCAD：FreeCAD 的脚本引擎"
 
@@ -4120,6 +4188,9 @@ msgstr "g/cm³"
 
 msgid "g/ml"
 msgstr "克/毫升"
+
+msgid "Gallery"
+msgstr "陈列室"
 
 msgid "Gap fill"
 msgstr "间隙填充"
@@ -4361,6 +4432,9 @@ msgstr "裙边的高度以层表示。设置一个高值，以使用裙边作为
 
 msgid "Height of the display"
 msgstr "显示高度"
+
+msgid "Height range Modifier"
+msgstr "高度范围修改器"
 
 msgid "Height ranges"
 msgstr "高度范围"
@@ -6094,6 +6168,9 @@ msgstr "合并"
 msgid "Merge all parts to the one single object"
 msgstr "将所有部分合并为一个对象"
 
+msgid "Merge objects to the one multipart object"
+msgstr "将对象合并到一个多部分对象"
+
 msgid "Merged"
 msgstr "合并"
 
@@ -6360,11 +6437,26 @@ msgid ""
 "compensation."
 msgstr "进行第一层补偿时要保持的最小特征宽度。"
 
+msgid "Mirror"
+msgstr "镜像"
+
 msgid "Mirror horizontally"
 msgstr "水平镜像"
 
 msgid "Mirror Object"
 msgstr "镜像物体  Mirror Object"
+
+msgid "Mirror the selected object"
+msgstr "镜像所选对象"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "沿 X 轴镜像所选对象"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "沿 Y 轴镜像所选对象"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "沿 Z 轴镜像所选对象"
 
 msgid "Mirror vertically"
 msgstr "垂直镜像"
@@ -7176,6 +7268,9 @@ msgstr "在浏览器中打开 %s 版本页面"
 msgid "Open the dialog to modify shape gallery"
 msgstr "打开对话框以修改形状库"
 
+msgid "Opening Configuration Assistent"
+msgstr "打开配置向导"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "在某些预设未保存时打开新项目。"
 
@@ -7432,6 +7527,9 @@ msgstr "從剪貼板粘貼"
 
 msgid "Paste From Clipboard"
 msgstr "从剪贴板粘贴"
+
+msgid "Paths"
+msgstr "路径"
 
 msgid "Pattern"
 msgstr "模式"
@@ -7825,6 +7923,9 @@ msgstr ""
 msgid "Print&er Settings Tab"
 msgstr "&打印机设置选项卡"
 
+msgid "Printable"
+msgstr "可打印的"
+
 msgid "printer"
 msgstr "打印机"
 
@@ -7972,6 +8073,9 @@ msgstr "质量/速度"
 
 msgid "Quick"
 msgstr "快速"
+
+msgid "Quick Add Settings (%s)"
+msgstr "快速添加设置 （%s）"
 
 msgid "Quick Save"
 msgstr "快速保存"
@@ -8150,6 +8254,9 @@ msgstr "从磁盘重新加载电镀机"
 msgid "Reload the platter from disk"
 msgstr "从磁盘重新加载"
 
+msgid "Reload the selected volumes from disk"
+msgstr "从磁盘重新加载选定的卷"
+
 msgid "Remaining errors"
 msgstr "剩余错误"
 
@@ -8198,6 +8305,9 @@ msgstr "移除图层范围"
 msgid "Remove Multi Material painting"
 msgstr "移除多材质绘画"
 
+msgid "Remove one instance of the selected object"
+msgstr "删除所选对象的一个实例"
+
 msgid "Remove paint-on seam"
 msgstr "除去绘制的接缝"
 
@@ -8225,11 +8335,17 @@ msgstr "删除所选点"
 msgid "Remove selection"
 msgstr "删除选择"
 
+msgid "Remove the selected object"
+msgstr "删除所选对象"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "删除用户配置文件（将预先拍摄快照）"
 
 msgid "Remove variable layer height"
 msgstr "删除可变层高度"
+
+msgid "Rename"
+msgstr "重命名"
 
 msgid "Rename Object"
 msgstr "重命名对象"
@@ -8292,6 +8408,9 @@ msgstr "重复最后一个快速切片"
 
 msgid "Replace from:"
 msgstr "替换自："
+
+msgid "Replace the selected volume with new STL"
+msgstr "用新的STL替换选定的卷"
 
 msgid "Replace with"
 msgstr "替换为"
@@ -8591,6 +8710,9 @@ msgstr "规模"
 msgid "Scale factors"
 msgstr "缩放比例因子"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "缩放所选对象以适合可打印体积"
+
 msgid "Scale To Fit"
 msgstr "缩放至合适"
 
@@ -8599,6 +8721,9 @@ msgstr "缩放至合适"
 
 msgid "Scale to fit the given volume."
 msgstr "缩放以适合给定的空间。"
+
+msgid "Scale to print volume"
+msgstr "缩放打印体积"
 
 msgid "Scaling factor or percentage."
 msgstr "缩放因子或百分比。"
@@ -8734,6 +8859,9 @@ msgstr "选择 打印机设置 选项卡"
 msgid "Select shape from the gallery"
 msgstr "从图库中选择形状"
 
+msgid "Select showing settings"
+msgstr "选择显示设置"
+
 msgid "Select the language"
 msgstr "选择语言"
 
@@ -8865,6 +8993,12 @@ msgstr "服务名称"
 msgid "Set"
 msgstr "设置"
 
+msgid "Set as a Separated Object"
+msgstr "设置为独立的对象"
+
+msgid "Set as a Separated Objects"
+msgstr "设置为独立的对象"
+
 msgid "Set auto color changes"
 msgstr "设置自动颜色更改"
 
@@ -8873,6 +9007,9 @@ msgstr "为所选项目设置默认挤出机"
 
 msgid "Set extruder change for every"
 msgstr "为每个设置挤出机更改"
+
+msgid "Set extruder for selected items"
+msgstr "为选定的项设置挤出机"
 
 msgid "Set extruder number for the selected items"
 msgstr "设置所选项目的挤出机编号"
@@ -8894,6 +9031,9 @@ msgstr "将下设置为当前滑块"
 
 msgid "Set Mirror"
 msgstr "设置镜像"
+
+msgid "Set number of instances"
+msgstr "设置实例数"
 
 msgid "Set numbers of copies to %d"
 msgstr "将副本数设置为 %d"
@@ -9300,6 +9440,9 @@ msgstr "收缩率"
 msgid "Simple"
 msgstr "简单"
 
+msgid "Simplify model"
+msgstr "简化模型"
+
 msgid "Single extruder MM setup"
 msgstr "单挤出机 MM 设置"
 
@@ -9411,6 +9554,9 @@ msgstr "SLA 支撑点"
 msgid "SLA supports outside the print area were detected."
 msgstr "检测到打印区域外的 SLA 支撑."
 
+msgid "Slab"
+msgstr "大板"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
@@ -9470,6 +9616,9 @@ msgstr "切片信息"
 
 msgid "Sliced object \"%1%\" looks like a logo or a sign"
 msgstr "切片对象\"%1%\"看起来像一个徽标或标志"
+
+msgid "Sliced preview"
+msgstr "切片预览"
 
 msgid "Slicing"
 msgstr "切片"
@@ -9750,6 +9899,15 @@ msgstr "启动画面图像"
 
 msgid "Split"
 msgstr "分裂"
+
+msgid "Split the selected object"
+msgstr "拆分所选对象"
+
+msgid "Split the selected object into individual objects"
+msgstr "将所选对象拆分为单个对象"
+
+msgid "Split the selected object into individual parts"
+msgstr "将选定对象拆分为各个部分"
 
 msgid "Split to objects"
 msgstr "拆分为对象"
@@ -11456,6 +11614,12 @@ msgid ""
 "just prior to extracting filament from the hotend."
 msgstr "为了进一步减少拉丝，在从热端提取灯丝之前设置较低的温度可能会有所帮助。"
 
+msgid "To objects"
+msgstr "拆分到对象"
+
+msgid "To parts"
+msgstr "到零件"
+
 msgid ""
 "To specify the system certificate store manually, please set the %1% "
 "environment variable to the correct CA bundle and restart the application."
@@ -12648,14 +12812,6 @@ msgstr ""
 "%s 遇到错误。这可能是由于内存不足造成的。如果您确定您的系统上有足够的内存，这"
 "可能也是一个软件错误，欢迎你向我们提交问题报告。"
 
-msgid ""
-"%s is not using the newest configuration available.\n"
-"Configuration Wizard may not offer the latest printers, filaments and SLA "
-"materials to be installed. "
-msgstr ""
-"%s 没有使用可用的最新配置。\n"
-"配置向导可能不提供要安装的最新打印机、耗材和 SLA 材料。 "
-
 msgid "%s website"
 msgstr "%s 网站"
 
@@ -12812,9 +12968,6 @@ msgstr ""
 msgid "Flow calibration"
 msgstr "流量校准"
 
-msgid "FreeCAD path"
-msgstr "FreeCAD 路径"
-
 msgid "FreeCad python script"
 msgstr "FreeCad python 脚本"
 
@@ -12937,9 +13090,6 @@ msgstr "在浏览器中打开 Slic3r 手册"
 msgid "Open the Slic3r website in your browser"
 msgstr "在浏览器中打开 Slic3r 网站"
 
-msgid "Opening Configuration Assistent"
-msgstr "打开配置向导"
-
 msgid "Over-Bridge calibration"
 msgstr "过桥校准"
 
@@ -12948,9 +13098,6 @@ msgstr "过桥校准"
 
 msgid "Overhang reversal"
 msgstr "悬垂反转"
-
-msgid "Paths"
-msgstr "路径"
 
 msgid ""
 "Please save your project and restart PrusaSlicer. We would be glad if you "
@@ -13006,9 +13153,6 @@ msgstr ""
 
 msgid "Slic3r Manual"
 msgstr "Slic3r 手册"
-
-msgid "Sliced preview"
-msgstr "切片预览"
 
 msgid "Test Flow Ratio"
 msgstr "测试流量比"
@@ -13367,27 +13511,6 @@ msgstr ""
 "您有一个非常大的喷嘴和非常精确的打印机，否则它应该不会很明显。\n"
 "这是非常实验性的，请报告有用性。 如果没有用，它可能会被删除。"
 
-msgid "Add modifier"
-msgstr "添加修改器"
-
-msgid "Add one more instance of the selected object"
-msgstr "再添加一个选定对象的实例"
-
-msgid "Add part"
-msgstr "添加部件"
-
-msgid "Add seam position"
-msgstr "添加接缝位置"
-
-msgid "Add settings"
-msgstr "添加设置"
-
-msgid "Add support blocker"
-msgstr "添加支撑屏蔽"
-
-msgid "Add support enforcer"
-msgstr "添加支撑生成器"
-
 msgid "Advanced View Mode"
 msgstr "高级界面模式"
 
@@ -13414,15 +13537,6 @@ msgid ""
 msgstr ""
 "允许最外周与自身重叠以避免使用薄壁。 请注意，流量未调整，因此这将导致过度挤出"
 "和未定义的行为。"
-
-msgid "Along X axis"
-msgstr "沿 X 轴"
-
-msgid "Along Y axis"
-msgstr "沿 Y 轴"
-
-msgid "Along Z axis"
-msgstr "沿 Z 轴"
 
 msgid "Always ask for unsaved changes when selecting new preset"
 msgstr "选择新预设时始终询问未保存的更改"
@@ -13479,17 +13593,8 @@ msgstr "对象底部"
 msgid "Block"
 msgstr "堵塞"
 
-msgid "Box"
-msgstr "盒子"
-
 msgid "Brim offset"
 msgstr "边缘偏移"
-
-msgid "Change the number of instances of the selected object"
-msgstr "更改所选对象的实例数"
-
-msgid "Change type"
-msgstr "更改类型"
 
 msgid "Changelog && Download"
 msgstr "更改日志 && 下载"
@@ -13574,9 +13679,6 @@ msgstr "专家界面模式"
 msgid "Export &toolpaths as OBJ"
 msgstr "导出 &挤出头路径为 OBJ"
 
-msgid "Export as STL"
-msgstr "导出为 STL"
-
 msgid "Export current plate as AMF"
 msgstr "将当构建板导出为 AMF"
 
@@ -13615,9 +13717,6 @@ msgid ""
 "printers."
 msgstr "标有 <b>*</b> 的灯丝与某些已安装的打印机<b>不</b>兼容。"
 
-msgid "Fill bed with instances"
-msgstr "用实例填充床"
-
 msgid ""
 "Fill cracks smaller than 2x gap closing radius during the triangle mesh "
 "slicing. The gap closing operation may reduce the final print resolution, "
@@ -13649,14 +13748,8 @@ msgid ""
 "not its adjacent solid shells."
 msgstr "填充顶部填充的模式。这仅影响顶部可见图层，而不影响其相邻的实体壳。"
 
-msgid "Fill the remaining area of bed with instances of the selected object"
-msgstr "用选定对象的实例填充床的剩余区域"
-
 msgid "First layer height can't be thinner than %s"
 msgstr "第一层高度不能小于 %s"
-
-msgid "Fix through the Netfabb"
-msgstr "通过Netfabb修复"
 
 msgid "Flash printer &firmware"
 msgstr "烧录打印机&固件"
@@ -13671,9 +13764,6 @@ msgstr "仅从支撑生成器支撑"
 
 msgid "Gui color"
 msgstr "桂色"
-
-msgid "Height range Modifier"
-msgstr "高度范围修改器"
 
 msgid ""
 "Horizontal width of the brim that will be printed around each object on the "
@@ -13811,9 +13901,6 @@ msgstr ""
 "如果设置为 0，则不会创建边缘。\n"
 "如果设置为 ~178，将在除海峡部分之外的所有地方创建边缘。"
 
-msgid "Merge objects to the one multipart object"
-msgstr "将对象合并到一个多部分对象"
-
 msgid "Merge objects to the one single object"
 msgstr "将对象合并为一个对象"
 
@@ -13832,21 +13919,6 @@ msgid ""
 msgstr ""
 "将桥流应用到此悬垂的挤出的最小无支撑宽度。 可以是毫米或喷嘴直径的百分比。 设"
 "置为 0 以停用。"
-
-msgid "Mirror"
-msgstr "镜像"
-
-msgid "Mirror the selected object"
-msgstr "镜像所选对象"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "沿 X 轴镜像所选对象"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "沿 Y 轴镜像所选对象"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "沿 Z 轴镜像所选对象"
 
 msgid "Model fixing"
 msgstr "模型修复中"
@@ -13924,9 +13996,6 @@ msgstr "周长起点的位置。 "
 msgid "Print z"
 msgstr "打印 z"
 
-msgid "Printable"
-msgstr "可打印的"
-
 msgid "Printer preset name"
 msgstr "打印机预设名称"
 
@@ -13938,9 +14007,6 @@ msgstr "Prusa FFF 技术打印机"
 
 msgid "Prusa MSLA Technology Printers"
 msgstr "Prusa MSLA 技术打印机"
-
-msgid "Quick Add Settings (%s)"
-msgstr "快速添加设置 （%s）"
 
 msgid "Random splash screen"
 msgstr "随机闪屏"
@@ -13957,20 +14023,8 @@ msgstr "相关打印机预设名称"
 msgid "Reload the selected object from disk"
 msgstr "从磁盘重新加载选定的对象"
 
-msgid "Reload the selected volumes from disk"
-msgstr "从磁盘重新加载选定的卷"
-
 msgid "Remember to check for updates at %s"
 msgstr "记得在 %s 检查更新"
-
-msgid "Remove one instance of the selected object"
-msgstr "删除所选对象的一个实例"
-
-msgid "Remove the selected object"
-msgstr "删除所选对象"
-
-msgid "Rename"
-msgstr "重命名"
 
 msgid "Resolution"
 msgstr "分辨率"
@@ -13978,17 +14032,8 @@ msgstr "分辨率"
 msgid "Save changes?"
 msgstr "保存更改吗？"
 
-msgid "Scale the selected object to fit the print volume"
-msgstr "缩放所选对象以适合可打印体积"
-
-msgid "Scale to print volume"
-msgstr "缩放打印体积"
-
 msgid "Select extruder number:"
 msgstr "选择挤出机编号："
-
-msgid "Select showing settings"
-msgstr "选择显示设置"
 
 msgid "Select what kind of pad do you need"
 msgstr "选择您需要哪种垫子"
@@ -13996,20 +14041,8 @@ msgstr "选择您需要哪种垫子"
 msgid "Select what kind of support do you need"
 msgstr "选择您需要何种支撑"
 
-msgid "Set as a Separated Object"
-msgstr "设置为独立的对象"
-
-msgid "Set as a Separated Objects"
-msgstr "设置为独立的对象"
-
-msgid "Set extruder for selected items"
-msgstr "为选定的项设置挤出机"
-
 msgid "Set lower thumb to current slider thumb"
 msgstr "将下设置为当前滑块"
-
-msgid "Set number of instances"
-msgstr "设置实例数"
 
 msgid "Set upper thumb to current slider thumb"
 msgstr "将上设置为当前滑块"
@@ -14037,9 +14070,6 @@ msgstr "SLA Gizmo 已打开"
 
 msgid "SLA Technology Printers"
 msgstr "SLA 技术打印机"
-
-msgid "Slab"
-msgstr "大板"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -14158,12 +14188,6 @@ msgid ""
 "Speed for thin walls (external extrusions that are alone because the obect "
 "is too thin at these places)."
 msgstr "薄壁的速度（单独的外部挤压，因为这些地方的对象太薄）。"
-
-msgid "Split the selected object"
-msgstr "拆分所选对象"
-
-msgid "Split the selected object into individual objects"
-msgstr "将所选对象拆分为单个对象"
 
 msgid "Split the selected object into individual sub-parts"
 msgstr "将所选对象拆分为各个子部分"
@@ -14395,12 +14419,6 @@ msgstr ""
 
 msgid "Threshold:"
 msgstr "临界点："
-
-msgid "To objects"
-msgstr "拆分到对象"
-
-msgid "To parts"
-msgstr "到零件"
 
 msgid "Upper layer"
 msgstr "上层"
@@ -15794,9 +15812,6 @@ msgstr "关闭(&o)"
 
 msgid "Class not registered."
 msgstr "类未注册。"
-
-msgid "Clear"
-msgstr "清除"
 
 msgid "Clear the log contents"
 msgstr "清除日志内容"
@@ -20656,9 +20671,6 @@ msgstr "抽取比"
 msgid "Processing model '%1%' with more than 1M triangles could be slow. It is highly recommend to reduce amount of triangles."
 msgstr "处理超过1M个三角形的模型“%1%”可能会很慢。强烈建议减少三角形的数量。"
 
-msgid "Simplify model"
-msgstr "简化模型"
-
 msgid "Simplify"
 msgstr "简化"
 
@@ -20772,18 +20784,6 @@ msgstr "普鲁萨斯勒：别再问我了"
 
 msgid "PrusaSlicer GUI initialization failed"
 msgstr "PrusaSlicer GUI初始化失败"
-
-msgid "Add negative volume"
-msgstr "增加负体积"
-
-msgid "Gallery"
-msgstr "陈列室"
-
-msgid "Replace the selected volume with new STL"
-msgstr "用新的STL替换选定的卷"
-
-msgid "Split the selected object into individual parts"
-msgstr "将选定对象拆分为各个部分"
 
 msgid "Filling bed"
 msgstr "填充床"
@@ -21576,3 +21576,1920 @@ msgstr ""
 "闪电填充\n"
 "您是否知道可以使用闪电填充来仅支撑顶部表面，从而节约许多耗材和减少打印时间？"
 "请阅读文档中的更多内容。"
+
+msgid ""
+"Avoid crossing perimeters option and avoid crossing curled overhangs option "
+"cannot be both enabled together."
+msgstr "避免穿越边界选项和避免穿越弯曲的悬臂选项不能同时启用。"
+
+msgid ""
+"Machine limits cannot be emitted to G-Code when Klipper firmware flavor is "
+"used. Change the value of machine_limits_usage."
+msgstr ""
+"当使用Klipper固件风格时，机器限制不能发送到G-Code。更改machine_limits_usage的"
+"值。"
+
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr "对象%1%超过了最大构建体积高度。"
+
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr "虽然对象%1%本身符合构建体积，但其最后一层超过了最大构建体积高度。"
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr "您可能希望缩小模型的大小，或者更改当前打印设置，然后重试。"
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr "树状支撑不支持可变层高。"
+
+msgid ""
+"The Wipe Tower is currently only supported for the Marlin, Klipper, RepRap/"
+"Sprinter, RepRapFirmware and Repetier G-code flavors."
+msgstr ""
+"Wipe Tower目前仅支持Marlin、Klipper、RepRap/Sprinter、RepRapFirmware和"
+"Repetier G-code风格。"
+
+msgid ""
+"Ooze prevention is only supported with the wipe tower when "
+"'single_extruder_multi_material' is off."
+msgstr "只有当'single_extruder_multi_material'关闭时，擦拭塔才支持防渗。"
+
+msgid "Alert if supports needed"
+msgstr "如果需要支撑，则发出警报"
+
+msgid "Long bridging extrusions"
+msgstr "长桥 挤出"
+
+msgid "Floating bridge anchors"
+msgstr "浮桥锚"
+
+msgid "Collapsing overhang"
+msgstr "塌陷悬垂"
+
+msgid "Loose extrusions"
+msgstr "松散的挤出"
+
+msgid "Low bed adhesion"
+msgstr "床面附着力低"
+
+msgid "Floating object part"
+msgstr "浮动对象部分"
+
+msgid "Thin fragile part"
+msgstr "薄易损件"
+
+msgid "Consider enabling supports."
+msgstr "考虑启用支撑。"
+
+msgid "Also consider enabling brim."
+msgstr "还要考虑启用边缘。"
+
+msgid ""
+"Detected print stability issues:\n"
+"%1%"
+msgstr ""
+"检测到打印稳定性问题：\n"
+"%1%"
+
+msgid "Avoid crossing curled overhangs (Experimental)"
+msgstr "避免穿越卷曲的悬垂物（实验）。"
+
+msgid ""
+"Plan travel moves such that the extruder avoids areas where the filament may "
+"be curled up. This is mostly happening on steeper rounded overhangs and may "
+"cause a crash with the nozzle. This feature slows down both the print and "
+"the G-code generation."
+msgstr ""
+"计划行程移动，以使挤出机避开细丝可能卷曲的区域。这种情况主要发生在更陡的圆形"
+"悬挑上，可能会导致喷嘴碰撞。此功能可降低打印和G代码生成的速度。"
+
+msgid "Enable dynamic overhang speeds"
+msgstr "启用动态悬挑速度"
+
+msgid "This setting enables dynamic speed control on overhangs."
+msgstr "此设置启用悬挑的动态速度控制。"
+
+msgid "speed for 0% overlap (bridge)"
+msgstr "0%悬挑的速度（桥接）"
+
+msgid "speed for 25% overlap"
+msgstr "25%悬挑的速度"
+
+msgid "speed for 50% overlap"
+msgstr "50%悬挑的速度"
+
+msgid "speed for 75% overlap"
+msgstr "75%悬挑的速度"
+
+msgid "Enable dynamic fan speeds"
+msgstr "启用动态风扇速度"
+
+msgid "This setting enables dynamic fan speed control on overhangs."
+msgstr "此设置可在悬挑上启用动态风扇速度控制。"
+
+msgid ""
+"Overhang size is expressed as a percentage of overlap of the extrusion with "
+"the previous layer: 100% would be full overlap (no overhang), while 0% "
+"represents full overhang (floating extrusion, bridge). Fan speeds for "
+"overhang sizes in between are calculated via linear interpolation."
+msgstr ""
+"悬挑尺寸表示为拉伸与上一层重叠的百分比：100%表示完全重叠（无悬挑），而0%表示"
+"完全悬挑（浮动拉伸、桥接）。介于两者之间的悬挑尺寸的风扇速度通过线性插值计"
+"算。"
+
+msgid "Monotonic Lines"
+msgstr "单调线条"
+
+msgid "Extra perimeters on overhangs (Experimental)"
+msgstr "悬挑上的额外周长（实验）"
+
+msgid ""
+"Detect overhang areas where bridges cannot be anchored, and fill them with "
+"extra perimeter paths. These paths are anchored to the nearby non-overhang "
+"area when possible."
+msgstr ""
+"检测桥梁不能被锚定的悬空区域，用额外的周边路径来填补它们。在可能的情况下，这"
+"些路径会被锚定在附近的非悬空区域。"
+
+msgid ""
+"This is the acceleration your printer will use for solid infill. Set zero to "
+"use the value for infill."
+msgstr "这是你的打印机将用于固体填充的加速度。设置为零即可使用该值进行填充。"
+
+msgid ""
+"This is the acceleration your printer will use for top solid infill. Set "
+"zero to use the value for solid infill."
+msgstr ""
+"这是你的打印机将用于顶部实心填充的加速度。设置为零就可以使用固体填充的数值。"
+
+msgid ""
+"This is the acceleration your printer will use for travel moves. Set zero to "
+"disable acceleration control for travel."
+msgstr ""
+"这是你的打印机在移动时使用的加速度。设置为零是为了禁止对移动的加速度控制。"
+
+msgid ""
+"Maximum acceleration when retracting.\n"
+"\n"
+"Not used for RepRapFirmware, which does not support it."
+msgstr ""
+"缩回时的最大加速度。\n"
+"\n"
+"不用于RepRapFirmware，该软件不支持它。"
+
+msgid "Maximum acceleration for travel moves."
+msgstr "行进移动时的最大加速度。"
+
+msgid ""
+"This option will drop the temperature of the inactive extruders to prevent "
+"oozing."
+msgstr "此选项将降低非活动挤出机的温度，以防止渗出。"
+
+msgid ""
+"This is the acceleration your printer will use for external perimeters. Set "
+"zero to use the value for perimeters."
+msgstr "这是您的打印机将用于外部边界的加速度。将零设置为使用边界的值。"
+
+msgid "Staggered inner seams"
+msgstr "交错内接缝"
+
+msgid ""
+"This option causes the inner seams to be shifted backwards based on their "
+"depth, forming a zigzag pattern."
+msgstr "此选项会导致内部接缝根据其深度向后移动，从而形成Z字形图案。"
+
+msgid ""
+"Temperature difference to be applied when an extruder is not active. The "
+"value is not used when 'idle_temperature' in filament settings is defined."
+msgstr ""
+"挤出机不活动时要应用的温度。当定义耗材设置中的 \"idle_temperature \"时，该值"
+"不使用。"
+
+msgid "Emit temperature commands automatically"
+msgstr "自动发出温度命令"
+
+msgid ""
+"When enabled, PrusaSlicer will check whether your Custom Start G-Code "
+"contains M104 or M190. If so, the temperatures will not be emitted "
+"automatically so you're free to customize the order of heating commands and "
+"other custom actions. Note that you can use placeholder variables for all "
+"PrusaSlicer settings, so you can put a \"M109 S[first_layer_temperature]\" "
+"command wherever you want.\n"
+"If your Custom Start G-Code does NOT contain M104 or M190, PrusaSlicer will "
+"execute the Start G-Code after bed reached its target temperature and "
+"extruder just started heating.\n"
+"\n"
+"When disabled, PrusaSlicer will NOT emit commands to heat up extruder and "
+"bed, leaving both to Custom Start G-Code."
+msgstr ""
+"当启用时，PrusaSlicer将检查您的自定义启动 G-Code是否包含M104或M190。如果有，"
+"温度将不会自动发出，你可以自由地定制加热命令和其他自定义动作的顺序。请注意，"
+"你可以为所有PrusaSlicer设置使用占位变量，您可以将“M109 S[第一层温度]”命令放在"
+"任何需要的位置。\n"
+"如果你的自定义启动G-Code不包含M104或M190，PrusaSlicer将在热床达到目标温度和挤"
+"出机刚开始加热时执行启动G-Code。\n"
+"\n"
+"当禁用时，PrusaSlicer将不会发出加热挤出机和床身的命令，而将两者留给自定义启动"
+"G-Code。"
+
+msgid ""
+"This start procedure is inserted at the beginning, possibly prepended by "
+"temperature-changing commands. See 'autoemit_temperature_commands'."
+msgstr ""
+"该启动程序在开始时插入，可能是前置温度变化命令准备的。请参"
+"阅“autoemit_temperature_commands”。"
+
+msgid "Organic"
+msgstr "树状"
+
+msgid ""
+"Synchronize support layers with the object print layers. This is useful with "
+"multi-material printers, where the extruder switch is expensive. This option "
+"is only available when top contact Z distance is set to zero."
+msgstr ""
+"将支撑层与对象打印层同步。这对于多材料打印机很有用，因为挤出机开关很昂贵。仅"
+"当顶部接触Z距离设置为零时，此选项才可用。"
+
+msgid "Maximum Branch Angle"
+msgstr "最大分支角度"
+
+msgid ""
+"The maximum angle of the branches, when the branches have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle to be able to have more reach."
+msgstr ""
+"树枝的最大角度，当树枝要避开模型的时候。使用较低的角度，使它们更垂直，更稳"
+"定。使用较高的角度，能够有更多的触角。"
+
+msgid "Preferred Branch Angle"
+msgstr "优选的分支角度"
+
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+"枝条的首选角度，当它们不必避开模型时。使用较低的角度，使它们更垂直，更稳定。"
+"使用较高的角度，使树枝更快地合并起来。"
+
+msgid "Tip Diameter"
+msgstr "尖端直径"
+
+msgid "Branch tip diameter for organic supports."
+msgstr "树状支撑物的枝梢直径。"
+
+msgid "Branch Diameter"
+msgstr "枝杈直径"
+
+msgid ""
+"The diameter of the thinnest branches of organic support. Thicker branches "
+"are more sturdy. Branches towards the base will be thicker than this."
+msgstr "树状支撑的最细枝条的直径。较粗的枝条更结实。朝向基部的枝条会比这更粗。"
+
+msgid "Branch Diameter Angle"
+msgstr "枝杈直径角度"
+
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+"枝条直径的角度，因为它们逐渐向底部变粗。角度为0会使树枝在其长度上具有均匀的厚"
+"度。有点角度可以增加有机支架的稳定性。"
+
+msgid "Branch Diameter with double walls"
+msgstr "带有双壁的分支直径"
+
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
+"面积大于此直径的圆面积的枝条将被打印成双壁以保持稳定。将此值设为零表示没有双"
+"壁。"
+
+msgid "Branch Distance"
+msgstr "分支距离"
+
+msgid ""
+"How far apart the branches need to be when they touch the model. Making this "
+"distance small will cause the tree support to touch the model at more "
+"points, causing better overhang but making support harder to remove."
+msgstr ""
+"当树枝接触到模型时，需要间隔多远。把这个距离变小会使树木的支撑物在更多的地方"
+"接触到模型，造成更好的悬空，但使支撑物更难移除。"
+
+msgid "Branch Density"
+msgstr "分支密度"
+
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
+"调整用于生成枝梢的支撑结构的密度。较高的值会产生更好的悬垂，但支撑物更难移"
+"除，因此，如果需要密集的界面，建议启用顶部支撑界面，而不是高枝条密度值。"
+
+msgid "Stabilization cone apex angle"
+msgstr "稳定锥顶角"
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr "锥体顶端的角度，用于稳定擦拭塔。角度越大意味着底座越宽。"
+
+msgid "Wipe tower purge lines spacing"
+msgstr "擦拭塔清洗线的间距"
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr "擦拭塔上的清洗线的间距。"
+
+msgid "Max weight on model"
+msgstr "模型上的最大重量"
+
+msgid ""
+"Maximum weight of sub-trees that terminate on the model instead of the print "
+"bed. The weight is the sum of the lenghts of all branches emanating from the "
+"endpoint."
+msgstr ""
+"终止于模型而不是打印床的子树的最大重量。该重量是所有从端点发出的分支的长度之"
+"和。"
+
+msgid ""
+"Merging bridges or pillars into another pillars can increase the radius. "
+"Zero means no increase, one means full increase. The exact amount of "
+"increase is unspecified and can change in the future."
+msgstr ""
+"将桥或柱子并入另一个柱子可以增加半径。零意味着不增加，一意味着完全增加。具体"
+"的增加量没有规定，将来可能会改变。"
+
+msgid "Idle temperature"
+msgstr "怠速温度"
+
+msgid ""
+"Nozzle temperature when the tool is currently not used in multi-tool setups."
+"This is only used when 'Ooze prevention' is active in Print Settings."
+msgstr ""
+"在多工具设置中，当前不使用工具时的喷嘴温度。这仅在打印设置中 \"防渗 \"激活时"
+"使用。"
+
+msgid "Support tree type"
+msgstr "支撑树类型"
+
+msgid "Support tree building strategy"
+msgstr "支持树构建策略"
+
+msgid "Branching (experimental)"
+msgstr "分支（实验）"
+
+msgid "Support only in enforced regions"
+msgstr "仅在强制执行的区域中提供支撑"
+
+msgid "Only create support if it lies in a support enforcer."
+msgstr "只有在支撑执行器中才创建支撑。"
+
+msgid "Format of the output SLA archive"
+msgstr "输出SLA存档的格式"
+
+msgid "SLA output precision"
+msgstr "SLA输出精度"
+
+msgid "Minimum resolution in nanometers"
+msgstr "最小分辨率（以纳米为单位）"
+
+msgid "OpenGL version"
+msgstr "OpenGL版本"
+
+msgid "Select a specific version of OpenGL"
+msgstr "选择OpenGL的特定版本"
+
+msgid "OpenGL debug output"
+msgstr "OpenGL调试输出"
+
+msgid "Delete files after loading"
+msgstr "加载后删除文件"
+
+msgid "Delete files after loading."
+msgstr "加载后删除文件。"
+
+msgid "Making infill"
+msgstr "制作填充物"
+
+msgid "Searching support spots"
+msgstr "搜索支撑点"
+
+msgid "Estimating curled extrusions"
+msgstr "估计卷曲挤出"
+
+msgid ""
+"An object has enabled XY Size compensation which will not be used because it "
+"is also multi-material painted.\n"
+"XY Size compensation cannot be combined with multi-material painting."
+msgstr ""
+"某个对象已启用“XY大小”补偿，但不会使用该补偿，因为它也是多材质绘制的。\n"
+"XY尺寸补偿不能与多材质绘制相结合。"
+
+msgid "Unknown archive format: %s"
+msgstr "未知档案格式：%s"
+
+msgid "Assembling model from parts"
+msgstr "用零件组装模型"
+
+msgid ""
+"Some parts of the print will be previewed with approximated meshes. This "
+"does not affect the quality of slices or the physical print in any way."
+msgstr ""
+"打印的某些部分将以近似的网格进行预览。这不会以任何方式影响切片或实物打印的质"
+"量。"
+
+msgid "Error with ZIP archive"
+msgstr "ZIP存档错误"
+
+msgid "Spacing from bed"
+msgstr "与床的间距"
+
+msgid "Rear left"
+msgstr "左后"
+
+msgid "Front left"
+msgstr "前左"
+
+msgid "Front right"
+msgstr "前右"
+
+msgid "Rear right"
+msgstr "右后"
+
+msgid "Multiple resolved IP addresses"
+msgstr "多个解析的IP地址"
+
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+"有几个IP地址可以解析到主机名 %1%。\n"
+"请选择一个应该使用的地址。"
+
+msgid "Palette 1 (default)"
+msgstr "调色板1（默认）"
+
+msgid "Palette 2"
+msgstr "调色板 2"
+
+msgid "Palette 3"
+msgstr "调色板 3"
+
+msgid "Palette 4"
+msgstr "调色板 4"
+
+msgid "Palette 5"
+msgstr "调色板 5"
+
+msgid "Palette 6"
+msgstr "调色板 6"
+
+msgid "Palette 7"
+msgstr "调色板 7"
+
+msgid "Palette 8"
+msgstr "调色板 8"
+
+msgid "Default palette for mode markers"
+msgstr "模式标记的默认调色板"
+
+msgid "Revert color"
+msgstr "还原颜色"
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"螺旋花瓶模式需要:\n"
+"- 一个周长\n"
+"- 无顶部固体层\n"
+"- 0% 填充密度\n"
+"- 无支撑材料\n"
+"- 禁用检测薄壁"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "欢迎访问 %s 配置向导"
+
+msgid "(Templates)"
+msgstr "（模板）"
+
+msgid ""
+"%1% visible for <b>(\"Template\")</b> printer are universal profiles "
+"available for all printers. These might not be compatible with your printer."
+msgstr ""
+"%1% 对于<b>（“模板”）</b>打印机可见的是适用于所有打印机的通用配置文件。这些可"
+"能与您的打印机不兼容。"
+
+msgid ""
+"You have selected template filament. Please note that these filaments are "
+"available for all printers but are NOT certain to be compatible with your "
+"printer. Do you still wish to have this filament selected?\n"
+"(This message won't be displayed again.)"
+msgstr ""
+"您已经选择了耗材模板。请注意，这些耗材可用于所有打印机，但不一定与您的打印机"
+"兼容。您是否仍然希望选择这种耗材？\n"
+"(此信息不会再次显示）。"
+
+msgid "Download path"
+msgstr "下载路径"
+
+msgid "Choose folder"
+msgstr "选择文件夹"
+
+msgid "Downloads from URL"
+msgstr "从URL下载"
+
+msgid "Downloads"
+msgstr "下载"
+
+msgid "Allow built-in downloader"
+msgstr "允许内置下载程序"
+
+msgid ""
+"On Linux systems the process of registration also creates desktop "
+"integration files for this version of application."
+msgstr "在Linux系统上，注册过程还为该版本的应用程序创建桌面集成文件。"
+
+msgid "Chosen directory for downloads does not exist."
+msgstr "选择的下载目录不存在。"
+
+msgid "Build Volume"
+msgstr "生成卷"
+
+msgid "Set the printer height."
+msgstr "设置打印机高度。"
+
+msgid "Nozzle Diameter"
+msgstr "喷嘴直径"
+
+msgid "Filament Diameter"
+msgstr "丝直径"
+
+msgid "Bed Temperature"
+msgstr "床温"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "在 ConfigWizard 中编辑配置"
+
+msgid "Configuration Wizard"
+msgstr "配置向导"
+
+msgid "Configuration &Wizard"
+msgstr "配置向导(&W)"
+
+msgid ""
+"Performing downloader desktop integration failed - boost::filesystem::"
+"canonical did not return appimage path."
+msgstr ""
+"执行下载器桌面集成失败-boost:：filesystem：：canonical未返回appimage路径。"
+
+msgid ""
+"Performing downloader desktop integration failed - Could not find executable."
+msgstr "执行下载程序桌面集成失败-找不到可执行文件。"
+
+msgid ""
+"Performing downloader desktop integration failed because the application "
+"directory was not found."
+msgstr "由于找不到应用程序目录，执行下载器桌面集成失败。"
+
+msgid ""
+"Download won't start. Download URL doesn't point to https://printables.com : "
+"%1%"
+msgstr "下载不会开始。下载的URL没有指向https://printables.com : %1%"
+
+msgid "The download has failed"
+msgstr "下载失败"
+
+msgid "Can't create file at %1%"
+msgstr "无法在%1%处创建文件"
+
+msgid "Archive preview"
+msgstr "预览存档"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Fan speed (%)"
+msgstr "风扇转速 (%)"
+
+msgid "Layer time (linear)"
+msgstr "层时间（线性）"
+
+msgid "Layer time (logarithmic)"
+msgstr "层时间（对数）"
+
+msgid "Hide Custom G-code"
+msgstr "隐藏自定义G代码"
+
+msgid "Show Custom G-code"
+msgstr "显示自定义G代码"
+
+msgid "Center of gravity"
+msgstr "重心"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Manual"
+msgstr "手动"
+
+msgid "Prism"
+msgstr "棱角"
+
+msgid "Frustum"
+msgstr "截锥体"
+
+msgid "Triangle"
+msgstr "三角形"
+
+msgid "Square"
+msgstr "正方形"
+
+msgid "Hexagon"
+msgstr "六角形"
+
+msgid "Keep orientation"
+msgstr "保持方向"
+
+msgid "Place on cut"
+msgstr "放置在切口上"
+
+msgid "Flip upside down"
+msgstr "倒置"
+
+msgid "Connectors"
+msgstr "连接器"
+
+msgid "Depth"
+msgstr "深度"
+
+msgid "Object"
+msgstr "对象"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane\n"
+"Right-click a part to assign it to the other side"
+msgstr ""
+"单击以翻转剖切面\n"
+"拖动以移动剖切面\n"
+"在零件上单击鼠标右键以将其指定给另一侧"
+
+msgid "Move cut plane"
+msgstr "移动剖切面"
+
+msgid "Tolerance"
+msgstr "公差"
+
+msgid "Add connector"
+msgstr "添加连接器"
+
+msgid "Remove connector"
+msgstr "移除连接器"
+
+msgid "Move connector"
+msgstr "移动连接器"
+
+msgid "Add connector to selection"
+msgstr "将连接器添加到所选内容"
+
+msgid "Remove connector from selection"
+msgstr "从所选内容中删除连接器"
+
+msgid "Select all connectors"
+msgstr "选择所有连接器"
+
+msgid "Rotate cut plane"
+msgstr "旋转剖切面"
+
+msgid "Remove connectors"
+msgstr "移除连接器"
+
+msgid "Confirm connectors"
+msgstr "确认连接器"
+
+msgid "Flip cut plane"
+msgstr "翻转剖切面"
+
+msgid "Hold SHIFT key to draw a cut line"
+msgstr "按住SHIFT键绘制剪切线"
+
+msgid "Cut position"
+msgstr "切割位置"
+
+msgid "Reset cutting plane"
+msgstr "重置切割平面"
+
+msgid "Edit connectors"
+msgstr "编辑连接器"
+
+msgid "Add connectors"
+msgstr "添加连接器"
+
+msgid "Reset cut"
+msgstr "重置切割"
+
+msgid "Reset cutting plane and remove connectors"
+msgstr "重置切割平面并移除连接器"
+
+msgid "Cut result"
+msgstr "切割结果"
+
+msgid "Cut into"
+msgstr "切入"
+
+msgid "Objects"
+msgstr "物体"
+
+msgid "Parts"
+msgstr "部分"
+
+msgid "Invalid connectors detected"
+msgstr "检测到无效连接器"
+
+msgid "%1$d connector is out of cut contour"
+msgid_plural "%1$d connectors are out of cut contour"
+msgstr[0] "%1$d 连接器超出切割轮廓"
+
+msgid "%1$d connector is out of object"
+msgid_plural "%1$d connectors are out of object"
+msgstr[0] "%1$d 连接器超出对象"
+
+msgid "Some connectors are overlapped"
+msgstr "有些连接器重叠"
+
+msgid "Select at least one object to keep after cutting."
+msgstr "切割后至少选择一个要保留的对象。"
+
+msgid "Cut plane is placed out of object"
+msgstr "剖切面放置在对象之外"
+
+msgid "Connector"
+msgstr "连接器"
+
+msgid "Cut by line"
+msgstr "按线切割"
+
+msgid "Delete connector"
+msgstr "删除连接器"
+
+msgid "Entering Cut gizmo"
+msgstr "进入切割小工具"
+
+msgid "Leaving Cut gizmo"
+msgstr "离开切割小工具"
+
+msgid "Cut gizmo editing"
+msgstr "编辑剪切小工具"
+
+msgid "Embossed text"
+msgstr "浮雕文字"
+
+msgid "Enter emboss gizmo"
+msgstr "进入浮雕小工具"
+
+msgid "Leave emboss gizmo"
+msgstr "离开浮雕小工具"
+
+msgid "Embossing actions"
+msgstr "浮雕动作"
+
+msgid "Emboss"
+msgstr "浮雕"
+
+msgid "NORMAL"
+msgstr "正常的"
+
+msgid "SMALL"
+msgstr "小的"
+
+msgid "ITALIC"
+msgstr "斜体"
+
+msgid "MODERN"
+msgstr "现代"
+
+msgid "First font"
+msgstr "第一个字体"
+
+msgid ""
+"The text cannot be written using the selected font. Please try choosing a "
+"different font."
+msgstr "无法使用所选字体书写文本。请尝试选择其他字体。"
+
+msgid "Embossed text cannot contain only white spaces."
+msgstr "浮雕文本不能只包含空格。"
+
+msgid "Text contains character glyph (represented by '?') unknown by font."
+msgstr "文本包含字体未知的字符字形（用“？”表示）。"
+
+msgid "Text input doesn't show font skew."
+msgstr "文本输入不显示字体倾斜。"
+
+msgid "Text input doesn't show font boldness."
+msgstr "文本输入不显示字体加粗。"
+
+msgid "Text input doesn't show gap between lines."
+msgstr "文本输入不显示行之间的间隙。"
+
+msgid "Too tall, diminished font height inside text input."
+msgstr "太高，文本输入中的字体高度减小。"
+
+msgid "Too small, enlarged font height inside text input."
+msgstr "文字输入里面的字体高度太小，放大了。"
+
+msgid "Revert font changes."
+msgstr "还原字体更改。"
+
+msgid "Font \"%1%\" can't be selected."
+msgstr "无法选择字体“%1%”。"
+
+msgid "Join"
+msgstr "加入"
+
+msgid "Click to change text into object part."
+msgstr "单击可将文本更改为对象部分。"
+
+msgid "Click to change part type into negative volume."
+msgstr "单击可将零件类型更改为负体积。"
+
+msgid "Click to change part type into modifier."
+msgstr "单击可将零件类型更改为修改器。"
+
+msgid "Change Text Type"
+msgstr "更改文本类型"
+
+msgid "Rename style(%1%) for embossing text"
+msgstr "重命名浮雕文本的样式（%1%）"
+
+msgid "Name can't be empty."
+msgstr "名称不能为空。"
+
+msgid "Name has to be unique."
+msgstr "名称必须是唯一的。"
+
+msgid "Rename style"
+msgstr "重命名样式"
+
+msgid "Rename current style."
+msgstr "重命名当前样式。"
+
+msgid "Can't rename temporary style."
+msgstr "无法重命名临时样式。"
+
+msgid "First Add style to list."
+msgstr "首先将样式添加到列表中。"
+
+msgid "Save %1% style"
+msgstr "保存%1%样式"
+
+msgid "No changes to save."
+msgstr "没有要保存的更改。"
+
+msgid "New name of style"
+msgstr "样式的新名称"
+
+msgid "Save as new style"
+msgstr "另存为新样式"
+
+msgid "Only valid font can be added to style."
+msgstr "只有有效的字体才能添加到样式中。"
+
+msgid "Add style to my list."
+msgstr "将样式添加到我的列表中。"
+
+msgid "Save as new style."
+msgstr "另存为新样式。"
+
+msgid "Remove style"
+msgstr "删除样式"
+
+msgid "Can't remove the last existing style."
+msgstr "无法删除最后一个现有样式。"
+
+msgid "Are you sure you want to permanently remove the \"%1%\" style?"
+msgstr "您确定要永久删除“%1%”样式吗？"
+
+msgid "Delete \"%1%\" style."
+msgstr "删除“%1%”样式。"
+
+msgid "Can't delete \"%1%\". It is last style."
+msgstr "无法删除“%1%”。这是最后一种风格。"
+
+msgid "Can't delete temporary style \"%1%\"."
+msgstr "无法删除临时样式“%1%”。"
+
+msgid "Modified style \"%1%\""
+msgstr "已修改样式“%1%”"
+
+msgid "Current style is \"%1%\""
+msgstr "当前样式为“%1%”"
+
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"将样式更改为“%1%”将放弃当前的样式修改。\n"
+"是否仍要继续？"
+
+msgid "Not valid style."
+msgstr "无效的样式。"
+
+msgid "Style \"%1%\" can't be used and will be removed from a list."
+msgstr "样式“%1%”无法使用，将从列表中删除。"
+
+msgid "Unset italic"
+msgstr "取消斜体"
+
+msgid "Set italic"
+msgstr "斜体"
+
+msgid "Unset bold"
+msgstr "取消加粗"
+
+msgid "Set bold"
+msgstr "加粗"
+
+msgid "Revert text size."
+msgstr "恢复文本大小。"
+
+msgid "Revert embossed depth."
+msgstr "还原浮雕深度。"
+
+msgid ""
+"Advanced options cannot be changed for the selected font.\n"
+"Select another font."
+msgstr ""
+"无法更改所选字体的高级选项。\n"
+"选择其他字体。"
+
+msgid "Revert using of model surface."
+msgstr "恢复使用模型曲面。"
+
+msgid "Revert gap between characters"
+msgstr "恢复字间距"
+
+msgid "Distance between characters"
+msgstr "字间距"
+
+msgid "Revert gap between lines"
+msgstr "恢复行间距"
+
+msgid "Distance between lines"
+msgstr "行间距"
+
+msgid "Tiny / Wide glyphs"
+msgstr "细小/宽大的字形"
+
+msgid "Undo letter's skew"
+msgstr "撤消字母的歪斜"
+
+msgid "Italic strength ratio"
+msgstr "倾斜强度比"
+
+msgid "Undo translation"
+msgstr "撤消翻译"
+
+msgid "Distance of the center of the text to the model surface."
+msgstr "文字中心到模型曲面的距离。"
+
+msgid "Undo rotation"
+msgstr "撤消旋转"
+
+msgid "Rotate text Clock-wise."
+msgstr "顺时针旋转文本。"
+
+msgid "Unlock the text's rotation when moving text along the object's surface."
+msgstr "沿对象曲面移动文本时，解除锁定文本的旋转。"
+
+msgid "Lock the text's rotation when moving text along the object's surface."
+msgstr "沿对象曲面移动文本时，锁定文本的旋转。"
+
+msgid "Select from True Type Collection."
+msgstr "从True Type集合中选择。"
+
+msgid ""
+"Can't load exactly same font(\"%1%\"). Aplication selected a similar "
+"one(\"%2%\"). You have to specify font for enable edit text."
+msgstr ""
+"不能加载完全相同的字体(\"%1%\")。应用程序选择了一种类似的字体（\"%2%\"）。你"
+"必须为启用编辑文本指定字体。"
+
+msgid "No symbol"
+msgstr "无符号"
+
+msgid "Use surface"
+msgstr "使用曲面"
+
+msgid "Char gap"
+msgstr "字符间隙"
+
+msgid "Line gap"
+msgstr "行间距"
+
+msgid "Skew ratio"
+msgstr "偏斜率"
+
+msgid "From surface"
+msgstr "从表面"
+
+msgid "Collection"
+msgstr "收集"
+
+msgid "Automatic painting"
+msgstr "自动绘制"
+
+msgid "painting"
+msgstr "绘制"
+
+msgid "Automatic painting requires valid print setup."
+msgstr "自动绘制需要有效的打印设置。"
+
+msgid "Automatic painting requires printable object."
+msgstr "自动绘制需要可打印的对象。"
+
+msgid "Automatic painting will erase all currently painted areas."
+msgstr "自动绘制将擦除所有当前绘制的区域。"
+
+msgid "Automatic painting support points"
+msgstr "自动绘制支撑点"
+
+msgid "Paint-on supports editing"
+msgstr "编辑 Paint-on 支撑"
+
+msgid "Vertex"
+msgstr "顶角"
+
+msgid "Edge"
+msgstr "边"
+
+msgid "Plane"
+msgstr "平面"
+
+msgid "Point on edge"
+msgstr "边上的点"
+
+msgid "Point on circle"
+msgstr "圆上的点"
+
+msgid "Point on plane"
+msgstr "平面上的点"
+
+msgid "Center of edge"
+msgstr "边的中心"
+
+msgid "Center of circle"
+msgstr "圆心"
+
+msgid "Measure"
+msgstr "测量"
+
+msgid "Edit to scale"
+msgstr "按比例编辑"
+
+msgid "Unselect feature"
+msgstr "取消选择功能"
+
+msgid "Unselect center"
+msgstr "取消选择中心"
+
+msgid "Select center"
+msgstr "选择中心"
+
+msgid "Unselect point"
+msgstr "取消选择点"
+
+msgid "Select feature"
+msgstr "选择功能"
+
+msgid "Select point"
+msgstr "选择点"
+
+msgid "Enable point selection"
+msgstr "启用选择点"
+
+msgid "Restart selection"
+msgstr "重新启动选择"
+
+msgid "Unselect"
+msgstr "取消选择"
+
+msgid "Perpendicular distance"
+msgstr "垂直距离"
+
+msgid "Direct distance"
+msgstr "直接距离"
+
+msgid "Distance XYZ"
+msgstr "距离XYZ"
+
+msgid "Entering Measure gizmo"
+msgstr "进入测量仪"
+
+msgid "Leaving Measure gizmo"
+msgstr "离开测量仪"
+
+msgid "Measure gizmo editing"
+msgstr "编辑测量仪"
+
+msgid "Current"
+msgstr "目前"
+
+msgid "Original"
+msgstr "原始"
+
+msgid "Entering Multimaterial painting"
+msgstr "进入多材料绘制"
+
+msgid "Leaving Multimaterial painting"
+msgstr "离开多材料绘制"
+
+msgid "Multimaterial painting editing"
+msgstr "编辑多材料绘制"
+
+msgid "Paint-on seam editing"
+msgstr "编辑Paint-on接缝"
+
+msgid "Level of detail"
+msgstr "详细程度"
+
+msgid ""
+"Processing model \"%1%\" with more than 1M triangles could be slow. It is "
+"highly recommended to reduce amount of triangles."
+msgstr ""
+"处理超过100万个三角形的模型\"%1%\"可能会很慢。强烈建议减少三角形的数量。"
+
+msgid ""
+"A multipart object can be simplified using only a Level of detail. If you "
+"want to enter a Decimate ratio, do the simplification separately."
+msgstr ""
+"多部分对象可以仅使用一个详细级别进行简化。如果要输入小数比，请单独进行简化。"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"simplifying the mesh."
+msgstr "在简化网格后，取消了自定义支撑、接缝和多材料绘制。"
+
+msgid "Entering SLA support points"
+msgstr "进入SLA支持点"
+
+msgid "Leaving SLA support points"
+msgstr "离开SLA支持点"
+
+msgid "SLA view"
+msgstr "SLA视图"
+
+msgid "Show as processed"
+msgstr "显示为已处理"
+
+msgid "Show as original"
+msgstr "显示为原始"
+
+msgid "Choose ZIP file"
+msgstr "选择ZIP文件"
+
+msgid ""
+"Simple mode supports manipulation with single-part object(s)\n"
+"or object(s) with support modifiers only."
+msgstr ""
+"简单模式支持对单一部分的对象进行操作\n"
+"或只支持修改器的对象。"
+
+msgid "Please check your object list before mode changing."
+msgstr "在改变模式之前，请检查你的对象列表。"
+
+msgid "Change application mode"
+msgstr "改变应用模式"
+
+msgid "Check for Application Updates"
+msgstr "检查应用程序更新"
+
+msgid "Check for new version of application"
+msgstr "检查应用程序的新版本"
+
+msgid ""
+"It's impossible to print object(s) which contains parameter modifiers with "
+"SLA technology."
+msgstr "使用SLA技术打印包含参数修改器的对象是不可能的。"
+
+msgid "Configuration is editing from ConfigWizard"
+msgstr "正在从 ConfigWizard 编辑配置"
+
+msgid "Welcome to %1% version %2%."
+msgstr "欢迎使用%1%版本%2%。"
+
+msgid ""
+"Do you wish to register downloads from <b>Printables.com</b>\n"
+"for this <b>%1% %2%</b> executable?\n"
+"\n"
+"Downloads can be registered for only 1 executable at time."
+msgstr ""
+"您想从<b>Printables.com注册下载吗</b>\n"
+"对于此<b>%1% %2%</b>可执行文件？\n"
+"一次只能注册一个可执行文件的下载。"
+
+msgid "Check for application update has failed."
+msgstr "检查应用程序更新失败。"
+
+msgid "You are currently running the latest released version %1%."
+msgstr "您当前正在运行最新发布的版本%1%。"
+
+msgid ""
+"There are no new released versions online. The latest release version is %1%."
+msgstr "网上没有新发布的版本。最新发布版本为%1%。"
+
+msgid "Downloading %1%"
+msgstr "正在下载%1%"
+
+msgid "Downloading of the new version is in progress. Do you want to continue?"
+msgstr "正在下载新版本。是否要继续？"
+
+msgid ""
+"Could not start URL download. Destination folder is not set. Please choose "
+"destination folder in Configuration Wizard."
+msgstr "无法启动URL下载。目标文件夹没有设置。请在配置向导中选择目标文件夹。"
+
+msgid "Add text"
+msgstr "添加文本"
+
+msgid "Add negative text"
+msgstr "添加负文本"
+
+msgid "Add text modifier"
+msgstr "添加文本修改器"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "Invalidate cut info"
+msgstr "使剪切信息无效"
+
+msgid "Export as STL/OBJ"
+msgstr "输出为STL/OBJ"
+
+msgid "Edit text"
+msgstr "编辑文本"
+
+msgid "Ability to change text, font, size, ..."
+msgstr "能够更改文本、字体、大小。。。"
+
+msgid "Change the number of instances of the selected objects"
+msgstr "改变所选对象的实例数量"
+
+msgid "Invalid object part index"
+msgstr "无效的对象部分索引"
+
+msgid "Delete connector from object which is a part of cut"
+msgstr "从属于切割部分的对象中删除连接器"
+
+msgid "Delete solid part from object which is a part of cut"
+msgstr "从属于切割部分的对象中删除实体部分"
+
+msgid "Delete negative volume from object which is a part of cut"
+msgstr "从属于切割部分的对象中删除负体积"
+
+msgid ""
+"To save cut information you can delete all connectors from all related "
+"objects."
+msgstr "为了保存切割信息，你可以删除所有相关对象的所有连接器。"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency."
+msgstr ""
+"这个动作会破坏一个切割信息。\n"
+"此后，PrusaSlicer不能保证模型的一致性。"
+
+msgid ""
+"To manipulate with solid parts or negative volumes you have to invalidate "
+"cut information first."
+msgstr "要对实体部件或负体积进行操作，你必须先使切割信息失效。"
+
+msgid "Delete all connectors"
+msgstr "删除所有连接器"
+
+msgid "Instance cannot be deleted from cut object."
+msgstr "无法从切割对象中删除实例。"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"splitting the object."
+msgstr "自定义支撑、接缝和多材料绘制在分割物体后被移除。"
+
+msgid "Connectors information"
+msgstr "切割连接器信息"
+
+msgid "Size [World]"
+msgstr "尺寸[世界]"
+
+msgid "Mirror along %1% axis"
+msgstr "沿%1%轴镜像"
+
+msgid "Skew [World]"
+msgstr "偏移[世界]"
+
+msgid "Reset skew"
+msgstr "重置偏移"
+
+msgid "Rotate (relative)"
+msgstr "旋转（相对）"
+
+msgid "Translate (relative) [World]"
+msgstr "翻译（相对）[世界]"
+
+msgid "Left handed"
+msgstr "左撇子"
+
+msgid "Object coordinates"
+msgstr "物体坐标"
+
+msgid "Part coordinates"
+msgstr "部件坐标"
+
+msgid "Set Size"
+msgstr "设置尺寸"
+
+msgid "Add Emboss text object"
+msgstr "添加浮雕文本对象"
+
+msgid "Add Emboss text Volume"
+msgstr "添加浮雕文本体积"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "给定文本的字体没有任何形状。"
+
+msgid "There is no valid surface for text projection."
+msgstr "没有一个有效的表面用于文字投射。"
+
+msgid "Import is unavailable for this archive format."
+msgstr "这种档案格式无法导入。"
+
+msgid ""
+"The profile in the imported archive is corrupted and will not be loaded."
+msgstr "导入的存档中的配置文件已损坏，将不会加载。"
+
+msgid ""
+"No object could be retrieved from the archive. The slices might be corrupted "
+"or missing."
+msgstr "无法从存档中检索到任何对象。切片可能已损坏或丢失。"
+
+msgid "Gizmo Text emboss / engrave"
+msgstr "Gizmo文本浮雕/雕刻"
+
+msgid "Show/Hide legend"
+msgstr "显示/隐藏图例"
+
+msgid "Import SLA Archive"
+msgstr "导入SLA存档"
+
+msgid "Load an SLA archive"
+msgstr "加载SLA存档"
+
+msgid "Import ZIP Archive"
+msgstr "导入ZIP存档"
+
+msgid "Load a ZIP archive"
+msgstr "加载ZIP存档"
+
+msgid "Export Plate as &STL/OBJ"
+msgstr "将板块导出为STL/OBJ(&S)"
+
+msgid "Export current plate as STL/OBJ"
+msgstr "以STL/OBJ形式导出当前板块"
+
+msgid "Export Plate as STL/OBJ &Including Supports"
+msgstr "以STL/OBJ的形式导出板块，并包括支撑(&I)"
+
+msgid "Export current plate as STL/OBJ including supports"
+msgstr "以STL/OBJ的形式导出当前板块，并包括支撑"
+
+msgid "E&xit"
+msgstr "退出(&x)"
+
+msgid "Show Legen&d"
+msgstr "显示图例(&d)"
+
+msgid "Show legend in preview"
+msgstr "在预览中显示图例"
+
+msgid "Show legend"
+msgstr "显示图例"
+
+msgid ""
+"PrusaSlicer recieved a download request from Printables.com, but it's not "
+"allowed. You can allow it"
+msgstr ""
+"PrusaSlicer收到了来自Printables.com的下载请求，但这是不允许的。你可以允许它"
+
+msgid "here."
+msgstr "这里。"
+
+msgid "Ejecting."
+msgstr "弹出。"
+
+msgid "RESOLVING ADDRESS"
+msgstr "解析地址"
+
+msgid "%1$d object was loaded as a part of cut object."
+msgid_plural "%1$d objects were loaded as parts of cut object"
+msgstr[0] "%1$d对象被加载为切割对象的一部分。"
+
+msgid "Download"
+msgstr "下载"
+
+msgid ""
+"PrusaSlicer requires OpenGL ES 2.0 capable graphics driver to run "
+"correctly, \n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicer需要具有OpenGL ES 2.0功能的图形驱动程序才能正常运行、 \n"
+"检测到OpenGL版本%s，渲染%s，供应商%s。"
+
+msgid "Unavailable for this method."
+msgstr "此方法不可用。"
+
+msgid "The following characters are not allowed in the name"
+msgstr "名称中不允许包含以下字符"
+
+msgid "Delete object which is a part of cut object"
+msgstr "删除属于切割对象的一部分的对象"
+
+msgid "You try to delete an object which is a part of a cut object."
+msgstr "你试图删除一个属于切割对象的一部分的对象。"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency"
+msgstr ""
+"这个动作会破坏一个切割信息。\n"
+"此后，PrusaSlicer不能保证模型的一致性"
+
+msgid "Delete object"
+msgstr "删除对象"
+
+msgid "Slicing Cancelled."
+msgstr "切片取消。"
+
+msgid "File %1% already exists. Do you wish to overwrite it?"
+msgstr "文件%1%已存在。是否要覆盖它？"
+
+msgid "%1% - Multiple projects file"
+msgstr "%1% - 多个项目文件"
+
+msgid "There are several files being loaded, including Project files."
+msgstr "有几个文件正在加载，包括项目文件。"
+
+msgid "Select an action to apply to all files."
+msgstr "选择一个动作，应用于所有文件。"
+
+msgid "There are several files being loaded."
+msgstr "有几个文件正在加载。"
+
+msgid "Import 3D models"
+msgstr "导入3D模型"
+
+msgid "Start a new instance of PrusaSlicer"
+msgstr "启动PrusaSlicer的新实例"
+
+msgid "Select one to load as project"
+msgstr "选择一个作为项目加载"
+
+msgid "Select only one file to load the configuration."
+msgstr "只选择一个文件来加载配置。"
+
+msgid "Loading of a ZIP archive on path %1% has failed."
+msgstr "加载路径为%1%的ZIP档案失败。"
+
+msgid "Failed to find unzipped file at %1%. Unzipping of file has failed."
+msgstr "未能找到位于 %1% 的解压文件。解压缩文件失败。"
+
+msgid "Load project file"
+msgstr "加载项目文件"
+
+msgid "Import 3D models only"
+msgstr "仅导入3D模型"
+
+msgid "Start new PrusaSlicer instance"
+msgstr "启动新的PrusaSlicer实例"
+
+msgid ""
+"Unable to perform boolean operation on model meshes. Only positive parts "
+"will be exported."
+msgstr "无法对模型网格进行布尔运算。只有正数部分会被导出。"
+
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr "打印机准备好了吗？打印材料是否到位，空且干净？"
+
+msgid "Alert when supports needed"
+msgstr "需要帮助时发出警报"
+
+msgid ""
+"If this is enabled, Slic3r will raise alerts when it detects issues in the "
+"sliced object, that can be resolved with supports (and brim). Examples of "
+"such issues are floating object parts, unsupported extrusions and low bed "
+"adhesion."
+msgstr ""
+"如果启用这个功能，Slic3r在检测到切片对象有问题时，会发出警报，这些问题可以用"
+"支撑物（和边缘brim）解决。这类问题的例子是浮动的对象部件、无支撑的挤压物和低"
+"床面附着力。"
+
+msgid "Suppress \" Template \" filament presets"
+msgstr "控制 \" 模板 \" 耗材预设"
+
+msgid ""
+"Suppress \" Template \" filament presets in configuration wizard and sidebar "
+"visibility."
+msgstr "在配置向导和侧边栏可见性中控制“模板”耗材预设。"
+
+msgid "Show load project dialog"
+msgstr "显示加载项目对话框"
+
+msgid ""
+"When checked, whenever dragging and dropping a project file on the "
+"application or open it from a browser, shows a dialog asking to select the "
+"action to take on the file to load."
+msgstr ""
+"选中时，无论何时在应用程序上拖放项目文件或从浏览器打开项目文件，都会显示一个"
+"对话框，要求选择要加载的文件的操作。"
+
+msgid "Show non-manifold edges"
+msgstr "显示非流形边"
+
+msgid "If enabled, shows non-manifold edges."
+msgstr "如果启用，则显示非流形边缘。"
+
+msgid "Allow automatically color change"
+msgstr "允许自动更改颜色"
+
+msgid ""
+"If enabled, related notification will be shown, when sliced object looks "
+"like a logo or a sign."
+msgstr "如果启用，当切片对象看起来像一个标识或标志时，将显示相关通知。"
+
+msgid "Set settings tabs as menu items"
+msgstr "将设置选项卡设置为菜单项"
+
+msgid "If enabled, PrusaSlicer will not open a hyperlinks in your browser."
+msgstr "如果启用，PrusaSlicer将不会在你的浏览器中打开超链接。"
+
+msgid "Allow downloads from Printables.com"
+msgstr "允许从Printables.com下载"
+
+msgid "If enabled, PrusaSlicer will be allowed to download from Printables.com"
+msgstr "如果启用，PrusaSlicer将被允许从Printables.com下载"
+
+msgid "Dark mode"
+msgstr "黑暗模式"
+
+msgid ""
+"If enabled, application will use the standard Windows system menu,\n"
+"but on some combination of display scales it can look ugly. If disabled, old "
+"UI will be used."
+msgstr ""
+"如果启用，应用程序将使用标准的Windows系统菜单、\n"
+"但在某些显示比例的组合上，它可能看起来很丑。如果禁用，将使用旧的用户界面。"
+
+msgid "Mode markers"
+msgstr "模式标记"
+
+msgid "Application font size"
+msgstr "应用程序字体大小"
+
+msgid "Revert font to default"
+msgstr "还原字体更改"
+
+msgid "Open the physical printer URL"
+msgstr "打开物理打印机的URL"
+
+msgid "Template presets"
+msgstr "模板预设"
+
+msgid "Upload to storage"
+msgstr "上传到存储"
+
+msgid "Upload to Queue"
+msgstr "上载到队列"
+
+msgid "Error uploading to print host"
+msgstr "上载到打印主机时出错"
+
+msgid "Save print settings as"
+msgstr "将打印设置另存为"
+
+msgid "Save filament settings as"
+msgstr "将耗材设置另存为"
+
+msgid "Save material settings as"
+msgstr "将材质设置另存为"
+
+msgid "Save printer settings as"
+msgstr "将打印机设置另存为"
+
+msgid "The following suffix is not allowed in the name"
+msgstr "名称中不允许使用以下后缀"
+
+msgid "This name is reserved, use another."
+msgstr "此名称为保留名称，请使用其他名称。"
+
+msgid "This name is used for a system profile name, use another."
+msgstr "此名称用于系统配置文件名称，请使用其他名称。"
+
+msgid "This name is used for an external profile name, use another."
+msgstr "此名称用于外部配置文件名称，请使用其他名称。"
+
+msgid "Save preset modifications to existing user profile"
+msgstr "将预设修改保存到现有用户配置文件"
+
+msgid "The name is too long."
+msgstr "名称太长。"
+
+msgid "Save presets"
+msgstr "保存预设"
+
+msgid "Rename preset"
+msgstr "重命名预设"
+
+msgid "Save as profile derived from current printer only."
+msgstr "保存为仅来自当前打印机的配置文件。"
+
+msgid ""
+"The currently manipulated object is tilted or contains tilted parts "
+"(rotation angles are not multiples of 90°). Non-uniform scaling of tilted "
+"objects is only possible in non-local coordinate systems, once the rotation "
+"is embedded into the object coordinates."
+msgstr ""
+"当前操纵的对象是倾斜的或包含倾斜的部分（旋转角度不是90°的倍数）。一旦旋转嵌入"
+"到对象坐标中，倾斜对象的非均匀缩放仅在非局部坐标系中可行。"
+
+msgid "This operation is irreversible."
+msgstr "此操作是不可逆的。"
+
+msgid "Compare preset with another"
+msgstr "将预设与另一个进行比较"
+
+msgid "Delete preset"
+msgstr "删除预设"
+
+msgid "Organic supports"
+msgstr "树状支撑"
+
+msgid "Dynamic overhang speed"
+msgstr "动态悬挑速度"
+
+msgid "Dynamic fan speeds"
+msgstr "动态风扇转速"
+
+msgid ""
+"Emitting machine limits to G-code is not supported with Klipper G-code "
+"flavor.\n"
+"The option was switched to \"Use for time estimate\"."
+msgstr ""
+"Klipper G-code风格不支持将机器限制发送到G代码。\n"
+"选项切换为“用于时间估计”。"
+
+msgid "G-code flavor is switched"
+msgstr "G-code风格已切换"
+
+msgid ""
+"The selected G-code flavor does not support the machine limitation for "
+"Stealth mode.\n"
+"Stealth mode will not be applied and will be disabled."
+msgstr ""
+"所选的G-code风格不支持隐形模式的机器限制。\n"
+"隐形模式将不会应用，并且将被禁用。"
+
+msgid "Start G-Code options"
+msgstr "启动G-Code选项"
+
+msgid "Output"
+msgstr "输出"
+
+msgid "Apply below setting to other extruders"
+msgstr "将以下设置应用于其他挤出机"
+
+msgid ""
+"The physical printer below is based on the preset, you are going to rename."
+msgid_plural ""
+"The physical printers below are based on the preset, you are going to rename."
+msgstr[0] "下面的物理打印机是基于预设的，你要重新命名。"
+
+msgid "Note, that the selected preset will be renamed in this printer too."
+msgid_plural ""
+"Note, that the selected preset will be renamed in these printers too."
+msgstr[0] "请注意，所选预设也将在此打印机中重命名。"
+
+msgid "Branching"
+msgstr "分支"
+
+msgid "Original value"
+msgstr "原值"
+
+msgid "Modified value"
+msgstr "修改值"
+
+msgid ""
+"Transfer the selected options from left preset to the right.\n"
+"Note: New modified presets will be selected in settings tabs after close "
+"this dialog."
+msgstr ""
+"将选定的选项从左边的预设转移到右边。\n"
+"注意：关闭此对话框后，新修改的预置将在设置标签中被选中。"
+
+msgid "Save the selected options from left preset to the right."
+msgstr "将选定的选项从左侧预设保存到右侧。"
+
+msgid "Transfer values from left to right"
+msgstr "从左到右的转移值"
+
+msgid "App Update available"
+msgstr "可用的应用程序更新"
+
+msgid ""
+"New version of %s is available.\n"
+"Do you wish to download it?"
+msgstr ""
+"新版本%s可用。\n"
+"你想下载它吗？"
+
+msgid "Next"
+msgstr "下一个"
+
+msgid "App Update download"
+msgstr "应用程序更新下载"
+
+msgid "New version of %1% is available."
+msgstr "新版本%1%可用。"
+
+msgid "New version"
+msgstr "新版本"
+
+msgid "Run installer after download. (Otherwise file explorer will be opened)"
+msgstr "下载后运行安装程序。（否则将打开文件资源管理器）"
+
+msgid "Target directory"
+msgstr "目标目录"
+
+msgid "Select directory"
+msgstr "选择目录"
+
+msgid "Directory path is empty."
+msgstr "目录路径为空。"
+
+msgid "Directory path is incorrect."
+msgstr "目录路径不正确。"
+
+msgid "Directory %1% doesn't exists. Do you wish to create it?"
+msgstr "目录%1%不存在。你想创建它吗？"
+
+msgid "Failed to create directory."
+msgstr "未能创建目录。"
+
+msgid "Download path is %1%. Do you wish to continue?"
+msgstr "下载路径为%1%。是否要继续？"
+
+msgid "Opening Configuration Wizard"
+msgstr "打开配置向导"
+
+msgid "%s 1.40 configuration update"
+msgstr "%s 1.40配置更新"
+
+msgid "App update"
+msgstr "应用程序更新"
+
+msgid "Your %1% is up to date."
+msgstr "您的%1%是最新的。"
+
+msgid ""
+"Running downloaded instaler of %1% has failed:\n"
+"%2%"
+msgstr ""
+"运行下载的%1%的安装程序失败：\n"
+"%2%"
+
+msgid "Internal download error for url %1%:"
+msgstr "url的内部下载错误 %1% :"
+
+msgid "Destination path is empty."
+msgstr "目标路径为空。"
+
+msgid "Download from %1% couldn't start:"
+msgstr "从%1%下载无法启动："
+
+msgid "Downloaded file has wrong size. Expected size: %1% Downloaded size: %2%"
+msgstr "下载的文件大小错误。预期大小：%1%n下载的大小：%2%n"
+
+msgid ""
+"Failed to write to file or to move %1% to %2%:\n"
+"%3%"
+msgstr ""
+"无法写入文件或将%1%移动到%2%：\n"
+"%3%"
+
+msgid ""
+"Downloading new %1% has failed:\n"
+"%2%"
+msgstr ""
+"下载新的%1%失败：\n"
+"%2%"
+
+msgid "Storages found"
+msgstr "已找到存储"
+
+msgid "%1% : read only"
+msgstr "%1%：只读"
+
+msgid "%1% : no free space"
+msgstr "%1%：没有可用空间"
+
+msgid "Upload has failed. There is no suitable storage found at %1%."
+msgstr "上载失败。在%1%找不到合适的存储。"
+
+msgid "Connection to Prusa Connect works correctly."
+msgstr "与Prusa Connect的连接工作正常。"
+
+msgid "Could not connect to Prusa Connect"
+msgstr "无法连接到Prusa connect"
+
+msgid "Installing profiles"
+msgstr "正在安装配置文件"
+
+msgid "Downloading resources for %1%."
+msgstr "正在下载%1%的资源。"
+
+msgid ""
+"Configuration Update will cause the preset modification to be lost.\n"
+"So, check unsaved changes and save them if necessary."
+msgstr ""
+"配置更新将导致预设修改丢失。\n"
+"因此，请检查未保存的更改，并在必要时进行保存。"
+
+msgid ""
+"Couldn't locate index file for vendor %1% when performing updates. The "
+"profile will not be installed."
+msgstr "执行更新时找不到供应商%1%的索引文件。配置文件将不会安装。"
+
+msgid ""
+"Couldn't load index file for vendor %1% when performing updates. The profile "
+"will not be installed. Reason: Corrupted index file %2%."
+msgstr ""
+"执行更新时无法加载供应商%1%的索引文件。配置文件将不会安装。原因：索引文件%2%"
+"已损坏。"
+
+msgid ""
+"Couldn't open profile file for vendor %1% when performing updates. The "
+"profile will not be installed. This installation might be corrupted."
+msgstr ""
+"执行更新时无法打开供应商%1%的配置文件。配置文件将不会安装。此安装可能已损坏。"
+
+msgid ""
+"Printables.com integration\n"
+"Did you know that when you are browsing Printables.com, you can send 3D "
+"model files to PrusaSlicer with a single click? Learn more in the "
+"documentation."
+msgstr ""
+"Printables.com集成\n"
+"你知道吗，当你浏览Printables.com时，只需点击一下，就可以将3D模型文件发送到"
+"PrusaSlicer？在文档中了解更多信息。"
+
+msgid ""
+"Cut tool\n"
+"Did you know that you can cut a model at any angle and even create aligning "
+"pins with the updated <a>Cut tool</a>? Learn more in the documentation."
+msgstr ""
+"切割工具\n"
+"您知道吗？您可以以任何角度切割模型，甚至可以使用更新的<a>Cut tool</a>创建对齐"
+"销？在文档中了解更多信息。"
+
+msgid ""
+"Measurement tool\n"
+"Did you know that you can <a>measure</a> the distances between points, edges "
+"and planes, the radius of a hole or the angle between edges or planes? Learn "
+"more in the documentation."
+msgstr ""
+"测量工具\n"
+"您知道吗？您可以<a>measure</a>点、边和平面之间的距离，孔的半径或边或平面之间"
+"的角度？在文档中了解更多信息。"
+
+msgid ""
+"Text tool\n"
+"Did you know that you can add custom text labels to your models or even use "
+"the text as a modifier? Learn more in the documentation."
+msgstr ""
+"文本工具\n"
+"你知道吗？你可以在模型中添加自定义的文本标签，甚至可以将文本用作修饰符？在文"
+"档中了解更多信息。"

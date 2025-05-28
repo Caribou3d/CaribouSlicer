@@ -2780,12 +2780,12 @@ msgstr ""
 "reconocieron algunos valores de configuración."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2974
-msgid "Configuration is edited in ConfigAssistent"
-msgstr "La configuración se edita en ConfigAssistent"
+msgid "Configuration is edited in ConfigWizard"
+msgstr "La configuración se edita en ConfigWizard"
 
 #: src/slic3r/GUI/GUI_App.cpp:3150
-msgid "Configuration is editing from ConfigAssistent"
-msgstr "La configuración se editada desde ConfigAssistent"
+msgid "Configuration is editing from ConfigWizard"
+msgstr "La configuración se editada desde ConfigWizard"
 
 #: src/libslic3r/PrintConfig.cpp:2031
 msgid "Configuration notes"
@@ -2845,11 +2845,11 @@ msgstr ""
 "Por lo tanto, comprueba los cambios no guardados y guárdalos si es necesario."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3530
-msgid "Configuration &Assistent"
+msgid "Configuration &Wizard"
 msgstr "Ayudante de co&nfiguración"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3529
-msgid "Configuration Assistent"
+msgid "Configuration Wizard"
 msgstr "Asistente de configuración"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:924
@@ -10890,7 +10890,7 @@ msgid "Open hyperlink in default browser?"
 msgstr "¿Abrir el hipervínculo en el navegador por defecto?"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
-msgid "Opening Configuration Assistent"
+msgid "Opening Configuration Wizard"
 msgstr "Abriendo Asistente de Configuración"
 
 #: src/slic3r/GUI/GUI_App.cpp:2852
@@ -19449,7 +19449,7 @@ msgstr "Bienvenido al %s Asistente de Configuración"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
-msgid "Welcome to the %s Configuration Assistent"
+msgid "Welcome to the %s Configuration Wizard"
 msgstr "Bienvenido al %s Ayudante de Configuración"
 
 #: src/slic3r/GUI/SavePresetDialog.cpp:448

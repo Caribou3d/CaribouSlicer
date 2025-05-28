@@ -530,8 +530,20 @@ msgstr "Añadir rango de capas"
 msgid "Add Layers"
 msgstr "Añadir Capas"
 
+msgid "Add modifier"
+msgstr "Añadir modificador"
+
+msgid "Add negative volume"
+msgstr "Añadir volumen negativo"
+
+msgid "Add one more instance of the selected object"
+msgstr "Añadir una instancia más del objeto seleccionado"
+
 msgid "Add one or more custom shapes"
 msgstr "Añadir una o más formas personalizadas"
+
+msgid "Add part"
+msgstr "Añadir pieza"
 
 msgid "Add pause print"
 msgstr "Añadir pausa de impresión"
@@ -550,6 +562,9 @@ msgstr "Añadir ajuste preestablecido para este dispositivo de impresión"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Añadir la(s) forma(s) seleccionada(s) a la base"
+
+msgid "Add settings"
+msgstr "Añadir ajustes"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Añadir Conjunto de Ajustes para Rango de Alturas"
@@ -577,6 +592,12 @@ msgstr "Añadir Forma desde la Galería"
 
 msgid "Add Shapes from Gallery"
 msgstr "Añadir Formas desde la Galería"
+
+msgid "Add support blocker"
+msgstr "Añadir bloqueo soportes"
+
+msgid "Add support enforcer"
+msgstr "Añadir forzado de soportes"
 
 msgid "Add support point"
 msgstr "Añadir punto de soporte"
@@ -700,6 +721,15 @@ msgstr "Permitir la siguiente repetición del color"
 
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr "Permite pintar sólo en las facetas seleccionadas por: \"%1%\""
+
+msgid "Along X axis"
+msgstr "A lo largo del eje X"
+
+msgid "Along Y axis"
+msgstr "A lo largo del eje Y"
+
+msgid "Along Z axis"
+msgstr "A lo largo del eje Z"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + Rueda del ratón"
@@ -1046,6 +1076,9 @@ msgstr "Capas sólidas inferiores"
 msgid "Bottom View"
 msgstr "Vista inferior"
 
+msgid "Box"
+msgstr "Caja"
+
 msgid "Bridge"
 msgstr "Puente"
 
@@ -1242,8 +1275,14 @@ msgstr "Cambiar Tipo de Pieza"
 msgid "Change point head diameter"
 msgstr "Cambiar diámetro de la cabeza de punta"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Cambiar número de instancias al objeto seleccionado"
+
 msgid "Change thumbnail"
 msgstr "Cambiar la miniatura"
+
+msgid "Change type"
+msgstr "Cambiar tipo"
 
 msgid "Changelog & Download"
 msgstr "Registro de cambios & Descargar"
@@ -1323,6 +1362,9 @@ msgstr ""
 "extrusión constante y para las zonas muy finas se utiliza gap-fill. El motor "
 "de Arachne produce perímetros con un ancho de extrusión variable. Este "
 "ajuste también afecta al relleno Concéntrico."
+
+msgid "Clear"
+msgstr "Limpiar"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Borrar la pila de Deshacer / Rehacer en el nuevo proyecto"
@@ -2585,6 +2627,9 @@ msgstr "Exportar AMF"
 msgid "Export AMF file:"
 msgstr "Exportar archivo AMF:"
 
+msgid "Export as STL"
+msgstr "Exportar como STL"
+
 msgid "Export config"
 msgstr "Exportar configuración"
 
@@ -2903,8 +2948,15 @@ msgstr "Ángulo de relleno"
 msgid "Fill bed"
 msgstr "Rellenar la base"
 
+msgid "Fill bed with instances"
+msgstr "Rellenar la base con copias"
+
 msgid "Fill density"
 msgstr "Densidad de relleno"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr ""
+"Rellenar el área restante de la base con copias del objeto seleccionado"
 
 msgid "Find"
 msgstr "Buscar"
@@ -2971,6 +3023,9 @@ msgstr "Primera capa de objetos sobre la interfaz de la balsa"
 
 msgid "Fix through NetFabb"
 msgstr "Reparar mediante NetFabb"
+
+msgid "Fix through the Netfabb"
+msgstr "Reparar mediante Netfabb"
 
 msgid "Fixing through NetFabb"
 msgstr "Reparando a través de NetFabb"
@@ -3194,6 +3249,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galería"
+
 msgid "Gap fill"
 msgstr "Relleno del hueco"
 
@@ -3374,6 +3432,9 @@ msgstr "Altura (mm)"
 
 msgid "Height of the display"
 msgstr "Altura de la pantalla"
+
+msgid "Height range Modifier"
+msgstr "Modificador Rango de Alturas"
 
 msgid "Height ranges"
 msgstr "Rango de alturas"
@@ -4623,6 +4684,9 @@ msgstr "Combinar"
 msgid "Merge all parts to the one single object"
 msgstr "Juntar todas las piezas en un único objeto"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Juntar objeto en un objeto multipieza"
+
 msgid "Merged"
 msgstr "Juntar"
 
@@ -4732,11 +4796,26 @@ msgstr "Velocidad mínima sin extrusión (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Mínimo de espesor de la pared de un modelo vaciado."
 
+msgid "Mirror"
+msgstr "Reflejar"
+
 msgid "Mirror horizontally"
 msgstr "Reflejar horizontalmente"
 
 msgid "Mirror Object"
 msgstr "Reflejar objeto"
+
+msgid "Mirror the selected object"
+msgstr "Duplicar el objeto seleccionado"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje X"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje Y"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Duplicar el objeto seleccionado a lo largo del eje Z"
 
 msgid "Mirror vertically"
 msgstr "Reflejar verticalmente"
@@ -5370,6 +5449,9 @@ msgstr "Abrir Preferencias."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Abre el diálogo para modificar la galería de formas"
 
+msgid "Opening Configuration Assistent"
+msgstr "Abriendo Asistente de Configuración"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Abre un nuevo proyecto mientras algunos ajustes están sin guardar."
 
@@ -5877,6 +5959,9 @@ msgstr "Anular la velocidad de impresión"
 msgid "Print&er Settings Tab"
 msgstr "Configuración de Impr&esión"
 
+msgid "Printable"
+msgstr "Imprimible"
+
 msgid "printer"
 msgstr "impresora"
 
@@ -6002,6 +6087,9 @@ msgstr "Calidad / Velocidad"
 
 msgid "Quick"
 msgstr "Rápido"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Añadir ajustes rápidos (%s)"
 
 msgid "Quick Slice"
 msgstr "Laminado rápido"
@@ -6157,6 +6245,9 @@ msgstr "Recargar desde:"
 msgid "Reload the plater from disk"
 msgstr "Cargar la base del disco"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Vuelve a cargar los volúmenes seleccionados desde el disco"
+
 msgid "Remaining errors"
 msgstr "Errores restantes"
 
@@ -6202,6 +6293,9 @@ msgstr "Retirar rango de capas"
 msgid "Remove Multi Material painting"
 msgstr "Eliminar el pintado Multi Material"
 
+msgid "Remove one instance of the selected object"
+msgstr "Eliminar una instancia del objeto seleccionado"
+
 msgid "Remove paint-on seam"
 msgstr "Eliminar pintado de costuras"
 
@@ -6226,11 +6320,17 @@ msgstr "Eliminar puntos seleccionados"
 msgid "Remove selection"
 msgstr "Eliminar selección"
 
+msgid "Remove the selected object"
+msgstr "Eliminar el objeto seleccionado"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Eliminar perfiles de usuario (se tomará una instantánea de antemano)"
 
 msgid "Remove variable layer height"
 msgstr "Eliminar altura de capa variable"
+
+msgid "Rename"
+msgstr "Renombrar"
 
 msgid "Rename Object"
 msgstr "Renombrar Objeto"
@@ -6294,6 +6394,9 @@ msgstr "Repetir el último laminado rápido"
 
 msgid "Replace from:"
 msgstr "Reemplazar de:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Sustituir el volumen seleccionado por un nuevo STL"
 
 msgid "Replace with"
 msgstr "Reemplazar con"
@@ -6570,6 +6673,10 @@ msgstr "Escalar"
 msgid "Scale factors"
 msgstr "Factores de escala"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr ""
+"Escala los objetos seleccionados para ajustarse al volumen de impresión"
+
 msgid "Scale To Fit"
 msgstr "Escalar para Adaptarse"
 
@@ -6578,6 +6685,9 @@ msgstr "Escalar para Adaptarse"
 
 msgid "Scale to fit the given volume."
 msgstr "Escalar para ajustarse al volumen dado."
+
+msgid "Scale to print volume"
+msgstr "Escalar al volumen de impresión"
 
 msgid "Scaling factor or percentage."
 msgstr "Factor de escalado o porcentaje."
@@ -6671,6 +6781,9 @@ msgstr "Selecciona pestaña de ajustes de impresora"
 
 msgid "Select shape from the gallery"
 msgstr "Seleccionar la forma en la galería"
+
+msgid "Select showing settings"
+msgstr "Seleccionar los ajustes mostrados"
 
 msgid "Select the language"
 msgstr "Seleccione el idioma"
@@ -6774,6 +6887,12 @@ msgstr "Nombre del servicio"
 msgid "Set"
 msgstr "Ajuste"
 
+msgid "Set as a Separated Object"
+msgstr "Establecer como Objeto Separado"
+
+msgid "Set as a Separated Objects"
+msgstr "Establecer como Objetos Separados"
+
 msgid "Set auto color changes"
 msgstr "Establecer cambios de color automáticos"
 
@@ -6782,6 +6901,9 @@ msgstr "Establecer el extrusor por defecto para los elementos seleccionados"
 
 msgid "Set extruder change for every"
 msgstr "Establecer cambio de extrusor para cada"
+
+msgid "Set extruder for selected items"
+msgstr "Establecer el extrusor para elementos seleccionados"
 
 msgid "Set extruder number for the selected items"
 msgstr "Establecer el número de extrusor para los elementos seleccionados"
@@ -6803,6 +6925,9 @@ msgstr "Establecer el pulgar inferior como activo"
 
 msgid "Set Mirror"
 msgstr "Establecer Reflejo"
+
+msgid "Set number of instances"
+msgstr "Establecer número de instancias"
 
 msgid "Set numbers of copies to %d"
 msgstr "Establecer el número de copias a %d"
@@ -7054,6 +7179,9 @@ msgstr "Muestra/Oculta etiquetas de pieza/repetición"
 msgid "Simple"
 msgstr "Sencillo"
 
+msgid "Simplify model"
+msgstr "Simplificar el modelo"
+
 msgid "Single extruder MM setup"
 msgstr "Ajuste para MM con un solo extrusor"
 
@@ -7139,6 +7267,9 @@ msgstr "Puntos de soporte SLA"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Se detectaron soportes SLA fuera del área de impresión."
+
+msgid "Slab"
+msgstr "Losa"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7423,6 +7554,15 @@ msgstr "Modo vaso"
 
 msgid "Split"
 msgstr "Dividir"
+
+msgid "Split the selected object"
+msgstr "Dividir el objeto seleccionado"
+
+msgid "Split the selected object into individual objects"
+msgstr "Dividir el objeto seleccionado en objetos individuales"
+
+msgid "Split the selected object into individual parts"
+msgstr "Divide el objeto seleccionado en partes individuales"
 
 msgid "Split to objects"
 msgstr "Partir en varias piezas"
@@ -8592,6 +8732,12 @@ msgstr "a"
 msgid "To do that please specify a new name for the preset."
 msgstr "Para hacerlo por favor especifique un nuevo nombre para esos ajustes."
 
+msgid "To objects"
+msgstr "A los objetos"
+
+msgid "To parts"
+msgstr "A las piezas"
+
 msgid ""
 "To specify the system certificate store manually, please set the %1% "
 "environment variable to the correct CA bundle and restart the application."
@@ -9689,9 +9835,6 @@ msgstr ""
 
 msgid "Import STL/OBJ/AM&F/3MF"
 msgstr "Importar STL/OBJ/AM&F/3MF"
-
-msgid "Opening Configuration Assistent"
-msgstr "Abriendo Asistente de Configuración"
 
 msgid ""
 "Please save your project and restart PrusaSlicer. We would be glad if you "
@@ -11162,9 +11305,6 @@ msgstr "&Cerrar"
 
 msgid "Class not registered."
 msgstr "Clase no registrada."
-
-msgid "Clear"
-msgstr "Limpiar"
 
 msgid "Clear the log contents"
 msgstr "Eliminar el contenido del log"
@@ -15538,9 +15678,6 @@ msgstr ""
 "soporte para reducir el tiempo de impresión y el consumo de filamento? Lee "
 "más en la documentación."
 
-msgid "Add modifier"
-msgstr "Añadir modificador"
-
 msgid ""
 "Add more perimeters when needed for avoiding gaps in sloping walls. Slic3r "
 "keeps adding perimeters, until more than 70% of the loop immediately above "
@@ -15550,18 +15687,6 @@ msgstr ""
 "inclinadas. Slic3r sigue añadiendo perímetros hasta que más del 70% del "
 "perímetro superior sea soportado."
 
-msgid "Add negative volume"
-msgstr "Añadir volumen negativo"
-
-msgid "Add one more instance of the selected object"
-msgstr "Añadir una instancia más del objeto seleccionado"
-
-msgid "Add part"
-msgstr "Añadir pieza"
-
-msgid "Add settings"
-msgstr "Añadir ajustes"
-
 msgid ""
 "Add solid infill near sloping surfaces to guarantee the vertical shell "
 "thickness (top+bottom solid layers)."
@@ -15569,23 +15694,8 @@ msgstr ""
 "Añade un relleno completo cerca de las superficies inclinadas para "
 "garantizar el ancho vertical solicitado (capas sólidas arriba+abajo)."
 
-msgid "Add support blocker"
-msgstr "Añadir bloqueo soportes"
-
-msgid "Add support enforcer"
-msgstr "Añadir forzado de soportes"
-
 msgid "Allow just a single PrusaSlicer instance"
 msgstr "Permitir una sola instancia de PrusaSlicer"
-
-msgid "Along X axis"
-msgstr "A lo largo del eje X"
-
-msgid "Along Y axis"
-msgstr "A lo largo del eje Y"
-
-msgid "Along Z axis"
-msgstr "A lo largo del eje Z"
 
 msgid ""
 "Always ask for unsaved changes in presets, when: \n"
@@ -15654,9 +15764,6 @@ msgstr "Bibliotecas de la lista negra cargadas en el proceso PrusaSlicer:"
 msgid "Bottom contact Z distance"
 msgstr "Distancia Z de contacto inferior "
 
-msgid "Box"
-msgstr "Caja"
-
 msgid ""
 "Box selection\n"
 "Did you know that you can do a box selection with Shift+Mouse drag? You can "
@@ -15693,12 +15800,6 @@ msgstr ""
 
 msgid "Can't apply when proccess preview."
 msgstr "No se puede aplicar cuando la vista previa del proceso."
-
-msgid "Change the number of instances of the selected object"
-msgstr "Cambiar número de instancias al objeto seleccionado"
-
-msgid "Change type"
-msgstr "Cambiar tipo"
 
 msgid "Clear all"
 msgstr "Borrar todo"
@@ -16031,9 +16132,6 @@ msgstr ""
 "del puente), para aplicar la velocidad del puente a ellos y habilitar el "
 "ventilador."
 
-msgid "Export as STL"
-msgstr "Exportar como STL"
-
 msgid "Extra high"
 msgstr "Extra alto"
 
@@ -16066,9 +16164,6 @@ msgstr "El ventilador se apagará."
 msgid "FFF Technology Printers"
 msgstr "Impresoras de Tecnología FFF"
 
-msgid "Fill bed with instances"
-msgstr "Rellenar la base con copias"
-
 msgid "Fill gaps"
 msgstr "Rellenar huecos"
 
@@ -16079,10 +16174,6 @@ msgstr ""
 "Patrón de relleno para la tapa inferior. Esto sólo afecta a la capa inferior "
 "externa visible, y no a las paredes adyacentes."
 
-msgid "Fill the remaining area of bed with instances of the selected object"
-msgstr ""
-"Rellenar el área restante de la base con copias del objeto seleccionado"
-
 msgid "Filling bed"
 msgstr "Rellenando base"
 
@@ -16092,9 +16183,6 @@ msgstr "Primer color"
 msgid "First layer height can't be greater than nozzle diameter"
 msgstr ""
 "La altura de primera capa no puede ser mayor que el diametro de la boquilla"
-
-msgid "Fix through the Netfabb"
-msgstr "Reparar mediante Netfabb"
 
 msgid "flow rate is maximized"
 msgstr "se maximiza el flujo de material"
@@ -16126,9 +16214,6 @@ msgstr ""
 msgid "G-code thumbnails"
 msgstr "Miniaturas de código G"
 
-msgid "Gallery"
-msgstr "Galería"
-
 msgid "Generic"
 msgstr "Genérico"
 
@@ -16142,9 +16227,6 @@ msgstr ""
 
 msgid "Height of skirt expressed in layers."
 msgstr "Altura de la falda expresada en capas."
-
-msgid "Height range Modifier"
-msgstr "Modificador Rango de Alturas"
 
 msgid "Heights at which a filament change is to occur."
 msgstr "Alturas en las que se producirá un cambio de filamento."
@@ -16424,9 +16506,6 @@ msgstr ""
 msgid "Medium"
 msgstr "Medio"
 
-msgid "Merge objects to the one multipart object"
-msgstr "Juntar objeto en un objeto multipieza"
-
 msgid ""
 "Merging bridges or pillars into another pillars can increase the radius. "
 "Zero means no increase, one means full increase."
@@ -16478,21 +16557,6 @@ msgstr ""
 "Mirror\n"
 "Did you know that you can mirror the selected model to create a reversed "
 "version of it? Right-click the model, select Mirror and pick the mirror axis."
-
-msgid "Mirror"
-msgstr "Reflejar"
-
-msgid "Mirror the selected object"
-msgstr "Duplicar el objeto seleccionado"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "Duplicar el objeto seleccionado a lo largo del eje X"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "Duplicar el objeto seleccionado a lo largo del eje Y"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "Duplicar el objeto seleccionado a lo largo del eje Z"
 
 msgid ""
 "Most likely the configuration was produced by a newer version of PrusaSlicer "
@@ -16754,9 +16818,6 @@ msgstr ""
 msgid "Pre&view"
 msgstr "Pre&visualizar"
 
-msgid "Printable"
-msgstr "Imprimible"
-
 msgid ""
 "Printable toggle\n"
 "Did you know that you can disable the G-code generation for the selected "
@@ -16891,9 +16952,6 @@ msgstr ""
 msgid "Quality (slower slicing)"
 msgstr "Calidad (laminado más lento)"
 
-msgid "Quick Add Settings (%s)"
-msgstr "Añadir ajustes rápidos (%s)"
-
 msgid "Recommended object thin wall thickness for layer height %.2f and"
 msgstr ""
 "Espesor de pared delgada del objeto recomendado para una altura de capa %.2f "
@@ -16921,30 +16979,8 @@ msgstr ""
 msgid "Reload plater from disk"
 msgstr "Recargar la base desde el disco"
 
-msgid "Reload the selected volumes from disk"
-msgstr "Vuelve a cargar los volúmenes seleccionados desde el disco"
-
-msgid "Remove one instance of the selected object"
-msgstr "Eliminar una instancia del objeto seleccionado"
-
 msgid "Remove painted color"
 msgstr "Eliminar color pintado"
-
-msgid "Remove the selected object"
-msgstr "Eliminar el objeto seleccionado"
-
-msgid "Rename"
-msgstr "Renombrar"
-
-msgid "Replace the selected volume with new STL"
-msgstr "Sustituir el volumen seleccionado por un nuevo STL"
-
-msgid "Scale the selected object to fit the print volume"
-msgstr ""
-"Escala los objetos seleccionados para ajustarse al volumen de impresión"
-
-msgid "Scale to print volume"
-msgstr "Escalar al volumen de impresión"
 
 msgid ""
 "Search functionality\n"
@@ -16965,9 +17001,6 @@ msgstr "Selecciona todas las impresoras estándar"
 msgid "Select Plater Tab"
 msgstr "Seleccionar pestaña de la Base de impresión"
 
-msgid "Select showing settings"
-msgstr "Seleccionar los ajustes mostrados"
-
 msgid "Send system info"
 msgstr "Enviar info del sistema"
 
@@ -16980,15 +17013,6 @@ msgstr "El envío de info del sistema se canceló."
 msgid "Sending system info..."
 msgstr "Enviando info del sistema..."
 
-msgid "Set as a Separated Object"
-msgstr "Establecer como Objeto Separado"
-
-msgid "Set as a Separated Objects"
-msgstr "Establecer como Objetos Separados"
-
-msgid "Set extruder for selected items"
-msgstr "Establecer el extrusor para elementos seleccionados"
-
 msgid ""
 "Set number of instances\n"
 "Did you know that you can right-click a model and set an exact number of "
@@ -16997,9 +17021,6 @@ msgstr ""
 "Establecer el número de instancias\n"
 "¿Sabías que puedes hacer clic con el botón derecho en un modelo y establecer "
 "un número exacto de instancias en lugar de copiar y pegar varias veces?"
-
-msgid "Set number of instances"
-msgstr "Establecer número de instancias"
 
 msgid ""
 "Set this to a non-zero value to allow a manual extrusion width. If left to "
@@ -17176,14 +17197,8 @@ msgstr ""
 "función Simplificar malla? Haz clic con el botón derecho del ratón en el "
 "modelo y selecciona Simplificar modelo. Más información en la documentación."
 
-msgid "Simplify model"
-msgstr "Simplificar el modelo"
-
 msgid "SLA Technology Printers"
 msgstr "Impresoras de tecnología SLA"
-
-msgid "Slab"
-msgstr "Losa"
 
 msgid "Slic3r will not scale speed down below this speed."
 msgstr "Slic3r no escalará la velocidad por debajo de esta velocidad."
@@ -17302,15 +17317,6 @@ msgid "Split bigger facets into smaller ones while the object is painted."
 msgstr ""
 "Divide las facetas más grandes en otras más pequeñas mientras se pinta el "
 "objeto."
-
-msgid "Split the selected object"
-msgstr "Dividir el objeto seleccionado"
-
-msgid "Split the selected object into individual objects"
-msgstr "Dividir el objeto seleccionado en objetos individuales"
-
-msgid "Split the selected object into individual parts"
-msgstr "Divide el objeto seleccionado en partes individuales"
 
 msgid ""
 "Support material will not be generated for overhangs whose slope angle (90° "
@@ -17865,12 +17871,6 @@ msgstr ""
 "para conseguir cambios de herramienta fiables con materiales flexibles que "
 "pueden necesitar más tiempo para encogerse a su tamaño original."
 
-msgid "To objects"
-msgstr "A los objetos"
-
-msgid "To parts"
-msgstr "A las piezas"
-
 msgid "Top contact Z distance"
 msgstr "Distancia Z de contacto superior"
 
@@ -18182,3 +18182,3489 @@ msgstr ""
 "perímetro es menor que el grosor de la característica, el perímetro será tan "
 "grueso como la propia característica. Si se expresa en porcentaje (por "
 "ejemplo, 85%), se calculará en función del diámetro de la boquilla."
+
+msgid "%1%, %2%"
+msgstr "%1%, %2%"
+
+msgid ""
+"%1% already exists. Do you want to rewrite it?\n"
+"(Other items than Wi-Fi credentials will stay unchanged)"
+msgstr ""
+"%1% ya existe. ¿Quieres reescribirlo?\n"
+"(Los demás elementos, aparte de las credenciales Wi-Fi, permanecerán sin "
+"cambios)"
+
+msgid "%1%d"
+msgstr "%1%d"
+
+msgid "%1%h"
+msgstr "%1%h"
+
+msgid "%1%m"
+msgstr "%1%m"
+
+msgid "%1% - Multiple projects file"
+msgstr "%1% - Archivo de proyectos múltiples"
+
+msgid "%1% : no free space"
+msgstr "%1% : no hay espacio libre"
+
+msgid "%1% : read only"
+msgstr "%1% : solo lectura"
+
+msgid "%1%s"
+msgstr "%1%s"
+
+msgid ""
+"%1% visible for <b>(\"Template\")</b> printer are universal profiles "
+"available for all printers. These might not be compatible with your printer."
+msgstr ""
+"%1% visible para impresora <b>(\"Plantilla\")</b> son perfiles universales "
+"disponibles para todas las impresoras. Es posible que no sean compatibles "
+"con tu impresora."
+
+msgid "Ability to change text, font, size, ..."
+msgstr "Posibilidad de cambiar el texto, la fuente, el tamaño, ..."
+
+msgid "Absolute E position"
+msgstr "Posición E absoluta"
+
+msgid ""
+"Activate OpenGL debug output on graphic cards which support it (OpenGL 4.3 "
+"or higher)"
+msgstr ""
+"Activar la salida de depuración de OpenGL en las tarjetas gráficas que lo "
+"admitan (OpenGL 4.3 o superior)."
+
+msgid "Add connector"
+msgstr "Añadir conector"
+
+msgid "Add connectors"
+msgstr "Añadir conectores"
+
+msgid "Add connector to selection"
+msgstr "Añadir conector a selección"
+
+msgid "Add Emboss text object"
+msgstr "Añadir Objeto de texto en relieve"
+
+msgid "Add Emboss text Volume"
+msgstr "Añadir Volumen de texto en relieve"
+
+msgid "Add negative SVG"
+msgstr "Añadir SVG en negativo"
+
+msgid "Add negative text"
+msgstr "Añadir texto en negativo"
+
+msgid "Add selected placeholder to G-code"
+msgstr "Añadir el marcador seleccionado al código G"
+
+msgid "Add style to my list."
+msgstr "Añadir estilo a mi lista."
+
+msgid "Add SVG modifier"
+msgstr "Añadir SVG como modificador"
+
+msgid "Add SVG part"
+msgstr "Añadir SVG como pieza"
+
+msgid "Add text"
+msgstr "Añadir texto"
+
+msgid "Add text modifier"
+msgstr "Añadir modificador de texto"
+
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
+"Ajusta la densidad de la estructura de soporte utilizada para generar las "
+"puntas de las ramas. Un valor más alto produce mejores voladizos, pero los "
+"soportes son más difíciles de eliminar, por lo que se recomienda activar "
+"interfaces de soporte superiores en lugar de un valor de densidad de ramas "
+"alto si se necesitan interfaces densas."
+
+msgid ""
+"Advanced options cannot be changed for the selected font.\n"
+"Select another font."
+msgstr ""
+"Las opciones avanzadas no se pueden cambiar para la fuente seleccionada. "
+"Selecciona otra fuente."
+
+msgid "Alert if supports needed"
+msgstr "Avisar si se necesitan soportes"
+
+msgid "Alert when supports needed"
+msgstr "Avisar cuando se necesiten soportes"
+
+msgid "Middle"
+msgstr "Medio"
+
+msgid "Allow automatically color change"
+msgstr "Permitir el cambio de color automático"
+
+msgid "Allow built-in downloader"
+msgstr "Permitir el descargador integrado"
+
+msgid "Allow downloads from Printables.com"
+msgstr "Permitir descargas de Printables.com"
+
+msgid "Also consider enabling brim."
+msgstr "También considera activar balsa."
+
+msgid ""
+"A multipart object can be simplified using only a Level of detail. If you "
+"want to enter a Decimate ratio, do the simplification separately."
+msgstr ""
+"Un objeto con varias piezas solo se puede simplificar usando nivel de "
+"detalle. Si quieres indicar una fracción de reducción, haz al simplificación "
+"separadamente."
+
+msgid "Angle"
+msgstr "Ángulo"
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr ""
+"Ángulo del vértice del cono que se emplea para estabilizar la torre de "
+"limpieza. Un mayor ángulo significa una base más ancha."
+
+msgid ""
+"An object has enabled XY Size compensation which will not be used because it "
+"is also multi-material painted.\n"
+"XY Size compensation cannot be combined with multi-material painting."
+msgstr ""
+"Un objeto ha activado la compensación de tamaño XY pero no se usará porque "
+"se ha pintado para usar multi-material.\n"
+"La compensación de tamaño XY no se puede combinar con el pintado muti-"
+"material."
+
+msgid "Application font size"
+msgstr "Tamaño de fuente de la aplicación"
+
+msgid "Apply below setting to other extruders"
+msgstr "Aplicar el ajuste siguiente a otros extrusores"
+
+msgid "Apply to all objects being loaded."
+msgstr "Aplicar a todos los objetos que se cargen."
+
+msgid "App update"
+msgstr "Actualización de la aplicación"
+
+msgid "App Update available"
+msgstr "Actualización de la Aplicación disponible"
+
+msgid "App Update download"
+msgstr "Descarga de la Actualización de la Aplicación"
+
+msgid "Arc fitting"
+msgstr "Ajuste del arco"
+
+msgid "Archive preview"
+msgstr "Previsualización del archivo"
+
+msgid "Are the extra multi-material priming regions used in this print?"
+msgstr ""
+"¿Se utilizan las regiones de purga multimaterial adicionales en esta "
+"impresión?"
+
+msgid "Are you sure you want to permanently remove the \"%1%\" style?"
+msgstr "¿Estás seguro que quieres eliminar permanentemente el estilo \"%1%\"?"
+
+msgid ""
+"Are you sure you want to store original SVGs with their local paths into the "
+"3MF file?\n"
+"If you hit 'NO', all SVGs in the project will not be editable any more."
+msgstr ""
+"¿Estás seguro de que deseas almacenar los SVG originales con sus rutas "
+"locales en el archivo 3MF?\n"
+"Si pulsas \"NO\", todos los SVG del proyecto dejarán de ser editables."
+
+msgid "Assembling model from parts"
+msgstr "Montando el modelo a partir de piezas"
+
+msgid "Associate .bgcode files to PrusaSlicer G-code Viewer"
+msgstr "Asociar archivos .bgcode a Visor de CódigoG de PrusaSlicer"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Automatic painting"
+msgstr "Pintado automático"
+
+msgid "Automatic painting requires printable object."
+msgstr "El pintado automático requiere un objeto imprimible."
+
+msgid "Automatic painting requires valid print setup."
+msgstr "El pintado automático requiere una configuración de impresión válida."
+
+msgid "Automatic painting support points"
+msgstr "Pintado automático de puntos de soporte"
+
+msgid "Automatic painting will erase all currently painted areas."
+msgstr "El pintado automático borrará las áreas pintadas actualmente."
+
+msgid "Avoid crossing curled overhangs (Experimental)"
+msgstr "Evitar cruzar voladizos ondulados (Experimental)"
+
+msgid ""
+"Avoid crossing perimeters option and avoid crossing curled overhangs option "
+"cannot be both enabled together."
+msgstr ""
+"La opción Evitar cruzar perímetros y la opción Evitar cruzar voladizos "
+"ondulados no pueden activarse a la vez."
+
+msgid "Bake"
+msgstr "Incorporar"
+
+msgid "Bake into model as uneditable part"
+msgstr "Incorporar al modelo como parte no editable"
+
+msgid "Bed Temperature"
+msgstr "Temperatura de la Base"
+
+msgid "Bed temperatures for the used filaments differ significantly."
+msgstr ""
+"Las temperaturas de la base para los filamentos utilizados difieren "
+"significativamente."
+
+msgid "Boldness"
+msgstr "Negrita"
+
+msgid "Bottom-left corner of first layer bounding box"
+msgstr "Esquina inferior izquierda del cuadro delimitador de la primera capa"
+
+msgid "Bottom-left corner of print bed bounding box"
+msgstr ""
+"Esquina inferior izquierda del cuadro delimitador de la base de impresión"
+
+msgid "Branch Density"
+msgstr "Densidad de la Rama"
+
+msgid "Branch Diameter"
+msgstr "Diámetro de la Rama"
+
+msgid "Branch Diameter Angle"
+msgstr "Ángulo del Diámetro de la Rama"
+
+msgid "Branch Diameter with double walls"
+msgstr "Diámetro de las ramas con paredes dobles"
+
+msgid "Branch Distance"
+msgstr "Distancia de ramas"
+
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
+"Las ramas con un área mayor que el área de un círculo de este diámetro se "
+"imprimirán con paredes dobles para mayor estabilidad. Establece este valor "
+"en cero para no imprimir con paredes dobles."
+
+msgid "Branching"
+msgstr "Ramificación"
+
+msgid "Branching (experimental)"
+msgstr "Ramificación (experimental)"
+
+msgid "Branch tip diameter for organic supports."
+msgstr "Diámetro de la punta de una rama para los soportes orgánicos."
+
+msgid "Build Volume"
+msgstr "Volumen de construcción"
+
+msgid "Built-in placeholders (Double click item to add to G-code)"
+msgstr ""
+"Marcadores integrado (Doble clic en el elemento para añadirlo al código G)"
+
+msgid "Bulge"
+msgstr "Abultamiento"
+
+msgid "Bulge proportion related to radius"
+msgstr "Proporción del abultamiento en relación con el radio"
+
+msgid "Calculating overhanging perimeters"
+msgstr "Cálculando perímetros del voladizo"
+
+msgid ""
+"Cannot save ASCII G-code with %1% extension.\n"
+"\n"
+"Use a different extension or enable <a href=%2%>binary G-code export</a> in "
+"Printer Settings."
+msgstr ""
+"No se puede guardar el código G ASCII con extensión %1%.\n"
+"\n"
+"Utiliza una extensión diferente o activa <a href=%2%>la exportación de "
+"código G binario</a> en Configuración de la impresora."
+
+msgid ""
+"Cannot save binary G-code with %1% extension.\n"
+"\n"
+"Use a different extension or disable <a href=%2%>binary G-code export</a> in "
+"Printer Settings."
+msgstr ""
+"No se puede guardar el código G binario con extensión %1%.\n"
+"\n"
+"Utiliza una extensión diferente o desactiva <a href=%2%>la exportación de "
+"código binario</a> en Configuración de la impresora."
+
+msgid "Can't create file at %1%"
+msgstr "No se puede crear el archivo en %1%"
+
+msgid "Can't delete \"%1%\". It is last style."
+msgstr "No se puede borrar \"%1%\". Es el último estilo."
+
+msgid "Can't delete temporary style \"%1%\"."
+msgstr "No se puede borrar el estilo temporal \"%1%\"."
+
+msgid ""
+"Can't load exactly same font(\"%1%\"). Aplication selected a similar "
+"one(\"%2%\"). You have to specify font for enable edit text."
+msgstr ""
+"No se puede cargar exactamente la misma fuente(\"%1%\"). La aplicación "
+"seleccionó una similar(\"%2%\"). Debes especificar la fuente para habilitar "
+"la edición de texto."
+
+msgid "Can't remove the last existing style."
+msgstr "No se puede eliminar el último estilo existente."
+
+msgid "Can't rename temporary style."
+msgstr "No se puede renombrar el estilo temporal."
+
+msgid "Center of circle"
+msgstr "Centro del círculo"
+
+msgid "Center of edge"
+msgstr "Centro de la esquina"
+
+msgid "Center of gravity"
+msgstr "Centro de gravedad"
+
+msgid "Change application mode"
+msgstr "Cambiar el modo de aplicación"
+
+msgid "Change cut mode"
+msgstr "Cambiar modo de corte"
+
+msgid "Change file"
+msgstr "Cambiar archivo"
+
+msgid "Change SVG source file, projection, size, ..."
+msgstr "Cambiar fuente del archivo SVG, proyección, tamaño, ..."
+
+msgid "Change SVG Type"
+msgstr "Cambiar Tipo SVG"
+
+msgid "Change Text Type"
+msgstr "Cambiar Tipo de Texto"
+
+msgid "Change the number of instances of the selected objects"
+msgstr "Cambiar número de instancias a los objetos seleccionados"
+
+msgid "Change to another .svg file"
+msgstr "Cambiar a otro archivo .svg"
+
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"Cambiar el estilo a \"%1%\" descartará los cambios al estilo actual.\n"
+"\n"
+"¿Quieres continuar de todos modos?"
+
+msgid "Char gap"
+msgstr "Hueco letras"
+
+msgid "Check for application update has failed."
+msgstr "La comprobación de la actualización de la aplicación ha fallado."
+
+msgid "Check for Application Updates"
+msgstr "Comprobar si hay Actualizaciones de la Aplicación"
+
+msgid "Check for new version of application"
+msgstr "Comprobar si hay una nueva versión de la aplicación"
+
+msgid "Choose folder"
+msgstr "Escoge la carpeta"
+
+msgid "Choose one file (GCODE/GCO/G/BGCODE/BGC/NGC):"
+msgstr "Elije un archivo (GCODE/GCO/G/BGCODE/BGC/NGC):"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
+msgstr "Escoge uno más archivos (STL/3MF/STEP/OBJ/AMF/SVG):"
+
+msgid "Choose SLA archive"
+msgstr "Elegir archivo SLA"
+
+msgid "Choose SVG file for emboss:"
+msgstr "Elije el archivo SVG para el relieve:"
+
+msgid "Choose ZIP file"
+msgstr "Escoger archivo ZIP"
+
+msgid "Chosen directory for downloads does not exist."
+msgstr "La carpeta escogida para las descargas no existe."
+
+msgid "clicking this icon opens a dialog allowing to edit this value."
+msgstr ""
+"al hacer clic en este icono se abre un cuadro de diálogo que permite editar "
+"este valor."
+
+msgid "Click to change part type into modifier."
+msgstr "Haz clic para cambiar el tipo de pieza en modificador."
+
+msgid "Click to change part type into negative volume."
+msgstr "Haz clic para cambiar el tipo de pieza a volumen en negativo."
+
+msgid "Click to change text into object part."
+msgstr "Haz clic para cambiar el texto en la parte del objeto."
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane"
+msgstr ""
+"Haz clic para voltear el plano de corte\n"
+"Arrastra para mover el plano de corte"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane\n"
+"Right-click a part to assign it to the other side"
+msgstr ""
+"Clic para voltear el plano de corte\n"
+"Arrastrar para mover el plano de corte\n"
+"Clic con el botón derecho en una pieza para asignarla al otro lado"
+
+msgid "Collapsing overhang"
+msgstr "Voladizo colapsado"
+
+msgid "Collection"
+msgstr "Colección"
+
+msgid "Color change extruder"
+msgstr "Extrusor para cambio de color"
+
+msgid "Color gradient (%1%)"
+msgstr "Gradiente de color (%1%)"
+
+msgid "Comma-separated list of all filament types used during the print."
+msgstr ""
+"Lista separada por comas de todos los tipos de filamento utilizados durante "
+"la impresión."
+
+msgid "Compare preset with another"
+msgstr "Compara con otro ajuste"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "La configuración se edita en ConfigWizard"
+
+msgid "Configuration is editing from ConfigWizard"
+msgstr "La configuración se editada desde ConfigWizard"
+
+msgid ""
+"Configuration update is available. Update contains new printer releases."
+msgstr ""
+"La actualización de la configuración está disponible. La actualización "
+"contiene nuevas versiones de la impresora."
+
+msgid ""
+"Configuration Update will cause the preset modification to be lost.\n"
+"So, check unsaved changes and save them if necessary."
+msgstr ""
+"La Actualización de la Configuración hará que se pierda la modificación de "
+"los ajustes.\n"
+"Por lo tanto, comprueba los cambios no guardados y guárdalos si es necesario."
+
+msgid "Configuration &Wizard"
+msgstr "Ayudante de co&nfiguración"
+
+msgid "Configuration Wizard"
+msgstr "Asistente de configuración"
+
+msgid "Confirm connectors"
+msgstr "Confirmar conectores"
+
+msgid ""
+"Conflicts in G-code paths have been detected at layer %1%, z=%2$.2f mm. "
+"Please reposition the conflicting objects (%3% <-> %4%) further apart."
+msgstr ""
+"Se han detectado conflictos en las rutas del código G en la capa %1%, z="
+"%2$.2f mm. Por favor, reposiciona los objetos conflictivos (%3% <-> %4%) más "
+"separados."
+
+msgid "Connection to MKS works correctly."
+msgstr "La conexión con la MKS funciona correctamente."
+
+msgid "Connection to Moonraker works correctly."
+msgstr "La conexión con Moonraker funciona correctamente."
+
+msgid "Connection to Prusa Connect works correctly."
+msgstr "La conexión a Prusa Connect funciona correctamente."
+
+msgid "Connector"
+msgstr "Conector"
+
+msgid "Connectors"
+msgstr "Conectores"
+
+msgid "Connectors information"
+msgstr "Información sobre Conectores"
+
+msgid "Consider enabling supports."
+msgstr "Considera habilitar soportes."
+
+msgid ""
+"Contains a string with the information about what scaling was applied to the "
+"individual objects. Indexing of the objects is zero-based (first object has "
+"index 0).\n"
+"Example: 'x:100% y:50% z:100%'."
+msgstr ""
+"Contiene una cadena con información sobre la escala aplicada a cada uno de "
+"los objetos. La indexación de los objetos se basa en cero (el primer objeto "
+"tiene índice 0).\n"
+"Ejemplo: 'x:100% y:50% z:100%'."
+
+msgid "Contains z-hop present at the beginning of the custom G-code block."
+msgstr ""
+"Contiene el z-hop presente al principio del bloque de código G personalizado."
+
+msgid "Convert a G-code file from ASCII to binary format"
+msgstr "Convertir un archivo de código G de ASCII a formato binario"
+
+msgid "Convert a G-code file from binary to ASCII format"
+msgstr "Convertir un archivo de código G de binario a formato ASCII"
+
+msgid "Convert ASCII G-code to &binary"
+msgstr "Convertir un archivo de código G ASCII a &binario"
+
+msgid "Convert binary G-code to &ASCII"
+msgstr "Convertir un archivo de código G binario a &ASCII"
+
+msgid "Convert G-code file to ASCII format"
+msgstr "Convertir un archivo de código G a formato ASCII"
+
+msgid "Convert G-code file to binary format"
+msgstr "Convertir un archivo de código G a formato binario"
+
+msgid "Could not connect to MKS"
+msgstr "No se pudo conectar con la MKS"
+
+msgid "Could not connect to Moonraker"
+msgstr "No se pudo conectar con Moonraker"
+
+msgid "Could not connect to Prusa Connect"
+msgstr "No se pudo conectar con Prusa Connect"
+
+msgid ""
+"Could not start URL download. Destination folder is not set. Please choose "
+"destination folder in Configuration Wizard."
+msgstr ""
+"No se pudo iniciar la descarga del URL. La carpeta de destino no se "
+"seleccionó. Por favor escoge una carpeta de destino en el Asistente de "
+"Configuración."
+
+msgid ""
+"Couldn't load index file for vendor %1% when performing updates. The profile "
+"will not be installed. Reason: Corrupted index file %2%."
+msgstr ""
+"No se ha podido cargar el archivo de índice para el proveedor %1% al "
+"realizar las actualizaciones. El perfil no se instalará. Motivo: Archivo de "
+"índice %2% dañado."
+
+msgid ""
+"Couldn't locate index file for vendor %1% when performing updates. The "
+"profile will not be installed."
+msgstr ""
+"No se ha podido localizar el archivo de índice para el proveedor %1% al "
+"realizar las actualizaciones. El perfil no se instalará."
+
+msgid ""
+"Couldn't open profile file for vendor %1% when performing updates. The "
+"profile will not be installed. This installation might be corrupted."
+msgstr ""
+"No se ha podido abrir el archivo de perfil del proveedor %1% al realizar las "
+"actualizaciones. El perfil no se instalará. La instalación puede estar "
+"dañada."
+
+msgid "Current"
+msgstr "Actual"
+
+msgid "Current extruder"
+msgstr "Extrusor actual"
+
+msgid "Current extruder index"
+msgstr "Índice actual del extrusor"
+
+msgid "Currently planned extra extruder priming after deretraction."
+msgstr ""
+"Actualmente está previsto una purga adicional del extrusor después de la "
+"desretracción."
+
+msgid "Current object index"
+msgstr "Índice del objeto actual"
+
+msgid ""
+"Current position of the extruder axis. Only used with absolute extruder "
+"addressing."
+msgstr ""
+"Posición actual del eje del extrusor. Sólo se utiliza con el "
+"direccionamiento absoluto del extrusor."
+
+msgid "Current style is \"%1%\""
+msgstr "El estilo actual es \"%1%\""
+
+msgid "Current z-hop"
+msgstr "Z-hop actual"
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"simplifying the mesh."
+msgstr ""
+"Los soportes personalizados, las costuras y el pintado multimaterial se "
+"eliminaron después de simplificar la malla."
+
+msgid ""
+"Custom supports, seams and multimaterial painting were removed after "
+"splitting the object."
+msgstr ""
+"Los soportes personalizados, las costuras y el pintado multimaterial se "
+"eliminaron tras dividir el objeto."
+
+msgid "Cut by line"
+msgstr "Cortar por la línea"
+
+msgid "Cut gizmo editing"
+msgstr "Edición de la Herramienta de Corte"
+
+msgid "Cut into"
+msgstr "Cortar en"
+
+msgid "Cut plane is placed out of object"
+msgstr "El plano de corte se ha colocado fuera del objeto"
+
+msgid "Cut plane with groove is invalid"
+msgstr "El plano de corte con ranura no es válido"
+
+msgid "Cut position"
+msgstr "Posición del corte"
+
+msgid "Cut result"
+msgstr "Resultado del corte"
+
+msgid ""
+"Cut tool\n"
+"Did you know that you can cut a model at any angle and even create aligning "
+"pins with the updated <a>Cut tool</a>? Learn more in the documentation."
+msgstr ""
+"Herramienta de corte\n"
+"¿Sabías que puedes cortar un modelo en cualquier ángulo e incluso crear "
+"pasadores de alineación con la <a>herramienta de corte</a> actualizada? Más "
+"información en la documentación."
+
+msgid "Dark mode"
+msgstr "Modo oscuro"
+
+msgid "Day"
+msgstr "Día"
+
+msgid "Default palette for mode markers"
+msgstr "Paleta predeterminada para marcadores de modo"
+
+msgid "Delete \"%1%\" style."
+msgstr "Borrar estilo \"%1%\"."
+
+msgid "Delete all connectors"
+msgstr "Borrar todos los conectores"
+
+msgid "Delete connector"
+msgstr "Borrar conector"
+
+msgid "Delete connector from object which is a part of cut"
+msgstr "Eliminar conector del objeto que forma parte de corte"
+
+msgid "Delete files after loading"
+msgstr "Borrar archivos tras la carga"
+
+msgid "Delete files after loading."
+msgstr "Borrar archivos tras la carga."
+
+msgid "Delete negative volume from object which is a part of cut"
+msgstr "Borra el volumen negativo del objeto que forma parte del corte"
+
+msgid "Delete object"
+msgstr "Eliminar objeto"
+
+msgid "Delete object which is a part of cut object"
+msgstr "Eliminar objeto que forma parte de corte del objeto"
+
+msgid "Delete preset"
+msgstr "Borrar ajuste"
+
+msgid "Delete solid part from object which is a part of cut"
+msgstr "Eliminar parte sólida del objeto que forma parte de un corte"
+
+msgid "Depth"
+msgstr "Profundidad"
+
+msgid "Deretraction extra length"
+msgstr "Longitud extra de deretracción"
+
+msgid "Destination path is empty."
+msgstr "La ruta de destino está vacía."
+
+msgid ""
+"Detected print stability issues:\n"
+"%1%"
+msgstr ""
+"Detectados problemas de estabilidad de la impresión:\n"
+"%1%"
+
+msgid ""
+"Detect overhang areas where bridges cannot be anchored, and fill them with "
+"extra perimeter paths. These paths are anchored to the nearby non-overhang "
+"area when possible."
+msgstr ""
+"Detecta las zonas de voladizo en las que no se pueden anclar los puentes y "
+"las rellena con rutas perimetrales adicionales. Estas rutas se anclan a la "
+"zona cercana no saliente cuando es posible."
+
+msgid "Dimensions"
+msgstr "Dimensiones"
+
+msgid "Direct distance"
+msgstr "Distancia directa"
+
+msgid "Directory %1% doesn't exists. Do you wish to create it?"
+msgstr "El directorio %1% no existe. ¿Deseas crearlo?"
+
+msgid "Directory path is empty."
+msgstr "La ruta del directorio está vacía."
+
+msgid "Directory path is incorrect."
+msgstr "La ruta del directorio es incorrecta."
+
+msgid "Distance"
+msgstr "Distancia"
+
+msgid "Distance between characters"
+msgstr "Distancia entre caracteres"
+
+msgid "Distance between lines"
+msgstr "Distancia entre las líneas"
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr "Distancia al centro del SVG desde la superficie del modelo."
+
+msgid "Distance of the center of the text to the model surface."
+msgstr "Distancia al centro del texto desde la superficie del modelo."
+
+msgid "Distance XYZ"
+msgstr "Distancia XYZ"
+
+msgid ""
+"Do NOT save local path to 3MF file.\n"
+"Also disables 'reload from disk' option."
+msgstr ""
+"NO guardar la ruta local al archivo 3MF.\n"
+"También desactiva la opción 'recargar desde disco'."
+
+msgid "Dovetail"
+msgstr "Cola de milano"
+
+msgid "Dowel"
+msgstr "Clavija"
+
+msgid "Download"
+msgstr "Descargar"
+
+msgid "Downloaded file has wrong size. Expected size: %1% Downloaded size: %2%"
+msgstr ""
+"El archivo descargado tiene un tamaño incorrecto. El tamaño esperado es: %1% "
+"Tamaño descargado: %2%"
+
+msgid "Download from %1% couldn't start:"
+msgstr "La descarga de %1% no pudo comenzar:"
+
+msgid "Downloading %1%"
+msgstr "Descargando %1%"
+
+msgid ""
+"Downloading new %1% has failed:\n"
+"%2%"
+msgstr ""
+"La descarga del nuevo %1% ha fallado:\n"
+"%2%"
+
+msgid "Downloading of the new version is in progress. Do you want to continue?"
+msgstr "Descargando la nueva versión. ¿Quieres continuar?"
+
+msgid "Downloading resources for %1%."
+msgstr "Descargando recursos para %1%."
+
+msgid "Download path"
+msgstr "Ruta de descarga"
+
+msgid "Download path is %1%. Do you wish to continue?"
+msgstr "La ruta de descarga es %1%. ¿Deseas continuar?"
+
+msgid "Downloads"
+msgstr "Descargas"
+
+msgid "Downloads from URL"
+msgstr "Descargas a partir de una URL"
+
+msgid ""
+"Download won't start. Download URL doesn't point to https://printables.com : "
+"%1%"
+msgstr ""
+"La descarga no se iniciará. La URL de descarga no apunta a https://"
+"printables.com : %1%"
+
+msgid ""
+"Do you mean %1%%% instead of %1% %2%?\n"
+"Select YES if you want to change this value to %1%%%, \n"
+"or NO if you are sure that %1% %2% is a correct value."
+msgstr ""
+"¿Quieres decir %1%%% en lugar de %1% %2%?\n"
+"Selecciona SÍ si desea cambiar este valor a %1%%%, \n"
+"o NO si está seguro de que %1% %2% es un valor correcto."
+
+msgid ""
+"Do you wish to register downloads from <b>Printables.com</b>\n"
+"for this <b>%1% %2%</b> executable?\n"
+"\n"
+"Downloads can be registered for only 1 executable at time."
+msgstr ""
+"¿Desea registrar las descargas de <b>Printables.com</b>\n"
+"para este <b>%1% %2%</b> ejecutable?\n"
+"\n"
+"Las descargas sólo pueden registrarse para 1 ejecutable a la vez."
+
+msgid "Drive"
+msgstr "Unidad"
+
+msgid "Drive field is empty."
+msgstr "El campo Unidad está vacío."
+
+msgid "Dynamic fan speeds"
+msgstr "Velocidades dinámicas del ventilador"
+
+msgid "Dynamic overhang speed"
+msgstr "Velocidades dinámicas en voladizos"
+
+msgid "Edge"
+msgstr "Esquina"
+
+msgid "Edit connectors"
+msgstr "Editar conectores"
+
+msgid "Edit Custom G-code"
+msgstr "Editar código G personalizado"
+
+msgid "Edit Custom G-code (%1%)"
+msgstr "Editar Código G Personalizado (%1%)"
+
+msgid "Edited"
+msgstr "Editado"
+
+msgid "Edit SVG"
+msgstr "Editar SVG"
+
+msgid "Edit text"
+msgstr "Editar texto"
+
+msgid "Edit to scale"
+msgstr "Editar a escala"
+
+msgid "EDIT VALUE"
+msgstr "EDITAR VALOR"
+
+msgid "Ejecting."
+msgstr "Expulsando."
+
+msgid "Emboss"
+msgstr "Estampado"
+
+msgid "Emboss attribute change"
+msgstr "Cambio de atributo del relieve"
+
+msgid "Embossed text"
+msgstr "Texto en relieve"
+
+msgid "Embossed text cannot contain only white spaces."
+msgstr "El texto en relieve no puede contener sólo espacios en blanco."
+
+msgid "Embossing actions"
+msgstr "Acciones de estampado"
+
+msgid "Emit temperature commands automatically"
+msgstr "Emite órdenes de temperatura automáticamente"
+
+msgid ""
+"Emitting machine limits to G-code is not supported with Klipper G-code "
+"flavor.\n"
+"The option was switched to \"Use for time estimate\"."
+msgstr ""
+"La emisión de límites de máquina al código G no es compatible con el código "
+"G de Klipper.\n"
+"La opción se ha cambiado a \"Usar para estimación de tiempo\"."
+
+msgid "Enable dynamic fan speeds"
+msgstr "Habilitar velocidades dinámicas del ventilador"
+
+msgid "Enable dynamic overhang speeds"
+msgstr "Habilitar velocidades de voladizo dinámicas"
+
+msgid ""
+"Enable, if the firmware supports binary G-code format (bgcode). To generate ."
+"bgcode files, make sure you have binary G-code enabled in Configuration-"
+">Preferences->Other."
+msgstr ""
+"Habilita, si el firmware soporta el formato de código G binario (bgcode). "
+"Para generar archivos .bgcode, asegúrate de tener activado el código G "
+"binario en Configuración->Preferencias->Otro."
+
+msgid "Enable OpenGL compatibility profile"
+msgstr "Activar el perfil de compatibilidad de OpenGL"
+
+msgid "Enable point selection"
+msgstr "Activar la selección de puntos"
+
+msgid "Enable ramming for multitool setups"
+msgstr "Habilitar ramming para configuraciones multicabezal"
+
+msgid ""
+"Enable to get a G-code file which has G2 and G3 moves. G-code resolution "
+"will be used as the fitting tolerance."
+msgstr ""
+"Habilitar para obtener un archivo de código G que tenga los movimientos G2 y "
+"G3. La resolución del código G se utilizará como tolerancia de ajuste."
+
+msgid "Enter emboss gizmo"
+msgstr "Entrando en el Gizmo de Texto en relieve"
+
+msgid "Entering Cut gizmo"
+msgstr "Entrando en la Herramienta de Corte"
+
+msgid "Entering Measure gizmo"
+msgstr "Entrando en la Herramienta de Medición"
+
+msgid "Entering Multimaterial painting"
+msgstr "Entrando en el Pintado multimaterial"
+
+msgid "Entering Paint-on supports"
+msgstr "Entrando en Soportes pintables"
+
+msgid "Entering Seam painting"
+msgstr "Entrando en el Pintado de costuras"
+
+msgid "Entering SLA support points"
+msgstr "Entrando en los puntos de apoyo del SLA"
+
+msgid "Enter SVG gizmo"
+msgstr "Entrando en el Gizmo de SVG"
+
+msgid "Error converting G-code file"
+msgstr "Error al convertir el archivo de código G"
+
+msgid "Errors detected after cut operation"
+msgstr "Errores detectados tras la operación de corte"
+
+msgid "Error uploading to print host"
+msgstr "Error al cargar en el host de impresión"
+
+msgid "Error with ZIP archive"
+msgstr "Error en el archivo ZIP"
+
+msgid ""
+"Estimated print time when printed in normal mode (i.e. not in silent mode). "
+"Same as normal_print_time."
+msgstr ""
+"Tiempo estimado de impresión cuando se imprime en modo normal (es decir, no "
+"en modo silencioso). Igual que normal_print_time."
+
+msgid ""
+"Estimated print time when printed in normal mode (i.e. not in silent mode). "
+"Same as print_time."
+msgstr ""
+"Tiempo estimado de impresión cuando se imprime en modo normal (es decir, no "
+"en modo silencioso). Igual que print_time."
+
+msgid "Estimated print time when printed in silent mode."
+msgstr "Tiempo estimado de impresión cuando se imprime en modo silencioso."
+
+msgid "Estimating curled extrusions"
+msgstr "Estimando las extrusiones curvadas"
+
+msgid "E&xit"
+msgstr "S&alir"
+
+msgid "Export as STL/OBJ"
+msgstr "Exportar como STL/OBJ"
+
+msgid "Export current plate as STL/OBJ"
+msgstr "Exportar plataforma actual como STL/OBJ"
+
+msgid "Export current plate as STL/OBJ including supports"
+msgstr "Exportar la plataforma actual como STL/OBJ incluyendo soportes"
+
+msgid "Export Plate as &STL/OBJ"
+msgstr "Exportar Plataforma como &STL/OBJ"
+
+msgid "Export Plate as STL/OBJ &Including Supports"
+msgstr "Exportar plataforma como STL/OBJ &Incluyendo Soportes"
+
+msgid "Extra deretraction"
+msgstr "Deretracciones extra"
+
+msgid "Extra perimeters on overhangs (Experimental)"
+msgstr "Perímetros adicionales en voladizos (Experimental)"
+
+msgid "Face the camera"
+msgstr "De cara a la cámara"
+
+msgid "Failed to create directory."
+msgstr "Error al crear directorio."
+
+msgid "Failed to find unzipped file at %1%. Unzipping of file has failed."
+msgstr ""
+"No se ha encontrado el archivo descomprimido en %1%. No se ha podido "
+"descomprimir el archivo."
+
+msgid "Failed to open file for writing."
+msgstr "Fallo al abrir el archivo para escritura."
+
+msgid "Failed to parse a Connect reply"
+msgstr "Falló al procesar una respuesta de Connect"
+
+msgid "Failed to scan wireless networks. Please fill SSID manually."
+msgstr ""
+"Error al escanear redes inalámbricas. Por favor, introduce el SSID "
+"manualmente."
+
+msgid "Failed to unzip file to %1%: %2%"
+msgstr "Fallo al descomprimir el archivo en %1%: %2%"
+
+msgid ""
+"Failed to write to file or to move %1% to %2%:\n"
+"%3%"
+msgstr ""
+"Falló la escritura en archivo o mover %1% a %2%:\n"
+"%3%"
+
+msgid "Fan speed (%)"
+msgstr "Velocidad del ventilador (%)"
+
+msgid "Filament Diameter"
+msgstr "Diámetro del Filamento"
+
+msgid "Filament preset name"
+msgstr "Nombre del ajuste del filamento"
+
+msgid "Filament settings"
+msgstr "Configuración del Filamento"
+
+msgid "File %1% already exists. Do you wish to overwrite it?"
+msgstr "El fichero %1% ya existe. ¿Deseas sobrescribirlo?"
+
+msgid "File does NOT exist (%1%)."
+msgstr "El archivo NO existe (%1%)."
+
+msgid "Filename has to end with \".svg\" but you selected %1%"
+msgstr ""
+"El nombre del archivo debe terminar con \".svg\" pero has seleccionado %1%"
+
+msgid "Fill of shape (%1%) contains unsupported: %2%."
+msgstr "Relleno de forma (%1%) contiene no soportado: %2%"
+
+msgid ""
+"Final shape constains selfintersection or multiple points with same "
+"coordinate."
+msgstr ""
+"La forma final contiene una autointersección o varios puntos con la misma "
+"coordenada"
+
+msgid "Firmware-specific"
+msgstr "Específico del firmware"
+
+msgid "First Add style to list."
+msgstr "Primero Añadir estilo a la lista."
+
+msgid "First font"
+msgstr "Primera fuente"
+
+msgid "First layer convex hull"
+msgstr "Casco convexo de la primera capa"
+
+msgid "Fix by Windows repair algorithm"
+msgstr "Reparar mediante el algoritmo de reparación de Windows"
+
+msgid "Fixing by Windows repair algorithm"
+msgstr "Reparando mediante el algoritmo de reparación de Windows"
+
+msgid "Flap Angle"
+msgstr "Ángulo de aleta"
+
+msgid "Flip cut plane"
+msgstr "Abatir plano de corte"
+
+msgid "Flip upside down"
+msgstr "Dar la vuelta"
+
+msgid "Floating bridge anchors"
+msgstr "Anclajes de puentes flotantes"
+
+msgid "Floating object part"
+msgstr "Parte de objeto flotante"
+
+msgid "Flow used for ramming the filament before the toolchange."
+msgstr ""
+"Flujo utilizado para realizar el ramming del filamento antes del cambio de "
+"herramienta."
+
+msgid "Font \"%1%\" can't be selected."
+msgstr "La fuente \"%1%\" no se puede seleccionar."
+
+msgid "Font doesn't have any shape for given text."
+msgstr "La fuente no tiene forma para el texto dado."
+
+msgid "Forget the file path"
+msgstr "Olvidar la ruta del archivo"
+
+msgid "Format of the output SLA archive"
+msgstr "Formato del archivo SLA de salida"
+
+msgid "For more information about placeholders and its use visit our %1%."
+msgstr ""
+"Para más información sobre los marcadores y su uso, visita nuestra %1%."
+
+msgid "From surface"
+msgstr "Desde la superficie"
+
+msgid "Front left"
+msgstr "Delantero izquierdo"
+
+msgid "Front right"
+msgstr "Delantero derecho"
+
+msgid "Frustum"
+msgstr "Tronco"
+
+msgid "G-code flavor is switched"
+msgstr "Se ha cambiado el tipo de G-code"
+
+msgid ""
+"Generate a file to be loaded by a Prusa printer to configure its Wi-Fi "
+"connection."
+msgstr ""
+"Genera un archivo para ser cargado por una impresora Prusa para configurar "
+"su conexión Wi-Fi."
+
+msgid ""
+"Generates a ramping lift instead of lifting the extruder directly upwards. "
+"The travel is split into two phases: the ramp and the standard horizontal "
+"travel. This option helps reduce stringing."
+msgstr ""
+"Genera una elevación en rampa en lugar de elevar el extrusor directamente "
+"hacia arriba. El recorrido se divide en dos fases: la rampa y el recorrido "
+"horizontal estándar. Esta opción ayuda a reducir los hilos."
+
+msgid "Geometry handling"
+msgstr "Manipulación de geometrías"
+
+msgid "Gizmo Text emboss / engrave"
+msgstr "Gizmo Texto en relieve / grabado"
+
+msgid "[Global] Slicing state"
+msgstr "Estado del Laminado [Global]"
+
+msgid "Groove Angle"
+msgstr "Ángulo de ranura"
+
+msgid "Groove change"
+msgstr "Cambio de ranura"
+
+msgid "Has single extruder MM priming"
+msgstr "Tiene un solo extrusor de purga MM"
+
+msgid "Has wipe tower"
+msgstr "Tiene torre de limpieza"
+
+msgid ""
+"Height above the print bed when the toolchange takes place. Usually the same "
+"as layer_z, but can be different."
+msgstr ""
+"Altura sobre la base impresión cuando se produce el cambio de herramienta. "
+"Normalmente es la misma que layer_z, pero puede ser diferente."
+
+msgid "Height of SVG."
+msgstr "Altura del SVG."
+
+msgid ""
+"Height of the current layer above the print bed, measured to the top of the "
+"layer."
+msgstr ""
+"Altura de la capa actual sobre la base de impresión, medida hasta la parte "
+"superior de la capa."
+
+msgid "Height of the last layer above the print bed."
+msgstr "Altura de la última capa sobre la base de impresión."
+
+msgid "help page"
+msgstr "página de ayuda"
+
+msgid "here."
+msgstr "aquí."
+
+msgid "Hexagon"
+msgstr "Hexágono"
+
+msgid "Hide Custom G-code"
+msgstr "Ocultar Código G Personalizado"
+
+msgid "Hold SHIFT key to draw a cut line"
+msgstr "Mantén pulsada la tecla SHIFT para dibujar una línea de corte"
+
+msgid "Hour"
+msgstr "Hora"
+
+msgid ""
+"How far apart the branches need to be when they touch the model. Making this "
+"distance small will cause the tree support to touch the model at more "
+"points, causing better overhang but making support harder to remove."
+msgstr ""
+"Qué separación tienen que tener las ramas cuando tocan el modelo. Haciendo "
+"más pequeña esta distancia el soporte arborescente tocará el modelo en más "
+"puntos, generando mejor soporte de voladizos pero siendo más difícil de "
+"retirar."
+
+msgid "Idle temperature"
+msgstr "Temperatura de reposo"
+
+msgid ""
+"If checked, this dialog can be used for transferring selected values from "
+"the preset on the left to the preset on the right."
+msgstr ""
+"Si está marcada, este cuadro de diálogo se puede utilizar para transferir "
+"los valores seleccionados del ajuste de la izquierda al ajuste de la derecha."
+
+msgid ""
+"If enabled, application will use the standard Windows system menu,\n"
+"but on some combination of display scales it can look ugly. If disabled, old "
+"UI will be used."
+msgstr ""
+"Si se activa, la aplicación utilizará el menú estándar del sistema Windows,\n"
+"pero en algunas combinaciones de escalas de pantalla puede parecer feo. Si "
+"se desactiva, se utilizará la antigua interfaz de usuario."
+
+msgid ""
+"If enabled, PrusaSlicer detects obstacles along the travel path and makes "
+"the slope steeper in case an obstacle might be hit during the initial phase "
+"of the travel."
+msgstr ""
+"Si se activa, PrusaSlicer detecta obstáculos a lo largo de la trayectoria de "
+"desplazamiento y hace que la pendiente sea más pronunciada en caso de que se "
+"pueda golpear un obstáculo durante la fase inicial del desplazamiento."
+
+msgid "If enabled, PrusaSlicer will be allowed to download from Printables.com"
+msgstr "Si se activa, PrusaSlicer podrá descargar desde Printables.com"
+
+msgid "If enabled, PrusaSlicer will not open a hyperlinks in your browser."
+msgstr ""
+"Si está activado, PrusaSlicer no abrirá los hipervínculos en tu navegador."
+
+msgid ""
+"If enabled, related notification will be shown, when sliced object looks "
+"like a logo or a sign."
+msgstr ""
+"Si está activada, se mostrará una notificación relacionada cuando el objeto "
+"cortado se parezca a un logotipo o a una señal."
+
+msgid ""
+"If enabled, sets PrusaSlicer G-code Viewer as default application to open ."
+"bgcode files."
+msgstr ""
+"Si está habilitado, establece el Visor de CódigoG de PrusaSlicer como "
+"aplicación predeterminada para abrir archivos .bgcode."
+
+msgid "If enabled, shows non-manifold edges."
+msgstr "Si está activada, muestra las aristas que no son pliegues."
+
+msgid ""
+"If enabled, you will be able to open models from the %1% online database "
+"with a single click (using a %2% logo button)."
+msgstr ""
+"Si se activa, podrás abrir modelos de la base de datos en línea %1% con un "
+"solo clic (mediante un botón con el logotipo %2%)."
+
+msgid ""
+"If the 'Supports binary G-code' option is enabled in Printer Settings, "
+"checking this option will result in the export of G-code in binary format."
+msgstr ""
+"Si la opción 'Compatible con Código G binario' está activada en "
+"Configuración de la Impresora, al marcar esta opción se exportará el código "
+"G en formato binario."
+
+msgid ""
+"If this is enabled, Slic3r will raise alerts when it detects issues in the "
+"sliced object, that can be resolved with supports (and brim). Examples of "
+"such issues are floating object parts, unsupported extrusions and low bed "
+"adhesion."
+msgstr ""
+"Si esta opción está activada, Slic3r emitirá alertas cuando detecte "
+"problemas en el objeto laminado, que pueden ser resueltos con soportes (y "
+"balsa). Ejemplos de estos problemas son partes flotantes del objeto, "
+"extrusiones sin soporte y baja adherencia de la base calefactable."
+
+msgid "Import 3D models"
+msgstr "Importar modelos 3D"
+
+msgid "Import 3D models only"
+msgstr "Importar modelos 3D solamente"
+
+msgid "Import is unavailable for this archive format."
+msgstr "La importación no está disponible para este formato de archivo."
+
+msgid "Import SLA Archive"
+msgstr "Importar archivo SLA"
+
+msgid "Import ZIP Archive"
+msgstr "Importa archivo ZIP"
+
+msgid ""
+"Index of the extruder for which color change will be performed. The index is "
+"zero based (first extruder has index 0)."
+msgstr ""
+"Índice del extrusor para el que se realizará el cambio de color. El índice "
+"está basado en cero (el primer extrusor tiene índice 0)."
+
+msgid ""
+"Index of the extruder that is being loaded. The index is zero based (first "
+"extruder has index 0)."
+msgstr ""
+"Índice del extrusor que se está cargando. El índice está basado en cero (el "
+"primer extrusor tiene índice 0)."
+
+msgid ""
+"Index of the extruder that is being unloaded. The index is zero based (first "
+"extruder has index 0)."
+msgstr ""
+"Índice del extrusor que se está descargando. El índice está basado en cero "
+"(el primer extrusor tiene índice 0)."
+
+msgid "Initial extruder"
+msgstr "Extrusor inicial"
+
+msgid "Initial filament type"
+msgstr "Tipo de filamento inicial"
+
+msgid "Initial tool"
+msgstr "Herramienta inicial"
+
+msgid "Input filename without extension"
+msgstr "Nombre de archivo de entrada sin extensión"
+
+msgid "In queue"
+msgstr "En cola"
+
+msgid "Installing profiles"
+msgstr "Instalando perfiles"
+
+msgid "Instance cannot be deleted from cut object."
+msgstr "No se puede eliminar la instancia del objeto cortado."
+
+msgid "Interlocking depth of a segmented region"
+msgstr "Profundidad de entrelazamiento de una región segmentada"
+
+msgid ""
+"Interlocking depth of a segmented region. It will be ignored if "
+"\"mmu_segmented_region_max_width\" is zero or if "
+"\"mmu_segmented_region_interlocking_depth\"is bigger then "
+"\"mmu_segmented_region_max_width\". Zero disables this feature."
+msgstr ""
+"Profundidad de entrelazamiento de una región segmentada. Se ignorará si "
+"\"mmu_segmented_region_max_width\" es cero o si "
+"\"mmu_segmented_region_interlocking_depth\" es mayor que "
+"\"mmu_segmented_region_max_width\". Cero desactiva esta función."
+
+msgid "Internal download error for url %1%:"
+msgstr "Error de descarga interno del url %1%:"
+
+msgid "Invalidate cut info"
+msgstr "Invalidar info del corte"
+
+msgid "Invalid connectors detected"
+msgstr "Conectores inválidos eliminados"
+
+msgid ""
+"Invalid Head penetration\n"
+"Head penetration should not be greater than the Head width.\n"
+"Please check value of Head penetration in Print Settings or Material "
+"Overrides."
+msgstr ""
+"Penetración de la Cabeza inválida\n"
+"La penetración de la Cabeza no debe ser mayor que el ancho de la Cabeza.\n"
+"Comprueba el valor de Penetración de la Cabeza en Configuración de Impresión "
+"u Anulaciones de Material."
+
+msgid "Invalid object part index"
+msgstr "Índice de pieza no válido."
+
+msgid ""
+"Invalid pinhead diameter\n"
+"Pinhead front diameter should be smaller than the Pillar diameter.\n"
+"Please check value of Pinhead front diameter in Print Settings or Material "
+"Overrides."
+msgstr ""
+"Diámetro de la cabeza inválido\n"
+"El diámetro frontal de la Cabeza debe ser menor que el diámetro del Pilar.\n"
+"Comprueba el valor del diámetro frontal de la Cabeza en Configuración de "
+"Impresión u Anulaciones de Material."
+
+msgid "Invalid value provided for parameter %1%: %2%"
+msgstr "Valor inválido proporcionado para el parámetro %1%: %2%"
+
+msgid "Is extruder used?"
+msgstr "¿Se utiliza el extrusor?"
+
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+"¿Está lista la impresora? ¿Está la lámina de impresión en su sitio, vacía y "
+"limpia?"
+
+msgid "ITALIC"
+msgstr "CURSIVA"
+
+msgid "Italic strength ratio"
+msgstr "Proporción de fuerza de la cursiva"
+
+msgid ""
+"It's impossible to print object(s) which contains parameter modifiers with "
+"SLA technology."
+msgstr ""
+"Es imposible imprimir objetos que contengan modificadores de parámetros con "
+"la tecnología SLA."
+
+msgid "Join"
+msgstr "Unir"
+
+msgid "Keep orientation"
+msgstr "Mantener orientación"
+
+msgid "Keep up"
+msgstr "Dejar igual"
+
+msgid "Layer number"
+msgstr "Número de capa"
+
+msgid "Layer time (linear)"
+msgstr "Tiempo de capa (linear)"
+
+msgid "Layer time (logarithmic)"
+msgstr "Tiempo de capa (logarítmico)"
+
+msgid "Layer Z"
+msgstr "Capa Z"
+
+msgid "Leave emboss gizmo"
+msgstr "Saliendo del Gizmo de Texto en relieve"
+
+msgid "Leave SVG gizmo"
+msgstr "Saliendo del Gizmo de SVG"
+
+msgid "Leaving Cut gizmo"
+msgstr "Saliendo de la Herramienta de Corte"
+
+msgid "Leaving Measure gizmo"
+msgstr "Saliendo de la Herramienta de Medición"
+
+msgid "Leaving Multimaterial painting"
+msgstr "Saliendo del Pintado multimateria"
+
+msgid "Leaving Paint-on supports"
+msgstr "Saliendo de Soportes pintables"
+
+msgid "Leaving Seam painting"
+msgstr "Saliendo del Pintado de costuras"
+
+msgid "Leaving SLA support points"
+msgstr "Saliendo de los puntos de apoyo del SLA"
+
+msgid "Left handed"
+msgstr "Zurdo"
+
+msgid "Level of detail"
+msgstr "Nivel de detalle"
+
+msgid "Library wlanapi.dll was not loaded."
+msgstr "La biblioteca wlanapi.dll no se ha cargado."
+
+msgid "Licensed under GNU AGPLv3."
+msgstr "Bajo licencia GNU AGPLv3."
+
+msgid "Lift height"
+msgstr "Altura de elevación"
+
+msgid "Lift height applied before travel."
+msgstr "Altura de elevación aplicada antes del desplazamiento."
+
+msgid "Linear gradient"
+msgstr "Gradiente lineal"
+
+msgid "Line gap"
+msgstr "Hueco línea"
+
+msgid "Load an SLA archive"
+msgstr "Cargar un archivo SLA"
+
+msgid "Load a ZIP archive"
+msgstr "Carga un archivo ZIP"
+
+msgid "Loading of a ZIP archive on path %1% has failed."
+msgstr "La carga del archivo ZIP en la ruta %1% ha fallado."
+
+msgid "Load project file"
+msgstr "Cargar archivo de proyecto"
+
+msgid "Lock the text's rotation when moving text along the object's surface."
+msgstr ""
+"Bloque la rotación del texto cuando se mueva sobre la superficie del objeto."
+
+msgid "Lock/unlock rotation angle when dragging above the surface."
+msgstr ""
+"Bloquear/desbloquear el ángulo de rotación al arrastrar por encima de la "
+"superficie."
+
+msgid "Lock/unlock the aspect ratio of the SVG."
+msgstr "Bloquear/desbloquear la relación de aspecto del SVG."
+
+msgid "Long bridging extrusions"
+msgstr "Extrusiones de voladizos largos"
+
+msgid "Loose extrusions"
+msgstr "Extrusiones sueltas"
+
+msgid "Low bed adhesion"
+msgstr "Baja adherencia de la base"
+
+msgid ""
+"Machine limits cannot be emitted to G-Code when Klipper firmware flavor is "
+"used. Change the value of machine_limits_usage."
+msgstr ""
+"Los límites de máquina no se pueden emitir al código G cuando se utilizala "
+"versión de firmware Klipper. Cambia el valor de machine_limits_usage."
+
+msgid "Making infill"
+msgstr "Haciendo el relleno"
+
+msgid "Manual"
+msgstr "Manual"
+
+msgid "Material Overrides"
+msgstr "Anulaciones de Materiales"
+
+msgid "Maximal layer Z"
+msgstr "Capa máxima Z"
+
+msgid "Maximum acceleration for travel moves."
+msgstr "Aceleración máxima para movimientos de desplazamiento"
+
+msgid ""
+"Maximum acceleration when retracting.\n"
+"\n"
+"Not used for RepRapFirmware, which does not support it."
+msgstr ""
+"Aceleración máxima al retraer.\n"
+"\n"
+"No se utiliza para RepRapFirmware, ya que no lo admite."
+
+msgid "Maximum Branch Angle"
+msgstr "Ángulo Máximo de la Rama"
+
+msgid ""
+"Maximum lift height of the ramping lift. It may not be reached if the next "
+"position is close to the old one."
+msgstr ""
+"Altura máxima de elevación del elevador de rampa. Puede que no se alcance si "
+"la siguiente posición está cerca de la anterior."
+
+msgid "Maximum number of threads"
+msgstr "Número máximo de hilos"
+
+msgid "Maximum ramping lift"
+msgstr "Elevación máxima en rampa"
+
+msgid ""
+"Maximum weight of sub-trees that terminate on the model instead of the print "
+"bed. The weight is the sum of the lenghts of all branches emanating from the "
+"endpoint."
+msgstr ""
+"Peso máximo de los subárboles que terminan en el modelo en lugar de en la "
+"base de impresión. El peso es la suma de las longitudes de todas las ramas "
+"que emanan del punto final."
+
+msgid "Max weight on model"
+msgstr "Peso máximo del modelo"
+
+msgid "Measure"
+msgstr "Medida"
+
+msgid "Measure gizmo editing"
+msgstr "Edición de la Herramienta de Medición"
+
+msgid ""
+"Measurement tool\n"
+"Did you know that you can <a>measure</a> the distances between points, edges "
+"and planes, the radius of a hole or the angle between edges or planes? Learn "
+"more in the documentation."
+msgstr ""
+"Herramienta de medición\n"
+"¿Sabías que puedes <a>medir</a> las distancias entre puntos, aristas y "
+"planos, el radio de un agujero o el ángulo entre aristas o planos? Más "
+"información en la documentación."
+
+msgid ""
+"Merging bridges or pillars into another pillars can increase the radius. "
+"Zero means no increase, one means full increase. The exact amount of "
+"increase is unspecified and can change in the future."
+msgstr ""
+"La fusión de puentes o pilares con otros pilares puede aumentar el radio. "
+"Cero significa que no hay aumento, uno significa un aumento completo. La "
+"cantidad exacta de aumento no está especificada y puede cambiar en el futuro."
+
+msgid "Minimum resolution in nanometers"
+msgstr "Resolución mínima en nanómetros"
+
+msgid "Minute"
+msgstr "Minuto"
+
+msgid "Mirror along %1% axis"
+msgstr "Simetría respecto al eje %1%"
+
+msgid "Model simplification has been canceled"
+msgstr "Se ha cancelado la simplificación del modelo"
+
+msgid "Mode markers"
+msgstr "Indicadores de modo"
+
+msgid "MODERN"
+msgstr "MODERNA"
+
+msgid "Modified style \"%1%\""
+msgstr "Estilo modificado \"%1%\""
+
+msgid "Modified value"
+msgstr "Valor modificado"
+
+msgid "Monotonic Lines"
+msgstr "Líneas Monotónicas"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "More info at"
+msgstr "Más información en"
+
+msgid "Move connector"
+msgstr "Mover conector"
+
+msgid "Move cut plane"
+msgstr "Mover plano de corte"
+
+msgid "Move over surface"
+msgstr "Desplazarse por la superficie"
+
+msgid "Multimaterial painting editing"
+msgstr "Edición del pintado multimaterial"
+
+msgid "Multiple resolved IP addresses"
+msgstr "Varias direcciones IP resueltas"
+
+msgid "Multitool ramming flow"
+msgstr "Flujo para ramming multicabezal"
+
+msgid "Multitool ramming volume"
+msgstr "Volumen de ramming multicabezal"
+
+msgid "Name can't be empty."
+msgstr "El nombre no puede estar vacío."
+
+msgid "Name has to be unique."
+msgstr "El nombre tiene que ser único."
+
+msgid "Name of the physical printer used for slicing."
+msgstr "Nombre de la impresora física utilizada para el laminado."
+
+msgid "Name of the printer preset used for slicing."
+msgstr "Nombre del ajuste de impresora utilizado para el laminado."
+
+msgid "Name of the print preset used for slicing."
+msgstr "Nombre del ajuste de impresión utilizado para el laminado."
+
+msgid ""
+"Names of the filament presets used for slicing. The variable is a vector "
+"containing one name for each extruder."
+msgstr ""
+"Nombres de los ajustes de filamento utilizados para el laminado. La variable "
+"es un vector que contiene un nombre para cada extrusor."
+
+msgid "Nano SVG parser can't load from file (%1%)."
+msgstr "El analizador Nano SVG no puede cargar desde el archivo (%1%)."
+
+msgid "New name of style"
+msgstr "Nuevo nombre del estilo"
+
+msgid "New value"
+msgstr "Nuevo valor"
+
+msgid "New version"
+msgstr "Nueva versión"
+
+msgid "New version of %1% is available."
+msgstr "Nueva versión de %1% disponible"
+
+msgid ""
+"New version of %s is available.\n"
+"Do you wish to download it?"
+msgstr ""
+"La nueva versión de %s está disponible.\n"
+"¿Deseas descargarla?"
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "Next extruder"
+msgstr "Extrusor siguiente"
+
+msgid "No changes to save."
+msgstr "No hay cambios que guardar."
+
+msgid ""
+"No object could be retrieved from the archive. The slices might be corrupted "
+"or missing."
+msgstr ""
+"No se ha podido recuperar ningún objeto del archivo. Es posible que los "
+"fragmentos estén dañados o falten."
+
+msgid "No password in the keychain for given SSID."
+msgstr "No hay contraseña en el llavero para el SSID dado."
+
+msgid "NORMAL"
+msgstr "NORMAL"
+
+msgid "No symbol"
+msgstr "Sin símbolo"
+
+msgid "Note: This file will contain the SSID and password in plain text."
+msgstr "Nota: Este archivo contendrá el SSID y la contraseña en texto plano."
+
+msgid "Not valid style."
+msgstr "Estilo no válido."
+
+msgid "Nozzle Diameter"
+msgstr "Diámetro de boquilla"
+
+msgid ""
+"Nozzle temperature when the tool is currently not used in multi-tool setups."
+"This is only used when 'Ooze prevention' is active in Print Settings."
+msgstr ""
+"Temperatura de la boquilla cuando no se utiliza la herramienta en "
+"configuraciones multicabezal. Sólo se utiliza cuando está activada la "
+"'Prevención de goteo' en Configuración de Impresión."
+
+msgid "Number of extruders"
+msgstr "Número de extrusores"
+
+msgid "Number of extruders used during the print."
+msgstr "Número de extrusores usados durante la impresión."
+
+msgid "Number of instances"
+msgstr "Número de instancias"
+
+msgid "Number of layers in the entire print."
+msgstr "Número de capas en toda la impresión."
+
+msgid "Number of objects"
+msgstr "Número de objetos"
+
+msgid "Number of printing extruders"
+msgstr "Número de extrusores de impresión"
+
+msgid "Number of toolchanges during the print."
+msgstr "Número de cambios de herramienta durante la impresión."
+
+msgid "Object"
+msgstr "Objeto"
+
+msgid "Object coordinates"
+msgstr "Coordenadas del objeto"
+
+msgid "Objects"
+msgstr "Objetos"
+
+msgid "Objects info"
+msgstr "Información de Objetos"
+
+msgid "OctoPrint comments"
+msgstr "Comentarios del OctoPrint"
+
+msgid ""
+"On Linux systems the process of registration also creates desktop "
+"integration files for this version of application."
+msgstr ""
+"En los sistemas Linux, el proceso de registro también crea archivos de "
+"integración de escritorio para esta versión de la aplicación."
+
+msgid "Only create support if it lies in a support enforcer."
+msgstr "Sólo crea soportes si reside en un forzado de soporte."
+
+msgid "Only lift"
+msgstr "Solo elevar"
+
+msgid "Only valid font can be added to style."
+msgstr "Sólo se pueden añadir fuentes válidas al estilo."
+
+msgid "On some versions of MacOS, this only loads SSID of connected network."
+msgstr ""
+"En algunas versiones de MacOS, esto solo carga el SSID de la red conectada."
+
+msgid ""
+"Ooze prevention is only supported with the wipe tower when "
+"'single_extruder_multi_material' is off."
+msgstr ""
+"La prevención de goteo sólo es compatible con la torre de limpieza cuando "
+"'single_extruder_multi_material' está desactivado."
+
+msgid "Opacity (%1%)"
+msgstr "Opacidad (%1%)"
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid ""
+"Open edges or errors were detected after the cut.\n"
+"Do you want to fix them by Windows repair algorithm?"
+msgstr ""
+"Se han detectado bordes abiertos o errores después del corte.\n"
+"¿Deseas arreglarlo mediante el algoritmo de reparación de Windows?"
+
+msgid "Open filled path"
+msgstr "Abrir ruta rellena"
+
+msgid "OpenGL compatibility profile"
+msgstr "Perfil de compatibilidad de OpenGL"
+
+msgid "OpenGL debug output"
+msgstr "Salida de depuración OpenGL"
+
+msgid "OpenGL version"
+msgstr "Versión de OpenGL"
+
+msgid "Opening Configuration Wizard"
+msgstr "Abriendo Asistente de Configuración"
+
+msgid "Open the physical printer URL"
+msgstr "Abre el URL de la impresora física"
+
+msgid "Operation"
+msgstr "Operación"
+
+msgid "Organic"
+msgstr "Orgánico"
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+"El diámetro de la rama de soporte orgánico no debe ser inferior a 2 veces la "
+"anchura de extrusión del material de soporte."
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+"El diámetro de la rama orgánica de soporte no debe ser inferior al diámetro "
+"de la punta del árbol de soporte."
+
+msgid "Organic supports"
+msgstr "Soportes orgánicos"
+
+msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+"El diámetro de la punta del árbol de soporte orgánico no debe ser inferior a "
+"la anchura de extrusión del material de soporte."
+
+msgid "Orient the text towards the camera."
+msgstr "Orienta el texto hacia la cámara."
+
+msgid "Original"
+msgstr "Original"
+
+msgid "Original value"
+msgstr "Valor original"
+
+msgid "Output"
+msgstr "Salida"
+
+msgid ""
+"Overhang size is expressed as a percentage of overlap of the extrusion with "
+"the previous layer: 100% would be full overlap (no overhang), while 0% "
+"represents full overhang (floating extrusion, bridge). Fan speeds for "
+"overhang sizes in between are calculated via linear interpolation."
+msgstr ""
+"El tamaño del voladizo se expresa como porcentaje de solapamiento de la "
+"extrusión con la capa anterior: El 100% sería un solapamiento completo (no "
+"hay voladizo), mientras que el 0% representa un voladizo total (extrusión "
+"flotante, puente). Las velocidades del ventilador para los voladizos "
+"intermedios se calculan mediante interpolación lineal."
+
+msgid ""
+"Overhang size is expressed as a percentage of overlap of the extrusion with "
+"the previous layer: 100% would be full overlap (no overhang), while 0% "
+"represents full overhang (floating extrusion, bridge). Speeds for overhang "
+"sizes in between are calculated via linear interpolation. If set as "
+"percentage, the speed is calculated over the external perimeter speed. Note "
+"that the speeds generated to gcode will never exceed the max volumetric "
+"speed value."
+msgstr ""
+"El tamaño del voladizo se expresa como porcentaje de solapamiento de la "
+"extrusión con la capa anterior: El 100% sería un solapamiento completo (no "
+"hay voladizo), mientras que el 0% representa un voladizo total (extrusión "
+"flotante, puente). Las velocidades para los voladizos intermedios se "
+"calculan mediante interpolación lineal. Si se establece como porcentaje, la "
+"velocidad se calcula sobre la velocidad del perímetro exterior. Ten en "
+"cuenta que las velocidades generadas en el código nunca superarán el valor "
+"máximo de velocidad volumétrica."
+
+msgid "painting"
+msgstr "pintando"
+
+msgid "Paint-on seam editing"
+msgstr "Editando el pintado de costuras"
+
+msgid "Paint-on supports editing"
+msgstr "Edición de soportes pintables"
+
+msgid "Palette 1 (default)"
+msgstr "Paleta 1 (predeterminada)"
+
+msgid "Palette 2"
+msgstr "Paleta 2"
+
+msgid "Palette 3"
+msgstr "Paleta 3"
+
+msgid "Palette 4"
+msgstr "Paleta 4"
+
+msgid "Palette 5"
+msgstr "Paleta 5"
+
+msgid "Palette 6"
+msgstr "Paleta 6"
+
+msgid "Palette 7"
+msgstr "Paleta 7"
+
+msgid "Palette 8"
+msgstr "Paleta 8"
+
+msgid "Part coordinates"
+msgstr "Coordenadas de la pieza"
+
+msgid "Parts"
+msgstr "Piezas"
+
+msgid "Path can't be healed from selfintersection and multiple points."
+msgstr ""
+"La ruta no puede curarse de la auto-intersección y los puntos múltiples."
+
+msgid ""
+"Performing downloader desktop integration failed because the application "
+"directory was not found."
+msgstr ""
+"La integración del gestor de descargas de escritorio ha fallado porque no se "
+"ha encontrado el directorio de la aplicación."
+
+msgid ""
+"Performing downloader desktop integration failed - boost::filesystem::"
+"canonical did not return appimage path."
+msgstr ""
+"Falló la integración del gestor de descargas del escritorio - boost::"
+"filesystem::canonical no devolvió la ruta appimage."
+
+msgid ""
+"Performing downloader desktop integration failed - Could not find executable."
+msgstr ""
+"Falló la integración del gestor de descargas del escritorio - No se pudo "
+"encontrar el ejecutable."
+
+msgid ""
+"Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
+"Multimaterial' in Printer Settings is unchecked). When checked, a small "
+"amount of filament is rapidly extruded on the wipe tower just before the "
+"toolchange. This option is only used when the wipe tower is enabled."
+msgstr ""
+"Realiza el ramming cuando se utiliza la impresora multicabezal (es decir, "
+"cuando la opción \"Extrusor único Multimaterial\" de la Configuración de la "
+"Impresora no está marcada). Cuando esta opción está activada, una pequeña "
+"cantidad de filamento se extruye rápidamente en la torre de limpieza justo "
+"antes del cambio de cabezal. Esta opción sólo se utiliza cuando la torre de "
+"limpieza está activada."
+
+msgid "Per glyph"
+msgstr "Por glifo"
+
+msgid "Perpendicular distance"
+msgstr "Distancia perpendicular"
+
+msgid "Physical printer name"
+msgstr "Nombre de la impresora física"
+
+msgid ""
+"Picture sizes to be stored into a .gcode / .bgcode and .sl1 / .sl1s files, "
+"in the following format: \"XxY/EXT, XxY/EXT, ...\"\n"
+"Currently supported extensions are PNG, QOI and JPG."
+msgstr ""
+"Los tamaños de las imágenes deben almacenarse en archivos .gcode / .bgcode "
+"y .sl1 / .sl1s, en el siguiente formato: \"XxY/EXT, XxY/EXT, ...\".\n"
+"Las extensiones admitidas actualmente son PNG, QOI y JPG."
+
+msgid "Place on cut"
+msgstr "Colocar en corte"
+
+msgid "Planar"
+msgstr "Planar"
+
+msgid "Plane"
+msgstr "Plano"
+
+msgid ""
+"Plan travel moves such that the extruder avoids areas where the filament may "
+"be curled up. This is mostly happening on steeper rounded overhangs and may "
+"cause a crash with the nozzle. This feature slows down both the print and "
+"the G-code generation."
+msgstr ""
+"Planifica los movimientos de desplazamiento de forma que el extrusor evite "
+"las zonas en las que el filamento pueda estar enrollado. Esto ocurre sobre "
+"todo en los salientes redondeados más pronunciados y puede provocar un "
+"choque con la boquilla. Esta característica ralentiza tanto la impresión "
+"como la generación del código G."
+
+msgid "Please check your object list before mode changing."
+msgstr "Comprueba tu lista de objetos antes de cambiar de modo."
+
+msgid ""
+"Please note that template presets are not customized for specific printer "
+"and should only be used as a starting point for creating your own user "
+"presets."
+msgstr ""
+"Ten en cuenta que las plantillas de configuración no están personalizadas "
+"para una impresora específica y sólo deben utilizarse como punto de partida "
+"para crear tus propios preajustes de usuario."
+
+msgid "Plug"
+msgstr "Conector"
+
+msgid "Point on circle"
+msgstr "Punto en un círculo"
+
+msgid "Point on edge"
+msgstr "Punto en una esquina"
+
+msgid "Point on plane"
+msgstr "Punto en un plano"
+
+msgid "points"
+msgstr "puntos"
+
+msgid ""
+"Position of the extruder at the beginning of the custom G-code block. If the "
+"custom G-code travels somewhere else, it should write to this variable so "
+"PrusaSlicer knows where it travels from when it gets control back."
+msgstr ""
+"Posición del extrusor al comienzo del bloque de código G personalizado. Si "
+"el código G personalizado viaja a otro lugar, debe escribir en esta variable "
+"para que PrusaSlicer sepa desde dónde viaja cuando recupere el control."
+
+msgid "Preferred Branch Angle"
+msgstr "Ángulo Preferido de la Rama"
+
+msgid "Presets"
+msgstr "Ajustes"
+
+msgid "Previous extruder"
+msgstr "Extrusor anterior"
+
+msgid ""
+"Printables.com integration\n"
+"Did you know that when you are browsing Printables.com, you can send 3D "
+"model files to PrusaSlicer with a single click? Learn more in the "
+"documentation."
+msgstr ""
+"Integración con Printables.com\n"
+"¿Sabías que cuando estás navegando por Printables.com, puedes enviar "
+"archivos de modelos 3D a PrusaSlicer con un solo clic? Más información en la "
+"documentación."
+
+msgid "Printer configuration file detected on removable media."
+msgstr ""
+"Detectado archivo de configuración de impresora en almacenamiento enchufable."
+
+msgid "Printer preset name"
+msgstr "Nombre del ajuste de la impresora"
+
+msgid "Printer settings"
+msgstr "Configuración de la Impresora"
+
+msgid "Print preset name"
+msgstr "Nombre del ajuste de impresión"
+
+msgid "Print statistics"
+msgstr "Estadísticas de impresión"
+
+msgid "Print time (normal mode)"
+msgstr "Tiempo de impresión (modo normal)"
+
+msgid "Print time (silent mode)"
+msgstr "Tiempo de impresión (modo silencioso)"
+
+msgid "Prism"
+msgstr "Prisma"
+
+msgid "Private protection"
+msgstr "Protección privada"
+
+msgid ""
+"Processing model \"%1%\" with more than 1M triangles could be slow. It is "
+"highly recommended to reduce amount of triangles."
+msgstr ""
+"Procesar un modelo \"%1%\" con más de 1M de triángulos puede ser lento. Es "
+"muy recomendable reducir el número de triángulos."
+
+msgid "Processing triangulated mesh"
+msgstr "Procesando malla triangular"
+
+msgid ""
+"PrusaSlicer recieved a download request from Printables.com, but it's not "
+"allowed. You can allow it"
+msgstr ""
+"PrusaSlicer ha recibido una solicitud de descarga de Printables.com, pero no "
+"está permitida. Puedes permitirlo"
+
+msgid ""
+"PrusaSlicer requires OpenGL 3.2 capable graphics driver to run correctly,\n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicer requiere el controlador de gráficos OpenGL 3.2 para que funcione "
+"correctamente,\n"
+"mientras que la versión %s OpenGL, renderizado %s, vendedor %s fue detectada."
+
+msgid ""
+"PrusaSlicer requires OpenGL ES 2.0 capable graphics driver to run "
+"correctly, \n"
+"while OpenGL version %s, render %s, vendor %s was detected."
+msgstr ""
+"PrusaSlicer requiere un controlador gráfico compatible con OpenGL ES 2.0 "
+"para funcionar correctamente, \n"
+"mientras que OpenGL versión %s, render %s, vendor %s fue detectado."
+
+msgid "&Quick Start"
+msgstr "&Inicio Rápido"
+
+msgid "Radial gradient"
+msgstr "Gradiente radial"
+
+msgid "Ramping slope angle"
+msgstr "Ángulo de inclinación de la rampa"
+
+msgid "Read only"
+msgstr "Solo lectura"
+
+msgid "Read write"
+msgstr "Leer escribir"
+
+msgid "Rear left"
+msgstr "Trasero izquierdo"
+
+msgid "Rear right"
+msgstr "Trasero derecho"
+
+msgid "Reload SVG file from disk."
+msgstr "Recargar SVG desde el disco."
+
+msgid "Remove connector"
+msgstr "Retirar conector"
+
+msgid "Remove connector from selection"
+msgstr "Retirar conector de la selección"
+
+msgid "Remove connectors"
+msgstr "Retirar conectores"
+
+msgid "Remove style"
+msgstr "Eliminar estilo"
+
+msgid "Rename current style."
+msgstr "Renombrar el estilo actual."
+
+msgid "Rename preset"
+msgstr "Renombrar ajuste"
+
+msgid "Rename style"
+msgstr "Renombrar estilo"
+
+msgid "Rename style(%1%) for embossing text"
+msgstr "Renombrar estilo(%1%) para texto en relieve"
+
+msgid "Repairing model by Windows repair algorithm"
+msgstr "Reparando modelo mediante el algoritmo de reparación de Windows"
+
+msgid "Repairing object %1%"
+msgstr "Reparando objeto %1%"
+
+msgid "Repairing objects:"
+msgstr "Reparando objetos:"
+
+msgid "Repair operation finished"
+msgstr "Operación de reparación terminada"
+
+msgid "Reset cut"
+msgstr "Reiniciar corte"
+
+msgid "Reset cutting plane"
+msgstr "Reiniciar plano de corte"
+
+msgid "Reset cutting plane and remove connectors"
+msgstr "Reiniciar plano de corte y retirar conectores"
+
+msgid "Reset defaults"
+msgstr "Restablecer valores por defecto"
+
+msgid "Reset distance"
+msgstr "Reiniciar distancia"
+
+msgid "Reset skew"
+msgstr "Reiniciar desviación"
+
+msgid "RESOLVING ADDRESS"
+msgstr "DIRECCIÓN DE RESOLUCIÓN"
+
+msgid "Restart selection"
+msgstr "Reiniciar selección"
+
+msgid "Retraction length"
+msgstr "Longitud de retracción"
+
+msgid ""
+"Retraction state at the beginning of the custom G-code block. If the custom "
+"G-code moves the extruder axis, it should write to this variable so "
+"PrusaSlicer deretracts correctly when it gets control back."
+msgstr ""
+"Estado de retracción al comienzo del bloque de código G personalizado. Si el "
+"código G personalizado mueve el eje del extrusor, debe escribir en esta "
+"variable para que PrusaSlicer se retraiga correctamente cuando recupere el "
+"control."
+
+msgid "Retrieve"
+msgstr "Recuperar"
+
+msgid "Revert alignment."
+msgstr "Revertir alineamiento."
+
+msgid "Revert color"
+msgstr "Revertir color"
+
+msgid "Revert embossed depth."
+msgstr "Revertir la profundidad del relieve."
+
+msgid "Revert font changes."
+msgstr "Revertir los cambios de fuente."
+
+msgid "Revert font to default"
+msgstr "Vuelve a la fuente por defecto."
+
+msgid "Revert gap between characters"
+msgstr "Restaura el espacio entre caracteres"
+
+msgid "Revert gap between lines"
+msgstr "Revertir el espacio entre líneas"
+
+msgid "Revert text size."
+msgstr "Revertir el tamaño del texto."
+
+msgid "Revert Transformation per glyph."
+msgstr "Revertir Transformación por glifo."
+
+msgid "Revert using of model surface."
+msgstr "Revertir el uso de la superficie del modelo."
+
+msgid "Right button click the icon to fix STL by Windows repair algorithm"
+msgstr ""
+"Clic con el botón derecho en el icono para reparar el STL mediante el "
+"algoritmo de reparación de Windows"
+
+msgid "Rotate cut plane"
+msgstr "Rotar plano de corte"
+
+msgid "Rotate (relative)"
+msgstr "Girar (relativo)"
+
+msgid "Rotate text Clock-wise."
+msgstr "Girar el texto en el sentido de las agujas del reloj."
+
+msgid "Run installer after download. (Otherwise file explorer will be opened)"
+msgstr ""
+"Ejecutar el instalador después de la descarga. (De lo contrario, se abrirá "
+"el explorador de archivos)"
+
+msgid ""
+"Running downloaded instaler of %1% has failed:\n"
+"%2%"
+msgstr ""
+"La ejecución del instalador descargado de %1% ha fallado: \n"
+"%2%"
+
+msgid "%s 1.40 configuration update"
+msgstr "%s 1.40 actualización de la configuración"
+
+msgid "Sample &G-codes and Models"
+msgstr "&Códigos-G de Muestra y Modelos"
+
+msgid "Save %1% style"
+msgstr "Guardar estilo %1%"
+
+msgid "Save as new style"
+msgstr "Guardar como nuevo estilo"
+
+msgid "Save as new style."
+msgstr "Guardar el nuevo estilo."
+
+msgid "Save as profile derived from current printer only."
+msgstr "Guardar como perfil derivado sólo de la impresora actual."
+
+msgid "Save as '.svg' file"
+msgstr "Guardar como archivo '.svg'"
+
+msgid "Save filament settings as"
+msgstr "Guarda los ajustes del filamento como"
+
+msgid "Save material settings as"
+msgstr "Guardar los ajustes de material como"
+
+msgid "Save preset modifications to existing user profile"
+msgstr ""
+"Guardar modificaciones preestablecidas en el perfil de usuario existente"
+
+msgid "Save presets"
+msgstr "Guardar ajustes"
+
+msgid "Save printer settings as"
+msgstr "Guardar los ajustes de impresora como"
+
+msgid "Save print settings as"
+msgstr "Guardar los ajustes de impresión como"
+
+msgid "Save SVG file"
+msgstr "Guardar archivo SVG"
+
+msgid "Save the selected options from left preset to the right."
+msgstr "Guarda las opciones seleccionadas del ajuste izquierdo en el derecho."
+
+msgid "Scale also changes amount of curve samples (%1%)"
+msgstr "La escala también cambia la cantidad de muestras de la curva (%1%)"
+
+msgid "Scale per object"
+msgstr "Escala por objeto"
+
+msgid "Searching support spots"
+msgstr "Búsqueda de puntos de soporte"
+
+msgid "Second"
+msgstr "Segundo"
+
+msgid "Select all connectors"
+msgstr "Seleccionar todos los conectores"
+
+msgid "Select an action to apply to all files."
+msgstr "Selecciona una acción para aplicarla a todos los archivos."
+
+msgid "Select a specific version of OpenGL"
+msgstr "Selecciona una version específica de OpenGL"
+
+msgid "Select at least one object to keep after cutting."
+msgstr "Selecciona al menos un objeto a conservar tras el corte."
+
+msgid "Select center"
+msgstr "Seleccionar centro"
+
+msgid "Select directory"
+msgstr "Seleccionar directorio"
+
+msgid "Selected path is not on removable media."
+msgstr "La ruta seleccionada no se encuentra en un medio extraíble."
+
+msgid "Select feature"
+msgstr "Seleccionar función"
+
+msgid "Select from True Type Collection."
+msgstr "Seleccionar de la colección True Type."
+
+msgid "Select one to load as project"
+msgstr "Selecciona uno para cargar como proyecto"
+
+msgid "Select only one file to load the configuration."
+msgstr "Selecciona solamente un archivo para cargar la configuración."
+
+msgid "Select placeholder"
+msgstr "Seleccionar marcador"
+
+msgid "Select point"
+msgstr "Seleccionar punto"
+
+msgid ""
+"Selects whether labels should be exported at object boundaries and in what "
+"format.\n"
+"OctoPrint = comments to be consumed by OctoPrint CancelObject plugin.\n"
+"Firmware = firmware specific G-code (it will be chosen based on firmware "
+"flavor and it can end up to be empty).\n"
+"\n"
+"This settings is NOT compatible with Single Extruder Multi Material setup "
+"and Wipe into Object / Wipe into Infill."
+msgstr ""
+"Selecciona si las etiquetas deben exportarse en los límites del objeto y en "
+"qué formato.\n"
+" OctoPrint = comentarios a ser consumidos por el plugin de OctoPrint "
+"CancelObject.\n"
+" Firmware = código G específico del firmware (se elegirá en función del tipo "
+"de firmware y puede acabar vacío).\n"
+"\n"
+"Esta configuración NO es compatible con la configuración de Extrusor Único "
+"Multi Material y Limpiar en Objeto / Limpiar en Relleno."
+
+msgid "Set bold"
+msgstr "Elegir negrita"
+
+msgid "Set global orientation for whole text."
+msgstr "Establecer orientación global para todo el texto."
+
+msgid "Set italic"
+msgstr "Elegir Cursiva"
+
+msgid "Set position and orientation per glyph."
+msgstr "Establecera posición y orientación por glifo."
+
+msgid "Set settings tabs as menu items"
+msgstr "Establecer pestañas de configuración como elementos de menú"
+
+msgid "Set Size"
+msgstr "Ajustar Tamaño"
+
+msgid ""
+"Sets the maximum number of threads the slicing process will use. If not "
+"defined, it will be decided automatically."
+msgstr ""
+"Establece el número máximo de hilos que utilizará el proceso de laminado. Si "
+"no se define, se decidirá automáticamente."
+
+msgid "Set text to face camera"
+msgstr "Poner texto frente a la cámara"
+
+msgid "Set the printer height."
+msgstr "Ajusta la altura de la impresora."
+
+msgid "%s files"
+msgstr "%s archivos"
+
+msgid "Shape is marked as invisible (%1%)."
+msgstr "La forma está marcada como invisible (%1%)"
+
+msgid "Show as original"
+msgstr "Mostrar como original"
+
+msgid "Show as processed"
+msgstr "Mostrar como procesado"
+
+msgid "Show Custom G-code"
+msgstr "Mostrar Código G Personalizado"
+
+msgid "Show/Hide legend"
+msgstr "Mostrar/Ocultar leyenda"
+
+msgid "Show/Hide template presets"
+msgstr "Mostrar/Ocultar plantillas de configuración"
+
+msgid "Show legend"
+msgstr "Mostrar leyenda"
+
+msgid "Show Legen&d"
+msgstr "Mostrar Leyen&da"
+
+msgid "Show legend in preview"
+msgstr "Mostrar leyenda en vista previa"
+
+msgid "Show load project dialog"
+msgstr "Mostrar cuadro de diálogo al cargar proyecto"
+
+msgid "Show non-manifold edges"
+msgstr "Mostrar aristas que no son pliegues"
+
+msgid ""
+"Simple mode supports manipulation with single-part object(s)\n"
+"or object(s) with support modifiers only."
+msgstr ""
+"El modo simple admite la manipulación con objeto(s) de una sola pieza\n"
+"u objeto(s) con modificadores de soporte solamente."
+
+msgid "Size in emboss direction."
+msgstr "Tamaño en la dirección del relieve."
+
+msgid "Size of the first layer bounding box"
+msgstr "Tamaño del cuadro delimitador de la primera capa"
+
+msgid "Size of the print bed bounding box"
+msgstr "Tamaño del cuadro delimitador de la base de impresión"
+
+msgid "Size [World]"
+msgstr "Tamaño [Mundo]"
+
+msgid "Skew ratio"
+msgstr "Proporción de inclinación"
+
+msgid "Skew [World]"
+msgstr "Inclinación [Mundo]"
+
+msgid "SLA Materials settings"
+msgstr "Configuraciones del material SLA"
+
+msgid "SLA output precision"
+msgstr "Precisión de la salida SLA"
+
+msgid "SLA view"
+msgstr "Vista para SLA"
+
+msgid "Slicing Cancelled."
+msgstr "Laminado Cancelado."
+
+msgid "Slicing state"
+msgstr "Estado del laminado"
+
+msgid "Slope of the ramp in the initial phase of the travel."
+msgstr "Pendiente de la rampa en la fase inicial del desplazamiento."
+
+msgid "SMALL"
+msgstr "PEQUEÑA"
+
+msgid "Snap"
+msgstr "Encaje"
+
+msgid "Some connectors are overlapped"
+msgstr "Algunos conectores están superpuestos"
+
+msgid "Some extension in the input is invalid"
+msgstr "Alguna extensión de la entrada no es válida"
+
+msgid ""
+"Some parts of the print will be previewed with approximated meshes. This "
+"does not affect the quality of slices or the physical print in any way."
+msgstr ""
+"Algunas piezas de la impresión se mostrarán con mallas aproximadas. Esto no "
+"afectará a la calidad de las capas o a la impresión física en modo alguno."
+
+msgid "Source filename of the first object, without extension."
+msgstr "Nombre de archivo de origen del primer objeto, sin extensión."
+
+msgid "Space proportion related to radius"
+msgstr "Proporción de espacio en relación con el radio"
+
+msgid "Spacing from bed"
+msgstr "Separación de la plataforma"
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr "Espaciado de las líneas de purga en la torre de limpieza."
+
+msgid "Specific for %1%"
+msgstr "Específico para %1%"
+
+msgid ""
+"Specific for sequential printing. Zero-based index of currently printed "
+"object."
+msgstr ""
+"Específico para la impresión secuencial. Índice basado en cero del objeto "
+"impreso actualmente."
+
+msgid "speed for 0% overlap (bridge)"
+msgstr "velocidad para un solapamiento del 0% (puente)"
+
+msgid "speed for 25% overlap"
+msgstr "velocidad para un solapamiento del 25%"
+
+msgid "speed for 50% overlap"
+msgstr "velocidad para un solapamiento del 50%"
+
+msgid "speed for 75% overlap"
+msgstr "velocidad para un solapamiento del 75%"
+
+msgid "Square"
+msgstr "Cuadrado"
+
+msgid "SSID"
+msgstr "SSID"
+
+msgid "SSID field is empty."
+msgstr "El campo SSID está vacío."
+
+msgid "Stabilization cone apex angle"
+msgstr "Ángulo de la punta del cono de estabilización"
+
+msgid "Staggered inner seams"
+msgstr "Costuras internas escalonadas"
+
+msgid "Start a new instance of PrusaSlicer"
+msgstr "Comienza un nueva instancia de PrusaSlicer"
+
+msgid "Start G-Code options"
+msgstr "Opciones código G inicial"
+
+msgid "Start new PrusaSlicer instance"
+msgstr "Abrir instancia nueva de PrusaSlicer"
+
+msgid "Steeper ramp before obstacles"
+msgstr "Rampa más pronunciada antes de los obstáculos"
+
+msgid "Storages found"
+msgstr "Almacenamiento encontrado"
+
+msgid "String containing current time in yyyyMMdd-hhmmss format."
+msgstr "Cadena que contiene la hora actual en formato aaaaMMdd-hhmmss."
+
+msgid "String containing filament type of the first used extruder."
+msgstr ""
+"Cadena que contiene el tipo de filamento del primer extrusor utilizado."
+
+msgid "Stroke of shape (%1%) contains unsupported: %2%."
+msgstr "Trazo de forma (%1%) contiene no soportado: %2%"
+
+msgid "Stroke of shape (%1%) is too thin (minimal width is %2% mm)."
+msgstr ""
+"El trazo de la forma (%1%) es demasiado fino (la anchura mínima es %2% mm)"
+
+msgid "Style \"%1%\" can't be used and will be removed from a list."
+msgstr "El estilo \"%1%\" no se puede usar y se eliminará de la lista."
+
+msgid "Successfully created G-code ASCII file"
+msgstr "Archivo ASCII de código G creado con éxito"
+
+msgid "Successfully created G-code binary file"
+msgstr "Archivo binario de código G creado con éxito"
+
+msgid "Support only in enforced regions"
+msgstr "Soporte sólo en las regiones forzadas"
+
+msgid "Supports binary G-code"
+msgstr "Compatible con Código G binario"
+
+msgid "Support tree building strategy"
+msgstr "Estrategia de construcción de árboles de soportes"
+
+msgid "Support tree type"
+msgstr "Tipo de soporte de árbol"
+
+msgid "Suppress \" Template \" filament presets"
+msgstr "Suprimir los ajustes de filamentos \" Plantilla \""
+
+msgid ""
+"Suppress \" Template \" filament presets in configuration wizard and sidebar "
+"visibility."
+msgstr ""
+"Suprimir los ajustes de filamentos \" Plantilla \" en el asistente de "
+"configuración y en la visibilidad de la barra lateral."
+
+msgid "SVG actions"
+msgstr "Acciones del SVG"
+
+msgid "SVG file does NOT contain a single path to be embossed (%1%)."
+msgstr "El archivo SVG NO contiene una ruta única para el relieve (%1%)."
+
+msgid "SVG file path is \"%1%\""
+msgstr "La ruta del archivo SVG es \"%1%\""
+
+msgid "SVG move"
+msgstr "Mover SVG"
+
+msgid "SVG rotate"
+msgstr "Rotar SVG"
+
+msgid "SWISS"
+msgstr "SUIZA"
+
+msgid ""
+"Synchronize support layers with the object print layers. This is useful with "
+"multi-material printers, where the extruder switch is expensive. This option "
+"is only available when top contact Z distance is set to zero."
+msgstr ""
+"Sincroniza las capas de soporte con las capas de impresión del objeto. Esto "
+"es útil con impresoras multi-material, donde el cambio de extrusor es "
+"costoso. Esta opción sólo está disponible cuando la distancia Z del contacto "
+"superior está ajustada a cero."
+
+msgid "Target directory"
+msgstr "Directorio de destino"
+
+msgid ""
+"Temperature difference to be applied when an extruder is not active. The "
+"value is not used when 'idle_temperature' in filament settings is defined."
+msgstr ""
+"La diferencia de temperatura que se aplicará cuando un extrusro no esté "
+"activo. El valor no se usa cuando está definido 'idle_temperature' en los "
+"ajustes del filamento."
+
+msgid "Template presets"
+msgstr "Plantillas de ajustes"
+
+msgid "(Templates)"
+msgstr "(Plantillas)"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Text contains character glyph (represented by '?') unknown by font."
+msgstr ""
+"El texto contiene un glifo de carácter (representado por '?') desconocido "
+"por la fuente."
+
+msgid "Text doesn't show current horizontal alignment."
+msgstr "El texto no muestra la alineación horizontal actual."
+
+msgid "Text input doesn't show font boldness."
+msgstr "La entrada de texto no muestra la negrita de la fuente."
+
+msgid "Text input doesn't show font skew."
+msgstr "La entrada de texto no muestra la cursiva de la fuente."
+
+msgid "Text input doesn't show gap between lines."
+msgstr "La entrada de texto no muestra el espacio entre líneas."
+
+msgid "Text move"
+msgstr "Mover Texto"
+
+msgid "Text rotate"
+msgstr "Rotar Texto"
+
+msgid ""
+"Text tool\n"
+"Did you know that you can add custom text labels to your models or even use "
+"the text as a modifier? Learn more in the documentation."
+msgstr ""
+"Herramienta de texto\n"
+"¿Sabías que puedes añadir etiquetas de texto personalizadas a tus modelos o "
+"incluso utilizar el texto como modificador? Más información en la "
+"documentación."
+
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+"El ángulo del diámetro de las ramas a medida que se hacen gradualmente más "
+"gruesas hacia la parte inferior. Un ángulo de 0 hará que las ramas tengan un "
+"grosor uniforme en toda su longitud. Un poco de ángulo puede aumentar la "
+"estabilidad del soporte orgánico."
+
+msgid ""
+"The currently manipulated object is tilted or contains tilted parts "
+"(rotation angles are not multiples of 90°). Non-uniform scaling of tilted "
+"objects is only possible in non-local coordinate systems, once the rotation "
+"is embedded into the object coordinates."
+msgstr ""
+"El objeto manipulado actualmente está inclinado o contiene partes inclinadas "
+"(los ángulos de rotación no son múltiplos de 90°). El escalado no uniforme "
+"de objetos inclinados sólo es posible en sistemas de coordenadas no locales, "
+"una vez que la rotación está incrustada en las coordenadas del objeto."
+
+msgid ""
+"The diameter of the thinnest branches of organic support. Thicker branches "
+"are more sturdy. Branches towards the base will be thicker than this."
+msgstr ""
+"El diámetro de las ramas más delgadas del soporte orgánico. Las ramas más "
+"gruesas son más robustas. Las ramas hacia la base serán más gruesas."
+
+msgid "The download has failed"
+msgstr "La descarga ha fallado"
+
+msgid ""
+"The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
+"use the one that is available (non-soluble would be preferred)."
+msgstr ""
+"El extrusor a utilizar cuando se imprime el perímetro de la torre de "
+"limpieza. Configúralo a 0 para usar el que esté disponible (sería preferible "
+"no soluble)."
+
+msgid "The following characters are not allowed in the name"
+msgstr "Los siguientes caracteres no están permitidos en el nombre"
+
+msgid "The following suffix is not allowed in the name"
+msgstr "El sufijo siguiente no está permitido en el nombre"
+
+msgid ""
+"The maximum angle of the branches, when the branches have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle to be able to have more reach."
+msgstr ""
+"El ángulo máximo de las ramas, cuando las ramas tienen que evitar el modelo. "
+"Utiliza un ángulo más bajo para que sean más verticales y más estables. "
+"Utiliza un ángulo mayor para poder tener más alcance."
+
+msgid "The name is too long."
+msgstr "El nombre es demasiado largo."
+
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr "El objeto %1% supera la altura máxima del volumen de impresión."
+
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+"El ángulo preferido de las ramas, cuando no tienen que evitar el modelo. "
+"Utiliza un ángulo más bajo para que sean más verticales y más estables. "
+"Utiliza un ángulo más alto para que las ramas se fusionen más rápido."
+
+msgid ""
+"The profile in the imported archive is corrupted and will not be loaded."
+msgstr "El perfil del archivo importado está dañado y no se cargará."
+
+msgid ""
+"There are no new released versions online. The latest release version is %1%."
+msgstr "No hay nuevas versiones en línea. La última versión publicada es %1%."
+
+msgid "There are several files being loaded."
+msgstr "Se están cargando varios archivos."
+
+msgid "There are several files being loaded, including Project files."
+msgstr "Se están cargando varios archivos, incluidos archivos de Proyecto."
+
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+"Hay varias direcciones IP que resuelven el nombre de host %1%.\n"
+"Por favor, seleccione una de ellas."
+
+msgid "There is no valid surface for text projection."
+msgstr "No hay ninguna superficie válida para la proyección de texto."
+
+msgid ""
+"The selected %1% file contains a post-processing script.\n"
+"Please review the script carefully before exporting G-code."
+msgstr ""
+"El archivo %1% seleccionado contiene un script de post-procesamiento.\n"
+"Revisa detenidamente el script antes de exportar el código G."
+
+msgid ""
+"The selected config file contains a post-processing script.\n"
+"Please review the script carefully before exporting G-code."
+msgstr ""
+"El archivo config seleccionado contiene un script de post-procesamiento.\n"
+"Revisa detenidamente el script antes de exportar el código G."
+
+msgid "The selected file is already in ASCII format."
+msgstr "El archivo seleccionado ya se encuentra en formato ASCII."
+
+msgid "The selected file is already in binary format."
+msgstr "El archivo seleccionado ya se encuentra en formato binario."
+
+msgid ""
+"The selected G-code flavor does not support the machine limitation for "
+"Stealth mode.\n"
+"Stealth mode will not be applied and will be disabled."
+msgstr ""
+"El tipo de G-code seleccionado no permite la limitación de máquina para el "
+"modo furtivo (Stealth).\n"
+"El modo furtivo no se aplicará y será desactivado."
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"El modo Vaso Espiral necesita:\n"
+"- un perímetro\n"
+"- cero capas de tapa superior\n"
+"- 0% densidad de relleno\n"
+"- sin soportes\n"
+"- Desactivar la detección de paredes finas"
+
+msgid ""
+"The text cannot be written using the selected font. Please try choosing a "
+"different font."
+msgstr ""
+"El texto no se puede escribir con la fuente seleccionada. Por favor, prueba "
+"a escoger otra fuente diferente."
+
+msgid ""
+"The vector has two elements: x and y coordinate of the point. Values in mm."
+msgstr ""
+"El vector tiene dos elementos: coordenada x e y del punto. Valores en mm."
+
+msgid ""
+"The vector has two elements: x and y dimension of the bounding box. Values "
+"in mm."
+msgstr ""
+"El vector tiene dos elementos: dimensión x e y de la caja delimitadora. "
+"Valores en mm."
+
+msgid "The volume to be rammed before the toolchange."
+msgstr "El volumen para hacer ramming antes del cambio de cabezal."
+
+msgid ""
+"The Wipe Tower is currently only supported for the Marlin, Klipper, RepRap/"
+"Sprinter, RepRapFirmware and Repetier G-code flavors."
+msgstr ""
+"Actualmente, la Torre de Limpieza sólo es compatible con las versiones "
+"Marlin, Klipper, RepRap/Sprinter, RepRapFirmware y Repetier G-code."
+
+msgid "Thin fragile part"
+msgstr "Una pieza fina frágil"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency"
+msgstr ""
+"La acción romperá la información de un corte.\n"
+"Tras ello PrusaSlicer no puede garantizar la consistencia del modelo"
+
+msgid ""
+"This action will break a cut information.\n"
+"After that PrusaSlicer can't guarantee model consistency."
+msgstr ""
+"La acción romperá la información de un corte.\n"
+"Tras ello PrusaSlicer no puede garantizar la consistencia del modelo."
+
+msgid ""
+"This is the acceleration your printer will use for external perimeters. Set "
+"zero to use the value for perimeters."
+msgstr ""
+"Esta es la aceleración que tu impresora utilizará para los perímetros "
+"externos. Establezca a cero para utilizar el valor para perímetros."
+
+msgid ""
+"This is the acceleration your printer will use for solid infill. Set zero to "
+"use the value for infill."
+msgstr ""
+"Esta es la aceleración que tu impresora utilizará para el relleno sólido. "
+"Establezca a cero para utilizar el valor para el relleno."
+
+msgid ""
+"This is the acceleration your printer will use for top solid infill. Set "
+"zero to use the value for solid infill."
+msgstr ""
+"Esta es la aceleración que tu impresora utilizará para el relleno sólido "
+"superior. Establezca a cero para utilizar el valor para el relleno sólido."
+
+msgid ""
+"This is the acceleration your printer will use for travel moves. Set zero to "
+"disable acceleration control for travel."
+msgstr ""
+"Esta es la aceleración que tu impresora usará para los movimientos de "
+"desplazamiento. Establezca con el valor cero para deshabilitar el control de "
+"aceleración para los desplazamientos."
+
+msgid "This name is reserved, use another."
+msgstr "Este nombre está reservado, usa otro."
+
+msgid "This name is used for an external profile name, use another."
+msgstr "Este nombre ya se usa para un nombre de perfil externo, usa otro."
+
+msgid "This name is used for a system profile name, use another."
+msgstr "Este nombre ya se usa para un nombre de perfil del sistema, usa otro."
+
+msgid "This operation is irreversible."
+msgstr "Esta operación es irreversible."
+
+msgid ""
+"This option causes the inner seams to be shifted backwards based on their "
+"depth, forming a zigzag pattern."
+msgstr ""
+"Esta opción hace que las costuras internas se desplacen hacia atrás en "
+"función de su profundidad, formando un patrón en zigzag."
+
+msgid ""
+"This option will drop the temperature of the inactive extruders to prevent "
+"oozing."
+msgstr ""
+"Esta opción bajará la temperatura de los extrusores inactivos para prevenir "
+"el goteo."
+
+msgid "This setting enables dynamic fan speed control on overhangs."
+msgstr ""
+"Este ajuste permite el control dinámico de la velocidad del ventilador en "
+"voladizos."
+
+msgid "This setting enables dynamic speed control on overhangs."
+msgstr "Este ajuste permite el control dinámico de la velocidad en voladizos."
+
+msgid ""
+"This setting uses G10 and G11 commands to have the firmware handle the "
+"retraction. Note that this has to be supported by firmware."
+msgstr ""
+"Este ajuste utiliza los comandos G10 y G11 para que el firmware se encargue "
+"de la retracción. Ten en cuenta que esto tiene que ser soportado por el "
+"firmware."
+
+msgid ""
+"This start procedure is inserted at the beginning, possibly prepended by "
+"temperature-changing commands. See 'autoemit_temperature_commands'."
+msgstr ""
+"Este proceso de inicio se inserta al principio, posiblemente precedido por "
+"órdenes de cambio de temperatura. Mira 'autoemit_temperature_commands'."
+
+msgid "Timestamp"
+msgstr "Marca de tiempo"
+
+msgid "Timestamps"
+msgstr "Marcas de tiempo"
+
+msgid "Tiny / Wide glyphs"
+msgstr "Glifos Diminutos / Anchos"
+
+msgid "Tip Diameter"
+msgstr "Diámetro de la Punta"
+
+msgid "Tolerance"
+msgstr "Tolerancia"
+
+msgid ""
+"To manipulate with solid parts or negative volumes you have to invalidate "
+"cut information first."
+msgstr ""
+"Para manipular piezas sólidas o volúmenes negativos tienes que invalidar la "
+"información del corte primero."
+
+msgid "Toolchange parameters with multi extruder MM printers"
+msgstr ""
+"Parámetros del cambio de herramienta para impresoras de un extrusor múltiple "
+"MM"
+
+msgid "Toolchange Z"
+msgstr "Cambio de herramienta Z"
+
+msgid "Too small, enlarged font height inside text input."
+msgstr ""
+"Demasiado pequeña, altura de fuente aumentada dentro de la entrada de texto."
+
+msgid "Too tall, diminished font height inside text input."
+msgstr ""
+"Demasiado alta, altura de fuente disminuida dentro de la entrada de texto."
+
+msgid "Top-right corner of first layer bounding box"
+msgstr "Esquina superior derecha del cuadro delimitador de la primera capa"
+
+msgid "Top-right corner of print bed bounding box"
+msgstr ""
+"Esquina superior derecha del cuadro delimitador de la base de impresión"
+
+msgid ""
+"To save cut information you can delete all connectors from all related "
+"objects."
+msgstr ""
+"Para guardar la información del corte, puedes eliminar todos los conectores "
+"de todos los objetos relacionados."
+
+msgid "Total cost"
+msgstr "Coste total"
+
+msgid ""
+"Total cost of all material used in the print. Calculated from cost in "
+"Filament Settings."
+msgstr ""
+"Coste total de todo el material utilizado en la impresión. Calculado a "
+"partir del coste en Configuración de Filamento."
+
+msgid ""
+"Total cost of the material wasted on the wipe tower. Calculated from cost in "
+"Filament Settings."
+msgstr ""
+"Coste total del material desperdiciado en la torre de limpieza. Calculado a "
+"partir del coste en Configuración de Filamento."
+
+msgid "Total filament volume extruded on the wipe tower."
+msgstr "Volumen total de filamento extruido en la torre de limpieza."
+
+msgid "Total filament volume extruded per extruder during the entire print."
+msgstr ""
+"Volumen total de filamento extruido por extrusor durante toda la impresión."
+
+msgid "Total layer count"
+msgstr "Número total de capas"
+
+msgid "Total length of filament used in the print."
+msgstr "Longitud total del filamento utilizado en la impresión."
+
+msgid ""
+"Total number of extruders, regardless of whether they are used in the "
+"current print."
+msgstr ""
+"Número total de extrusores, independientemente de si se utilizan en la "
+"impresión actual."
+
+msgid "Total number of object instances in the print, summed over all objects."
+msgstr ""
+"Número total de instancias de objetos en la impresión, sumado sobre todos "
+"los objetos."
+
+msgid "Total number of objects in the print."
+msgstr "Número total de objetos en la impresión."
+
+msgid "Total number of toolchanges"
+msgstr "Número total de cambios de herramienta"
+
+msgid "Total volume"
+msgstr "Volumen total"
+
+msgid "Total volume of filament used during the entire print."
+msgstr "Volumen total de filamento utilizado durante toda la impresión."
+
+msgid "Total weight"
+msgstr "Peso total"
+
+msgid ""
+"Total weight of the print. Calculated from density in Filament Settings."
+msgstr ""
+"Peso total de la impresión. Calculado a partir de la densidad en "
+"Configuración del Filamento."
+
+msgid "Total wipe tower cost"
+msgstr "Coste total de la torre de limpieza"
+
+msgid ""
+"Transfer the selected options from left preset to the right.\n"
+"Note: New modified presets will be selected in settings tabs after close "
+"this dialog."
+msgstr ""
+"Transfiere las opciones seleccionadas del ajuste izquierdo al derecho.\n"
+"Nota: Los nuevos ajustes modificados se seleccionarán en las pestañas de "
+"ajustes después de cerrar este cuadro de diálogo."
+
+msgid "Transfer values from left to right"
+msgstr "Transferir valores de izquierda a derecha"
+
+msgid "Translate (relative) [World]"
+msgstr "Trasladar (relativo) [Mundial]"
+
+msgid "Travel lift"
+msgstr "Elevación en recorrido"
+
+msgid "Triangle"
+msgstr "Triángulo"
+
+msgid "Unable to open output file."
+msgstr "No se puede abrir el archivo de salida."
+
+msgid "Unable to open the selected file."
+msgstr "No se puede abrir el archivo seleccionado."
+
+msgid ""
+"Unable to perform boolean operation on model meshes. Only positive parts "
+"will be exported."
+msgstr ""
+"Incapaz de realizar la operación booleana sobre las mallas del modelo. Solo "
+"se exportarán piezas positivas."
+
+msgid "Unable to save file"
+msgstr "No se ha podido guardar el archivo"
+
+msgid "Unavailable for this method."
+msgstr "No disponible para este método."
+
+msgid "Undefined fill type"
+msgstr "Tipo de relleno no definido"
+
+msgid "Undefined stroke type"
+msgstr "Tipo de trazo no definido"
+
+msgid "Undo boldness"
+msgstr "Deshacer negrita"
+
+msgid "Undo letter's skew"
+msgstr "Deshacer la inclinación de la letra"
+
+msgid "Undo rotation"
+msgstr "Deshacer rotación"
+
+msgid "Undo translation"
+msgstr "Deshacer traducción"
+
+msgid "Unexpected character"
+msgstr "Carácter inesperado"
+
+msgid "Unknown archive format: %s"
+msgstr "Formato de archivo desconocido: %s"
+
+msgid "Unknown filename"
+msgstr "Nombre de archivo desconocido"
+
+msgid "Unlock the text's rotation when moving text along the object's surface."
+msgstr ""
+"Desbloquea la rotación del texto mientras se mueve sobre la superficie del "
+"objeto."
+
+msgid "Unselect"
+msgstr "Deseleccionar"
+
+msgid "Unselect center"
+msgstr "Deseleccionar centro"
+
+msgid "Unselect feature"
+msgstr "Deseleccionar función"
+
+msgid "Unselect point"
+msgstr "Deseleccionar punto"
+
+msgid "Unset bold"
+msgstr "Deshacer negrita"
+
+msgid "Unset italic"
+msgstr "Deshacer cursiva"
+
+msgid "Upload has failed. There is no suitable storage found at %1%."
+msgstr ""
+"La carga ha fallado. No se ha encontrado almacenamiento adecuado en %1%."
+
+msgid "Upload to Queue"
+msgstr "Cargar a la Cola"
+
+msgid "Upload to storage"
+msgstr "Cargar al almacenamiento"
+
+msgid ""
+"URL of PrusaConnect is different from https://connect.prusa3d.com. Do you "
+"want to continue?"
+msgstr ""
+"El URL de PrusaConnect es diferente de https://connect.prusa3d.com. ¿Quieres "
+"continuar?"
+
+msgid "Use binary G-code when the printer supports it"
+msgstr "Utilizar código G binario cuando la impresora lo admita"
+
+msgid "Used filament types"
+msgstr "Tipos de filamento usados"
+
+msgid "Use ramping lift"
+msgstr "Utilizar elevación en rampa"
+
+msgid "Use surface"
+msgstr "Usar superficie"
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr "La atura de capa variable no es compatible con los soportes Orgánicos."
+
+msgid ""
+"Vector of booleans stating whether a given extruder is used in the print."
+msgstr ""
+"Vector de booleanas que indican si un determinado extrusor se utiliza en la "
+"impresión."
+
+msgid ""
+"Vector of points of the first layer convex hull. Each element has the "
+"following format: '[x, y]' (x and y are floating-point numbers in mm)."
+msgstr ""
+"Vector de puntos del casco convexo de la primera capa. Cada elemento tiene "
+"el siguiente formato '[x, y]' (x e y son números de coma flotante en mm)."
+
+msgid "Vertex"
+msgstr "Vertex"
+
+msgid "Volume per extruder"
+msgstr "Volumen por extrusor"
+
+msgid "Weight per extruder"
+msgstr "Peso por extrusor"
+
+msgid ""
+"Weight per extruder extruded during the entire print. Calculated from "
+"density in Filament Settings."
+msgstr ""
+"Peso por extrusor extruido durante toda la impresión. Calculado a partir de "
+"la densidad en Configuración del Filamento."
+
+msgid "Welcome to %1% version %2%."
+msgstr "Bienvenido a %1% versión %2%."
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Bienvenido al %s Ayudante de Configuración"
+
+msgid ""
+"When checked, whenever dragging and dropping a project file on the "
+"application or open it from a browser, shows a dialog asking to select the "
+"action to take on the file to load."
+msgstr ""
+"Cuando está marcada, cada vez que se arrastra y suelta un archivo de "
+"proyecto en la aplicación, muestra un cuadro de diálogo que solicita "
+"seleccionar la acción a realizar en el archivo a cargar."
+
+msgid ""
+"When enabled, PrusaSlicer will check whether your Custom Start G-Code "
+"contains M104 or M190. If so, the temperatures will not be emitted "
+"automatically so you're free to customize the order of heating commands and "
+"other custom actions. Note that you can use placeholder variables for all "
+"PrusaSlicer settings, so you can put a \"M109 S[first_layer_temperature]\" "
+"command wherever you want.\n"
+"If your Custom Start G-Code does NOT contain M104 or M190, PrusaSlicer will "
+"execute the Start G-Code after bed reached its target temperature and "
+"extruder just started heating.\n"
+"\n"
+"When disabled, PrusaSlicer will NOT emit commands to heat up extruder and "
+"bed, leaving both to Custom Start G-Code."
+msgstr ""
+"Cuando se activa, PrusaSlicer comprobará si tu G-code Inicial Personalizado "
+"contiene M104 o M190. En ese caso, las temperaturas no se emitirán "
+"automáticamente así que puedes personalizar libremente las órdenes de "
+"calentamiento y otras acciones personalizadas. Ten en cuenta que puedes "
+"emplear variables para todos los ajustes de PrusaSlicer, así que puedes "
+"poner una orden \"M109 S[first_layer_temperature]\"  donde tú quieras. \n"
+"Si tu G-code Inicial Personalizado NO contiene M104 o M190, PrusaSlicer "
+"ejecutará el G-code Inicial después de que la base alcance la temperatura "
+"deseada y el extrusor se comience a calentar.\n"
+"\n"
+"Cuando se desactiva, PrusaSlicer NO emitirá órdenes de calentamiento de la "
+"base y el extrusor, dejando ambos al G-code Inicial Personalizado."
+
+msgid "Whether or not wipe tower is being generated in the print."
+msgstr "Si se está generando o no la torre de limpieza en la impresión."
+
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+"Mientras que el objeto %1% se ajusta al volumen de impresión, su última capa "
+"excede la altura máxima del volumen de impresión."
+
+msgid "Width of SVG."
+msgstr "Ancho del SVG."
+
+msgid "Wi-Fi Configuration File"
+msgstr "Archivo de Configuración Wi-Fi"
+
+msgid "Wi-Fi Configuration File Generator"
+msgstr "Generador de Archivos de Configuración Wi-Fi"
+
+msgid "Wipe tower extruder"
+msgstr "Extrusor de la torre de limpieza"
+
+msgid "Wipe tower purge lines spacing"
+msgstr "Espaciado de las líneas de purga en la torre de limpieza"
+
+msgid "Wipe tower volume"
+msgstr "Volumen de la torre de limpieza"
+
+msgid "Write"
+msgstr "Escribir"
+
+msgid "Write this file on the USB flash drive. Its name will be %1%."
+msgstr "Escribir este archivo en la memoria USB. Su nombre será %1%."
+
+msgid "Write Wi-Fi credentials."
+msgstr "Credenciales Wi-Fi."
+
+msgid "Year"
+msgstr "Año"
+
+msgid "You are currently running the latest released version %1%."
+msgstr "Estás ejecutando la última versión publicada %1%."
+
+msgid ""
+"You are exporting binary G-code for a Prusa printer. Binary G-code enables "
+"significantly faster uploads. Ensure that your printer is running firmware "
+"version 5.1.0 or newer, as older versions do not support binary G-codes.\n"
+"\n"
+"To learn more about binary G-code, visit <a href=%1%>%1%</a>."
+msgstr ""
+"Estás exportando código G binario para una impresora Prusa. El código G "
+"binario permite cargas significativamente más rápidas. Asegúrate de que su "
+"impresora ejecuta la versión de firmware 5.1.0 o posterior, ya que las "
+"versiones anteriores no admiten códigos G binarios.\n"
+"\n"
+"Para saber más sobre el código G binario, visita <a href=%1%>%1%</a>."
+
+msgid ""
+"You can use all configuration options as variables inside this template. For "
+"example: [layer_height], [fill_density] etc. You can also use [timestamp], "
+"[year], [month], [day], [hour], [minute], [second], [version], "
+"[input_filename_base], [default_output_extension]."
+msgstr ""
+"Puedes utilizar todas las opciones de configuración como variables dentro de "
+"esta plantilla. Por ejemplo: [layer_height], [fill_density] etc. También "
+"puedes usar [timestamp], [year], [month], [day], [hour], [minute], [second], "
+"[version], [input_filename], [input_filename_base], "
+"[default_output_extension]."
+
+msgid ""
+"You have selected template filament. Please note that these filaments are "
+"available for all printers but are NOT certain to be compatible with your "
+"printer. Do you still wish to have this filament selected?\n"
+"(This message won't be displayed again.)"
+msgstr ""
+"Ha seleccionado un filamento de la plantilla. Ten en cuenta que estos "
+"filamentos están disponibles para todas las impresoras, pero NO es seguro "
+"que sean compatibles con tu impresora. ¿Todavía deseas tener este filamento "
+"seleccionado?\n"
+"(Este mensaje no volverá a aparecer.)"
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+"Es posible que desees reducir el tamaño de su modelo o cambiar la "
+"configuración de impresión actual y volver a intentarlo."
+
+msgid "Your %1% is up to date."
+msgstr "Tu %1% está actualizada."
+
+msgid "Your Prusa printer should load this file automatically."
+msgstr "Tu impresora Prusa debería cargar este archivo automáticamente."
+
+msgid "You try to delete an object which is a part of a cut object."
+msgstr "Estás intentando borrar un objeto que es parte de un objeto cortado."
+
+msgid "Zero-based index of currently used extruder."
+msgstr "Índice basado en cero del extrusor utilizado actualmente."
+
+msgid ""
+"Zero-based index of currently used extruder (i.e. first extruder has index "
+"0)."
+msgstr ""
+"Índice basado en cero del extrusor utilizado actualmente (es decir, el "
+"primer extrusor tiene el índice 0)."
+
+msgid "Zero-based index of the current layer (i.e. first layer is number 0)."
+msgstr ""
+"Índice de base cero de la capa actual (es decir, la primera capa es el "
+"número 0)."
+
+msgid ""
+"Zero-based index of the first extruder used in the print. Same as "
+"initial_extruder."
+msgstr ""
+"Índice de base cero del primer extrusor utilizado en la impresión. Igual que "
+"initial_extruder."
+
+msgid ""
+"Zero-based index of the first extruder used in the print. Same as "
+"initial_tool."
+msgstr ""
+"Índice de base cero del primer extrusor utilizado en la impresión. Igual que "
+"initial_tool."

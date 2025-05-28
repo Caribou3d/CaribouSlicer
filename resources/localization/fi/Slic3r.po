@@ -1,0 +1,2675 @@
+# Translation file for finnish
+# Copyright (C) 2021
+# This file is distributed under the same license as Slic3r.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Slic3r\n"
+"POT-Creation-Date: 2025-05-29 00:00\n"
+"PO-Revision-Date: 2025-05-29 00:00\n"
+"Last-Translator:\n"
+"Language-Team:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language:fi\n"
+
+msgid ""
+"%1% marked with <b>*</b> are <b>not</b> compatible with some installed "
+"printers."
+msgstr ""
+"%1% merkittynä <b>*</b>-symboleilla <b>eivät</b> ole yhteensopivia joidenkin "
+"ladattujen tulostimien kanssa."
+
+msgid "%1%d"
+msgstr "%1%d"
+
+msgid "%1%h"
+msgstr "%1%h"
+
+msgid "%1%m"
+msgstr "%1%m"
+
+msgid "%1%s"
+msgstr "%1%s"
+
+msgid "%s - BREAKING CHANGE"
+msgstr "%s - RIKKOVA MUUTOS"
+
+msgid "%s Family"
+msgstr "%s Perhe"
+
+msgid "%s View Mode"
+msgstr "%s Katselutila"
+
+msgid "&Configuration"
+msgstr "&Konfiguraatio"
+
+msgid "&Convert"
+msgstr "&Muunna"
+
+msgid "&Copy"
+msgstr "K&opioi"
+
+msgid "&Edit"
+msgstr "&Muokkaa"
+
+msgid "&File"
+msgstr "&Tiedosto"
+
+msgid "&Finish"
+msgstr "&Valmis"
+
+msgid "&Fullscreen"
+msgstr "&Koko näyttö"
+
+msgid "&Help"
+msgstr "&Apua"
+
+msgid "&New Project"
+msgstr "&Uusi projekti"
+
+msgid "&Next >"
+msgstr "&Seuraava >"
+
+msgid "&Open G-code"
+msgstr "&Avaa G-koodi"
+
+msgid "&Paste"
+msgstr "L&iitä"
+
+msgid "&Preferences"
+msgstr "&Asetukset"
+
+msgid "&Quit"
+msgstr "&Lopeta"
+
+msgid "&Redo"
+msgstr "&Toista"
+
+msgid "&Repair STL file"
+msgstr "&Korjaa STL-tiedosto"
+
+msgid "&Select All"
+msgstr "&Valitse kaikki"
+
+msgid "&Undo"
+msgstr "&Kumoa"
+
+msgid "&View"
+msgstr "&Näkymä"
+
+msgid "&Window"
+msgstr "&Ikkuna"
+
+msgid "(All)"
+msgstr "(kaikki)"
+
+msgid "(minimum)."
+msgstr "(minimi)."
+
+msgid "(Re)Slice No&w"
+msgstr "(Uudelleen)Viipaloi Ny&t"
+
+msgid "(Templates)"
+msgstr "(pohjat)"
+
+msgid "0 (off)"
+msgstr "0 (pois)"
+
+msgid "1 (light)"
+msgstr "1 (kevyt)"
+
+msgid "2 (default)"
+msgstr "2 (oletus)"
+
+msgid "3 (heavy)"
+msgstr "3 (raskas)"
+
+msgid "3D Honeycomb"
+msgstr "3D-hunajakenno"
+
+msgid "< &Back"
+msgstr "< &Takaisin"
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "Nyrkkisääntönä on 160-230 °C PLA:lle ja 215-250 °C ABS:lle."
+
+msgid "Abort"
+msgstr "Peru"
+
+msgid "About %s"
+msgstr "Tietoja: %s"
+
+msgid "Accuracy"
+msgstr "Tarkkuus"
+
+msgid "Accurate"
+msgstr "Tarkkuus"
+
+msgid "Activate"
+msgstr "Aktivoi"
+
+msgid "Active"
+msgstr "Aktiivinen"
+
+msgid "active"
+msgstr "aktiivinen"
+
+msgid "Add"
+msgstr "Lisää"
+
+msgid "Add color change"
+msgstr "Lisää värinvaihto"
+
+msgid "Add custom G-code"
+msgstr "Lisää mukautettu G-koodi"
+
+msgid "Add negative SVG"
+msgstr "Lisää negatiivinen tilavuus"
+
+msgid "Add negative volume"
+msgstr "Lisää negatiivinen tilavuus"
+
+msgid "Add part"
+msgstr "Lisää osa"
+
+msgid "Add pause print"
+msgstr "Lisää tulostuksen tauko"
+
+msgid "Add point"
+msgstr "Lisää piste"
+
+msgid "Add point to selection"
+msgstr "Lisää piste valintaan"
+
+msgid "Add settings"
+msgstr "Lisää asetuksia"
+
+msgid "Add SVG part"
+msgstr "Lisää osa"
+
+msgid "Add text"
+msgstr "Lisää tekstiä"
+
+msgid "Add..."
+msgstr "Lisää..."
+
+msgid "Add/Remove filaments"
+msgstr "Lisää/Poista tulostuslankoja"
+
+msgid "Add/Remove materials"
+msgstr "Lisää/Poista materiaaleja"
+
+msgid "Add/Remove printers"
+msgstr "Lisää/Poista tulostimia"
+
+msgid ""
+"Additionally a backup snapshot of the whole configuration is created before "
+"an update is applied."
+msgstr ""
+"Lisäksi koko kokoonpanosta luodaan tilannekuva varmuuskopioksi ennen kuin "
+"päivitys asennetaan."
+
+msgid "Address"
+msgstr "Osoite"
+
+msgid "Advanced"
+msgstr "Kehittynyt"
+
+msgid "Advanced mode"
+msgstr "Kehittynyt tila"
+
+msgid "Alignment"
+msgstr "Tasaus"
+
+msgid "All"
+msgstr "Kaikki"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "Kaikki ladatut tulostimet ovat yhteensopivia valitun %1%;n kanssa."
+
+msgid "All standard"
+msgstr "Kaikki standardi"
+
+msgid "All walls"
+msgstr "Kaikki seinät"
+
+msgid "Allow built-in downloader"
+msgstr "Salli sisäänrakennettu lataaja"
+
+msgid "Along X axis"
+msgstr "X-akselia pitkin"
+
+msgid "Along Y axis"
+msgstr "Y-akselia pitkin"
+
+msgid "Along Z axis"
+msgstr "Z-akselia pitkin"
+
+msgid "Also consider enabling brim."
+msgstr "Harkitse myös reunuksen käyttämistä."
+
+msgid "Alternate nozzles:"
+msgstr "Vaihtoehtoiset tulostuskärjet:"
+
+msgid ""
+"An object has enabled XY Size compensation which will not be used because it "
+"is also multi-material painted.\n"
+"XY Size compensation cannot be combined with multi-material painting."
+msgstr ""
+"Objektilla on XY-kokokompensointi päällä, mutta sitä ei käytetä, koska se on "
+"myös monimateriaalimaalattu.\n"
+"XY-kokokompensointia ei voi yhdistää monimateriaalimaalaukseen."
+
+msgid "An unexpected error occured"
+msgstr "Tuntematon virhe tapahtui"
+
+msgid "Any arrow"
+msgstr "Mikä tahansa nuoli"
+
+msgid "API key"
+msgstr "Rajapintaavain"
+
+msgid "App update"
+msgstr "Ohjelmistopäivitys"
+
+msgid "App Update available"
+msgstr "Ohjelmistopäivitys saatavilla"
+
+msgid "App Update download"
+msgstr "Ohjelmistopäivityksen lataus"
+
+msgid "Apply"
+msgstr "Käytä"
+
+msgid "Arachne"
+msgstr "Arachne"
+
+msgid "Arc fitting"
+msgstr "Lisää asetuksia"
+
+msgid "Archive preview"
+msgstr "Arkiston esikatselu"
+
+msgid "Area fill"
+msgstr "Aluetäyttö"
+
+msgid "Arrow Down"
+msgstr "Nuoli alas"
+
+msgid "Arrow Left"
+msgstr "Nuoli vasemmallle"
+
+msgid "Arrow Right"
+msgstr "Nuoli oikealle"
+
+msgid "Arrow Up"
+msgstr "Nuoli ylös"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Automatic updates"
+msgstr "Automaattiset päivitykset"
+
+msgid "Avoid crossing perimeters"
+msgstr "Vältä kehien ylitys"
+
+msgid "Avoid crossing perimeters - Max detour length"
+msgstr "Vältä kehien ylitys - Maksimi kierron pituus"
+
+msgid ""
+"Avoid crossing perimeters option and avoid crossing curled overhangs option "
+"cannot be both enabled together."
+msgstr ""
+"Vältä kehien ylitys-valinta ja vältä kiharien ulokkeiden ylitys-valinta "
+"eivät voi molemmat olla valittuna yhdessä."
+
+msgid "Balanced"
+msgstr "Kehittynyt"
+
+msgid "Bed custom model"
+msgstr "Alustan mukautettu muoto"
+
+msgid "Bed shape"
+msgstr "Alustan muoto"
+
+msgid "Bed Shape"
+msgstr "Alustan muoto"
+
+msgid "Bed Shape and Size"
+msgstr "Alustan muoto ja koko"
+
+msgid "Bed Temperature"
+msgstr "Alustan lämpötila"
+
+msgid "Before roll back"
+msgstr "Ennen palautusta"
+
+msgid "Block seam"
+msgstr "Estä sauma"
+
+msgid "Bottle weight"
+msgstr "Pullon paino"
+
+msgid "Bottom"
+msgstr "Alapuoli"
+
+msgid "Bottom View"
+msgstr "Alanäkymä"
+
+msgid "Box"
+msgstr "Laatikko"
+
+msgid "Branch Diameter"
+msgstr "Oksan alkaisija"
+
+msgid "Branch Diameter Angle"
+msgstr "Oksan halkaisijan kulma"
+
+msgid "Brim"
+msgstr "Reunus"
+
+msgid "Browse"
+msgstr "Selaa"
+
+msgid "Brush"
+msgstr "Harja"
+
+msgid "Build Volume"
+msgstr "Tulostustilavuus"
+
+msgid "Buttons And Text Colors Description"
+msgstr "Painikkeiden ja tekstien värien selitykset"
+
+msgid "Calculating overhanging perimeters"
+msgstr "Luodaan kehiä"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "CANCELED"
+msgstr "PERUTTU"
+
+msgid "Center"
+msgstr "Keskikohta"
+
+msgid "Change cut mode"
+msgstr "Muuta tyyppiä"
+
+msgid "Change extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "Change extruder (N/A)"
+msgstr "Vaihda ekstruuderia (ei saatavilla)"
+
+msgid "Change file"
+msgstr "Muuta tyyppiä"
+
+msgid "Change SVG Type"
+msgstr "Muuta tyyppiä"
+
+msgid "Change type"
+msgstr "Muuta tyyppiä"
+
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"Tyylin muuttaminen arvoon \"%1%\" hylkää nykyisen tyylimuutoksen.\n"
+"\n"
+"Haluatko silti jatkaa?"
+
+msgid "Check for application updates"
+msgstr "Tarkista sovelluspäivitykset"
+
+msgid "Check for Application Updates"
+msgstr "Tarkista ohjelmapäivitykset"
+
+msgid "Check for Configuration Updates"
+msgstr "Tarkista konfiguraatiopäivitykset"
+
+msgid "Check for configuration updates"
+msgstr "Tarkista konfiguraatiopäivitykset"
+
+msgid "Check for new version of application"
+msgstr "Tarkista uudet ohjelmaversiot"
+
+msgid "Choose a file to import bed texture from (PNG/SVG):"
+msgstr "Valitse tiedosto josta tuoda alustan tekstuuri (PNG/SVG):"
+
+msgid "Choose an STL file to import bed model from:"
+msgstr "Valitse STL-tiedosto josta valita alustan muoto:"
+
+msgid "Choose an STL file to import bed shape from:"
+msgstr "Valitse STL-tiedosto josta valita alustan muoto:"
+
+msgid "Choose folder"
+msgstr "Valitse kansio"
+
+msgid "Choose one file (3MF/AMF):"
+msgstr "Valitse yksi tiedosto (3MF/AMF):"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
+msgstr "Valitse yksi tai useampi tiedosto (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose SLA archive"
+msgstr "Valitse ZIP-tiedosto"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "Valitse tulostimesi käyttämä laiteohjelmiston tyyppi."
+
+msgid "Choose ZIP file"
+msgstr "Valitse ZIP-tiedosto"
+
+msgid "Chosen directory for downloads does not exist."
+msgstr "Latauksille valittua kansiota ei ole olemassa."
+
+msgid "Circular"
+msgstr "Ympyrämainen"
+
+msgid "Classic"
+msgstr "Klassinen"
+
+msgid "Clear"
+msgstr "&Tyhjennä"
+
+msgid "Click to show"
+msgstr "Napauta näyttääksesi"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Color"
+msgstr "Väri"
+
+msgid "Color change"
+msgstr "Värinvaihto"
+
+msgid "Color change (\"%1%\")"
+msgstr "Värinvaihto (\"%1%\")"
+
+msgid "Color change G-code"
+msgstr "Värinvaihdon G-koodi"
+
+msgid "Color changes"
+msgstr "Värinvaihdot"
+
+msgid "Color gradient (%1%)"
+msgstr "Värinvaihto (\"%1%\")"
+
+msgid "Color Print"
+msgstr "Värituloste"
+
+msgid "Comment:"
+msgstr "Kommentti:"
+
+msgid "Configuration &Assistant"
+msgstr "Konfiguraation &avustaja"
+
+msgid "Configuration Assistant"
+msgstr "Konfiguraatioavustaja"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "Konfiguraatiota on muokattu ConfigWizardissa"
+
+msgid "Configuration notes"
+msgstr "Konfiguraation muistiinpanot"
+
+msgid "Configuration Snapshots"
+msgstr "Konfiguraation tilannekuva"
+
+msgid "Configuration update is available"
+msgstr "Konfiguraatiopäivitys saatavilla"
+
+msgid "Configuration update is available."
+msgstr "Konfiguraatiopäivitys saatavilla."
+
+msgid ""
+"Configuration update is available. Update contains new printer releases."
+msgstr "Konfiguraatiopäivitys saatavilla."
+
+msgid "Confirm"
+msgstr "Varmista"
+
+msgid "Connector"
+msgstr "Liitin"
+
+msgid "Connectors information"
+msgstr "Informaatio"
+
+msgid "Continue"
+msgstr "Jatka"
+
+msgid "continue"
+msgstr "jatka"
+
+msgid "Copy"
+msgstr "Kopioi"
+
+msgid "Copy Version Info"
+msgstr "Kopioi versioinformaatio"
+
+msgid ""
+"Copying of the temporary G-code has finished but the exported code couldn't "
+"be opened during copy check. The output G-code is at %1%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti onnistui, mutta vietyä koodia ei voitu avata "
+"kopiointitarkastuksen aikana. Tuotettu G-koodi sijaitsee %1%.tmp;ssä."
+
+msgid ""
+"Copying of the temporary G-code has finished but the original code at %1% "
+"couldn't be opened during copy check. The output G-code is at %2%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti onnistui mutta alkuperäistä koodia %1%;ssä ei "
+"voitu avata kopiointitarkastuksen aikana.  Tuotettu G-koodi sijaitsee %2%."
+"tmp;ssä."
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. Maybe the SD "
+"card is write locked?\n"
+"Error message: %1%"
+msgstr ""
+"Väliaikaisen G-koodin vienti tuotettuun G-koodiin epäonnistui. SD-Kortti "
+"saattaa olla kirjoituslukittu?\n"
+"Virheilmoitus: %1%"
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. There might be "
+"problem with target device, please try exporting again or using different "
+"device. The corrupted output G-code is at %1%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti tuotettuun G-koodiin epäonnistui. "
+"Kohdelaitteessa saattaa olla ongelma, yritä vientiä uudelleen tai koita eri "
+"laitteella. Korruptoitunut G-koodi sijaitsee %1%.tmp -tiedostossa."
+
+msgid "Copyright"
+msgstr "Tekijänoikeus"
+
+msgid "Cost"
+msgstr "Hinta"
+
+msgid "Cost (money)"
+msgstr "Hinta (rahassa)"
+
+msgid "Critical angle"
+msgstr "Kriittinen kulma"
+
+msgid "Critical error"
+msgstr "Kriittinen virhe"
+
+msgid "Cross"
+msgstr "Risti"
+
+msgid "Current extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "Current extruder index"
+msgstr "Nykyinen versio:"
+
+msgid "Current mode is %s"
+msgstr "Tämänhetkinen tila on %s"
+
+msgid "Current object index"
+msgstr "Tämänhetkinen tila on %s"
+
+msgid "Current version:"
+msgstr "Nykyinen versio:"
+
+msgid "Current z-hop"
+msgstr "Nykyinen versio:"
+
+msgid "Custom"
+msgstr "Mukautettu"
+
+msgid "Custom G-codes"
+msgstr "Mukautetut G-koodit"
+
+msgid "Custom Printer"
+msgstr "Mukautettu tulostin"
+
+msgid "Custom Printer Setup"
+msgstr "Mukautettu tulostusasennus"
+
+msgid "Custom profile name:"
+msgstr "Mukautettun profiilin nimi:"
+
+msgid "Cut"
+msgstr "Leikkaa"
+
+msgid "Cylinder"
+msgstr "Sylinteri"
+
+msgid "D&eselect All"
+msgstr "P&oista kaikki valinnat"
+
+msgid "Day"
+msgstr "Näyttö"
+
+msgid "Default"
+msgstr "Oletus"
+
+msgid "default"
+msgstr "oletus"
+
+msgid "Default color"
+msgstr "Oleusväri"
+
+msgid "default color"
+msgstr "oleusväri"
+
+msgid "Default font"
+msgstr "Oletusfontti"
+
+msgid "Default palette for mode markers"
+msgstr "Oletuspaletti tilan merkitsijöille"
+
+msgid "default value"
+msgstr "oletusarvo"
+
+msgid "Define a custom printer profile"
+msgstr "Määrittele mukautettu profiili"
+
+msgid "Delete"
+msgstr "Poista"
+
+msgid "delete"
+msgstr "posta"
+
+msgid "Delete \"%1%\" style."
+msgstr "Poista tyyli \"%1%\"."
+
+msgid "Delete color change"
+msgstr "Poista värinvaihto"
+
+msgid "Delete object"
+msgstr "Poista objekti"
+
+msgid "Delete Object"
+msgstr "Poista Objekti"
+
+msgid "Depth"
+msgstr "Syvyys"
+
+msgid "Deselect by rectangle"
+msgstr "Poista valinta suorakulmiolla"
+
+msgid "Deselects all objects"
+msgstr "Poistaa kaikki valinnat"
+
+msgid "Desktop Integration"
+msgstr "Työpöytäintegraatio"
+
+msgid "Diameter"
+msgstr "Halkaisija"
+
+msgid ""
+"Diameter of the print bed. It is assumed that origin (0,0) is located in the "
+"center."
+msgstr ""
+"Tulostusalustan halkaisija. Oletetaan että origo (0,0) sijaistee keskellä."
+
+msgid "Disable \"%1%\""
+msgstr "Poista käytöstä \"%1%\""
+
+msgid "Discard"
+msgstr "Hylkää"
+
+msgid "Discard all custom changes"
+msgstr "Hylkää kaikki mukautukset"
+
+msgid "Display"
+msgstr "Näyttö"
+
+msgid "Display height"
+msgstr "Näytön korkeus"
+
+msgid "Display the Print Host Upload Queue window"
+msgstr "Näytä tulosta isäntäkoneen latausjono-ikkuna"
+
+msgid "Display width"
+msgstr "Näytön leveys"
+
+msgid ""
+"Distance of the 0,0 G-code coordinate from the front left corner of the "
+"rectangle."
+msgstr "Matka 0,0 G-koodin sijainnista etuvasemmasta kulmasta suorakulmiota."
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr "Etäisyys jäähdytysputken keskipisteestä ekstruuderin päähän."
+
+msgid "Distance of the center-point of the cooling tube from the extruder tip."
+msgstr "Etäisyys jäähdytysputken keskipisteestä ekstruuderin päähän."
+
+msgid "Divide by zero"
+msgstr "Jakaa nollalla"
+
+msgid "Do you want to proceed?"
+msgstr "Haluatko jatkaa?"
+
+msgid "Do you want to replace it"
+msgstr "Haluatko korvata sen"
+
+msgid "Do you want to save the changes to \"%1%\"?"
+msgstr "Haluatko tallentaa muutokset kohteeseen \"%1%\"?"
+
+msgid "Don't install"
+msgstr "Älä lataa"
+
+msgid "Don't notify about new releases any more"
+msgstr "Älä enää muistuta uusista julkaisuista"
+
+msgid "Downgrade"
+msgstr "Alenna"
+
+msgid "Download"
+msgstr "Lataa"
+
+msgid "Download path"
+msgstr "Latausreitti"
+
+msgid "Downloads"
+msgstr "Lataukset"
+
+msgid "Downloads from URL"
+msgstr "Lataukset verkko-osoitteesta"
+
+msgid "Duplicate"
+msgstr "Monista"
+
+msgid "E&xport"
+msgstr "V&ie"
+
+msgid "Edit"
+msgstr "Muokkaa"
+
+msgid "Edit color"
+msgstr "Muokkaa väriä"
+
+msgid "Edit custom G-code"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit Custom G-code"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit Custom G-code (%1%)"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit pause print message"
+msgstr "Muokkaa tulostuksen taukoilmoitusta"
+
+msgid "Edit SVG"
+msgstr "&Muokkaa"
+
+msgid "Edited"
+msgstr "&Muokkaa"
+
+msgid "Editing"
+msgstr "Muokkaus"
+
+msgid "Emboss"
+msgstr "Upota"
+
+msgid "Enable dark mode"
+msgstr "Käytä tummaa tiöaa"
+
+msgid "Enable ironing"
+msgstr "Ota silitys käyttöön"
+
+msgid ""
+"Enable ironing of the top layers with the hot print head for smooth surface"
+msgstr ""
+"Pintakerrosten silitys kuumalla tulostuspäällä mahdollistaa sileän pinnan"
+
+msgid "Enter the diameter of your filament."
+msgstr "Syötä muovisi halkaisija."
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "Syötä tulostimesi tulostuskärjen halkaisija."
+
+msgid "Enter the temperature needed for extruding your filament."
+msgstr "Syötä tulostuslangan tulostamiseen tarvittava lämpötila."
+
+msgid "Error"
+msgstr "Virhe"
+
+msgid "ERROR"
+msgstr "VIRHE"
+
+msgid "Error during reload"
+msgstr "Virhe uudelleenlatauksen aikana"
+
+msgid "Error with ZIP archive"
+msgstr "Virhe ZIP-arkiston kanssa"
+
+msgid "Error!"
+msgstr "Virhe!"
+
+msgid "Error! Invalid model"
+msgstr "Virhe! Virheellinen malli"
+
+msgid "ERROR:"
+msgstr "VIRHE:"
+
+msgid "Error: %s"
+msgstr "Virhe: %s"
+
+msgid ""
+"ERROR: Please close all manipulators available from the left toolbar first"
+msgstr ""
+"Virhe: Sulje kaikki manipulaattorit saatavilla vasemmasta työkalupalkista "
+"ensin"
+
+msgid "Expert mode"
+msgstr "Eksperttitila"
+
+msgid "Export"
+msgstr "Vie"
+
+msgid "Export 3MF"
+msgstr "Vie 3MF"
+
+msgid "Export AMF"
+msgstr "Vie AMF"
+
+msgid ""
+"Export full pathnames of models and parts sources into 3mf and amf files"
+msgstr ""
+"Vie mallien ja osien täydet tiedostopolkunimet 3mf- ja amf-tiedostoihin"
+
+msgid "Export OBJ"
+msgstr "Vie OBJ"
+
+msgid "Export SLA"
+msgstr "Vie SLA"
+
+msgid "Export STL"
+msgstr "Vie STL"
+
+msgid "Export."
+msgstr "Vie."
+
+msgid "Exporting source model"
+msgstr "Viedään lähdemallia"
+
+msgid "External perimeter"
+msgstr "Ulkoinen kehä"
+
+msgid "External perimeters"
+msgstr "Ulkoiset kehät"
+
+msgid "external perimeters"
+msgstr "ulkoiset kehät"
+
+msgid "External perimeters first"
+msgstr "Ulkoiset kehät ensin"
+
+msgid "Extra high"
+msgstr "Todella korkea"
+
+msgid "Extra low"
+msgstr "Todella matala"
+
+msgid "Extruder %d"
+msgstr "Ekstruuderi %d"
+
+msgid "Extrusion Temperature:"
+msgstr "Ekstruusio lämpötila:"
+
+msgid "Fan speed (%)"
+msgstr "Tuulettimen nopeus (%)"
+
+msgid "Fatal error"
+msgstr "Vakava virhe"
+
+msgid "filament"
+msgstr "tulostuslanka"
+
+msgid "Filament"
+msgstr "Tulostuslanka"
+
+msgid "Filament and Nozzle Diameters"
+msgstr "Tulostuslankojen ja tulostuskärkien halkaisijat"
+
+msgid "Filament Diameter"
+msgstr "Tulostuslangan halkaisija"
+
+msgid "Filament notes"
+msgstr "Tulostuslangan muistiinpanot"
+
+msgid "Filament preset name"
+msgstr "Tulostuslangan halkaisija"
+
+msgid "Filament Profiles Selection"
+msgstr "Filamenttiprofiilien valinta"
+
+msgid "Filament settings"
+msgstr "Tulostuslangan asetukset"
+
+msgid "Filament Settings"
+msgstr "Tulostuslangan asetukset"
+
+msgid "Filament Settings Tab"
+msgstr "Tulostuslangan asetusten sivu"
+
+msgid "filaments"
+msgstr "tulostuslangat"
+
+msgid "Filaments"
+msgstr "Tulostuslangat"
+
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+msgid "Files"
+msgstr "Tiedostot"
+
+msgid "Files association"
+msgstr "Tiedostojen yhdistäminen"
+
+msgid "Fill density"
+msgstr "Täyttötiheys"
+
+msgid "Find"
+msgstr "Etsi"
+
+msgid "Finished"
+msgstr "Valmis"
+
+msgid "Firmware"
+msgstr "Laiteohjelmisto"
+
+msgid "Firmware flasher"
+msgstr "Laiteohjelmiston lataaja"
+
+msgid "Firmware image:"
+msgstr "Laiteohjelmiston kuva:"
+
+msgid "Firmware Type"
+msgstr "Laiteohjelmiston tyyppi"
+
+msgid "Firmware-specific"
+msgstr "Laiteohjelmiston tyyppi"
+
+msgid "first"
+msgstr "ensimmäinen"
+
+msgid "First font"
+msgstr "Ensimmäinen fontti"
+
+msgid "First layer"
+msgstr "Ensimmäisen kerros"
+
+msgid "First layer convex hull"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid "First layer height"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid ""
+"First layer height is not valid.\n"
+"\n"
+"The first layer height will be reset to 0.01."
+msgstr ""
+"Ensimmäisen kerroksen korkeus ei ole kelvollinen\n"
+"\n"
+"Ensimmäisen kerroksen korkeus nollataan arvoon 0.01."
+
+msgid "First layer speed"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid "Floating reserved operand"
+msgstr "Float-varattu operandi"
+
+msgid "Font"
+msgstr "Fontti"
+
+msgid "Font size"
+msgstr "Fonttikoko"
+
+msgid ""
+"For the Wipe Tower to work with the soluble supports, the support layers\n"
+"need to be synchronized with the object layers."
+msgstr ""
+"Jotta pyyhkäisytorni toimisi liukenevien tukimateriaalien kanssa, "
+"tukikerrokset\n"
+"täytyy synkronisoida objektin kerroksien kanssa."
+
+msgid "From"
+msgstr "Mistä"
+
+msgid "From surface"
+msgstr "Pinnalta"
+
+msgid "Front"
+msgstr "Etupuoli"
+
+msgid "Front View"
+msgstr "Etunäkymä"
+
+msgid "Fullscreen"
+msgstr "Koko näyttö"
+
+msgid "G-code file exported to %1%"
+msgstr "G-kooditiedosto viety sijaintiin %1%"
+
+msgid "G-code preview"
+msgstr "G-koodin esikatselu"
+
+msgid "g/cm³"
+msgstr "g/cm³"
+
+msgid "g/ml"
+msgstr "g/ml"
+
+msgid "Gallery"
+msgstr "Galleria"
+
+msgid "Generating index buffers"
+msgstr "Luodaan indeksipuskuria"
+
+msgid "Generating perimeters"
+msgstr "Luodaan kehiä"
+
+msgid "Generating support material"
+msgstr "Luodaan tukimateriaalia"
+
+msgid "Generating toolpaths"
+msgstr "Luodaan työkalupolkuja"
+
+msgid "Generating vertex buffer"
+msgstr "Luodaan verteksipuskuria"
+
+msgid "Gizmo-Move"
+msgstr "Gizmo-Siirto"
+
+msgid "Gizmo-Rotate"
+msgstr "Gizmo-Käännös"
+
+msgid "GNU Affero General Public License, version 3"
+msgstr "GNU Affero General Public License, versio 3"
+
+msgid ""
+"Good precision is required, so use a caliper and do multiple measurements "
+"along the filament, then compute the average."
+msgstr ""
+"Hyvää tarkkuutta vaaditaan, joten käytä työntömittaa ja mittaa useasta "
+"kohtaa lankaa pitkin, ja laske sitten keskiarvo."
+
+msgid "Groove change"
+msgstr "Värinvaihto"
+
+msgid "GUI"
+msgstr "Graafinen käyttöliittymä"
+
+msgid "Has wipe tower"
+msgstr "pyyhkäisytorni"
+
+msgid "Height"
+msgstr "Korkeus"
+
+msgid "Height of SVG."
+msgstr "Korkeus"
+
+msgid "Height range Modifier"
+msgstr "Korkeusalueen muuttuja"
+
+msgid "Height:"
+msgstr "Korkeus:"
+
+msgid "Help"
+msgstr "Ohje"
+
+msgid "High"
+msgstr "Korkea"
+
+msgid "High viscosity"
+msgstr "Korkea viskositeetti"
+
+msgid "Hole depth"
+msgstr "Reiän syvyys"
+
+msgid "Hole diameter"
+msgstr "Reiän halkaisija"
+
+msgid "Honeycomb"
+msgstr "Hunajakenno"
+
+msgid "Host"
+msgstr "Isäntä"
+
+msgid "Hostname"
+msgstr "Isäntänimi"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idle temperature"
+msgstr "Tyhjäkäyntilämpötila"
+
+msgid ""
+"If enabled, allows the Reload from disk command to automatically find and "
+"load the files when invoked.\n"
+"If not enabled, the Reload from disk command will ask to select each file "
+"using an open file dialog."
+msgstr ""
+"Jos käytössä, sallii \"Lataa uudelleen levyltä\"-komennon automaattisesti "
+"etsiä ja ladata tiedostot tarpeen mukaan.\n"
+"Jos ei käytössä, \"Lataa uudelleen levyltä\"-komento pyytää valita jokaisen "
+"tiedoston tiedostojen valintaikkunalla."
+
+msgid ""
+"If enabled, UI will use Dark mode colors. If disabled, old UI will be used."
+msgstr ""
+"Jos käytössä, käyttöliittymä käyttää tumman tilan värejä. Jos ei käytössä "
+"vanhaa käyttöliittymää käytetään."
+
+msgid "Illegal instruction"
+msgstr "Laiton käsky"
+
+msgid "Import file"
+msgstr "Älykäs täyttö"
+
+msgid "Import profile only"
+msgstr "Tukimateriaalia vain tulostusalustalle"
+
+msgid "in"
+msgstr "in"
+
+msgid "In queue"
+msgstr "Jono"
+
+msgid "Incompatible with this %s"
+msgstr "Ei yhteensopiva; %s"
+
+msgid "Infill"
+msgstr "Täyttö"
+
+msgid "Info"
+msgstr "Tiedot"
+
+msgid "Information"
+msgstr "Informaatio"
+
+msgid "Initial extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Install"
+msgstr "Lataa"
+
+msgid "Invalid data"
+msgstr "Virheellinen data"
+
+msgid "Invalid file format."
+msgstr "Virheellinen tiedostomuoto."
+
+msgid "Invalid numeric input."
+msgstr "Virheellinen numeerinen syöte."
+
+msgid "Ironing"
+msgstr "Silitys"
+
+msgid "Is extruder used?"
+msgstr "Ekstruuderi %d"
+
+msgid "is licensed under the"
+msgstr "on lisensoitu"
+
+msgid "Iso"
+msgstr "ISO"
+
+msgid "Iso View"
+msgstr "ISO-näkymä"
+
+msgid "Jump to"
+msgstr "Hyppää kohteeseen"
+
+msgid "Jump to height"
+msgstr "Hyppää korkeuteen"
+
+msgid "kg"
+msgstr "kg"
+
+msgid "Label objects"
+msgstr "Merkitse objektit"
+
+msgid "Landscape"
+msgstr "Vaakasuunta"
+
+msgid "Layer height"
+msgstr "Kerroskorkeus"
+
+msgid ""
+"Layer height is not valid.\n"
+"\n"
+"The layer height will be reset to 0.01."
+msgstr ""
+"Kerroskorkeus ei ole kelvollinen\n"
+"\n"
+"Kerroskorkeus nollataan arvoon 0.01."
+
+msgid "Layer number"
+msgstr "Kerrokset ja kehät"
+
+msgid "Layer Z"
+msgstr "Kerroskorkeus"
+
+msgid "layers"
+msgstr "kerrokset"
+
+msgid "Layers and perimeters"
+msgstr "Kerrokset ja kehät"
+
+msgid "Leave \"%1%\" enabled"
+msgstr "Jätä \"%1%\" käyttöön"
+
+msgid "Left"
+msgstr "Vasen puoli"
+
+msgid "Left View"
+msgstr "Vasen näkymä"
+
+msgid "Length"
+msgstr "Pituus"
+
+msgid ""
+"License agreements of all following programs (libraries) are part of "
+"application license agreement"
+msgstr ""
+"Seuraavien ohjelmien (kirjastojen) lisenssisopimukset ovat kaikki osia "
+"lisenssisopimuksessa"
+
+msgid "Lift height"
+msgstr "Kerroskorkeus"
+
+msgid "Line"
+msgstr "Viiva"
+
+msgid "Load"
+msgstr "Lataa"
+
+msgid ""
+"Load and store settings at the given directory. This is useful for "
+"maintaining different profiles or including configurations from a network "
+"storage."
+msgstr ""
+"Lataa ja tallentaa asetukset annettuun kansioon. Tämä on hyödyllistä, kun "
+"ylläpidetään erilaisia profiileja tai sisällytetään asetuksia verkon "
+"tallennustilasta."
+
+msgid "Load config file"
+msgstr "Lataa konfiguraatiotiedosto"
+
+msgid "Load shape from STL..."
+msgstr "Lataa muoto STL tiedostosta..."
+
+msgid "Load..."
+msgstr "Lataa…"
+
+msgid "loaded"
+msgstr "ladattu"
+
+msgid "Loading"
+msgstr "Ladataan"
+
+msgid "Loading configuration"
+msgstr "Ladataan konfiguraatiota"
+
+msgid "Loading repaired model"
+msgstr "Ladataan korjattua mallia"
+
+msgid "Low"
+msgstr "Matala"
+
+msgid "Mate&rial Settings Tab"
+msgstr "Mater&riaaliasetussivu"
+
+msgid "Material"
+msgstr "Materiaali"
+
+msgid "Material Settings"
+msgstr "Materiaaliasetukset"
+
+msgid "Material Settings Tab"
+msgstr "Materiaaliasetusten sivu"
+
+msgid "Max height"
+msgstr "&Korkeus"
+
+msgid "Max print height"
+msgstr "Tulosteen suurin sallittu korkeus"
+
+msgid "Max weight on model"
+msgstr "Suurin paino mallissa"
+
+msgid "Maximal layer Z"
+msgstr "Muuttuva kerroskorkeus"
+
+msgid "Maximum Branch Angle"
+msgstr "Maksimi oksan kulma"
+
+msgid "Medium"
+msgstr "Keskikorkea"
+
+msgid "Merge"
+msgstr "Liitä"
+
+msgid "Message"
+msgstr "Viesti"
+
+msgid "Min"
+msgstr "Min"
+
+msgid "Min height"
+msgstr "Kirjasimen &paino"
+
+msgid "Min print speed"
+msgstr "Min. tulostusnopeus"
+
+msgid "Minimum feature size"
+msgstr "Minimi ominaisuuden koko"
+
+msgid "Minimum perimeter width"
+msgstr "Kehän minimi leveys"
+
+msgid "ml"
+msgstr "ml"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "mm (zero to disable)"
+msgstr "mm (nolla poistaaksesi käytöstä)"
+
+msgid "mm/s or %"
+msgstr "mm/s tai %"
+
+msgid "mm²"
+msgstr "mm²"
+
+msgid "mm³"
+msgstr "mm³"
+
+msgid "mm³/s²"
+msgstr "mm³/s²"
+
+msgid "Mode"
+msgstr "Tila"
+
+msgid "Model"
+msgstr "Malli"
+
+msgid "model"
+msgstr "malli"
+
+msgid "Model repair canceled"
+msgstr "Mallin korjaus peruttu"
+
+msgid "Model repair finished"
+msgstr "Mallin korjaus valmis"
+
+msgid "Model simplification has been canceled"
+msgstr "Mallin korjaus peruttu"
+
+msgid "Modified"
+msgstr "Muokattu"
+
+msgid "Monotonic"
+msgstr "Monotoninen"
+
+msgid "Monotonic Lines"
+msgstr "Monotoniset viivat"
+
+msgid "Mouse wheel"
+msgstr "Hiiren rulla"
+
+msgid "Mouse wheel:"
+msgstr "Hiiren rulla:"
+
+msgid "Move"
+msgstr "Liikuta"
+
+msgid "Move Object"
+msgstr "Siirrä objektia"
+
+msgid "Move over surface"
+msgstr "Pinnalta"
+
+msgid "Move point"
+msgstr "Siirrä pistettä"
+
+msgid "Movement step set to 1 mm"
+msgstr "Liikeaskel asetettu yhteen millimetriin"
+
+msgid "Multiple resolved IP addresses"
+msgstr "Useita ratkaistuja IP-osoitteita"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Network lookup"
+msgstr "Verkon hakeminen"
+
+msgid "New name of style"
+msgstr "Uusi tyylin nimi"
+
+msgid "New prerelease version %1% is available."
+msgstr "Uusi esikatseluversio %1% on saatavilla."
+
+msgid "New printer"
+msgid_plural "New printers"
+msgstr[0] "tulostin"
+msgstr[1] "tulostin"
+
+msgid "New version"
+msgstr "Uusi versio"
+
+msgid "New version of %1% is available."
+msgstr "Uusi versio %1%:istä on saatavilla."
+
+msgid "New version of %s is available"
+msgstr "Uusi versio %s:stä on saatavilla"
+
+msgid ""
+"New version of %s is available.\n"
+"Do you wish to download it?"
+msgstr ""
+"Uusi versio %s:istä on saatavilla.\n"
+"Haluatko ladata sen?"
+
+msgid "New version:"
+msgstr "Uusi versio:"
+
+msgid "Next"
+msgstr "Seuraava"
+
+msgid "Next extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "No symbol"
+msgstr "Ei symbolia"
+
+msgid "No updates available"
+msgstr "Ei päivityksiä saatavilla"
+
+msgid "None"
+msgstr "Ei mitään"
+
+msgid "Normal"
+msgstr "Tavallinen"
+
+msgid "Normal mode"
+msgstr "Normaalitila"
+
+msgid "not a ZIP archive"
+msgstr "ei ZIP-arkisto"
+
+msgid "Not found:"
+msgstr "Ei löydetty:"
+
+msgid "Note"
+msgstr "Huomaa"
+
+msgid "Notes"
+msgstr "Muistiinpanot"
+
+msgid "Notice"
+msgstr "Huomio"
+
+msgid "Notify about new releases"
+msgstr "Muistuta uusista julkaisuista"
+
+msgid "nozzle"
+msgstr "tulostuskärki"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "Tulostuskärjen- ja alustan lämpötilat"
+
+msgid "Nozzle Diameter"
+msgstr "Tulostuskärjen halkaisija"
+
+msgid "Number of extruders"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of instances"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of objects"
+msgstr "Merkitse objektit"
+
+msgid "Number of pixels in X"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of pixels in Y"
+msgstr "Pikseleiden määrä Y akselissa"
+
+msgid "Number of printing extruders"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Objects"
+msgstr "Objektit"
+
+msgid "Objects info"
+msgstr "Objektit"
+
+msgid "OctoPrint comments"
+msgstr "OctoPrint versio"
+
+msgid "OctoPrint version"
+msgstr "OctoPrint versio"
+
+msgid "Offset"
+msgstr "Siirtymä"
+
+msgid "OK"
+msgstr "OK"
+
+msgid ""
+"On Linux systems the process of registration also creates desktop "
+"integration files for this version of application."
+msgstr ""
+"Linux-järjestelmillä rekisteröinti myös luo työpöydän integraatiotiedostot "
+"tälle ohjelman versiolle."
+
+msgid "One layer mode"
+msgstr "Yhden kerroksen tila"
+
+msgid ""
+"Only the following installed printers are compatible with the selected "
+"filaments"
+msgstr ""
+"Vain seuraavat asennetut tulostimet ovat yhteensopivia valittujen "
+"tulostuslankojen kanssa"
+
+msgid ""
+"Only the following installed printers are compatible with the selected SLA "
+"materials"
+msgstr ""
+"Vain seuraavat asennetut tulostimet ovat yhteensopivia valittujen SLA-"
+"materiaalien kanssa"
+
+msgid "Open"
+msgstr "Avaa"
+
+msgid "Open changelog page"
+msgstr "Avaa muutosluettelon sivu"
+
+msgid "Open hyperlink in default browser?"
+msgstr "Avaa hyperlinkki oletusselaimessa?"
+
+msgid "Operation"
+msgstr "Operaatio"
+
+msgid "Optimize orientation"
+msgstr "Optimoi asento"
+
+msgid ""
+"Optimize travel moves in order to minimize the crossing of perimeters. This "
+"is mostly useful with Bowden extruders which suffer from oozing. This "
+"feature slows down both the print and the G-code generation."
+msgstr ""
+"Optimoi siirtymät minimisoidakseen kehien ylitykset. Tämä on pääasiassa "
+"hyödyllistä Bowden-ekstruudereilla jotka kärsii tihkumisesta. Tämä "
+"ominaisuus hidastaa tulostusta sekä G-koodin generointia."
+
+msgid "Options"
+msgstr "Valinnat"
+
+msgid "Options:"
+msgstr "Valinnat:"
+
+msgid "Organic"
+msgstr "Orgaaninen"
+
+msgid "Origin"
+msgstr "Alkuperä"
+
+msgid "Original"
+msgstr "Alkuperäinen"
+
+msgid "Other Vendors"
+msgstr "Muut valmistajat"
+
+msgid "Output File"
+msgstr "Tuotettu tiedosto"
+
+msgid "Overflow"
+msgstr "Ylivuoto"
+
+msgid "Overhang perimeter"
+msgstr "Ulokekehä"
+
+msgid "Page Down"
+msgstr "Sivu alas"
+
+msgid "Page Up"
+msgstr "Sivu ylös"
+
+msgid "Palette 1 (default)"
+msgstr "Paletti 1 (oletus)"
+
+msgid "Palette 2"
+msgstr "Paletti 2"
+
+msgid "Palette 3"
+msgstr "Paletti 3"
+
+msgid "Palette 4"
+msgstr "Paletti 4"
+
+msgid "Palette 5"
+msgstr "Paletti 5"
+
+msgid "Palette 6"
+msgstr "Paletti 6"
+
+msgid "Palette 7"
+msgstr "Paletti 7"
+
+msgid "Palette 8"
+msgstr "Paletti 8"
+
+msgid "parameter name"
+msgstr "parametrin nimi"
+
+msgid "Part"
+msgstr "Osa"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Paste"
+msgstr "Liitä"
+
+msgid "Pattern angle"
+msgstr "Kuvion kulma"
+
+msgid "Pause print (\"%1%\")"
+msgstr "Pysäytä tuloste (\"%1%\")"
+
+msgid "Perform cut"
+msgstr "Suorita leikkuu"
+
+msgid ""
+"Perform desktop integration (Sets this binary to be searchable by the "
+"system)."
+msgstr ""
+"Suorita työpöytäintegraatio (Asettaa tämän binäärin järjestelmän "
+"haettavaksi)."
+
+msgid "Perimeter"
+msgstr "Kehä"
+
+msgid "Perimeter extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Perimeter generator"
+msgstr "Kehägeneraattori"
+
+msgid "perimeters"
+msgstr "kehät"
+
+msgid "Perimeters"
+msgstr "Kehät"
+
+msgid "Physical Printer"
+msgstr "Fyysinen tulostin"
+
+msgid "Physical printer name"
+msgstr "Fyysiset tulostimet"
+
+msgid "Physical printers"
+msgstr "Fyysiset tulostimet"
+
+msgid "Pick another vendor supported by %s"
+msgstr "Valitse toinen valmistaja, jota %s tukee"
+
+msgid "Pillar diameter"
+msgstr "Pilarin alkaisija"
+
+msgid "Pinhead front diameter"
+msgstr "Neulanpään etuhalkaisija"
+
+msgid "Place bearings in slots and resume printing"
+msgstr "Aseta laakerit uriin ja jatka tulostusta"
+
+msgid "Plug"
+msgstr "Tulppa"
+
+msgid "Portions copyright"
+msgstr "Tekijänoikeuden alaiset osat"
+
+msgid "Portrait"
+msgstr "Pystysuunta"
+
+msgid "Preferences"
+msgstr "&Asetukset"
+
+msgid "Preferred Branch Angle"
+msgstr "Suosittu oksan kulma"
+
+msgid "Preparing infill"
+msgstr "Valmistellaan täyttöä"
+
+msgid "Preparing settings tabs"
+msgstr "Valmistellaan asetusvälilehtiä"
+
+msgid "Presets"
+msgstr "Nollaa"
+
+msgid "Preview"
+msgstr "Esikatselu"
+
+msgid "Previous extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "print"
+msgstr "tuloste"
+
+msgid "Print"
+msgstr "Tulosta"
+
+msgid "Print &Host Upload Queue"
+msgstr "Tulosta &isäntäkoneen latausjono"
+
+msgid ""
+"Print contour perimeters from the outermost one to the innermost one instead "
+"of the default inverse order."
+msgstr ""
+"Tulostaa kehät uloimmasta sisään, oletusarvoisen käänteisen järjestyksen "
+"sijaan."
+
+msgid "Print Diameters"
+msgstr "Tulosteen koot"
+
+msgid "Print host upload queue"
+msgstr "Tulostusisäntäkoneen latausjono"
+
+msgid "Print mode"
+msgstr "Tulostustila"
+
+msgid "Print pauses"
+msgstr "Tulostuksen tauot"
+
+msgid "Print preset name"
+msgstr "Tulostusasetukset"
+
+msgid "Print settings"
+msgstr "Tulostusasetukset"
+
+msgid "Print Settings"
+msgstr "Tulostusasetukset"
+
+msgid "Print Settings Tab"
+msgstr "Tulostusasetuksien sivu"
+
+msgid "Print speed"
+msgstr "Tulostusnopeus"
+
+msgid "Print statistics"
+msgstr "Tulostusasetukset"
+
+msgid "Print time (normal mode)"
+msgstr "Näytä normaalitila"
+
+msgid "printer"
+msgstr "tulostin"
+
+msgid "Printer"
+msgstr "Tulostin"
+
+msgid "Printer absolute correction"
+msgstr "Tulostimen absoluuttinen korjaus"
+
+msgid "Printer gamma correction"
+msgstr "Tulostimen gammakorjaus"
+
+msgid "Printer notes"
+msgstr "Tulostimen muistiinpanot"
+
+msgid "Printer preset name"
+msgstr "Tulostimen tyyppi"
+
+msgid "Printer scaling correction"
+msgstr "Tulostimen skaalauksen korjaus"
+
+msgid "Printer settings"
+msgstr "Tulostimen asetukset"
+
+msgid "Printer Settings"
+msgstr "Tulostimen asetukset"
+
+msgid "Printer Settings Tab"
+msgstr "Tulostimen asetuksien sivu"
+
+msgid "Printer type"
+msgstr "Tulostimen tyyppi"
+
+msgid "Printer variant"
+msgstr "Tulostimen malli"
+
+msgid "Printer vendor"
+msgstr "Tulostimen valmistaja"
+
+msgid "Printer:"
+msgstr "Tulostin:"
+
+msgid "Prism"
+msgstr "Prisma"
+
+msgid "Private protection"
+msgstr "Tulostimen absoluuttinen korjaus"
+
+msgid "Processing triangulated mesh"
+msgstr "Prosessoidaan kolmioitua verkkoa"
+
+msgid "Progress"
+msgstr "Edistyminen"
+
+msgid "Progress:"
+msgstr "Edistyminen:"
+
+msgid "Project is loading"
+msgstr "Projektia ladataan"
+
+msgid ""
+"PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap "
+"community."
+msgstr ""
+"PrusaSlicer pohjautuu Allessandro Ranelluccin ja RepRap-yhteisön Slic3r:ään."
+
+msgid "Quality"
+msgstr "Laatu"
+
+msgid "Quality / Speed"
+msgstr "Laatu / Nopeus"
+
+msgid "Quit %s"
+msgstr "Lopeta %s"
+
+msgid "Quit, I will move my data now"
+msgstr "Lopeta, siirrän tietoni nyt"
+
+msgid "Re-configure"
+msgstr "Määritä uudelleen"
+
+msgid "Read only"
+msgstr "Vain julkaisu"
+
+msgid "Ready"
+msgstr "Valmis"
+
+msgid "Rectangular"
+msgstr "Suorakulmainen"
+
+msgid "Rectilinear"
+msgstr "Suoraviivainen"
+
+msgid "Redo"
+msgstr "Tee uudelleen"
+
+msgid "Redo History"
+msgstr "Tee uudelleen historia"
+
+msgid "Regular"
+msgstr "Tavallinen"
+
+msgid "Release only"
+msgstr "Vain julkaisu"
+
+msgid "Reload from disk"
+msgstr "Lataa uudelleen levyltä"
+
+msgid "Reload from:"
+msgstr "Lataa uudelleen kohteesta:"
+
+msgid "Reload SVG file from disk."
+msgstr "Lataa uudelleen levyltä"
+
+msgid "Remaining time"
+msgstr "Jäljellä oleva aika"
+
+msgid "Remember my choice"
+msgstr "Muista valintani"
+
+msgid "Remove"
+msgstr "Poista"
+
+msgid "remove"
+msgstr "poista"
+
+msgid "Remove all holes"
+msgstr "Poista kaikki reiät"
+
+msgid "Remove all selection"
+msgstr "Poista kaikki valinnat"
+
+msgid "Remove instance"
+msgstr "Poista ilmentymä"
+
+msgid "Remove point"
+msgstr "Poista piste"
+
+msgid "Remove point from selection"
+msgstr "Poista piste valinnasta"
+
+msgid "Remove selected holes"
+msgstr "Poista valitut reiät"
+
+msgid "Remove selection"
+msgstr "Poista valinta"
+
+msgid "Remove style"
+msgstr "Poista tyyli"
+
+msgid "Rename"
+msgstr "Nimeä uudelleen"
+
+msgid ""
+"Renaming of the G-code after copying to the selected destination folder has "
+"failed. Current path is %1%.tmp. Please try exporting again."
+msgstr ""
+"G-koodin uudelleennimeäminen valittuun kansioon kopioimisen jälkeen "
+"epäonnistui. Tämänhetkinen polku on %1%.tmp. Yritä vientiä uudelleen."
+
+msgid "Render"
+msgstr "Renderi"
+
+msgid "Render with a software renderer"
+msgstr "Renderöi ohjelmistorenderöijällä"
+
+msgid "Repairing model by Windows repair algorithm"
+msgstr "Korjataan mallia Netfabb-palvelulla"
+
+msgid "Replace with"
+msgstr "Korvaa kohteella"
+
+msgid "Replace?"
+msgstr "Korvaa?"
+
+msgid "Reset"
+msgstr "Nollaa"
+
+msgid "Reset defaults"
+msgstr "oletus"
+
+msgid "Reset distance"
+msgstr "Poista ilmentymä"
+
+msgid "Restore window position on start"
+msgstr "Palauta ikkunan sijainti käynnistyksen yhteydessä"
+
+msgid "Revert color"
+msgstr "Nollaa väri"
+
+msgid "Revert color to default"
+msgstr "Nollaa väri oletusarvoon"
+
+msgid "Revert font changes."
+msgstr "Nollaa fonttimuutokset."
+
+msgid "Revert text size."
+msgstr "Nollaa tekstin koko."
+
+msgid "Right"
+msgstr "Oikea"
+
+msgid "Right button click the icon to fix STL by Windows repair algorithm"
+msgstr ""
+"Pain ikonia hiiren oikealla painikkeella korjataksesi mallin Netfabb-"
+"palvelulla"
+
+msgid "Right View"
+msgstr "Oikea näkymä"
+
+msgid "Rotate"
+msgstr "Käännä"
+
+msgid "Ruler mode"
+msgstr "Mittatila"
+
+msgid "Run %s"
+msgstr "Suorita %s"
+
+msgid "Run installer after download. (Otherwise file explorer will be opened)"
+msgstr ""
+"Suorita asennusohjelma latauksen jälkeen. (Muutoin tiedostoselain avataan)"
+
+msgid "Running post-processing scripts"
+msgstr "Suoritetaan jälkikäsittelyskriptejä"
+
+msgid "S&end to print"
+msgstr "L&ähetä tulostettavaksi"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Save as"
+msgstr "Tallenna"
+
+msgid "Save as '.svg' file"
+msgstr "Tallenna uutena tyylinä"
+
+msgid "Save as new style"
+msgstr "Tallenna uutena tyylinä"
+
+msgid "Save as new style."
+msgstr "Tallenna uutena tyylinä."
+
+msgid "Save SVG file"
+msgstr "Valitse tiedosto"
+
+msgid "Scale"
+msgstr "Skaalaa"
+
+msgid "Scale per object"
+msgstr "Poista objekti"
+
+msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
+msgstr ""
+"Ajoitetaan vientiä sijaintiin `%1%`. Katso Ikkuna -> Tulostusisäntäkoneen "
+"latausjono"
+
+msgid "Search"
+msgstr "Etsi"
+
+msgid "Searching for devices"
+msgstr "Laitteita etsitään"
+
+msgid "Searching support spots"
+msgstr "Etsitään tukipisteitä"
+
+msgid "See Releases page."
+msgstr "Ks. Julkaisut-sivu."
+
+msgid "Select a file"
+msgstr "Valitse tiedosto"
+
+msgid "Select all points"
+msgstr "Valitse kaikki pisteet"
+
+msgid "Select by rectangle"
+msgstr "Valitse suorakulmiolla"
+
+msgid "Select directory"
+msgstr "Valitse polku"
+
+msgid "Select placeholder"
+msgstr "Valitse tiedosto"
+
+msgid "Select shape from the gallery"
+msgstr "Valitse muoto galleriasta"
+
+msgid "Select the new file"
+msgstr "Valitse uusi tiedosto"
+
+msgid "Selection"
+msgstr "Valinta"
+
+msgid "Selects all objects"
+msgstr "Valitsee kaikki objektit"
+
+msgid "Seq."
+msgstr "Sekv."
+
+msgid "Serial port:"
+msgstr "Sarjaportti:"
+
+msgid "Service name"
+msgstr "Palvelunimi"
+
+msgid "Set"
+msgstr "Aseta"
+
+msgid "Set bold"
+msgstr "Aseta lihavoitu"
+
+msgid "Set ruler mode"
+msgstr "Aseta mittatila"
+
+msgid "Set the printer height."
+msgstr "Aseta tulostimen korkeus."
+
+msgid "Set the shape of your printer's bed."
+msgstr "Aseta tulostusalustasi muoto."
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Shall I adjust those settings for supports?"
+msgstr "Pitäisikö minun säätää nämä asetukset tukimateriaalia varten?"
+
+msgid "Shall I adjust those settings in order to enable Spiral Vase?"
+msgstr ""
+"Pitäisikö minun säätää näitä asetuksia, jotta spiraalimaljakon saa käyttöön?"
+
+msgid "Shall I adjust those settings in order to enable the Wipe Tower?"
+msgstr ""
+"Pitäisikö minun säätää näitä asetuksia, jotta spiraalimaljakon saa käyttöön?"
+
+msgid "Shall I switch to rectilinear fill pattern?"
+msgstr "Pitäisikö minun vaihtaa suoraviivaiseen täyttökuvioon?"
+
+msgid "Shall I synchronize support layers in order to enable the Wipe Tower?"
+msgstr ""
+"Pitäisikö minun synkronoida tukikerrokset pyyhkäisytornin käyttöön "
+"ottamiseksi?"
+
+msgid "Shape"
+msgstr "Muoto"
+
+msgid "Shape Gallery"
+msgstr "Muotogalleria"
+
+msgid "Shells"
+msgstr "Kehät"
+
+msgid "Show about dialog"
+msgstr "Näytä tietoja-valintaikkuna"
+
+msgid "Show advanced settings"
+msgstr "Näytä kehittyneet asetukset"
+
+msgid "Show error message"
+msgstr "Näytä virheviesti"
+
+msgid "Show normal mode"
+msgstr "Näytä normaalitila"
+
+msgid "Show object height"
+msgstr "Näytä objektin korkeus"
+
+msgid "Show simplified settings"
+msgstr "Näytä yksinkertaistetut asetukset"
+
+msgid "Show stealth mode"
+msgstr "Näytä hiljainen tila"
+
+msgid "Show/Hide template presets"
+msgstr "Järjestelmän oletusasetukset"
+
+msgid "Simple mode"
+msgstr "Yksinkertainen tila"
+
+msgid "Single instance mode"
+msgstr "Yhden ilmentymän tila"
+
+msgid "Size"
+msgstr "Koko"
+
+msgid "Size in X and Y of the rectangular plate."
+msgstr "Koko suorakulmaisen alustan X- Ja Y akseleissa."
+
+msgid "Size of the first layer bounding box"
+msgstr "paitsi ensimmäiselle kerrokselle."
+
+msgid "Size:"
+msgstr "Koko:"
+
+msgid "SLA material"
+msgstr "SLA materiaali"
+
+msgid "SLA Material Profiles Selection"
+msgstr "SLA materiaaliprofiilin valinta"
+
+msgid "SLA material type"
+msgstr "SLA materiaalin tyyppi"
+
+msgid "SLA materials"
+msgstr "SLA materiaalit"
+
+msgid "SLA Materials"
+msgstr "SLA Materiaalit"
+
+msgid "SLA Materials settings"
+msgstr "Materiaaliasetukset"
+
+msgid "SLA print"
+msgstr "SLA tuloste"
+
+msgid "SLA view"
+msgstr "SLA-näkymä"
+
+msgid "Slab"
+msgstr "Laatta"
+
+msgid "Slice now"
+msgstr "Viipaloi nyt"
+
+msgid "Slicing"
+msgstr "Viipaloidaan"
+
+msgid "Slicing Cancelled."
+msgstr "Viipalointi peruttu."
+
+msgid "Slicing complete"
+msgstr "Viipalointi valmis"
+
+msgid "Slicing Mode"
+msgstr "Viipalointitila"
+
+msgid "Slicing state"
+msgstr "Viipalointitila"
+
+msgid "Slow"
+msgstr "Hidas"
+
+msgid "Slow tilt"
+msgstr "Hidas kallistus"
+
+msgid "Smart fill"
+msgstr "Älykäs täyttö"
+
+msgid "Smart fill angle"
+msgstr "Älykäs täyttökulma"
+
+msgid "Snapshot name"
+msgstr "Tilannekuvanimi"
+
+msgid "Solid"
+msgstr "Lihavoitu"
+
+msgid "Solid "
+msgstr "Lihavoitu "
+
+msgid "Some filaments were uninstalled."
+msgstr "Jotkin tulostuslangat poistettiin."
+
+msgid "Some SLA materials were uninstalled."
+msgstr "Joitakin SLA-materiaaleja poistettiin."
+
+msgid "Speed"
+msgstr "Nopeus"
+
+msgid "Speed (mm/s)"
+msgstr "Nopeus (mm/s)"
+
+msgid "Speed:"
+msgstr "Nopeus:"
+
+msgid "Spiral vase"
+msgstr "Spiraalimaljakko"
+
+msgid "Spiral Vase"
+msgstr "Spiraalimaljakko"
+
+msgid "Stack overflow"
+msgstr "Pakan ylivuoto"
+
+msgid "Standard"
+msgstr "Standardi"
+
+msgid "Stars"
+msgstr "Tähdet"
+
+msgid "Start a new project"
+msgstr "Aloita uusi projekti"
+
+msgid "Start the application"
+msgstr "Käynnistä ohjelmisto"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "Status:"
+msgstr "Tila:"
+
+msgid "Stealth mode"
+msgstr "Hiljainen tila"
+
+msgid "Style"
+msgstr "Tyyli"
+
+msgid "Support base diameter"
+msgstr "Tukien pohjan halkaisija"
+
+msgid "Support Generator"
+msgstr "Tukimateriaalin generaattori"
+
+msgid "Support material"
+msgstr "Tukimateriaali"
+
+msgid "Support on build plate only"
+msgstr "Tukimateriaalia vain tulostusalustalle"
+
+msgid "Supports"
+msgstr "Tukimateriaali"
+
+msgid "Supports binary G-code"
+msgstr "Tukien pohjan halkaisija"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Switch to Settings"
+msgstr "Vaihda asetuksiin"
+
+msgid "Switch to the %s mode"
+msgstr "Vaihda tilaan %s"
+
+msgid "System presets"
+msgstr "Järjestelmän oletusasetukset"
+
+msgid "Target directory"
+msgstr "Tavoitepolku"
+
+msgid "Temperature (°C)"
+msgstr "Lämpötila (°C)"
+
+msgid "Temperatures"
+msgstr "Lämpötilat"
+
+msgid "Test"
+msgstr "Testi"
+
+msgid "Text"
+msgstr "Teksti"
+
+msgid "Texture"
+msgstr "Tekstuuri"
+
+msgid "The %1% infill pattern is not supposed to work at 100%% density."
+msgstr "Täyttökuvio %1% ei ole tarkoitettu käytettäväksi 100%-tiheydellä."
+
+msgid "The selected file contains no geometry."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid ""
+"The selected file contains several disjoint areas. This is not supported."
+msgstr "Valittu tiedosto sisältää useita erillisiä alueita. Tätä ei tueta."
+
+msgid "The selected file is already in ASCII format."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid "The selected file is already in binary format."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid "The size of the object can be specified in inches"
+msgstr "Objektin koko voidaan määritellä tuumina"
+
+msgid ""
+"The Wipe Tower currently supports the non-soluble supports only if they are "
+"printed with the current extruder without triggering a tool change. (both "
+"support_material_extruder and support_material_interface_extruder need to be "
+"set to 0)."
+msgstr ""
+"Pyyhintätorni tukee tällä hetkellä liukenemattomia tukia vain, jos ne "
+"tulostetaan nykyisellä ekstruuderilla ilman työkalun vaihtoa. (sekä "
+"support_material_extruder että support_material_interface_extruder on "
+"asetettava arvoon 0)."
+
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+"On olemassa useita IP-osoitteita, jotka käyttävät isäntänimeä %1%.\n"
+"Valitse se, jota pitäisi käyttää."
+
+msgid ""
+"This firmware hex file does not match the printer model.\n"
+"The hex file is intended for: %s\n"
+"Printer reported: %s\n"
+"\n"
+"Do you want to continue and flash this hex file anyway?\n"
+"Please only continue if you are sure this is the right thing to do."
+msgstr ""
+"Laiteohelmiston hex-tiedosto ei vastaa tulostimen mallia.\n"
+"Hex-tiedosto on tarkoitettu: %s;lle\n"
+"Tulostin ilmoitettu%s\n"
+"\n"
+"Haluatko jatkaa, ja tallentaa tämän tiedoston kuitenkin?\n"
+"Jatka vain jos olet varma että tämä on oikein."
+
+msgid "This is wipe tower layer"
+msgstr "Tämä on pyyhkäisytornin kerros"
+
+msgid "Time of the slow tilt"
+msgstr "Hitaan kallistuksen aika"
+
+msgid "Tip Diameter"
+msgstr "Päädyn halkaisija"
+
+msgid "Tool type"
+msgstr "Työkalun tyyppi"
+
+msgid "Toolchange Z"
+msgstr "Värinvaihto"
+
+msgid "Top"
+msgstr "Yläpuoli"
+
+msgid "Top View"
+msgstr "Ylänäkymä"
+
+msgid "Total"
+msgstr "Yhteensä"
+
+msgid "Total cost"
+msgstr "Yhteensä"
+
+msgid "Total weight"
+msgstr "Pullon paino"
+
+msgid "Total wipe tower cost"
+msgstr "pyyhkäisytorni"
+
+msgid "Type"
+msgstr "Tyyppi"
+
+msgid "Type:"
+msgstr "Tyyppi:"
+
+msgid "Unable to reload:"
+msgstr "Uudelleenlataus ei onnistu:"
+
+msgid "Unable to save file"
+msgstr "Uudelleenlataus ei onnistu:"
+
+msgid "Undefined"
+msgstr "Määrittelemätön"
+
+msgid "Undefined fill type"
+msgstr "Määrittelemätön"
+
+msgid "Undefined stroke type"
+msgstr "Määrittelemätön"
+
+msgid "Underflow"
+msgstr "Alivuoto"
+
+msgid "Undo"
+msgstr "Peru"
+
+msgid "Undo History"
+msgstr "Nollaa historia"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+msgid "Unknown error occured"
+msgstr "Tuntematon virhe tapahtui"
+
+msgid "Unknown error occured during exporting G-code."
+msgstr "Tuntematon virhe G-koodin viennissä."
+
+msgid "Unknown filename"
+msgstr "Tuntematon"
+
+msgid "unloaded"
+msgstr "purettu"
+
+msgid "Unselect"
+msgstr "Poista valinta"
+
+msgid "Unsupported OpenGL version"
+msgstr "Tukematon OpenGL-versio"
+
+msgid "Untitled"
+msgstr "Otsikoimaton"
+
+msgid "Updates"
+msgstr "Päivitykset"
+
+msgid ""
+"Updates are never applied without user's consent and never overwrite user's "
+"customized settings."
+msgstr ""
+"Päivityksiä ei ikinä asenneta ilman käyttäjän lupaa, eivätkä ne ikinä "
+"ylikirjoita käyttäjän räätälöimiä asetuksia."
+
+msgid "Updating"
+msgstr "Päivitetään"
+
+msgid "Upgrade"
+msgstr "Päivitä"
+
+msgid "Upload"
+msgstr "Lähetä"
+
+msgid "Use inches"
+msgstr "Käytä tuumaa yksikkönä"
+
+msgid "used"
+msgstr "käytetty"
+
+msgid "Used filament"
+msgstr "Käytetty tulostuslanka"
+
+msgid "Used filament types"
+msgstr "Käytetty tulostuslanka"
+
+msgid "User"
+msgstr "Käyttäjä"
+
+msgid "Value"
+msgstr "Arvo"
+
+msgid "Value is the same as the system value"
+msgstr "Arvo ei ole järjestelmän arvo"
+
+msgid ""
+"Value was changed and is not equal to the system value or the last saved "
+"preset"
+msgstr ""
+"Arvoa muutettiin ja se ei ole järjestelmäarvo tai viimeksi tallennettu "
+"esiasetus"
+
+msgid "Variable layer height"
+msgstr "Muuttuva kerroskorkeus"
+
+msgid "variants"
+msgstr "variantit"
+
+msgid "vendor"
+msgstr "valmistaja"
+
+msgid "Vendor:"
+msgstr "Valmistaja:"
+
+msgid "Version"
+msgstr "Versio"
+
+msgid "version"
+msgstr "versio"
+
+msgid "Version:"
+msgstr "Versio:"
+
+msgid "View mode"
+msgstr "Katselutila"
+
+msgid "Volume"
+msgstr "Tilavuus"
+
+msgid "Volume per extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Wall thickness"
+msgstr "Seinämäpaksuus"
+
+msgid "Warning"
+msgstr "Varoitus"
+
+msgid "WARNING:"
+msgstr "VAROITUS:"
+
+msgid "Weight per extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "Tervetuloa %s -konfiguraatioavustajaan"
+
+msgid "Whole word"
+msgstr "Vain kokonaiset sanat"
+
+msgid "Wi-Fi Configuration File Generator"
+msgstr "Konfiguraation asettaminen"
+
+msgid "Width"
+msgstr "Leveys"
+
+msgid "Width of a wipe tower"
+msgstr "Pyyhkäisytornin leveys"
+
+msgid "Wipe"
+msgstr "Pyyhi"
+
+msgid "Wipe tower"
+msgstr "Pyyhkäisytorni"
+
+msgid "Wipe Tower"
+msgstr "Pyyhkäisytorni"
+
+msgid "wipe tower"
+msgstr "pyyhkäisytorni"
+
+msgid "Wipe tower extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Wipe tower parameters"
+msgstr "Pyyhkäisytornin asetukset"
+
+msgid "Wipe tower volume"
+msgstr "Pyyhkäisytorni"
+
+msgid ""
+"Would you like to install it?\n"
+"\n"
+"Note that a full configuration snapshot will be created first. It can then "
+"be restored at any time should there be a problem with the new version.\n"
+"\n"
+"Updated configuration bundles:"
+msgstr ""
+"Haluaisitko ladata sen?\n"
+"\n"
+"Huomaa että täysi kokoonpanon tilannekuva luodaan ensin, se voidaan "
+"palauttaa milloin tahansa jos uuden version kanssa ilmenee ongelmia\n"
+"Päivitetyt konfiguraatiopaketit:"
+
+msgid ""
+"You will be notified about new release after startup acordingly: All = "
+"Regular release and alpha / beta releases. Release only = regular release."
+msgstr ""
+"Saat ilmoituksen uudesta julkaisusta käynnistyksen jälkeen seuraavasti: "
+"Kaikki = Säännöllinen julkaisu ja alfa/beta-julkaisut. Vain julkaisu = "
+"tavallinen julkaisu."
+
+msgid "Zig-Zag"
+msgstr "Siksakki"
+
+msgid "Zoom in"
+msgstr "Zoom lähelle"
+
+msgid "Zoom out"
+msgstr "Zoom kauas"
+
+msgid "°C"
+msgstr "°C"
