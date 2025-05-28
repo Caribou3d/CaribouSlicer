@@ -162,7 +162,7 @@ bool GCodeViewer::Path::matches(const GCodeProcessorResult::MoveVertex& move, co
                 (compare.volumetric_rate.is_same_value(volumetric_rate, move.volumetric_rate()) || matches_percent(volumetric_rate, move.volumetric_rate(), 0.001f)) &&
                 (compare.volumetric_flow.is_same_value(volumetric_flow, move.mm3_per_mm) || matches_percent(volumetric_flow, move.mm3_per_mm, 0.05f));
         if ((uint8_t(mode) & uint8_t(mmWithTime)) != 0)
-            is_equal = is_equal && 
+            is_equal = is_equal &&
                 int(elapsed_time) == int(move.move_time);
         return is_equal;
     }
@@ -231,7 +231,7 @@ void GCodeViewer::COG::render()
 
     shader->stop_using();
 
-    ////Show ImGui window 
+    ////Show ImGui window
     //static float last_window_width = 0.0f;
     //static size_t last_text_length = 0;
 
@@ -264,7 +264,7 @@ void GCodeViewer::COG::render()
 namespace quick_pow10
 {
     const int pow10[10] = {
-        1, 10, 100, 1000, 10000, 
+        1, 10, 100, 1000, 10000,
         100000, 1000000, 10000000, 100000000, 1000000000
     };
 }
@@ -446,7 +446,7 @@ float GCodeViewer::Extrusions::Range::unscale_value(int32_t value) const {
 
 float GCodeViewer::Extrusions::Range::step_size(int32_t min, int32_t max, EType type) const
 {
-    
+
     // special case: stored min & max, but there are an infinite amount of values (time).
     //if (total_count == std::numeric_limits<uint64_t>::max()) {
     //    return unscale_value(1);
@@ -474,7 +474,7 @@ ColorRGBA GCodeViewer::Extrusions::Range::get_color_at(float f_value) const
     const int32_t current_min = get_current_min();
     const int32_t current_max = get_current_max();
     const int32_t value       = scale_value(f_value);
-    
+
     if (current_max <= current_min) {
         // wrong max: use only min
         if(value == current_min)
@@ -487,7 +487,7 @@ ColorRGBA GCodeViewer::Extrusions::Range::get_color_at(float f_value) const
         return Too_Low_Value_Color;
     if (value > current_max)
         return Too_High_Value_Color;
-    
+
     if (count_discrete() == 0) {
         return Neutral_Color;
     }
@@ -750,7 +750,7 @@ GCodeViewer::Extrusions::Range *GCodeViewer::Extrusions::Ranges::get(EViewType t
 }
 
 
-GCodeViewer::Extrusions::Ranges::Ranges(uint8_t max_decimals) : 
+GCodeViewer::Extrusions::Ranges::Ranges(uint8_t max_decimals) :
             // Color mapping by layer height.
             height(max_decimals, false),
             // Color mapping by extrusion width.
@@ -826,7 +826,7 @@ void GCodeViewer::SequentialView::Marker::init()
 }
 
 void GCodeViewer::SequentialView::Marker::set_world_position(const Vec3f& position)
-{    
+{
     m_world_position = position;
     m_world_transform = (Geometry::translation_transform((position + m_model_z_offset * Vec3f::UnitZ()).cast<double>()) *
         Geometry::translation_transform(m_model.get_bounding_box().size().z() * Vec3d::UnitZ()) * Geometry::rotation_transform({ M_PI, 0.0, 0.0 })).cast<float>();
@@ -1262,7 +1262,7 @@ const std::vector<ColorRGBA> GCodeViewer::Range_Colors_Details{ {
     { 0.5f * (0.820f + 0.761f), 0.5f * (0.408f + 0.322f), 0.5f * (0.188f + 0.235f), 1.0f },
     { 0.761f, 0.322f, 0.235f, 1.0f },
     { 0.5f * (0.761f + 0.581f), 0.5f * (0.322f + 0.149f), 0.5f * (0.235f + 0.087f), 1.0f },
-    { 0.581f, 0.149f, 0.087f, 1.0f }  // reddishgit 
+    { 0.581f, 0.149f, 0.087f, 1.0f }  // reddishgit
 } };
 //assert(Max_Number_For_Discrete == GCodeViewer::Range_Colors_Details.size());
 
@@ -1444,7 +1444,7 @@ void GCodeViewer::load(const GCodeProcessorResult& gcode_result, const Print& pr
 
     load_toolpaths(gcode_result);
     load_wipetower_shell(print);
-    
+
 
     if (m_layers.empty())
         return;
@@ -1589,7 +1589,7 @@ void GCodeViewer::refresh(const GCodeProcessorResult& gcode_result, const std::v
             }
             [[fallthrough]];
         }
-        case EMoveType::Travel: 
+        case EMoveType::Travel:
         {
             if (m_buffers[buffer_id(curr.type)].visible)
                 m_extrusions.ranges.feedrate.update_from(curr.feedrate);
@@ -1603,7 +1603,7 @@ void GCodeViewer::refresh(const GCodeProcessorResult& gcode_result, const std::v
     // TODO: TEST: needed ?
     for (size_t i = 0; i < gcode_result.print_statistics.modes.size(); ++i) {
         m_layers_times[i] = gcode_result.print_statistics.modes[i].layers_times;
-        // if we manage to just update_from() the first & last, this is needed to simulate many values. 
+        // if we manage to just update_from() the first & last, this is needed to simulate many values.
         m_extrusions.ranges.elapsed_time[i].set_infinite_values();
     }
 
@@ -2246,7 +2246,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
         const double width = static_cast<double>(1.5f * curr.width);
         const double height = static_cast<double>(1.5f * curr.height);
 
-        const Transform3d trafo = Geometry::translation_transform((curr.position - 0.5f * curr.height * Vec3f::UnitZ()).cast<double>()) * 
+        const Transform3d trafo = Geometry::translation_transform((curr.position - 0.5f * curr.height * Vec3f::UnitZ()).cast<double>()) *
           Geometry::scale_transform({ width, width, height });
         const Eigen::Matrix<double, 3, 3, Eigen::DontAlign> normal_matrix = trafo.matrix().template block<3, 3>(0, 0).inverse().transpose();
 
@@ -2372,7 +2372,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
             progress_dialog->Fit();
             progress_count = 0;
         }
-        
+
         assert(curr.type > EMoveType::Noop);
         const unsigned char id = buffer_id(curr.type);
         TBuffer& t_buffer = m_buffers[id];
@@ -2447,7 +2447,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
                     VertexBuffer& vbuffer = v_multibuffer[prev_sub_path.first.b_id];
                     // offset into the vertex buffer of the next segment 1st vertex
                     const size_t next_1st_offset = (prev_sub_path.last.s_id - curr_s_id) * 6 * vertex_size_floats;
-                    // offset into the vertex buffer of the right vertex of the previous segment 
+                    // offset into the vertex buffer of the right vertex of the previous segment
                     const size_t prev_right_offset = prev_sub_path.last.i_id - next_1st_offset - 3 * vertex_size_floats;
                     // new position of the right vertices
                     const Vec3f shared_vertex = extract_position_at(vbuffer, prev_right_offset) + displacement_vec;
@@ -2461,7 +2461,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
                 else { // previous and next segment are contained into different vertex buffers
                     VertexBuffer& prev_vbuffer = v_multibuffer[prev_sub_path.first.b_id];
                     VertexBuffer& next_vbuffer = v_multibuffer[next_sub_path.first.b_id];
-                    // offset into the previous vertex buffer of the right vertex of the previous segment 
+                    // offset into the previous vertex buffer of the right vertex of the previous segment
                     const size_t prev_right_offset = prev_sub_path.last.i_id - 3 * vertex_size_floats;
                     // new position of the right vertices
                     const Vec3f shared_vertex = extract_position_at(prev_vbuffer, prev_right_offset) + displacement_vec;
@@ -2479,7 +2479,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
                     VertexBuffer& vbuffer = v_multibuffer[prev_sub_path.first.b_id];
                     // offset into the vertex buffer of the next segment 1st vertex
                     const size_t next_1st_offset = (prev_sub_path.last.s_id - curr_s_id) * 6 * vertex_size_floats;
-                    // offset into the vertex buffer of the left vertex of the previous segment 
+                    // offset into the vertex buffer of the left vertex of the previous segment
                     const size_t prev_left_offset = prev_sub_path.last.i_id - next_1st_offset - 1 * vertex_size_floats;
                     // new position of the left vertices
                     const Vec3f shared_vertex = extract_position_at(vbuffer, prev_left_offset) + displacement_vec;
@@ -2493,7 +2493,7 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
                 else { // previous and next segment are contained into different vertex buffers
                     VertexBuffer& prev_vbuffer = v_multibuffer[prev_sub_path.first.b_id];
                     VertexBuffer& next_vbuffer = v_multibuffer[next_sub_path.first.b_id];
-                    // offset into the previous vertex buffer of the left vertex of the previous segment 
+                    // offset into the previous vertex buffer of the left vertex of the previous segment
                     const size_t prev_left_offset = prev_sub_path.last.i_id - 1 * vertex_size_floats;
                     // new position of the left vertices
                     const Vec3f shared_vertex = extract_position_at(prev_vbuffer, prev_left_offset) + displacement_vec;
@@ -2977,7 +2977,7 @@ void GCodeViewer::load_shells(const Print& print)
         // no shells, return
         return;
 
-    // adds objects' volumes 
+    // adds objects' volumes
     for (const PrintObject* obj : print.objects()) {
         const ModelObject* model_obj = obj->model_object();
         int object_id = -1;
@@ -3072,7 +3072,7 @@ void GCodeViewer::load_wipetower_shell(const Print& print)
         const double max_z = print.objects()[0]->model_object()->get_model()->max_z();
         const PrintConfig& config = print.config();
         const size_t extruders_count = config.nozzle_diameter.size();
-        if (extruders_count > 1 && config.wipe_tower && !config.complete_objects) {
+        if (extruders_count > 1 && config.wipe_tower && !config.complete_objects && config.parallel_objects_step.value == 0) {
             const WipeTowerData& wipe_tower_data = print.wipe_tower_data();
             const float depth = wipe_tower_data.depth;
             const std::vector<std::pair<float, float>> z_and_depth_pairs = wipe_tower_data.z_and_depth_pairs;
@@ -3111,7 +3111,7 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
             if (!m_layers_times.empty() &&
                 (m_layers.size() == m_layers_times.front().size() || m_layers.size() == 1 + m_layers_times.front().size()))
             {
-                int extra_layer = m_layers.size() == 1 + m_layers_times.front().size() ? 1 : 0; 
+                int extra_layer = m_layers.size() == 1 + m_layers_times.front().size() ? 1 : 0;
                 const Path::Sub_Path& sub_path = path.sub_paths.front();
                 double z = static_cast<double>(sub_path.first.position.z());
                 const std::vector<double>& zs = m_layers.get_zs();
@@ -3129,7 +3129,7 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
             }
             break;
         }
-        case EViewType::Chronology:     { color = m_extrusions.ranges.elapsed_time[static_cast<size_t>(m_time_estimate_mode)].get_color_at(path.elapsed_time); break; } //TODO: 
+        case EViewType::Chronology:     { color = m_extrusions.ranges.elapsed_time[static_cast<size_t>(m_time_estimate_mode)].get_color_at(path.elapsed_time); break; } //TODO:
         case EViewType::VolumetricRate: { color = m_extrusions.ranges.volumetric_rate.get_color_at(path.volumetric_rate); break; }
         case EViewType::VolumetricFlow: { color = m_extrusions.ranges.volumetric_flow.get_color_at(path.volumetric_flow); break; }
         case EViewType::Tool:           { color = m_tool_colors[path.extruder_id]; break; }
@@ -3325,7 +3325,7 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
                                 unsigned int indices_count = buffer.indices_per_segment();
                                 offset = indices_count * (offset - 1) + (indices_count - 2);
                                 if (sub_path_id == 0)
-                                    offset += 6; // add 2 triangles for starting cap 
+                                    offset += 6; // add 2 triangles for starting cap
                             }
                         }
                         offset += static_cast<unsigned int>(sub_path.first.i_id);
@@ -3369,15 +3369,24 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
         if (found)
             break;
     }
-    
+
     // update_print_min_max if activated
     Extrusions::Range *range = const_cast<GCodeViewer::Extrusions::Ranges&>(m_extrusions.ranges).get(m_view_type); // this break const-correctness
     if (range && !range->is_whole_print_mode()) {
         range->reset_print_min_max();
-        for (const auto &[tbuffer_id, ibuffer_id, path_id, sub_path_id] : paths) {
-            const Path &path = m_buffers[tbuffer_id].paths[path_id];
-            if (path.type == EMoveType::Extrude) {
-                range->update_print_min_max(path.get_value(m_view_type));
+        if (m_view_type == EViewType::LayerTime) {
+            for (size_t i = 0; i < m_layers_times.size(); ++i) {
+                for (size_t layer_id = m_layers_z_range[0];
+                     layer_id < m_layers_z_range[1] && layer_id < m_layers_times[i].size(); ++layer_id) {
+                    range->update_print_min_max(m_layers_times[i][layer_id]);
+                }
+            }
+        } else {
+            for (const auto &[tbuffer_id, ibuffer_id, path_id, sub_path_id] : paths) {
+                const Path &path = m_buffers[tbuffer_id].paths[path_id];
+                if (path.type == EMoveType::Extrude) {
+                    range->update_print_min_max(path.get_value(m_view_type));
+                }
             }
         }
     }
@@ -3452,11 +3461,11 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
 
         if (buffer.render_primitive_type == TBuffer::ERenderPrimitiveType::Triangle) {
             if (sub_path_id == 0 && delta_1st == 0)
-                size_in_indices += 6; // add 2 triangles for starting cap 
+                size_in_indices += 6; // add 2 triangles for starting cap
             if (sub_path_id == path.sub_paths.size() - 1 && path.sub_paths.back().last.s_id <= m_sequential_view.current.last)
-                size_in_indices += 6; // add 2 triangles for ending cap 
+                size_in_indices += 6; // add 2 triangles for ending cap
             if (delta_1st > 0)
-                size_in_indices -= 6; // remove 2 triangles for corner cap  
+                size_in_indices -= 6; // remove 2 triangles for corner cap
         }
 
         render_path->sizes.push_back(size_in_indices);
@@ -3464,9 +3473,9 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
         if (buffer.render_primitive_type == TBuffer::ERenderPrimitiveType::Triangle) {
             delta_1st *= buffer.indices_per_segment();
             if (delta_1st > 0) {
-                delta_1st += 6; // skip 2 triangles for corner cap 
+                delta_1st += 6; // skip 2 triangles for corner cap
                 if (sub_path_id == 0)
-                    delta_1st += 6; // skip 2 triangles for starting cap 
+                    delta_1st += 6; // skip 2 triangles for starting cap
             }
         }
 
@@ -3480,13 +3489,13 @@ void GCodeViewer::refresh_render_paths(bool keep_sequential_current_first, bool 
         glsafe(::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0));
         if (render_path->offsets.back() + render_path->sizes.back() * sizeof(IBufferType) > buffer_size)
             BOOST_LOG_TRIVIAL(error) << "GCodeViewer::refresh_render_paths: Invalid render path data";
-#endif 
+#endif
     }
 
     // Removes empty render paths and sort.
     for (size_t b = 0; b < m_buffers.size(); ++b) {
         TBuffer* buffer = const_cast<TBuffer*>(&m_buffers[b]);
-        buffer->render_paths.erase(std::remove_if(buffer->render_paths.begin(), buffer->render_paths.end(), 
+        buffer->render_paths.erase(std::remove_if(buffer->render_paths.begin(), buffer->render_paths.end(),
             [](const auto &path){ return path.sizes.empty() || path.offsets.empty(); }),
             buffer->render_paths.end());
     }
@@ -4056,7 +4065,7 @@ void GCodeViewer::render_legend(float& legend_height)
         return;
 
     const Size cnv_size = wxGetApp().plater()->get_current_canvas3D()->get_canvas_size();
-    
+
     Extrusions::Range *range = m_extrusions.ranges.get(m_view_type, m_time_estimate_mode);
 
     ImGuiWrapper& imgui = *wxGetApp().imgui();
@@ -4090,7 +4099,7 @@ void GCodeViewer::render_legend(float& legend_height)
     if (show_switch_whole_print && range->is_whole_print_mode() && m_layers_z_range.front() == 0 && m_layers_z_range.back() >= m_layers.size() - 1) {
         show_switch_whole_print = false;
     }
-    
+
     // refresh colors
     bool need_refresh_render_paths = false;
     // refresh colors + ranges
@@ -4446,7 +4455,7 @@ void GCodeViewer::render_legend(float& legend_height)
     ImGui::PushStyleColor(ImGuiCol_FrameBgHovered, { 0.2f, 0.2f, 0.2f, 0.8f });
     std::vector<std::string> view_options;
     std::vector<int> view_options_id;
-    if (!m_layers_times.empty() && 
+    if (!m_layers_times.empty() &&
         (m_layers.size() == m_layers_times.front().size() || m_layers.size() == 1 + m_layers_times.front().size()))
     {
         view_options = { _u8L("Feature type"),
@@ -4491,7 +4500,7 @@ void GCodeViewer::render_legend(float& legend_height)
     if (imgui.combo(std::string(), view_options, view_type_id, ImGuiComboFlags_HeightLargest, 0.0f, -1.0f))
         view_type = static_cast<EViewType>(view_options_id[view_type_id]);
     ImGui::PopStyleColor(2);
-   
+
     // note: if the view type change, call refresh that will call us again. that's why we can return after it.
     if (old_view_type != view_type) {
         // new function added into imgui to allow the window to recompute its width from the start ( width can change between view type)
@@ -4505,7 +4514,7 @@ void GCodeViewer::render_legend(float& legend_height)
         //prepare refresh
         wxGetApp().plater()->set_keep_current_preview_type(true);
         //wxGetApp().plater()->refresh_print(); //doesn't work anymore, as there is a check to avoid redrawing uselessy, now call this->load(m_gcode_result->get(), m_print->get()) directly
-        
+
         // update path merging mode.
         // mmWithVolumetric
         if (view_type == EViewType::VolumetricFlow || view_type == EViewType::VolumetricRate) {
@@ -4520,7 +4529,7 @@ void GCodeViewer::render_legend(float& legend_height)
         if (view_type == EViewType::Chronology)
             if (!m_extrusions.ranges.elapsed_time[static_cast<size_t>(m_time_estimate_mode)].is_whole_print_mode())
                 m_current_mode = Path::MatchMode(uint8_t(m_current_mode) | uint8_t(Path::MatchMode::mmWithTime));
-        
+
         std::array<unsigned int, 2> saved_layers_z_range = m_layers_z_range;
         if (m_gcode_result.has_value() && m_print.has_value()) {
             this->load(m_gcode_result->get(), m_print->get());
@@ -4947,7 +4956,7 @@ void GCodeViewer::render_legend(float& legend_height)
           }
         }
     }
-    
+
     if (show_switch_show_outliers) {
         assert(range);
 
@@ -4984,7 +4993,7 @@ void GCodeViewer::render_legend(float& legend_height)
         if (!outliers_allowed)
             ImGui::PopStyleVar();
     }
-    
+
     if (show_switch_log_scale) {
         assert(range);
         ImGui::Spacing();
@@ -5021,10 +5030,10 @@ void GCodeViewer::render_legend(float& legend_height)
         if (curve_type == Extrusions::Range::EType::Linear)
             ImGui::PopStyleVar();
     }
-    
+
     if (show_min_max_field) {
         assert(range);
-        
+
         float old_min = range->get_user_min();
         float old_max = range->get_user_max();
         float mod_min = old_min;
@@ -5043,7 +5052,7 @@ void GCodeViewer::render_legend(float& legend_height)
         }
         std::string min_label = _u8L("min");
         std::string max_label = _u8L("max");
-        
+
         if (show_min_max_field_same_line) {
             // draw min
             imgui.text(min_label);
@@ -5084,7 +5093,7 @@ void GCodeViewer::render_legend(float& legend_height)
             if(range->set_user_max(mod_max))
                 need_refresh_render_paths = true;
     }
-    
+
     if (show_switch_discrete) {
         ImGui::Spacing();
         assert(range);
@@ -5105,7 +5114,7 @@ void GCodeViewer::render_legend(float& legend_height)
                     ImGui::PopStyleVar();
                 ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BACKGROUND);
                 ImGui::BeginTooltip();
-                imgui.text(show_discrete ? _u8L("Click to return to continuous scale") : 
+                imgui.text(show_discrete ? _u8L("Click to return to continuous scale") :
                     into_u8(format_wxstr(_L("Click to switch to show a different color for each discrete value (%1% different values)."), range->count_discrete())));
                 ImGui::EndTooltip();
                 ImGui::PopStyleColor();
@@ -5151,7 +5160,7 @@ void GCodeViewer::render_legend(float& legend_height)
                     ImGui::PopStyleVar();
                 ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BACKGROUND);
                 ImGui::BeginTooltip();
-                imgui.text((!show_whole_print) ? _u8L("Click to use the whole print for min & max range") : 
+                imgui.text((!show_whole_print) ? _u8L("Click to use the whole print for min & max range") :
                     _u8L("Click to use the current selected layers for min & max range."));
                 ImGui::EndTooltip();
                 ImGui::PopStyleColor();

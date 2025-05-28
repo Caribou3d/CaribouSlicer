@@ -193,7 +193,7 @@ public:
     Parameters             params;
     std::function<void()>        throw_if_canceled = []() {};
     // Outputs:
-    
+
     PerimeterGenerator(const Parameters &params) : params(params) {}
 
     void process( // Input:
@@ -227,7 +227,7 @@ private:
 
     ProcessSurfaceResult process_classic(const Parameters &params, int& contour_count, int& holes_count, const Surface& surface, ExtrusionEntityCollection &loops, ExtrusionEntityCollection &gapfill);
     ProcessSurfaceResult process_arachne(const Parameters &params, int& loop_number, const Surface& surface, ExtrusionEntityCollection &loops);
-    
+
     void        processs_no_bridge(const Parameters params, Surfaces& all_surfaces, ExPolygons &fill_surfaces);
     ExtrusionPaths create_overhangs_classic(const Parameters &params,
         const Polyline& loop_polygons, const ExtrusionRole role, const bool is_external) const;
@@ -267,7 +267,9 @@ private:
                             const ExPolygons &orig_polygons,
                             ExPolygons &      top_fills,
                             ExPolygons &      non_top_polygons,
-                            ExPolygons &      fill_clip);
+                            ExPolygons &      fill_clip,
+                            int nb_peri_to_print
+    );
 
 };
 

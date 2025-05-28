@@ -214,7 +214,7 @@ void ExPolygon::douglas_peucker(coord_t tolerance) {
         }
     }
     // do we need to do an union_ex() here? -> it's possible that the new holes cut into the new perimeter, so yes... even if unlikely
-    
+
     assert_valid();
     if (need_union) {
         ExPolygons expolygons = union_ex(expolygons);
@@ -321,7 +321,7 @@ void
 ExPolygon::simplify(coord_t tolerance, ExPolygons &expolygons) const
 {
     //append(*expolygons, this->simplify(tolerance));
-    
+
     bool need_union = false;
     assert(this->contour.size() < 3 || this->contour.is_counter_clockwise());
     for(auto &hole :this->holes) assert(hole.is_clockwise());
@@ -351,7 +351,7 @@ ExPolygon::simplify(coord_t tolerance, ExPolygons &expolygons) const
         }
     }
     // do we need to do an union_ex() here? -> it's possible that the new holes cut into the new perimeter, so yes... even if unlikely
-    
+
     Slic3r::assert_valid(expolygons);
     if (need_union) {
         expolygons = union_ex(expolygons);
@@ -530,7 +530,7 @@ bool has_duplicate_points(const ExPolygons &expolys)
         uint64_t operator()(const Point &p) const noexcept
         {
 #ifdef COORD_64B
-            return ankerl::unordered_dense::detail::wyhash::hash(p.x()) 
+            return ankerl::unordered_dense::detail::wyhash::hash(p.x())
                 + ankerl::unordered_dense::detail::wyhash::hash(p.y());
 #else
             uint64_t h;
@@ -573,7 +573,7 @@ void expolygons_simplify(ExPolygons &expolygons, coord_t resolution)
         expolygons[i].contour.douglas_peucker(resolution);
         for(auto &hole :expolygons[i].holes) assert(hole.is_clockwise());
         if (expolygons[i].contour.size() < 3) {
-            expolygons.erase(expolygons.begin() + i);   
+            expolygons.erase(expolygons.begin() + i);
             --i;
         } else {
             if (!expolygons[i].contour.is_counter_clockwise()) {

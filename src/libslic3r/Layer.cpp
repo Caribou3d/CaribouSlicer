@@ -118,7 +118,7 @@ void Layer::make_slices()
 // Use the default zero edge merging distance. For this kind of safety offset the accuracy of normal direction is not important.
 //    co.ShortestEdgeLength = delta * ClipperOffsetShortestEdgeFactor;
 //    static constexpr const double accept_area_threshold_ccw = sqr(scaled<double>(0.1 * delta));
-    // Such a small hole should not survive the shrinkage, it should grow over 
+    // Such a small hole should not survive the shrinkage, it should grow over
 //    static constexpr const double accept_area_threshold_cw  = sqr(scaled<double>(0.2 * delta));
 
     for (const ExPolygon &expoly : expolygons) {
@@ -209,7 +209,7 @@ static void connect_layer_slices(
 {
     class Visitor {
     public:
-        Visitor(const std::vector<std::pair<coord_t, coord_t>> &intersections, 
+        Visitor(const std::vector<std::pair<coord_t, coord_t>> &intersections,
             Layer &below, Layer &above, const coord_t offset_below, const coord_t offset_above
 #ifndef NDEBUG
             , const coord_t offset_end
@@ -217,7 +217,7 @@ static void connect_layer_slices(
             ) :
             m_intersections(intersections), m_below(below), m_above(above), m_offset_below(offset_below), m_offset_above(offset_above)
 #ifndef NDEBUG
-            , m_offset_end(offset_end) 
+            , m_offset_end(offset_end)
 #endif // NDEBUG
             {}
 
@@ -463,7 +463,7 @@ static void connect_layer_slices(
                 // thus each point of each intersection polygon should fit completely inside one of the original (unshrunk) expolygons.
                 assert(false);
             }
-            // The comment below may not be valid anymore, see the comment above. However the code is used in case the polynode contains multiple references 
+            // The comment below may not be valid anymore, see the comment above. However the code is used in case the polynode contains multiple references
             // to other_layer expolygons, thus the references are not unique.
             //
             // The check above might sometimes fail when the polygons overlap only on points, which causes the clipper to detect no intersection.
@@ -657,7 +657,7 @@ ExPolygons Layer::merged(coordf_t offset_scaled) const
 void Layer::make_perimeters()
 {
     BOOST_LOG_TRIVIAL(trace) << "Generating perimeters for layer " << this->id();
-    
+
     // keep track of regions whose perimeters we have already generated
     std::vector<unsigned char>                              done(m_regions.size(), false);
     std::vector<uint32_t>                                   layer_region_ids;
@@ -682,7 +682,7 @@ void Layer::make_perimeters()
                 BOOST_LOG_TRIVIAL(trace) << "Generating perimeters for layer " << this->id() << ", region " << region_id;
                 done[region_id] = true;
                 const PrintRegionConfig &config = (*layerm)->region().config();
-                
+
                 perimeter_and_gapfill_ranges.clear();
                 fill_expolygons.clear();
                 fill_expolygons_ranges.clear();
@@ -816,7 +816,7 @@ void Layer::make_perimeters()
 
                     //// TODO: review if it's not useless or creates bugs.
                     //// assign fill_expolygons to each LayerRegion
-                    //if (!fill_expolygons.empty()) { 
+                    //if (!fill_expolygons.empty()) {
                     //    for (uint32_t layer_region_id : layer_region_ids) {
                     //        LayerRegion &layerm = *m_regions[region_id];
                     //        // Separate the fill surfaces.
@@ -1013,28 +1013,30 @@ void Layer::sort_perimeters_into_islands(
             });
             map_expolygon_to_region_and_fill.assign(fill_expolygons.size(), {});
             for (uint32_t region_idx : layer_region_ids) {
-                LayerRegion &l = *m_regions[region_idx];
-                ExPolygons l_slices_exp = to_expolygons(l.slices().surfaces);
-                l.m_fill_expolygons = intersection_ex(l_slices_exp, fill_expolygons);
-                ensure_valid(l.m_fill_expolygons, scaled_resolution);
-                //copy m_fill_no_overlap_expolygons in sister LayerRegion. It will serve as a mask (with intersection). TODO: maybe to intersection(m_fill_no_overlap_expolygons, l.slices().surfaces)
-                if (&this_layer_region != &l) {
-                    assert(l.m_fill_no_overlap_expolygons.empty());
-                    l.m_fill_no_overlap_expolygons = this_layer_region.m_fill_no_overlap_expolygons;
+                LayerRegion &layer_region = *m_regions[region_idx];
+                ExPolygons l_slices_exp = to_expolygons(layer_region.slices().surfaces);
+                layer_region.m_fill_expolygons = intersection_ex(l_slices_exp, fill_expolygons);
+                ensure_valid(layer_region.m_fill_expolygons);
+                //copy m_fill_no_overlap_expolygons in sister LayerRegion. It will serve as a mask (with intersection). TODO: maybe to intersection(m_fill_no_overlap_expolygons, layer_region.slices().surfaces)
+                if (&this_layer_region != &layer_region) {
+                    assert(layer_region.m_fill_no_overlap_expolygons.empty());
+                    layer_region.m_fill_no_overlap_expolygons = this_layer_region.m_fill_no_overlap_expolygons;
                 }
                 // ensure fill_surface is good (this was deleted in prusa2.7, i wonder if prusa ever used fill_surfaces after perimetergeneration)
-                l.set_fill_surfaces().clear();
+                layer_region.set_fill_surfaces().clear();
                 for (const Surface &surf: slices) {
                     ExPolygons exp = intersection_ex(ExPolygons{ surf.expolygon }, l_slices_exp);
-                    ensure_valid(exp, scaled_resolution);
-                    l.set_fill_surfaces().append(std::move(exp), surf);
+                    ensure_valid(exp);
+                    layer_region.set_fill_surfaces().append(std::move(exp), surf);
                 }
                 //bounding boxes
-                l.m_fill_expolygons_bboxes.reserve(l.fill_expolygons().size());
-                for (const ExPolygon &expolygon : l.fill_expolygons()) {
+                layer_region.m_fill_expolygons_bboxes.reserve(layer_region.fill_expolygons().size());
+                for (const ExPolygon &expolygon : layer_region.fill_expolygons()) {
                     BoundingBox bbox = get_extents(expolygon);
-                    l.m_fill_expolygons_bboxes.emplace_back(bbox);
-                    auto it_bbox = std::lower_bound(fill_expolygons_bboxes_sorted.begin(), fill_expolygons_bboxes_sorted.end(), bbox, [&fill_expolygons_bboxes](uint32_t lhs, const BoundingBox &bbr){
+                    layer_region.m_fill_expolygons_bboxes.emplace_back(bbox);
+                    auto it_bbox = std::lower_bound(fill_expolygons_bboxes_sorted.begin(),
+                                                    fill_expolygons_bboxes_sorted.end(), bbox,
+                                                    [&fill_expolygons_bboxes](uint32_t lhs, const BoundingBox &bbr) {
                         const BoundingBox &bbl = fill_expolygons_bboxes[lhs];
                         return bbl.min < bbr.min || (bbl.min == bbr.min && bbl.max < bbr.max);
                     });
@@ -1046,7 +1048,7 @@ void Layer::sort_perimeters_into_islands(
                                 // Only one expolygon produced by intersection with LayerRegion surface may match an expolygon of fill_expolygons.
                                 assert(ref.region_id == -1 && ref.fill_in_region_id == -1);
                                 ref.region_id         = region_idx;
-                                ref.fill_in_region_id = int(&expolygon - l.fill_expolygons().data());
+                                ref.fill_in_region_id = int(&expolygon - layer_region.fill_expolygons().data());
                             }
                         }
                 }
@@ -1130,7 +1132,7 @@ void Layer::sort_perimeters_into_islands(
 
     auto insert_into_island = [
         // Region where the perimeters, gap fills and fill expolygons are stored.
-        region_id, 
+        region_id,
         // Whether there are infills with different regions generated for this LayerSlice.
         has_multiple_regions,
         // Perimeters and gap fills to be sorted into islands.
@@ -1164,7 +1166,7 @@ void Layer::sort_perimeters_into_islands(
                     auto begin = uint32_t(this_layer_region.fill_expolygons_composite().size());
                     this_layer_region.m_fill_expolygons_composite.reserve(this_layer_region.fill_expolygons_composite().size() + fill_range.size());
                     std::move(fill_expolygons.begin() + *fill_range.begin(), fill_expolygons.begin() + *fill_range.end(), std::back_inserter(this_layer_region.m_fill_expolygons_composite));
-                    this_layer_region.m_fill_expolygons_composite_bboxes.insert(this_layer_region.m_fill_expolygons_composite_bboxes.end(), 
+                    this_layer_region.m_fill_expolygons_composite_bboxes.insert(this_layer_region.m_fill_expolygons_composite_bboxes.end(),
                         fill_expolygons_bboxes.begin() + *fill_range.begin(), fill_expolygons_bboxes.begin() + *fill_range.end());
                     island.fill_expolygons = ExPolygonRange(begin, uint32_t(this_layer_region.fill_expolygons_composite().size()));
                 } else {
@@ -1213,14 +1215,14 @@ void Layer::sort_perimeters_into_islands(
         const PrintRegionConfig &region_config = this_layer_region.region().config();
         const auto               bbox_eps      = scaled<coord_t>(
             EPSILON + print_config.gcode_min_resolution.value +
-            (region_config.fuzzy_skin.value == FuzzySkinType::None ? 0. : region_config.fuzzy_skin_thickness.value 
+            (region_config.fuzzy_skin.value == FuzzySkinType::None ? 0. : region_config.fuzzy_skin_thickness.value
                 //FIXME it looks as if Arachne could extend open lines by fuzzy_skin_point_dist, which does not seem right.
                 + region_config.fuzzy_skin_point_dist.value));
         auto point_inside_surface_dist2 =
             [&lslices = this->lslices(), &lslices_ex = this->lslices_ex, bbox_eps]
             (const size_t lslice_idx, const Point &point) {
             const BoundingBox &bbox = lslices_ex[lslice_idx].bbox;
-            return 
+            return
                 point.x() < bbox.min.x() - bbox_eps || point.x() > bbox.max.x() + bbox_eps ||
                 point.y() < bbox.min.y() - bbox_eps || point.y() > bbox.max.y() + bbox_eps ?
                 std::numeric_limits<double>::max() :
@@ -1265,7 +1267,7 @@ void Layer::export_region_slices_to_svg(const char *path) const
         for (const Surface &surface : region->slices())
             svg.draw(surface.expolygon, surface_type_to_color_name(surface.surface_type), transparency);
     export_surface_type_legend_to_svg(svg, legend_pos);
-    svg.Close(); 
+    svg.Close();
 }
 
 // Export to "out/LayerRegion-name-%d.svg" with an increasing index with every export.

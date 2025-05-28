@@ -76,9 +76,9 @@ void InfillPolylineClipper::add_point(const Vec2d &fpt)
 }
 
 void FillPlanePath::_fill_surface_single(
-    const FillParams                &params, 
+    const FillParams                &params,
     unsigned int                     thickness_layers,
-    const std::pair<float, Point>   &direction, 
+    const std::pair<float, Point>   &direction,
     ExPolygon                        expolygon,
     Polylines                       &polylines_out) const
 {
@@ -98,7 +98,7 @@ void FillPlanePath::_fill_surface_single(
         // around the clipping expolygon only.
         snug_bounding_box;
 
-    Point shift = this->centered() ? 
+    Point shift = this->centered() ?
         bounding_box.center() :
         bounding_box.min;
     expolygon.translate(-double(shift.x()), -double(shift.y()));
@@ -137,7 +137,7 @@ void FillPlanePath::_fill_surface_single(
         mini_polyline.points.reserve(iend - istart);
         mini_polyline.points.insert(mini_polyline.points.end(), polyline.points.begin()+istart, polyline.points.begin()+iend);
         Polylines polylines = intersection_pl(mini_polyline, expolygon);
-        ensure_valid(polylines, std::max(SCALED_EPSILON, params.fill_resolution));
+        ensure_valid(polylines, params.fill_resolution);
         if (!polylines.empty()) {
             assert(!polylines.front().empty());
             if (!all_poly.empty() && polylines.front().front().coincides_with_epsilon(all_poly.back().back())) {
@@ -197,7 +197,7 @@ void FillArchimedeanChords::generate(coord_t min_x, coord_t min_y, coord_t max_x
         generate_archimedean_chords(min_x, min_y, max_x, max_y, resolution, output);
 }
 
-// Adapted from 
+// Adapted from
 // http://cpansearch.perl.org/src/KRYDE/Math-PlanePath-122/lib/Math/PlanePath/HilbertCurve.pm
 //
 // state=0    3--2   plain

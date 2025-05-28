@@ -225,13 +225,18 @@ public:
 
         //check if the spashscreen fit
         scaling = std::min( scaling, std::min(
-            (display_size.width - display_size.x) * 0.8 / width,
-            (display_size.height - display_size.y) * 0.8 / height));
+            (display_size.width /*- display_size.x*/) * 0.8 / width,
+            (display_size.height /*- display_size.y*/) * 0.8 / height));
         // if screen very small, use all the space avaialble
         if (scaling < 0.5) {
             scaling = std::min(
-                (display_size.width - display_size.x) / width,
-                (display_size.height - display_size.y) / height);
+                (display_size.width /*- display_size.x*/) / width,
+                (display_size.height /*- display_size.y*/) / height);
+        }
+        if (scaling > 10) {
+            // error
+            scaling = 1;
+            assert(false);
         }
         if (scaling > 1) {
             // don't grow with fractional scaling
@@ -242,8 +247,11 @@ public:
             } else {
                 scaling = 1.;
             }
-        } else {
+        } else if (scaling > 0.1) {
             scaling = int(scaling * 10) / 10.;
+        } else {
+            scaling = 1;
+            assert(false);
         }
         width *= scaling;
         height *= scaling;
@@ -267,6 +275,7 @@ public:
 
         return new_bmp;
     }
+
 
     void Decorate()
     {
@@ -1355,6 +1364,32 @@ bool GUI_App::on_init_inner()
         }
     }
 
+    if (std::string current_layout_name = app_config->get("ui_layout"); current_layout_name != "Standard") {
+        AppConfig::LayoutEntry my_layout = app_config->get_ui_layout();
+        // check if version is up to date
+        std::optional<Semver> current_ver = Semver::parse(app_config->get("version"));
+        assert(current_ver);
+        current_ver->set_patch(0); // disregard patch
+        if (my_layout.version < *current_ver) {
+            current_ver = Semver::parse(app_config->get("version"));
+            //ask if the user don't want to switch to an up-to-date layout.
+            wxString title = format_wxstr(_L("You are opening %1% version %2%."), SLIC3R_APP_NAME, SLIC3R_VERSION);
+            wxString message = format_wxstr(_L(
+                    "The active gui layout used '%1%' was created for version %2%,"
+                    "\nwhile the current software is now at version %3%."
+                    "\nDo you prefer to continue using this outdated layout?"
+                    "\nIf not, the layout will be rolled back to the '%4%' layout"
+                ), my_layout.name, my_layout.version.to_string(), current_ver->to_string(), "Default");
+            InfoDialog msg(nullptr, title, message, true, wxYES_NO);
+            if (msg.ShowModal() == wxID_NO) {
+                app_config->set("ui_layout", "Standard");
+                // reload (colors, tags)
+                app_config->save();
+                app_config->load();
+            }
+        }
+    }
+
 #ifdef _MSW_DARK_MODE
     // app_config can be updated in check_older_app_config(), so check if dark_color_mode and sys_menu_enabled was changed
     if (bool new_dark_color_mode = app_config->get_bool("dark_color_mode");
@@ -1805,7 +1840,6 @@ void GUI_App::update_ui_colours_from_appconfig()
         if (str != "")
             m_color_dark_mode_label_default = wxColour(str);
     }
-
     if (app_config->has("label_clr_phony")) {
         auto str = app_config->get("label_clr_phony");
         if (str != "")
@@ -1816,7 +1850,6 @@ void GUI_App::update_ui_colours_from_appconfig()
         if (str != "")
             m_color_dark_mode_label_phony = wxColour(str);
     }
-
 #ifdef GUI_TAG_PALETTE
     // load mode markers colors
     if (app_config->has("mode_palette")) {

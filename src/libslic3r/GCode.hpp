@@ -65,11 +65,11 @@ struct PrintInstance;
 class OozePrevention {
 public:
     bool enable;
-    
+
     OozePrevention() : enable(false) {}
     std::string pre_toolchange(GCodeGenerator &gcodegen);
     std::string post_toolchange(GCodeGenerator &gcodegen);
-    
+
 private:
     int _get_temp(const GCodeGenerator &gcodegen) const;
 };
@@ -213,7 +213,7 @@ private:
 
         bool is_open() const { return f; }
         bool is_error() const;
-        
+
         void flush();
         void close();
 
@@ -221,12 +221,12 @@ private:
         void write(const std::string& what) { this->write(what.c_str()); }
         void write(const char* what);
 
-        // Write a string into a file. 
+        // Write a string into a file.
         // Add a newline, if the string does not end with a newline already.
         // Used to export a custom G-code section processed by the PlaceholderParser.
         void writeln(const std::string& what);
 
-        // Formats and write into a file the given data. 
+        // Formats and write into a file the given data.
         void write_format(const char* format, ...);
 
     private:
@@ -281,7 +281,7 @@ private:
         const size_t                             single_object_idx,
         std::string                             &preamble,
         GCodeOutputStream                       &output_stream);
-    
+
     void            set_extruders(const std::vector<uint16_t> &extruder_ids);
     std::string     preamble();
     std::string change_layer(double print_z);
@@ -344,16 +344,16 @@ private:
         // Round 1 (wiping into object or infill) or round 2 (normal extrusions).
         bool                      print_wipe_extrusions;
     };
-    
+
     // This function will be called for each printing extruder, possibly twice: First for wiping extrusions, second for normal extrusions.
     void process_layer_single_object(
         // output
-        std::string              &gcode, 
+        std::string              &gcode,
         const ExtrudeArgs        &args,
         // and the object & support layer of the above.
         const ObjectLayerToPrint &layer_to_print);
     void emit_milling_commands(std::string& gcode, const ObjectsLayerToPrint& layers);
-    
+
     // set the region config, and the overrides it contains.
     // if no m_region, then it will take the default region config from print_object
     // if no print_object, then it will take the default region config from print
@@ -475,7 +475,7 @@ private:
     // Current layer processed. In sequential printing mode, only a single copy will be printed.
     // In non-sequential mode, all its copies will be printed.
     const Layer*                        m_layer;
-    const Layer*                        m_last_object_layer;
+    const Layer*                        m_last_object_layer = nullptr;
     const PrintRegion*                  m_region = nullptr;
     // m_layer is an object layer and it is being printed over raft surface.
     bool                                m_object_layer_over_raft;    // idx of the current instance printed. (or the last one)
