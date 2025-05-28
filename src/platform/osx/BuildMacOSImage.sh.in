@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# This script build the CaribouSlicer appimage.
+# This script build the AMSlicer appimage.
 #
 # Original script from SuperSclier by supermerill https://github.com/supermerill/SuperSlicer
 #
@@ -72,11 +72,11 @@ then
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "SuperSlicer.mo" -type f -delete
 
         # copy bin and do not let it lower case
-        cp -f src/@SLIC3R_APP_CMD@ pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/MacOS/@SLIC3R_APP_KEY@
+        cp -f bin/@SLIC3R_APP_CMD@ pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/MacOS/@SLIC3R_APP_KEY@
         chmod u+x pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/MacOS/@SLIC3R_APP_KEY@
         cp /usr/local/opt/zstd/lib/libzstd.1.dylib pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/MacOS/libzstd.1.dylib
 
-     } &> $ROOT/Build.log # Capture all command output
+    } &> $ROOT/Build.log # Capture all command output
     echo -e "\n ... done\n"
 fi
 
