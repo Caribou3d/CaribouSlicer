@@ -1,0 +1,7664 @@
+
+msgid ""
+"%1% marked with <b>*</b> are <b>not</b> compatible with some installed "
+"printers."
+msgstr ""
+"%1% merkittynä <b>*</b>-symboleilla <b>eivät</b> ole yhteensopivia joidenkin "
+"ladattujen tulostimien kanssa."
+
+msgid "%1%d"
+msgstr "%1%d"
+
+msgid "%1%h"
+msgstr "%1%h"
+
+msgid "%1%m"
+msgstr "%1%m"
+
+msgid "%1%s"
+msgstr "%1%s"
+
+msgid "%s - BREAKING CHANGE"
+msgstr "%s - RIKKOVA MUUTOS"
+
+msgid "%s Family"
+msgstr "%s Perhe"
+
+msgid "%s View Mode"
+msgstr "%s Katselutila"
+
+msgid "&Configuration"
+msgstr "&Konfiguraatio"
+
+msgid "&Convert"
+msgstr "&Muunna"
+
+msgid "&Copy"
+msgstr "K&opioi"
+
+msgid "&Edit"
+msgstr "&Muokkaa"
+
+msgid "&File"
+msgstr "&Tiedosto"
+
+msgid "&Finish"
+msgstr "&Valmis"
+
+msgid "&Fullscreen"
+msgstr "&Koko näyttö"
+
+msgid "&Help"
+msgstr "&Apua"
+
+msgid "&New Project"
+msgstr "&Uusi projekti"
+
+msgid "&Next >"
+msgstr "&Seuraava >"
+
+msgid "&Open G-code"
+msgstr "&Avaa G-koodi"
+
+msgid "&Paste"
+msgstr "L&iitä"
+
+msgid "&Preferences"
+msgstr "&Asetukset"
+
+msgid "&Quit"
+msgstr "&Lopeta"
+
+msgid "&Redo"
+msgstr "&Toista"
+
+msgid "&Repair STL file"
+msgstr "&Korjaa STL-tiedosto"
+
+msgid "&Select All"
+msgstr "&Valitse kaikki"
+
+msgid "&Undo"
+msgstr "&Kumoa"
+
+msgid "&View"
+msgstr "&Näkymä"
+
+msgid "&Window"
+msgstr "&Ikkuna"
+
+msgid "(All)"
+msgstr "(kaikki)"
+
+msgid "(minimum)."
+msgstr "(minimi)."
+
+msgid "(Re)Slice No&w"
+msgstr "(Uudelleen)Viipaloi Ny&t"
+
+msgid "(Templates)"
+msgstr "(pohjat)"
+
+msgid "0 (off)"
+msgstr "0 (pois)"
+
+msgid "1 (light)"
+msgstr "1 (kevyt)"
+
+msgid "2 (default)"
+msgstr "2 (oletus)"
+
+msgid "3 (heavy)"
+msgstr "3 (raskas)"
+
+msgid "3D Honeycomb"
+msgstr "3D-hunajakenno"
+
+msgid "< &Back"
+msgstr "< &Takaisin"
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "Nyrkkisääntönä on 160-230 °C PLA:lle ja 215-250 °C ABS:lle."
+
+msgid "Abort"
+msgstr "Peru"
+
+msgid "About %s"
+msgstr "Tietoja: %s"
+
+msgid "Accuracy"
+msgstr "Tarkkuus"
+
+msgid "Accurate"
+msgstr "Tarkkuus"
+
+msgid "Activate"
+msgstr "Aktivoi"
+
+msgid "Active"
+msgstr "Aktiivinen"
+
+msgid "active"
+msgstr "aktiivinen"
+
+msgid "Add"
+msgstr "Lisää"
+
+msgid "Add color change"
+msgstr "Lisää värinvaihto"
+
+msgid "Add custom G-code"
+msgstr "Lisää mukautettu G-koodi"
+
+msgid "Add negative SVG"
+msgstr "Lisää negatiivinen tilavuus"
+
+msgid "Add negative volume"
+msgstr "Lisää negatiivinen tilavuus"
+
+msgid "Add part"
+msgstr "Lisää osa"
+
+msgid "Add pause print"
+msgstr "Lisää tulostuksen tauko"
+
+msgid "Add point"
+msgstr "Lisää piste"
+
+msgid "Add point to selection"
+msgstr "Lisää piste valintaan"
+
+msgid "Add settings"
+msgstr "Lisää asetuksia"
+
+msgid "Add SVG part"
+msgstr "Lisää osa"
+
+msgid "Add text"
+msgstr "Lisää tekstiä"
+
+msgid "Add..."
+msgstr "Lisää..."
+
+msgid "Add/Remove filaments"
+msgstr "Lisää/Poista tulostuslankoja"
+
+msgid "Add/Remove materials"
+msgstr "Lisää/Poista materiaaleja"
+
+msgid "Add/Remove printers"
+msgstr "Lisää/Poista tulostimia"
+
+msgid ""
+"Additionally a backup snapshot of the whole configuration is created before "
+"an update is applied."
+msgstr ""
+"Lisäksi koko kokoonpanosta luodaan tilannekuva varmuuskopioksi ennen kuin "
+"päivitys asennetaan."
+
+msgid "Address"
+msgstr "Osoite"
+
+msgid "Advanced"
+msgstr "Kehittynyt"
+
+msgid "Advanced mode"
+msgstr "Kehittynyt tila"
+
+msgid "Alignment"
+msgstr "Tasaus"
+
+msgid "All"
+msgstr "Kaikki"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "Kaikki ladatut tulostimet ovat yhteensopivia valitun %1%;n kanssa."
+
+msgid "All standard"
+msgstr "Kaikki standardi"
+
+msgid "All walls"
+msgstr "Kaikki seinät"
+
+msgid "Allow built-in downloader"
+msgstr "Salli sisäänrakennettu lataaja"
+
+msgid "Along X axis"
+msgstr "X-akselia pitkin"
+
+msgid "Along Y axis"
+msgstr "Y-akselia pitkin"
+
+msgid "Along Z axis"
+msgstr "Z-akselia pitkin"
+
+msgid "Also consider enabling brim."
+msgstr "Harkitse myös reunuksen käyttämistä."
+
+msgid "Alternate nozzles:"
+msgstr "Vaihtoehtoiset tulostuskärjet:"
+
+msgid ""
+"An object has enabled XY Size compensation which will not be used because it "
+"is also multi-material painted.\n"
+"XY Size compensation cannot be combined with multi-material painting."
+msgstr ""
+"Objektilla on XY-kokokompensointi päällä, mutta sitä ei käytetä, koska se on "
+"myös monimateriaalimaalattu.\n"
+"XY-kokokompensointia ei voi yhdistää monimateriaalimaalaukseen."
+
+msgid "An unexpected error occured"
+msgstr "Tuntematon virhe tapahtui"
+
+msgid "Any arrow"
+msgstr "Mikä tahansa nuoli"
+
+msgid "API key"
+msgstr "Rajapintaavain"
+
+msgid "App update"
+msgstr "Ohjelmistopäivitys"
+
+msgid "App Update available"
+msgstr "Ohjelmistopäivitys saatavilla"
+
+msgid "App Update download"
+msgstr "Ohjelmistopäivityksen lataus"
+
+msgid "Apply"
+msgstr "Käytä"
+
+msgid "Arachne"
+msgstr "Arachne"
+
+msgid "Arc fitting"
+msgstr "Lisää asetuksia"
+
+msgid "Archive preview"
+msgstr "Arkiston esikatselu"
+
+msgid "Area fill"
+msgstr "Aluetäyttö"
+
+msgid "Arrow Down"
+msgstr "Nuoli alas"
+
+msgid "Arrow Left"
+msgstr "Nuoli vasemmallle"
+
+msgid "Arrow Right"
+msgstr "Nuoli oikealle"
+
+msgid "Arrow Up"
+msgstr "Nuoli ylös"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Automatic updates"
+msgstr "Automaattiset päivitykset"
+
+msgid "Avoid crossing perimeters"
+msgstr "Vältä kehien ylitys"
+
+msgid "Avoid crossing perimeters - Max detour length"
+msgstr "Vältä kehien ylitys - Maksimi kierron pituus"
+
+msgid ""
+"Avoid crossing perimeters option and avoid crossing curled overhangs option "
+"cannot be both enabled together."
+msgstr ""
+"Vältä kehien ylitys-valinta ja vältä kiharien ulokkeiden ylitys-valinta "
+"eivät voi molemmat olla valittuna yhdessä."
+
+msgid "Balanced"
+msgstr "Kehittynyt"
+
+msgid "Bed custom model"
+msgstr "Alustan mukautettu muoto"
+
+msgid "Bed shape"
+msgstr "Alustan muoto"
+
+msgid "Bed Shape"
+msgstr "Alustan muoto"
+
+msgid "Bed Shape and Size"
+msgstr "Alustan muoto ja koko"
+
+msgid "Bed Temperature"
+msgstr "Alustan lämpötila"
+
+msgid "Before roll back"
+msgstr "Ennen palautusta"
+
+msgid "Block seam"
+msgstr "Estä sauma"
+
+msgid "Bottle weight"
+msgstr "Pullon paino"
+
+msgid "Bottom"
+msgstr "Alapuoli"
+
+msgid "Bottom View"
+msgstr "Alanäkymä"
+
+msgid "Box"
+msgstr "Laatikko"
+
+msgid "Branch Diameter"
+msgstr "Oksan alkaisija"
+
+msgid "Branch Diameter Angle"
+msgstr "Oksan halkaisijan kulma"
+
+msgid "Brim"
+msgstr "Reunus"
+
+msgid "Browse"
+msgstr "Selaa"
+
+msgid "Brush"
+msgstr "Harja"
+
+msgid "Build Volume"
+msgstr "Tulostustilavuus"
+
+msgid "Buttons And Text Colors Description"
+msgstr "Painikkeiden ja tekstien värien selitykset"
+
+msgid "Calculating overhanging perimeters"
+msgstr "Luodaan kehiä"
+
+msgid "Camera"
+msgstr "Kamera"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "CANCELED"
+msgstr "PERUTTU"
+
+msgid "Center"
+msgstr "Keskikohta"
+
+msgid "Change cut mode"
+msgstr "Muuta tyyppiä"
+
+msgid "Change extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "Change extruder (N/A)"
+msgstr "Vaihda ekstruuderia (ei saatavilla)"
+
+msgid "Change file"
+msgstr "Muuta tyyppiä"
+
+msgid "Change SVG Type"
+msgstr "Muuta tyyppiä"
+
+msgid "Change type"
+msgstr "Muuta tyyppiä"
+
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"Tyylin muuttaminen arvoon \"%1%\" hylkää nykyisen tyylimuutoksen.\n"
+"\n"
+"Haluatko silti jatkaa?"
+
+msgid "Check for application updates"
+msgstr "Tarkista sovelluspäivitykset"
+
+msgid "Check for Application Updates"
+msgstr "Tarkista ohjelmapäivitykset"
+
+msgid "Check for Configuration Updates"
+msgstr "Tarkista konfiguraatiopäivitykset"
+
+msgid "Check for configuration updates"
+msgstr "Tarkista konfiguraatiopäivitykset"
+
+msgid "Check for new version of application"
+msgstr "Tarkista uudet ohjelmaversiot"
+
+msgid "Choose a file to import bed texture from (PNG/SVG):"
+msgstr "Valitse tiedosto josta tuoda alustan tekstuuri (PNG/SVG):"
+
+msgid "Choose an STL file to import bed model from:"
+msgstr "Valitse STL-tiedosto josta valita alustan muoto:"
+
+msgid "Choose an STL file to import bed shape from:"
+msgstr "Valitse STL-tiedosto josta valita alustan muoto:"
+
+msgid "Choose folder"
+msgstr "Valitse kansio"
+
+msgid "Choose one file (3MF/AMF):"
+msgstr "Valitse yksi tiedosto (3MF/AMF):"
+
+msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
+msgstr "Valitse yksi tai useampi tiedosto (STL/3MF/STEP/OBJ/AMF/PRUSA):"
+
+msgid "Choose SLA archive"
+msgstr "Valitse ZIP-tiedosto"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "Valitse tulostimesi käyttämä laiteohjelmiston tyyppi."
+
+msgid "Choose ZIP file"
+msgstr "Valitse ZIP-tiedosto"
+
+msgid "Chosen directory for downloads does not exist."
+msgstr "Latauksille valittua kansiota ei ole olemassa."
+
+msgid "Circular"
+msgstr "Ympyrämainen"
+
+msgid "Classic"
+msgstr "Klassinen"
+
+msgid "Clear"
+msgstr "&Tyhjennä"
+
+msgid "Click to show"
+msgstr "Napauta näyttääksesi"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Color"
+msgstr "Väri"
+
+msgid "Color change"
+msgstr "Värinvaihto"
+
+msgid "Color change (\"%1%\")"
+msgstr "Värinvaihto (\"%1%\")"
+
+msgid "Color change G-code"
+msgstr "Värinvaihdon G-koodi"
+
+msgid "Color changes"
+msgstr "Värinvaihdot"
+
+msgid "Color gradient (%1%)"
+msgstr "Värinvaihto (\"%1%\")"
+
+msgid "Color Print"
+msgstr "Värituloste"
+
+msgid "Comment:"
+msgstr "Kommentti:"
+
+msgid "Configuration &Assistant"
+msgstr "Konfiguraation &avustaja"
+
+msgid "Configuration Assistant"
+msgstr "Konfiguraatioavustaja"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "Konfiguraatiota on muokattu ConfigWizardissa"
+
+msgid "Configuration notes"
+msgstr "Konfiguraation muistiinpanot"
+
+msgid "Configuration Snapshots"
+msgstr "Konfiguraation tilannekuva"
+
+msgid "Configuration update is available"
+msgstr "Konfiguraatiopäivitys saatavilla"
+
+msgid "Configuration update is available."
+msgstr "Konfiguraatiopäivitys saatavilla."
+
+msgid ""
+"Configuration update is available. Update contains new printer releases."
+msgstr "Konfiguraatiopäivitys saatavilla."
+
+msgid "Confirm"
+msgstr "Varmista"
+
+msgid "Connector"
+msgstr "Liitin"
+
+msgid "Connectors information"
+msgstr "Informaatio"
+
+msgid "Continue"
+msgstr "Jatka"
+
+msgid "continue"
+msgstr "jatka"
+
+msgid "Copy"
+msgstr "Kopioi"
+
+msgid "Copy Version Info"
+msgstr "Kopioi versioinformaatio"
+
+msgid ""
+"Copying of the temporary G-code has finished but the exported code couldn't "
+"be opened during copy check. The output G-code is at %1%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti onnistui, mutta vietyä koodia ei voitu avata "
+"kopiointitarkastuksen aikana. Tuotettu G-koodi sijaitsee %1%.tmp;ssä."
+
+msgid ""
+"Copying of the temporary G-code has finished but the original code at %1% "
+"couldn't be opened during copy check. The output G-code is at %2%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti onnistui mutta alkuperäistä koodia %1%;ssä ei "
+"voitu avata kopiointitarkastuksen aikana.  Tuotettu G-koodi sijaitsee %2%."
+"tmp;ssä."
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. Maybe the SD "
+"card is write locked?\n"
+"Error message: %1%"
+msgstr ""
+"Väliaikaisen G-koodin vienti tuotettuun G-koodiin epäonnistui. SD-Kortti "
+"saattaa olla kirjoituslukittu?\n"
+"Virheilmoitus: %1%"
+
+msgid ""
+"Copying of the temporary G-code to the output G-code failed. There might be "
+"problem with target device, please try exporting again or using different "
+"device. The corrupted output G-code is at %1%.tmp."
+msgstr ""
+"Väliaikaisen G-koodin vienti tuotettuun G-koodiin epäonnistui. "
+"Kohdelaitteessa saattaa olla ongelma, yritä vientiä uudelleen tai koita eri "
+"laitteella. Korruptoitunut G-koodi sijaitsee %1%.tmp -tiedostossa."
+
+msgid "Copyright"
+msgstr "Tekijänoikeus"
+
+msgid "Cost"
+msgstr "Hinta"
+
+msgid "Cost (money)"
+msgstr "Hinta (rahassa)"
+
+msgid "Critical angle"
+msgstr "Kriittinen kulma"
+
+msgid "Critical error"
+msgstr "Kriittinen virhe"
+
+msgid "Cross"
+msgstr "Risti"
+
+msgid "Current extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "Current extruder index"
+msgstr "Nykyinen versio:"
+
+msgid "Current mode is %s"
+msgstr "Tämänhetkinen tila on %s"
+
+msgid "Current object index"
+msgstr "Tämänhetkinen tila on %s"
+
+msgid "Current version:"
+msgstr "Nykyinen versio:"
+
+msgid "Current z-hop"
+msgstr "Nykyinen versio:"
+
+msgid "Custom"
+msgstr "Mukautettu"
+
+msgid "Custom G-codes"
+msgstr "Mukautetut G-koodit"
+
+msgid "Custom Printer"
+msgstr "Mukautettu tulostin"
+
+msgid "Custom Printer Setup"
+msgstr "Mukautettu tulostusasennus"
+
+msgid "Custom profile name:"
+msgstr "Mukautettun profiilin nimi:"
+
+msgid "Cut"
+msgstr "Leikkaa"
+
+msgid "Cylinder"
+msgstr "Sylinteri"
+
+msgid "D&eselect All"
+msgstr "P&oista kaikki valinnat"
+
+msgid "Day"
+msgstr "Näyttö"
+
+msgid "Default"
+msgstr "Oletus"
+
+msgid "default"
+msgstr "oletus"
+
+msgid "Default color"
+msgstr "Oleusväri"
+
+msgid "default color"
+msgstr "oleusväri"
+
+msgid "Default font"
+msgstr "Oletusfontti"
+
+msgid "Default palette for mode markers"
+msgstr "Oletuspaletti tilan merkitsijöille"
+
+msgid "default value"
+msgstr "oletusarvo"
+
+msgid "Define a custom printer profile"
+msgstr "Määrittele mukautettu profiili"
+
+msgid "Delete"
+msgstr "Poista"
+
+msgid "delete"
+msgstr "posta"
+
+msgid "Delete \"%1%\" style."
+msgstr "Poista tyyli \"%1%\"."
+
+msgid "Delete color change"
+msgstr "Poista värinvaihto"
+
+msgid "Delete object"
+msgstr "Poista objekti"
+
+msgid "Delete Object"
+msgstr "Poista Objekti"
+
+msgid "Depth"
+msgstr "Syvyys"
+
+msgid "Deselect by rectangle"
+msgstr "Poista valinta suorakulmiolla"
+
+msgid "Deselects all objects"
+msgstr "Poistaa kaikki valinnat"
+
+msgid "Desktop Integration"
+msgstr "Työpöytäintegraatio"
+
+msgid "Diameter"
+msgstr "Halkaisija"
+
+msgid ""
+"Diameter of the print bed. It is assumed that origin (0,0) is located in the "
+"center."
+msgstr ""
+"Tulostusalustan halkaisija. Oletetaan että origo (0,0) sijaistee keskellä."
+
+msgid "Disable \"%1%\""
+msgstr "Poista käytöstä \"%1%\""
+
+msgid "Discard"
+msgstr "Hylkää"
+
+msgid "Discard all custom changes"
+msgstr "Hylkää kaikki mukautukset"
+
+msgid "Display"
+msgstr "Näyttö"
+
+msgid "Display height"
+msgstr "Näytön korkeus"
+
+msgid "Display the Print Host Upload Queue window"
+msgstr "Näytä tulosta isäntäkoneen latausjono-ikkuna"
+
+msgid "Display width"
+msgstr "Näytön leveys"
+
+msgid ""
+"Distance of the 0,0 G-code coordinate from the front left corner of the "
+"rectangle."
+msgstr "Matka 0,0 G-koodin sijainnista etuvasemmasta kulmasta suorakulmiota."
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr "Etäisyys jäähdytysputken keskipisteestä ekstruuderin päähän."
+
+msgid "Distance of the center-point of the cooling tube from the extruder tip."
+msgstr "Etäisyys jäähdytysputken keskipisteestä ekstruuderin päähän."
+
+msgid "Divide by zero"
+msgstr "Jakaa nollalla"
+
+msgid "Do you want to proceed?"
+msgstr "Haluatko jatkaa?"
+
+msgid "Do you want to replace it"
+msgstr "Haluatko korvata sen"
+
+msgid "Do you want to save the changes to \"%1%\"?"
+msgstr "Haluatko tallentaa muutokset kohteeseen \"%1%\"?"
+
+msgid "Don't install"
+msgstr "Älä lataa"
+
+msgid "Don't notify about new releases any more"
+msgstr "Älä enää muistuta uusista julkaisuista"
+
+msgid "Downgrade"
+msgstr "Alenna"
+
+msgid "Download"
+msgstr "Lataa"
+
+msgid "Download path"
+msgstr "Latausreitti"
+
+msgid "Downloads"
+msgstr "Lataukset"
+
+msgid "Downloads from URL"
+msgstr "Lataukset verkko-osoitteesta"
+
+msgid "Duplicate"
+msgstr "Monista"
+
+msgid "E&xport"
+msgstr "V&ie"
+
+msgid "Edit"
+msgstr "Muokkaa"
+
+msgid "Edit color"
+msgstr "Muokkaa väriä"
+
+msgid "Edit custom G-code"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit Custom G-code"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit Custom G-code (%1%)"
+msgstr "Muokkaa mukautettua G-koodia"
+
+msgid "Edit pause print message"
+msgstr "Muokkaa tulostuksen taukoilmoitusta"
+
+msgid "Edit SVG"
+msgstr "&Muokkaa"
+
+msgid "Edited"
+msgstr "&Muokkaa"
+
+msgid "Editing"
+msgstr "Muokkaus"
+
+msgid "Emboss"
+msgstr "Upota"
+
+msgid "Enable dark mode"
+msgstr "Käytä tummaa tiöaa"
+
+msgid "Enable ironing"
+msgstr "Ota silitys käyttöön"
+
+msgid ""
+"Enable ironing of the top layers with the hot print head for smooth surface"
+msgstr ""
+"Pintakerrosten silitys kuumalla tulostuspäällä mahdollistaa sileän pinnan"
+
+msgid "Enter the diameter of your filament."
+msgstr "Syötä muovisi halkaisija."
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "Syötä tulostimesi tulostuskärjen halkaisija."
+
+msgid "Enter the temperature needed for extruding your filament."
+msgstr "Syötä tulostuslangan tulostamiseen tarvittava lämpötila."
+
+msgid "Error"
+msgstr "Virhe"
+
+msgid "ERROR"
+msgstr "VIRHE"
+
+msgid "Error during reload"
+msgstr "Virhe uudelleenlatauksen aikana"
+
+msgid "Error with ZIP archive"
+msgstr "Virhe ZIP-arkiston kanssa"
+
+msgid "Error!"
+msgstr "Virhe!"
+
+msgid "Error! Invalid model"
+msgstr "Virhe! Virheellinen malli"
+
+msgid "ERROR:"
+msgstr "VIRHE:"
+
+msgid "Error: %s"
+msgstr "Virhe: %s"
+
+msgid ""
+"ERROR: Please close all manipulators available from the left toolbar first"
+msgstr ""
+"Virhe: Sulje kaikki manipulaattorit saatavilla vasemmasta työkalupalkista "
+"ensin"
+
+msgid "Expert mode"
+msgstr "Eksperttitila"
+
+msgid "Export"
+msgstr "Vie"
+
+msgid "Export 3MF"
+msgstr "Vie 3MF"
+
+msgid "Export AMF"
+msgstr "Vie AMF"
+
+msgid ""
+"Export full pathnames of models and parts sources into 3mf and amf files"
+msgstr ""
+"Vie mallien ja osien täydet tiedostopolkunimet 3mf- ja amf-tiedostoihin"
+
+msgid "Export OBJ"
+msgstr "Vie OBJ"
+
+msgid "Export SLA"
+msgstr "Vie SLA"
+
+msgid "Export STL"
+msgstr "Vie STL"
+
+msgid "Export."
+msgstr "Vie."
+
+msgid "Exporting source model"
+msgstr "Viedään lähdemallia"
+
+msgid "External perimeter"
+msgstr "Ulkoinen kehä"
+
+msgid "External perimeters"
+msgstr "Ulkoiset kehät"
+
+msgid "external perimeters"
+msgstr "ulkoiset kehät"
+
+msgid "External perimeters first"
+msgstr "Ulkoiset kehät ensin"
+
+msgid "Extra high"
+msgstr "Todella korkea"
+
+msgid "Extra low"
+msgstr "Todella matala"
+
+msgid "Extruder %d"
+msgstr "Ekstruuderi %d"
+
+msgid "Extrusion Temperature:"
+msgstr "Ekstruusio lämpötila:"
+
+msgid "Fan speed (%)"
+msgstr "Tuulettimen nopeus (%)"
+
+msgid "Fatal error"
+msgstr "Vakava virhe"
+
+msgid "filament"
+msgstr "tulostuslanka"
+
+msgid "Filament"
+msgstr "Tulostuslanka"
+
+msgid "Filament and Nozzle Diameters"
+msgstr "Tulostuslankojen ja tulostuskärkien halkaisijat"
+
+msgid "Filament Diameter"
+msgstr "Tulostuslangan halkaisija"
+
+msgid "Filament notes"
+msgstr "Tulostuslangan muistiinpanot"
+
+msgid "Filament preset name"
+msgstr "Tulostuslangan halkaisija"
+
+msgid "Filament Profiles Selection"
+msgstr "Filamenttiprofiilien valinta"
+
+msgid "Filament settings"
+msgstr "Tulostuslangan asetukset"
+
+msgid "Filament Settings"
+msgstr "Tulostuslangan asetukset"
+
+msgid "Filament Settings Tab"
+msgstr "Tulostuslangan asetusten sivu"
+
+msgid "filaments"
+msgstr "tulostuslangat"
+
+msgid "Filaments"
+msgstr "Tulostuslangat"
+
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+msgid "Files"
+msgstr "Tiedostot"
+
+msgid "Files association"
+msgstr "Tiedostojen yhdistäminen"
+
+msgid "Fill density"
+msgstr "Täyttötiheys"
+
+msgid "Find"
+msgstr "Etsi"
+
+msgid "Finished"
+msgstr "Valmis"
+
+msgid "Firmware"
+msgstr "Laiteohjelmisto"
+
+msgid "Firmware flasher"
+msgstr "Laiteohjelmiston lataaja"
+
+msgid "Firmware image:"
+msgstr "Laiteohjelmiston kuva:"
+
+msgid "Firmware Type"
+msgstr "Laiteohjelmiston tyyppi"
+
+msgid "Firmware-specific"
+msgstr "Laiteohjelmiston tyyppi"
+
+msgid "first"
+msgstr "ensimmäinen"
+
+msgid "First font"
+msgstr "Ensimmäinen fontti"
+
+msgid "First layer"
+msgstr "Ensimmäisen kerros"
+
+msgid "First layer convex hull"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid "First layer height"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid ""
+"First layer height is not valid.\n"
+"\n"
+"The first layer height will be reset to 0.01."
+msgstr ""
+"Ensimmäisen kerroksen korkeus ei ole kelvollinen\n"
+"\n"
+"Ensimmäisen kerroksen korkeus nollataan arvoon 0.01."
+
+msgid "First layer speed"
+msgstr "Ensimmäisen kerroksen korkeus"
+
+msgid "Floating reserved operand"
+msgstr "Float-varattu operandi"
+
+msgid "Font"
+msgstr "Fontti"
+
+msgid "Font size"
+msgstr "Fonttikoko"
+
+msgid ""
+"For the Wipe Tower to work with the soluble supports, the support layers\n"
+"need to be synchronized with the object layers."
+msgstr ""
+"Jotta pyyhkäisytorni toimisi liukenevien tukimateriaalien kanssa, "
+"tukikerrokset\n"
+"täytyy synkronisoida objektin kerroksien kanssa."
+
+msgid "From"
+msgstr "Mistä"
+
+msgid "From surface"
+msgstr "Pinnalta"
+
+msgid "Front"
+msgstr "Etupuoli"
+
+msgid "Front View"
+msgstr "Etunäkymä"
+
+msgid "Fullscreen"
+msgstr "Koko näyttö"
+
+msgid "G-code file exported to %1%"
+msgstr "G-kooditiedosto viety sijaintiin %1%"
+
+msgid "G-code preview"
+msgstr "G-koodin esikatselu"
+
+msgid "g/cm³"
+msgstr "g/cm³"
+
+msgid "g/ml"
+msgstr "g/ml"
+
+msgid "Gallery"
+msgstr "Galleria"
+
+msgid "Generating index buffers"
+msgstr "Luodaan indeksipuskuria"
+
+msgid "Generating perimeters"
+msgstr "Luodaan kehiä"
+
+msgid "Generating support material"
+msgstr "Luodaan tukimateriaalia"
+
+msgid "Generating toolpaths"
+msgstr "Luodaan työkalupolkuja"
+
+msgid "Generating vertex buffer"
+msgstr "Luodaan verteksipuskuria"
+
+msgid "Gizmo-Move"
+msgstr "Gizmo-Siirto"
+
+msgid "Gizmo-Rotate"
+msgstr "Gizmo-Käännös"
+
+msgid "GNU Affero General Public License, version 3"
+msgstr "GNU Affero General Public License, versio 3"
+
+msgid ""
+"Good precision is required, so use a caliper and do multiple measurements "
+"along the filament, then compute the average."
+msgstr ""
+"Hyvää tarkkuutta vaaditaan, joten käytä työntömittaa ja mittaa useasta "
+"kohtaa lankaa pitkin, ja laske sitten keskiarvo."
+
+msgid "Groove change"
+msgstr "Värinvaihto"
+
+msgid "GUI"
+msgstr "Graafinen käyttöliittymä"
+
+msgid "Has wipe tower"
+msgstr "pyyhkäisytorni"
+
+msgid "Height"
+msgstr "Korkeus"
+
+msgid "Height of SVG."
+msgstr "Korkeus"
+
+msgid "Height range Modifier"
+msgstr "Korkeusalueen muuttuja"
+
+msgid "Height:"
+msgstr "Korkeus:"
+
+msgid "Help"
+msgstr "Ohje"
+
+msgid "High"
+msgstr "Korkea"
+
+msgid "High viscosity"
+msgstr "Korkea viskositeetti"
+
+msgid "Hole depth"
+msgstr "Reiän syvyys"
+
+msgid "Hole diameter"
+msgstr "Reiän halkaisija"
+
+msgid "Honeycomb"
+msgstr "Hunajakenno"
+
+msgid "Host"
+msgstr "Isäntä"
+
+msgid "Hostname"
+msgstr "Isäntänimi"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Idle temperature"
+msgstr "Tyhjäkäyntilämpötila"
+
+msgid ""
+"If enabled, allows the Reload from disk command to automatically find and "
+"load the files when invoked.\n"
+"If not enabled, the Reload from disk command will ask to select each file "
+"using an open file dialog."
+msgstr ""
+"Jos käytössä, sallii \"Lataa uudelleen levyltä\"-komennon automaattisesti "
+"etsiä ja ladata tiedostot tarpeen mukaan.\n"
+"Jos ei käytössä, \"Lataa uudelleen levyltä\"-komento pyytää valita jokaisen "
+"tiedoston tiedostojen valintaikkunalla."
+
+msgid ""
+"If enabled, UI will use Dark mode colors. If disabled, old UI will be used."
+msgstr ""
+"Jos käytössä, käyttöliittymä käyttää tumman tilan värejä. Jos ei käytössä "
+"vanhaa käyttöliittymää käytetään."
+
+msgid "Illegal instruction"
+msgstr "Laiton käsky"
+
+msgid "Import file"
+msgstr "Älykäs täyttö"
+
+msgid "Import profile only"
+msgstr "Tukimateriaalia vain tulostusalustalle"
+
+msgid "in"
+msgstr "in"
+
+msgid "In queue"
+msgstr "Jono"
+
+msgid "Incompatible with this %s"
+msgstr "Ei yhteensopiva; %s"
+
+msgid "Infill"
+msgstr "Täyttö"
+
+msgid "Info"
+msgstr "Tiedot"
+
+msgid "Information"
+msgstr "Informaatio"
+
+msgid "Initial extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Install"
+msgstr "Lataa"
+
+msgid "Invalid data"
+msgstr "Virheellinen data"
+
+msgid "Invalid file format."
+msgstr "Virheellinen tiedostomuoto."
+
+msgid "Invalid numeric input."
+msgstr "Virheellinen numeerinen syöte."
+
+msgid "Ironing"
+msgstr "Silitys"
+
+msgid "Is extruder used?"
+msgstr "Ekstruuderi %d"
+
+msgid "is licensed under the"
+msgstr "on lisensoitu"
+
+msgid "Iso"
+msgstr "ISO"
+
+msgid "Iso View"
+msgstr "ISO-näkymä"
+
+msgid "Jump to"
+msgstr "Hyppää kohteeseen"
+
+msgid "Jump to height"
+msgstr "Hyppää korkeuteen"
+
+msgid "kg"
+msgstr "kg"
+
+msgid "Label objects"
+msgstr "Merkitse objektit"
+
+msgid "Landscape"
+msgstr "Vaakasuunta"
+
+msgid "Layer height"
+msgstr "Kerroskorkeus"
+
+msgid ""
+"Layer height is not valid.\n"
+"\n"
+"The layer height will be reset to 0.01."
+msgstr ""
+"Kerroskorkeus ei ole kelvollinen\n"
+"\n"
+"Kerroskorkeus nollataan arvoon 0.01."
+
+msgid "Layer number"
+msgstr "Kerrokset ja kehät"
+
+msgid "Layer Z"
+msgstr "Kerroskorkeus"
+
+msgid "layers"
+msgstr "kerrokset"
+
+msgid "Layers and perimeters"
+msgstr "Kerrokset ja kehät"
+
+msgid "Leave \"%1%\" enabled"
+msgstr "Jätä \"%1%\" käyttöön"
+
+msgid "Left"
+msgstr "Vasen puoli"
+
+msgid "Left View"
+msgstr "Vasen näkymä"
+
+msgid "Length"
+msgstr "Pituus"
+
+msgid ""
+"License agreements of all following programs (libraries) are part of "
+"application license agreement"
+msgstr ""
+"Seuraavien ohjelmien (kirjastojen) lisenssisopimukset ovat kaikki osia "
+"lisenssisopimuksessa"
+
+msgid "Lift height"
+msgstr "Kerroskorkeus"
+
+msgid "Line"
+msgstr "Viiva"
+
+msgid "Load"
+msgstr "Lataa"
+
+msgid ""
+"Load and store settings at the given directory. This is useful for "
+"maintaining different profiles or including configurations from a network "
+"storage."
+msgstr ""
+"Lataa ja tallentaa asetukset annettuun kansioon. Tämä on hyödyllistä, kun "
+"ylläpidetään erilaisia profiileja tai sisällytetään asetuksia verkon "
+"tallennustilasta."
+
+msgid "Load config file"
+msgstr "Lataa konfiguraatiotiedosto"
+
+msgid "Load shape from STL..."
+msgstr "Lataa muoto STL tiedostosta..."
+
+msgid "Load..."
+msgstr "Lataa…"
+
+msgid "loaded"
+msgstr "ladattu"
+
+msgid "Loading"
+msgstr "Ladataan"
+
+msgid "Loading configuration"
+msgstr "Ladataan konfiguraatiota"
+
+msgid "Loading repaired model"
+msgstr "Ladataan korjattua mallia"
+
+msgid "Low"
+msgstr "Matala"
+
+msgid "Mate&rial Settings Tab"
+msgstr "Mater&riaaliasetussivu"
+
+msgid "Material"
+msgstr "Materiaali"
+
+msgid "Material Settings"
+msgstr "Materiaaliasetukset"
+
+msgid "Material Settings Tab"
+msgstr "Materiaaliasetusten sivu"
+
+msgid "Max height"
+msgstr "&Korkeus"
+
+msgid "Max print height"
+msgstr "Tulosteen suurin sallittu korkeus"
+
+msgid "Max weight on model"
+msgstr "Suurin paino mallissa"
+
+msgid "Maximal layer Z"
+msgstr "Muuttuva kerroskorkeus"
+
+msgid "Maximum Branch Angle"
+msgstr "Maksimi oksan kulma"
+
+msgid "Medium"
+msgstr "Keskikorkea"
+
+msgid "Merge"
+msgstr "Liitä"
+
+msgid "Message"
+msgstr "Viesti"
+
+msgid "Min"
+msgstr "Min"
+
+msgid "Min height"
+msgstr "Kirjasimen &paino"
+
+msgid "Min print speed"
+msgstr "Min. tulostusnopeus"
+
+msgid "Minimum feature size"
+msgstr "Minimi ominaisuuden koko"
+
+msgid "Minimum perimeter width"
+msgstr "Kehän minimi leveys"
+
+msgid "ml"
+msgstr "ml"
+
+msgid "mm"
+msgstr "mm"
+
+msgid "mm (zero to disable)"
+msgstr "mm (nolla poistaaksesi käytöstä)"
+
+msgid "mm/s or %"
+msgstr "mm/s tai %"
+
+msgid "mm²"
+msgstr "mm²"
+
+msgid "mm³"
+msgstr "mm³"
+
+msgid "mm³/s²"
+msgstr "mm³/s²"
+
+msgid "Mode"
+msgstr "Tila"
+
+msgid "Model"
+msgstr "Malli"
+
+msgid "model"
+msgstr "malli"
+
+msgid "Model repair canceled"
+msgstr "Mallin korjaus peruttu"
+
+msgid "Model repair finished"
+msgstr "Mallin korjaus valmis"
+
+msgid "Model simplification has been canceled"
+msgstr "Mallin korjaus peruttu"
+
+msgid "Modified"
+msgstr "Muokattu"
+
+msgid "Monotonic"
+msgstr "Monotoninen"
+
+msgid "Monotonic Lines"
+msgstr "Monotoniset viivat"
+
+msgid "Mouse wheel"
+msgstr "Hiiren rulla"
+
+msgid "Mouse wheel:"
+msgstr "Hiiren rulla:"
+
+msgid "Move"
+msgstr "Liikuta"
+
+msgid "Move Object"
+msgstr "Siirrä objektia"
+
+msgid "Move over surface"
+msgstr "Pinnalta"
+
+msgid "Move point"
+msgstr "Siirrä pistettä"
+
+msgid "Movement step set to 1 mm"
+msgstr "Liikeaskel asetettu yhteen millimetriin"
+
+msgid "Multiple resolved IP addresses"
+msgstr "Useita ratkaistuja IP-osoitteita"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Network lookup"
+msgstr "Verkon hakeminen"
+
+msgid "New name of style"
+msgstr "Uusi tyylin nimi"
+
+msgid "New prerelease version %1% is available."
+msgstr "Uusi esikatseluversio %1% on saatavilla."
+
+msgid "New printer"
+msgid_plural "New printers"
+msgstr[0] "tulostin"
+msgstr[1] "tulostin"
+
+msgid "New version"
+msgstr "Uusi versio"
+
+msgid "New version of %1% is available."
+msgstr "Uusi versio %1%:istä on saatavilla."
+
+msgid "New version of %s is available"
+msgstr "Uusi versio %s:stä on saatavilla"
+
+msgid ""
+"New version of %s is available.\n"
+"Do you wish to download it?"
+msgstr ""
+"Uusi versio %s:istä on saatavilla.\n"
+"Haluatko ladata sen?"
+
+msgid "New version:"
+msgstr "Uusi versio:"
+
+msgid "Next"
+msgstr "Seuraava"
+
+msgid "Next extruder"
+msgstr "Vaihda ekstruuderia"
+
+msgid "No symbol"
+msgstr "Ei symbolia"
+
+msgid "No updates available"
+msgstr "Ei päivityksiä saatavilla"
+
+msgid "None"
+msgstr "Ei mitään"
+
+msgid "Normal"
+msgstr "Tavallinen"
+
+msgid "Normal mode"
+msgstr "Normaalitila"
+
+msgid "not a ZIP archive"
+msgstr "ei ZIP-arkisto"
+
+msgid "Not found:"
+msgstr "Ei löydetty:"
+
+msgid "Note"
+msgstr "Huomaa"
+
+msgid "Notes"
+msgstr "Muistiinpanot"
+
+msgid "Notice"
+msgstr "Huomio"
+
+msgid "Notify about new releases"
+msgstr "Muistuta uusista julkaisuista"
+
+msgid "nozzle"
+msgstr "tulostuskärki"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "Tulostuskärjen- ja alustan lämpötilat"
+
+msgid "Nozzle Diameter"
+msgstr "Tulostuskärjen halkaisija"
+
+msgid "Number of extruders"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of instances"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of objects"
+msgstr "Merkitse objektit"
+
+msgid "Number of pixels in X"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Number of pixels in Y"
+msgstr "Pikseleiden määrä Y akselissa"
+
+msgid "Number of printing extruders"
+msgstr "Pikseleiden määrä X akselissa"
+
+msgid "Objects"
+msgstr "Objektit"
+
+msgid "Objects info"
+msgstr "Objektit"
+
+msgid "OctoPrint comments"
+msgstr "OctoPrint versio"
+
+msgid "OctoPrint version"
+msgstr "OctoPrint versio"
+
+msgid "Offset"
+msgstr "Siirtymä"
+
+msgid "OK"
+msgstr "OK"
+
+msgid ""
+"On Linux systems the process of registration also creates desktop "
+"integration files for this version of application."
+msgstr ""
+"Linux-järjestelmillä rekisteröinti myös luo työpöydän integraatiotiedostot "
+"tälle ohjelman versiolle."
+
+msgid "One layer mode"
+msgstr "Yhden kerroksen tila"
+
+msgid ""
+"Only the following installed printers are compatible with the selected "
+"filaments"
+msgstr ""
+"Vain seuraavat asennetut tulostimet ovat yhteensopivia valittujen "
+"tulostuslankojen kanssa"
+
+msgid ""
+"Only the following installed printers are compatible with the selected SLA "
+"materials"
+msgstr ""
+"Vain seuraavat asennetut tulostimet ovat yhteensopivia valittujen SLA-"
+"materiaalien kanssa"
+
+msgid "Open"
+msgstr "Avaa"
+
+msgid "Open changelog page"
+msgstr "Avaa muutosluettelon sivu"
+
+msgid "Open hyperlink in default browser?"
+msgstr "Avaa hyperlinkki oletusselaimessa?"
+
+msgid "Operation"
+msgstr "Operaatio"
+
+msgid "Optimize orientation"
+msgstr "Optimoi asento"
+
+msgid ""
+"Optimize travel moves in order to minimize the crossing of perimeters. This "
+"is mostly useful with Bowden extruders which suffer from oozing. This "
+"feature slows down both the print and the G-code generation."
+msgstr ""
+"Optimoi siirtymät minimisoidakseen kehien ylitykset. Tämä on pääasiassa "
+"hyödyllistä Bowden-ekstruudereilla jotka kärsii tihkumisesta. Tämä "
+"ominaisuus hidastaa tulostusta sekä G-koodin generointia."
+
+msgid "Options"
+msgstr "Valinnat"
+
+msgid "Options:"
+msgstr "Valinnat:"
+
+msgid "Organic"
+msgstr "Orgaaninen"
+
+msgid "Origin"
+msgstr "Alkuperä"
+
+msgid "Original"
+msgstr "Alkuperäinen"
+
+msgid "Other Vendors"
+msgstr "Muut valmistajat"
+
+msgid "Output File"
+msgstr "Tuotettu tiedosto"
+
+msgid "Overflow"
+msgstr "Ylivuoto"
+
+msgid "Overhang perimeter"
+msgstr "Ulokekehä"
+
+msgid "Page Down"
+msgstr "Sivu alas"
+
+msgid "Page Up"
+msgstr "Sivu ylös"
+
+msgid "Palette 1 (default)"
+msgstr "Paletti 1 (oletus)"
+
+msgid "Palette 2"
+msgstr "Paletti 2"
+
+msgid "Palette 3"
+msgstr "Paletti 3"
+
+msgid "Palette 4"
+msgstr "Paletti 4"
+
+msgid "Palette 5"
+msgstr "Paletti 5"
+
+msgid "Palette 6"
+msgstr "Paletti 6"
+
+msgid "Palette 7"
+msgstr "Paletti 7"
+
+msgid "Palette 8"
+msgstr "Paletti 8"
+
+msgid "parameter name"
+msgstr "parametrin nimi"
+
+msgid "Part"
+msgstr "Osa"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Paste"
+msgstr "Liitä"
+
+msgid "Pattern angle"
+msgstr "Kuvion kulma"
+
+msgid "Pause print (\"%1%\")"
+msgstr "Pysäytä tuloste (\"%1%\")"
+
+msgid "Perform cut"
+msgstr "Suorita leikkuu"
+
+msgid ""
+"Perform desktop integration (Sets this binary to be searchable by the "
+"system)."
+msgstr ""
+"Suorita työpöytäintegraatio (Asettaa tämän binäärin järjestelmän "
+"haettavaksi)."
+
+msgid "Perimeter"
+msgstr "Kehä"
+
+msgid "Perimeter extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Perimeter generator"
+msgstr "Kehägeneraattori"
+
+msgid "perimeters"
+msgstr "kehät"
+
+msgid "Perimeters"
+msgstr "Kehät"
+
+msgid "Physical Printer"
+msgstr "Fyysinen tulostin"
+
+msgid "Physical printer name"
+msgstr "Fyysiset tulostimet"
+
+msgid "Physical printers"
+msgstr "Fyysiset tulostimet"
+
+msgid "Pick another vendor supported by %s"
+msgstr "Valitse toinen valmistaja, jota %s tukee"
+
+msgid "Pillar diameter"
+msgstr "Pilarin alkaisija"
+
+msgid "Pinhead front diameter"
+msgstr "Neulanpään etuhalkaisija"
+
+msgid "Place bearings in slots and resume printing"
+msgstr "Aseta laakerit uriin ja jatka tulostusta"
+
+msgid "Plug"
+msgstr "Tulppa"
+
+msgid "Portions copyright"
+msgstr "Tekijänoikeuden alaiset osat"
+
+msgid "Portrait"
+msgstr "Pystysuunta"
+
+msgid "Preferences"
+msgstr "&Asetukset"
+
+msgid "Preferred Branch Angle"
+msgstr "Suosittu oksan kulma"
+
+msgid "Preparing infill"
+msgstr "Valmistellaan täyttöä"
+
+msgid "Preparing settings tabs"
+msgstr "Valmistellaan asetusvälilehtiä"
+
+msgid "Presets"
+msgstr "Nollaa"
+
+msgid "Preview"
+msgstr "Esikatselu"
+
+msgid "Previous extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "print"
+msgstr "tuloste"
+
+msgid "Print"
+msgstr "Tulosta"
+
+msgid "Print &Host Upload Queue"
+msgstr "Tulosta &isäntäkoneen latausjono"
+
+msgid ""
+"Print contour perimeters from the outermost one to the innermost one instead "
+"of the default inverse order."
+msgstr ""
+"Tulostaa kehät uloimmasta sisään, oletusarvoisen käänteisen järjestyksen "
+"sijaan."
+
+msgid "Print Diameters"
+msgstr "Tulosteen koot"
+
+msgid "Print host upload queue"
+msgstr "Tulostusisäntäkoneen latausjono"
+
+msgid "Print mode"
+msgstr "Tulostustila"
+
+msgid "Print pauses"
+msgstr "Tulostuksen tauot"
+
+msgid "Print preset name"
+msgstr "Tulostusasetukset"
+
+msgid "Print settings"
+msgstr "Tulostusasetukset"
+
+msgid "Print Settings"
+msgstr "Tulostusasetukset"
+
+msgid "Print Settings Tab"
+msgstr "Tulostusasetuksien sivu"
+
+msgid "Print speed"
+msgstr "Tulostusnopeus"
+
+msgid "Print statistics"
+msgstr "Tulostusasetukset"
+
+msgid "Print time (normal mode)"
+msgstr "Näytä normaalitila"
+
+msgid "printer"
+msgstr "tulostin"
+
+msgid "Printer"
+msgstr "Tulostin"
+
+msgid "Printer absolute correction"
+msgstr "Tulostimen absoluuttinen korjaus"
+
+msgid "Printer gamma correction"
+msgstr "Tulostimen gammakorjaus"
+
+msgid "Printer notes"
+msgstr "Tulostimen muistiinpanot"
+
+msgid "Printer preset name"
+msgstr "Tulostimen tyyppi"
+
+msgid "Printer scaling correction"
+msgstr "Tulostimen skaalauksen korjaus"
+
+msgid "Printer settings"
+msgstr "Tulostimen asetukset"
+
+msgid "Printer Settings"
+msgstr "Tulostimen asetukset"
+
+msgid "Printer Settings Tab"
+msgstr "Tulostimen asetuksien sivu"
+
+msgid "Printer type"
+msgstr "Tulostimen tyyppi"
+
+msgid "Printer variant"
+msgstr "Tulostimen malli"
+
+msgid "Printer vendor"
+msgstr "Tulostimen valmistaja"
+
+msgid "Printer:"
+msgstr "Tulostin:"
+
+msgid "Prism"
+msgstr "Prisma"
+
+msgid "Private protection"
+msgstr "Tulostimen absoluuttinen korjaus"
+
+msgid "Processing triangulated mesh"
+msgstr "Prosessoidaan kolmioitua verkkoa"
+
+msgid "Progress"
+msgstr "Edistyminen"
+
+msgid "Progress:"
+msgstr "Edistyminen:"
+
+msgid "Project is loading"
+msgstr "Projektia ladataan"
+
+msgid ""
+"PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap "
+"community."
+msgstr ""
+"PrusaSlicer pohjautuu Allessandro Ranelluccin ja RepRap-yhteisön Slic3r:ään."
+
+msgid "Quality"
+msgstr "Laatu"
+
+msgid "Quality / Speed"
+msgstr "Laatu / Nopeus"
+
+msgid "Quit %s"
+msgstr "Lopeta %s"
+
+msgid "Quit, I will move my data now"
+msgstr "Lopeta, siirrän tietoni nyt"
+
+msgid "Re-configure"
+msgstr "Määritä uudelleen"
+
+msgid "Read only"
+msgstr "Vain julkaisu"
+
+msgid "Ready"
+msgstr "Valmis"
+
+msgid "Rectangular"
+msgstr "Suorakulmainen"
+
+msgid "Rectilinear"
+msgstr "Suoraviivainen"
+
+msgid "Redo"
+msgstr "Tee uudelleen"
+
+msgid "Redo History"
+msgstr "Tee uudelleen historia"
+
+msgid "Regular"
+msgstr "Tavallinen"
+
+msgid "Release only"
+msgstr "Vain julkaisu"
+
+msgid "Reload from disk"
+msgstr "Lataa uudelleen levyltä"
+
+msgid "Reload from:"
+msgstr "Lataa uudelleen kohteesta:"
+
+msgid "Reload SVG file from disk."
+msgstr "Lataa uudelleen levyltä"
+
+msgid "Remaining time"
+msgstr "Jäljellä oleva aika"
+
+msgid "Remember my choice"
+msgstr "Muista valintani"
+
+msgid "Remove"
+msgstr "Poista"
+
+msgid "remove"
+msgstr "poista"
+
+msgid "Remove all holes"
+msgstr "Poista kaikki reiät"
+
+msgid "Remove all selection"
+msgstr "Poista kaikki valinnat"
+
+msgid "Remove instance"
+msgstr "Poista ilmentymä"
+
+msgid "Remove point"
+msgstr "Poista piste"
+
+msgid "Remove point from selection"
+msgstr "Poista piste valinnasta"
+
+msgid "Remove selected holes"
+msgstr "Poista valitut reiät"
+
+msgid "Remove selection"
+msgstr "Poista valinta"
+
+msgid "Remove style"
+msgstr "Poista tyyli"
+
+msgid "Rename"
+msgstr "Nimeä uudelleen"
+
+msgid ""
+"Renaming of the G-code after copying to the selected destination folder has "
+"failed. Current path is %1%.tmp. Please try exporting again."
+msgstr ""
+"G-koodin uudelleennimeäminen valittuun kansioon kopioimisen jälkeen "
+"epäonnistui. Tämänhetkinen polku on %1%.tmp. Yritä vientiä uudelleen."
+
+msgid "Render"
+msgstr "Renderi"
+
+msgid "Render with a software renderer"
+msgstr "Renderöi ohjelmistorenderöijällä"
+
+msgid "Repairing model by Windows repair algorithm"
+msgstr "Korjataan mallia Netfabb-palvelulla"
+
+msgid "Replace with"
+msgstr "Korvaa kohteella"
+
+msgid "Replace?"
+msgstr "Korvaa?"
+
+msgid "Reset"
+msgstr "Nollaa"
+
+msgid "Reset defaults"
+msgstr "oletus"
+
+msgid "Reset distance"
+msgstr "Poista ilmentymä"
+
+msgid "Restore window position on start"
+msgstr "Palauta ikkunan sijainti käynnistyksen yhteydessä"
+
+msgid "Revert color"
+msgstr "Nollaa väri"
+
+msgid "Revert color to default"
+msgstr "Nollaa väri oletusarvoon"
+
+msgid "Revert font changes."
+msgstr "Nollaa fonttimuutokset."
+
+msgid "Revert text size."
+msgstr "Nollaa tekstin koko."
+
+msgid "Right"
+msgstr "Oikea"
+
+msgid "Right button click the icon to fix STL by Windows repair algorithm"
+msgstr ""
+"Pain ikonia hiiren oikealla painikkeella korjataksesi mallin Netfabb-"
+"palvelulla"
+
+msgid "Right View"
+msgstr "Oikea näkymä"
+
+msgid "Rotate"
+msgstr "Käännä"
+
+msgid "Ruler mode"
+msgstr "Mittatila"
+
+msgid "Run %s"
+msgstr "Suorita %s"
+
+msgid "Run installer after download. (Otherwise file explorer will be opened)"
+msgstr ""
+"Suorita asennusohjelma latauksen jälkeen. (Muutoin tiedostoselain avataan)"
+
+msgid "Running post-processing scripts"
+msgstr "Suoritetaan jälkikäsittelyskriptejä"
+
+msgid "S&end to print"
+msgstr "L&ähetä tulostettavaksi"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Save as"
+msgstr "Tallenna"
+
+msgid "Save as '.svg' file"
+msgstr "Tallenna uutena tyylinä"
+
+msgid "Save as new style"
+msgstr "Tallenna uutena tyylinä"
+
+msgid "Save as new style."
+msgstr "Tallenna uutena tyylinä."
+
+msgid "Save SVG file"
+msgstr "Valitse tiedosto"
+
+msgid "Scale"
+msgstr "Skaalaa"
+
+msgid "Scale per object"
+msgstr "Poista objekti"
+
+msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
+msgstr ""
+"Ajoitetaan vientiä sijaintiin `%1%`. Katso Ikkuna -> Tulostusisäntäkoneen "
+"latausjono"
+
+msgid "Search"
+msgstr "Etsi"
+
+msgid "Searching for devices"
+msgstr "Laitteita etsitään"
+
+msgid "Searching support spots"
+msgstr "Etsitään tukipisteitä"
+
+msgid "See Releases page."
+msgstr "Ks. Julkaisut-sivu."
+
+msgid "Select a file"
+msgstr "Valitse tiedosto"
+
+msgid "Select all points"
+msgstr "Valitse kaikki pisteet"
+
+msgid "Select by rectangle"
+msgstr "Valitse suorakulmiolla"
+
+msgid "Select directory"
+msgstr "Valitse polku"
+
+msgid "Select placeholder"
+msgstr "Valitse tiedosto"
+
+msgid "Select shape from the gallery"
+msgstr "Valitse muoto galleriasta"
+
+msgid "Select the new file"
+msgstr "Valitse uusi tiedosto"
+
+msgid "Selection"
+msgstr "Valinta"
+
+msgid "Selects all objects"
+msgstr "Valitsee kaikki objektit"
+
+msgid "Seq."
+msgstr "Sekv."
+
+msgid "Serial port:"
+msgstr "Sarjaportti:"
+
+msgid "Service name"
+msgstr "Palvelunimi"
+
+msgid "Set"
+msgstr "Aseta"
+
+msgid "Set bold"
+msgstr "Aseta lihavoitu"
+
+msgid "Set ruler mode"
+msgstr "Aseta mittatila"
+
+msgid "Set the printer height."
+msgstr "Aseta tulostimen korkeus."
+
+msgid "Set the shape of your printer's bed."
+msgstr "Aseta tulostusalustasi muoto."
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Shall I adjust those settings for supports?"
+msgstr "Pitäisikö minun säätää nämä asetukset tukimateriaalia varten?"
+
+msgid "Shall I adjust those settings in order to enable Spiral Vase?"
+msgstr ""
+"Pitäisikö minun säätää näitä asetuksia, jotta spiraalimaljakon saa käyttöön?"
+
+msgid "Shall I adjust those settings in order to enable the Wipe Tower?"
+msgstr ""
+"Pitäisikö minun säätää näitä asetuksia, jotta spiraalimaljakon saa käyttöön?"
+
+msgid "Shall I switch to rectilinear fill pattern?"
+msgstr "Pitäisikö minun vaihtaa suoraviivaiseen täyttökuvioon?"
+
+msgid "Shall I synchronize support layers in order to enable the Wipe Tower?"
+msgstr ""
+"Pitäisikö minun synkronoida tukikerrokset pyyhkäisytornin käyttöön "
+"ottamiseksi?"
+
+msgid "Shape"
+msgstr "Muoto"
+
+msgid "Shape Gallery"
+msgstr "Muotogalleria"
+
+msgid "Shells"
+msgstr "Kehät"
+
+msgid "Show about dialog"
+msgstr "Näytä tietoja-valintaikkuna"
+
+msgid "Show advanced settings"
+msgstr "Näytä kehittyneet asetukset"
+
+msgid "Show error message"
+msgstr "Näytä virheviesti"
+
+msgid "Show normal mode"
+msgstr "Näytä normaalitila"
+
+msgid "Show object height"
+msgstr "Näytä objektin korkeus"
+
+msgid "Show simplified settings"
+msgstr "Näytä yksinkertaistetut asetukset"
+
+msgid "Show stealth mode"
+msgstr "Näytä hiljainen tila"
+
+msgid "Show/Hide template presets"
+msgstr "Järjestelmän oletusasetukset"
+
+msgid "Simple mode"
+msgstr "Yksinkertainen tila"
+
+msgid "Single instance mode"
+msgstr "Yhden ilmentymän tila"
+
+msgid "Size"
+msgstr "Koko"
+
+msgid "Size in X and Y of the rectangular plate."
+msgstr "Koko suorakulmaisen alustan X- Ja Y akseleissa."
+
+msgid "Size of the first layer bounding box"
+msgstr "paitsi ensimmäiselle kerrokselle."
+
+msgid "Size:"
+msgstr "Koko:"
+
+msgid "SLA material"
+msgstr "SLA materiaali"
+
+msgid "SLA Material Profiles Selection"
+msgstr "SLA materiaaliprofiilin valinta"
+
+msgid "SLA material type"
+msgstr "SLA materiaalin tyyppi"
+
+msgid "SLA materials"
+msgstr "SLA materiaalit"
+
+msgid "SLA Materials"
+msgstr "SLA Materiaalit"
+
+msgid "SLA Materials settings"
+msgstr "Materiaaliasetukset"
+
+msgid "SLA print"
+msgstr "SLA tuloste"
+
+msgid "SLA view"
+msgstr "SLA-näkymä"
+
+msgid "Slab"
+msgstr "Laatta"
+
+msgid "Slice now"
+msgstr "Viipaloi nyt"
+
+msgid "Slicing"
+msgstr "Viipaloidaan"
+
+msgid "Slicing Cancelled."
+msgstr "Viipalointi peruttu."
+
+msgid "Slicing complete"
+msgstr "Viipalointi valmis"
+
+msgid "Slicing Mode"
+msgstr "Viipalointitila"
+
+msgid "Slicing state"
+msgstr "Viipalointitila"
+
+msgid "Slow"
+msgstr "Hidas"
+
+msgid "Slow tilt"
+msgstr "Hidas kallistus"
+
+msgid "Smart fill"
+msgstr "Älykäs täyttö"
+
+msgid "Smart fill angle"
+msgstr "Älykäs täyttökulma"
+
+msgid "Snapshot name"
+msgstr "Tilannekuvanimi"
+
+msgid "Solid"
+msgstr "Lihavoitu"
+
+msgid "Solid "
+msgstr "Lihavoitu "
+
+msgid "Some filaments were uninstalled."
+msgstr "Jotkin tulostuslangat poistettiin."
+
+msgid "Some SLA materials were uninstalled."
+msgstr "Joitakin SLA-materiaaleja poistettiin."
+
+msgid "Speed"
+msgstr "Nopeus"
+
+msgid "Speed (mm/s)"
+msgstr "Nopeus (mm/s)"
+
+msgid "Speed:"
+msgstr "Nopeus:"
+
+msgid "Spiral vase"
+msgstr "Spiraalimaljakko"
+
+msgid "Spiral Vase"
+msgstr "Spiraalimaljakko"
+
+msgid "Stack overflow"
+msgstr "Pakan ylivuoto"
+
+msgid "Standard"
+msgstr "Standardi"
+
+msgid "Stars"
+msgstr "Tähdet"
+
+msgid "Start a new project"
+msgstr "Aloita uusi projekti"
+
+msgid "Start the application"
+msgstr "Käynnistä ohjelmisto"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "Status:"
+msgstr "Tila:"
+
+msgid "Stealth mode"
+msgstr "Hiljainen tila"
+
+msgid "Style"
+msgstr "Tyyli"
+
+msgid "Support base diameter"
+msgstr "Tukien pohjan halkaisija"
+
+msgid "Support Generator"
+msgstr "Tukimateriaalin generaattori"
+
+msgid "Support material"
+msgstr "Tukimateriaali"
+
+msgid "Support on build plate only"
+msgstr "Tukimateriaalia vain tulostusalustalle"
+
+msgid "Supports"
+msgstr "Tukimateriaali"
+
+msgid "Supports binary G-code"
+msgstr "Tukien pohjan halkaisija"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Switch to Settings"
+msgstr "Vaihda asetuksiin"
+
+msgid "Switch to the %s mode"
+msgstr "Vaihda tilaan %s"
+
+msgid "System presets"
+msgstr "Järjestelmän oletusasetukset"
+
+msgid "Target directory"
+msgstr "Tavoitepolku"
+
+msgid "Temperature (°C)"
+msgstr "Lämpötila (°C)"
+
+msgid "Temperatures"
+msgstr "Lämpötilat"
+
+msgid "Test"
+msgstr "Testi"
+
+msgid "Text"
+msgstr "Teksti"
+
+msgid "Texture"
+msgstr "Tekstuuri"
+
+msgid "The %1% infill pattern is not supposed to work at 100%% density."
+msgstr "Täyttökuvio %1% ei ole tarkoitettu käytettäväksi 100%-tiheydellä."
+
+msgid "The selected file contains no geometry."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid ""
+"The selected file contains several disjoint areas. This is not supported."
+msgstr "Valittu tiedosto sisältää useita erillisiä alueita. Tätä ei tueta."
+
+msgid "The selected file is already in ASCII format."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid "The selected file is already in binary format."
+msgstr "Valittu tiedosto ei sisällä geometriaa."
+
+msgid "The size of the object can be specified in inches"
+msgstr "Objektin koko voidaan määritellä tuumina"
+
+msgid ""
+"The Wipe Tower currently supports the non-soluble supports only if they are "
+"printed with the current extruder without triggering a tool change. (both "
+"support_material_extruder and support_material_interface_extruder need to be "
+"set to 0)."
+msgstr ""
+"Pyyhintätorni tukee tällä hetkellä liukenemattomia tukia vain, jos ne "
+"tulostetaan nykyisellä ekstruuderilla ilman työkalun vaihtoa. (sekä "
+"support_material_extruder että support_material_interface_extruder on "
+"asetettava arvoon 0)."
+
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+"On olemassa useita IP-osoitteita, jotka käyttävät isäntänimeä %1%.\n"
+"Valitse se, jota pitäisi käyttää."
+
+msgid ""
+"This firmware hex file does not match the printer model.\n"
+"The hex file is intended for: %s\n"
+"Printer reported: %s\n"
+"\n"
+"Do you want to continue and flash this hex file anyway?\n"
+"Please only continue if you are sure this is the right thing to do."
+msgstr ""
+"Laiteohelmiston hex-tiedosto ei vastaa tulostimen mallia.\n"
+"Hex-tiedosto on tarkoitettu: %s;lle\n"
+"Tulostin ilmoitettu%s\n"
+"\n"
+"Haluatko jatkaa, ja tallentaa tämän tiedoston kuitenkin?\n"
+"Jatka vain jos olet varma että tämä on oikein."
+
+msgid "This is wipe tower layer"
+msgstr "Tämä on pyyhkäisytornin kerros"
+
+msgid "Time of the slow tilt"
+msgstr "Hitaan kallistuksen aika"
+
+msgid "Tip Diameter"
+msgstr "Päädyn halkaisija"
+
+msgid "Tool type"
+msgstr "Työkalun tyyppi"
+
+msgid "Toolchange Z"
+msgstr "Värinvaihto"
+
+msgid "Top"
+msgstr "Yläpuoli"
+
+msgid "Top View"
+msgstr "Ylänäkymä"
+
+msgid "Total"
+msgstr "Yhteensä"
+
+msgid "Total cost"
+msgstr "Yhteensä"
+
+msgid "Total weight"
+msgstr "Pullon paino"
+
+msgid "Total wipe tower cost"
+msgstr "pyyhkäisytorni"
+
+msgid "Type"
+msgstr "Tyyppi"
+
+msgid "Type:"
+msgstr "Tyyppi:"
+
+msgid "Unable to reload:"
+msgstr "Uudelleenlataus ei onnistu:"
+
+msgid "Unable to save file"
+msgstr "Uudelleenlataus ei onnistu:"
+
+msgid "Undefined"
+msgstr "Määrittelemätön"
+
+msgid "Undefined fill type"
+msgstr "Määrittelemätön"
+
+msgid "Undefined stroke type"
+msgstr "Määrittelemätön"
+
+msgid "Underflow"
+msgstr "Alivuoto"
+
+msgid "Undo"
+msgstr "Peru"
+
+msgid "Undo History"
+msgstr "Nollaa historia"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+msgid "Unknown error occured"
+msgstr "Tuntematon virhe tapahtui"
+
+msgid "Unknown error occured during exporting G-code."
+msgstr "Tuntematon virhe G-koodin viennissä."
+
+msgid "Unknown filename"
+msgstr "Tuntematon"
+
+msgid "unloaded"
+msgstr "purettu"
+
+msgid "Unselect"
+msgstr "Poista valinta"
+
+msgid "Unsupported OpenGL version"
+msgstr "Tukematon OpenGL-versio"
+
+msgid "Untitled"
+msgstr "Otsikoimaton"
+
+msgid "Updates"
+msgstr "Päivitykset"
+
+msgid ""
+"Updates are never applied without user's consent and never overwrite user's "
+"customized settings."
+msgstr ""
+"Päivityksiä ei ikinä asenneta ilman käyttäjän lupaa, eivätkä ne ikinä "
+"ylikirjoita käyttäjän räätälöimiä asetuksia."
+
+msgid "Updating"
+msgstr "Päivitetään"
+
+msgid "Upgrade"
+msgstr "Päivitä"
+
+msgid "Upload"
+msgstr "Lähetä"
+
+msgid "Use inches"
+msgstr "Käytä tuumaa yksikkönä"
+
+msgid "used"
+msgstr "käytetty"
+
+msgid "Used filament"
+msgstr "Käytetty tulostuslanka"
+
+msgid "Used filament types"
+msgstr "Käytetty tulostuslanka"
+
+msgid "User"
+msgstr "Käyttäjä"
+
+msgid "Value"
+msgstr "Arvo"
+
+msgid "Value is the same as the system value"
+msgstr "Arvo ei ole järjestelmän arvo"
+
+msgid ""
+"Value was changed and is not equal to the system value or the last saved "
+"preset"
+msgstr ""
+"Arvoa muutettiin ja se ei ole järjestelmäarvo tai viimeksi tallennettu "
+"esiasetus"
+
+msgid "Variable layer height"
+msgstr "Muuttuva kerroskorkeus"
+
+msgid "variants"
+msgstr "variantit"
+
+msgid "vendor"
+msgstr "valmistaja"
+
+msgid "Vendor:"
+msgstr "Valmistaja:"
+
+msgid "Version"
+msgstr "Versio"
+
+msgid "version"
+msgstr "versio"
+
+msgid "Version:"
+msgstr "Versio:"
+
+msgid "View mode"
+msgstr "Katselutila"
+
+msgid "Volume"
+msgstr "Tilavuus"
+
+msgid "Volume per extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Wall thickness"
+msgstr "Seinämäpaksuus"
+
+msgid "Warning"
+msgstr "Varoitus"
+
+msgid "WARNING:"
+msgstr "VAROITUS:"
+
+msgid "Weight per extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "Tervetuloa %s -konfiguraatioavustajaan"
+
+msgid "Whole word"
+msgstr "Vain kokonaiset sanat"
+
+msgid "Wi-Fi Configuration File Generator"
+msgstr "Konfiguraation asettaminen"
+
+msgid "Width"
+msgstr "Leveys"
+
+msgid "Width of a wipe tower"
+msgstr "Pyyhkäisytornin leveys"
+
+msgid "Wipe"
+msgstr "Pyyhi"
+
+msgid "Wipe tower"
+msgstr "Pyyhkäisytorni"
+
+msgid "Wipe Tower"
+msgstr "Pyyhkäisytorni"
+
+msgid "wipe tower"
+msgstr "pyyhkäisytorni"
+
+msgid "Wipe tower extruder"
+msgstr "Kehäekstuuderi"
+
+msgid "Wipe tower parameters"
+msgstr "Pyyhkäisytornin asetukset"
+
+msgid "Wipe tower volume"
+msgstr "Pyyhkäisytorni"
+
+msgid ""
+"Would you like to install it?\n"
+"\n"
+"Note that a full configuration snapshot will be created first. It can then "
+"be restored at any time should there be a problem with the new version.\n"
+"\n"
+"Updated configuration bundles:"
+msgstr ""
+"Haluaisitko ladata sen?\n"
+"\n"
+"Huomaa että täysi kokoonpanon tilannekuva luodaan ensin, se voidaan "
+"palauttaa milloin tahansa jos uuden version kanssa ilmenee ongelmia\n"
+"Päivitetyt konfiguraatiopaketit:"
+
+msgid ""
+"You will be notified about new release after startup acordingly: All = "
+"Regular release and alpha / beta releases. Release only = regular release."
+msgstr ""
+"Saat ilmoituksen uudesta julkaisusta käynnistyksen jälkeen seuraavasti: "
+"Kaikki = Säännöllinen julkaisu ja alfa/beta-julkaisut. Vain julkaisu = "
+"tavallinen julkaisu."
+
+msgid "Zig-Zag"
+msgstr "Siksakki"
+
+msgid "Zoom in"
+msgstr "Zoom lähelle"
+
+msgid "Zoom out"
+msgstr "Zoom kauas"
+
+msgid "°C"
+msgstr "°C"
+
+msgid "Layers and Perimeters"
+msgstr "Kerrokset ja kehät"
+
+msgid ""
+"The maximum detour length for avoid crossing perimeters. If the detour is "
+"longer than this value, avoid crossing perimeters is not applied for this "
+"travel path. Detour length could be specified either as an absolute value or "
+"as percentage (for example 50%) of a direct travel path."
+msgstr ""
+"Suurin sallittu kierron pituus kehien ylitysten välttämiseksi. Jos kierron "
+"pituus on pidempi kuin tämä arvo, ominaisuutta ei käytetä tälle reitille. "
+"Kierron pituus voidaan määritellä absoluutisena arvona, tai prosenttilukuna "
+"(esim. 50%) suoraa matkaa."
+
+msgid "Slic3r will not scale speed down below this speed."
+msgstr "Slic3r ei skaalaa nopeutta tätä hitaammaksi."
+
+msgid ""
+"You can put here your personal notes. This text will be added to the G-code "
+"header comments."
+msgstr ""
+"Voit asettaa henkilökohtaiset kommenttisi tähän. Tämä teksti lisätään sitten "
+"G-koodin otsikkokommenteiksi."
+
+msgid "(minimum)"
+msgstr "(minimi)"
+
+msgid "G-code resolution"
+msgstr "G-koodin resoluutio"
+
+msgid "Maximum ramping lift"
+msgstr "Maksimi oksan kulma"
+
+msgid "Detect thin walls"
+msgstr "Ohuiden seinien tunnistus"
+
+msgid "XY Size Compensation"
+msgstr "XY-Kokokompensaatio"
+
+msgid "Making infill"
+msgstr "Tehdään täyttöä"
+
+msgid "PrusaSlicer error"
+msgstr "PrusaSlicer-virhe"
+
+msgid ""
+"Contributions by Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, "
+"Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik and "
+"numerous others."
+msgstr ""
+"Mukana ovat olleet Henrik Brix Andersen, Nicolas Dandrimont, Mark Hindess, "
+"Petr Ledvina, Joseph Lenox, Y. Sapir, Mike Sheldrake, Vojtech Bubnik ja "
+"lukuisat muut."
+
+msgid ""
+"%s has encountered an error. It was likely caused by running out of memory. "
+"If you are sure you have enough RAM on your system, this may also be a bug "
+"and we would be glad if you reported it."
+msgstr ""
+"%s kohtasi virheen. Se todennäköisesti johtui muistin loppumisesta. Jos olet "
+"varma, että järjestelmässäsi on tarpeeksi RAM-muistia, tämä voi myös olla "
+"virhe, ja olisimme iloisia, jos ilmoitat siitä."
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "PrusaSlicer kohtasi vakavan virheen: \"%1%\""
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr ""
+"Tallenna projektisi ja käynnistä PrusaSlicer uudelleen. Olisimme iloisia jos "
+"raportoisit ongelmasta."
+
+msgid "Masked SLA file exported to %1%"
+msgstr "Maskattu SLA-tiedosto viety sijaintiin %1%"
+
+msgid "Access violation"
+msgstr "Käyttöoikeusvirhe"
+
+msgid "Simple"
+msgstr "Yksinkertainen"
+
+msgid "Expert"
+msgstr "Ekspertti"
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"Spiraalimaljakkotila vaatii:\n"
+"- yhden kehän\n"
+"- ei yläkerroksia\n"
+"- 0 % täyttötiheys\n"
+"- ei tukimateriaalia\n"
+"- Ohuiden seinien tunnistus poistettu käytöstä"
+
+msgid ""
+"Supports work better, if the following feature is enabled:\n"
+"- Detect bridging perimeters"
+msgstr ""
+"Tuet toimivat paremmin, jos seuraava ominaisuus on käytössä:\n"
+"- Havaitse silloitusalueet"
+
+msgid "PrusaSlicer version"
+msgstr "PrusaSlicer versio"
+
+msgid "min PrusaSlicer version"
+msgstr "minimi PrusaSlicer versio"
+
+msgid "max PrusaSlicer version"
+msgstr "maksimi PrusaSlicer versio"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Tervetuloa %s -konfiguraation määritystyökaluun"
+
+msgid "Associate .3mf files to PrusaSlicer"
+msgstr "Yhdistä .3mf-tiedostot PrusaSliceriin"
+
+msgid "Associate .stl files to PrusaSlicer"
+msgstr "Yhdistä .stl-tiedostot PrusaSliceriin"
+
+msgid ""
+"PrusaSlicer's user interfaces comes in three variants:\n"
+"Simple, Advanced, and Expert.\n"
+"The Simple mode shows only the most frequently used settings relevant for "
+"regular 3D printing. The other two offer progressively more sophisticated "
+"fine-tuning, they are suitable for advanced and expert users, respectively."
+msgstr ""
+"PrusaSlicerin käyttöliittymä on saatavilla kolmessa eri muodossa:\n"
+"Yksinkertainen, Kehittynyt ja Ekspertti.\n"
+"Yksinkertainen tila näyttää vain tavallisessa 3D-tulostuksessa useiten "
+"käytetyt asetukset. Kaksi muuta tilaa tarjoavat kehittyneempää hienosäätöä "
+"ja sopivat nimensä mukaan kehittyneille ja erittäin kehittyneille "
+"käyttäjille."
+
+msgid "FFF Technology Printers"
+msgstr "FFF  teknologian tulostimet"
+
+msgid "SLA Technology Printers"
+msgstr "SLA teknologian tulostimet"
+
+msgid "Prusa FFF Technology Printers"
+msgstr "Prusa FFF teknologian tulostimet"
+
+msgid "Prusa MSLA Technology Printers"
+msgstr "Prusa MSLA teknologian tulostimet"
+
+msgid "Configuration Wizard"
+msgstr "Konfiguraation asettaminen"
+
+msgid "Configuration &Wizard"
+msgstr "Konfiguraation &asettaminen"
+
+msgid ""
+"Performing desktop integration failed - boost::filesystem::canonical did not "
+"return appimage path."
+msgstr ""
+"Työpöytäintegraation suorittaminen epäonnistui - boost::filesystem::"
+"canonical ei palauttanut appimagen tiedostopolkua."
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+"Työpöytäintegraatio asettaa tämän binäärin järjestelmän haettavaksi.\n"
+"\n"
+"Paina \"Suorita\" jatkaaksesi."
+
+msgid "Perform"
+msgstr "Suorita"
+
+msgid "N/A"
+msgstr "Ei saatavilla"
+
+msgid "Layer time (linear)"
+msgstr "Kerroksen aika (lineaarinen)"
+
+msgid "Layer time (logarithmic)"
+msgstr "Kerroksen aika (logaritminen)"
+
+msgid "Developed by Prusa Research."
+msgstr "Prusa Researchin kehittämä."
+
+msgid ""
+"PrusaSlicer has encountered a localization error. Please report to "
+"PrusaSlicer team, what language was active and in which scenario this issue "
+"happened. Thank you.\n"
+"\n"
+"The application will now terminate."
+msgstr ""
+"PrusaSlicer on kohdannut lokalisointivirheen. Ilmoita PrusaSlicer-tuelle "
+"mikä kieli oli käytössä ja missä skenaariossa tämä ongelma tapahtui. "
+"Kiitos.\n"
+"\n"
+"Sovellus sulkee nyt itsensä."
+
+msgid ""
+"You are running a 32 bit build of PrusaSlicer on 64-bit Windows.\n"
+"32 bit build of PrusaSlicer will likely not be able to utilize all the RAM "
+"available in the system.\n"
+"Please download and install a 64 bit build of PrusaSlicer from https://www."
+"prusa3d.cz/prusaslicer/.\n"
+"Do you wish to continue?"
+msgstr ""
+"Olet käyttämässä 32-bittistä versiota PrusaSlicer-versiota 64-bittisellä "
+"Windows-järjestelmällä.\n"
+"32-bittinen PrusaSlicer ei todennäköisesti pysty hyödyntämään kaikkea "
+"järjestelmän käytettävissä olevaa RAM-muistia.\n"
+"Lataa ja asenna 64-bittinen PrusaSlicer-versio osoitteesta https://www."
+"prusa3d.cz/prusaslicer/.\n"
+"Haluatko jatkaa?"
+
+msgid "PrusaSlicer started after a crash"
+msgstr "PrusaSlicer käynnistyi kaatumisen jälkeen"
+
+msgid ""
+"PrusaSlicer crashed last time when attempting to set window position.\n"
+"We are sorry for the inconvenience, it unfortunately happens with certain "
+"multiple-monitor setups.\n"
+"More precise reason for the crash: \"%1%\".\n"
+"For more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n"
+"\n"
+"To avoid this problem, consider disabling \"%4%\" in \"Preferences\". "
+"Otherwise, the application will most likely crash again next time."
+msgstr ""
+"PrusaSlicer kaatui viime kerralla yrittäessään asettaa ikkunan sijaintia.\n"
+"Pahoittelemme häiriötä, mutta valitettavasti näin tapahtuu tietyissä usean "
+"näytön kokoonpanoissa.\n"
+"Tarkempi syy kaatumiseen: \"%1%\".\n"
+"Lisätietoja on GitHub-virheseurannassamme \"%2%\" ja \"%3%\"\n"
+"\n"
+"Jos haluat välttää tämän ongelman tulevaisuudessa, harkitse \"%4%\" "
+"poistamista käytöstä \"Asetukset\"-valikosta. Muuten mitä todennäköisimmin "
+"ohjelma kaatuu seuraavallakin kerralla."
+
+msgid "Advanced View Mode"
+msgstr "Kehittynyt näkymätila"
+
+msgid "Wi-Fi Configuration File"
+msgstr "Konfiguraation muistiinpanot"
+
+msgid "PrusaSlicer: Open hyperlink"
+msgstr "PrusaSlicer: Avaa hyperlinkki"
+
+msgid "Suppress to open hyperlink in browser"
+msgstr "Tukahduta hyperlinkin avaaminen selaimessa"
+
+msgid "You will not be asked about it again on hyperlinks hovering."
+msgstr "Sinulta ei kysytä siitä enää hyperlinkkien leijumisesta."
+
+msgid "Switch to Preview"
+msgstr "Vaihda esikatseluun"
+
+msgid "Plater"
+msgstr "Tulostusala"
+
+msgid "Open PrusaSlicer"
+msgstr "Avaa PrusaSlicer"
+
+msgid "Closing PrusaSlicer. Current project is modified."
+msgstr "Suljetaan PrusaSliceriä. Tämänhetkistä projektia on muokattu."
+
+msgid "PrusaSlicer is closing"
+msgstr "PrusaSlicer sulkeutuu"
+
+msgid "Closing PrusaSlicer while some presets are modified."
+msgstr "Suljetaan PrusaSlicer kun joitakin esiasetuksia on muokattu."
+
+msgid "based on Slic3r"
+msgstr "perustuu Slic3r:ään"
+
+msgid "Prusa 3D &Drivers"
+msgstr "Prusa 3D &Ajurit"
+
+msgid "Open the Prusa3D drivers download page in your browser"
+msgstr "Avaa prusa3Dn ajureiden lataussivu selaimessasi"
+
+msgid "Software &Releases"
+msgstr "Ohjelmisto&julkaisut"
+
+msgid "Open the software releases page in your browser"
+msgstr "Avaa ohjelmistojulkaisut-sivu selaimessasi"
+
+msgid "Open &PrusaSlicer"
+msgstr "Avaa &PrusaSlicer"
+
+msgid "Everywhere"
+msgstr "Kaikkialle"
+
+msgid "Associate .bgcode files to PrusaSlicer G-code Viewer"
+msgstr "Yhdistä .3mf-tiedostot PrusaSliceriin"
+
+msgid "If enabled, PrusaSlicer will not open a hyperlinks in your browser."
+msgstr "Jos tämä on käytössä, PrusaSlicer ei avaa hyperlinkkejä selaimessasi."
+
+msgid "Dark mode"
+msgstr "Käytä tummaa tiöaa"
+
+msgid "except for the first layer."
+msgstr "paitsi ensimmäiselle kerrokselle."
+
+msgid "Arachne perimeter generator"
+msgstr "Arachne-kehägeneraattori"
+
+msgid ""
+"Different layer height for each model\n"
+"Did you know that you can print each model on the plater with a different "
+"layer height? Right-click the model in the 3D view, choose Layers and "
+"Perimeters and adjust the values in the right panel. Read more in the "
+"documentation."
+msgstr ""
+"Eri kerroskorkeudet jokaiselle mallille\n"
+"Tiesitkö, että voit tulostaa jokaisen mallin tulostusalalla eri "
+"kerroskorkeudella? Paina hiiren oikealla painikkeella 3d-näkymässä, valitse "
+"kerrokset ja kehät ja säädä arvoja oikeassa paneelissa. Lue lisää "
+"dokumentaatiosta."
+
+msgid ""
+"\n"
+"Please send this report to the program maintainer, thank you!\n"
+msgstr ""
+"\n"
+"Lähetä tämä ilmoitus ohjelman ylläpitäjälle, kiitos!\n"
+
+msgid "              Thank you and we're sorry for the inconvenience!\n"
+msgstr "              Kiitos, ja olemme pahoillamme kaikista hankaluuksista!\n"
+
+msgid " (copy %d of %d)"
+msgstr "Sivu %d / %d"
+
+msgid " (error %ld: %s)"
+msgstr " (virhe %ld: %s)"
+
+msgid " (in module \"%s\")"
+msgstr "tiff-moduuli: %s"
+
+msgid " - "
+msgstr " - "
+
+msgid " Preview"
+msgstr " Esikatselu"
+
+msgid " bold"
+msgstr " lihavoitu"
+
+msgid " italic"
+msgstr " kursivoitu"
+
+msgid " light"
+msgstr " heikko"
+
+msgid " strikethrough"
+msgstr " yliviivaus"
+
+msgid "#10 Envelope, 4 1/8 x 9 1/2 in"
+msgstr "#10 kirjekuori, 4 1/8″ x 9 1/2″"
+
+msgid "#11 Envelope, 4 1/2 x 10 3/8 in"
+msgstr "#11 kirjekuori, 4 1/2″ x 10 3/8″"
+
+msgid "#12 Envelope, 4 3/4 x 11 in"
+msgstr "#12 kirjekuori, 4 3/4″ x 11″"
+
+msgid "#14 Envelope, 5 x 11 1/2 in"
+msgstr "#14 kirjekuori, 5″ x 11 1/2″"
+
+msgid "#9 Envelope, 3 7/8 x 8 7/8 in"
+msgstr "#9 kirjekuori, 3 7/8″ x 8 7/8″"
+
+msgid "%d of %lu"
+msgstr "%d / %lu"
+
+msgid "%i of %u"
+msgstr "%i / %i"
+
+msgid "%ld byte"
+msgid_plural "%ld bytes"
+msgstr[0] "%ld tavu"
+msgstr[1] "%ld tavua"
+
+msgid "%lu of %lu"
+msgstr "%lu / %lu"
+
+msgid "%s (%d items)"
+msgstr "%s (tai %s)"
+
+msgid "%s (or %s)"
+msgstr "%s (tai %s)"
+
+msgid "%s Error"
+msgstr "%s-virhe"
+
+msgid "%s Information"
+msgstr "%s-tiedotus"
+
+msgid "%s Preferences"
+msgstr "&Asetukset"
+
+msgid "%s Warning"
+msgstr "%s-varoitus"
+
+msgid "%s did not fit the tar header for entry '%s'"
+msgstr "%s ei mahtunut kohteen '%s' tar-otsakkeeseen"
+
+msgid "%s files (%s)|%s"
+msgstr "%s-tiedostot (%s)|%s"
+
+msgid "%u of %u"
+msgstr "%lu / %lu"
+
+msgid "&About"
+msgstr "&Tietoja"
+
+msgid "&Actual Size"
+msgstr "&Oikea koko"
+
+msgid "&After a paragraph:"
+msgstr "&Kappaleen jälkeen:"
+
+msgid "&Alignment"
+msgstr "&Tasaus"
+
+msgid "&Apply"
+msgstr "&Käytä"
+
+msgid "&Apply Style"
+msgstr "&Käytä tyyliä"
+
+msgid "&Arrange Icons"
+msgstr "&Järjestä kuvakkeet"
+
+msgid "&Ascending"
+msgstr "&Nouseva"
+
+msgid "&Back"
+msgstr "&Takaisin"
+
+msgid "&Based on:"
+msgstr "&Pohjautuu:"
+
+msgid "&Before a paragraph:"
+msgstr "&Ennen kappaletta:"
+
+msgid "&Bg colour:"
+msgstr "&Taustaväri:"
+
+msgid "&Bold"
+msgstr "&Lihavoitu"
+
+msgid "&Bottom"
+msgstr "&Alaosa"
+
+msgid "&Bottom:"
+msgstr "&Alaosa:"
+
+msgid "&Box"
+msgstr "&Lihavoitu"
+
+msgid "&Bullet style:"
+msgstr "&Luettelomerkkityyli:"
+
+msgid "&CD-Rom"
+msgstr "&CD-ROM"
+
+msgid "&Cancel"
+msgstr "&Peruuta"
+
+msgid "&Cascade"
+msgstr "&Limitä"
+
+msgid "&Cell"
+msgstr "&Solu"
+
+msgid "&Character code:"
+msgstr "&Merkkikoodi:"
+
+msgid "&Clear"
+msgstr "&Tyhjennä"
+
+msgid "&Close"
+msgstr "&Sulje"
+
+msgid "&Color"
+msgstr "&Väri"
+
+msgid "&Colour:"
+msgstr "&Väri:"
+
+msgid "&Copy URL"
+msgstr "&Kopioi URL-osoite"
+
+msgid "&Customize..."
+msgstr "&Mukauta..."
+
+msgid "&Debug report preview:"
+msgstr "&Ohjelmavirheilmoituksen esikatselu:"
+
+msgid "&Delete"
+msgstr "&Poista"
+
+msgid "&Delete Style..."
+msgstr "&Poista tyyli..."
+
+msgid "&Descending"
+msgstr "&Laskeva"
+
+msgid "&Details"
+msgstr "&Yksityiskohdat"
+
+msgid "&Down"
+msgstr "&Alas"
+
+msgid "&Edit Style..."
+msgstr "&Muokkaa tyyliä..."
+
+msgid "&Execute"
+msgstr "&Suorita"
+
+msgid "&Find"
+msgstr "&Etsi"
+
+msgid "&First"
+msgstr "&Ensimmäinen"
+
+msgid "&Floating mode:"
+msgstr "&Liukuva tila:"
+
+msgid "&Floppy"
+msgstr "K&opioi"
+
+msgid "&Font"
+msgstr "&Kirjasin"
+
+msgid "&Font family:"
+msgstr "&Kirjasinperhe:"
+
+msgid "&Font for Level..."
+msgstr "&Kirjasin tasolle..."
+
+msgid "&Font:"
+msgstr "&Kirjasin:"
+
+msgid "&Forward"
+msgstr "&Eteenpäin"
+
+msgid "&From:"
+msgstr "&Lähettäjä:"
+
+msgid "&Harddisk"
+msgstr "&Kiintolevy"
+
+msgid "&Height:"
+msgstr "&Korkeus:"
+
+msgid "&Hide details"
+msgstr "&Piilota tiedot"
+
+msgid "&Home"
+msgstr "&Koti"
+
+msgid "&Indentation (tenths of a mm)"
+msgstr "&Sisennys (millimetrin kymmenyksiä)"
+
+msgid "&Indeterminate"
+msgstr "&Alleviivaus"
+
+msgid "&Index"
+msgstr "&Indeksi"
+
+msgid "&Info"
+msgstr "&Tiedot"
+
+msgid "&Italic"
+msgstr "&Kursivoitu"
+
+msgid "&Jump to"
+msgstr "&Hyppää kohteeseen"
+
+msgid "&Justified"
+msgstr "Tasattu"
+
+msgid "&Last"
+msgstr "&Viimeinen"
+
+msgid "&Left"
+msgstr "&Vasemmalle"
+
+msgid "&Left:"
+msgstr "&Vasemmalle:"
+
+msgid "&List level:"
+msgstr "&Luettelotaso:"
+
+msgid "&Log"
+msgstr "&Loki"
+
+msgid "&Move"
+msgstr "&Siirrä"
+
+msgid "&Move the object to:"
+msgstr "&Siirrä objekti kohteeseen:"
+
+msgid "&Network"
+msgstr "&Verkko"
+
+msgid "&New"
+msgstr "&Uusi"
+
+msgid "&Next"
+msgstr "&Seuraava"
+
+msgid "&Next Paragraph"
+msgstr "&Seuraava kappale"
+
+msgid "&Next Tip"
+msgstr "&Seuraava vihje"
+
+msgid "&Next style:"
+msgstr "&Uusi tyyli:"
+
+msgid "&No"
+msgstr "&Ei"
+
+msgid "&Notes:"
+msgstr "&Huomiot:"
+
+msgid "&Number:"
+msgstr "&Numero:"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Open..."
+msgstr "&Avaa..."
+
+msgid "&Outline level:"
+msgstr "&Jäsennyksen taso:"
+
+msgid "&Page Break"
+msgstr "&Sivunvaihto"
+
+msgid "&Picture"
+msgstr "&Kuva"
+
+msgid "&Point size:"
+msgstr "K&irjasinkoko:"
+
+msgid "&Position (tenths of a mm):"
+msgstr "&Sijainti (millimetrin kymmenyksiä):"
+
+msgid "&Position mode:"
+msgstr "&Liukuva tila:"
+
+msgid "&Previous"
+msgstr "&Edellinen"
+
+msgid "&Previous Paragraph"
+msgstr "&Edellinen kappale"
+
+msgid "&Print..."
+msgstr "&Tulosta..."
+
+msgid "&Properties"
+msgstr "&Ominaisuudet"
+
+msgid "&Redo "
+msgstr "&Tee uudelleen "
+
+msgid "&Rename Style..."
+msgstr "&Nimeä tyyli uudelleen"
+
+msgid "&Replace"
+msgstr "&Korvaa"
+
+msgid "&Restart numbering"
+msgstr "&Aloita numerointi uudelleen"
+
+msgid "&Restore"
+msgstr "&Palauta"
+
+msgid "&Right"
+msgstr "&Oikealle"
+
+msgid "&Right:"
+msgstr "&Oikealle:"
+
+msgid "&Save"
+msgstr "&Tallenna"
+
+msgid "&Save as"
+msgstr "&Tallenna nimellä"
+
+msgid "&See details"
+msgstr "&Tiedot"
+
+msgid "&Show tips at startup"
+msgstr "&Näytä vihjeet käynnistyksessä"
+
+msgid "&Size"
+msgstr "&Koko"
+
+msgid "&Size:"
+msgstr "&Koko:"
+
+msgid "&Skip"
+msgstr "Ohita"
+
+msgid "&Spacing (tenths of a mm)"
+msgstr "&Riviväli (millimetrin kymmenyksiä)"
+
+msgid "&Spell Check"
+msgstr "&Oikeinkirjoituksen tarkistus"
+
+msgid "&Stop"
+msgstr "&Pysäytä"
+
+msgid "&Strikethrough"
+msgstr "&Yliviivaus"
+
+msgid "&Style:"
+msgstr "&Tyyli:"
+
+msgid "&Styles:"
+msgstr "&Tyylit:"
+
+msgid "&Subset:"
+msgstr "&Osajoukko:"
+
+msgid "&Symbol:"
+msgstr "&Symbolit:"
+
+msgid "&Table"
+msgstr "&Taulukko"
+
+msgid "&Top"
+msgstr "&Yläosa"
+
+msgid "&Top:"
+msgstr "&Yläosa:"
+
+msgid "&Underline"
+msgstr "&Alleviivaus"
+
+msgid "&Underlining:"
+msgstr "&Alleviivaus:"
+
+msgid "&Undo "
+msgstr "&Kumoa "
+
+msgid "&Unindent"
+msgstr "&Vähennä sisennystä"
+
+msgid "&Up"
+msgstr "&Ylös"
+
+msgid "&Vertical alignment:"
+msgstr "&Tasaus pystysuunnassa:"
+
+msgid "&Vertical offset:"
+msgstr "&Tasaus pystysuunnassa:"
+
+msgid "&View..."
+msgstr "&Näytä..."
+
+msgid "&Weight:"
+msgstr "&Paino:"
+
+msgid "&Width:"
+msgstr "&Leveys:"
+
+msgid "&Yes"
+msgstr "&Kyllä"
+
+msgid "'%s' contains illegal characters"
+msgstr "”%s” saa sisältää vain kirjaimia."
+
+msgid "'%s' doesn't consist only of valid characters"
+msgstr "”%s” saa sisältää vain kirjaimia."
+
+msgid "'%s' has extra '..', ignored."
+msgstr "”%s” sisältää ylimääräisen ”..”, ohitettu."
+
+msgid "'%s' is not a correct numeric value for option '%s'."
+msgstr "”%s” ei ole oikea numeerinen arvo valitsimelle ”%s”."
+
+msgid "'%s' is not a valid message catalog."
+msgstr "”%s” ei ole kelvollinen viestiluettelo."
+
+msgid "'%s' is not one of the valid strings"
+msgstr "”%s” ei ole kelvollinen viestiluettelo."
+
+msgid "'%s' is one of the invalid strings"
+msgstr "”%s” on virheellinen"
+
+msgid "'%s' is probably a binary buffer."
+msgstr "”%s” on todennäköisesti binääripuskuri."
+
+msgid "'%s' should be numeric."
+msgstr "”%s” on oltava numeerinen."
+
+msgid "'%s' should only contain ASCII characters."
+msgstr "”%s” saa sisältää vain ASCII-merkkejä."
+
+msgid "'%s' should only contain alphabetic characters."
+msgstr "”%s” saa sisältää vain kirjaimia."
+
+msgid "'%s' should only contain alphabetic or numeric characters."
+msgstr "”%s” saa sisältää vain kirjaimia ja numeroita."
+
+msgid "'%s' should only contain digits."
+msgstr "”%s” saa sisältää vain ASCII-merkkejä."
+
+msgid "(*)"
+msgstr "(*)"
+
+msgid "(Help)"
+msgstr "(Ohje)"
+
+msgid "(None)"
+msgstr "(Ei mitään)"
+
+msgid "(Normal text)"
+msgstr "(Tavallinen teksti)"
+
+msgid "(bookmarks)"
+msgstr "(kirjanmerkit)"
+
+msgid "(none)"
+msgstr "(ei mitään)"
+
+msgid "*)"
+msgstr "*)"
+
+msgid ", 64-bit edition"
+msgstr ", 64-bittinen versio"
+
+msgid "..."
+msgstr "..."
+
+msgid "1.1"
+msgstr "1.1"
+
+msgid "1.2"
+msgstr "1.2"
+
+msgid "1.3"
+msgstr "1.3"
+
+msgid "1.4"
+msgstr "1.4"
+
+msgid "1.5"
+msgstr "1.5"
+
+msgid "1.6"
+msgstr "1.6"
+
+msgid "1.7"
+msgstr "1.7"
+
+msgid "1.8"
+msgstr "1.8"
+
+msgid "1.9"
+msgstr "1.9"
+
+msgid "10 x 11 in"
+msgstr "10″ x 11″"
+
+msgid "10 x 14 in"
+msgstr "10″ x 14″"
+
+msgid "11 x 17 in"
+msgstr "11″ x 17″"
+
+msgid "12 x 11 in"
+msgstr "12″ x 11″"
+
+msgid "15 x 11 in"
+msgstr "15″ x 11″"
+
+msgid "6 3/4 Envelope, 3 5/8 x 6 1/2 in"
+msgstr "6 3/4 kirjekuori, 3 5/8″ x 6 1/2″"
+
+msgid "9 x 11 in"
+msgstr "9″ x 11″"
+
+msgid ": file does not exist!"
+msgstr ": tiedostoa ei ole!"
+
+msgid ": unknown charset"
+msgstr ": tuntematon merkistö"
+
+msgid ": unknown encoding"
+msgstr ": tuntematon koodaus"
+
+msgid "<Any Decorative>"
+msgstr "<Koristeellinen>"
+
+msgid "<Any Modern>"
+msgstr "<Moderni>"
+
+msgid "<Any Roman>"
+msgstr "<Roman>"
+
+msgid "<Any Script>"
+msgstr "<Script>"
+
+msgid "<Any Swiss>"
+msgstr "<Swiss>"
+
+msgid "<Any Teletype>"
+msgstr "<Teletype>"
+
+msgid "<Any>"
+msgstr "<Mikä tahansa>"
+
+msgid "<DIR>"
+msgstr "<HAK>"
+
+msgid "<DRIVE>"
+msgstr "<ASEMA>"
+
+msgid "<LINK>"
+msgstr "<LINKKI>"
+
+msgid "<b><i>Bold italic face.</i></b><br>"
+msgstr "<b><i>Lihavoitu kursivoitu kirjasin.</i></b><br>"
+
+msgid "<b><i>bold italic <u>underlined</u></i></b><br>"
+msgstr "<b><i>lihavoitu kursivoitu <u>alleviivattu</u></i></b><br>"
+
+msgid "<b>Bold face.</b> "
+msgstr "<b>Lihavoitu kirjasin.</b> "
+
+msgid "<i>Italic face.</i> "
+msgstr "<i>Kursivoitu kirjasin.</i> "
+
+msgid "A debug report has been generated in the directory\n"
+msgstr "Virheraportti on luotu hakemistoon\n"
+
+msgid "A debug report has been generated. It can be found in"
+msgstr "Virheraportti on luotu. Se löytyy kohteesta"
+
+msgid "A non empty collection must consist of 'element' nodes"
+msgstr "Muun kuin tyhjän kokoelman tulee muodostua 'element'-solmuista"
+
+msgid "A standard bullet name."
+msgstr "Oletus luettelomerkin nimi."
+
+msgid "A0 sheet, 841 x 1189 mm"
+msgstr "A0-lomake, 841 x 1189 mm"
+
+msgid "A1 sheet, 594 x 841 mm"
+msgstr "A1lomake, 594 x 841 mm"
+
+msgid "A2 420 x 594 mm"
+msgstr "A2 420 x 594 mm"
+
+msgid "A3 Extra 322 x 445 mm"
+msgstr "A3 extra 322 x 445 mm"
+
+msgid "A3 Extra Transverse 322 x 445 mm"
+msgstr "A3 extra poikittain 322 x 445 mm"
+
+msgid "A3 Rotated 420 x 297 mm"
+msgstr "A3 käännetty 420 x 297 mm"
+
+msgid "A3 Transverse 297 x 420 mm"
+msgstr "A3 poikittain 297 x 420 mm"
+
+msgid "A3 sheet, 297 x 420 mm"
+msgstr "A3-paperi 297 ä 420 mm"
+
+msgid "A4 Extra 9.27 x 12.69 in"
+msgstr "A4 Extra 9.27″ x 12.69″"
+
+msgid "A4 Plus 210 x 330 mm"
+msgstr "A4 Plus 210 x 330 mm"
+
+msgid "A4 Rotated 297 x 210 mm"
+msgstr "A4 käännetty 297 x 210 mm"
+
+msgid "A4 Transverse 210 x 297 mm"
+msgstr "A4 poikittain 210 x 297 mm"
+
+msgid "A4 sheet, 210 x 297 mm"
+msgstr "A4-paperi, 210 ä 297 mm"
+
+msgid "A4 small sheet, 210 x 297 mm"
+msgstr "A4 pieni arkki, 210 x 297 mm"
+
+msgid "A5 Extra 174 x 235 mm"
+msgstr "A5 extra 174 x 235 mm"
+
+msgid "A5 Rotated 210 x 148 mm"
+msgstr "A5 käännetty 210 x 148 mm"
+
+msgid "A5 Transverse 148 x 210 mm"
+msgstr "A5 poikittain 148 x 210 mm"
+
+msgid "A5 sheet, 148 x 210 mm"
+msgstr "A5-arkki, 148 x 210 mm"
+
+msgid "A6 105 x 148 mm"
+msgstr "A6 105 x 148 mm"
+
+msgid "A6 Rotated 148 x 105 mm"
+msgstr "A6 käännetty 148 x 105 mm"
+
+msgid "ABCDEFGabcdefg12345"
+msgstr "ABCDEFGabcdefg12345"
+
+msgid "ASCII"
+msgstr "ASCII"
+
+msgid "About"
+msgstr "Tietoja"
+
+msgid "About..."
+msgstr "Tietoja"
+
+msgid "ActiveBorder"
+msgstr "Moderni"
+
+msgid "Actual Size"
+msgstr "Oikea koko"
+
+msgid "Add current page to bookmarks"
+msgstr "Lisää tämä sivu kirjanmerkkeihin"
+
+msgid "Add to custom colours"
+msgstr "Lisää muokattuihin väreihin"
+
+msgid "AddToPropertyCollection called on a generic accessor"
+msgstr "Funktiota AddToPropertyCollection kutsuttu yleisellä haulla"
+
+msgid "AddToPropertyCollection called w/o valid adder"
+msgstr "AddToPropertyCollection kutsuttu ilman kelvollista lisääjää"
+
+msgid "Adding book %s"
+msgstr "Lisätään kirja %s"
+
+msgid "After a paragraph:"
+msgstr "Kappaleen jälkeen:"
+
+msgid "Align Left"
+msgstr "Tasaa vasemmalle"
+
+msgid "Align Right"
+msgstr "Tasaa oikealle"
+
+msgid "All files (%s)|%s"
+msgstr "Kaikki tiedostot (%s)|%s"
+
+msgid "All files (*)|*"
+msgstr "Kaikki tiedostot (*)|*"
+
+msgid "All files (*.*)|*.*"
+msgstr "Kaikki tiedostot (*.*)|*.*"
+
+msgid "All styles"
+msgstr "Kaikki tyylit"
+
+msgid "Alphabetic Mode"
+msgstr "Aakkosnumeerinen tila"
+
+msgid "Already Registered Object passed to SetObjectClassInfo"
+msgstr "Jo rekisteröity objekti välitetty kohteelle SetObjectClassInfo"
+
+msgid "Already dialling ISP."
+msgstr "Palveluntarjoajalle soitetaan jo."
+
+msgid "Alt+"
+msgstr "Alt+"
+
+msgid "And includes the following files:\n"
+msgstr "Ja sisällytä seuraavat tiedostot:\n"
+
+msgid "Animation file is not of type %ld."
+msgstr "Animaatiotiedosto ei ole tyyppiä %ld."
+
+msgid "Append log to file '%s' (choosing [No] will overwrite it)?"
+msgstr "Lisää loki tiedostoon ”%s” (valitse [Ei] korvataksesi tiedoston)?"
+
+msgid "Application"
+msgstr "Valinta"
+
+msgid "Arabic"
+msgstr "Arabialainen"
+
+msgid "Arabic (ISO-8859-6)"
+msgstr "Arabialainen (ISO-8859-6)"
+
+msgid "Argument %u not found."
+msgstr "Parametria %u ei löydy."
+
+msgid "Arrow"
+msgstr "huomenna"
+
+msgid "Artists"
+msgstr "Artistit"
+
+msgid "Ascending"
+msgstr "Nouseva"
+
+msgid "Attributes"
+msgstr "Ominaisuudet"
+
+msgid "Available fonts."
+msgstr "Käytettävät kirjasimet."
+
+msgid "B4 (ISO) 250 x 353 mm"
+msgstr "B4 (ISO) 250 x 353 mm"
+
+msgid "B4 (JIS) Rotated 364 x 257 mm"
+msgstr "B4 (JIS) käännetty 364 x 257 mm"
+
+msgid "B4 Envelope, 250 x 353 mm"
+msgstr "B4 kirjekuori, 250 x 353 mm"
+
+msgid "B4 sheet, 250 x 354 mm"
+msgstr "B4-paperi, 250 ä 354 mm"
+
+msgid "B5 (ISO) Extra 201 x 276 mm"
+msgstr "B5 (ISO) Extra 201 x 276 mm"
+
+msgid "B5 (JIS) Rotated 257 x 182 mm"
+msgstr "B5 (JIS) käännetty 257 x 182 mm"
+
+msgid "B5 (JIS) Transverse 182 x 257 mm"
+msgstr "B5 (JIS) poikittain 182 x 257 mm"
+
+msgid "B5 Envelope, 176 x 250 mm"
+msgstr "B5 kirjekuori, 176 x 250 mm"
+
+msgid "B5 sheet, 182 x 257 millimeter"
+msgstr "B5-paperi, 182 ä 257 mm"
+
+msgid "B6 (JIS) 128 x 182 mm"
+msgstr "B6 (JIS) 128 x 182 mm"
+
+msgid "B6 (JIS) Rotated 182 x 128 mm"
+msgstr "B6 (JIS) käännetty 182 x 128 mm"
+
+msgid "B6 Envelope, 176 x 125 mm"
+msgstr "B6 kirjekuori, 176 x 125 mm"
+
+msgid "BMP: Couldn't allocate memory."
+msgstr "BMP: Muistin varaaminen epäonnistui."
+
+msgid "BMP: Couldn't save invalid image."
+msgstr "BMP: Virheellistä kuvaa ei voitu tallentaa."
+
+msgid "BMP: Couldn't write RGB color map."
+msgstr "BMP: RGB-värikarttaa ei voitu kirjoittaa."
+
+msgid "BMP: Couldn't write data."
+msgstr "BMP: Dataa ei voitu kirjoittaa."
+
+msgid "BMP: Couldn't write the file (Bitmap) header."
+msgstr "BMP: Tiedoston otsaketta (Bitmap) ei voitu kirjoittaa."
+
+msgid "BMP: Couldn't write the file (BitmapInfo) header."
+msgstr "BMP: En voinut kirjoittaa tiedoston (BitmapInfo) otsaketta."
+
+msgid "BMP: wxImage doesn't have own wxPalette."
+msgstr "BMP: wxImage:lla ei ole omaa wxPalette:a."
+
+msgid "Back"
+msgstr "Takaisin"
+
+msgid "Background"
+msgstr "Tausta"
+
+msgid "Background &colour:"
+msgstr "Tausta&väri:"
+
+msgid "Background colour"
+msgstr "Taustaväri"
+
+msgid "Backspace"
+msgstr "Takaisin"
+
+msgid "Baltic (ISO-8859-13)"
+msgstr "Baltti (ISO-8859-13)"
+
+msgid "Baltic (old) (ISO-8859-4)"
+msgstr "Vanha baltti (ISO-8859-4)"
+
+msgid "Before a paragraph:"
+msgstr "Ennen kappaletta:"
+
+msgid "Bitmap"
+msgstr "Värikartta"
+
+msgid "Bold"
+msgstr "Lihavoitu"
+
+msgid "Border"
+msgstr "Moderni"
+
+msgid "Borders"
+msgstr "Moderni"
+
+msgid "Bottom margin (mm):"
+msgstr "Alamarginaali (mm):"
+
+msgid "Box Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Box styles"
+msgstr "Kaikki tyylit"
+
+msgid "Brown"
+msgstr "Selaa"
+
+msgid "Bullet &Alignment:"
+msgstr "Luettelon &tasaus:"
+
+msgid "Bullet style"
+msgstr "Luettelomerkkityyli"
+
+msgid "Bullets"
+msgstr "Luettelomerkit"
+
+msgid "Bullseye"
+msgstr "Luettelomerkkityyli"
+
+msgid "C sheet, 17 x 22 in"
+msgstr "C-arkki, 17″ x 22″"
+
+msgid "C&lear"
+msgstr "&Tyhjennä"
+
+msgid "C&olour:"
+msgstr "&Väri:"
+
+msgid "C3 Envelope, 324 x 458 mm"
+msgstr "C3 kirjekuori, 324 x 458 mm"
+
+msgid "C4 Envelope, 229 x 324 mm"
+msgstr "C4 kirjekuori, 229 x 324 mm"
+
+msgid "C5 Envelope, 162 x 229 mm"
+msgstr "C5 kirjekuori, 162 x 229 mm"
+
+msgid "C6 Envelope, 114 x 162 mm"
+msgstr "C6 kirjekuori, 114 x 162 mm"
+
+msgid "C65 Envelope, 114 x 229 mm"
+msgstr "C65 kirjekuori, 114 x 229 mm"
+
+msgid "CD-Rom"
+msgstr "CD-ROM"
+
+msgid "CHM handler currently supports only local files!"
+msgstr "CHM käsittelijä tukee vain paikallisia tiedostoja!"
+
+msgid "Ca&pitals"
+msgstr "&Suuraakkoset"
+
+msgid "Can't &Undo "
+msgstr "Ei voi &Kumota "
+
+msgid "Can't automatically determine the image format for non-seekable input."
+msgstr ""
+"Kuvamuotoa ei voi määrittää automaattisesti syötteelle, joka ei ole "
+"haettavissa."
+
+msgid "Can't close registry key '%s'"
+msgstr "Rekisteriavainta ”%s” ei voida sulkea"
+
+msgid "Can't copy values of unsupported type %d."
+msgstr "En voi kopioida arvoja, joiden tyyppiä %d ei ole tuettu."
+
+msgid "Can't create registry key '%s'"
+msgstr "Rekisteriavaimen ”%s” luonti ei onnistu"
+
+msgid "Can't create thread"
+msgstr "Säiettä ei voi luoda"
+
+msgid "Can't create window of class %s"
+msgstr "Luokan ”%s” ikkunan luonti epäonnistui"
+
+msgid "Can't delete key '%s'"
+msgstr "Avainta ”%s” ei voi poistaa"
+
+msgid "Can't delete the INI file '%s'"
+msgstr "INI-tiedoston ”%s” poisto epäonnistui"
+
+msgid "Can't delete value '%s' from key '%s'"
+msgstr "Arvon ”%s” poisto avaimesta ”%s” ei onnistu"
+
+msgid "Can't enumerate subkeys of key '%s'"
+msgstr "Avaimen ”%s” aliavaimia ei voi luetella"
+
+msgid "Can't enumerate values of key '%s'"
+msgstr "Avaimen ”%s” arvoja ei voi luetella"
+
+msgid "Can't export value of unsupported type %d."
+msgstr "Tukemattoman tyypin %d arvoja ei voida viedä."
+
+msgid "Can't find current position in file '%s'"
+msgstr "Tiedoston ”%s” nykyistä kohtaa ei löydy"
+
+msgid "Can't get info about registry key '%s'"
+msgstr "Tiedon saanti rekisteriavaimesta ”%s” ei onnistu"
+
+msgid "Can't initialize zlib deflate stream."
+msgstr "Zlib deflate -virtaa ei pystytä alustamaan."
+
+msgid "Can't initialize zlib inflate stream."
+msgstr "Zlib inflate -virtaa ei pystytä alustamaan."
+
+msgid "Can't monitor non-existent directory \"%s\" for changes."
+msgstr ""
+"Hakemiston \"%s\" muutoksia ei voida tarkkailla, koska sitä ei ole olemassa."
+
+msgid "Can't open registry key '%s'"
+msgstr "Rekisteriavaimen ”%s” avaaminen ei onnistu"
+
+msgid "Can't read from inflate stream: %s"
+msgstr "Ei voi lukea inflate-irrasta: %s"
+
+msgid "Can't read inflate stream: unexpected EOF in underlying stream."
+msgstr "Ei voi lukea inflate-virtaa: odottamaton EOF käytetyssä virrassa."
+
+msgid "Can't read value of '%s'"
+msgstr "”%s”:n arvoa ei voida lukea"
+
+msgid "Can't read value of key '%s'"
+msgstr "Ei voida lukea arvoa avaimesta ”%s”"
+
+msgid "Can't save image to file '%s': unknown extension."
+msgstr "Tiedostoon ”%s” ei voi tallentaa kuvaa: tuntematon tiedostopääte."
+
+msgid "Can't save log contents to file."
+msgstr "Lokisisällön tallennus tiedostoon epäonnistui."
+
+msgid "Can't set thread priority"
+msgstr "Säikeen prioriteetin asetus epäonnistui"
+
+msgid "Can't set value of '%s'"
+msgstr "Ei voida asettaa arvoa ”%s”"
+
+msgid "Can't write to child process's stdin"
+msgstr "Prosessia %d ei voitu lopettaa."
+
+msgid "Can't write to deflate stream: %s"
+msgstr "Ei voi kirjoittaa deflate-virtaan: %s"
+
+msgid "Cannot enumerate files '%s'"
+msgstr "Tiedostojen ”%s” luettelointi epäonnistui"
+
+msgid "Cannot enumerate files in directory '%s'"
+msgstr "Hakemiston ”%s” tiedostojen luettelointi epäonnistui"
+
+msgid "Cannot find active dialup connection: %s"
+msgstr "Aktiivista puhelinyhteyttä ei löydy: %s"
+
+msgid "Cannot find the location of address book file"
+msgstr "Osoitekirjatiedoston sijaintia ei löydy"
+
+msgid "Cannot get an active instance of \"%s\""
+msgstr "Aktiivista puhelinyhteyttä ei löydy: %s"
+
+msgid "Cannot get priority range for scheduling policy %d."
+msgstr "Järjestyspolitiikan %d priorisointialue ei ole tiedossa."
+
+msgid "Cannot get the hostname"
+msgstr "Isäntäkoneen nimeä ei onnistuttu saamaan"
+
+msgid "Cannot get the official hostname"
+msgstr "Isäntäkoneen virallista nimeä ei onnistuttu saamaan"
+
+msgid "Cannot hang up - no active dialup connection."
+msgstr "Puhelua ei voi lopettaa - ei aktiivista yhteyttä."
+
+msgid "Cannot initialize OLE"
+msgstr "OLE:n alustus epäonnistui"
+
+msgid "Cannot initialize sockets"
+msgstr "OLE:n alustus epäonnistui"
+
+msgid "Cannot load icon from '%s'."
+msgstr "Ei voitu ladata kuvaketta tiedostosta ”%s”."
+
+msgid "Cannot load resources from '%s'."
+msgstr "Ei voi ladata resursseja tiedostosta ”%s”."
+
+msgid "Cannot load resources from file '%s'."
+msgstr "Ei voi ladata resursseja tiedostosta ”%s”."
+
+msgid "Cannot open HTML document: %s"
+msgstr "HTML-asiakirjaa ei voi avata: %s"
+
+msgid "Cannot open HTML help book: %s"
+msgstr "HTML-ohjekirjaa ei voi avata: %s"
+
+msgid "Cannot open contents file: %s"
+msgstr "Sisällysluettelotiedostoa %s ei voi avata"
+
+msgid "Cannot open file for PostScript printing!"
+msgstr "Tiedoston avaaminen PostScript-tulostusta varten epäonnistui!"
+
+msgid "Cannot open index file: %s"
+msgstr "Indeksitiedostoa %s ei voi avata!"
+
+msgid "Cannot open resources file '%s'."
+msgstr "Ei voi ladata resursseja tiedostosta ”%s”."
+
+msgid "Cannot print empty page."
+msgstr "Tyhjää sivua ei voi tulostaa."
+
+msgid "Cannot read typename from '%s'!"
+msgstr "Tyyppinimeä ei voi lukea: ”%s”"
+
+msgid "Cannot resume thread %lx"
+msgstr "Säikeen %x jatko epäonnistui"
+
+msgid "Cannot retrieve thread scheduling policy."
+msgstr "Säikeen järjestyspolitiikka ei löydettävissä."
+
+msgid "Cannot set locale to language \"%s\"."
+msgstr "Kieliasetusta ei voida asettaa kieleen ”%s”"
+
+msgid "Cannot start thread: error writing TLS."
+msgstr "Säikeen käynnistys epäonnistui: virhe TLS-kirjoituksessa."
+
+msgid "Cannot suspend thread %lx"
+msgstr "Säikeen %x keskeytys epäonnistui"
+
+msgid "Cannot wait for thread termination"
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Capital"
+msgstr "&Suuraakkoset"
+
+msgid "Case sensitive"
+msgstr "Sama merkkikoko"
+
+msgid "Categorized Mode"
+msgstr "Kategorisoitu tila"
+
+msgid "Cell Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Celtic (ISO-8859-14)"
+msgstr "kelttiläinen (ISO-8859-14)"
+
+msgid "Cen&tred"
+msgstr "&Keskitetty"
+
+msgid "Centered"
+msgstr "Keskitetty"
+
+msgid "Central European (ISO-8859-2)"
+msgstr "keskieurooppalainen (ISO-8859-2)"
+
+msgid "Centre"
+msgstr "Keskitetty"
+
+msgid "Centre text."
+msgstr "Keskitä teksti."
+
+msgid "Centred"
+msgstr "&Keskitetty"
+
+msgid "Ch&oose..."
+msgstr "&Valitse..."
+
+msgid "Change List Style"
+msgstr "Muuta luettelotyyli"
+
+msgid "Change Object Style"
+msgstr "Muuta luettelotyyli"
+
+msgid "Change Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Change Style"
+msgstr "Muuta tyyli"
+
+msgid "Changes won't be saved to avoid overwriting the existing file \"%s\""
+msgstr ""
+"Muutoksia ei tallenneta, jotta vältetään jo olemassa olevan tiedoston ”%s” "
+"korvaus"
+
+msgid "Changing current directory to \"%s\" failed"
+msgstr "Hakemiston ”%s” luonti epäonnistui."
+
+msgid "Character"
+msgstr "&Merkkikoodi:"
+
+msgid "Character styles"
+msgstr "Merkkityylit"
+
+msgid "Check to add a period after the bullet."
+msgstr "Valitse lisätäksesi pisteen luettelomerkin jälkeen."
+
+msgid "Check to add a right parenthesis."
+msgstr "Valitse lisätäksesi loppusulun."
+
+msgid "Check to enclose the bullet in parentheses."
+msgstr "Valitse sulkeaksesi luettelomerkin heittomerkkien sisään."
+
+msgid "Check to indicate right-to-left text layout."
+msgstr "Napsauta muuttaaksesi tekstin värin."
+
+msgid "Check to make the font bold."
+msgstr "Valitse tehdäksesi kirjasimesta lihavoidun."
+
+msgid "Check to make the font italic."
+msgstr "Valitse tehdäksesi kirjasimesta kursivoidun."
+
+msgid "Check to make the font underlined."
+msgstr "Valitse alleviivataksesi kirjasimen."
+
+msgid "Check to restart numbering."
+msgstr "Napsauta aloittaaksesi numeroinnin uudelleen."
+
+msgid "Check to show a line through the text."
+msgstr "Valitse näyttääksesi viivan tekstin päällä."
+
+msgid "Check to show the text in capitals."
+msgstr "Valitse käyttääksesi suuraakkosia."
+
+msgid "Check to show the text in small capitals."
+msgstr "Valitse käyttääksesi suuraakkosia."
+
+msgid "Check to show the text in subscript."
+msgstr "Napsauta peruuttaaksesi fontin valinnan."
+
+msgid "Check to show the text in superscript."
+msgstr "Napsauta peruuttaaksesi fontin valinnan."
+
+msgid "Choose ISP to dial"
+msgstr "Valitse palveluntarjoaja jolle soitetaan"
+
+msgid "Choose a directory:"
+msgstr "Luo hakemisto"
+
+msgid "Choose a file"
+msgstr "Valitse kirjasinlaji"
+
+msgid "Choose colour"
+msgstr "Valitse väri"
+
+msgid "Choose font"
+msgstr "Valitse kirjasinlaji"
+
+msgid "Circular dependency involving module \"%s\" detected."
+msgstr "Moduulin \"%s\" sisältävä kiertoriippuvuus havaittu."
+
+msgid "Cl&ose"
+msgstr "&Sulje"
+
+msgid "Class not registered."
+msgstr "Säiettä ei voi luoda"
+
+msgid "Clear the log contents"
+msgstr "Tyhjennä lokin sisältä"
+
+msgid "Click to apply the selected style."
+msgstr "Napsauta käyttääksesi valittua tyyliä."
+
+msgid "Click to browse for a symbol."
+msgstr "Napsauta etsiäksesi symbolin."
+
+msgid "Click to cancel changes to the font."
+msgstr "Napsauta peruuttaaksesi muutokset kirjasimeen."
+
+msgid "Click to cancel the font selection."
+msgstr "Napsauta peruuttaaksesi kirjasimen valinnan."
+
+msgid "Click to change the font colour."
+msgstr "Napsauta muuttaaksesi kirjasimen värin."
+
+msgid "Click to change the text background colour."
+msgstr "Napsauta muuttaaksesi tekstin värin."
+
+msgid "Click to change the text colour."
+msgstr "Napsauta muuttaaksesi tekstin värin."
+
+msgid "Click to choose the font for this level."
+msgstr "Napsauta valitaksesi kirjasimen tälle tasolle."
+
+msgid "Click to close this window."
+msgstr "Napsauta sulkeaksesi tämä ikkuna."
+
+msgid "Click to confirm changes to the font."
+msgstr "Napsauta varmistaaksesi muutokset kirjasimeen."
+
+msgid "Click to confirm the font selection."
+msgstr "Napsauta varmistaaksesi fontin valinnan."
+
+msgid "Click to create a new box style."
+msgstr "Napsauta luodaksesi uuden luettelotyylin."
+
+msgid "Click to create a new character style."
+msgstr "Napsauta luodaksesi uuden merkkityylin."
+
+msgid "Click to create a new list style."
+msgstr "Napsauta luodaksesi uuden luettelotyylin."
+
+msgid "Click to create a new paragraph style."
+msgstr "Napsauta luodaksesi uuden kappaletyylin."
+
+msgid "Click to create a new tab position."
+msgstr "Napsauta luodaksesi uuden välilehden sijainnin."
+
+msgid "Click to delete all tab positions."
+msgstr "Napsauta poistaaksesi kaikki välilehtien sijainnit."
+
+msgid "Click to delete the selected style."
+msgstr "Napsauta poistaaksesi valitun tyylin."
+
+msgid "Click to delete the selected tab position."
+msgstr "Napsauta poistaaksesi valitun välilehden sijainnin."
+
+msgid "Click to edit the selected style."
+msgstr "Napsauta muokataksesi valittua tyyliä."
+
+msgid "Click to rename the selected style."
+msgstr "Napsauta nimetäksesi valitun tyylin uudelleen."
+
+msgid "Close All"
+msgstr "Sulje kaikki"
+
+msgid "Close current document"
+msgstr "Sulje nykyinen asiakirja"
+
+msgid "Close this window"
+msgstr "Sulje tämä ikkuna"
+
+msgid "Colour"
+msgstr "Väri"
+
+msgid "Colour selection dialog failed with error %0lx."
+msgstr "Värin valintaikkuna epäonnistui virheellä %0lx."
+
+msgid "Colour:"
+msgstr "Väri:"
+
+msgid ""
+"Command line argument %d couldn't be converted to Unicode and will be "
+"ignored."
+msgstr ""
+"Komentoriviparametria %d ei voitu muuntaa Unicode-merkistöön, joten se "
+"ohitetaan ."
+
+msgid "Common dialog failed with error code %0lx."
+msgstr "Värin valintaikkuna epäonnistui virheellä %0lx."
+
+msgid "Compressed HTML Help file (*.chm)|*.chm|"
+msgstr "Tiivistetty HTML-ohjetiedosto (*.chm)|*.chm|"
+
+msgid "Computer"
+msgstr "Tietokone"
+
+msgid "Config entry name cannot start with '%c'."
+msgstr "Asetuskohdan nimi ei voi alkaa merkillä ”%c”."
+
+msgid "Connecting..."
+msgstr "Yhdistetään..."
+
+msgid "Contents"
+msgstr "Sisältä"
+
+msgid "Conversion to charset '%s' doesn't work."
+msgstr "Muunnos merkistöön ”%s” ei toimi."
+
+msgid "Convert"
+msgstr "Sisältä"
+
+msgid "Copied to clipboard:\"%s\""
+msgstr "Kopioitu leikepöydälle: ”%s”"
+
+msgid "Copies:"
+msgstr "Kopiot:"
+
+msgid "Copy selection"
+msgstr "Kopioi valinta"
+
+msgid "Could not create temporary file '%s'"
+msgstr "Väliaikaistiedoston ”%s” luonti ei onnistu"
+
+msgid "Could not extract %s into %s: %s"
+msgstr "Ei voitu purkaa kohdetta %s kansioon %s: %s"
+
+msgid "Could not find tab for id"
+msgstr "Ei löydetty sisennystä tunnukselle"
+
+msgid "Could not initalize libnotify."
+msgstr "Tasausta ei voitu asettaa."
+
+msgid "Could not locate file '%s'."
+msgstr "Tiedostoa ”%s” ei löydy"
+
+msgid "Could not set current working directory"
+msgstr "Työhakemistoa ei saatu"
+
+msgid "Could not start document preview."
+msgstr "Dokumentin esikatselu epäonnistui."
+
+msgid "Could not start printing."
+msgstr "Tulostus epäonnistui."
+
+msgid "Could not transfer data to window"
+msgstr "Tiedonsiirto ikkunaan ei onnistu"
+
+msgid "Couldn't add an image to the image list."
+msgstr "Kuvan lisäys kuvalistaan epäonnistui."
+
+msgid "Couldn't create OpenGL context"
+msgstr "Ajastimen luonti epäonnistui"
+
+msgid "Couldn't create a timer"
+msgstr "Ajastimen luonti epäonnistui"
+
+msgid "Couldn't create the overlay window"
+msgstr "Ajastimen luonti epäonnistui"
+
+msgid "Couldn't enumerate translations"
+msgstr "Säiettä ei voi päättää"
+
+msgid "Couldn't find symbol '%s' in a dynamic library"
+msgstr "Symbolia ”%s” ei löydy dynaamisesta kirjastosta"
+
+msgid "Couldn't get the current thread pointer"
+msgstr "Säikeen osoittimen haku epäonnistui"
+
+msgid "Couldn't init the context on the overlay window"
+msgstr "Säikeen osoittimen haku epäonnistui"
+
+msgid "Couldn't initialize GIF hash table."
+msgstr "Zlib deflate -virtaa ei pystytä alustamaan."
+
+msgid "Couldn't load a PNG image - file is corrupted or not enough memory."
+msgstr ""
+"PNG-kuvan lataus ei onnistunut - tiedosto korruptoitunut tai ei tarpeeksi "
+"muistia."
+
+msgid "Couldn't load sound data from '%s'."
+msgstr "Ei voi ladata äänidataa kohteesta ”%s”"
+
+msgid "Couldn't obtain folder name"
+msgstr "Ajastimen luonti epäonnistui"
+
+msgid "Couldn't open audio: %s"
+msgstr "ääntä ei voi avata: %s"
+
+msgid "Couldn't register clipboard format '%s'."
+msgstr "Ei voi rekisteröidä leikepöytämuotoa ”%s”."
+
+msgid "Couldn't retrieve information about list control item %d."
+msgstr "Ei voi hakea tietoja list-kontrollin jäsenestä indeksissä %d."
+
+msgid "Couldn't save PNG image."
+msgstr "JPEG: Ei voinut tallentaa kuvaa"
+
+msgid "Couldn't terminate thread"
+msgstr "Säiettä ei voi päättää"
+
+msgid "Create Parameter %s not found in declared RTTI Parameters"
+msgstr "Parametrin %s luontia ei löydy ilmoitetuista RTTI-parametreista"
+
+msgid "Create directory"
+msgstr "Luo hakemisto"
+
+msgid "Create new directory"
+msgstr "Luo uusi hakemisto"
+
+msgid "Creating %s \"%s\" failed."
+msgstr "Ei voitu purkaa ”%s”:aa kohteeseen ”%s”."
+
+msgid "Ctrl+"
+msgstr "Ctrl-"
+
+msgid "Cu&t"
+msgstr "&Leikkaa"
+
+msgid "Current directory:"
+msgstr "Nykyinen hakemisto:"
+
+msgid "Custom size"
+msgstr "Valinnainen koko"
+
+msgid "Customize Columns"
+msgstr "Valinnainen koko"
+
+msgid "Cut selection"
+msgstr "Leikkaa valinta"
+
+msgid "Cyrillic (ISO-8859-5)"
+msgstr "kyrillinen (ISO-8859-5)"
+
+msgid "D sheet, 22 x 34 in"
+msgstr "D-arkki, 22″ x 34″"
+
+msgid "DDE poke request failed"
+msgstr "DDE-kirjoituspyyntö epäonnistui"
+
+msgid "DIB Header: Encoding doesn't match bitdepth."
+msgstr "DIB Otsake: Koodaus ei vastaa bittisyvyyttä."
+
+msgid "DIB Header: Image height > 32767 pixels for file."
+msgstr "DIB Otsake: Kuvan korkeus > 32767 pikseliä."
+
+msgid "DIB Header: Image width > 32767 pixels for file."
+msgstr "DIB Otsake: Kuvan leveys > 32767 pikseliä."
+
+msgid "DIB Header: Unknown bitdepth in file."
+msgstr "DIB Otsake: tuntematon bittisyvyys."
+
+msgid "DIB Header: Unknown encoding in file."
+msgstr "DIB Otsake: Tiedostolla tuntematon koodaus."
+
+msgid "DL Envelope, 110 x 220 mm"
+msgstr "DL kirjekuori, 110 x 220 mm"
+
+msgid "Debug report \"%s\""
+msgstr "Ohjelmavirheilmoitus ”%s”"
+
+msgid "Debug report couldn't be created."
+msgstr "Ohjelmavirheilmoitusta ei voitu luoda."
+
+msgid "Debug report generation has failed."
+msgstr "Ohjelmavirheilmoituksen luonti epäonnistui."
+
+msgid "Decorative"
+msgstr "Koristeellinen"
+
+msgid "Default encoding"
+msgstr "Oletuskoodaus"
+
+msgid "Default printer"
+msgstr "Oletustulostin"
+
+msgid "Del"
+msgstr "Poista"
+
+msgid "Delete A&ll"
+msgstr "Poista &kaikki"
+
+msgid "Delete Column"
+msgstr "Poista valinta"
+
+msgid "Delete Row"
+msgstr "Poista"
+
+msgid "Delete Style"
+msgstr "Poista tyyli"
+
+msgid "Delete Text"
+msgstr "Poista teksti"
+
+msgid "Delete item"
+msgstr "Poista kohta"
+
+msgid "Delete selection"
+msgstr "Poista valinta"
+
+msgid "Delete style %s?"
+msgstr "Poistetaanko tyyli %s?"
+
+msgid "Deleted stale lock file '%s'."
+msgstr "Vanha lukitustiedosto '%s' poistettu."
+
+msgid "Deleting password for \"%s/%s\" failed: %s."
+msgstr "Ei voitu purkaa ”%s”:aa kohteeseen ”%s”."
+
+msgid "Dependency \"%s\" of module \"%s\" doesn't exist."
+msgstr "Riippuvuutta ”%s” moduulille ”%s” ei ole."
+
+msgid "Descending"
+msgstr "Oletuskoodaus"
+
+msgid "Desktop"
+msgstr "Työpöytä"
+
+msgid "Developed by "
+msgstr "Kehittänyt:"
+
+msgid "Developers"
+msgstr "Kehittäjät"
+
+msgid ""
+"Dial up functions are unavailable because the remote access service (RAS) is "
+"not installed on this machine. Please install it."
+msgstr ""
+"Puhelinsoittomahdollisuutta ei ole koska RAS (remote access service)\n"
+"ei ole asennettu tälle koneelle. Ole hyvä asenna se."
+
+msgid "Did you know..."
+msgstr "Tiesitkö..."
+
+msgid "DirectFB error %d occurred."
+msgstr "DirectFB-virhe %d tapahtui."
+
+msgid "Directories"
+msgstr "Hakemistot"
+
+msgid "Directory '%s' couldn't be created"
+msgstr "Hakemistoa ”%s” ei voitu luoda"
+
+msgid "Directory '%s' couldn't be deleted"
+msgstr "Hakemistoa ”%s” ei voitu luoda"
+
+msgid "Directory does not exist"
+msgstr "Hakemistoa ei ole olemassa"
+
+msgid "Directory doesn't exist."
+msgstr "Hakemistoa ei ole olemassa."
+
+msgid "Discard changes and reload the last saved version?"
+msgstr ""
+"Hylätäänkö muutokset ja ladataanko uudelleen viimeisin tallennettu versio?"
+
+msgid ""
+"Display all index items that contain given substring. Search is case "
+"insensitive."
+msgstr ""
+"Näytä sisällysluettelosta kaikki kohdat, jotka sisältävät annetun "
+"osatekstin. Haku on merkkikoosta riippumaton."
+
+msgid "Display options dialog"
+msgstr "Näytä asetusikkuna"
+
+msgid "Displays help as you browse the books on the left."
+msgstr "Näyttää ohjeen selatessasi kirjoja vasemmalla."
+
+msgid "Do you want to save changes to %s?"
+msgstr "Haluatko tallentaa muutokset asiakirjaan %s?"
+
+msgid "Document:"
+msgstr "Dokumentaatio:"
+
+msgid "Documentation by "
+msgstr "Dokumentaatio:"
+
+msgid "Documentation writers"
+msgstr "Dokumentaation kirjoittajat"
+
+msgid "Don't Save"
+msgstr "älä tallenna"
+
+msgid "Done"
+msgstr "Valmis"
+
+msgid "Done."
+msgstr "Valmis."
+
+msgid "Dotted"
+msgstr "Valmis"
+
+msgid "Double"
+msgstr "Valmis"
+
+msgid "Double Japanese Postcard Rotated 148 x 200 mm"
+msgstr "Kaksinkertainen japanilainen postikortti käännetty 148 x 200 mm"
+
+msgid "Doubly used id : %d"
+msgstr "Kahteen kertaan käytetty id : %d"
+
+msgid "Down"
+msgstr "Alas"
+
+msgid "E sheet, 34 x 44 in"
+msgstr "E-arkki, 34″ x 44″"
+
+msgid "EOF while reading from inotify descriptor"
+msgstr "tiedoston kuvauksen %d luku epäonnistui"
+
+msgid "Edit item"
+msgstr "Muokkaa"
+
+msgid "Elapsed time:"
+msgstr "Käytetty aika:"
+
+msgid "Enable the height value."
+msgstr "Käytä korkeusarvoa."
+
+msgid "Enable the maximum width value."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enable the minimum height value."
+msgstr "Käytä korkeusarvoa."
+
+msgid "Enable the minimum width value."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enable the width value."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enable vertical alignment."
+msgstr "Tasausta ei voitu asettaa."
+
+msgid "Enables a background colour."
+msgstr "Taustaväri"
+
+msgid "Enables a shadow."
+msgstr "Taustaväri"
+
+msgid "Enables the blur distance."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enables the shadow colour."
+msgstr "Taustaväri"
+
+msgid "Enables the shadow opacity."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enables the shadow spread."
+msgstr "Käytä leveysarvoa."
+
+msgid "Enter"
+msgstr "Tulostin"
+
+msgid "Enter a box style name"
+msgstr "Anna uuden tyylin nimi"
+
+msgid "Enter a character style name"
+msgstr "Anna merkkityylin nimi"
+
+msgid "Enter a list style name"
+msgstr "Anna luettelotyylin nimi"
+
+msgid "Enter a new style name"
+msgstr "Anna uuden tyylin nimi"
+
+msgid "Enter a paragraph style name"
+msgstr "Anna kappaletyylin nimi"
+
+msgid "Enter command to open file \"%s\":"
+msgstr "Anna komento tiedoston ”%s” avaamiseksi:"
+
+msgid "Entries found"
+msgstr "Löydetyt kohdat"
+
+msgid "Envelope Invite 220 x 220 mm"
+msgstr "DL Kirjekuori, 110 x 220 mm"
+
+msgid ""
+"Environment variables expansion failed: missing '%c' at position %u in '%s'."
+msgstr ""
+"Ympäristömuuttujien laajennus epäonnistui: puuttuva ”%1$c” muuttujan ”%3$s” "
+"kohdassa %2$d."
+
+msgid "Error closing epoll descriptor"
+msgstr "Virhe hakemistoa luotaessa"
+
+msgid "Error closing kqueue instance"
+msgstr "Virhe hakemistoa luotaessa"
+
+msgid "Error copying the file '%s' to '%s'."
+msgstr "Tiedoston ”%s” kopiointi kohteeseen ”%s” epäonnistui."
+
+msgid "Error creating directory"
+msgstr "Virhe hakemistoa luotaessa"
+
+msgid "Error in reading image DIB."
+msgstr "DIB: virhe kuvan lukemisessa ."
+
+msgid "Error in resource: %s"
+msgstr "Virhe resurssissa: %s"
+
+msgid "Error reading config options."
+msgstr "Virhe asetusten lukemisessa."
+
+msgid "Error saving user configuration data."
+msgstr "Virhe käyttäjän asetusten tallentamisessa."
+
+msgid "Error while printing: "
+msgstr "Virhe tulostettaessa: "
+
+msgid "Error: "
+msgstr "Virhe: "
+
+msgid "Escape"
+msgstr "Vaakasuunta"
+
+msgid "Esperanto (ISO-8859-3)"
+msgstr "esperanto (ISO-8859-3)"
+
+msgid "Estimated time:"
+msgstr "Arvioitu aika:"
+
+msgid "Executable files (*.exe)|*.exe|"
+msgstr "Suoritettavat tiedostot (*.exe)|*.exe|Kaikki tiedostot (*.*)|*.*||"
+
+msgid "Execute"
+msgstr "Suorita"
+
+msgid "Execution of command '%s' failed"
+msgstr "Komennon ”%s” käynnistäminen epäonnistui"
+
+msgid "Executive, 7 1/4 x 10 1/2 in"
+msgstr "Executive, 7 1/4 x 10 1/2” "
+
+msgid ""
+"Exporting registry key: file \"%s\" already exists and won't be overwritten."
+msgstr "Viety rekisteriavain: tiedosto ”%s” on jo olemassa eikä sitä korvata."
+
+msgid "Extended Unix Codepage for Japanese (EUC-JP)"
+msgstr "Laajennettu japanilainen Unix-koodisivu (EUC-JP)"
+
+msgid "Extraction of '%s' into '%s' failed."
+msgstr "Ei voitu purkaa ”%s”:aa kohteeseen ”%s”."
+
+msgid "Face Name"
+msgstr "UusiNimi"
+
+msgid "Failed to access lock file."
+msgstr "Lukkotiedostoon ei päästy käsiksi."
+
+msgid "Failed to add descriptor %d to epoll descriptor %d"
+msgstr "kirjoittaminen epäonnistui tiedoston kuvaukseen %d"
+
+msgid "Failed to allocate %luKb of memory for bitmap data."
+msgstr "Osoittimen luonti epäonnistui."
+
+msgid "Failed to allocate colour for OpenGL"
+msgstr "Osoittimen luonti epäonnistui."
+
+msgid "Failed to change video mode"
+msgstr "Näyttötilan vaihto epäonnistui"
+
+msgid "Failed to check format of image file \"%s\"."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to clean up debug report directory \"%s\""
+msgstr "Ohjelmavirheiden ilmoituskansion ”%s” tyhjentäminen epäonnistui."
+
+msgid "Failed to close file handle"
+msgstr "Tiedostokahvan sulkeminen epäonnistui"
+
+msgid "Failed to close lock file '%s'"
+msgstr "Lukkotiedoston ”%s” sulkeminen epäonnistui"
+
+msgid "Failed to close the clipboard."
+msgstr "Leikepöydän sulkeminen epäonnistui."
+
+msgid "Failed to close the display \"%s\""
+msgstr "Näytön ”%s” sulkeminen epäonnistui"
+
+msgid "Failed to connect: missing username/password."
+msgstr "Yhdistäminen epäonnistui: käyttäjätunnus/salasana puutui."
+
+msgid "Failed to connect: no ISP to dial."
+msgstr "Yhdistäminen epäonnistui: ei soitettavissa olevaa palveluntarjoajaa."
+
+msgid "Failed to convert file \"%s\" to Unicode."
+msgstr "Tiedostoa ”%s” ei voitu muuntaa Unicode-muotoon."
+
+msgid "Failed to copy dialog contents to the clipboard."
+msgstr "Leikepöydän avaus ei onnistunut."
+
+msgid "Failed to copy registry value '%s'"
+msgstr "Rekisteriarvon ”%s” kopiointi ei onnistu"
+
+msgid "Failed to copy the contents of registry key '%s' to '%s'."
+msgstr "Ei voi kopioida rekisteriavaimen ”%s” sisältää avaimeen ”%s”."
+
+msgid "Failed to copy the file '%s' to '%s'"
+msgstr "Tiedoston ”%s” kopiointi kohteeseen ”%s” epäonnistui."
+
+msgid "Failed to copy the registry subkey '%s' to '%s'."
+msgstr "Ali-rekisteriavaimen ”%s” kopiointi ”%s”:ksi ei onnistu."
+
+msgid "Failed to create DDE string"
+msgstr "DDE-merkkijonoa ei voitu luoda"
+
+msgid "Failed to create MDI parent frame."
+msgstr "MDI-isäntäkehystä ei voitu luoda."
+
+msgid "Failed to create a temporary file name"
+msgstr "Tilapäistiedoston nimen luonti epäonnistui."
+
+msgid "Failed to create an anonymous pipe"
+msgstr "Anonyymin putken luonti epäonnistui"
+
+msgid "Failed to create an instance of \"%s\""
+msgstr "Tilarivin luonti epäonnistui."
+
+msgid "Failed to create connection to server '%s' on topic '%s'"
+msgstr "Ei voitu yhdistää palvelimeen ”%s” asiassa %s"
+
+msgid "Failed to create cursor."
+msgstr "Osoittimen luonti epäonnistui."
+
+msgid "Failed to create directory \"%s\""
+msgstr "Hakemiston ”%s” luonti epäonnistui."
+
+msgid ""
+"Failed to create directory '%s'\n"
+"(Do you have the required permissions?)"
+msgstr ""
+"Hakemiston ”%s” luonti epäonnistui\n"
+"(Onko sinulla vaadittavat oikeudet?)"
+
+msgid "Failed to create epoll descriptor"
+msgstr "Osoittimen luonti epäonnistui."
+
+msgid "Failed to create registry entry for '%s' files."
+msgstr "Rekisteriavaimen luonti ”%s” tyypin tiedostoille ei onnistu."
+
+msgid "Failed to create the standard find/replace dialog (error code %d)"
+msgstr "Standardin etsi/korvaa ikkunan luonti epäonnistui (virhekoodi %d)"
+
+msgid "Failed to create wake up pipe used by event loop."
+msgstr "Tilarivin luonti epäonnistui."
+
+msgid "Failed to display HTML document in %s encoding"
+msgstr "HTML %s-koodattua asiakirjaa ei voi näyttää"
+
+msgid "Failed to empty the clipboard."
+msgstr "Leikepöydän tyhjennys epäonnistui."
+
+msgid "Failed to enumerate video modes"
+msgstr "Näyttötilojen luettelointi ei onnistu"
+
+msgid "Failed to establish an advise loop with DDE server"
+msgstr "DDE-serverin ohjeistuspiiriä ei aikaansaatu"
+
+msgid "Failed to establish dialup connection: %s"
+msgstr "Soittoyhteyttä %s ei voitu luoda"
+
+msgid "Failed to execute '%s'\n"
+msgstr "Ei voitu ajaa kohdetta ”%s”\n"
+
+msgid "Failed to execute curl, please install it in PATH."
+msgstr ""
+"curl:in suorittaminen epäonnistui. Asenna se johonkin PATH-määrityksessä "
+"olevaan hakemistoon."
+
+msgid "Failed to find CLSID of \"%s\""
+msgstr "Kohteen \"%s\" CLSID:n haku epäonnistui"
+
+msgid "Failed to find match for regular expression: %s"
+msgstr "Ei voitu löytää osumia säännölliselle lausekkeelle: %s"
+
+msgid "Failed to get ISP names: %s"
+msgstr "Palveluntarjoajien nimeä ei saatu: %s"
+
+msgid "Failed to get OLE automation interface for \"%s\""
+msgstr "Kohteen \"%s\" OLE -automaatiorajapinnan selvittäminen epäonnistui"
+
+msgid "Failed to get data from the clipboard"
+msgstr "Dataa ei voida hakea leikepöydältä"
+
+msgid "Failed to get the local system time"
+msgstr "Paikallista systeemiaikaa ei saatu"
+
+msgid "Failed to get the working directory"
+msgstr "Työhakemistoa ei saatu"
+
+msgid "Failed to initialize GUI: no built-in themes found."
+msgstr "GUI:n alustus epäonnistui: ei teemoja mukana."
+
+msgid "Failed to initialize MS HTML Help."
+msgstr "MS HTML Ohjeen alustus epäonnistui."
+
+msgid "Failed to initialize OpenGL"
+msgstr "OpenGL:n alustus epäonnistui"
+
+msgid "Failed to initiate dialup connection: %s"
+msgstr "Puhelinyhteyden ”%s” keskeytys ei onnistunut."
+
+msgid "Failed to insert text in the control."
+msgstr "Työhakemistoa ei saatu"
+
+msgid "Failed to inspect the lock file '%s'"
+msgstr "Lukkotiedostoa ”%s” ei voitu tutkia"
+
+msgid "Failed to install signal handler"
+msgstr "Tiedostokahvan sulkeminen epäonnistui"
+
+msgid ""
+"Failed to join a thread, potential memory leak detected - please restart the "
+"program"
+msgstr ""
+"Säikeen kytkentä epäonnistui, todennäköisesti muistivuoto - ole hyvä ja "
+"käynnistä ohjelma uudestaan"
+
+msgid "Failed to kill process %d"
+msgstr "Prosessia %d ei voitu lopettaa."
+
+msgid "Failed to load bitmap \"%s\" from resources."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load icon \"%s\" from resources."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load icons from resource '%s'."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load image %%d from file '%s'."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load image %d from stream."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load image from file \"%s\"."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to load metafile from file \"%s\"."
+msgstr "Metatiedostoa ei voitu ladata tiedostosta ”%s”."
+
+msgid "Failed to load mpr.dll."
+msgstr "Tiedoston mpr.dll lataus epäonnistui."
+
+msgid "Failed to load resource \"%s\"."
+msgstr "Prosessia %d ei voitu lopettaa."
+
+msgid "Failed to load shared library '%s'"
+msgstr "Jaetun kirjaston ”%s” lataaminen epäonnistui"
+
+msgid "Failed to load sound from \"%s\" (error %d)."
+msgstr "Prosessia %d ei voitu lopettaa."
+
+msgid "Failed to lock resource \"%s\"."
+msgstr "Lukkotiedostoa ”%s” ei voitu lukita"
+
+msgid "Failed to lock the lock file '%s'"
+msgstr "Lukkotiedostoa ”%s” ei voitu lukita"
+
+msgid "Failed to modify descriptor %d in epoll descriptor %d"
+msgstr "Kuvaajan %d muokkaus epäonnistui epoll-kuvaajassa %d"
+
+msgid "Failed to modify file times for '%s'"
+msgstr "Tiedoston ”%s” aikoja ei voitu muuttaa"
+
+msgid "Failed to monitor I/O channels"
+msgstr "I/O-kanavien seuraaminen epäonnistui"
+
+msgid "Failed to open '%s' for reading"
+msgstr "Kohteen ”%s” avaaminen lukemista varten epäonnistui"
+
+msgid "Failed to open '%s' for writing"
+msgstr "Kohteen ”%s” avaaminen kirjoittamista varten epäonnistui"
+
+msgid "Failed to open CHM archive '%s'."
+msgstr "CHM arkiston ”%s” avaaminen epäonnistui."
+
+msgid "Failed to open URL \"%s\" in default browser."
+msgstr "URL-osoitetta ”%s” ei voitu avata oletusselaimessa."
+
+msgid "Failed to open directory \"%s\" for monitoring."
+msgstr "Kohteen ”%s” avaaminen kirjoittamista varten epäonnistui"
+
+msgid "Failed to open display \"%s\"."
+msgstr "Näyttöä ”%s” ei voitu avata."
+
+msgid "Failed to open temporary file."
+msgstr "Tilapäistiedoston avaus epäonnistui."
+
+msgid "Failed to open the clipboard."
+msgstr "Leikepöydän avaus ei onnistunut."
+
+msgid "Failed to parse Plural-Forms: '%s'"
+msgstr "Monikkomuotoja ”%s” ei voida käsitellä"
+
+msgid "Failed to prepare playing \"%s\"."
+msgstr "Näyttöä ”%s” ei voitu avata."
+
+msgid "Failed to put data on the clipboard"
+msgstr "Dataa ei voida siirtää leikepöydälle."
+
+msgid "Failed to read PID from lock file."
+msgstr "PID:iä ei voitu lukea lukkotiedostosta."
+
+msgid "Failed to read config options."
+msgstr "Asetuksia ei voitu lukea."
+
+msgid "Failed to read document from the file \"%s\"."
+msgstr "Kuvaa %d ei voi ladata tiedostosta ”%s”."
+
+msgid "Failed to read event from DirectFB pipe"
+msgstr "PID:iä ei voitu lukea lukkotiedostosta."
+
+msgid "Failed to read from wake-up pipe"
+msgstr "PID:iä ei voitu lukea lukkotiedostosta."
+
+msgid "Failed to redirect child process input/output"
+msgstr "Lapsiprosessin I/O:n uudelleenohjaus epäonnistui"
+
+msgid "Failed to redirect the child process IO"
+msgstr "Lapsiprosessin I/O:n uudelleenohjaus epäonnistui"
+
+msgid "Failed to register DDE server '%s'"
+msgstr "DDE-palvelimen ”%s” rekisteröinti epäonnistui"
+
+msgid "Failed to remember the encoding for the charset '%s'."
+msgstr "Merkistön ”%s” koodaus on unohtunut."
+
+msgid "Failed to remove debug report file \"%s\""
+msgstr "Ohjelmavirhetiedostoa ”%s” ei voitu poistaa."
+
+msgid "Failed to remove lock file '%s'"
+msgstr "Lukkotiedoston ”%s” poisto ei onnistu"
+
+msgid "Failed to remove stale lock file '%s'."
+msgstr "Vanhan lukitustiedoston '%s' poisto epäonnistui."
+
+msgid "Failed to rename registry value '%s' to '%s'."
+msgstr "Rekisteriavaimen ”%s” nimeäminen ”%s”:ksi ei onnistu."
+
+msgid ""
+"Failed to rename the file '%s' to '%s' because the destination file already "
+"exists."
+msgstr ""
+"Tiedoston '%s' uudelleennimeäminen tiedostoksi '%s' epäonnistui, koska "
+"kohdetiedosto on jo olemassa."
+
+msgid "Failed to rename the registry key '%s' to '%s'."
+msgstr "Rekisteriavaimen ”%s” nimeäminen ”%s”:ksi ei onnistu."
+
+msgid "Failed to retrieve file times for '%s'"
+msgstr "Tiedoston ”%s” aikoja ei voida hakea"
+
+msgid "Failed to retrieve text of RAS error message"
+msgstr "RAS-virheilmoitusta ei saatu."
+
+msgid "Failed to retrieve the supported clipboard formats"
+msgstr "Ei voi hakea tuettuja leikepöytämuotoja"
+
+msgid "Failed to save document to the file \"%s\"."
+msgstr "Touch epäonnistui tiedostolle ”%s”"
+
+msgid "Failed to save the bitmap image to file \"%s\"."
+msgstr "Kuvatiedostoa ”%s” ei voitu tallentaa."
+
+msgid "Failed to send DDE advise notification"
+msgstr "DDE:n ohjeistustiedotuksen lähetys epäonnistui"
+
+msgid "Failed to set FTP transfer mode to %s."
+msgstr "FTP:n siirtotilan %s asetus epäonnistui."
+
+msgid "Failed to set clipboard data."
+msgstr "Leikepöydän datan asetus epäonnistui."
+
+msgid "Failed to set permissions on lock file '%s'"
+msgstr "Oikeuksia ei voitu asettaa lukkotiedostolle ”%s”"
+
+msgid "Failed to set process priority"
+msgstr "Säikeen prioriteetin %d asetus epäonnistui."
+
+msgid "Failed to set temporary file permissions"
+msgstr "Tilapäistiedoston oikeuksia ei voitu asettaa."
+
+msgid "Failed to set text in the text control."
+msgstr "Työhakemistoa ei saatu"
+
+msgid "Failed to set thread concurrency level to %lu"
+msgstr "Säikeen prioriteetin %d asetus epäonnistui."
+
+msgid "Failed to set thread priority %d."
+msgstr "Säikeen prioriteetin %d asetus epäonnistui."
+
+msgid "Failed to store image '%s' to memory VFS!"
+msgstr "Kuvan ”%s” tallennus Muisti-VFS:ään epäonnistui!"
+
+msgid "Failed to terminate a thread."
+msgstr "Säikeen päättäminen epäonnistui."
+
+msgid "Failed to terminate the advise loop with DDE server"
+msgstr "DDE ohjeistuspiirin (advise loop) keskeytys ei onnistunut"
+
+msgid "Failed to terminate the dialup connection: %s"
+msgstr "Puhelinyhteyden ”%s” keskeytys ei onnistunut."
+
+msgid "Failed to touch the file '%s'"
+msgstr "Touch epäonnistui tiedostolle ”%s”"
+
+msgid "Failed to unlock lock file '%s'"
+msgstr "Lukkotiedoston ”%s” lukitusta ei voitu purkaa"
+
+msgid "Failed to unregister DDE server '%s'"
+msgstr "DDE-serverin ”%s” poisto rekisteröinnistä epäonnistui"
+
+msgid "Failed to unregister descriptor %d from epoll descriptor %d"
+msgstr "Dataa ei voida hakea leikepöydältä."
+
+msgid "Failed to update user configuration file."
+msgstr "Käyttäjän asetustiedoston päivitys ei onnistu."
+
+msgid "Failed to upload the debug report (error code %d)."
+msgstr "Ohjelmavirheilmoitusta ei voitu lähettää (virhekoodi %d)."
+
+msgid "Failed to write to lock file '%s'"
+msgstr "Lukkotiedoston ”%s” kirjoitus epäonnistui"
+
+msgid "False"
+msgstr "Tiedosto"
+
+msgid "Family"
+msgstr "&Kirjasinperhe:"
+
+msgid "File"
+msgstr "Tiedosto"
+
+msgid "File \"%s\" could not be opened for reading."
+msgstr "Kohteen ”%s” avaaminen lukemista varten epäonnistui"
+
+msgid "File \"%s\" could not be opened for writing."
+msgstr "Kohteen ”%s” avaaminen kirjoittamista varten epäonnistui"
+
+msgid "File '%s' already exists, do you really want to overwrite it?"
+msgstr "Tiedosto ”%s” on jo olemassa, korvataanko se varmasti?"
+
+msgid "File '%s' couldn't be removed"
+msgstr "Hakemistoa ”%s” ei voitu luoda"
+
+msgid "File '%s' couldn't be renamed '%s'"
+msgstr "Hakemistoa ”%s” ei voitu luoda"
+
+msgid "File couldn't be loaded."
+msgstr "Tiedostoa ei voitu ladata."
+
+msgid "File dialog failed with error code %0lx."
+msgstr "Värin valintaikkuna epäonnistui virheellä %0lx."
+
+msgid "File error"
+msgstr "Tiedostovirhe"
+
+msgid "File name exists already."
+msgstr "Tiedostonimi on jo olemassa."
+
+msgid "Files (%s)"
+msgstr "Tiedostot (%s)"
+
+msgid "Filter"
+msgstr "Suodatin"
+
+msgid "First"
+msgstr "ensimmäinen"
+
+msgid "First page"
+msgstr "Seuraava sivu"
+
+msgid "Fixed"
+msgstr "Kiinteälevyinen fontti:"
+
+msgid "Fixed font:"
+msgstr "Kiinteälevyinen fontti:"
+
+msgid "Fixed size face.<br> <b>bold</b> <i>italic</i> "
+msgstr "Kiinteäkokoinen kirjasin.<br> <b>lihavoitu</b> <i>kursivoitu</i> "
+
+msgid "Floating"
+msgstr "Liukuva"
+
+msgid "Floppy"
+msgstr "Kopioi"
+
+msgid "Folio, 8 1/2 x 13 in"
+msgstr "Folio, 8 1/2″ x 13″"
+
+msgid "Font &weight:"
+msgstr "Kirjasimen &paino:"
+
+msgid "Font size:"
+msgstr "Kirjasinkoko:"
+
+msgid "Font st&yle:"
+msgstr "Kirjasimen &tyyli:"
+
+msgid "Font:"
+msgstr "Kirjasin:"
+
+msgid "Fonts index file %s disappeared while loading fonts."
+msgstr "Kirjasinten indeksitiedosto %s katosi kirjasimia ladattaessa."
+
+msgid "Fork failed"
+msgstr "Haarauttaminen epäonnistui"
+
+msgid "Forward"
+msgstr "&Eteenpäin"
+
+msgid "Forward hrefs are not supported"
+msgstr "Eteenpäin osoittavia href-viittauksia ei tueta"
+
+msgid "Found %i matches"
+msgstr "Löytyi %i täsmäävää"
+
+msgid "From:"
+msgstr "Lähettäjä:"
+
+msgid "GIF: data stream seems to be truncated."
+msgstr "GIF: datan virta typistetty."
+
+msgid "GIF: error in GIF image format."
+msgstr "GIF: virhe GIF-kuvamuodossa."
+
+msgid "GIF: not enough memory."
+msgstr "GIF: ei riittävästi muistia."
+
+msgid "GTK+ theme"
+msgstr "GTK+-teema"
+
+msgid "Generic PostScript"
+msgstr "Generic PostScript"
+
+msgid "German Legal Fanfold, 8 1/2 x 13 in"
+msgstr "Saksalainen traktoriveto, 8 1/2 x 13” "
+
+msgid "German Std Fanfold, 8 1/2 x 12 in"
+msgstr "Eurooppalainen traktoriveto, 8 1/2 x 12” "
+
+msgid "GetProperty called w/o valid getter"
+msgstr "GetProperty-funktiota kutsuttiin ilman kelvollista hakijaa"
+
+msgid "GetPropertyCollection called on a generic accessor"
+msgstr "Funktiota GetPropertyCollection kutsuttu yleisellä haulla"
+
+msgid "GetPropertyCollection called w/o valid collection getter"
+msgstr ""
+"GetPropertyCollection-funktiota kutsuttu ilman kelvollista kokoelman hakijaa"
+
+msgid "Go back"
+msgstr "Takaisin"
+
+msgid "Go forward"
+msgstr "Eteenpäin"
+
+msgid "Go one level up in document hierarchy"
+msgstr "Mene ylös asiakirjahierarkiassa"
+
+msgid "Go to home directory"
+msgstr "Siirry kotihakemistoon"
+
+msgid "Go to parent directory"
+msgstr "Mene ylähakemistoon"
+
+msgid "Graphics art by "
+msgstr "Graafisen taiteen tekijä:"
+
+msgid "Greek (ISO-8859-7)"
+msgstr "kreikkalainen (ISO-8859-7)"
+
+msgid "Green"
+msgstr "Mac (kreikkalainen)"
+
+msgid "Green:"
+msgstr "Mac (kreikkalainen)"
+
+msgid "Gzip not supported by this version of zlib"
+msgstr "Gzip:iä ei tueta zlib:in tässä versiossa"
+
+msgid "HTML Help Project (*.hhp)|*.hhp|"
+msgstr "HTML Ohjeprojekti (*.hhp)|*.hhp|"
+
+msgid "HTML anchor %s does not exist."
+msgstr "HTML-ankkuria %s ei ole olemassa."
+
+msgid "HTML files (*.html;*.htm)|*.html;*.htm|"
+msgstr "HTML-tiedostot (*.html;*.htm)|*.html;*.htm|"
+
+msgid "Harddisk"
+msgstr "Kiintolevy"
+
+msgid "Hebrew (ISO-8859-8)"
+msgstr "heprea (ISO-8859-8)"
+
+msgid "Help Browser Options"
+msgstr "Ohjeselaimen valinnat"
+
+msgid "Help Index"
+msgstr "Ohjeen sisältä"
+
+msgid "Help Printing"
+msgstr "Ohjeen tulostus"
+
+msgid "Help Topics"
+msgstr "Ohjeen aiheet"
+
+msgid "Help books (*.htb)|*.htb|Help books (*.zip)|*.zip|"
+msgstr "Ohjekirjat (*.htb)|*.htb|Ohjekirjat (*.zip)|*.zip|"
+
+msgid "Help directory \"%s\" not found."
+msgstr "Ohjehakemistoa ”%s” ei löytynyt."
+
+msgid "Help file \"%s\" not found."
+msgstr "Ohjetiedostoa ”%s” ei löytynyt."
+
+msgid "Help: %s"
+msgstr "Ohje: %s"
+
+msgid "Hide %s"
+msgstr "Piilota"
+
+msgid "Hide Others"
+msgstr "Piilota muut"
+
+msgid "Hide this notification message."
+msgstr "Piilota tämä huomautus."
+
+msgid "Highlight"
+msgstr "heikko"
+
+msgid "HighlightText"
+msgstr "Tasaa teksti oikealle."
+
+msgid "Home"
+msgstr "Koti"
+
+msgid "Home directory"
+msgstr "Kotihakemisto"
+
+msgid "ICO: Error in reading mask DIB."
+msgstr "ICO: Virhe DIB peitteen lukemisessa."
+
+msgid "ICO: Error writing the image file!"
+msgstr "ICO: Virhe kuvatiedoston kirjoittamisessa."
+
+msgid "ICO: Image too tall for an icon."
+msgstr "ICO: Kuva liian suuri kuvakkeeksi."
+
+msgid "ICO: Image too wide for an icon."
+msgstr "ICO: Kuva liian leveä kuvakkeeksi."
+
+msgid "ICO: Invalid icon index."
+msgstr "ICO: Väärä kuvake-indeksi."
+
+msgid "IFF: data stream seems to be truncated."
+msgstr "IFF: datavirta on typistetty."
+
+msgid "IFF: error in IFF image format."
+msgstr "IFF: virhe IFF-kuvamuodossa."
+
+msgid "IFF: not enough memory."
+msgstr "IFF: ei riittävästi muistia."
+
+msgid "IFF: unknown error!!!"
+msgstr "IFF: tuntematon virhe!!!"
+
+msgid "ISO-2022-JP"
+msgstr "ISO-2022-JP"
+
+msgid "Ignoring value \"%s\" of the key \"%s\"."
+msgstr "Ohitetaan arvo ”%s” avaimessa ”%s”."
+
+msgid "Illegal directory name."
+msgstr "Virheellinen hakemiston nimi."
+
+msgid "Illegal file specification."
+msgstr "Virheellinen tiedostomääritelmä."
+
+msgid "Image and mask have different sizes."
+msgstr "Kuvan ja peitteen koot ovat erisuuruiset."
+
+msgid "Image file is not of type %d."
+msgstr "Kuvatiedoston tyyppi ei ole %ld."
+
+msgid "Image is not of type %s."
+msgstr "Kuvatiedoston tyyppi ei ole %s."
+
+msgid ""
+"Impossible to create a rich edit control, using simple text control instead. "
+"Please reinstall riched32.dll"
+msgstr ""
+"Rich Edit tekstimuokkaus on mahdotonta, käytetään tavanomaista "
+"tekstimuokkausta.Asenna riched32.dll uudestaan."
+
+msgid "Impossible to get child process input"
+msgstr "Lapsiprosessin syötteen saanti on mahdotonta"
+
+msgid "Impossible to get permissions for file '%s'"
+msgstr "Tiedoston ”%s” oikeuksien saanti on mahdotonta"
+
+msgid "Impossible to overwrite the file '%s'"
+msgstr "Tiedostoa ”%s” ei voida korvata"
+
+msgid "Impossible to set permissions for the file '%s'"
+msgstr "Lupien asetus tiedostolle ”%s” on mahdotonta"
+
+msgid "InactiveBorder"
+msgstr "Moderni"
+
+msgid "Incorrect GIF frame size (%u, %d) for the frame #%u"
+msgstr "Virheellinen GIF-kehyksen koko (%u, %d) kehykselle #%u"
+
+msgid "Incorrect number of arguments."
+msgstr "Virheellinen argumenttien määrä."
+
+msgid "Indent"
+msgstr "Sisennys"
+
+msgid "Indents && Spacing"
+msgstr "Sisennys && välit"
+
+msgid "Index"
+msgstr "Sisältä"
+
+msgid "Indian (ISO-8859-12)"
+msgstr "intialainen (ISO-8859-12)"
+
+msgid "Initialization failed in post init, aborting."
+msgstr "Alustus epäonnistui jälkialustuksessa, keskeytetään."
+
+msgid "Ins"
+msgstr "Lisää"
+
+msgid "Insert"
+msgstr "Lisää"
+
+msgid "Insert Field"
+msgstr "Lisää teksti"
+
+msgid "Insert Image"
+msgstr "Lisää kuva"
+
+msgid "Insert Object"
+msgstr "Lisää teksti"
+
+msgid "Insert Text"
+msgstr "Lisää teksti"
+
+msgid "Inserts a page break before the paragraph."
+msgstr "Tyhjä tila ennen kappaletta."
+
+msgid "Inset"
+msgstr "Lisää"
+
+msgid "Invalid GTK+ command line option, use \"%s --help\""
+msgstr "Virheellinen GTK+-komentorivivalinta, kokeile ”%s --help”"
+
+msgid "Invalid TIFF image index."
+msgstr "Virheellinen TIFF-kuvaindeksi."
+
+msgid "Invalid display mode specification '%s'."
+msgstr "Virheellinen näyttötilamääritelmä ”%s”."
+
+msgid "Invalid geometry specification '%s'"
+msgstr "Virheellinen geometry-määritelmä ”%s”"
+
+msgid "Invalid lock file '%s'."
+msgstr "Virheellinen lukkotiedosto ”%s”."
+
+msgid "Invalid message catalog."
+msgstr "”%s” ei ole kelvollinen viestiluettelo."
+
+msgid "Invalid or Null Object ID passed to GetObjectClassInfo"
+msgstr ""
+"Virheellinen tai nollaobjektitunnus välitetty kohteelle GetObjectClassInfo"
+
+msgid "Invalid or Null Object ID passed to HasObjectClassInfo"
+msgstr ""
+"Virheellinen tai nollaobjektitunnus välitetty kohteelle HasObjectClassInfo"
+
+msgid "Invalid regular expression '%s': %s"
+msgstr "Virheellinen säännösetellinen lauseke ”%s”: %s"
+
+msgid "Invalid value %ld for a boolean key \"%s\" in config file."
+msgstr "Virheellinen arvo %ld totuusavaimelle \"%s\" asetustiedostossa."
+
+msgid "Italic"
+msgstr "Kursivoitu"
+
+msgid "Italy Envelope, 110 x 230 mm"
+msgstr "Italialainen kirjekuori, 110 x 230 mm"
+
+msgid "JPEG: Couldn't load - file is probably corrupted."
+msgstr "JPEG-kuvan lataus ei onnistu - tiedosto ehkä korruptoitunut."
+
+msgid "JPEG: Couldn't save image."
+msgstr "JPEG: Ei voinut tallentaa kuvaa"
+
+msgid "Justified"
+msgstr "Tasattu"
+
+msgid "Justify text left and right."
+msgstr "Tasaa teksti vasemmalle ja oikealle."
+
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+msgid "KP_"
+msgstr "KP_"
+
+msgid "KP_Add"
+msgstr "KP_LISÄÄ"
+
+msgid "KP_Delete"
+msgstr "Poista"
+
+msgid "KP_Down"
+msgstr "Alas"
+
+msgid "KP_End"
+msgstr "KP_END"
+
+msgid "KP_Enter"
+msgstr "Tulostin"
+
+msgid "KP_Home"
+msgstr "Koti"
+
+msgid "KP_Insert"
+msgstr "Lisää"
+
+msgid "KP_Left"
+msgstr "Vasen"
+
+msgid "KP_Next"
+msgstr "Seuraava"
+
+msgid "KP_Right"
+msgstr "Oikealle"
+
+msgid "KP_Tab"
+msgstr "KP_SARKAIN"
+
+msgid "KP_Up"
+msgstr "KP_YLÖS"
+
+msgid "L&ine spacing:"
+msgstr "&Riviväli:"
+
+msgid "Last"
+msgstr "Liitä"
+
+msgid "Last page"
+msgstr "Seuraava sivu"
+
+msgid "Ledger, 17 x 11 in"
+msgstr "Ledger, 17 x 11” "
+
+msgid "Left (&first line):"
+msgstr "Vasen (&ensimmäinen rivi):"
+
+msgid "Left margin (mm):"
+msgstr "Vasen marginaali (mm):"
+
+msgid "Left-align text."
+msgstr "Vasemmalle tasattu teksti:"
+
+msgid "Legal Extra 9 1/2 x 15 in"
+msgstr "Legal 8 1/2 x 14” "
+
+msgid "Legal, 8 1/2 x 14 in"
+msgstr "Legal 8 1/2 x 14” "
+
+msgid "Letter Extra 9 1/2 x 12 in"
+msgstr "Letter 8 1/2 x 11” "
+
+msgid "Letter Plus 8 1/2 x 12.69 in"
+msgstr "Letter 8 1/2 x 11” "
+
+msgid "Letter Rotated 11 x 8 1/2 in"
+msgstr "Letter 8 1/2 x 11” "
+
+msgid "Letter Small, 8 1/2 x 11 in"
+msgstr "Letter (pieni) 8 1/2 x 11” "
+
+msgid "Letter Transverse 8 1/2 x 11 in"
+msgstr "Letter 8 1/2 x 11” "
+
+msgid "Letter, 8 1/2 x 11 in"
+msgstr "Letter 8 1/2 x 11” "
+
+msgid "License"
+msgstr "Lisenssi"
+
+msgid "Light"
+msgstr "Kevyt"
+
+msgid "Line %lu of map file \"%s\" has invalid syntax, skipped."
+msgstr ""
+"Rivillä %lu karttatiedostossa \"%s\" on virheellinen syntaksi, ohitettu."
+
+msgid "Line spacing:"
+msgstr "Riviväli:"
+
+msgid "Link contained '//', converted to absolute link."
+msgstr "'//'-määrityksen sisältävä linkki muunnettu absoluuttiseksi."
+
+msgid "List Style"
+msgstr "Luettelotyyli"
+
+msgid "List styles"
+msgstr "Luettelotyylit"
+
+msgid "Lists font sizes in points."
+msgstr "Luetteloi kirjasinkoot pisteinä."
+
+msgid "Lists the available fonts."
+msgstr "Luetteloi käytettävissä olevat kirjasimet."
+
+msgid "Load %s file"
+msgstr "Lataa %s tiedosto"
+
+msgid "Loading : "
+msgstr "Ladataan : "
+
+msgid "Lock file '%s' has incorrect owner."
+msgstr "Lukkotiedostolla ”%s” on virheellinen omista."
+
+msgid "Lock file '%s' has incorrect permissions."
+msgstr "Lukkotiedostolla ”%s” on virheelliset oikeudet."
+
+msgid "Log saved to the file '%s'."
+msgstr "Loki tallennettu tiedostoon ”%s”."
+
+msgid "Lower case letters"
+msgstr "Pienoisaakkoskirjaimet"
+
+msgid "Lower case roman numerals"
+msgstr "Pienoisaakkos romaaniset numeraalit"
+
+msgid "MDI child"
+msgstr "MDI lapsi"
+
+msgid ""
+"MS HTML Help functions are unavailable because the MS HTML Help library is "
+"not installed on this machine. Please install it."
+msgstr ""
+"MS HTML Ohjetoiminnot eivät ole saatavilla koska MS HTML Help kirjastoa ei "
+"ole asennettu tälle koneelle. Ole hyvä ja asenna se."
+
+msgid "Ma&ximize"
+msgstr "S&uurenna"
+
+msgid "MacArabic"
+msgstr "Arabialainen"
+
+msgid "MacArmenian"
+msgstr "Mac (armenialainen)"
+
+msgid "MacBengali"
+msgstr "Mac (bengalilainen)"
+
+msgid "MacCeltic"
+msgstr "Mac (kelttiläinen)"
+
+msgid "MacCroatian"
+msgstr "Mac (kroatialainen)"
+
+msgid "MacCyrillic"
+msgstr "Mac (kyrillinen)"
+
+msgid "MacEthiopic"
+msgstr "Mac (etiopialainen)"
+
+msgid "MacExtArabic"
+msgstr "Arabialainen"
+
+msgid "MacGaelic"
+msgstr "MacGaelic"
+
+msgid "MacGeorgian"
+msgstr "Mac (georgialainen)"
+
+msgid "MacGreek"
+msgstr "Mac (kreikkalainen)"
+
+msgid "MacHebrew"
+msgstr "Mac (heprealainen)"
+
+msgid "MacIcelandic"
+msgstr "Mac (islantilainen)"
+
+msgid "MacJapanese"
+msgstr "Mac (japanilainen)"
+
+msgid "MacKorean"
+msgstr "Mac (korealainen)"
+
+msgid "MacMongolian"
+msgstr "Mac (mongolialainen)"
+
+msgid "MacRoman"
+msgstr "Roman"
+
+msgid "MacRomanian"
+msgstr "Roman"
+
+msgid "MacSinhalese"
+msgstr "Sama kirjainkoko"
+
+msgid "MacSymbol"
+msgstr "Symboli"
+
+msgid "MacTamil"
+msgstr "Mac (tamililainen)"
+
+msgid "MacTurkish"
+msgstr "Mac (turkkilainen)"
+
+msgid "MacVietnamese"
+msgstr "Mac (vietnamilainen)"
+
+msgid "Make a selection:"
+msgstr "Liitä valinta"
+
+msgid "Margins"
+msgstr "Marginaalit"
+
+msgid "Match case"
+msgstr "Sama kirjainkoko"
+
+msgid "Max height:"
+msgstr "&Korkeus:"
+
+msgid "Memory VFS already contains file '%s'!"
+msgstr "Muisti-VFS sisältää jo tiedoston ”%s”!"
+
+msgid "Menu"
+msgstr "Valikko"
+
+msgid "Mi&nimize"
+msgstr "P&ienennä"
+
+msgid "Min height:"
+msgstr "Kirjasimen &paino:"
+
+msgid "Missing a required parameter."
+msgstr "Pakollinen parametri puuttuu."
+
+msgid "Modern"
+msgstr "Moderni"
+
+msgid "Module \"%s\" initialization failed"
+msgstr "Moduulin ”%s” alustus epäonnistui"
+
+msgid "Monarch Envelope, 3 7/8 x 7 1/2 in"
+msgstr "Monarch Envelope, 3 7/8 x 7 1/2” "
+
+msgid "Monitoring individual files for changes is not supported currently."
+msgstr "Yksittäisten tiedostojen muutosten tarkkailua ei tueta tällä hetkellä."
+
+msgid "Move down"
+msgstr "Siirrä alas"
+
+msgid "Move up"
+msgstr "Siirrä ylös"
+
+msgid "Moves the object to the next paragraph."
+msgstr "Siirtää objektin seuraavaan kappaleeseen."
+
+msgid "Moves the object to the previous paragraph."
+msgstr "Siirtää objektin edelliseen kappaleeseen."
+
+msgid "Multiple Cell Properties"
+msgstr "Usean solun ominaisuudet"
+
+msgid "Network"
+msgstr "Verkko"
+
+msgid "New"
+msgstr "&Uusi"
+
+msgid "New &Box Style..."
+msgstr "Uusi &luettelotyyli"
+
+msgid "New &Character Style..."
+msgstr "Uusi &merkkityyli..."
+
+msgid "New &List Style..."
+msgstr "Uusi &luettelotyyli"
+
+msgid "New &Paragraph Style..."
+msgstr "Uusi &kappaletyyli..."
+
+msgid "New Style"
+msgstr "Uusi tyyli"
+
+msgid "New item"
+msgstr "Uusi kohta"
+
+msgid "NewName"
+msgstr "UusiNimi"
+
+msgid "Next page"
+msgstr "Seuraava sivu"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "No animation handler for type %ld defined."
+msgstr "Kuvatyypin %d käsittelijää ei määritelty."
+
+msgid "No bitmap handler for type %d defined."
+msgstr "Kuvatyypin %d käsittelijää ei määritelty."
+
+msgid "No default application configured for HTML files."
+msgstr "Oletusohjelmaa HTML-tiedostojen hallintaan ei ole asetettu."
+
+msgid "No entries found."
+msgstr "Kohtia ei löytynyt."
+
+msgid ""
+"No font for displaying text in encoding '%s' found,\n"
+"but an alternative encoding '%s' is available.\n"
+"Do you want to use this encoding (otherwise you will have to choose another "
+"one)?"
+msgstr ""
+"Koodaus ”%s” on tuntematon, mutta vaihtoehtoinen\n"
+"koodaus ”%s” on saatavilla.\n"
+"Haluatko käyttää tätä koodausta (muutoin joudut valitsemaan toisen)?"
+
+msgid ""
+"No font for displaying text in encoding '%s' found.\n"
+"Would you like to select a font to be used for this encoding\n"
+"(otherwise the text in this encoding will not be shown correctly)?"
+msgstr ""
+"Koodaus ”%s” on tuntematon.\n"
+"Haluatko valita kirjasintyypin, jota käytetään tähän?\n"
+"(Muutoin tällä koodauksella olevaa teksiä ei näytetä oikein)"
+
+msgid "No handler found for animation type."
+msgstr "Kuvatyypin käsittelijää ei löytynyt."
+
+msgid "No handler found for image type."
+msgstr "Kuvatyypin käsittelijää ei löytynyt."
+
+msgid "No image handler for type %d defined."
+msgstr "Kuvatyypin %d käsittelijää ei määritelty."
+
+msgid "No image handler for type %s defined."
+msgstr "Kuvatyypin %s käsittelyohjelmaa ei määritelty."
+
+msgid "No matching page found yet"
+msgstr "Täsmääviä sivuja ei vielä löydetty"
+
+msgid "No sound"
+msgstr "Ei ääntä"
+
+msgid "No unused colour in image."
+msgstr "Ei käyttämättömiä värejä kuvassa"
+
+msgid "Nordic (ISO-8859-10)"
+msgstr "pohjoismainen (ISO-8859-10)"
+
+msgid "Normal face<br>and <u>underlined</u>. "
+msgstr "Normaali kirjasin<br>ja <u>alleviivattu</u>. "
+
+msgid "Normal font:"
+msgstr "Tavallinen fontti:"
+
+msgid "Not %s"
+msgstr "Tietoja %s"
+
+msgid "Not available"
+msgstr "Valitettavasti vihjeitä ei ole!"
+
+msgid "Not underlined"
+msgstr "Ei alleviivattu"
+
+msgid "Note, 8 1/2 x 11 in"
+msgstr "Note, 8 1/2 x 11” "
+
+msgid "Num Delete"
+msgstr "Poista"
+
+msgid "Num Down"
+msgstr "Alas"
+
+msgid "Num Home"
+msgstr "Koti"
+
+msgid "Num Insert"
+msgstr "Lisää"
+
+msgid "Num Right"
+msgstr "Oikealle"
+
+msgid "Numbered outline"
+msgstr "Numeroitu jäsennys"
+
+msgid "OLE Automation error in %s: %s"
+msgstr "OLE-automaatiovirhe kohteessa %s: %s"
+
+msgid "Object Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Object implementation does not support named arguments."
+msgstr "Objektin toteutus ei tue nimettyjä argumentteja."
+
+msgid "Objects must have an id attribute"
+msgstr "Objekteilla täytyy olla id-määre"
+
+msgid "Open File"
+msgstr "Valitse Tiedosto"
+
+msgid "Open HTML document"
+msgstr "Avaa HTML-asiakirja"
+
+msgid "Open file \"%s\""
+msgstr "Avaa tiedosto ”%s”"
+
+msgid "Open..."
+msgstr "&Avaa..."
+
+msgid "Operation not permitted."
+msgstr "Ei sallittu toimenpide."
+
+msgid "Option '%s' can't be negated"
+msgstr "Hakemistoa ”%s” ei voitu luoda"
+
+msgid "Option '%s' requires a value."
+msgstr "Valinta ”%s” vaatii arvon."
+
+msgid "Option '%s': '%s' cannot be converted to a date."
+msgstr "Valinta ”%s”: ”%s” ei voida muuntua päiväykseksi."
+
+msgid "Orientation"
+msgstr "Suunta"
+
+msgid "Outline"
+msgstr "Jäsennys"
+
+msgid "PCX: couldn't allocate memory"
+msgstr "PCX: muistia ei voitu varata"
+
+msgid "PCX: image format unsupported"
+msgstr "PCX: kuva-muotoa ei tuettu"
+
+msgid "PCX: invalid image"
+msgstr "PCX: virheellinen kuva"
+
+msgid "PCX: this is not a PCX file."
+msgstr "PCX: tämä ei ole PCX tiedosto."
+
+msgid "PCX: unknown error !!!"
+msgstr "PCX: tuntematon virhe !!!"
+
+msgid "PCX: version number too low"
+msgstr "PCX: Liian pieni versionumero"
+
+msgid "PNM: Couldn't allocate memory."
+msgstr "PNM: Muistin varaaminen epäonnistui."
+
+msgid "PNM: File format is not recognized."
+msgstr "PNM: Tuntematon tiedostomuoto."
+
+msgid "PNM: File seems truncated."
+msgstr "PNM: Tiedosto on ehkä typistetty."
+
+msgid "PRC 16K 146 x 215 mm"
+msgstr "PRC 16K 146 x 215 mm"
+
+msgid "PRC 16K Rotated"
+msgstr "PRC 16K käännetty"
+
+msgid "PRC 32K 97 x 151 mm"
+msgstr "PRC 32K 97 x 151 mm"
+
+msgid "PRC 32K Rotated"
+msgstr "PRC 32K käännetty"
+
+msgid "PRC 32K(Big) 97 x 151 mm"
+msgstr "PRC 32K(iso) 97 x 151 mm"
+
+msgid "PRC 32K(Big) Rotated"
+msgstr "PRC 32K(iso) käännetty"
+
+msgid "PRC Envelope #1 102 x 165 mm"
+msgstr "PRC-kirjekori #1 102 x 165 mm"
+
+msgid "PRC Envelope #1 Rotated 165 x 102 mm"
+msgstr "PRC-kirjekuori #1 käännetty 165 x 102 mm"
+
+msgid "PRC Envelope #10 324 x 458 mm"
+msgstr "PRC-kirjekuori #10 324 x 458 mm"
+
+msgid "PRC Envelope #10 Rotated 458 x 324 mm"
+msgstr "PRC-kirjekuori #10 käännetty 458 x 324 mm"
+
+msgid "PRC Envelope #2 102 x 176 mm"
+msgstr "PRC-kirjekuori #2 102 x 176 mm"
+
+msgid "PRC Envelope #2 Rotated 176 x 102 mm"
+msgstr "PRC-kirjekuori #2 käännetty 176 x 102 mm"
+
+msgid "PRC Envelope #3 125 x 176 mm"
+msgstr "PRC-kirjekuori #3 125 x 176 mm"
+
+msgid "PRC Envelope #3 Rotated 176 x 125 mm"
+msgstr "PRC-kirjekuori #3 käännetty 176 x 125 mm"
+
+msgid "PRC Envelope #4 110 x 208 mm"
+msgstr "PRC-kirjekuori #4 110 x 208 mm"
+
+msgid "PRC Envelope #4 Rotated 208 x 110 mm"
+msgstr "PRC-kirjekuori #4 käännetty 208 x 110 mm"
+
+msgid "PRC Envelope #5 110 x 220 mm"
+msgstr "PRC-kirjekuori#5 110 x 220 mm"
+
+msgid "PRC Envelope #5 Rotated 220 x 110 mm"
+msgstr "PRC-kirjekuori #5 käännetty 220 x 110 mm"
+
+msgid "PRC Envelope #6 120 x 230 mm"
+msgstr "PRC-kirjekuori #6 120 x 230 mm"
+
+msgid "PRC Envelope #6 Rotated 230 x 120 mm"
+msgstr "PRC-kirjekuori #6 käännetty 230 x 120 mm"
+
+msgid "PRC Envelope #7 160 x 230 mm"
+msgstr "PRC-kirjekuori #7 160 x 230 mm"
+
+msgid "PRC Envelope #7 Rotated 230 x 160 mm"
+msgstr "PRC-kirjekuori #7 käännetty 230 x 160 mm"
+
+msgid "PRC Envelope #8 120 x 309 mm"
+msgstr "PRC-kirjekuori #8 120 x 309 mm"
+
+msgid "PRC Envelope #8 Rotated 309 x 120 mm"
+msgstr "PRC-kirjekuori #8 käännetty 309 x 120 mm"
+
+msgid "PRC Envelope #9 229 x 324 mm"
+msgstr "PRC-kirjekuori #9 229 x 324 mm"
+
+msgid "PRC Envelope #9 Rotated 324 x 229 mm"
+msgstr "PRC-kirjekuori #9 käännetty 324 x 229 mm"
+
+msgid "Page %d"
+msgstr "Sivu %d"
+
+msgid "Page %d of %d"
+msgstr "Sivu %d / %d"
+
+msgid "Page Setup"
+msgstr "Sivun asetukset"
+
+msgid "Page setup"
+msgstr "Sivun asetukset"
+
+msgid "PageDown"
+msgstr "Alas"
+
+msgid "PageUp"
+msgstr "Sivut"
+
+msgid "Pages"
+msgstr "Sivut"
+
+msgid "Paper size"
+msgstr "Paperin koko"
+
+msgid "Paragraph styles"
+msgstr "Kappaletyylit"
+
+msgid "Paste selection"
+msgstr "Liitä valinta"
+
+msgid "Peri&od"
+msgstr "P&iste"
+
+msgid "Permissions"
+msgstr "Oikeudet"
+
+msgid "Picture Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Pipe creation failed"
+msgstr "Putken luonti epäonnistui"
+
+msgid "Please choose a valid font."
+msgstr "Valitse kelvollinen fontti."
+
+msgid "Please choose an existing file."
+msgstr "Valitse olemassa oleva tiedosto."
+
+msgid "Please choose the page to display:"
+msgstr "Valitse näytettävä sivu:"
+
+msgid "Please choose which ISP do you want to connect to"
+msgstr "Valitse palveluntarjoaja, johon haluat kytkeytyä"
+
+msgid "Please select the columns to show and define their order:"
+msgstr "Valitse näytettävät sarakkeet ja määritä niiden järjestys:"
+
+msgid "Please wait while printing..."
+msgstr "Odota kunnes tulostus loppuu\n"
+
+msgid "Point Left"
+msgstr "K&irjasinkoko:"
+
+msgid "Point Right"
+msgstr "Tasaa oikealle"
+
+msgid "Point Size"
+msgstr "K&irjasinkoko:"
+
+msgid "PostScript file"
+msgstr "PostScript-tiedosto"
+
+msgid "Preferences..."
+msgstr "&Asetukset"
+
+msgid "Preview:"
+msgstr "Esikatselu:"
+
+msgid "Previous page"
+msgstr "Edellinen sivu"
+
+msgid "Print Preview"
+msgstr "Tulostuksen esikatselu"
+
+msgid "Print Preview Failure"
+msgstr "Tulostuksen esikatselu epäonnistui"
+
+msgid "Print Range"
+msgstr "Tulostusalue"
+
+msgid "Print Setup"
+msgstr "Tulostusasetukset"
+
+msgid "Print in colour"
+msgstr "Väritulostus"
+
+msgid "Print previe&w..."
+msgstr "Tulostuksen &esikatselu"
+
+msgid "Print preview creation failed."
+msgstr "Putken luonti epäonnistui"
+
+msgid "Print preview..."
+msgstr "Tulostuksen esikatselu"
+
+msgid "Print spooling"
+msgstr "Tulostuksen sivuajo"
+
+msgid "Print this page"
+msgstr "Tulosta tämä sivu"
+
+msgid "Print to File"
+msgstr "Tulosta tiedostoon"
+
+msgid "Print..."
+msgstr "&Tulosta..."
+
+msgid "Printer command:"
+msgstr "Tulostinkomento:"
+
+msgid "Printer options"
+msgstr "Tulostimen valinnat"
+
+msgid "Printer options:"
+msgstr "Tulostimen valinnat:"
+
+msgid "Printer..."
+msgstr "Tulostin..."
+
+msgid "Printing"
+msgstr "Tulostetaan "
+
+msgid "Printing "
+msgstr "Tulostetaan "
+
+msgid "Printing Error"
+msgstr "Tulostusvirhe"
+
+msgid "Printing page %d"
+msgstr "Tulostetaan sivua %d..."
+
+msgid "Printing page %d of %d"
+msgstr "Tulostetaan sivua %d..."
+
+msgid "Printing page %d..."
+msgstr "Tulostetaan sivua %d..."
+
+msgid "Printing..."
+msgstr "Tulostetaan..."
+
+msgid "Printout"
+msgstr "Tulosta"
+
+msgid ""
+"Processing debug report has failed, leaving the files in \"%s\" directory."
+msgstr ""
+"Ohjelmavirheilmoituksen valmistelu epäonnistui, tiedostot jätetään "
+"hakemistoon ”%s”."
+
+msgid "Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Property"
+msgstr "&Ominaisuudet"
+
+msgid "Property Error"
+msgstr "Tulostusvirhe"
+
+msgid "Quarto, 215 x 275 mm"
+msgstr "Quarto, 215 x 275 mm"
+
+msgid "Question"
+msgstr "Kysymys"
+
+msgid "Question Arrow"
+msgstr "Kysymys"
+
+msgid "Quit"
+msgstr "&Poistu"
+
+msgid "Quit this program"
+msgstr "Poistu tästä sovelluksesta"
+
+msgid "RawCtrl+"
+msgstr "Ctrl-"
+
+msgid "Read error on file '%s'"
+msgstr "Lukuvirhe tiedostossa ”%s”"
+
+msgid "Reading password for \"%s/%s\" failed: %s."
+msgstr "Ei voitu purkaa ”%s”:aa kohteeseen ”%s”."
+
+msgid "Red"
+msgstr "Toista"
+
+msgid "Redo last action"
+msgstr "Toista viimeisin toimenpide"
+
+msgid "Refresh"
+msgstr "Päivitä"
+
+msgid "Registry key '%s' already exists."
+msgstr "Rekisteriavain ”%s” on jo olemassa."
+
+msgid "Registry key '%s' does not exist, cannot rename it."
+msgstr "Rekisteriavain ”%s” ei ole olemassa, sitä ei voi uudelleennimetä."
+
+msgid ""
+"Registry key '%s' is needed for normal system operation,\n"
+"deleting it will leave your system in unusable state:\n"
+"operation aborted."
+msgstr ""
+"Rekisteriavainta ”%s” tarvitaan järjestelmän normaaliin\n"
+"toimintaan. Avaimen poistaminen jättää järjestelmän\n"
+"epävakaaseen tilaan: toiminto keskeytetty."
+
+msgid "Registry value '%s' already exists."
+msgstr "Rekisterin arvo ”%s” on jo olemassa."
+
+msgid "Relative"
+msgstr "Koristeellinen"
+
+msgid "Relevant entries:"
+msgstr "Tähdelliset kohdat:"
+
+msgid "Remaining time:"
+msgstr "Jäljellä oleva aika:"
+
+msgid "Remove Bullet"
+msgstr "Poista"
+
+msgid "Remove current page from bookmarks"
+msgstr "Poista nykyinen sivu kirjanmerkeistä"
+
+msgid "Renumber List"
+msgstr "Numeroi luettelo uudelleen"
+
+msgid "Rep&lace"
+msgstr "&Korvaa"
+
+msgid "Replace"
+msgstr "Korvaa"
+
+msgid "Replace &all"
+msgstr "Korvaa k&aikki"
+
+msgid "Replace selection"
+msgstr "Korvaa valinta"
+
+msgid "Replace with:"
+msgstr "Korvaa kohteella:"
+
+msgid "Resource '%s' is not a valid message catalog."
+msgstr "”%s” ei ole kelvollinen viestiluettelo."
+
+msgid "Revert to Saved"
+msgstr "Palauta tallennettuun"
+
+msgid "Ridge"
+msgstr "Oikealle"
+
+msgid "Right Arrow"
+msgstr "Oikealle"
+
+msgid "Right margin (mm):"
+msgstr "Oikea marginaali (mm):"
+
+msgid "Right-align text."
+msgstr "Tasaa teksti oikealle."
+
+msgid "Roman"
+msgstr "Roman"
+
+msgid "S&tandard bullet name:"
+msgstr "&Oletus luettelomerkin nimi:"
+
+msgid "SPECIAL"
+msgstr "EIRKOIS"
+
+msgid "Save %s file"
+msgstr "Tallenna %s tiedosto"
+
+msgid "Save &As..."
+msgstr "Tallenna &nimellä..."
+
+msgid "Save As"
+msgstr "Tallenna nimellä"
+
+msgid "Save current document"
+msgstr "Tallenna nykyinen asiakirja"
+
+msgid "Save current document with a different filename"
+msgstr "Tallenna nykyinen asiakirja eri nimellä"
+
+msgid "Save log contents to file"
+msgstr "Tallenna lokin sisältä tiedostoon"
+
+msgid "Saving password for \"%s/%s\" failed: %s."
+msgstr "Ei voitu purkaa ”%s”:aa kohteeseen ”%s”."
+
+msgid "Script"
+msgstr "Script"
+
+msgid ""
+"Search contents of help book(s) for all occurrences of the text you typed "
+"above"
+msgstr ""
+"Hae ohjekirjojen sisällöstä kaikki tapaukset, jossa on yllä antamasi teksti"
+
+msgid "Search direction"
+msgstr "Hakusuunta"
+
+msgid "Search for:"
+msgstr "Etsi:"
+
+msgid "Search in all books"
+msgstr "Hae kaikista kirjoista"
+
+msgid "Searching..."
+msgstr "Etsitään..."
+
+msgid "Sections"
+msgstr "Lohkot"
+
+msgid "Seek error on file '%s'"
+msgstr "Hakuvirhe tiedostossa ”%s”"
+
+msgid "Seek error on file '%s' (large files not supported by stdio)"
+msgstr "Hakuvirhe tiedostossa ”%s” (stdio ei tue suuria tiedostoja)"
+
+msgid "Select"
+msgstr "Valinta"
+
+msgid "Select &All"
+msgstr "Valitse k&aikki"
+
+msgid "Select All"
+msgstr "Valitse kaikki"
+
+msgid "Select a document template"
+msgstr "Valitse asiakirjamalli"
+
+msgid "Select a document view"
+msgstr "Valitse asiakirjanäkymä"
+
+msgid "Select regular or bold."
+msgstr "Valitse tavallinen tai lihavoitu."
+
+msgid "Select regular or italic style."
+msgstr "Valitse tavallinen tai kursivoitu."
+
+msgid "Select underlining or no underlining."
+msgstr "Valitse alleviivaus tai ei alleviivausta."
+
+msgid "Selects the list level to edit."
+msgstr "Valitse muokattava luettelotaso."
+
+msgid "Separator expected after the option '%s'."
+msgstr "Erotinmerkki tarvitaan option ”%s” jälkeen."
+
+msgid "Set Cell Style"
+msgstr "Poista tyyli"
+
+msgid "Setup..."
+msgstr "Asetukset..."
+
+msgid "Several active dialup connections found, choosing one randomly."
+msgstr ""
+"Monta aktiivista puhelinvalintaikkunaa auki, valitsen yhden satunnaisesti."
+
+msgid "Shadow c&olour:"
+msgstr "Valitse väri"
+
+msgid "Shift+"
+msgstr "Shift-"
+
+msgid "Show &hidden directories"
+msgstr "Näytä piilo&hakemistot"
+
+msgid "Show &hidden files"
+msgstr "Näytä piilo&tiedostot"
+
+msgid "Show All"
+msgstr "Näytä kaikki"
+
+msgid "Show all"
+msgstr "Näytä kaikki"
+
+msgid "Show all items in index"
+msgstr "Näytä kaikki indeksissä"
+
+msgid "Show/hide navigation panel"
+msgstr "Näytä/piilota suunnistustaulu"
+
+msgid "Shows a Unicode subset."
+msgstr "Näyttää Unicode-osajoukon"
+
+msgid "Shows a preview of the font settings."
+msgstr "Näyttää kirjasinasetusten esikatselun."
+
+msgid "Shows a preview of the font."
+msgstr "Näyttää kirjasimen esikatselun."
+
+msgid "Shows a preview of the paragraph settings."
+msgstr "Näyttää  kappaleen asetuksien esikatselun."
+
+msgid "Shows the font preview."
+msgstr "Näytä kirjasimen esikatselu."
+
+msgid "Simple monochrome theme"
+msgstr "Yksinkertainen yksivärinen teema"
+
+msgid "Skip"
+msgstr "Ohita"
+
+msgid "Slant"
+msgstr "Kalteva"
+
+msgid "Small C&apitals"
+msgstr "&Suuraakkoset"
+
+msgid "Sorry, could not open this file."
+msgstr "Tätä tiedostoa ei voi avata."
+
+msgid "Sorry, not enough memory to create a preview."
+msgstr "Liian vähän muistia esikatseluun."
+
+msgid "Sorry, that name is taken. Please choose another."
+msgstr "Nimi on jo käytössä. Valitse toinen."
+
+msgid "Sorry, the format for this file is unknown."
+msgstr "Tämän tiedoston muoto on tuntematon."
+
+msgid "Sound data are in unsupported format."
+msgstr "äänidatan muotoa ei tueta."
+
+msgid "Sound file '%s' is in unsupported format."
+msgstr "äänitiedoston ”%s” muotoa ei tueta."
+
+msgid "Spell Check"
+msgstr "Oikeinkirjoituksen tarkistus"
+
+msgid "Statement, 5 1/2 x 8 1/2 in"
+msgstr "Statement, 5 1/2 x 8 1/2” "
+
+msgid "Static"
+msgstr "Tila:"
+
+msgid "Stop"
+msgstr "&Pysäytä"
+
+msgid "Strikethrough"
+msgstr "Yliviivaus"
+
+msgid "Style Organiser"
+msgstr "Tyylien hallitsija"
+
+msgid "Style:"
+msgstr "Tyyli:"
+
+msgid "Subscrip&t"
+msgstr "Script"
+
+msgid "Supe&rscript"
+msgstr "Script"
+
+msgid "SuperA/SuperA/A4 227 x 356 mm"
+msgstr "SuperA/SuperA/A4 227 x 356 mm"
+
+msgid "SuperB/SuperB/A3 305 x 487 mm"
+msgstr "SuperB/SuperB/A3 305 x 487 mm"
+
+msgid "Swiss"
+msgstr "Swiss"
+
+msgid "Symbol"
+msgstr "Symboli"
+
+msgid "Symbol &font:"
+msgstr "&Symbolikirjasin:"
+
+msgid "Symbols"
+msgstr "Symbolit"
+
+msgid "TIFF: Couldn't allocate memory."
+msgstr "TIFF: Muistinvaraus epäonnistui."
+
+msgid "TIFF: Error loading image."
+msgstr "TIFF: Virhe kuvan latauksessa."
+
+msgid "TIFF: Error reading image."
+msgstr "TIFF: Virhe kuvan lukemisessa ."
+
+msgid "TIFF: Error saving image."
+msgstr "TIFF: Virhe kuvan tallennuksesa."
+
+msgid "TIFF: Error writing image."
+msgstr "TIFF: Virhe kuvan kirjoituksessa."
+
+msgid "Tab"
+msgstr "Välilehdet"
+
+msgid "Table Properties"
+msgstr "&Ominaisuudet"
+
+msgid "Tabloid Extra 11.69 x 18 in"
+msgstr "Tabloid, 11 x 17” "
+
+msgid "Tabloid, 11 x 17 in"
+msgstr "Tabloid, 11 x 17” "
+
+msgid "Tabs"
+msgstr "Välilehdet"
+
+msgid "Teletype"
+msgstr "Teletype"
+
+msgid "Templates"
+msgstr "Asiakirjamallit"
+
+msgid "Thai (ISO-8859-11)"
+msgstr "Thaimaalainen (ISO-8859-11)"
+
+msgid "The FTP server doesn't support passive mode."
+msgstr "FTP-palvelin ei tue passiivista tilaa."
+
+msgid "The FTP server doesn't support the PORT command."
+msgstr "FTP-palvelin ei tue komentoa PORT."
+
+msgid "The available styles."
+msgstr "Käytettävissä olevat tyylit."
+
+msgid "The background colour."
+msgstr "Taustaväri"
+
+msgid "The border line style."
+msgstr "Kirjasimen tyyli."
+
+msgid "The bottom margin size."
+msgstr "Kirjasinkoko."
+
+msgid "The bottom padding size."
+msgstr "Kirjasinkoko."
+
+msgid "The bottom position."
+msgstr "Välilehden sijainti."
+
+msgid "The character code."
+msgstr "Merkkikoodi."
+
+msgid ""
+"The charset '%s' is unknown. You may select\n"
+"another charset to replace it with or choose\n"
+"[Cancel] if it cannot be replaced"
+msgstr ""
+"Merkistö ”%s” on tuntematon. Sen tilalle\n"
+"voi valita toisen merkistön. Ellei korvaavaa\n"
+"merkistöä ole, valitse [Peruuta]."
+
+msgid "The clipboard format '%d' doesn't exist."
+msgstr "Leikepöydän muotoa ”%d” ei ole olemassa."
+
+msgid "The default style for the next paragraph."
+msgstr "Oletustyyli seuraavalle kappaleelle."
+
+msgid ""
+"The directory '%s' does not exist\n"
+"Create it now?"
+msgstr ""
+"Hakemisto ”%s” ei ole olemassa.\n"
+"Luodaanko se nyt?"
+
+msgid ""
+"The file '%s' doesn't exist and couldn't be opened.\n"
+"It has been removed from the most recently used files list."
+msgstr ""
+"Tiedosto ”%s” ei ole olemassa ja eikä sitä voi avata.\n"
+"Se on myös poistettu MRU-tiedostojen luettelosta"
+
+msgid "The first line indent."
+msgstr "Ensimmäisen rivin sisennys."
+
+msgid "The following standard GTK+ options are also supported:\n"
+msgstr "Seuraavat standardit GTK+-valinnat ovat myös tuettuina:\n"
+
+msgid "The font colour."
+msgstr "Kirjasimen väri."
+
+msgid "The font family."
+msgstr "Kirjasinperhe."
+
+msgid "The font from which to take the symbol."
+msgstr "Kirjasin, josta symboli otetaan."
+
+msgid "The font point size."
+msgstr "Kirjasinkoko."
+
+msgid "The font size in points."
+msgstr "Kirjasinkoko pisteinä."
+
+msgid "The font size units, points or pixels."
+msgstr "Kirjasinkoko pisteinä."
+
+msgid "The font style."
+msgstr "Kirjasimen tyyli."
+
+msgid "The font weight."
+msgstr "Kirjasimen paino."
+
+msgid "The format of file '%s' couldn't be determined."
+msgstr "Sarakkeen leveyttä ei voitu määritellä"
+
+msgid "The horizontal offset."
+msgstr "Ota käyttöön pysty-offset."
+
+msgid "The left indent."
+msgstr "Vasen sisennys."
+
+msgid "The left margin size."
+msgstr "Kirjasinkoko."
+
+msgid "The left padding size."
+msgstr "Kirjasinkoko."
+
+msgid "The left position."
+msgstr "Välilehden sijainti."
+
+msgid "The line spacing."
+msgstr "Riviväli"
+
+msgid "The list item number."
+msgstr "Luettelokohdan numero."
+
+msgid "The object height."
+msgstr "Kirjasimen paino."
+
+msgid "The object maximum height."
+msgstr "Kirjasimen paino."
+
+msgid "The object maximum width."
+msgstr "Kirjasimen paino."
+
+msgid "The object minimum height."
+msgstr "Kirjasimen paino."
+
+msgid "The object minimum width."
+msgstr "Kirjasimen paino."
+
+msgid "The object width."
+msgstr "Kirjasimen paino."
+
+msgid "The outline level."
+msgstr "Näytä kirjasimen esikatselu."
+
+msgid "The range to show."
+msgstr "Näytettävä alue."
+
+msgid "The required parameter '%s' was not specified."
+msgstr "Tarvittavaa parametria ”%s” ei ole määritelty."
+
+msgid "The right indent."
+msgstr "Oikea sisennys."
+
+msgid "The right margin size."
+msgstr "Oikea sisennys."
+
+msgid "The right padding size."
+msgstr "Oikea sisennys."
+
+msgid "The right position."
+msgstr "Välilehden sijainti."
+
+msgid "The shadow colour."
+msgstr "Kirjasimen väri."
+
+msgid "The spacing after the paragraph."
+msgstr "Tyhjä tila kappaleen jälkeen."
+
+msgid "The spacing before the paragraph."
+msgstr "Tyhjä tila ennen kappaletta."
+
+msgid "The style name."
+msgstr "Tyylin nimi."
+
+msgid "The style on which this style is based."
+msgstr "Tyyli, johon tämä tyyli perustuu."
+
+msgid "The style preview."
+msgstr "Tyylin esikatselu."
+
+msgid "The system cannot find the file specified."
+msgstr "Järjestelmä ei löydä määritettyä tiedostoa."
+
+msgid "The tab position."
+msgstr "Välilehden sijainti."
+
+msgid "The tab positions."
+msgstr "Välilehtien sijainnit."
+
+msgid "The text couldn't be saved."
+msgstr "Tekstiä ei voitu tallentaa."
+
+msgid "The top margin size."
+msgstr "Kirjasinkoko."
+
+msgid "The top padding size."
+msgstr "Kirjasinkoko."
+
+msgid "The top position."
+msgstr "Välilehden sijainti."
+
+msgid "The value for the option '%s' must be specified."
+msgstr "Valinnan ”%s” arvo täyty olla määritelty."
+
+msgid ""
+"The version of remote access service (RAS) installed on this machine is too "
+"old, please upgrade (the following required function is missing: %s)."
+msgstr ""
+"Tälle koneelle asennetun RAS (remote access server) komponentin versio on "
+"liian vanha, ole hyvä ja päivitä se (vaadittua funktiota %s ei löytynyt)."
+
+msgid "The vertical offset."
+msgstr "Ota käyttöön pysty-offset."
+
+msgid ""
+"There was a problem during page setup: you may need to set a default printer."
+msgstr ""
+"Sivun asetusten kanssa oli ongelma: voit joutua asettamaan oletustulostimen."
+
+msgid "This is not a %s."
+msgstr "PCX: tämä ei ole PCX tiedosto."
+
+msgid ""
+"Thread module initialization failed: cannot store value in thread local "
+"storage"
+msgstr ""
+"Säiemoduulin käynnistys epäonnistui: arvoa ei voi tallentaa säikeen muistiin"
+
+msgid "Thread module initialization failed: failed to create thread key"
+msgstr "Säiemoduulin käynnistys epäonnistui: säieavainta ei voi luoda"
+
+msgid ""
+"Thread module initialization failed: impossible to allocate index in thread "
+"local storage"
+msgstr ""
+"Säiemoduulin käynnistys epäonnistui: indeksin varaus säikeen muistiin "
+"mahdotonta"
+
+msgid "Thread priority setting is ignored."
+msgstr "Säikeen prioriteettiasetus jätetään huomiotta."
+
+msgid "Tile &Horizontally"
+msgstr "Järjestä &vaakasuoraan"
+
+msgid "Tile &Vertically"
+msgstr "Järjestä &pystysuoraan"
+
+msgid "Timeout while waiting for FTP server to connect, try passive mode."
+msgstr ""
+"Aikakatkaisu tapahtui yhteydenotossa FTP-palvelimeen, kokeile passiivista "
+"tilaa."
+
+msgid "Tip of the Day"
+msgstr "Päivän vihje"
+
+msgid "Tips not available, sorry!"
+msgstr "Valitettavasti vihjeitä ei ole!"
+
+msgid "To:"
+msgstr "Vastaanottaja:"
+
+msgid "Too many EndStyle calls!"
+msgstr "Liian monta EndStyle-kutsua!"
+
+msgid "Top margin (mm):"
+msgstr "Ylämarginaali (mm):"
+
+msgid "Translations by "
+msgstr "Suomentajat:"
+
+msgid "Translators"
+msgstr "Suomentajat"
+
+msgid "True"
+msgstr "Tosi"
+
+msgid "Trying to remove file '%s' from memory VFS, but it is not loaded!"
+msgstr ""
+"Tiedosto ”%s” yritettiin poistaa Muisti-VFS:stä, mutta se ei ole ladattu!"
+
+msgid "Turkish (ISO-8859-9)"
+msgstr "turkki (ISO-8859-9)"
+
+msgid "Type a font name."
+msgstr "Anna kirjasimen nimi."
+
+msgid "Type a size in points."
+msgstr "Anna koko pisteinä."
+
+msgid "US Std Fanfold, 14 7/8 x 11 in"
+msgstr "Vakio traktoriveto, 14 7/8 x 11” "
+
+msgid "US-ASCII"
+msgstr "US-ASCII"
+
+msgid "Unable to close I/O completion port handle"
+msgstr "Tiedostokahvan sulkeminen epäonnistui"
+
+msgid "Unable to close inotify instance"
+msgstr "Tiedostokahvan sulkeminen epäonnistui"
+
+msgid "Unable to close path '%s'"
+msgstr "Lukkotiedoston ”%s” sulkeminen epäonnistui"
+
+msgid "Unable to close the handle for '%s'"
+msgstr "Tiedostokahvan sulkeminen epäonnistui"
+
+msgid "Unable to create I/O completion port"
+msgstr "Osoittimen luonti epäonnistui."
+
+msgid "Unable to create IOCP worker thread"
+msgstr "MDI-isäntäkehystä ei voitu luoda."
+
+msgid "Unable to create inotify instance"
+msgstr "DDE-merkkijonoa ei voitu luoda"
+
+msgid "Unable to create kqueue instance"
+msgstr "DDE-merkkijonoa ei voitu luoda"
+
+msgid "Unable to open path '%s'"
+msgstr "CHM arkiston ”%s” avaaminen epäonnistui."
+
+msgid "Unable to open requested HTML document: %s"
+msgstr "Vaadittua HTML-asiakirjaa ei voi avata: %s"
+
+msgid "Unable to read from inotify descriptor"
+msgstr "tiedoston kuvauksen %d luku epäonnistui"
+
+msgid "Unable to remove inotify watch %i"
+msgstr "DDE-merkkijonoa ei voitu luoda"
+
+msgid "Unable to set up watch for '%s'"
+msgstr "Touch epäonnistui tiedostolle ”%s”"
+
+msgid "Undelete"
+msgstr "Kumoa poisto"
+
+msgid "Underline"
+msgstr "&Alleviivaus"
+
+msgid "Underlined"
+msgstr "Alleviivattu"
+
+msgid "Undo last action"
+msgstr "Kumoa viimeisin toiminto"
+
+msgid "Unexpected characters following option '%s'."
+msgstr "Odottamaton parametri ”%s”"
+
+msgid "Unexpected parameter '%s'"
+msgstr "Odottamaton parametri ”%s”"
+
+msgid "Ungraceful worker thread termination"
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Unicode"
+msgstr "Unicode"
+
+msgid "Unicode 16 bit (UTF-16)"
+msgstr "Unicode 16 bit (UTF-16)"
+
+msgid "Unicode 32 bit (UTF-32)"
+msgstr "Unicode 32 bit (UTF-32)"
+
+msgid "Unicode 7 bit (UTF-7)"
+msgstr "Unicode 7 bit (UTF-7)"
+
+msgid "Unicode 8 bit (UTF-8)"
+msgstr "Unicode 8 bit (UTF-8)"
+
+msgid "Unindent"
+msgstr "&Vähennä sisennystä"
+
+msgid "Units for the bottom position."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for the corner radius."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for the left position."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for the maximum object height."
+msgstr "Kirjasimen paino."
+
+msgid "Units for the maximum object width."
+msgstr "Kirjasimen paino."
+
+msgid "Units for the minimum object height."
+msgstr "Kirjasimen paino."
+
+msgid "Units for the minimum object width."
+msgstr "Kirjasimen paino."
+
+msgid "Units for the right position."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for the top margin."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for the top position."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Units for this value."
+msgstr "Ei voi odottaa säikeen keskeytystä"
+
+msgid "Unknown DDE error %08x"
+msgstr "Tuntematon DDE-virhe %08x"
+
+msgid "Unknown PNG resolution unit %d"
+msgstr "Tuntematon valitsin ”%s”"
+
+msgid "Unknown Property %s"
+msgstr "Tuntematon ominaisuus %s"
+
+msgid "Unknown dynamic library error"
+msgstr "Tuntematon dynamic library virhe"
+
+msgid "Unknown encoding (%d)"
+msgstr "Tuntematon koodaus (%d)"
+
+msgid "Unknown error %08x"
+msgstr "Tuntematon DDE-virhe %08x"
+
+msgid "Unknown exception"
+msgstr "Tuntematon valitsin ”%s”"
+
+msgid "Unknown image data format."
+msgstr "virhe dataformaatissa"
+
+msgid "Unknown long option '%s'"
+msgstr "Tuntematon pitkä valitsin ”%s”"
+
+msgid "Unknown option '%s'"
+msgstr "Tuntematon valitsin ”%s”"
+
+msgid "Unmatched '{' in an entry for mime type %s."
+msgstr "Pariton ”{” mime-tyyppi-merkinnässä %s."
+
+msgid "Unnamed command"
+msgstr "Nimeämätän komento"
+
+msgid "Unspecified"
+msgstr "Tasattu"
+
+msgid "Unsupported clipboard format."
+msgstr "Leikepöydän muoto ei ole tuettu."
+
+msgid "Unsupported theme '%s'."
+msgstr "Teemaa ”%s” ei tueta."
+
+msgid "Up"
+msgstr "Ylös"
+
+msgid "Upper case letters"
+msgstr "Suuraakkoskirjaimet"
+
+msgid "Upper case roman numerals"
+msgstr "Suurakkos romaaniset numeraalit"
+
+msgid "Usage: %s"
+msgstr "Käyttö: %s"
+
+msgid "Validation conflict"
+msgstr "Validointiristiriita"
+
+msgid "Value must be between %s and %s."
+msgstr "Anna sivunumero väliltä %d ja %d:"
+
+msgid "Version "
+msgstr "Versio %s"
+
+msgid "Vertical alignment."
+msgstr "Tasausta ei voitu asettaa."
+
+msgid "View files as a detailed view"
+msgstr "Näytä tiedostot lisätiedoilla"
+
+msgid "View files as a list view"
+msgstr "Näytä tiedostot luettelona"
+
+msgid "Views"
+msgstr "Näkymät"
+
+msgid "Waiting for IO on epoll descriptor %d failed"
+msgstr "Aliprosessin keskeytymisen odotus epäonnistui"
+
+msgid "Warning: "
+msgstr "Varoitus: "
+
+msgid "Weight"
+msgstr "Paino"
+
+msgid "Western European (ISO-8859-1)"
+msgstr "Länsi-Eurooppa (ISO-8859-1/Latin 1)"
+
+msgid "Western European with Euro (ISO-8859-15)"
+msgstr "Länsieurooppalainen euro:lla (ISO-8859-15)"
+
+msgid "Whether the font is underlined."
+msgstr "Onko kirjasin alleviivattu."
+
+msgid "Whole words only"
+msgstr "Vain kokonaiset sanat"
+
+msgid "Win32 theme"
+msgstr "Win32-teema"
+
+msgid "Window"
+msgstr "&Ikkuna"
+
+msgid "WindowFrame"
+msgstr "&Ikkuna"
+
+msgid "WindowText"
+msgstr "&Ikkuna"
+
+msgid "Windows Arabic (CP 1256)"
+msgstr "Windows, arabia (CP 1256)"
+
+msgid "Windows Baltic (CP 1257)"
+msgstr "Windows baltialainen (CP 1257)"
+
+msgid "Windows Central European (CP 1250)"
+msgstr "Windows, Keski-Eurooppa (CP 1250)"
+
+msgid "Windows Chinese Simplified (CP 936) or GB-2312"
+msgstr "Windows yksinkertaistettu kiina (CP 936) tai GB-2312"
+
+msgid "Windows Chinese Traditional (CP 950) or Big-5"
+msgstr "Windows kiinalainen perinteinen (CP 950) tai Big-5"
+
+msgid "Windows Cyrillic (CP 1251)"
+msgstr "Windows, kyrillinen (CP 1251)"
+
+msgid "Windows Greek (CP 1253)"
+msgstr "Windows, kreikka (CP 1253)"
+
+msgid "Windows Hebrew (CP 1255)"
+msgstr "Windows, heprea (CP 1255)"
+
+msgid "Windows Japanese (CP 932) or Shift-JIS"
+msgstr "Windows japanilainen (CP 932) tai Shift-JIS"
+
+msgid "Windows Johab (CP 1361)"
+msgstr "Windows, arabia (CP 1256)"
+
+msgid "Windows Korean (CP 949)"
+msgstr "Windows, korea (CP 949)"
+
+msgid "Windows Thai (CP 874)"
+msgstr "Windows thai (CP 874)"
+
+msgid "Windows Turkish (CP 1254)"
+msgstr "Windows, turkki (CP 1254)"
+
+msgid "Windows Vietnamese (CP 1258)"
+msgstr "Windows, kreikka (CP 1253)"
+
+msgid "Windows Western European (CP 1252)"
+msgstr "Windows, Länsi-Eurooppa (CP 1252)"
+
+msgid "Windows/DOS OEM (CP 437)"
+msgstr "Windows/DOS OEM (CP 437)"
+
+msgid "Windows/DOS OEM Cyrillic (CP 866)"
+msgstr "Windows/DOS OEM kyrillinen (CP 866)"
+
+msgid "Windows_Left"
+msgstr "Windows 7"
+
+msgid "Windows_Menu"
+msgstr "Windows ME"
+
+msgid "Windows_Right"
+msgstr "Windows Vista"
+
+msgid "Write error on file '%s'"
+msgstr "Tiedostoon ”%s” ei voi kirjoittaa"
+
+msgid "XML parsing error: '%s' at line %d"
+msgstr "XML-jäsennysvirhe: ”%s” rivillä %d"
+
+msgid "XPM: Malformed pixel data!"
+msgstr "XPM: virheellinen pikselitieto"
+
+msgid "XPM: incorrect colour description in line %d"
+msgstr "XPM: virheellinen värikuvaus rivillä %d"
+
+msgid "XPM: incorrect header format!"
+msgstr "XPM: virheellinen otsikkomuoto"
+
+msgid "XPM: malformed colour definition '%s' at line %d!"
+msgstr "XPM: virheellinen värimääritys ”%s” rivillä %d!"
+
+msgid "XPM: no colors left to use for mask!"
+msgstr "XPM: värejä ei ole jäljellä maskin käytettäväksi"
+
+msgid "XPM: truncated image data at line %d!"
+msgstr "XPM: katkennut kuvatieto rivillä %d"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "You cannot Clear an overlay that is not inited"
+msgstr "Et voi lisätä uutta hakemistoa tähän kohtaan."
+
+msgid "You cannot add a new directory to this section."
+msgstr "Et voi lisätä uutta hakemistoa tähän kohtaan."
+
+msgid "Zoom &In"
+msgstr "&Lähennä"
+
+msgid "Zoom &Out"
+msgstr "Lo&itonna"
+
+msgid "Zoom In"
+msgstr "&Lähennä"
+
+msgid "Zoom Out"
+msgstr "Lo&itonna"
+
+msgid "Zoom to &Fit"
+msgstr "&Sovita"
+
+msgid "Zoom to Fit"
+msgstr "&Sovita"
+
+msgid "a DDEML application has created a prolonged race condition."
+msgstr "DDEML-sovellus on luonut pitkän kilpailutilanteen."
+
+msgid ""
+"a DDEML function was called without first calling the DdeInitialize "
+"function,\n"
+"or an invalid instance identifier\n"
+"was passed to a DDEML function."
+msgstr ""
+"DDEML funktio kutsuttiin ilman edeltävää DDE-initialisointia, \n"
+"tai epäkelpo instanssin tunniste annetiin DDEML funktiolle."
+
+msgid "a client's attempt to establish a conversation has failed."
+msgstr "asiakkaan yritys aloittaa keskustelu epäonnistui."
+
+msgid "a memory allocation failed."
+msgstr "muistin varaus epäonnistui."
+
+msgid "a parameter failed to be validated by the DDEML."
+msgstr "DDEML ei voinut varmistaa parametria."
+
+msgid "a request for a synchronous advise transaction has timed out."
+msgstr "synkronisen ohjeistustapahtuman pyynnön sallittu aika ylittyi."
+
+msgid "a request for a synchronous data transaction has timed out."
+msgstr "synkronisen datasiirron pyynnön sallittu aika ylittyi."
+
+msgid "a request for a synchronous execute transaction has timed out."
+msgstr "synkronisen ohjelmapyynnön sallittu aika ylittyi."
+
+msgid "a request for a synchronous poke transaction has timed out."
+msgstr "synkronisen datakirjoitustapahtuman pyynnön sallittu aika ylittyi."
+
+msgid "a request to end an advise transaction has timed out."
+msgstr "ohjeistustapahtuman lopettamisen pyynnön sallittu aika ylittyi."
+
+msgid ""
+"a server-side transaction was attempted on a conversation\n"
+"that was terminated by the client, or the server\n"
+"terminated before completing a transaction."
+msgstr ""
+"palvelinpuolella tapahtuma yritettiin keskustelussa,\n"
+"joka pysäytettiin asiakkaan taholla, tai palvelin\n"
+"keskeytti ennen tapahtuman valmistumista."
+
+msgid "a transaction failed."
+msgstr "tapahtuma epäonnistui."
+
+msgid "alt"
+msgstr "alt"
+
+msgid ""
+"an application initialized as APPCLASS_MONITOR has\n"
+"attempted to perform a DDE transaction,\n"
+"or an application initialized as APPCMD_CLIENTONLY has \n"
+"attempted to perform server transactions."
+msgstr ""
+"APCLASS_MONITOR käynnistämä sovellus on yrittänyt\n"
+"tehdä DDE tapahtuman tai APPCMD_CLIENTONLY on yrittänyt \n"
+"tehdä palvelimen tapahtuman."
+
+msgid "an internal call to the PostMessage function has failed. "
+msgstr "sisäinen kutsu ”PostMessage”-funktion epäonnistui. "
+
+msgid "an internal error has occurred in the DDEML."
+msgstr "sisäinen virhe tapahtui DDEML:ssä."
+
+msgid ""
+"an invalid transaction identifier was passed to a DDEML function.\n"
+"Once the application has returned from an XTYP_XACT_COMPLETE callback,\n"
+"the transaction identifier for that callback is no longer valid."
+msgstr ""
+"virheellinen tapahtumatunnus on siirretty DDEML funktiolle.\n"
+"Kun sovellus on palannut XTYP_XACT_COMPLETE vastakutsusta, \n"
+"tapahtuman tunnus tälle vastakutsulle ei päde enää."
+
+msgid "attempt to change immutable key '%s' ignored."
+msgstr "muuttumattoman avaimen ”%s” muutosyritys ohitettu."
+
+msgid "bad arguments to library function"
+msgstr "virheelliset argumentit kirjastofunktioon"
+
+msgid "bad signature"
+msgstr "väärä allekirjoitus"
+
+msgid "binary"
+msgstr "binääri"
+
+msgid "bold"
+msgstr "lihavoitu"
+
+msgid "build %lu"
+msgstr "käännös %lu"
+
+msgid "can't close file '%s'"
+msgstr "tiedostoa ”%s” ei voi sulkea"
+
+msgid "can't close file descriptor %d"
+msgstr "tiedoston kuvaajaa %d ei voida sulkea"
+
+msgid "can't commit changes to file '%s'"
+msgstr "ei voi toimittaa muutoksia tiedostoon ”%s”"
+
+msgid "can't create file '%s'"
+msgstr "tiedoston ”%s” luonti ei onnistu"
+
+msgid "can't delete user configuration file '%s'"
+msgstr "käyttäjän asetustiedostoa ”%s” ei voi poistaa"
+
+msgid "can't determine if the end of file is reached on descriptor %d"
+msgstr "ei voida päätellä tuliko kuvaajan %d loppu vastaan"
+
+msgid "can't find length of file on file descriptor %d"
+msgstr "tiedoston koko ei löydy tiedoston kuvauksesta %d"
+
+msgid "can't find user's HOME, using current directory."
+msgstr "käyttäjän kotihakemistoa ei löydy, käytetään nykyistä hakemistoa."
+
+msgid "can't flush file descriptor %d"
+msgstr "tiedoston kuvausta %d ei voida tyhjentää"
+
+msgid "can't get seek position on file descriptor %d"
+msgstr "paikanmääritys tiedoston kuvauksessa %d ei onnistu"
+
+msgid "can't load any font, aborting"
+msgstr "ei voi ladata yhtäkään fonttia, lopetetaan"
+
+msgid "can't open file '%s'"
+msgstr "tiedostoa ”%s” ei voi avata"
+
+msgid "can't open global configuration file '%s'."
+msgstr "globaalin asetustiedoston ”%s” avaus ei onnistu."
+
+msgid "can't open user configuration file '%s'."
+msgstr "käyttäjän asetustiedoston ”%s” avaus ei onnistu."
+
+msgid "can't open user configuration file."
+msgstr "käyttäjän asetustiedoston avaus ei onnistu."
+
+msgid "can't read from file descriptor %d"
+msgstr "tiedoston kuvauksen %d luku epäonnistui"
+
+msgid "can't remove file '%s'"
+msgstr "tiedostoa ”%s” ei voi poistaa"
+
+msgid "can't remove temporary file '%s'"
+msgstr "väliaikaistiedostoa ”%s” ei voi poistaa"
+
+msgid "can't write buffer '%s' to disk."
+msgstr "puskuria ”%s” ei voida kirjoittaa levylle."
+
+msgid "can't write to file descriptor %d"
+msgstr "kirjoittaminen epäonnistui tiedoston kuvaukseen %d"
+
+msgid "can't write user configuration file."
+msgstr "käyttäjän asetustiedoston kirjoitus epäonnistui."
+
+msgid "checksum error"
+msgstr "tarkistussummavirhe"
+
+msgid "compression error"
+msgstr "pakkausvirhe"
+
+msgid "conversion to 8-bit encoding failed"
+msgstr "muunnos 8-bittiseksi koodaukseksi epäonnistui"
+
+msgid "ctrl"
+msgstr "ctrl"
+
+msgid "date"
+msgstr "päiväys"
+
+msgid "decompression error"
+msgstr "purkamisvirhe"
+
+msgid "eighteenth"
+msgstr "kahdeksastoista"
+
+msgid "eighth"
+msgstr "kahdeksas"
+
+msgid "eleventh"
+msgstr "yhdestoista"
+
+msgid "entry '%s' appears more than once in group '%s'"
+msgstr "kohta ”%s” ilmenee useammin kuin kerran ryhmässä ”%s”"
+
+msgid "error in data format"
+msgstr "virhe dataformaatissa"
+
+msgid "error opening file"
+msgstr "virhe avattaessa tiedostoa"
+
+msgid "failed to flush the file '%s'"
+msgstr "tiedostoa ”%s” ei voitu kirjoittaa"
+
+msgid "false"
+msgstr "Tiedosto"
+
+msgid "fifteenth"
+msgstr "viidestoista"
+
+msgid "fifth"
+msgstr "viides"
+
+msgid "file '%s', line %zu: '%s' ignored after group header."
+msgstr "tiedosto ”%s”, rivi %d: ”%s” ohitettu ryhmäotsikon jälkeen."
+
+msgid "file '%s', line %zu: '=' expected."
+msgstr "tiedosto ”%s”, rivi %d: ”=” odotettu."
+
+msgid "file '%s', line %zu: key '%s' was first found at line %d."
+msgstr "tiedosto ”%s”, rivi %d: avain ”%s” löytyi ensiksi riviltä %d."
+
+msgid "file '%s', line %zu: value for immutable key '%s' ignored."
+msgstr "tiedosto ”%s”, rivi %d: muuttamattoman avaimen ”%s” arvo ohitettu."
+
+msgid "file '%s': unexpected character %c at line %zu."
+msgstr "tiedosto ”%s”: odottamaton merkki %c rivillä %d."
+
+msgid "files"
+msgstr "tiedostot"
+
+msgid "font size"
+msgstr "kirjasinkoko"
+
+msgid "fourteenth"
+msgstr "neljästoista"
+
+msgid "fourth"
+msgstr "neljäs"
+
+msgid "generate verbose log messages"
+msgstr "luo yksityiskohtaiset lokiviestit"
+
+msgid "image"
+msgstr "kuva"
+
+msgid "invalid message box return value"
+msgstr "virheellinen viestilaatikon (message box) palautusarvo"
+
+msgid "invalid zip file"
+msgstr "virheellinen zip-tiedosto"
+
+msgid "italic"
+msgstr "kursivoitu"
+
+msgid "light"
+msgstr "heikko"
+
+msgid "locale '%s' cannot be set."
+msgstr "maa-arvoa ”%s” ei voida asettaa."
+
+msgid "midnight"
+msgstr "keskiyö"
+
+msgid "nineteenth"
+msgstr "yhdeksästoista"
+
+msgid "ninth"
+msgstr "yhdeksäs"
+
+msgid "no DDE error."
+msgstr "ei DDE-virhettä."
+
+msgid "no error"
+msgstr "ei virhettä"
+
+msgid "no fonts found in %s, using builtin font"
+msgstr "Kirjasimia ei löytynyt kohteesta %s, käytetään sisäänrakennettua"
+
+msgid "noname"
+msgstr "nimeämätön"
+
+msgid "noon"
+msgstr "keskipäivä"
+
+msgid "normal"
+msgstr "tavallinen"
+
+msgid "num"
+msgstr "num."
+
+msgid "objects cannot have XML Text Nodes"
+msgstr "Objekteilla ei voi olla XML-tekstisolmuja"
+
+msgid "out of memory"
+msgstr "muisti loppu"
+
+msgid "rawctrl"
+msgstr "ctrl"
+
+msgid "read error"
+msgstr "lukuvirhe"
+
+msgid "reading zip stream (entry %s): bad crc"
+msgstr "luetaan zip-virtaa (kohta %s): virheellinen crc"
+
+msgid "reading zip stream (entry %s): bad length"
+msgstr "luetaan zip-virtaa (kohta %s): virheellinen pituus"
+
+msgid "reentrancy problem."
+msgstr "vaikeuksia uudelleen palaamisessa."
+
+msgid "second"
+msgstr "toinen"
+
+msgid "seek error"
+msgstr "hakuvirhe"
+
+msgid "seventeenth"
+msgstr "seitsemästoista"
+
+msgid "seventh"
+msgstr "seitsemäs"
+
+msgid "shift"
+msgstr "vaihto"
+
+msgid "show this help message"
+msgstr "näytä tämä ohjeviesti"
+
+msgid "sixteenth"
+msgstr "kuudestoista"
+
+msgid "sixth"
+msgstr "kuudes"
+
+msgid "specify display mode to use (e.g. 640x480-16)"
+msgstr "määritä käytettävä näyttötila (esim. 640x480-16)"
+
+msgid "specify the theme to use"
+msgstr "määritä käytettävä teema"
+
+msgid "standard/circle"
+msgstr "perus/ympyrä"
+
+msgid "standard/square"
+msgstr "perus/neliö"
+
+msgid "str"
+msgstr "merkkijono"
+
+msgid "strikethrough"
+msgstr "Yliviivaus"
+
+msgid "tenth"
+msgstr "kymmenes"
+
+msgid "the response to the transaction caused the DDE_FBUSY bit to be set."
+msgstr "tapahtuman vastaus aiheutti DDE_FBUSY-bitin asettumisen."
+
+msgid "third"
+msgstr "kolmas"
+
+msgid "thirteenth"
+msgstr "kolmastoista"
+
+msgid "today"
+msgstr "tänään"
+
+msgid "tomorrow"
+msgstr "huomenna"
+
+msgid "translator-credits"
+msgstr ""
+"Elias Julkunen <elias.julkunen@gmail.com>, 2008.Jaakko Salli "
+"<jmsalli79@hotmail.com>, 2005.Lauri Nurmi <lanurmi@iki.fi>, 2004.Kaj G "
+"Backas <kgb@compart.fi>, 2000."
+
+msgid "twelfth"
+msgstr "kahdestoista"
+
+msgid "twentieth"
+msgstr "kahdeskymmenes"
+
+msgid "underlined"
+msgstr "alleviivattu"
+
+msgid "undetermined"
+msgstr "alleviivattu"
+
+msgid "unexpected \" at position %d in '%s'."
+msgstr "Odottamaton \"-merkki kohdassa %d tiedostossa '%s'."
+
+msgid "unexpected end of file"
+msgstr "odottamaton tiedoston loppu"
+
+msgid "unknown"
+msgstr "tuntematon"
+
+msgid "unknown (%lu)"
+msgstr "tuntematon"
+
+msgid "unknown class %s"
+msgstr "tuntematon luokka %s"
+
+msgid "unknown error"
+msgstr "tuntematon virhe"
+
+msgid "unknown error (error code %08x)."
+msgstr "tuntematon virhe (virhekoodi %08x)."
+
+msgid "unknown-%d"
+msgstr "tuntematon-%d"
+
+msgid "unnamed"
+msgstr "nimetön"
+
+msgid "unnamed%d"
+msgstr "nimetön%d"
+
+msgid "unsupported Zip compression method"
+msgstr "ei-tuettu Zip-pakkaustyyppi"
+
+msgid "using catalog '%s' from '%s'."
+msgstr "käytössä luettelo ”%s” ”%s”sta."
+
+msgid "write error"
+msgstr "kirjoitusvirhe"
+
+msgid "wxGetTimeOfDay failed."
+msgstr "wxGetTimeOfDay epäonnistui."
+
+msgid "wxWidgets could not open display for '%s': exiting."
+msgstr "wxWidgets ei voi avata näyttöä prosessille ”%s”: poistutaan."
+
+msgid "wxWidgets could not open display. Exiting."
+msgstr "wxWidgets ei voi avata näyttöä. Poistutaan."
+
+msgid "xxxx"
+msgstr "xxxx"
+
+msgid "yesterday"
+msgstr "eilen"
+
+msgid "zlib error %d"
+msgstr "zlib-virhe %d"

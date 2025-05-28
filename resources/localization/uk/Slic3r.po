@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-11 00:00\n"
-"PO-Revision-Date: 2024-06-11 00:00\n"
+"POT-Creation-Date: 2025-05-29 00:00\n"
+"PO-Revision-Date: 2025-05-29 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -17,17 +17,11 @@ msgstr ""
 msgid "%1% Preset"
 msgstr "%1% пресет"
 
-msgid "%1% was successfully sliced."
-msgstr "%1% був успішно нарізаний."
-
 msgid "%d presets successfully imported."
 msgstr "%d налаштувань успішно імпортовано."
 
 msgid "%s - BREAKING CHANGE"
 msgstr "%s - ЗЛАМАНА ЗМІНА"
-
-msgid "%s - Drop project file"
-msgstr "%s - Перетягнути файл проекту"
 
 msgid "%s configuration is incompatible"
 msgstr "конфігурація %s є несумісна"
@@ -92,22 +86,6 @@ msgid "%s View Mode"
 msgstr "Режим перегляду %s"
 
 msgid ""
-"%s will now start updates. Otherwise it won't be able to start.\n"
-"\n"
-"Note that a full configuration snapshot will be created first. It can then "
-"be restored at any time should there be a problem with the new version.\n"
-"\n"
-"Updated configuration bundles:"
-msgstr ""
-"Зараз %s розпочне оновлення. Інакше він не зможе запуститися.\n"
-"\n"
-"Зверніть увагу, що спочатку буде створено повний знімок конфігурації. Потім "
-"його можна буде відновити в будь-який час, якщо виникне проблема з новою "
-"версією.\n"
-"\n"
-"Оновлені пакети конфігурації:"
-
-msgid ""
 "%s\n"
 "Do you want to continue?"
 msgstr ""
@@ -125,6 +103,9 @@ msgstr "&Конфігурація"
 
 msgid "&Configuration Snapshots"
 msgstr "Знімки конфігурації"
+
+msgid "&Convert"
+msgstr "Пе&ретворити"
 
 msgid "&Copy"
 msgstr "&Копія"
@@ -218,9 +199,6 @@ msgstr "(Пере)Нарізати зараз"
 
 msgid "(Unknown)"
 msgstr "(Невідомий)"
-
-msgid ") not found."
-msgstr ") не знайдено."
 
 msgid "0 (no open anchors)"
 msgstr "0 (без відкритих якорів)"
@@ -449,6 +427,13 @@ msgstr "Додати налаштування для підоб'єкту"
 msgid "Add Shape"
 msgstr "Додати форму"
 
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)."
+msgstr ""
+"Додайте суцільні наповнювачі біля нахилених поверхонь, щоб гарантувати "
+"товщину вертикальної оболонки (верхній і нижній суцільні шари)."
+
 msgid "Add support blocker"
 msgstr "Додати блокувальник підтримок"
 
@@ -498,6 +483,9 @@ msgstr "Адреса"
 msgid "Advanced"
 msgstr "Додатково"
 
+msgid "Advanced mode"
+msgstr "Розширений режим"
+
 msgid "Advanced: Output log"
 msgstr "Розширений: журнал виводу"
 
@@ -525,6 +513,12 @@ msgstr "Вирівняти XY"
 
 msgid "Aligned"
 msgstr "Вирівняно"
+
+msgid "Aligned Rectilinear"
+msgstr "Вирівняний прямолінійний"
+
+msgid "Alignment"
+msgstr "Вирівнювання"
 
 msgid "All"
 msgstr "Всі"
@@ -759,10 +753,10 @@ msgstr "Власна модель столу"
 msgid "Bed custom texture"
 msgstr "Власна текстура столу"
 
-msgid "Bed Shape"
+msgid "Bed shape"
 msgstr "Форма столу"
 
-msgid "Bed shape"
+msgid "Bed Shape"
 msgstr "Форма столу"
 
 msgid "Bed Shape and Size"
@@ -771,8 +765,8 @@ msgstr "Форма та розмір столу"
 msgid "Bed temperature"
 msgstr "Температура столу"
 
-msgid "Bed Temperature:"
-msgstr "Температура столу:"
+msgid "Bed Temperature"
+msgstr "Температура столу"
 
 msgid "Before layer change G-code"
 msgstr "G-код перед зміною шару"
@@ -837,20 +831,8 @@ msgstr "Мостове наповнення"
 msgid "Bridges"
 msgstr "Мости"
 
-msgid "Bridges fan speed"
-msgstr "Швидкість вентилятора для мостів"
-
 msgid "Bridging angle"
 msgstr "Кут моста"
-
-msgid ""
-"Bridging angle override. If left to zero, the bridging angle will be "
-"calculated automatically. Otherwise the provided angle will be used for all "
-"bridges. Use 180° for zero angle."
-msgstr ""
-"Зміна кута мосту. Якщо встановити на 0, кут мостів буде розрахований "
-"автоматично. Інакше передбачений кут буде використаний для всіх мостів. "
-"Використовуйте 180° для нульового кута."
 
 msgid "Bridging volumetric"
 msgstr "Об'єм мостів"
@@ -942,6 +924,9 @@ msgstr ""
 msgid "Cannot overwrite a system profile."
 msgstr "Неможливо замінити системний профіль."
 
+msgid "Cannot overwrite an external profile."
+msgstr "Неможливо замінити сторонній профіль."
+
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
 "generation."
@@ -1015,9 +1000,6 @@ msgstr "Перевірити наявність оновлень конфігу�
 msgid "Choose a file to import bed texture from (PNG/SVG):"
 msgstr "Виберіть файл для імпорту текстури столу (PNG / SVG):"
 
-msgid "Choose a file to slice (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "Вибрати файл для нарізання (STL/OBJ/AMF/3MF/PRUSA):"
-
 msgid "Choose an STL file to import bed model from:"
 msgstr "Виберіть STL-файл для імпорту моделі столу з:"
 
@@ -1027,14 +1009,8 @@ msgstr "Виберіть STL-файл для імпорту форми стол�
 msgid "Choose one file (3MF/AMF):"
 msgstr "Виберіть один файл (3MF/AMF):"
 
-msgid "Choose one file (GCODE/.GCO/.G/.ngc/NGC):"
-msgstr "Виберіть один файл (GCODE/.GCO/.G/.ngc/NGC):"
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "Виберіть один чи кілька файлів (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-
-msgid "Choose SLA archive:"
-msgstr "Виберіть SLA-архів:"
+msgid "Choose SLA archive"
+msgstr "Виберіть SLA-архів"
 
 msgid "Choose the type of firmware used by your printer."
 msgstr "Виберіть тип прошивки, що використовуються вашим принтером."
@@ -1068,9 +1044,6 @@ msgstr "Клацніть, щоб сховати"
 
 msgid "Click to show"
 msgstr "Клацніть, щоб показати"
-
-msgid "Clip multi-part objects"
-msgstr "Обрізати об'єкти, що складаються з кількох частин"
 
 msgid "Clipping of view"
 msgstr "Відсікання площиною"
@@ -1174,6 +1147,9 @@ msgstr "Доступне оновлення конфігурації."
 msgid "Configuration updates"
 msgstr "Оновлення конфігурацій"
 
+msgid "Confirm"
+msgstr "Підтвердити"
+
 msgid "Confirmation"
 msgstr "Підтвердження"
 
@@ -1232,9 +1208,6 @@ msgid ""
 msgstr ""
 "Копіювання тимчасового G-коду закінчено, але оригінальний код на рівні %1% "
 "не вдалося відкрити під час перевірки копії. Вихідний G-код - %2% .tmp."
-
-msgid "Copying of the temporary G-code to the output G-code failed"
-msgstr "Не вдалося скопіювати тимчасовий G-код у вихідний G-код"
 
 msgid ""
 "Copying of the temporary G-code to the output G-code failed. Maybe the SD "
@@ -1372,6 +1345,9 @@ msgstr "Вирізати площиною"
 msgid "Cut model at the given Z."
 msgstr "Розрізати модель за заданим Z."
 
+msgid "Cylinder"
+msgstr "Циліндр"
+
 msgid "D&eselect All"
 msgstr "Скасувати вибір усіх"
 
@@ -1387,10 +1363,10 @@ msgstr "не вдалося розпакувати або архів пошко�
 msgid "Decrease Instances"
 msgstr "Зменшити кількість копій"
 
-msgid "default"
+msgid "Default"
 msgstr "типовий"
 
-msgid "Default"
+msgid "default"
 msgstr "типовий"
 
 msgid ""
@@ -1411,11 +1387,11 @@ msgstr "колір за замовчуванням"
 msgid "Default extrusion width"
 msgstr "Ширина екструзії за замовчанням"
 
-msgid "default filament profile"
-msgstr "профіль філаметну за замовчанням"
-
 msgid "Default filament profile"
 msgstr "Профіль філаметну за замовчанням"
+
+msgid "default filament profile"
+msgstr "профіль філаметну за замовчанням"
 
 msgid ""
 "Default filament profile associated with the current printer profile. On "
@@ -1425,11 +1401,14 @@ msgstr ""
 "Профіль філаметну за замовчанням, пов'язаний з поточним профілем принтера. "
 "При виборі поточного профілю принтера цей профіль філаметну буде активовано."
 
-msgid "default print profile"
-msgstr "профіль друку за замовчанням"
+msgid "Default font"
+msgstr "Типовий шрифт"
 
 msgid "Default print profile"
 msgstr "Профіль друку за замовчанням"
+
+msgid "default print profile"
+msgstr "профіль друку за замовчанням"
 
 msgid ""
 "Default print profile associated with the current printer profile. On "
@@ -1439,11 +1418,11 @@ msgstr ""
 "Профіль друку за промовчанням, пов'язаний із поточним профілем принтера. При "
 "виборі поточного профілю принтера цей профіль друку буде активовано."
 
-msgid "default SLA material profile"
-msgstr "профіль SLA-матеріалу за замовчанням"
-
 msgid "Default SLA material profile"
 msgstr "Профіль SLA-матеріалу за замовчанням"
+
+msgid "default SLA material profile"
+msgstr "профіль SLA-матеріалу за замовчанням"
 
 msgid "default SLA print profile"
 msgstr "профіль SLA-друку за замовчанням"
@@ -1511,9 +1490,6 @@ msgstr "Видалити вибране"
 msgid "Delete selected"
 msgstr "Видалити вибране"
 
-msgid "Delete Selected Item"
-msgstr "Видалити вибраний елемент"
-
 msgid "Delete Selected Objects"
 msgstr "Видалити вибрані об'єкти"
 
@@ -1525,9 +1501,6 @@ msgstr "Видалити підоб'єкт"
 
 msgid "Delete support point"
 msgstr "Видалити точку підтримки"
-
-msgid "Delete this preset"
-msgstr "Видалити це налаштування"
 
 msgid "Delete this preset from this printer device"
 msgstr "Видаліть цей пресет з цього принтера"
@@ -1646,9 +1619,6 @@ msgstr "Вертикальне віддзеркалення дисплея"
 msgid "Display width"
 msgstr "Ширина дисплея"
 
-msgid "Distance between ironing lines"
-msgstr "Відстань між прасувальними лініями"
-
 msgid ""
 "Distance between two connector sticks which connect the object and the "
 "generated pad."
@@ -1679,15 +1649,6 @@ msgid ""
 msgstr ""
 "Не переставляйте дані моделі перед об’єднанням та зберігайте їх початкові "
 "координати XY."
-
-msgid ""
-"Do you mean %s%% instead of %s %s?\n"
-"Select YES if you want to change this value to %s%%, \n"
-"or NO if you are sure that %s %s is a correct value."
-msgstr ""
-"Ви маєте на увазі %s%% замість %s %s?\n"
-"Виберіть ТАК, якщо ви хочете змінити це значення на %s%%,\n"
-"або НІ, якщо ви впевнені, що %s %s є правильним значенням."
 
 msgid "Do you want to delete all saved tool changes?"
 msgstr "Ви хочете видалити всі збережені зміни інструменту?"
@@ -1852,17 +1813,6 @@ msgstr "Увімкнути підтримку застарілих пристр�
 msgid "Enable support material generation."
 msgstr "Увімкнути генерацію матеріалів підтримки."
 
-msgid ""
-"Enable this to add comments into the G-Code labeling print moves with what "
-"object they belong to, which is useful for the Octoprint CancelObject "
-"plugin. This settings is NOT compatible with Single Extruder Multi Material "
-"setup and Wipe into Object / Wipe into Infill."
-msgstr ""
-"Увімкніть це, щоб додати коментарі до ходів друку міток G-Code із об’єктом, "
-"до якого вони належать, що корисно для плагіна Octoprint CancelObject. Ці "
-"налаштування НЕ сумісні з параметрами \"Мульти-матеріальний (ММ) друк з "
-"одним екструдером\" та \"Витирати в об'єкт\" / \"Витирати в заповнення\"."
-
 msgid "Enable variable layer height feature"
 msgstr "Увімкнути функцію шарів змінної висоти"
 
@@ -1985,17 +1935,11 @@ msgstr "Помилка під час перезавантаження"
 msgid "Error loading shaders"
 msgstr "Помилка завантаження шейдерів"
 
-msgid "Error Message"
-msgstr "Повідомлення про помилку"
-
-msgid "Error uploading to print host:"
-msgstr "Помилка завантаження на хост друку:"
+msgid "Error uploading to print host"
+msgstr "Помилка завантаження на хост друку"
 
 msgid "Error while loading .gcode file"
 msgstr "Помилка під час завантаження GCODE-файлу"
-
-msgid "Error with zip archive"
-msgstr "Помилка ZIP-архіву"
 
 msgid "Error!"
 msgstr "Помилка!"
@@ -2008,9 +1952,6 @@ msgstr "ПОМИЛКА:"
 
 msgid "Error: %s"
 msgstr "Помилка: %s"
-
-msgid "ERROR: not enough resources to execute a new job."
-msgstr "ПОМИЛКА: недостатньо ресурсів для виконання нового завдання."
 
 msgid "Estimated printing time"
 msgstr "Приблизний час друку"
@@ -2031,8 +1972,8 @@ msgstr ""
 "Експериментальний варіант для запобігання утворенню допоміжного матеріалу в "
 "областях під мостами."
 
-msgid "Expert"
-msgstr "Експерт"
+msgid "Expert mode"
+msgstr "Експертний режим"
 
 msgid "Export"
 msgstr "Експорт"
@@ -2060,9 +2001,6 @@ msgstr "Експортувати AMF"
 
 msgid "Export AMF file:"
 msgstr "Експортувати AMF-файл:"
-
-msgid "Export as STL"
-msgstr "Експортувати як STL"
 
 msgid "Export config"
 msgstr "Експорт конфігурації"
@@ -2102,9 +2040,6 @@ msgstr "Експорт OBJ"
 msgid "Export OBJ file:"
 msgstr "Експорт OBJ-файлу:"
 
-msgid "Export of a temporary 3mf file failed"
-msgstr "Не вдалося експортувати тимчасовий 3MF-файл"
-
 msgid "Export SLA"
 msgstr "Експорт SLA"
 
@@ -2140,9 +2075,6 @@ msgstr "Експорт."
 
 msgid "Exporting finished."
 msgstr "Експорт завершено."
-
-msgid "Exporting G-code"
-msgstr "Експортування G-коду"
 
 msgid "Exporting source model"
 msgstr "Експортування вихідної моделі"
@@ -2198,14 +2130,14 @@ msgstr "Екструдери"
 msgid "Extruders count"
 msgstr "Кількість екструдерів"
 
-msgid "Extrusion"
-msgstr "Екструзія"
-
 msgid "Extrusion axis"
 msgstr "Ось екструзії"
 
 msgid "Extrusion multiplier"
 msgstr "Коефіцієнт екструзії"
+
+msgid "Extrusion multiplier:"
+msgstr "Коефіцієнт екструзії:"
 
 msgid "Extrusion Temperature:"
 msgstr "Температура екструзії:"
@@ -2222,20 +2154,11 @@ msgstr "Шари початкового контакту"
 msgid "failed finding central directory"
 msgstr "не вдалося знайти центральний каталог"
 
-msgid "Failed loading the input model."
-msgstr "Помилка завантаження вхідної моделі."
-
 msgid "Failed processing of the output_filename_format template."
 msgstr "Помилка обробки шаблону output_filename_format."
 
 msgid "Failed to activate configuration snapshot."
 msgstr "Не вдалося активувати знімок конфігурації."
-
-msgid "Fan speed"
-msgstr "Швидкість вентилятора"
-
-msgid "Fan Speed (%)"
-msgstr "Швидкість вентилятора (%)"
 
 msgid "Fast"
 msgstr "Швидкий"
@@ -2252,9 +2175,6 @@ msgstr "Фатальна помилка, вилучений виняток: %1%"
 msgid "Feature type"
 msgstr "Тип ознаки"
 
-msgid "Feature types"
-msgstr "Типи ознак"
-
 msgid "filament"
 msgstr "філамент"
 
@@ -2267,8 +2187,8 @@ msgstr "Діаметри філатенту та сопла"
 msgid "Filament at extruder %1%"
 msgstr "Філамент екструдеру %1%"
 
-msgid "Filament Diameter:"
-msgstr "Діаметр філаменту:"
+msgid "Filament Diameter"
+msgstr "Діаметр філаменту"
 
 msgid ""
 "Filament is cooled by being moved back and forth in the cooling tubes. "
@@ -2282,9 +2202,6 @@ msgstr "Час заведення філаменту"
 
 msgid "Filament notes"
 msgstr "Примітки до філаменту"
-
-msgid "Filament Overrides"
-msgstr "Переписування глобальних змінних"
 
 msgid "Filament parking position"
 msgstr "Позиція паркування філаменту"
@@ -2318,9 +2235,6 @@ msgstr "не вдалося закрити файл"
 
 msgid "file create failed"
 msgstr "не вдалося створити файл"
-
-msgid "File Not Found"
-msgstr "Файл не знайдено"
 
 msgid "file not found"
 msgstr "файл не знайдено"
@@ -2409,12 +2323,6 @@ msgstr "Швидкість першого шару"
 msgid "First layer volumetric"
 msgstr "Об'єм першого шару"
 
-msgid "Fix through NetFabb"
-msgstr "Виправити за допомогою NetFabb"
-
-msgid "Fix through the Netfabb"
-msgstr "Виправити за допомогою NetFabb"
-
 msgid "Flash Printer &Firmware"
 msgstr "Прошити принтер"
 
@@ -2441,6 +2349,9 @@ msgstr "Потік"
 
 msgid "Flow rate"
 msgstr "Швидкість потоку"
+
+msgid "Font"
+msgstr "Шрифт"
 
 msgid "Font size"
 msgstr "Розмір шрифту"
@@ -2507,9 +2418,6 @@ msgstr "Повна швидкість вентилятора на шарі"
 
 msgid "full profile name"
 msgstr "повне ім'я профілю"
-
-msgid "G-code"
-msgstr "G-код"
 
 msgid ""
 "G-code associated to this tick mark is in a conflict with print mode.\n"
@@ -2675,6 +2583,9 @@ msgstr ""
 msgid "Grid"
 msgstr "Сітка"
 
+msgid "Groove"
+msgstr "Виступ"
+
 msgid "Group"
 msgstr "Group"
 
@@ -2692,9 +2603,6 @@ msgstr "Діаметр головки"
 
 msgid "Head penetration"
 msgstr "Проникнення головки"
-
-msgid "Head penetration should not be greater than the head width."
-msgstr "Проникнення головки не повинно бути більше її ширини."
 
 msgid "Height"
 msgstr "Висота"
@@ -2833,6 +2741,13 @@ msgstr "На скільки крихітні з'єднувачі повинні 
 
 msgid "How much the pinhead has to penetrate the model surface"
 msgstr "На скільки носики повинні проникати в поверхню моделі"
+
+msgid ""
+"How much the supports should lift up the supported object. If \"Pad around "
+"object\" is enabled, this value is ignored."
+msgstr ""
+"Скільки опор повинно піднімати підтримуваний об’єкт. Якщо ввімкнено функцію "
+"\"Подушка навколо об’єкта\", це значення ігнорується."
 
 msgid "How to apply limits"
 msgstr "Як застосовувати обмеження"
@@ -3009,15 +2924,6 @@ msgstr ""
 "вказана у вхідному файлі."
 
 msgid ""
-"If you set this to a positive value, Z is quickly raised every time a "
-"retraction is triggered. When using multiple extruders, only the setting for "
-"the first extruder will be considered."
-msgstr ""
-"Якщо ви встановите це значення позитивним, Z швидко піднімається щоразу, "
-"коли спрацьовує переривання. При використанні декількох екструдерів буде "
-"розглянуто налаштування лише першого екструдера."
-
-msgid ""
 "If you set this to a positive value, Z lift will only take place above the "
 "specified absolute Z. You can tune this setting for skipping lift on the "
 "first layers."
@@ -3077,9 +2983,6 @@ msgstr "Імпорт тільки конфігурації"
 msgid "Import file"
 msgstr "Імпорт файлу"
 
-msgid "Import geometry only"
-msgstr "Імпорт тільки геометрії"
-
 msgid "Import model and profile"
 msgstr "Імпорт моделі та профілю"
 
@@ -3091,9 +2994,6 @@ msgstr "Імпорт об'єкту"
 
 msgid "Import Objects"
 msgstr "Імпорт об'єктів"
-
-msgid "Import of the repaired 3mf file failed"
-msgstr "Не вдалося імпортувати відновлений 3MF-файл"
 
 msgid "Import profile only"
 msgstr "Імпорт тільки профілю"
@@ -3251,9 +3151,6 @@ msgstr "Недійсний формат файлу."
 msgid "invalid filename"
 msgstr "некоректне ім'я файлу"
 
-msgid "Invalid Head penetration"
-msgstr "Неприпустиме проникнення головки"
-
 msgid "invalid header or archive is corrupted"
 msgstr "недійсний заголовок або архів пошкоджено"
 
@@ -3269,9 +3166,6 @@ msgstr "Недійсне числове значення."
 
 msgid "invalid parameter"
 msgstr "некоректний параметр"
-
-msgid "Invalid pinhead diameter"
-msgstr "Неприпустимий діаметр головки"
 
 msgid "Ironing"
 msgstr "Прасування"
@@ -3303,11 +3197,6 @@ msgstr ""
 msgid "It's a last preset for this physical printer."
 msgstr "Це останній пресет для цього фізичного принтера."
 
-msgid "It's impossible to print multi-part object(s) with SLA technology."
-msgstr ""
-"За технологією SLA неможливо надрукувати об'єкти, що складаються з декількох "
-"частин."
-
 msgid "It's not possible to delete the last related preset for the printer."
 msgstr "Неможливо видалити останній пресет для принтера."
 
@@ -3316,6 +3205,9 @@ msgstr "Обмеження ривку"
 
 msgid "Jitter"
 msgstr "Джиттер"
+
+msgid "Jump to"
+msgstr "Перейти до"
 
 msgid "Jump to height"
 msgstr "Перейти на висоту"
@@ -3345,14 +3237,8 @@ msgstr "Просто переключитися до пресету \"%1%\""
 msgid "Keep fan always on"
 msgstr "Тримайте вентилятор завжди"
 
-msgid "Keep lower part"
-msgstr "Залишити нижню частину"
-
 msgid "Keep min"
 msgstr "Залишити мін"
-
-msgid "Keep upper part"
-msgstr "Залишити верхню частину"
 
 msgid "Keyboard shortcuts"
 msgstr "Гарячі клавіши"
@@ -3399,6 +3285,9 @@ msgstr "Шари"
 msgid "Layers and perimeters"
 msgstr "Шари та периметри"
 
+msgid "Layout Options"
+msgstr "Параметри розташування"
+
 msgid "Left"
 msgstr "Ліворуч"
 
@@ -3413,9 +3302,6 @@ msgstr "Ліва кнопка миші:"
 
 msgid "Left View"
 msgstr "Вид з лівого боку"
-
-msgid "Legend/Estimated printing time"
-msgstr "Легенда / Приблизний час друку"
 
 msgid "Length"
 msgstr "Довжина"
@@ -3434,9 +3320,6 @@ msgid ""
 msgstr ""
 "Ліцензійні угоди всіх наступних програм (бібліотек) є частиною ліцензійної "
 "угоди програми"
-
-msgid "Lift Z"
-msgstr "Підняти Z"
 
 msgid "Line"
 msgstr "Лінії"
@@ -3525,9 +3408,6 @@ msgstr "Швидкість заведення"
 msgid "Loading speed at the start"
 msgstr "Швидкість заведення на старті"
 
-msgid "Local coordinates"
-msgstr "Локальні координати"
-
 msgid "Lock supports under new islands"
 msgstr "Зафіксувати підтримки під новими островами"
 
@@ -3559,9 +3439,6 @@ msgstr "Механічних обмеження"
 
 msgid "Manual editing"
 msgstr "Ручне редагування"
-
-msgid "Masked SLA file exported to %1%"
-msgstr "Файл SLA експортовано до %1%"
 
 msgid "Mate&rial Settings Tab"
 msgstr "Вкладка параметрів матеріалу"
@@ -3729,8 +3606,8 @@ msgstr "Об’єднано"
 msgid "Merging slices and calculating statistics"
 msgstr "Об'єднання шарів друку та обчислення статистики"
 
-msgid "Mesh repair failed."
-msgstr "Не вдалося відновити сітку."
+msgid "Message"
+msgstr "Повідомлення"
 
 msgid "Message for pause print on current layer (%1% mm)."
 msgstr "Повідомлення для паузи друку на поточному шарі (%1% мм)."
@@ -3891,6 +3768,9 @@ msgstr "Зміни до поточного профілю буде збереж�
 msgid "modified"
 msgstr "модифікований"
 
+msgid "Modified"
+msgstr "Змінено"
+
 msgid "Modifier"
 msgstr "Модифікатор"
 
@@ -3957,9 +3837,6 @@ msgstr "Перемістити виділення на 10 мм у позитив
 msgid "Move support point"
 msgstr "Перемістити точку підтримки"
 
-msgid "Movement"
-msgstr "Переміщення"
-
 msgid "Movement in camera space"
 msgstr "Переміщення відносно камери"
 
@@ -3998,9 +3875,6 @@ msgstr "Збільшить кількість копій, створивши с�
 msgid "Multiply copies by this factor."
 msgstr "Збільшить кількість копій на цей коефіцієнт."
 
-msgid "N/A"
-msgstr "Н/Д"
-
 msgid "Name"
 msgstr "Назва"
 
@@ -4026,14 +3900,11 @@ msgstr "Найближча"
 msgid "Network lookup"
 msgstr "Пошук мережі"
 
-msgid "New"
-msgstr "Створити"
-
 msgid "New Project"
 msgstr "Новий проект"
 
-msgid "New Value"
-msgstr "Нове значення"
+msgid "New version"
+msgstr "Нова версія"
 
 msgid "New version of %s is available"
 msgstr "Доступна нова версія %s"
@@ -4053,9 +3924,6 @@ msgstr "Без екструзії"
 msgid "No pad can be generated for this model with the current configuration"
 msgstr ""
 "Для цієї моделі з поточною конфігурацією неможливо створити жодну подушку"
-
-msgid "No previously sliced file."
-msgstr "Немає попередньо нарізаного файлу."
 
 msgid "NO RAMMING AT ALL"
 msgstr "ВЗАГАЛІ БЕЗ раммінгу"
@@ -4124,8 +3992,8 @@ msgstr "Температура сопла та столу"
 msgid "Nozzle diameter"
 msgstr "Діаметр сопла"
 
-msgid "Nozzle Diameter:"
-msgstr "Діаметр сопла:"
+msgid "Nozzle Diameter"
+msgstr "Діаметр сопла"
 
 msgid "Nozzle temperature"
 msgstr "Температура сопла"
@@ -4217,8 +4085,8 @@ msgstr "поточного \"Об'єкта\""
 msgid "Offset"
 msgstr "Зміщення"
 
-msgid "Old Value"
-msgstr "Старе значення"
+msgid "OK"
+msgstr "Гаразд"
 
 msgid ""
 "On OSX there is always only one instance of app running by default. However "
@@ -4267,9 +4135,6 @@ msgstr ""
 "Створити підтримку лише, для того, що лежить на збірній пластині. Не "
 "створювати підтримку на друк."
 
-msgid "Only infill where needed"
-msgstr "Заповнити тільки там, де потрібно"
-
 msgid "Only lift Z"
 msgstr "Межі підняття Z"
 
@@ -4289,6 +4154,9 @@ msgid "Ooze prevention is currently not supported with the wipe tower enabled."
 msgstr ""
 "Наразі запобігання просочування не підтримується з увімкненою вежею "
 "витирання."
+
+msgid "Open"
+msgstr "Відкрити…"
 
 msgid "Open a G-code file"
 msgstr "Відкрити файл G-кода"
@@ -4325,9 +4193,6 @@ msgstr "Відкрити новий екземпляр"
 
 msgid "Optimize orientation"
 msgstr "Оптимізувати орієнтацію"
-
-msgid "Optimize Rotation"
-msgstr "Оптимізувати обертання"
 
 msgid ""
 "Optimize travel moves in order to minimize the crossing of perimeters. This "
@@ -4537,9 +4402,6 @@ msgstr "Діаметр стовпів"
 msgid "Pillar widening factor"
 msgstr "Коефіцієнт розширення стовпа"
 
-msgid "Pinhead diameter should be smaller than the pillar diameter."
-msgstr "Діаметр головки стовпа повинен бути менше діаметра стовпа."
-
 msgid "Pinhead front diameter"
 msgstr "Діаметр головки стовпа"
 
@@ -4551,9 +4413,6 @@ msgstr "Розмістіть необхідні деталі в гніздах �
 
 msgid "Place on face"
 msgstr "Поверхнею на стіл"
-
-msgid "Plater"
-msgstr "Платер"
 
 msgid "Please check your object list before preset changing."
 msgstr ""
@@ -4645,9 +4504,6 @@ msgstr "Попередній перегляд"
 
 msgid "Preview hollowed and drilled model"
 msgstr "Попередній перегляд порожнистої та просвердленої моделі"
-
-msgid "Previously sliced file ("
-msgstr "Попередньо нарізаний файл ("
 
 msgid "Prime all printing extruders"
 msgstr "Підготовка всіх друкуючих екструдерів"
@@ -4757,9 +4613,6 @@ msgstr ""
 "0 або support_material_interface_extruder == 0), усі сопла повинні мати "
 "однаковий діаметр."
 
-msgid "Processing %s"
-msgstr "Обробка %s"
-
 msgid "Profile dependencies"
 msgstr "Залежності профілю"
 
@@ -4771,6 +4624,13 @@ msgstr "Прогрес"
 
 msgid "Progress:"
 msgstr "Поступ:"
+
+msgid ""
+"PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap "
+"community."
+msgstr ""
+"PrusaSlicer заснований на Slic3r від Alessandro Ranellucci та спільноти "
+"RepRap."
 
 msgid "Purging volumes"
 msgstr "Обсяги очищення"
@@ -4790,17 +4650,8 @@ msgstr "Якість"
 msgid "Quality / Speed"
 msgstr "Якість / Швидкість"
 
-msgid "Quick"
-msgstr "Швидко"
-
 msgid "Quick Add Settings (%s)"
 msgstr "Швидке додання налаштувань (%s)"
-
-msgid "Quick Slice"
-msgstr "Швидке нарізання"
-
-msgid "Quick Slice and Save As"
-msgstr "Швидко нарізати та зберегти як"
 
 msgid "Quit %s"
 msgstr "Вийти з %s"
@@ -5037,27 +4888,6 @@ msgstr ""
 msgid "Repair"
 msgstr "Відновити"
 
-msgid "Repaired 3MF file contains more than one object"
-msgstr "Відновлений 3MF-файл містить більше одного об'єкта"
-
-msgid "Repaired 3MF file contains more than one volume"
-msgstr "Відновлений 3MF-файл містить більше однієї часті"
-
-msgid "Repaired 3MF file does not contain any object"
-msgstr "Відновлений 3MF-файл не містить жодного об'єкта"
-
-msgid "Repaired 3MF file does not contain any volume"
-msgstr "Відновлений 3MF-файл не містить жодної часті"
-
-msgid "Repairing model by the Netfabb service"
-msgstr "Відновлення моделі службою Netfabb"
-
-msgid "Repeat Last Quick Slice"
-msgstr "Повторити останнє швидке нарізання"
-
-msgid "Repeat last quick slice"
-msgstr "Повторити останнє швидке нарізання"
-
 msgid "Replace with"
 msgstr "Замінити на"
 
@@ -5160,9 +4990,6 @@ msgid "Right button click the icon to change the object settings"
 msgstr ""
 "Клацніть правою кнопкою миші на піктограмі, щоб змінити налаштування об'єкта"
 
-msgid "Right button click the icon to fix STL through Netfabb"
-msgstr "Клацніть правою кнопкою миші, щоб виправити STL за допомогою Netfabb"
-
 msgid "Right click"
 msgstr "Клік на праву кнопку миші"
 
@@ -5183,9 +5010,6 @@ msgstr "Обертати навколо осі X"
 
 msgid "Rotate around Y"
 msgstr "Обертати навколо осі Y"
-
-msgid "Rotate lower part upwards"
-msgstr "Повернути нижню частину вгору"
 
 msgid "Rotate selection 45 degrees CCW"
 msgstr "Повернути вибране на 45 градусів за годинниковою стрілкою"
@@ -5223,11 +5047,8 @@ msgstr "Надіслати на принтер"
 msgid "Save"
 msgstr "Зберегти"
 
-msgid "Save %s as:"
-msgstr "Зберегти %s як:"
-
-msgid "Save %s file as:"
-msgstr "Зберегти файл %s як:"
+msgid "Save as"
+msgstr "Зберегти як"
 
 msgid "Save config file"
 msgstr "Зберегти файл конфігурації"
@@ -5237,9 +5058,6 @@ msgstr "Зберегти конфігурацію як:"
 
 msgid "Save configuration to the specified file."
 msgstr "Зберегти конфігурацію у вказаному файлі."
-
-msgid "Save current %s"
-msgstr "Зберегти поточний %s"
 
 msgid "Save current project file"
 msgstr "Зберегти файл поточного проекту"
@@ -5277,12 +5095,6 @@ msgstr "Зберегти вибрані параметри до пресету \
 msgid "Save the selected options."
 msgstr "Зберегти вибрані параметри."
 
-msgid "Save zip file as:"
-msgstr "Зберегти zip-файл як:"
-
-msgid "Saving mesh into the 3MF container failed."
-msgstr "Не вдалося зберегти сітку в контейнері 3MF."
-
 msgid "Scale"
 msgstr "Масштаб"
 
@@ -5292,10 +5104,10 @@ msgstr "Масштаб"
 msgid "Scale the selected object to fit the print volume"
 msgstr "Масштабуйте вибраний об'єкт відповідно до об'єму столу"
 
-msgid "Scale To Fit"
+msgid "Scale to Fit"
 msgstr "Масштабувати під область друку"
 
-msgid "Scale to Fit"
+msgid "Scale To Fit"
 msgstr "Масштабувати під область друку"
 
 msgid "Scale to fit the given volume."
@@ -5412,6 +5224,9 @@ msgstr ""
 "НІ, якщо ви хочете, щоб усі зміни інструменту було змінено на зміну "
 "кольору,\n"
 "або СКАСУВАТИ, щоб залишити це без змін."
+
+msgid "Selection"
+msgstr "Позначене"
 
 msgid "Selection-Add"
 msgstr "Виділення - Додано"
@@ -5629,9 +5444,6 @@ msgstr "Shift + Ліва кнопка миші:"
 msgid "Shift + Right mouse button:"
 msgstr "Shift + Права кнопка миші:"
 
-msgid "Show"
-msgstr "Показати"
-
 msgid "Show &Configuration Folder"
 msgstr "Показати папку конфігурації"
 
@@ -5724,14 +5536,11 @@ msgstr ""
 "Показати/сховати діалогове вікно налаштувань пристроїв 3Dconnexion, якщо "
 "такі існують"
 
-msgid "Show/Hide Legend and Estimated printing time"
-msgstr "Показати / Сховати легенду та приблизний час друку"
-
 msgid "Show/Hide object/instance labels"
 msgstr "Показати/сховати мітки об’єктів/екземплярів"
 
-msgid "Simple"
-msgstr "Простий"
+msgid "Simple mode"
+msgstr "Простий режим"
 
 msgid "Single extruder MM setup"
 msgstr "Налаштування MM екструдера"
@@ -5836,12 +5645,6 @@ msgstr ""
 msgid "Slice"
 msgstr "Нарізати"
 
-msgid "Slice a file into a G-code"
-msgstr "Нарізати файл у G-код"
-
-msgid "Slice a file into a G-code, save as"
-msgstr "Нарізати файл у G-код, зберегти як"
-
 msgid "Slice gap closing radius"
 msgstr "Радіус закриття зазору зрізу"
 
@@ -5873,17 +5676,8 @@ msgstr "Нарізання завершено"
 msgid "Slicing done"
 msgstr "Нарізання завершено"
 
-msgid "Slicing Done!"
-msgstr "Нарізання завершено!"
-
 msgid "Slicing finished."
 msgstr "Нарізання завершено."
-
-msgid ""
-"Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
-"Нарізання довелося зупинити через внутрішню помилку: Невідповідний індекс "
-"зрізу."
 
 msgid "Slicing model"
 msgstr "Нарізання моделі"
@@ -5974,6 +5768,9 @@ msgstr ""
 "Деякі принтери або налаштування принтера можуть мати труднощі з друкуванням "
 "шарів змінної висоти. Увімкнено за умовчанням."
 
+msgid "Space"
+msgstr "Проміжки"
+
 msgid "Spacing"
 msgstr "Проміжки"
 
@@ -6027,10 +5824,10 @@ msgstr "Швидкість:"
 msgid "Sphere"
 msgstr "Сфера"
 
-msgid "Spiral Vase"
+msgid "Spiral vase"
 msgstr "Спіральна ваза"
 
-msgid "Spiral vase"
+msgid "Spiral Vase"
 msgstr "Спіральна ваза"
 
 msgid "Split"
@@ -6219,9 +6016,6 @@ msgstr ""
 "Заборонити налаштування \"- за замовчуванням -\" у параметрах Друк / "
 "Філамент / Принтер, якщо доступні інші діючі налаштування."
 
-msgid "Suppress to open hyperlink in browser"
-msgstr "Заборонити відкриття гіперпосилань у браузері"
-
 msgid "SVG"
 msgstr "SVG"
 
@@ -6263,14 +6057,6 @@ msgstr ""
 msgid "symbolic profile name"
 msgstr "символічне ім'я профілю"
 
-msgid ""
-"Synchronize support layers with the object print layers. This is useful with "
-"multi-material printers, where the extruder switch is expensive."
-msgstr ""
-"Синхронізувати шари підтримки з шарами друку об'єкта. Це корисно "
-"використовувати з багато-матеріальними принтерами, де перемикання "
-"екструдерів -затратна процедура."
-
 msgid "Synchronize with object layers"
 msgstr "Синхронізувати з шарами об'єкту"
 
@@ -6288,14 +6074,6 @@ msgstr "Зробіть знімок конфігурації"
 
 msgid "Temperature"
 msgstr "Температура"
-
-msgid ""
-"Temperature difference to be applied when an extruder is not active. Enables "
-"a full-height \"sacrificial\" skirt on which the nozzles are periodically "
-"wiped."
-msgstr ""
-"Відмітка температури, яка застосовується, коли екструдер не активний. Вмикає "
-"\"жертовний\" плінтус на повній висоті, на які періодично очищуються сопла."
 
 msgid "Temperature variation"
 msgstr "Варіація температури"
@@ -6331,18 +6109,6 @@ msgid ""
 msgstr ""
 "Поточний власний пресет буде від'єднаний від батьківського системного "
 "пресету."
-
-msgid ""
-"The currently manipulated object is tilted (rotation angles are not "
-"multiples of 90°).\n"
-"Non-uniform scaling of tilted objects is only possible in the World "
-"coordinate system,\n"
-"once the rotation is embedded into the object coordinates."
-msgstr ""
-"В даний час маніпульований об'єкт нахилений (кути повороту не кратні 90 °).\n"
-"Нерівномірне масштабування нахилених предметів можливе лише у світовій "
-"системі координат,\n"
-"як тільки обертання буде вбудовано в координати об’єкта."
 
 msgid "The default angle for connecting support sticks and junctions."
 msgstr "Кут за замовчуванням для з'єднання опорних палочок і з'єднань."
@@ -6424,9 +6190,6 @@ msgstr "Наступні гарячі клавіші застосовуютьс�
 
 msgid "The following SLA printer models have no materials selected:"
 msgstr "Наступні моделі SLA-принтерів не мають вибраного матеріалу:"
-
-msgid "the following suffix is not allowed:"
-msgstr "такий суфікс не допускається:"
 
 msgid ""
 "The gap between the object bottom and the generated pad in zero elevation "
@@ -6522,6 +6285,16 @@ msgstr ""
 msgid "The printer multiplexes filaments into a single hot end."
 msgstr "Принтер змішує філаменту в єдиний гарячий кінець."
 
+msgid ""
+"The selected 3mf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "Вибраний 3MF-файл було збережено з новою версією %1% і не сумісний."
+
+msgid ""
+"The selected amf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "Вибраний АMF-файл було збережено з новою версією %1% і не сумісний."
+
 msgid "The selected file"
 msgstr "Вибраний файл"
 
@@ -6564,22 +6337,6 @@ msgid ""
 msgstr ""
 "Нахил стінки подушки відносно площини столу. 90 градусів означає прямі стіни."
 
-msgid ""
-"The Spiral Vase option can only be used when printing single material "
-"objects."
-msgstr ""
-"Варіант спіральної вази можна використовувати лише під час друку одно-"
-"матеріальних об’єктів."
-
-msgid "The supplied name is empty. It can't be saved."
-msgstr "Надане ім'я порожнє. Не вдається зберегти."
-
-msgid "The supplied name is not available."
-msgstr "Надане ім'я недоступне."
-
-msgid "The supplied name is not valid;"
-msgstr "Надане ім'я недійсне;"
-
 msgid "The supplied settings will cause an empty print."
 msgstr "Надані параметри спричинять порожній друк."
 
@@ -6613,19 +6370,6 @@ msgstr ""
 "друкуються з поточним екструдером, не запускаючи зміну інструменту. (Обидва "
 "значення support_material_extruder і support_material_interface_extruder "
 "повинні бути встановлені на 0)."
-
-msgid ""
-"The Wipe Tower currently supports the non-soluble supports only\n"
-"if they are printed with the current extruder without triggering a tool "
-"change.\n"
-"(both support_material_extruder and support_material_interface_extruder need "
-"to be set to 0)."
-msgstr ""
-"Вежа витирання в даний момент підтримує лише нерозчинні підтримки,\n"
-"якщо вони друкуються з поточним екструдером, не запускаючи зміну "
-"інструменту.\n"
-"(обидва значення support_material_extruder і "
-"support_material_interface_extruder повинні бути встановлені на 0)."
 
 msgid ""
 "The Wipe Tower is currently not supported for multimaterial sequential "
@@ -6720,13 +6464,6 @@ msgid "This %s version: %s"
 msgstr "%s версії %s"
 
 msgid ""
-"This experimental setting uses G10 and G11 commands to have the firmware "
-"handle the retraction. This is only supported in recent Marlin."
-msgstr ""
-"Цей експериментальний параметр використовує команди G10 і G11 для обробки "
-"відмови прошивки. Останнім часом це підтримується лише Marlin-ом."
-
-msgid ""
 "This factor changes the amount of flow proportionally. You may need to tweak "
 "this setting to get nice surface finish and correct single wall widths. "
 "Usual values are between 0.9 and 1.1. If you think you need to change this "
@@ -6737,6 +6474,17 @@ msgstr ""
 "визначити ширину однієї стіни. Звичайні значення - від 0,9 до 1,1. Якщо ви "
 "вважаєте, що його потрібно більше змінити, перевірте діаметр філаменту та E "
 "кроки прошивки ."
+
+msgid ""
+"This feature allows to force a solid layer every given number of layers. "
+"Zero to disable. You can set this to any value (for example 9999); Slic3r "
+"will automatically choose the maximum possible number of layers to combine "
+"according to nozzle diameter and layer height."
+msgstr ""
+"Ця функція дозволяє закріпити суцільні шари на задану кількість шарів. 0 - "
+"щоб відключити. Ви можете встановити будь-яке значення (наприклад, 9999); "
+"Slic3r автоматично вибере максимально можливу кількість шарів для "
+"комбінування відповідно до діаметра сопла та висоти шару."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -6798,22 +6546,6 @@ msgid ""
 "This matrix describes volumes (in cubic milimetres) required to purge the "
 "new filament on the wipe tower for any given pair of tools. "
 msgstr "Ця матриця описує обсяги (у кубічних міліметрах), необхідні для витирання нового філаменту на вежі витирання для будь-якої пари інструментів. "
-
-msgid ""
-"This operation is irreversible.\n"
-"Do you want to proceed?"
-msgstr ""
-"Ця операція незворотна.\n"
-"Ви хочете продовжити?"
-
-msgid ""
-"This option will drop the temperature of the inactive extruders to prevent "
-"oozing. It will enable a tall skirt automatically and move extruders outside "
-"such skirt when changing temperatures."
-msgstr ""
-"Цей параметр знизить температуру неактивних екструдерів, щоб запобігти "
-"протіканню. Це дозволить автоматично ввімкнути високий плінтус та "
-"перемістить екструдери за межі такого плінтуса у разі зміни температури."
 
 msgid ""
 "This option will switch the print order of perimeters and infill, making the "
@@ -6883,16 +6615,6 @@ msgstr ""
 "гамми означає порогове значення з порогом посередині. Така поведінка усуває "
 "згладжування, не втрачаючи дірок у полігонах."
 
-msgid "Threads"
-msgstr "Нитки"
-
-msgid ""
-"Threads are used to parallelize long-running tasks. Optimal threads number "
-"is slightly above the number of available cores/processors."
-msgstr ""
-"Нитки використовуються для паралелізації довготривалих завдань. Оптимальна "
-"кількість ниток трохи перевищує кількість доступних ядер / процесорів."
-
 msgid "Tilt"
 msgstr "Нахил"
 
@@ -6958,14 +6680,8 @@ msgstr ""
 "Щоб використовувати власний CA файл, будь-ласка, імпортуйте його у сховища "
 "сертифікатів / Keychain."
 
-msgid "Toggle %c axis mirroring"
-msgstr "Переключити дзеркальне відображення за осею %c"
-
 msgid "too many files"
 msgstr "забагато файлів"
-
-msgid "Too many overlapping holes."
-msgstr "Забагато отворів, що перекриваються."
 
 msgid "Tool"
 msgstr "Інструмент"
@@ -7286,6 +7002,9 @@ msgstr "Налаштування користувача"
 msgid "validation failed"
 msgstr "не вдалося перевірити"
 
+msgid "Value"
+msgstr "Значення"
+
 msgid "Value is the same as the system value"
 msgstr "Значення таке ж, як системне"
 
@@ -7350,9 +7069,6 @@ msgstr "Вертикальний повзунок - Перемістити ак�
 msgid "Vertical slider - Move active thumb Up"
 msgstr "Вертикальний повзунок - Перемістити активний повзунок вгору"
 
-msgid "View"
-msgstr "Вид"
-
 msgid "View mode"
 msgstr "Режим перегляду"
 
@@ -7383,9 +7099,6 @@ msgstr "Об'ємний"
 
 msgid "Volumetric flow hints not available"
 msgstr "Підказки об'ємного потоку відсутні"
-
-msgid "Volumetric flow rate"
-msgstr "Об'ємна швидкість потоку"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "Об'ємна швидкість потоку (мм³/с)"
@@ -7425,15 +7138,6 @@ msgid ""
 msgstr ""
 "Якщо вибрано, при перетягуванні файлу проекту у програмі відображається "
 "діалогове вікно із запитом вибрати дію щодо файлу, який потрібно завантажити."
-
-msgid ""
-"When printing multi-material objects, this settings will make Slic3r to clip "
-"the overlapping object parts one by the other (2nd part will be clipped by "
-"the 1st, 3rd part will be clipped by the 1st and 2nd etc)."
-msgstr ""
-"Під час друку багато-матеріальних об'єктів ці налаштування дозволять Slic3r "
-"відсікати накладені частини об'єкта одна за одною (друга частина буде "
-"відсічена першою, третя частина буде відсічена першою та другою тощо)."
 
 msgid ""
 "When printing multiple objects or copies, this feature will complete each "
@@ -7527,10 +7231,10 @@ msgstr "Витирати до цього об'єкту"
 msgid "Wipe into this object's infill"
 msgstr "Витирати до наповнення цього об'єкту"
 
-msgid "Wipe Tower"
+msgid "Wipe tower"
 msgstr "Вежа витирання"
 
-msgid "Wipe tower"
+msgid "Wipe Tower"
 msgstr "Вежа витирання"
 
 msgid "wipe tower"
@@ -7627,23 +7331,10 @@ msgstr ""
 msgid "You can't change a type of the last solid part of the object."
 msgstr "Ви не можете змінити тип останньої твердої частини об’єкта."
 
-msgid ""
-"You can't to add the object(s) from %s because of one or some of them "
-"is(are) multi-part"
-msgstr ""
-"Ви не можете додати об’єкт(и) із %s через те, що один або деякі з них "
-"складається з декількох частин"
-
 msgid "You cannot load SLA project with a multi-part object on the bed"
 msgstr ""
 "Ви не можете завантажувати SLA-проект, що містить об'єкт, який складається з "
 "кількох частин"
-
-msgid ""
-"You cannot use non-uniform scaling mode for multiple objects/parts selection"
-msgstr ""
-"Не можна використовувати нерівномірний режим масштабування, коли вибрано "
-"кілька об’єктів/частей"
 
 msgid ""
 "You have just added a G-code for color change, but its value is empty.\n"

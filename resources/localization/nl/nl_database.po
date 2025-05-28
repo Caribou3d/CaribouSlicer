@@ -514,8 +514,20 @@ msgstr "Voeg laagbereik toe"
 msgid "Add Layers"
 msgstr "Voeg lagen toe"
 
+msgid "Add modifier"
+msgstr "Voeg modificator toe"
+
+msgid "Add negative volume"
+msgstr "Voeg negatief volume toe"
+
+msgid "Add one more instance of the selected object"
+msgstr "Voeg een instantie van het geselecteerde object toe"
+
 msgid "Add one or more custom shapes"
 msgstr "Voeg een of meer aangepaste vormen toe"
+
+msgid "Add part"
+msgstr "Voeg onderdeel toe"
 
 msgid "Add pause print"
 msgstr "Voeg printpauze toe"
@@ -534,6 +546,9 @@ msgstr "Voeg preset toe voor deze printer"
 
 msgid "Add selected shape(s) to the bed"
 msgstr "Voeg geselecteerd(e) object(en) toe aan bed"
+
+msgid "Add settings"
+msgstr "Voeg instellingen toe"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "Voeg instellingen voor hoogtebereik toe"
@@ -561,6 +576,12 @@ msgstr "Voeg vorm uit galerij toe"
 
 msgid "Add Shapes from Gallery"
 msgstr "Voeg vormen uit galerij toe"
+
+msgid "Add support blocker"
+msgstr "Voeg supportblokkering toe"
+
+msgid "Add support enforcer"
+msgstr "Voeg supportforcering toe"
 
 msgid "Add support point"
 msgstr "Voeg supportpunt toe"
@@ -681,6 +702,15 @@ msgstr "Sta volgende kleur volgorde toe"
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr ""
 "Staat toe om alleen te schilderen op facetten geselecteerd door: \"%1%\""
+
+msgid "Along X axis"
+msgstr "Over de X-as"
+
+msgid "Along Y axis"
+msgstr "Over de Y-as"
+
+msgid "Along Z axis"
+msgstr "Over de Z-as"
 
 msgid "Alt + Mouse wheel"
 msgstr "Alt + scrollwieltje"
@@ -986,6 +1016,9 @@ msgstr "Dichte bodemlagen"
 msgid "Bottom View"
 msgstr "Onderaanzicht"
 
+msgid "Box"
+msgstr "Blok"
+
 msgid "Bridge"
 msgstr "Brug"
 
@@ -1176,8 +1209,14 @@ msgstr "Wijzig onderdeeltype"
 msgid "Change point head diameter"
 msgstr "Wijzig puntkopdiameter"
 
+msgid "Change the number of instances of the selected object"
+msgstr "Wijzig het aantal instanties van het geselecteerde object"
+
 msgid "Change thumbnail"
 msgstr "Verander miniatuur"
+
+msgid "Change type"
+msgstr "Wijzig type"
 
 msgid "Changes for the critical options"
 msgstr "Aanpassingen voor de kritische opties"
@@ -1239,6 +1278,9 @@ msgstr "Cirkel"
 
 msgid "Circular"
 msgstr "Rond"
+
+msgid "Clear"
+msgstr "Wissen"
 
 msgid "Clear Undo / Redo stack on new project"
 msgstr "Leeg lijst met ongedaan maken / opnieuw doen bij nieuwe projecten"
@@ -2469,6 +2511,9 @@ msgstr "Exporteer AMF"
 msgid "Export AMF file:"
 msgstr "Exporteer AMF-bestand:"
 
+msgid "Export as STL"
+msgstr "Exporteer als STL-bestand"
+
 msgid "Export config"
 msgstr "Exporteer configuratie"
 
@@ -2784,8 +2829,15 @@ msgstr "Vullingshoek"
 msgid "Fill bed"
 msgstr "Vul het bed"
 
+msgid "Fill bed with instances"
+msgstr "Vul het bed met instanties"
+
 msgid "Fill density"
 msgstr "Vullingsdichtheid"
+
+msgid "Fill the remaining area of bed with instances of the selected object"
+msgstr ""
+"Vul het overige deel van het bed met instanties van het geselecteerde object"
 
 msgid "Find"
 msgstr "Zoeken"
@@ -2848,6 +2900,9 @@ msgid "First object layer over raft interface"
 msgstr "Eerste laag van het object boven de raft-interface"
 
 msgid "Fix through NetFabb"
+msgstr "Repareer met NetFabb"
+
+msgid "Fix through the Netfabb"
 msgstr "Repareer met NetFabb"
 
 msgid "Fixing through NetFabb"
@@ -3053,6 +3108,9 @@ msgstr "g/cm³"
 msgid "g/ml"
 msgstr "g/ml"
 
+msgid "Gallery"
+msgstr "Galerij"
+
 msgid "Gap fill"
 msgstr "Gatenvulling"
 
@@ -3229,6 +3287,9 @@ msgstr "Hoogte (mm)"
 
 msgid "Height of the display"
 msgstr "Hoogte van het scherm"
+
+msgid "Height range Modifier"
+msgstr "Modificator voor hoogtebereik"
 
 msgid "Height ranges"
 msgstr "Hoogtebereik"
@@ -4447,6 +4508,9 @@ msgstr "Samenvoegen"
 msgid "Merge all parts to the one single object"
 msgstr "Voeg alle delen samen tot een enkel object"
 
+msgid "Merge objects to the one multipart object"
+msgstr "Voeg objecten samen tot één meerdelig object"
+
 msgid "Merged"
 msgstr "Samengevoegd"
 
@@ -4535,11 +4599,26 @@ msgstr "Minimale snelheid voor bewegingen (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "Minimale wanddikte van een uitgehold model."
 
+msgid "Mirror"
+msgstr "Spiegelen"
+
 msgid "Mirror horizontally"
 msgstr "Spiegel horizontaal"
 
 msgid "Mirror Object"
 msgstr "Spiegel object"
+
+msgid "Mirror the selected object"
+msgstr "Spiegel het geselecteerde object"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "Spiegel het geselecteerde object over de X-as"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "Spiegel het geselecteerde object over de Y-as"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "Spiegel het geselecteerde object over de Z-as"
 
 msgid "Mirror vertically"
 msgstr "Verticaal spiegelen"
@@ -5161,6 +5240,9 @@ msgstr "Open voorkeuren."
 msgid "Open the dialog to modify shape gallery"
 msgstr "Open het venster voor bewerken van de vormengalerij"
 
+msgid "Opening Configuration Assistent"
+msgstr "Configuratiewizard openen"
+
 msgid "Opening new project while some presets are unsaved."
 msgstr "Openen van nieuw project terwijl sommige presets niet opgeslagen zijn."
 
@@ -5624,6 +5706,9 @@ msgstr "Printsnelheid overschrijven"
 msgid "Print&er Settings Tab"
 msgstr "Tabblad printerinstellingen"
 
+msgid "Printable"
+msgstr "Printbaar"
+
 msgid "printer"
 msgstr "printer"
 
@@ -5748,6 +5833,9 @@ msgstr "Kwaliteit / Snelheid"
 
 msgid "Quick"
 msgstr "Snel"
+
+msgid "Quick Add Settings (%s)"
+msgstr "Snel instellingen toevoegen (%s)"
 
 msgid "Quick Slice"
 msgstr "Snel slicen"
@@ -5896,6 +5984,9 @@ msgstr "Herladen van:"
 msgid "Reload the plater from disk"
 msgstr "Herlaad modellen van schijf"
 
+msgid "Reload the selected volumes from disk"
+msgstr "Herlaad de geselecteerde volumes vanaf schijf"
+
 msgid "Remaining errors"
 msgstr "Resterende fouten"
 
@@ -5941,6 +6032,9 @@ msgstr "Verwijder laagbereik"
 msgid "Remove Multi Material painting"
 msgstr "Verwijder multi-materiaal inkleuring"
 
+msgid "Remove one instance of the selected object"
+msgstr "Verwijder een instantie van het geselecteerde object"
+
 msgid "Remove paint-on seam"
 msgstr "Verwijder inkleur-naad"
 
@@ -5965,11 +6059,17 @@ msgstr "Verwijder geselecteerde punten"
 msgid "Remove selection"
 msgstr "Verwijder selectie"
 
+msgid "Remove the selected object"
+msgstr "Verwijder het geselecteerde object"
+
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr "Verwijder gebruikersprofielen (vooraf wordt een opname gemaakt)"
 
 msgid "Remove variable layer height"
 msgstr "Verwijder variable laagdikte"
+
+msgid "Rename"
+msgstr "Hernoem"
 
 msgid "Rename Object"
 msgstr "Hernoem object"
@@ -6032,6 +6132,9 @@ msgstr "Herhaal laatste snelle slice"
 
 msgid "Replace from:"
 msgstr "Vervangen door:"
+
+msgid "Replace the selected volume with new STL"
+msgstr "Vervang het geselecteerde volume met nieuwe STL"
 
 msgid "Replace with"
 msgstr "Vervangen met"
@@ -6297,6 +6400,9 @@ msgstr "Verschaal"
 msgid "Scale factors"
 msgstr "Verschalingsfactoren"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "Verschaal het geselecteerde object tot deze in het printvolume past"
+
 msgid "Scale To Fit"
 msgstr "Verschaal tot het past"
 
@@ -6305,6 +6411,9 @@ msgstr "Verschaal naar passing"
 
 msgid "Scale to fit the given volume."
 msgstr "Verschaal naar passing in het gegeven volume."
+
+msgid "Scale to print volume"
+msgstr "Verschaal tot printvolume"
 
 msgid "Scaling factor or percentage."
 msgstr "Schalingsfactor of percentage."
@@ -6390,6 +6499,9 @@ msgstr "Selecteer printerinstellingentab"
 
 msgid "Select shape from the gallery"
 msgstr "Selecteer vorm uit de galerij"
+
+msgid "Select showing settings"
+msgstr "Selecteer getoonde instellingen"
 
 msgid "Select the language"
 msgstr "Taalselectie"
@@ -6490,6 +6602,12 @@ msgstr "Servicenaam"
 msgid "Set"
 msgstr "Stel in"
 
+msgid "Set as a Separated Object"
+msgstr "Stel in als apart object"
+
+msgid "Set as a Separated Objects"
+msgstr "Stel in als aparte objecten"
+
 msgid "Set auto color changes"
 msgstr "Stel automatische kleurwisseling in"
 
@@ -6498,6 +6616,9 @@ msgstr "Stel de standaardextruder in voor de geselecteerde items"
 
 msgid "Set extruder change for every"
 msgstr "Stel toolwissel in voor elke"
+
+msgid "Set extruder for selected items"
+msgstr "Stel extruder in voor de geselecteerde items"
 
 msgid "Set extruder number for the selected items"
 msgstr "Stel het extrudernummer in voor de geselecteerde items"
@@ -6519,6 +6640,9 @@ msgstr "Activeer onderste markering"
 
 msgid "Set Mirror"
 msgstr "Stel spiegeling in"
+
+msgid "Set number of instances"
+msgstr "Stel aantal instanties in"
 
 msgid "Set numbers of copies to %d"
 msgstr "Stel aantal kopieën in voor %d"
@@ -6768,6 +6892,9 @@ msgstr "Toon/verberg objecten- of instantielabels"
 msgid "Simple"
 msgstr "Eenvoudig"
 
+msgid "Simplify model"
+msgstr "Vereenvoudig model"
+
 msgid "Single extruder MM setup"
 msgstr "Multi-materialsetup met één extruder"
 
@@ -6853,6 +6980,9 @@ msgstr "SLA-supportpunten"
 
 msgid "SLA supports outside the print area were detected."
 msgstr "Er zijn SLA-supports buiten het printbereik gedetecteerd."
+
+msgid "Slab"
+msgstr "Plaat"
 
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
@@ -7129,6 +7259,15 @@ msgstr "Spiraalmodus"
 
 msgid "Split"
 msgstr "Splits"
+
+msgid "Split the selected object"
+msgstr "Verdeel het geselecteerde object"
+
+msgid "Split the selected object into individual objects"
+msgstr "Verdeel het geselecteerde object in individuele objecten"
+
+msgid "Split the selected object into individual parts"
+msgstr "Splits de geselecteerde objecten in individuele onderdelen"
 
 msgid "Split to objects"
 msgstr "Verdeel in objecten"
@@ -8237,6 +8376,12 @@ msgstr "naar"
 msgid "To do that please specify a new name for the preset."
 msgstr "Geef daarvoor een nieuwe naam aan de preset."
 
+msgid "To objects"
+msgstr "Aan objecten"
+
+msgid "To parts"
+msgstr "Aan onderdelen"
+
 msgid ""
 "To specify the system certificate store manually, please set the %1% "
 "environment variable to the correct CA bundle and restart the application."
@@ -9230,9 +9375,6 @@ msgstr "Importeer STL-, OBJ-, AMF- of 3MF-bestanden"
 msgid "Max print speed"
 msgstr "Maximale printsnelheid"
 
-msgid "Opening Configuration Assistent"
-msgstr "Configuratiewizard openen"
-
 msgid ""
 "Please save your project and restart PrusaSlicer. We would be glad if you "
 "reported the issue."
@@ -9514,9 +9656,6 @@ msgstr ""
 "Verwerken van model '%1%' met meer dan 1M facetten kan langzaam zijn. Het "
 "wordt aanbevolen het aantal facetten te reduceren."
 
-msgid "Simplify model"
-msgstr "Vereenvoudig model"
-
 msgid "Simplify"
 msgstr "Vereenvoudig"
 
@@ -9673,144 +9812,8 @@ msgstr "Basisplaat en support"
 msgid "Extrusion Width"
 msgstr "Extrusiebreedte"
 
-msgid "Add part"
-msgstr "Voeg onderdeel toe"
-
-msgid "Add negative volume"
-msgstr "Voeg negatief volume toe"
-
-msgid "Add modifier"
-msgstr "Voeg modificator toe"
-
-msgid "Add support blocker"
-msgstr "Voeg supportblokkering toe"
-
-msgid "Add support enforcer"
-msgstr "Voeg supportforcering toe"
-
-msgid "Select showing settings"
-msgstr "Selecteer getoonde instellingen"
-
-msgid "Quick Add Settings (%s)"
-msgstr "Snel instellingen toevoegen (%s)"
-
-msgid "Remove the selected object"
-msgstr "Verwijder het geselecteerde object"
-
-msgid "Box"
-msgstr "Blok"
-
 msgid "Cylinder"
 msgstr "Cilinder"
-
-msgid "Slab"
-msgstr "Plaat"
-
-msgid "Gallery"
-msgstr "Galerij"
-
-msgid "Height range Modifier"
-msgstr "Modificator voor hoogtebereik"
-
-msgid "Add settings"
-msgstr "Voeg instellingen toe"
-
-msgid "Change type"
-msgstr "Wijzig type"
-
-msgid "Set as a Separated Object"
-msgstr "Stel in als apart object"
-
-msgid "Set as a Separated Objects"
-msgstr "Stel in als aparte objecten"
-
-msgid "Printable"
-msgstr "Printbaar"
-
-msgid "Rename"
-msgstr "Hernoem"
-
-msgid "Fix through the Netfabb"
-msgstr "Repareer met NetFabb"
-
-msgid "Export as STL"
-msgstr "Exporteer als STL-bestand"
-
-msgid "Reload the selected volumes from disk"
-msgstr "Herlaad de geselecteerde volumes vanaf schijf"
-
-msgid "Replace the selected volume with new STL"
-msgstr "Vervang het geselecteerde volume met nieuwe STL"
-
-msgid "Set extruder for selected items"
-msgstr "Stel extruder in voor de geselecteerde items"
-
-msgid "Scale to print volume"
-msgstr "Verschaal tot printvolume"
-
-msgid "Scale the selected object to fit the print volume"
-msgstr "Verschaal het geselecteerde object tot deze in het printvolume past"
-
-msgid "Merge objects to the one multipart object"
-msgstr "Voeg objecten samen tot één meerdelig object"
-
-msgid "Along X axis"
-msgstr "Over de X-as"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "Spiegel het geselecteerde object over de X-as"
-
-msgid "Along Y axis"
-msgstr "Over de Y-as"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "Spiegel het geselecteerde object over de Y-as"
-
-msgid "Along Z axis"
-msgstr "Over de Z-as"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "Spiegel het geselecteerde object over de Z-as"
-
-msgid "Mirror"
-msgstr "Spiegelen"
-
-msgid "Mirror the selected object"
-msgstr "Spiegel het geselecteerde object"
-
-msgid "To objects"
-msgstr "Aan objecten"
-
-msgid "Split the selected object into individual objects"
-msgstr "Verdeel het geselecteerde object in individuele objecten"
-
-msgid "To parts"
-msgstr "Aan onderdelen"
-
-msgid "Split the selected object into individual parts"
-msgstr "Splits de geselecteerde objecten in individuele onderdelen"
-
-msgid "Split the selected object"
-msgstr "Verdeel het geselecteerde object"
-
-msgid "Add one more instance of the selected object"
-msgstr "Voeg een instantie van het geselecteerde object toe"
-
-msgid "Remove one instance of the selected object"
-msgstr "Verwijder een instantie van het geselecteerde object"
-
-msgid "Set number of instances"
-msgstr "Stel aantal instanties in"
-
-msgid "Change the number of instances of the selected object"
-msgstr "Wijzig het aantal instanties van het geselecteerde object"
-
-msgid "Fill bed with instances"
-msgstr "Vul het bed met instanties"
-
-msgid "Fill the remaining area of bed with instances of the selected object"
-msgstr ""
-"Vul het overige deel van het bed met instanties van het geselecteerde object"
 
 msgid "Generic"
 msgstr "Algemeen"
@@ -12807,9 +12810,6 @@ msgstr "Sl&uiten"
 
 msgid "Class not registered."
 msgstr "Klasse niet geregistreerd."
-
-msgid "Clear"
-msgstr "Wissen"
 
 msgid "Clear the log contents"
 msgstr "Wis de inhoud van het logbestand"
@@ -17100,3 +17100,815 @@ msgid "Import STL/3MF/STEP/OBJ/AMF without config, keep plater"
 msgstr ""
 "Importeer STL-, 3MF-, STEP-, OBJ- of AMF-bestanden zonder configuratie en "
 "behoud modellen"
+
+msgid "No extrusions were generated for objects."
+msgstr "Geen extrusies werden gegenereerd voor de objecten."
+
+msgid ""
+"Relative extruder addressing requires resetting the extruder position at "
+"each layer to prevent loss of floating point accuracy. Add \"G92 E0\" to "
+"layer_gcode."
+msgstr ""
+"Relatieve extruderwaarden vereist het resetten van de extruderpositie op "
+"elke laag om decimale onnauwkeurigheid te voorkomen. Voeg \"G92 E0\" toe aan "
+"layer_gcode."
+
+msgid ""
+"\"G92 E0\" was found in before_layer_gcode, which is incompatible with "
+"absolute extruder addressing."
+msgstr ""
+"\"G92 E0\" gevonden in before_layer_gcode, wat niet compatibel is met "
+"absolute positionering."
+
+msgid ""
+"\"G92 E0\" was found in layer_gcode, which is incompatible with absolute "
+"extruder addressing."
+msgstr ""
+"\"G92 E0\" gevonden in layer_gcode, wat niet compatibel is met absolute "
+"positionering."
+
+msgid "Format of G-code thumbnails"
+msgstr "Bestandstype van G-code-voorbeelden"
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr ""
+"Bestandstype van G-code-voorbeelden: PNG voor de beste kwaliteit, JPG voor "
+"kleinste bestand, QOI voor firmware met weinig geheugen"
+
+msgid "G-code substitutions"
+msgstr "G-code-substituties"
+
+msgid "Find / replace patterns in G-code lines and substitute them."
+msgstr "Zoek / vervang patronen in G-coderegels en substitueer ze."
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate for a transition from lower speed to higher speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 1.8 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 20 mm/s) to 5.4 mm³/s "
+"(feedrate 60 mm/s) will take at least 2 seconds."
+msgstr ""
+"Deze experimentele instelling wordt gebruikt om de extrusiesnelheidsratio te "
+"limiteren voor een transitie van lage tot hoge snelheid. Een waarde van 1,8 "
+"mm³/s² verzekert dat een wijziging in extrusieratio van 1,8 mm³/s (0,45 mm "
+"extrusiebreedte, 0,2 mm laagdikte, voedingssnelheid 20 mm/s) naar 5,4 mm³/s "
+"(voedingssnelheid 60 mm/s) tenminste 2 seconden duurt."
+
+msgid ""
+"This experimental setting is used to limit the speed of change in extrusion "
+"rate for a transition from higher speed to lower speed. A value of 1.8 mm³/"
+"s² ensures, that a change from the extrusion rate of 5.4 mm³/s (0.45 mm "
+"extrusion width, 0.2 mm extrusion height, feedrate 60 mm/s) to 1.8 mm³/s "
+"(feedrate 20 mm/s) will take at least 2 seconds."
+msgstr ""
+"Deze experimentele instelling wordt gebruikt om de extrusiesnelheidsratio te "
+"limiteren voor een transitie van hoge tot lage snelheid. Een waarde van 1,8 "
+"mm³/s² verzekert dat een wijziging in extrusieratio van 5,4 mm³/s (0,45 mm "
+"extrusiebreedte, 0,2 mm laagdikte, voedingssnelheid 60 mm/s) naar 1,8 mm³/s "
+"(voedingssnelheid 20 mm/s) tenminste 2 seconden duurt."
+
+msgid "Perimeter generator"
+msgstr "Perimetergeneratie"
+
+msgid ""
+"Classic perimeter generator produces perimeters with constant extrusion "
+"width and for very thin areas is used gap-fill. Arachne engine produces "
+"perimeters with variable extrusion width. This setting also affects the "
+"Concentric infill."
+msgstr ""
+"Klassieke perimetergeneratie produceert perimeters met constante "
+"extrusiebreedte en gebruikt gatenvulling voor dunne stukken. Arachne "
+"produceert perimeters met variabele extrusiebreedte. Deze instelling heeft "
+"ook effect op concentrische vulling."
+
+msgid "Classic"
+msgstr "Klassiek"
+
+msgid "Arachne"
+msgstr "Arachne"
+
+msgid "Perimeter transition length"
+msgstr "Transitielengte voor perimeters"
+
+msgid ""
+"When transitioning between different numbers of perimeters as the part "
+"becomes thinner, a certain amount of space is allotted to split or join the "
+"perimeter segments. If expressed as a percentage (for example 100%), it will "
+"be computed based on the nozzle diameter."
+msgstr ""
+"Bij de overgang naar een verschillend aantal perimeters bij dunnere diktes "
+"wordt een bepaalde ruimte gebruikt om te splitten of samenvoegen van "
+"perimetersegmenten. Als dit wordt uitgedrukt als percentage (bijvoorbeeld "
+"100%), wordt deze berekend op basis van de nozzlediameter."
+
+msgid "Perimeter transitioning filter margin"
+msgstr "Marge voor transitielengte voor perimeters"
+
+msgid ""
+"Prevent transitioning back and forth between one extra perimeter and one "
+"less. This margin extends the range of extrusion widths which follow to "
+"[Minimum perimeter width - margin, 2 * Minimum perimeter width + margin]. "
+"Increasing this margin reduces the number of transitions, which reduces the "
+"number of extrusion starts/stops and travel time. However, large extrusion "
+"width variation can lead to under- or overextrusion problems. If expressed "
+"as a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"Voorkom transities tussen één en meerdere perimeters. Deze marge breidt het "
+"bereik uit van de extrusiebreedte die volgt op [minimale perimeterbreedte - "
+"marge, 2x minimale perimeterbreedte + marge]. Verhogen van deze marge "
+"reduceert het aantal transities, wat het aantal terugtrekkingen verlaagt. "
+"Hoewel, een hogere variatie van de extrusiebreedte kan leiden tot onder- of "
+"overextrusie problemen. Als dit wordt uitgedrukt als percentage "
+"(bijvoorbeeld 25%) wordt dit berekend op basis van de nozzlediameter."
+
+msgid "Perimeter transitioning threshold angle"
+msgstr "Transitiehoek voor perimeters"
+
+msgid ""
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
+msgstr ""
+"When to create transitions between even and odd numbers of perimeters. A "
+"wedge shape with an angle greater than this setting will not have "
+"transitions and no perimeters will be printed in the center to fill the "
+"remaining space. Reducing this setting reduces the number and length of "
+"these center perimeters, but may leave gaps or overextrude."
+
+msgid "Perimeter distribution count"
+msgstr "Perimeterdistributieaantal"
+
+msgid ""
+"The number of perimeters, counted from the center, over which the variation "
+"needs to be spread. Lower values mean that the outer perimeters don't change "
+"in width."
+msgstr ""
+"Het aantal perimeters, geteld vanaf het midden waarover de variatie gespreid "
+"wordt. Lagere waarde betekenen dat de buitenste perimeter niet in breedte "
+"verandert."
+
+msgid "Minimum feature size"
+msgstr "Minimale objectgrootte"
+
+msgid ""
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum perimeter width. If expressed as "
+"a percentage (for example 25%), it will be computed based on the nozzle "
+"diameter."
+msgstr ""
+"Minimale dikte van dunne delen. Delen van het model die dunner zijn dan deze "
+"waarde worden niet geprint, terwijl delen van het model dikker dan de "
+"minimale dikte van dunnen delen worden verbreed tot de minimale "
+"perimeterbreedte. Als dit is uitgedrukt als percentage (bijvoorbeeld 25%), "
+"wordt dit berekend op basis van de nozzlediameter."
+
+msgid "Minimum perimeter width"
+msgstr "Minimale perimeterbreedte"
+
+msgid ""
+"Width of the perimeter that will replace thin features (according to the "
+"Minimum feature size) of the model. If the Minimum perimeter width is "
+"thinner than the thickness of the feature, the perimeter will become as "
+"thick as the feature itself. If expressed as a percentage (for example 85%), "
+"it will be computed based on the nozzle diameter."
+msgstr ""
+"Perimeterbreedte die dunne delen vervangt (volgens de minimale dikte van "
+"dunne delen) van het model. Als die minimale perimeterbreedte dunner is dan "
+"de dikte van de dunne delen, wordt de perimeter net zo dik als het de dunne "
+"delen. Als dit is uitgedrukt als percentage (bijvoorbeeld 85%), dan wordt "
+"dit berekend op basis van de nozzlediameter."
+
+msgid "High viscosity"
+msgstr "Hoge viscositeit"
+
+msgid "Tilt for high viscosity resin"
+msgstr "Draaiing voor hoogvisceuze resin"
+
+msgid "Time of the super slow tilt"
+msgstr "Tijd van de zeer langzame draaiing"
+
+msgid "Taking a configuration snapshot failed."
+msgstr "Configuratiesnapshot nemen is mislukt."
+
+msgid ""
+"PrusaSlicer has encountered an error while taking a configuration snapshot."
+msgstr ""
+"PrusaSlicer heeft een fout opgelopen bij het maken van een "
+"configuratiesnapshot."
+
+msgid "PrusaSlicer error"
+msgstr "PrusaSlicer-fout"
+
+msgid "Continue"
+msgstr "Doorgaan"
+
+msgid "Abort"
+msgstr "Stoppen"
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "PrusaSlicer heeft een fatale fout opgelopen: \"%1%\""
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"De spiraalmodus vereist:\n"
+"- één perimeter\n"
+"- geen dichte toplagen\n"
+"- 0% vullingsdichtheid\n"
+"- geen supportmateriaal\n"
+"- 'Detecteer dunne wanden' uit"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Welkom bij de %s configuratie-assistent"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "Configuratie is gewijzigd in ConfigWizard"
+
+msgid "Configuration Wizard"
+msgstr "Configuratie-assistent"
+
+msgid "Configuration &Wizard"
+msgstr "Configuratie-assistent"
+
+msgid "Select a file"
+msgstr "Selecteer een bestand"
+
+msgid "Continue and import newer configuration?"
+msgstr "Doorgaan en nieuwere configuraties importeren?"
+
+msgid "Loading configuration"
+msgstr "Configuratie aan het laden"
+
+msgid "Restore window position on start"
+msgstr "Herstel vensterpositie na opstarten"
+
+msgid "PrusaSlicer started after a crash"
+msgstr "PrusaSlicer is opgestart na een crash"
+
+msgid ""
+"PrusaSlicer crashed last time when attempting to set window position.\n"
+"We are sorry for the inconvenience, it unfortunately happens with certain "
+"multiple-monitor setups.\n"
+"More precise reason for the crash: \"%1%\".\n"
+"For more information see our GitHub issue tracker: \"%2%\" and \"%3%\"\n"
+"\n"
+"To avoid this problem, consider disabling \"%4%\" in \"Preferences\". "
+"Otherwise, the application will most likely crash again next time."
+msgstr ""
+"PrusaSlicer is de vorige keer gecrasht tijdens een poging om de "
+"vensterpositie in te stellen.\n"
+"Sorry voor het ongemak. Het gebeurt helaas met sommige meer-schermen "
+"opstellingen.\n"
+"Exacte reden van de crash: \"%1%\".\n"
+"For meer informatie, zie onze Github probleemtracker: \"%2%\" en \"%3%\"\n"
+"\n"
+"Overweeg om \"%4%\" in voorkeuren uit te zetten om dit probleem te "
+"voorkomen. Waarschijnlijk zal anders het programma de volgende keer weer "
+"crashen."
+
+msgid "Disable \"%1%\""
+msgstr "\"%1%\" uitschakelen"
+
+msgid "Leave \"%1%\" enabled"
+msgstr "Laat \"%1%\" aanstaan"
+
+msgid "Configuration is editing from ConfigWizard"
+msgstr "Configuratie is aangepast van de configuratiewizard"
+
+msgid "You will not be asked about it again on hyperlinks hovering."
+msgstr "U wordt niet opnieuw gevraagd over het bewegen over hyperlinks."
+
+msgid "Best surface quality"
+msgstr "Beste oppervlaktekwaliteit"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "Optimaliseer objectrotatie voor beste oppervlaktekwaliteit."
+
+msgid "Reduced overhang slopes"
+msgstr "Gereduceerde overhanghellingen"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support "
+"structures.\n"
+"Note that this method will try to find the best surface of the object for "
+"touching the print bed if no elevation is set."
+msgstr ""
+"Optimaliseer objectrotatie voor een minimale hoeveelheid overhangingen die "
+"support nodig hebben.\n"
+"Let op dat deze methode zoekt naar het beste vlak van het object om op het "
+"printbed te leggen als geen verhoging ingesteld is."
+
+msgid "Lowest Z height"
+msgstr "Laagste Z-hoogte"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "Roteer het model voor een minimale hoogte voor snellere printtijd."
+
+msgid "The file does not exist."
+msgstr "Het bestand bestaat niet."
+
+msgid "You have to enter a printer name."
+msgstr "U moet een printernaam invoeren."
+
+msgid "Ask for unsaved changes in project"
+msgstr "Vraag naar niet-opgeslagen wijzigingen in dit project"
+
+msgid ""
+"You will not be asked about it again, when: \n"
+"- Closing PrusaSlicer,\n"
+"- Loading or creating a new project"
+msgstr ""
+"U wordt hier niet opnieuw over gevraagd bij:\n"
+"- het sluiten van PrusaSlicer;\n"
+"- het laden of openen van een nieuw project"
+
+msgid ""
+"Always ask for unsaved changes in project, when: \n"
+"- Closing PrusaSlicer,\n"
+"- Loading or creating a new project"
+msgstr ""
+"Vraag altijd naar niet-opgeslagen wijzigingen in het project als:\n"
+"- PrusaSlicer afgesloten wordt,\n"
+"- Een nieuw project wordt geladen of aangemaakt"
+
+msgid ""
+"Ask to save unsaved changes in presets when closing the application or when "
+"loading a new project"
+msgstr ""
+"Vraag om niet-opgeslagen wijziging op te slaan in presets bij het sluiten "
+"van het programma of het laden van een nieuw project"
+
+msgid ""
+"Always ask for unsaved changes in presets, when: \n"
+"- Closing PrusaSlicer while some presets are modified,\n"
+"- Loading a new project while some presets are modified"
+msgstr ""
+"Vraag altijd naar niet-opgeslagen wijzigingen in presets als:\n"
+"- PrusaSlicer afgesloten wordt terwijl presets zijn gewijzigd,\n"
+"- Een nieuw project wordt geladen terwijl sommige presets zijn gewijzigd"
+
+msgid "Ask for unsaved changes in presets when selecting new preset"
+msgstr ""
+"Vraag naar niet-opgeslagen wijzigingen in presets bij het selecteren van een "
+"nieuwe preset"
+
+msgid ""
+"Always ask for unsaved changes in presets when selecting new preset or "
+"resetting a preset"
+msgstr ""
+"Vraag altijd naar niet-opgeslagen wijzigingen in presets bij het resetten "
+"van een preset of het selecteren van een nieuwe preset"
+
+msgid "Ask for unsaved changes in presets when creating new project"
+msgstr ""
+"Vraag naar niet-opgeslagen wijzigingen in presets bij het aanmaken van een "
+"nieuw project"
+
+msgid "Always ask for unsaved changes in presets when creating new project"
+msgstr ""
+"Vraag altijd naar niet-opgeslagen wijzigingen in presets bij het aanmaken "
+"van een new project"
+
+msgid "If enabled, PrusaSlicer will be open at the position it was closed"
+msgstr ""
+"Als dit is ingeschakeld zal PrusaSlicer openen op de positie waarop die is "
+"afgesloten"
+
+msgid "Set settings tabs as menu items"
+msgstr "Stel instellingentabs in als menu-onderdelen"
+
+msgid "Dark mode"
+msgstr "Donkere modus"
+
+msgid "Pressure equalizer (experimental)"
+msgstr "Drukverdeler (experimenteel)"
+
+msgid "Arachne perimeter generator"
+msgstr "Arachne-perimetergeneratie"
+
+msgid "Regular expression"
+msgstr "Reguliere uitdrukking"
+
+msgid "Case insensitive"
+msgstr "Hoofdletterongevoelig"
+
+msgid "Match single line"
+msgstr "Laat overeenkomen met enkele lijn"
+
+msgid "Are you sure you want to delete all substitutions?"
+msgstr "Weet je zeker dat je alle substituties wilt verwijderen?"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time you "
+"create new project"
+msgstr ""
+"U wordt niet gevraagd naar niet-opgeslagen wijzigingen in presets de "
+"volgende keer als u een nieuw project aanmaakt"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time you "
+"switch a preset"
+msgstr ""
+"U wordt niet gevraagd naar niet-opgeslagen wijzigingen in presets de "
+"volgende keer als u wisselt van preset"
+
+msgid ""
+"You will not be asked about the unsaved changes in presets the next time "
+"you: \n"
+"- Closing PrusaSlicer while some presets are modified,\n"
+"- Loading a new project while some presets are modified"
+msgstr ""
+"U wordt niet gevraagd naar niet-opgeslagen wijzigingen in presets de "
+"volgende keer als:\n"
+"- PrusaSlicer afgesloten wordt terwijl sommige presets zijn aangepast;\n"
+"- een nieuw project wordt geladen terwijl sommige presets zijn aangepast"
+
+msgid "Select presets to compare"
+msgstr "Selecteer presets om te vergelijken"
+
+msgid "Changelog & Download"
+msgstr "Wijzigingslogboek downloaden"
+
+msgid "Opening Configuration Wizard"
+msgstr "Configuratiewizard openen"
+
+msgid ""
+"Fuzzy skin\n"
+"Did you know that you can create rough fibre-like texture on the sides of "
+"your models using the<a>Fuzzy skin</a>feature? You can also use modifiers to "
+"apply fuzzy-skin only to a portion of your model."
+msgstr ""
+"Oneffen oppervlak\n"
+"Wist u dat u een vezelachtige textuur op de zijden van uw object kan "
+"aanbrengen met de <a>Oneffen oppervlak<a/> optie? U kunt ook modificators "
+"toepassen op een oneffen oppervlak voor een gedeelte van het model."
+
+msgid ""
+"Shapes gallery\n"
+"Did you know that PrusaSlicer has a Shapes Gallery? You can use the included "
+"models as modifiers, negative volumes or as printable objects. Right-click "
+"the platter and select<a>Add Shape - Gallery</a>."
+msgstr ""
+"Vormengalerij\n"
+"Wist u dat PrusaSlicer een vormengalerij heeft? U kunt de vormen daaruit "
+"gebruiken als modificators, negatieve volumes, of als printbare objecten. "
+"Rechtermuisklik in de modelweergave en selecteer <a>Voeg vorm toe - "
+"galerij<a/>."
+
+msgid ""
+"Arrange settings\n"
+"Did you know that you can right-click the<a>Arrange icon</a>to adjust the "
+"size of the gap between objects and to allow automatic rotations?"
+msgstr ""
+"Schikken-instellingen\n"
+"Wist u dat u met de rechtermuisklik op het <a>Schikken icoon<a/> de afstand "
+"tussen de objecten en automatisch roteren kunt instellen?"
+
+msgid ""
+"Negative volume\n"
+"Did you know that you can subtract one mesh from another using the Negative "
+"volume modifier? That way you can, for example, create easily resizable "
+"holes directly in PrusaSlicer. Read more in the documentation. (Requires "
+"Advanced or Expert mode.)"
+msgstr ""
+"Negatief volume\n"
+"Wist u dat u volumes van elkaar kunt aftrekken met een negatief volume als "
+"modificator? Daarmee kunt u bijvoorbeeld makkelijk verschaalbare gaten "
+"aanbrengen, direct in PrusaSlicer. Lees meer in de documentatie (vereist "
+"geavanceerde- of expertmodus)."
+
+msgid ""
+"Simplify mesh\n"
+"Did you know that you can reduce the number of triangles in a mesh using the "
+"Simplify mesh feature? Right-click the model and select Simplify model. Read "
+"more in the documentation."
+msgstr ""
+"Mesh vereenvoudigen\n"
+"Wist u dat het u het aantal facetten van een mesh kunt reduceren met de Mesh "
+"vereenvoudigen optie? Rechtermuisklik op het model en selecteer Mesh "
+"vereenvoudigen. Lees meer in de documentatie."
+
+msgid ""
+"Reload from disk\n"
+"Did you know that if you created a newer version of your model, you can "
+"simply reload it in PrusaSlicer? Right-click the model in the 3D view and "
+"choose Reload from disk. Read more in the documentation."
+msgstr ""
+"Herlaad van schijf\n"
+"Wist u dat als u een nieuwere versie van het model heeft gemaakt, u deze "
+"eenvoudig kunt herladen in PrusaSlicer? Rechtermuisklik op het model in de "
+"modelweergave en kies Herlaad van schijf. Lees meer in de documentatie."
+
+msgid ""
+"Hiding sidebar\n"
+"Did you know that you can hide the right sidebar using the shortcut <b>Shift"
+"+Tab</b>? You can also enable the icon for this from the<a>Preferences</a>."
+msgstr ""
+"Verberg zijbalk\n"
+"Wist u dat u de rechter zijbalk kan verbergen met de sneltoets <b>Shift+Tab</"
+"b>? U kunt ook het icoontje aanzetten via de <a>Voorkeuren</a>."
+
+msgid ""
+"Perspective camera\n"
+"Did you know that you can use the <b>K</b> key to quickly switch between an "
+"orthographic and perspective camera?"
+msgstr ""
+"Perspectiefweergave\n"
+"Wist u dat u de <b>K<b/>-toets kunt gebruiken om snel te schakelen tussen "
+"orthografische en perspectiefweergave?"
+
+msgid ""
+"Camera Views\n"
+"Did you know that you can use the number keys <b>0-6</b> to quickly switch "
+"between predefined camera angles?"
+msgstr ""
+"Weergave\n"
+"Wist us dat u de getallen <b>0-6</b> kunt gebruiken voor het snel schakelen "
+"tussen vooraf ingestelde camerahoeken?"
+
+msgid ""
+"Place on face\n"
+"Did you know that you can quickly orient a model so that one of its faces "
+"sits on the print bed? Select the<a>Place on face</a>function or press the "
+"<b>F</b> key."
+msgstr ""
+"Plaats op vlak\n"
+"Wist u dat u snel een model zo kan oriënteren dat het met een vlak van het "
+"model op het bed geplaatst wordt? Selecteer <a>Plaats op vlak</a>-functie of "
+"druk op de <b>F</b>-toets."
+
+msgid ""
+"Set number of instances\n"
+"Did you know that you can right-click a model and set an exact number of "
+"instances instead of copy-pasting it several times?"
+msgstr ""
+"Stel aantal instanties in\n"
+"Wist u dat u met de rechtermuisklik op een model een exact aantal instanties "
+"kan instellen zonder meerdere keren te kopiëren en plakken?"
+
+msgid ""
+"Combine infill\n"
+"Did you know that you can print the infill with a higher layer height "
+"compared to perimeters to save print time using the setting<a>Combine infill "
+"every</a>."
+msgstr ""
+"Combineer vulling\n"
+"Wist u dat u tijd kunt besparen door de laagdikte van de vulling te "
+"vermenigvuldigen ten opzichte van die van de perimeters met de instelling "
+"<a>Combineer vulling elke</a>."
+
+msgid ""
+"Variable layer height\n"
+"Did you know that you can print different regions of your model with a "
+"different layer height and smooth the transitions between them? Try "
+"the<a>Variable layer height tool</a>. (Not available for SLA printers.)"
+msgstr ""
+"Variabele laagdikte\n"
+"Wist u dat u verschillende delen van uw model kunt printen met een "
+"verschillende laagdikte om zo transities tussen delen vloeiender te maken? "
+"Probeer de <a>Variabele laagdikte</a>. (Niet beschikbaar voor SLA printers.)"
+
+msgid ""
+"Undo/redo history\n"
+"Did you know that you can right-click the<a>undo/redo arrows</a>to see the "
+"history of changes and to undo or redo several actions at once?"
+msgstr ""
+"Ongedaan maken / Opnieuw doen lijst\n"
+"Wist u dat u met de rechtermuisklik op <a>Ongedaan maken / opnieuw doen "
+"pijlen</a> kunt klikken voor een lijst van aanpassingen en meerdere acties "
+"tegelijk kunt doen?"
+
+msgid ""
+"Different layer height for each model\n"
+"Did you know that you can print each model on the plater with a different "
+"layer height? Right-click the model in the 3D view, choose Layers and "
+"Perimeters and adjust the values in the right panel. Read more in the "
+"documentation."
+msgstr ""
+"Verschillende laagdikte voor elk model\n"
+"Wist u dat u elk model op het bed met een andere laagdikte kunt printen? "
+"Rechtermuisklik op het model in de modelweergave, kies Lagen en Perimeters "
+"en pas de waarde aan in het rechter menu. Lees meer in de documentatie."
+
+msgid ""
+"Solid infill threshold area\n"
+"Did you know that you can make parts of your model with a small cross-"
+"section be filled with solid infill automatically? Set the<a>Solid infill "
+"threshold area</a>. (Expert mode only.)"
+msgstr ""
+"Dichte vulling bij oppervlak\n"
+"Wist u dat u delen van uw model met een klein doorsnee-oppervlak automatisch "
+"met dichte vulling kan vullen? Stel de optie <a>Dichte vulling bij "
+"oppervlak</a> in. (alleen in expertmodus)."
+
+msgid ""
+"Search functionality\n"
+"Did you know that you use the<a>Search</a>tool to quickly find a specific "
+"PrusaSlicer setting? Or use the familiar shortcut <b>Ctrl+F</b>."
+msgstr ""
+"Zoekfuncties\n"
+"Wist u dat u de <a>Zoekfunctie</a> kunt gebruiken om snel een specifieke "
+"instelling in PrusaSlicer te vinden? Of gebruik de bekende sneltoets <b>Ctrl"
+"+F</b>."
+
+msgid ""
+"Box selection\n"
+"Did you know that you can do a box selection with Shift+Mouse drag? You can "
+"also box-deselect objects with <b>Alt+Mouse drag</b>."
+msgstr ""
+"Boxselectie\n"
+"Wist u dat u een boxselectie kunt doen door Shift in te drukken en dan met "
+"de muis te slepen? U kunt ook deselecteren op deze manier met <b>Alt+muis "
+"bewegen</b>."
+
+msgid ""
+"Zoom on selected objects or on all objects if none selected\n"
+"Did you know that you can zoom in on selected objects by pressing the <b>Z</"
+"b> key? If none are selected, the camera will zoom on all objects in the "
+"scene."
+msgstr ""
+"Zoom op geselecteerde objecten of op alle objecten als geen geselecteerd is\n"
+"Wist u dat u in kunt zoomen op geselecteerde objecten door te drukken op de "
+"<b>Z</b>-toets? Als niets geselecteerd is, wordt ingezoomd op alle objecten."
+
+msgid ""
+"Printable toggle\n"
+"Did you know that you can disable the G-code generation for the selected "
+"model without having to move or delete it? Toggle the Printable property of "
+"a model from the Right-click context menu."
+msgstr ""
+"Als printbaar instellen\n"
+"Wist u dat u G-code-generatie kunt uitzetten voor geselecteerde modellen "
+"zonder deze te verplaatsen of verwijderen? Zet de Printbaar-optie aan of uit "
+"van een model met de rechtermuisklik op een object."
+
+msgid ""
+"Mirror\n"
+"Did you know that you can mirror the selected model to create a reversed "
+"version of it? Right-click the model, select Mirror and pick the mirror axis."
+msgstr ""
+"Spiegelen\n"
+"Wist u dat u de geselecteerde modellen kunt spiegelen om een omgekeerd "
+"object te verkrijgen? Rechtermuisklik op het model, kies voor Spiegelen en "
+"kies over welke as gespiegeld moet worden."
+
+msgid ""
+"PageUp / PageDown quick rotation by 45 degrees\n"
+"Did you know that you can quickly rotate selected models by 45 degrees "
+"around the Z-axis clockwise or counter-clockwise by pressing <b>Page Up</b> "
+"or <b>Page Down</b> respectively?"
+msgstr ""
+"PageUp / PageDown snel roteren bij 45 graden\n"
+"Wist u dat u snel modellen kunt roteren over 45 graden rond de Z-as (met de "
+"klok mee of er tegenin) door te klikken op de <b>PageUp</b>- of <b>PageDown</"
+"b>-toetsen?"
+
+msgid ""
+"Load config from G-code\n"
+"Did you know that you can use File-Import-Import Config to load print, "
+"filament and printer profiles from an existing G-code file? Similarly, you "
+"can use File-Import-Import SL1 / SL1S archive, which also lets you "
+"reconstruct 3D models from the voxel data."
+msgstr ""
+"Laad configuratie van G-code\n"
+"Wist u dat u een configuratie voor printen, filament, en printerprofielen "
+"kunt laden door te klikken op Bestand - Importeer - Importeer configuratie? "
+"Dit geldt ook voor SL1 / SL1S archieven die u een 3D-model laten "
+"reconstrueren van de voxel-data."
+
+msgid ""
+"Ironing\n"
+"Did you know that you can smooth top surfaces of prints using Ironing? The "
+"nozzle will run a special second infill phase at the same layer to fill in "
+"holes and flatten any lifted plastic. Read more in the documentation. "
+"(Requires Advanced or Expert mode.)"
+msgstr ""
+"Strijken\n"
+"Wist u dat u een glad bovenoppervlak kunt maken door deze te laten strijken? "
+"De nozzle gaat dan nogmaals over het oppervlak om kleine gaatjes te vullen "
+"en oneffenheden plat te drukken (vereist geavanceerde of expertmodus). Lees "
+"meer in de documentatie."
+
+msgid ""
+"Paint-on supports\n"
+"Did you know that you can paint directly on the object and select areas, "
+"where supports should be enforced or blocked? Try the<a>Paint-on supports</"
+"a>feature. (Requires Advanced or Expert mode.)"
+msgstr ""
+"Support schilderen\n"
+"Wist u dat u direct op het model regios kunt schilderen waar support moet of "
+"niet mag worden geplaatst? Probeer de <a>support schilderen</a>-functie "
+"(vereist geavanceerde of expertmodus)."
+
+msgid ""
+"Paint-on seam\n"
+"Did you know that you can paint directly on the object and select where to "
+"place the start/endpoint of each perimeter loop? Try the<a>Seam painting</"
+"a>feature. (Requires Advanced or Expert mode.)"
+msgstr ""
+"Naad schilderen\n"
+"Wist u dat u direct op het model regios kunt schilderen waar de naad zich "
+"moet bevinden? Probeer de <a>Naad schilderen</a>-functie (vereist "
+"geavanceerde of expertmodus)."
+
+msgid ""
+"Insert Pause\n"
+"Did you know that you can schedule the print to pause at a specific layer? "
+"Right-click the layer slider in the Preview and select Add pause print "
+"(M601). This can be used to insert magnets, weights or nuts into your "
+"prints. Read more in the documentation."
+msgstr ""
+"Pauze invoegen\n"
+"Wist u dat u een pauze kunt inplannen op een specifieke laag? "
+"Rechtermuisklik op de slider in de sliceweergave en selecteer Voeg pauze toe "
+"(M601). Dit kan handig zijn voor het plaatsen van magneetjes, gewichtjes, "
+"moertjes, etc. in het model. Lees meer in de documentatie."
+
+msgid ""
+"Insert Custom G-code\n"
+"Did you know that you can insert a custom G-code at a specific layer? Left-"
+"click the layer in the Preview, Right-click the plus icon and select Add "
+"custom G-code. With this function you can, for example, create a temperature "
+"tower. Read more in the documentation."
+msgstr ""
+"Custom G-code invoegen\n"
+"Wist u dat u een custom G-code kunt invoegen op een specifieke laag? "
+"Linkermuisklik op de laag in de voorbeeldweergave. Dan rechtermuisklik het "
+"plus-icoon en selecteer Voeg custom G-code toe. Met deze functie kunt u "
+"bijvoorbeeld een temperatuurtoren printen. Lees meer in de documentatie."
+
+msgid ""
+"Configuration snapshots\n"
+"Did you know that you can roll back to a complete backup of all system and "
+"user profiles? You can view and move back and forth between snapshots using "
+"the Configuration - <a>Configuration snapshots menu</a>."
+msgstr ""
+"Configuratiesnapshots\n"
+"Wist u dat u terug kunt gaan naar een complete backup van alle systeem- en "
+"gebruikersprofielen? U kunt heen en weer bewegen tussen snapshots door "
+"middel van het <a>Configuratiesnapshots-menu</a>."
+
+msgid ""
+"Minimum shell thickness\n"
+"Did you know that instead of the number of top and bottom layers, you can "
+"define the<a>Minimum shell thickness</a>in millimeters? This feature is "
+"especially useful when using the variable layer height function."
+msgstr ""
+"Minimale shelldikte\n"
+"Wist u dat u in plaats van het aantal boven- en onderlagen de <a>Minimale "
+"shelldikte</a> kunt aangeven? Deze optie is handig wanneer een variabele "
+"laagdikte wordt gebruikt."
+
+msgid ""
+"Settings in non-modal window\n"
+"Did you know that you can open the Settings in a new non-modal window? This "
+"means you can have settings open on one screen and the G-code Preview on the "
+"other. Go to the<a>Preferences</a>and select Settings in non-modal window."
+msgstr ""
+"Instellingen in niet-modaal venster\n"
+"Wist u dat u de instellingen kunt openen in een niet-modaal venster? Dit "
+"houdt in dat u de instellingen open kunt hebben staan op één scherm en de "
+"sliceweergave op een ander scherm. Ga naar <a>Voorkeuren</a> en selecteer "
+"Instellingen in niet-modaal venster."
+
+msgid ""
+"Adaptive infills\n"
+"Did you know that you can use the Adaptive cubic and Support cubic infills "
+"to decrease the print time and lower the filament consumption? Read more in "
+"the documentation."
+msgstr ""
+"Adaptieve vulling\n"
+"Wist u dat u adaptief kubische en ondersteunend kubische vulling kunt "
+"gebruiken om de printtijd te verkorten en de hoeveelheid filament te "
+"reduceren? Lees meer in de documentatie."
+
+msgid ""
+"Lightning infill\n"
+"Did you know that you can use the Lightning infill to support only the top "
+"surfaces, save a lot of the filament, and decrease the print time? Read more "
+"in the documentation."
+msgstr ""
+"Bliksemvulling\n"
+"Wist u dat u bliksemvulling kunt toepassen om alleen topvlakken te "
+"ondersteunen? Dit bespaart veel filament en reduceert de printtijd. Lees "
+"meer in de documentatie."
+
+msgid ""
+"Fullscreen mode\n"
+"Did you know that you can switch PrusaSlicer to fullscreen mode? Use the "
+"<b>F11</b> hotkey."
+msgstr ""
+"Volledig scherm\n"
+"Wist u dat u in PrusaSlicer kunt wisselen naar volledig scherm? Gebruik "
+"daarvoor de <b>F11</b>-toets."

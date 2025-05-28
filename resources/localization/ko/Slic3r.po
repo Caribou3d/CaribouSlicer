@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Slic3r\n"
-"POT-Creation-Date: 2024-06-11 00:00\n"
-"PO-Revision-Date: 2024-06-11 00:00\n"
+"POT-Creation-Date: 2025-05-29 00:00\n"
+"PO-Revision-Date: 2025-05-29 00:00\n"
 "Last-Translator:\n"
 "Language-Team:\n"
 "MIME-Version: 1.0\n"
@@ -78,21 +78,6 @@ msgstr ""
 msgid "%s View Mode"
 msgstr "%s 보기 모드"
 
-msgid ""
-"%s will now start updates. Otherwise it won't be able to start.\n"
-"\n"
-"Note that a full configuration snapshot will be created first. It can then "
-"be restored at any time should there be a problem with the new version.\n"
-"\n"
-"Updated configuration bundles:"
-msgstr ""
-"%s는 이제 업데이트를 시작합니다. 그렇지 않으면 시작할 수 없습니다.\n"
-"\n"
-"전체 구성 스냅숏이 먼저 만들어집니다. 그런 다음 새 버전에 문제가 있으면 언제"
-"든지 복원 할 수 있습니다.\n"
-"\n"
-"업데이트된 구성 번들:"
-
 msgid "&About %s"
 msgstr "%s 에 대하여"
 
@@ -101,6 +86,9 @@ msgstr "&구성"
 
 msgid "&Configuration Snapshots"
 msgstr "구성 스냅샷"
+
+msgid "&Convert"
+msgstr "목차"
 
 msgid "&Copy"
 msgstr "&복사 "
@@ -176,9 +164,6 @@ msgstr "지금(다시)자르기"
 
 msgid "(Unknown)"
 msgstr "(알 수 없음)"
-
-msgid ") not found."
-msgstr ")을 찾을 수 없습니다."
 
 msgid "3D editor view"
 msgstr "3D 편집화면 보기"
@@ -333,6 +318,13 @@ msgstr "하위 객체(object)에 대한 설정 추가"
 msgid "Add Shape"
 msgstr "모양 추가"
 
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)."
+msgstr ""
+"경사 표면 근처에 솔리드 인필을 추가하여 수직 셸 두께(상단+하단 솔리드 레이어)"
+"를 보장하십시오."
+
 msgid "Add support blocker"
 msgstr "서포트 금지영역(blocker) 추가"
 
@@ -369,6 +361,9 @@ msgstr "주소"
 msgid "Advanced"
 msgstr "고급"
 
+msgid "Advanced mode"
+msgstr "고급 모드"
+
 msgid "Advanced: Output log"
 msgstr "고급: 출력 로그"
 
@@ -396,6 +391,9 @@ msgstr "XY 정렬"
 
 msgid "Aligned"
 msgstr "정렬"
+
+msgid "Alignment"
+msgstr "정렬(&A)"
 
 msgid "All"
 msgstr "모두 선택"
@@ -572,10 +570,10 @@ msgstr "배드 사용자 정의 모델"
 msgid "Bed custom texture"
 msgstr "배드 사용자 정의 질감"
 
-msgid "Bed Shape"
+msgid "Bed shape"
 msgstr "배드 모양"
 
-msgid "Bed shape"
+msgid "Bed Shape"
 msgstr "배드 모양"
 
 msgid "Bed Shape and Size"
@@ -584,8 +582,8 @@ msgstr "배드 모양과 크기"
 msgid "Bed temperature"
 msgstr "배드 온도"
 
-msgid "Bed Temperature:"
-msgstr "배드 온도 :"
+msgid "Bed Temperature"
+msgstr "배드 온도"
 
 msgid "Before layer change G-code"
 msgstr "레이어 변경 전 G 코드"
@@ -641,20 +639,8 @@ msgstr "브릿지 채움"
 msgid "Bridges"
 msgstr "브릿지(Bridges)"
 
-msgid "Bridges fan speed"
-msgstr "브릿지 팬 속도"
-
 msgid "Bridging angle"
 msgstr "브릿지 각도"
-
-msgid ""
-"Bridging angle override. If left to zero, the bridging angle will be "
-"calculated automatically. Otherwise the provided angle will be used for all "
-"bridges. Use 180° for zero angle."
-msgstr ""
-"브리징 각도 오버라이드(override)값이. 왼쪽으로 0 일 경우 브리징 각도가 자동으"
-"로 계산됩니다. 그렇지 않으면 제공된 각도가 모든 브리지에 사용됩니다. 각도 제"
-"로는 180 °를 사용하십시오."
 
 msgid "Bridging volumetric"
 msgstr "브리징(Bridging) 용적"
@@ -702,6 +688,9 @@ msgstr ""
 
 msgid "Cannot overwrite a system profile."
 msgstr "시스템 프로파일을 겹쳐 쓸 수 없습니다."
+
+msgid "Cannot overwrite an external profile."
+msgstr "외부 프로필을 덮어 쓸 수 없습니다."
 
 msgid ""
 "Cannot proceed without support points! Add support points or disable support "
@@ -770,9 +759,6 @@ msgstr "구성 업데이트 확인"
 msgid "Choose a file to import bed texture from (PNG/SVG):"
 msgstr "(PNG /SVG)에서 배드 텍스처를 가져올 파일을 선택합니다."
 
-msgid "Choose a file to slice (STL/OBJ/AMF/3MF/PRUSA):"
-msgstr "슬라이스 할 파일을 선택하십시오 (STL / OBJ / AMF / 3MF / PRUSA):"
-
 msgid "Choose an STL file to import bed model from:"
 msgstr "다음에서 베드 모델을 가져올 STL 파일을 선택합니다:"
 
@@ -781,9 +767,6 @@ msgstr "가져올 베드 모양을(STL 파일) 선택합니다:"
 
 msgid "Choose one file (3MF/AMF):"
 msgstr "파일(3MF/AMF) 선택:"
-
-msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/PRUSA):"
-msgstr "파일을 선택하세요 (STL/3MF/STEP/OBJ/AMF/PRUSA):"
 
 msgid "Choose the type of firmware used by your printer."
 msgstr "프린터에 업로드 할 펌웨어를 선택하세요."
@@ -802,9 +785,6 @@ msgstr "아이콘을 클릭 하여 오브젝트 설정을 변경 합니다"
 
 msgid "Click to edit preset"
 msgstr "사전 설정을 편집 하려면 클릭 하십시오"
-
-msgid "Clip multi-part objects"
-msgstr "여러 부품(Part) 객체(object) 클립"
 
 msgid "Clipping of view"
 msgstr "갈무리된것 보기"
@@ -887,6 +867,9 @@ msgstr "구성 업데이트를 사용할 수 있음."
 msgid "Configuration updates"
 msgstr "구성 업데이트"
 
+msgid "Confirm"
+msgstr "확인"
+
 msgid "Confirmation"
 msgstr "확인"
 
@@ -922,9 +905,6 @@ msgstr "클립보드로 복사"
 
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
-
-msgid "Copying of the temporary G-code to the output G-code failed"
-msgstr "임시 G 코드를 출력 G 코드에 복사 하지 못했습니다"
 
 msgid "Copyright"
 msgstr "저작권"
@@ -1024,6 +1004,9 @@ msgstr "평면으로 절단"
 msgid "Cut model at the given Z."
 msgstr "지정된 Z에서 모델을 잘라냅니다."
 
+msgid "Cylinder"
+msgstr "원통"
+
 msgid "Data directory"
 msgstr "데이터 디렉터리"
 
@@ -1036,10 +1019,10 @@ msgstr "압축 풀기 실패 또는 아카이브가 손상 되었습니다"
 msgid "Decrease Instances"
 msgstr "복제본 감소"
 
-msgid "default"
+msgid "Default"
 msgstr "기본값"
 
-msgid "Default"
+msgid "default"
 msgstr "기본값"
 
 msgid ""
@@ -1054,10 +1037,10 @@ msgstr ""
 msgid "Default extrusion width"
 msgstr "기본 압출 폭"
 
-msgid "default filament profile"
+msgid "Default filament profile"
 msgstr "기본 필라멘트 프로파일"
 
-msgid "Default filament profile"
+msgid "default filament profile"
 msgstr "기본 필라멘트 프로파일"
 
 msgid ""
@@ -1068,10 +1051,13 @@ msgstr ""
 "현재 프린터 프로파일과 연관된 기본 필라멘트 프로파일. 현재 프린터 프로파일을 "
 "선택하면 이 필라멘트 프로파일이 활성화됩니다."
 
-msgid "default print profile"
-msgstr "기본 인쇄 프로파일"
+msgid "Default font"
+msgstr "기본 글꼴"
 
 msgid "Default print profile"
+msgstr "기본 인쇄 프로파일"
+
+msgid "default print profile"
 msgstr "기본 인쇄 프로파일"
 
 msgid ""
@@ -1082,10 +1068,10 @@ msgstr ""
 "현재 프린터 프로파일과 연관된 기본 인쇄 프로파일. 현재 프린터 프로파일을 선택"
 "하면이 인쇄 프로파일이 활성화됩니다."
 
-msgid "default SLA material profile"
+msgid "Default SLA material profile"
 msgstr "기본 SLA 재질 프로 파일"
 
-msgid "Default SLA material profile"
+msgid "default SLA material profile"
 msgstr "기본 SLA 재질 프로 파일"
 
 msgid "default SLA print profile"
@@ -1145,9 +1131,6 @@ msgstr "선택된 것 삭제"
 msgid "Delete selected"
 msgstr "선택 삭제"
 
-msgid "Delete Selected Item"
-msgstr "선택한 항목(item) 삭제"
-
 msgid "Delete Selected Objects"
 msgstr "선택한 객체(object) 삭제"
 
@@ -1159,9 +1142,6 @@ msgstr "하위 객체(object) 삭제"
 
 msgid "Delete support point"
 msgstr "서포트 지점 삭제"
-
-msgid "Delete this preset"
-msgstr "이전 설정 삭제"
 
 msgid "Delete tool change"
 msgstr "도구 변경 삭제"
@@ -1268,6 +1248,9 @@ msgid ""
 "when unloaded. This should match the value in printer firmware. "
 msgstr "언로딩시 필라멘트 위치에서 압출기 팁의 거리. 이 값은 프린터 펌웨어의 값과 일치해야합니다. "
 
+msgid "Divide by zero"
+msgstr "0"
+
 msgid "Do not fail if a file supplied to --load does not exist."
 msgstr "로드에 제공 된 파일이 없는 경우 실패 하지 않습니다."
 
@@ -1276,15 +1259,6 @@ msgid ""
 "coordinates."
 msgstr ""
 "병합하기 전에 지정된 모델을 재정렬하고 원래 XY 좌표를 유지하지 마십시오."
-
-msgid ""
-"Do you mean %s%% instead of %s %s?\n"
-"Select YES if you want to change this value to %s%%, \n"
-"or NO if you are sure that %s %s is a correct value."
-msgstr ""
-"%s %s 대신 %s%%을 하려고 합니까?\n"
-"이 값을 %s%%, 로 변경하려면 YES를 선택하십시오. \n"
-"또는 %s %s 이(가) 올바른 값인지 확인하는 경우 NO를 선택하세요."
 
 msgid "Do you want to delete all saved tool changes?"
 msgstr "저장된 도구 변경 내용을 모두 삭제하시겠습니까?"
@@ -1375,17 +1349,6 @@ msgstr "출력 이미지의 수평 미러링 사용"
 msgid "Enable support material generation."
 msgstr "서포트 재료를 사용합니다."
 
-msgid ""
-"Enable this to add comments into the G-Code labeling print moves with what "
-"object they belong to, which is useful for the Octoprint CancelObject "
-"plugin. This settings is NOT compatible with Single Extruder Multi Material "
-"setup and Wipe into Object / Wipe into Infill."
-msgstr ""
-"이 기능을 사용 하 여 G 코드 레이블 인쇄에 주석이 속해 있는 객체(object)와 함"
-"께 이동 하 여 주석을 추가할 수 있으며,이는 옥 토 프린트 캔 커 작업 플러그인"
-"에 유용 합니다. 이 설정은 단일 압출 기 다중 재료 설정과 호환 되지 않으며 객체"
-"(object)를 닦아 내 고 채우기로 닦습니다."
-
 msgid "Enable variable layer height feature"
 msgstr "가변 레이어 높이 기능 사용"
 
@@ -1459,14 +1422,8 @@ msgstr "%s 포트에 액세스 하는 중 오류가 발생 했습니다 :%s"
 msgid "Error during reload"
 msgstr "다시 로드하는 동안 오류"
 
-msgid "Error Message"
-msgstr "에러 메시지"
-
-msgid "Error uploading to print host:"
-msgstr "인쇄 호스트에 업로드 하는 중 오류 발생:"
-
-msgid "Error with zip archive"
-msgstr "zip 아카이브와 오류가 발생 했습니다"
+msgid "Error uploading to print host"
+msgstr "인쇄 호스트에 업로드 하는 중 오류 발생"
 
 msgid "Error!"
 msgstr "에러!"
@@ -1476,9 +1433,6 @@ msgstr "오류! 잘못된 모델"
 
 msgid "Error: %s"
 msgstr "에러: %s"
-
-msgid "ERROR: not enough resources to execute a new job."
-msgstr "오류: 새 작업을 실행하기에 충분한 리소스가 없습니다."
 
 msgid "Estimated printing time"
 msgstr "예상 인쇄 시간"
@@ -1492,8 +1446,8 @@ msgid ""
 msgstr ""
 "브릿지 영역 아래에 서포팅 재료가 생성되는 것을 방지하기위한 실험적 옵션."
 
-msgid "Expert"
-msgstr "전문가"
+msgid "Expert mode"
+msgstr "전문가 모드"
 
 msgid "Export"
 msgstr "내보내기"
@@ -1516,9 +1470,6 @@ msgstr "AMF 내보내기"
 msgid "Export AMF file:"
 msgstr "AMF 파일 내보내기:"
 
-msgid "Export as STL"
-msgstr "STL로 내보내기"
-
 msgid "Export Config &Bundle"
 msgstr "번들 & 내보내기 설정"
 
@@ -1540,9 +1491,6 @@ msgstr "OBJ 내보내기"
 
 msgid "Export OBJ file:"
 msgstr "OBJ 파일 내보내기:"
-
-msgid "Export of a temporary 3mf file failed"
-msgstr "임시 3mf 파일을 내보내지 못했습니다"
 
 msgid "Export SLA"
 msgstr "STL로 내보내기"
@@ -1573,9 +1521,6 @@ msgstr "도구 경로를 OBJ로 내보내기"
 
 msgid "Export."
 msgstr "내보내기."
-
-msgid "Exporting G-code"
-msgstr "G 코드 내보내기"
 
 msgid "Exporting source model"
 msgstr "소스 모델 내보내기"
@@ -1631,6 +1576,9 @@ msgstr "압출 축"
 msgid "Extrusion multiplier"
 msgstr "압출 승수"
 
+msgid "Extrusion multiplier:"
+msgstr "압출 승수:"
+
 msgid "Extrusion Temperature:"
 msgstr "출력 온도 :"
 
@@ -1646,17 +1594,8 @@ msgstr "페이드 레이어"
 msgid "failed finding central directory"
 msgstr "중앙 디렉터리를 찾지 못했습니다."
 
-msgid "Failed loading the input model."
-msgstr "입력 모델을 로드하지 못했습니다."
-
 msgid "Failed processing of the output_filename_format template."
 msgstr "아래 output_filename_format 템플리트의 처리에 실패했습니다."
-
-msgid "Fan speed"
-msgstr "팬 속도"
-
-msgid "Fan Speed (%)"
-msgstr "팬 속도(%)"
 
 msgid "Fast"
 msgstr "빠른"
@@ -1670,9 +1609,6 @@ msgstr "치명적인 오류"
 msgid "Feature type"
 msgstr "특색 유형"
 
-msgid "Feature types"
-msgstr "특색 유형"
-
 msgid "filament"
 msgstr "필라멘트"
 
@@ -1682,8 +1618,8 @@ msgstr "필라멘트"
 msgid "Filament and Nozzle Diameters"
 msgstr "필라멘트와 노즐 크기"
 
-msgid "Filament Diameter:"
-msgstr "필라멘트 직경:"
+msgid "Filament Diameter"
+msgstr "필라멘트 직경"
 
 msgid ""
 "Filament is cooled by being moved back and forth in the cooling tubes. "
@@ -1697,9 +1633,6 @@ msgstr "필라멘트 로드 시간"
 
 msgid "Filament notes"
 msgstr "필라멘트 메모"
-
-msgid "Filament Overrides"
-msgstr "필라멘트 재정의"
 
 msgid "Filament parking position"
 msgstr "필라멘트 멈춤 위치"
@@ -1730,9 +1663,6 @@ msgstr "파일 닫기 실패"
 
 msgid "file create failed"
 msgstr "파일 만들기 실패"
-
-msgid "File Not Found"
-msgstr "파일을 찾을수 없다"
 
 msgid "file not found"
 msgstr "파일을 찾을 수 없습니다."
@@ -1797,14 +1727,20 @@ msgstr "첫 레이어"
 msgid "First layer height"
 msgstr "첫 레이어 높이"
 
+msgid ""
+"First layer height is not valid.\n"
+"\n"
+"The first layer height will be reset to 0.01."
+msgstr ""
+"첫 레이어 높이가 유호하지 않습니다.\n"
+"\n"
+"첫 레이어 높이가 0.01로 재설정됩니다."
+
 msgid "First layer speed"
 msgstr "첫 레이어 속도"
 
 msgid "First layer volumetric"
 msgstr "첫번째 레이어 용적은"
-
-msgid "Fix through the Netfabb"
-msgstr "Netfabb를 통해 수정"
 
 msgid "Flash!"
 msgstr "완료!"
@@ -1826,6 +1762,19 @@ msgstr "적용 성공!"
 
 msgid "Flow"
 msgstr "유량(Flow)"
+
+msgid ""
+"Following printer profiles has no default filament: %1%Please select one "
+"manually."
+msgstr "프린터 프로필에 기본 필라멘트가 없습니다: %1%하나를 선택하십시오."
+
+msgid ""
+"Following printer profiles has no default material: %1%Please select one "
+"manually."
+msgstr "프린터 프로필에 기본 레진이 없습니다: %1%하나를 선택하십시오."
+
+msgid "Font"
+msgstr "Font"
 
 msgid "Font size"
 msgstr "글꼴 크기"
@@ -1882,9 +1831,6 @@ msgstr "앞면 보기 "
 
 msgid "full profile name"
 msgstr "전체 프로필 이름"
-
-msgid "G-code"
-msgstr "G 코드"
 
 msgid "G-code file exported to %1%"
 msgstr "%1%로 내보낸 G 코드 파일"
@@ -2004,9 +1950,6 @@ msgstr "자이로이드(Gyroid)"
 msgid "Head diameter"
 msgstr "헤드 지름"
 
-msgid "Head penetration should not be greater than the head width."
-msgstr "헤드 관통은 헤드 폭 보다 크지 않아야 합니다."
-
 msgid "Height"
 msgstr "높이"
 
@@ -2115,6 +2058,13 @@ msgstr "작은 커넥터가 모델 본체에 얼마나 침투해야 하는가?"
 
 msgid "How much the pinhead has to penetrate the model surface"
 msgstr "핀 헤드가 모델 표면에 침투 하는 정도"
+
+msgid ""
+"How much the supports should lift up the supported object. If \"Pad around "
+"object\" is enabled, this value is ignored."
+msgstr ""
+"지원 대상을 들어 올려야 하는 양입니다. \"개체 주위 패드\"를 사용하도록 설정하"
+"면 이 값은 무시됩니다."
 
 msgid "HTTPS CA File"
 msgstr "HTTPS CA 파일"
@@ -2248,14 +2198,6 @@ msgstr ""
 "렉터리를 묻습니다."
 
 msgid ""
-"If you set this to a positive value, Z is quickly raised every time a "
-"retraction is triggered. When using multiple extruders, only the setting for "
-"the first extruder will be considered."
-msgstr ""
-"이 값을 양수 값으로 설정하면 철회가 트리거 될 때마다 Z가 빠르게 올라갑니다. "
-"여러 개의 압출기를 사용하는 경우 첫 번째 압출기의 설정 만 고려됩니다."
-
-msgid ""
 "If you set this to a positive value, Z lift will only take place above the "
 "specified absolute Z. You can tune this setting for skipping lift on the "
 "first layers."
@@ -2291,6 +2233,9 @@ msgstr ""
 msgid "Ignore non-existent config files"
 msgstr "존재 하지 않는 구성 파일 무시"
 
+msgid "Illegal instruction"
+msgstr "잘못된 명령"
+
 msgid "Import &Config"
 msgstr "&구성 가져오기"
 
@@ -2302,9 +2247,6 @@ msgstr "객체(object) 가져오기"
 
 msgid "Import Objects"
 msgstr "객체(object) 가져오기"
-
-msgid "Import of the repaired 3mf file failed"
-msgstr "복구된 3mf 파일을 가져오지 못했습니다"
 
 msgid "Import STL/3MF/STEP/OBJ/AM&F"
 msgstr "가져오기 STL/3MF/STEP/OBJ/AM&F"
@@ -2424,9 +2366,6 @@ msgstr "잘못된 파일 형식."
 msgid "invalid filename"
 msgstr "잘못 된 파일 이름"
 
-msgid "Invalid Head penetration"
-msgstr "잘못된 헤드 관통"
-
 msgid "invalid header or archive is corrupted"
 msgstr "잘못 된 헤더 또는 아카이브가 손상 되었습니다"
 
@@ -2435,9 +2374,6 @@ msgstr "숫자 입력이 잘못 되었습니다."
 
 msgid "invalid parameter"
 msgstr "잘못 된 매개 변수"
-
-msgid "Invalid pinhead diameter"
-msgstr "잘못된 핀 헤드 지름"
 
 msgid "is licensed under the"
 msgstr "라이선스는"
@@ -2460,9 +2396,6 @@ msgstr ""
 "는 빠른 래밍 공급 속도를 가능 하게하고, 불규칙한 모양의 필라멘트를 로딩할때 "
 "저항을 극복하기 위한것이다."
 
-msgid "It's impossible to print multi-part object(s) with SLA technology."
-msgstr "SLA 방식을 사용 하여 다중 객체(object)를 인쇄할 수는 없습니다."
-
 msgid "Jerk limits"
 msgstr "저크(Jerk)값 한계"
 
@@ -2472,14 +2405,8 @@ msgstr "지터(Jitter)"
 msgid "Keep fan always on"
 msgstr "항상 팬 켜기"
 
-msgid "Keep lower part"
-msgstr "낮은 부분 유지"
-
 msgid "Keep min"
 msgstr "최소 유지"
-
-msgid "Keep upper part"
-msgstr "상위 부분 유지"
 
 msgid "Keyboard Shortcuts"
 msgstr "키보드 단축기"
@@ -2507,6 +2434,15 @@ msgstr "레이어"
 
 msgid "Layer height"
 msgstr "레이어 높이"
+
+msgid ""
+"Layer height is not valid.\n"
+"\n"
+"The layer height will be reset to 0.01."
+msgstr ""
+"레이어 높이가 유호하지 않습니다.\n"
+"\n"
+"높이가 0.01로 재설정됩니다."
 
 msgid "Layer height limits"
 msgstr "레이어 높이 한계치"
@@ -2550,9 +2486,6 @@ msgid ""
 msgstr ""
 "다음의 모든 프로그램 (라이브러리)의 라이센스 계약은 응용 프로그램 라이센스 계"
 "약의 일부입니다"
-
-msgid "Lift Z"
-msgstr "Z축 올림"
 
 msgid "Line"
 msgstr "선(Line)"
@@ -2629,9 +2562,6 @@ msgstr "로딩 속도"
 msgid "Loading speed at the start"
 msgstr "시작시 로딩 속도"
 
-msgid "Local coordinates"
-msgstr "로컬 좌표"
-
 msgid "Lock supports under new islands"
 msgstr "새영역에서 서포트 잠금 지원"
 
@@ -2663,9 +2593,6 @@ msgstr "머신 한계설정"
 
 msgid "Manual editing"
 msgstr "수동 편집"
-
-msgid "Masked SLA file exported to %1%"
-msgstr "마스크 된 SLA 파일을 %1%로 내보냅니"
 
 msgid "Mate&rial Settings Tab"
 msgstr "재료(메터리리알) 설정 탭"
@@ -2808,8 +2735,8 @@ msgstr "병합"
 msgid "Merging slices and calculating statistics"
 msgstr "슬라이스 병합 및 통계 계산"
 
-msgid "Mesh repair failed."
-msgstr "메쉬 복구에 실패 했습니다."
+msgid "Message"
+msgstr "알림 : %s"
 
 msgid "Message for pause print on current layer (%1% mm)."
 msgstr "현재 레이어에서 일시 중지 인쇄를 위한 메시지(%1% mm)."
@@ -2958,6 +2885,9 @@ msgstr "모델 수리 완료"
 msgid "modified"
 msgstr "수정된곳"
 
+msgid "Modified"
+msgstr "수정됨"
+
 msgid "Modifier"
 msgstr "편집 영역"
 
@@ -3023,9 +2953,6 @@ msgstr "그리드를 만들어 복사본을 곱합니다."
 msgid "Multiply copies by this factor."
 msgstr "이 계수로 복사본을 곱합니다."
 
-msgid "N/A"
-msgstr "N/A"
-
 msgid "Name"
 msgstr "이름"
 
@@ -3048,11 +2975,11 @@ msgstr "가장 가까운"
 msgid "Network lookup"
 msgstr "네트워크 조회"
 
-msgid "New"
-msgstr "새로 만들기(&N)"
-
 msgid "New Project"
 msgstr "새로운 프로젝트"
+
+msgid "New version"
+msgstr "새로운 버전"
 
 msgid "New version of %s is available"
 msgstr "%s의 새 버전을 사용할 수 있습니다"
@@ -3071,9 +2998,6 @@ msgstr "압출 없음"
 
 msgid "No pad can be generated for this model with the current configuration"
 msgstr "현재 구성으로 이 모델에 대해 패드를 생성할 수 없습니다."
-
-msgid "No previously sliced file."
-msgstr "이전에 분리 된 파일이 없습니다."
 
 msgid "NO RAMMING AT ALL"
 msgstr "전혀 충돌 없음"
@@ -3095,6 +3019,9 @@ msgstr "일반 모드"
 
 msgid "not a ZIP archive"
 msgstr "zIP 아카이브 아님"
+
+msgid "Not found:"
+msgstr "찾지 못함"
 
 msgid "Note"
 msgstr "메모"
@@ -3124,11 +3051,14 @@ msgstr "공지"
 msgid "nozzle"
 msgstr "노즐"
 
+msgid "Nozzle and Bed Temperatures"
+msgstr "노즐, 베드 온도"
+
 msgid "Nozzle diameter"
 msgstr "노즐 직경"
 
-msgid "Nozzle Diameter:"
-msgstr "노즐 직경:"
+msgid "Nozzle Diameter"
+msgstr "노즐 직경"
 
 msgid "Number of cooling moves"
 msgstr "쿨링 이동 숫자"
@@ -3212,6 +3142,9 @@ msgstr "현재 객체(object)의"
 msgid "Offset"
 msgstr "오프셋"
 
+msgid "OK"
+msgstr "확인"
+
 msgid "One layer mode"
 msgstr "하나의 레이어 모드"
 
@@ -3225,9 +3158,6 @@ msgid ""
 msgstr ""
 "그것이 빌드 플레이트에있는 경우에만 지원을 작성하십시오. 인쇄물에 대한 지원"
 "을 작성하지 마십시오."
-
-msgid "Only infill where needed"
-msgstr "필요한 경우 채움"
 
 msgid "Only lift Z"
 msgstr "Z축 올림"
@@ -3249,6 +3179,9 @@ msgstr ""
 "현재 와이프 타워를 사용하도록 설정되어 있는 경우 스모즈 방지 기능이 지원되지 "
 "않습니다."
 
+msgid "Open"
+msgstr "열기...(&O)"
+
 msgid "Open a project file"
 msgstr "프로젝트 파일 열기"
 
@@ -3263,9 +3196,6 @@ msgstr "다운로드 페이지 열기"
 
 msgid "Optimize orientation"
 msgstr "방향 최적화"
-
-msgid "Optimize Rotation"
-msgstr "회전 최적화"
 
 msgid ""
 "Optimize travel moves in order to minimize the crossing of perimeters. This "
@@ -3317,6 +3247,9 @@ msgstr "출력 모델 정보"
 
 msgid "Output options"
 msgstr "출력 옵션"
+
+msgid "Overflow"
+msgstr "오버플로우"
 
 msgid "Overhang perimeter"
 msgstr "오버행(Overhang) 둘레"
@@ -3435,14 +3368,8 @@ msgstr "%s가 지원하는 다른 공급 업체를 선택하십시오:"
 msgid "Pillar widening factor"
 msgstr "기둥 확장 계수"
 
-msgid "Pinhead diameter should be smaller than the pillar diameter."
-msgstr "핀헤드 지름은 기둥 지름 보다 작아야 합니다."
-
 msgid "Place on face"
 msgstr "면 배치 "
-
-msgid "Plater"
-msgstr "플레이터"
 
 msgid "Please check your object list before preset changing."
 msgstr "사전 설정을 변경 하기 전에 객체(object) 목록을 확인 하십시오."
@@ -3485,9 +3412,6 @@ msgstr "미리보기"
 
 msgid "Preview hollowed and drilled model"
 msgstr "공동화된 모델 미리보기"
-
-msgid "Previously sliced file ("
-msgstr "이전에 분리 된 파일 ("
 
 msgid "Prime all printing extruders"
 msgstr "모든 인쇄 압출기 프라임"
@@ -3581,9 +3505,6 @@ msgstr ""
 "(support_material_extruder == 0 또는 support_material_interface_extruder == "
 "0)로 인쇄되는 경우 모든 노즐은 동일한 지름이어야합니다."
 
-msgid "Processing %s"
-msgstr "처리 %s"
-
 msgid "Profile dependencies"
 msgstr "프로파일 속한곳"
 
@@ -3595,6 +3516,13 @@ msgstr "진행률"
 
 msgid "Progress:"
 msgstr "진행:"
+
+msgid ""
+"PrusaSlicer is based on Slic3r by Alessandro Ranellucci and the RepRap "
+"community."
+msgstr ""
+"프루사슬라이서는 알레산드로 라넬루치와 RepRap 커뮤니티 Slic3r를 기반으로합니"
+"다."
 
 msgid "Purging volumes"
 msgstr "퍼징 조절"
@@ -3613,12 +3541,6 @@ msgstr "품질 / 속도"
 
 msgid "Quick Add Settings (%s)"
 msgstr "빠른 추가 설정 (%s)"
-
-msgid "Quick Slice"
-msgstr "빠른 슬라이스"
-
-msgid "Quick Slice and Save As"
-msgstr "빠른 슬라이스 및 다른 이름으로 저장"
 
 msgid "Quit %s"
 msgstr "%s 종료"
@@ -3785,6 +3707,9 @@ msgstr "선택한 지점 제거"
 msgid "Remove the selected object"
 msgstr "선택한 객체(object) 제거"
 
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "유저 프로필 제거(제거 전 스냅샷이 생성될 것입니다.)"
+
 msgid "Rename"
 msgstr "이름 변경"
 
@@ -3809,27 +3734,6 @@ msgstr ""
 
 msgid "Repair"
 msgstr "수정"
-
-msgid "Repaired 3MF file contains more than one object"
-msgstr "복구된 3MF 파일에 둘 이상의 객체(object)가 포함되어 있습니다"
-
-msgid "Repaired 3MF file contains more than one volume"
-msgstr "복구된 3MF 파일에 둘 이상의 객체(object)가 포함되어 있습니다"
-
-msgid "Repaired 3MF file does not contain any object"
-msgstr "복구된 3MF 파일에 객체(object)가 포함 되어있지 않습니다"
-
-msgid "Repaired 3MF file does not contain any volume"
-msgstr "복구 된 3MF 파일에 객체(object)가 포함 되어있지 않습니다"
-
-msgid "Repairing model by the Netfabb service"
-msgstr "Netfabb 서비스에의 한 모델 복구"
-
-msgid "Repeat Last Quick Slice"
-msgstr "마지막으로 빠른 슬라이스 반복"
-
-msgid "Repeat last quick slice"
-msgstr "마지막으로 빠른 슬라이스 반복"
 
 msgid "Replace with"
 msgstr "다음으로 바꾸기"
@@ -3919,9 +3823,6 @@ msgstr "오른쪽 버튼이 아이콘을 클릭하여 객체 인쇄 가능한 �
 msgid "Right button click the icon to change the object settings"
 msgstr "아이콘을 클릭 하여 객체(object) 설정을 변경 합니다"
 
-msgid "Right button click the icon to fix STL through Netfabb"
-msgstr "아이콘을 클릭 하여 Netfabb에서 STL을 수정 합니다"
-
 msgid "Right click"
 msgstr "오른쪽 클릭"
 
@@ -3942,9 +3843,6 @@ msgstr "X 주위 회전"
 
 msgid "Rotate around Y"
 msgstr "Y 주위로 회전"
-
-msgid "Rotate lower part upwards"
-msgstr "아래쪽 부분을 위쪽으로 회전"
 
 msgid "Rotation"
 msgstr "회전"
@@ -3973,11 +3871,8 @@ msgstr "끝내고 프린트"
 msgid "Save"
 msgstr "저장"
 
-msgid "Save %s as:"
-msgstr "Save %s as:"
-
-msgid "Save %s file as:"
-msgstr "%s 파일을 저장 합니다:"
+msgid "Save as"
+msgstr "다른 이름으로 저장"
 
 msgid "Save config file"
 msgstr "구성 파일 저장"
@@ -3987,9 +3882,6 @@ msgstr "구성을 저장 :"
 
 msgid "Save configuration to the specified file."
 msgstr "지정 된 파일에 구성을 저장 합니다."
-
-msgid "Save current %s"
-msgstr "현재 %s 저장"
 
 msgid "Save current project file"
 msgstr "현재 프로젝트 파일 저장"
@@ -4015,12 +3907,6 @@ msgstr "이전 번들 설정을 다음과 같이 저장 :"
 msgid "Save Project &as"
 msgstr "프로젝트 저장"
 
-msgid "Save zip file as:"
-msgstr "압축(zip)파일 다른이름 저장:"
-
-msgid "Saving mesh into the 3MF container failed."
-msgstr "3MF 컨테이너에 메쉬를 저장하지 못했습니다."
-
 msgid "Scale"
 msgstr "크기"
 
@@ -4030,10 +3916,10 @@ msgstr "축척 계수"
 msgid "Scale the selected object to fit the print volume"
 msgstr "인쇄 볼륨에 맞게 선택한 객체(object)의 배율 조정"
 
-msgid "Scale To Fit"
+msgid "Scale to Fit"
 msgstr "크기에 맞게 조정"
 
-msgid "Scale to Fit"
+msgid "Scale To Fit"
 msgstr "크기에 맞게 조정"
 
 msgid "Scale to fit the given volume."
@@ -4112,6 +3998,9 @@ msgstr "기본 도구 모음에 대해 도구 모음 아이콘 크기를 선택�
 
 msgid "Select type of part"
 msgstr "부품(Part) 유형 선택"
+
+msgid "Selection"
+msgstr "선택"
 
 msgid "Selection-Add"
 msgstr "선택 추가"
@@ -4299,9 +4188,6 @@ msgstr "시프트 + 왼쪽 마우스 버튼:"
 msgid "Shift + Right mouse button:"
 msgstr "시프트 + 오른쪽 마우스 버튼:"
 
-msgid "Show"
-msgstr "보다"
-
 msgid "Show &Configuration Folder"
 msgstr "폴더 표시 및 구성"
 
@@ -4362,8 +4248,8 @@ msgstr "3Dconnexion 장치 설정 대화 상자 표시/숨기기"
 msgid "Show/Hide object/instance labels"
 msgstr "개체/인스턴스 레이블 표시/숨기기"
 
-msgid "Simple"
-msgstr "단순"
+msgid "Simple mode"
+msgstr "단순 모드"
 
 msgid "Single extruder MM setup"
 msgstr "싱글 익스트루더 MM 설정"
@@ -4420,6 +4306,9 @@ msgstr "SLA 재질 프로파일 선택"
 msgid "SLA material type"
 msgstr "SLA 재질 유형"
 
+msgid "SLA materials"
+msgstr "SLA 레진"
+
 msgid "SLA Materials"
 msgstr "SLA 재료"
 
@@ -4447,12 +4336,6 @@ msgstr ""
 
 msgid "Slice"
 msgstr "슬라이스"
-
-msgid "Slice a file into a G-code"
-msgstr "파일을 G 코드로 분할"
-
-msgid "Slice a file into a G-code, save as"
-msgstr "파일을 G 코드로 분할하고 다른 이름으로 저장"
 
 msgid "Slice gap closing radius"
 msgstr "슬라이스 간격 닫힘 반경"
@@ -4483,14 +4366,6 @@ msgstr "슬라이스 완료"
 
 msgid "Slicing done"
 msgstr "슬라이싱 완료"
-
-msgid "Slicing Done!"
-msgstr "슬라이스 완료!"
-
-msgid ""
-"Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
-"내부 오류: 일치하지 않는 슬라이스 인덱스로 인해 슬라이싱을 중지해야 했습니다."
 
 msgid "Slicing model"
 msgstr "슬라이싱 모델"
@@ -4570,6 +4445,9 @@ msgstr ""
 "일부 프린터 또는 프린터 설정은 가변 레이어 높이로 인쇄하는 데 어려움이있을 "
 "수 있습니다. 기본적으로 사용됩니다."
 
+msgid "Space"
+msgstr "간격"
+
 msgid "Spacing"
 msgstr "간격"
 
@@ -4621,11 +4499,11 @@ msgstr "스피드:"
 msgid "Sphere"
 msgstr "영역"
 
-msgid "Spiral Vase"
-msgstr "스파이럴 바이스"
-
 msgid "Spiral vase"
 msgstr "꽃병 모드(Spiral vase)"
+
+msgid "Spiral Vase"
+msgstr "스파이럴 바이스"
 
 msgid "Split"
 msgstr "쪼개기"
@@ -4647,6 +4525,9 @@ msgstr "부품(Part)별 분할"
 
 msgid "Split to Parts"
 msgstr "부품(Part)으로 분할"
+
+msgid "Stack overflow"
+msgstr "스택 오버플로우"
 
 msgid "Standard"
 msgstr "표준"
@@ -4788,13 +4669,6 @@ msgstr ""
 msgid "symbolic profile name"
 msgstr "기호 프로파일 이름"
 
-msgid ""
-"Synchronize support layers with the object print layers. This is useful with "
-"multi-material printers, where the extruder switch is expensive."
-msgstr ""
-"서포트 레이어를 프린트 레이어와 동기화하십시오. 이것은  스위치가 비싼 다중 메"
-"터리얼 프린터에서 유용하다."
-
 msgid "Synchronize with object layers"
 msgstr "객체(object) 레이어와 동기화"
 
@@ -4812,14 +4686,6 @@ msgstr "구성 스냅 샷 가져 오기"
 
 msgid "Temperature"
 msgstr "온도"
-
-msgid ""
-"Temperature difference to be applied when an extruder is not active. Enables "
-"a full-height \"sacrificial\" skirt on which the nozzles are periodically "
-"wiped."
-msgstr ""
-"돌출부가 활성화되지 않은 경우 적용되는 온도 차이. 노즐을 주기적으로 닦는 전"
-"체 높이 \"인공\" 스커트가 가능하다."
 
 msgid "Temperature variation"
 msgstr "온도 변화"
@@ -4846,17 +4712,6 @@ msgid ""
 msgstr ""
 "%s 장치를 찾을 수 없습니다.\n"
 "장치가 연결되어 있는 경우 USB 커넥터 옆에 있는 리셋 버튼을 누르십시오..."
-
-msgid ""
-"The currently manipulated object is tilted (rotation angles are not "
-"multiples of 90°).\n"
-"Non-uniform scaling of tilted objects is only possible in the World "
-"coordinate system,\n"
-"once the rotation is embedded into the object coordinates."
-msgstr ""
-"현재 조작 된 객체(object)가 기울어져 있습니다 (회전 각도가 90°의 배수가 아"
-"님).\n"
-"기울어진 객체(object)의 배율 조정은 기본 좌표에서만 가능 합니다."
 
 msgid "The default angle for connecting support sticks and junctions."
 msgstr "서포트 스틱과 접합부를 연결 하는 기본 각도입니다."
@@ -4910,9 +4765,6 @@ msgstr "펌웨어는 스텔스 모드를 지원 합니다"
 
 msgid "the following characters are not allowed:"
 msgstr "다음 문자는 허용되지 않습니다:"
-
-msgid "the following suffix is not allowed:"
-msgstr "다음 접미사는 허용되지 않습니다:"
 
 msgid ""
 "The gap between the object bottom and the generated pad in zero elevation "
@@ -4983,6 +4835,16 @@ msgstr ""
 msgid "The printer multiplexes filaments into a single hot end."
 msgstr "프린터는 필라멘트를 하나의 핫 엔드에 다중플렉싱합니다."
 
+msgid ""
+"The selected 3mf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "선택한 3mf 파일은 %1%의 최신 버전으로 저장되었으며 호환되지 않습니다."
+
+msgid ""
+"The selected amf file has been saved with a newer version of %1% and is not "
+"compatible."
+msgstr "선택한 amf 파일은 %1%의 최신 버전으로 저장되었으며 호환되지 않습니다."
+
 msgid "The selected file contains no geometry."
 msgstr "선택한 파일에 없는 형상이 있습니다."
 
@@ -4997,28 +4859,15 @@ msgstr ""
 "선택한 객체(object)는 부품(Part) 하나만 포함되어 있기 때문에 분할 할 수 없습"
 "니다."
 
+msgid "The size of the object can be specified in inches"
+msgstr "물체의 크기를 인치로 표시 가능합니다"
+
 msgid ""
 "The slope of the pad wall relative to the bed plane. 90 degrees means "
 "straight walls."
 msgstr ""
 "배드 평면을 기준으로 하는 패드 벽의 기울기입니다. 90도는 직선 벽을 의미 합니"
 "다."
-
-msgid ""
-"The Spiral Vase option can only be used when printing single material "
-"objects."
-msgstr ""
-"나선형 꽃병 옵션(Spiral Vase)은 단일 재료 객체(object)를 인쇄 할 때만 사용할 "
-"수 있습니다."
-
-msgid "The supplied name is empty. It can't be saved."
-msgstr "파일 이름이 비어 있습니다. 저장할 수 없습니다."
-
-msgid "The supplied name is not available."
-msgstr "제공된 이름을 사용할 수 없습니다."
-
-msgid "The supplied name is not valid;"
-msgstr "제공된 이름이 유효하지 않습니다;"
 
 msgid "The supplied settings will cause an empty print."
 msgstr "제공된 설정으로 인해 빈 인쇄가 발생합니다."
@@ -5048,18 +4897,6 @@ msgstr ""
 "와이프 타워는 현재 공구 교체를 트리거하지 않고 현재의 압출기로 인쇄 하는 경우"
 "에만 비가용성 서포트를 지원 합니다. (support_material_extruder과 "
 "support_material_interface_extruder 모두 0으로 설정 해야 합니다.)"
-
-msgid ""
-"The Wipe Tower currently supports the non-soluble supports only\n"
-"if they are printed with the current extruder without triggering a tool "
-"change.\n"
-"(both support_material_extruder and support_material_interface_extruder need "
-"to be set to 0)."
-msgstr ""
-"와이프 타워(프라임 타워)는 현재 비수용성 지원만 지원합니다.\n"
-"공구 교환을 트리거하지 않고 현재 압출기로 인쇄된 경우\n"
-"(support_material_extruder support_material_interface_extruder 모두 0으로 설"
-"정해야 합니다)."
 
 msgid ""
 "The Wipe Tower is currently not supported for multimaterial sequential "
@@ -5125,13 +4962,6 @@ msgid "This %s version: %s"
 msgstr "이 %s 버전: %s"
 
 msgid ""
-"This experimental setting uses G10 and G11 commands to have the firmware "
-"handle the retraction. This is only supported in recent Marlin."
-msgstr ""
-"이 실험 설정은 G10 및 G11 명령을 사용하여 펌웨어에서 취소를 처리하도록합니"
-"다. 이것은 최근의 말린에서만 지원됩니다."
-
-msgid ""
 "This factor changes the amount of flow proportionally. You may need to tweak "
 "this setting to get nice surface finish and correct single wall widths. "
 "Usual values are between 0.9 and 1.1. If you think you need to change this "
@@ -5141,6 +4971,16 @@ msgstr ""
 "비를 얻기 위해이 설정을 조정해야 할 수도 있습니다. 일반적인 값은 0.9와 1.1 사"
 "이입니다. 이 값을 더 변경해야한다고 판단되면 필라멘트 직경과 펌웨어 E 단계를 "
 "확인하십시오."
+
+msgid ""
+"This feature allows to force a solid layer every given number of layers. "
+"Zero to disable. You can set this to any value (for example 9999); Slic3r "
+"will automatically choose the maximum possible number of layers to combine "
+"according to nozzle diameter and layer height."
+msgstr ""
+"이 특징은 주어진 개수의 층마다 단단한 층을 넣을수 있게 한다. 비활성화할 수 없"
+"음. 당신은 이것을 어떤 값으로도 설정할 수 있다(예: 9999). Slic3r는 노즐 직경"
+"과 층 높이에 따라 결합할 최대 가능한 층 수를 자동으로 선택한다."
 
 msgid ""
 "This file cannot be loaded in a simple mode. Do you want to switch to an "
@@ -5197,22 +5037,6 @@ msgid ""
 "This matrix describes volumes (in cubic milimetres) required to purge the "
 "new filament on the wipe tower for any given pair of tools. "
 msgstr "이 매트릭스는 지정 된 도구 쌍에 대해 와이퍼 타워의 새필라멘트를 제거 하는 데 필요한 체적 (입방 밀리 미터)을 설명 합니다. "
-
-msgid ""
-"This operation is irreversible.\n"
-"Do you want to proceed?"
-msgstr ""
-"이 작업은 되돌릴수 없습니다.\n"
-"계속 하시겠습니까?"
-
-msgid ""
-"This option will drop the temperature of the inactive extruders to prevent "
-"oozing. It will enable a tall skirt automatically and move extruders outside "
-"such skirt when changing temperatures."
-msgstr ""
-"이 옵션은 누출을 방지하기 위해 비활성 압출기의 온도를 떨어 뜨립니다. 온도를 "
-"변경할 때 키가 큰 스커트를 자동으로 사용하고 스커트 외부로 압출기를 이동합니"
-"다."
 
 msgid ""
 "This option will switch the print order of perimeters and infill, making the "
@@ -5274,16 +5098,6 @@ msgstr ""
 "중간에 임계값이 임계화 의미입니다. 이 동작은 폴리곤의 구멍을 잃지 않고 안티알"
 "리아싱을 제거 합니다."
 
-msgid "Threads"
-msgstr "스레드(Threads)"
-
-msgid ""
-"Threads are used to parallelize long-running tasks. Optimal threads number "
-"is slightly above the number of available cores/processors."
-msgstr ""
-"스레드는 장기 실행 태스크를 병렬 처리하는 데 사용됩니다. 최적의 스레드 수는 "
-"사용 가능한 코어 / 프로세서 수보다 약간 높습니다."
-
 msgid "Tilt"
 msgstr "기울이기"
 
@@ -5338,9 +5152,6 @@ msgid ""
 msgstr ""
 "사용자 지정 CA 파일을 사용 하려면 CA 파일을 인증서 저장소/키체인에 가져오십시"
 "오."
-
-msgid "Toggle %c axis mirroring"
-msgstr "전환 %c 축 미러링"
 
 msgid "too many files"
 msgstr "파일이 너무 많음"
@@ -5429,6 +5240,9 @@ msgstr "다시 로드할 수 없음:"
 msgid "undefined error"
 msgstr "정의 되지 않은 오류"
 
+msgid "Underflow"
+msgstr "언더플로우"
+
 msgid "Undo"
 msgstr "되돌리기"
 
@@ -5447,6 +5261,9 @@ msgstr "알 수 없음"
 
 msgid "Unknown error occured"
 msgstr "알 수 없는 오류가 발생 했습니다"
+
+msgid "Unknown error occured during exporting G-code."
+msgstr "G고드 제작중 알 수 없는 오류가 발생"
 
 msgid "unloaded"
 msgstr "언로드(unloaded)"
@@ -5550,6 +5367,9 @@ msgstr "필요한 경우 디렉토리 분리 기호로 슬래시 (/)를 사용�
 msgid "Use free camera"
 msgstr "무료 카메라 사용"
 
+msgid "Use inches"
+msgstr "인치 사용"
+
 msgid "Use pad"
 msgstr "패드 사용"
 
@@ -5650,9 +5470,6 @@ msgstr "버전:"
 msgid "Vertical shells"
 msgstr "수직 쉘"
 
-msgid "View"
-msgstr "보기"
-
 msgid "View mode"
 msgstr "방법 보기"
 
@@ -5673,9 +5490,6 @@ msgstr "용적"
 
 msgid "Volumetric flow hints not available"
 msgstr "체적 흐름 힌트를 사용할 수 없음"
-
-msgid "Volumetric flow rate"
-msgstr "용적의 유량값"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "체적 유량(mm³/s)"
@@ -5698,16 +5512,6 @@ msgid ""
 msgstr ""
 "이 옵션을 선택하면 프린터와 호환되지 않는 것으로 표시된 경우에도 인쇄 및 필라"
 "멘트 '사전 설정'이 '사전 설정' 편집기에 표시됩니다"
-
-msgid ""
-"When printing multi-material objects, this settings will make Slic3r to clip "
-"the overlapping object parts one by the other (2nd part will be clipped by "
-"the 1st, 3rd part will be clipped by the 1st and 2nd etc)."
-msgstr ""
-"다중 메터리얼(multi-material) 객체(object)를 인쇄 할 때이 설정을 사용하면 겹"
-"치는 객체(object) 부품(Part)를 서로 겹쳐서 잘라낼 수 있습니다 (두 번째 부분"
-"은 첫 번째 부분에서 클리핑되며 세 번째 부분은 첫 번째 및 두 번째 부분에서 잘"
-"립니다)."
 
 msgid ""
 "When printing multiple objects or copies, this feature will complete each "
@@ -5795,11 +5599,11 @@ msgstr "이 객체(object)로 지우기"
 msgid "Wipe into this object's infill"
 msgstr "이 객체(object)의 채우기로 지우기"
 
-msgid "Wipe Tower"
-msgstr "와이프 타워(프라임 타워)"
-
 msgid "Wipe tower"
 msgstr "와이프 타워(Wipe tower)"
+
+msgid "Wipe Tower"
+msgstr "와이프 타워(프라임 타워)"
 
 msgid "wipe tower"
 msgstr "와이프 타워(Wipe tower)"
@@ -5891,21 +5695,9 @@ msgstr ""
 msgid "You can't change a type of the last solid part of the object."
 msgstr "객체(object)의 마지막 부품(Part) 유형은 변경할 수 없습니다."
 
-msgid ""
-"You can't to add the object(s) from %s because of one or some of them "
-"is(are) multi-part"
-msgstr ""
-"다중 부품(Part) 하나 또는 그 중 일부 때문에 %s에서 객체(object)를 추가 할 수 "
-"없습니다"
-
 msgid "You cannot load SLA project with a multi-part object on the bed"
 msgstr ""
 "배드에 여러 부분으로 구성된 객체가 있는 SLA 프로젝트를 로드할 수 없습니다."
-
-msgid ""
-"You cannot use non-uniform scaling mode for multiple objects/parts selection"
-msgstr ""
-"여러 객체/부품 선택에 는 균일하지 않은 배율 조정 모드를 사용할 수 없습니다."
 
 msgid "You may need to update your graphics card driver."
 msgstr "그래픽 카드 드라이버를 업데이트해야 할 수 있습니다."

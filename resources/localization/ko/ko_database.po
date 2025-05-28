@@ -276,6 +276,15 @@ msgstr "레이어 범위 추가"
 msgid "Add Layers"
 msgstr "레이어 추가"
 
+msgid "Add modifier"
+msgstr "편집영역(modifier) 추가"
+
+msgid "Add one more instance of the selected object"
+msgstr "선택한 개체의 인스턴스를 하나 더 추가합니다."
+
+msgid "Add part"
+msgstr "부품(Part) 추가"
+
 msgid "Add pause print"
 msgstr "일시 정지 인쇄 추가"
 
@@ -284,6 +293,9 @@ msgstr "지점 추가"
 
 msgid "Add point to selection"
 msgstr "선택 영역에 지점 추가"
+
+msgid "Add settings"
+msgstr "다음 설정"
 
 msgid "Add Settings Bundle for Height range"
 msgstr "높이 범위에 대한 설정 번들 추가"
@@ -305,6 +317,12 @@ msgstr "하위 객체(object)에 대한 설정 추가"
 
 msgid "Add Shape"
 msgstr "모양 추가"
+
+msgid "Add support blocker"
+msgstr "서포트 금지영역(blocker) 추가"
+
+msgid "Add support enforcer"
+msgstr "서포트 지원(enforcer)영역 추가"
 
 msgid "Add support point"
 msgstr "서포트 지점 추가"
@@ -378,6 +396,15 @@ msgstr "모두 표준설정"
 
 msgid "allocation failed"
 msgstr "할당 실패"
+
+msgid "Along X axis"
+msgstr "X 축을 따라"
+
+msgid "Along Y axis"
+msgstr "Y 축을 따라"
+
+msgid "Along Z axis"
+msgstr "Z 축 따라"
 
 msgid "Alternate nozzles:"
 msgstr "대체 노즐:"
@@ -584,6 +611,9 @@ msgstr "바닥 단일 레이어"
 msgid "Bottom View"
 msgstr "바닥 보기"
 
+msgid "Box"
+msgstr "박스"
+
 msgid "Bridge"
 msgstr "브리지"
 
@@ -707,6 +737,12 @@ msgstr "부품(Part) 유형 변경"
 msgid "Change point head diameter"
 msgstr "변경된 해드의 끝 점 지름"
 
+msgid "Change the number of instances of the selected object"
+msgstr "선택한 객체의 인스턴스 수 변경"
+
+msgid "Change type"
+msgstr "타입 변경"
+
 msgid "Changing of an application language"
 msgstr "응용 프로그램 언어 변경"
 
@@ -739,6 +775,9 @@ msgstr "프린터에 업로드 할 펌웨어를 선택하세요."
 
 msgid "Circular"
 msgstr "원형"
+
+msgid "Clear"
+msgstr "비우기(&C)"
 
 msgid "Click the icon to change the object printable property"
 msgstr "아이콘을 클릭하여 객체 인쇄 가능 속성을 변경합니다."
@@ -1462,6 +1501,9 @@ msgstr "AMF 내보내기"
 msgid "Export AMF file:"
 msgstr "AMF 파일 내보내기:"
 
+msgid "Export as STL"
+msgstr "STL로 내보내기"
+
 msgid "Export Config &Bundle"
 msgstr "번들 & 내보내기 설정"
 
@@ -1746,6 +1788,9 @@ msgstr "첫 레이어 속도"
 msgid "First layer volumetric"
 msgstr "첫번째 레이어 용적은"
 
+msgid "Fix through the Netfabb"
+msgstr "Netfabb를 통해 수정"
+
 msgid "Flash!"
 msgstr "완료!"
 
@@ -1955,6 +2000,9 @@ msgstr "높이 (mm)"
 
 msgid "Height of the display"
 msgstr "디스플레이의 높이"
+
+msgid "Height range Modifier"
+msgstr "높이 범위에 대한 설정"
 
 msgid "Height ranges"
 msgstr "높이 범위"
@@ -2817,11 +2865,26 @@ msgstr "최소 이동 이송 속도 (M205 T)"
 msgid "Minimum wall thickness of a hollowed model."
 msgstr "속이 빈 모델의 최소 벽 두께입니다."
 
+msgid "Mirror"
+msgstr "반전(Mirror)"
+
 msgid "Mirror horizontally"
 msgstr "수평으로 미러"
 
 msgid "Mirror Object"
 msgstr "객체(object) 반전"
+
+msgid "Mirror the selected object"
+msgstr "반전할 객제를 선택"
+
+msgid "Mirror the selected object along the X axis"
+msgstr "선택한 객체(object)를 X 축을 따라 반전합니다"
+
+msgid "Mirror the selected object along the Y axis"
+msgstr "선택한 객체(object)를 Y 축을 따라 반전합니다"
+
+msgid "Mirror the selected object along the Z axis"
+msgstr "선택한 객체(object)를 Z 축을 따라 반전합니다"
 
 msgid "Mirror vertically"
 msgstr "수직으로 미러"
@@ -3451,6 +3514,9 @@ msgstr "인쇄 속도 중단"
 msgid "Print&er Settings Tab"
 msgstr "설정 인쇄 탭"
 
+msgid "Printable"
+msgstr "인쇄가능"
+
 msgid "printer"
 msgstr "프린터"
 
@@ -3529,6 +3595,9 @@ msgstr "품질"
 
 msgid "Quality / Speed"
 msgstr "품질 / 속도"
+
+msgid "Quick Add Settings (%s)"
+msgstr "빠른 추가 설정 (%s)"
 
 msgid "Quick Slice"
 msgstr "빠른 슬라이스"
@@ -3644,6 +3713,9 @@ msgstr "디스크에서 다시 불러오기"
 msgid "Reload the plater from disk"
 msgstr "디스크에서 플래터 다시 로드"
 
+msgid "Reload the selected volumes from disk"
+msgstr "디스크에서 선택한 볼륨 다시 로드"
+
 msgid "Remaining time"
 msgstr "남은 시간"
 
@@ -3677,6 +3749,9 @@ msgstr "선택한 객체(object)의 복제본 제거"
 msgid "Remove layer range"
 msgstr "레이어 범위 제거"
 
+msgid "Remove one instance of the selected object"
+msgstr "선택한 개체의 인스턴스 하나 제거"
+
 msgid "Remove parameter"
 msgstr "매개 변수 제거"
 
@@ -3691,6 +3766,12 @@ msgstr "선택한 구멍 제거"
 
 msgid "Remove selected points"
 msgstr "선택한 지점 제거"
+
+msgid "Remove the selected object"
+msgstr "선택한 객체(object) 제거"
+
+msgid "Rename"
+msgstr "이름 변경"
 
 msgid "Rename Object"
 msgstr "객체(object) 이름 바꾸기"
@@ -3931,6 +4012,9 @@ msgstr "크기"
 msgid "Scale factors"
 msgstr "축척 계수"
 
+msgid "Scale the selected object to fit the print volume"
+msgstr "인쇄 볼륨에 맞게 선택한 객체(object)의 배율 조정"
+
 msgid "Scale To Fit"
 msgstr "크기에 맞게 조정"
 
@@ -3939,6 +4023,9 @@ msgstr "크기에 맞게 조정"
 
 msgid "Scale to fit the given volume."
 msgstr "지정 된 볼륨에 맞게 크기를 조정 합니다."
+
+msgid "Scale to print volume"
+msgstr "인쇄 볼륨에 따라 배율 조정"
 
 msgid "Scaling factor or percentage."
 msgstr "배율 인수 또는 백분율입니다."
@@ -3989,6 +4076,9 @@ msgstr "인쇄 설정을 선택 합니다"
 
 msgid "Select Printer Settings Tab"
 msgstr "프린터 설정을 선택 합니다"
+
+msgid "Select showing settings"
+msgstr "표시된 설정을 선택 합니다"
 
 msgid "Select the language"
 msgstr "언어를 선택"
@@ -4074,8 +4164,17 @@ msgstr "서비스 이름"
 msgid "Set"
 msgstr "설정"
 
+msgid "Set as a Separated Object"
+msgstr "분리 된 객체(object)로 설정"
+
+msgid "Set as a Separated Objects"
+msgstr "분리된 객체(object)로 설정"
+
 msgid "Set extruder change for every"
 msgstr "모든 압출기 변경 설정"
+
+msgid "Set extruder for selected items"
+msgstr "선택한 항목에 대한 압출기(익스트루더) 설정"
 
 msgid "Set extruder sequence"
 msgstr "압출기 시퀀스 설정"
@@ -4085,6 +4184,9 @@ msgstr "돌출기(도구) 시퀀스 설정"
 
 msgid "Set Mirror"
 msgstr "미러 설정"
+
+msgid "Set number of instances"
+msgstr "복제할 수량 설정"
 
 msgid "Set numbers of copies to %d"
 msgstr "복사본 수를 %d로 설정"
@@ -4318,6 +4420,9 @@ msgstr "SLA 인쇄 설정"
 msgid "SLA Support Points"
 msgstr "SLA 지원 포인트"
 
+msgid "Slab"
+msgstr "슬랩"
+
 msgid ""
 "Slic3r can upload G-code files to a printer host. This field should contain "
 "the API Key or the password required for authentication."
@@ -4509,6 +4614,12 @@ msgstr "꽃병 모드(Spiral vase)"
 
 msgid "Split"
 msgstr "쪼개기"
+
+msgid "Split the selected object"
+msgstr "선택한 객체(object) 분할"
+
+msgid "Split the selected object into individual objects"
+msgstr "선택한 객체(object)를 개별 객체(object)로 분할 합니다."
 
 msgid "Split to objects"
 msgstr "객체(object)별 분할"
@@ -5199,6 +5310,12 @@ msgstr "필라멘트를 내린 후 기다리는 시간. 원래 치수로 축소�
 
 msgid "To do that please specify a new name for the preset."
 msgstr "그렇게하려면 기본 설정의 새 이름을 지정하십시오."
+
+msgid "To objects"
+msgstr "객체(object)에"
+
+msgid "To parts"
+msgstr "부품(Part)에"
 
 msgid ""
 "To use a custom CA file, please import your CA file into Certificate Store / "
@@ -5996,122 +6113,8 @@ msgstr "패드 및 서포트"
 msgid "Extrusion Width"
 msgstr "압출 폭"
 
-msgid "Add part"
-msgstr "부품(Part) 추가"
-
-msgid "Add modifier"
-msgstr "편집영역(modifier) 추가"
-
-msgid "Add support blocker"
-msgstr "서포트 금지영역(blocker) 추가"
-
-msgid "Add support enforcer"
-msgstr "서포트 지원(enforcer)영역 추가"
-
-msgid "Select showing settings"
-msgstr "표시된 설정을 선택 합니다"
-
-msgid "Quick Add Settings (%s)"
-msgstr "빠른 추가 설정 (%s)"
-
-msgid "Remove the selected object"
-msgstr "선택한 객체(object) 제거"
-
-msgid "Box"
-msgstr "박스"
-
 msgid "Cylinder"
 msgstr "원통"
-
-msgid "Slab"
-msgstr "슬랩"
-
-msgid "Height range Modifier"
-msgstr "높이 범위에 대한 설정"
-
-msgid "Add settings"
-msgstr "다음 설정"
-
-msgid "Change type"
-msgstr "타입 변경"
-
-msgid "Set as a Separated Object"
-msgstr "분리 된 객체(object)로 설정"
-
-msgid "Set as a Separated Objects"
-msgstr "분리된 객체(object)로 설정"
-
-msgid "Printable"
-msgstr "인쇄가능"
-
-msgid "Rename"
-msgstr "이름 변경"
-
-msgid "Fix through the Netfabb"
-msgstr "Netfabb를 통해 수정"
-
-msgid "Export as STL"
-msgstr "STL로 내보내기"
-
-msgid "Reload the selected volumes from disk"
-msgstr "디스크에서 선택한 볼륨 다시 로드"
-
-msgid "Set extruder for selected items"
-msgstr "선택한 항목에 대한 압출기(익스트루더) 설정"
-
-msgid "Scale to print volume"
-msgstr "인쇄 볼륨에 따라 배율 조정"
-
-msgid "Scale the selected object to fit the print volume"
-msgstr "인쇄 볼륨에 맞게 선택한 객체(object)의 배율 조정"
-
-msgid "Along X axis"
-msgstr "X 축을 따라"
-
-msgid "Mirror the selected object along the X axis"
-msgstr "선택한 객체(object)를 X 축을 따라 반전합니다"
-
-msgid "Along Y axis"
-msgstr "Y 축을 따라"
-
-msgid "Mirror the selected object along the Y axis"
-msgstr "선택한 객체(object)를 Y 축을 따라 반전합니다"
-
-msgid "Along Z axis"
-msgstr "Z 축 따라"
-
-msgid "Mirror the selected object along the Z axis"
-msgstr "선택한 객체(object)를 Z 축을 따라 반전합니다"
-
-msgid "Mirror"
-msgstr "반전(Mirror)"
-
-msgid "Mirror the selected object"
-msgstr "반전할 객제를 선택"
-
-msgid "To objects"
-msgstr "객체(object)에"
-
-msgid "Split the selected object into individual objects"
-msgstr "선택한 객체(object)를 개별 객체(object)로 분할 합니다."
-
-msgid "To parts"
-msgstr "부품(Part)에"
-
-msgid "Split the selected object"
-msgstr "선택한 객체(object) 분할"
-
-msgid "Add one more instance of the selected object"
-msgstr "선택한 개체의 인스턴스를 하나 더 추가합니다."
-
-msgid "Remove one instance of the selected object"
-msgstr "선택한 개체의 인스턴스 하나 제거"
-
-msgid "Set number of instances"
-msgstr "복제할 수량 설정"
-
-msgid "Change the number of instances of the selected object"
-msgstr "선택한 객체의 인스턴스 수 변경"
 
 msgid "Generic"
 msgstr "일반"
@@ -8245,9 +8248,6 @@ msgstr "닫기(&O)"
 
 msgid "Class not registered."
 msgstr "쓰레드 생성 할 수 없습니다"
-
-msgid "Clear"
-msgstr "비우기(&C)"
 
 msgid "Clear the log contents"
 msgstr "로그 내용 지우기"
@@ -11691,3 +11691,104 @@ msgstr "어제"
 
 msgid "zlib error %d"
 msgstr "압축모듈(zlib) 오류 %d"
+
+msgid "PrusaSlicer has encountered a fatal error: \"%1%\""
+msgstr "슬라이서에 치명적인 오류가 발생했습니다: \"%1%\""
+
+msgid ""
+"Please save your project and restart PrusaSlicer. We would be glad if you "
+"reported the issue."
+msgstr ""
+"작업물을 저장하시고 슬라이서를 재시작하시기 바랍니다. 이 이슈를 보고해주시면 "
+"감사하겠습니다."
+
+msgid "Access violation"
+msgstr "접근 위반"
+
+msgid "Illegal instruction"
+msgstr "잘못된 명령"
+
+msgid "Divide by zero"
+msgstr "0"
+
+msgid "Overflow"
+msgstr "오버플로우"
+
+msgid "Underflow"
+msgstr "언더플로우"
+
+msgid "Stack overflow"
+msgstr "스택 오버플로우"
+
+msgid "Unknown error occured during exporting G-code."
+msgstr "G고드 제작중 알 수 없는 오류가 발생"
+
+msgid "Not found:"
+msgstr "찾지 못함"
+
+msgid ""
+"Layer height is not valid.\n"
+"\n"
+"The layer height will be reset to 0.01."
+msgstr ""
+"레이어 높이가 유호하지 않습니다.\n"
+"\n"
+"높이가 0.01로 재설정됩니다."
+
+msgid ""
+"First layer height is not valid.\n"
+"\n"
+"The first layer height will be reset to 0.01."
+msgstr ""
+"첫 레이어 높이가 유호하지 않습니다.\n"
+"\n"
+"첫 레이어 높이가 0.01로 재설정됩니다."
+
+msgid ""
+"The Spiral Vase mode requires:\n"
+"- one perimeter\n"
+"- no top solid layers\n"
+"- 0% fill density\n"
+"- no support material\n"
+"- Detect thin walls disabled"
+msgstr ""
+"꽃병 모드는 다음과 같은 설정이 필요합니다:\n"
+"- 외벽 1\n"
+"- 상부 레이어 없음\n"
+"- 내부 밀도 0%\n"
+"- 서포트 없음\n"
+"- 얇은 외벽 감지 비활성화"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "%s 구성 마법사에 오신 것을 환영 합니다"
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "유저 프로필 제거(제거 전 스냅샷이 생성될 것입니다.)"
+
+msgid "SLA materials"
+msgstr "SLA 레진"
+
+msgid "The size of the object can be specified in inches"
+msgstr "물체의 크기를 인치로 표시 가능합니다"
+
+msgid "Use inches"
+msgstr "인치 사용"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "노즐, 베드 온도"
+
+msgid ""
+"Following printer profiles has no default filament: %1%Please select one "
+"manually."
+msgstr "프린터 프로필에 기본 필라멘트가 없습니다: %1%하나를 선택하십시오."
+
+msgid ""
+"Following printer profiles has no default material: %1%Please select one "
+"manually."
+msgstr "프린터 프로필에 기본 레진이 없습니다: %1%하나를 선택하십시오."
+
+msgid "Configuration Wizard"
+msgstr "구성 마법사"
+
+msgid "Configuration &Wizard"
+msgstr "구성 & 마법사"

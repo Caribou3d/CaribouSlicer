@@ -10,6 +10,7 @@
 #include <wx/scrolwin.h>
 #include <wx/display.h>
 #include <wx/file.h>
+#include <wx/wupdlock.h>
 #include "wxExtensions.hpp"
 
 #if ENABLE_SCROLLABLE
@@ -45,20 +46,28 @@ void CalibrationExtruderDialog::create_buttons(wxStdDialogButtonSizer* buttons){
 void CalibrationExtruderDialog::create_geometry() {
     Plater* plat = this->main_frame->plater();
     Model& model = plat->model();
-    plat->new_project();
+    if (!plat->new_project(L("Extruder Flow calibration")))
+        return;
+    // wait for slicing end if needed
+    wxGetApp().Yield();
+
+    std::unique_ptr<wxWindowUpdateLocker> freeze_gui = std::make_unique<wxWindowUpdateLocker>(this);
+
 
     //GLCanvas3D::set_warning_freeze(true);
-      std::vector<size_t> objs_idx = plat->load_files(std::vector<std::string>{
+    std::vector<size_t> objs_idx = plat->load_files(std::vector<std::string>{
             (boost::filesystem::path(Slic3r::resources_dir()) / "calibration"/"extrusionmultiplier"/ "low_cube.3mf").string()}, true, false, false, false);
 
     assert(objs_idx.size() == 1);
-    const DynamicPrintConfig* filamentConfig = this->gui_app->get_tab(Preset::TYPE_FFF_FILAMENT)->get_config();
-    const DynamicPrintConfig* printerConfig = this->gui_app->get_tab(Preset::TYPE_PRINTER)->get_config();
-
+    const DynamicPrintConfig* print_config = this->gui_app->get_tab(Preset::TYPE_FFF_PRINT)->get_config();
+    const DynamicPrintConfig* filament_config = this->gui_app->get_tab(Preset::TYPE_FFF_FILAMENT)->get_config();
+    const DynamicPrintConfig* printer_config = this->gui_app->get_tab(Preset::TYPE_PRINTER)->get_config();
     /// --- scale ---
     //model is created for a 0.4 nozzle, scale xy with nozzle size.
-    const ConfigOptionFloats* nozzle_diameter_config = printerConfig->option<ConfigOptionFloats>("nozzle_diameter");
-    assert(nozzle_diameter_config->get_at(0) > 0);
+    const ConfigOptionFloats* nozzle_diameter_config = printer_config->option<ConfigOptionFloats>("nozzle_diameter");
+
+    // assert(nozzle_diameter_config->get_at(0) > 0);
+    assert(nozzle_diameter_config->size() > 0);
     float nozzle_diameter = nozzle_diameter_config->get_at(0);
 
     int idx_scale = dimension->GetSelection();
@@ -78,32 +87,35 @@ void CalibrationExtruderDialog::create_geometry() {
 
     model.objects[objs_idx[0]]->config.set_key_value("perimeter_reverse", new ConfigOptionBool(false));
     model.objects[objs_idx[0]]->config.set_key_value("top_solid_layers", new ConfigOptionInt(0));
-    model.objects[objs_idx[0]]->config.set_key_value("bottom_solid_layers", new ConfigOptionInt(0));    
-    model.objects[objs_idx[0]]->config.set_key_value("perimeters", new ConfigOptionInt(1));    
+    model.objects[objs_idx[0]]->config.set_key_value("bottom_solid_layers", new ConfigOptionInt(0));
+    model.objects[objs_idx[0]]->config.set_key_value("perimeters", new ConfigOptionInt(1));
     model.objects[objs_idx[0]]->config.set_key_value("fill_density", new ConfigOptionPercent(0));
     model.objects[objs_idx[0]]->config.set_key_value("perimeter_generator", new ConfigOptionEnum<PerimeterGeneratorType>(PerimeterGeneratorType::Classic));
     model.objects[objs_idx[0]]->config.set_key_value("support_material", new ConfigOptionBool(false));
     model.objects[objs_idx[0]]->config.set_key_value("support_material_enforce_layers", new ConfigOptionInt(0));
-    model.objects[objs_idx[0]]->config.set_key_value("exact_last_layer_height", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("ensure_vertical_shell_thickness", new ConfigOptionBool(true));
-    model.objects[objs_idx[0]]->config.set_key_value("infill_dense", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters_overhangs", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters_odd_layers", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("overhangs_reverse", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("gap_fill_last", new ConfigOptionBool(false));
-    model.objects[objs_idx[0]]->config.set_key_value("solid_over_perimeters", new ConfigOptionInt(0));
-    model.objects[objs_idx[0]]->config.set_key_value("seam_notch_all", new ConfigOptionFloatOrPercent(0, false));
-    model.objects[objs_idx[0]]->config.set_key_value("seam_notch_inner", new ConfigOptionFloatOrPercent(0, false));
-    model.objects[objs_idx[0]]->config.set_key_value("seam_notch_outer", new ConfigOptionFloatOrPercent(0, false));
-    //model.objects[objs_idx[0]]->config.set_key_value("spiral_vase", new ConfigOptionBool(true));
+//    model.objects[objs_idx[0]]->config.set_key_value("exact_last_layer_height", new ConfigOptionBool(false));
+ //   model.objects[objs_idx[0]]->config.set_key_value("ensure_vertical_shell_thickness", new ConfigOptionBool(true));
+ //   model.objects[objs_idx[0]]->config.set_key_value("infill_dense", new ConfigOptionBool(false));
+ //   model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters", new ConfigOptionBool(false));
+   model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters_overhangs", new ConfigOptionBool(false));
+   model.objects[objs_idx[0]]->config.set_key_value("extra_perimeters_odd_layers", new ConfigOptionBool(false));
+   model.objects[objs_idx[0]]->config.set_key_value("overhangs_reverse", new ConfigOptionBool(false));
+   model.objects[objs_idx[0]]->config.set_key_value("gap_fill_last", new ConfigOptionBool(false));
+ //   model.objects[objs_idx[0]]->config.set_key_value("solid_over_perimeters", new ConfigOptionInt(0));
+ //   model.objects[objs_idx[0]]->config.set_key_value("seam_notch_all", new ConfigOptionFloatOrPercent(0, false));
+ //   model.objects[objs_idx[0]]->config.set_key_value("seam_notch_inner", new ConfigOptionFloatOrPercent(0, false));
+ //   model.objects[objs_idx[0]]->config.set_key_value("seam_notch_outer", new ConfigOptionFloatOrPercent(0, false));
+
+ //model.objects[objs_idx[0]]->config.set_key_value("spiral_vase", new ConfigOptionBool(true));
 
     //update plater
     plat->changed_objects(objs_idx);
+    this->gui_app->get_tab(Preset::TYPE_FFF_PRINT)->update_dirty();
     plat->is_preview_shown();
     //update everything, easier to code.
     ObjectList* obj = this->gui_app->obj_list();
     obj->update_after_undo_redo();
+    freeze_gui.reset();
 
     plat->reslice();
     plat->select_view_3D("Preview");

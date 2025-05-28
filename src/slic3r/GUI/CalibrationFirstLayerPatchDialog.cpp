@@ -45,7 +45,11 @@ void CalibrationFirstLayerPatchDialog::create_buttons(wxStdDialogButtonSizer* bu
 void CalibrationFirstLayerPatchDialog::create_geometry() {
     Plater* plat = this->main_frame->plater();
     Model& model = plat->model();
-    plat->new_project();
+    if (!plat->new_project(L("First layer patch calibration")))
+        return;
+    // wait for slicing end if needed
+    wxGetApp().Yield();
+
 
     const BuildVolume::Type type = plat->build_volume().type();
 
