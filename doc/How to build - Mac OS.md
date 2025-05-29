@@ -15,7 +15,7 @@ XCode is available through Apple's App Store, the other three tools are availabl
 
 You have to gitclone  the repository
 ```
-git clone https://github.com/supermerill/SuperSlicer.git
+git clone git@github.com:Caribou3d/CaribouSlicer.git
 ```
 
 and then you have to clone the profiles submodules
@@ -27,8 +27,8 @@ git submodule update
 
 ## How to build, the easy way
 
-After cloning, execute `./BuildMacOS.sh -i`
-The executable & dmg should be somewhere in the build directory. 
+After cloning, execute `./BuildmacOS.sh -h`
+The executable & dmg should be somewhere in the build directory.
 
 ### How to build
 
@@ -110,14 +110,14 @@ To remove the limitation, simply delete the key `MinimumSDKVersion` from that fi
 
 ### `CMath::CMath` target not found
 
-At the moment (20.2.2024) PrusaSlicer cannot be built with CMake 3.28+. Use [CMake 3.27](https://github.com/Kitware/CMake/releases/tag/v3.27.9) instead. 
+At the moment (20.2.2024) PrusaSlicer cannot be built with CMake 3.28+. Use [CMake 3.27](https://github.com/Kitware/CMake/releases/tag/v3.27.9) instead.
 If you install the CMake application from [universal DMG](https://github.com/Kitware/CMake/releases/download/v3.27.9/cmake-3.27.9-macos-universal.dmg), you can invoke the CMake like this:
 
 ```
 /Applications/CMake.app/Contents/bin/cmake
 ```
 
-### Running `cmake -GXCode` fails with `No CMAKE_CXX_COMPILER could be found.` 
+### Running `cmake -GXCode` fails with `No CMAKE_CXX_COMPILER could be found.`
 
 - If XCode command line tools wasn't already installed, run:
     ```
@@ -134,7 +134,7 @@ Works on a fresh installation of MacOS Catalina 10.15.6
 
 - Install [brew](https://brew.sh/):
 - Open Terminal
-    
+
 - Enter:
 
 ```

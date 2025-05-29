@@ -1,7 +1,7 @@
 
-# Building Slic3r on UNIX/Linux
+# Building CaribouSlicer on UNIX/Linux
 
-Please understand that Slic3r (& PrusaSlicer) team cannot support compilation on all possible Linux distros. Namely, we cannot help troubleshoot OpenGL driver issues or dependency issues if compiled against distro provided libraries. **We can only support Slic3r statically linked against the dependencies compiled with the `deps` scripts**, the same way we compile Slic3r for our binary builds.
+Please understand that CaribouSlicer ( & Slic3r & PrusaSlicer) team cannot support compilation on all possible Linux distros. Namely, we cannot help troubleshoot OpenGL driver issues or dependency issues if compiled against distro provided libraries. **We can only support Slic3r statically linked against the dependencies compiled with the `deps` scripts**, the same way we compile Slic3r for our binary builds.
 
 If you have some reason to link dynamically to your system libraries, you are free to do so, but we can not and will not troubleshoot any issues you possibly run into.
 
@@ -24,24 +24,40 @@ Unless that's already the case, install them as usual from your distribution pac
 E.g. on Ubuntu 20.10, run
 ```shell
 sudo apt-get install  -y \
-git \
-build-essential \
-autoconf \
-cmake \
-libglu1-mesa-dev \
-libgtk-3-dev \
-libdbus-1-dev \
+    appstream
+    autoconf
+    build-essential
+    cmake
+	desktop-file-utils
+    extra-cmake-modules
+    file
+    gettext
+    git
+    libcurl4-openssl-dev
+    libdbus-1-dev
+    libglew-dev
+    libmspack-dev
+    libosmesa6-dev
+    libsecret-1-dev
+    libssl-dev
+    libtool
+    libudev-dev
+    fuse3
+    m4
+    texinfo
+    wget
 
 ```
-The names of the packages may be different on different distros.
+The names of the packages may be different on different distros. DIfferent distros
+may need additional packages.
 
 #### 1. Cloning the repository
 
 
 Cloning the repository is simple thanks to git and Github. Simply `cd` into wherever you want to clone Slic3r code base and run (with Slic3r / supermerill or prusa3D as REPO_NAME and Slic3r / SuperSlicer or PrusaSlicer as SLIC3R_NAME)
 ```
-git clone https://www.github.com/REPO_NAME/SLIC3R_NAME
-cd SLIC3R_NAME
+git clone git@github.com:Caribou3d/CaribouSlicer.git
+cd CaribouSlicer
 ```
 
 This will download the source code into a new directory and `cd` into it. You can now optionally select a tag/branch/commit to build using `git checkout`. Otherwise, `master` branch will be built.
@@ -63,7 +79,7 @@ Slic3r uses CMake and the build is quite simple, the only tricky part is resolut
 **Warning**: Once the dependency bundle is installed in a destdir, the destdir cannot be moved elsewhere. This is because wxWidgets hardcode the installation path.
 
 
-#### 3. Building Slic3r
+#### 3. Building CaribouSlicer
 
 Now when the dependencies are compiled, all that is needed is to tell CMake that we are interested in static build and point it to the dependencies. From the top of the repository, run
 
@@ -75,7 +91,7 @@ Now when the dependencies are compiled, all that is needed is to tell CMake that
 And that's it. It is now possible to run the freshly built Slic3r binary:
 
     cd src
-    ./superslicer
+    ./CaribouSlicer
 
 
 
@@ -127,9 +143,9 @@ You can then use the `make install` target to install Slic3r.
 If Slic3r is to be distributed as an AppImage or a binary blob (.tar.gz and similar), then a desktop integration support is compiled in by default: Slic3r will offer to integrate with desktop by manually copying the desktop file and application icon into user's desktop configuration. The built-in desktop integration is also handy on Crosstini (Linux on Chrome OS).
 
 If Slic3r is compiled with `SLIC3R_FHS` enabled, then a desktop integration support will not be integrated. One may want to disable desktop integration by running
-    
+
     cmake .. -DSLIC3R_DESKTOP_INTEGRATION=0
-    
+
 when building Slic3r for flatpack or snap, where the desktop integration is performed by the installer.
 
 ## Raspberry pi
@@ -173,7 +189,7 @@ e.g. navigate to clone repository
     sudo ./BuildLinux.sh -s
     sudo ./BuildLinux.sh -dsi
 
-It will fail, but (for me) ONLY when it tries making the AppImage.  If you then copy the contents of the 'package' folder you should have a nice fully working instance. 
+It will fail, but (for me) ONLY when it tries making the AppImage.  If you then copy the contents of the 'package' folder you should have a nice fully working instance.
 **Note:** I think you can use `./BuildLinux.sh -ds` instead of `sudo ./BuildLinux.sh -dsi` and it should do the same thign without failing. I didn't tried.
 
 Move the package folder to a location of your choice e.g.
@@ -184,7 +200,7 @@ Ensure the executable is runnable as default user pi.
     Finally make the sure the program is executable
 sudo chomod +x ~/SuperSlicer/superslicer
 
-Then run by calling 
+Then run by calling
 ./home/pi/SuperSlicer/superslicer
 
 
