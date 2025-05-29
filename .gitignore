@@ -14,7 +14,8 @@ xs/assertlib*
 .vs/*
 /src/TAGS
 /.vscode/
-build*
+build/*
+build/
 build-linux/*
 deps/build*
 deps/build-linux/*
