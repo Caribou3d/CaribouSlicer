@@ -68,6 +68,7 @@ then
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "*.md" -type f -delete
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "*.txt" -type f -delete
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "*database.mo" -type f -delete
+        find package/resources/localization -name "PrusaSlicer.mo" -type f -delete
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "Slic3r.mo" -type f -delete
         find pack/@SLIC3R_APP_KEY@/@SLIC3R_APP_KEY@.app/Contents/Resources/localization -name "SuperSlicer.mo" -type f -delete
 
